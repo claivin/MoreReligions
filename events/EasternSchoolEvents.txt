@@ -1,0 +1,151 @@
+namespace = eastern_school_events
+namespace = eastern_school_opinion_events
+
+
+country_event = {
+	id = eastern_school_events.20
+	title = eastern_school_events.20.t
+	desc = eastern_school_events.20.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	trigger = {
+		has_dlc = "Cradle of Civilization"
+		OR = {
+			religion = buddhism
+		}
+		OR = {
+			has_religious_school = no
+			AND = {
+				religion = buddhism
+				has_eastern_school_trigger = no
+			}
+		}
+	}
+
+	is_triggered_only = yes
+	
+	option = {
+		name = eastern_school_events.20.z #Gives areas historical school of region
+		trigger = {	
+			ai = yes
+		}
+		if = { 
+			limit = {
+				OR = {
+					tag = AVA
+					tag = TAU
+					tag = BPR
+					tag = ARK
+					tag = SUK
+					tag = LIG
+					tag = LNA
+					tag = PEG
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_tamrashatiya_school
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = LXA
+					tag = KHM
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_akanya_sutta_school
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = HSI
+					tag = MNI
+					tag = MPA
+					tag = HSE
+					tag = MYA
+					tag = KAL
+					tag = MKA
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_weizza_school
+			}
+		}
+	}
+	option = {
+		name = eastern_school_events.20.a
+		trigger = {	
+			ai = no
+		}
+		if = { 
+			limit = {
+				OR = {
+					tag = AVA
+					tag = TAU
+					tag = BPR
+					tag = ARK
+					tag = SUK
+					tag = LIG
+					tag = LNA
+					tag = PEG
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_tamrashatiya_school
+			}
+		}
+	}
+	option = {
+		name = eastern_school_events.20.b
+		trigger = {	
+			ai = no
+		}
+		if = { 
+			limit = {
+				OR = {
+					tag = LXA
+					tag = KHM
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_akanya_sutta_school
+			}
+		}
+	}
+	option = {
+		name = eastern_school_events.20.c
+		trigger = {	
+			ai = no
+		}
+		if = { 
+			limit = {
+				OR = {
+					tag = HSI
+					tag = MNI
+					tag = MPA
+					tag = HSE
+					tag = MYA
+					tag = KAL
+					tag = MKA
+				}
+				religion - buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_weizza_school
+			}
+		}
+	}
+}
