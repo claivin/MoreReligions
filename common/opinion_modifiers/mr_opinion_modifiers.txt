@@ -1,0 +1,14 @@
+mr_opinion_switched_to_our_rite = {
+	opinion = 10
+	yearly_decay = 1
+}
+
+mr_opinion_switched_to_roman_rite_pope = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+mr_opinion_switched_away_roman_rite_pope = {
+	opinion = -25
+	yearly_decay = 1
+}

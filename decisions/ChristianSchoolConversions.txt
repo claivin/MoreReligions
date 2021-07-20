@@ -1,0 +1,1064 @@
+country_decisions = {
+
+	mr_change_to_roman_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_latin_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			OR = {
+				stability = 2
+				PAP = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					} 
+				}
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religion = catholic
+					religious_school = {
+						group = christian
+						school = mr_latin_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_latin_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_ambrosian_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_ambrosian_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = italy_region
+					region = south_german_region
+					region = france_region
+					region = balkan_region
+					region = carpathia_region
+					region = iberia_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = lombardy_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_ambrosian_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_ambrosian_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_aqueilian_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_aqueilian_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = italy_region
+					region = south_german_region
+					region = balkan_region
+					region = carpathia_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = venetia_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_aqueilian_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_aqueilian_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_braga_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_braga_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = iberia_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = beieras_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_braga_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_braga_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_durham_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_durham_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = british_isles_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = yorkshire_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_durham_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_durham_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_mozarbic_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_mozarbic_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = iberia_region
+					region = france_region
+					region = italy_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				region = iberia_region
+			}
+			OR = {
+				accepted_culture = castillian
+				accepted_culture = leonese
+				accepted_culture = aragonese
+				accepted_culture = catalan
+				accepted_culture = galician
+				accepted_culture = andalucian
+				accepted_culture = portugese
+				accepted_culture = basque
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_mozarbic_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_mozarbic_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_sarum_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			OR = {
+				religion = catholic
+				religion = anglican
+				religion = orthodox
+			}
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_sarum_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = british_isles_region
+					region = north_german_region
+					region = scandinavia_region
+					region = low_countries_region
+					region = france_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_sarum_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_sarum_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_carmelite_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_carmelite_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = mashriq_region
+					region = egypt_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			has_idea = deus_vult
+			OR = {
+				KOJ = {
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+					exists = yes
+				}
+				tag = KOJ
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_carmelite_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_carmelite_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_nidaros_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_nidaros_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = scandinavia_region
+					region = north_german_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = eastern_norway
+				area = western_norway
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_nidaros_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_nidaros_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_carthusian_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_carthusian_rite
+				}
+			}
+			any_owned_province = {
+				region = france_region
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = savoy_dauphine_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_carthusian_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_carthusian_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_cologne_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_cologne_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = north_german_region
+					region = south_german_region
+					region = low_countries_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			OR = {
+				any_owned_province = {
+					OR = {
+						area = north_rhine_area
+						area = lower_rhineland_area
+					}
+				}
+				reverse_has_opinion = {
+					who = KOL
+					value = 50
+				}
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_cologne_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_cologne_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_metz_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_metz_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = france_region
+					region = south_german_region
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = lorraine_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_metz_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_metz_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_lyonese_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_lyonese_rite
+				}
+			}
+			any_owned_province = {
+				region = france_region
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = savoy_dauphine_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_lyonese_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_lyonese_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_uppsala_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_uppsala_rite
+				}
+			}
+			any_owned_province = {
+				region = scandinavia_region
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				area = svealand_area
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_uppsala_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_uppsala_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_esztergom_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_esztergom_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					region = carpathia_region
+					region = balkan_region
+					region = poland_region
+					area = moravia_area
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				OR = {
+					area = slovakia_area
+					area = transdanubia_area
+				}
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_esztergom_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_esztergom_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	###EAST CATHOLIC / COPTIC SCHOOLS / ORTHODOX
+	
+	mr_change_to_alexandrian_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			OR = {
+				religion = mr_maronite
+				religion = coptic
+			}
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_alexandrian_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			OR = {
+				owns = 358
+				accepted_culture = amhara
+				accepted_culture = sidamo
+				accepted_culture = tigray
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_alexandrian_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_alexandrian_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_armenian_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			OR = {
+				religion = mr_maronite
+				religion = coptic
+			}
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_armenian_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			accepted_culture = armenian 
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_armenian_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_armenian_rite
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_byzantine_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			OR = {
+				religion = mr_maronite
+				religion = orthodox
+			}
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_byzantine_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				religion = orthodox
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_byzantine_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_byzantine_rite	
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_antiochian_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			OR = {
+				religion = mr_maronite
+				religion = coptic
+			}
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_antiochian_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			OR = {
+				owns = 2313 #antioch
+				accepted_culture = al_suryah_arabic
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_antiochian_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_antiochian_rite	
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_change_to_chaldean_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = mr_maronite
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_chaldean_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			owns = 411 #mosul
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_chaldean_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_chaldean_rite	
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	mr_change_to_westorthodox_rite = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = orthodox
+			NOT = { has_country_flag = has_changed_rites }
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_westorthodox_rite
+				}
+			}
+		}
+		allow = {
+			theologian = 1
+			stability = 2
+			any_owned_province = {
+				superregion = europe_superregion
+			}
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_adm_power = -100
+			every_country = {
+				limit = {
+					religious_school = {
+						group = christian
+						school = mr_westorthodox_rite
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = mr_opinion_switched_to_our_rite
+				}
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_westorthodox_rite	
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

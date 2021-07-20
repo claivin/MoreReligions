@@ -1,0 +1,3 @@
+capital_scope = {
+	add_cardinal = yes
+}

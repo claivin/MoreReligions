@@ -1,0 +1,102 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_icon_christian_rite_latin"
+		texturefile = "gfx/interface/icon_christian_rite_latin.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_alexandrian"
+		texturefile = "gfx/interface/icon_christian_rite_alexandrian.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_armenian"
+		texturefile = "gfx/interface/icon_christian_rite_armenian.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_byzantine"
+		texturefile = "gfx/interface/icon_christian_rite_byzantine.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_antiochian"
+		texturefile = "gfx/interface/icon_christian_rite_antiochian.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_chaldean"
+		texturefile = "gfx/interface/icon_christian_rite_chaldean.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_ambrosian"
+		texturefile = "gfx/interface/icon_christian_rite_ambrosian.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_aqueilian"
+		texturefile = "gfx/interface/icon_christian_rite_aqueilian.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_braga"
+		texturefile = "gfx/interface/icon_christian_rite_braga.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_durham"
+		texturefile = "gfx/interface/icon_christian_rite_durham.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_mozarbic"
+		texturefile = "gfx/interface/icon_christian_rite_mozarbic.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_sarum"
+		texturefile = "gfx/interface/icon_christian_rite_sarum.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_carmelite"
+		texturefile = "gfx/interface/icon_christian_rite_carmelite.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_nidaros"
+		texturefile = "gfx/interface/icon_christian_rite_nidaros.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_carthusian"
+		texturefile = "gfx/interface/icon_christian_rite_carthusian.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_christian_rite_cologne"
+		texturefile = "gfx/interface/icon_christian_rite_cologne.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_christian_rite_metz"
+		texturefile = "gfx/interface/icon_christian_rite_metz.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_christian_rite_lyonese"
+		texturefile = "gfx/interface/icon_christian_rite_lyonese.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_christian_rite_uppsala"
+		texturefile = "gfx/interface/icon_christian_rite_uppsala.dds"
+	}	
+	spriteType = {
+		name = "GFX_icon_christian_rite_esztergom"
+		texturefile = "gfx/interface/icon_christian_rite_esztergom.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_westorthodox"
+		texturefile = "gfx/interface/icon_christian_rite_westorthodox.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_presbyterian"
+		texturefile = "gfx/interface/icon_christian_rite_presbyterian.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_continental"
+		texturefile = "gfx/interface/icon_christian_rite_continental.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_congregationalist"
+		texturefile = "gfx/interface/icon_christian_rite_congregationalist.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_christian_rite_baptist"
+		texturefile = "gfx/interface/icon_christian_rite_baptist.dds"
+	}
+}

@@ -1,0 +1,203 @@
+#Any religious Scholar?
+#Country Scope
+has_religious_scholars_trigger_christian = {
+	custom_trigger_tooltip = {
+		tooltip = has_religious_scholars_trigger_christian_tooltip
+		OR = {
+			has_country_modifier = mr_latin_rite_modifier
+			has_country_modifier = mr_alexandrian_rite_modifier
+			has_country_modifier = mr_armenian_rite_modifier
+			has_country_modifier = mr_byzantine_rite_modifier
+			has_country_modifier = mr_antiochian_rite_modifier
+			has_country_modifier = mr_chaldean_rite_modifier
+			has_country_modifier = mr_ambrosian_rite_modifier
+			has_country_modifier = mr_aqueilian_rite_modifier
+			has_country_modifier = mr_braga_rite_modifier
+			has_country_modifier = mr_durham_rite_modifier
+			has_country_modifier = mr_mozarbic_rite_modifier
+			has_country_modifier = mr_sarum_rite_modifier
+			has_country_modifier = mr_carmelite_rite_modifier
+			has_country_modifier = mr_nidaros_rite_modifier
+			has_country_modifier = mr_beneventan_rite_modifier
+			has_country_modifier = mr_carthusian_rite_modifier
+			has_country_modifier = mr_cologne_rite_modifier
+			has_country_modifier = mr_metz_rite_modifier
+			has_country_modifier = mr_lyonese_rite_modifier
+			has_country_modifier = mr_uppsala_rite_modifier
+			has_country_modifier = mr_esztergom_rite_modifier
+				
+			has_country_modifier = mr_westorthodox_rite_modifier
+			
+			has_country_modifier = mr_presbyterian_rite_modifier
+			has_country_modifier = mr_continental_rite_modifier
+			has_country_modifier = mr_congregationalist_rite_modifier
+			has_country_modifier = mr_baptist_rite_modifier
+		}
+	}
+}
+
+#Scholars from where?
+#Country Scope
+scholar_from_our_school_trigger = {
+	has_country_modifier = $school$_rite_modifier
+	ROOT = {
+		religious_school = {
+			group = christian
+			school = $school$_rite
+		}
+	}
+}
+our_scholar_matches_their_school_trigger = {
+	PREV = { has_country_modifier = $school$_rite_modifier }
+	religious_school = {
+		group = christian
+		school = $school$_rite
+	}
+}
+
+#Uses one of the Catholic Rites:
+#Country
+has_catholic_rite_trigger = {
+	OR = {
+		religious_school = {
+			group = christian
+			school = mr_latin_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_ambrosian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_aqueilian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_braga_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_durham_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_mozarbic_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_sarum_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_carmelite_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_nidaros_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_carthusian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_cologne_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_metz_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_lyonese_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_uppsala_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_esztergom_rite
+		}
+	}
+}
+
+#Uses one of the Eastern Catholic Rites:
+has_east_catholic_rite_trigger = {
+	OR = {
+		religious_school = {
+			group = christian
+			school = mr_alexandrian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_armenian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_byzantine_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_antiochian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_chaldean_rite
+		}
+	}
+}
+
+#Uses one of the Orthodox Rites:
+has_orthodox_rite_trigger = {
+	OR = {
+		religious_school = {
+			group = christian
+			school = mr_byzantine_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_westorthodox_rite
+		}
+	}
+}
+
+#Uses one of the Coptic Rites:
+has_coptic_rite_trigger = {
+	OR = {
+		religious_school = {
+			group = christian
+			school = mr_armenian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_alexandrian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_antiochian_rite
+		}
+	}
+}
+
+#follows one of the reformed schools
+uses_reformed_schools_trigger = {
+	OR = {
+		religious_school = {
+			group = christian
+			school = mr_presbyterian_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_continental_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_congregationalist_rite
+		}
+		religious_school = {
+			group = christian
+			school = mr_baptist_rite
+		}
+	}
+}
