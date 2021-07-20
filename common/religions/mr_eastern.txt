@@ -2,13 +2,114 @@ eastern = {
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
-
+	religious_schools = {
+		mr_tamrashatiya_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = buddhism
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_tamrashatiya_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_tamrashatiya_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_tamrashatiya_school_modifier
+			picture = "GFX_icon_christian_rite_latin"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			governing_capacity_modifier = 0.15
+		}
+		mr_akanya_sutta_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = buddhism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_akanya_sutta_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_akanya_sutta_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_akanya_sutta_school_modifier
+			picture = "GFX_icon_christian_rite_alexandrian"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			monthly_karma = 0.20
+		}
+		mr_weizza_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = buddhism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_weizza_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_weizza_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_weizza_school_modifier
+			picture = "GFX_icon_christian_rite_armenian"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			global_unrest = -2
+		}
+		
+	}
+	
 	buddhism = { #Theravada
 		color = { 204 76 0 }
 		icon = 24
 		allowed_conversion = {
 			vajrayana
 			mahayana
+			yogavacara
 		}
 		country = {
 			tolerance_heretic = 2
@@ -34,12 +135,46 @@ eastern = {
 		uses_karma = yes
 	}
 	
+	
+	yogavacara = { #Tantric Theravada 
+		color = { 194 29 10 }
+		icon = 24
+		allowed_conversion = {
+			vajrayana
+			buddhism
+		}
+		country = {
+			tolerance_heathen = 2
+			religious_unity = 0.20
+		}
+		country_as_secondary = {
+			horde_unity = 1
+			tolerance_heathen = 1
+		}
+		on_convert = {
+			add_prestige = -100
+			add_stability = -1
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		misguided_heretic = yes
+		
+		heretic = { WEIZZA }
+		
+		uses_karma = yes
+		
+	
+	}
+
 	vajrayana = {
 		color = { 204 76 76 }
 		icon = 25
 		allowed_conversion = {
 			mahayana
-			buddhism #Theravada
+			buddhism
+			yogavacara #Theravada
 		}
 		country = {
 			tolerance_heretic = 1
@@ -70,7 +205,8 @@ eastern = {
 		icon = 23
 		allowed_conversion = {
 			vajrayana
-			buddhism #Theravada
+			buddhism
+			yogavacara #Theravada
 		}
 		country = {
 			tolerance_heretic = 2
