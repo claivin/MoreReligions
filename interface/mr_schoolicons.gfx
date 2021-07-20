@@ -99,4 +99,20 @@ spriteTypes = {
 		name = "GFX_icon_christian_rite_baptist"
 		texturefile = "gfx/interface/icon_christian_rite_baptist.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_tamrashatiya_school"
+		texturefile = "gfx/interface/icon_tamrashatiya_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_weizza_school"
+		texturefile = "gfx/interface/icon_weizza_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_akanya_sutta_school"
+		texturefile = "gfx/interface/icon_akanya_sutta_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mahavihara_school"
+		texturefile = "gfx/interface/icon_mahavihara_school.dds"
+	}
 }
