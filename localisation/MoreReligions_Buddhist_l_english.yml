@@ -1,6 +1,6 @@
 ﻿l_english:
  yogavacara:0 "Yogavacara"
- yogavacara_religion_desc:0 "A blend of Esoteric and Folk Buddhist Traditions."
+ yogavacara_religion_desc:0 "A blend of Esoteric and Folk Buddhist Traditions, localized to the Lao and Camobdian region."
  
  yogavacara_rebels_name: "Yogavacara Zealots"
  yogavacara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -9,25 +9,45 @@
  yogavacara_rebels_demand: "Convert $COUNTRYNAME$"
  yogavacara_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ ari:0 "Ari"
+ ari_religion_desc:0 "An older, tantric form of Buddhism that has survived to this point in the south of burma."
+ 
+ ari_rebels_name: "Ari Zealots"
+ ari_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ ari_title: "$RELIGION$ Zealots"
+ ari_rebels_army: "$RELIGION$ Army"
+ ari_rebels_demand: "Convert $COUNTRYNAME$"
+ ari_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  ##Tamrashatiya##
- mr_tamrashatiya_school:0 "Tamrashatiya Tradition"
+ mr_tamrashatiya_school:0 "Tamrashatiya"
  mr_tamrashatiya_school_desc:0 "Tamrashatiya is the basic practice of reading the Pali Canons and the Tripitaka to have a basic understanding of the most holy path. Common in South East Asian kingdoms such as Sukhothai and in Sri Lankan Kingdoms as well. Considered the foundation of Theravada Buddhism."
  mr_tamrashatiya_school_modifier:0 "Tamrashatiya"
  
  ##Akanya Sutta###
- mr_akanya_sutta_school:0 "Akanya Sutta Tradition"
+ mr_akanya_sutta_school:0 "Akanya Sutta"
  mr_akanya_sutta_school_desc:0 "The Akanya Sutta Tradition was formed out of a reading of one of the Pali Canons which stated that a king must be subserviant, or at least more understanding of the Sanga and their authority over both moral and legal matters."
  mr_akanya_sutta_school_modifier:0 "Akanya Sutta"
  
  ##Weizza###
- mr_weizza_school:0 "Weizza Tradition"
+ mr_weizza_school:0 "Weizzas"
  mr_weizza_school_desc:0 "Weizza Tradition follows the Weizza class of monks, who use the supernatural and esoteric practices to achieve a sort of Immortality and Weizza. The monks are split into orders with different tasks, performing and researching supposed impossible tasks such as turning metals into gold."
  mr_weizza_school_modifier:0 "Weizza"
  
+ ##Brahmin##
+ mr_brahmin_school:0 "Brahmins"
+ mr_brahmin_school_desc:0 "The Brahmin Tradition was imported from the Angkor Empire, in which their caste of priests and clergymen aid us in rituals and policy making."
+ mr_brahmin_school_modifier:0 "Brhamin"
+ 
+ ###Mahavihara###
+ mr_mahavihara_school:0 "Mahavihara"
+ mr_mahavihara_school_desc:0 "A classical Sri-Lankan form of Buddhism, which developed in the later 14th Century."
+ mr_mahavihara_school_modifier:0 "Mahavihara"
  
  eastern_school_events.20.t:0 "Deciding the Buddhist Tradition"
  eastern_school_events.20.d:0 "What tradition should we follow?"
  eastern_school_events.20.a:0 "We shall follow the Tamrashatiya Tradition."
  eastern_school_events.20.b:0 "We shall follow the Akanya Sutta Tradition."
  eastern_school_events.20.c:0 "We shall follow the Weizza Tradition."
+ eastern_school_events.20.e:0 "We shall follow the path of the Brahmins"
+ eastern_school_events.20.f:0 "We shall follow the path of the Mahavihara"

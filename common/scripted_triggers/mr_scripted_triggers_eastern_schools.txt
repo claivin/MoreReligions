@@ -5,8 +5,10 @@ has_religious_scholars_trigger_eastern = {
 		tooltip = has_religious_scholars_trigger_christian_tooltip
 		OR = {
 			has_country_modifier = mr_tamrashatiya_modifier
-			has_country_modifier = mr_akanya_sutta_school
+			has_country_modifier = mr_akanya_sutta_school_modifier
 			has_country_modifier = mr_weizza_school_modifier
+			has_country_modifier = mr_brahmin_school_modifier
+			has_country_modifier = mr_mahavihara_school_modifier
 		}
 	}
 }
@@ -49,6 +51,18 @@ has_eastern_school_trigger = {
 		religious_school = {
 			group = eastern
 			school = mr_weizza_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_brahmin_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_mahavihara_school
 		}
 	}
 }	

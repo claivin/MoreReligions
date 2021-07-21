@@ -64,7 +64,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_akanya_sutta_school_modifier
-			picture = "GFX_icon_akanya_sutta_school"
+			picture = "GFX_icon_christian_rite_alexandrian"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			monthly_karma = 0.20
 		}
@@ -73,6 +73,7 @@ eastern = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
 					religion = buddhism
+					religion = ari
 				}
 			}
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
@@ -100,7 +101,70 @@ eastern = {
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			global_unrest = -2
 		}
-		
+		mr_brahmin_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = buddhism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_brahmin_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_brahmin_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_brahmin_school_modifier
+			picture = "GFX_icon_akanya_sutta_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			dip_tech_cost_modifier = -0.1
+		}
+		mr_mahavihara_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = buddhism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_mahavihara_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_mahavihara_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_mahavihara_school_modifier
+			picture = "GFX_icon_mahavihara_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			global_missionary_strength = 0.02
+		}
 	}
 	
 	buddhism = { #Theravada
@@ -110,6 +174,7 @@ eastern = {
 			vajrayana
 			mahayana
 			yogavacara
+			ari
 		}
 		country = {
 			tolerance_heretic = 2
@@ -142,6 +207,8 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			buddhism
+			mahayana
+			ari
 		}
 		country = {
 			tolerance_heathen = 2
@@ -174,7 +241,8 @@ eastern = {
 		allowed_conversion = {
 			mahayana
 			buddhism
-			yogavacara #Theravada
+			yogavacara
+			ari
 		}
 		country = {
 			tolerance_heretic = 1
@@ -199,7 +267,33 @@ eastern = {
 	
 		harmonized_modifier = harmonized_vajrayana
 	}
-	
+	ari = {
+		color = { 238 132 72 }
+		icon = 26
+		allowed_conversion = {
+			mahayana
+			buddhism
+			yogavacara
+			vajrayana
+		}
+		country = {
+			shock_damage = 0.10 
+			legitimacy = 1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+			shock_damage = 0.10
+		}
+		on_convert = {
+			add_prestige = -100
+			add_stability = -1
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		uses_karma = yes
+	}
 	mahayana = {
 		color = { 204 76 127 }
 		icon = 23
@@ -207,6 +301,7 @@ eastern = {
 			vajrayana
 			buddhism
 			yogavacara #Theravada
+			ari
 		}
 		country = {
 			tolerance_heretic = 2

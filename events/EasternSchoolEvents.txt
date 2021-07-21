@@ -39,7 +39,7 @@ country_event = {
 					tag = SUK
 					tag = LIG
 					tag = LNA
-					tag = PEG
+					
 				}
 				religion = buddhism
 			}
@@ -51,8 +51,7 @@ country_event = {
 		else_if = {
 			limit = {
 				OR = {
-					tag = LXA
-					tag = KHM
+					tag = LIG
 				}
 				religion = buddhism
 			}
@@ -71,12 +70,41 @@ country_event = {
 					tag = MYA
 					tag = KAL
 					tag = MKA
+					tag = PEG
 				}
 				religion = buddhism
 			}
 			set_religious_school = {
 				group = eastern
 				school = mr_weizza_school
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = AYU
+					tag = SUK
+					tag = LXA
+					tag = KHM
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_brahmin_school
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = CEY
+					tag = KND
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_mahavihara_school
 			}
 		}
 	}
@@ -85,24 +113,9 @@ country_event = {
 		trigger = {	
 			ai = no
 		}
-		if = { 
-			limit = {
-				OR = {
-					tag = AVA
-					tag = TAU
-					tag = BPR
-					tag = ARK
-					tag = SUK
-					tag = LIG
-					tag = LNA
-					tag = PEG
-				}
-				religion = buddhism
-			}
-			set_religious_school = {
-				group = eastern
-				school = mr_tamrashatiya_school
-			}
+		set_religious_school = {
+			group = eastern
+			school = mr_tamrashatiya_school
 		}
 	}
 	option = {
@@ -110,18 +123,9 @@ country_event = {
 		trigger = {	
 			ai = no
 		}
-		if = { 
-			limit = {
-				OR = {
-					tag = LXA
-					tag = KHM
-				}
-				religion = buddhism
-			}
-			set_religious_school = {
-				group = eastern
-				school = mr_akanya_sutta_school
-			}
+		set_religious_school = {
+			group = eastern
+			school = mr_akanya_sutta_school
 		}
 	}
 	option = {
@@ -129,23 +133,29 @@ country_event = {
 		trigger = {	
 			ai = no
 		}
-		if = { 
-			limit = {
-				OR = {
-					tag = HSI
-					tag = MNI
-					tag = MPA
-					tag = HSE
-					tag = MYA
-					tag = KAL
-					tag = MKA
-				}
-				religion - buddhism
-			}
-			set_religious_school = {
-				group = eastern
-				school = mr_weizza_school
-			}
+		set_religious_school = {
+			group = eastern
+			school = mr_weizza_school
 		}
 	}
+	option = {
+		name = eastern_school_events.20.e
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+				group = eastern
+				school = mr_brahmin_school
+		}
+	}
+	option = {
+		name = eastern_school_events.20.f
+		trigger = {
+			ai = no
+		}
+		set_religious_school = {
+				group = eastern
+				school = mr_mahavihara_school
+		}
+	}	
 }
