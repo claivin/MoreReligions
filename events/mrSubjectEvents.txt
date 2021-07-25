@@ -74,13 +74,13 @@ country_event = {
 		name = mr_subject_events.2.b
 		add_country_modifier = {
 			name = mr_raising_subject
-			duration = 365
+			duration = 1825
 		}
 		custom_tooltip = SUBJECT_WILL_CONVERT_IN_A_YEAR
 		hidden_effect = {
 			country_event = {
 				id = mr_subject_events.4
-				days = 365
+				days = 1825
 			}
 		}
 		set_country_flag = in_process_of_raising_to_vassal

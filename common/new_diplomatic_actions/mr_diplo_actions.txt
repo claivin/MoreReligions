@@ -401,7 +401,7 @@ raise_independent_vassal =  {
 			FROM = {
 				had_country_flag = {
 					flag = became_independent_vassal
-					days = 365
+					days = 1825
 				}
 			}
 		}
