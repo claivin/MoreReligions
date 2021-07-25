@@ -1796,7 +1796,7 @@ christian = {
 	mr_humiliati = {
 
 		color = { 112 111 52 }
-		icon = 40
+		icon = 41
 		country = {
 			global_tax_income = 0.1
 		}
@@ -1814,7 +1814,7 @@ christian = {
 	mr_adamaite = {
 
 		color = { 163 124 104 }
-		icon = 40
+		icon = 42
 		country = {
 			global_tax_income = 0.1
 		}
