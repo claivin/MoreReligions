@@ -1,0 +1,190 @@
+namespace = mr_subject_events
+
+#action
+#to
+#1 to 2
+#2a to 3
+#2b (after 5 years) to 4
+#4 to 5
+
+#housekeeping event, tells subj they are being turned in a vassal
+country_event = {
+	id = mr_subject_events.1
+	title = mr_subject_events.1.t
+	desc = mr_subject_events.1.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { #is_triggered_only
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		overlord = {
+			country_event = {
+				id = mr_subject_events.2
+			}
+		}
+	}
+	
+	option = {
+		name = mr_subject_events.1.a
+		#uh oh
+	}
+}
+
+#first event
+#from = subject
+#root = you
+country_event = {
+	id = mr_subject_events.2
+	title = mr_subject_events.2.t
+	desc = mr_subject_events.2.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { #is_triggered_only
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			set_country_flag = currently_looking_at_raise_event
+			random_subject_country = {
+				save_event_target_as = country_about_to_ascend
+			}
+		}
+	}
+	
+	option = {
+		name = mr_subject_events.2.a
+		trigger = {
+			ai = no
+		}
+		#nevermind
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = mr_subject_events.3
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = mr_subject_events.2.b
+		add_country_modifier = {
+			name = mr_raising_subject
+			duration = 365
+		}
+		custom_tooltip = SUBJECT_WILL_CONVERT_IN_A_YEAR
+		hidden_effect = {
+			country_event = {
+				id = mr_subject_events.4
+				days = 365
+			}
+		}
+		set_country_flag = in_process_of_raising_to_vassal
+		FROM = {
+			set_country_flag = in_process_of_being_raised_to_vassal
+		}
+	}
+	
+	after = {
+		hidden_effect = {
+			clr_country_flag = currently_looking_at_raise_event
+		}
+	}
+}
+
+#inform subj that overlord canceled
+country_event = {
+	id = mr_subject_events.3
+	title = mr_subject_events.3.t
+	desc = mr_subject_events.3.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { #is_triggered_only
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_subject_events.3.a
+		#oh
+	}
+}
+
+#endpoint event
+country_event = {
+	id = mr_subject_events.4
+	title = mr_subject_events.4.t
+	desc = mr_subject_events.4.d
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { #will only fire if process has not been interrupted
+		has_country_flag = in_process_of_raising_to_vassal
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = { #for localization purposes
+		random_subject_country = {
+			limit = {
+				has_country_flag = in_process_of_being_raised_to_vassal
+			}
+			save_event_target_as = mr_country_turned_into_vassal
+		}
+	}
+	
+	option = {
+		name = mr_subject_events.4.a
+		random_subject_country = {
+			limit = {
+				has_country_flag = in_process_of_being_raised_to_vassal
+			}
+			clr_country_flag = in_process_of_being_raised_to_vassal
+		}
+		vassalize = event_target:mr_country_turned_into_vassal
+		clr_country_flag = in_process_of_raising_to_vassal
+	}
+}
+
+#in case the incorporation is interuppted
+#flags also cleared in on_action
+#on_dependency_gained and on_create_vassal
+#but this exists too, just in case
+# country_event = {
+	# id = mr_subject_events.5
+	# title = mr_subject_events.5.t
+	# desc = mr_subject_events.5.d
+	# picture = REFORM_eventPicture
+	
+	# hidden = yes
+	
+	# trigger = {
+		# OR = {
+			# AND = {
+				# has_country_flag = in_process_of_being_raised_to_vassal
+				# is_subject = no
+			# }
+			# AND = {
+				# has_country_flag = in_process_of_raising_to_vassal
+				# all_subject_country = {
+					# NOT = { has_country_flag = in_process_of_raising_to_vassal }
+				# }
+			# }
+		# }
+	# }
+	# mean_time_to_happen = { days = 1 }
+	
+	# immediate = {
+		# clr_country_flag = in_process_of_raising_to_vassal
+		# clr_country_flag = in_process_of_being_raised_to_vassal
+		# clr_country_flag = became_independent_vassal
+	# }
+	
+	# option = {
+		# name = mr_subject_events.5.a
+		# #oh
+	# }
+# }

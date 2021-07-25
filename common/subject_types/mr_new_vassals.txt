@@ -1,6 +1,7 @@
 mr_independent_vassal = {}
 
 mr_independent_vassal = {
+	copy_from = vassal
 	sprite = GFX_icon_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
 	diplomacy_subject_sprite = GFX_diplomacy_amvassal
