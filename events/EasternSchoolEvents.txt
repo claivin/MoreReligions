@@ -12,11 +12,13 @@ country_event = {
 		has_dlc = "Cradle of Civilization"
 		OR = {
 			religion = buddhism
+			religion = nihon
 		}
 		OR = {
 			has_religious_school = no
 			AND = {
 				religion = buddhism
+				religion = nihon
 				has_eastern_school_trigger = no
 			}
 		}
@@ -107,11 +109,32 @@ country_event = {
 				school = mr_mahavihara_school
 			}
 		}
+		else_if = {
+			limit = {
+				tag = YMN
+				religion = nihon
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_shin_school
+			}
+		}
+		else_if = {
+			limit = {
+				tag = UES
+				religion = nihon
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_tendai_school
+			}
+		}
 	}
 	option = {
 		name = eastern_school_events.20.a
 		trigger = {	
 			ai = no
+			religion = buddhism
 		}
 		set_religious_school = {
 			group = eastern
@@ -122,6 +145,7 @@ country_event = {
 		name = eastern_school_events.20.b
 		trigger = {	
 			ai = no
+			religion = buddhism
 		}
 		set_religious_school = {
 			group = eastern
@@ -132,6 +156,7 @@ country_event = {
 		name = eastern_school_events.20.c
 		trigger = {	
 			ai = no
+			religion = buddhism
 		}
 		set_religious_school = {
 			group = eastern
@@ -142,6 +167,7 @@ country_event = {
 		name = eastern_school_events.20.e
 		trigger = {
 			ai = no
+			religion = buddhism
 		}
 		set_religious_school = {
 				group = eastern
@@ -152,10 +178,69 @@ country_event = {
 		name = eastern_school_events.20.f
 		trigger = {
 			ai = no
+			religion = buddhism
 		}
 		set_religious_school = {
 				group = eastern
 				school = mr_mahavihara_school
 		}
-	}	
+	}
+	option = {
+		name = eastern_school_events.20.g
+		trigger = {
+			ai = no
+			religion = nihon
+		}
+		set_religious_school = {
+			group = eastern
+			school = mr_shin_school
+		}
+	}
+	option = {
+		name = eastern_school_events.20.h
+		trigger = {
+			ai = no
+			religion = nihon
+		}
+		set_religious_school = {
+			group = eastern
+			school = mr_tendai_school
+		}
+	}
+	option = {
+		name = eastern_school_events.20.j
+		trigger = {
+			ai = no
+			religion = nihon
+		}
+		set_religious_school = {
+			group = eastern
+			school = mr_jodo_school
+		}
+	}
+	option = {
+		name = eastern_school_events.20.k
+		trigger = {
+			ai = no
+			OR = {
+				religion = nihon
+				religion = mahayana
+			}
+		}
+		set_religious_school = {
+			group = eastern
+			school = mr_zen_school
+		}
+	}
+	option = {
+		name = eastern_school_events.20.l
+		trigger = {
+			ai = no
+			religion = nihon
+		}
+		set_religious_school = {
+			group = eastern
+			school = mr_shingon_school
+		}
+	}
 }

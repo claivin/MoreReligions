@@ -66,7 +66,7 @@ eastern = {
 			invite_scholar_modifier_display = mr_akanya_sutta_school_modifier
 			picture = "GFX_icon_christian_rite_alexandrian"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			monthly_karma = 0.20
+			monthly_karma = 0.15
 		}
 		mr_weizza_school = {
 			potential_invite_scholar = {
@@ -99,7 +99,7 @@ eastern = {
 			invite_scholar_modifier_display = mr_weizza_school_modifier
 			picture = "GFX_icon_weizza_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			global_unrest = -2
+			monthly_karma = -0.15
 		}
 		mr_brahmin_school = {
 			potential_invite_scholar = {
@@ -165,6 +165,172 @@ eastern = {
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			global_missionary_strength = 0.02
 		}
+		mr_shin_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = nihon
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_shin_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_shin_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_shin_school_modifier
+			picture = "GFX_icon_tamrashatiya_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			core_creation = -0.05
+		}
+		mr_tendai_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = nihon
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_tendai_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_tendai_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_tendai_school_modifier
+			picture = "GFX_icon_tamrashatiya_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			idea_cost = -0.05
+		}
+		mr_jodo_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = nihon
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_jodo_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_jodo_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_jodo_school_modifier
+			picture = "GFX_icon_tamrashatiya_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			global_unrest = -2
+		}
+		mr_zen_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = nihon
+					religion = mahayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_zen_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_zen_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_zen_school_modifier
+			picture = "GFX_icon_tamrashatiya_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			discipline = 0.05
+		}
+		mr_shingon_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = nihon
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_shingon_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_shingon_school duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_shingon_school_modifier
+			picture = "GFX_icon_tamrashatiya_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			tolerance_heathen = 2
+		}
 	}
 	
 	buddhism = { #Theravada
@@ -175,6 +341,7 @@ eastern = {
 			mahayana
 			yogavacara
 			ari
+			azhaliism
 		}
 		country = {
 			tolerance_heretic = 2
@@ -209,6 +376,7 @@ eastern = {
 			buddhism
 			mahayana
 			ari
+			azhaliism
 		}
 		country = {
 			tolerance_heathen = 2
@@ -243,6 +411,7 @@ eastern = {
 			buddhism
 			yogavacara
 			ari
+			azhaliism
 		}
 		country = {
 			tolerance_heretic = 1
@@ -275,6 +444,7 @@ eastern = {
 			buddhism
 			yogavacara
 			vajrayana
+			azhaliism
 		}
 		country = {
 			shock_damage = 0.10 
@@ -326,7 +496,61 @@ eastern = {
 		
 		uses_karma = yes
 	}
-
+	azhaliism = {
+		color = { 208 134 119 }
+		icon = 23
+		allowed_conversion = {
+			vajrayana
+			buddhism
+			yogavacara #Theravada
+			ari
+		}
+		country = {
+			tolerance_heathen = 1
+			defensiveness = 0.10
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+			tolerance_heathen = 2
+		}
+		on_convert = {
+			add_prestige = -100
+			add_stability = -1
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		
+		harmonized_modifier = harmonized_mahayana
+		
+		heretic = { ZEN }
+		
+		uses_karma = yes
+	}
+	
+	nihon = {
+		color = { 214 31 48 }
+		icon = 10
+		country = {
+			diplomatic_reputation = 1
+			land_morale = 0.05
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country_as_secondary = {
+			discipline = 0.05
+			global_unrest = -1
+		}
+		heretic = { SHUGENDO }
+		uses_isolationism = yes
+		
+		harmonized_modifier = harmonized_shinto
+		
+	}
+	
+	
 	confucianism = {
 		color = { 214 229 140 }
 		icon = 9

@@ -19,10 +19,31 @@
  ari_rebels_demand: "Convert $COUNTRYNAME$"
  ari_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ azhaliism:0 "Azhali"
+ azhaliism_religion_desc:0 "A form of Buddhism practiced in the Yunnan region of China. Influenced by both Burmese Buddhism and Tantric Buddhism, it still holds reverence to the local gods and dieties in the region."
+ 
+ azhaliism_rebels_name: "Azhali Zealots"
+ azhaliism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ azhaliism_title: "$RELIGION$ Zealots"
+ azhaliism_rebels_army: "$RELIGION$ Army"
+ azhaliism_rebels_demand: "Convert $COUNTRYNAME$"
+ azhaliism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ nihon:0 "Nihon Bukkyo"
+ nihon_religion_desc:0 "This religion is an amalgamation of the various schools of Buddhism in Japan, from Zen to Pure Land, that existed alongside traditional ancestor worship. Following similar practices to Mahayana Buddhism, it is located entirely within Japan."
+ nihon_rebels_name:0 "Zen"
+ nihon_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ nihon_title: "$RELIGION$ Zealots"
+ nihon_rebels_army: "$RELIGION$ Army"
+ nihon_rebels_demand: "Convert $COUNTRYNAME$"
+ nihon_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ 
  ##Tamrashatiya##
  mr_tamrashatiya_school:0 "Tamrashatiya"
  mr_tamrashatiya_school_desc:0 "Tamrashatiya is the basic practice of reading the Pali Canons and the Tripitaka to have a basic understanding of the most holy path. Common in South East Asian kingdoms such as Sukhothai and in Sri Lankan Kingdoms as well. Considered the foundation of Theravada Buddhism."
  mr_tamrashatiya_school_modifier:0 "Tamrashatiya"
+ 
  
  ##Akanya Sutta###
  mr_akanya_sutta_school:0 "Akanya Sutta"
@@ -36,7 +57,7 @@
  
  ##Brahmin##
  mr_brahmin_school:0 "Brahmins"
- mr_brahmin_school_desc:0 "The Brahmin Tradition was imported from the Angkor Empire, in which their caste of priests and clergymen aid us in rituals and policy making."
+ mr_brahmin_school_desc:0 "The Brahmin Tradition was imported from the Angkor Empire, in which their caste of priests and clergymen aid us in rituals and policy making. It places Hindu deities in positions of high regard, and places much of its legitimacy on the current state's relationship or relevancy to the Angkor Empire."
  mr_brahmin_school_modifier:0 "Brhamin"
  
  ###Mahavihara###
@@ -44,10 +65,41 @@
  mr_mahavihara_school_desc:0 "A classical Sri-Lankan form of Buddhism, which developed in the later 14th Century."
  mr_mahavihara_school_modifier:0 "Mahavihara"
  
+ 
+ ###Shin Buddhism###
+ mr_shin_school:0 "Shin"
+ mr_shin_school_desc:0 "Shin buddhism is a branch of Japanese Buddhism which was founded by the Monk Shinran after leaving the corrupt Tendai school."
+ mr_shin_school_modifier:0 "Shin"
+ 
+ ###Tendai Buddhism###
+ mr_tendai_school:0 "Tendai"
+ mr_tendai_school_desc:0 "Tendai Buddhism is an older school of Buddhism that flourished under the old regime, with many of the rituals being reminiscent of older tantric methods. However, it has since fallen out of favor, and is relatively unknown."
+ mr_tendai_school_modifier:0 "Tendai"
+ 
+ ###Jodo Buddhism###
+ mr_jodo_school:0 "Jodo"
+ mr_jodo_school_desc:0 "The Jodo School is a school of buddhism that heavily places emphasis on Mappo, or the Age of Dharma Decline. To this effect, society is becoming more corrupt, and disasters both natural and political are signs of this. Preaching to local peasants, it became an easy to follow path to enlightenment."
+ mr_jodo_school_modifier:0 "Jodo"
+ 
+ ###Rinzai Buddhism###
+ mr_zen_school:0 "Zen"
+ mr_zen_school_desc:0 "A school of Mahayana Buddhism that has spread across to China, Korea, and Japan. Alongside formal practice of Dhyana, or meditiation, it also focuses on the arts and physical cultivation."
+ mr_zen_school_modifier:0 "Zen"
+ 
+ ###Shingon Buddhism###
+ mr_shingon_school:0 "Shingon"
+ mr_shingon_school_desc:0 "The Shingon school is an older school of Buddhism that follows tantric tradition, with close ties to Vajrayana Buddhism. With monestaries located in Mount Koya and Negoro, it is a smaller branch in Japan."
+ mr_shingon_school_modifier:0 "Shingon"
+ 
  eastern_school_events.20.t:0 "Deciding the Buddhist Tradition"
  eastern_school_events.20.d:0 "What tradition should we follow?"
  eastern_school_events.20.a:0 "We shall follow the Tamrashatiya Tradition."
  eastern_school_events.20.b:0 "We shall follow the Akanya Sutta Tradition."
  eastern_school_events.20.c:0 "We shall follow the Weizza Tradition."
- eastern_school_events.20.e:0 "We shall follow the path of the Brahmins"
- eastern_school_events.20.f:0 "We shall follow the path of the Mahavihara"
+ eastern_school_events.20.e:0 "We shall follow the path of the Brahmins."
+ eastern_school_events.20.f:0 "We shall follow the path of the Mahavihara."
+ eastern_school_events.20.g:0 "We shall follow the school of Shin."
+ eastern_school_events.20.h:0 "We shall follow the school of Tendai."
+ eastern_school_events.20.j:0 "We shall follow the school of Jodo."
+ eastern_school_events.20.k:0 "We shall follow the school of Zen."
+ eastern_school_events.20.l:0 "We shall follow the school of Shingon."

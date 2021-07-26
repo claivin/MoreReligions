@@ -9,6 +9,11 @@ has_religious_scholars_trigger_eastern = {
 			has_country_modifier = mr_weizza_school_modifier
 			has_country_modifier = mr_brahmin_school_modifier
 			has_country_modifier = mr_mahavihara_school_modifier
+			has_country_modifier = mr_shin_school_modifier
+			has_country_modifier = mr_tendai_school_modifier
+			has_country_modifier = mr_jodo_school_modifier
+			has_country_modifier = mr_zen_school_modifier
+			has_country_modifier = mr_shingon_school_modifier
 		}
 	}
 }
@@ -63,6 +68,36 @@ has_eastern_school_trigger = {
 		religious_school = {
 			group = eastern
 			school = mr_mahavihara_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_shin_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_tendai_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_jodo_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_zen_school
+		}
+	}
+	OR = {
+		religious_school = {
+			group = eastern
+			school = mr_shingon_school
 		}
 	}
 }	
