@@ -1,0 +1,32 @@
+﻿l_english:
+ urban_terrain: "Urban"
+ urban_terrain_desc: "Urban provinces represent highly developed population centers where manmade structures and communities are densely crowded. Only a handful exist or will develop during this time."
+ 
+ PROV4942: "Laon"
+ PROV4943: "Noyon"
+ PROV4944: "Chalon"
+ PROV4945: "Île-de-france"
+ 
+ REI: "Reims"
+ REI_ADJ: "Rémois"
+ REI_ADJ2: "Rémois"
+ 
+ LAO: "Laon"
+ LAO_ADJ: "Laonois"
+ LAO_ADJ2: "Laonois"
+ 
+ LGR: "Langres"
+ LGR_ADJ: "Langrois"
+ LGR_ADJ2: "Langrois"
+ 
+ BVS: "Beauvais"
+ BVS_ADJ: "Beauvois"
+ BVS_ADJ2: "Beauvois"
+
+ CLN: "Châlons"
+ CLN_ADJ: "Châlonois"
+ CLN_ADJ2: "Châlonois"
+ 
+ NYN: "Noyon"
+ NYN_ADJ: "Noyonois"
+ NYN_ADJ2: "Noyonois"

@@ -75,3 +75,20 @@ zaidi_scholar_modifier = {
 	}
 	
 -add localisation
+
+
+
+#New province checklist
+Unique color and entry into definition.csv
+Paint onto province.bmp
+history file
+define area and continent
+define trade region and trade company in /common
+localisation (PROVxxxx)
+
+
+#New country checklist
+Unique Tag in country_tags.txt
+corresponing file in /countries
+history file
+localisation

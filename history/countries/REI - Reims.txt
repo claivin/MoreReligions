@@ -1,0 +1,17 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 186	# Reims
+
+1444.10.9 = {
+	monarch = {
+		name = "Jacques Juvenal"
+		dynasty = "de Ursins"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

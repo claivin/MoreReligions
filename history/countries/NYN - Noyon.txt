@@ -1,0 +1,17 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 4943	# Reims
+
+1440.1.1 = {
+	monarch = {
+		name = "Jean"
+		dynasty = "de Mailly"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
