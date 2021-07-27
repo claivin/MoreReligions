@@ -3,9 +3,13 @@
  urban_terrain_desc: "Urban provinces represent highly developed population centers where manmade structures and communities are densely crowded. Only a handful exist or will develop during this time."
  
  PROV4942: "Laon"
+ PROV_ADJ4942: "Laon"
  PROV4943: "Noyon"
+ PROV_ADJ4943: "Noyon"
  PROV4944: "Chalon"
+ PROV_ADJ4944: "Chalon"
  PROV4945: "Île-de-france"
+ PROV_ADJ4945: "Parisienne"
  
  REI: "Reims"
  REI_ADJ: "Rémois"
@@ -30,3 +34,27 @@
  NYN: "Noyon"
  NYN_ADJ: "Noyonois"
  NYN_ADJ2: "Noyonois"
+ 
+ MNE: "Maine"
+ MNE_ADJ: "Mainois"
+ MNE_ADJ2: "Mainois"
+ 
+ ANJ: "Anjou"
+ ANJ_ADJ: "Angevins"
+ ANJ_ADJ2: "Angevins"
+ 
+ PTO: "Poitou"
+ PTO_ADJ: "Poitevin"
+ PTO_ADJ2: "Poitevin"
+ 
+ BLS: "Blois"
+ BLS_ADJ: "Blésois"
+ BLS_ADJ2: "Blésois"
+ 
+ LMC: "La Marche"
+ LMC_ADJ: "La Marche"
+ LMC_ADJ2: "La Marche"
+ 
+ FBR: "Free Burgundy"
+ FBR_ADJ: "Burgundian"
+ FBR_ADJ2: "Burgundian"

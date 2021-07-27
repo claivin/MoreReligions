@@ -28,7 +28,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_tamrashatiya_school duration = 7300 }
+				add_country_modifier = { name = mr_tamrashatiya_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_tamrashatiya_school_modifier
@@ -47,7 +47,7 @@ eastern = {
 			can_invite_scholar = {
 				adm_power_cost = 50
 				reverse_has_opinion = { who = FROM value = 150 }
-				NOT = { has_country_modifier = mr_akanya_sutta_modifier }
+				NOT = { has_country_modifier = mr_akanya_sutta_school_modifier }
 				OR = {
 					alliance_with = FROM
 					is_subject_of = FROM
@@ -93,7 +93,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_weizza_school duration = 7300 }
+				add_country_modifier = { name = mr_weizza_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_weizza_school_modifier
@@ -125,7 +125,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_brahmin_school duration = 7300 }
+				add_country_modifier = { name = mr_brahmin_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_brahmin_school_modifier
@@ -190,7 +190,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_shin_school duration = 7300 }
+				add_country_modifier = { name = mr_shin_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_shin_school_modifier
@@ -223,7 +223,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_tendai_school duration = 7300 }
+				add_country_modifier = { name = mr_tendai_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_tendai_school_modifier
@@ -256,7 +256,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_jodo_school duration = 7300 }
+				add_country_modifier = { name = mr_jodo_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_jodo_school_modifier
@@ -290,7 +290,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_zen_school duration = 7300 }
+				add_country_modifier = { name = mr_zen_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_zen_school_modifier
@@ -323,7 +323,7 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_shingon_school duration = 7300 }
+				add_country_modifier = { name = mr_shingon_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_shingon_school_modifier

@@ -187,7 +187,6 @@ clear_religious_scholar_modifiers_effect = {
 	remove_country_modifier = mr_sarum_rite_modifier
 	remove_country_modifier = mr_carmelite_rite_modifier
 	remove_country_modifier = mr_nidaros_rite_modifier
-	remove_country_modifier = mr_beneventan_rite_modifier
 	remove_country_modifier = mr_carthusian_rite_modifier
 	remove_country_modifier = mr_cologne_rite_modifier
 	remove_country_modifier = mr_metz_rite_modifier
@@ -199,7 +198,6 @@ clear_religious_scholar_modifiers_effect = {
 	remove_country_modifier = mr_presbyterian_rite_modifier
 	remove_country_modifier = mr_continental_rite_modifier
 	remove_country_modifier = mr_congregationalist_rite_modifier
-	remove_country_modifier = mr_baptist_rite_modifier
 }
 
 #Move capital along with all that also needs to be done. Used in capital decisions.
