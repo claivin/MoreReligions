@@ -1,0 +1,33 @@
+french_elective_monarchy = {
+	icon = "elective_monarchy"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = french_elective_monarchy
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = french_elective_monarchy
+			}
+		}
+	}
+	#legacy_equivalent = elective_monarchy_legacy
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+	modifiers = {
+		reduced_liberty_desire = 10
+		diplomatic_upkeep = 5
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		is_elective = yes
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

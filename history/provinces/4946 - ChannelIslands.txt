@@ -1,0 +1,21 @@
+#REGIONFRANCE
+# 168 Channel Islands - Principal cities: St. Peter Port
+
+owner = CNL
+controller = CNL 
+capital = "St. Peter Port"
+is_city = yes
+culture = normand
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+#add_core = FRA
+add_core = CNL
+# fort_15th = yes

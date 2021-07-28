@@ -474,7 +474,7 @@ trade_company_english_channel = {
 	color = { 220 138 57 }
 	
 	provinces = {
-		167 168 1879 4385 #normandy_area
+		167 168 1879 4385 4946 #normandy_area
 		87 88 89 1743 4943 #picardy_area
 		241 242 4366 4369 #wales_area
 		245 4367 4368 4785 #yorkshire_area
