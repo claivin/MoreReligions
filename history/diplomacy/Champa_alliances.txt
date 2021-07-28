@@ -1,0 +1,6 @@
+vassal = {
+	first = CHA
+	second = ANN
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}

@@ -8,6 +8,7 @@ eastern = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
 					religion = buddhism
+					religion = yogavacara
 					
 				}
 			}
@@ -74,6 +75,7 @@ eastern = {
 				OR = {
 					religion = buddhism
 					religion = ari
+					religion = yogavacara
 				}
 			}
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
