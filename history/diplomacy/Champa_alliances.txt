@@ -1,6 +1,84 @@
-vassal = {
+dependency = {
+	subject_type = "mr_independent_vassal"
 	first = CHA
 	second = ANN
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = PHP
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = KRT
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = KOH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = RHA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = JAR
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = RTK
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = KPT
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = OUD
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = PRT
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = ANK
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = CHA
+	second = PVH
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
