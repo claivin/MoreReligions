@@ -18,6 +18,11 @@ PID = "countries/Perigord.txt"
 LMN = "countries/Limousin.txt"
 CNL = "countries/ChannelIslands.txt"
 
+#Iberian
+CBD = "countries/Cordoba.txt"
+SEV = "countries/Sevilla.txt"
+BJZ = "countries/Badajoz.txt"
+
 #East Indochinese
 LAV = "countries/Lavo.txt"
 TAM = "countries/Tambralinga.txt"

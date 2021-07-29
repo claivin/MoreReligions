@@ -1,0 +1,15 @@
+#REGIONIBERIA
+# - Urgell
+
+owner = CAT		#Alfons V of Aragon
+controller = CAT
+# add_core = ARA
+add_core = CAT
+culture = catalan
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool 
+base_manpower = 2
+capital = "T

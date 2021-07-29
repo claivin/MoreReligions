@@ -1,0 +1,35 @@
+#REGIONIBERIA
+#212 - Girona
+
+owner = CAT		#Alfons V of Aragon
+controller = CAT
+# add_core = ARA
+add_core = CAT
+culture = catalan
+religion = catholic
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = fish 
+base_manpower = 3
+capital = "Girona" 
+is_city = yes		# census of 1462, also includes the town of Figueres 
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
+# 1412.6.29 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Jaime de Urgell Uprising
+# 1413.1.1 = { revolt = {} revolt = { type = pretender_rebels size = 1 leader = "Jaume d'Urgell" } controller = REB }
+# 1413.8.31 = { revolt = {} controller = ARA }
+# 1461.9.23 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Catalan nobility revolts against King Joan, later the "Remensa" peasant revolt erupts, which is used by the King to erode the Catalan nobility. 
+# 1462.4.11 = { revolt = {} controller = CAS } # Catalan nobility revolts against King Joan, later the Remena peasant revolt erupts.
+# 1463.1.1 = { revolt = { type = pretender_rebels size = 1 leader = "Pere de Portugal" } controller = REB } # Jaime de Urgell Uprising
+# 1466.6.30 = { revolt = {} controller = PRO } # census of 1473 (population lost due to the war). Succession war against Provence
+# 1469.1.1 = { controller = ARA }
+# 1484.1.1 = { unrest = 3 } # Second Remena revolt
+# 1486.4.21 = { unrest = 0 } # King Ferr
