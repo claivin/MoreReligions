@@ -1,0 +1,24 @@
+#1837 - Etchu
+
+owner = YAM
+controller = YAM
+culture = togoku
+religion = nihon
+capital = "Kanazawa"
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = SBA
+add_core = YAM
+fort_15th = yes #Nanao Castle
+discovered_by = chinese
+discovered_by = MCH
+discovered_by = KHA
+discovered_by = OIR
+discovered_by = QNG
+discovered_by = ANU
+
+

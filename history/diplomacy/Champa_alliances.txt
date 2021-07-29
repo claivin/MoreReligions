@@ -1,5 +1,4 @@
-dependency = {
-	subject_type = "mr_independent_vassal"
+vassal = {
 	first = CHA
 	second = ANN
 	start_date = 1444.1.1

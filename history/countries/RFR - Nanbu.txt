@@ -1,0 +1,34 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = togoku
+religion = nihon
+technology_group = chinese
+capital = 4131 # Mutsu
+religious_school = mr_tendai_school
+1430.1.1 = {
+	monarch = {
+		name = "Tokimasa" 
+		dynasty = "Nanbu"
+		birth_date = 1410.1.1
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = industrious_personality
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Michitsugu"
+		monarch_name = "Michitsugu"
+		dynasty = "Nanbu"
+		birth_date = 1429.1.1
+		death_date = 1484.1.1
+		claim = 90
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

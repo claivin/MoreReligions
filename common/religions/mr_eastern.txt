@@ -198,7 +198,7 @@ eastern = {
 			invite_scholar_modifier_display = mr_shin_school_modifier
 			picture = "GFX_icon_tamrashatiya_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			core_creation = -0.05
+			core_creation = -0.1
 		}
 		mr_tendai_school = {
 			potential_invite_scholar = {
@@ -231,7 +231,7 @@ eastern = {
 			invite_scholar_modifier_display = mr_tendai_school_modifier
 			picture = "GFX_icon_tamrashatiya_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			idea_cost = -0.05
+			idea_cost = -0.1
 		}
 		mr_jodo_school = {
 			potential_invite_scholar = {
@@ -272,7 +272,7 @@ eastern = {
 				OR = {
 					religion = nihon
 					religion = mahayana
-					
+					religion = confucianism
 				}
 			}
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school

@@ -72,14 +72,14 @@ mr_shin_school_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	core_creation = -0.05
+	core_creation = -0.1
 }
 mr_tendai_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	idea_cost = -0.05
+	idea_cost = -0.1
 }
 mr_jodo_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
@@ -100,5 +100,5 @@ mr_shingon_school_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	tolerance_heathen = 1
+	tolerance_heathen = 2
 }
