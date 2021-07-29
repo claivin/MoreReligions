@@ -1,0 +1,133 @@
+change_iberian_name_to_arabic_startup_effect = {
+	if = {
+		limit = {
+			tag = BJZ
+		}
+		override_country_name = MR_NAME_BADAJOZ
+	}
+	if = {
+		limit = {
+			tag = SEV
+		}
+		override_country_name = MR_NAME_SEVILLA
+	}
+	if = {
+		limit = {
+			tag = CBD
+		}
+		override_country_name = MR_NAME_CORDOBA
+	}
+	if = {
+		limit = {
+			tag = GRA
+		}
+		override_country_name = MR_NAME_GRANADA
+	}
+	if = {
+		limit = {
+			tag = VAL
+		}
+		override_country_name = MR_NAME_VALENCIA
+	}
+}
+
+change_iberian_name_to_arabic_effect = {
+	if = {
+		limit = {
+			tag = GAL
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_GALICIA
+	}
+	if = {
+		limit = {
+			tag = LON
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_LEON
+	}
+	if = {
+		limit = {
+			tag = NAV
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_NAVARRA
+	}
+	if = {
+		limit = {
+			tag = CAS
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_CASTILE
+	}
+	if = {
+		limit = {
+			tag = POR
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_PORTUGAL
+	}
+	if = {
+		limit = {
+			tag = BJZ
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_BADAJOZ
+	}
+	if = {
+		limit = {
+			tag = SEV
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_SEVILLA
+	}
+	if = {
+		limit = {
+			tag = CBD
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_CORDOBA
+	}
+	if = {
+		limit = {
+			tag = GRA
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_GALICIA
+	}
+	if = {
+		limit = {
+			tag = VAL
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_VALENCIA
+	}
+	if = {
+		limit = {
+			tag = CAT
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_CATALONIA
+	}
+	if = {
+		limit = {
+			tag = ARA
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_ARAGON
+	}
+	if = {
+		limit = {
+			tag = MJO
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_MAJORCA
+	}
+	if = {
+		limit = {
+			tag = GRA
+			religion_group = muslim
+		}
+		override_country_name = MR_NAME_GRANADA
+	}
+}

@@ -65,7 +65,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_akanya_sutta_school_modifier
-			picture = "GFX_icon_christian_rite_alexandrian"
+			picture = "GFX_icon_akanya_sutta_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			monthly_karma = 0.15
 		}
@@ -131,7 +131,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_brahmin_school_modifier
-			picture = "GFX_icon_akanya_sutta_school"
+			picture = "GFX_icon_brahmin_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			dip_tech_cost_modifier = -0.1
 		}
@@ -196,7 +196,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_shin_school_modifier
-			picture = "GFX_icon_tamrashatiya_school"
+			picture = "GFX_icon_shin_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			core_creation = -0.1
 		}
@@ -229,7 +229,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_tendai_school_modifier
-			picture = "GFX_icon_tamrashatiya_school"
+			picture = "GFX_icon_tendai_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			idea_cost = -0.1
 		}
@@ -262,7 +262,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_jodo_school_modifier
-			picture = "GFX_icon_tamrashatiya_school"
+			picture = "GFX_icon_jodo_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			global_unrest = -2
 		}
@@ -296,7 +296,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_zen_school_modifier
-			picture = "GFX_icon_tamrashatiya_school"
+			picture = "GFX_icon_zen_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			discipline = 0.05
 		}
@@ -329,7 +329,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_shingon_school_modifier
-			picture = "GFX_icon_tamrashatiya_school"
+			picture = "GFX_icon_shingon_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			tolerance_heathen = 2
 		}

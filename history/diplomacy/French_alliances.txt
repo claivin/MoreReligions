@@ -90,3 +90,17 @@ union = {
 	second = ART
 	start_date = 1444.11.11
 }
+
+#Basque Union
+union = {
+	first = NAV
+	second = BRN
+	start_date = 1444.11.11
+}
+
+#Stuart Union
+union = {
+	first = SCO
+	second = BRI
+	start_date = 1444.11.11
+}

@@ -79,6 +79,8 @@ on_startup = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
+	#muslim spain changes names to arabic
+	change_iberian_name_to_arabic_startup_effect = yes
 }
 
 # country
@@ -191,6 +193,30 @@ on_religion_change = {
 			remove_province_modifier = sufi_shrine
 		}
 	}
+	#changes iberian names to original tag name if not muslim
+	if = {
+		limit = {
+			OR = {
+				tag = GAL
+				tag = LON
+				tag = NAV
+				tag = CAS
+				tag = POR
+				tag = BJZ
+				tag = SEV
+				tag = CBD
+				tag = GRA
+				tag = VAL
+				tag = CAT
+				tag = ARA
+				tag = MJO
+			}
+			NOT = { religion_group = muslim }
+		}
+		restore_country_name = YES
+	}
+	#change iberian names to islamic name if muslim
+	change_iberian_name_to_arabic_effect = yes
 	events = {
 		muslim_school_events.20 #Pick School
 		propagate_religion_events.7 #Propagated Country is now Muslim

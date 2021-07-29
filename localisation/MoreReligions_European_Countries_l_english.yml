@@ -1,0 +1,94 @@
+﻿l_english:
+ REI: "Reims"
+ REI_ADJ: "Rémois"
+ REI_ADJ2: "Rémois"
+ 
+ LAO: "Laon"
+ LAO_ADJ: "Laonois"
+ LAO_ADJ2: "Laonois"
+ 
+ LGR: "Langres"
+ LGR_ADJ: "Langrois"
+ LGR_ADJ2: "Langrois"
+ 
+ BVS: "Beauvais"
+ BVS_ADJ: "Beauvois"
+ BVS_ADJ2: "Beauvois"
+
+ CLN: "Châlons"
+ CLN_ADJ: "Châlonois"
+ CLN_ADJ2: "Châlonois"
+ 
+ NYN: "Noyon"
+ NYN_ADJ: "Noyonois"
+ NYN_ADJ2: "Noyonois"
+ 
+ MNE: "Maine"
+ MNE_ADJ: "Mainois"
+ MNE_ADJ2: "Mainois"
+ 
+ ANJ: "Anjou"
+ ANJ_ADJ: "Angevins"
+ ANJ_ADJ2: "Angevins"
+ 
+ PTO: "Poitou"
+ PTO_ADJ: "Poitevin"
+ PTO_ADJ2: "Poitevin"
+ 
+ BLS: "Blois"
+ BLS_ADJ: "Blésois"
+ BLS_ADJ2: "Blésois"
+ 
+ LMC: "La Marche"
+ LMC_ADJ: "La Marche"
+ LMC_ADJ2: "La Marche"
+ 
+ AGM: "Angoulme"
+ AGM_ADJ: "Angoulmois"
+ AGM_ADJ2: "Angoulmois"
+ 
+ FBR: "Free Burgundy"
+ FBR_ADJ: "Burgundian"
+ FBR_ADJ2: "Burgundian"
+ 
+ BRN: "Béarn"
+ BRN_ADJ: "Béarnais"
+ BRN_ADJ2: "Béarnais"
+ 
+ PID: "Perigòrd"
+ PID_ADJ: "Périgordins"
+ PID_ADJ2: "Périgordins"
+ 
+ LMN: "Limousin"
+ LMN_ADJ: "Limousin"
+ LMN_ADJ2: "Limousin"
+ 
+ CNL: "Gurnsey and Jersey"
+ CNL_ADJ: "Channel Islander"
+ CNL_ADJ2: "Channel Islander"
+ 
+ BJZ: "Badajoz"
+ BJZ_ADJ: "Pacense"
+ BJZ_ADJ2: "Pacense"
+ 
+ SEV: "Sevilla"
+ SEV_ADJ: "Sevillan"
+ SEV_ADJ2: "Sevillan"
+ 
+ CBD: "Córdoba" 
+ CBD_ADJ: "Cordobés"
+ CBD_ADJ2: "Cordobés"
+ 
+ MR_NAME_GALICIA: "Ghalisia"
+ MR_NAME_LEON: "Liun"
+ MR_NAME_NAVARRA: "Nafara"
+ MR_NAME_CASTILE: "Qishtala"
+ MR_NAME_PORTUGAL: "Alburtughal"
+ MR_NAME_BADAJOZ: "Batalyaws"
+ MR_NAME_SEVILLA: "Ishbiliyyah"
+ MR_NAME_CORDOBA: "Qurtubah"
+ MR_NAME_VALENCIA: "Balansiyya"
+ MR_NAME_CATALONIA: "Katalwnya"
+ MR_NAME_ARAGON: "'Arajun"
+ MR_NAME_MAJORCA: "Mayurka"
+ MR_NAME_GRANADA: "Garnatah"

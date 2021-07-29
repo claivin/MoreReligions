@@ -115,4 +115,28 @@ spriteTypes = {
 		name = "GFX_icon_mahavihara_school"
 		texturefile = "gfx/interface/icon_mahavihara_school.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_brahmin_school"
+		texturefile = "gfx/interface/icon_brahmin_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_shin_school"
+		texturefile = "gfx/interface/icon_shin_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_tendai_school"
+		texturefile = "gfx/interface/icon_tendai_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_jodo_school"
+		texturefile = "gfx/interface/icon_jodo_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_zen_school"
+		texturefile = "gfx/interface/icon_zen_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_shingon_school"
+		texturefile = "gfx/interface/icon_shingon_school.dds"
+	}
 }
