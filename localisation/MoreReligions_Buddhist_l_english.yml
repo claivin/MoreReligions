@@ -1,6 +1,6 @@
 ﻿l_english:
  yogavacara:0 "Yogavacara"
- yogavacara_religion_desc:0 "A blend of Esoteric and Folk Buddhist Traditions, localized to the Lao and Camobdian region."
+ yogavacara_religion_desc:0 "A blend of Esoteric Buddhism, Theravada Buddhism, and Folk Traditions. Formed in the mid 13th Century, it spread across Laos with very little resistance, and became the de facto faith of the decentralized city states."
  
  yogavacara_rebels_name: "Yogavacara Zealots"
  yogavacara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -10,7 +10,7 @@
  yogavacara_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  ari:0 "Ari"
- ari_religion_desc:0 "An older, tantric form of Buddhism that has survived to this point in the south of burma."
+ ari_religion_desc:0 "An older, tantric form of Theravada Buddhism that formed prior to the rise of the Pagan Empire. With the empire's collapse and the rise of the Hanthawaddy Kingdom, the faith began to spread as an alternative to the traditional Theravadan Faith."
  
  ari_rebels_name: "Ari Zealots"
  ari_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -20,7 +20,7 @@
  ari_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  azhaliism:0 "Azhali"
- azhaliism_religion_desc:0 "A form of Buddhism practiced in the Yunnan region of China. Influenced by both Burmese Buddhism and Tantric Buddhism, it still holds reverence to the local gods and dieties in the region."
+ azhaliism_religion_desc:0 "A form of Buddhism practiced in the Yunnan region of China. Influenced by both Burmese Buddhism and Tantric Buddhism, it still holds reverence to the local gods and dieties in the region. It is considered the religion of the Dali Kingdom."
  
  azhaliism_rebels_name: "Azhali Zealots"
  azhaliism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -29,9 +29,9 @@
  azhaliism_rebels_demand: "Convert $COUNTRYNAME$"
  azhaliism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
- nihon:0 "Nihon Bukkyo"
+ nihon:0 "Shinbutsu"
  nihon_religion_desc:0 "This religion is an amalgamation of the various schools of Buddhism in Japan, from Zen to Pure Land, that existed alongside traditional ancestor worship. Following similar practices to Mahayana Buddhism, it is located entirely within Japan."
- nihon_rebels_name:0 "Zen"
+ nihon_rebels_name:0 "Shinbutsu Zealots"
  nihon_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  nihon_title: "$RELIGION$ Zealots"
  nihon_rebels_army: "$RELIGION$ Army"
@@ -41,14 +41,25 @@
  
  ##Tamrashatiya##
  mr_tamrashatiya_school:0 "Tamrashatiya"
- mr_tamrashatiya_school_desc:0 "Tamrashatiya is the basic practice of reading the Pali Canons and the Tripitaka to have a basic understanding of the most holy path. Common in South East Asian kingdoms such as Sukhothai and in Sri Lankan Kingdoms as well. Considered the foundation of Theravada Buddhism."
+ mr_tamrashatiya_school_desc:0 "Tamrashatiya is the basic practice of reading the Pali Canons and the Tripitaka to have a basic understanding of the most holy path. Common in South East Asian kingdoms such as Sukhothai and in the kingdoms of Sri Lanka as well. Considered the foundation of Theravada Buddhism."
  mr_tamrashatiya_school_modifier:0 "Tamrashatiya"
  
  
  ##Akanya Sutta###
  mr_akanya_sutta_school:0 "Akanya Sutta"
- mr_akanya_sutta_school_desc:0 "The Akanya Sutta Tradition was formed out of a reading of one of the Pali Canons which stated that a king must be subserviant, or at least more understanding of the Sanga and their authority over both moral and legal matters."
+ mr_akanya_sutta_school_desc:0 "The Akanya Sutta Tradition was formed out of a reading of one of the Pali Canons which stated that a king must be chosen from his own peers. As such, this school dictates that a king shall be elected from the ruling class of elites."
  mr_akanya_sutta_school_modifier:0 "Akanya Sutta"
+ 
+ akanya_sutta_elections:0 "Akanya Sutta Monarchy"
+ akanya_sutta_elections_name:0 "Akanya Sutta Monarchy"
+ akanya_sutta_elections_desc:0 "A monarchy by which each successive ruler is voted on by the Sangha and Nobility of the kingdom. \n \n§GAllows for a choice of three potential successors after your ruler dies§!"
+ 
+ eastern_school_events.21.t:0 "Election of the new Divine Ruler"
+ eastern_school_events.21.d:0 "The Sangha gather nearby, pouring over scripture and records of the canons. Nobles eye each other before going to speak with their close allies. It is time for the election of a new king!"
+ eastern_school_events.21.a:0 "A Child of the Nobility has won the vote!"
+ eastern_school_events.21.b:0 "A Child of a General has won the vote!"
+ eastern_school_events.21.c:0 "The Child of the former King has won the vote!"
+ aks_reelect:0 "Recent Election of Ruler"
  
  ##Weizza###
  mr_weizza_school:0 "Weizzas"
@@ -62,13 +73,13 @@
  
  ###Mahavihara###
  mr_mahavihara_school:0 "Mahavihara"
- mr_mahavihara_school_desc:0 "A classical Sri-Lankan form of Buddhism, which developed in the later 14th Century."
+ mr_mahavihara_school_desc:0 "A classical Sri-Lankan form of Buddhism, which developed in the later 14th Century. A more dedicated and orthodox school, it focuses on a traditionalist understanding of the cannons."
  mr_mahavihara_school_modifier:0 "Mahavihara"
  
  
  ###Shin Buddhism###
  mr_shin_school:0 "Shin"
- mr_shin_school_desc:0 "Shin buddhism is a branch of Japanese Buddhism which was founded by the Monk Shinran after leaving the corrupt Tendai school."
+ mr_shin_school_desc:0 "Shin buddhism is a branch of Japanese Buddhism which was founded by the Monk Shinran after leaving the corrupt Tendai school. It was incredibly popular with the clans of Oda and Tokugawa."
  mr_shin_school_modifier:0 "Shin"
  
  ###Tendai Buddhism###

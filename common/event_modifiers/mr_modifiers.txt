@@ -1,3 +1,5 @@
 mr_raising_subject = {
 	country_diplomatic_power = -2
 }
+aks_reelect = {
+}

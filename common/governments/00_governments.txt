@@ -34,6 +34,7 @@ monarchy = {
 				siamese_absolutism
 				confucian_bureaucracy
 				french_elective_monarchy
+				akanya_sutta_elections
 			}
 		}
 		hereditary_vs_nobility = {

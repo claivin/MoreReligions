@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = akanya_sutta_elections
 government_rank = 1
 primary_culture = central_thai
 religion = buddhism
