@@ -331,7 +331,7 @@ eastern = {
 			invite_scholar_modifier_display = mr_shingon_school_modifier
 			picture = "GFX_icon_shingon_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			tolerance_heathen = 2
+			build_cost = -0.15
 		}
 	}
 	
