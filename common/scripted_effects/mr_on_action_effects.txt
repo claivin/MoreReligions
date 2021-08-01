@@ -1,36 +1,3 @@
-change_iberian_name_to_arabic_startup_effect = {
-	if = {
-		limit = {
-			tag = BJZ
-		}
-		override_country_name = MR_NAME_BADAJOZ
-	}
-	if = {
-		limit = {
-			tag = SEV
-		}
-		override_country_name = MR_NAME_SEVILLA
-	}
-	if = {
-		limit = {
-			tag = CBD
-		}
-		override_country_name = MR_NAME_CORDOBA
-	}
-	if = {
-		limit = {
-			tag = GRA
-		}
-		override_country_name = MR_NAME_GRANADA
-	}
-	if = {
-		limit = {
-			tag = VAL
-		}
-		override_country_name = MR_NAME_VALENCIA
-	}
-}
-
 change_iberian_name_to_arabic_effect = {
 	if = {
 		limit = {

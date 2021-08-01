@@ -79,8 +79,6 @@ on_startup = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
-	#muslim spain changes names to arabic
-	change_iberian_name_to_arabic_startup_effect = yes
 }
 
 # country
