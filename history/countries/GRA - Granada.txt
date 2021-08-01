@@ -7,6 +7,7 @@ technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
 religious_school = maliki_school
+override_country_name = MR_NAME_GRANADA
 
 # change_estate_land_share = {
 	# estate = estate_nobles

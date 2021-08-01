@@ -5,3 +5,4 @@ technology_group = muslim
 primary_culture = catalan
 capital = 220	# Valencia
 government_rank = 1
+override_country_name = MR_NAME_VALENCIA
