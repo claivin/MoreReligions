@@ -1,0 +1,7 @@
+#Japan
+YAM = "countries/Yamato.txt"
+MYI = "countries/Miyoshi.txt"
+
+#Burma
+SAG = "countries/Sagaing.txt"
+PIY = "countries/Pinya.txt"
