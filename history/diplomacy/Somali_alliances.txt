@@ -1,0 +1,12 @@
+vassal = {
+	first = IFT
+	second = ZEI
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = IFT
+	second = AUA
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
