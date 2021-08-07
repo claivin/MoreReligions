@@ -4,11 +4,24 @@
  
  PROV4942: "Laon"
  PROV_ADJ4942: "Laon"
+ 
  PROV4943: "Noyon"
  PROV_ADJ4943: "Noyon"
+ 
  PROV4944: "Chalon"
  PROV_ADJ4944: "Chalon"
+ 
  PROV4945: "Île-de-france"
  PROV_ADJ4945: "Parisienne"
+ 
  PROV4946: "Îles de la Manche"
  PROV_ADJ4946: "Channel Islander"
+ 
+ PROV4947: "Wiltshire"
+ PROV_ADJ4947: "Moonraker"
+ 
+ PROV4948: "Yns Môn"
+ PROV_ADJ4948: "Anglesey"
+ 
+ PROV4949: "Isle of Wight"
+ PROV_ADJ4949: "Vectensian"
