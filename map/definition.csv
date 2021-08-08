@@ -181,7 +181,7 @@ province;red;green;blue;x;x
 180;25;136;0;Poitou;x
 181;153;138;64;Valenciennes;x
 182;26;140;128;Vermandois;x
-183;154;142;192;Île-de-France;x
+4945;154;142;192;Île-de-France;x
 184;26;144;255;Orléannais;x
 185;147;222;218;Nemours;x
 186;26;148;64;Champagne;x
@@ -4943,8 +4943,16 @@ province;red;green;blue;x;x
 4942;139;5;248;Laon;x
 4943;204;213;228;Noyon;x
 4944;113;32;149;Chalons;x
-4945;155;109;64;Paris;x
+183;155;109;64;Paris;x
 4946;171;89;108;Channel Islands;x
 4947;129;236;60;Wiltshire;x
 4948;208;26;188;Ynys Mon;x
 4949;199;181;114;Isle of Wight;x
+4950;121;147;155;Armagh;x
+4951;34;99;178;Dubh Linn;x
+4952;140;114;138;Galway;x
+4953;5;76;18;Limerick;x
+4954;189;52;229;Cork;x
+4955;224;228;54;Waterford;x
+4956;20;203;180;Loch nEathach;x
+4957;186;186;147;Leitrim;x

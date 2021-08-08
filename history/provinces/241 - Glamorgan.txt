@@ -5,8 +5,8 @@ latent_trade_goods = {
 	coal
 }
 
-owner = WLS
-controller = WLS
+owner = ENG
+controller = ENG
 culture = welsh
 religion = catholic
 hre = no
@@ -16,7 +16,7 @@ trade_goods = iron
 base_manpower = 1
 capital = "Swansea"
 is_city = yes
-# add_core = ENG
+add_core = ENG
 add_core = WLS
 discovered_by = western
 discovered_by = muslim

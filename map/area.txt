@@ -525,19 +525,24 @@ central_italy_area = { #3
 ########################################
 
 munster_area = { #3
-	4118 4377 4378
+	4118 4377 4378 4954 4955
 }
 
 connacht_area = { #3
-	375 376 4119
+	375 376 4119 4952 4953
 }
 
 leinster_area = { #4
-	373 374 4120 4379
+	373 374 4120 4379 4951
 }
 
 ulster_area = { #3
-	372 4121 4380
+	372 4121 4380 4950 4957
+}
+
+#lake in ireland
+port_lairgan_area = {
+	4956
 }
 
 kingdom_of_the_isles_area = { #3

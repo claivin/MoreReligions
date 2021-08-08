@@ -1,8 +1,8 @@
 #REGIONBRITAIN
 #4366 - Montgomery + Radnor
 
-owner = WLS
-controller = WLS
+owner = ENG
+controller = ENG
 culture = welsh
 religion = catholic
 hre = no
@@ -13,7 +13,7 @@ base_manpower = 1
 capital = "Montgomery"
 fort_15th = yes
 is_city = yes
-# add_core = ENG
+add_core = ENG
 add_core = WLS 
 discovered_by = western
 discovered_by = muslim

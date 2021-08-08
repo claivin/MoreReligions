@@ -43,3 +43,20 @@ NGK = "countries/NongKhai.txt"
 THK = "countries/Thakhek.txt"
 MRG = "countries/Mergui.txt"
 RTK = "countries/Ratanakiri.txt"
+
+#Burma
+SAG = "countries/Sagaing.txt"
+PIY = "countries/Pinya.txt"
+
+#Ethiopia
+AGW = "countries/Agew.txt"
+SLM = "countries/Solomon.txt"
+ZGW = "countries/Zagwe.txt"
+AKS = "countries/Aksum.txt"
+IFT = "countries/Ifat.txt"
+ZEI = "countries/Zeila.txt"
+AUA = "countries/Ausa.txt"
+
+#Japan
+YAM = "countries/Yamato.txt"
+MYI = "countries/Miyoshi.txt"
