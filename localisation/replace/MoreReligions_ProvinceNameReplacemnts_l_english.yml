@@ -2,3 +2,21 @@
  GUY: "Aquitaine"
  GUY_ADJ: "Aquitain"
  GUY_ADJ2: "Aquitain"
+ 
+ home_counties_area: "South East England"
+ 
+ PROV240: "Herefordshire"
+ PROV_ADJ240: "Herefordians"
+ 
+ PROV4372: "Staffordshire"
+ PROV_ADJ4372: "Staffordshire"
+ 
+ PROV102: "Sanremo"
+ PROV_ADJ102: "Sanremesi"
+ 
+ west_burgundy_area: "Burgundy"
+ 
+ bourgogne_area: "Franche-Comté"
+ 
+ PROV193: "Doubs"
+ PROV_ADJ193: "Doubistes"

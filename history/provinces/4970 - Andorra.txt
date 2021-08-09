@@ -1,0 +1,18 @@
+#REGIONFRANCE
+owner = ADR
+controller = ADR
+capital = "Andorra"
+is_city = yes
+culture = mr_andorran
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = livestock
+base_manpower = 1
+add_core = ADR
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+

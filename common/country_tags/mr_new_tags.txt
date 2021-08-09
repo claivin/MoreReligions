@@ -22,6 +22,7 @@ CNL = "countries/ChannelIslands.txt"
 CBD = "countries/Cordoba.txt"
 SEV = "countries/Sevilla.txt"
 BJZ = "countries/Badajoz.txt"
+ADR = "countries/Andorra.txt"
 
 #East Indochinese
 LAV = "countries/Lavo.txt"

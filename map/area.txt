@@ -288,71 +288,72 @@ brittany_area = { #5
 	169 170 171 172 4384
 }
 
-normandy_area = { #4
+normandy_area = { #5 +channel isles
 	167 168 1879 4385 4946
 }
 
-provence_area = { #3
-	201 202 2991 4696
+provence_area = { #5 +nice(better placement on french side
+	201 202 2991 4696 4967
 }
 
-poitou_area = { #4
-	180 4111 4386 4387
+poitou_area = { #5 +aunis
+	180 4111 4386 4387 4968
 }
 
-guyenne_area = { #4
-	194 198 4112 174
+guyenne_area = { #5 +albret
+	194 198 4112 174 4969
 }
 
-pyrenees_area = { #4
-	175 173 176 4694
+pyrenees_area = { #4 +andorra
+	175 173 176 4694 4970
 }
 
 languedoc_area = { #5
 	200 2753 4391 4695 196
 }
 
-bourgogne_area = { #3
+bourgogne_area = { #3 +ain/Haut Saone/Belfort
 	color = { 144 0 32 }
-	192 193 4764
+	 193 4764 4972 4973 4974
 }
 
-west_burgundy_area = { #3
-	191 1877 4392
+west_burgundy_area = { #5 +dijon/tonerre
+	191 1877 4392 192 4971
 }
 
-massif_central_area = { #3
+massif_central_area = { #5
 	color = { 26 26 217 }
 	190 195 199 4697 4777
 }
 
-savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy 
-	203 204 205 4719
+#5 +orange
+savoy_dauphine_area = { # Savoy and Dauphiné, Upper Burgundy 
+	203 204 205 4719 4975
 }
 
-lorraine_area = { #4
-	187 188 189 4766
+lorraine_area = { #5 +toul
+	187 188 189 4766 4966
 }
 
-picardy_area = { #4
+picardy_area = { #5 +noyon
 	87 88 89 1743 4943
 }
 
-ile_de_france_area = { #4
+ile_de_france_area = { #5 +paris
 	182 183 185 4388 4945
 }
 
-champagne_area = { #3
+champagne_area = { #5 +Laon/chalons
 	181 186 4390 4942 4944
 }
 
-loire_area = { #5
+loire_area = { #5 +sarthe/saurmurois
 	color = { 231 143 5 }
-	177 178 4389
+	177 178 4389 4976 4977
 }
 
-orleans_area = {
-	184 179 4776
+orleans_area = { #5 +Sancerre/Vendome
+	184 179 4776 4978 4979
 }
 
 ########################################
@@ -524,19 +525,19 @@ central_italy_area = { #3
 # British Isles			 			   #
 ########################################
 
-munster_area = { #3
+munster_area = { #5 +cork/waterford
 	4118 4377 4378 4954 4955
 }
 
-connacht_area = { #3
+connacht_area = { #5 +gailimer/luimnechan
 	375 376 4119 4952 4953
 }
 
-leinster_area = { #4
+leinster_area = { #5 +dublin
 	373 374 4120 4379 4951
 }
 
-ulster_area = { #3
+ulster_area = { #5 +leitrim/armagh
 	372 4121 4380 4950 4957
 }
 
@@ -545,48 +546,48 @@ port_lairgan_area = {
 	4956
 }
 
-kingdom_of_the_isles_area = { #3
-	253 4364 4365
+kingdom_of_the_isles_area = { #5 +orkney/shetlands
+	253 4364 4365 369 1978
 }
 
-highlands_area = { #5
-	250 252 369 4110 4363
+highlands_area = { #5 +caithness - orkney 
+	250 252 4110 4363 4965
 }
 
 lowlands_area = { #5
 	248 249 251 4361 4362
 }
 
-wales_area = { #4
+wales_area = { #5 +anglesey
 	241 242 4366 4369 4948
 }
 
-scottish_marches_area = { #4
-	246 247 244 4375
+scottish_marches_area = { #5 +durham
+	246 247 244 4375 4964
 }
 
-yorkshire_area = { #4
-	245 4367 4368 4785
+yorkshire_area = { #5 +northriding
+	245 4367 4368 4785 4963
 }
 
-west_midlands_area = { #3
-	239 240 4372
+west_midlands_area = { #5 +shropshire/warwickshire
+	239 240 4372 4959 4960
 }
 
-east_midlands_area = { #3
-	243 1861 4376
+east_midlands_area = { #5 +nottinghamshire/rutland
+	243 1861 4376 4961 4962
 }
 
-wessex_area = { #5
+wessex_area = { #5 +wiltshire
 	233 4130 4373 4374 4947
 }
 
-home_counties_area = { #4
+home_counties_area = { #5 +isle of wight - london
 	235 237 4371 234 4949
 }
 
-east_anglia_area = { #3
-	238 1860 4370 236
+east_anglia_area = { #5 +suffolk/london
+	238 1860 4370 236 4958
 }
 
 ########################################
@@ -658,7 +659,7 @@ western_norway = { #4
 }
 
 subarctic_islands_area = { #4
-	1978 1979 370 371
+	1979 370 371
 }
 
 greenland_area = { #2

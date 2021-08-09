@@ -92,3 +92,8 @@
  MR_NAME_ARAGON: "'Arajun"
  MR_NAME_MAJORCA: "Mayurka"
  MR_NAME_GRANADA: "Garnatah"
+ 
+ ADR: "Andorra"
+ ADR_ADJ: "Andorran"
+ ADR_ADJ2: "Andorran"
+ mr_andorran: "Andorran"
