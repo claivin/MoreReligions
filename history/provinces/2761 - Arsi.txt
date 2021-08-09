@@ -1,8 +1,8 @@
 #2761 - Arsi
 
-owner = IFT
-controller = IFT
-add_core = IFT
+owner = HRA
+controller = HRA
+add_core = HRA
 culture = amhara 
 religion = sunni
 capital = "Assela"

@@ -1,0 +1,72 @@
+Universal School Button by Shwartz99 
+
+Checklist of Religions:
+-Add entry in mr_GROUP.txt
+
+-icons
+	64x64 in gfx\interface\religion_icons	
+	64x64 at the end of strip
+		country_icon_religion.dds
+		duplicate and rename copy to icon_religion.dds
+	32x32 at the end of strip
+		icon_religion_small.dds
+		duplicate and rename copy to province_view_religion.dds
+
+-change provinceview countryview ledge.gfx to new max icon size
+
+-Localization in seperate file
+
+Checklist for Schools:
+-Add history/countries/TAG.txt entry for school
+
+-01_scripted_triggers_muslim_schools
+	change when adding muslim schools
+	Add counterpart for other groups
+
+-Add Static Modifier
+EX.
+zaidi_scholar_modifier = {	
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	shock_damage_received = -0.1
+}
+
+-01_scripted_effects_for_on_actions
+	Take a look at initialize_schools_effect
+	Meant to preset school relations
+	
+-00_scripted_effects
+	add to clear_religious_scholar_modifiers_effect
+	
+-00_on_actions
+	on_startup
+		events = {
+			muslim_school_events.20 #Pick School
+		}
+	on_religion_change
+		events = {
+			muslim_school_events.20 #Pick School
+		}
+	on_new_monarch
+		events = {
+			muslim_school_events.20 #Pick School
+		}
+	on_bi_yearly_pulse_3
+		events = {
+			muslim_school_events.20 #Pick School
+		}
+		
+-gfx\interface
+	add dds icon (52x52)
+	
+-\interface\mr_schoolicons.txt
+	add gfx entry
+	EX.
+	spriteType = {
+		name = "GFX_icon_christian_rite_latin"
+		texturefile = "gfx/interface/icon_christian_rite_latin.dds"
+	}
+	
+-add localisation

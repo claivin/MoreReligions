@@ -1,8 +1,8 @@
 #2773 - Mora
 
-owner = ZEI
-controller = ZEI
-add_core = ZEI
+owner = IFT
+controller = IFT
+add_core = IFT
 add_core = HAR
 culture = harari
 religion = sunni

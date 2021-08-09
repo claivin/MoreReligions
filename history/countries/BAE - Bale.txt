@@ -4,6 +4,6 @@ technology_group = muslim
 unit_type = sub_saharan
 religion = sunni
 primary_culture = amhara
-capital = 2761 
+capital = 1207 # Deker, Harer
 religious_school = shafii_school
 

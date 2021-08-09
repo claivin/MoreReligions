@@ -1,8 +1,8 @@
 #2793 - Hargeisa
 
-owner = ZEI
-controller = ZEI
-add_core = ZEI
+owner = IFT
+controller = IFT
+add_core = IFT
 culture = somali
 religion = sunni
 capital = "Hargeisa"

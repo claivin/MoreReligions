@@ -36,14 +36,14 @@ dependency = {
 dependency = {
 	subject_type = "mr_independent_vassal"
 	first = LNA
-	second = VIE
+	second = MNI
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
 dependency = {
 	subject_type = "mr_independent_vassal"
 	first = LNA
-	second = MNI
+	second = MMA
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }

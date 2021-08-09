@@ -1,8 +1,8 @@
 #1212 - Zeila
 
-owner = ZEI
-controller = ZEI
-add_core = ZEI
+owner = IFT
+controller = IFT
+add_core = IFT
 culture = somali # issa
 religion = sunni
 capital = "Zayla"

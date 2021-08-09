@@ -2,7 +2,7 @@
 
 owner = MRE
 controller = MRE
-add_core = HRA
+add_core = BAE
 add_core = MRE
 culture = somali
 religion = sunni

@@ -1,8 +1,8 @@
 #2779 - Afder
 
-owner = HRA
-controller = HRA
-add_core = HRA
+owner = BAE
+controller = BAE
+add_core = BAE
 culture = somali
 religion = sunni
 capital = "Afder"
