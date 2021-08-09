@@ -1,0 +1,19 @@
+#REGIONIBERIA
+#CoutoMisto
+
+owner = CMS	
+controller = CMS
+add_core = CMS
+culture = galician
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Santiago de Rubias" 
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

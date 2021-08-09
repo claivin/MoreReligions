@@ -23,6 +23,7 @@ CBD = "countries/Cordoba.txt"
 SEV = "countries/Sevilla.txt"
 BJZ = "countries/Badajoz.txt"
 ADR = "countries/Andorra.txt"
+CMS = "countries/CoutoMisto.txt"
 
 #East Indochinese
 LAV = "countries/Lavo.txt"

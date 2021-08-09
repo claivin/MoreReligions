@@ -3,4 +3,4 @@ add_government_reform = feudalism_reform
 religion = catholic
 primary_culture = mr_andorran
 technology_group = western
-capital = 4970	# Barcelona
+capital = 4970	#Andorra
