@@ -19,7 +19,6 @@ country_decisions = {
 			NOT = { exists = ETH }
 			NOT = { tag = ETH }
 			NOT = { tag = IFT }
-			NOT = { tag = ZEI }
 			NOT = { tag = AUA }
 		}
 		provinces_to_highlight = {
