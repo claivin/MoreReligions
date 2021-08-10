@@ -158,8 +158,8 @@
  PROV4993: "Raya"
  PROV_ADJ4993: "Raya"
  
- PROV4994: ""
- PROV_ADJ4994: ""
+ PROV4994: "Wallonia-Brabant"
+ PROV_ADJ4994: "Wallonian"
  
  PROV4995: "Yfat"
  PROV_ADJ4995: "Yfat"
@@ -184,3 +184,78 @@
  
  PROV5002: "Gamu Gofa"
  PROV_ADJ5002: "Gamu Gofa"
+ 
+ PROV5003: "Land van Aalst"
+ PROV_ADJ5003: "Aalstenaar"
+ 
+ PROV5004: "Dunkirk"
+ PROV_ADJ5004: "Dunkirkian"
+ 
+ PROV5005: "Leuven"
+ PROV_ADJ5005: "Leuvenaar"
+ 
+ PROV5006: "Lier"
+ PROV_ADJ5006: "Westlander"
+ 
+ PROV5007: "Tilburg"
+ PROV_ADJ5007: "Tilburger"
+ 
+ PROV5008: "Limburg"
+ PROV_ADJ5008: "Limburger"
+ 
+ PROV5009: "Rotterdam"
+ PROV_ADJ5009: "Rotterdammer"
+ 
+ PROV5010: "Savona"
+ PROV_ADJ5010: "Savonesi"
+ 
+ PROV5011: "Massa"
+ PROV_ADJ5011: "Massesi"
+ 
+ PROV5012: "Asti"
+ PROV_ADJ5012: "Astigiano"
+ 
+ PROV5013: "Crema"
+ PROV_ADJ5013: "Cremaschi"
+ 
+ PROV5014: "Vicenza"
+ PROV_ADJ5014: "Vicentini"
+ 
+ PROV5015: "Fermo"
+ PROV_ADJ5015: "Fermani"
+ 
+ PROV5016: "L'Aquila"
+ PROV_ADJ5016: "Aquilani"
+ 
+ PROV5017: "Viterbo"
+ PROV_ADJ5017: "Viterbesi"
+ 
+ PROV5018: "Caserta"
+ PROV_ADJ5018: "Casertani"
+ 
+ PROV5019: "Benevento"
+ PROV_ADJ5019: "Beneventani"
+ 
+ PROV5020: "Tatanto"
+ PROV_ADJ5020: "Tarantino"
+ 
+ PROV5021: "Potenza"
+ PROV_ADJ5021: "Potentini"
+ 
+ PROV5022: "Catanzaro"
+ PROV_ADJ5022: "Catanzaresi"
+ 
+ PROV5023: "Ragusa"
+ PROV_ADJ5023: "Ragusano"
+ 
+ PROV5024: "Catania"
+ PROV_ADJ5024: "Catania"
+ 
+ PROV5025: "Caltanissetta"
+ PROV_ADJ5025: "Nisseni"
+ 
+ PROV5026: "Enna"
+ PROV_ADJ5026: "Ennesi"
+ 
+ PROV5027: "Nuoro"
+ PROV_ADJ5027: "Nuoresi"

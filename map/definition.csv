@@ -4961,7 +4961,7 @@ province;red;green;blue;x;x
 4960;91;175;110;Warwickshire;x
 4961;149;133;77;Nottinghamshire;x
 4962;44;95;56;Rutland;x
-4963;168;225;194;NORTH RIDING;x
+4963;168;225;194;North Riding;x
 4964;55;199;6;Durham;x
 4965;86;73;96;Caithness;x
 4966;187;227;25;Toul;x
@@ -4992,7 +4992,7 @@ province;red;green;blue;x;x
 4991;34;254;80;Adwa;x
 4992;78;163;98;Dankalia;x
 4993;120;54;181;Raya;x
-4994;53;3;184;UNUSED;x
+4994;53;3;184;Wallonia Brabant;x
 4995;205;71;245;Yfat;x
 4996;180;128;127;Adal;x
 4997;112;32;132;Menagesha;x
@@ -5001,3 +5001,28 @@ province;red;green;blue;x;x
 5000;183;115;138;Maji;x
 5001;165;115;207;Galeb;x
 5002;186;130;132;Gamu Gofa;x
+5003;108;52;76;Land van Aalst;x
+5004;78;84;143;Dunkirk;x
+5005;120;181;50;Leuven;x
+5006;237;92;28;Lier;x
+5007;168;233;134;Tilburg;x
+5008;50;7;71;Limburg;x
+5009;77;112;177;Rotterdam;x
+5010;45;67;0;Savona;x
+5011;166;243;199;Massa;x
+5012;230;246;170;Asti;x
+5013;164;92;49;Crema;x
+5014;69;79;180;Vicenza;x
+5015;242;233;146;Fermo;x
+5016;30;40;133;LAquila;x
+5017;75;4;27;Viterbo;x
+5018;38;89;147;Caserta;x
+5019;209;4;77;Benevento;x
+5020;196;134;206;Taranto;x
+5021;250;114;135;Potenza;x
+5022;148;141;173;Catanzaro;x
+5023;20;57;200;SicilianRagusa;x
+5024;182;152;7;Catania;x
+5025;201;6;123;Caltanissetta;x
+5026;192;248;11;Enna;x
+5027;246;103;156;Nuoro;x

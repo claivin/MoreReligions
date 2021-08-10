@@ -360,29 +360,29 @@ orleans_area = { #5 +Sancerre/Vendome full
 # Low Countries				 		   #
 ########################################
 
-wallonia_area = { #4
-	91 93 94 1866
+wallonia_area = { #4 +Wallonia-Brabant full
+	91 93 94 1866 4994
 }
 
-holland_area = { #4
-	96 97 98 4383
+holland_area = { #4 +rotterdam full
+	96 97 98 4383 5009
 }
 
-flanders_area = { #3
-	90 1865 4769
+flanders_area = { #3 +dunkirk/land van aalst full
+	90 1865 4769 5004 5003
 }
 
 frisia_area = { #5
 	99 100 1931 4381 4382
 }
 
-brabant_area = { #3
+brabant_area = { #3 +leuven/lier full
 	color = { 118 193 153 }
-	92 1744 2974
+	92 1744 2974 5005 5006
 }
 
-north_brabant_area = { #3
-	95 4770 1742
+north_brabant_area = { #3 +tilburg/limburg
+	95 4770 1742 5007 5008
 }
 
 ########################################
@@ -459,66 +459,66 @@ macaronesia_area = { #4
 # Italy					 			   #
 ########################################
 
-venetia_area = { #5
+venetia_area = { #5 full
 	108 111 112 1774 4729
 }
 
-lombardy_area = { #5
+lombardy_area = { #5 full
 	104 1862 4728 4740 2979
 }
 
-po_valley_area = { #3
+po_valley_area = { #3 +crema/vicenza full
 	color = { 205 190 47 }
-	109 4739 107
+	109 4739 107 5013 5014
 }
 
-piedmont_area = { #4
-	103 1875 2981 4727
+piedmont_area = { #4 +asti full
+	103 1875 2981 4727 5012
 }
 
-tuscany_area = { #5
+tuscany_area = { #5 full
 	115 116 117 2978 2980
 }
 
-liguria_area = { #3
-	101 102 2992
+liguria_area = { #3 +savona/massa full
+	101 102 2992 5010 5011
 }
 
-corsica_sardinia_area = { #4
-	127 1247 2986 4735
+corsica_sardinia_area = { #4 +nuoro full
+	127 1247 2986 4735 5027
 }
 
-sicily_area = { #3 # now Eastern Sicily
-	124 126 2982
+sicily_area = { #3 + SicilianRagusa/Catania full # now Eastern Sicily
+	124 126 2982 5023 5024
 }
 
-western_sicily_area = { #3
-	125 4736 4737
+western_sicily_area = { #3 +caltanissetta/catania full
+	125 4736 4737 5026 5025
 }
 
-naples_area = { #3  #Campania
-	121 2983 4734
+naples_area = { #3  +caserta/benevento #Campania full
+	121 2983 4734 5018 5019
 }
 
-lazio_area = { #4 Lazio-Umbria
-	118 2976 4731 4732
+lazio_area = { #4 +viterbo Lazio-Umbria full
+	118 2976 4731 4732 5017
 }
 
-calabria_area = { #3 (+Lucania)
-	123 1934 2984
+calabria_area = { #3 +potenza/catanzaro (+Lucania) full
+	123 1934 2984 5022 5021
 }
 
-apulia_area = { #4
-	122 1933 2985 4733
+apulia_area = { #4 +tarranto full
+	122 1933 2985 4733 5020
 }
 
-emilia_romagna_area = { #5
+emilia_romagna_area = { #5 full
 	color = { 24 222 66 }
 	105 106 113 114 4730
 }
 
-central_italy_area = { #3
-	119 120 2977
+central_italy_area = { #3 +fermo/LAquila full
+	119 120 2977 5015 5016
 }
 
 ########################################

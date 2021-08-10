@@ -11,8 +11,8 @@
  PROV4372: "Staffordshire"
  PROV_ADJ4372: "Staffordshire"
  
- PROV102: "Sanremo"
- PROV_ADJ102: "Sanremesi"
+ PROV102: "Imperia"
+ PROV_ADJ102: "Imperia"
  
  west_burgundy_area: "Burgundy"
  
@@ -26,3 +26,6 @@
  
  PROV2768: "Yeja"
  PROV_ADJ2768: "Yeja"
+  
+ PROV1934: "Matera"
+ PROV_ADJ1934: "Matera"
