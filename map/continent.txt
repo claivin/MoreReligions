@@ -282,6 +282,8 @@ africa = {
 	4167 4168 4169#Atlas Mountains
 	#Transvaal
 	4781 4782 4783 4784
+	#mr_ethiopia
+	4991 4992 4993 4995 4996 4997 4998 4999 5000 5001 5002
 }
 
 north_america = {

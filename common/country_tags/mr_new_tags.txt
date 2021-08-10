@@ -18,6 +18,9 @@ PID = "countries/Perigord.txt"
 LMN = "countries/Limousin.txt"
 CNL = "countries/ChannelIslands.txt"
 ORA = "countries/Orange.txt"
+TUL = "countries/Toul.txt"
+VDN = "countries/Verdun.txt"
+MTZ = "countries/Metz.txt"
 
 #Britain
 YRK = "countries/York.txt"

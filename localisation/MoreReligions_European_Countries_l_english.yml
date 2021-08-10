@@ -145,3 +145,15 @@
  ORA: "Orange"
  ORA_ADJ: "Orange"
  ORA_ADJ2: "Orange"
+ 
+ VDN: "Verdun"
+ VDN_ADJ: "Meusiens"
+ VDN_ADJ2: "Meusiens"
+ 
+ TUL: "Toul"
+ TUL_ADJ: "Béléniens"
+ TUL_ADJ2: "Béléniens"
+ 
+ MTZ: "Metz"
+ MTZ_ADJ: "Messin"
+ MTZ_ADJ2: "Messin"

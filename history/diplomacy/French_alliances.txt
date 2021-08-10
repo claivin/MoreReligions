@@ -104,3 +104,35 @@ union = {
 	second = BRI
 	start_date = 1444.11.11
 }
+
+#Three Bishophrics
+alliance = {
+	first = VDN
+	second = TUL
+	start_date = 1444.11.11
+}
+alliance = {
+	first = VDN
+	second = MTZ
+	start_date = 1444.11.11
+}
+alliance = {
+	first = TUL
+	second = VDN
+	start_date = 1444.11.11
+}
+alliance = {
+	first = TUL
+	second = MTZ
+	start_date = 1444.11.11
+}
+alliance = {
+	first = MTZ
+	second = VDN
+	start_date = 1444.11.11
+}
+alliance = {
+	first = MTZ
+	second = TUL
+	start_date = 1444.11.11
+}

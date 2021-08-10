@@ -1,6 +1,6 @@
 #REGIONFRANCE
-owner = PRO
-controller = PRO
+owner = TUL
+controller = TUL
 capital = "Toul"
 is_city = yes
 culture = burgundian
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 1
 trade_goods = grain
 base_manpower = 1
-add_core = PRO
+add_core = TUL
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
