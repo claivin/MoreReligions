@@ -1,0 +1,23 @@
+#1162 - Wukari
+
+culture = jukun
+religion = shamanism #Fetishism
+capital = "Wukari"
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+
+
+native_size = 60
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = sub_saharan
+
+owner = JUK
+controller = JUK
+add_core = JUK
+is_city = yes
+trade_goods = grain
+

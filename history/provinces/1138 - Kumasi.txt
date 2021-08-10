@@ -1,0 +1,22 @@
+#1138 - Kumasi
+
+culture = aka
+base_manpower = 1
+religion = shamanism #Fetishism
+capital = "Akyem Kotoko"
+trade_goods = gold
+hre = no
+base_tax = 4 
+base_production = 4
+native_size = 60
+native_ferocity = 4
+native_hostileness = 9
+add_core = BON
+controller = BON
+owner = BON
+
+
+
+discovered_by = sub_saharan
+
+

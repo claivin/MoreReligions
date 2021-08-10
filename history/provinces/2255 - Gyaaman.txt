@@ -1,0 +1,20 @@
+
+
+owner = BON
+controller = BON
+add_core = BON
+is_city = yes
+culture = aka 
+religion = shamanism #Fetishism
+capital = "Amanvi"
+trade_goods = coffee #Kola nuts
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+
+
+
+discovered_by = sub_saharan
+
+

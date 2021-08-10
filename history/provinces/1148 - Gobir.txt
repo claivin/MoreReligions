@@ -1,0 +1,21 @@
+#1148 - Gobir
+
+owner = ZZZ
+controller = ZZZ
+add_core = ZZZ
+culture = hausa
+is_city = yes
+base_manpower = 3
+religion = sunni
+capital = "Birnin Lalle"
+trade_goods = iron
+hre = no
+base_tax = 3 
+base_production = 3
+
+
+
+discovered_by = sub_saharan
+
+
+

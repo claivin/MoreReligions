@@ -1,0 +1,19 @@
+# No previous file for Ketu
+
+owner = YRE
+controller = YRE
+add_core = YRE
+is_city = yes
+culture = yorumba 
+religion = shamanism #Fetishism
+capital = "Ketu"
+trade_goods = slaves
+hre = no
+base_tax = 2 
+base_production = 2
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 1
+discovered_by = sub_saharan
+ 

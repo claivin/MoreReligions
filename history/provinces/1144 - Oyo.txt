@@ -1,0 +1,20 @@
+#1144 - Oyo
+
+owner = YRE
+controller = YRE
+add_core = YRE
+culture = yorumba 
+religion = shamanism #Fetishism
+capital = "Oyo"
+is_city = yes
+base_manpower = 1
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 3
+
+
+
+discovered_by = sub_saharan
+
+

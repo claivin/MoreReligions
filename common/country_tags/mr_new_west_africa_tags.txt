@@ -1,0 +1,13 @@
+
+#West Africa
+TKR = "countries/Tekrar.txt"
+OAG = "countries/Ouagadougou.txt"
+TND = "countries/Tenkodogo.txt"
+KNM = "countries/Kanem.txt"
+GAO = "countries/Gao.txt"
+ZMA = "countries/Zarmeganda.txt"
+JUK = "countries/Jukun.txt"
+FNG = "countries/Fadangourma.txt"
+DEN = "countries/Denkyira.txt"	
+YRE = "countries/Yoruba.txt"
+TUJ = "countries/Tunjur.txt"

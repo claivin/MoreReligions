@@ -1,0 +1,22 @@
+# No previous file for Galam
+
+culture = fulani 
+religion = shamanism #Fetishism
+capital = "Galam"
+trade_goods = unknown
+hre = no
+base_tax = 3 
+base_production = 3
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 1
+owner = MAL
+controller = MAL
+add_core = MAL
+trade_goods = gold
+
+
+discovered_by = sub_saharan
+
+

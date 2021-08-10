@@ -1,0 +1,23 @@
+# No previous file for Kala
+
+owner = MAL
+controller = MAL
+add_core = MAL
+is_city = yes
+culture = bozo 
+religion = shamanism #Fetishism
+capital = "Isaq"
+trade_goods = fish #river fisheries
+hre = no
+base_tax = 4 
+base_production = 4
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 1
+
+
+
+discovered_by = sub_saharan
+
+

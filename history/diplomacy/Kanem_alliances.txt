@@ -1,0 +1,24 @@
+vassal = {
+	first = KNM
+	second = TUJ
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = KNM
+	second = KAN
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = KNM
+	second = KTS
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = KNM
+	second = JUK
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}

@@ -1,0 +1,15 @@
+#1142 - Dendi
+
+owner = FNG
+controller = FNG
+add_core = FNG
+culture = songhai
+is_city = yes
+base_manpower = 1
+religion = shamanism #Fetishism
+capital = "Lulama"
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 3
+discovered_by = sub_saharan
