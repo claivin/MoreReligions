@@ -4,7 +4,7 @@
 owner = GRA
 controller = GRA
 add_core = GRA
-culture = andalusian
+culture = andalucian
 religion = catholic
 hre = no
 base_tax = 1

@@ -1,7 +1,7 @@
 #1207 - Ogaden
 
-controller = BAE
 owner = BAE
+controller = BAE
 add_core = BAE
 culture = somali
 religion = sunni

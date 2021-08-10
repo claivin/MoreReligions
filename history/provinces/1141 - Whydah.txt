@@ -12,9 +12,8 @@ native_size = 50
 native_ferocity = 4
 native_hostileness = 9
 add_core = DAH
-controller = DAH
 owner = DAH
-
+controller = DAH
 
 discovered_by = sub_saharan
 
