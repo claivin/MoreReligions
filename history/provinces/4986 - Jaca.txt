@@ -1,0 +1,19 @@
+#REGIONIBERIA
+#Jaca
+
+owner = ARA	
+controller = ARA
+add_core = ARA
+culture = aragonese
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+capital = "Jaca" 
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

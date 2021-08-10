@@ -1,0 +1,19 @@
+#REGIONIBERIA
+#4987 - Elche
+
+owner = VAL
+controller = VAL
+add_core = VAL
+culture = catalan
+religion = catholic
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain 
+base_manpower = 1
+capital = "Elche" 
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

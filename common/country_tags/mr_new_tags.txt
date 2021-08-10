@@ -17,6 +17,19 @@ BRN = "countries/Bearn.txt"
 PID = "countries/Perigord.txt"
 LMN = "countries/Limousin.txt"
 CNL = "countries/ChannelIslands.txt"
+ORA = "countries/Orange.txt"
+
+#Britain
+YRK = "countries/York.txt"
+OXF = "countries/Oxford.txt"
+DRM = "countries/Durham.txt"
+LCS = "countries/Lancaster.txt"
+CHS = "countries/Chester.txt"
+PEM = "countries/Pembroke.txt"
+GLM = "countries/Glamorgan.txt"
+PWY = "countries/Powys.txt"
+SHP = "countries/Shropshire.txt"
+KNT = "countries/Kent.txt"
 
 #Iberian
 CBD = "countries/Cordoba.txt"
@@ -56,8 +69,9 @@ SLM = "countries/Solomon.txt"
 ZGW = "countries/Zagwe.txt"
 AKS = "countries/Aksum.txt"
 IFT = "countries/Ifat.txt"
-BEA = "countries/Bale.txt"
+BAE = "countries/Bale.txt"
 AUA = "countries/Ausa.txt"
+HRA = "countries/Harla.txt"
 
 #Japan
 YAM = "countries/Yamato.txt"

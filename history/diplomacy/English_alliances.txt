@@ -1,0 +1,58 @@
+#English Relations
+march = {
+	first = ENG
+	second = PEM
+	start_date = 1444.1.1
+}
+march = {
+	first = ENG
+	second = GLM
+	start_date = 1444.1.1
+}
+march = {
+	first = ENG
+	second = PWY
+	start_date = 1444.1.1
+}
+march = {
+	first = ENG
+	second = CHS
+	start_date = 1444.1.1
+}
+vassal = {
+	first = ENG
+	second = SHP
+	start_date = 1444.1.1
+}
+vassal = {
+	first = ENG
+	second = CRN
+	start_date = 1444.1.1
+}
+vassal = {
+	first = ENG
+	second = OXF
+	start_date = 1444.1.1
+}
+vassal = {
+	first = ENG
+	second = KNT
+	start_date = 1444.1.1
+}
+
+#York Relations
+vassal = {
+	first = YRK
+	second = DRM
+	start_date = 1444.1.1
+}
+vassal = {
+	first = YRK
+	second = LCS
+	start_date = 1444.1.1
+}
+vassal = {
+	first = YRK
+	second = NOL
+	start_date = 1444.1.1
+}
