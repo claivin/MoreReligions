@@ -1,0 +1,26 @@
+#4365 - Mann
+
+owner = KOI
+controller = KOI
+culture = mr_manx
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Castletown"
+is_city = yes
+add_core = KOI
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+# 1585.1.1 = { religion = protestant }
+# 1707.5.12 = {
+	# owner = GBR
+	# controller = GBR
+	# add_core = GBR
+# }

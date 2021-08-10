@@ -1,8 +1,8 @@
 #REGIONBRITAIN
 #4366 - Montgomery + Radnor
 
-owner = ENG
-controller = ENG
+owner = PWY
+controller = PWY
 culture = welsh
 religion = catholic
 hre = no
@@ -13,8 +13,8 @@ base_manpower = 1
 capital = "Montgomery"
 fort_15th = yes
 is_city = yes
-add_core = ENG
-add_core = WLS 
+add_core = PWY
+add_core = WLS
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

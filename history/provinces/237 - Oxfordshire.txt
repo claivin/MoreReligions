@@ -1,8 +1,8 @@
 #237 - Oxfordshire
 #Oxfordshire+Bukinghamshire+Berkshire
 
-owner = ENG
-controller = ENG
+owner = OXF
+controller = OXF
 culture = english
 religion = catholic
 hre = no
@@ -12,7 +12,7 @@ trade_goods = livestock
 base_manpower = 2
 capital = "Oxford"
 is_city = yes
-add_core = ENG
+add_core = OXF
 # seat_in_parliament = yes
 discovered_by = western
 discovered_by = muslim
