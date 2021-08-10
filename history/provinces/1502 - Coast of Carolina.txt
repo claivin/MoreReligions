@@ -1,0 +1,11 @@
+#WATERTILE 
+discovered_by = north_american
+discovered_by = CRE
+discovered_by = CHE
+
+
+
+
+1521.1.1 = { discovered_by = SPA } # Lucas Vsquez de Aylln
+1526.1.1 = { discovered_by = FRA }
+
