@@ -1,0 +1,21 @@
+#REGIONFRANCE
+# 4967 Nice
+
+owner = PRO
+controller = PRO 
+capital = "Nice"
+is_city = yes
+culture = occitain
+religion = catholic
+hre = yes
+base_tax = 1
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+add_core = PRO
+fort_15th = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 10
