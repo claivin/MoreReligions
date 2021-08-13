@@ -53,6 +53,7 @@ categories =  {
 		
 		terrain_override = {		
 			1034 1035 1104 1105 2074 2128 2129 2025 2440 2574
+			5029 #isfajorthur	
 		}
 	}
 
@@ -129,6 +130,8 @@ categories =  {
 			67 4765 4769 4712 #Germany
 			
 			4831 4832 # Mandala
+			
+			593 #si thammarat
 		}		
 	}
 	
@@ -226,6 +229,9 @@ categories =  {
 			4840 # Mandala
 			
 			4856
+			5028 #Austfirthir
+			5031 #Quang Tri
+			5045 #druze hills
 		}
 	}
 
@@ -365,6 +371,7 @@ categories =  {
 			4653 4655 4656 4680 4679
 			# 1.30
 			4750 4754
+			371 #akureyri
 		}
 	}
 
@@ -394,7 +401,7 @@ categories =  {
 			213 218 219 #Spain
 			526 #India
 			417 4341 #Iran
-			593 2376 2391 2394  #Sout East Asia
+			2376 2391 2394  #Sout East Asia
 			
 			136 4174  # Balkans	
 
@@ -436,6 +443,10 @@ categories =  {
 			4795 # Mandala
 			
 			4858 4857 2735 1090
+			
+			370 #reykjavik
+			5032 5033 5035 5036 5037 5040 #mr_indochina
+			568 #chittagong
 		}
 	}
 
@@ -454,7 +465,7 @@ categories =  {
 		terrain_override = {
 			1237 1245 2703 #South East Asia
 			746 838 #South America
-			 553 564 566 567 568 570 571 573 1950 2042
+			 553 564 566 567 570 571 573 1950 2042
 			 2091 2096
 			2039
 			486 490 743 745 748 826 835 840 846 848 2630 2637 2641 2647 2654 2655 2659 2664 2819 2927
@@ -478,6 +489,7 @@ categories =  {
 			4804 4799 2709 4817 # Mandala
 			
 			1085 4869 2730
+			5034 5038 5039 5041 5042 #mr_indochina
 		}
 	}	
 	
@@ -540,6 +552,7 @@ categories =  {
 			860 2618
 			
 			1093
+			5044 #baalbek
 		}
 	}
 	
@@ -653,6 +666,7 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			
 			2736 4863 4861 4855 1094 2733
+			5043 #tyre
 		}
 	}
 
@@ -741,6 +755,7 @@ categories =  {
 			4836 2383 4829
 			
 			1092 4851 1094 4850 4846 4881
+			2384 #nong khai
 		}		
 	}
 	

@@ -658,9 +658,10 @@ western_norway = { #4
 	23 24 2752 4145
 }
 
-subarctic_islands_area = { #4
-	1979 370 371
+subarctic_islands_area = { #3 +Austfirthir/Isfajorthr full
+	1979 370 371 5028 5029
 }
+#5030 = Vatnajokull (impassable glacier)
 
 greenland_area = { #2
 	1104 1105
@@ -1226,8 +1227,8 @@ aleppo_area = { #4
 	377 1849 2313 4298
 }
 
-syria_area = { #4
-	378 382 1855 4297
+syria_area = { #4 +Tyre full
+	378 382 1855 4297 5043
 }
 
 trans_jordan_area = { #3
@@ -1348,9 +1349,9 @@ mascat_area = { #3 (Batinah and Muscat coast
 	399 400 4286
 }
 
-syrian_desert_area = { #3
+syrian_desert_area = { #3 +baalbek/druze hills full
 	color = { 219 30 57 }
-	405 4270 4271
+	405 4270 4271 5044 5045
 }
 
 ########################################
@@ -2304,23 +2305,23 @@ saurashtra_area = { #5
 # Indo-China  	                       #
 ########################################
 
-upper_burma_area = { #3
-	584 2399 581
+upper_burma_area = { #3 +Shwebo/Myingyan full
+	584 2399 581 5035 5036
 }
 
-central_burma_area = {
-	4394 4396 585 4395 
+central_burma_area = { #4 +Meiktila full
+	4394 4396 585 4395 5037
 }
 
-chindwin_area = {
-	2398 580 4393 2397
+chindwin_area = { #4 +Kanbalu full
+	2398 580 4393 2397 5034
 }
 
-kachin_area = { #4
+kachin_area = { #5 full
 	582 2395 2396 4404 4405
 }
 
-shan_hill_area = { #4
+shan_hill_area = { #5 full
 	583 588 2400 4397 4406
 }
 
@@ -2329,7 +2330,7 @@ karenni_area = { #3 #Southern Shan States
 }
 
 
-malaya_area = { #4
+malaya_area = { #4 
 	 598 599 2393 4814
 }
 
@@ -2341,15 +2342,15 @@ malacca_area = { #3
 	595 596 2392
 }
 
-khorat_area = { #5
-	612 4836 2383 2386
+khorat_area = { #4 +Khon Buri full
+	612 4836 2383 2386 5041
 }
 
-champasak_area = {
+champasak_area = { #full
 	608 4839 4840 2382 4838
 }
 
-champa_area = { #5
+champa_area = { #5 full
 	606 607 1022 2374 4822
 }
 
@@ -2357,32 +2358,32 @@ tay_nguyen_area = { #3
 	2375 4823 4824
 }
 
-cambodia_area = { #5
-	604 4825 4826 2379
+cambodia_area = { #4 +Koh Kong full
+	604 4825 4826 2379 5040
 }
 
-angkor_area = { #5
+angkor_area = { #5 full
 	609 4828 4827 1823 2378
 }
 
-lower_burma_area = { #5
+lower_burma_area = { #5 full
 	586 590 1815 2403 4399
 }
 
-arakan_area = { #3
-	568 579 2402
+arakan_area = { #3 +kyukpyu/bandarban full
+	568 579 2402 5038 5039
 }
 
-mekong_area = { #4
+mekong_area = { #4 full
 	color = { 220 218 51 }
 	605 2376 2377 4829 2380
 }
 
-tenasserim_area = { #5
-	593 2390 2391
+tenasserim_area = { #3 +Mardelong/Setul full
+	593 2390 2391 5032 5033
 }
 
-north_tenasserim_area = { #5
+north_tenasserim_area = { #5 full
 	591 592 2404 2387 4835
 }
 
@@ -2390,31 +2391,31 @@ north_malaya_area = { # 4
 	594 2394 4812 4813
 }
 
-vietnam_area = { #4
-	610 1016 2373 4821
+vietnam_area = { #4 +Quang Tri full
+	610 1016 2373 4821 5031
 }
 
-red_river_delta_area = { #5
+red_river_delta_area = { #5 full
 	613 616 2372 4819 4820
 }
 
-north_laos_area = { #4
+north_laos_area = { #5 full
 	615 2371 2381 4837 1844
 }
 
-vientiane_area = { #5
-	614 2384 2385 611
+vientiane_area = { #4 +Udon Thani full
+	614 2384 2385 611 5042
 }
 
-central_thai_area = { #5
+central_thai_area = { #5 full
 	600 4831 4832 4830 603
 }
 
-sukhothai_area = { #5
+sukhothai_area = { #5 full
 	2388 2389 601 4833 4834
 }
 
-northern_thai_area = { #5
+northern_thai_area = { #5 full
 	602 1817 589 4842 4841
 }
 

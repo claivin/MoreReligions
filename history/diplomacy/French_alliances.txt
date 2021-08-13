@@ -1,12 +1,22 @@
 #French Relations
 union = {
 	first = FRA
-	second = ORL
+	second = ANJ
 	start_date = 1392.1.1
 }
 union = {
 	first = FRA
-	second = PIC
+	second = PRO
+	start_date = 1402.1.1
+}
+union = {
+	first = FRA
+	second = BAR
+	start_date = 1402.1.1
+}
+union = {
+	first = FRA
+	second = LOR
 	start_date = 1402.1.1
 }
 vassal = {
