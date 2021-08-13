@@ -1,0 +1,10 @@
+
+#Ethiopia
+AGW = "countries/Agew.txt"
+SLM = "countries/Solomon.txt"
+ZGW = "countries/Zagwe.txt"
+AKS = "countries/Aksum.txt"
+IFT = "countries/Ifat.txt"
+BAE = "countries/Bale.txt"
+AUA = "countries/Ausa.txt"
+HRA = "countries/Harla.txt"
