@@ -62,6 +62,9 @@ THK = "countries/Thakhek.txt"
 MRG = "countries/Mergui.txt"
 RTK = "countries/Ratanakiri.txt"
 
+#Maritime SEA
+LKS = "countries/Langkasuka.txt"
+
 #Burma
 SAG = "countries/Sagaing.txt"
 PIY = "countries/Pinya.txt"
@@ -79,3 +82,16 @@ HRA = "countries/Harla.txt"
 #Japan
 YAM = "countries/Yamato.txt"
 MYI = "countries/Miyoshi.txt"
+
+#West Africa
+TKR = "countries/Tekrar.txt"
+OAG = "countries/Ouagadougou.txt"
+TND = "countries/Tenkodogo.txt"
+KNM = "countries/Kanem.txt"
+GAO = "countries/Gao.txt"
+ZMA = "countries/Zarmeganda.txt"
+JUK = "countries/Jukun.txt"
+FNG = "countries/Fadangourma.txt"
+DEN = "countries/Denkyira.txt"	
+YRE = "countries/Yoruba.txt"
+TUJ = "countries/Tunjur.txt"

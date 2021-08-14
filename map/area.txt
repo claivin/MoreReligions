@@ -542,9 +542,9 @@ ulster_area = { #5 +leitrim/armagh full
 }
 
 #lake in ireland
-port_lairgan_area = {
-	4956
-}
+# port_lairgan_area = {
+	# 4956
+# }
 
 kingdom_of_the_isles_area = { #5 +orkney/shetlands full
 	253 4364 4365 369 1978
@@ -567,7 +567,7 @@ scottish_marches_area = { #5 +durham full
 }
 
 yorkshire_area = { #5 +northriding full
-	245 4367 4368 4785 4963
+	245 4367 4368 4785 4963	
 }
 
 west_midlands_area = { #5 +shropshire/warwickshire full
