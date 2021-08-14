@@ -53,7 +53,8 @@ categories =  {
 		
 		terrain_override = {		
 			1034 1035 1104 1105 2074 2128 2129 2025 2440 2574
-			5029 #isfajorthur	
+			5029 #isfajorthur
+			5046 5047 5048 #greenland
 		}
 	}
 

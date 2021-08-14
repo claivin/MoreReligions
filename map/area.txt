@@ -663,8 +663,8 @@ subarctic_islands_area = { #3 +Austfirthir/Isfajorthr full
 }
 #5030 = Vatnajokull (impassable glacier)
 
-greenland_area = { #2
-	1104 1105
+greenland_area = { #2 +Angmagssalik/Sermersooq/Nuuk full
+	1104 1105 5046 5047 5048
 }
 
 ########################################
