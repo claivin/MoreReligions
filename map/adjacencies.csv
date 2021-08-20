@@ -24,7 +24,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4110;369;sea;1282;2757;1705;2757;1710;Sutherland-Orkney
 97;100;sea;1269;2890;1581;2886;1576;Holland-Friesland
 96;1865;sea;1269;-1;-1;-1;-1;Zeeland-Gent
-1017;1818;sea;1390;4853;1213;4848;1208;Suo-Chikuzen
 1014;4186;sea;1390;4860;1202;4872;1202;Bungo-Iyo
 4186;1825;sea;1390;4881;1219;4880;1214;Aki-Iyo
 2159;666;sea;1370;-1;-1;-1;-1;Jiangmen-Hainan
@@ -42,7 +41,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1215;387;sea;1330;3482;849;3484;853;Tajura-Mocha
 112;1774;sea;1308;2995;1432;2994;1434;Venice-Treviso
 54;4141;sea;1268;2945;1599;2943;1597;Stade-Dithmarschen
-1820;1021;sea;1391;4912;1219;4919;1223;Awa-Settsu
 4131;4193;sea;1387;4999;1357;5005;1351;Oshima-Mutsu
 1032;1852;sea;4225;5099;1408;5073;1386;Kurils-Tokachi
 1199;1201;sea;1448;-1;-1;-1;-1;Bagamoyo-Zanzibar
@@ -112,4 +110,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4385;4946;sea;1272;-1;-1;-1;-1;Coetin-Channel
 242;4948;sea;1248;-1;-1;-1;-1;Gwynedd-Anglesey
 234;4949;sea;1272;-1;-1;-1;-1;Hampshire-Wight
+1820;5063;sea;1391;-1;-1;-1;-1;Awa-Awaji
+5063;5057;sea;1391;-1;-1;-1;-1;Awaji-Izumi
+5061;1818;sea;1390;-1;-1;-1;-1;Nagato-Chikuzen
 -1;-1;;-1;-1;-1;-1;-1;-1;

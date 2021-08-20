@@ -2563,58 +2563,58 @@ south_korea_area = { #4 (Jeolla, Chungcheong) +Jeju
 	 737 1013 2741 4228 4229
 }
 
-hokkaido_area = { #5
+hokkaido_area = { #5 full
 	1031 1032 1847 1852 4193
 }
 
-hokuriku_area = { #3
-	1023 1024 1837
+hokuriku_area = { #3 +noto/kaga full
+	1023 1024 1837 5055 5056
 }
 
-kanto_area = { #3 #Western Kanto
-	1028 1843 4189
+kanto_area = { #3 #Western Kanto +izu/saitama full
+	1028 1843 4189 5052 5053
 }
 
-eastern_kanto_area = { #3
-	1027 4190 4191
+eastern_kanto_area = { #3 +awa/kazusa full
+	1027 4190 4191 5050	5051
 }
 
-kyushu_area = { #4 #Southern Kyushu
-	1012 1015 4180 4181
+kyushu_area = { #4 #Southern Kyushu +osumi full
+	1012 1015 4180 4181 5065
 }
 
-northern_kyushu = {
-	1014 1818 4182 4651
+northern_kyushu = { # +chikugo full
+	1014 1818 4182 4651 5064
 }
 
-shikoku_area = { #3
-	1819 1820 4186
+shikoku_area = { #3 +sanaki/awaji full
+	1819 1820 4186 5062 5063
 }
 
-eastern_chubu_area = { #4
-	1029 1839 4188 4360
+eastern_chubu_area = { #4 +matsumoto full
+	1029 1839 4188 4360 5054
 }
 
-chubu_area = { #3 (Western Chubu)
+chubu_area = { #3 (Western Chubu) +shima/iga full
 	color = { 219 83 61 }
-	1030 1835 4359
+	1030 1835 4359 5058 5058
 }
 
-kinai_area = { #4
+kinai_area = { #4 +izumi full
 	color = { 208 206 65 }
-	1020 1021 1832 4187
+	1020 1021 1832 4187 5057
 }
 
-thohoku_area = { #4
-	1025 1026 4131 4192
+thohoku_area = { #4 +miyagi full
+	1025 1026 4131 4192 5049
 }
 
-sanindo_area = { #4
-	1018 1830 4183 4185 
+sanindo_area = { #4 +inaba full
+	1018 1830 4183 4185 5060
 }
 
-saigoku_area = { #4 #Sanyodo
-	1017 1019 1825 4184
+saigoku_area = { #4 #Sanyodo +nagato full
+	1017 1019 1825 4184 5061
 }
 
 ########################################

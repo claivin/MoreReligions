@@ -133,6 +133,7 @@ categories =  {
 			4831 4832 # Mandala
 			
 			593 #si thammarat
+			5058 #mr_japan
 		}		
 	}
 	
@@ -160,6 +161,7 @@ categories =  {
 			960 1109 
 			1026 4187 #Japan
 			312 #Eastern Europe
+			5051 5052 #mr_japan
 		}                                      
 	}
 	
@@ -233,6 +235,7 @@ categories =  {
 			5028 #Austfirthir
 			5031 #Quang Tri
 			5045 #druze hills
+			5054 5060 5062 5063 5064 #mr_japan
 		}
 	}
 
@@ -448,6 +451,7 @@ categories =  {
 			370 #reykjavik
 			5032 5033 5035 5036 5037 5040 #mr_indochina
 			568 #chittagong
+			5049 5050 5053 5055 5056 5057 5059 5061 5065 #mr_japan
 		}
 	}
 
