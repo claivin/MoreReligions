@@ -20,28 +20,28 @@ dependency = {
 	end_date = 1574.1.1
 }
 dependency = {
-	subject_type = "mr_independent_vassal"
+	subject_type = "tributary_state"
 	first = LNA
 	second = HSE
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
 dependency = {
-	subject_type = "mr_independent_vassal"
+	subject_type = "tributary_state"
 	first = LNA
 	second = MPA
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
 dependency = {
-	subject_type = "mr_independent_vassal"
+	subject_type = "tributary_state"
 	first = LNA
 	second = MNI
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
 dependency = {
-	subject_type = "mr_independent_vassal"
+	subject_type = "tributary_state"
 	first = LNA
 	second = MMA
 	start_date = 1444.1.1
