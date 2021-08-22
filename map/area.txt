@@ -1345,7 +1345,7 @@ oman_area = { #3 (Oman Proper)
 	403 4285 4287  
 }
 
-mascat_area = { #3 (Batinah and Muscat coast
+mascat_area = { #3 (Batinah and Muscat coast)
 	399 400 4286
 }
 
@@ -2597,7 +2597,7 @@ eastern_chubu_area = { #4 +matsumoto full
 
 chubu_area = { #3 (Western Chubu) +shima/iga full
 	color = { 219 83 61 }
-	1030 1835 4359 5058 5058
+	1030 1835 4359 5058 5059
 }
 
 kinai_area = { #4 +izumi full
