@@ -426,8 +426,8 @@ galicia_area = { #4 +couto misto full
 	206 4554 4555 4558 4980
 }
 
-baleares_area = { #5 EXCEPTION
-	333 4559 4560
+baleares_area = { #5 +corsica/n.corsica (w. med. islands area) full
+	333 4559 4560 1247 5066
 }
 
 basque_country = { #5 +gastiez/donostia full
@@ -484,8 +484,8 @@ liguria_area = { #3 +savona/massa full
 	101 102 2992 5010 5011
 }
 
-corsica_sardinia_area = { #4 +nuoro full
-	127 1247 2986 4735 5027
+corsica_sardinia_area = { #4 +nuoro/olbia full
+	127 2986 4735 5027 5067
 }
 
 sicily_area = { #3 + SicilianRagusa/Catania full # now Eastern Sicily
@@ -897,11 +897,11 @@ saratov_area = { #3
 # Germany			 				   #
 ########################################
 
-silesia_area = { #4
+silesia_area = { #4 full
 	263 264 2966 4238 4723
 }
 
-bohemia_area = { #5
+bohemia_area = { #5 full
 	 266 2968 2970 4725 4724
 }
 
@@ -921,37 +921,37 @@ south_saxony_area = { #4
 	59 61 4744 62
 }
 
-upper_bavaria_area = { #4
+upper_bavaria_area = { #4 +tolz full
 	color = { 180 220 220 }
-	65 2955 4707 4708
+	65 2955 4707 4708 5072
 }
 
-lower_bavaria_area = { #4
-	64 1757 2956 2957
+lower_bavaria_area = { #4 +burghausen full
+	64 1757 2956 2957 5071
 }
 
-east_bavaria_area = { #3
-	76 4760 4709
+east_bavaria_area = { #3 +linz/steyr full
+	76 4760 4709 5069 5070
 } 
 
-lower_swabia_area = { #3 (West Swabia)
-	70 4713 4712
+lower_swabia_area = { #3 (West Swabia) +biberach/gmund full
+	70 4713 4712 5074 5075
 }
 
-franconia_area = { #4 (Lower Franconia)
+franconia_area = { #4 (Lower Franconia) +nivensdadt full
 	color = { 121 49 117 }
-	4718 4715 71 79
+	4718 4715 71 79 5082
 }
 
-upper_franconia_area = { #4
-	66 67 4716 4717
+upper_franconia_area = { #4 +munchberg full
+	66 67 4716 4717 5083
+}
+	
+upper_swabia_area = { #4 (East Swabia) +kempten full
+	68 1868 4711 1872 5073
 }
 
-upper_swabia_area = { #4 (East Swabia)
-	68 1868 4711 1872
-}
-
-northern_saxony_area = { #4 (Saxe-Altmark)
+northern_saxony_area = { #4 (Saxe-Altmark) full
 	color = { 229 20 20 }
 	52 58 2964 4741 4742
 }
@@ -965,7 +965,7 @@ neumark_area = { #3
 	49 2969 4747
 }
 
-mittelmark_area = { #5
+mittelmark_area = { #5 full
 	50 51 1759 4748 2993
 }
 
@@ -977,42 +977,42 @@ hinter_pommern_area = { #3
 	48 2995 4746
 }
 
-tirol_area = { #5
+tirol_area = { #5 full
 	73 110 1768 4710 4758
 }
 
-austria_proper_area = { #5
+austria_proper_area = { #5 full
 	color = { 213 40 40 }
 	133 134 1770 4761 4762
 }
 
-inner_austria_area = { #4
-	128 132 1863 4759
+inner_austria_area = { #4 +oststeirmark full
+	128 132 1863 4759 5068
 }
 
-carinthia_area = { #4 # Carniola in-game
+carinthia_area = { #4 # Carniola in-game full
 	color = { 46 217 110 }
 	129 130 1769 4738 4751
 }
 
-switzerland_area = { #4
+switzerland_area = { #4 full
 	166 1869 1870 1873 4722
 }
 
-romandie_area = { #3
+romandie_area = { #3 full
 	165 1867 1871 4720 4721
 }
 
-upper_rhineland_area = { #3 # now 'Baden'
-	72 74 4714 
+upper_rhineland_area = { #3 # now 'Baden' +pforzheim/offenburg full
+	72 74 4714  5077 5076
 }
 
-alsace_area = { #3
-	75 1880 4765
+alsace_area = { #3 +Colmar/haguenau full
+	75 1880 4765 5079 5078
 }
 
-palatinate_area = { #3
-	77 1761 4767
+palatinate_area = { #3 +worms/mosbach full
+	77 1761 4767 5080 5081
 }
 
 north_rhine_area = { #4

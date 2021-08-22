@@ -236,6 +236,7 @@ categories =  {
 			5031 #Quang Tri
 			5045 #druze hills
 			5054 5060 5062 5063 5064 #mr_japan
+			4974 4967 #mr_france
 		}
 	}
 
@@ -306,6 +307,8 @@ categories =  {
 			4766 4767 4768 4770
 			
 			4853 4852 4864
+			#mr_france
+			5077 5080 5083 4966 4973 5075 5008 5007 5006 4776 4977 4959 4963 4950 4957 4952 4953#mr_germany
 		}
 	}
 	
@@ -376,6 +379,7 @@ categories =  {
 			# 1.30
 			4750 4754
 			371 #akureyri
+			5072 #m4_germany
 		}
 	}
 
@@ -723,6 +727,7 @@ categories =  {
 			4422 4436 4464 #Central India
 			4561 4566 4553 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
+			4965 #mr_scotland
 		}
 	}
 
