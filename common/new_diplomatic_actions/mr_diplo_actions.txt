@@ -1,433 +1,433 @@
-ask_to_become_independent_vassal = {
-	category = influence
-
-	alert_index = 6
-	alert_tooltip = demand_independent_vassal
-
-	require_acceptance = yes
-
-	is_visible = {
-		FROM = {
-			is_subject = no
-		}
-		is_subject = no
-	}
-	is_allowed = {
-		#checks if asker has more prestige than recipient
-		variable_arithmetic_trigger = {
-			custom_tooltip = HAS_MORE_PRESTIGE_THAN_GUY_BEING_ASKED
-			export_to_variable = {
-				variable_name = my_prestige
-				value = trigger_value:prestige
-			}
-			export_to_variable = {
-				variable_name = their_prestige
-				value = trigger_value:prestige
-				who = FROM
-			}
-			prestige = 0
-			check_variable = {
-				which = my_prestige
-				which = their_prestige
-			}
-		}
-		#checks if asker has at least 1.5x more dev than recipient
-		variable_arithmetic_trigger = {
-			custom_tooltip = HAS_MORE_DEV_THAN_GUY_BEING_ASKED
-			export_to_variable = {
-				variable_name = my_dev
-				value = trigger_value:total_development
-			}
-			export_to_variable = {
-				variable_name = their_dev
-				value = trigger_value:total_development
-				who = FROM
-			}
-			multiply_variable = {            
-				which = their_dev
-				value = 1.5
-			}
-			check_variable = {
-				which = my_dev
-				which = their_dev
-			}
-		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 150
-			}
-			alliance_with = ROOT
-		}
-		is_at_war = no
-		FROM = {
-			is_at_war = no
-		}
-	}
-	on_accept = {
-		create_subject = {
-			subject_type = mr_independent_vassal
-			subject = FROM
-		}
-		FROM = {
-			set_country_flag = became_independent_vassal
-		}
-	}
-	on_decline = {
-		#nothing
-	}
-	ai_acceptance = {
-		#POSITIVE
-		add_entry = {
-			limit = {
-				FROM = {
-					OR = {
-						ai_attitude = { who = ROOT attitude = attitude_allied }
-						ai_attitude = { who = ROOT attitude = attitude_friendly }
-						ai_attitude = { who = ROOT attitude = attitude_threatened }
-					}
-				}
-			}
-			name = FRIENDLY_ATTITUDE_TO_ROOT
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			limit = {
-				FROM = {
-					marriage_with = ROOT
-				}
-			}
-			name = ROYAL_MARRIAGE_WITH_ROOT
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		#Variable
-		add_entry = {
-			NAME = GOVERNMENT_RANK_DIFFERENCE_OF_ONE
-			limit = {
-				FROM = { government_rank = 1 }
-				ROOT = { government_rank = 2 }
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			NAME = GOVERNMENT_RANK_DIFFERENCE_OF_ONE
-			limit = {
-				FROM = { government_rank = 2 }
-				FROM = { NOT = { government_rank = 1 } }
-				ROOT = { government_rank = 3 }
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			NAME = GOVERNMENT_RANK_DIFFERENCE_OF_TWO
-			limit = {
-				FROM = { government_rank = 1 }
-				ROOT = { government_rank = 3 }
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 20
-			}
-		}
-		add_entry = {
-			NAME = ROOT_DIP_REP
-			export_to_variable = {
-				which = ai_value
-				value = modifier:diplomatic_reputation
-			}
-			multiply_variable = { which = ai_value value = 3 }
-		}
-		add_entry = {
-			name = TRUST
-			export_to_variable = {
-				which = ai_value
-				value = trust
-				who = FROM
-				with = ROOT
-			}
-			divide_variable = { which = ai_value value = 10 }
-		}
-		add_entry = {
-			name = OPINION
-			export_to_variable = {
-				which = ai_value
-				value = opinion
-				who = FROM
-				with = ROOT
-			}
-			divide_variable = { which = ai_value value = 4 }
-		}
-		add_entry = {
-			NAME = DISTANCE
-			export_to_variable = {
-				which = ai_value
-				value = border_distance
-				who = FROM
-			}
-			divide_variable = { which = ai_value value = 2 }
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = OUR_PRESTIGE
-			export_to_variable = {
-				which = ai_value
-				value = prestige
-				who = ROOT
-			}
-		}
-		#negatives
-		add_entry = {
-			name = BASE_RELUCTANCE
-			export_to_variable = {
-				which = ai_value
-				value = -50
-			}
-		}
-		add_entry = {
-			name = BOTH_NOT_PART_OF_HRE
-			limit = {
-				FROM = {
-					is_part_of_hre = yes
-				}
-				ROOT = {
-					is_part_of_hre = no
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -75
-			}
-		}
-		add_entry = {
-			name = BOTH_PART_OF_HRE
-			limit = {
-				FROM = {
-					is_part_of_hre = yes
-				}
-				ROOT = {
-					is_part_of_hre = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -25
-			}
-		}
-		add_entry = {
-			name = ROOT_IS_HERETIC
-			limit = {
-				FROM = {
-					religion_group = ROOT
-					NOT = { religion = ROOT }
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -10
-			}
-		}
-		add_entry = {
-			name = ROOT_IS_HEATHEN
-			limit = {
-				FROM = {
-					NOT = { religion_group = ROOT }
-					NOT = { religion = ROOT }
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -20
-			}
-		}
-		add_entry = {
-			name = THEIR_PRESTIGE
-			export_to_variable = {
-				which = ai_value
-				value = prestige
-				who = FROM
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		#will never accept
-		add_entry = {
-			name = FROM_HAS_SUBJECTS
-			limit = {
-				FROM = {
-					num_of_subjects = 1
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -1000
-			}
-		}
-		add_entry = {
-			name = FROM_IS_ELECTOR
-			limit = {
-				FROM = {
-					is_elector = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -1000
-			}
-		}
-		add_entry = {
-			name = FROM_IS_THE_POPE
-			limit = {
-				FROM = {
-					tag = PAP
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -1000
-			}
-		}
-		add_entry = {
-			name = FROM_IS_OVER_TWO_HUNDRED_DEV
-			limit = {
-				FROM = {
-					total_development = 200
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -1000
-			}
-		}
-		add_entry = {
-			name = FROM_IS_AN_EMPIRE
-			limit = {
-				FROM = {
-					government_rank = 3
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = -1000
-			}
-		}
-		add_entry = {
-			limit = {
-				FROM = {
-					ai_attitude = {
-						who = ROOT
-						attitude = attitude_hostile
-					}
-				}
-			}
-			name = HOSTILE_ATTITUDE_TO_ROOT
-			export_to_variable = {
-				which = ai_value
-				value = -1000
-			}
-		}
-	}
-
-	ai_will_do = { # this is a trigger
-		# has_opinion_modifier = {
-			# modifier = insulted
-			# who = FROM
-		# }
-	}
-}
-
-cancel_independent_vassal =  {
-	category = influence
-	require_acceptance = no
-	is_visible = {
-		overlord_of = FROM
-		FROM = {
-			is_subject_of_type = mr_independent_vassal
-		}
-	}
-	is_allowed = {
-		is_at_war = no
-	}
-	on_accept = {
-		add_trust = {
-			who = FROM
-			value = -35
-			mutual = yes
-		}
-		FROM = {
-			grant_independence = yes
-			clr_country_flag = in_process_of_being_raised_to_vassal 
-		}
-		clr_country_flag = in_process_of_raising_to_vassal
-		clr_country_flag = became_independent_vassal
-	}
-	ai_will_do = {
-		OR = {
-			any_country = {
-				is_supporting_independence_of = ROOT
-			}
-			liberty_desire = 90
-		}
-	}
-}
-
-raise_independent_vassal =  {
-	category = influence
-	alert_index = 6
-	alert_tooltip = raising_independent_vassal
-	require_acceptance = no
-	
-	is_visible = {
-		FROM = {
-			is_subject_of_type = mr_independent_vassal
-			is_subject_of = ROOT
-		}
-		NOT = { has_country_flag = in_process_of_raising_to_vassal }
-	}
-	is_allowed = {
-		is_at_war = no
-		custom_trigger_tooltip = {
-			tooltip = HAS_BEEN_INDEPENDENT_VASSAL_FOR_FIVE_YEARS
-			FROM = {
-				had_country_flag = {
-					flag = became_independent_vassal
-					days = 1825
-				}
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = CURRENTLY_RAISING_VASSAL
-			NOT = { has_country_flag = in_process_of_raising_to_vassal }
-		}
-		hidden_trigger = {
-			NOT = {
-				has_country_flag = currently_looking_at_raise_event
-			}
-		}
-	}
-	on_accept = {
-		FROM = {
-			country_event = {
-				id = mr_subject_events.1
-			}
-		}
-	}
-	ai_will_do = {
-		OR = {
-			any_country = {
-				is_supporting_independence_of = ROOT
-			}
-			liberty_desire = 90
-		}
-	}
-}
+#ask_to_become_independent_vassal = {
+#	category = influence
+#
+#	alert_index = 6
+#	alert_tooltip = demand_independent_vassal
+#
+#	require_acceptance = yes
+#
+#	is_visible = {
+#		FROM = {
+#			is_subject = no
+#		}
+#		is_subject = no
+#	}
+#	is_allowed = {
+#		#checks if asker has more prestige than recipient
+#		variable_arithmetic_trigger = {
+#			custom_tooltip = HAS_MORE_PRESTIGE_THAN_GUY_BEING_ASKED
+#			export_to_variable = {
+#				variable_name = my_prestige
+#				value = trigger_value:prestige
+#			}
+#			export_to_variable = {
+#				variable_name = their_prestige
+#				value = trigger_value:prestige
+#				who = FROM
+#			}
+#			prestige = 0
+#			check_variable = {
+#				which = my_prestige
+#				which = their_prestige
+#			}
+#		}
+#		#checks if asker has at least 1.5x more dev than recipient
+#		variable_arithmetic_trigger = {
+#			custom_tooltip = HAS_MORE_DEV_THAN_GUY_BEING_ASKED
+#			export_to_variable = {
+#				variable_name = my_dev
+#				value = trigger_value:total_development
+#			}
+#			export_to_variable = {
+#				variable_name = their_dev
+#				value = trigger_value:total_development
+#				who = FROM
+#			}
+#			multiply_variable = {            
+#				which = their_dev
+#				value = 1.5
+#			}
+#			check_variable = {
+#				which = my_dev
+#				which = their_dev
+#			}
+#		}
+#		FROM = {
+#			has_opinion = {
+#				who = ROOT
+#				value = 150
+#			}
+#			alliance_with = ROOT
+#		}
+#		is_at_war = no
+#		FROM = {
+#			is_at_war = no
+#		}
+#	}
+#	on_accept = {
+#		create_subject = {
+#			subject_type = mr_independent_vassal
+#			subject = FROM
+#		}
+#		FROM = {
+#			set_country_flag = became_independent_vassal
+#		}
+#	}
+#	on_decline = {
+#		#nothing
+#	}
+#	ai_acceptance = {
+#		#POSITIVE
+#		add_entry = {
+#			limit = {
+#				FROM = {
+#					OR = {
+#						ai_attitude = { who = ROOT attitude = attitude_allied }
+#						ai_attitude = { who = ROOT attitude = attitude_friendly }
+#						ai_attitude = { who = ROOT attitude = attitude_threatened }
+#					}
+#				}
+#			}
+#			name = FRIENDLY_ATTITUDE_TO_ROOT
+#			export_to_variable = {
+#				which = ai_value
+#				value = 10
+#			}
+#		}
+#		add_entry = {
+#			limit = {
+#				FROM = {
+#					marriage_with = ROOT
+#				}
+#			}
+#			name = ROYAL_MARRIAGE_WITH_ROOT
+#			export_to_variable = {
+#				which = ai_value
+#				value = 10
+#			}
+#		}
+#		#Variable
+#		add_entry = {
+#			NAME = GOVERNMENT_RANK_DIFFERENCE_OF_ONE
+#			limit = {
+#				FROM = { government_rank = 1 }
+#				ROOT = { government_rank = 2 }
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = 10
+#			}
+#		}
+#		add_entry = {
+#			NAME = GOVERNMENT_RANK_DIFFERENCE_OF_ONE
+#			limit = {
+#				FROM = { government_rank = 2 }
+#				FROM = { NOT = { government_rank = 1 } }
+#				ROOT = { government_rank = 3 }
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = 10
+#			}
+#		}
+#		add_entry = {
+#			NAME = GOVERNMENT_RANK_DIFFERENCE_OF_TWO
+#			limit = {
+#				FROM = { government_rank = 1 }
+#				ROOT = { government_rank = 3 }
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = 20
+#			}
+#		}
+#		add_entry = {
+#			NAME = ROOT_DIP_REP
+#			export_to_variable = {
+#				which = ai_value
+#				value = modifier:diplomatic_reputation
+#			}
+#			multiply_variable = { which = ai_value value = 3 }
+#		}
+#		add_entry = {
+#			name = TRUST
+#			export_to_variable = {
+#				which = ai_value
+#				value = trust
+#				who = FROM
+#				with = ROOT
+#			}
+#			divide_variable = { which = ai_value value = 10 }
+#		}
+#		add_entry = {
+#			name = OPINION
+#			export_to_variable = {
+#				which = ai_value
+#				value = opinion
+#				who = FROM
+#				with = ROOT
+#			}
+#			divide_variable = { which = ai_value value = 4 }
+#		}
+#		add_entry = {
+#			NAME = DISTANCE
+#			export_to_variable = {
+#				which = ai_value
+#				value = border_distance
+#				who = FROM
+#			}
+#			divide_variable = { which = ai_value value = 2 }
+#			multiply_variable = { which = ai_value value = -1 }
+#		}
+#		add_entry = {
+#			name = OUR_PRESTIGE
+#			export_to_variable = {
+#				which = ai_value
+#				value = prestige
+#				who = ROOT
+#			}
+#		}
+#		#negatives
+#		add_entry = {
+#			name = BASE_RELUCTANCE
+#			export_to_variable = {
+#				which = ai_value
+#				value = -50
+#			}
+#		}
+#		add_entry = {
+#			name = BOTH_NOT_PART_OF_HRE
+#			limit = {
+#				FROM = {
+#					is_part_of_hre = yes
+#				}
+#				ROOT = {
+#					is_part_of_hre = no
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -75
+#			}
+#		}
+#		add_entry = {
+#			name = BOTH_PART_OF_HRE
+#			limit = {
+#				FROM = {
+#					is_part_of_hre = yes
+#				}
+#				ROOT = {
+#					is_part_of_hre = yes
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -25
+#			}
+#		}
+#		add_entry = {
+#			name = ROOT_IS_HERETIC
+#			limit = {
+#				FROM = {
+#					religion_group = ROOT
+#					NOT = { religion = ROOT }
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -10
+#			}
+#		}
+#		add_entry = {
+#			name = ROOT_IS_HEATHEN
+#			limit = {
+#				FROM = {
+#					NOT = { religion_group = ROOT }
+#					NOT = { religion = ROOT }
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -20
+#			}
+#		}
+#		add_entry = {
+#			name = THEIR_PRESTIGE
+#			export_to_variable = {
+#				which = ai_value
+#				value = prestige
+#				who = FROM
+#			}
+#			multiply_variable = { which = ai_value value = -1 }
+#		}
+#		#will never accept
+#		add_entry = {
+#			name = FROM_HAS_SUBJECTS
+#			limit = {
+#				FROM = {
+#					num_of_subjects = 1
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -1000
+#			}
+#		}
+#		add_entry = {
+#			name = FROM_IS_ELECTOR
+#			limit = {
+#				FROM = {
+#					is_elector = yes
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -1000
+#			}
+#		}
+#		add_entry = {
+#			name = FROM_IS_THE_POPE
+#			limit = {
+#				FROM = {
+#					tag = PAP
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -1000
+#			}
+#		}
+#		add_entry = {
+#			name = FROM_IS_OVER_TWO_HUNDRED_DEV
+#			limit = {
+#				FROM = {
+#					total_development = 200
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -1000
+#			}
+#		}
+#		add_entry = {
+#			name = FROM_IS_AN_EMPIRE
+#			limit = {
+#				FROM = {
+#					government_rank = 3
+#				}
+#			}
+#			export_to_variable = {
+#				which = ai_value
+#				value = -1000
+#			}
+#		}
+#		add_entry = {
+#			limit = {
+#				FROM = {
+#					ai_attitude = {
+#						who = ROOT
+#						attitude = attitude_hostile
+#					}
+#				}
+#			}
+#			name = HOSTILE_ATTITUDE_TO_ROOT
+#			export_to_variable = {
+#				which = ai_value
+#				value = -1000
+#			}
+#		}
+#	}
+#
+#	ai_will_do = { # this is a trigger
+#		# has_opinion_modifier = {
+#			# modifier = insulted
+#			# who = FROM
+#		# }
+#	}
+#}
+#
+#cancel_independent_vassal =  {
+#	category = influence
+#	require_acceptance = no
+#	is_visible = {
+#		overlord_of = FROM
+#		FROM = {
+#			is_subject_of_type = mr_independent_vassal
+#		}
+#	}
+#	is_allowed = {
+#		is_at_war = no
+#	}
+#	on_accept = {
+#		add_trust = {
+#			who = FROM
+#			value = -35
+#			mutual = yes
+#		}
+#		FROM = {
+#			grant_independence = yes
+#			clr_country_flag = in_process_of_being_raised_to_vassal 
+#		}
+#		clr_country_flag = in_process_of_raising_to_vassal
+#		clr_country_flag = became_independent_vassal
+#	}
+#	ai_will_do = {
+#		OR = {
+#			any_country = {
+#				is_supporting_independence_of = ROOT
+#			}
+#			liberty_desire = 90
+#		}
+#	}
+#}
+#
+#raise_independent_vassal =  {
+#	category = influence
+#	alert_index = 6
+#	alert_tooltip = raising_independent_vassal
+#	require_acceptance = no
+#	
+#	is_visible = {
+#		FROM = {
+#			is_subject_of_type = mr_independent_vassal
+#			is_subject_of = ROOT
+#		}
+#		NOT = { has_country_flag = in_process_of_raising_to_vassal }
+#	}
+#	is_allowed = {
+#		is_at_war = no
+#		custom_trigger_tooltip = {
+#			tooltip = HAS_BEEN_INDEPENDENT_VASSAL_FOR_FIVE_YEARS
+#			FROM = {
+#				had_country_flag = {
+#					flag = became_independent_vassal
+#					days = 1825
+#				}
+#			}
+#		}
+#		custom_trigger_tooltip = {
+#			tooltip = CURRENTLY_RAISING_VASSAL
+#			NOT = { has_country_flag = in_process_of_raising_to_vassal }
+#		}
+#		hidden_trigger = {
+#			NOT = {
+#				has_country_flag = currently_looking_at_raise_event
+#			}
+#		}
+#	}
+#	on_accept = {
+#		FROM = {
+#			country_event = {
+#				id = mr_subject_events.1
+#			}
+#		}
+#	}
+#	ai_will_do = {
+#		OR = {
+#			any_country = {
+#				is_supporting_independence_of = ROOT
+#			}
+#			liberty_desire = 90
+#		}
+#	}
+#}
