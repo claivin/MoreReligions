@@ -82,3 +82,191 @@ cheese = {
 		factor = 1
 	}
 }
+whales = {
+	color = { 0.04 0.71 1.00 }
+	modifier = {
+		allowed_marine_fraction = 0.1
+	}
+	province = {
+		local_sailors_modifier = 0.25
+	}
+	chance = {
+		factor = 1
+	}
+}
+steel = {
+	color = { 0.32 0.55 0.55 }
+	modifier = {
+		global_regiment_cost = -0.15
+	}
+	province = {
+		local_production_efficiency = 0.1
+	}
+	chance = {
+		factor = 1
+	}
+}
+rice = {
+	color = { 0.64 0.79 0.23 }
+	modifier = {
+		advisor_cost = -0.20
+	}
+	province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 1
+	}
+}
+silver = {
+	color = { 0.55 0.71 0.80 }
+	modifier = {}
+	province = {}
+	chance = {
+		factor = 1
+	}
+}
+sulfur = {
+	color = { 0.56 0.56 0.22 }
+	modifier = {
+	 	yearly_corruption = -0.1
+	}
+	province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 1
+	}
+}
+gunpowder = {
+	color = { 0.63 0.14 0.13 }
+	modifier = {
+		land_morale = 0.10
+	}
+	province = {
+		local_governing_cost = -0.25
+	}
+	chance = {
+		factor = 1
+	}
+}
+nutmeg = {
+	color = { 0.80 0.51 0.38 }
+	modifier = {
+		trade_efficiency = 0.05
+	}
+	province = {
+		province_trade_power_modifier = 0.2
+	}
+	chance = {
+		factor = 1
+	}
+}
+tumeric = {
+	color = { 0.80 0.89 0.45 }
+	modifier = {
+		trade_efficiency = 0.05
+	}
+	province = {
+		province_trade_power_modifier = 0.2
+	}
+	chance = {
+		factor = 1
+	}
+}
+saffron = {
+	color = { 0.82 0.66 0.67 }
+	modifier = {
+		trade_efficiency = 0.05
+	}
+	province = {
+		province_trade_power_modifier = 0.2
+	}
+	chance = {
+		factor = 1
+	}
+}
+honey = {
+	color = { 0.85 0.65 0.13 }
+	modifier = {
+		prestige = 0.5
+	}
+	province = {
+		local_institution_spread = 0.15
+	}
+	chance = {
+		factor = 1
+	}
+}
+fruit = {
+	color = { 0.93 0.57 0.13 }
+	modifier = {
+		manpower_recovery_speed = 0.25
+	}
+	province = {
+		supply_limit_modifier = 0.20
+	}
+	chance = {
+		factor = 1
+	}
+}
+ginger = {
+	color = { 0.94 0.50 0.50 }
+	modifier = {
+		diplomatic_reputation = 1
+	}
+	province = {
+		local_monthly_devastation = -0.15
+	}
+	chance = {
+		factor = 1
+	}
+}
+tropical_fruit = {
+	color = { 0.75 0.85 0.69 }
+	modifier = {
+		global_manpower_modifier = 0.15
+	}
+	province = {
+		local_manpower_modifier = 0.20
+	}
+	chance = {
+		factor = 1
+	}
+}
+horse = {
+	color = { 0.78 0.25 0.09 }
+	modifier = {
+		cavalry_power = 0.15
+	}
+	province = {
+		movement_speed = 0.10
+	}
+	chance = {
+		factor = 1
+	}
+}
+chocolate = {
+	color = { 0.8 0.52 0.05 }
+	modifier = {
+		global_unrest = 2
+	}
+	province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 1
+	}
+}
+ice = {
+	color = { 0.82 0.93 0.93 }
+	modifier = {
+		global_ship_recruit_speed = -0.15
+	}
+	province = {
+		local_production_efficiency = 0.05
+	}
+	chance = {
+		factor = 1
+	}
+}
