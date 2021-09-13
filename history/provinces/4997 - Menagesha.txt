@@ -1,0 +1,19 @@
+#REGIONHORNOF AFRICA
+#4997 - Menagesha
+
+owner = SOA
+controller = SOA
+add_core = SOA
+culture = amhara
+religion = sunni
+hre = no
+base_tax = 3
+base_production = 2
+trade_goods = grain 
+base_manpower = 2
+capital = "Adama" 
+is_city = yes
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian

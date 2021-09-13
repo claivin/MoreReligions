@@ -1,0 +1,19 @@
+#REGIONHORNOF AFRICA
+#5000 - Maji
+
+owner = KAF
+controller = KAF
+add_core = KAF
+culture = sidamo
+religion = shamanism
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain 
+base_manpower = 1
+capital = "Maji" 
+is_city = yes
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian

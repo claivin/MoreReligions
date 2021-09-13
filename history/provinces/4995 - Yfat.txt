@@ -1,0 +1,20 @@
+#REGIONHORNOF AFRICA
+#4995 - Yfat
+
+owner = SOA
+controller = SOA
+add_core = SOA
+add_core = IFT
+culture = harari
+religion = sunni
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = grain 
+base_manpower = 2
+capital = "Yfat" 
+is_city = yes
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
