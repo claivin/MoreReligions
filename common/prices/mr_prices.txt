@@ -71,3 +71,33 @@ chocolate = {
 ice = {
 	base_price = 2.5
 }
+rice_wine = {
+	base_price = 3.5
+}
+citrus = {
+	base_price = 3
+}
+grapes = {
+	base_price = 2.5
+}
+dates_figs = {
+	base_price = 2
+}
+rum = {
+	base_price = 4
+}
+honey_wine = {
+	base_price = 4
+}
+olives = {
+	base_price = 2.5
+}
+vegetables = {
+	base_price = 2
+}
+potato = {
+	base_price = 2.5
+}
+tomato = {
+	base_price = 2.5
+}

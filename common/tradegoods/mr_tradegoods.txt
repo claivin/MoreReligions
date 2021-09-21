@@ -249,7 +249,7 @@ horse = {
 chocolate = {
 	color = { 0.8 0.52 0.05 }
 	modifier = {
-		global_unrest = 2
+		global_unrest = -2
 	}
 	province = {
 		local_tax_modifier = 0.1
@@ -265,6 +265,126 @@ ice = {
 	}
 	province = {
 		local_production_efficiency = 0.05
+	}
+	chance = {
+		factor = 1
+	}
+}
+rice_wine = {
+	color = { 0.38 0.45 0.19 }
+	modifier = {
+		global_unrest = -1.5
+	}
+	province = {
+		local_monthly_devastation = -0.1
+	}
+	chance = {
+		factor = 1
+	}
+}
+citrus = {
+	color = { 0.56 0.21 0.70 }
+	modifier = {
+		naval_attrition = -0.15
+	}
+	province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 1
+	}
+}
+grapes = {
+	color = { 0.56 0.21 0.70 }
+	modifier = {
+		global_tax_modifier = 0.1
+	}
+	province = {
+		local_unrest = -1
+	}
+	chance = {
+		factor = 1
+	}
+}
+dates_figs = {
+	color = { 0.30 0.40 0.20 }
+	modifier = {
+		global_institution_spread = 0.15
+	}
+	province = {
+		local_regiment_cost = -0.15
+	}
+	chance = {
+		factor = 1
+	}
+}
+rum = {
+	color = { 0.90 0.21 0.25 }
+	modifier = {
+		global_unrest = -1.5
+	}
+	province = {
+		local_ship_cost = -0.15
+	}
+	chance = {
+		factor = 1
+	}
+}
+honey_wine = {
+	color = { 0.30 0.45 0.16 }
+	modifier = {
+		global_unrest = -1.5
+	}
+	province = {
+		local_governing_cost = -0.20
+	}
+	chance = {
+		factor = 1
+	}
+}
+olives = {
+	color = { 0.20 0.59 0.45 }
+	modifier = {
+		ae_impact = -0.15
+	}
+	province = {
+		local_institution_spread = 0.15
+	}
+	chance = {
+		factor = 1
+	}
+}
+vegetables = {
+	color = { 0.00 0.40 0.20 }
+	modifier = {
+		development_cost = -0.1
+	}
+	province = {
+		supply_limit_modifier = 0.25
+	}
+	chance = {
+		factor = 1
+	}
+}
+potato = {
+	color = { 0.86 0.58 0.44 }
+	modifier = {
+		stability_cost_modifier = -0.15
+	}
+	province = {
+		local_unrest = -1
+	}
+	chance = {
+		factor = 1
+	}
+}
+tomato = {
+	color = { 0.45 0.50 0.40 }
+	modifier = {
+		governing_capacity_modifier = 0.10
+	}
+	province = {
+		local_defensiveness = 0.1
 	}
 	chance = {
 		factor = 1
