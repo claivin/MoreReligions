@@ -31,7 +31,25 @@ lumber = {
 		local_build_time = -0.10
 	}
 	chance = {
-		factor = 1
+		factor = 25
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = desert
+				has_terrain = savannah
+				has_terrain = highlands
+				has_terrain = drylands
+				has_terrain = glacier
+				has_climate = tropical
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				has_terrain = forest
+				has_terrain = woods
+			}
+		}
 	}
 }
 stone = {
@@ -43,7 +61,82 @@ stone = {
 		local_defensiveness = 0.1
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			area = newfoundland_area
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = steppe
+				has_terrain = desert
+				has_terrain = coastal_desert
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = coastline
+				has_terrain = glacier
+				has_terrain = jungle
+				has_terrain = farmlands
+				has_terrain = woods
+			}
+		}
+		modifier = {
+			factor = 0
+			is_random_new_world = no
+			NOT = { area = minas_gerais_area }
+			NOT = { area = diamantina_area }
+			NOT = { area = mato_grosso_area }
+			NOT = { area = great_valley_area }
+			NOT = { area = susquehanna_area }
+			NOT = { area = hudson_valley_area }
+			NOT = { area = lake_superior_area }
+			NOT = { area = south_iroquoisia_area }
+			NOT = { area = upper_ontario_area }
+			NOT = { area = laurentian_area }
+			NOT = { area = inner_ontario_area }
+			NOT = { area = maryland_area }
+			NOT = { area = ofaie_area }
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
+			NOT = { region = central_africa_region }
+		}
+		modifier = {
+			factor = 0
+			is_random_new_world = yes
+			NOT = { region = west_siberia_region }
+			NOT = { region = east_siberia_region }
+			NOT = { continent = new_world }
+		}
+		modifier = {
+			factor = 0.7
+			region = central_africa_region
+		}
+		modifier = {
+			factor = 1.1
+			is_random_new_world = yes
+			OR = {
+				has_terrain = mountain
+				has_terrain = highlands
+			}
+		}
+		modifier = {
+			factor = 1.5
+			OR = {
+				area = minas_gerais_area
+				area = diamantina_area
+				area = mato_grosso_area
+				area = ofaie_area
+				area = great_valley_area
+				area = susquehanna_area
+				area = hudson_valley_area
+				area = lake_superior_area
+				area = south_iroquoisia_area
+				region = west_siberia_region
+				region = east_siberia_region
+			}
+		}
 	}
 }
 marble = {
@@ -115,7 +208,70 @@ rice = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 1
+		chance = {
+		factor = 35
+		modifier = {
+			factor = 0
+			area = newfoundland_area
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = desert
+				has_terrain = glacier
+				has_terrain = coastline
+				has_climate = arctic
+			}
+		}
+		modifier = {
+			factor = 0.25
+			OR = {
+				has_terrain = mountain
+				has_terrain = coastal_desert
+				has_terrain = forest
+				has_terrain = woods
+				has_terrain = hills
+				has_terrain = jungle
+			}
+		}
+		modifier = {
+			factor = 0.75
+			OR = {
+				has_terrain = drylands
+				has_terrain = savannah
+				has_terrain = steppe
+			}
+		}
+		modifier = {
+			factor = 0.35
+			has_winter = severe_winter
+		}
+		modifier = {
+			factor = 0.5
+			has_winter = normal_winter
+		}
+		modifier = {
+			factor = 1.5
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { region = niger_region }
+				NOT = { region = xinan_region }
+				NOT = { region = bengal_region }
+				NOT = { region = coromandel_region }
+				NOT = { region = deccan_region }
+				NOT = { region = guinea_region }
+				NOT = { region = burma_region }
+				NOT = { region = indochina_region }
+				NOT = { region = malaya_region }
+				NOT = { region = south_china_region }
+				NOT = { region = indonesia_region }
+				NOT = { region = moluccas_region }
+				NOT = { region = kongo_region }
+			}
+		}
 	}
 }
 silver = {
@@ -303,7 +459,70 @@ grapes = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 1
+		factor = 5
+		modifier = {
+			factor = 0
+			area = newfoundland_area
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				has_winter = severe_winter
+				has_climate = arctic
+				has_climate = arid
+				has_climate = tropical
+				has_terrain = jungle
+				has_terrain = drylands
+				has_terrain = steppe
+				has_terrain = desert
+				has_terrain = coastal_desert
+				has_terrain = marsh
+				has_terrain = savannah
+				has_terrain = glacier
+				religion_group = muslim
+			}
+		}
+		modifier = {
+			factor = 0
+			normal_or_historical_nations = yes
+			NOT = { continent = south_america }
+			NOT = { region = south_africa_region }
+			NOT = { area = cuyo_area }
+			NOT = { area = nehuenken_area }
+			NOT = { area = california_area }
+			NOT = { area = central_valley_area }
+		}
+		modifier = {
+			factor = 0.25
+			has_winter = normal_winter
+		}
+		modifier = {
+			factor = 1.25
+			has_terrain = farmlands
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+			}
+		}
+		modifier = {
+			factor = 1.5
+			area = cuyo_area
+			region = france_region
+			region = italy_region
+		}
+		modifier = {
+			factor = 1.1
+			FROM = {
+				OR = {
+					culture_group = french
+					culture_group = iberian
+					culture_group = latin
+				}
+			}
+		}
 	}
 }
 dates_figs = {
