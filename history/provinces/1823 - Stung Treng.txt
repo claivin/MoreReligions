@@ -1,7 +1,7 @@
 #1823 - Stung Treng
 
-owner = RTK
-controller = RTK
+owner = PVH
+controller = PVH
 culture = khmer
 religion = animism
 capital = "Stung Treng"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = RTK
+add_core = PVH
 
 
 

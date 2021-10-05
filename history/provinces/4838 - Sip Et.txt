@@ -1,5 +1,5 @@
-owner = RET
-controller = RET
+owner = CHK
+controller = CHK
 culture = lao
 religion = yogavacara
 capital = "Sip Et"
@@ -9,7 +9,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = RET
+add_core = CHK
 
 
 

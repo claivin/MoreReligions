@@ -1,6 +1,6 @@
 
-owner = NGK
-controller = NGK
+owner = SIK
+controller = SIK
 culture = lao
 religion = yogavacara
 capital = "Udon Thani"
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = NGK
+add_core = SIK
 
 
 discovered_by = chinese

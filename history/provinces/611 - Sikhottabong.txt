@@ -3,9 +3,9 @@
 owner = SIK
 controller = SIK
 culture = lao
-religion = animism
+religion = yogavacara
 capital = "Sikhottabong"
-trade_goods = grain
+trade_goods = rice
 hre = no
 base_tax = 2 
 base_production = 2

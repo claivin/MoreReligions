@@ -3,7 +3,7 @@
 graphical_culture = asiangfx
 special_unit_culture = south_east_asian_special
 
-color = { 79  119  48 }
+color = { 236  78  43 }
 
 revolutionary_colors = { 8 9 5 }
 
