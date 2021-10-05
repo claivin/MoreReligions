@@ -1,0 +1,20 @@
+
+
+owner = SAG
+controller = SAG
+culture = burmese
+religion = buddhism
+capital = "Shwebo"
+trade_goods = cotton
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = SAG
+
+
+
+discovered_by = chinese
+discovered_by = indian
+

@@ -1,0 +1,20 @@
+
+
+owner = SAG
+controller = SAG
+culture = burmese
+religion = buddhism
+capital = "Kanbalu"
+trade_goods = rice
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+is_city = yes
+add_core = SAG
+
+
+
+discovered_by = chinese
+discovered_by = indian
+

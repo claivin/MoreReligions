@@ -1,8 +1,8 @@
 #REGIONHORNOF AFRICA
 #4995 - Yfat
 
-owner = SOA
-controller = SOA
+owner = IFT
+controller = IFT
 add_core = SOA
 add_core = IFT
 culture = harari

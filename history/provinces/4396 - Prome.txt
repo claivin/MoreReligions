@@ -1,7 +1,7 @@
 #4396 - Prome
 
-owner = BPR
-controller = BPR
+owner = PEG
+controller = PEG
 culture = burmese
 religion = buddhism
 capital = "Prome"
@@ -12,7 +12,7 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 add_core = BPR
-
+add_core = PEG
 
 
 discovered_by = chinese

@@ -3,5 +3,5 @@ add_government_reform = autocracy_reform
 primary_culture = lao
 religion = yogavacara
 technology_group = chinese
-capital = 989	# Luang Prabang
+capital = 4838 # Luang Prabang
 religious_school = mr_weizza_school

@@ -5,6 +5,6 @@ unit_type = sub_saharan
 religion = sunni
 primary_culture = somali
 add_accepted_culture = harari
-capital = 1211	# Deker, Harer
+capital = 4995	# Deker, Harer
 religious_school = shafii_school
 

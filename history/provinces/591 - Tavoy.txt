@@ -1,9 +1,9 @@
 #591 - Tavoy
 
-owner = MRG
-controller = MRG
+owner = PEG
+controller = PEG
 culture = mon
-religion = ari
+religion = buddhism
 capital = "Tavoy"
 trade_goods = naval_supplies
 hre = no
@@ -12,6 +12,7 @@ base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = MRG
+add_core = PEG
 
 
 
