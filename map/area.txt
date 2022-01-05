@@ -905,20 +905,20 @@ bohemia_area = { #5 full
 	 266 2968 2970 4725 4724
 }
 
-erzgebirge_area = { #3
-	267 1771 2967
+erzgebirge_area = { #3 +Zatec/Klatov full
+	267 1771 2967 5098 5099
 }
 
-lusatia_area = { #3
-	60 1763 4778
+lusatia_area = { #3 +Blata/Zary full
+	60 1763 4778 5100 5101
 }
 
-moravia_area = {
-	265 4237 4726
+moravia_area = { #3 +Znojomo/Kromeriz full
+	265 4237 4726 5106 5107
 }
 
-south_saxony_area = { #4
-	59 61 4744 62
+south_saxony_area = { #4 +Chemnitz full
+	59 61 4744 62 5096
 }
 
 upper_bavaria_area = { #4 +tolz full
@@ -956,25 +956,25 @@ northern_saxony_area = { #4 (Saxe-Altmark) full
 	52 58 2964 4741 4742
 }
 
-thuringia_area = { #3
-	63 2965 4743
+thuringia_area = { #3 +Gotha/Jena full
+	63 2965 4743 5094 5095
 }
 
-neumark_area = { #3
+neumark_area = { #3 Sternberg/Driesen full
 	color = { 234 232 44 }
-	49 2969 4747
+	49 2969 4747 5102 5103
 }
 
 mittelmark_area = { #5 full
 	50 51 1759 4748 2993
 }
 
-vorpommern_area = { #4
-	47 2994 4745 1858 
+vorpommern_area = { #4 +greifswald full
+	47 2994 4745 1858 5097
 }
 
-hinter_pommern_area = { #3
-	48 2995 4746
+hinter_pommern_area = { #3 Butow/Cammin full
+	48 2995 4746 5104 5105
 }
 
 tirol_area = { #5 full
@@ -1015,40 +1015,40 @@ palatinate_area = { #3 +worms/mosbach full
 	77 1761 4767 5080 5081
 }
 
-north_rhine_area = { #4
-	84 85 2975 83
+north_rhine_area = { #4 +Limburg full
+	84 85 2975 83 5085
 }
 
-lower_rhineland_area = { #4
-	80 1760 1878 4768
+lower_rhineland_area = { #4 +bitburg full
+	80 1760 1878 4768 5084
 }
 
-westphalia_area = { #3 (South Westphalia)
-	82 2972 4775
+westphalia_area = { #3 (South Westphalia) +Siegerland/Brilon full
+	82 2972 4775 5086 5087
 }
 
-north_westphalia_area = { #4
-	56 86 2973 69
+north_westphalia_area = { #4 +Soest full
+	56 86 2973 69 5088
 }
 
 hesse_area = { #5
 	81 1762 1876 4774 78
 }
 
-braunschweig_area = { #4
-	57 1758 2971 4773
+braunschweig_area = { #4 +Hildesheim full
+	57 1758 2971 4773 5090
 }
    
-weser_area = { #4
-	54 55 1874 4771
+weser_area = { #4 +cloppenburg full
+	54 55 1874 4771 5089
 }
 
-holstein_area = { #3
-	13 1775 4141 
+holstein_area = { #3 +Flensburg/Uthlande full
+	13 1775 4141 5092 5093
 }
 
-lower_saxony_area = { #4
-	44 53 1857 4772
+lower_saxony_area = { #4 +uelzen full
+	44 53 1857 4772 5091
 }
 
 mecklenburg_area = { #5
