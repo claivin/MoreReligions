@@ -1,9 +1,9 @@
 #REGIONFRANCE
 # 88 Artois - Principal cities: Arras, Saint-Omer & Lille
 
-owner = ART
-controller = ART
-add_core = ART
+owner = ATS
+controller = ATS
+add_core = ATS
 capital = "Arras"
 is_city = yes
 culture = wallonian

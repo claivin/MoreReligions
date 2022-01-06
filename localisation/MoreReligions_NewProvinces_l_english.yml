@@ -203,8 +203,8 @@
  PROV5008: "Limburg"
  PROV_ADJ5008: "Limburger"
  
- PROV5009: "Rotterdam"
- PROV_ADJ5009: "Rotterdammer"
+ PROV5009: "Haarlem"
+ PROV_ADJ5009: "Haarlemer"
  
  PROV5010: "Savona"
  PROV_ADJ5010: "Savonesi"
@@ -498,4 +498,96 @@
  PROV_ADJ5106: "Znojomo"
  
  PROV5107: "Kroměříž"
- PROV_ADJ5107: "Kroměříž"
+ PROV_ADJ5107: "Kromeríž"
+ 
+ PROV5108: "Salten"
+ PROV_ADJ5108: "Salten"
+ 
+ PROV5109: "Aalborg"
+ PROV_ADJ5109: "Aalborg"
+ 
+ PROV5110: "Zealand"
+ PROV_ADJ5110: "Zealand"
+ 
+ PROV5111: "Laholm"
+ PROV_ADJ5111: "Laholm"
+ 
+ PROV5112: "Jönköping"
+ PROV_ADJ5112: "Jönköping"
+ 
+ PROV5113: "Ofoten"
+ PROV_ADJ5113: "Ofoten"
+ 
+ PROV5114: "Öland"
+ PROV_ADJ5114: "Öland"
+ 
+ baltic_islands_area_mr: "Baltic Islands"
+ 
+ PROV5115: "Hiiumaa"
+ PROV_ADJ5115: "Hiiumaa"
+ 
+ PROV5116: "Södermanland"
+ PROV_ADJ5116: "Södermanland"
+ 
+ PROV5117: "Gästrikland"
+ PROV_ADJ5117: "Gästrikland"
+ 
+ PROV5118: "Sala"
+ PROV_ADJ5118: "Sala"
+ 
+ PROV5119: "Väst Värmland"
+ PROV_ADJ5119: "Väst Värmland"
+ 
+ PROV5120: "Härjedalen"
+ PROV_ADJ5120: "Härjedalen"
+ 
+ PROV5121: "Hedmark"
+ PROV_ADJ5121: "Hedmark"
+ 
+ PROV5122: "Firdafylke"
+ PROV_ADJ5122: "Firdafylke"
+ 
+ PROV5123: "Nord-Trøndelag"
+ PROV_ADJ5123: "Nord-Trøndelag"
+ 
+ PROV5124: "Finnmarksvidda"
+ PROV_ADJ5124: "Finnmarksvidda"
+ 
+ PROV5125: "Murman"
+ PROV_ADJ5125: "Murman"
+ 
+ PROV5126: "Pohjanmaa"
+ PROV_ADJ5126: "Pohjanmaa"
+ 
+ PROV5127: "Keski-Pohjanmaa"
+ PROV_ADJ5127: "Keski-Pohjanmaa"
+ 
+ PROV5128: "Swiebodzin"
+ PROV_ADJ5128: "Swiebodzin"
+ 
+ PROV5129: "Brodnica"
+ PROV_ADJ5129: "Brodnica"
+ 
+ PROV5130: "Częstochowa"
+ PROV_ADJ5130: "Częstochowa"
+ 
+ PROV5131: "Leczyca"
+ PROV_ADJ5131: "Leczyca"
+ 
+ PROV5132: "Ostrołęka"
+ PROV_ADJ5132: "Ostrołęka"
+ 
+ PROV5133: "Wieliczka"
+ PROV_ADJ5133: "Wieliczka"
+ 
+ PROV5134: "Krosno"
+ PROV_ADJ5134: "Krosno"
+ 
+ PROV5135: "Zamość"
+ PROV_ADJ5135: "Zamość"
+ 
+ PROV5136: "Zamość"
+ PROV_ADJ5136: "Zamość"
+ 
+ PROV5137: "Skövde"
+ PROV_ADJ5137: "Skövde"

@@ -134,6 +134,7 @@ categories =  {
 			
 			593 #si thammarat
 			5058 #mr_japan
+			5128 5136 #mr_poland
 		}		
 	}
 	
@@ -162,6 +163,7 @@ categories =  {
 			1026 4187 #Japan
 			312 #Eastern Europe
 			5051 5052 #mr_japan
+			5125 #mr_norway
 		}                                      
 	}
 	
@@ -237,7 +239,8 @@ categories =  {
 			5045 #druze hills
 			5054 5060 5062 5063 5064 #mr_japan
 			4974 4967 #mr_france
-			5099 #mr_germany
+			5084 5086 5095 5096 5098 5099 5106 #mr_germany
+			5134 #mr_poland
 		}
 	}
 
@@ -310,7 +313,8 @@ categories =  {
 			4853 4852 4864
 			#mr_france
 			5077 5080 5083 4966 4973 5075 5008 5007 5006 4776 4977 4959 4963 4950 4957 4952 4953 #mr_germany (south)
-			5084 5085 5086 5087 5088 5090 5091 5094 5095 5100 5101 5102 5103 5105
+			5085 5087 5088 5090 5091 5094 5100 5101 5102 5103 5105 #mr_germany (south)
+			5132 #mr_poland
 		}
 	}
 	
@@ -382,6 +386,7 @@ categories =  {
 			4750 4754
 			371 #akureyri
 			5072 #m4_germany
+			21 5108 5113 5121 5123 #mr_norway
 		}
 	}
 
@@ -458,7 +463,7 @@ categories =  {
 			5032 5033 5035 5036 5037 5040 #mr_indochina
 			568 #chittagong
 			5049 5050 5053 5055 5056 5057 5059 5061 5065 #mr_japan
-			5096 5097 #mr_germany (north)
+			5089 5097 #mr_germany (north)
 		}
 	}
 
@@ -731,6 +736,7 @@ categories =  {
 			4561 4566 4553 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
 			4965 #mr_scotland
+			5122 #mr_norway
 		}
 	}
 
@@ -840,7 +846,9 @@ categories =  {
 		nation_designer_cost_multiplier = 1.1
 		
 		terrain_override = {
-				183
+				183 #paris
+				257 #warsaw
+				262 #krakow
 		}	
 	}	
 }

@@ -96,7 +96,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4353;4352;sea;1397;-1;-1;-1;-1;Leyte-Cebu
 4351;4352;sea;1397;-1;-1;-1;-1;Buglas-Cebu
 4699;4698;sea;1312;-1;-1;-1;-1;Arta-Cephalonia
-4745;47;sea;1257;3013;1607;3012;1606;Rügen-Stralsund
+4745;5097;sea;1257;3013;1607;3012;1606;Rügen-Greifswald
 2994;48;sea;1257;-1;-1;-1;-1;Wolgast-Kolberg
 2728;4846;sea;1408;-1;-1;-1;-1;Tiwi-Woolna
 1240;4934;sea;1697;-1;-1;-1;-1;Hawaii-Maui
@@ -113,4 +113,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1820;5063;sea;1391;-1;-1;-1;-1;Awa-Awaji
 5063;5057;sea;1391;-1;-1;-1;-1;Awaji-Izumi
 5061;1818;sea;1390;-1;-1;-1;-1;Nagato-Chikuzen
+3;5114;sea;1255;-1;-1;-1;-1;Kalmar-Oland
+35;5115;sea;1926;-1;-1;-1;-1;Hiiumaa-Saaremaa
 -1;-1;;-1;-1;-1;-1;-1;-1;

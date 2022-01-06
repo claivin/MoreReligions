@@ -183,6 +183,8 @@ arctic = {
 	5046 5047 5048
 	#mr_iceland
 	5029 5028
+	#mr_scandanavia
+	5108 5113 5124 5125
 }
 
 #Example: Most of Europe north of med.

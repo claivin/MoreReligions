@@ -594,51 +594,55 @@ east_anglia_area = { #5 +suffolk/london full
 # Scandinavia			 			   #
 ########################################
 
-jutland_area = { #4
-	15 1984 4142 4149
+jutland_area = { #4 +aalborg full
+	15 1984 4142 4149 5109
 }
 
-denmark_area = { #4 +Bornholm
-	12 14 1981 1983
+denmark_area = { #4 +Bornholm +Zealand full
+	12 14 1981 1983 5110
 }
 
-skaneland_area = { #4
-	6  26 1982 4165
+skaneland_area = { #4 +Laholm full
+	6  26 1982 4165 5111
 }
 
-gotaland_area = { #3 Östra Götaland
-	2 3 25 4166
+gotaland_area = { #3 Östra Götaland +Jonkoping full
+	2 3 25 4166 5112
 }
 
-vastra_gotaland_area = { #Västra Götaland #4
-	7 16 4163 4164
+vastra_gotaland_area = { #Västra Götaland #4 +Skovde full
+	7 16 4163 4164 5137
 }
 
-svealand_area = { #3
-	5 8 1985 
+svealand_area = { #3 +VastVarmland/Harjedalen full
+	5 8 1985 5119 5120
 }
 
-ostra_svealand_area = { #4
-	1 4 1930
+ostra_svealand_area = { #4 +Sodermanland/Gastrikland/Sala full
+	1 4 5116 5117 5118
 }
 
-norrland_area = { #4
-	9 11 18 4114
+norrland_area = { #4 +Moved Jamtland to full
+	9 10 11 18 4114
 }
 
-finland_area = { #5
+baltic_islands_area_mr = { #new area full
+	25 35 1930 5114 5115
+}
+
+finland_area = { #5 no change full
 	27 28 29 31 4123
 }
 
-bothnia_area = { #3
-	19 4113 4152
+bothnia_area = { #3 +pohjanmaa/keski-pohjanmaa full
+	19 4113 4152 5126 5127
 }
 
-laponia_area = { #3
-	315 1777 4151
+laponia_area = { #3 +finnmarksvidda/murman full
+	315 1777 4151 5124 5125
 }
 
-karelia_area = { #4
+karelia_area = { #4 +
 	30 33 34 1961
 }
 
@@ -646,16 +650,16 @@ north_karelia = { #3
 	32 309 4124
 }
 
-northern_norway = { #3
-	10 20 21
+northern_norway = { #3 -jamtland +nordTrondelag/+Ofoten full
+	20 21 5108 5113 5123
 }
 
-eastern_norway = { #4
-	17 22 4143 4144
+eastern_norway = { #4 +Hedmark full
+	17 22 4143 4144 5121
 }
 
-western_norway = { #4
-	23 24 2752 4145
+western_norway = { #4 +Firdafylke full
+	23 24 2752 4145 5122
 }
 
 subarctic_islands_area = { #3 +Austfirthir/Isfajorthr full
@@ -691,12 +695,12 @@ west_prussia_area = { #3 (South West Prussia)
 	2997 43 1841
 }
 
-wielkopolska_area = { #5
-   254 4526 255 2963
+wielkopolska_area = { #4 +Swiebodzin full
+   254 4526 255 2963 5128
 }
 
-malopolska_area = { #5
-	262 4527 2960
+malopolska_area = { #5 +Wieliczka/Krosno full
+	262 4527 2960 5133 5134
 }
 
 red_ruthenia_area = { #5 
@@ -719,20 +723,20 @@ podlasie_area = {
 	269 277 1937
 }
 
-mazovia_area = { #4
-	256 257  1938 4525
+mazovia_area = { #4 +Ostroleka full
+	256 257 1938 4525 5132
 }
 
-central_poland_area = {
-	258 1939 4533
+central_poland_area = {# +Czestochowa/Leczycz full
+	258 1939 4533 5130 5131
 }
 
-sandomierz_area = {
-	260 2959 259   
+sandomierz_area = {# +Zamosx/Pulawy full
+	260 2959 259 5135 5136
 }
 
-kuyavia_area = {
-	4523 1859 4524 4528
+kuyavia_area = { #4 +Brodnica full
+	4523 1859 4524 4528 5129
 }
 
 samogitia_area = { #4
