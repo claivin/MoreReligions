@@ -208,7 +208,6 @@ rice = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		chance = {
 		factor = 35
 		modifier = {
 			factor = 0
@@ -264,7 +263,7 @@ rice = {
 				NOT = { region = deccan_region }
 				NOT = { region = guinea_region }
 				NOT = { region = burma_region }
-				NOT = { region = indochina_region }
+				NOT = { region = indo_china_region }
 				NOT = { region = malaya_region }
 				NOT = { region = south_china_region }
 				NOT = { region = indonesia_region }

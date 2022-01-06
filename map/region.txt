@@ -222,6 +222,7 @@ baltic_region = {
 		east_prussia_area
 		pomerelia_area
 		samogitia_area
+		baltic_islands_area_mr
 	}
 }
 

@@ -684,7 +684,7 @@ livonia_area = { #4
 }
 
 curonia_area = { #3
-	35 39 1935
+	39 1935
 }
 
 east_prussia_area = { #5
@@ -3796,9 +3796,9 @@ arabian_sea_islands_area = {
 	 
 }
 
-baltic_islands_area = {
+# baltic_islands_area = {
 	 
-}
+# }
 
 east_altishahr_area = {
 
