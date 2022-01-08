@@ -1,3 +1,8 @@
+#T2 Trade Goods
+#Existing T2s are manually defined at game start and do not spawn naturally
+#######################
+
+#BOOZE
 alcohol = {
 	color = { 0.93 0.91 0.67 }
 	modifier = {
@@ -7,9 +12,47 @@ alcohol = {
 		local_unrest = -2
 	}
 	chance = {
-		factor = 1
+		factor = 0
 	}
 }
+honey_wine = {
+	color = { 0.30 0.45 0.16 }
+	modifier = {
+		global_unrest = -1.5
+	}
+	province = {
+		local_governing_cost = -0.20
+	}
+	chance = {
+		factor = 0
+	}
+}
+rum = {
+	color = { 0.90 0.21 0.25 }
+	modifier = {
+		global_unrest = -1.5
+	}
+	province = {
+		local_ship_cost = -0.15
+	}
+	chance = {
+		factor = 0
+	}
+}
+rice_wine = {
+	color = { 0.38 0.45 0.19 }
+	modifier = {
+		global_unrest = -1.5
+	}
+	province = {
+		local_monthly_devastation = -0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
+##########################
+
 military_supplies = {
 	color = { 0.97 0.46 0.19 }
 	modifier = { 
@@ -19,9 +62,73 @@ military_supplies = {
 		local_production_efficiency = 0.1
 	}
 	chance = {
-		factor = 1
+		factor = 0
 	}
 }
+jewelry = {
+	color = { 0.75 0.37 1.0 }
+	modifier = { 
+		war_exhaustion = -0.02
+	}
+	province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
+cheese = {
+	color = { 0.96 0.97 0.46 }
+	modifier = {
+		merc_maintenance_modifier = -0.15
+	}
+	province = {
+		local_unrest = -1
+	}
+	chance = {
+		factor = 0
+	}
+}
+marble = {
+	color = { 0.71 0.77 0.75 }
+	modifier = {
+		idea_cost = -0.05
+	}
+	province = {
+		local_development_cost = -0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
+steel = {
+	color = { 0.32 0.55 0.55 }
+	modifier = {
+		global_regiment_cost = -0.15
+	}
+	province = {
+		local_production_efficiency = 0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
+gunpowder = {
+	color = { 0.63 0.14 0.13 }
+	modifier = {
+		land_morale = 0.10
+	}
+	province = {
+		local_governing_cost = -0.25
+	}
+	chance = {
+		factor = 0
+	}
+}
+
+##########################
+#############################
+
 lumber = {
 	color = { 0.59 0.41 0.31 }
 	modifier = { 
@@ -139,42 +246,7 @@ stone = {
 		}
 	}
 }
-marble = {
-	color = { 0.71 0.77 0.75 }
-	modifier = {
-		idea_cost = -0.05
-	}
-	province = {
-		local_development_cost = -0.1
-	}
-	chance = {
-		factor = 1
-	}
-}
-jewelry = {
-	color = { 0.75 0.37 1.0 }
-	modifier = { 
-		war_exhaustion = -0.02
-	}
-	province = {
-		local_tax_modifier = 0.1
-	}
-	chance = {
-		factor = 1
-	}
-}
-cheese = {
-	color = { 0.96 0.97 0.46 }
-	modifier = {
-		merc_maintenance_modifier = -0.15
-	}
-	province = {
-		local_unrest = -1
-	}
-	chance = {
-		factor = 1
-	}
-}
+
 whales = {
 	color = { 0.04 0.71 1.00 }
 	modifier = {
@@ -184,21 +256,27 @@ whales = {
 		local_sailors_modifier = 0.25
 	}
 	chance = {
-		factor = 1
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = {
+			factor = 10
+			area = basque_country
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				area = northern_norway
+				area = eastern_norway
+				area = western_norway
+				region = japan_region
+			}
+		}
 	}
 }
-steel = {
-	color = { 0.32 0.55 0.55 }
-	modifier = {
-		global_regiment_cost = -0.15
-	}
-	province = {
-		local_production_efficiency = 0.1
-	}
-	chance = {
-		factor = 1
-	}
-}
+
 rice = {
 	color = { 0.64 0.79 0.23 }
 	modifier = {
@@ -288,18 +366,6 @@ sulfur = {
 	}
 	province = {
 		local_tax_modifier = 0.1
-	}
-	chance = {
-		factor = 1
-	}
-}
-gunpowder = {
-	color = { 0.63 0.14 0.13 }
-	modifier = {
-		land_morale = 0.10
-	}
-	province = {
-		local_governing_cost = -0.25
 	}
 	chance = {
 		factor = 1
@@ -425,18 +491,7 @@ ice = {
 		factor = 1
 	}
 }
-rice_wine = {
-	color = { 0.38 0.45 0.19 }
-	modifier = {
-		global_unrest = -1.5
-	}
-	province = {
-		local_monthly_devastation = -0.1
-	}
-	chance = {
-		factor = 1
-	}
-}
+
 citrus = {
 	color = { 0.56 0.21 0.70 }
 	modifier = {
@@ -531,30 +586,6 @@ dates_figs = {
 	}
 	province = {
 		local_regiment_cost = -0.15
-	}
-	chance = {
-		factor = 1
-	}
-}
-rum = {
-	color = { 0.90 0.21 0.25 }
-	modifier = {
-		global_unrest = -1.5
-	}
-	province = {
-		local_ship_cost = -0.15
-	}
-	chance = {
-		factor = 1
-	}
-}
-honey_wine = {
-	color = { 0.30 0.45 0.16 }
-	modifier = {
-		global_unrest = -1.5
-	}
-	province = {
-		local_governing_cost = -0.20
 	}
 	chance = {
 		factor = 1
