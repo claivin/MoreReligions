@@ -77,3 +77,15 @@
  
  PROV4527: "Łódz"
  PROV_ADJ4527: "Łódz"
+ 
+ PROV271: "Varniai"
+ PROV39: "Ventspils"
+ PROV273: "Daugavpils"
+ PROV37: "Pärnu"
+ PROV4241: "Madona"
+ 
+ PROV_ADJ271: "Varniai"
+ PROV_ADJ39: "Ventspils"
+ PROV_ADJ273: "Daugavpils"
+ PROV_ADJ37: "Pärnu"
+ PROV_ADJ4241: "Madona"

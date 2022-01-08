@@ -675,24 +675,24 @@ greenland_area = { #2 +Angmagssalik/Sermersooq/Nuuk full
 # Eastern Europe    			 	   #
 ########################################
 
-estonia_ingria_area = { #3
-	36 1834 1842
+estonia_ingria_area = { #3 +Rakvere/move Livaland(Parnu) to full
+	36 37 1834 1842 5147
 }
 
-livonia_area = { #4
-	37 38 273 4241
+livonia_area = { #4 +Vidzeme/Cesis/Rezekne -livland(parnu) full
+	38 4241 5144 5145 5146
 }
 
-curonia_area = { #3
-	39 1935
+curonia_area = { #3 +liepaja/saldus moved latgalia to full
+	39 1935 5142 5143 273
 }
 
-east_prussia_area = { #5
-	40 41 767 2958 42
+east_prussia_area = { #5 +Gizycko full
+	40 41 767 42 5139
 }
 
-west_prussia_area = { #3 (South West Prussia)
-	2997 43 1841
+west_prussia_area = { #3 (South West Prussia) +Lebork moved osterode full
+	2997 43 1841 5138 2958
 }
 
 wielkopolska_area = { #4 +Swiebodzin full
@@ -703,24 +703,24 @@ malopolska_area = { #5 +Wieliczka/Krosno full
 	262 4527 2960 5133 5134
 }
 
-red_ruthenia_area = { #5 
+red_ruthenia_area = { #5 full
 	261 1940 2424 2961 4541
 }
 
-podolia_volhynia_area = { #3
-	281 4540 1943 
+podolia_volhynia_area = { #3 +Uman/Kirovohrad full
+	281 4540 1943 5151 5152
 }
 
-volhynia_area = { # 4
-	279 2962 4539 4538
+volhynia_area = { # 4 +Lutsk full
+	279 2962 4539 4538 5150
 }
 
-pripyat_area = { #4
-	 278 1941 4537 4545
+pripyat_area = { #4 +slonim full
+	 278 1941 4537 4545 5156
 }
 
-podlasie_area = {
-	269 277 1937
+podlasie_area = {#3 +Bialystok/Vawvkavysk full
+	269 277 1937 5148 5149
 }
 
 mazovia_area = { #4 +Ostroleka full
@@ -739,28 +739,28 @@ kuyavia_area = { #4 +Brodnica full
 	4523 1859 4524 4528 5129
 }
 
-samogitia_area = { #4
-	270 271 1936 4534 
+samogitia_area = { #4 +siauliai full
+	270 271 1936 4534 5140 
 }
 
-lithuania_area = { #5
-	272 770 4535 4536
+lithuania_area = { #4 +birzai full
+	272 770 4535 4536 5141
 }
 
-west_dniepr_area = { #4 Right Bank Ukraine
-	280 1942 1944 4247
+west_dniepr_area = { #4 Right Bank Ukraine +Chernobyl full
+	280 1942 1944 4247 5153
 }
 
-east_dniepr_area = { #4 Left bank Ukraine
-	290 2407 4542
+east_dniepr_area = { #4 Left bank Ukraine +Nizhyn/Dnipro full
+	290 2407 4542 5154 5155
 }
 
-chernigov_area = {
-	1945 289 4543
+chernigov_area = { #3 +Sumy/Konotop full
+	1945 289 4543 5161 5162
 }
 
-sloboda_ukraine_area = { #4
-	291 298 299 2408
+sloboda_ukraine_area = { #4 +Stary Oskol full
+	291 298 299 2408 5163
 }
 
 yedisan_area = { #3
@@ -779,12 +779,12 @@ crimea_area = { #4
 	284 285 2410 2447
 }
 
-white_ruthenia_area = { #3
-	292 771 4246
+white_ruthenia_area = { #3 +Orsha Horki full
+	292 771 4246 5158 5159
 }
 
-minsk_area = { #4
-	276 4115 4242 4544
+minsk_area = { #4 +Lyepyel full
+	276 4115 4242 4544 5157
 }
 
 #Opolye
@@ -813,8 +813,8 @@ suzdal_area = { #3
 	1754 1956 4254
 }
 
-smolensk_area = { #4
-	293 297 4244 4245
+smolensk_area = { #4 +Roslav full
+	293 297 4244 4245 5160
 }
 
 oka_area = { #3
