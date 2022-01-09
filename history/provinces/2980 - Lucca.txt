@@ -33,4 +33,3 @@ center_of_trade = 1
 	# controller = LUC
 	# remove_core = FRA
 # } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
-1444.11.12 = { trade_goods = unknown }

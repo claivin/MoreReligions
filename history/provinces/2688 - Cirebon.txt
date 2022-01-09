@@ -1,0 +1,22 @@
+#2688 - Cirebon
+
+owner = SUN
+controller = SUN
+add_core = SUN
+culture = javanese
+religion = hinduism
+capital = "Cirebon"
+trade_goods = spices
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+is_city = yes
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+

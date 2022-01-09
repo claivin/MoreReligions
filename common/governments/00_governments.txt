@@ -35,6 +35,10 @@ monarchy = {
 				confucian_bureaucracy
 				french_elective_monarchy
 				akanya_sutta_elections
+				shan_federation_reform
+				pagan_reform
+				pagan_reform_b
+				shan_kingdom_reform
 			}
 		}
 		hereditary_vs_nobility = {

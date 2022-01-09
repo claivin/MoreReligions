@@ -23,5 +23,3 @@ add_core = JUK
 trade_goods = grain
 is_city = yes
 
-
-1444.11.12 = { trade_goods = unknown }

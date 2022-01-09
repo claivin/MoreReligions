@@ -1,9 +1,9 @@
 #593 - Nakhon Si Thammarat
 
-owner = TAM
-controller = TAM
+owner = TMM
+controller = TMM
 culture = central_thai
-religion = buddhism
+religion = sunni
 capital = "Nakhon Si Thammarat"
 trade_goods = tropical_wood
 hre = no
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = TAM
+add_core = TMM
 
 
 
@@ -35,5 +35,3 @@ discovered_by = ottoman
 	controller = AYU
 	remove_core = LIG
 }
-
-1444.11.12 = { trade_goods = unknown }

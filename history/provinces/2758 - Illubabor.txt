@@ -23,4 +23,3 @@ discovered_by = muslim
 	controller = ETH
 	add_core = ETH
 }
-1444.11.12 = { trade_goods = unknown }

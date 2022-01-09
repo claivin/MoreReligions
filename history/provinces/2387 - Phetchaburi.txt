@@ -1,7 +1,7 @@
 #2387 - Phetchaburi
 
-owner = TAM
-controller = TAM
+owner = PTC 
+controller = PTC
 culture = central_thai
 religion = buddhism
 capital = "Phetchaburi"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = TAM
+add_core = PTC
 
 
 
@@ -24,5 +24,3 @@ discovered_by = ottoman
 
 1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
 1774.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

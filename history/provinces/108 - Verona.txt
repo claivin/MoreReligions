@@ -46,5 +46,3 @@ center_of_trade = 1
 	# add_core = HAB
 	# remove_core = ITA
 # } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
-
-1444.11.12 = { trade_goods = unknown }

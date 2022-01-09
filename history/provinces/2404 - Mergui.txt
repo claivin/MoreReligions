@@ -1,7 +1,7 @@
 #2404 - Mergui
 
-owner = PEG
-controller = PEG
+owner = PTC
+controller = PTC
 culture = mon
 religion = buddhism
 capital = "Mergui"
@@ -11,8 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = MRG
-add_core = PEG
+add_core = PTC
 
 
 
@@ -22,19 +21,3 @@ discovered_by = muslim
 discovered_by = ottoman
 
 1535.1.1 = { discovered_by = POR }
-
-1564.1.1 = {
-	owner = TAU
-	controller = TAU
-	add_core = TAU
-}
-1605.5.17 = {
-	owner = AYU
-	controller = AYU
-}
-1614.1.1 = { owner = TAU controller = TAU } # Taungu regained Tenasserim
-1745.11.1 = { owner = AYU controller = AYU }
-1768.1.1 = { owner = TAU controller = TAU }
-1794.1.1 = { remove_core = AYU }
-
-1444.11.12 = { trade_goods = unknown }

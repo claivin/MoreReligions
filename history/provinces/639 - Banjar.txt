@@ -1,0 +1,22 @@
+#639 - Banjar
+
+owner = NGD
+controller = NGD
+culture = bornean
+religion = hinduism
+capital = "Banjar"
+trade_goods = unknown
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+add_core = NGD
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+

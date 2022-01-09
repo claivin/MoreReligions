@@ -1,0 +1,280 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = lao
+religion = buddhism
+technology_group = chinese
+capital = 614	# Vientiane
+
+1354.1.1 = {
+	monarch = {
+		name = "Fa Ngum"
+		dynasty = "Khun Lo"
+		dip = 3
+		adm = 3
+		mil = 4
+	}
+}
+
+1371.1.1 = {
+	monarch = {
+		name = "Samsenethai"
+		dynasty = "Khun Lo"
+		dip = 2
+		adm = 1
+		mil = 0
+	}
+}
+
+1375.1.1 = {
+	heir = {
+		name = "Lan Kham Deng"
+		monarch_name = "Lan Kham Deng"
+		dynasty = "Khun Lo"
+		birth_date = 1375.1.1
+		death_Date = 1428.1.1
+		claim = 95
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+
+1417.1.1 = {
+	monarch = {
+		name = "Lamakamadinga"
+		dynasty = "Khun Lo"
+		dip = 1
+		adm = 3
+		mil = 2
+	}
+}
+
+1417.1.1 = {
+	heir = {
+		name = "Phommathat"
+		monarch_name = "Bhumadarada"
+		dynasty = "Khun Lo"
+		birth_date = 1400.1.1
+		death_Date = 1429.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1428.1.1 = {
+	monarch = {
+		name = "Phommathat"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1428.1.1 = {
+	heir = {
+		name = "Khamtum"
+		monarch_name = "Khamtum"
+		dynasty = "Khun Lo"
+		birth_date = 1420.1.1
+		death_Date = 1430.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1429.1.1 = {
+	monarch = {
+		name = "Khamtum"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 0
+		mil = 1
+	}
+}
+
+1429.1.1 = {
+	heir = {
+		name = "Meunsai"
+		monarch_name = "Meunsai"
+		dynasty = "Khun Lo"
+		birth_date = 1400.1.1
+		death_Date = 1432.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+}
+
+1430.1.1 = {
+	monarch = {
+		name = "Meunsai"
+		dynasty = "Khun Lo"
+		dip = 0
+		adm = 0
+		mil = 0
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Konekham"
+		monarch_name = "Konekham"
+		dynasty = "Khun Lo"
+		birth_date = 1415.1.1
+		death_Date = 1432.7.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1432.1.1 = {
+	monarch = {
+		name = "Konekham"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1432.1.1 = {
+	heir = {
+		name = "Kham Tam Sa"
+		monarch_name = "Kham Tam Sa"
+		dynasty = "Khun Lo"
+		birth_date = 1415.1.1
+		death_Date = 1433.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1432.7.1 = {
+	monarch = {
+		name = "Kham Tam Sa"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1432.7.1 = {
+	heir = {
+		name = "Lue Sai"
+		monarch_name = "Lue Sai"
+		dynasty = "Khun Lo"
+		birth_date = 1416.1.1
+		death_Date = 1433.7.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1433.1.1 = {
+	monarch = {
+		name = "Lue Sai"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1433.1.1 = {
+	heir = {
+		name = "Khai Bua Ban"
+		monarch_name = "Khai Bua Ban"
+		dynasty = "Khun Lo"
+		birth_date = 1417.1.1
+		death_Date = 1436.1.1
+		claim = 95
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1433.7.1 = {
+	monarch = {
+		name = "Khai Bua Ban"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 0
+		mil = 0
+	}
+}
+
+1433.7.1 = {
+	heir = {
+		name = "Khong Kham"
+		monarch_name = "Khong Kham"
+		birth_date = 1420.1.1
+		death_Date = 1438.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1436.1.1 = {
+	monarch = {
+		name = "Khong Kham"
+		dynasty = "Khun Lo"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1436.1.1 = {
+	heir = {
+		name = "Sai Tia Kaphut"
+		monarch_name = "Sai Tia Kaphut"
+		dynasty = "Khun Lo"
+		birth_date = 1420.1.1
+		death_Date = 1479.1.1
+		claim = 95
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1438.1.1 = {
+	monarch = {
+		name = "Sai Tia Kaphut"
+		dynasty = "Khun Lo"
+		adm = 4
+		dip = 4
+		mil = 2
+	}
+}
+
+1438.1.1 = {
+	heir = {
+		name = "Theng Kham"
+		monarch_name = "Theng Kham"
+		dynasty = "Khun Lo"
+		birth_date = 1430.1.1
+		death_Date = 1486.1.1
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+

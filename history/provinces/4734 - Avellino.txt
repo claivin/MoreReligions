@@ -41,5 +41,3 @@ discovered_by = ottoman
 1734.6.2 = { owner = NAP controller = NAP remove_core = HAB }
 1806.2.9 = { controller = FRA } # French troops invade
 1806.3.11 = { controller = NAP } # Joseph Bonaparte becomes king of the new Kingdom of Naples
-
-1444.11.12 = { trade_goods = unknown }

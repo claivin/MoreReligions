@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = central_thai
+religion = buddhism
+technology_group = chinese
+capital = 2387
+
+
+1395.1.1 = {
+	monarch = {
+		name = "Naphalai"
+		dynasty = "Uthong"
+		adm = 5
+		dip = 3
+		mil = 1	
+	}
+}
+
+1432.1.1 = {
+	monarch = {
+		name = "Mongkut"
+		dynasty = "Uthong"
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+

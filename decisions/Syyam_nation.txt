@@ -1,0 +1,70 @@
+country_decisions = {
+	syyam_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_mgt }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				primary_culture = central_thai
+				primary_culture = northern_thai
+			}
+			OR = {
+				NOT = { exists = SYM }
+				ai = no
+			}
+			NOT = { tag = SRJ }
+			NOT = { tag = ANK }
+			religion = sunni 
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 600
+				province_id = 4832
+				province_id = 601
+				province_id = 589
+				province_id = 593
+				province_id = 2387
+			}
+		}
+		allow = {
+			is_nomad = no
+			is_at_war = no
+			NOT = {
+				is_subject_of_type = tributary_state
+				AYU = {
+					is_subject_of = ANK
+				}
+			}
+			num_of_owned_provinces_with = {	
+				value = 15
+				is_core = ROOT
+				region = indo_china_region
+			}
+			owns_core_province = 600
+			owns_core_province = 4832
+			owns_core_province = 601
+			owns_core_province = 589
+			owns_core_province = 593
+			owns_core_province = 2387
+		}
+		effect = {
+			change_tag = SYM
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_mgt
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

@@ -1,17 +1,17 @@
 #2380 - Phnom Penh
 
-owner = PHP
-controller = PHP
+owner = ANK
+controller = ANK
 culture = khmer
-religion = buddhism
-capital = "Chaktomuk"
+religion = hinduism
+capital = "Phnom Penh"
 trade_goods = iron
 hre = no
-base_tax = 5
-base_production = 5
+base_tax = 6
+base_production = 6
 base_manpower = 3
 is_city = yes
-add_core = PHP
+add_core = ANK
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -24,5 +24,3 @@ center_of_trade = 1
 1618.1.1 = { capital = "Oudong" }
 1811.1.1 = { unrest = 5 } # The Siamese-Cambodian Rebellion
 1812.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

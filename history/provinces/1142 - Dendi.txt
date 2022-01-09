@@ -13,5 +13,3 @@ hre = no
 base_tax = 3 
 base_production = 3
 discovered_by = sub_saharan
-
-1444.11.12 = { trade_goods = unknown }

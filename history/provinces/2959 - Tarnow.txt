@@ -3,7 +3,7 @@
 
 owner = POL
 controller = POL
-capital = "Tarnw"
+capital = "Tarnów"
 culture = polish
 religion = catholic
 trade_goods = grain
@@ -24,4 +24,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-1444.11.12 = { trade_goods = unknown }

@@ -1,9 +1,9 @@
 #2403 - Martaban
 
-owner = PEG
-controller = PEG
+owner = SDH
+controller = SDH
 culture = mon
-religion = ari
+religion = buddhism
 capital = "Moulmein"
 trade_goods = chinaware
 hre = no
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = PEG
+add_core = SDH
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -35,5 +35,3 @@ discovered_by = ottoman
 1613.1.1 = { unrest = 0 }
 1740.11.1 = { owner = PEG controller = PEG } # Restored Pegu Dynasty
 1757.5.6 = { owner = TAU controller = TAU } # Returned to Burmese control
-
-1444.11.12 = { trade_goods = unknown }

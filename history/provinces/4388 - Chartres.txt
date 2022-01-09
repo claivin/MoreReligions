@@ -49,5 +49,3 @@ discovered_by = ottoman
 	revolt = {}
 	controller = FRA
 } # The establishment of the First Republic
-
-1444.11.12 = { trade_goods = unknown }

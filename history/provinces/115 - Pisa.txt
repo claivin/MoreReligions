@@ -38,7 +38,7 @@ center_of_trade = 1
 	# owner = FRA
 	# controller = FRA
 	# add_core = FRA
-# } # The Treaty of Lun	ville
+# } # The Treaty of Lunéville
 # 1801.3.21 = {	owner = ETR
 	# controller = ETR
 	# add_core = ETR
@@ -52,5 +52,3 @@ center_of_trade = 1
 	# controller = TUS
 	# remove_core = FRA
 # } # Napoleon abdicates and Tuscany is restored
-
-1444.11.12 = { trade_goods = unknown }

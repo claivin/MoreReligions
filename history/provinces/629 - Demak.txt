@@ -1,0 +1,22 @@
+#629 - Demak
+
+owner = MAJ
+controller = MAJ
+add_core = MAJ
+culture = javanese
+religion = hinduism
+capital = "Demak"
+trade_goods = cotton
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 3
+is_city = yes
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 2
+
+

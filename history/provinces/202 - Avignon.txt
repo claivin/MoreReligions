@@ -33,5 +33,3 @@ discovered_by = ottoman
 	# remove_core = PAP
 # } # Avignon is incorporated into France
 
-
-1444.11.12 = { trade_goods = unknown }

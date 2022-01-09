@@ -1,7 +1,7 @@
 #603 - Nakhon Thung Yai
 
-owner = LAV
-controller = LAV
+owner = ANK
+controller = ANK
 culture = central_thai
 religion = buddhism
 capital = "Nakhon Thung Yai"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = LAV
+add_core = ANK
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
@@ -21,5 +21,3 @@ discovered_by = ottoman
 1630.1.1 = { capital = "Trat" }
 1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
 1774.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

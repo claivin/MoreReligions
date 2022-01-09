@@ -1,0 +1,103 @@
+country_decisions = {
+	annex_pegu_decision = {
+		major = yes
+	potential = {
+		tag = PGN
+		exists = PEG
+		has_country_flag = pgn_trib_quo
+	}
+	allow = {
+		legitimacy = 90
+		reverse_has_opinion = {
+			who = PEG
+			value = 180
+		}
+		586 = {
+			owned_by = PEG
+			OR = {
+				has_building = temple 
+				has_building = cathedral
+			}
+			OR = {
+				has_building = marketplace 
+				has_building = trade_depot
+				has_building = stock_exchange
+			}
+		}
+	}
+	effect = {
+		set_country_flag = peg_integrat_pgn
+		inherit = PEG
+		586 = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 1
+		}
+	}
+	}
+	annex_sadhuim_decision = {
+		major = yes
+	potential = {
+		tag = PGN
+		exists = SDH
+		has_country_flag = pgn_trib_quo
+	}
+	allow = {
+		legitimacy = 90
+		reverse_has_opinion = {
+			who = SDH
+			value = 180
+		}
+		2403 = {
+			owned_by = SDH
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+	}
+	effect = {
+		inherit = SDH
+		set_country_flag = sdh_integrat_pgn
+		590 = {
+			add_base_tax = 1
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	}
+	annex_arakan_decision = {
+		major = yes
+		potential = {
+			tag = PGN
+			exists = ARK
+			has_country_flag = passive_arakan_flg
+		}
+		allow = {
+			legitimacy = 90
+			reverse_has_opinion = {
+				who = ARK
+				value = 180
+			}
+			579 = {
+				owned_by = ARK
+				development = 15
+				OR = {
+					has_building = marketplace 
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+		}
+		effect = {
+			inherit = ARK
+			set_country_flag = ark_integrate_pgn
+			579 = {
+				add_base_production = 2
+				add_base_manpower = 3
+			}
+		}
+	}
+}

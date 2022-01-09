@@ -6,7 +6,7 @@ add_core = DGB
 is_city = yes
 culture = dagomba
 religion = shamanism #Fetishism
-capital = "Sansann	 Mango"
+capital = "Sansanné Mango"
 trade_goods = tropical_wood
 hre = no
 base_tax = 1 
@@ -17,4 +17,3 @@ native_hostileness = 9
 base_manpower = 1
 discovered_by = sub_saharan
  
-1444.11.12 = { trade_goods = unknown }

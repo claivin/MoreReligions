@@ -35,5 +35,3 @@ discovered_by = east_african
 } # Ottomans occupy Suakin
 1571.1.1 = { unrest = 8 } # Local Beja revolt against Ottoman governors
 1572.1.1 = { unrest = 0 } # Ottomans crush Beja revolt
-
-1444.11.12 = { trade_goods = unknown }

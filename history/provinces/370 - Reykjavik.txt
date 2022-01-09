@@ -23,5 +23,3 @@ discovered_by = western
 	# add_core = DAN
 # }
 # 1752.1.1 = { trade_goods = wool } # Wool becomes more important.
-
-1444.11.12 = { trade_goods = unknown }

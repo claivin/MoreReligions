@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = central_thai
+religion = buddhism
+technology_group = chinese
+capital = 593 # Nakhon Si Thammarat
+
+
+1395.1.1 = {
+	monarch = {
+		name = "Ramaracha"
+		dynasty = "Uthong"
+		adm = 2
+		dip = 1
+		mil = 1	
+	}
+}
+
+1432.1.1 = {
+	monarch = {
+		name = "Ramathibodi II"
+		dynasty = "Uthong"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+

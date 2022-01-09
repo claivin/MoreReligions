@@ -1,7 +1,7 @@
 #2377- Teuk Khmao
 
-owner = CHA
-controller = CHA
+owner = ANK
+controller = ANK
 culture = khmer
 religion = hinduism
 capital = "Oc Eo"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = CHA
+add_core = ANK
 
 
 
@@ -30,5 +30,3 @@ discovered_by = ottoman
 	add_core = ANN
 	remove_core = KHM
 } # Nguyen recovered the land
-
-1444.11.12 = { trade_goods = unknown }

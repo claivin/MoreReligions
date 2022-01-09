@@ -1,0 +1,20 @@
+vassal = {
+	first = PMN
+	second = CHK
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PMN
+	second = MPH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PMN
+	second = LUA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}

@@ -38,5 +38,3 @@ discovered_by = nomad_group
 	controller = QNG
 	add_core = QNG
 }
-
-1444.11.12 = { trade_goods = unknown }

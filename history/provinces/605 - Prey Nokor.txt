@@ -1,17 +1,17 @@
 #605 - Prey Nokor
 
-owner = CHA
-controller = CHA
-culture = cham
+owner = ANK
+controller = ANK
+culture = khmer
 religion = hinduism
 capital = "Prey Nokor"
 trade_goods = tropical_wood
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 5
+base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = CHA
+add_core = ANK
 
 
 
@@ -40,5 +40,3 @@ discovered_by = ottoman
 	add_core = ANN
 	remove_core = DAI
 } # Nguyen recovered the land
-
-1444.11.12 = { trade_goods = unknown }

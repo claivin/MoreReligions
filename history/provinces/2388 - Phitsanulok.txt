@@ -1,6 +1,6 @@
 #2388 - Phitsanulok
 
-owner = SUK 
+owner = SUK
 controller = SUK
 culture = central_thai
 religion = buddhism
@@ -11,10 +11,10 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = AYU
 add_core = SUK
 discovered_by = chinese
 discovered_by = indian
 
-
-1444.11.12 = { trade_goods = unknown }
+1535.1.1 = { discovered_by = POR }
+1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
+1774.1.1 = { unrest = 0 }

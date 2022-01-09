@@ -18,5 +18,3 @@ base_manpower = 1
 discovered_by = sub_saharan
 add_local_autonomy = 25
 
-
-1444.11.12 = { trade_goods = unknown }

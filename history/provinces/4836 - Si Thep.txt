@@ -1,7 +1,7 @@
 #592 - Ratchaburi
 
-owner = STR
-controller = STR
+owner = ANK
+controller = ANK
 culture = khmer
 religion = buddhism
 capital = "Si Thep"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = STR
+add_core = ANK
 
 
 
@@ -22,5 +22,3 @@ discovered_by = ottoman
 
 1535.1.1 = { discovered_by = POR }
 
-
-1444.11.12 = { trade_goods = unknown }

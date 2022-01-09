@@ -1,17 +1,17 @@
 #1823 - Stung Treng
 
-owner = PVH
-controller = PVH
+owner = ANK
+controller = ANK
 culture = khmer
 religion = animism
 capital = "Stung Treng"
 trade_goods = grain
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 4
+base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = PVH
+add_core = ANK
 
 
 
@@ -40,5 +40,3 @@ discovered_by = indian
 }
 1811.1.1 = { unrest = 5 } # The Siamese-Cambodian Rebellion
 1812.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

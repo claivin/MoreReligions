@@ -38,5 +38,3 @@ discovered_by = eastern
 	# remove_core = ENG
 # }
 # 1750.1.1 = { religion = reformed }
-
-1444.11.12 = { trade_goods = unknown }

@@ -26,5 +26,3 @@ discovered_by = ottoman
 1584.1.1 = { unrest = 0 } #Dakin and Ajib reach agreement to end conflict
 1612.1.1 = { unrest = 5 } #Funj destroy Ajib at Karkoj
 1613.1.1 = { unrest = 0 } #Funj restore autonomy to the Abdallabi
-
-1444.11.12 = { trade_goods = unknown }

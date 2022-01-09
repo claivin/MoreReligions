@@ -40,5 +40,3 @@ discovered_by = eastern
 	# add_core = GBR
 	# remove_core = ENG
 # }
-
-1444.11.12 = { trade_goods = unknown }

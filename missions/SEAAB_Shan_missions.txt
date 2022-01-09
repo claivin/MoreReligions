@@ -1,0 +1,522 @@
+shan_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		primary_culture = shan
+	}
+	sh_prepare_for_war_shan = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = {}
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+		}
+		effect = {
+			if = {
+				limit = {
+					is_subject = yes
+				}
+			add_liberty_desire = 10
+			add_manpower = 5
+			kachin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			shan_hill_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			karenni_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			}
+			else = {
+			add_manpower = 5
+			add_prestige = 15
+			add_liberty_desire = 10
+			}
+		}
+	}
+}
+SST_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SST
+	}
+	sst_unite_burma = {
+		icon = "mission_rule_indochina"
+		position = 2
+		required_missions = {}
+		provinces_to_highlight = {
+			area = central_burma_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			central_burma_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	sst_take_coast = {
+		icon = "mission_invade_arakan"
+		required_missions = { sst_unite_burma }
+		provinces_to_highlight = {
+			OR = {
+				area = lower_burma_area
+				area = arakan_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lower_burma_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			arakan_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			if = {
+				limit = {
+					east_bengal_area = { type = all country_or_non_sovereign_subject_holds = BNG }
+					west_bengal_area = { type = all country_or_non_sovereign_subject_holds = BNG }
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+						months = 700
+						target = BNG
+				}
+			}
+			else = {
+				east_bengal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				}
+				west_bengal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	sst_control_bengal = {
+	icon = "mission_unite_bengal"
+	position = 5
+	required_missions = { sst_take_coast }
+	provinces_to_highlight = {
+		OR = {
+			area = east_bengal_area 
+			area = west_bengal_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	trigger = {
+		east_bengal_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		west_bengal_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+	}
+	effect = {
+		bengal_region = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	}
+}
+shan_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		primary_culture = shan
+	}		
+}
+SST_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SST
+	}
+	sst_institutions = {
+		icon = "mission_asian_trader"
+		required_missions { shan_confed }
+		position = 4
+		trigger = {
+				has_institution = renaissance
+				has_institution = new_world_i
+				has_institution = printing_press
+		}
+		effect = {
+			add_country_modifier = {
+				name = shan_tech
+				duration = 18250
+			}
+		}
+	}
+}
+shan_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		primary_culture = shan
+	}		
+	sh_secure_internal = {
+		icon = "mission_patronize_sufi_scholars"
+		required_missions = {}
+		trigger = {
+			estate_loyalty = {
+   				estate = estate_church
+  				loyalty = 60
+			}estate_loyalty = {
+   				estate = estate_nobles
+  				loyalty = 60
+			}
+			stability = 1
+		}
+		effect = {
+		add_liberty_desire = 10
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
+		}
+	}
+	sh_break_free = {
+		icon = "mission_conquer_siam"
+		required_missions = { sh_prepare_for_war_shan sh_secure_internal sh_secure_external }
+		provinces_to_highlight = {
+			OR = {
+			area = kachin_area
+			area = shan_hill_area
+			area = karenni_area
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			if = {
+				limit = {
+					PGN = {
+						num_of_owned_provinces_with = {
+							OR = {
+								area = kachin_area
+								area = shan_hill_area
+								area = karenni_area
+							}
+							value = 1
+						}
+					}
+				}
+				liberty_desire = 50
+			}
+			else = {
+			kachin_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			shan_hill_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			karenni_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			}
+		}
+		effect = {
+			upper_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chindwin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = shan_war_independence.1 }
+		}
+	}
+	shan_confed = {
+	icon = "mission_end_the_shan_domination"
+	required_missions = { sh_break_free }
+	provinces_to_highlight = {
+		OR = {
+			area = upper_burma_area
+			area = chindwin_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	}
+	trigger = {
+		upper_burma_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		chindwin_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+	}
+	effect = {
+		country_event = { id = shan_war_independence.3 }
+		central_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = LNA
+					LNA = { is_free_or_tributary_trigger = yes }
+				}
+				add_casus_belli = {
+					target = LNA
+					type = cb_vassalize_mission
+				}
+			}
+			else = {
+				northern_thai_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+	}
+	}
+}
+shan_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SST
+	}
+	sst_government = {
+		icon = "mission_asian_city"
+		position = 5
+		required_missions = { shan_confed }
+		trigger = {
+			NOT = { overextension_percentage = 0.1 }
+			stability = 2
+			capital_scope = { development = 30 }
+		}
+		effect = {
+			add_government_reform = shan_kingdom_reform
+			add_prestige = 20
+		}
+	}
+}
+shan_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		primary_culture = shan
+	}	
+}
+SST_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SST
+	}
+	sst_unite_faith = {
+		icon = "mission_buddhist_monk_praying"
+		position = 4
+		required_missions = { shan_confed }
+		trigger = {
+			religious_unity = 1
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			num_of_owned_provinces_with = {
+				value = 12 
+				OR = { 
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = shan_religious_unity
+				duration = 18250
+			}
+		}
+	}
+}
+shan_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		primary_culture = shan	
+	}
+	sh_secure_external = {
+		icon = "mission_rule_the_garjats"
+		required_missions = {}
+		trigger = {
+		custom_trigger_tooltip = {
+			tooltip = sh_foreign_allies_tt
+			OR = {
+				any_country = {
+					is_rival = PGN
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				calc_true_if = {
+					any_country = {
+						is_subject_of_type_with_overlord = { who = PGN type = tributary_state }
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}	
+					}
+				amount = 2
+					}
+				}
+		}
+		}
+		effect = {
+		add_liberty_desire = 10
+		add_country_modifier = {
+			name = shan_alliances
+				duration = 1825
+		}
+	}
+	}
+}
+SST_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SST
+	}
+	sst_invade_inthanon = {
+		icon = "mission_non-western_cavalry_raid"
+		position = 2
+		required_missions = {}
+		provinces_to_highlight = {
+			area = northern_thai_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			northern_thai_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			sukhothai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	sst_invade_chao_phraya = {
+		icon = "mission_chinese_general_riding"
+		required_missions = { sst_invade_inthanon }
+		provinces_to_highlight = {
+			area = sukhothai_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			sukhothai_area = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			central_thai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vientiane_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	sst_empire_of_tai = {
+		icon = "mission_chakravarti"
+		position = 5
+		required_missions = { sst_invade_chao_phraya }
+		provinces_to_highlight = {
+			OR = {
+				area = central_thai_area
+				area = vientiane_area
+			}
+		}
+		trigger = {
+			central_thai_area = { country_or_non_sovereign_subject_holds = ROOT }
+			vientiane_area = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+			else = {
+				add_adm_power = 100
+			}
+			indo_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = shan_dominance
+				duration = -1
+			}
+		}
+	}
+}
+			
+					

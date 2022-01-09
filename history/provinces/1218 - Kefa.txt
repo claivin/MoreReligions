@@ -32,5 +32,3 @@ discovered_by = indian
 1692.1.1 = { unrest = 0 }
 1697.1.1 = { unrest = 7 } # Invasion by Oromo
 1698.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

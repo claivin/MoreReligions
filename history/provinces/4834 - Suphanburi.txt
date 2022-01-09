@@ -1,5 +1,5 @@
-owner = SUK
-controller = SUK
+owner = LPB
+controller = LPB
 culture = central_thai
 religion = buddhism
 capital = "Suphanburi"
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = SUK
+add_core = LPB
 
 
 
@@ -20,5 +20,3 @@ discovered_by = ottoman
 
 1535.1.1 = { discovered_by = POR }
 
-
-1444.11.12 = { trade_goods = unknown }
