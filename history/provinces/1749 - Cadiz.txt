@@ -30,3 +30,5 @@ center_of_trade = 1
 # 1713.4.11 = { remove_core = CAS }
 # 1808.6.6 = { revolt = { type = pretender_rebels size = 0.5 } controller = REB }
 # 1813.12.11 = { revolt = {} controller = SPA }
+
+1444.11.12 = { trade_goods = unknown }

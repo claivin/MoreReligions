@@ -66,3 +66,4 @@ discovered_by = ottoman
 	controller = SPI
 	remove_core = FRA
 } # Napoleon abdicates and Victor Emmanuel is able to return to Turin
+1444.11.12 = { trade_goods = unknown }

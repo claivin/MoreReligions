@@ -30,3 +30,5 @@ discovered_by = eastern
 # 1801.6.6 = { controller = POR } # Treaty of Badajoz
 # 1810.9.15 = { controller = FRA } # Occupied by French troops
 # 1811.4.5 = { controller = POR }
+
+1444.11.12 = { trade_goods = unknown }

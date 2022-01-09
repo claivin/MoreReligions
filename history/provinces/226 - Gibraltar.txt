@@ -37,3 +37,5 @@ discovered_by = eastern
 # } # Treaty of Utrecht
 # 1720.1.1 = { fort_18th = yes }
 
+
+1444.11.12 = { trade_goods = unknown }

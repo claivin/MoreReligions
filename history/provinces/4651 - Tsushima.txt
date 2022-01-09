@@ -29,3 +29,5 @@ discovered_by = QNG
 #Battle of Sekigahara - Kobayakawa changes sides
 #1603.3.24 = { owner = JAP controller = JAP add_core = JAP remove_core = TKG }
 # Tokugawa shogunate founded
+
+1444.11.12 = { trade_goods = unknown }

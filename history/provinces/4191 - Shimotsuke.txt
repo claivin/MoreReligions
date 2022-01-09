@@ -21,3 +21,4 @@ discovered_by = QNG
 discovered_by = ANU
 
 1597.1.1   = { remove_core = UTN add_core = TKG owner = TKG controller = TKG } # The Utsunomiya clan was banished from Shimotsuke
+1444.11.12 = { trade_goods = unknown }

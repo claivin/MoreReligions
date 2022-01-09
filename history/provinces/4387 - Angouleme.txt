@@ -46,3 +46,5 @@ discovered_by = ottoman
 # 1652.10.21 = { revolt = {} controller = FRA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 # 1685.10.18 = { unrest = 8 } # Edict of Nantes revoked by Louis XIV
 # 1689.1.1 = { unrest = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore
+
+1444.11.12 = { trade_goods = unknown }

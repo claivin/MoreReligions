@@ -36,3 +36,5 @@ discovered_by = indian
 	add_core = CHK
 	remove_core = VIE
 }
+
+1444.11.12 = { trade_goods = unknown }

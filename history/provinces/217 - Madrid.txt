@@ -40,3 +40,5 @@ discovered_by = ottoman
 # 1808.5.3 = { revolt = {} controller = SPA }
 # 1813.3.19 = { revolt = { type = pretender_rebels size = 2 } controller = REB }
 # 1813.12.11 = { revolt = {} controller = SPA }
+
+1444.11.12 = { trade_goods = unknown }

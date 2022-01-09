@@ -27,3 +27,5 @@ discovered_by = QNG
 1566.11.28 = { fort_15th = no } # Gassan Toda Castle has fallen
 1600.9.13 = { add_core = TKG owner = TKG controller = TKG remove_core = MRI }
 1639.8.4 = { trade_goods = fish } # Sakoku reduces sword demand
+
+1444.11.12 = { trade_goods = unknown }

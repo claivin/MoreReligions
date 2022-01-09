@@ -22,3 +22,5 @@ center_of_trade = 2
 1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
 1768.1.1 = { capital = "Thonburi" }
 1774.1.1 = { unrest = 0 }
+
+1444.11.12 = { trade_goods = unknown }

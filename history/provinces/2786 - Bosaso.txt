@@ -23,3 +23,5 @@ discovered_by = ottoman
 1550.1.1 = { discovered_by = TUR }
 1555.1.1 = { owner = WAR controller = WAR } #Northern part of province no longer conrolled by ADA
 1730.1.1 = { owner = MJE controller = MJE }
+
+1444.11.12 = { trade_goods = unknown }

@@ -14,3 +14,5 @@ base_tax = 1
 base_production = 1
 
 discovered_by = sub_saharan
+
+1444.11.12 = { trade_goods = unknown }

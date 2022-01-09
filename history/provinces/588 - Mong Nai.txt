@@ -47,3 +47,5 @@ discovered_by = indian
 	owner = TAU
 	controller = TAU
 }
+
+1444.11.12 = { trade_goods = unknown }

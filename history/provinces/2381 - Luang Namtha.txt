@@ -31,3 +31,5 @@ discovered_by = indian
 	controller = LUA
 	remove_core = LXA
 } # Declared independent, Lan Xang was partitioned into three kingdoms; Vientiane, Champasak & Luang Prabang
+
+1444.11.12 = { trade_goods = unknown }

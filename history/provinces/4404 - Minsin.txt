@@ -46,3 +46,5 @@ discovered_by = indian
 	controller = TAU
 	remove_core = QNG
 }
+
+1444.11.12 = { trade_goods = unknown }

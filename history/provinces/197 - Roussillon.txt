@@ -39,3 +39,5 @@ discovered_by = ottoman
 # 1715.1.1 = { fort_17th = no fort_18th = yes }
 # 1793.4.17 = { controller = SPA } # Occupied by the Spanish army
 # 1793.5.1 = { controller = FRA }
+
+1444.11.12 = { trade_goods = unknown }

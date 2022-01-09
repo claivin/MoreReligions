@@ -25,3 +25,4 @@ discovered_by = ANU
 1550.7.1 = { owner = TKD controller = TKD } # Fall of the Ogasawara Clan
 1582.4.3 = { add_core = ODA owner = ODA controller = ODA remove_core = TKD }
 1600.9.13 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
+1444.11.12 = { trade_goods = unknown }

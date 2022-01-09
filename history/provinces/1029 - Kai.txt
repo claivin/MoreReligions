@@ -21,4 +21,16 @@ discovered_by = QNG
 discovered_by = ANU
 
 1498.1.1 = { trade_goods = gold } # Kurokawa gold mine discovered
+<<<<<<< Updated upstream
 
+=======
+<<<<<<< HEAD
+1542.1.1 = { discovered_by = POR }
+1582.4.3 = { add_core = ODA owner = ODA controller = ODA remove_core = TKD }
+1600.9.13 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
+
+1444.11.12 = { trade_goods = unknown }
+=======
+
+>>>>>>> fbcb07f51ef5b6171e1478f4407796e8365f0d25
+>>>>>>> Stashed changes

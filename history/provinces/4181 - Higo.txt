@@ -27,3 +27,4 @@ discovered_by = QNG
 1587.5.15 = { owner = ODA controller = ODA add_core = ODA remove_core = SMZ} #Hideyoshi's conquest of Kyushu
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
 1632.1.1 = { owner = HSK controller = HSK add_core = HSK remove_core = TKG fort_16th = yes } # Kumamoto-han granted to Hosokawa
+1444.11.12 = { trade_goods = unknown }
