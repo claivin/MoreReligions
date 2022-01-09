@@ -9,65 +9,91 @@
  lumberDESC:0 "Wood is needed for development across many civilization, as such the lumber industry is quite large."
  
  stone:0 "Stone"
- #stoneDESC:0 
+ stoneDESC:0 "Good stone is often taken for granted as it is valuable in use for building homes, structures, temples, forts, and roads."
  
  marble:0 "Marble"
- #marbleDESC:0
+ marbleDESC:0 "Stone, but for the discerning eye."
  
  jewelry:0 "Jewelry"
- #jewelryDESC:0
+ jewelryDESC:0 "A valuable evolution of the stones and metals drawn from the earth. Some can be worth more than their weight in gold simply by craftsmanship and artistry alone."
  
  cheese:0 "Cheese"
  cheeseDESC:0 "Cheese represents both itself and various other dairy products."
  
  whales:0 "Whales"
+ whalesDESC: "Sailing off into the high seas and following whales is a dangerous and arduous task, though the rewards are great... Very great."
  
  rice:0 "Rice"
+ riceDESC: "A food staple throughout the Asian continent."
  
  steel:0 "Steel"
+ steelDESC: "Wrought in foundries and forged for War, steel is strongest and most resilent material anyone can produce."
  
  silver:0 "Silver"
+ steelDESC: "Though not as valuable as gold, it is certaintly not something you would want to pass up."
  
  sulfur:0 "Sulfur"
+ sulfurDESC: "An unholy stone that produces an even unholier smell."
  
  gunpowder:0 "Gunpowder"
+ gunpowderDESC: "A curious concoction that will ineveitably dominate the battlefields of the world..."
  
  nutmeg:0 "Nutmeg"
+ nutmegDESC: "A nut-like fruit with slightly sweet fragrances, used as a spice."
  
  saffron:0 "Saffron"
+ saffronDESC: "A flower from the Near East with aromatic and possibly medicinal qualities."
  
- tumeric:0 "Tumeric"
+ tumeric:0 "Turmeric"
+ tumericDESC: "A spice from India, famed for its medicinal qualities and its bright orange coloration."
  
  honey:0 "Honey"
+ honeyDESC: "Beekeeping is a difficulty and finnicky profession, but what it yields is ambrosia itself."
  
  ginger:0 "Ginger"
+ dingerDESC: "A strange finger-like root vegetable hailing from East Asia, with a powerful taste."
  
  fruit:0 "Fruit"
+ fruitDESC: "Representing the various fruits grown throughtout temperate regions of the world."
  
  tropical_fruit:0 "Tropical Fruit"
+ tropical_fruitDESC: "Representing the various fruits grown throughtout tropical regions of the world."
  
  horse:0 "Horses"
+ horse_fruitDESC: "Horses don't just spring out of the ground! Though they are far from their undomesticated ancestors, wide open spaces are conducive to their breeding."
  
  chocolate:0 "Chocolate"
+ chocolateDESC: "The delicious product of the New World cocoa."
  
  ice:0 "Ice"
+ iceDESC: "Where does ice come from? Where its cold, of course!"
  
  rice_wine:0 "Rice Wine"
+ rice_wineDESC: "A signature alcohol of predominantly rice-dependent communities."
  
  citrus:0 "Citrus"
+ citrusDESC: "A sour fruit with some medicinal properties, or so it is told."
  
  grapes:0 "Grapes"
+ grapesDESC: "Where wine comes from, or so I'm told."
  
  dates_figs:0 "Dates and Figs"
+ dates_figsDESC: "A popular fruit, grown from England to Iran."
  
  rum:0 "Rum"
+ rumDESC: "A spirit distiled from sugar cane, likey grown in the Americas."
  
  honey_wine:0 "Honey Wine"
+ honey_wineDESC: "A wine brewed from the golden liquid of bees. Sweet!"
  
  olives:0 "Olives"
+ olivesDESC: "The signature vegetable of the Mediterranean."
  
  vegetables:0 "Vegetables"
+ vegetablesDESC: "Representing the various mundane subsistence crops grown throughout the world."
  
  potato:0 "Potatoes"
+ potatoDESC: "Starchy goodness, only from the New World."
  
  tomato:0 "Tomatoes"
+ tomatoDESC: "Juicy, slightly acidic, red, and plump."
