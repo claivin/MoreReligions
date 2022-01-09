@@ -1,7 +1,7 @@
 #1028 - Musashi
 
-owner = YAM
-controller = YAM
+owner = NTT
+controller = NTT
 culture = togoku
 religion = nihon
 capital = "Kawagoe"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 3
 is_city = yes
-add_core = YAM
+add_core = NTT
 add_core = ASK
 discovered_by = chinese
 discovered_by = MCH

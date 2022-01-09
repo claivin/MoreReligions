@@ -1,7 +1,7 @@
 #2017 - Shinano
 
-owner = OGS
-controller = OGS
+owner = JAP
+controller = JAP
 culture = togoku
 religion = nihon
 capital = "Nagano"
@@ -12,6 +12,7 @@ base_manpower = 2
 base_production = 2
 is_city = yes
 add_core = OGS
+add_core = JAP
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA

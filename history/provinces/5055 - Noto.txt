@@ -1,14 +1,14 @@
-#1025 - Dewa
+#1837 - Etchu
 
 owner = JAP
 controller = JAP
 culture = togoku
 religion = nihon
-capital = "Yamagata"
+capital = "Kanazawa"
 trade_goods = grain
 hre = no
-base_tax = 2 
-base_production = 2
+base_tax = 3
+base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = SBA
@@ -19,4 +19,5 @@ discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 discovered_by = ANU
+
 

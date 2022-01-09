@@ -1,7 +1,7 @@
 #4189 - Sagami
 
-owner = YAM
-controller = YAM
+owner = NTT
+controller = NTT
 culture = togoku
 religion = nihon
 capital = "Kamakura"
@@ -12,7 +12,7 @@ base_manpower = 3
 base_production = 2
 is_city = yes
 add_core = ASK
-add_core = YAM
+add_core = NTT
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA

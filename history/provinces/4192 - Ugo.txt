@@ -1,7 +1,7 @@
 #4192 - Ugo
 
-owner = YAM
-controller = YAM
+owner = JAP
+controller = JAP
 culture = togoku
 religion = nihon
 capital = "Akita"
@@ -12,7 +12,7 @@ base_manpower = 2
 base_production = 2
 is_city = yes
 add_core = AKT
-add_core = YAM
+add_core = JAP
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA

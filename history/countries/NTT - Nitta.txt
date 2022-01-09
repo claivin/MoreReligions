@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = daimyo
+government_rank = 1
+primary_culture = togoku
+religion = nihon
+technology_group = chinese
+capital = 4188	# Shinano
+religious_school = mr_shingon_school
+
+

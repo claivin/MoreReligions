@@ -1,17 +1,16 @@
-#1014 - Bungo
+#1012 - Satsuma
 
 owner = SMZ
 controller = SMZ
 culture = kyushuan
 religion = nihon
-capital = "Funai"
-trade_goods = tropical_wood
+capital = "Soo"
+trade_goods = tea
 hre = no
-base_tax = 4 
+base_tax = 2
+base_manpower = 1
 base_production = 2
-base_manpower = 3
 is_city = yes
-add_core = OTM
 add_core = SMZ
 discovered_by = chinese
 discovered_by = MCH
@@ -20,5 +19,5 @@ discovered_by = OIR
 discovered_by = QNG
 
 1542.1.1 = { discovered_by = POR }
-1599.1.1 = { owner = HSK controller = HSK add_core = HSK remove_core = OTM }
-1632.1.1 = { owner = TKG controller = TKG add_core = TKG remove_core = HSK }
+
+1550.1.1 = { fort_15th = yes } # Uchi Castle, the capital of the Shimazu clan

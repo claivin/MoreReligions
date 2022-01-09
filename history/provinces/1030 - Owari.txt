@@ -1,7 +1,7 @@
 #1030 - Owari
 
-owner = ODA
-controller = ODA
+owner = JAP
+controller = JAP
 culture = togoku
 religion = nihon
 capital = "Kiyosu"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = ODA
+add_core = JAP
 add_core = SBA
 discovered_by = chinese
 discovered_by = MCH

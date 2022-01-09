@@ -1,7 +1,7 @@
 #1835 - Mino
 
-owner = TKI
-controller = TKI
+owner = JAP
+controller = JAP
 culture = togoku
 religion = nihon
 capital = "Inabayama"
@@ -12,6 +12,7 @@ base_manpower = 3
 base_production = 4
 is_city = yes
 add_core = TKI
+add_core = JAP
 fort_15th = yes #Inabayama Castle
 discovered_by = chinese
 discovered_by = MCH

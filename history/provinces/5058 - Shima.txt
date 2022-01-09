@@ -1,23 +1,21 @@
-#4187 - Kii
+#4359 - Ise
 
 owner = MYI
 controller = MYI
 culture = japanese
 religion = nihon
-capital = "Wakayama"
-trade_goods = naval_supplies
+capital = "Kiriyama"
+trade_goods = fish
 hre = no
-base_tax = 2
+base_tax = 1
 base_manpower = 2
 base_production = 3
 is_city = yes
 add_core = MYI
+add_core = KTB
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
 discovered_by = ANU
-
-1585.11.1 = { remove_core = HTK owner = ODA controller = ODA add_core = ODA }
-1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
