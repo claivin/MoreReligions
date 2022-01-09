@@ -45,7 +45,7 @@ discovered_by = ottoman
 	# owner = GEN
 	# controller = GEN
 	# remove_core = FRA
-# } # Treaty of Cateau-Cambr	sis
+# } # Treaty of Cateau-Cambrésis
 # 1729.1.1 = { unrest = 7 } # Revolt against the Genoese
 # 1732.5.1 = { unrest = 3 } # Charles VI sends military assistance & the rebels surrender
 # 1733.11.17 = { unrest = 5 } # Mistrust in the Genoese administration resulted in another Corsican revolt
@@ -61,5 +61,3 @@ discovered_by = ottoman
 	# remove_core = GEN
 # } # Ceded to France, since the Republic of Genoa is unable to restore control
 # 1769.6.13 = { revolt = {} controller = FRA } # France managed to overcome the resistance & Paoli flees
-
-1444.11.12 = { trade_goods = unknown }

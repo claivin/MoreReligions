@@ -63,5 +63,3 @@ discovered_by = JAP
 1603.3.24 = { remove_core = ODA add_core = TKG owner = TKG controller = TKG }
 1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
 1787.1.1 = { discovered_by = FRA }
-
-1444.11.12 = { trade_goods = unknown }

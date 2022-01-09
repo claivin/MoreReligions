@@ -38,5 +38,3 @@ center_of_trade = 2
 # 1652.2.15 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Charles of Lorraine marches towards Paris to team up with Cond	, ravaging the Champagne
 # 1652.10.21 = { revolt = {} controller = FRA } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 # 1773.1.1 = { base_tax = 11 base_production = 11 } # Turgot & the Economical Reforms
-
-1444.11.12 = { trade_goods = unknown }

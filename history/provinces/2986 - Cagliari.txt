@@ -43,5 +43,3 @@ discovered_by = ottoman
 # } # Kingdom of Piedmont-Sardinia
 # 1796.1.1 = { controller = FRA } # French invasion
 # 1796.4.16 = { controller = SPI } # Peace between Sardinia and France
-
-1444.11.12 = { trade_goods = unknown }

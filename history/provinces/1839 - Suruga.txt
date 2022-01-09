@@ -24,5 +24,3 @@ discovered_by = QNG
 1582.4.3 = { add_core = TKG owner = TKG controller = TKG remove_core = TKD }
 1590.8.10 = { add_core = ODA owner = ODA controller = ODA remove_core = TKG }
 1600.9.13 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
-
-1444.11.12 = { trade_goods = unknown }

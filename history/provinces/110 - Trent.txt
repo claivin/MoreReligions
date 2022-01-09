@@ -36,11 +36,9 @@ discovered_by = ottoman
 	# controller = ITA
 	# add_core = ITA
 	# remove_core = BAV
-# } # Incorporated into the Kingdom of Italy after the treaty of Schnbrunn
+# } # Incorporated into the Kingdom of Italy after the treaty of Schönbrunn
 # 1814.4.11 = {	owner = HAB
 	# controller = HAB
 	# add_core = HAB
 	# remove_core = ITA
 # } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
-
-1444.11.12 = { trade_goods = unknown }

@@ -42,5 +42,3 @@ discovered_by = ottoman
 # 1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 # 1715.1.1 = { fort_17th = no fort_18th = yes }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-
-1444.11.12 = { trade_goods = unknown }

@@ -20,5 +20,3 @@ discovered_by = NDO
 discovered_by = LOA
 
 
-
-1444.11.12 = { trade_goods = unknown }

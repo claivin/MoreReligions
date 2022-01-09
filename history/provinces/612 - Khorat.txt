@@ -32,5 +32,3 @@ discovered_by = indian
 1774.1.1 = { unrest = 0 }
 1811.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # The Siamese-Cambodian Rebellion
 1812.1.1 = { revolt = {} }
-
-1444.11.12 = { trade_goods = unknown }

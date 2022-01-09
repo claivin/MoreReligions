@@ -30,5 +30,3 @@ discovered_by = ottoman
 	add_core = ANN
 	remove_core = KHM
 } # Nguyen recovered the land
-
-1444.11.12 = { trade_goods = unknown }

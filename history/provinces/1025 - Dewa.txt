@@ -20,5 +20,3 @@ discovered_by = OIR
 discovered_by = QNG
 discovered_by = ANU
 
-
-1444.11.12 = { trade_goods = unknown }

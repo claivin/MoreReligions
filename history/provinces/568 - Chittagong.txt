@@ -50,5 +50,3 @@ center_of_trade = 3
 	add_core = GBR
 } # Given to GBR by Mir Qasim
 1800.1.1 = { religion = sunni }
-
-1444.11.12 = { trade_goods = unknown }

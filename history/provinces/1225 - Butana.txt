@@ -50,5 +50,3 @@ discovered_by = ottoman
 1756.1.1 = { unrest = 4 } #Badi IV comes into conflict with aristocrats over new slave army plan
 1761.1.1 = { unrest = 9 } #Badi IV persecutes aristocrats who challenge his authority
 1762.1.1 = { unrest = 0 } #Badi IV deposed by Muhammad Abu Likaylik
-
-1444.11.12 = { trade_goods = unknown }

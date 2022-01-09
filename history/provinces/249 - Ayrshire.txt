@@ -34,5 +34,3 @@ center_of_trade = 1
 	# controller = GBR
 	# add_core = GBR
 # }
-
-1444.11.12 = { trade_goods = unknown }

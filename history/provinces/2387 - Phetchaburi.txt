@@ -24,5 +24,3 @@ discovered_by = ottoman
 
 1767.4.1 = { unrest = 7 } # The Ayutthaya kingdom began to crumble
 1774.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

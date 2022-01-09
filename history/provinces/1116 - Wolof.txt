@@ -25,5 +25,3 @@ discovered_by = sub_saharan
 1673.1.1 = { unrest = 10 }#The Tubenan, supporters of Nasir al-Din's Marabout movement, invade Futa Toro
 1677.1.1 = { owner = JOL controller = JOL add_core = JOL remove_core = FUL } #Fulani damaged by Marabout uprising, Jolof kigndom regain some ascendancy.
 1784.1.1 = { religion = sunni unrest = 2 } #beginning of intense conversion to Islam in region, religion of province changes to Sunni
-
-1444.11.12 = { trade_goods = unknown }

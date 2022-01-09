@@ -23,5 +23,3 @@ controller = JUK
 add_core = JUK
 is_city = yes
 
-
-1444.11.12 = { trade_goods = unknown }

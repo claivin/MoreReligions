@@ -24,5 +24,3 @@ discovered_by = eastern
 # 1640.12.1 = { unrest = 0 }
 # 1807.12.1 = { controller = FRA } # Occupied by France
 # 1808.8.30 = { controller = POR }
-
-1444.11.12 = { trade_goods = unknown }

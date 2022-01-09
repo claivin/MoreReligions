@@ -25,5 +25,3 @@ discovered_by = ottoman
 	owner = JOH
 	controller = JOH
 }
-
-1444.11.12 = { trade_goods = unknown }

@@ -46,5 +46,3 @@ discovered_by = indian
 	controller = TAU
 }
 1760.1.1 = { discovered_by = GBR }
-
-1444.11.12 = { trade_goods = unknown }

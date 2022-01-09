@@ -18,5 +18,3 @@ add_core = PIY
 discovered_by = chinese
 discovered_by = indian
 
-
-1444.11.12 = { trade_goods = unknown }

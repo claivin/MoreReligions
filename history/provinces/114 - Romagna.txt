@@ -39,5 +39,3 @@ discovered_by = ottoman
 	# add_core = PAP
 	# remove_core = ITA
 # } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
-
-1444.11.12 = { trade_goods = unknown }

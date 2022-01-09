@@ -22,5 +22,3 @@ discovered_by = ottoman
 
 1535.1.1 = { discovered_by = POR }
 
-
-1444.11.12 = { trade_goods = unknown }

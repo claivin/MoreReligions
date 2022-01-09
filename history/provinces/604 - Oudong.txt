@@ -21,5 +21,3 @@ discovered_by = indian
 1618.1.1 = { capital = "Oudong" }
 1811.1.1 = { unrest = 5 } # The Siamese-Cambodian Rebellion
 1812.1.1 = { unrest = 0 }
-
-1444.11.12 = { trade_goods = unknown }

@@ -17,5 +17,3 @@ fort_15th = yes
 extra_cost = 16
 center_of_trade = 2
 
-
-1444.11.12 = { trade_goods = unknown }

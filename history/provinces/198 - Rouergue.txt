@@ -34,5 +34,3 @@ discovered_by = ottoman
 # 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Cond	 sides with Spain, situation heats up again
 # 1652.2.15 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Fronde rebels make a foothold in the Guyenne area, under Cond	
 # 1652.10.21 = { revolt = {} controller = FRA unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
-
-1444.11.12 = { trade_goods = unknown }

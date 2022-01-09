@@ -35,5 +35,3 @@ discovered_by = ottoman
 	controller = AYU
 	remove_core = LIG
 }
-
-1444.11.12 = { trade_goods = unknown }

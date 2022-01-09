@@ -17,5 +17,3 @@ discovered_by = east_african
 discovered_by = muslim
 
 
-
-1444.11.12 = { trade_goods = unknown }

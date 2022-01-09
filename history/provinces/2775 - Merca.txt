@@ -25,5 +25,3 @@ discovered_by = ottoman
 1612.1.1 = { revolt_risk = 8 } #Somail migrations greatly disrupt region
 1615.1.1 = { revolt_risk = 0 }
 1705.1.1 = { owner = OMA controller = OMA add_core = OMA trade_goods = grain } #Omanis seize control of Mogadishu and Geledi
-
-1444.11.12 = { trade_goods = unknown }

@@ -28,4 +28,3 @@ discovered_by = ANU
 1567.10.1 = { owner = ODA controller = ODA remove_core = TKI }
 1567.10.1 = { capital = "Gifu" } # Oda Nobunaga changed the name of city.
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA fort_15th = no } # Gifu Castle was taken down
-1444.11.12 = { trade_goods = unknown }
