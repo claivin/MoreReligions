@@ -49,4 +49,4 @@ add_permanent_province_modifier = {
 1793.3.7 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # The Royalists revolt against the Republic
 1796.12.23 = { revolt = {} controller = FRA } # The last rebels are defeated at the battle of Savenay
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

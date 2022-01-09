@@ -27,4 +27,4 @@ discovered_by = ANU
 1582.10.27 = { add_core = HJO owner = HJO controller = HJO }
 1590.8.10 = { remove_core = HJO remove_core = UES remove_core = ODA add_core = TKG owner = TKG controller = TKG }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

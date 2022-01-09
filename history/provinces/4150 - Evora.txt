@@ -31,4 +31,4 @@ discovered_by = eastern
 # 1810.9.15 = { controller = FRA } # Occupied by French troops
 # 1811.4.5 = { controller = POR }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

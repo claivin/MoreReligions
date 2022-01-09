@@ -28,4 +28,4 @@ discovered_by = ANU
 1598.1.10 = { add_core = ODA owner = ODA controller = ODA remove_core = UES } # Uesugi Kagekatsu moved from Echigo to Aizu-Yonezawa
 1600.9.13 = { add_core = TKG owner = TKG controller = TKG remove_core = ODA }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

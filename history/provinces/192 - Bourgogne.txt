@@ -36,4 +36,4 @@ center_of_trade = 2
 1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
 1773.1.1 = { base_tax = 11 base_production = 11 } # Turgot & the Economical Reforms
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

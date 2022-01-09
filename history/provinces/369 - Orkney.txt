@@ -35,4 +35,4 @@ discovered_by = eastern
 # }
 # 1750.1.1 = { }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

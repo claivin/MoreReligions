@@ -30,4 +30,4 @@ discovered_by = eastern
 # 1810.7.25 = { controller = FRA } # Invaded after the battle of Ca
 # 1811.1.1 = { controller = POR } # The Napoleonic army retreats from Portugal
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

@@ -39,4 +39,4 @@ discovered_by = indian
 1662.1.1 = { unrest = 5 } # Conflict with local Oromo
 1663.1.1 = { unrest = 0 }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

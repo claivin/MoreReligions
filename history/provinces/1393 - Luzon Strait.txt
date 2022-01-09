@@ -4,3 +4,8 @@ discovered_by = MCH
 discovered_by = KHA
 discovered_by = OIR
 discovered_by = QNG
+
+
+
+
+1521.1.1 = { discovered_by = SPA }

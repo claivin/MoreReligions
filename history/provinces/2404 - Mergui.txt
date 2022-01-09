@@ -37,4 +37,4 @@ discovered_by = ottoman
 1768.1.1 = { owner = TAU controller = TAU }
 1794.1.1 = { remove_core = AYU }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

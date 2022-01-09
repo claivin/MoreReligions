@@ -36,4 +36,4 @@ discovered_by = ottoman
 1740.11.1 = { owner = PEG controller = PEG } # Restored Pegu Dynasty
 1757.5.6 = { owner = TAU controller = TAU } # Returned to Burmese control
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

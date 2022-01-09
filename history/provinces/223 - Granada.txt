@@ -39,4 +39,4 @@ discovered_by = eastern
 # 1812.10.1 = { revolt = { type = pretender_rebels size = 1 } controller = REB }
 # 1813.12.11 = { revolt = {} controller = SPA }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

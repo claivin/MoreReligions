@@ -31,4 +31,4 @@ discovered_by = ottoman
 # 1523.3.8 = { revolt = {} controller = SPA } # The royal army retakes the city of Palma
 # 1713.1.1 = { owner = GBR controller = GBR add_core = GBR }
 # 1782.1.1 = { owner = SPA controller = SPA }
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

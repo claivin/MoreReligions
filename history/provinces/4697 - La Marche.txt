@@ -34,4 +34,4 @@ discovered_by = ottoman
 # 1705.1.1 = { revolt = {} controller = FRA unrest = 3 } # Camisard rebellion ends, isolated aggression continues until 1710
 # 1710.1.1 = { unrest = 0 } # Rebellion ends
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

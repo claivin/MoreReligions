@@ -26,4 +26,4 @@ discovered_by = east_african
 }
 1517.1.1 = { add_core = TUR } # Mamluks fall to Ottomans, Ottomans do not advance up Nile
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

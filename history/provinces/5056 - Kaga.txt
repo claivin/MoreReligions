@@ -21,3 +21,5 @@ discovered_by = QNG
 discovered_by = ANU
 
 
+
+1444.11.2 = { trade_goods = unknown }

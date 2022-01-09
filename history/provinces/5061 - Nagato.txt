@@ -24,3 +24,5 @@ discovered_by = QNG
 1557.4.3 = { owner = MRI controller = MRI remove_core = OUC }
 1603.1.1 = { capital = "Hagi" }
 1603.1.1 = { fort_15th = yes } # Hagi Castle, the capital of the Mori clan
+
+1444.11.2 = { trade_goods = unknown }

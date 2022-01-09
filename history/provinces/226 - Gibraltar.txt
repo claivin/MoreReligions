@@ -38,4 +38,4 @@ discovered_by = eastern
 # 1720.1.1 = { fort_18th = yes }
 
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

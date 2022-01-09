@@ -11,3 +11,8 @@ discovered_by = KON
 discovered_by = JOL
 discovered_by = NDO
 discovered_by = BEN
+
+
+1465.1.1 = { discovered_by = POR } 
+1529.6.1 = { discovered_by = FRA } # Parmentier Brothers
+

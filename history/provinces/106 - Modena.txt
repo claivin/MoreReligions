@@ -32,4 +32,4 @@ discovered_by = ottoman
 # } # Transpadane and Cispadane Merge
 # 1814.4.11 = { owner = MOD controller = MOD remove_core = ITA }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

@@ -29,4 +29,4 @@ discovered_by = indian
 	remove_core = LXA
 } # Lan Xangs declared itself independent, partitioned into three kingdoms; Vientiane, Champasak & Luang Prabang
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

@@ -25,4 +25,4 @@ discovered_by = sub_saharan
 1490.1.1 = { owner = FUL controller = FUL add_core = FUL } #Rise of Great Fulo
 1600.1.1 = { discovered_by = MOR }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

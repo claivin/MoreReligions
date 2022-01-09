@@ -36,4 +36,4 @@ discovered_by = ottoman
 # 1715.1.1 = { fort_17th = no fort_18th = yes }
 # 1789.5.5 = { base_tax = 10 base_production = 10 } # The General Estates
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

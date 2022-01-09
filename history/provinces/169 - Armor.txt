@@ -31,4 +31,4 @@ discovered_by = ottoman
 1686.1.17 = { religion = catholic } # Dragonnard campaign succesful: region reverts back to catholicism
 1786.1.1 = { base_tax = 6 base_production = 6 } # The Eden Agreement }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

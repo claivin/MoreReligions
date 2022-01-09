@@ -44,4 +44,4 @@ center_of_trade = 1
 # 1686.1.17 = { religion = catholic } # Dragonnard campaign succesful: region reverts back to catholicism
 # 1689.1.1 = { unrest = 0 } # War of the Grand Alliance erupts: Louis XIV can't persue his religious policy anymore
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

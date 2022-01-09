@@ -32,4 +32,4 @@ center_of_trade = 2
 	remove_core = SST
 }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

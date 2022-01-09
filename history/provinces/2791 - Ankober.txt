@@ -51,4 +51,4 @@ discovered_by = indian
 1771.1.1 = { revolt = {} controller = ETH } # Ras Mikael deposed
 1772.1.1 = { unrest = 0 }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

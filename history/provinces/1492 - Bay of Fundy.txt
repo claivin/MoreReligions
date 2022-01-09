@@ -1,2 +1,4 @@
 #WATERTILE 
 discovered_by = north_american
+
+1497.6.24 = { discovered_by = ENG } # John Cabbot

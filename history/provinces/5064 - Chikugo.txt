@@ -22,3 +22,4 @@ discovered_by = QNG
 1584.5.4 = { add_core = SMZ owner = SMZ controller = SMZ }
 #Battle of Okitanawate
 1587.5.15 = { owner = SHN controller = SHN remove_core = SMZ }#Hideyoshi's conquest of Kyushu
+1444.11.2 = { trade_goods = unknown }

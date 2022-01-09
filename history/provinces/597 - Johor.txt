@@ -30,4 +30,4 @@ discovered_by = ottoman
 }
 1528.1.1 = { capital = "Kota Tingi" } # Alauddin Riayat Shah moved the capital
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

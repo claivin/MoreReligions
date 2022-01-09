@@ -42,4 +42,4 @@ discovered_by = ottoman
 1762.1.1 = { unrest = 4 } #Badi IV deposed by Muhammad Abu Likaylik
 1763.1.1 = { unrest = 0 }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

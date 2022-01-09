@@ -58,4 +58,4 @@ discovered_by = ottoman
 # } # Treaty of Fontainebleau, Napoleon abdicates unconditionally
 # 1814.4.20 = { revolt = { type = nationalist_rebels size = 2 } controller = REB } # The Milan insurrection
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

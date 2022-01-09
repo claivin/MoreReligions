@@ -1,2 +1,10 @@
 #WATERTILE 
+
+
+
+
 discovered_by = western
+1453.1.1 = { discovered_by = western discovered_by = eastern }
+1600.1.1 = { discovered_by = muslim
+discovered_by = ottoman }
+

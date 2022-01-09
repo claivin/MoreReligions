@@ -23,4 +23,4 @@ discovered_by = QNG
 
 1585.8.1 = { owner = ODA controller = ODA add_core = ODA remove_core = TTI } #The Tsutsui clan moved to Iga
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

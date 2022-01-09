@@ -1,2 +1,8 @@
 #WATERTILE 
 discovered_by = polynesian_tech
+1558.1.16 = {
+	discovered_by = SPA		# lvaro de Mendaa de Neira
+}
+1764.1.1 = {
+	discovered_by = GBR		# John Byron, unknown date
+}

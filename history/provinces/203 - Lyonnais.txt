@@ -49,4 +49,4 @@ center_of_trade = 2
 	# fort_18th = yes
 # }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

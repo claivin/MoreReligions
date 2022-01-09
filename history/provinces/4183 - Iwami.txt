@@ -27,4 +27,4 @@ discovered_by = QNG
 1557.4.3 = { owner = MRI controller = MRI remove_core = OUC }
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = MRI fort_15th = no }
 1693.1.1 = { trade_goods = fish } # Estimate, Japan stops silver export
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

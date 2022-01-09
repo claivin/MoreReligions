@@ -28,4 +28,4 @@ discovered_by = ANU
 1609.1.1 = { capital = "Mito" } # Mito-Tokugawa han
 1609.1.1 = { fort_15th = yes } # Mito Castle
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

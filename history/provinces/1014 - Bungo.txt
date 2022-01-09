@@ -23,4 +23,4 @@ discovered_by = QNG
 1599.1.1 = { owner = HSK controller = HSK add_core = HSK remove_core = OTM }
 1632.1.1 = { owner = TKG controller = TKG add_core = TKG remove_core = HSK }
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

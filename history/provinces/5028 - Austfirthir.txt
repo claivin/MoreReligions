@@ -13,4 +13,4 @@ base_manpower = 1
 capital = "Egilsstathir"
 is_city = yes
 discovered_by = western
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

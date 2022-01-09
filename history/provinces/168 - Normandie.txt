@@ -37,4 +37,4 @@ fort_15th = yes
 # 1715.1.1 = { fort_17th = no fort_18th = yes }
 # 1786.1.1 = { base_tax = 5 base_production = 5 } # The Eden Agreement
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }

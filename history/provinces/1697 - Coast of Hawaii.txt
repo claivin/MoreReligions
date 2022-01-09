@@ -1,2 +1,3 @@
 #WATERTILE 
 discovered_by = polynesian_tech
+1555.1.1 = { discovered_by = SPA }

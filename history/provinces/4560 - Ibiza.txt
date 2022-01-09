@@ -34,4 +34,4 @@ discovered_by = ottoman
 # 1713.7.13 = { revolt = {} remove_core = ARA }
 # 1714.9.14 = { controller = SPA } # Mallorca and Evissa surrender shortly after the fall of Barcelona
 
-1444.11.12 = { trade_goods = unknown }
+1444.11.2 = { trade_goods = unknown }
