@@ -51,4 +51,4 @@ center_of_trade = 3
 } # Given to GBR by Mir Qasim
 1800.1.1 = { religion = sunni }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

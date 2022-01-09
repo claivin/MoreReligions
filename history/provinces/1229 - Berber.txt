@@ -39,4 +39,4 @@ discovered_by = ottoman
 1718.1.1 = { unrest = 6 } #Unsa III comes into conflict with aristocrats
 1720.1.1 = { unrest = 0 } #Unsa III deposed, new Funj dynasty set up by aristocrats
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

@@ -18,4 +18,4 @@ discovered_by = sub_saharan
 1460.1.1 = { discovered_by = POR } # Freno do P
 
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

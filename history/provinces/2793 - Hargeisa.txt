@@ -22,4 +22,4 @@ discovered_by = indian
 1550.1.1 = { discovered_by = TUR }
 1559.1.1 = { owner = HAR controller = HAR}
 1577.1.1 = { owner = WAR controller = WAR add_core = WAR}
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

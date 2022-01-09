@@ -36,4 +36,4 @@ discovered_by = ottoman
 # 1786.1.1 = { base_tax = 6 base_production = 6 } # The Eden Agreement
 # #REGIONFRANCE
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

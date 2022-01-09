@@ -35,4 +35,4 @@ discovered_by = ottoman
 # 1610.1.1 = { capital = "Lille" } # Lille becomes more important than Arras
 # 1635.5.1 = { controller = FRA } # French troops capture parts of the Southern Lowlands
 # 1648.1.30 = { controller = SPA } # Peace of M
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

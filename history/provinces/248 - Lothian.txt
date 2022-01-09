@@ -33,4 +33,4 @@ center_of_trade = 2
 	# add_core = GBR
 # }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

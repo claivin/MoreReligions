@@ -31,4 +31,4 @@ discovered_by = eastern
 # 1810.9.26 = { controller = FRA } # Wellington retreats into Lines of Torres Vedras fortification and Mass	na can't enter Lisboa due to the scorched earth policy
 # 1811.1.1 = { controller = POR } # The Napoleonic army retreats from Portugal
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

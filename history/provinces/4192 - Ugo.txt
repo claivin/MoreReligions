@@ -23,4 +23,4 @@ discovered_by = ANU
 1542.1.1 = { discovered_by = POR }
 1602.5.17 = { owner = STK controller = STK add_core = STK remove_core = AKT } # The Satake clan moved to Akita
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

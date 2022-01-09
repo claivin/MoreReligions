@@ -34,4 +34,4 @@ discovered_by = ottoman
 # 1766.2.23 = { owner = FRA controller = FRA } # Death of Duke Stanislaus, Lorraine ceases to exist
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

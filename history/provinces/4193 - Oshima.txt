@@ -64,4 +64,4 @@ discovered_by = JAP
 1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
 1787.1.1 = { discovered_by = FRA }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

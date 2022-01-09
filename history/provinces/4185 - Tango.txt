@@ -22,4 +22,4 @@ discovered_by = QNG
 1582.9.24 = { add_core = HSK owner = HSK controller = HSK remove_core = ISK }
 1600.10.21 = { add_core = TKG owner = TKG controller = TKG remove_core = HSK }
 # Battle of Sekigahara
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

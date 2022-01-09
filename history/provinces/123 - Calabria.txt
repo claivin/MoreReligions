@@ -42,4 +42,4 @@ discovered_by = ottoman
 # }
 # 1734.6.2 = { owner = NAP controller = NAP remove_core = HAB }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

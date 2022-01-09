@@ -24,4 +24,4 @@ discovered_by = ottoman
 1786.1.1 = { unrest = 5 } # Unsuccessful revolt
 1787.1.1 = { unrest = 0 }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

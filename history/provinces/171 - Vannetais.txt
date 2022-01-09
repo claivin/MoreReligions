@@ -25,4 +25,4 @@ discovered_by = ottoman
 1594.1.1 = { unrest = 0 } # 'Paris vaut bien une messe!', Henri converts to Catholicism
 1650.1.1 = { capital = "Lorient" }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

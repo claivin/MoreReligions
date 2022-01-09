@@ -59,4 +59,4 @@ center_of_trade = 2
 	# controller = KRA
 # } # The Free city of Krakow
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

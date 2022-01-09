@@ -22,4 +22,4 @@ discovered_by = QNG
 1577.12.8 = { owner = SMZ controller = SMZ }
 1588.1.1 = { owner = ITO controller = ITO }
 1600.10.21 = { remove_core = SMZ }
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

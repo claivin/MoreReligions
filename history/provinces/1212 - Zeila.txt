@@ -27,4 +27,4 @@ center_of_trade = 2
 1559.1.1 = { owner = HAR controller = HAR add_core = HAR}
 1577.1.1 = { owner = TUR controller = TUR add_core = TUR }
 1630.1.1 = { owner = ADE controller = ADE add_core = ADE }
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

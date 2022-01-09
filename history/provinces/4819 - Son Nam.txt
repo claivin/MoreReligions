@@ -46,4 +46,4 @@ discovered_by = ottoman
 	remove_core = DAI
 } # Nguyen Phuc Anh annexed the Tay Son Dynasty
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

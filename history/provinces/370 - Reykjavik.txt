@@ -24,4 +24,4 @@ discovered_by = western
 # }
 # 1752.1.1 = { trade_goods = wool } # Wool becomes more important.
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

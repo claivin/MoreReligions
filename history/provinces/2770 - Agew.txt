@@ -60,4 +60,4 @@ discovered_by = indian
 1770.1.1 = { revolt = { type = heretic_rebels size = 0 } controller = REB } #Ras Mikael begins persecution of sost lidot theology, rebels seize control
 1771.1.1 = { revolt = {} controller = ETH } #Ras Mikael deposed
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

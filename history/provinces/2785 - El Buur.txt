@@ -28,4 +28,4 @@ discovered_by = ottoman
 1555.1.1 = { owner = AJU controller = AJU } #Northern part of province no longer conrolled by ADA
 1650.1.1 = { owner = HOB controller = HOB remove_core = AJU }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

@@ -26,4 +26,4 @@ discovered_by = QNG
 1591.1.1 = { capital = "Urado" }
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = CSK capital = "Kochi" fort_15th = no } # The Chosolabe clan lost Tosa
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

@@ -32,4 +32,4 @@ discovered_by = indian
 1758.1.1 = { unrest = 5 } # Rebellion
 1759.1.1 = { unrest = 0 }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

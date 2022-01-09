@@ -50,4 +50,4 @@ discovered_by = east_african
 1802.5.13 = { controller = TUR unrest = 8 } # Turkish rule is restored but a few troublesome years follow
 1811.6.1 = { unrest = 0 } # Order is restored
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

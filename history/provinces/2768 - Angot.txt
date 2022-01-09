@@ -38,4 +38,4 @@ discovered_by = indian
 1647.1.1 = { unrest = 7 } # Oromo Raids
 1648.1.1 = { unrest = 0 }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

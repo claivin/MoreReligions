@@ -24,4 +24,4 @@ discovered_by = indian
 1588.1.1 = { revolt_risk = 7 } # Raids by Sarsa Dengel
 1589.1.1 = { revolt_risk = 0 }
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

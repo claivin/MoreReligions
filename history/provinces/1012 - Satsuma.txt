@@ -22,4 +22,4 @@ discovered_by = QNG
 
 1550.1.1 = { fort_15th = yes } # Uchi Castle, the capital of the Shimazu clan
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }

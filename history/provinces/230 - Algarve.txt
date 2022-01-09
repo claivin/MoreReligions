@@ -27,4 +27,4 @@ discovered_by = eastern
 # 1807.11.30 = { controller = FRA } # Occupied by troops led by Manuel Godoy
 # 1808.6.18 = { controller = POR } # Revolt in Olho
 
-1444.11.2 = { trade_goods = unknown }
+1444.11.12 = { trade_goods = unknown }
