@@ -1,0 +1,27 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = central_thai
+religion = buddhism
+technology_group = chinese
+capital = 592
+
+
+1424.1.1 = {
+	monarch = {
+		name = "Ramkhamhaeng"
+		dynasty = "Ratchabumm"
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Hao"
+		dynasty = "Ratchabumm"
+		adm = 0
+		dip = 1
+		mil = 2
+	}
+}

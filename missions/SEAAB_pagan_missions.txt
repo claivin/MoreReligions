@@ -1,0 +1,278 @@
+pagn_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = PGN
+	}
+	pgn_invade_arakan = {
+		icon = "mission_invade_arakan"
+		required_missions = {}
+		provinces_to_highlight = {
+			area = arakan_area
+		}
+		trigger = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_country_flag = passive_arakan_flg
+							has_country_flag = invade_arakan_flg
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = play_patient_tt
+					arakan_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = passive_arakan_flg
+				}
+				custom_trigger_tooltip = {
+					tooltip = integrate_ark_pgn_tt
+					has_country_flag = ark_integrate_pgn
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = invade_arakan_flg 
+				}
+				custom_trigger_tooltip = {
+					tooltip = brutalize_ark_tt
+					arakan_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = passive_arakan_flg
+				}
+				naga_hills_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				tripura_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_accepted_culture = arakanese
+				add_adm_power = 50
+			}
+			else = {
+				naga_hills_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				tripura_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_mil_power = 50
+			}
+		}
+	}
+}
+pgn_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = PGN
+	}
+	
+}
+pgn_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = PGN
+	}
+	pgn_unite_southern_burma = {
+		icon = "mission_kanbawzathadi_palace"
+		required_missions = {}
+		provinces_to_highlight = {
+			area = lower_burma_area
+		}
+		trigger = {
+			if = {
+				limit = {
+						NOT = { has_country_flag = pgn_trib_quo }
+						NOT = { has_country_flag = pgn_trib_annex }
+				}
+				custom_trigger_tooltip = {
+					tooltip = play_patient_tt
+					lower_burma_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = pgn_trib_quo
+				}
+				custom_trigger_tooltip = {
+					tooltip = control_peg_tt
+					has_country_flag = sdh_integrat_pgn
+					has_country_flag = peg_integrat_pgn
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = pgn_trib_annex
+				}
+				custom_trigger_tooltip = {
+					tooltip = dom_pegu_tt
+					lower_burma_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = pgn_trib_quo
+				}
+				north_tenasserim_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_accepted_culture = mon
+				add_adm_power = 100
+			}
+			else = {
+				north_tenasserim_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_mil_power = 100
+			}
+		}
+	}
+	pgn_challenge_angkor = {
+		icon = xxx
+		required_missions = { pgn_unite_southern_burma }
+		provinces_to_highlight = {
+			area = north_tenasserim_area
+		}
+		trigger = {
+			OR = {
+				north_tenasserim_area = { 
+					type = all
+					country_or_subject_holds = ROOT
+				}
+				calc_true_if = {
+					all_country = {
+						primary_culture = central_thai
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						is_subject_of_type_with_overlord = { who = ANK type = tributary_state } 
+					}
+				amount = 4
+				}
+			}
+		}
+		effect = {
+			central_thai_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			northern_thai_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			sukhothai_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			tenasserim_area = {
+				limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+			}
+			every_country = { 
+				limit = {
+					is_subject_of_type_with_overlord = { who = ANK type = tributary_state } 
+				}
+				add_liberty_desire = 50
+			}
+			if = {
+				limit = { 
+					AYU = { is_subject_of = ANK }
+				}
+				AYU = { add_liberty_desire = 100 }
+			}
+		}
+	}				
+}
+pgn_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = PGN
+	}
+}
+pgn_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = PGN
+	}
+	pgn_end_the_shan = {
+		icon = "mission_end_the_shan_domination"
+		required_missions = {}
+		provinces_to_highlight = {
+			OR = {
+				area = kachin_area
+				area = shan_hill_area
+				area = karenni_area
+			}
+		}
+		trigger = {
+			kachin_area = { type = all owned_by = ROOT }
+			shan_hill_area = { type = all owned_by = ROOT }
+			karenni_area = {type = all owned_by = ROOT }
+		}
+		effect = {
+			add_prestige = 50
+		}
+	}
+}

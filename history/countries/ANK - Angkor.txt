@@ -3,4 +3,35 @@ add_government_reform = mandala_reform
 primary_culture = khmer
 religion = hinduism
 technology_group = chinese
-capital = 609 
+capital = 609 # Angkor
+
+
+1347.1.1 = {
+	monarch = {
+		name = "Jayavarman X"
+		dynasty = "Khmer"
+		adm = 6
+		dip = 4
+		mil = 3
+	}
+}
+
+1398.1.1 = {
+	monarch = {
+		name = "Ponhea Yat"
+		dynasty = "Khmer"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
+
+1427.1.1 = {
+	monarch = {
+		name = "Iraverman IV"
+		dynasty = "Khmer"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

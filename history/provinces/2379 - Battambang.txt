@@ -1,20 +1,28 @@
 #2379 - Battambang
 
-owner = PRT
-controller = PRT
+owner = ANK
+controller = ANK
 culture = khmer
-religion = buddhism
+religion = mahayana
 capital = "Battambang"
-trade_goods = ivory
+trade_goods = fish
 hre = no
 base_tax = 2 
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = PRT
+add_core = ANK
 discovered_by = chinese
 discovered_by = indian
 
+
+1510.1.1 = { capital = "Longvek" }
+1535.1.1 = { discovered_by = POR }
+1618.1.1 = { capital = "Oudong" }
+1767.1.1 = {
+	owner = KHM
+	controller = KHM
+}
 1795.1.1 = {
 	owner = AYU
 	controller = AYU

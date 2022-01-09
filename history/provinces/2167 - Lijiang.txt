@@ -1,8 +1,9 @@
 # 2167 - Lijiang
 
-owner = CDL
-controller = CDL
+owner = MMA
+controller = MMA
 add_core = CDL
+add_core = MMA
 culture = bai
 religion = azhaliism
 capital = "Lijiang"

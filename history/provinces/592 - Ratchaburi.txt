@@ -1,7 +1,7 @@
 #592 - Ratchaburi
 
-owner = LAV
-controller = LAV
+owner = RTC
+controller = RTC
 culture = central_thai
 religion = buddhism
 capital = "Ratchaburi"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = LAV
+add_core = RTC
 
 
 

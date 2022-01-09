@@ -1,49 +1,48 @@
-dependency = {
-	subject_type = "tributary_state"
-	first = LAV
-	second = STR
+royal_marriage = {
+	first = TMM
+	second = SUK
 	start_date = 1444.1.1
-	end_date = 1574.1.1
+	end_date = 1456.1.1
+}
+
+vassal = {
+	first = ANK
+	second = AYU
+	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 dependency = {
 	subject_type = "tributary_state"
-	first = CHA
-	second = PHP
+	first = ANK
+	second = SUK
 	start_date = 1444.1.1
-	end_date = 1574.1.1
+	end_date = 1500.1.1
 }
 dependency = {
 	subject_type = "tributary_state"
-	first = SUK
-	second = CPH
+	first = ANK
+	second = LPB
 	start_date = 1444.1.1
-	end_date = 1574.1.1
+	end_date = 1500.1.1
 }
 dependency = {
 	subject_type = "tributary_state"
-	first = LNA
-	second = HSE
+	first = ANK 
+	second = PTC
 	start_date = 1444.1.1
-	end_date = 1574.1.1
+	end_date = 1500.1.1
 }
 dependency = {
 	subject_type = "tributary_state"
-	first = LNA
-	second = MPA
+	first = ANK
+	second = RTC
 	start_date = 1444.1.1
-	end_date = 1574.1.1
+	end_date = 1500.1.1
 }
 dependency = {
 	subject_type = "tributary_state"
-	first = LNA
-	second = MNI
+	first = ANK
+	second = TMM
 	start_date = 1444.1.1
-	end_date = 1574.1.1
-}
-dependency = {
-	subject_type = "tributary_state"
-	first = LNA
-	second = MMA
-	start_date = 1444.1.1
-	end_date = 1574.1.1
+	end_date = 1500.1.1
 }

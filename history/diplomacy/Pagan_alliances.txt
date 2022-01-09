@@ -1,0 +1,62 @@
+dependency = {
+	subject_type = "tributary_state"
+	first = PGN
+	second = ARK
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PGN
+	second = PEG
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = PGN
+	second = SDH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "shan_vassal"
+	first = PGN
+	second = HSE
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "shan_vassal"
+	first = PGN
+	second = MPA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "shan_vassal"
+	first = PGN
+	second = HSI
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "shan_vassal"
+	first = PGN
+	second = MYA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "shan_vassal"
+	first = PGN
+	second = MNI
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "shan_vassal"
+	first = PGN
+	second = MKA
+	start_date = 1444.1.1
+	end_date = 1502.1.1

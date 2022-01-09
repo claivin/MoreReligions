@@ -1,5 +1,5 @@
-owner = SUK
-controller = SUK
+owner = LPB
+controller = LPB
 culture = central_thai
 religion = buddhism
 capital = "Phetchaburi"
@@ -9,8 +9,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = SUK
-add_core = LAV
+add_core = LPB
 
 
 

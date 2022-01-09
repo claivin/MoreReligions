@@ -1,9 +1,9 @@
 #2390 - Chaiya
 
-owner = TAM
-controller = TAM
+owner = TMM
+controller = TMM
 culture = central_thai
-religion = buddhism
+religion = sunni
 capital = "Chaiya"
 trade_goods = fish
 hre = no
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = TAM
+add_core = TMM
 
 
 

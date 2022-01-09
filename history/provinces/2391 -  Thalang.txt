@@ -1,7 +1,7 @@
 #2391 - Thalang
 
-owner = TAM
-controller = TAM
+owner = TMM
+controller = TMM
 culture = malayan
 religion = sunni
 capital = "Thalang"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = TAM
+add_core = TMM
 
 
 

@@ -1,7 +1,7 @@
 #2387 - Phetchaburi
 
-owner = TAM
-controller = TAM
+owner = PTC 
+controller = PTC
 culture = central_thai
 religion = buddhism
 capital = "Phetchaburi"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = TAM
+add_core = PTC
 
 
 

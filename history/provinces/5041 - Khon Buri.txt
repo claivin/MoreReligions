@@ -1,6 +1,6 @@
 
-owner = STR
-controller = STR
+owner = ANK
+controller = ANK
 culture = khmer
 religion = buddhism
 capital = "Khon Buri"
@@ -10,7 +10,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = STR
+add_core = ANK
 
 
 

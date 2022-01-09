@@ -1,7 +1,7 @@
 #2376 - Prek Russey
 
-owner = CHA
-controller = CHA
+owner = ANK
+controller = ANK
 culture = khmer
 religion = hinduism
 capital = "Prek Russey"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = CHA
+add_core = ANK
 
 
 

@@ -1,7 +1,7 @@
 
 
-owner = SAG
-controller = SAG
+owner = PGN
+controller = PGN
 culture = burmese
 religion = buddhism
 capital = "Kanbalu"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = SAG
+add_core = PGN
 
 
 

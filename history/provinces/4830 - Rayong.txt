@@ -1,6 +1,6 @@
 
-owner = LAV
-controller = LAV
+owner = ANK
+controller = ANK
 culture = central_thai
 religion = buddhism
 capital = "Rayong"
@@ -10,7 +10,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = LAV
+add_core = AYU
+add_core = ANK
 
 
 

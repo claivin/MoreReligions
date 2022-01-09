@@ -52,4 +52,81 @@ akanya_sutta_elections = {
 		max_absolutism = -30
 	}
 }
-	
+shan_federation_reform = {
+	icon = "articles_of_agreement"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	potential = {
+		AND = {
+			primary_culture = shan
+			capital_scope = {
+				region = burma_region
+			}
+		}
+		NOT = {
+			tag = SST
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		ae_impact = -0.10
+		land_morale = 0.05
+	}
+
+}
+shan_kingdom_reform = {
+	icon = "articles_of_agreement"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	potential = {
+		tag = SST
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		ae_impact = -0.10
+		land_morale = 0.05
+		governing_capacity_modifier = 0.33
+	}
+
+}
+pagan_reform = {
+	icon = "sakdina_system_reform"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	potential = {
+		tag = PGN
+		has_country_flag = pgn_trib_quo
+	}
+ 	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		diplomatic_annexation_cost = -0.15
+		governing_capacity_modifier = 0.10 
+	}
+
+}
+pagan_reform_b = {
+	icon = "articles_of_agreement"
+	allow_convert = no
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	potential = {
+		tag = PGN
+		has_country_flag = pgn_trib_annex
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		siege_ability = 0.15
+		governing_capacity_modifier = 0.10
+	}
+}

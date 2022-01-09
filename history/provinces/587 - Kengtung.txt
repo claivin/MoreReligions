@@ -1,7 +1,7 @@
 #587 - Kengtung
 
-owner = LNA
-controller = LNA
+owner = HSE
+controller = HSE
 culture = shan
 religion = animism
 capital = "Kengtung"
@@ -12,7 +12,6 @@ base_production = 1
 base_manpower = 2
 is_city = yes
 add_core = HSE
-add_core = LNA
 
 
 

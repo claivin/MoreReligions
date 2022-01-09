@@ -1,7 +1,7 @@
 #585 - Toungoo
 
-owner = PEG
-controller = PEG
+owner = PGN
+controller = PGN
 culture = burmese
 religion = buddhism
 capital = "Toungoo"
@@ -11,24 +11,9 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = TAU
-add_core = PEG
+add_core = PGN
 
 
 
 discovered_by = chinese
 discovered_by = indian
-
-1535.1.1 = { discovered_by = POR }
-
-1560.1.1 = { fort_15th = yes }
-1745.1.1 = {
-	owner = PEG
-	controller = PEG
-	add_core = PEG
-}
-1755.1.1 = {
-	owner = TAU
-	controller = TAU
-	remove_core = PEG
-}

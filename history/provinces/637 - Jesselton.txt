@@ -1,0 +1,25 @@
+#637 - Jesselton
+
+owner = BEI
+controller = BEI
+culture = bornean
+religion = mahayana
+capital = "Jesselton"
+trade_goods = spices
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = BEI
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+
+
+

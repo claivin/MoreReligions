@@ -1,9 +1,9 @@
 #604 - Oudong
 
-owner = PHP
-controller = PHP
+owner = ANK
+controller = ANK
 culture = khmer
-religion = hinduism
+religion = buddhism
 capital = "Oudong"
 trade_goods = incense
 hre = no
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = PHP
+add_core = ANK
 discovered_by = chinese
 discovered_by = indian
 

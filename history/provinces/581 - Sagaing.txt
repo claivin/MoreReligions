@@ -1,7 +1,7 @@
 #581 - Sagaing
 
-owner = SAG
-controller = SAG
+owner = PGN
+controller = PGN
 culture = burmese
 religion = buddhism
 capital = "Sagaing"
@@ -11,24 +11,10 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = SAG
+add_core = PGN
 
 
 
 discovered_by = chinese
 discovered_by = indian
 
-
-1527.1.1 = {
-	owner = SST
-	controller = SST
-	add_core = SST
-	remove_core = AVA
-}
-1554.1.1 = { add_core = TAU }
-1555.1.22 = { controller = TAU }
-1563.4.1 = {	
-	owner = TAU
-	remove_core = SST
-}
-1760.1.1 = { discovered_by = GBR }
