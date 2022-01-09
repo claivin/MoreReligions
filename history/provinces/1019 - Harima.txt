@@ -25,3 +25,5 @@ discovered_by = QNG
 1578.5.1 = { add_core = ODA owner = ODA controller = ODA }
 1581.1.1 = { fort_15th = yes } # Himeji Castle
 1600.9.13 = { add_core = TKG owner = TKG controller = TKG remove_core = ODA }
+
+1444.11.12 = { trade_goods = unknown }

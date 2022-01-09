@@ -15,3 +15,5 @@ owner = TUJ
 add_core = TUJ
 controller = TUJ
 discovered_by = sub_saharan
+
+1444.11.12 = { trade_goods = unknown }

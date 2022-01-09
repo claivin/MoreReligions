@@ -60,3 +60,5 @@ center_of_trade = 2
 1769.2.1 = { unrest = 2 } #Ras Mikael deposes Iyoas
 1770.1.1 = { unrest = 5 } #Ras Mikael begins persecution of sost lidot theology
 1771.1.1 = { unrest = 0 } #Ras Mikael deposed
+
+1444.11.12 = { trade_goods = unknown }

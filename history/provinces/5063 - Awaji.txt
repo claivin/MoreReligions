@@ -26,3 +26,4 @@ discovered_by = QNG
 1580.1.1 = { owner = CSK controller = CSK remove_core = HSK }
 1585.8.23 = { owner = ODA controller = ODA add_core = ODA remove_core = CSK }
 1600.10.21 = { owner = TKG controller = TKG add_core = TKG remove_core = ODA }
+1444.11.12 = { trade_goods = unknown }

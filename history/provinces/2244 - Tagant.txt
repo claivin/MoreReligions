@@ -24,3 +24,5 @@ discovered_by = sub_saharan
 	trade_goods = salt
 	is_city = yes
 
+
+1444.11.12 = { trade_goods = unknown }

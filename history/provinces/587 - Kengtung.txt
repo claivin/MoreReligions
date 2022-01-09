@@ -53,3 +53,5 @@ discovered_by = indian
 	remove_core = QNG
 }
 1803.1.1 = { add_core = AYU }
+
+1444.11.12 = { trade_goods = unknown }

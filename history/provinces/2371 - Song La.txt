@@ -39,3 +39,5 @@ discovered_by = indian
 	controller = ANN
 	remove_core = DAI
 } # Nguyen Phuc Anh annexed the Tay Son Dynasty
+
+1444.11.12 = { trade_goods = unknown }

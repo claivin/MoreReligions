@@ -33,3 +33,5 @@ discovered_by = indian
 	owner = TAU
 	remove_core = SST
 }
+
+1444.11.12 = { trade_goods = unknown }

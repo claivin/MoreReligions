@@ -34,3 +34,5 @@ discovered_by = ottoman
 1651.4.1 = { revolt = {} controller = FRA } # An unstable peace is concluded
 1651.12.1 = { unrest = 7 } # Mazarin returns from exile, Cond	 sides with Spain, situation heats up again
 1652.10.21 = { unrest = 0 } # The King is allowed to enter Paris again, Mazarin leaves France for good. Second Fronde over.
+
+1444.11.12 = { trade_goods = unknown }

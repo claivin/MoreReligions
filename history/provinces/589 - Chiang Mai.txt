@@ -28,3 +28,5 @@ fort_15th = yes
 1727.1.1 = { unrest = 6 } # Rebellion
 1728.1.1 = { unrest = 0 }
 1775.1.1 = { add_core = AYU } # Siamnese vassal
+
+1444.11.12 = { trade_goods = unknown }

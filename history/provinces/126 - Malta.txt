@@ -48,3 +48,5 @@ discovered_by = ottoman
 	# controller = GBR
 	# add_core = GBR
 # } # Treaty of Paris
+
+1444.11.12 = { trade_goods = unknown }

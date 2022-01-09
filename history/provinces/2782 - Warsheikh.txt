@@ -23,3 +23,5 @@ discovered_by = ottoman
 1555.1.1 = { owner = AJU controller = AJU add_core = AJU } 
 1650.1.1 = { owner = HOB controller = HOB add_core = HOB remove_core = AJU }
 1698.12.13 = { owner = OMA controller = OMA add_core = OMA remove_core = HOB } #Oman in control of Hobyo following the battle of Mombasa
+
+1444.11.12 = { trade_goods = unknown }

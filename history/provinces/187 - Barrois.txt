@@ -32,3 +32,5 @@ discovered_by = ottoman
 # 1697.10.30 = { owner = LOR controller = LOR } # Treaty of Ryswick
 # 1766.2.23 = { owner = FRA controller = FRA }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+1444.11.12 = { trade_goods = unknown }

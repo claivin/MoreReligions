@@ -27,3 +27,5 @@ discovered_by = ottoman
 1638.1.1 = { unrest = 0 }
 1639.1.1 = { unrest = 3 } 
 1641.1.1 = { unrest = 0 }
+
+1444.11.12 = { trade_goods = unknown }

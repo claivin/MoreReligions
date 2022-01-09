@@ -38,3 +38,5 @@ discovered_by = ottoman
 	remove_core = SPA
 }
 1734.6.2 = { owner = NAP controller = NAP remove_core = HAB }
+
+1444.11.12 = { trade_goods = unknown }

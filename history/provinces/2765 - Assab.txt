@@ -26,3 +26,5 @@ discovered_by = indian
 1577.1.1 = { owner = TUR controller = TUR add_core = TUR }
 1648.1.1 = { unrest = 7 } # Oromo Raids
 1649.1.1 = { unrest = 0 }
+
+1444.11.12 = { trade_goods = unknown }

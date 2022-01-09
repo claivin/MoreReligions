@@ -17,3 +17,5 @@ discovered_by = sub_saharan
 add_local_autonomy = 50
 
 
+
+1444.11.12 = { trade_goods = unknown }

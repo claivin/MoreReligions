@@ -21,3 +21,5 @@ discovered_by = ottoman
 
 1550.1.1 = { discovered_by = TUR }
 1730.1.1 = { owner = GLE controller = GLE }
+
+1444.11.12 = { trade_goods = unknown }

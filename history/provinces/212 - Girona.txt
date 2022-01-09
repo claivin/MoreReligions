@@ -33,3 +33,4 @@ discovered_by = ottoman
 # 1469.1.1 = { controller = ARA }
 # 1484.1.1 = { unrest = 3 } # Second Remena revolt
 # 1486.4.21 = { unrest = 0 } # King Ferr
+1444.11.12 = { trade_goods = unknown }

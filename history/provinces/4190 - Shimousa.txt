@@ -26,3 +26,4 @@ discovered_by = ANU
 # Battle of Konodai
 1590.8.10 = { remove_core = HJO add_core = TKG owner = TKG controller = TKG }
 # Tokugawa shogunate founded
+1444.11.12 = { trade_goods = unknown }

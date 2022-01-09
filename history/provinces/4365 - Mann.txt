@@ -24,3 +24,5 @@ discovered_by = eastern
 	# controller = GBR
 	# add_core = GBR
 # }
+
+1444.11.12 = { trade_goods = unknown }

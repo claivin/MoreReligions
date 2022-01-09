@@ -19,3 +19,5 @@ owner = DEN
 add_core = DEN
 controller = DEN
 
+
+1444.11.12 = { trade_goods = unknown }

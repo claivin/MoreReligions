@@ -32,3 +32,5 @@ center_of_trade = 2
 	controller = OMA 
 	add_core = OMA 
 } #Omanis seize control of Mogadishu and Geledi
+
+1444.11.12 = { trade_goods = unknown }

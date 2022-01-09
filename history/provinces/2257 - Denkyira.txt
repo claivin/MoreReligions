@@ -15,3 +15,5 @@ controller = DEN
 add_core = DEN
 
 
+
+1444.11.12 = { trade_goods = unknown }

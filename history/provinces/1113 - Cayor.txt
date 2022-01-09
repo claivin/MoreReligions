@@ -43,3 +43,5 @@ add_permanent_province_modifier = {
 1785.1.1 = { unrest = 7 } #Agitation among marabouts inspired by Torodo success creates unrest in Kayor and Waalo
 1790.1.1 = { unrest = 9 } #Amari Ngoone Ndela launches major persecution of Torodo sympathizers
 1791.1.1 = { unrest = 1 } #Amari defeats the Torodo at Bungoy, ends Torodo threat and secures Kayor control
+
+1444.11.12 = { trade_goods = unknown }

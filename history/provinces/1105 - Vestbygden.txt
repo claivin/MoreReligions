@@ -26,3 +26,5 @@ native_hostileness = 9
 	# religion = protestant
 	# is_city = yes
 # }
+
+1444.11.12 = { trade_goods = unknown }

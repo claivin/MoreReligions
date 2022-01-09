@@ -23,3 +23,5 @@ discovered_by = ottoman
 1693.1.1 = { unrest = 0 } # Plague
 1786.1.1 = { unrest = 5 } # Unsuccessful revolt
 1787.1.1 = { unrest = 0 }
+
+1444.11.12 = { trade_goods = unknown }

@@ -22,3 +22,5 @@ discovered_by = ANU
 
 1498.1.1 = { trade_goods = gold } # Kurokawa gold mine discovered
 
+
+1444.11.12 = { trade_goods = unknown }
