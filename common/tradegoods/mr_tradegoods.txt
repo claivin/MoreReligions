@@ -126,6 +126,18 @@ gunpowder = {
 	}
 }
 
+chocolate = {
+	color = { 0.8 0.52 0.05 }
+	modifier = {
+		global_unrest = -2
+	}
+	province = {
+		local_tax_modifier = 0.1
+	}
+	chance = {
+		factor = 0
+	}
+}
 ##########################
 #############################
 
@@ -138,7 +150,7 @@ lumber = {
 		local_build_time = -0.10
 	}
 	chance = {
-		factor = 25
+		factor = 10
 		modifier = {
 			factor = 0
 			OR = {
@@ -152,13 +164,11 @@ lumber = {
 		}
 		modifier = {
 			factor = 1.5
-			OR = {
-				has_terrain = forest
-				has_terrain = woods
-			}
+			has_terrain = forest
 		}
 	}
 }
+
 stone = {
 	color = { 0.55 0.55 0.55 }
 	modifier = {
@@ -262,12 +272,9 @@ whales = {
 			NOT = { has_port = yes }
 		}
 		modifier = {
-			factor = 10
-			area = basque_country
-		}
-		modifier = {
-			factor = 10
+			factor = 5
 			OR = {
+				area = basque_country
 				area = northern_norway
 				area = eastern_norway
 				area = western_norway
@@ -286,7 +293,7 @@ rice = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 35
+		factor = 30
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -368,7 +375,7 @@ sulfur = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 1
+		factor = 3
 	}
 }
 nutmeg = {
@@ -380,7 +387,11 @@ nutmeg = {
 		province_trade_power_modifier = 0.2
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { superregion = east_indies_superregion }
+		}
 	}
 }
 tumeric = {
@@ -392,7 +403,12 @@ tumeric = {
 		province_trade_power_modifier = 0.2
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = east_indies_superregion }
+		}
 	}
 }
 saffron = {
@@ -404,7 +420,28 @@ saffron = {
 		province_trade_power_modifier = 0.2
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { region = persia_region }
+			NOT = { region = khorasan_region }
+			NOT = { area = alentejo_area }
+			NOT = { area = extremadura_area }
+			NOT = { area = lower_andalucia_area }
+			NOT = { area = toledo_area }
+			NOT = { area = upper_andalucia_area }
+			NOT = { area = valencia_area }
+			NOT = { area = languedoc_area }
+		}
+		modifier = {
+			factor = 0.2
+			NOT = { region = persia_region }
+			NOT = { region = khorasan_region }
+		}
+		modifier = {
+			factor = 2
+			region = khorasan_region
+		}
 	}
 }
 honey = {
@@ -416,7 +453,7 @@ honey = {
 		local_institution_spread = 0.15
 	}
 	chance = {
-		factor = 1
+		factor = 5
 	}
 }
 fruit = {
@@ -428,7 +465,11 @@ fruit = {
 		supply_limit_modifier = 0.20
 	}
 	chance = {
-		factor = 1
+		factor = 15
+		modifier = {
+			factor = 0
+			has_climate = tropical
+		}
 	}
 }
 ginger = {
@@ -440,7 +481,13 @@ ginger = {
 		local_monthly_devastation = -0.15
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { superregion = east_indies_superregion }
+		}
 	}
 }
 tropical_fruit = {
@@ -452,7 +499,11 @@ tropical_fruit = {
 		local_manpower_modifier = 0.20
 	}
 	chance = {
-		factor = 1
+		factor = 15
+		modifier = {
+			factor = 0
+			NOT = { has_climate = tropical }
+		}
 	}
 }
 horse = {
@@ -464,19 +515,20 @@ horse = {
 		movement_speed = 0.10
 	}
 	chance = {
-		factor = 1
-	}
-}
-chocolate = {
-	color = { 0.8 0.52 0.05 }
-	modifier = {
-		global_unrest = -2
-	}
-	province = {
-		local_tax_modifier = 0.1
-	}
-	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			OR = {
+				continent = north_america
+				continent = south_america
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = { has_terrain = steppe }
+			NOT = { has_terrain = grasslands }
+			NOT = { has_terrain = farmlands }
+		}
 	}
 }
 ice = {
@@ -488,7 +540,11 @@ ice = {
 		local_production_efficiency = 0.05
 	}
 	chance = {
-		factor = 1
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = { has_climate = severe_winter }
+		}
 	}
 }
 
@@ -501,9 +557,17 @@ citrus = {
 		local_tax_modifier = 0.1
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { superregion = east_indies_superregion }
+			NOT = { region = japan_region }
+		}
 	}
 }
+
 grapes = {
 	color = { 0.56 0.21 0.70 }
 	modifier = {
@@ -513,7 +577,7 @@ grapes = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 5
+		factor = 10
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -588,7 +652,19 @@ dates_figs = {
 		local_regiment_cost = -0.15
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { superregion = persia_superregion }
+			NOT = { superregion = eastern_europe_superregion }
+			NOT = { superregion = near_east_superregion }
+			NOT = { superregion = europe_superregion }
+			NOT = { area = maghreb_region }
+		}
+		modifier = {
+			factor = 0
+			has_winter = severe_winter
+		}
 	}
 }
 olives = {
@@ -600,7 +676,52 @@ olives = {
 		local_institution_spread = 0.15
 	}
 	chance = {
-		factor = 1
+		factor = 10
+		#will not spawn outside the mediterranean
+		modifier = {
+			factor = 0
+			NOT = { area = alentejo_area }
+			NOT = { area = extremadura_area }
+			NOT = { area = lower_andalucia_area }
+			NOT = { area = toledo_area }
+			NOT = { area = upper_andalucia_area }
+			NOT = { area = valencia_area }
+			NOT = { area = catalonia_area }
+			NOT = { area = languedoc_area }
+			NOT = { area = baleares_area }
+			NOT = { area = corsica_sardinia_area }
+			NOT = { area = western_morocco_area }
+			NOT = { area = marrekesh_area }
+			NOT = { area = northern_morocco_area }
+			NOT = { area = algiers_area }
+			NOT = { area = barbary_coast_area }
+			NOT = { area = hautes_plaines_area }
+			NOT = { area = kabylia_area }
+			NOT = { area = tunisia_area }
+			NOT = { area = djerba_area }
+			NOT = { area = ouled_nail_area }
+			NOT = { area = provence_area }
+			NOT = { area = liguria_area }
+			NOT = { area = tuscany_area }
+			NOT = { area = lazio_area }
+			NOT = { area = naples_area }
+			NOT = { area = apulia_area }
+			NOT = { area = calabria_area }
+			NOT = { area = sicily_area }
+			NOT = { area = western_sicily_area }
+			NOT = { area = albania_area }
+			NOT = { area = northern_greece_area }
+			NOT = { area = morea_area }
+			NOT = { area = aegean_archipelago_area }
+			NOT = { area = macedonia_area }
+			NOT = { area = thrace_area }
+			NOT = { area = hudavendigar_area }
+			NOT = { area = aydin_area }
+			NOT = { area = cukurova_area }
+			NOT = { area = aleppo_area }
+			NOT = { area = syria_area }
+			NOT = { area = delta_area }
+		}
 	}
 }
 vegetables = {
@@ -612,7 +733,7 @@ vegetables = {
 		supply_limit_modifier = 0.25
 	}
 	chance = {
-		factor = 1
+		factor = 20
 	}
 }
 potato = {
@@ -624,7 +745,17 @@ potato = {
 		local_unrest = -1
 	}
 	chance = {
-		factor = 1
+		factor = 30
+		#will not spawn outside america
+		modifier = {
+			factor = 0
+			OR = {
+				continent = europe
+				continent = asia
+				continent = africa
+				continent = oceania
+			}
+		}
 	}
 }
 tomato = {
@@ -636,6 +767,16 @@ tomato = {
 		local_defensiveness = 0.1
 	}
 	chance = {
-		factor = 1
+		factor = 30
+		#will not spawn outside america
+		modifier = {
+			factor = 0
+			OR = {
+				continent = europe
+				continent = asia
+				continent = africa
+				continent = oceania
+			}
+		}
 	}
 }

@@ -94,69 +94,69 @@ wine = {
 	}
 	chance = {
 		factor = 0
-		modifier = {
-			factor = 0
-			area = newfoundland_area
-		}
-		modifier = {
-			factor = 0
-			OR = {
-				has_winter = severe_winter
-				has_climate = arctic
-				has_climate = arid
-				has_climate = tropical
-				has_terrain = jungle
-				has_terrain = drylands
-				has_terrain = steppe
-				has_terrain = desert
-				has_terrain = coastal_desert
-				has_terrain = marsh
-				has_terrain = savannah
-				has_terrain = glacier
-				religion_group = muslim
-			}
-		}
-		modifier = {
-			factor = 0
-			normal_or_historical_nations = yes
-			NOT = { continent = south_america }
-			NOT = { region = south_africa_region }
-			NOT = { area = cuyo_area }
-			NOT = { area = nehuenken_area }
-			NOT = { area = california_area }
-			NOT = { area = central_valley_area }
-		}
-		modifier = {
-			factor = 0.25
-			has_winter = normal_winter
-		}
-		modifier = {
-			factor = 1.25
-			has_terrain = farmlands
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				has_terrain = hills
-				has_terrain = highlands
-			}
-		}
-		modifier = {
-			factor = 1.5
-			area = cuyo_area
-			region = france_region
-			region = italy_region
-		}
-		modifier = {
-			factor = 1.1
-			FROM = {
-				OR = {
-					culture_group = french
-					culture_group = iberian
-					culture_group = latin
-				}
-			}
-		}
+		# modifier = {
+			# factor = 0
+			# area = newfoundland_area
+		# }
+		# modifier = {
+			# factor = 0
+			# OR = {
+				# has_winter = severe_winter
+				# has_climate = arctic
+				# has_climate = arid
+				# has_climate = tropical
+				# has_terrain = jungle
+				# has_terrain = drylands
+				# has_terrain = steppe
+				# has_terrain = desert
+				# has_terrain = coastal_desert
+				# has_terrain = marsh
+				# has_terrain = savannah
+				# has_terrain = glacier
+				# religion_group = muslim
+			# }
+		# }
+		# modifier = {
+			# factor = 0
+			# normal_or_historical_nations = yes
+			# NOT = { continent = south_america }
+			# NOT = { region = south_africa_region }
+			# NOT = { area = cuyo_area }
+			# NOT = { area = nehuenken_area }
+			# NOT = { area = california_area }
+			# NOT = { area = central_valley_area }
+		# }
+		# modifier = {
+			# factor = 0.25
+			# has_winter = normal_winter
+		# }
+		# modifier = {
+			# factor = 1.25
+			# has_terrain = farmlands
+		# }
+		# modifier = {
+			# factor = 1.25
+			# OR = {
+				# has_terrain = hills
+				# has_terrain = highlands
+			# }
+		# }
+		# modifier = {
+			# factor = 1.5
+			# area = cuyo_area
+			# region = france_region
+			# region = italy_region
+		# }
+		# modifier = {
+			# factor = 1.1
+			# FROM = {
+				# OR = {
+					# culture_group = french
+					# culture_group = iberian
+					# culture_group = latin
+				# }
+			# }
+		# }
 	}
 }
 
@@ -1767,7 +1767,7 @@ gems = {
 		local_tax_modifier = 0.15
 	}
 	chance = {
-		factor = 5
+		factor = 3
 		modifier = {
 			factor = 0
 			area = newfoundland_area

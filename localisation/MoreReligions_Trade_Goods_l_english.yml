@@ -1,41 +1,73 @@
 ﻿l_english:
  alcohol:0 "Alcohol"
  alcoholDESC:0 "Across both the old world and new, through the process of fermentation and distillation, Alcohol is quite the popular good. While it can lead to problems with addiction and overdose, the relative safety of the beverage has made even more popular than water in some areas."
+ 
  military_supplies:0 "Military Supplies"
  military_suppliesDESC:0 "The production of muskets, cannons, and various other weapons for war."
+ 
  lumber:0 "Lumber"
  lumberDESC:0 "Wood is needed for development across many civilization, as such the lumber industry is quite large."
+ 
  stone:0 "Stone"
  #stoneDESC:0 
+ 
  marble:0 "Marble"
  #marbleDESC:0
+ 
  jewelry:0 "Jewelry"
  #jewelryDESC:0
+ 
  cheese:0 "Cheese"
  cheeseDESC:0 "Cheese represents both itself and various other dairy products."
+ 
  whales:0 "Whales"
+ 
  rice:0 "Rice"
+ 
  steel:0 "Steel"
+ 
  silver:0 "Silver"
+ 
  sulfur:0 "Sulfur"
+ 
  gunpowder:0 "Gunpowder"
+ 
  nutmeg:0 "Nutmeg"
+ 
  saffron:0 "Saffron"
+ 
  tumeric:0 "Tumeric"
+ 
  honey:0 "Honey"
+ 
  ginger:0 "Ginger"
+ 
  fruit:0 "Fruit"
+ 
  tropical_fruit:0 "Tropical Fruit"
+ 
  horse:0 "Horses"
+ 
  chocolate:0 "Chocolate"
+ 
  ice:0 "Ice"
+ 
  rice_wine:0 "Rice Wine"
- citrus:0 "Cirtus"
+ 
+ citrus:0 "Citrus"
+ 
  grapes:0 "Grapes"
+ 
  dates_figs:0 "Dates and Figs"
+ 
  rum:0 "Rum"
+ 
  honey_wine:0 "Honey Wine"
+ 
  olives:0 "Olives"
+ 
  vegetables:0 "Vegetables"
+ 
  potato:0 "Potatoes"
- tomatoes:0 "Tomatoes"
+ 
+ tomato:0 "Tomatoes"
