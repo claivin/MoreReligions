@@ -1,0 +1,29 @@
+mr_recruiting_effort = {
+	manpower_recovery_speed = 0.3
+}
+
+gme_expanded_feudal_levy = {
+	infantry_cost = -0.1
+	global_manpower_modifier = 0.1
+}
+
+gme_expanded_stables = {
+	cavalry_cost = -0.1
+	cavalry_power = 0.1
+}
+
+gme_firearms_adoption = {
+	mil_tech_cost_modifier = -0.1
+}
+
+gme_military_hierarchy = {
+	general_cost = -0.20
+}
+
+gme_defense = {
+	fort_maintenance_modifier = -0.10
+}
+
+mr_territorial_ambitions = {
+	ae_impact = -0.1
+}

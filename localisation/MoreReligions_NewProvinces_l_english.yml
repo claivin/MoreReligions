@@ -2,6 +2,13 @@
  urban_terrain: "Urban"
  urban_terrain_desc: "Urban provinces represent highly developed population centers where manmade structures and communities are densely crowded. Only a handful exist or will develop during this time."
  
+ #missing vanilla areas?
+ georgia_area: "Georgia"
+ amnok_area: "Amnok"
+ north_korea_area: "North Korea"
+ najd_area: "Najd"
+ nepalese_area: "Nepal"
+ 
  PROV4942: "Laon"
  PROV_ADJ4942: "Laon"
  
@@ -652,7 +659,7 @@
  PROV5166: "Chintawangsa"
  PROV5167: "Beruas"
  PROV5168: "Seremban"
- PROV5169: "Batan"
+ PROV5169: "Batam"
  PROV5170: "Muar"
  PROV5171: "Pekabaru"
  PROV5172: "Kuansing"
@@ -664,7 +671,7 @@
  PROV_ADJ5166: "Chintawangsa"
  PROV_ADJ5167: "Beruas"
  PROV_ADJ5168: "Seremban"
- PROV_ADJ5169: "Batan"
+ PROV_ADJ5169: "Batam"
  PROV_ADJ5170: "Muar"
  PROV_ADJ5171: "Pekabaru"
  PROV_ADJ5172: "Kuansing"

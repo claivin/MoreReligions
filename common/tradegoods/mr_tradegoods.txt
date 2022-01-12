@@ -543,7 +543,7 @@ ice = {
 		factor = 5
 		modifier = {
 			factor = 0
-			NOT = { has_climate = severe_winter }
+			NOT = { has_winter = severe_winter }
 		}
 	}
 }

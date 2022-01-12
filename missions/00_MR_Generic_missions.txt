@@ -1,0 +1,70 @@
+generic_military_missions = {
+	slot = 2
+	generic = yes
+	ai = no
+	potential = { always = yes }
+	
+	g_mission_military_ethos = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = mr_recruiting_effort
+				duration = 3650 
+			}
+			country_event = { #Military Ethos
+				id = generic_mission_events.1
+			}
+		}
+	}
+
+	g_mission_expand_country = {
+		icon = mission_conquer_50_development
+		required_missions = { g_mission_military_ethos }
+		trigger = { grown_by_development = 50 }
+		effect = {
+			capital_scope = {
+				area = { 
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT 
+				}
+			}
+			add_adm_power = 50
+			add_dip_power = 50
+		}
+	}
+	
+	g_mission_secure_heartland = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_expand_country }
+		trigger = {
+			capital_scope = {
+				area_for_scope_province = {
+					all_province = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = { }
+	}
+}
+
+
+
+# # every_owned_province = {
+				# # every_neighbor_province = {
+						# # add_permanent_claim = ROOT
+				# # }
+			# # }
+			# add_country_modifier = {
+				# name = mr_territorial_ambitions
+				# duration = 9125
+			# }
