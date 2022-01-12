@@ -2334,16 +2334,16 @@ karenni_area = { #3 #Southern Shan States
 }
 
 
-malaya_area = { #4 
-	 598 599 2393 4814
+malaya_area = { #4 +chintawangsa full
+	 598 599 2393 4814 5166
 }
 
-johor_area = { # 3
-	597 2686 4815
+johor_area = { # 3 + Batam/Muar full
+	597 2686 4815 5169 5170
 }
 
-malacca_area = { #3
-	595 596 2392
+malacca_area = { #3 +Seremban/Manjung full
+	595 596 2392 5167 5168
 }
 
 khorat_area = { #4 +Khon Buri full
@@ -2391,8 +2391,8 @@ north_tenasserim_area = { #5 full
 	591 592 2404 2387 4835
 }
 
-north_malaya_area = { # 4
-	594 2394 4812 4813
+north_malaya_area = { # 4+ Perlis  full
+	594 2394 4812 4813 5165
 }
 
 vietnam_area = { #4 +Quang Tri full
@@ -2447,31 +2447,31 @@ luzon_area = { #4 (Northern Luzon)
 	657 658 2698 4348
 }
 
-southern_luzon_area = { #5
+southern_luzon_area = { #5 full
 	656 2697 2699 4349 4350
 }
 
-north_sumatra_area = { # 5
+north_sumatra_area = { # 5 full
 	617 2673 2685 2674 4809
 }
 
-batak_area = { #4
-	 619 4811 2684 2682
+batak_area = { #4 +simeulue full
+	 619 4811 2684 2682 5173
 }
 
-central_sumatra_area = { #4
-	620 2675 618 4810
+central_sumatra_area = { #4 +Pekanbaru full
+	620 2675 618 4810 5171
 }
 
-jambi_area = { # 4
-	2677 659 2676 4816
+jambi_area = { # 4 +Kuansing full
+	2677 659 2676 4816 5172
 }
  
-minangkabau_area = { #5
+minangkabau_area = { #5 full
 	2680 2681 2683 4817 4818
 }
 
-south_sumatra_area = { #5
+south_sumatra_area = { #5 full
 	621 622 623 2678 2679
 }
 
@@ -2495,23 +2495,23 @@ banten_area = { #4
 	624 630 2687 4790
 }
 
-kutai_area = { #5
+kutai_area = { #5 full
 	638 2712 4799 2711 2710
 }
 
-sabah_area = { # 3
-	2709 637 2703
+sabah_area = { # 3 +Keningau/Sandakan full
+	2709 637 2703 5174 5175
 }
 
-brunei_area = { #5
+brunei_area = { #5 full
 	636  2704 2705 4805 4806
 }
 
-kalimantan_area = { #5
+kalimantan_area = { #5 full
 	640 2706 4802 4803 4804
 }
 
-banjar_area = { # 5
+banjar_area = { # 5 full
 	639 2707 4800 4801 2708
 }
 
@@ -2527,7 +2527,7 @@ lesser_sunda_islands_area = { #3
 	631 632 634 2693
 }
 
-timor_area = { #5
+timor_area = { #5 full
 	633 635 2695 2696 2725
 }
 
@@ -2535,7 +2535,7 @@ makassar_area = { # 4
 	4797 4798 4795 641
 }
 
-sulawesi_area = { #4
+sulawesi_area = { #4 full
 	643 644 2713 2714 4845
 }
 

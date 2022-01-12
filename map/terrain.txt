@@ -387,6 +387,7 @@ categories =  {
 			371 #akureyri
 			5072 #m4_germany
 			21 5108 5113 5121 5123 #mr_norway
+			5166 5172 5174 4812 4814 637#mr_SEA
 		}
 	}
 
@@ -507,6 +508,7 @@ categories =  {
 			
 			1085 4869 2730
 			5034 5038 5039 5041 5042 #mr_indochina
+			5171 5175#mr_sea
 		}
 	}	
 	

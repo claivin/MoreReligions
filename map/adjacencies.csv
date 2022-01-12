@@ -29,7 +29,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2159;666;sea;1370;-1;-1;-1;-1;Jiangmen-Hainan
 36;35;sea;1926;3171;1709;3165;1709;Estland-Ösel
 35;39;sea;1256;3157;1684;3158;1694;Ösel-Kurland
-597;620;sea;1361;4403;657;4415;672;Johor-Siak
+596;620;sea;1361;-1;-1;-1;-1;Johor-Siak
 659;2677;sea;1361;4435;636;4433;631;Riau-Palembang
 972;874;sea;1558;-1;-1;-1;-1;Nootka-Salish
 972;973;sea;1558;-1;-1;-1;-1;Nootka-Squamish
@@ -82,7 +82,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4356;4350;sea;1395;-1;-1;-1;-1;Taytay-Mindoro
 646;647;sea;1401;-1;-1;-1;-1;Ambom-Ceram
 2678;622;sea;1361;4446;618;4443;617;Banka-Palembang
-2686;4815;sea;1361;4434;664;4430;666;Bintan-Johor
+2686;597;sea;1361;-1;-1;-1;-1;Bintan-Johor
 2929;2890;sea;1529;2021;838;2022;841;Para-Marajo
 748;2890;sea;1529;2050;847;2046;850;Belem-Marajo
 911;2587;sea;1661;-1;-1;-1;-1;Belem-Marajo
@@ -115,4 +115,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5061;1818;sea;1390;-1;-1;-1;-1;Nagato-Chikuzen
 3;5114;sea;1255;-1;-1;-1;-1;Kalmar-Oland
 35;5115;sea;1926;-1;-1;-1;-1;Hiiumaa-Saaremaa
+4815;5169;sea;1361;-1;-1;-1;-1;Singapore-Batam
+
 -1;-1;;-1;-1;-1;-1;-1;-1;
