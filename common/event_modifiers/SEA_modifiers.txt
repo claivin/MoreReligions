@@ -1,0 +1,139 @@
+srivijaya_naval_power = {
+	global_trade_power = 0.10
+	add_years_income = 0.75
+}
+srivijaya_trade_consolidation = {
+	trade_range_modifier = 0.20
+	trade_steering = 0.10
+}
+exploration_of_isles = {
+	naval_attrition = -0.1
+	light_ship_cost = -0.15
+}
+first_settling = {
+	global_colonial_growth = 10
+	native_uprising_chance = -0.20
+	colonists = 1
+}
+colonial_empire_srj = {
+	administrative_efficiency = 0.05
+	prestige_decay = -0.05
+}
+harvest_that_spice = {
+	local_development_cost = -0.1
+}
+the_spice_must_flow = {
+	global_foreign_trade_power = 0.1
+	global_institution_spread = 0.1
+}
+srj_trade_boom = {
+	diplomatic_reputation = 2
+	build_cost = -0.15
+}
+srj_manufactories = {
+	production_efficiency = 0.15
+	global_tax_modifier = 0.10
+	add_years_income = 0.30
+}
+rising_srj_industry = {
+	build_time = -0.05
+	inflation_reduction = 0.10
+}
+srj_regional_hegemon = {
+	diplomatic_relation = 2
+	diplomats = 1
+}
+ruler_of_china_srj = {
+	stability_cost_modifier = -0.20
+	province_warscore_cost = -0.10
+	ae_impact = -0.10
+}
+produce_that_spice = {
+	add_years_income = 0.5
+	production_efficiency = 0.10
+}
+srj_infra1 = {
+	movement_speed = 0.10
+	global_tax_modifier = 0.10
+}
+srj_infra2 = {
+	embracement_cost = -0.15
+	build_cost = -0.05
+}
+defend_the_saliendras = {
+	local_defensiveness = 0.15
+}
+sumatra_united_srj = {
+	global_unrest = -2
+	diplomatic_annexation_cost = -0.2
+}
+palembang_capital_1 = {
+	development_cost = -0.1
+}
+karta_capital_1 = {
+	development_cost = -0.1
+	local_missionary_strength = 0.05
+}
+srj_cj = {
+	global_heathen_missionary_strength = 0.02
+	church_loyalty_modifier = 0.1
+}
+srj_cj_1 = {
+	global_unrest = -2
+	ship_power_propagation = 0.15
+}
+srj.main.1 = {
+	global_tax_modifier = -0.2
+	church_loyalty_modifier = 0.1
+}
+srj.main.2 = {
+	yearly_corruption = 0.05
+}
+srj_expanded_religion = {
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+}
+srj_religion.safe = {
+	tolerance_own = 1
+	tolerance_heretic = 1
+	global_heretic_missionary_strength = -0.05
+}
+srj_religion.risk = {
+	global_heretic_missionary_strength = 0.05
+	tolerance_heretic = -2
+}
+srj_religion.danger = {
+	global_missionary_strength = 0.05
+	tolerance_heathen = -2
+}
+bunga_war_vassal = {
+	land_morale = 0.05
+	recover_army_morale_speed = 0.10
+}
+tolerance_of_gods = {
+	global_unrest = -2
+	tolerance_heathen = 1
+}
+srj_expansion = {
+	local_development_cost = -0.15
+}
+srj_abandon = {
+	local_defensiveness = -0.30
+}
+srj_unfaithful = {
+	tolerance_own = -3
+}
+shan_alliances = {
+	diplomatic_reputation = 2
+	province_warscore_cost = -0.15
+}
+shan_religious_unity = {
+	great_project_upgrade_cost = -0.20
+	tolerance_own = 2
+}
+shan_tech = {
+	technology_cost = -0.15
+}
+shan_dominance = {
+	culture_conversion_cost = -0.15
+}

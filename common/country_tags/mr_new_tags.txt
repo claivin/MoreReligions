@@ -1,3 +1,7 @@
+#China
+GHC = "countries/GreatHan.txt"
+GSC = "countries/GreatSong.txt"
+
 #French
 REI = "countries/Reims.txt"
 LAO = "countries/Laons.txt"

@@ -1,0 +1,239 @@
+TMM_ideas = {
+	start = {
+		tolerance_heathen = 2
+		defensiveness = 0.2
+	}
+	
+	bonus = {
+		warscore_cost_vs_other_religion = -0.25
+	}
+	trigger = {
+		tag = TMM
+	}
+
+	free = yes
+
+	tmm_heirs_ayutthaya = {
+		improve_relation_modifier = 0.15
+		legitimacy = 0.5
+	}
+	tmm_naresuan = {
+		cavalry_power = 0.15
+	}
+	tmm_rebuilders_capital = {
+		build_cost = -0.1
+		development_cost = -0.1
+	}
+	tmm_sassamedha = {
+		production_efficiency = 0.10
+	}
+	tmm_khattiya = {
+		global_manpower_modifier = 0.20
+	}
+	tmm_andalusian_tercio = {
+		shock_damage = 0.1
+	}
+	tmm_islam_in_east = {
+		tolerance_own = 1
+		religious_unity = 0.25
+	}
+}
+
+ANK_ideas = {
+	start = {
+		development_cost = -0.10
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		governing_capacity_modifier = 0.20
+	}
+	trigger = {
+		tag = ANK
+	}
+	free = yes
+	
+	ank_rajakuti = {
+		diplomatic_reputation = 2
+	}
+	ank_kshatriya = {
+		discipline = 0.05
+	}
+	ank_laws_jayavarman_tenth = {
+		stability_cost_modifier = -0.25
+	}
+	ank_expansion_angkor_wat = {
+		defensiveness = 0.15
+		prestige = 1
+	}
+	ank_mekong_navy = {
+		naval_forcelimit_modifier = 0.15
+		global_ship_cost = -0.1
+	}
+	ank_expand_trade_malaya = {
+		merchants = 1
+	}	
+	ank_devaraja = {
+		yearly_absolutism = 0.5
+		max_absolutism = 5
+	}
+}
+
+SRJ_ideas = { 
+	start = {
+		merchants = 1
+		discipline = 0.05
+	}
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+	trigger = {
+		OR = {
+			tag = SRJ
+			tag = NST
+		}
+	}
+	free = yes
+	
+	srj_sailendra = {
+		legitimacy = 1
+	}
+	srj_empire_water = {
+		naval_forcelimit_modifier = 0.25
+		leader_naval_shock = 1
+	}
+	srj_siddhayarta = {
+		core_creation_cost = 0.1
+		army_tradition = 0.25
+	}
+	srj_agamas = {
+		tolerance_heretic = 2
+	}
+	srj_hegemony_straits = {
+		vassal_income = 0.25
+		trade_steering = 0.25
+	}
+	srj_borobudur = {
+		global_missionary_strength = 0.02
+	}
+	srj_lela = {
+		artillery_cost = -0.1
+		siege_ability = 0.1
+	}
+}
+KMI_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		naval_forcelimit_modifier = 0.15
+	}
+	bonus = {
+		allowed_marine_fraction = 0.15
+	}
+	trigger = {
+		tag = KMI
+	}
+	free = yes
+	
+	kmi_logging = { 
+		global_ship_recruit_speed = -0.15
+		global_ship_cost = -0.1
+	}
+	kmi_expansion = {
+		colonists = 1
+	}
+	kmi_piriting = {
+		privateer_efficiency = 0.15
+		capture_ship_chance = 0.1
+	}
+	kmi_tolerance = {
+		tolerance_own = 2
+	}
+	kmi_canons = {
+		artillery_power = 0.15
+	}
+	kmi_naval = {
+		navy_tradition_decay = -0.02
+	}
+	kmi_trading = {
+		production_efficiency = 0.15
+	}
+}
+PGN_ideas = {
+	start = {
+		land_morale = 0.10
+		leader_land_fire = 1 
+	}
+	trigger = {
+		tag = PGN
+	}
+	bonus = {
+		manpower_in_true_faith_provinces = 0.10
+	}
+	free = yes
+	
+	pgn_naingngans = {
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1.0
+	}
+	pgn_minye = {
+		army_tradition = 1
+	}
+	pgn_builder = {
+	 	great_project_upgrade_cost = -0.15
+		prestige_decay = -0.01
+	}
+	pgn_hluttaw = {
+		 advisor_cost = -0.15
+	}
+	pgn_bhun_kri = {
+		global_missionary_strength = 0.02
+	}
+	pgn_cavalry = {
+	 	cavalry_power = 0.15
+		cavalry_cost = -0.20
+	}
+	pgn_land = {
+		production_efficiency = 0.10
+	}
+}
+CMS_ideas = {
+	start = {
+		diplomatic_reputation = 2
+		reelection_cost = -0.3
+	}
+	bonus = {
+		global_colonial_growth = 20
+	}
+	
+	trigger = {
+		tag = CMS
+	}
+	free = yes
+	
+	cms_the_three_keys = {
+		republican_tradition = 0.3		
+	}
+	cms_freedom_from_tribute = {
+		global_unrest = -2
+	}
+	cms_right_to_arms = {
+		infantry_power = 0.20
+		land_maintenance_modifier = -0.10
+	}
+	cms_caminho_priveligiado = {
+		trade_efficiency = 0.2
+	}
+	cms_a_mixed_society = {
+		num_accepted_cultures = 2
+	}
+	cms_to_live_in_peace = {
+		native_assimilation = 0.5
+		native_uprising_chance = -0.5
+	}
+	cms_paradise_of_liberty = {
+		prestige = 1.0
+		development_cost = -0.2
+	}
+}
+	
+	

@@ -1,0 +1,65 @@
+namespace = shan_war_independence
+country_event = {
+	id = shan_war_independence.1
+	title = shan_war_independence.1.t
+	desc = shan_war_independence.1.d
+	picture = NUSANTARA_WAR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	immediate = {
+		grant_independence = yes
+		add_historical_rival = PGN
+		PGN = {
+			add_historical_rival = ROOT
+		}
+		ROOT = {
+   			save_global_event_target_as = shan_kingdom_target
+		}
+	}
+	
+	option = {
+		name = "shan_independence1a"
+		PGN = { country_event = { id = shan_war_independence.2a } }
+	}
+}
+country_event = {
+	id = shan_war_independence.2a
+	title = shan_war_independence.2a.t
+	desc = shan_war_independence.2a.d
+	picture = NUSANTARA_WAR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = "shan_independence2b"
+		declare_war_with_cb = {
+    			who = event_target:shan_kingdom_target
+   			casus_belli = cb_vassalize_mission
+		}
+	}
+}
+country_event = {
+	id = shan_war_independence.3
+	title = shan_war_independence.3.t
+	desc = shan_war_independence.3.d
+	picture = SHWEDAGON_PAGON_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "shan_independence3a"
+		change_tag = SST
+		add_prestige = 25
+		set_government_rank = 2
+		hidden_effect = {
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+	
+	

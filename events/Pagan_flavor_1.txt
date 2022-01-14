@@ -1,0 +1,211 @@
+namespace = pagan_tribute_chain
+country_event = {
+	id = pagan_tribute_chain.1
+	title = pagan_tribute_chain.1.t
+	desc = pagan_tribute_chain.1.d
+	picture = SHWEDAGON_PAGON_eventPicture
+
+	fire_only_once = yes
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	trigger = {
+		tag = PGN
+		NOT = { has_country_flag = pgn_trib_quo }
+		NOT = { has_country_flag = pgn_trib_annex }
+	}
+	
+	option = {
+		name = "pgn_tribute1a"
+		set_country_flag = pgn_trib_quo
+		set_country_flag = passive_arakan_flg
+		PEG = { country_event = { id = pagan_tribute_chain.2 } }
+		SDH = { country_event = { id = pagan_tribute_chain.2 } }
+		ARK = { country_event = { id = pagan_tribute_chain.2 } }
+		add_government_reform = pagan_reform
+		ai_chance = {
+			factor = 50
+		}
+	}
+	
+	option = {
+		name = "pgn_tribute1b"
+		set_country_flag = pgn_trib_annex
+		set_country_flag = invade_arakan_flg
+		ARK = { country_event = { id = pagan_tribute_chain.3 } }
+		PEG = { country_event = { id = pagan_tribute_chain.3 } }
+		SDH = { country_event = { id = pagan_tribute_chain.3 } }
+		lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		add_government_reform = pagan_reform_b
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = {
+	id = pagan_tribute_chain.2
+	title = pagan_tribute_chain.2.t
+	desc = pagan_tribute_chain.2.d 
+	picture = SHWEDAGON_PAGON_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "pgn_tribute2a"
+		set_country_flag = pgn_sub_quo 
+		add_liberty_desire = 10
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 70
+				tag = ARK
+			}
+		}	
+	}
+	
+	option = {
+		name = "pgn_tribute2b"
+		set_country_flag = pgn_sub_rej
+		grant_independence = yes
+		add_truce_with = PGN
+		arakan_area = {
+			limit = {
+				NOT = { is_core = PGN }
+				NOT = { is_permanent_claim = PGN }
+			}
+			add_permanent_claim = PGN
+		}
+		lower_burma_area = {
+			limit = {
+				NOT = { is_core = PGN }
+				NOT = { is_permanent_claim = PGN }
+			}
+			add_permanent_claim = PGN
+		}
+		PGN = {
+			clr_country_flag = passive_arakan_flg
+			set_country_flag = invade_arakan_flg
+			if = {
+				limit = {
+					OR = {
+						tag = PEG
+						tag = SDH
+					}
+				}
+				clr_country_flag = pgn_trib_quo
+				set_country_flag = pgn_trib_annex
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 30
+				tag = ARK
+			}
+		}
+	}
+}
+
+country_event = {
+	id = pagan_tribute_chain.3
+	title = pagan_tribute_chain.3.t
+	desc = pagan_tribute_chain.3.d
+	picture = SHWEDAGON_PAGON_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "pgn_tribute3a"
+		add_truce_with = PGN
+		central_burma_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}	
+		grant_independence = yes
+		add_opinion = {
+			who = PGN
+			modifier = vassal_abandoned
+		}
+		ai_chance = {
+			factor = 95
+			modifier = {
+				factor = 100
+				tag = ARK
+			}
+		}
+	}
+	
+	option = {
+		name = "pgn_tribute3b"
+		PGN = { inherit = ROOT }
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				tag = ARK
+			}
+		}
+	}
+}
+namespace = pagan_flavor
+country_event = {
+	id = pagan_flavor.1
+	title = pagan_flavor.1.t
+	desc = pagan_flavor.1.d
+	picture = SHWEDAGON_PAGON_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "burma_bma"
+		change_tag = BMA
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+	}
+	
+	option = {
+		name = "pagan_bma"
+			change_tag = BMA	
+			override_country_name = "Pagan_Empire"
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_government_rank = 3
+	}
+	
+	option = {
+		name = "mon_bma"
+			change_tag = BMA
+			override_country_name = "Raman"
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+	}
+}
