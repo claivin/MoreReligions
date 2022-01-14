@@ -26,4 +26,57 @@ gme_defense = {
 
 mr_territorial_ambitions = {
 	ae_impact = -0.1
+	core_creation = -0.05
+}
+
+gme_expanded_feudal_levy_perm = {
+	infantry_cost = -0.1
+	global_manpower_modifier = 0.1
+}
+
+gme_expanded_stables_perm = {
+	cavalry_cost = -0.1
+	cavalry_power = 0.1
+}
+
+gme_firearms_adoption_perm = {
+	artillery_cost = -0.1
+	artillery_power = 0.1
+}
+
+gme_military_hierarchy_perm = {
+	general_cost = -0.2
+	free_leader_pool = 1
+	army_tradition = 0.5
+}
+
+gme_defense_perm = {
+	fort_maintenance_modifier = -0.10
+	defensiveness = 0.1
+	war_exhaustion_cost = -0.1
+}
+
+gme_trade_navy = {
+	naval_tradition_from_trade = 1
+}
+
+gme_logistics = {
+	transport_cost = -0.2
+}
+
+gme_trade_navy_perm = {
+	merchants = 1
+	mercantilism_cost = -0.15
+	burghers_loyalty_modifier = 0.1
+}
+
+gme_colonial_perm = {
+	global_colonial_growth = 15
+	treasure_fleet_income = 0.15
+}
+
+gme_logistics_perm = {
+	transport_cost = -0.2
+	global_supply_limit_modifier = 0.1
+	global_naval_barrage_cost = -0.1
 }

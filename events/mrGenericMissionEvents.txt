@@ -46,7 +46,7 @@ country_event = {
 			name = gme_military_hierarchy
 			duration = 9125
 		}
-		set_country_flag = gme_firearms_adoption_flag
+		set_country_flag = gme_hierarchy_flag
 		custom_tooltip = gme_later_better_modifier
 	}
 	
@@ -72,7 +72,153 @@ country_event = {
 				duration = 9125
 			}
 		}
-		set_country_flag = gme_firearms_adoption_flag
+		set_country_flag = gme_defense_flag
 		custom_tooltip = gme_later_better_modifier
+	}
+}
+
+country_event = {
+	id = generic_mission_events.2
+	title = generic_mission_events.2.t
+	desc = generic_mission_events.2.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #Expanded Feudal Levys
+		name = generic_mission_events.2.a
+		trigger = { has_country_flag = gme_expanded_feudal_levy_flag }
+		add_country_modifier = {
+			name = gme_expanded_feudal_levy_perm
+			duration = -1
+		}
+	}
+	
+	option = { #Cavalry
+		name = generic_mission_events.2.b
+		trigger = { has_country_flag = gme_expanded_stables_flag }
+		add_country_modifier = {
+			name = gme_expanded_stables_perm
+			duration = -1
+		}
+	}
+	
+	option = { #Guns
+		name = generic_mission_events.2.c
+		trigger = { has_country_flag = gme_firearms_adoption_flag }
+		add_country_modifier = {
+			name = gme_firearms_adoption_perm
+			duration = -1
+		}
+	}
+	
+	option = { #Hierarcy
+		name = generic_mission_events.2.d
+		trigger = { has_country_flag = gme_hierarchy_flag }
+		add_country_modifier = {
+			name = gme_military_hierarchy_perm
+			duration = -1
+		}
+	}
+	
+	option = { #Defense
+		name = generic_mission_events.2.e
+		trigger = { has_country_flag = gme_defense_flag }
+		add_country_modifier = {
+			name = gme_defense_perm
+			duration = -1
+		}
+	}
+	
+	after = {
+		clr_country_flag = gme_expanded_feudal_levy_flag
+		clr_country_flag = gme_expanded_stables_flag
+		clr_country_flag = gme_firearms_adoption_flag
+		clr_country_flag = gme_hierarchy_flag
+		clr_country_flag = gme_defense_flag
+	}
+}
+
+country_event = { #naval ethos
+	id = generic_mission_events.3
+	title = generic_mission_events.3.t
+	desc = generic_mission_events.3.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #trade interests
+		name = generic_mission_events.3.a
+		add_country_modifier = {
+			name = gme_trade_navy
+			duration = 9125
+		}
+		set_country_flag = gme_trade_navy_flag
+		custom_tooltip = gme_later_better_modifier
+	}
+	
+	option = { #colonial ambitions
+		name = generic_mission_events.3.b
+		create_explorer = 30
+		set_country_flag = gme_colonial_flag
+		custom_tooltip = gme_later_better_modifier
+	}
+	
+	option = { #logistics
+		name = generic_mission_events.3.c
+		add_country_modifier = {
+			name = gme_logistics
+			duration = 9125
+		}
+		set_country_flag = gme_logistics_flag
+		custom_tooltip = gme_later_better_modifier
+	}
+}
+
+country_event = { #naval ethos
+	id = generic_mission_events.4
+	title = generic_mission_events.4.t
+	desc = generic_mission_events.4.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #trade interests
+		name = generic_mission_events.4.a
+		trigger = { has_country_flag = gme_trade_navy_flag }
+		add_country_modifier = {
+			name = gme_trade_navy_perm
+			duration = -1
+		}
+	}
+	
+	option = { #colonial ambitions
+		name = generic_mission_events.4.b
+		trigger = { has_country_flag = gme_colonial_flag }
+		add_country_modifier = {
+			name = gme_colonial_perm
+			duration = -1
+		}
+	}
+	
+	option = { #logistics
+		name = generic_mission_events.4.c
+		trigger = { has_country_flag = gme_logistics_flag }
+		add_country_modifier = {
+			name = gme_logistics_perm
+			duration = -1
+		}
+	}
+	
+	after = {
+		clr_country_flag = gme_trade_navy_flag
+		clr_country_flag = gme_colonial_flag
+		clr_country_flag = gme_logistics_flag
 	}
 }

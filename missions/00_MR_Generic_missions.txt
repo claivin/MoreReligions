@@ -1,4 +1,79 @@
-generic_military_missions = {
+generic_military_missions_1 = {
+	slot = 2
+	generic = yes
+	ai = no
+	potential = { always = yes }
+	
+	g_mission_sea_access = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_expand_country }
+		position = 1
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+				development = 15
+				has_dock_building_trigger = yes
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					development = 15
+					has_dock_building_trigger = yes
+				}
+				add_unit_construction = {
+					type = light_ship
+					amount = 4
+					speed = 0.1
+					cost = 0
+				}
+			}
+			country_event = {
+				id = generic_mission_events.3
+			}
+		}
+	}
+	
+	g_mission_naval_projection = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_sea_access }
+		position = 2
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+				development = 25
+				has_dock_building_trigger = yes
+				has_shipyard_building_trigger = yes
+			}
+			naval_forcelimit = 25
+			navy_size_percentage = 1.0
+		}
+		effect = {
+			country_event = { #Naval Ethos
+				id = generic_mission_events.4
+			}
+		}
+	}
+	
+	g_mission_trade_centers = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_expand_country }
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				is_capital = no
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		effect = {
+			
+		}
+	}
+}
+
+generic_military_missions_2 = {
 	slot = 2
 	generic = yes
 	ai = no
@@ -7,6 +82,7 @@ generic_military_missions = {
 	g_mission_military_ethos = {
 		icon = mission_build_up_to_force_limit
 		required_missions = {}
+		position = 1
 		trigger = {
 			army_size_percentage = 1
 			num_of_generals = 1
@@ -16,6 +92,7 @@ generic_military_missions = {
 				name = mr_recruiting_effort
 				duration = 3650 
 			}
+			#pick military modifier, after g_mission_growning_power it becomes stronger/permanent
 			country_event = { #Military Ethos
 				id = generic_mission_events.1
 			}
@@ -25,7 +102,11 @@ generic_military_missions = {
 	g_mission_expand_country = {
 		icon = mission_conquer_50_development
 		required_missions = { g_mission_military_ethos }
-		trigger = { grown_by_development = 50 }
+		position = 2
+		trigger = {
+			grown_by_development = 50
+			crown_land_share = 60
+		}
 		effect = {
 			capital_scope = {
 				area = { 
@@ -36,35 +117,44 @@ generic_military_missions = {
 					add_permanent_claim = ROOT 
 				}
 			}
-			add_adm_power = 50
-			add_dip_power = 50
+			capital_scope = {
+				region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = mr_territorial_ambitions
+				duration = 9125
+			}
 		}
 	}
 	
-	g_mission_secure_heartland = {
+	g_mission_growing_power = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { g_mission_expand_country }
+		position = 3
 		trigger = {
-			capital_scope = {
-				area_for_scope_province = {
-					all_province = {
-						owned_by = ROOT
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Emperor"
+						has_dlc = "Rights of Man"
 					}
 				}
+				great_power_rank = 8
+			}
+			else = {
+				total_development = 1000
 			}
 		}
-		effect = { }
+		effect = {
+			country_event = { #Military Ethos Realized
+				id = generic_mission_events.2
+			}
+		}
 	}
 }
-
-
-
-# # every_owned_province = {
-				# # every_neighbor_province = {
-						# # add_permanent_claim = ROOT
-				# # }
-			# # }
-			# add_country_modifier = {
-				# name = mr_territorial_ambitions
-				# duration = 9125
-			# }
