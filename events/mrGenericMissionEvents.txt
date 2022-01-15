@@ -163,7 +163,9 @@ country_event = { #naval ethos
 	
 	option = { #colonial ambitions
 		name = generic_mission_events.3.b
-		create_explorer = 30
+		create_explorer = {
+			tradition = 30
+		}
 		set_country_flag = gme_colonial_flag
 		custom_tooltip = gme_later_better_modifier
 	}

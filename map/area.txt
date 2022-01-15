@@ -3782,8 +3782,7 @@ western_aegean_area = {
 odishi_area = {
 }
 
-georgia_area = {
-}
+#georgia_area = {}
 
 rakka_area = {
 }
@@ -3871,7 +3870,7 @@ gujarat_area = { }
 central_doab_area = {
 }
 
-nepalese_area = { }
+#nepalese_area = { }
 
 pomerelia_area = { }
 

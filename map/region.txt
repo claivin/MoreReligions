@@ -461,6 +461,7 @@ guinea_region = {
 		west_africa_coast_area
 		jolof_area
 		sao_tome_area
+		west_guniea_jungle_area
 	}
 	monsoon = {
 		00.06.01
@@ -481,6 +482,7 @@ sahel_region = {
 		baghena_area
 		niger_bend_area
 		east_azbin_area
+		gao_state_area
 	}
 	monsoon = {
 		00.06.01

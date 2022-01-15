@@ -32,6 +32,11 @@ karma_too_low =
 	nobles_loyalty_modifier = 0.1
 	nobles_influence_modifier = 0.1
 }
+
+shan_subject = {
+	#provides no modifers, maybe something sometime?
+}
+
 mr_tamrashatiya_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes

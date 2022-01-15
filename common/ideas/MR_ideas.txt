@@ -103,7 +103,7 @@ SRJ_ideas = {
 		leader_naval_shock = 1
 	}
 	srj_siddhayarta = {
-		core_creation_cost = 0.1
+		core_creation = 0.1
 		army_tradition = 0.25
 	}
 	srj_agamas = {

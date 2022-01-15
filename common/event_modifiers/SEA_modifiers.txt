@@ -1,6 +1,6 @@
 srivijaya_naval_power = {
 	global_trade_power = 0.10
-	add_years_income = 0.75
+	#add_years_income = 0.75
 }
 srivijaya_trade_consolidation = {
 	trade_range_modifier = 0.20
@@ -33,14 +33,14 @@ srj_trade_boom = {
 srj_manufactories = {
 	production_efficiency = 0.15
 	global_tax_modifier = 0.10
-	add_years_income = 0.30
+	#add_years_income = 0.30
 }
 rising_srj_industry = {
 	build_time = -0.05
 	inflation_reduction = 0.10
 }
 srj_regional_hegemon = {
-	diplomatic_relation = 2
+	diplomatic_upkeep = 2
 	diplomats = 1
 }
 ruler_of_china_srj = {
@@ -49,7 +49,7 @@ ruler_of_china_srj = {
 	ae_impact = -0.10
 }
 produce_that_spice = {
-	add_years_income = 0.5
+	#add_years_income = 0.5
 	production_efficiency = 0.10
 }
 srj_infra1 = {

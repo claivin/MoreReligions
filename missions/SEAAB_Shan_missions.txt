@@ -314,7 +314,7 @@ shan_missions_third = {
 	}
 	}
 }
-shan_missions_third = {
+shan_missions_third_2 = {
 	slot = 3
 	generic = no
 	ai = yes

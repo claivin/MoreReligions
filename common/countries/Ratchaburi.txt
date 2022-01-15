@@ -87,3 +87,13 @@ leader_names = {
 	"Na Udon" "Na Phuket" "Na Kedah" "Na Chumphon" "Na Prachinburi"
 	"Na Burapa" "Na Chanthaburi"
 }
+
+ship_names = {
+	Ramithibodi Ramesuan Borommaracha "Thong Chan"
+	Ramaratcha Intharatcha Boromtrailokanat Ratsada
+	Chairacha Yotfa Worawongsa Chakkraphat Mahin
+	Sanpet Naresuan Ekathotsarot "Si Saowaphak"
+	Songtham Chehha "Somdet Phra" "Prasat Thong" Chai
+	Suthammaracha Narai Petratcha Süa Phumintharacha
+	Uthumpon Ekkathat
+}

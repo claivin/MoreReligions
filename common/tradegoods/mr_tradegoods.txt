@@ -659,7 +659,7 @@ dates_figs = {
 			NOT = { superregion = eastern_europe_superregion }
 			NOT = { superregion = near_east_superregion }
 			NOT = { superregion = europe_superregion }
-			NOT = { area = maghreb_region }
+			NOT = { region = maghreb_region }
 		}
 		modifier = {
 			factor = 0
