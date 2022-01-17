@@ -242,6 +242,7 @@ categories =  {
 			4974 4967 #mr_france
 			5084 5086 5095 5096 5098 5099 5106 #mr_germany
 			5134 #mr_poland
+			5201 5203 5205 #mr_wafrica
 		}
 	}
 
@@ -389,6 +390,7 @@ categories =  {
 			5072 #m4_germany
 			21 5108 5113 5121 5123 #mr_norway
 			5166 5172 5174 4812 4814 637#mr_SEA
+			5202 1117 #mr_wafrica
 		}
 	}
 
@@ -640,7 +642,7 @@ categories =  {
 			
 			#channel islands
 			4946
-			5188 5189 5190 #jolof (mr_wafrica)
+			5188 5189 5190 5210#jolof (mr_wafrica)
 		}
 	}	
 	
@@ -781,7 +783,7 @@ categories =  {
 			
 			1092 4851 1094 4850 4846 4881
 			2384 #nong khai
-			5179 5180 5181 5182 5184 5185 5192 5194 5195 5198 #mr_wafrica
+			5179 5180 5181 5182 5184 5185 5192 5194 5195 5198 5204#mr_wafrica
 		}		
 	}
 	

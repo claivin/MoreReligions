@@ -1,0 +1,7 @@
+#REGIONWAFRICA
+
+capital = "Yeji"
+discovered_by = indian
+discovered_by = chinese
+discovered_by = muslim
+discovered_by = ottoman
