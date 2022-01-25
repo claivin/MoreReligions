@@ -1,5 +1,5 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
-333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
+5275;4559;sea;1300;-1;-1;-1;-1;Manacor-Minorca
 4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
 366;4565;sea;1471;-1;-1;-1;-1;Canaries
 6;12;sea;1258;3008;1633;3000;1630;Skåne-Sjaelland
@@ -44,7 +44,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4131;4193;sea;1387;4999;1357;5005;1351;Oshima-Mutsu
 1032;1852;sea;4225;5099;1408;5073;1386;Kurils-Tokachi
 1199;1201;sea;1448;-1;-1;-1;-1;Bagamoyo-Zanzibar
-1247;127;sea;1298;-1;-1;-1;-1;Corsica-Sardinia
+1247;5067;sea;1298;-1;-1;-1;-1;Ajaccio-OlbiaTempio
 394;396;sea;4347;3589;1076;3592;1074;Al Hasa-Bahrain
 395;396;sea;4347;3596;1071;3601;1071;Qatar-Bahrain
 4354;4351;sea;4357;4726;791;4732;786;Zamboanga-Buglas
