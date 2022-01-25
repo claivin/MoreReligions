@@ -1388,71 +1388,71 @@ said_area = { #5 #Upper Egypt
 	360 1231 2319 4319 4320
 }
 
-tripolitania_area = { #4
-	354 2451 2452 355
+tripolitania_area = { #4 + AlKhums full
+	354 2451 2452 355 5269
 }
 
-cyrenaica_area = { #5
-	356 357 2325 2326 
+cyrenaica_area = { #4
+	356 357 2325 2326
 }
 
-fezzan_area = { #4 -tarjah
-	2448 2449 4567 5234
+fezzan_area = { #4 -tarjah +maradah full
+	2448 2449 4567 5234 5270
 }
 
-tunisia_area = { #5
+tunisia_area = { #5 full
 	341 2454 2455 2473 4566
 }
 
-djerba_area = { #3
-	353 2453 2954
+djerba_area = { #3 +medinine/gabes full
+	353 2453 2954 5267 5268
 }
 
-algiers_area = { #3
-	336 2465 4562
+algiers_area = { #3 +nedroma/oran full
+	336 337 2465 4562 5259
 }
 
-barbary_coast_area = { #3
-	337 2461 338
+barbary_coast_area = { #3 -oran +arzew/shershel/delles full
+	2461 338 5260 5261 5262
 }
 
-kabylia_area = { #3
-	339 340 1882 
+kabylia_area = { #3 +collo/qalima full
+	339 340 1882 5263 5264
 }
 
-hautes_plaines_area = { #3
-	2459 2462 2463 
+hautes_plaines_area = { #3 +figuig/saida full
+	349 2459 2462 2463 5258
 }
 
-ouled_nail_area = { #3
-	350 351 2458
+ouled_nail_area = { #3 +tolga/dfelfa full
+	350 351 2458 5265 5266
 }
 
-north_saharan_area = { #5
+north_saharan_area = { #5 full
 	352 2450 2456 2457 2472
 }
 
-tafilalt_area = { #3
-	346 349 2460
+tafilalt_area = { #3 -figuig +tamegroute/tinghir/rissani full
+	346 2460 5255 5256 5257
 }
 
-sus_area = { #4
-	348 2464 2466 4568
+sus_area = { #4 + skoura full
+	348 2464 2466 4568 5254
 }
 
-southern_morocco_area = { #3
-	347 1110 2470 
+southern_morocco_area = { #3 +Infi/Arsir full
+	347 1110 2470 5250 5251
 }
 
-western_morocco_area = { #3
-	342 345 2469 4564
+western_morocco_area = { #4 + fedala full
+	342 345 2469 4564 5252
 }
 
-marrekesh_area = { #3
-	343 344 2467 2468
+marrekesh_area = { #4 + taza full
+	343 344 2467 2468 5253
 }
 
-northern_morocco_area = { #5
+northern_morocco_area = { #5 full
 	334 335 1751 4563 4561
 }
 
