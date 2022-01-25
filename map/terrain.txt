@@ -645,6 +645,7 @@ categories =  {
 			#channel islands
 			4946
 			5188 5189 5190 5210#jolof (mr_wafrica)
+			5275 5272 5273 5273#mr_meditereanean
 		}
 	}	
 	

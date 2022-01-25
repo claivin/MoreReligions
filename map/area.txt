@@ -426,8 +426,12 @@ galicia_area = { #4 +couto misto full
 	206 4554 4555 4558 4980
 }
 
-baleares_area = { #5 +corsica/n.corsica (w. med. islands area) full
-	333 4559 4560 1247 5066
+baleares_area = { #5 +formentera/manacor full
+	333 4559 4560 5274 5275
+}
+
+corsica_area = { #NEW +ajaccio/cismote/bastia/elba/capria full
+	1247 5066 5271 5272 5273
 }
 
 basque_country = { #5 +gastiez/donostia full

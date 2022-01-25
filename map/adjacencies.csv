@@ -117,4 +117,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 35;5115;sea;1926;-1;-1;-1;-1;Hiiumaa-Saaremaa
 4815;5169;sea;1361;-1;-1;-1;-1;Singapore-Batam
 5188;5189;sea;1468;-1;-1;-1;-1;Cacheu-Bissagos
+117;5272;sea;1298;-1;-1;-1;-1;Siena-Elba
+5272;5273;sea;1298;-1;-1;-1;-1;Capria-Elba
+115;5273;sea;1298;-1;-1;-1;-1;Capria-Pisa
+4560;5274;sea;1298;-1;-1;-1;-1;Ibiza-Formentera
 -1;-1;;-1;-1;-1;-1;-1;-1;

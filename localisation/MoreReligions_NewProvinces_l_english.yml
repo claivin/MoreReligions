@@ -18,6 +18,7 @@
  western_desert_area: "Western Desert"
  ennedi_plateau_area: "Ennedi Plateau"
  sahara_region: "Sahara"
+ corsica_area: "Corsica"
  
  PROV4942: "Laon"
  PROV_ADJ4942: "Laon"
@@ -391,8 +392,8 @@
  PROV5065: "Osumi"
  PROV_ADJ5065: "Osumi"
  
- PROV5066: "Pumonti"
- PROV_ADJ5066: "Pumonti"
+ PROV5066: "Cismonte"
+ PROV_ADJ5066: "Cismonte"
  
  PROV5067: "Olbia-Tempio"
  PROV_ADJ5067: "Olbia-Tempio"
@@ -884,3 +885,15 @@
  PROV_ADJ5268: "Gabes"
  PROV_ADJ5269: "Al Khums"
  PROV_ADJ5270: "Maradah"
+ 
+ PROV5271: "Bastia"
+ PROV5272: "Elba"
+ PROV5273: "Capria"
+ PROV5274: "Formentera"
+ PROV5275: "Manacor"
+ 
+ PROV_ADJ5271: "Bastia"
+ PROV_ADJ5272: "Elba"
+ PROV_ADJ5273: "Capria"
+ PROV_ADJ5274: "Formentera"
+ PROV_ADJ5275: "Manacor"

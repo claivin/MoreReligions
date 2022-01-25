@@ -603,7 +603,7 @@ trade_company_valencia = {
 		211 214 2990 4557 #aragon_area
 		333 4559 4560 # Baleares
 		196 200 2753 4391 4695 #languedoc_area
-		4986 4987 #mr_iberia
+		4986 4987 5274 5275 #mr_iberia
 	}
 	
 	# Specific
@@ -658,7 +658,7 @@ trade_company_genua = {
 		118 2976 4731 4732 # lazio-umbria
 		121 2983 4734 # campania
 		104 1862 2979 4728 4740 # Lombardy
-		4967 5010 5012 5011 5066 5067 5027 5017 5018 5019 5021 5022 5024 5026 5025 5023 #mr_italy
+		4967 5010 5012 5011 5066 5067 5027 5017 5018 5019 5021 5022 5024 5026 5025 5023 5271 5272 5273#mr_italy
 	}
 	
 	# Specific
