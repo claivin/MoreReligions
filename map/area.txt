@@ -646,12 +646,12 @@ laponia_area = { #3 +finnmarksvidda/murman full
 	315 1777 4151 5124 5125
 }
 
-karelia_area = { #4 +
-	30 33 34 1961
+karelia_area = { #4 +Sisselerg full
+	30 33 34 1961 5285
 }
 
-north_karelia = { #3
-	32 309 4124
+north_karelia = { #3 +Sortavala/Petrozavosk full
+	32 309 4124 5287 5288
 }
 
 northern_norway = { #3 -jamtland +nordTrondelag/+Ofoten full
@@ -793,52 +793,52 @@ minsk_area = { #4 +Lyepyel full
 
 #Opolye
 
-ryazan_area = { #4
-	301 1778 4255
+ryazan_area = { #3 +Shatsk/Skopin full
+	301 1778 4255 5302 5303
 }
 
-moscow_area = { #4
-	295 4251 4252
+moscow_area = { #3 +Yegoryevsk/Volokolamsk
+	295 4251 4252 5298 5299
 }
 
-vladimir_area = { #3
-	307 4147 4253
+vladimir_area = { #3 +Ivanovo/Pereslavl-Zalessky full
+	307 4147 4253 5296 5297
 }
 
-yaroslavl_area = { #4
-	308 1753 4117 4250
+yaroslavl_area = { #4 +Kinesmha full
+	308 1753 4117 4250 5295
 }
 
-tver_area = { #5
+tver_area = { #5 full
 	294 1752 4243 4248 4249 
 }
 
-suzdal_area = { #3
-	1754 1956 4254
+suzdal_area = { #3 +Vyazniki/Starodub-on-the-Klyazma full
+	1754 1956 4254 5304 5305
 }
 
 smolensk_area = { #4 +Roslav full
 	293 297 4244 4245 5160
 }
 
-oka_area = { #3
-	296 300 4116
+oka_area = { #3 +Mtsensk/Oryol full
+	296 300 4116 5300 5301
 }
 
-novgorod_area = { #5
+novgorod_area = { #5 full
 	310 311 1959 2749 4260
 }
 
-pskov_area = { #4
-	274 275 1960 4148
+pskov_area = { #4 +Opochka full
+	274 275 1960 4148 5286
 }
 
-vologda_area = { #3
-	314 4262 4263
+vologda_area = { #3 +Veliky Ustyug/Gryazovets full
+	314 4262 4263 5294 5293
 }
 
-beloozero_area = { #3
-	312 4259 4261
+beloozero_area = { #3 +Vytegorsky Pogost/Cherepovets full
+	312 4259 4261 5291 5292
 }
 
 astrakhan_area = { #5
@@ -869,12 +869,12 @@ ural_area = { #5
 	1080 1078 1780 2427 2441 
 }
 
-pomor_area = { #4
-	313 1776 1958 4258
+pomor_area = { #4 +Obozersky full
+	313 1776 1958 4258 5289
 }
 
-arkhangelsk_area = { #4
-	1955 4122 4256 4257
+arkhangelsk_area = { #4 +Severodvinsk full
+	1955 4122 4256 4257 5290
 }
 
 bashkiria_area = { #5
@@ -1366,38 +1366,42 @@ syrian_desert_area = { #3 +baalbek/druze hills full
 # North Africa					       #
 ########################################
 
-gulf_of_arabia_area = { #5
+gulf_of_arabia_area = { #4 +StCatherine full
 	color = { 19 219 75 }
-	365 2315 2320 2321
+	365 2315 2320 2321 5284
 }
 
 al_wahat_area = { #3 +siwa, Dakhla full
 	1233 2318 4323 5240 5241
 }
 
-delta_area = { #3
-	358 362 363
+delta_area = { #3 +Desouk/Mansoura full
+	358 362 363 5277 5278
 }
 
-bahari_area = { #4 #Lower Egypt
+bahari_area = { #4 #Lower Egypt +Tipersis full
 	color = { 19 193 219 }
-	361 2316 4316 4317 
+	361 2316 4316 4317 5279
 }
 
-vostani_area = { #3 #Middle Egypt
-	359 2317 4318
+vostani_area = { #3 #Middle Egypt +Abu Simbel/Abri full
+	359 2317 4318 5280 5281
 }
 
 said_area = { #5 #Upper Egypt
 	360 1231 2319 4319 4320
 }
 
+lower_nubia_area = { #3 +AbuSimel/Abri full
+	1234 2322 2323 5282 5283
+}
+
 tripolitania_area = { #4 + AlKhums full
 	354 2451 2452 355 5269
 }
 
-cyrenaica_area = { #4
-	356 357 2325 2326
+cyrenaica_area = { #4 +Ajdabiya full
+	356 357 2325 2326 5276
 }
 
 fezzan_area = { #4 -tarjah +maradah full
@@ -1479,7 +1483,7 @@ sakalava_area = { #5
 
 southern_madagascar = { #4
 	color = { 232 29 34 }
-	4026 4028 4029 4030
+	4026 4028 4029 4030 
 }
 
 lower_zambezi_area = { #3
@@ -1611,10 +1615,6 @@ darfur_central_sahara_area = { #5 -medwa
 kurdufan_area = { #3
 	color = { 97 110 203 }
 	1216 1221 2800
-}
-
-lower_nubia_area = { #3
-	1234 2322 2323
 }
 
 dongola_area = { #3

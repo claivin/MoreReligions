@@ -136,6 +136,7 @@ categories =  {
 			5058 #mr_japan
 			5128 5136 #mr_poland
 			1133 #mr_wafrica
+			2317 4318 5277 5278 5279 5280 5281#mr_egypt
 		}		
 	}
 	
@@ -165,6 +166,7 @@ categories =  {
 			312 #Eastern Europe
 			5051 5052 #mr_japan
 			5125 #mr_norway
+			4258#mr_russia
 		}                                      
 	}
 	
@@ -317,6 +319,7 @@ categories =  {
 			5077 5080 5083 4966 4973 5075 5008 5007 5006 4776 4977 4959 4963 4950 4957 4952 4953 #mr_germany (south)
 			5085 5087 5088 5090 5091 5094 5100 5101 5102 5103 5105 #mr_germany (south)
 			5132 #mr_poland
+			5286 5301 5300 5304 5305 2595 5296 5292#mr_russia
 		}
 	}
 	
@@ -469,6 +472,7 @@ categories =  {
 			5049 5050 5053 5055 5056 5057 5059 5061 5065 #mr_japan
 			5089 5097 #mr_germany (north)
 			5178 #mr_wafrica
+			5297#mr_russia
 		}
 	}
 
@@ -683,7 +687,7 @@ categories =  {
 			2356 2364
 			
 			699 713 2122 2124 2182 2184 2302
-			2317 2319 4318 4320 #Egypt
+			2319 4320 #Egypt
 			4209 #Greater China
 			334 338 341 342 345 1110 2453 2455 2461 2466 2469 2473 #Maghreb
 			1089 1091 #Australia
@@ -696,6 +700,7 @@ categories =  {
 			2736 4863 4861 4855 1094 2733
 			5043 #tyre
 			5250 5252 5259 5260 5261 5262 5263#mr_maghreb
+			360 4319 1231#mr_egypt
 		}
 	}
 
@@ -750,6 +755,7 @@ categories =  {
 			4965 #mr_scotland
 			5122 #mr_norway
 			5254 5255 5258 5264#mr_maghreb
+			5284 #mr_egypt
 		}
 	}
 
