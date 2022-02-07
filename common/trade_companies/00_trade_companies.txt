@@ -1059,6 +1059,7 @@ trade_company_crimea = {
 		423 2203 4301 #kartli_kakheti_area
 		2196 2204 4303 #samtskhe_area
 		4529 4530
+		5306 5307 5308 5309 5310 5311 5313 5314 5315 5316 5317 5318 5319
 	}
 	
 	# Specific
@@ -1124,6 +1125,7 @@ trade_company_astrakhan = {
 		288 303 465 467 469 470 474 1971 2365 2367 2366 2409 2418 2419 472 471 464 466 468 2416 2417 
 		302 304 2415 #tambov_area
 		425 2198 2199 2208 4306 #dagestan_area
+		5312
 	}
 	
 	# Specific
@@ -1176,6 +1178,7 @@ trade_company_persia = {
 		421 424 4299 4305 4340 #shirvan_area
 		416 2206 2207 4304 #tabriz_area
 		2212 2215 4300 4338 #azerbaijan_area
+		5320 5321 5322 5323 5324
 	}
 	
 	# Specific

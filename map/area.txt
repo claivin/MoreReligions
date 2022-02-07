@@ -767,20 +767,20 @@ sloboda_ukraine_area = { #4 +Stary Oskol full
 	291 298 299 2408 5163
 }
 
-yedisan_area = { #3
-	282 1974 2406
+yedisan_area = { #3 +kyzylyar/ochakiv full
+	282 1974 2406 5308 5309
 }
 
-zaporizhia_area = { #3
-	283 2411 2412
+zaporizhia_area = { #3 +mykytyn/donbass full
+	283 2411 2412 5310 5311
 }
 
-azov_area = { #4
-	286 287 2413 2414
+azov_area = { #4 +matrega full
+	286 287 2413 2414 2447
 }
 
-crimea_area = { #4
-	284 285 2410 2447
+crimea_area = { #4 -matrega +kezlev/solkhat full
+	284 285 2410 5306 5307
 }
 
 white_ruthenia_area = { #3 +Orsha Horki full
@@ -845,8 +845,8 @@ astrakhan_area = { #5
 	464 466 468 2416 2417
 }
 
-lower_don_area = { #4
-	288 467 1971 2409
+lower_don_area = { #4 +boguchar full
+	288 467 1971 2409 5312
 }
 
 kazan_area = { #3
@@ -1153,32 +1153,37 @@ transdanubia_area = { #5
 # Caucasia 							   #
 ########################################
 
-imereti_area = { #3
-	422 462 1856
+imereti_area = { #3 +sochi/poti full
+	422 462 1856 5314 5315
 }
 
-samtskhe_area = { #3
-	2196 2204 4303
+samtskhe_area = { #3 +tori/adrahan full
+	2196 2204 4303 5316 5317
 }
 
-kartli_kakheti_area = { #3
-	423 2203 4301
+kartli_kakheti_area = { #3 +rustavi/dedoplistsqaro full
+	423 2203 4301 5318 5319
 }
 
-armenia_area = { #5
-	420 419 2202 2205 4302
+#west armenia
+armenia_area = { #5 -Ganja/Nakhchivan/melkiates +ani/archesh/gyumri full 
+	4302 419 5320 5321 5322
 }
 
-shirvan_area = { #5 #Northern Azerbaijan
+east_armenia_area = { #new +Ganja/Nakhchivan/Melikates/Vararakn/Sabirabad full
+	2202 2205 420 5323 5324
+}
+
+shirvan_area = { #5 #Northern Azerbaijan full
 	color = { 225 231 53 }
 	421 424 4299 4305 4340
 }
 
-circassia_area = { #4
-	463 2201 2195 2197
+circassia_area = { #4 + julat full
+	463 2201 2195 2197 5313
 }
 
-dagestan_area = { #5
+dagestan_area = { #5 full
 	425 2198 2199 2208 4306
 }
 

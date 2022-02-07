@@ -1,0 +1,24 @@
+#REGIONPOLAND
+# 4525 - Dobryzn
+
+owner = POL
+controller = POL
+capital = "Dobrzyn"
+is_city = yes
+culture = polish
+religion = catholic
+trade_goods = grain
+hre = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+add_core = POL
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

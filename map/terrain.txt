@@ -245,6 +245,7 @@ categories =  {
 			5084 5086 5095 5096 5098 5099 5106 #mr_germany
 			5134 #mr_poland
 			5201 5203 5205 #mr_wafrica
+			5314 5315 #mr_caucaus
 		}
 	}
 
@@ -701,6 +702,7 @@ categories =  {
 			5043 #tyre
 			5250 5252 5259 5260 5261 5262 5263#mr_maghreb
 			360 4319 1231#mr_egypt
+			5318 5319 5321#mr_caucasus
 		}
 	}
 
@@ -756,6 +758,7 @@ categories =  {
 			5122 #mr_norway
 			5254 5255 5258 5264#mr_maghreb
 			5284 #mr_egypt
+			5323 5324#mr_armenia
 		}
 	}
 
@@ -847,7 +850,7 @@ categories =  {
 			4664 4665 4674 4666 4667 4673 4675 4672 4671 4668 4683
 			
 			5176 5177 #mr_wafrica
-			
+			5309 5310 5308 5311 5312 5313 #mr_pontic
 		}	
 	}
 	urban_terrain = {
