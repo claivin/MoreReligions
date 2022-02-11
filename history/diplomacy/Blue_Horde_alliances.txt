@@ -1,0 +1,6 @@
+#Blue Horde Relations
+march = {
+	first = BLH
+	second = BUL
+	start_date = 1380.1.1
+}

@@ -1,0 +1,24 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = crimean
+religion = orthodox
+technology_group = nomad_group
+capital = 280	#Kiev
+
+add_accepted_culture = ruthenian
+add_government_reform = martial_society_reform
+add_government_reform = religious_societies_reform
+add_government_reform = retain_tribal_hierarchy_reform
+change_government_reform_progress = 25
+set_government_rank = 2
+
+1383.1.1 = {
+	monarch = {
+		name = "Ugechi"
+		dynasty = "Sartakovich"
+		birth_date = 1368.1.1
+		adm = 5
+		dip = 1
+		mil = 4
+	}
+}
