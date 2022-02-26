@@ -50,50 +50,26 @@ BLH = "countries/BlueHorde.txt"
 RDH = "countries/RedHorde.txt"
 
 #East Indochinese
-LAV = "countries/Lavo.txt"
-TAM = "countries/Tambralinga.txt"
-MGI = "countries/MuangNgoi.txt"
-STR = "countries/SriThep.txt"
-KHK = "countries/Khukan.txt"
-ANK = "countries/Angkor.txt"
-KPT = "countries/KampongPousThom.txt"
-PVH = "countries/PreahVihear.txt"
-OUD = "countries/Oudong.txt"
-PRT = "countries/PhnomBanan.txt"
-PHP = "countries/PhnomPehn.txt"
-KRT = "countries/Kratie.txt"
-CPH = "countries/Chaiyaphum.txt"
-RET = "countries/RoiEt.txt"
-SIK = "countries/Sikhottabong.txt"
-NGK = "countries/NongKhai.txt"
-THK = "countries/Thakhek.txt"
-MRG = "countries/Mergui.txt"
-RTK = "countries/Ratanakiri.txt"
 
 TMM = "countries/Sithammarat.txt"
-SRJ = "countries/Srivijaya.txt"
 PGN = "countries/Pagan.txt"
-TJP = "countries/Tanjungpura.txt"
-NGD = "countries/Negaradipa.txt"
 NST = "countries/Nusantara.txt."
 KMI = "countries/Kalimantan.txt."
 PTC = "countries/Petchaburi.txt"
 RTC = "countries/Ratchaburi.txt"
 SDH = "countries/Sadhuim.txt"
 LPB = "countries/Lopburi.txt"
-PNJ = "countries/Panjalu.txt"
-SMD = "countries/Samudera.txt"
 MGT = "countries/MuangThai.txt"
 SYM = "countries/Syyam.txt"
 PMN = "countries/MaeNam.txt"
-BMA = "countries/Burma.txt"
+
+ANK = "countries/Angkor.txt"
 
 #Maritime SEA
-LKS = "countries/Langkasuka.txt"
 
 #Burma
-SAG = "countries/Sagaing.txt"
-PIY = "countries/Pinya.txt"
+BMA = "countries/Burma.txt"
+
 
 #Ethiopia
 AGW = "countries/Agew.txt"
@@ -104,9 +80,10 @@ IFT = "countries/Ifat.txt"
 BAE = "countries/Bale.txt"
 AUA = "countries/Ausa.txt"
 HRA = "countries/Harla.txt"
+ABH = "countries/AlHabash.txt"
+BRL = "countries/BetaIsrael.txt"
 
 #Japan
-YAM = "countries/Yamato.txt"
 MYI = "countries/Miyoshi.txt"
 NTT = "countries/Nitta.txt"
 

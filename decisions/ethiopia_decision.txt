@@ -17,9 +17,14 @@ country_decisions = {
 				primary_culture = afar
 			}
 			NOT = { exists = ETH }
-			NOT = { tag = ETH }
-			NOT = { tag = IFT }
-			NOT = { tag = AUA }
+			OR = {
+				NOT = { tag = ETH }
+				NOT = { tag = IFT }
+				NOT = { tag = BTI }
+				NOT = { tag = AXM }
+				NOT = { tag = ABH }
+				NOT = { tag = BRL }
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -66,5 +71,139 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 400
-		}
 	}
+	beta_isrl_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_brl }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = yes
+				is_playing_custom_nation = no
+			}
+			tag = BTI
+			religion = jewish
+			NOT = { exists = BRL }
+			OR = {
+				NOT = { tag = ETH }
+				NOT = { tag = IFT }
+				NOT = { tag = AXM }
+				NOT = { tag = ABH }
+				NOT = { tag = BRL }
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1227
+				province_id = 2770
+				province_id = 2769
+				province_id = 1213
+				province_id = 1211
+			}
+		}
+		allow = {
+			is_nomad = no
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 1227
+			owns_core_province = 2770
+			owns_core_province = 2769
+			owns_core_province = 1213
+			owns_core_province = 1211
+			num_of_owned_provinces_with = {	
+				value = 10
+				is_core = ROOT
+				region = horn_of_africa_region
+			}
+		}
+		effect = {
+			change_tag = BRL
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				add_adm_power = 100
+			}
+			else = {
+				set_government_rank = 3
+			}	
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_brl
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	al_habash_desicion = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_ABH }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = yes
+				is_playing_custom_nation = no
+			}
+			tag = IFT
+			NOT = { exists = ETH }
+			OR = {
+				NOT = { tag = ETH }
+				NOT = { tag = BTI }
+				NOT = { tag = AXM }
+				NOT = { tag = ABH }
+				NOT = { tag = BRL }
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1227
+				province_id = 2770
+				province_id = 2769
+				province_id = 1213
+				province_id = 1211
+			}
+		}
+		allow = {
+			is_nomad = no
+			is_at_war = no
+			is_subject = no
+			owns_core_province = 1227
+			owns_core_province = 2770
+			owns_core_province = 2769
+			owns_core_province = 1213
+			owns_core_province = 1211
+			num_of_owned_provinces_with = {	
+				value = 10
+				is_core = ROOT
+				region = horn_of_africa_region
+			}
+		}
+		effect = {
+			change_tag = ABH
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					government_rank = 3
+				}
+				add_adm_power = 100
+			}
+			else = {
+				set_government_rank = 3
+			}	
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
