@@ -66,3 +66,10 @@
  mr_subject_events.4.t: "[mr_country_turned_into_vassal.GetName] Ascends to Vassal"
  mr_subject_events.4.d: "[mr_country_turned_into_vassal.GetName] has joined our realm, leaving their autonomy, and joining under direct rule of the [Root.Monarch.GetTitle]."
  mr_subject_events.4.a: "They are welcome to the Realm."
+ 
+ dutch_confederation: "Low Countries Confederation"
+ dutch_confederation_long_desc: "Once a collection of autonomous urban centers, the cities of the Low Countries band together following the spread of the Free Spirit pracitce in a move to defend themselves from political and military intervention. The confederation offers mutual military protection to its members, but all near-complete sovereignty in domestic matters."
+ dutch_confederation_is_our: "$NAME|Y$ is a fellow confederate member"
+ dutch_confederation_title: "Low Countries Confederate"
+ dutch_confederation_title_plural: "Low Countries Confederates"
+ is_dutch_confederation: "Is a Low Countries Confederate"

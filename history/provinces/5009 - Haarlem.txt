@@ -1,0 +1,19 @@
+#REGIONLOWCOUNTRIES
+#5009 - Haarlem
+
+owner = HLM
+controller = HLM
+add_core = HLM
+capital = "Haarlem"
+is_city = yes
+culture = dutch
+religion = mr_freespirit
+hre = yes
+base_tax = 6
+base_production = 6
+trade_goods = cloth
+base_manpower = 4
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

@@ -1,0 +1,19 @@
+#REGIONLOWCOUNTRIES
+#95 Breda - Principal cities: Breda
+
+owner = BRD
+controller = BRD
+add_core = BRD
+is_city = yes
+capital = "Breda"
+culture = dutch
+religion = mr_freespirit
+hre = yes
+base_tax = 4
+base_production = 3
+trade_goods = cloth
+base_manpower = 2
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

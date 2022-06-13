@@ -3,6 +3,18 @@
  GUY_ADJ: "Aquitain"
  GUY_ADJ2: "Aquitain"
  
+ GEL: "Elberg"
+ GEL_ADJ: "Elberger"
+ GEL_ADJ2: "Elberger"
+ 
+ HOL: "Amsterdam"
+ HOL_ADJ: "Amsterdammer"
+ HOL_ADJ2: "Amsterdammer"
+ 
+ FLA: "Bruges"
+ FLA_ADJ: "Brugeois"
+ FLA_ADJ2: "Brugeois"
+ 
  home_counties_area: "South East England"
  
  crimean: "Kipchak"
@@ -144,3 +156,12 @@
  PROV_ADJ2411: "Samara"
  
  armenia_area: "West Armenia"
+ 
+ PROV1742: "Eindhoven"
+ PROV_ADJ1742: "Eindhoven"
+ 
+ PROV99: "Elberg"
+ PROV_ADJ99: "Elberg"
+ 
+ PROV4770: "Arnhem"
+ PROV_ADJ4770: "Arnhem"

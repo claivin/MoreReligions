@@ -26,6 +26,19 @@ TUL = "countries/Toul.txt"
 VDN = "countries/Verdun.txt"
 MTZ = "countries/Metz.txt"
 
+#Low Countries
+HLM = "countries/Haarlem.txt"
+DHG = "countries/DenHaag.txt"
+VLG = "countries/Vlissingen.txt"
+ATP = "countries/Antwerp.txt"
+GHE = "countries/Ghent.txt"
+DKK = "countries/Dunkirk.txt"
+ARH = "countries/Arnhem.txt"
+BRD = "countries/Breda.txt"
+LER = "countries/Lier.txt"
+TLB = "countries/Tilburg.txt"
+EHV = "countries/Eindhoven.txt"
+
 #Britain
 YRK = "countries/York.txt"
 OXF = "countries/Oxford.txt"

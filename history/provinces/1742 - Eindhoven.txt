@@ -1,0 +1,19 @@
+##REGIONLOWCOUNTRIES
+# 1742 - Eindhoven
+
+owner = EHV
+controller = EHV
+add_core = EHV
+is_city = yes
+capital = "Eindhoven"
+culture = flemish
+religion = mr_freespirit
+hre = yes
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 4
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

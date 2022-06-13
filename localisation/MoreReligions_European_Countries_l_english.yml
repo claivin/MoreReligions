@@ -169,3 +169,47 @@
  RDH: "Red Horde"
  RDH_ADJ: "Red Horde"
  RDH_ADJ2: "Red Horde"
+ 
+ HLM: "Haarlem"
+ HLM_ADJ: "Haarlem"
+ HLM_ADJ2: "Haarlem"
+ 
+ DHG: "Den Haag"
+ DHG_ADJ: "Hagenaar"
+ DHG_ADJ2: "Hagenaar"
+ 
+ VLG: "Vlissingen"
+ VLG_ADJ: "Vlissinger"
+ VLG_ADJ2: "Vlissinger"
+ 
+ ATP: "Antwerp"
+ ATP_ADJ: "Antwerper"
+ ATP_ADJ2: "Antwerper"
+ 
+ GHE: "Ghent"
+ GHE_ADJ: "Ghentian"
+ GHE_ADJ2: "Ghentian"
+ 
+ DKK: "Dunkirk"
+ DKK_ADJ: "Dukirker"
+ DKK_ADJ2: "Dukirker"
+ 
+ ARH: "Arnhem"
+ ARH_ADJ: "Arnhem"
+ ARH_ADJ2: "Arnhem"
+ 
+ BRD: "Breda"
+ BRD_ADJ: "Breda"
+ BRD_ADJ2: "Breda"
+ 
+ LER: "Lier"
+ LER_ADJ: "Lier"
+ LER_ADJ2: "Lier"
+ 
+ TLB: "Tilburg"
+ TLB_ADJ: "Tilburger"
+ TLB_ADJ2: "Tilburger"
+ 
+ EHV: "Eindhoven"
+ EHV_ADJ: "Eindhovener"
+ EHV_ADJ2: "Eindhovener"

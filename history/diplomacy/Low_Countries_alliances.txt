@@ -1,0 +1,98 @@
+#Low Countries Relations
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = HLM
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = HOL
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = UTR
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = GEL
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = ARH
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = BRD
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = VLG
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = EHV
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = TLB
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = LER
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = ATP
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = GHE
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = FLA
+	start_date = 1380.1.1
+}
+
+dependency = {
+	subject_type = "dutch_confederation"
+	first = DHG
+	second = DKK
+	start_date = 1380.1.1
+}

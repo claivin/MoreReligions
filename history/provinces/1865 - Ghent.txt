@@ -1,0 +1,19 @@
+#REGIONLOWCOUNTRIES
+# 1865 - Ghent
+
+owner = GHE
+controller = GHE
+add_core = GHE
+is_city = yes
+capital = "Ghent"
+culture = flemish
+religion = mr_freespirit
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = cloth
+base_manpower = 3
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
