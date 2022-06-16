@@ -86,7 +86,7 @@ dependency = {
 dependency = {
 	subject_type = "dutch_confederation"
 	first = DHG
-	second = FLA
+	second = BGG
 	start_date = 1380.1.1
 }
 

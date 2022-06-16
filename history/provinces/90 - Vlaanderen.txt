@@ -1,9 +1,9 @@
 #REGIONLOWCOUNTRIES
 # 90 Vlaanderen - Principal cities: Brugge
 
-owner = FLA
-controller = FLA
-add_core = FLA
+owner = BGG
+controller = BGG
+add_core = BGG
 is_city = yes
 capital = "Brugge"
 culture = flemish

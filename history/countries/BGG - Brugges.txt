@@ -4,4 +4,4 @@ government_rank = 1
 technology_group = western
 religion = catholic
 primary_culture = flemish
-capital = 4769	# Lille
+capital = 90	# Brugge

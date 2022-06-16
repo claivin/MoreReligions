@@ -1,4 +1,4 @@
-french_elective_monarchy = {
+french_elective_monarchy = { #PLACEHOLDER - INCOMPLETE
 	icon = "articles_of_agreement"
 	allow_normal_conversion = yes
 	potential = {
@@ -30,6 +30,30 @@ french_elective_monarchy = {
 	custom_attributes = {
 		locked_government_type = yes
 	}
+}
+frisian_federation_government = { #PLACEHOLDER - INCOMPLETE
+	allow_normal_conversion = no
+	dictatorship = yes
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	potential = {
+		has_reform = presidential_despot_reform
+	}
+	valid_for_nation_designer = no
+	legacy_equivalent = republican_dictatorship
+
+	modifiers = {
+		global_autonomy = -0.075
+		land_morale = 0.1
+		max_absolutism = 40
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	has_term_election = no
 }
 akanya_sutta_elections = {
 	icon = "elective_monarchy"

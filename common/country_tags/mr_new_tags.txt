@@ -38,6 +38,8 @@ BRD = "countries/Breda.txt"
 LER = "countries/Lier.txt"
 TLB = "countries/Tilburg.txt"
 EHV = "countries/Eindhoven.txt"
+BGG = "countries/Brugges.txt"
+BSS = "countries/Brussels.txt"
 
 #Britain
 YRK = "countries/York.txt"
