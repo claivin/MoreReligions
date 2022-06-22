@@ -1,6 +1,11 @@
 #China
 GHC = "countries/GreatHan.txt"
 GSC = "countries/GreatSong.txt"
+GYA = "countries/Guiyang.txt"
+HGH = "countries/Honghe.txt"
+YNN = "countries/Yunnan.txt"
+GNN = "countries/Guangnan.txt"
+LNS = "countries/Liangshan.txt"
 
 #French
 REI = "countries/Reims.txt"
