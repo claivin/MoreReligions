@@ -7,6 +7,12 @@ YNN = "countries/Yunnan.txt"
 GNN = "countries/Guangnan.txt"
 LNS = "countries/Liangshan.txt"
 
+#Northern Hordes
+TMD = "countries/Tumed.txt"
+DGH = "countries/Dughat.txt"
+UKI = "countries/Uriankhai.txt"
+YNI = "countries/Yenisei.txt"
+
 #French
 REI = "countries/Reims.txt"
 LAO = "countries/Laons.txt"
@@ -104,7 +110,6 @@ ABH = "countries/AlHabash.txt"
 BRL = "countries/BetaIsrael.txt"
 
 #Japan
-MYI = "countries/Miyoshi.txt"
 NTT = "countries/Nitta.txt"
 
 #West Africa
