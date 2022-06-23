@@ -1,7 +1,7 @@
 #4359 - Ise
 
-owner = MYI
-controller = MYI
+owner = HTK
+controller = HTK
 culture = japanese
 religion = nihon
 capital = "Kiriyama"
@@ -11,7 +11,7 @@ base_tax = 1
 base_manpower = 2
 base_production = 3
 is_city = yes
-add_core = MYI
+add_core = HTK
 add_core = KTB
 discovered_by = chinese
 discovered_by = MCH

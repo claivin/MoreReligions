@@ -2937,19 +2937,27 @@ guangxi_area = { #5
 }
 
 yun_gui_area = { #5 (Yun-Gui Hinterland)
-	662 663 673 674 4199
+	662 663 5327 5328 5329
+}
+
+dali_area = { #5 NEW
+	661 2167 5330 5331 5332
+}
+
+guizhou = { #5 NEW
+	674 673 4199 5325 5326
 }
 
 yun_gui_borderland_area = { #5
-	660 661 2165 2166 2167
+	660 2165 2166 5333 5334
 }
 
 sichuan_area = { #3
-	679 680 4212
+	679 680 4212 5336
 }
 
 chuannan_area = { #4
-	675 2168 2748 4213
+	675 2168 2748 4213 5335
 }
 
 chuanbei_area = { #3
