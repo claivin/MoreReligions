@@ -2,7 +2,11 @@
 owner = HGH
 controller = HGH
 culture = bai
+<<<<<<< Updated upstream
 religion = animism
+=======
+religion = azhaliism 
+>>>>>>> Stashed changes
 capital = "Hongta"
 trade_goods = vegetables
 hre = no

@@ -12,4 +12,18 @@
  GNN:0 "Guangnan"
  GNN_ADJ:0 "Guangnan"
  LNS:0 "Liangshan"
+<<<<<<< Updated upstream
  LNS_ADJ:0 "Liangshan"
+=======
+ LNS_ADJ:0 "Liangshan"
+ NTT:0 "Nitta"
+ NTT_ADJ:0 "Nitta"
+ TMD:0 "Tumed"
+ TMD_ADJ:0 "Tumed"
+ DGH:0 "Dughat"
+ DGH_ADJ:0 "Dughat"
+ UKI:0 "Uriankhai"
+ UKI_ADJ:0 "Uriankhai"
+ YNI:0 "Yenisei"
+ YNI_ADJ:0 "Yenisei"
+>>>>>>> Stashed changes

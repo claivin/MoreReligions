@@ -1,0 +1,20 @@
+﻿l_english:
+  
+ nusantara: "Nusantara"
+ nusantara_religion_desc: "The varying syncretic beliefs in Maritime South East Asia, featuring native religions, Buddhism, Islam, and Hinduism all co-existing at the same time." 
+ nusantara_rebels_name: "Nusantara Zealots"
+ nusantara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ nusantara_title: "$RELIGION$ Zealots"
+ nusantara_rebels_army: "$RELIGION$ Army"
+ nusantara_rebels_demand: "Convert $COUNTRYNAME$"
+ nusantara_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ deravaja_tradition: "Deravaja Tradition"
+ bunian_tradition: "Bunian Tradition"
+ dukun_tradition: "Dukun Tradition"
+ dewi_sri_tradition: "Dewi Sri Tradition"
+ nyai_roro_tradition: "Nyai Roro Kidul Tradition"
+ batara_guru_tradition: "Batara Guru Tradition"
+ islam_tradition: "Islamic Tradition"
+ dharma_tradition: "Dharmic Tradition"
+ buddhism_tradition: "Buddhist Tradition"

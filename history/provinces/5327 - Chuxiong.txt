@@ -4,7 +4,11 @@ owner = YNN
 controller = YNN
 add_core = YNN
 culture = bai
+<<<<<<< Updated upstream
 religion = animism
+=======
+religion = azhaliism 
+>>>>>>> Stashed changes
 capital = "Chuxiong"
 trade_goods = copper
 hre = no

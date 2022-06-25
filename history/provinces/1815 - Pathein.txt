@@ -3,7 +3,7 @@
 owner = PEG
 controller = PEG
 culture = mon
-religion = ari
+religion = buddhism	
 capital = "Pathein"
 trade_goods = grain
 hre = no
