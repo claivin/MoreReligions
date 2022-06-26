@@ -3,7 +3,7 @@
 owner = PMN
 controller = PMN
 culture = lao
-religion = animism
+religion = buddhism
 capital = "Luang Namtha"
 trade_goods = copper
 hre = no

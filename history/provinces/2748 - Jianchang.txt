@@ -1,8 +1,8 @@
 #2406 - Jianchang
 
-owner = LNS
-controller = LNS
-add_core = LNS
+owner = GSC
+controller = GSC
+add_core = GSC
 add_core = CYI
 add_core = CDL
 culture = yi

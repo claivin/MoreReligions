@@ -1,7 +1,7 @@
 owner = PMN
 controller = PMN
 culture = lao
-religion = animism
+religion = buddhism
 capital = "Sip Et"
 trade_goods = ivory
 hre = no

@@ -1,8 +1,8 @@
 #675 - Qujing
 
-owner = LNS
-controller = LNS
-add_core = LNS
+owner = GSC
+controller = GSC
+add_core = GSC
 add_core = CYI
 culture = yi
 religion = animism
@@ -30,7 +30,7 @@ discovered_by = nomad_group
 	owner = CZH
 	controller = CZH
 	add_core = CZH
-	remove_core = MNG
+	remove_core = GSC
 } # The Three Feudatories
 1681.10.1 = {
 	owner = QNG

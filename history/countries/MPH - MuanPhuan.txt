@@ -3,9 +3,9 @@ add_government_reform = mandala_reform
 government_rank = 1
 technology_group = chinese
 primary_culture = lao
-religion = buddhism
+religion = yogavacara
 capital = 1844	# Xiangkhouang
-
+religious_school = mr_tamrashatiya_school
 # fictional
 1444.1.1 = {
 	monarch = {

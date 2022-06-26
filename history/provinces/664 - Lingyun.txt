@@ -1,8 +1,8 @@
 #664 - Lingyun
 
-owner = GNN
-controller = GNN
-add_core = GNN
+owner = GSC
+controller = GSC
+add_core = GSC
 culture = zhuang
 religion = confucianism
 capital = "Lingyun"

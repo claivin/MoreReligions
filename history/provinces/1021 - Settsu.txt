@@ -1,7 +1,7 @@
 #1021 - Settsu
 
-owner = HTK
-controller = HTK
+owner = MYI
+controller = MYI
 culture = japanese
 religion = nihon
 capital = "Naniwa"
@@ -11,7 +11,7 @@ base_tax = 6
 base_manpower = 3
 base_production = 6
 is_city = yes
-add_core = HTK
+add_core = MYI
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA

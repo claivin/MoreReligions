@@ -1,6 +1,6 @@
-owner = TMD
-controller = TMD
-add_core = TMD
+owner = GHC
+controller = GHC
+add_core = GHC
 culture = mongol
 religion = vajrayana
 capital = "Badain Jaran"

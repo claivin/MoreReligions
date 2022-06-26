@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = mandala_reform
 primary_culture = mon
-religion = buddhism
+religion = ari
 technology_group = chinese
 capital = 586	# Pegu
 

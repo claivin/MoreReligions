@@ -39,38 +39,37 @@
  nihon_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  
- ##Bodhisattvayana##
- mr_bodhisattvayana_school:0 "Bodhisattvayana"
- mr_bodhisattvayana_school_desc:0 "Bodhisattvayana is a tradition of Theravada Buddhism that has a focus on Bodhisattvas."
- mr_bodhisattvayana_school_modifier:0 "Bodhisattvayana"
+ ##Tamrashatiya##
+ mr_tamrashatiya_school:0 "Tamrashatiya"
+ mr_tamrashatiya_school_desc:0 "Tamrashatiya is the basic practice of reading the Pali Canons and the Tripitaka to have a basic understanding of the most holy path. Common in South East Asian kingdoms such as Sukhothai and in the kingdoms of Sri Lanka as well. Considered the foundation of Theravada Buddhism."
+ mr_tamrashatiya_school_modifier:0 "Tamrashatiya"
  
  
  ##Akanya Sutta###
- mr_akanya_sutta_school:0 "Dhammaraja"
- mr_akanya_sutta_school_desc:0 "The Dhammaraja Tradition was formed out of a reading of one of the Pali Canons which stated that a king must be chosen from his own peers. As such, this school dictates that a king shall be elected from the ruling class of elites."
- mr_akanya_sutta_school_modifier:0 "Dhammaraja"
+ mr_akanya_sutta_school:0 "Akanya Sutta"
+ mr_akanya_sutta_school_desc:0 "The Akanya Sutta Tradition was formed out of a reading of one of the Pali Canons which stated that a king must be chosen from his own peers. As such, this school dictates that a king shall be elected from the ruling class of elites."
+ mr_akanya_sutta_school_modifier:0 "Akanya Sutta"
  
- akanya_sutta_elections:0 "Dhammaraja Monarchy"
- akanya_sutta_elections_name:0 "Dhammaraja Monarchy"
+ akanya_sutta_elections:0 "Akanya Sutta Monarchy"
+ akanya_sutta_elections_name:0 "Akanya Sutta Monarchy"
  akanya_sutta_elections_desc:0 "A monarchy by which each successive ruler is voted on by the Sangha and Nobility of the kingdom. \n \n§GAllows for a choice of three potential successors after your ruler dies§!"
  
- eastern_school_events.21.t:0 "Election of the new Dhammaraja"
- eastern_school_events.21.d:0 "The Sangha gather nearby, pouring over scripture and records of the canons. Nobles eye each other before going to speak with their close allies. For the followers of the Dhammaraja, this is the time to analyze the potential candidates for the one most suited to rule the kingdom. It is time for the election of a new king!"
- eastern_school_events.21.a:0 "The heir favored by the nobility has won the vote!"
- eastern_school_events.21.b:0 "The heir of a famed general has won the vote!"
- eastern_school_events.21.e:0 "The Heir favored by the sangha has won the vote!"
- eastern_school_events.21.c:0 "The Heir favored by the former Dhammaraja has won the vote!"
+ eastern_school_events.21.t:0 "Election of the new Divine Ruler"
+ eastern_school_events.21.d:0 "The Sangha gather nearby, pouring over scripture and records of the canons. Nobles eye each other before going to speak with their close allies. It is time for the election of a new king!"
+ eastern_school_events.21.a:0 "A Child of the Nobility has won the vote!"
+ eastern_school_events.21.b:0 "A Child of a General has won the vote!"
+ eastern_school_events.21.c:0 "The Child of the former King has won the vote!"
  aks_reelect:0 "Recent Election of Ruler"
  
- ##Yogavacara###
- mr_yogavacara_school:0 "Yogavacara"
- mr_yogavacara_desc:0 "The Yogavacara tradition is an esoteric form of Theravada Buddhism, often called the Forest Tradition. This school of Buddhism is popular in Laos and South East Asia."
- mr_yogavacara_school_modifier:0 "Yogavacara"
+ ##Weizza###
+ mr_weizza_school:0 "Weizzas"
+ mr_weizza_school_desc:0 "Weizza Tradition follows the Weizza class of monks, who use the supernatural and esoteric practices to achieve a sort of Immortality and Weizza. The monks are split into orders with different tasks, performing and researching supposed impossible tasks such as turning metals into gold."
+ mr_weizza_school_modifier:0 "Weizza"
  
  ##Brahmin##
- mr_brahmin_school:0 "Kambujavamsa"
- mr_brahmin_school_desc:0 "The Kambujavamsa Tradition was imported from the Angkor Empire, in which their caste of priests and clergymen aid us in rituals and policy making. It places Hindu deities in positions of high regard, and places much of its legitimacy on the current state's relationship or relevancy to the Angkor Empire."
- mr_brahmin_school_modifier:0 "Kambujavamsa"
+ mr_brahmin_school:0 "Brahmins"
+ mr_brahmin_school_desc:0 "The Brahmin Tradition was imported from the Angkor Empire, in which their caste of priests and clergymen aid us in rituals and policy making. It places Hindu deities in positions of high regard, and places much of its legitimacy on the current state's relationship or relevancy to the Angkor Empire."
+ mr_brahmin_school_modifier:0 "Brhamin"
  
  ###Mahavihara###
  mr_mahavihara_school:0 "Mahavihara"

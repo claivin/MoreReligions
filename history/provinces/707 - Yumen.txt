@@ -1,8 +1,8 @@
 #707 - Yumen
 
-owner = DGH
-controller = DGH
-add_core = DGH
+owner = GHC
+controller = GHC
+add_core = GHC
 culture = oirats
 religion = vajrayana
 capital = "Yumen"
@@ -23,7 +23,7 @@ center_of_trade = 2
 	controller = KAS
 	add_core = KAS
 }
-1662.1.1 = { remove_core = MNG }
+1662.1.1 = { remove_core = GHC }
 1682.1.1 = {
 	owner = ZUN
 	controller = ZUN

@@ -920,8 +920,6 @@ xinan_region = {
 		chuannan_area
 		yun_gui_borderland_area
 		chuanbei_area
-		guizhou_area
-		dali_area
 	}
 }
 
