@@ -4,6 +4,7 @@ technology_group = chinese
 religion = buddhism
 primary_culture = northern_thai
 capital = 589 # Chiang Mai
+religious_school = mr_akanya_sutta_school
 
 
 1355.1.1 = {

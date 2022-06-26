@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = confucian_bureaucracy
+primary_culture = korean
+religion = confucianism
+add_harmonized_religion = mahayana
+technology_group = chinese
+capital = 2741 # Hanseong

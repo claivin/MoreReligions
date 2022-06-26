@@ -1,0 +1,568 @@
+deravaja_tradition = {
+	legitimacy = 1 
+	governing_capacity_modifier = 0.10
+	allow = {
+		religion = nusantara
+	}
+	sprite = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			NOT = { stability = 0 }
+			factor = 2
+		}
+	}
+}
+
+bunian_tradition = {
+	build_cost = -0.1
+	tolerance_own = 1
+
+	allow = {
+		religion = nusantara
+	}
+	sprite = 2
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			personality = ai_militarist
+			factor = 0.5
+		}
+	}
+}
+
+dukun_tradition = {
+	manpower_recovery_speed = 0.10
+	global_unrest = -1
+	
+	allow = {
+		religion = nusantara
+	}
+	sprite = 3
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+dewi_sri_tradition = {
+	development_cost = -0.10
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = east_java_area
+					area = surabaya_area
+					area = banten_area
+					area = central_java_area
+					area = west_java_area
+				}
+			}	
+		}
+	}
+	sprite = 6
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+			any_neighbor_country = {
+				tech_difference = 2
+			}
+			factor = 4
+		}
+	}
+}
+
+nyai_roro_tradition = {
+	infantry_power = 0.1
+	advisor_cost = -0.10
+	allow = {
+		religion = nusantara
+		any_owned_province = {
+				OR = {
+					area = east_java_area
+					area = surabaya_area
+					area = banten_area
+					area = central_java_area
+					area = west_java_area
+				}
+		}	
+	}
+	sprite = 7
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			personality = ai_militarist
+			factor = 2
+		}
+	}
+}
+
+batara_guru_tradition = {
+	land_morale = 0.10 
+	siege_ability = 0.10
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = east_java_area
+					area = surabaya_area
+					area = banten_area
+					area = central_java_area
+					area = west_java_area
+					area = south_sumatra_area
+					area = north_sumatra_area
+					area = batak_area
+					area = minangkabau_area
+					area = central_sumatra_area
+					area = jambi_area
+				}
+			}	
+		}
+	}
+	sprite = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+datuk_keramat_tradition = {
+	war_exhaustion = -0.02
+	production_efficiency = 0.10 
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = malaya_area
+					area = malacca_area
+					area = johor_area
+					area = north_malaya_area
+				}
+			}	
+		}
+	}
+	sprite = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+iskandar_zulkarnain_tradition = {
+	leader_cost = -0.25
+	state_governing_cost = -0.15
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = malaya_area
+					area = malacca_area
+					area = johor_area
+					area = north_malaya_area
+					area = south_sumatra_area
+					area = north_sumatra_area
+					area = batak_area
+					area = minangkabau_area
+					area = central_sumatra_area
+					area = jambi_area
+				}
+			}	
+		}
+	}
+	sprite = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+puteri_gunung_ledang_tradition = {
+	great_project_upgrade_cost = -0.25
+	idea_cost = -0.05
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = malaya_area
+					area = malacca_area
+					area = johor_area
+					area = north_malaya_area
+				}
+			}	
+		}
+	}
+	sprite = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+tomanurung_tradition = {
+	all_estate_loyalty_equilibrium = 0.10
+	global_unrest = -1 
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = north_sulawesi_area
+					area = south_sulawesi_area
+					area = makassar_area
+				}
+			}	
+		}
+	}
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+rambu_tuka_tradition = {
+	global_colonial_growth = 10
+	land_attrition = -0.10
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = north_sulawesi_area
+					area = south_sulawesi_area
+					area = makassar_area
+				}
+			}	
+		}
+	}
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+rambu_solo_tradition = {
+	discipline = 0.05
+	defensiveness = 0.10
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = north_sulawesi_area
+					area = south_sulawesi_area
+					area = makassar_area
+				}
+			}	
+		}
+	}
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_colonialist
+			factor = 5
+		}
+		modifier = {
+	        NOT = { personality = ai_colonialist }
+			factor = 0
+		}
+	}
+}
+haharingan_tradition = {
+	hostile_attrition = 1 
+	native_uprising_chance = -0.25  
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = brunei_area
+					area = sabah_area
+					area = kutai_area
+					area = banjar_area
+					area = kalimantan_area
+				}
+			}	
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        religious_unity = 1
+			factor = 0
+		}
+	}
+}
+huminodun_tradition = {
+	global_trade_goods_size_modifier = 0.10
+	harsh_treatment_cost = -0.2
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = brunei_area
+					area = sabah_area
+					area = kutai_area
+					area = banjar_area
+					area = kalimantan_area
+				}
+			}	
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        religious_unity = 1
+			factor = 0
+		}
+	}
+}
+pane_na_bolon_tradition = {
+	core_creation = -0.1 
+	global_regiment_cost = -0.15
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = south_sumatra_area
+					area = north_sumatra_area
+					area = batak_area
+					area = minangkabau_area
+					area = central_sumatra_area
+					area = jambi_area
+				}
+			}	
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        religious_unity = 1
+			factor = 0
+		}
+	}
+}
+pemena_tradition = {
+	global_manpower_modifier = 0.10 
+	galley_power = 0.1 
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = south_sumatra_area
+					area = north_sumatra_area
+					area = batak_area
+					area = minangkabau_area
+					area = central_sumatra_area
+					area = jambi_area
+				}
+			}	
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        religious_unity = 1
+			factor = 0
+		}
+	}
+}
+islam_tradition = {
+	merchants = 1
+	global_own_trade_power = 0.1
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = muslim
+					any_neighbor_province = {
+						religion_group = muslim
+					}
+				}
+			}			
+			any_neighbor_country = {
+				religion_group = muslim
+			}
+			has_global_flag = islamic_tradition_flag
+			has_unlocked_cult = islam_tradition
+		}
+	}
+	sprite = 11
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_capitalist
+			factor = 4
+		}
+	}
+}
+dharma_tradition = {
+	tolerance_heathen = 2
+	diplomatic_reputation = 1
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = dharmic
+					any_neighbor_province = {
+						religion_group = dharmic
+					}
+				}
+			}
+			any_neighbor_country = {
+				religion_group = dharmic
+			}
+			has_global_flag = dharma_tradition_flag
+			has_unlocked_cult = dharma_tradition
+		}
+	}
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        religious_unity = 1
+			factor = 0
+		}
+	}
+}
+buddhism_tradition = {
+	yearly_corruption = -0.1
+	stability_cost_modifier = -0.15
+	allow = {
+		religion = nusantara
+		OR = {
+			any_owned_province = {
+				OR = {
+					religion_group = eastern
+					any_neighbor_province = {
+						religion_group = eastern
+					}
+				}
+			}
+			any_neighbor_country = {
+				religion_group = eastern
+			}
+			has_global_flag = buddhism_tradition_flag
+			has_unlocked_cult = buddhism_tradition
+		}
+	}
+	sprite = 13
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+	        personality = ai_balanced
+			factor = 2
+		}
+		modifier = {
+	        religious_unity = 1
+			factor = 0
+		}
+	}
+}
+

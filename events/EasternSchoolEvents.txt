@@ -34,26 +34,21 @@ country_event = {
 		if = { 
 			limit = {
 				OR = {
-					tag = AVA
-					tag = TAU
-					tag = BPR
-					tag = ARK
-					tag = SUK
-					tag = LIG
-					tag = LNA
-					
+					culture = burmese
+					culture = mon
+					culture = shan
 				}
 				religion = buddhism
 			}
 			set_religious_school = {
 				group = eastern
-				school = mr_tamrashatiya_school
+				school = mr_mahavihara_school
 			}
 		}
 		else_if = {
 			limit = {
 				OR = {
-					tag = LIG
+					tag = LNN
 				}
 				religion = buddhism
 			}
@@ -65,28 +60,20 @@ country_event = {
 		else_if = {
 			limit = {
 				OR = {
-					tag = HSI
-					tag = MNI
-					tag = MPA
-					tag = HSE
-					tag = MYA
-					tag = KAL
-					tag = MKA
-					tag = PEG
+					culture = lao
 				}
 				religion = buddhism
 			}
 			set_religious_school = {
 				group = eastern
-				school = mr_weizza_school
+				school = mr_yogavacara_school
 			}
 		}
 		else_if = {
 			limit = {
 				OR = {
 					tag = AYU
-					tag = SUK
-					tag = LXA
+					tag = LPB
 					tag = KHM
 				}
 				religion = buddhism
@@ -94,6 +81,20 @@ country_event = {
 			set_religious_school = {
 				group = eastern
 				school = mr_brahmin_school
+			}
+		}
+		else_if = {
+			limit = {
+				OR = {
+					culture = central_thai
+					culture = northern_thai
+					NOT = { tag = AYU }
+				}
+				religion = buddhism
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_bodhisattvayana_school
 			}
 		}
 		else_if = {
@@ -248,16 +249,16 @@ country_event = {
 	id = eastern_school_events.21
 	title = eastern_school_events.21.t
 	desc = eastern_school_events.21.d
-	picture = xxx
+	picture = BUDDHISM_MONASTERY_eventPicture
 	
 	is_triggered_only = yes
 
 	option = {
 		name = eastern_school_events.21.a
 		define_ruler = {
-			adm = 2
-			dip = 0
-			mil = 0
+			adm = 4
+			dip = 2
+			mil = 2
 			claim = 90
 		}
 		hidden_effect = {
@@ -271,9 +272,24 @@ country_event = {
 	option = {
 		name = eastern_school_events.21.b
 		define_ruler = {
-			adm = 0
-			dip = 0
-			mil = 3
+			adm = 2
+			dip = 2
+			mil = 4
+			claim = 90
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = aks_reelect
+				duration = 365
+			}
+		}
+	}
+	option = {
+		name = eastern_school_events.21.e
+		define_ruler = {
+			adm = 2
+			dip = 4
+			mil = 2
 			claim = 90
 		}
 		hidden_effect = {

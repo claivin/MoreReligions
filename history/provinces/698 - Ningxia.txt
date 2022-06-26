@@ -1,8 +1,8 @@
 #698 - Guyuan
 
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = TMD
+controller = TMD
+add_core = TMD
 culture = mongol
 religion = confucianism
 capital = "Ningxia"

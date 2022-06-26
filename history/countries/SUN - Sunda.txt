@@ -2,8 +2,11 @@ government = monarchy
 add_government_reform = mandala_reform
 primary_culture = sundanese
 technology_group = chinese
-religion = hinduism
+religion = nusantara
 capital = 2687	# Pakuan
+unlock_cult = islam_tradition
+unlock_cult = buddhism_tradition
+unlock_cult = dharma_tradition
 
 1390.1.1 = {
 	monarch = {

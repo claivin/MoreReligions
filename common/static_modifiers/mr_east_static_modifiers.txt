@@ -37,7 +37,7 @@ shan_subject = {
 	#provides no modifers, maybe something sometime?
 }
 
-mr_tamrashatiya_school_modifier = {
+mr_bodhisattvayana_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
@@ -51,7 +51,7 @@ mr_akanya_sutta_school_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	monthly_karma = 0.15
 }
-mr_weizza_school_modifier = {
+mr_yogavacara_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
