@@ -3,9 +3,7 @@
 owner = MGH
 controller = MGH
 add_core = MGH
-
 culture = moghul
-
 religion = tengri_pagan_reformed
 capital = "Bechbaliq"
 trade_goods = salt

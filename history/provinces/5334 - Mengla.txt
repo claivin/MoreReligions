@@ -4,9 +4,7 @@ controller = MMA
 culture = shan
 religion = animism
 capital = "mengla"
-
 trade_goods = lumber
-
 hre = no
 base_tax = 1
 base_production = 1

@@ -20,6 +20,10 @@ DGH = "countries/Dughat.txt"
 UKI = "countries/Uriankhai.txt"
 YNI = "countries/Yenisei.txt"
 MGH = "countries/Moghulstan.txt"
+SJI = "countries/NanJin.txt"
+DBT = "countries/Dorbet.txt"
+ULG = "countries/UlaGorlos.txt"
+SKH = "countries/Sakhalin.txt"
 
 #French
 REI = "countries/Reims.txt"

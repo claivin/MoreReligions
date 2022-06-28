@@ -1,7 +1,8 @@
 # 2188 - Alchuka
 
-owner = MHX
-controller = MHX
+owner = DBT
+controller = DBT
+add_core = DBT
 add_core = MHX
 culture = manchu
 religion = tengri_pagan_reformed

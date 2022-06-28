@@ -1,0 +1,11 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = vajrayana
+primary_culture = mongol
+add_accepted_culture = manchu
+capital = 731
+
+
+
+

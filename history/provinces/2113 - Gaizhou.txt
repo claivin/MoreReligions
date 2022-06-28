@@ -1,8 +1,8 @@
 # 2113 - Gaizhou
 
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = SJI
+controller = SJI
+add_core = SJI
 culture = shandong_culture
 religion = confucianism
 capital = "Gaizhou"

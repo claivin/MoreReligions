@@ -1,8 +1,8 @@
 #731 - Ilan Hala
 
-owner = EJZ
-controller = EJZ
-add_core = EJZ
+owner = ULG
+controller = ULG
+add_core = ULG
 culture = manchu
 religion = tengri_pagan_reformed
 capital = "Ilan Hala"

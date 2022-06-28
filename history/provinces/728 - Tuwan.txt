@@ -1,8 +1,8 @@
 #728 - Tuwan
 
-owner = MYR
-controller = MYR
-add_core = MYR
+owner = ULG
+controller = ULG
+add_core = ULG
 culture = manchu
 religion = tengri_pagan_reformed
 capital = "Tuwan"

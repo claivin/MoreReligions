@@ -1,0 +1,22 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
+religion = vajrayana
+primary_culture = mongol
+add_accepted_culture = manchu
+capital = 726 
+
+
+1444.1.1 = {	
+	monarch = {
+		name = "Arugtai Taishi"
+		monarch_name = "Arugtai Taishi"
+		dynasty = "Borjigin"
+		birth_date = 1400.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+

@@ -1,8 +1,9 @@
 # 4202 - Taining
 
-owner = KRC
-controller = KRC
-add_core = KRC
+owner = DBT
+controller = DBT
+add_core = DBT
+add_core = MHX
 culture = chahar
 religion = vajrayana
 capital = "Baichungtze"

@@ -4,9 +4,7 @@ owner = MGH
 controller = MGH
 add_core = MGH
 culture = uyghur
-
 religion = vajrayana
-
 capital = "Hotan"
 trade_goods = gems #Hotan Jade
 hre = no
