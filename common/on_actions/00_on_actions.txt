@@ -1000,11 +1000,6 @@ on_monarch_death = {
 				school = mr_akanya_sutta_school
 			}
 			NOT = { has_country_modifier = aks_reelect }
-			is_lesser_in_union = no
-			OR = {
-				has_reform = akanya_sutta_elections
-			}
-			is_subject = no
 		}
 		country_event = { id = eastern_school_events.21 }
 	}

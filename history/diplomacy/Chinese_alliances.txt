@@ -1,0 +1,32 @@
+vassal = {
+	first = KLK
+	second = OIR
+	start_date = 1434.1.1
+	end_date = 1454.1.1
+}
+vassal = {
+	first = KLK
+	second = TMD
+	start_date = 1434.1.1
+	end_date = 1454.1.1
+}
+vassal = {
+	first = KLK
+	second = BRT
+	start_date = 1434.1.1
+	end_date = 1454.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = KLK
+	second = UKI
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = KLK
+	second = YNI
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}

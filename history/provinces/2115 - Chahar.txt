@@ -1,8 +1,8 @@
 # 2115 - Chahar
 
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = KLK
+controller = KLK
+add_core = KLK
 culture = mongol
 religion = vajrayana
 capital = "Chahar"
@@ -18,16 +18,16 @@ add_core = CHH
 
 
 1552.1.1 = {
-	owner = GHC
-	controller = GHC
-	add_core = GHC
+	owner = KHA
+	controller = KHA
+	add_core = KHA
 } # The Oirads are defeated & Altan Khan reunites the the area.
 1608.1.1 = { discovered_by = SPA }
 1624.1.1 = {
 	owner = MCH
 	controller = MCH
 	add_core = MCH
-	remove_core = GHC
+	remove_core = KHA
 } # The Later Jin Khanate
 1636.5.15 = {
 	owner = QNG

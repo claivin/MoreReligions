@@ -3,7 +3,7 @@
 owner = PEG
 controller = PEG
 culture = mon
-religion = ari
+religion = buddhism
 capital = "Pegu"
 trade_goods = spices
 hre = no

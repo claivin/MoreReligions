@@ -2,7 +2,7 @@
 owner = PMN
 controller = PMN
 culture = lao
-religion = yogavacara
+religion = buddhism
 capital = "Udon Thani"
 trade_goods = rice
 hre = no

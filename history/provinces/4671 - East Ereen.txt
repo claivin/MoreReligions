@@ -1,6 +1,6 @@
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = KLK
+controller = KLK
+add_core = KLK
 culture = mongol
 religion = vajrayana
 capital = "Kalgan"

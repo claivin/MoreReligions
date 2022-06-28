@@ -3,9 +3,9 @@
 owner = PEG
 controller = PEG
 culture = mon
-religion = ari
+religion = buddhism
 capital = "Dagon"
-trade_goods = grain
+trade_goods = rice
 hre = no
 base_tax = 5
 base_production = 3

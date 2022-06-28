@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+technology_group = nomad_group
+religion = vajrayana
+primary_culture = moghul
+capital = 2120
+add_accepted_culture = uyghur
+
+
+1363.5.23 = {
+	monarch = {
+		name = "Khizr"
+		dynasty = "Borjigin"
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+
