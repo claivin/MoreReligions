@@ -4,7 +4,9 @@ controller = MMA
 culture = bai
 religion = azhaliism 
 capital = "Liuku"
+
 trade_goods = stone
+
 hre = no
 base_tax = 1 
 base_production = 1

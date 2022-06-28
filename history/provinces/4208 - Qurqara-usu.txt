@@ -3,8 +3,10 @@
 owner = MGH		# ruled by a Chagataiid 
 controller = MGH
 add_core = MGH
+
 culture = moghul
 religion = vajrayana
+
 capital = "Balikul"
 trade_goods = grain
 hre = no

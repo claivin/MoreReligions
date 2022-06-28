@@ -6,7 +6,9 @@ add_core = SKY
 culture = tibetan
 religion = vajrayana
 capital = "Tachienlu"
+
 trade_goods = stone
+
 hre = no
 base_tax = 2 
 base_production = 2

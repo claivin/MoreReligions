@@ -3,8 +3,10 @@
 owner = MGH
 controller = MGH
 add_core = MGH
+
 culture = moghul
 religion = vajrayana
+
 capital = "Chuy"
 trade_goods = wool
 hre = no

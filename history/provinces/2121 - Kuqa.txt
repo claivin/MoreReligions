@@ -4,7 +4,9 @@ owner = MGH
 controller = MGH
 add_core = MGH
 culture = uyghur
+
 religion = vajrayana
+
 capital = "Kuqa"
 trade_goods = gold
 hre = no
