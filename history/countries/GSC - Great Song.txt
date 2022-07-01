@@ -4,6 +4,7 @@ government_rank = 3
 technology_group = chinese
 religion = confucianism
 add_harmonized_religion = mahayana
+religious_school = mr_buddha_school
 primary_culture = jianghuai
 capital = 667	# Nanjing
 

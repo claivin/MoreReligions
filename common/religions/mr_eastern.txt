@@ -336,6 +336,336 @@ eastern = {
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			build_cost = -0.15
 		}
+		mr_nyingma_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_nyingma_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_nyingma_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_nyingma_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			global_heretic_missionary_strength = 0.03 
+		}
+		mr_gelug_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_gelug_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_gelug_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_gelug_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			yearly_karma_decay = 0.5 
+		}
+		mr_karma_kagyu_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_karma_kagyu_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_karma_kagyu_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_karma_kagyu_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			tolerance_own = 1
+		}
+		mr_drukpa_kagyu_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_drukpa_kagyu_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_drukpa_kagyu_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_drukpa_kagyu_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			advisor_cost = -0.15
+		}
+		mr_drikung_kagyu_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_drikung_kagyu_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_drikung_kagyu_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_drikung_kagyu_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			development_cost = -0.10
+		}
+		mr_sakya_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_sakya_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_sakya_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_sakya_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			warscore_cost_vs_other_religion = -0.10
+		}
+		mr_jonang_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = vajrayana
+					
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_jonang_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_jonang_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_jonang_school_modifier
+			picture = "GFX_icon_shingon_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			technology_cost = -0.05
+		}
+		mr_buddha_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = confucianism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_buddha_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_buddha_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_buddha_school_modifier
+			picture = "GFX_icon_yogavacara_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			diplomatic_reputation = 2 
+			vassal_forcelimit_bonus = 0.15
+		}
+		mr_taoist_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = confucianism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_taoist_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_taoist_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_taoist_school_modifier
+			picture = "GFX_icon_yogavacara_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			development_cost = -0.10 
+			land_morale = 0.10
+		}
+		mr_neo_confucian_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+				OR = {
+					religion = confucianism
+				}
+			}
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				reverse_has_opinion = { who = FROM value = 150 }
+				NOT = { has_country_modifier = mr_neo_confucian_school_modifier }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+			}
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = mr_neo_confucian_school_modifier duration = 7300 }
+			}
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = mr_neo_confucian_school_modifier
+			picture = "GFX_icon_yogavacara_school"
+			# religion_sub_modifier = no is possible, will hide icon in religious screen
+			governing_capacity_modifier = 0.10 
+			culture_conversion_cost = -0.20
+		}
 	}
 	
 	buddhism = { #Theravada
