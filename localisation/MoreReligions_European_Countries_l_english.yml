@@ -221,3 +221,31 @@
  BSS: "Brussels"
  BSS_ADJ: "Brusseler"
  BSS_ADJ2: "Brusseler"
+ 
+ THR: "Thracia"
+ THR_ADJ: "Thracian"
+ THR_ADJ2: "Thracian"
+ 
+ TSS: "Thessalonica"
+ TSS_ADJ: "Thessalonican"
+ TSS_ADJ2: "Thessalonican"
+ 
+ THS: "Thessaly"
+ THS_ADJ: "Thessalan"
+ THS_ADJ2: "Thessalan"
+ 
+ CNT: "Corinth"
+ CNT_ADJ: "Corinthian"
+ CNT_ADJ2: "Corinthian"
+ 
+ ART: "Arta"
+ ART_ADJ: "Artan"
+ ART_ADJ2: "Artan"
+ 
+ CPH: "Cephalonia"
+ CPH_ADJ: "Cephalonian"
+ CPH_ADJ2: "Cephalonian"
+ 
+ LAT: "Latin Empire"
+ LAT_ADJ: "Latin"
+ LAT_ADJ2: "Latin"

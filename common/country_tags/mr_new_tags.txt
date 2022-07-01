@@ -136,3 +136,12 @@ FNG = "countries/Fadangourma.txt"
 DEN = "countries/Denkyira.txt"	
 YRE = "countries/Yoruba.txt"
 TUJ = "countries/Tunjur.txt"
+
+#Greece
+THR = "countries/Thracia.txt"
+ART = "countries/Arta.txt"
+TSS = "countries/Thessalonica.txt"
+THS = "countries/Thessaly.txt"
+CNT = "countries/Corinth.txt"
+CPH = "countries/Cephalonia.txt"
+LAT = "countries/LatinEmpire.txt"

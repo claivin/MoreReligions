@@ -19,6 +19,16 @@
  ari_rebels_demand: "Convert $COUNTRYNAME$"
  ari_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ confucianism: "San Jiao"
+ confucianism_religion_desc: "San Jiao is the term for three teachings of China, Buddhism, Confucianism, and Taoism. This religion often favors one teaching or the other, but still integrates aspects of all three of the schools of thought."
+ confucianism_rebels_name: "San Jiao Zealots"
+ confucianism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ confucianism_title: "$RELIGION$ Zealots"
+ confucianism_rebels_army: "$RELIGION$ Army"
+ confucianism_rebels_demand: "Convert $COUNTRYNAME$"
+ confucianism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ 
  azhaliism:0 "Azhali"
  azhaliism_religion_desc:0 "A form of Buddhism practiced in the Yunnan region of China. Influenced by both Burmese Buddhism and Tantric Buddhism, it still holds reverence to the local gods and dieties in the region. It is considered the religion of the Dali Kingdom."
  
@@ -77,6 +87,40 @@
  mr_mahavihara_school_desc:0 "A classical Sri-Lankan form of Buddhism, which developed in the later 14th Century. A more dedicated and orthodox school, it focuses on a traditionalist understanding of the cannons."
  mr_mahavihara_school_modifier:0 "Mahavihara"
  
+ ###Nyingma###
+ mr_nyingma_school:0 "Nyingma"
+ mr_nyingma_school_desc:0 ""
+ mr_nyingma_school_modifier:0 "Nyingma"
+ 
+ ###Gelug###
+ mr_gelug_school:0 "Gelug"
+ mr_gelug_school_desc:0 ""
+ mr_gelug_school_modifier:0 "Gelug"
+ 
+ ###Karma Kagyu###
+ mr_karma_kagyu_school:0 "Karma Kagyu"
+ mr_karma_kagyu_school_desc:0 ""
+ mr_karma_kagyu_school_modifier:0 "Karma Kagyu"
+ 
+ ###Drukpa_Kagyu###
+ mr_drukpa_kagyu_school:0 "Drukpa Kagyu"
+ mr_drukpa_kagyu_school_desc:0 ""
+ mr_drukpa_kagyu_school_modifier:0 "Drukpa Kagyu"
+
+ ###Drikung Kagyu###
+ mr_drikung_kagyu_school:0 "Drikung Kagyu"
+ mr_drikung_kagyu_school_desc:0 ""
+ mr_drikung_kagyu_school_modifier:0 "Driking Kagyu"
+ 
+ ###Sakya###
+ mr_sakya_school:0 "Sakya"
+ mr_sakya_school_desc:0 ""
+ mr_sakya_school_modifier:0 "Sakya"
+ 
+ ###Jonang###
+ mr_jonang_school:0 "Jonang"
+ mr_jonang_school_desc:0 ""
+ mr_jonang_school_modifier:0 "Jonang"
  
  ###Shin Buddhism###
  mr_shin_school:0 "Shin"
@@ -103,12 +147,27 @@
  mr_shingon_school_desc:0 "The Shingon school is an older school of Buddhism that follows tantric tradition, with close ties to Vajrayana Buddhism. With monestaries located in Mount Koya and Negoro, it is a smaller branch in Japan."
  mr_shingon_school_modifier:0 "Shingon"
  
+ ###Buddhist Teaching###
+ mr_buddha_school:0 "Buddhism"
+ mr_buddha_school_desc:0 "Buddhism has had a long and rich history within China. We shall acknowledge this and support the various schools within our country."
+ mr_buddha_school_modifier:0 "Buddhism"
+ 
+ ###Taoist Teaching###
+ mr_taoist_school:0 "Taoism"
+ mr_taoist_school_desc:0 "Taoism and the cultivation of Qi is an inherent part of Chinese culture. We shall honor this past and we shall expand upon this belief."
+ mr_taoist_school_modifier:0 "Taoism"
+ 
+ ###Neo-Confucian Teaching###
+ mr_neo_confucian_school:0 "Neo-Confucianism"
+ mr_neo_confucian_school_desc:0 "Neo-Confucianism is a relatively modern teaching, that focuses on rationality and statecraft. It is incredibly beneficial to our state."
+ mr_neo_confucian_school_modifier:0 "Neo-Confucianism"
+ 
  eastern_school_events.20.t:0 "Deciding the Buddhist Tradition"
  eastern_school_events.20.d:0 "What tradition should we follow?"
- eastern_school_events.20.a:0 "We shall follow the Tamrashatiya Tradition."
+ eastern_school_events.20.a:0 "We shall follow the Bodhisattvayana Tradition."
  eastern_school_events.20.b:0 "We shall follow the Akanya Sutta Tradition."
- eastern_school_events.20.c:0 "We shall follow the Weizza Tradition."
- eastern_school_events.20.e:0 "We shall follow the path of the Brahmins."
+ eastern_school_events.20.c:0 "We shall follow the Yogavacara Tradition."
+ eastern_school_events.20.e:0 "We shall follow the path of the Kambujavamsa."
  eastern_school_events.20.f:0 "We shall follow the path of the Mahavihara."
  eastern_school_events.20.g:0 "We shall follow the school of Shin."
  eastern_school_events.20.h:0 "We shall follow the school of Tendai."

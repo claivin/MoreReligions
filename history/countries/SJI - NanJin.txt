@@ -4,6 +4,7 @@ technology_group = nomad_group
 religion = vajrayana
 primary_culture = mongol
 add_accepted_culture = manchu
+religious_school = mr_karma_kagyu_school
 capital = 726 
 
 

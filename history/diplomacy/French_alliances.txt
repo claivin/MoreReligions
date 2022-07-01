@@ -97,7 +97,7 @@ vassal = {
 #Picardy Relations
 union = {
 	first = PIC
-	second = ART
+	second = ATS
 	start_date = 1444.11.11
 }
 

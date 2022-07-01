@@ -1,7 +1,8 @@
 government = monarchy
 add_government_reform = autocracy_reform
 primary_culture = bai
-religion = azhaliism
+religion = confucianism
+religious_school = mr_taoist_school
 technology_group = chinese
 capital = 674	# Umung
 

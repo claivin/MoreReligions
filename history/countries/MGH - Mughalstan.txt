@@ -6,6 +6,7 @@ religion = vajrayana
 primary_culture = moghul
 capital = 2120
 add_accepted_culture = uyghur
+religious_school = mr_drukpa_kagyu_school
 
 
 1363.5.23 = {
