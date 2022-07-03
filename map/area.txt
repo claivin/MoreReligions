@@ -1080,7 +1080,7 @@ northern_greece_area = { #3 #Northern Greece
 }
 
 thrace_area = { #5
-	149 151 1764 4779 4705
+	149 151 1764 4779 4705 5337
 }
 
 bulgaria_area = { #5

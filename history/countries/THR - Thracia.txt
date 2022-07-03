@@ -5,5 +5,5 @@ primary_culture = cosmopolitan_french
 add_accepted_culture = greek
 religion = catholic
 technology_group = western
-capital = 151 # Naxos
+capital = 149 
 

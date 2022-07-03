@@ -249,3 +249,23 @@
  LAT: "Latin Empire"
  LAT_ADJ: "Latin"
  LAT_ADJ2: "Latin"
+ 
+ LSB: "Lesbos"
+ LSB_ADJ: "Lesbos"
+ LSB_ADJ2: "Lesbos"
+ 
+ ALV: "Alevi"
+ ALV_ADJ: "Alevi"
+ ALV_ADJ2: "Alevi"
+ 
+ CLC: "Cilicia"
+ CLC_ADJ: "Cilicia"
+ CLC_ADJ2: "Cilicia"
+ 
+ CST: "Constantinople"
+ CST_ADJ: "Constantinople"
+ CST_ADJ2: "Constantinople"
+ 
+ MEN: "Milas"
+ MEN_ADJ: "Milas"
+ MEN_ADJ2: "Milas"

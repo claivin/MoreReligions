@@ -40,3 +40,8 @@ alliance = {
 	start_date = 1380.1.1
 	end_date = 1581.1.1
 }
+vassal = {
+	first = THR
+	second = CST
+	start_date = 1444.11.11
+}
