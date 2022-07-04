@@ -112,3 +112,23 @@
  burma_bma:0 "The Kingdom of Burma shall prosper!"
  pagan_bma:0 "The Empire of Pagan shall dominate once more!"
  mon_bma:0 "The Era of the Raman begins!"
+ 
+ LAT_flavor.1.t: "Reclaiming Byzantine Artifacts"
+ LAT_flavor.1.d: "In the aftermath of the 4th Crusade, the Venetian crusaders took with them the lion's share of artifacts from the city of Constantinople. These artifacts have a large symbolic value to many of our Greek subjects - should we reclaim them from the merchants and lords who now own the items, it could be benefitial to our rule."
+ LAT_flavor.1a: "Reclaim the Bronze Horses"
+ LAT_horses: "Bronze Horses Recovered"
+ LAT_horses_TT: "We cannot reclaim the Horses. We require §Y50 Administrative Power§! and §Y100 Ducats§!."
+ LAT_flavor.1b: "Reclaim Saint Mark's Doors"
+ LAT_door: "Saint Mark's Doors Recovered"
+ LAT_flavor.1c: "Reclaim the Saintly Relics"
+ LAT_doors_TT: "We cannot reclaim the Doors. We require §Y25 Diplomatic Power§! and §Y150 Ducats§!."
+ LAT_saint: "Relics of the Saints Recovered."
+ LAT_saints_TT: "We cannot reclaim the relics. We require §Y25 Administrative Power§! and §Y150 Ducats§!."
+ LAT_flavor.1d: "Reclaim the Pillars of Acre"
+ LAT_pillar: "Pillars of Acre Recovered"
+ LAT_pillars_TT: "We cannot reclaim the Pillars. We require §Y50 Diplomatic Power§! and §Y100 Ducats§!."
+ 
+ 
+ LAT_VEN_TT: "We have not recovered the Horses, Doors, the Saints, and the Pillars."
+ latin_repayment_decision_title: "Reclaiming Byzantine Artifacts"
+ latin_repayment_decision_desc: "We should reclaim Byzantine artifacts from the merchants and lords who now own the items, it could be benefitial to our rule."

@@ -269,3 +269,20 @@
  MEN: "Milas"
  MEN_ADJ: "Milas"
  MEN_ADJ2: "Milas"
+ 
+ EDD: "Edessa"
+ EDD_ADJ: "Edessan"
+ EDD_ADJ2: "Edessan"
+ 
+ TPO: "Tripoli"
+ TPO_ADJ: "Tripolian"
+ TPO_ADJ2: "Tripolian"
+ 
+ 
+ ATI: "Antioch"
+ ATI_ADJ: "Antiochian"
+ ATI_ADJ2: "Antiochian"
+ 
+ LEB: "Labenon"
+ LEB_ADJ: "Labenese"
+ LEB_ADJ2: "Lebenese"

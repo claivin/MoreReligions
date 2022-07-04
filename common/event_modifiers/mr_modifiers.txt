@@ -3,3 +3,19 @@ mr_raising_subject = {
 }
 aks_reelect = {
 }
+LAT_horses = {
+	diplomatic_reputation = 1 
+	monthly_splendor = 1 
+}
+LAT_door = {
+	defensiveness = 0.10 
+	global_garrison_growth = 0.05
+}
+LAT_saint = {
+	tolernace_own = 1
+	papal_influence = 0.5 
+}
+LAT_pillar = {
+	build_cost = -0.10
+	fort_maintenance_modifier = -0.05
+}

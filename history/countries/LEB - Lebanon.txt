@@ -1,7 +1,7 @@
 government = monarchy
-add_government_reform = iqta
-primary_culture = al_suryah_arabic
-religion = sunni
-technology_group = muslim
+add_government_reform = feudalism_reform
+primary_culture = cosmopolitan_french
+add_accepted_culture = al_suryah_arabic
+religion = catholic
+technology_group = western
 capital = 1855	# Sidon
-religious_school = hanafi_school

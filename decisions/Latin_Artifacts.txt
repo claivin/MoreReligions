@@ -1,0 +1,42 @@
+country_decisions = {
+	latin_repayment_decision = {
+		major = yes
+		potential = {
+			tag = LAT
+			custom_trigger_tooltip = {
+				tooltip = LAT_VEN_TT		
+				NOT = {
+					AND = {
+						has_country_flag = LAT_horse
+						has_country_flag = LAT_doors
+						has_country_flag = LAT_saints
+						has_country_flag = LAT_pillars
+					}
+				}
+			}
+		}
+		allow = {
+			OR = {
+				AND = {
+					exists = VEN
+					reverse_has_opinion = {
+						who = LAT
+						value = 100
+					}
+				}
+				AND = {
+					owns_core_province = 112
+					estate_loyalty = {
+						estate = estate_burghers
+						loyalty = 70
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = LAT_flavor.1
+			}
+		}
+	}
+}

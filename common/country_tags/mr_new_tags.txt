@@ -151,3 +151,8 @@ CST = "countries/Constantinople.txt"
 #Anatolia
 CLC = "countries/Cilicia.txt"
 ALV = "countries/Alevi.txt"
+
+#Levant
+EDD = "countries/Edessa.txt"
+TPO = "countries/TripoliC.txt"
+ATI = "countries/Antioch.txt"
