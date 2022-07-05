@@ -1,0 +1,17 @@
+#REGIONSCANDI
+#4123 - Birkaland
+
+owner = TEU
+controller = TEU
+add_core = TEU
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Messukylä"
+is_city = yes
+discovered_by = western
+discovered_by = eastern

@@ -1,0 +1,19 @@
+#REGIONSCANDI
+#Åland
+
+owner = SWE
+controller = SWE
+add_core = SWE
+culture = swedish
+religion = catholic
+capital = "Mariehamn"
+is_city = yes
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = fish
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

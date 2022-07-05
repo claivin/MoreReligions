@@ -1,0 +1,19 @@
+#REGIONSCANDI
+#Oplandene, incl. Hamar
+
+owner = NOR
+controller = NOR
+add_core = NOR
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Hamar"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

@@ -1,0 +1,18 @@
+#REGIONSCANDI
+#Österbotten, down to Vasa.
+
+owner = TEU
+controller = TEU
+add_core = TEU
+add_core = FIN
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Oulu"
+is_city = yes
+discovered_by = eastern
+discovered_by = western

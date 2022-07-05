@@ -1,6 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = danish
+government_rank = 1
+primary_culture = lower_saxon
 religion = catholic
 technology_group = western
-capital = 12 #Sjaelland
+capital = 13	# Kiel

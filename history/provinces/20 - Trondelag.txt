@@ -1,0 +1,20 @@
+#REGIONSCANDI
+#Tröndelag, incl. Trondheim, Frosta, Röros, Steinviksholm
+
+owner = NOR
+controller = NOR
+add_core = NOR
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 2
+capital = "Trondheim"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+fort_15th = yes
+extra_cost = 8
+center_of_trade = 1

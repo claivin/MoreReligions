@@ -3,4 +3,4 @@ add_government_reform = feudalism_reform
 primary_culture = danish
 religion = catholic
 technology_group = western
-capital = 12 #Sjaelland
+capital = 26 #Kungsbacka

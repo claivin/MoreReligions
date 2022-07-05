@@ -1,0 +1,28 @@
+#REGIONBALTIC
+#Riga Bight, incl. the city of Riga, and Dünamünde.
+
+owner = RIG
+controller = RIG
+add_core = RIG
+culture = prussian
+religion = catholic
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = naval_supplies
+base_manpower = 1
+capital = "Riga"
+is_city = yes
+fort_15th = yes
+extra_cost = 18
+center_of_trade = 1
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+add_permanent_province_modifier = {
+	name = daugava_estuary_modifier
+	duration = -1
+}

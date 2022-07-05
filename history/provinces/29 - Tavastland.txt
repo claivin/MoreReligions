@@ -1,0 +1,18 @@
+#REGIONSCANDI
+#Tavastland, incl. Tavastehus.
+
+owner = TEU
+controller = TEU
+add_core = TEU
+#add_core = FIN
+culture = finnish
+religion = catholic
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Tavastehus"
+is_city = yes
+discovered_by = western
+discovered_by = eastern

@@ -1,0 +1,19 @@
+#REGIONSCANDI
+#Bornholm
+
+add_core = BRN
+owner = BRN
+controller = BRN
+culture = danish
+religion = catholic
+hre = yes
+base_tax = 1 
+base_production = 1
+trade_goods = fish
+base_manpower = 1
+capital = "Ronne"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
