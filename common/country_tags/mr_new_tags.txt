@@ -86,6 +86,11 @@ CMS = "countries/CoutoMisto.txt"
 #Eastern Europe
 BLH = "countries/BlueHorde.txt"
 RDH = "countries/RedHorde.txt"
+CSA = "countries/Csak.txt"
+AAD = "countries/Ada.txt"
+KSZ = "countries/Koszegis.txt"
+KNN = "countries/Kan.txt"
+JAA = "countries/Joannites.txt"
 
 #Baltics/Scandanavia
 COP = "countries/Copenhagen.txt"

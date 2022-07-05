@@ -1,0 +1,190 @@
+namespace = HUN_flavor
+country_event = {
+	id = HUN_flavor.1
+	title = HUN_flavor.1.t
+	desc = HUN_flavor.1.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	is_triggered_only = yes
+
+	
+	immediate = {
+		hidden_effect = {
+			4236 = { add_core = CSA }
+			1772 = { add_core = CSA }
+			154 = { add_core = CSA }
+			1318 = { add_core = AAD }
+			162 = { add_core = AAD }
+			135 = { add_core = KSZ }
+			1864 = { add_core = KSZ }
+			4126 = { add_core = KSZ }
+			4125 = { add_core = AAD }
+			1953 = { add_core = AAD }
+			1952 = { add_core = KNN }
+			157 = { add_core = KNN }
+			4127 = { add_core = KNN }
+			158 = { add_core = KNN }
+			1951 = { add_core = JAA }
+			4128 = { add_core = JAA }
+			4240 = { add_core = KSZ }
+		}
+		hidden_effect = {
+			release = CSA
+			release = AAD
+			release = KSZ
+			release = KNN
+			release = JAA
+		}
+		hidden_effect = {
+			CSA = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_historical_rival = ADD
+				add_historical_rival = KSZ
+				add_historical_rival = KNN
+				add_historical_rival = JAA
+				add_historical_rival = HUN
+				every_province = {
+					limit = {
+						region = carpathia_region
+						NOT = {
+							area = wallachia_area
+							area = moldavia_area
+						}
+					}
+					add_core = CSA
+				}
+			}
+			AAD = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_historical_rival = CSA
+				add_historical_rival = KSZ
+				add_historical_rival = KNN
+				add_historical_rival = JAA
+				add_historical_rival = HUN
+				every_province = {
+					limit = {
+						region = carpathia_region
+						NOT = {
+							area = wallachia_area
+							area = moldavia_area
+						}
+					}
+					add_core = AAD
+				}
+			}
+			KSZ = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_historical_rival = ADD
+				add_historical_rival = CSA
+				add_historical_rival = KNN
+				add_historical_rival = JAA
+				add_historical_rival = HUN
+				every_province = {
+					limit = {
+						region = carpathia_region
+						NOT = {
+							area = wallachia_area
+							area = moldavia_area
+						}
+					}
+					add_core = KSZ
+				}
+			}
+			KNN = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_historical_rival = ADD
+				add_historical_rival = KSZ
+				add_historical_rival = CSA
+				add_historical_rival = JAA
+				add_historical_rival = HUN
+				every_province = {
+					limit = {
+						region = carpathia_region
+						NOT = {
+							area = wallachia_area
+							area = moldavia_area
+						}
+					}
+					add_core = KNN
+				}
+			}
+			JAA = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+				add_historical_rival = ADD
+				add_historical_rival = KSZ
+				add_historical_rival = KNN
+				add_historical_rival = CSA
+				add_historical_rival = HUN
+				every_province = {
+					limit = {
+						region = carpathia_region
+						NOT = {
+							area = wallachia_area
+							area = moldavia_area
+						}
+					}
+					add_core = JAA
+				}
+			}
+			HUN = {
+				add_historical_rival = ADD
+				add_historical_rival = KSZ
+				add_historical_rival = KNN
+				add_historical_rival = JAA
+				add_historical_rival = CSA
+			}
+		}
+	}
+		
+	
+	option = {
+		name = HUN_flavor.1a
+	}
+
+	option = {
+		name = HUN_flavor.1b
+		switch_tag = CSA
+	}
+	option = {
+		name = HUN_flavor.1c
+		switch_tag = AAD
+	}
+	option = {
+		name = HUN_flavor.1d
+		switch_tag = KSZ
+	}
+	option = {
+		name = HUN_flavor.1e
+		switch_tag = KNN
+	}
+	option = {
+		name = HUN_flavor.1f
+		switch_tag = JAA
+	}
+}
+	

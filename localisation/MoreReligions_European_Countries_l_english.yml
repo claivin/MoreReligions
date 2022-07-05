@@ -330,3 +330,23 @@
  SVO: "Savonia"
  SVO_ADJ: "Savonian"
  SVO_ADJ2: "Savonian"
+ 
+ CSA: "Czak"
+ CSA_ADJ: "Czak"
+ CSA_ADJ2: "Czak"
+ 
+ AAD: "Ada"
+ AAD_ADJ: "Ada"
+ AAD_ADJ2: "Ada"
+ 
+ KSZ: "Koszegis"
+ KSZ_ADJ: "Koszegis"
+ KSZ_ADJ2: "Koszegis"
+ 
+ KNN: "Kan"
+ KNN_ADJ: "Kan"
+ KNN_ADJ2: "Kan"
+ 
+ JAA: "Joannites"
+ JAA_ADJ: "Joannite"
+ JAA_ADJ2: "Joannite"
