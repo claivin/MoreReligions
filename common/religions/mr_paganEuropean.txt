@@ -1,0 +1,57 @@
+
+europe_pagan_group = {
+
+	flags_with_emblem_percentage = 10
+	flag_emblem_index_range = { 83 96 }
+
+	mr_finnishpaganism = {
+		color = { 53 161 53 }
+		icon = 11
+		country = {
+			global_tax_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+		}
+		province = {
+			local_unrest = -1
+		}
+		
+		heretic = {  }
+	}
+	
+	mr_samipaganism = {
+		color = { 149 230 175 }
+		icon = 11
+		country = {
+			global_tax_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+		}
+		province = {
+			local_unrest = -1
+		}
+		
+		heretic = {  }
+	}
+	
+	mr_estonianpaganism = {
+		color = { 52 194 128 }
+		icon = 11
+		country = {
+			global_tax_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+		}
+		province = {
+			local_unrest = -1
+		}
+		
+		heretic = {  }
+	}
+	
+	crusade_name = CRUSADE
+	harmonized_modifier = harmonized_pagan
+}

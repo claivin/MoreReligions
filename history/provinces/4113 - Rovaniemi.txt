@@ -4,6 +4,7 @@
 owner = TEU
 controller = TEU
 add_core = TEU
+add_core = FIN
 culture = finnish #Probably also a large Sami population.
 religion = catholic
 hre = no

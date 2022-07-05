@@ -1,0 +1,21 @@
+#REGIONSCANDI
+#4151 - Most of Kemi Lappmark: Enare/Inari, Sodankylä, Kemikyla, Utsjoki, Kittila, Sombio
+
+owner = SMI
+controller = SMI
+culture = sapmi
+religion = mr_samipaganism
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+capital = "Kautokeino" #Uncertain if this existed at that point.
+is_city = no
+native_hostileness = 1
+native_size = 3
+native_ferocity = 2
+discovered_by = eastern
+discovered_by = western
+
+1444.1.1 = { add_colonysize = 120 }

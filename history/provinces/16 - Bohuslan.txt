@@ -1,9 +1,9 @@
 #REGIONSCANDI
 #Bohuslän, contains Marstrand, Uddevalla, Strömstad.
 
-owner = NOR
-controller = NOR
-add_core = NOR
+owner = SWE
+controller = SWE
+add_core = SWE
 culture = norwegian
 religion = catholic
 hre = no

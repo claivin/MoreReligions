@@ -1,8 +1,8 @@
 #REGIONSCANDI
 #Jämtland+Härjedalen
 
-owner = NOR
-controller = NOR
+owner = SWE
+controller = SWE
 culture = norwegian # They were actually Jämts - the unique blend of Swedish, Norwegian and local tendencies
 religion = catholic
 hre = no
@@ -12,6 +12,6 @@ trade_goods = fur
 base_manpower = 1
 capital = "Frösön"
 is_city = yes
-add_core = NOR
+add_core = SWE
 discovered_by = eastern
 discovered_by = western

@@ -4,8 +4,8 @@
 owner = TEU
 controller = TEU
 add_core = TEU
-#add_core = FIN
-culture = swedish
+add_core = FIN
+culture = finnish
 religion = catholic
 hre = no
 base_tax = 3 

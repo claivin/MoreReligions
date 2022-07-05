@@ -1,0 +1,21 @@
+#REGIONSCANDI
+#Lapland, the far north wastelands.
+
+owner = SWE
+controller = SWE 
+add_core = SWE
+add_core = SMI
+is_city = yes
+capital = "Jokkmokk"
+culture = sapmi
+religion = mr_samipaganism
+hre = no
+base_tax = 1 
+base_production = 1
+trade_goods = unknown
+base_manpower = 1
+# native_hostileness = 1
+# native_size = 3
+# native_ferocity = 2
+discovered_by = eastern
+discovered_by = western

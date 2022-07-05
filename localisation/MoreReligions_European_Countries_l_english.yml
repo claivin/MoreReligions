@@ -222,7 +222,6 @@
  BSS_ADJ: "Brusseler"
  BSS_ADJ2: "Brusseler"
  
-<<<<<<< Updated upstream
  THR: "Thracia"
  THR_ADJ: "Thracian"
  THR_ADJ2: "Thracian"
@@ -287,7 +286,7 @@
  LEB: "Labenon"
  LEB_ADJ: "Labenese"
  LEB_ADJ2: "Lebenese"
-=======
+
  COP: "Copenhagen"
  COP_ADJ: "Copenhagener"
  COP_ADJ2: "Copenhagener"
@@ -327,4 +326,7 @@
  BRN: "Bornholm"
  BRN_ADJ: "Bornholm"
  BRN_ADJ2: "Bornholm"
->>>>>>> Stashed changes
+
+ SVO: "Savonia"
+ SVO_ADJ: "Savonian"
+ SVO_ADJ2: "Savonian"

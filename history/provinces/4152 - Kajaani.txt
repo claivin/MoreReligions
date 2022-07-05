@@ -1,17 +1,17 @@
 #REGIONSCANDI
+#4152 - Kuusamo incl Maanselkä and Kitka
 
-owner = TEU
-controller = TEU
-add_core = TEU
-add_core = FIN
+owner = SVO
+controller = SVO
+add_core = SVO
 culture = finnish
-religion = catholic
+religion = mr_finnishpaganism
 hre = no
 base_tax = 1 
 base_production = 1
 trade_goods = fur
 base_manpower = 1
-capital = "Vaasa"
+capital = "Maanselkä"
 is_city = yes
 discovered_by = eastern
 discovered_by = western

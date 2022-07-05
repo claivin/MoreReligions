@@ -1,0 +1,14 @@
+#REGIONSCANDI
+#315 - Finnmark
+
+culture = sapmi
+religion = mr_samipaganism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = fish
+capital = "Vardø"
+is_city = no
+discovered_by = eastern
+discovered_by = western
