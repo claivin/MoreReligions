@@ -36,7 +36,7 @@ on_startup = {
 		
 		#lore context events
 		mr_startup_events.1
-		
+		mr_startup_events.2
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {

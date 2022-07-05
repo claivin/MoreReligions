@@ -108,13 +108,6 @@ union = {
 	start_date = 1444.11.11
 }
 
-#Stuart Union
-union = {
-	first = SCO
-	second = BRI
-	start_date = 1444.11.11
-}
-
 #Three Bishophrics
 alliance = {
 	first = VDN

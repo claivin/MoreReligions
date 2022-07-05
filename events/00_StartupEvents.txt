@@ -5,48 +5,69 @@ namespace = mr_startup_events
 country_event = {
 	id = mr_startup_events.1
 	title = mr_startup_events.1.t
-	desc = {
+	desc = { #toulousse
 		trigger = { tag = TOU }
 		desc = mr_startup_events.1.d.1
 	}
-	desc = {
-		trigger = { tag = FRA }
+	desc = { #france,PU's, and vassals
+		trigger = { 
+			OR = {
+				tag = FRA
+				is_subject_of = FRA
+			}
+		}
 		desc = mr_startup_events.1.d.2
 	}
-	desc = {
+	desc = { #the rest of france, except Normandy and Brittany
 		trigger = {
 			NOT = {
 				OR = {
 					tag = TOU
 					tag = FRA
+					is_subject_of = FRA
+					tag = NRM
+					tag = BRI
 				}
 			}
 		}
 		desc = mr_startup_events.1.d.3
 	}
+	desc = { #brittany
+		trigger = { tag = BRI }
+		desc = mr_startup_events.1.d.4
+	}
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
-		capital_scope = {
-			region = france_region
-		}
+		ai = no
+		AND = {
+			capital_scope = {
+				region = france_region
+			}
+			NOT = { tag = NRM }
+		}	
 	}
 	mean_time_to_happen = {
 		days = 1
 	}
 	
-	option = {
+	option = { #toulousse
 		name = mr_startup_events.1.a
 		trigger = { tag = TOU }
 	}
 	
-	option = {
+	option = { #france,PU's, and vassals
 		name = mr_startup_events.1.b
-		trigger = { tag = FRA }
+		trigger = { 
+			OR = {
+				tag = FRA
+				is_subject_of = FRA
+			}
+		}
 	}
 	
-	option = {
+	option = { #the rest of france, except Normandy and Brittany
 		name = mr_startup_events.1.c
 		trigger = {
 			NOT = {
@@ -57,8 +78,166 @@ country_event = {
 			}
 		}
 	}
+	
+	option = { #Brittany
+		name = mr_startup_events.1.c
+		trigger = { tag = BRI }
+	}
 }
 
+#Britain and Normandy
 country_event = {
-
+	id = mr_startup_events.2
+	title = mr_startup_events.2.t
+	
+	desc = { #England and their normal vassals, but not the marcher lords
+		trigger = { 
+			OR = {
+				tag = ENG
+				tag = CRN
+				tag = OXF
+				tag = KNT
+				tag = SHP
+			}
+		}
+		desc = mr_startup_events.2.d.1
+	}
+	desc = { #York and their vassals
+		trigger = { 
+			OR = {
+				tag = YRK
+				is_subject_of = YRK
+			}
+		}
+		desc = mr_startup_events.2.d.2
+	}
+	desc = { #Wales and the Marcher lords
+		trigger = {
+			OR = {
+				tag = WLS
+				tag = GLM
+				tag = PEM
+				tag = PWY
+				tag = CHS
+			}
+		}
+		desc = mr_startup_events.2.d.3
+	}
+	desc = { #scotland
+		trigger = {
+			tag = SCO
+		}
+		desc = mr_startup_events.2.d.4
+	}
+	desc = { #Normandy
+		trigger = {
+			tag = NRM
+		}
+		desc = mr_startup_events.2.d.5
+	}
+	desc = { #The Isles, Mann, and generic
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ENG
+					tag = CRN
+					tag = OXF
+					tag = KNT
+					tag = SHP
+					tag = YRK
+					is_subject_of = YRK
+					tag = WLS
+					tag = GLM
+					tag = PEM
+					tag = PWY
+					tag = CHS
+					tag = SCO
+					tag = NRM
+				}
+			}
+		}
+		desc = mr_startup_events.2.d.6
+	}
+	is_triggered_only = yes
+	trigger = {
+		ai = no
+		OR = {
+			tag = NRM
+			capital_scope = {
+				region = british_isles_region
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #England and their normal vassals, but not the marcher lords
+		name = mr_startup_events.2.a
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = CRN
+				tag = OXF
+				tag = KNT
+				tag = CHS
+			}
+		}
+	}
+	option = { #York and their vassals
+		name = mr_startup_events.2.a
+		trigger = {
+			OR = {
+				tag = YRK
+				is_subject_of = YRK
+			}
+		}
+	}
+	option = { #Wales and the Marcher lords
+		name = mr_startup_events.2.b
+		trigger = {
+			OR = {
+				tag = WLS
+				tag = GLM
+				tag = PEM
+				tag = PWY
+				tag = SHP
+			}
+		}
+	}
+	option = { #Scotland
+		name = mr_startup_events.2.c
+		trigger = {
+			tag = SCO
+		}
+	}
+	option = { #Normandy
+		name = mr_startup_events.2.e
+		trigger = {
+			tag = NRM
+		}
+	}
+	option = { #Mann, the Iles, generic
+		name = mr_startup_events.2.f
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ENG
+					tag = CRN
+					tag = OXF
+					tag = KNT
+					tag = SHP
+					tag = YRK
+					is_subject_of = YRK
+					tag = WLS
+					tag = GLM
+					tag = PEM
+					tag = PWY
+					tag = CHS
+					tag = SCO
+					tag = NRM
+				}
+			}
+		}
+	}
 }

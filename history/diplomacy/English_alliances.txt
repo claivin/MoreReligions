@@ -56,3 +56,16 @@ vassal = {
 	second = NOL
 	start_date = 1444.1.1
 }
+
+#Stuart Union
+union = {
+	first = SCO
+	second = BRI
+	start_date = 1444.11.11
+}
+
+vassal = {
+	first = SCO
+	second = KOI
+	start_date = 1444.11.11
+}
