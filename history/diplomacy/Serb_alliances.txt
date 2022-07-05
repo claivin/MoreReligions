@@ -1,0 +1,30 @@
+vassal = {
+	first = SER
+	second = RAG
+	start_date = 1444.1.1
+}
+vassal = {
+	first = SER
+	second = MON
+	start_date = 1444.1.1
+}
+vassal = {
+	first = SER
+	second = PRI
+	start_date = 1444.1.1
+}
+vassal = {
+	first = SER
+	second = VEL
+	start_date = 1444.1.1
+}
+vassal = {
+	first = SER
+	second = SLT
+	start_date = 1444.1.1
+}
+vassal = {
+	first = SER
+	second = ALB
+	start_date = 1444.1.1
+}

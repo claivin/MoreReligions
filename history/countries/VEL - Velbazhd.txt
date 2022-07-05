@@ -3,20 +3,17 @@ add_government_reform = feudalism_reform
 primary_culture = serbian
 religion = orthodox
 technology_group = eastern
-capital = 4757	
-historical_friend = BOS
+capital = 3001 # Krusevac
 
-1389.1.1 = {
-	government_rank = 1
-}
+
 
 1444.1.1 = {
 	monarch = {
 		name = "Placeholder"
-		dynasty = "Nemanjic"
+		dynasty = "Vukasin"
 		birth_date = 1377.1.1		
-		adm = 5
-		dip = 3
+		adm = 2
+		dip = 2
 		mil = 4
 	}
 }

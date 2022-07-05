@@ -1,0 +1,32 @@
+#1831 - Travunia # now Herzegovina
+
+owner = SER
+controller = SER
+culture = bosnian
+religion = orthodox
+capital = "Herceg Novi"
+trade_goods = wool
+hre = no
+base_tax = 2 
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = HRZ
+add_core = BOS
+add_core = SER
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
+1482.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+}

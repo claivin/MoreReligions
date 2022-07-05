@@ -1,23 +1,21 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = serbian
+add_accepted_culture = dalmatian
 religion = orthodox
 technology_group = eastern
-capital = 4757	
-historical_friend = BOS
+capital = 136 # Krusevac
 
-1389.1.1 = {
-	government_rank = 1
-}
+
 
 1444.1.1 = {
 	monarch = {
 		name = "Placeholder"
-		dynasty = "Nemanjic"
+		dynasty = "Vojislav"
 		birth_date = 1377.1.1		
-		adm = 5
+		adm = 2
 		dip = 3
-		mil = 4
+		mil = 1
 	}
 }
 

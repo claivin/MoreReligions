@@ -350,3 +350,19 @@
  JAA: "Joannites"
  JAA_ADJ: "Joannite"
  JAA_ADJ2: "Joannite"
+ 
+ MON: "Zeta"
+ MON_ADJ: "Zetan"
+ MON_ADJ2: "Zetan"
+ 
+ PRI: "Pristina"
+ PRI_ADJ: "Pristinan"
+ PRI_ADJ2: "Pristinan"
+ 
+ SLT: "Split"
+ SLT_ADJ: "Splitan"
+ SLT_ADJ2: "Splitan"
+ 
+ VEL: "Velbazhd"
+ VEL_ADJ: "Velbazhdan"
+ VEL_ADJ2: "Velbazhdan"

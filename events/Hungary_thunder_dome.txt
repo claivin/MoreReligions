@@ -187,4 +187,101 @@ country_event = {
 		switch_tag = JAA
 	}
 }
+country_event = {
+	id = HUN_flavor.2
+	title = HUN_flavor.2.t
+	desc = HUN_flavor.2.d
+	picture = OVEREXTENSION_eventPicture
 	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+	}
+	
+	mean_time_to_happen = {
+		days = 5
+	}
+	
+	option = {
+		name = HUN_flavor.2a
+		add_prestige = -5
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						is_neighbor_of = ROOT
+						capital_scope = {
+							region = carpathia_region
+						}
+						capital_scope = {
+							region = balkans_region
+						}
+						tag = BOH
+						tag = SER
+						tag = POL
+						tag = BLH
+						tag = PAP
+					}
+				}
+				country_event = { id = HUN_flavor.3 }
+			}
+	}
+}
+country_event = {
+	id = HUN_flavor.3
+	title = HUN_flavor.2.t
+	desc = HUN_flavor.2.d
+	picture = OVEREXTENSION_eventPicture
+			
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.3a
+			trigger = {
+				NOT = {
+					OR = {
+						tag = BOH
+						tag = SER
+						tag = POL
+						tag = BLH
+						tag = PAP
+					}
+				}
+			}
+	}
+	
+	option = {
+		name = HUN_flavor.3b
+			trigger = {
+				tag = BOH
+			}
+	}
+	
+	option = {
+		name = HUN_flavor.3c
+			trigger = {
+				tag = SER
+			}
+	}
+	
+	option = {
+		name = HUN_flavor.3d
+			trigger = {
+				tag = POL
+			}
+	}
+	
+	option = {
+		name = HUN_flavor.3e
+			trigger = {
+				tag = BLH
+			}
+	}
+	
+	option = {
+		name = HUN_flavor.3f
+			trigger = {
+				tag = PAP
+			}
+	}
