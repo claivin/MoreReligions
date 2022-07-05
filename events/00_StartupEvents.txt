@@ -1,16 +1,36 @@
 namespace = mr_startup_events
 #All these events fire Day 1 to provide player with some lore context
 
-#Toulouse
+#France
 country_event = {
 	id = mr_startup_events.1
 	title = mr_startup_events.1.t
-	desc = mr_startup_events.1.d
+	desc = {
+		trigger = { tag = TOU }
+		desc = mr_startup_events.1.d.1
+	}
+	desc = {
+		trigger = { tag = FRA }
+		desc = mr_startup_events.1.d.2
+	}
+	desc = {
+		trigger = {
+			NOT = {
+				OR = {
+					tag = TOU
+					tag = FRA
+				}
+			}
+		}
+		desc = mr_startup_events.1.d.3
+	}
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	
 	is_triggered_only = yes
 	trigger = {
-		always = yes
+		capital_scope = {
+			region = france_region
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -18,5 +38,27 @@ country_event = {
 	
 	option = {
 		name = mr_startup_events.1.a
+		trigger = { tag = TOU }
 	}
+	
+	option = {
+		name = mr_startup_events.1.b
+		trigger = { tag = FRA }
+	}
+	
+	option = {
+		name = mr_startup_events.1.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = TOU
+					tag = FRA
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+
 }

@@ -32,7 +32,11 @@ on_startup = {
 		muslim_school_events.20 #Pick School
 		christian_school_events.20
 		christian_school_events.21 #pick reformed denomination
-		eastern_school_events.20 
+		eastern_school_events.20
+		
+		#lore context events
+		mr_startup_events.1
+		
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {
