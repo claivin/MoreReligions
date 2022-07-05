@@ -87,6 +87,18 @@ CMS = "countries/CoutoMisto.txt"
 BLH = "countries/BlueHorde.txt"
 RDH = "countries/RedHorde.txt"
 
+#Baltics
+COP = "countries/Copenhagen.txt"
+HLS = "countries/HolsteinButForReal.txt"
+NJL = "countries/NorthJutland.txt"
+JTL = "countries/Jutland.txt"
+FYN = "countries/Fyn.txt"
+LOL = "countries/Lolland.txt"
+SJA = "countries/Sjaeland.txt"
+SCN = "countries/Scania.txt"
+HLD = "countries/Halland.txt"
+BRN = "countries/Bornholm.txt"
+
 #East Indochinese
 
 TMM = "countries/Sithammarat.txt"
