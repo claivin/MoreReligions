@@ -1,0 +1,15 @@
+vassal = {
+	first = POL
+	second = POG
+	start_date = 1444.1.1
+}
+vassal = {
+	first = POL
+	second = WRM
+	start_date = 1444.1.1
+}
+vassal = {
+	first = POL
+	second = SBI
+	start_date = 1444.1.1
+}

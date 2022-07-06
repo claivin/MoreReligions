@@ -165,6 +165,10 @@ country_event = {
 			tag = NRM
 			capital_scope = {
 				region = british_isles_region
+				NOT = { area = munster_area }
+				NOT = { area = connacht_area }
+				NOT = { area = leinster_area }
+				NOT = { area = ulster_area }
 			}
 		}
 	}

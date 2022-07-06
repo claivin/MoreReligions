@@ -1,0 +1,6 @@
+government = republic
+add_government_reform = merchants_reform
+technology_group = western
+primary_culture = english
+religion = catholic
+capital = 4949 #Wight

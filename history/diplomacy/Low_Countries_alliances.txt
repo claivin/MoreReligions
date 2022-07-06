@@ -6,12 +6,12 @@ dependency = {
 	start_date = 1380.1.1
 }
 
-dependency = {
-	subject_type = "dutch_confederation"
-	first = DHG
-	second = HOL
-	start_date = 1380.1.1
-}
+# dependency = {
+	# subject_type = "dutch_confederation"
+	# first = DHG
+	# second = HOL
+	# start_date = 1380.1.1
+# }
 
 dependency = {
 	subject_type = "dutch_confederation"
@@ -83,12 +83,12 @@ dependency = {
 	start_date = 1380.1.1
 }
 
-dependency = {
-	subject_type = "dutch_confederation"
-	first = DHG
-	second = BGG
-	start_date = 1380.1.1
-}
+# dependency = {
+	# subject_type = "dutch_confederation"
+	# first = DHG
+	# second = BGG
+	# start_date = 1380.1.1
+# }
 
 dependency = {
 	subject_type = "dutch_confederation"

@@ -1,9 +1,9 @@
 #REGIONSCANDI
 #Bornholm
 
-add_core = BRN
-owner = BRN
-controller = BRN
+add_core = BRO
+owner = BRO
+controller = BRO
 culture = danish
 religion = catholic
 hre = yes

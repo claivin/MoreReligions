@@ -1,0 +1,22 @@
+#REGIONBALTIC
+#5144 - Rezekne
+
+owner = LVA
+controller = LVA
+add_core = LVA
+culture = latvian
+religion = mr_balticpaganism
+capital = "Rezekne"
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern

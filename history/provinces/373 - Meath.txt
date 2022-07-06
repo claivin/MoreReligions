@@ -1,0 +1,19 @@
+#REGIONBRITAIN
+#373 - Meath
+
+owner = ULS
+controller = ULS
+add_core = ULS
+culture = irish
+religion = catholic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 2
+capital = "Navan"
+is_city = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

@@ -1,11 +1,7 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = tribal
+add_government_reform = tribal_kingdom
 government_rank = 1
 technology_group = eastern
-religion = catholic
+religion = mr_balticpaganism
 primary_culture = latvian
-capital = 1834
-
-1542.1.1 = {
-	religion = protestant
-}
+capital = 4241

@@ -61,11 +61,30 @@ vassal = {
 union = {
 	first = SCO
 	second = BRI
-	start_date = 1444.11.11
+	start_date = 1444.1.1
 }
 
 vassal = {
 	first = SCO
 	second = KOI
-	start_date = 1444.11.11
+	start_date = 1444.1.1
+}
+
+#Ireland
+alliance = {
+	first = ULS
+	second = MCM
+	start_date = 1444.1.1
+}
+
+guarantee = {
+	first = ULS
+	second = MTH
+	start_date = 1444.1.1
+}
+
+guarantee = {
+	first = MCM
+	second = MTH
+	start_date = 1444.1.1
 }

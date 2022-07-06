@@ -1,7 +1,7 @@
 #REGIONBRITAIN
 
-owner = TYR
-controller = TYR 
+owner = ULS
+controller = ULS
 capital = "Armagh"
 is_city = yes
 culture = irish
@@ -16,3 +16,4 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 add_core = TYR
+add_core = ULS

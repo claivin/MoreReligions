@@ -1,0 +1,43 @@
+#North Sea League
+
+alliance = {
+	first = HAM
+	second = BRE
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = HAM
+	second = BGG
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = HAM
+	second = WGT
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = HAM
+	second = WRF
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = HAM
+	second = BGN
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = HAM
+	second = HOL
+	trade_league = 1
+	start_date = 1444.1.1
+}

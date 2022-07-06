@@ -1,0 +1,43 @@
+#Baltic League relations
+
+alliance = {
+	first = GOT
+	second = HSA
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = GOT
+	second = RUG
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = GOT
+	second = DNZ
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = GOT
+	second = RIG
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = GOT
+	second = NOV
+	trade_league = 1
+	start_date = 1444.1.1
+}
+
+alliance = {
+	first = GOT
+	second = COP
+	trade_league = 1
+	start_date = 1444.1.1
+}

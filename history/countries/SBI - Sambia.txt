@@ -1,0 +1,7 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = prussian
+religion = mr_balticpaganism
+technology_group = western
+capital = 41 #konigsberg

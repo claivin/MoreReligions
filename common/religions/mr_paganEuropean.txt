@@ -36,8 +36,8 @@ europe_pagan_group = {
 		heretic = {  }
 	}
 	
-	mr_estonianpaganism = {
-		color = { 52 194 128 }
+	mr_balticpaganism = {
+		color = { 52 194 100 }
 		icon = 11
 		country = {
 			global_tax_modifier = 0.1

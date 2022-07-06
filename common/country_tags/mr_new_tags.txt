@@ -76,6 +76,9 @@ PWY = "countries/Powys.txt"
 SHP = "countries/Shropshire.txt"
 KNT = "countries/Kent.txt"
 
+WGT = "countries/Wight.txt"
+WRF = "countries/Waterford.txt"
+
 #Iberian
 CBD = "countries/Cordoba.txt"
 SEV = "countries/Sevilla.txt"
@@ -105,8 +108,14 @@ LOL = "countries/Lolland.txt"
 SJA = "countries/Sjaeland.txt"
 SCN = "countries/Scania.txt"
 HLD = "countries/Halland.txt"
-BRN = "countries/Bornholm.txt"
+BRO = "countries/Bornholm.txt"
 SVO = "countries/Savonia.txt"
+BGN = "countries/Bergen.txt"
+
+POG = "countries/Pogesania.txt"
+WRM = "countries/Warmia.txt"
+SBI = "countries/Sambia.txt"
+LTV = "countries/Latvia.txt"
 
 #East Indochinese
 

@@ -1,0 +1,10 @@
+1440.1.1 = {
+	add_attacker = LIT
+	add_attacker = KUR
+	add_defender = POL
+}
+1444.1.1 = {
+	rem_attacker = LIT
+	rem_attacker = KUR
+	rem_defender = POL
+}

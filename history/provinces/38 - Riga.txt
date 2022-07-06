@@ -4,8 +4,8 @@
 owner = RIG
 controller = RIG
 add_core = RIG
-culture = prussian
-religion = catholic
+culture = latvian
+religion = mr_balticpaganism
 hre = no
 base_tax = 5 
 base_production = 5

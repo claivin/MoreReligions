@@ -11,6 +11,30 @@
  HOL_ADJ: "Amsterdammer"
  HOL_ADJ2: "Amsterdammer"
  
+ MTH: "Dublin"
+ MTH_ADJ: "Dubliner"
+ MTH_ADJ2: "Dubliner"
+ 
+ HLS: "Slesvig"
+ HLS_ADJ: "Slesviger"
+ HLS_ADJ2: "Slesviger"
+ 
+ MCM: "Cill Airne"
+ MCM_ADJ: "Cill Airne"
+ MCM_ADJ2: "Cill Airne"
+ 
+ ULS: "Oirialla"
+ ULS_ADJ: "Oirialla"
+ ULS_ADJ2: "Oirialla"
+ 
+ GOT: "Visby"
+ GOT_ADJ: "Visby"
+ GOT_ADJ2: "Visby"
+ 
+ LVA: "Latgallia"
+ LVA_ADJ: "Latgallia"
+ LVA_ADJ2: "Latgallia"
+ 
  home_counties_area: "South East England"
  
  crimean: "Kipchak"
@@ -161,3 +185,6 @@
  
  PROV4770: "Arnhem"
  PROV_ADJ4770: "Arnhem"
+ 
+ PROV373: "Mide"
+ PROV_ADJ373: "Mide"

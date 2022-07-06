@@ -323,9 +323,9 @@
  HLD_ADJ: "Hallander"
  HLD_ADJ2: "Hallander"
  
- BRN: "Bornholm"
- BRN_ADJ: "Bornholm"
- BRN_ADJ2: "Bornholm"
+ BRO: "Bornholm"
+ BRO_ADJ: "Bornholm"
+ BRO_ADJ2: "Bornholm"
 
  SVO: "Savonia"
  SVO_ADJ: "Savonian"
@@ -366,3 +366,31 @@
  VEL: "Velbazhd"
  VEL_ADJ: "Velbazhdan"
  VEL_ADJ2: "Velbazhdan"
+ 
+ WRF: "Waterford"
+ WRF_ADJ: "Waterfordian"
+ WRF_ADJ2: "Waterfordian"
+ 
+ WGT: "Wight"
+ WGT_ADJ: "Vectensian"
+ WGT_ADJ2: "Vectensian"
+ 
+ BGN: "Bergen"
+ BGN_ADJ: "Bergener"
+ BGN_ADJ2: "Bergener"
+ 
+ POG: "Pogesania"
+ POG_ADJ: "Pogesanian"
+ POG_ADJ2: "Pogesanian"
+ 
+ WRM: "Warmia"
+ WRM_ADJ: "Warmian"
+ WRM_ADJ2: "Warmian"
+ 
+ SBI: "Sambia"
+ SBI_ADJ: "Sambian"
+ SBI_ADJ2: "Sambian"
+ 
+ LTV: "Latvia"
+ LTV_ADJ: "Latvian"
+ LTV_ADJ2: "Latvian"

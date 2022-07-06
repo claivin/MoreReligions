@@ -1,7 +1,7 @@
 #REGIONBRITAIN
 
-owner = MNS
-controller = MNS 
+owner = WRF
+controller = WRF 
 capital = "Waterford"
 is_city = yes
 culture = irish
