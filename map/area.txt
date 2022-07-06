@@ -1084,7 +1084,7 @@ thrace_area = { #5
 }
 
 bulgaria_area = { #5
-	150 1765 2746 2750 4703
+	150 1765 2746 2750 4703 5338
 }
 
 silistria_area = {

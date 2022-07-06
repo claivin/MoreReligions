@@ -1,18 +1,18 @@
 #REGIONBALKANS
 
-owner = VEL
-controller = VEL
+owner = BUL
+controller = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Kostendil"
 trade_goods = copper
 hre = no
-base_tax = 2
+base_tax = 1
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = VEL
 add_core = BUL
+add_core = BLH
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
