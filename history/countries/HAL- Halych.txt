@@ -1,6 +1,6 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = halych_government
 technology_group = eastern
 religion = orthodox
 primary_culture = ruthenian
-capital = 279	# Volhynia
+capital = 2961	# Lviv

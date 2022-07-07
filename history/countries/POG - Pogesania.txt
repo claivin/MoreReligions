@@ -1,7 +1,7 @@
 government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
-primary_culture = prussian
+primary_culture = baltic_prussian
 religion = mr_balticpaganism
-technology_group = western
+technology_group = eastern
 capital = 1841 # marienberg

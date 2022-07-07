@@ -1,0 +1,24 @@
+#REGIONPOLAND
+#2424 - Przemysl
+
+owner = HAL
+controller = HAL
+culture = ruthenian
+religion = orthodox
+hre = yes
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 1
+capital = "Przemysl"
+is_city = yes
+add_core = HAL
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western
+discovered_by = ottoman
+discovered_by = muslim

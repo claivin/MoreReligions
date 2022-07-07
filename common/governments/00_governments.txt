@@ -43,6 +43,7 @@ monarchy = {
 				pagan_reform
 				pagan_reform_b
 				shan_kingdom_reform
+				halych_government
 			}
 		}
 		hereditary_vs_nobility = {
@@ -276,6 +277,7 @@ republic = {
 				united_cantons_reform
 				kongsi_federation
 				millenarian_theocracy_reform
+				frisian_federation_government
 			}
 		}
 		republican_virtues = {

@@ -1,0 +1,30 @@
+#REGIONPOLAND
+#2961 - Lwow
+
+latent_trade_goods = {
+	coal
+}
+
+owner = HAL
+controller = HAL
+capital= "Lwów"
+culture = ruthenian
+religion = orthodox
+trade_goods = dyes #Polish cochineal
+hre = yes
+base_tax = 5
+base_production = 5
+base_manpower = 2
+is_city = yes
+add_core = HAL
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1

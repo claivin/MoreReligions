@@ -33,15 +33,12 @@ french_elective_monarchy = { #PLACEHOLDER - INCOMPLETE
 }
 frisian_federation_government = { #PLACEHOLDER - INCOMPLETE
 	allow_normal_conversion = no
-	dictatorship = yes
 	lock_level_when_selected = yes
 	icon = "parliament_hall"
 	potential = {
-		has_reform = presidential_despot_reform
+		has_reform = frisian_federation_government
 	}
 	valid_for_nation_designer = no
-	legacy_equivalent = republican_dictatorship
-
 	modifiers = {
 		global_autonomy = -0.075
 		land_morale = 0.1
@@ -54,6 +51,23 @@ frisian_federation_government = { #PLACEHOLDER - INCOMPLETE
 		enables_aristocratic_idea_group = no
 	}
 	has_term_election = no
+}
+halych_government = { #PLACEHOLDER - INCOMPLETE
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	icon = "parliament_hall"
+	potential = {
+		has_reform = halych_government
+	}
+	valid_for_nation_designer = yes
+
+	modifiers = {
+		prestige_decay = -0.005
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
 }
 akanya_sutta_elections = {
 	icon = "elective_monarchy"

@@ -97,6 +97,7 @@ JAA = "countries/Joannites.txt"
 SLT = "countries/Split.txt"
 PRI = "countries/Pristina.txt"
 VEL = "countries/Velbazhad.txt"
+HAL = "countries/Halych.txt"
 
 #Baltics/Scandanavia
 COP = "countries/Copenhagen.txt"
