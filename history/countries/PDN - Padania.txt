@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+mercantilism = 25
+government_rank = 1
+primary_culture = romagnan
+religion = catholic
+technology_group = western
+capital = 108 
+
+1420.1.1 = {
+	monarch = { 
+		name = "Placeholder"
+		dynasty = ""
+		dip = 2
+		mil = 1
+		adm = 2
+	}
+}
+

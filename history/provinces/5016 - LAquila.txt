@@ -2,18 +2,18 @@
 #5016 - L'Aquila
 #copied from Abruzzi
 
-owner = NAP
-controller = NAP
+owner = AZZ
+controller = AZZ
 culture = neapolitan 
 religion = catholic 
-hre = no 
+hre = yes
 base_tax = 1
 base_production = 1
 trade_goods = grain 
 base_manpower = 1
 capital = "L'Aquila" 
 is_city = yes 
-add_core = NAP
+add_core = AZZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = ligurian
+religion = catholic
+technology_group = western
+capital = 5013
+
+1444.1.1 = {
+	monarch = {
+		name = "Pietro de Campofregoso"
+		birth_date = 1417.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

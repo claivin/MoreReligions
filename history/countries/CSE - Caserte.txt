@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = merchants_reform
+mercantilism = 25
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = neapolitan
+capital = 5018
+
+
+1420.1.1 = {
+	monarch = { 
+		name = "Placeholder"
+		dynasty = "Caserto"
+		dip = 2
+		mil = 1
+		adm = 2
+	}
+}
+

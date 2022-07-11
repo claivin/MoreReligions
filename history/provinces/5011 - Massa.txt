@@ -2,9 +2,9 @@
 #5011 - Massa
 #copied from nice
 
-owner = GEN
-controller = GEN
-add_core = GEN
+owner = MSS
+controller = MSS
+add_core = MSS
 culture = ligurian
 religion = catholic
 hre = yes

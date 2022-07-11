@@ -2,18 +2,18 @@
 #5021 - Catanzaro
 #copied from bari
 
-owner = NAP
-controller = NAP
+owner = CBR
+controller = CBR
 culture = neapolitan 
 religion = catholic 
-hre = no 
-base_tax = 1
-base_production = 1
+hre = yes
+base_tax = 2
+base_production = 2
 trade_goods = grain
-base_manpower = 1
+base_manpower = 2
 capital = "Catanzaru"
 is_city = yes
-add_core = NAP
+add_core = CBR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

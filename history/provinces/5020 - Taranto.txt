@@ -1,18 +1,18 @@
 #REGIONITALY
 #5020 - Tarranto
 
-owner = NAP
-controller = NAP
+owner = TTO
+controller = TTO
 culture = neapolitan 
 religion = catholic 
-hre = no 
-base_tax = 1
-base_production = 1
+hre = yes
+base_tax = 4
+base_production = 5
 trade_goods = grain
-base_manpower = 1
+base_manpower = 3
 capital = "Taranto"
 is_city = yes
-add_core = NAP
+add_core = TTO
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

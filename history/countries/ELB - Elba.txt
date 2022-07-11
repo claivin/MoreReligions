@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = tuscan
+religion = catholic
+technology_group = western
+capital = 5272 # Pisa
+fixed_capital = 5727 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Giovanni Buonaparte"
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

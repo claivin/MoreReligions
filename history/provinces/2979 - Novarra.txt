@@ -1,8 +1,8 @@
 #REGIONITALY
 # 2979 - Novara
 
-owner = MLO
-controller = MLO
+owner = LMB
+controller = LMB
 culture = lombard
 religion = catholic
 hre = yes
@@ -12,7 +12,7 @@ trade_goods = grain
 base_manpower = 2
 capital = "Novara"
 is_city = yes	# Estimated
-add_core = MLO
+add_core = LMB
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,0 +1,22 @@
+government = republic
+add_government_reform = merchants_reform
+mercantilism = 25
+government_rank = 1
+primary_culture = lombard
+religion = catholic
+technology_group = western
+capital = 5013 # Milano
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Placeholder"
+		dynasty = "Lombardy"
+		birth_date = 1415.10.16
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	
+}
+

@@ -1,8 +1,8 @@
 #REGIONITALY
 #1862 - Cremona
 
-owner = MLO
-controller = MLO
+owner = CMN
+controller = CMN
 culture = lombard
 religion = catholic
 hre = yes
@@ -12,7 +12,7 @@ trade_goods = grain
 base_manpower = 4
 capital = "Cremona"
 is_city = yes	# Estimated
-add_core = MLO
+add_core = CMN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

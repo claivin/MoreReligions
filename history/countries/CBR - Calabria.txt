@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+government_rank = 1
+religion = catholic
+primary_culture = neapolitan
+capital = 123 
+
+
+1420.1.1 = {
+	monarch = { 
+		name = "Placeholder"
+		dynasty = "Ruffo"
+		dip = 2
+		mil = 1
+		adm = 2
+	}
+}
+

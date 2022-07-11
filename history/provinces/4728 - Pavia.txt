@@ -1,8 +1,8 @@
 #REGIONITALY
 # 4728 - Pavia
 
-owner = MLO
-controller = MLO
+owner = LMB
+controller = LMB
 culture = lombard
 religion = catholic
 hre = yes
@@ -12,7 +12,7 @@ trade_goods = grain
 base_manpower = 5
 capital = "Pavia"
 is_city = yes	# Estimated
-add_core = MLO
+add_core = LMB
 
 
 

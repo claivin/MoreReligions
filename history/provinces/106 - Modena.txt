@@ -1,11 +1,11 @@
 #REGIONITALY
 #106 - Modena
 
-owner = FER
-controller = FER
+owner = PDN
+controller = PDN
 culture = romagnan 
 religion = catholic 
-hre = yes 
+hre = no
 base_tax = 5 
 base_production = 5  
 trade_goods = livestock
@@ -14,6 +14,7 @@ capital = "Modena"
 is_city = yes
 add_core = FER
 add_core = MOD
+add_core = PDN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

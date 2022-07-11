@@ -1,11 +1,11 @@
 #REGIONITALY
 #121 - Napoli
 
-owner = NAP
-controller = NAP
+owner = NPI
+controller = NPI
 culture = neapolitan 
 religion = catholic 
-hre = no 
+hre = yes
 base_tax = 8
 base_production = 8
 trade_goods = grain 
@@ -13,7 +13,7 @@ base_manpower = 6
 capital = "Napoli" 
 is_city = yes	# Estimated
 fort_15th = yes
-add_core = NAP
+add_core = NPI
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

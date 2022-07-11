@@ -398,3 +398,68 @@
  HAL: "Halych"
  HAL_ADJ: "Halych"
  HAL_ADJ2: "Halych"
+ 
+ CBR: "Calabria"
+ CBR_ADJ: "Calabrian"
+ CBR_ADJ2: "Calabrian"
+ 
+ MTA: "Matera"
+ MTA_ADJ: "Materan"
+ MTA_ADJ2: "Materan"
+ 
+ TTO: "Tatanto"
+ TTO_ADJ: "Tatantan"
+ TTO_ADJ2: "Tatantan"
+ 
+ APU: "Aouila"
+ APU_ADJ: "Apuilan"
+ APU_ADJ2: "Apuilan"
+ 
+ CSE: "Caserte"
+ CSE_ADJ: "Casertan"
+ CSE_ADJ: "Casertan"
+ 
+ NPI: "Napoli"
+ NPI_ADJ: "Napolitan"
+ NPI_ADJ: "Napolitan"
+ 
+ SLR: "Salerno"
+ SLR_ADJ: "Salernan"
+ SLR_ADJ2: "Salernan"
+ 
+ CTN: "Capitanata"
+ CTN_ADJ: "Capitanatan"
+ CTN_ADJ2: "Capitanatan"
+ 
+ AZZ: "Abruzzi"
+ AZZ_ADJ: "Abruzzian"
+ AZZ_ADJ2: "Abruzzian"
+ 
+ LMB: "Lombardy"
+ LMB_ADJ: "Lombardian"
+ LMB_ADJ2: "Lombardian"
+ 
+ BVN: "Benevento"
+ BVN_ADJ: "Beneventan"
+ BVN_ADJ_2: "Beneventan"
+ 
+ PDN: "Padana"
+ PDN_ADJ: "Padanan"
+ PDN_ADJ2: "Padanan"
+ 
+ MSS: "Massa"
+ MSS_ADJ: "Massan"
+ MSS_ADJ: "Massan"
+ 
+ CRM: "Crema"
+ CRM_ADJ: "Creman"
+ CRM_ADJ2: "Creman"
+ 
+ CMN: "Cremona"
+ CMN_ADJ: "Cremonan"
+ CMN_ADJ2: "Cremonan"
+ 
+ ELB: "Elba"
+ ELB_ADJ: "Elban"
+ ELB_ADJ2: "Elban"
+ 

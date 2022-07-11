@@ -1,0 +1,36 @@
+#Padana
+vassal = {
+	first = PDN
+	second = MLO
+	start_date = 1444.1.1
+}
+vassal = {
+	first = PDN
+	second = CRM
+	start_date = 1444.1.1
+}
+vassal = {
+	first = PDN
+	second = LMB
+	start_date = 1444.1.1
+}
+vassal = {
+	first = PDN
+	second = CMN
+	start_date = 1444.1.1
+}
+vassal = {
+	first = PDN
+	second = PAR
+	start_date = 1444.1.1
+}
+vassal = {
+	first = PDN
+	second = MSS
+	start_date = 1444.1.1
+}
+vassal = {
+	first = PDN
+	second = LUC
+	start_date = 1444.1.1
+}

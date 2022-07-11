@@ -1,18 +1,18 @@
 #REGIONITALY
 # 4733 - Molise
 
-owner = NAP
-controller = NAP
+owner = AZZ
+controller = AZZ
 culture = neapolitan 
 religion = catholic 
-hre = no 
+hre = yes
 base_tax = 3
 base_production = 2
 trade_goods = paper
 base_manpower = 2
 capital = "Campobasso"
 is_city = yes
-add_core = NAP
+add_core = AZZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

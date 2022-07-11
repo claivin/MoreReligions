@@ -2,18 +2,18 @@
 #5014 - Vicenza
 #copied from vicenza
 
-owner = VEN
-controller = VEN
+owner = PDN
+controller = PDN
 culture = venetian 
 religion = catholic 
-hre = no 
-base_tax = 1
-base_production = 1
+hre = yes
+base_tax = 2
+base_production = 3
 trade_goods = grain
-base_manpower = 1
+base_manpower = 2
 capital = "Vicensa" 
 is_city = yes 
-add_core = VEN
+add_core = PDN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

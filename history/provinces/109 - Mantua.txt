@@ -1,12 +1,12 @@
 #REGIONITALY
 #109 - Mantua
  
-owner = MAN
-controller = MAN
-add_core = MAN
+owner = PDN
+controller = PDN
+add_core = PDN
 culture = romagnan 
 religion = catholic 
-hre = yes 
+hre = no
 base_tax = 8 
 base_production = 8    
 trade_goods = livestock

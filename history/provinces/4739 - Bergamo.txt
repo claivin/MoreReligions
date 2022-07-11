@@ -1,8 +1,8 @@
 #REGIONITALY
 # 4739 - Bergamo
 
-owner = MLO		
-controller = MLO
+owner = PDN
+controller = PDN
 culture = lombard 
 religion = catholic 
 hre = yes 
@@ -12,7 +12,7 @@ trade_goods = cloth
 base_manpower = 2  
 capital = "Bergamo" 
 is_city = yes
-add_core = MLO
+add_core = PDN
 
 
 
@@ -22,11 +22,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-1426.5.6 = {
-	owner = VEN
-	controller = VEN
-	add_core = VEN
-}
+
 1495.1.1 = { hre = no }
 1509.6.1 = { controller = FRA } # Venice collapses
 1512.1.1 = { controller = VEN } # Brescia revolts

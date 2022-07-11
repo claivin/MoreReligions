@@ -1,18 +1,18 @@
 #REGIONITALY
 #107 - Brescia
 
-owner = VEN
-controller = VEN
+owner = PDN
+controller = PDN
 culture = lombard 
 religion = catholic 
-hre = yes 
+hre = no
 base_tax = 5
 base_production = 5   
 trade_goods = cloth
 base_manpower = 3
 capital = "Brescia" 
 is_city = yes
-add_core = VEN
+add_core = PDN
 fort_15th = yes
 
 

@@ -1,18 +1,18 @@
 #REGIONITALY
 # 4734 - Avellino
 
-owner = NAP
-controller = NAP
+owner = BVN
+controller = BVN
 culture = neapolitan 
 religion = catholic 
-hre = no 
+hre = yes
 base_tax = 4
 base_production = 4
 trade_goods = grain 
 base_manpower = 3
 capital = "Avellino" 
 is_city = yes	# Estimated
-add_core = NAP
+add_core = BVN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

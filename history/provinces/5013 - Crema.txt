@@ -2,18 +2,18 @@
 #5013 - Crema
 #copied from brescia
 
-owner = MLO
-controller = MLO
+owner = CRM
+controller = CRM
 culture = lombard 
 religion = catholic 
 hre = yes 
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 3
 trade_goods = grain
-base_manpower = 1
+base_manpower = 2
 capital = "Crèma " 
 is_city = yes
-add_core = MLO
+add_core = CRM
 fort_15th = yes
 discovered_by = western
 discovered_by = eastern

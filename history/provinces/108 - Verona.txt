@@ -1,8 +1,8 @@
 #REGIONITALY
 #108 - Verona
 
-owner = VEN
-controller = VEN
+owner = PDN
+controller = PDN
 culture = venetian 
 religion = catholic 
 hre = no 
@@ -12,7 +12,7 @@ trade_goods = grain
 base_manpower = 3   
 capital = "Verona" 
 is_city = yes 
-add_core = VEN
+add_core = PDN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

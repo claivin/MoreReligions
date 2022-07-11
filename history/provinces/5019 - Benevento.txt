@@ -2,18 +2,18 @@
 #5019 - Benevento
 #copied from Napoli
 
-owner = NAP
-controller = NAP
+owner = BVN
+controller = BVN
 culture = neapolitan 
 religion = catholic 
-hre = no 
-base_tax = 1
+hre = yes
+base_tax = 3
 base_production = 1
 trade_goods = grain 
-base_manpower = 1
+base_manpower = 2
 capital = "Napoli" 
 is_city = yes
-add_core = NAP
+add_core = BVN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

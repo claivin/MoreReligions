@@ -1,18 +1,18 @@
 #REGIONITALY
 #1933 - Bari
 
-owner = NAP
-controller = NAP
+owner = APU
+controller = APU
 culture = neapolitan 
 religion = catholic 
-hre = no 
+hre = yes
 base_tax = 3 
 base_production = 3
 trade_goods = wine
 base_manpower = 2
 capital = "Bari"
 is_city = yes # Estimated 
-add_core = NAP
+add_core = APU
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
