@@ -53,118 +53,80 @@ has_eastern_school_trigger = {
 	OR = {
 		religious_school = {
 			group = eastern
-			school =  mr_bodhisattvayana
+			school =  mr_bodhisattvayana_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_akanya_sutta_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_yogavacara_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_brahmin_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_mahavihara_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_shin_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_tendai_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_jodo_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_zen_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_shingon_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_nyingma_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_gelug_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_karma_kagyu_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_drukpa_kagyu_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_drikung_kagyu_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_sakya_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_jonang_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_buddha_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_taoist_school
 		}
-	}
-	OR = {
 		religious_school = {
 			group = eastern
 			school = mr_neo_confucian_school

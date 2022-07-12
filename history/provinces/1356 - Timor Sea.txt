@@ -23,7 +23,6 @@ discovered_by = MGD
 discovered_by = TER
 discovered_by = TID
 discovered_by = indian
-discovered_by = SRJ
 
 
 

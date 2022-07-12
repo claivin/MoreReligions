@@ -1,7 +1,7 @@
 #REGIONITALY
 # - Cosenza
 
-owner CBR
+owner = CBR
 controller = CBR
 culture = neapolitan 
 religion = catholic 

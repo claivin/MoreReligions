@@ -675,7 +675,6 @@ eastern = {
 			vajrayana
 			mahayana
 			yogavacara
-			ari
 			azhaliism
 		}
 		country = {
@@ -744,7 +743,6 @@ eastern = {
 			mahayana
 			buddhism
 			yogavacara
-			ari
 			azhaliism
 		}
 		country = {
@@ -777,7 +775,6 @@ eastern = {
 			vajrayana
 			buddhism
 			yogavacara #Theravada
-			ari
 		}
 		country = {
 			tolerance_heretic = 2

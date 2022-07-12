@@ -281,7 +281,7 @@ mild_winter = {
 	5012 5013 5014
 	#mr_pontic
 	5309 5310 5308 5306 5307 5311 5313 5314 5318 5319
-	5323 5323 #mr_armenia
+	5323 #mr_armenia
 }
 
 #Example: Inland Europe & Scandinavia

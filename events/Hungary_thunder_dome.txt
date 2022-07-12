@@ -33,7 +33,12 @@ country_event = {
 			release = AAD
 			release = KSZ
 			release = KNN
-			release = JAA
+			1951 = {
+				cede_province = JAA
+			}
+			4128 = {
+				cede_province = JAA
+			}
 		}
 		hidden_effect = {
 			CSA = {
@@ -129,12 +134,6 @@ country_event = {
 				}
 			}
 			JAA = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.8
-						cavalry = 0.2
-					}
-				}
 				add_historical_rival = ADD
 				add_historical_rival = KSZ
 				add_historical_rival = KNN
@@ -215,7 +214,7 @@ country_event = {
 							region = carpathia_region
 						}
 						capital_scope = {
-							region = balkans_region
+							region = balkan_region
 						}
 						tag = BOH
 						tag = SER

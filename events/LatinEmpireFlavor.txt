@@ -1,4 +1,5 @@
 namespace = LAT_flavor
+
 country_event = {
 	id = LAT_flavor.1
 	title = LAT_flavor.1.t

@@ -1,7 +1,0 @@
-government = monarchy
-add_government_reform = mandala_reform
-primary_culture = mon
-religion = ari
-technology_group = chinese
-capital = 2404 # Pegu
-religious_school = mr_weizza_school

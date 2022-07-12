@@ -78,49 +78,6 @@ ANK_ideas = {
 		max_absolutism = 5
 	}
 }
-
-SRJ_ideas = { 
-	start = {
-		merchants = 1
-		discipline = 0.05
-	}
-	bonus = {
-		diplomatic_upkeep = 1
-	}
-	trigger = {
-		OR = {
-			tag = SRJ
-			tag = NST
-		}
-	}
-	free = yes
-	
-	srj_sailendra = {
-		legitimacy = 1
-	}
-	srj_empire_water = {
-		naval_forcelimit_modifier = 0.25
-		leader_naval_shock = 1
-	}
-	srj_siddhayarta = {
-		core_creation = 0.1
-		army_tradition = 0.25
-	}
-	srj_agamas = {
-		tolerance_heretic = 2
-	}
-	srj_hegemony_straits = {
-		vassal_income = 0.25
-		trade_steering = 0.25
-	}
-	srj_borobudur = {
-		global_missionary_strength = 0.02
-	}
-	srj_lela = {
-		artillery_cost = -0.1
-		siege_ability = 0.1
-	}
-}
 KMI_ideas = {
 	start = {
 		may_perform_slave_raid = yes

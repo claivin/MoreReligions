@@ -1,9 +1,0 @@
-government = monarchy
-add_government_reform = shogunate
-government_rank = 3
-primary_culture = japanese
-add_accepted_culture = togoku
-religion = nihon
-technology_group = chinese
-capital = 1020	# Yamashiro
-religious_school = mr_shingon_school

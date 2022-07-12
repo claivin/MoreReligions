@@ -11,7 +11,6 @@ capital = 2985
 1420.1.1 = {
 	monarch = { 
 		name = "Placeholder"
-		dynasty = ""
 		dip = 2
 		mil = 1
 		adm = 2

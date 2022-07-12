@@ -1,8 +1,0 @@
-government = monarchy
-add_government_reform = akanya_sutta_elections
-government_rank = 1
-primary_culture = central_thai
-religion = buddhism
-technology_group = chinese
-capital = 593	# Nakhon Si Thammarat
-religious_school = mr_akanya_sutta_school

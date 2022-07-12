@@ -48,7 +48,7 @@ country_event = {
 		else_if = {
 			limit = {
 				OR = {
-					tag = LNN
+					tag = LNA
 				}
 				religion = buddhism
 			}
@@ -139,7 +139,7 @@ country_event = {
 		}
 		set_religious_school = {
 			group = eastern
-			school = mr_tamrashatiya_school
+			school = mr_bodhisattvayana_school
 		}
 	}
 	option = {
@@ -161,7 +161,7 @@ country_event = {
 		}
 		set_religious_school = {
 			group = eastern
-			school = mr_weizza_school
+			school = mr_yogavacara_school
 		}
 	}
 	option = {

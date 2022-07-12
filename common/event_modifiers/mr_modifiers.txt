@@ -12,7 +12,7 @@ LAT_door = {
 	global_garrison_growth = 0.05
 }
 LAT_saint = {
-	tolernace_own = 1
+	tolerance_own = 1
 	papal_influence = 0.5 
 }
 LAT_pillar = {

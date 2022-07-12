@@ -259,7 +259,7 @@ tomanurung_tradition = {
 		OR = {
 			any_owned_province = {
 				OR = {
-					area = north_sulawesi_area
+					area = sulawesi_area
 					area = south_sulawesi_area
 					area = makassar_area
 				}
@@ -288,7 +288,7 @@ rambu_tuka_tradition = {
 		OR = {
 			any_owned_province = {
 				OR = {
-					area = north_sulawesi_area
+					area = sulawesi_area
 					area = south_sulawesi_area
 					area = makassar_area
 				}
@@ -317,7 +317,7 @@ rambu_solo_tradition = {
 		OR = {
 			any_owned_province = {
 				OR = {
-					area = north_sulawesi_area
+					area = sulawesi_area
 					area = south_sulawesi_area
 					area = makassar_area
 				}

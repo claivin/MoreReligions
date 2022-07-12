@@ -17,7 +17,6 @@ country_decisions = {
 				NOT = { exists = SYM }
 				ai = no
 			}
-			NOT = { tag = SRJ }
 			NOT = { tag = ANK }
 			religion = sunni 
 		}

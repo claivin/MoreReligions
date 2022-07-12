@@ -1,7 +1,0 @@
-government = monarchy
-add_government_reform = mandala_reform
-primary_culture = khmer
-religion = hinduism
-technology_group = chinese
-capital = 4828
-religious_school = mr_brahmin_school

@@ -21,7 +21,7 @@ country_decisions = {
 				NOT = { tag = ETH }
 				NOT = { tag = IFT }
 				NOT = { tag = BTI }
-				NOT = { tag = AXM }
+				NOT = { tag = AKS }
 				NOT = { tag = ABH }
 				NOT = { tag = BRL }
 			}
@@ -88,7 +88,7 @@ country_decisions = {
 			OR = {
 				NOT = { tag = ETH }
 				NOT = { tag = IFT }
-				NOT = { tag = AXM }
+				NOT = { tag = AKS }
 				NOT = { tag = ABH }
 				NOT = { tag = BRL }
 			}
@@ -155,7 +155,7 @@ country_decisions = {
 			OR = {
 				NOT = { tag = ETH }
 				NOT = { tag = BTI }
-				NOT = { tag = AXM }
+				NOT = { tag = AKS }
 				NOT = { tag = ABH }
 				NOT = { tag = BRL }
 			}
