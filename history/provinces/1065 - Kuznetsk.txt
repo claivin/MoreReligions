@@ -3,9 +3,10 @@
 latent_trade_goods = {
 	coal
 }
+
 add_core = YNI
-controller = YNI
 owner = YNI
+controller = YNI
 culture = kirgiz
 religion = tengri_pagan_reformed
 capital = "Kuznetsk"

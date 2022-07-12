@@ -1,8 +1,9 @@
 #480 - Kulunda
 
+owner = YNI
 add_core = YNI
 controller = YNI
-owner = YNI
+
 culture = kirgiz
 religion = tengri_pagan_reformed
 capital = "Pegaya Orda"

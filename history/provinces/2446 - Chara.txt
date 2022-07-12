@@ -1,8 +1,8 @@
 #2446 - Chara
 
 add_core = BRT
-controller = BRT
 owner = BRT
+controller = BRT
 culture = buryat
 religion = tengri_pagan_reformed
 capital = "Chara"
