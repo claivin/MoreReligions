@@ -1,4 +1,16 @@
 capital = "Bourem"
+owner = GAO
+controller = GAO
+add_core = GAO
+is_city = yes
+culture = songhai #Dogon
+religion = sunni 
+trade_goods = livestock
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 3
+discovered_by = sub_saharan
 discovered_by = indian
 discovered_by = chinese
 discovered_by = muslim

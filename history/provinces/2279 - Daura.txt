@@ -1,8 +1,8 @@
 # No previous file for Daura
 
-owner = KTS
-controller = KTS
-add_core = KTS
+owner = DAA
+controller = DAA
+add_core = DAA
 is_city = yes
 culture = hausa 
 religion = sunni

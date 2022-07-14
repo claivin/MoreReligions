@@ -1,8 +1,8 @@
 # No previous file for Biram
 
-owner = KAN
-controller = KAN
-add_core = KAN
+owner = BIR
+controller = BIR
+add_core = BIR
 culture = hausa 
 religion = sunni
 capital = "Biram"

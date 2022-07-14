@@ -1,0 +1,16 @@
+culture = 
+religion = shamanism #Fetishism
+capital = "Yamoussoukro"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 70
+native_ferocity = 4
+native_hostileness = 9 
+
+owner = SNT
+controller = SNT
+add_core = SNT
+is_city = yes

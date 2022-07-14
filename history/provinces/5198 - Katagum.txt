@@ -1,0 +1,21 @@
+#1148 - Gobir
+
+owner = KTG
+controller = KTG
+add_core = KTG
+culture = hausa
+is_city = yes
+base_manpower = 3
+religion = shamanism
+capital = "Tibir"
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 3
+
+
+
+discovered_by = sub_saharan
+
+
+

@@ -1,0 +1,17 @@
+
+
+owner = GAO
+controller = GAO
+culture = songhai
+is_city = yes
+base_manpower = 2
+religion = sunni
+capital = "Kukiya"
+trade_goods = rice
+hre = no
+base_tax = 2
+base_production = 2
+add_core = GAO
+discovered_by = sub_saharan
+
+

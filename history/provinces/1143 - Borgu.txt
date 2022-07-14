@@ -1,8 +1,8 @@
 #1143 - Borgu
 
-owner = FNG
-controller = FNG
-add_core = FNG
+owner = GUR
+controller = GUR
+add_core = GUR
 is_city = yes
 culture = dagomba 
 religion = shamanism #Fetishism
@@ -19,6 +19,5 @@ native_size = 40
 native_ferocity = 4
 native_hostileness = 9
 discovered_by = sub_saharan
-
 
 

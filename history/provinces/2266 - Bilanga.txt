@@ -1,8 +1,8 @@
 # No previous file for Bilanga
 
-owner = OAG
-controller = OAG
-add_core = OAG
+owner = WGD
+controller = WGD
+add_core = WGD
 is_city = yes
 culture = mossi 
 religion = shamanism #Fetishism

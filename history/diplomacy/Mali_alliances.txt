@@ -1,10 +1,12 @@
-vassal = {
+dependency = {
+	subject_type = "tributary_state"
 	first = MAL
 	second = TMB
 	start_date = 1444.1.1
 	end_date = 1502.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "tributary_state"
 	first = MAL
 	second = GAO
 	start_date = 1444.1.1

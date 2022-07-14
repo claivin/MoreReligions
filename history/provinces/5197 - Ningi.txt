@@ -1,0 +1,20 @@
+#1154 - Zazzau
+
+owner = RNO
+controller = RNO
+add_core = RNO
+culture = hausa
+is_city = yes
+base_manpower = 3
+religion = shamanism #Fetishism
+capital = "Ningi"
+trade_goods = slaves
+hre = no
+base_tax = 3 
+base_production = 3
+
+
+
+discovered_by = sub_saharan
+
+

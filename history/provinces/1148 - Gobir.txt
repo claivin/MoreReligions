@@ -1,8 +1,8 @@
 #1148 - Gobir
 
-owner = ZZZ
-controller = ZZZ
-add_core = ZZZ
+owner = GBI
+controller = GBI
+add_core = GBI
 culture = hausa
 is_city = yes
 base_manpower = 3

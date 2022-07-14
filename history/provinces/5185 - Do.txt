@@ -1,4 +1,19 @@
+
+owner = MAL
+controller = MAL
+add_core = MAL
+is_city = yes
+culture = mali 
+religion = shamanism #Fetishism
 capital = "Walata"
+trade_goods = spices
+hre = no
+base_tax = 4
+base_production = 1
+native_size = 40
+native_ferocity = 4
+native_hostileness = 9
+base_manpower = 3
 discovered_by = indian
 discovered_by = chinese
 discovered_by = muslim

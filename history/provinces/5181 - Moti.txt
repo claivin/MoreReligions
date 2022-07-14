@@ -1,0 +1,17 @@
+#1131 - Massina
+
+owner = MAL
+controller = MAL
+culture = bambara
+is_city = yes
+base_manpower = 1
+religion = shamanism #Fetishism
+capital = "Moti"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+add_core = MAL
+add_core = ZAF
+discovered_by = sub_saharan
+

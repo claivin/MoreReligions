@@ -1,0 +1,15 @@
+# No previous file for Dallol
+
+owner = ZMA
+controller = ZMA
+add_core = ZMA
+is_city = yes
+culture = songhai 
+religion = shamanism #Fetishism
+capital = "Tillaberi"
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 2
+discovered_by = sub_saharan

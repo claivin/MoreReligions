@@ -1,8 +1,8 @@
 # No previous file for Rano
 
-owner = KAN
-controller = KAN
-add_core = KAN
+owner = RNO
+controller = RNO
+add_core = RNO
 culture = hausa 
 religion = sunni
 capital = "Rano"

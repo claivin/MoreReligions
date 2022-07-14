@@ -1,0 +1,16 @@
+culture = senegambian 
+religion = shamanism #Fetishism
+capital = "Conakry"
+trade_goods = slaves
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+owner = MAL
+controller = MAL
+add_core = MAL
+
+discovered_by = sub_saharan
+
+1460.1.1 = { discovered_by = POR } # Frenão do Pó
+

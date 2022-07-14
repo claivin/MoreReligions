@@ -1,8 +1,8 @@
 
 
-owner = BON
-controller = BON
-add_core = BON
+owner = GYR
+controller = GYR
+add_core = GYR
 is_city = yes
 culture = aka 
 religion = shamanism #Fetishism

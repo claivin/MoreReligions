@@ -1,0 +1,21 @@
+#1148 - Gobir
+
+owner = TBI
+controller = TBI
+add_core = TBI
+culture = hausa
+is_city = yes
+base_manpower = 3
+religion = sunni
+capital = "Tibir"
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 3
+
+
+
+discovered_by = sub_saharan
+
+
+
