@@ -1,0 +1,18 @@
+#REGIONRUSSIA
+#312 - Beloozero
+
+owner = BLO
+controller = BLO
+culture = novgorodian
+religion = orthodox
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = naval_supplies 
+base_manpower = 2
+capital = "Beloozero"
+is_city = yes
+add_core = BLO
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group

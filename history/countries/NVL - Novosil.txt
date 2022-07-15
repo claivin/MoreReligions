@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+primary_culture = russian
+religion = orthodox
+technology_group = eastern
+capital = 5300 # Moskva
+fixed_capital = 5300

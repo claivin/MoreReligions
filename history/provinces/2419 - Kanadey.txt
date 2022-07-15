@@ -1,8 +1,8 @@
 #REGIONREDHORDE
 #2419 - Kanadey
 
-owner = RDH
-controller = RDH
+owner = MRV
+controller = MRV
 culture = kazani
 religion = vajrayana
 hre = no
@@ -12,7 +12,7 @@ trade_goods = livestock
 base_manpower = 2
 capital = "Kanadey"
 is_city = yes
-add_core = RDH
+add_core = MRV
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

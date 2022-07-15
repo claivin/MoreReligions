@@ -1,10 +1,10 @@
 #REGIONREDHORDE
 #5312 - Boguchar
 
-owner = RDH
-controller = RDH
+owner = CRI
+controller = CRI
 culture = mishary
-religion = vajrayana
+religion = sunni
 hre = no
 base_tax = 1
 base_production = 1
@@ -12,7 +12,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Boguchar"
 is_city = yes
-add_core = RDH
+add_core = CRI
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,8 +1,8 @@
 #REGIONBLUEHORDE
 #286 - Azow
 
-owner = BLH
-controller = BLH
+owner = VEN
+controller = VEN
 culture = crimean
 religion = orthodox
 hre = no
@@ -12,7 +12,7 @@ trade_goods = slaves
 base_manpower = 3
 capital = "Tana"
 is_city = yes
-add_core = BLH
+add_core = VEN
 
 discovered_by = western
 discovered_by = eastern

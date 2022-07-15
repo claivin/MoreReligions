@@ -25,3 +25,45 @@ dependency = {
 	second = MOL
 	start_date = 1444.1.1
 }
+
+dependency = {
+	subject_type = tributary_state
+	first = BLH
+	second = DRK
+	start_date = 1444.1.1
+}
+
+dependency = {
+	subject_type = tributary_state
+	first = BLH
+	second = CHR
+	start_date = 1444.1.1
+}
+
+dependency = {
+	subject_type = tributary_state
+	first = BLH
+	second = KUS
+	start_date = 1444.1.1
+}
+
+dependency = {
+	subject_type = tributary_state
+	first = BLH
+	second = QAS
+	start_date = 1444.1.1
+}
+
+dependency = {
+	subject_type = tributary_state
+	first = BLH
+	second = MOL
+	start_date = 1444.1.1
+}
+
+dependency = {
+	subject_type = tributary_state
+	first = BLH
+	second = SMO
+	start_date = 1444.1.1
+}

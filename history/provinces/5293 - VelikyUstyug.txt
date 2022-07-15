@@ -1,0 +1,18 @@
+#REGIONRUSSIA
+#5293 - VelikyUstyug
+
+owner = PRM
+controller = PRM
+culture = russian 
+religion = orthodox
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fur
+base_manpower = 1
+capital = "Veliky Ustyug"
+is_city = yes
+add_core = PRM
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group

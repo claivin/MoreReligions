@@ -1,0 +1,22 @@
+#REGIONRUSSIA
+#1972 - Udmurtia
+
+owner = UDM
+controller = UDM
+capital = "Elabuga"
+culture = uralic
+religion = mr_samipaganism #Sami Shamanism
+trade_goods = grain
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = UDM
+discovered_by = SIB
+discovered_by = NOG
+discovered_by = GOL
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+discovered_by = ottoman

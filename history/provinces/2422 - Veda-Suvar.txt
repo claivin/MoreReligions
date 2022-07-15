@@ -1,0 +1,19 @@
+#REGIONRUSSIA
+#2422 - Veda-Suvar
+
+owner = MMR
+controller = MMR
+culture = kazani
+religion = sunni
+capital = "Veda-Suvar"
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = MMR
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+discovered_by = ottoman

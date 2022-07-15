@@ -30,7 +30,7 @@ alliance = {
 
 alliance = {
 	first = GOT
-	second = NOV
+	second = PSK
 	trade_league = 1
 	start_date = 1444.1.1
 }

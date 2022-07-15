@@ -1,0 +1,19 @@
+#REGIONRUSSIA
+#4147 - Rostov (includes Uglich)
+
+owner = TVE
+controller = TVE  
+culture = russian
+religion = orthodox
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain  
+base_manpower = 2
+capital = "Rostov"
+is_city = yes
+add_core = TVE
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+discovered_by = KAZ

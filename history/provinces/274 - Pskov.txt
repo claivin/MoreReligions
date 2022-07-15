@@ -1,0 +1,25 @@
+#REGIONRUSSIA
+#274 - Pskov
+
+owner = PSK
+controller = PSK
+culture = novgorodian
+religion = orthodox
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = livestock
+base_manpower = 4
+capital = "Pskov"
+is_city = yes
+fort_15th = yes
+add_core = PSK
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+extra_cost = 8
+center_of_trade = 1

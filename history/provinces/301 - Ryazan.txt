@@ -1,0 +1,21 @@
+#REGIONRUSSIA
+#301 - Ryazan
+
+owner = RYA
+controller = RYA   
+culture = ryazanian
+religion = orthodox
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = wool
+base_manpower = 3
+capital = "Pereyaslavl-Ryazansky"
+is_city = yes
+fort_15th = yes
+add_core = RYA
+discovered_by = eastern
+discovered_by = western
+discovered_by = GOL
+discovered_by = KAZ
+discovered_by = nomad_group

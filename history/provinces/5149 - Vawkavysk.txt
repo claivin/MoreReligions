@@ -3,7 +3,7 @@
 
 owner = POL
 controller = POL
-culture = ruthenian
+culture = byelorussian
 religion = catholic
 hre = yes
 trade_goods = livestock

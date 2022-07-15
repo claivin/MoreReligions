@@ -463,3 +463,30 @@
  ELB_ADJ: "Elban"
  ELB_ADJ2: "Elban"
  
+ DRK: "Drutsk"
+ DRK_ADJ: "Drutski"
+ DRK_ADJ2: "Drutski"
+ 
+ MMR: "Mari"
+ MMR_ADJ: "Mari"
+ MMR_ADJ2: "Mari"
+ 
+ UDM: "Udmurtia"
+ UDM_ADJ: "Udmurtian"
+ UDM_ADJ2: "Udmurtian"
+ 
+ MRV: "Mordvinia"
+ MRV_ADJ: "Mordvinian"
+ MRV_ADJ2: "Mordvinian"
+ 
+ MSK: "Mosalsk"
+ MSK_ADJ: "Mosalsk"
+ MSK_ADJ2: "Mosalsk"
+  
+ MRM: "Murom"
+ MRM_ADJ: "Murom"
+ MRM_ADJ2: "Murom"
+ 
+ KUS: "Kursk"
+ KUS_ADJ: "Kursk"
+ KUS_ADJ2: "Kursk"

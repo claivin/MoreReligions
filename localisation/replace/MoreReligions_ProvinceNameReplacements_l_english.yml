@@ -39,9 +39,43 @@
  VOL_ADJ: "Volyn"
  VOL_ADJ2: "Volyn"
  
+ KAZ: "Volga Tataria"
+ KAZ_ADJ: "Tatar"
+ KAZ_ADJ2: "Tatar"
+ 
+ NVL: "Novosil"
+ NVL_ADJ: "Novosil"
+ NVL_ADJ2: "Novosil"
+ 
+ OKA: "Kozelsk"
+ OKA_ADJ: "Kozelsk"
+ OKA_ADJ2: "Kozelsk"
+ 
+ QAS: "Yelets"
+ QAS_ADJ: "Yelets"
+ QAS_ADJ2: "Yelets"
+ 
+ RSO: "Vladimir"
+ RSO_ADJ: "Vladimir"
+ RSO_ADJ2: "Vladimir"
+ 
+ YAR: "Starodub"
+ YAR_ADJ: "Starodub"
+ YAR_ADJ2: "Starodub"
+ 
+ CRI: "Don"
+ CRI_ADJ: "Don"
+ CRI_ADJ2: "Don"
+ 
+ CRI: "Suzdal"
+ CRI_ADJ: "Suzdal"
+ CRI_ADJ2: "Suzdal"
+ 
  home_counties_area: "South East England"
  
  crimean: "Kipchak"
+ russian: "Tverian"
+ kazani: "Volgar"
  
  PROV240: "Herefordshire"
  PROV_ADJ240: "Herefordians"
