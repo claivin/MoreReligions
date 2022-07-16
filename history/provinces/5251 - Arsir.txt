@@ -1,0 +1,19 @@
+#REGIONNORTHAFRICA
+#5251 - Arsir
+
+owner = SOS
+controller = SOS
+culture = berber
+religion = sunni
+capital = "Arsir"
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = SOS
+# add_core = SOS
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

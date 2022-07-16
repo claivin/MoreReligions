@@ -1,0 +1,21 @@
+#REGIONNORTHAFRICA
+#341 - Tunis
+
+owner = TUN
+controller = TUN 
+culture = tunisian
+religion = catholic
+capital = "Tunis"
+trade_goods = cloth
+hre = no
+base_tax = 6 
+base_production = 6
+base_manpower = 2
+is_city = yes
+add_core = TUN
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 16
+center_of_trade = 2

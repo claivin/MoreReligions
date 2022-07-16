@@ -1,7 +1,7 @@
 #1751 - Ceuta
 
-owner = MOR
-controller = MOR 
+owner = TLC
+controller = TLC 
 culture = moroccan
 religion = sunni
 capital = "Cebta"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 fort_15th = yes
-add_core = MOR
+add_core = TLC
 # add_core = GRA
 discovered_by = western
 discovered_by = muslim

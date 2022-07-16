@@ -1,0 +1,20 @@
+#REGIONNORTHAFRICA
+#5268 - Gabes
+
+owner = TUN
+controller = TUN 
+culture = tunisian
+religion = sunni
+capital = "Gabes"
+trade_goods = grain
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = TUN
+# add_core = TRP
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
