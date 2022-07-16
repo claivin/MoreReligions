@@ -1,7 +1,7 @@
 #596 - Malacca
 
-owner = JOH
-controller = JOH
+owner = PAH
+controller = PAH
 culture = malayan
 religion = sunni
 capital = "Malacca"
@@ -11,7 +11,7 @@ base_tax = 7
 base_production = 7
 base_manpower = 3
 is_city = yes
-add_core = JOH
+add_core = PAH
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

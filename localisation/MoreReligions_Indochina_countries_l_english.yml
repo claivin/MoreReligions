@@ -85,3 +85,27 @@
  PMN_ADJ:0 "Mae Nam"
  BMA:0 "Burma"
  BMA_ADJ:0 "Burmese"
+ 
+ GGG:0 "Gangganegara"
+ GGG_ADJ: "Gangganegaran"
+ GGG_ADJ2: "Gangganegaran"
+ 
+ MLY: "Melayu"
+ MLY_ADJ: "Melayan"
+ MLY_ADJ2: "Melayan"
+ 
+ NIS: "Nias"
+ NIS_ADJ: "Nias"
+ NIS_ADJ2: "Nias"
+ 
+ BDU: "Badau"
+ BDU_ADJ: "Badau"
+ BDU_ADJ2: "Badau"
+ 
+ CHN: "Chermin"
+ CHN_ADJ: "Chermin"
+ CHN_ADJ2: "Chermin"
+ 
+ MTW: "Mentawai"
+ MTW_ADJ: "Mentaway"
+ MTW_ADJ2: "Mentaway"

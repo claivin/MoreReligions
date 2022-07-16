@@ -144,6 +144,13 @@ ANK = "countries/Angkor.txt"
 
 #Maritime SEA
 
+BDU = "countries/Badau.txt"
+GGG = "countries/Gangganegara.txt"
+CHN = "countries/Chermin.txt"
+NIS = "countries/Nias.txt"
+MTW = "countries/Mentawai.txt"
+MLY = "countries/Melayu.txt"
+
 #Burma
 BMA = "countries/Burma.txt"
 

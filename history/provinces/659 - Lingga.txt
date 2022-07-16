@@ -1,17 +1,17 @@
-#2682 - Pariaman
+#659 - Lingga
 
-owner = PGR
-controller = PGR
+owner = MLY
+controller = MLY
 culture = sumatran
-religion = hinduism
-capital = "Pariaman"
-trade_goods = grain
+religion = sunni
+capital = "Lingga"
+trade_goods = fish
 hre = no
-base_tax = 2 
-base_production = 2
-base_manpower = 2
+base_tax = 1 
+base_production = 1
+base_manpower = 1
 is_city = yes
-add_core = PGR
+add_core = MLY
 
 
 
@@ -22,4 +22,5 @@ discovered_by = ottoman
 
 1405.1.1 = { discovered_by = MNG }
 1509.1.1 = { discovered_by = POR }
+1521.1.1 = { discovered_by = SPA }
 

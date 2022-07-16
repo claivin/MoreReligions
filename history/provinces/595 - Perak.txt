@@ -1,7 +1,7 @@
 #595 - Perak
 
-owner = PRK
-controller = PRK
+owner = GGG
+controller = GGG
 culture = malayan
 religion = sunni
 capital = "Perak"
@@ -11,6 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
+add_core = GGG
 add_core = PRK
 
 
