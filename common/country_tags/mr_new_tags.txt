@@ -170,6 +170,15 @@ BRL = "countries/BetaIsrael.txt"
 #Japan
 NTT = "countries/Nitta.txt"
 
+#East Siberia
+KYK = "countries/Koryak.txt"
+KEK = "countries/Kerek.txt"
+KLY = "countries/Kolyma.txt"
+KKK = "countries/Kamchatka.txt"
+LMU = "countries/Lamutia.txt"
+YTK = "countries/Sakha.txt"
+
+
 #West Africa
 TKR = "countries/Tekrur.txt"
 OAG = "countries/Ouagadougou.txt"

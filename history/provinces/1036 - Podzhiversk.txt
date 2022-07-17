@@ -1,0 +1,28 @@
+#REGIONEASTSIBERIA
+
+#1036 - Podzhiversk
+
+owner = KLY
+controller = KLY
+add_core = KLY
+culture = yukagyr
+religion = tengri_pagan_reformed
+capital = "Srednekolymsk"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+
+
+discovered_by = HOD
+discovered_by = CHU
+discovered_by = CHV
+discovered_by = KMC
+discovered_by = LMU
+discovered_by = KEK
+discovered_by = KYK
+discovered_by = KLY
+
