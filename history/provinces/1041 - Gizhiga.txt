@@ -1,18 +1,20 @@
-#REGIONEASTSIBERIA
+#1041 - Gizhiga
 
-#2439 - Zasjiversk
-
-culture = yukagyr
+owner = CHV
+controller = CHV
+add_core = CHV
+culture = kamchatkan
 religion = mr_ravenpaganism
-capital = "Zasjiversk"
-trade_goods = unknown
+capital = "Gizhiga"
+trade_goods = fur
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-native_size = 1
+native_size = 5
 native_ferocity = 1
 native_hostileness = 3
+is_city = yes
 
 
 
@@ -24,3 +26,4 @@ discovered_by = LMU
 discovered_by = KEK
 discovered_by = KYK
 discovered_by = KLY
+

@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = siberian_tribe
 government_rank = 1
 primary_culture = yukagyr
-religion = tengri_pagan_reformed
+religion = mr_ravenpaganism
 technology_group = chinese
 capital = 1036
 

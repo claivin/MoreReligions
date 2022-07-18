@@ -7,7 +7,7 @@ latent_trade_goods = {
 }
 
 culture = yukagyr
-religion = tengri_pagan_reformed
+religion = mr_ravenpaganism
 capital = "Verkhoyansk"
 trade_goods = unknown
 hre = no

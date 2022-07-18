@@ -3,7 +3,7 @@
 #1040 - Suntar Khayat
 
 culture = yukagyr
-religion = tengri_pagan_reformed
+religion = mr_ravenpaganism
 capital = "Suntar Khayata"
 trade_goods = unknown
 hre = no

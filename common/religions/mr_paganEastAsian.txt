@@ -1,0 +1,27 @@
+
+east_asian_pagan_group = {
+
+	flags_with_emblem_percentage = 10
+	flag_emblem_index_range = { 83 96 }
+
+	mr_ravenpaganism = {
+		color = { 191 223 224 }
+		icon = 11
+		country = {
+			global_tax_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+		}
+		province = {
+			local_unrest = -1
+		}
+		
+		can_have_secondary_religion = yes
+		heretic = {  }
+	}
+		
+	
+	crusade_name = CRUSADE
+	harmonized_modifier = harmonized_pagan
+}
