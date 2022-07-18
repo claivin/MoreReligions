@@ -1,0 +1,24 @@
+#1016 - Ha Tinh
+
+owner = ANN
+controller = ANN
+culture = vietnamese
+religion = mahayana
+capital = "Ha Tinh"
+trade_goods = fish
+hre = no
+base_tax = 5
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = DAI
+add_core = ANN
+
+
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+

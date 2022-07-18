@@ -1,0 +1,20 @@
+#REGIONEASTSIBERIA
+
+#1045 - Yakutsk
+
+owner = YTK
+controller = YTK
+add_core = YTK
+culture = yakut
+religion = tengri_pagan_reformed
+capital = "Yakutsk"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = YTK
+
+

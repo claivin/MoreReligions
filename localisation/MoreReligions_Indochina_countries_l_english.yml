@@ -90,6 +90,14 @@
  GGG_ADJ: "Gangganegaran"
  GGG_ADJ2: "Gangganegaran"
  
+ KDI: "Kediri"
+ KDI_ADJ: "Kediran"
+ KDI_ADJ2: "Kidiran"
+ 
+ TGJ: "Tanjungpura"
+ TGJ_ADJ: "Tanjungpuran"
+ TGJ_ADJ2: "Tanjungpuran"
+ 
  MLY: "Melayu"
  MLY_ADJ: "Melayan"
  MLY_ADJ2: "Melayan"
@@ -109,3 +117,32 @@
  MTW: "Mentawai"
  MTW_ADJ: "Mentaway"
  MTW_ADJ2: "Mentaway"
+ 
+ SOP: "Soppeng"
+ SOP_ADJ: "Soppengan"
+ SOP_ADJ2: "Soppengan"
+ 
+ MMJ: "Mamuju"
+ MMJ_ADJ: "Mamujan"
+ MMJ_ADJ2: "Mamujan"
+ 
+ SIG: "Sigi"
+ SIG_ADJ: "Sigi"
+ SIG_ADJ2: "Sigi"
+ 
+ GOR: "Gorontalo"
+ GOR_ADJ: "Gorontalan"
+ GOR_ADJ2: "Gorontalan"
+ 
+ MND: "Manado"
+ MND_ADJ: "Manado"
+ MND_ADJ2: "Manado"
+ 
+ KNW: "Konawe"
+ KNW_ADJ: "Konawe"
+ KNW_ADJ2: "Konawe"
+ 
+ BGI: "Benggai"
+ BGI_ADJ: "Benggai"
+ BGI_ADJ2: "Benggai" 
+ 

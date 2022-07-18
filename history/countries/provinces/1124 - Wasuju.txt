@@ -1,0 +1,19 @@
+#1124 - Wasuju
+
+owner = MAL
+controller = MAL
+culture = mali
+is_city = yes
+base_manpower = 8
+religion = sunni #Representing the Malian Aristocracy, rural population likely still adhering to traditional beliefs.
+capital = "Niani"
+trade_goods = grain
+hre = no
+base_tax = 4 
+base_production = 4
+add_core = MAL
+discovered_by = sub_saharan
+extra_cost = 8
+center_of_trade = 1
+
+

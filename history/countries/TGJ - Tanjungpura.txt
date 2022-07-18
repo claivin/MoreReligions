@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = bornean
+religion = hinduism
+technology_group = chinese
+capital = 4802	# Banjar
+religious_school = shafii_school
+

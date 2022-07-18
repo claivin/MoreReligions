@@ -1,0 +1,29 @@
+#REGIONEASTSIBERIA
+
+#1043 - Okhotsk
+
+owner = LMU
+controller = LMU
+add_core = LMU
+culture = yakut
+religion = tengri_pagan_reformed
+capital = "Okhotsk"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes 
+
+
+
+discovered_by = HOD
+discovered_by = CHU
+discovered_by = CHV
+discovered_by = KMC
+discovered_by = LMU
+discovered_by = KEK
+discovered_by = KYK
+discovered_by = KLY
+discovered_by = YTK
+

@@ -139,7 +139,6 @@ LPB = "countries/Lopburi.txt"
 MGT = "countries/MuangThai.txt"
 SYM = "countries/Syyam.txt"
 PMN = "countries/MaeNam.txt"
-
 ANK = "countries/Angkor.txt"
 
 #Maritime SEA
@@ -150,6 +149,16 @@ CHN = "countries/Chermin.txt"
 NIS = "countries/Nias.txt"
 MTW = "countries/Mentawai.txt"
 MLY = "countries/Melayu.txt"
+
+KDI = "countries/Kediri.txt"
+TGJ = "countries/Tanjungpura.txt"
+SOP = "countries/Soppeng.txt"
+MMJ = "countries/Mamuju.txt"
+SIG = "countries/Sigi.txt"
+GOR = "countries/Gorontalo.txt"
+MND = "countries/Manado.txt"
+KNW = "countries/Konawe.txt"
+BGI = "countries/Benggai.txt"
 
 #Burma
 BMA = "countries/Burma.txt"

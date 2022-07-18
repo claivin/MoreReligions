@@ -1,8 +1,8 @@
 #2691 - Kediri
 
-owner = BLM
-controller = BLM
-add_core = BLM
+owner = KDI
+controller = KDI
+add_core = KDI
 culture = javanese
 religion = hinduism
 capital = "Kediri"
