@@ -1,0 +1,53 @@
+country_decisions = {
+	ayneha_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_SON }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			was_never_end_game_tag_trigger = yes
+			primary_culture = songhai
+			NOT = { exists = SON }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1133
+				province_id = 2269
+				province_id = 2262
+			}
+			culture = songhai
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_nomad = no
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					culture = songhai
+				}
+				value = 11
+			}
+			owns_core_province = 1133
+			owns_core_province = 2269
+			owns_core_province = 2262
+		}
+		effect = {
+			change_tag = SON
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_SON
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

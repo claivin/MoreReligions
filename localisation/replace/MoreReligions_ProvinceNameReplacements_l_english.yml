@@ -89,6 +89,10 @@
  BNJ_ADJ: "Negara Dipan"
  BNJ_ADJ2: "Negara Dipan"
  
+ SON: "Ayneha"
+ SON_ADJ: "Ayneha"
+ SON_ADJ2: "Ayneha"
+ 
  home_counties_area: "South East England"
  
  crimean: "Kipchak"
@@ -244,3 +248,5 @@
  
  PROV373: "Mide"
  PROV_ADJ373: "Mide"
+ 
+ 
