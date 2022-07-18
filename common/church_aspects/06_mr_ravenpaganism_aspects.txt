@@ -1,0 +1,61 @@
+walrus_aspect = {
+	cost = 100
+	modifier = {
+		ship_durability = 0.1
+	}
+}
+
+wolf_aspect = {
+	cost = 100
+	modifier = {
+		land_morale = 0.10
+		infantry_power = 0.05
+	}
+}
+
+fox_aspect = {
+	cost = 100
+	modifier = {
+		spy_offence = 0.2
+		may_infiltrate_administration = yes
+	}
+}
+
+bear_aspect = {
+	cost = 100
+	modifier = {
+	  manpower_recovery_speed = 0.10
+	  global_regiment_cost = -0.10
+	}
+}
+
+wolverine_aspect = {
+	cost = 100
+	modifier = {
+	  shock_damage_received = -0.075
+	}
+}
+
+mouse_aspect = {
+	cost = 100
+	modifier = {
+	  land_attrition = -0.10
+	  movement_speed = 0.05
+	}
+}
+
+owl_aspect = {
+	cost = 100
+	modifier = {
+		idea_cost = -0.075
+	}
+}
+
+reindeer_aspect = {
+	cost = 100
+	modifier = {
+	  global_trade_goods_size_modifier = 0.05
+      monthly_gold_inflation_modifier = -0.30  
+	}
+}
+

@@ -8,7 +8,8 @@ east_asian_pagan_group = {
 		color = { 191 223 224 }
 		icon = 11
 		country = {
-			global_tax_modifier = 0.1
+			improve_relation_modifier = 0.1
+			cav_to_inf_ratio = 0.25
 		}
 		country_as_secondary = {
 			global_tax_modifier = 0.1
@@ -17,7 +18,18 @@ east_asian_pagan_group = {
 			local_unrest = -1
 		}
 		
-		can_have_secondary_religion = yes
+		uses_church_power = yes
+		  aspects = {
+			wolf_aspect
+			fox_aspect
+			wolverine_aspect
+			reindeer_aspect
+			walrus_aspect
+			bear_aspect
+			owl_aspect
+			mouse_aspect
+		}
+		aspects_name = RAVEN_ASPECTS
 		heretic = {  }
 	}
 		
