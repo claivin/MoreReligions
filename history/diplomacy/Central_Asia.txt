@@ -1,0 +1,6 @@
+vassal = {
+	first = BLK
+	second = TRS
+	start_date = 1434.1.1
+	end_date = 1454.1.1
+}

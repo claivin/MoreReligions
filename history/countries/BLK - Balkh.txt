@@ -1,0 +1,27 @@
+#######################################
+# `Balkh
+#######################################
+technology_group = muslim
+primary_culture = afghani
+religion = sunni
+government = monarchy
+add_government_reform = iqta
+capital = 450 # Balkh
+religious_school = hanafi_school
+
+1430.5.13 = {
+	monarch = {
+		name = "Rashid al-Din"
+		dynasty = "Qara'unas"
+		birth_date = 1422.1.1
+		claim = 50
+		adm = 1
+		dip = 1
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = embezzler_personality
+	add_ruler_personality = drunkard_personality
+
+	add_piety = -0.5
+}
