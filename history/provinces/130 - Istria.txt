@@ -1,0 +1,28 @@
+#130 - Istria
+
+owner = MRN
+controller = MRN
+culture = dalmatian
+religion = catholic
+capital = "Pula"
+trade_goods = salt #Accounted for 1/4 of the total Salt imports of Venice
+#trade_goods = naval_supplies #Major Shipbuilding Centre
+hre = no
+base_tax = 2 
+base_production = 3
+base_manpower = 3
+is_city = yes
+hre = yes
+add_core = MRN
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+add_core = DAL

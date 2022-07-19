@@ -68,6 +68,9 @@ EHV = "countries/Eindhoven.txt"
 BGG = "countries/Brugges.txt"
 BSS = "countries/Brussels.txt"
 
+#Germany
+MRN = "countries/Merania.txt"
+
 #Britain
 YRK = "countries/York.txt"
 OXF = "countries/Oxford.txt"

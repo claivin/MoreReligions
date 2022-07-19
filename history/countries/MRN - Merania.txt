@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = catholic
+primary_culture = franconian
+capital = 130	# Istria
+add_accepted_culture = dalmatian
