@@ -1,0 +1,53 @@
+country_decisions = {
+	tuareg_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_TRG }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			was_never_end_game_tag_trigger = yes
+			primary_culture = tuareg
+			NOT = { exists = TRG }
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2271
+				province_id = 5342
+				province_id = 2274
+				province_id = 1132
+			}
+			culture = tuareg
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				is_core = ROOT
+				OR = {
+					culture = tuareg
+				}
+				value = 11
+			}
+			owns_core_province = 2271
+			owns_core_province = 5342
+			owns_core_province = 1132
+		}
+		effect = {
+			change_tag = TRG
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_TRG
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

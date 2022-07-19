@@ -1796,7 +1796,7 @@ te_waipounamu_area = { #3
 ########################################
 
 western_sahara_area = { #5 -Tuat full +Taghaza
-    1128 1129 1130 2271 5224
+    1128 1129 1130 2271 5224 5344
 }
 
 #rename area to western saharan coast
@@ -1965,8 +1965,12 @@ algerian_desert_area = { #NEW AREA +Bechar, El Golea, Tamentit, In Salah, illizi
 }
 
 central_sahara_area = { #NEW AREA +takkeda, tassili najjer, tamanrasset, abalessa full
-	2474 5230 5231 5232 5233
+	5230 5231 5339 5233 5340 
 }
+
+ajjer_area = {
+	2474 5341 5343 5342 5232 
+}	
 
 western_desert_area = { #NEW AREA +tazirbu, jalu, matan as-sarra, waw an namu, kufra full
 	5235 5236 5237 5238 5239

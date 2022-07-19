@@ -1,0 +1,13 @@
+government = tribal
+add_government_reform = tribal_despotism
+primary_culture = tuareg
+religion = sunni
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 5230 # Agades
+religious_school = maliki_school
+
+
+

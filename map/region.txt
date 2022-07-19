@@ -503,6 +503,7 @@ sahara_region = {
 		western_desert_area
 		ennedi_plateau_area
 		cap_verde_area
+		ajjer_area
 	}
 }
 

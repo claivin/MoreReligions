@@ -221,6 +221,16 @@ RNO = "countries/Rano.txt"
 GBI = "countries/Gobir.txt"
 ZHI = "countries/Zahiri.txt"
 
+
+#Sahara
+AGH = "countries/Adagh.txt"
+ABL = "countries/Abalessa.txt"
+AJJ = "countries/Ajjer.txt"
+TED = "countries/Takedda.txt"
+GHT = "countries/Ghat.txt"
+TRG = "countries/Tuareg.txt"
+
+
 #Greece
 THR = "countries/Thracia.txt"
 ART = "countries/Arta.txt"

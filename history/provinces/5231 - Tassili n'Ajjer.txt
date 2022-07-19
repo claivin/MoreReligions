@@ -1,0 +1,18 @@
+# - Adrar
+
+culture = tuareg
+religion = sunni
+capital = "Ajjer"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
+discovered_by = sub_saharan
+owner = AJJ
+controller = AJJ
+add_core = AJJ
+
