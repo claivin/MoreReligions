@@ -1,0 +1,23 @@
+kerei_missions_first = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SHY
+	}
+	kei_end_war_nogay = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = {}
+		trigger = {
+		position = 1
+		    war_score_against = {
+	          who = NOG
+	          value = 75}
+		    controls = 465
+		}
+		effect = {
+		inherit = NOG
+		}
+	}
+}

@@ -12,6 +12,15 @@ capital = 1075	# Chimgi-Tura
 		adm = 4
 		dip = 4
 		mil = 6
+		leader = {
+			name = "Taibugha"
+			type = general
+			fire = 2
+			shock = 5
+			manuever = 5
+			siege = 0
+			personality = goal_oriented_personality
+		}
 	}
 }
 
