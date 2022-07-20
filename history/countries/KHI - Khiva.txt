@@ -1,13 +1,21 @@
-government = monarchy
-add_government_reform = iqta
-technology_group = muslim
+government = tribal
+add_government_reform = steppe_horde
+technology_group = nomad_group
 religion = sunni
 primary_culture = turkmeni
-historical_rival = SHY
-historical_rival = BUK
-capital = 1973	# Urgench
-fixed_capital = 1973 # Cannot move capital away from this province & no power cost to move to it
+capital = 2350	# Konjikala
 religious_school = hanafi_school
+
+1410.1.1 = {
+	monarch = {
+		name = "Avaz I"
+		dynasty ="Sufi"
+		dip = 4
+		adm = 3
+		mil = 4
+	}
+	add_piety = 0.25
+}
 
 # Khiva (Khwarizm)
 1511.1.1 = {
