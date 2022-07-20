@@ -275,3 +275,9 @@ CRM = "countries/Crema.txt"
 CMN = "countries/Cremona.txt"
 MSS = "countries/Massa.txt"
 ELB = "countries/Elba.txt"
+
+#Middle East
+SRI = "countries/Sari.txt"
+MSL = "countries/Mosul.txt"
+TRB = "countries/TurAdbin.txt"
+HRT = "countries/Herat.txt"

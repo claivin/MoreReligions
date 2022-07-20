@@ -5,7 +5,7 @@ add_accepted_culture = kurdish
 add_accepted_culture = armenian
 religion = sunni
 technology_group = muslim
-capital = 418
+capital = 2305
 religious_school = hanafi_school
 
 1396.1.1 = {

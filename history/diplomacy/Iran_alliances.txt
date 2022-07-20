@@ -1,0 +1,80 @@
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = BAL
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = SRI
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = TAB
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = TRB
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = AKK
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = QAR
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = SRV
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = ILK
+	second = SIS
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+vassal = {
+	first = ILK
+	second = IRQ
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+vassal = {
+	first = ILK
+	second = HRT
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+vassal = {
+	first = ILK
+	second = GEO
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = MSL
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}

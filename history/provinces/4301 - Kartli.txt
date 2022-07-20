@@ -1,0 +1,21 @@
+#4301 - Kartli
+
+owner = GEO
+controller = GEO
+culture = georgian
+religion = orthodox
+capital = "Gori"
+trade_goods = silk
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 2
+is_city = yes
+add_core = GEO
+fort_15th = yes #Gori
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+discovered_by = nomad_group
+

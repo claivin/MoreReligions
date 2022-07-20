@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = mazandarani
+religion = shiite
+technology_group = muslim
+capital = 4341 # Mazandaran
+religious_school = jafari_school
+
