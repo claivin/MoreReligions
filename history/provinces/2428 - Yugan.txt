@@ -1,0 +1,17 @@
+#2428 - Yugan
+
+owner = SIB
+controller = SIB
+add_core = SIB
+culture = ostyaki
+religion = tengri_pagan_reformed
+capital = "Yugan"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+
+

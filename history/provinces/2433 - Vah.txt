@@ -1,0 +1,16 @@
+#2433 - Kemerovo
+
+owner = SIB
+controller = SIB
+add_core = SIB
+culture = ostyaki
+religion = tengri_pagan_reformed
+capital = "Vah"
+trade_goods = fur
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+is_city = yes
+
+
