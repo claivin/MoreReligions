@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = kochi
+religion = hinduism
+technology_group = indian
+capital = 4488	
+add_accepted_culture = bengali
+
+
+

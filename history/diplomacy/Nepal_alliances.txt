@@ -1,0 +1,30 @@
+vassal = {
+	first = NPL
+	second = PRN
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = NPL
+	second = TRT
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = NPL
+	second = CAA
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = NPL
+	second = DNG
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+vassal = {
+	first = NPL
+	second = JML
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}

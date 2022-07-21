@@ -1,0 +1,18 @@
+#4440 - Narayanpur
+
+owner = ASS
+controller = ASS
+culture = assamese
+religion = hinduism
+capital = "Narayanpur"
+trade_goods = tea
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+is_city = yes
+add_core = ASS
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = chinese
+

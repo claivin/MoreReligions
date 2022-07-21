@@ -1,18 +1,17 @@
-#4486 - Purnia
+#4491 - Dang
 
-owner = PRN
-controller = PRN
-culture = kochi
+owner = DNG
+controller = DNG
+culture = nepali
 religion = hinduism
-capital = "Purnia"
-trade_goods = silk
+capital = "Dang"
+trade_goods = wool
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 2 
+base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = BNG
-add_core = PRN
+add_core = DNG
 discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim 

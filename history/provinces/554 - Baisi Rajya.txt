@@ -1,18 +1,17 @@
-#4486 - Purnia
+#554 - Baisi Rajya
 
-owner = PRN
-controller = PRN
-culture = kochi
+owner = JML
+controller = JML
+culture = nepali
 religion = hinduism
-capital = "Purnia"
-trade_goods = silk
+capital = "Jumbla"
+trade_goods = wool
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 2 
+base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = BNG
-add_core = PRN
+add_core = JML
 discovered_by = indian
 discovered_by = nomad_group
 discovered_by = muslim 
