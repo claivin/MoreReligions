@@ -1,0 +1,196 @@
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = LCK
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = BCH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = CDI
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = CTT
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = MLW
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = EWH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = THA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = RHM
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = PYG
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = JSL
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = IDR
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = MEW
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = JAN
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = MAW
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = BGL
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = DLH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = JNP
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = GWA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = NGA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = HAD
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = MER
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = SBH
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = DHU
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = CMP
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = KLP
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = GDW
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = BND
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+dependency = {
+	subject_type = "samanta_vassal"
+	first = KNJ
+	second = PAN
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}

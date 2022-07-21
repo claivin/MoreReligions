@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = rajput_kingdom
+add_government_reform = samanta_vassal_reform
 government_rank = 1
 primary_culture = vindhyan
 religion = hinduism

@@ -1,0 +1,72 @@
+samanta_vassal = {
+	copy_from = vassal
+	count = vassal
+	
+	# Properties:
+	has_power_projection = yes
+	takes_diplo_slot = no
+	gives_daimyo_bonuses = yes
+	gets_help_with_rebels = no
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	can_use_claims = no
+	forms_trade_companies = no
+	can_concentrate_development = yes
+
+	trust_on_start = 0
+	
+	base_liberty_desire = 10.0
+	military_focus = 1.2
+
+	relative_power_class = 1
+	should_quit_wars_on_activation = yes
+
+	can_fight = {
+		same_overlord = samanta_vassal
+	}
+	can_rival = {
+		same_overlord = samanta_vassal
+	}
+	can_ally = {
+		same_overlord = samanta_vassal
+	}
+	can_marry = {
+		same_overlord = samanta_vassal
+	}
+	
+	# Subject Interactions
+	#(disable)
+	scutage = no
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = no
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	#(enable)
+	force_seppuku = yes
+	contribute_to_capital = yes
+	force_isolation = yes
+	return_land = yes
+	conscript_general = yes
+	#(special)
+	sword_hunt = yes
+	sankin_kotai = yes
+	expel_ronin = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear 
+	modifier_subject = clear 
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	
+	
+	modifier_overlord = {
+		modifier = overlord_sword_hunt
+		trigger = {
+			has_country_modifier = subject_sword_hunt
+		}
+	}
+}

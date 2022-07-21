@@ -68,6 +68,7 @@ shan_vassal = {
 		modifier = subject_nation
 	}
 	modifier_overlord = {
-		modifier = shan_subject
+		overlord_opinion_modifier = is_vassal
+		subject_opinion_modifier = is_vassal
 	}
 }

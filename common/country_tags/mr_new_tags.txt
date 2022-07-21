@@ -93,6 +93,7 @@ BJZ = "countries/Badajoz.txt"
 ADR = "countries/Andorra.txt"
 CMS = "countries/CoutoMisto.txt"
 
+
 #Eastern Europe
 BLH = "countries/BlueHorde.txt"
 RDH = "countries/RedHorde.txt"
@@ -281,3 +282,16 @@ SRI = "countries/Sari.txt"
 MSL = "countries/Mosul.txt"
 TRB = "countries/TurAdbin.txt"
 HRT = "countries/Herat.txt"
+
+#India
+KNJ = "countries/Kannauj.txt"
+SBH = "countries/Sambhal.txt"
+LCK = "countries/Lucknow.txt"
+BCH = "countries/Bahreich.txt"
+CDI = "countries/Chanderi.txt"
+CTT = "countries/Chittor.txt"
+THA = "countries/Mathura.txt"
+PYG = "countries/Prayagraj.txt"
+EWH = "countries/Etawah.txt"
+RHM = "countries/Ranthambore.txt"
+DVI = "countries/Devagiri.txt"

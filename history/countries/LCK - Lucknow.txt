@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = samanta_vassal_reform
+technology_group = indian
+religion = hinduism
+primary_culture = avadhi
+capital = 523	# Lucknow
+religious_school = jafari_school
+
+

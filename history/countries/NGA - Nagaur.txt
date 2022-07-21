@@ -1,7 +1,7 @@
 government = monarchy
-add_government_reform = indian_sultanate_reform
+add_government_reform = samanta_vassal_reform
 primary_culture = rajput
-religion = sunni
+religion = hinduism
 technology_group = indian
 capital = 2066	# Nagaur
 fixed_capital = 2066 # Cannot move capital away from this province & no power cost to move to it

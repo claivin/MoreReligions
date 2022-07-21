@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = rajput_kingdom
+add_government_reform = samanta_vassal_reform
 government_rank = 1
 primary_culture = rajput
-religion = sunni
+religion = hinduism
 technology_group = indian
 capital = 520	# Mewat
 fixed_capital = 520 # Cannot move capital away from this province & no power cost to move to it

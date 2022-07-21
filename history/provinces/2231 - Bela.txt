@@ -1,7 +1,7 @@
 #2063 - Bela
 
-owner = BAL
-controller = BAL
+owner = SND
+controller = SND
 culture = baluchi
 religion = sunni
 capital = "Bela"
@@ -12,7 +12,7 @@ base_production = 2
 base_manpower = 1
 is_city = yes
 add_local_autonomy = 25
-add_core = BAL
+add_core = SND
 discovered_by = KAS
 discovered_by = east_african
 discovered_by = indian

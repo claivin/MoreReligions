@@ -44,6 +44,8 @@ monarchy = {
 				pagan_reform_b
 				shan_kingdom_reform
 				halych_government
+				samanta_vassal_reform
+				maharajadhiraja_reform
 			}
 		}
 		hereditary_vs_nobility = {

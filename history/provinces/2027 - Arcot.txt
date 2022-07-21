@@ -1,0 +1,23 @@
+#2027 - Arcot
+
+owner = MYS
+controller = MYS
+culture = tamil
+religion = hinduism
+capital = "Arcot"
+trade_goods = iron
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = KRK
+add_core = MYS
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim 
+discovered_by = ottoman
+discovered_by = nomad_group
+add_brahmins_or_church_effect = yes
+add_local_autonomy = 25
+

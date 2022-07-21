@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = maharajadhiraja_reform
+technology_group = indian
+religion = hinduism
+primary_culture = rajput
+add_accepted_culture = avadhi
+capital = 2055
+religious_school = jafari_school
+
+

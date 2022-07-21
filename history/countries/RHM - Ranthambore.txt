@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = samanta_vassal_reform
+government_rank = 1
+primary_culture = rajput
+religion = hinduism
+technology_group = indian
+capital = 4465 # Jaipur
+
+

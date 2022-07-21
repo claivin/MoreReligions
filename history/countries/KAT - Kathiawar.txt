@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = samanta_vassal_reform
 government_rank = 1
 technology_group = indian
 religion = hinduism
