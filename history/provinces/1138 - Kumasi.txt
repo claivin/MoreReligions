@@ -14,10 +14,11 @@ native_hostileness = 9
 add_core = BON
 owner = BON
 controller = BON
+discovered_by = kru
+discovered_by = mandinka
+discovered_by = aka
+discovered_by = TEE
 
 
-
-
-discovered_by = sub_saharan
 
 

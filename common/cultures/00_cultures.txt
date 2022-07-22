@@ -8018,6 +8018,22 @@ mande = {
 			Refilwe Sethunya Tumelo
 		}
 	}
+	mandinka = {
+		primary = LMA
+		dynasty_names = {
+			Ghana Diarisso Kante
+		}
+		male_names = {
+			"Barama N'Golo" "Danfasri" "Suma" "Denkoro" "Bakari" "Ton Mansa Demele" "Kera Djugu" "Monson" "Tonkomo" 
+			"Fa Sine" "Da Kaha" "Tyefolo" "Nga Ngolo" "Sunsa" "Massa" "Sekolo" "Forokolo" "Seba Mana" "Deni ba Bo" 
+			"Sira Bo" "Dessekoro" "Saraba" "Nntinkoro" "Nanka" "Daoula" "Yadega" "Yolomfaogoma" "Kourita" "Geba" 
+			"Wobgho" "Saaga" "Kaongo" "Dulugu" "Sawadogo" "Karfo" "Baongo" "Tontuoriba"
+		}
+		female_names = {
+			"Tabara" "Gaisiri" "Bello" "Diallo" "Nyako" Endana Gethera Hinya Ikeno Inira Inithia Itanya Jamba Kakena 
+			Kenja Kenithia Kenura Kiama Kiania Kianira Kiira Kirima Muney Muraty Oyana Therania Tia
+		}
+	}
 	dyola = {
 		primary = KNG
 		dynasty_names = {
@@ -8322,6 +8338,28 @@ west_african = {
 		primary = ASH
 		dynasty_names = {
 			Denkyirahene "Oyoko Abohyen" Kotokuhene Bonohene
+			Addy Afrifa Sadami Sabah Sribor Moyoyo
+		}
+		male_names = {
+			"Beriguwiemda" "Zolgo" "Zongman" "Nengmitoni" "Dimani" "Yanza" "Dariziogo" "Luro" "Tutugri" "Zagale" 
+			"Zokuli" "Gungoble" "Boadu Akofu Berempon" "Boa Amponsem" "Ntim Gyakari" "Ose Tutu" "Opoku Fofie" 
+			"Opoku Ware" "Kusi Obodum" "Osei Bonsu" "Osei Kojo" "Osei Kwame" "Osei Fofie" "Osei Yaw" "Kwaku Dua" 
+			"Salifu Saatankugri" "Mahama Kuluguba" "Nyagse" "Zulande" "Zangina" "Andan Sigili" "Jimli" "Zibirim" 
+			"Gariba" "Yakuba" "Ayekeraa" "Kokobo" "Ahaha" "Warembe Ampen" "Agyinamoa" "Twum" "Kobla Amana" "Akenten" 
+			"Obiri Yeboa" "Opoku" "Antwi"
+		}
+		female_names = {
+			Adaeze Adanna Adannaya Akachi Akuchi Amaka Schiamaka Amara Amarachi Añuli Chi Chiamaka Chibueze Chibuike 
+			Chibuzo Chichi Chidi Chidiebere Chidiebube Chidiegwu Chidimma Chijindum Chika Chike Chikelu Chikere 
+			Chinasa Chinedu Chinonso Chinwe Chinweike Chinwendu Chinweuba Chinyelu Chinyere Chioma Chizoba Ebele Ekene 
+			Ekenedilichukwu Fumnanya Funanya Ndidi Ngozi Nkechi Nkechinyere Nkemdilim Nkiru Nkiruka Nneka Nnenna 
+			Nnenne Nwanneka Ogechi Ogechukwukama Oluchi Onyeka Onyekachi Onyekachukwu Udo Uzoma
+		}
+	}
+	kru = {
+		primary = KRU
+		dynasty_names = {
+			"Bete" "Basa" "Jabo" "Grebo"
 			Addy Afrifa Sadami Sabah Sribor Moyoyo
 		}
 		male_names = {

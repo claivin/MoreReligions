@@ -14,4 +14,7 @@ owner = DEN
 controller = DEN
 add_core = DEN
 
-
+discovered_by = kru
+discovered_by = mandinka
+discovered_by = aka
+discovered_by = TEE

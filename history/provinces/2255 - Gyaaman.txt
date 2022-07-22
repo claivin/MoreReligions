@@ -9,10 +9,17 @@ religion = shamanism #Fetishism
 capital = "Amanvi"
 trade_goods = coffee #Kola nuts
 hre = no
+discovered_by = kru
+discovered_by = mandinka
+discovered_by = aka
+discovered_by = TEE
 base_tax = 2 
 base_production = 2
 base_manpower = 1
-
+discovered_by = kru
+discovered_by = mandinka
+discovered_by = aka
+discovered_by = TEE
 
 
 discovered_by = sub_saharan

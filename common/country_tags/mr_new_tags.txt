@@ -228,6 +228,9 @@ BIR = "countries/Biram.txt"
 RNO = "countries/Rano.txt"
 GBI = "countries/Gobir.txt"
 ZHI = "countries/Zahiri.txt"
+KWA = "countries/Kuwaa.txt"
+AKA = "countries/Akan.txt"
+MDK = "countries/Mandinka.txt"
 
 
 #Sahara

@@ -1,6 +1,6 @@
 #1118 - Sierra Leone
 
-culture = dyola
+culture = soninke
 religion = shamanism #Fetishism
 capital = "Sherbro"
 trade_goods = unknown
@@ -11,7 +11,10 @@ base_manpower = 1
 native_size = 70
 native_ferocity = 4
 native_hostileness = 9 
-
+discovered_by = kru
+discovered_by = mandinka
+discovered_by = aka
+discovered_by = TEE
 owner = TEE
 controller = TEE
 add_core = TEE
