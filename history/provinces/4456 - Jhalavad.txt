@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = saurashtri
-religion = hinduism
+religion = svetembara
 capital = "Halwad"
 trade_goods = cotton
 hre = no

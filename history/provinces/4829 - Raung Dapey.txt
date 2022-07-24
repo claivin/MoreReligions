@@ -1,7 +1,7 @@
 owner = ANK
 controller = ANK
 culture = khmer
-religion = hinduism
+religion = shaivism
 capital = "Raung Dapey"
 trade_goods = rice
 hre = no

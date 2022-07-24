@@ -3,7 +3,7 @@
 owner = PRN
 controller = PRN
 culture = kochi
-religion = hinduism
+religion = mahayana
 capital = "Purnia"
 trade_goods = silk
 hre = no

@@ -3,7 +3,7 @@
 owner = KLP
 controller = KLP
 culture = vindhyan
-religion = hinduism
+religion = shaktism
 capital = "Jhansi"
 trade_goods = iron
 hre = no

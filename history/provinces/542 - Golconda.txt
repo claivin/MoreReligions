@@ -3,7 +3,7 @@
 owner = YOR
 controller = YOR
 culture = telegu
-religion = hinduism
+religion = digambara
 capital = "Golconda"
 trade_goods = gems #Diamonds
 #trade_goods = silk

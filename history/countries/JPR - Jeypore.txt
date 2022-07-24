@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
 technology_group = indian
-religion = hinduism
+religion = animism
 primary_culture = garjati
 capital = 2048	# Jeypore
 

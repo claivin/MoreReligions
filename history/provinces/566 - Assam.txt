@@ -3,7 +3,7 @@
 owner = ASS
 controller = ASS
 culture = assamese
-religion = hinduism
+religion = animism
 capital = "Charaideo"
 trade_goods = grain
 hre = no

@@ -3,7 +3,7 @@
 owner = YOR #In custody of Rajamahendri Reddys after the Reddys of Kondavidu were overthrown by Vijayanagar in 1428.
 controller = YOR
 culture = telegu
-religion = hinduism
+religion = shaivism
 capital = "Kondavidu"
 trade_goods = gems
 hre = no

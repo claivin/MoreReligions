@@ -3,7 +3,7 @@
 owner = ORI
 controller = ORI
 culture = oriya
-religion = hinduism
+religion = smarta
 capital = "Srikakulam"
 trade_goods = sugar
 hre = no

@@ -3,7 +3,7 @@
 owner = SBH
 controller = SBH
 culture = kanauji
-religion = hinduism
+religion = shaivism
 capital = "Badayun"
 trade_goods = cotton #Calicoes
 hre = no

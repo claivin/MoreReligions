@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = gujarati
-religion = hinduism
+religion = shaivism
 capital = "Baroda"
 trade_goods = dyes
 hre = no

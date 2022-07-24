@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = gujarati
-religion = hinduism
+religion = buddhism
 capital = "Ahmadabad"
 trade_goods = paper
 hre = no

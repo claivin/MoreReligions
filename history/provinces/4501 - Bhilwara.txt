@@ -3,7 +3,7 @@
 owner = MER
 controller = MER
 culture = rajput
-religion = hinduism
+religion = svetembara
 capital = "Bhilwara"
 trade_goods = grain
 hre = no

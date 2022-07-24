@@ -3,7 +3,7 @@
 owner = KLP
 controller = KLP
 culture = vindhyan
-religion = hinduism
+religion = shaktism
 capital = "Kalpi"
 trade_goods = cloth #Carpets
 hre = no

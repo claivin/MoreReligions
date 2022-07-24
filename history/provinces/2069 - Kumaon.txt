@@ -3,7 +3,7 @@
 owner = KMN
 controller = KMN
 culture = pahari
-religion = hinduism
+religion = shaivism
 capital = "Champawat"
 trade_goods = naval_supplies
 hre = no

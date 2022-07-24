@@ -3,7 +3,7 @@
 owner = MYS
 controller = MYS
 culture = tamil
-religion = hinduism
+religion = shaivism
 capital = "Arcot"
 trade_goods = iron
 hre = no

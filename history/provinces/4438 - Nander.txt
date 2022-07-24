@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = marathi
-religion = hinduism
+religion = digambara
 capital = "Nander"
 trade_goods = silk
 hre = no

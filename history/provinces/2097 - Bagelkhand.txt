@@ -3,7 +3,7 @@
 owner = BGL
 controller = BGL
 culture = vindhyan
-religion = hinduism
+religion = shaktism
 capital = "Batgahora"
 trade_goods = naval_supplies
 hre = no

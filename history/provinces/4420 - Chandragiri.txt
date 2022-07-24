@@ -3,7 +3,7 @@
 owner = MYS
 controller = MYS
 culture = telegu
-religion = hinduism
+religion = digambara
 capital = "Chandragiri"
 trade_goods = cotton
 hre = no

@@ -3,7 +3,7 @@
 owner = BST
 controller = BST
 culture = gondi
-religion = hinduism
+religion = animism 
 capital = "Jagdalpur"
 trade_goods = tropical_wood
 hre = no

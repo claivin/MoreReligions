@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 technology_group = indian
 primary_culture = nepali
-religion = hinduism
+religion = shaivism
 capital = 4492	#Doti
 
 # Malla Raikas of Doti

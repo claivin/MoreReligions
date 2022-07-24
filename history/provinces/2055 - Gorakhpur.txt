@@ -3,7 +3,7 @@
 owner = BCH
 controller = BCH
 culture = bihari
-religion = hinduism
+religion = shaivism
 capital = "Gorakhpur"
 trade_goods = grain
 hre = no

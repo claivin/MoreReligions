@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = marathi
-religion = hinduism
+religion = shaivism
 capital = "Pune"
 trade_goods = grain	#Millet
 hre = no

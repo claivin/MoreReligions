@@ -3,7 +3,7 @@
 owner = MAW
 controller = MAW
 culture = rajput
-religion = hinduism
+religion = svetembara
 capital = "Jalor"
 trade_goods = cotton
 hre = no

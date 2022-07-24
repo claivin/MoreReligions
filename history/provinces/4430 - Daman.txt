@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = marathi
-religion = zoroastrian
+religion = smarta
 capital = "Daman"
 trade_goods = cloth
 hre = no

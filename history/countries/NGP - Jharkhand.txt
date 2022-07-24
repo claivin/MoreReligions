@@ -3,7 +3,7 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = jharkhandi
 technology_group = indian
-religion = hinduism
+religion = shaktism
 capital = 560 # Jharkhand
 
 #Chero Nagas of Kokrah:

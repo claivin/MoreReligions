@@ -3,7 +3,7 @@
 owner = JSL
 controller = JSL
 culture = rajput
-religion = hinduism
+religion = svetembara
 capital = "Jaisalmer"
 trade_goods = wool
 hre = no

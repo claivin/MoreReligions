@@ -3,7 +3,7 @@
 owner = BNG
 controller = BNG
 culture = kochi
-religion = hinduism
+religion = mahayana
 capital = "Rangpur"
 trade_goods = cloth
 hre = no

@@ -3,7 +3,7 @@
 owner = JFN
 controller = JFN
 culture = tamil
-religion = hinduism
+religion = shaivism
 capital = "Yapapatuna"
 trade_goods = gems
 hre = no

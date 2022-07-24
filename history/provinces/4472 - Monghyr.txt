@@ -3,7 +3,7 @@
 owner = BNG
 controller = BNG
 culture = bihari
-religion = hinduism
+religion = mahayana
 capital = "Monghyr"
 trade_goods = silk
 hre = no

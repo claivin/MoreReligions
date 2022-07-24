@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = kannada
-religion = hinduism
+religion = digambara
 capital = "Vijayanagar"
 trade_goods = grain
 hre = no

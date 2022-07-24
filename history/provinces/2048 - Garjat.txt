@@ -3,7 +3,7 @@
 owner = JPR
 controller = JPR
 culture = garjati
-religion = hinduism
+religion = animism
 capital = "Jeypore"
 trade_goods = tropical_wood
 hre = no

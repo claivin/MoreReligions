@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = gondi
-religion = hinduism
+religion = shaivism
 capital = "Wairagarh"
 trade_goods = cotton
 hre = no

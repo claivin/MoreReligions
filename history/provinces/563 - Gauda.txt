@@ -3,7 +3,7 @@
 owner = BNG
 controller = BNG
 culture = bengali
-religion = hinduism
+religion = shaktism
 capital = "Pandua"
 trade_goods = paper #And Silk
 hre = no

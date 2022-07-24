@@ -3,7 +3,7 @@
 owner = MYS
 controller = MYS
 culture = telegu
-religion = hinduism
+religion = shaivism
 capital = "Penukonda"
 trade_goods = cotton
 hre = no

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = samanta_vassal_reform
 primary_culture = rajput
-religion = hinduism
+religion = svetembara
 technology_group = indian
 capital = 518	# Chittogarh
 

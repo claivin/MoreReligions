@@ -3,7 +3,7 @@
 owner = ANK
 controller = ANK
 culture = khmer
-religion = hinduism
+religion = shaivism
 capital = "Phnom Penh"
 trade_goods = iron
 hre = no

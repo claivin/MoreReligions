@@ -3,7 +3,7 @@
 owner = YOR
 controller = YOR
 culture = kannada
-religion = hinduism
+religion = shaivism
 capital = "Raichur"
 trade_goods = cloth
 hre = no

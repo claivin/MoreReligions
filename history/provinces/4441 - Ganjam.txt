@@ -3,7 +3,7 @@
 owner = ORI
 controller = ORI
 culture = oriya
-religion = hinduism
+religion = smarta
 capital = "Ganjam"
 trade_goods = salt
 hre = no

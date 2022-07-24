@@ -292,3 +292,16 @@
  MLW: "Paramara"
  MLW_ADJ: "Paramaran"
  MLW_ADJ2: "Paramaran"
+ 
+ NGP: "Negapatam"
+ NGP_ADJ: "Negapatam"
+ NGP_ADJ2: "Negapatam"
+ 
+ hinduism: "Vaishnavism"
+ hinduism_desc: "Vaishnavism is a major religion in South Asia"
+ hinduism_rebels_demand:0 "Convert $COUNTRYNAME$"
+ hinduism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ hinduism_rebels_title:0 "Religious"
+ hinduism_rebels_name:0 "$RELIGION$ Zealots"
+ hinduism_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ hinduism_rebels_army:0 "$RELIGION$ Army"

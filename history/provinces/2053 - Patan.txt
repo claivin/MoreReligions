@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = gujarati
-religion = hinduism
+religion = svetembara
 capital = "Patan"
 trade_goods = cloth
 hre = no

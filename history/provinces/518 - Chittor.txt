@@ -3,7 +3,7 @@
 owner = CTT
 controller = CTT
 culture = rajput
-religion = hinduism
+religion = svetembara
 capital = "Chittor"
 trade_goods = grain
 hre = no

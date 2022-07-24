@@ -3,7 +3,7 @@
 owner = CHD
 controller = CHD
 culture = gondi
-religion = hinduism
+religion = shaivism
 capital = "Ballarsah"
 trade_goods = tropical_wood
 hre = no

@@ -3,7 +3,7 @@
 owner = LCK
 controller = LCK
 culture = avadhi
-religion = hinduism
+religion = shaivism
 capital = "Khairabad"
 trade_goods = cloth #Khairabadi
 hre = no

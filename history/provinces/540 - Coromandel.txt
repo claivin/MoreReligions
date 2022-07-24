@@ -3,7 +3,7 @@
 owner = CDD
 controller = CDD
 culture = tamil
-religion = hinduism
+religion = shaivism
 capital = "Kuddaluru"
 trade_goods = cloth
 hre = no

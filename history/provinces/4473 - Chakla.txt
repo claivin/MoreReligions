@@ -3,7 +3,7 @@
 owner = TPR
 controller = TPR
 culture = chin
-religion = hinduism
+religion = shaktism
 capital = "Chakla"
 trade_goods = tropical_wood
 hre = no

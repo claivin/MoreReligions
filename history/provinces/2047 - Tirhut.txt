@@ -3,7 +3,7 @@
 owner = TRT
 controller = TRT
 culture = bihari
-religion = hinduism
+religion = shaktism
 capital = "Sugauna"
 trade_goods = dyes
 hre = no

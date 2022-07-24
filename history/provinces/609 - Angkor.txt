@@ -3,7 +3,7 @@
 owner = ANK
 controller = ANK
 culture = khmer
-religion = hinduism
+religion = shaivism
 capital = "Angkor"
 #trade_goods = tropical_wood
 trade_goods = stone

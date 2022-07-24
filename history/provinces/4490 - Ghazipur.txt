@@ -3,7 +3,7 @@
 owner = JNP
 controller = JNP
 culture = bihari
-religion = "hinduism"
+religion = shaivism
 capital = "Ghazipur"
 trade_goods = cloth
 hre = no

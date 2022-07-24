@@ -3,7 +3,7 @@
 owner = MAD
 controller = MAD
 culture = tamil
-religion = hinduism
+religion = animism
 capital = "Dindigul"
 trade_goods = naval_supplies
 hre = no

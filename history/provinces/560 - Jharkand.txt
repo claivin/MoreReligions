@@ -3,7 +3,7 @@
 owner = NGP
 controller = NGP
 culture = jharkhandi
-religion = hinduism
+religion = animism
 capital = "Palamau"
 trade_goods = iron
 hre = no

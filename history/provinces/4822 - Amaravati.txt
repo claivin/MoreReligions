@@ -1,7 +1,7 @@
 owner = CHA
 controller = CHA
 culture = cham
-religion = hinduism
+religion = shaivism
 capital = "Amaravati"
 trade_goods = incense
 hre = no

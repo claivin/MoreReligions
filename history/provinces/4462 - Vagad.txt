@@ -3,7 +3,7 @@
 owner = CTT
 controller = CTT
 culture = rajput
-religion = hinduism
+religion = shaivism
 capital = "Dungarpur"
 trade_goods = copper
 hre = no

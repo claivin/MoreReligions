@@ -3,7 +3,7 @@
 owner = PAN
 controller = PAN
 culture = vindhyan
-religion = hinduism
+religion = shaktism
 capital = "Kalinjar"
 trade_goods = gems #Diamonds
 hre = no

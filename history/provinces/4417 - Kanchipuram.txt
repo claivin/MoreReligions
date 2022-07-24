@@ -3,7 +3,7 @@
 owner = KCP
 controller = KCP
 culture = tamil
-religion = hinduism
+religion = shaivism
 capital = "Kanchipuram"
 trade_goods = cloth
 hre = no

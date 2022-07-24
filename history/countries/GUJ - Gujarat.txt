@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = indian_sultanate_reform
 primary_culture = gujarati
-religion = sunni
+religion = buddhism
 technology_group = indian
 capital = 2054	# Ahmadabad
 religious_school = shafii_school

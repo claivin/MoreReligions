@@ -3,7 +3,7 @@
 owner = YOR
 controller = YOR
 culture = telegu
-religion = hinduism
+religion = shaivism
 capital = "Warangal"
 trade_goods = cotton
 hre = no

@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = telegu
-religion = hinduism
+religion = shaivism
 capital = "Mahur"
 trade_goods = tropical_wood
 hre = no

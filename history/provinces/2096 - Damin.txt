@@ -3,7 +3,7 @@
 owner = BNG
 controller = BNG
 culture = jharkhandi
-religion = hinduism
+religion = animism
 capital = "Deogarh"
 trade_goods = ivory
 hre = no

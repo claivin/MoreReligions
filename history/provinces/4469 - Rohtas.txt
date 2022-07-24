@@ -3,7 +3,7 @@
 owner = NGP
 controller = NGP
 culture = bihari
-religion = hinduism
+religion = shaktism
 capital = "Rohtasgarh"
 trade_goods = salt
 hre = no

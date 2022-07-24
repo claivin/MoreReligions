@@ -3,7 +3,7 @@
 owner = YOR
 controller = YOR
 culture = telegu
-religion = hinduism
+religion = smarta
 capital = "Rajahmundry"
 trade_goods = cloth
 hre = no

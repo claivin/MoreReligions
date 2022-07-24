@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = marathi
-religion = hinduism
+religion = digambara
 capital = "Thana"
 trade_goods = cloth
 hre = no

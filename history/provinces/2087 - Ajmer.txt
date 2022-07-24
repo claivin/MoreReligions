@@ -3,7 +3,7 @@
 owner = KNJ
 controller = KNJ
 culture = rajput
-religion = hinduism
+religion = svetembara
 capital = "Ajmer"
 trade_goods = salt
 hre = no

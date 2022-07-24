@@ -3,7 +3,7 @@
 owner = MYS
 controller = MYS
 culture = tamil
-religion = hinduism
+religion = digambara
 capital = "Tiruchirapalli"
 trade_goods = cotton #Calicoes
 hre = no

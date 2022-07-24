@@ -3,7 +3,7 @@
 owner = NGP
 controller = NGP
 culture = jharkhandi
-religion = hinduism
+religion = shaktism
 capital = "Surguja"
 trade_goods = cotton
 hre = no

@@ -3,7 +3,7 @@
 owner = BCH
 controller = BCH
 culture = avadhi
-religion = hinduism
+religion = shaivism
 capital = "Bahreich"
 trade_goods = cotton
 hre = no

@@ -3,7 +3,7 @@
 owner = MYS
 controller = MYS
 culture = kannada
-religion = hinduism
+religion = digambara
 capital = "Sira"
 trade_goods = grain
 hre = no

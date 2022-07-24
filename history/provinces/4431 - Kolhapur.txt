@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = marathi
-religion = hinduism
+religion = digambara
 capital = "Kolhapur"
 trade_goods = naval_supplies
 hre = no

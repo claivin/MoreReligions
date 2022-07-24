@@ -3,7 +3,7 @@
 owner = JNP
 controller = JNP
 culture = avadhi
-religion = hinduism
+religion = shaivism
 capital = "Jaunpur"
 trade_goods = paper #And Carpets
 hre = no

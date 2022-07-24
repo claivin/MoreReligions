@@ -3,7 +3,7 @@
 owner = KMT
 controller = KMT
 culture = kochi
-religion = hinduism
+religion = shaktism
 capital = "Kamatapur"
 trade_goods = grain
 hre = no

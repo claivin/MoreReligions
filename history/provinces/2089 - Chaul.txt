@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = marathi
-religion = hinduism
+religion = smarta
 capital = "Chaul"
 trade_goods = cloth
 hre = no

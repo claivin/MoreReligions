@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = kannada
-religion = hinduism
+religion = shaivism
 capital = "Mudgal"
 trade_goods = cloth
 hre = no

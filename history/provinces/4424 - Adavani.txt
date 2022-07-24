@@ -3,7 +3,7 @@
 owner = YOR
 controller = YOR
 culture = telegu
-religion = hinduism
+religion = shaivism
 capital = "Adavani"
 trade_goods = grain
 hre = no

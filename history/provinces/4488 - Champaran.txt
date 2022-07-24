@@ -3,7 +3,7 @@
 owner = CAA
 controller = CAA
 culture = bihari
-religion = hinduism
+religion = shaktism
 capital = "Simraon"
 trade_goods = grain
 hre = no

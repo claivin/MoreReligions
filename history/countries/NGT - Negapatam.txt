@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = indian
-religion = hinduism
+religion = shaivism
 primary_culture = tamil
 capital = 4415
 

@@ -3,7 +3,7 @@
 owner = TRQ
 controller = TRQ
 culture = tamil
-religion = hinduism
+religion = shaivism
 capital = "Tranqebar"
 trade_goods = cloth
 hre = no

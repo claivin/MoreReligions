@@ -1,9 +1,9 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = indian
-religion = shaivism
-primary_culture = tamil
-capital = 540
+primary_culture = panjabi
+religion = sunni
+capital = 507	# Lahore
 
-
+#Lodis
 

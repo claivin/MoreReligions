@@ -3,7 +3,7 @@
 owner = BNG
 controller = BNG
 culture = bengali
-religion = hinduism
+religion = mahayana
 capital = "Nadia"
 trade_goods = silk
 hre = no

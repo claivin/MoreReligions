@@ -3,7 +3,7 @@
 owner = DVI
 controller = DVI
 culture = marathi
-religion = hinduism
+religion = shaivism
 capital = "Sholhapur"
 trade_goods = cotton
 hre = no

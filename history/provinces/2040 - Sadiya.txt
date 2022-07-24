@@ -3,7 +3,7 @@
 owner = SDY
 controller = SDY
 culture = assamese
-religion = hinduism
+religion = animism
 capital = "Sadiya"
 trade_goods = tea
 hre = no
