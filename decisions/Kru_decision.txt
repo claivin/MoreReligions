@@ -19,10 +19,7 @@ country_decisions = {
 		allow = {
 			is_nomad = no
 			is_at_war = no
-			num_of_owned_provinces_with = {
-				culture = kru
-				value = 4
-			}
+			has_unified_culture = yes
 			
 		}
 		effect = {

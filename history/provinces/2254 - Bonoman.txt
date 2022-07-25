@@ -10,9 +10,21 @@ hre = no
 base_tax = 3 
 base_production = 3
 base_manpower = 1
-discovered_by = kru
-discovered_by = mandinka
-discovered_by = aka
 discovered_by = TEE
+discovered_by = LMA
+discovered_by = VAI
+discovered_by = YKB
+discovered_by = KWA
+discovered_by = ZHI
+discovered_by = EHO
+discovered_by = AKW
+discovered_by = MNK
+discovered_by = LGB
+discovered_by = GYR
+discovered_by = BON
+discovered_by = SNT
+discovered_by = SNF
+discovered_by = DEN
+discovered_by = BAO
 
 
