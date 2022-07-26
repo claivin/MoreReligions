@@ -67,7 +67,7 @@ vassal = {
 }
 vassal = {
 	first = ILK
-	second = GEO
+	second = ANI
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
@@ -75,6 +75,20 @@ dependency = {
 	subject_type = "tributary_state"
 	first = ILK
 	second = MSL
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = GEO
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = ILK
+	second = KHI
 	start_date = 1444.1.1
 	end_date = 1502.1.1
 }

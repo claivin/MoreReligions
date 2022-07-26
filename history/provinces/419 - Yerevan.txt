@@ -1,7 +1,7 @@
 #419 - Yerevan
 
-owner = GEO
-controller = GEO
+owner = ANI
+controller = ANI
 culture = armenian
 religion = coptic
 capital = "Yerevan"
@@ -11,8 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = GEO
-add_core = ARM 
+add_core = ANI 
 discovered_by = east_african
 discovered_by = western
 discovered_by = muslim

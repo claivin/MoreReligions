@@ -1,9 +1,9 @@
 
 
-owner = GEO
-controller = GEO
-culture = georgian
-religion = orthodox
+owner = ANI
+controller = ANI
+culture = armenian
+religion = coptic
 capital = "Gyumri"
 trade_goods = wool
 hre = no

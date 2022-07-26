@@ -1,7 +1,7 @@
 #2205 - Nakhchivan
 
-owner = GEO
-controller = GEO
+owner = ANI
+controller = ANI
 culture = armenian
 religion = coptic
 capital = "Nakhchevani"
@@ -11,8 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = GEO
-add_core = ARM 
+add_core = ANI
 discovered_by = east_african
 discovered_by = western
 discovered_by = muslim

@@ -1,0 +1,27 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = circassian
+religion = orthodox
+technology_group = eastern
+capital = 463 # Circassia
+
+1403.1.1 = {
+	monarch = {
+		name = "Inal"
+		dynasty = "Inalid"
+		adm = 5
+		dip = 5
+		mil = 6
+	}
+}
+
+1425.1.1 = {
+	heir = {
+		name = "Janxhuet"
+		dynasty = "Inalid"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

@@ -257,6 +257,12 @@ CST = "countries/Constantinople.txt"
 CLC = "countries/Cilicia.txt"
 ALV = "countries/Alevi.txt"
 
+#Caucasus
+ABK = "countries/Abkhazia.txt"
+ADY = "countries/Adyghe.txt"
+KBD = "countries/Kabardia.txt"
+ANI = "countries/Ani.txt"
+
 #Levant
 EDD = "countries/Edessa.txt"
 TPO = "countries/TripoliC.txt"

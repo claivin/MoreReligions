@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+primary_culture = armenian
+religion = coptic
+technology_group = eastern
+capital = 5320	# Ani
+
+1422.1.1 = {
+	monarch = {
+		name = "Ivane"
+		dynasty = "Zakarid"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+	heir = {
+		name = "Avag"
+		dynasty = "Zakarid"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

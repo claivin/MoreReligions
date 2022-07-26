@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+primary_culture = circassian
+religion = orthodox
+technology_group = eastern
+capital = 1856 # Abkhazia
+
+
+
+1410.1.1 = {
+	monarch = {
+		name = "Mikhail"
+		dynasty = "Shervashidze"
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}

@@ -1,22 +1,18 @@
-#2204 - Kars
+#5314 - Sochi
 
-owner = ANI
-controller = ANI
-culture = armenian
-religion = coptic
-capital = "Akhaltsikhe"
+owner = ABK
+controller = ABK
+culture = georgian
+religion = orthodox
+capital = "Sochi"
 trade_goods = wine
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 2 
+base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = GEO
-add_core = ANI
-fort_15th = yes
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
-
