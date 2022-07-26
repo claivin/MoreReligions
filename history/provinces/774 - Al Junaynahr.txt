@@ -1,6 +1,6 @@
 # - Al-Junaynah
 
-culture = nubian 
+culture = tunjur
 religion = shamanism #Fetishism
 capital = "Al-Junaynahr"
 native_size = 50

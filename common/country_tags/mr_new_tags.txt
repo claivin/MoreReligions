@@ -179,10 +179,19 @@ ZGW = "countries/Zagwe.txt"
 #AKS = "countries/Aksum.txt"
 IFT = "countries/Ifat.txt"
 BAE = "countries/Bale.txt"
-AUA = "countries/Ausa.txt"
+#AUA = "countries/Ausa.txt"
 HRA = "countries/Harla.txt"
 ABH = "countries/AlHabash.txt"
 BRL = "countries/BetaIsrael.txt"
+DJJ = "countries/Daju.txt"
+NBA = "countries/Nuba.txt"
+SHG = "countries/Shaigiya.txt"
+JLI = "countries/Jaalin.txt"
+SOB = "countries/Soba.txt"
+SHI = "countries/Shendi.txt"
+FZG = "countries/Fazughli.txt"
+BTA = "countries/Butana.txt"
+SKI = "countries/Suakin.txt"
 
 #Japan
 NTT = "countries/Nitta.txt"
@@ -231,6 +240,7 @@ ZHI = "countries/Zahiri.txt"
 KWA = "countries/Kuwaa.txt"
 AKA = "countries/Akan.txt"
 MDK = "countries/Mandinka.txt"
+
 
 
 #Sahara

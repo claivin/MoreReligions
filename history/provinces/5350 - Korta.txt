@@ -1,0 +1,18 @@
+#1220 - Dar Ja'al
+
+culture = beja
+religion = coptic
+capital = "Korta"
+owner = SHG
+controller = SHG
+add_core = SHG
+is_city = yes
+trade_goods = livestock
+base_manpower = 2
+hre = no
+base_tax = 1 
+base_production = 1
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+

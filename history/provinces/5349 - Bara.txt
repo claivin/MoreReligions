@@ -1,0 +1,16 @@
+owner = DJJ
+controller = DJJ
+add_core = DJJ
+culture = daju
+religion = shamanism
+capital = "Bara"
+base_manpower = 1
+base_tax = 1 
+base_production = 1
+is_city = yes
+trade_goods = ivory
+hre = no
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+

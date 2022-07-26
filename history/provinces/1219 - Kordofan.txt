@@ -1,0 +1,20 @@
+#1219 - Darfur
+
+culture = tunjur
+religion = shamanism #Fetishism
+capital = "Al-Fashir"
+owner = TUJ
+controller = TUJ
+add_core = TUJ
+add_core = DAR
+native_size = 50
+native_ferocity = 4
+native_hostileness = 9 
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+extra_cost = 8
+center_of_trade = 1
+

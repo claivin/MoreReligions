@@ -1614,16 +1614,16 @@ ogaden_area = { #5
 }
 
 darfur_central_sahara_area = { #5 -medwa
-	774 1219 2802 2932
+	774 1219 2802 2932 5345
 }
 
 kurdufan_area = { #3
 	color = { 97 110 203 }
-	1216 1221 2800
+	1216 1221 2800 5346 5349
 }
 
 dongola_area = { #3
-	1220 1228 1229
+	1220 1228 1229 5350 5351
 }
 
 upper_nubia_area = { #5
@@ -1631,7 +1631,7 @@ upper_nubia_area = { #5
 }
 
 sennar_area = { #3
-	1217 2799 4033
+	1217 2799 4033 5348 5349
 }
 
 red_sea_coast_area = { #4 +dankalia full

@@ -1,8 +1,0 @@
-government = monarchy
-add_government_reform = samanta_vassal_reform
-government_rank = 1
-technology_group = indian
-religion = hinduism
-primary_culture = marathi
-capital = 526
-

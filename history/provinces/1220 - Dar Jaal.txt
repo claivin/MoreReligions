@@ -1,11 +1,11 @@
 #1220 - Dar Ja'al
 
 culture = nubian 
-religion = sunni
+religion = coptic
 capital = "Bayuda"
-owner = MAK
-controller = MAK
-add_core = MAK
+owner = SHG
+controller = SHG
+add_core = SHG
 is_city = yes
 trade_goods = livestock
 base_manpower = 2
@@ -16,13 +16,3 @@ discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
 
-1503.1.1 = {
-	owner = NUB
-	controller = NUB
-	add_core = NUB
-}
-1550.1.1 = { discovered_by = TUR }
-1583.1.1 = { unrest = 6 } #Shaykh Ajib expelled from Sennar, Abdallabi discontent grows
-1584.1.1 = { unrest = 0 } #Dakin and Ajib reach agreement to end conflict
-1612.1.1 = { unrest = 5 } #Funj destroy Ajib at Karkoj
-1613.1.1 = { unrest = 0 } #Funj restore autonomy to the Abdallabi

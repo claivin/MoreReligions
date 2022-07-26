@@ -1,0 +1,22 @@
+#1216 - Tegali
+
+culture = nuba #Shilluk
+religion = shamanism #Fetishism
+capital = "Takala"
+native_size = 50
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_ferocity = 4
+native_hostileness = 9
+owner = NBA
+controller = NBA
+add_core = NBA
+
+
+discovered_by = ALO
+discovered_by = MAK
+
+

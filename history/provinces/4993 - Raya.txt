@@ -1,9 +1,10 @@
 #REGIONHORNOF AFRICA
 #4993 Raya
 
-owner = AUA
-controller = AUA
-add_core = AUA
+owner = IFT
+controller = IFT
+add_core = IFT
+add_core = AFA
 culture = afar
 religion = sunni
 hre = no

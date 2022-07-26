@@ -1,8 +1,8 @@
 #1217 - Fazughli
 
-owner = ALO
-controller = ALO
-add_core = ALO
+owner = FZG
+controller = FZG
+add_core = FZG
 culture = nubian #Shilluk
 religion = shamanism #Fetishism
 capital = "Alays"

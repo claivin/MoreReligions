@@ -235,7 +235,7 @@ categories =  {
 			4764 # Salins
 			1106 1108 2738 4939 # NZ
 			4840 # Mandala
-			
+			5346
 			4856
 			5028 #Austfirthir
 			5031 #Quang Tri
@@ -246,6 +246,7 @@ categories =  {
 			5134 #mr_poland
 			5201 5203 5205 #mr_wafrica
 			5314 5315 #mr_caucaus
+			5334 5335
 		}
 	}
 
@@ -553,7 +554,7 @@ categories =  {
 			362 #Egypt
 			2702 #Philippines
 			4706 # 1.30 Greece and Bulgaria
-			2262 5183 5191 5193 5197 #mr_wafrica
+			2262 5183 5191 5193 5197 5347 #mr_wafrica
 		}
 	}
 	
@@ -584,7 +585,7 @@ categories =  {
 			
 			1093
 			5044 #baalbek
-			5257 5266 #mr_maghreb
+			5257 5266 5350 5351 5346 5349 #mr_maghreb
 		}
 	}
 	
@@ -800,7 +801,7 @@ categories =  {
 			
 			1092 4851 1094 4850 4846 4881
 			2384 #nong khai
-			5179 5180 5181 5182 5184 5185 5192 5194 5195 5198 5204#mr_wafrica
+			5179 5180 5181 5182 5184 5185 5192 5194 5195 5198 5204 5348 5349 5345#mr_wafrica
 		}		
 	}
 	

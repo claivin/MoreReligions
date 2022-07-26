@@ -12,10 +12,6 @@ hre = no
 base_tax = 6 
 base_production = 6
 add_core = MAL
-discovered_by = kru
-discovered_by = mandinka
-discovered_by = aka
-discovered_by = TEE
 
 
 discovered_by = sub_saharan

@@ -1,0 +1,8 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = nuba
+religion = shamanism
+technology_group = east_african
+unit_type = sub_saharan
+capital = 1216 
+religious_school = shafii_school

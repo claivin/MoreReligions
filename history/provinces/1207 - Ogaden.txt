@@ -1,8 +1,8 @@
 #1207 - Ogaden
 
-owner = BAE
-controller = BAE
-add_core = BAE
+owner = OGD
+controller = OGD
+add_core = OGD
 culture = somali
 religion = sunni
 capital = "Bale"
@@ -17,5 +17,3 @@ base_manpower = 1
 
 discovered_by = east_african
 
-
-1550.1.1 = { discovered_by = TUR }
