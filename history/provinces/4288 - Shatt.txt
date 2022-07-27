@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = al_iraqiya_arabic
-religion = sunni
+religion = mr_mushashaiyya
 capital = "al-Qurna"
 trade_goods = spices #Dates
 hre = no

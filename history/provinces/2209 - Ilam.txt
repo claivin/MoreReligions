@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = kurdish
-religion = shiite
+religion = mr_ahlehaqq
 capital = "Ilam"
 trade_goods = wool
 hre = no

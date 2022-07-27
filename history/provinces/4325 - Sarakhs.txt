@@ -3,7 +3,7 @@
 owner = HRT
 controller = HRT
 culture = khorasani
-religion = sunni
+religion = shiite
 capital = "Sarakhs"
 trade_goods = wool
 hre = no

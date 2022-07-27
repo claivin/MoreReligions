@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = al_iraqiya_arabic
-religion = shiite
+religion = mr_mushashaiyya
 capital = "Basra"
 trade_goods = salt
 hre = no

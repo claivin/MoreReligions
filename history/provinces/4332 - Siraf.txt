@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = persian
-religion = shiite
+religion = sunni
 capital = "Siraf"
 trade_goods = spices
 hre = no

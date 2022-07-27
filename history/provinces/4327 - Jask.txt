@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = gulf_arabic
-religion = shiite
+religion = sunni
 capital = "Jask"
 trade_goods = fish
 hre = no

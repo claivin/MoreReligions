@@ -3,7 +3,7 @@
 owner = MSL
 controller = MSL
 culture = kurdish
-religion = sunni
+religion = mr_nestorian
 capital = "Al Mawsil"
 trade_goods = cloth
 hre = no

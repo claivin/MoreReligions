@@ -3,7 +3,7 @@
 owner = TAB
 controller = TAB
 culture = mazandarani
-religion = sunni
+religion = mr_safaviyya
 capital = "Rasht"
 trade_goods = silk
 hre = no

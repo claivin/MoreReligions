@@ -3,7 +3,7 @@
 owner = GEO
 controller = GEO
 culture = azerbaijani
-religion = shiite
+religion = sunni
 capital = "Ganja"
 trade_goods = cotton
 hre = no

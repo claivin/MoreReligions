@@ -3,7 +3,7 @@
 owner = MSL
 controller = MSL
 culture = al_iraqiya_arabic
-religion = sunni
+religion = mr_nestorian
 capital = "Sindjar"
 trade_goods = sugar
 hre = no

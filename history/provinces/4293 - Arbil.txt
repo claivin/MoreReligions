@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = kurdish
-religion = sunni
+religion = mr_yazidi
 capital = "Arbil"
 trade_goods = cloth
 hre = no

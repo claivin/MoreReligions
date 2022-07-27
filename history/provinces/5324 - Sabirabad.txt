@@ -2,7 +2,7 @@
 owner = ILK
 controller = ILK
 culture = armenian
-religion = coptic
+religion = mr_safaviyya
 capital = "Sabirabad"
 trade_goods = livestock
 hre = no

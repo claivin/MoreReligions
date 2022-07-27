@@ -3,7 +3,7 @@
 owner = SRV
 controller = SRV 
 culture = dagestani
-religion = shiite
+religion = sunni
 capital = "Derbent"
 trade_goods = fish
 hre = no

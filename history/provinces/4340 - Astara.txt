@@ -3,7 +3,7 @@
 owner = TAB
 controller = TAB
 culture = azerbaijani
-religion = shiite
+religion = mr_safaviyya
 capital = "Astara"
 trade_goods = fish
 hre = no

@@ -19,15 +19,6 @@
  ari_rebels_demand: "Convert $COUNTRYNAME$"
  ari_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
- confucianism: "San Jiao"
- confucianism_religion_desc: "San Jiao is the term for three teachings of China, Buddhism, Confucianism, and Taoism. This religion often favors one teaching or the other, but still integrates aspects of all three of the schools of thought."
- confucianism_rebels_name: "San Jiao Zealots"
- confucianism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- confucianism_title: "$RELIGION$ Zealots"
- confucianism_rebels_army: "$RELIGION$ Army"
- confucianism_rebels_demand: "Convert $COUNTRYNAME$"
- confucianism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- 
  
  azhaliism:0 "Azhali"
  azhaliism_religion_desc:0 "A form of Buddhism practiced in the Yunnan region of China. Influenced by both Burmese Buddhism and Tantric Buddhism, it still holds reverence to the local gods and dieties in the region. It is considered the religion of the Dali Kingdom."

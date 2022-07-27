@@ -3,7 +3,7 @@
 owner = EDD
 controller = EDD
 culture = kurdish
-religion = sunni
+religion = mr_yazidi
 capital = "Urfa"
 trade_goods = wool
 hre = no

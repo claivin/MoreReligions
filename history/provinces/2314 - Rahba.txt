@@ -3,7 +3,7 @@
 owner = IRQ
 controller = IRQ
 culture = al_iraqiya_arabic
-religion = sunni
+religion = mr_nestorian
 capital = "Deir ez-Zor"
 trade_goods = grain
 hre = no

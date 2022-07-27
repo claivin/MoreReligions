@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = azerbaijani
-religion = shiite
+religion = sunni
 capital = "Qazvin"
 trade_goods = silk
 hre = no

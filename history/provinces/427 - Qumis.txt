@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = khorasani
-religion = shiite
+religion = sunni
 capital = "Damghan"
 trade_goods = wool
 hre = no

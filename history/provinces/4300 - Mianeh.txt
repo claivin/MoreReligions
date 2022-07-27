@@ -3,7 +3,7 @@
 owner = ILK
 controller = ILK
 culture = azerbaijani
-religion = shiite
+religion = mr_safaviyya
 capital = "Mianeh"
 trade_goods = paper
 hre = no

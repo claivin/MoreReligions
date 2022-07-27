@@ -378,7 +378,683 @@ muslim = {
 		authority = yes			# Uses piety mechanics
 	}
 	
+	mr_hurufis = {
+		color = { 0 218 148 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			global_trade_goods_size_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_ship_cost = -0.1
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		fervor = yes		# Uses piety mechanics
+	}
+	
+	mr_mushashaiyya = {
+		color = { 24 162 147 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			global_trade_goods_size_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_ship_cost = -0.1
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		gurus = {}
+	}
+	
+	mr_safaviyya = {
+		color = { 44 87 62 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			fire_damage = 0.10
+		}
+		country_as_secondary = {
+			global_ship_cost = -0.1
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		gurus = {
+			shaykh_junayd = {
+				trigger = {
+					always = yes
+				}
+				chance = {
+					factor = 1000
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					turkmeni_missions = {
+						type = ADM
+						cost = 50
+
+						global_missionary_strength = 0.02
+					}
+					temporal_rule = {
+						type = DIP
+						cost = 50
+
+						diplomatic_reputation = 0.5
+					}
+					engage_in_ghaza = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+			shaykh_haydar = {
+				trigger = {
+					is_year = 1460
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1460
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1461
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1462
+					}
+					modifier = {
+						factor = 2
+						is_year = 1463
+					}
+				}
+				modifier = {
+					country_military_power = 1
+				}
+				teachings = {
+					gurmukhi_script_teaching = {
+						type = ADM
+						cost = 50
+
+						technology_cost = -0.025
+					}
+					temple_langar = {
+						type = DIP
+						cost = 50
+
+						church_loyalty_modifier = 0.05
+					}
+					wrestling_akhara = {
+						type = MIL
+						cost = 50
+
+						yearly_army_professionalism = 0.005
+					}
+				}
+			}
+			shaykh_ali_mirza = {
+				trigger = {
+					is_year = 1488
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1488
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1489
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1490
+					}
+					modifier = {
+						factor = 2
+						is_year = 1495
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					dasvandh_collection = {
+						type = ADM
+						cost = 50
+
+						global_tax_modifier = 0.05
+					}
+					anand_karaj = {
+						type = DIP
+						cost = 50
+
+						diplomatic_reputation = 1
+					}
+					sanghat_equality = {
+						type = MIL
+						cost = 50
+
+						nobles_loyalty_modifier = 0.05
+						rajput_exclusive_loyalty_modifier = 0.05
+						maratha_exclusive_loyalty_modifier = 0.05
+					}
+				}
+			}
+			shaykh_ismail = {
+				trigger = {
+					is_year = 1501
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1501
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1502
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1503
+					}
+					modifier = {
+						factor = 2
+						is_year = 1504
+					}
+					modifier = {
+						factor = 2
+						is_year = 1505
+					}
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					legitimize_inheritance = {
+						type = ADM
+						cost = 50
+
+						legitimacy = 0.25
+						republican_tradition = 0.1
+						devotion = 0.25
+						horde_unity = 0.25
+						meritocracy = 0.1
+					}
+					scripture_hymns = {
+						type = DIP
+						cost = 50
+
+						prestige = 0.5
+					}
+					masand_system = {
+						type = MIL
+						cost = 50
+
+						global_manpower_modifier = 0.1
+					}
+				}
+			}
+			shaykh_tahmasp = {
+				trigger = {
+					is_year = 1524
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1524
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1525
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1526
+					}
+					modifier = {
+						factor = 2
+						is_year = 1527
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					adi_granth = {
+						type = ADM
+						cost = 50
+
+						global_institution_spread = 0.1
+					}
+					the_abode_of_god = {
+						type = DIP
+						cost = 50
+
+						religious_unity = 0.1
+					}
+					martyrdom = {
+						type = MIL
+						cost = 50
+
+						land_morale = 0.05
+					}
+				}
+			}
+			shaykh_mohammed_khodabanda = {
+				trigger = {
+					is_year = 1576
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1576
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1577
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1578
+					}
+					modifier = {
+						factor = 2
+						is_year = 1579
+					}
+				}
+				modifier = {
+					country_military_power = 1
+				}
+				teachings = {
+					throne_of_the_timeless_one = {
+						type = ADM
+						cost = 50
+
+						legitimacy = 0.25
+						republican_tradition = 0.1
+						devotion = 0.25
+						horde_unity = 0.25
+						meritocracy = 0.1
+					}
+					protection_of_the_poor = {
+						type = DIP
+						cost = 50
+
+						war_exhaustion = -0.025
+					}
+					miri_and_piri = {
+						type = MIL
+						cost = 50
+
+						discipline = 0.025
+					}
+				}
+			}
+			shaykh_abbas = {
+				trigger = {
+					is_year = 1587
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1587
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1588
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1589
+					}
+					modifier = {
+						factor = 2
+						is_year = 1590
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					impartial_manjis = {
+						type = ADM
+						cost = 50
+
+						yearly_corruption = -0.05
+					}
+					the_fragrance_of_a_flower = {
+						type = DIP
+						cost = 50
+
+						improve_relation_modifier = 0.1
+					}
+					one_guru = {
+						type = MIL
+						cost = 50
+
+						nobles_loyalty_modifier = 0.05
+						rajput_exclusive_loyalty_modifier = 0.05
+						maratha_exclusive_loyalty_modifier = 0.05
+					}
+				}
+			}
+			shaykh_safi = {
+				trigger = {
+					is_year = 1629
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1629
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1630
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1631
+					}
+					modifier = {
+						factor = 2
+						is_year = 1632
+					}
+					modifier = {
+						factor = 2
+						is_year = 1633
+					}
+				}
+				modifier = {
+					country_diplomatic_power = 1
+				}
+				teachings = {
+					treat_the_sick = {
+						type = ADM
+						cost = 50
+
+						monarch_admin_power = 1
+					}
+					illiterate_recites_saloks = {
+						type = DIP
+						cost = 50
+
+						monarch_diplomatic_power = 1
+					}
+					young_humility = {
+						type = MIL
+						cost = 50
+
+						monarch_military_power = 1
+					}
+				}
+			}
+			shaykh_abbas_II = {
+				trigger = {
+					is_year = 1642
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1642
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1643
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1644
+					}
+					modifier = {
+						factor = 2
+						is_year = 1645
+					}
+					modifier = {
+						factor = 2
+						is_year = 1646
+					}
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					the_word_of_sikh = {
+						type = ADM
+						cost = 50
+
+						missionaries = 1
+					}
+					all_kings_must_pass = {
+						type = DIP
+						cost = 50
+
+						tolerance_heretic = 2
+					}
+					resist_persecution = {
+						type = MIL
+						cost = 50
+
+						hostile_attrition = 1
+					}
+				}
+			}
+			shaykh_suleiman = {
+				trigger = {
+					is_year = 1666
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1666
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1667
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1668
+					}
+					modifier = {
+						factor = 2
+						is_year = 1669
+					}
+				}
+				modifier = {
+					country_admin_power = 1
+				}
+				teachings = {
+					pluralism = {
+						type = ADM
+						cost = 50
+
+						advisor_cost = -0.1
+					}
+					dharam_yudh = {
+						type = DIP
+						cost = 50
+
+						war_taxes_cost_modifier = -0.5
+					}
+					the_khalsa_sikh = {
+						type = MIL
+						cost = 50
+
+						yearly_army_professionalism = 0.005
+					}
+				}
+			}
+			shaykh_husayn = {
+				trigger = {
+					is_year = 1694
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1694
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1695
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1696
+					}
+					modifier = {
+						factor = 2
+						is_year = 1697
+					}
+					modifier = {
+						factor = 2
+						is_year = 1698
+					}
+				}
+				modifier = {
+					state_maintenance_modifier = -0.5
+					drill_decay_modifier = -0.25
+				}
+				teachings = {
+					eternally_living_guru = {
+						type = ADM
+						cost = 50
+
+						development_cost = -0.1
+					}
+					divine_justice = {
+						type = DIP
+						cost = 50
+
+						trade_efficiency = 0.1
+					}
+					the_unchanging_writing = {
+						type = MIL
+						cost = 50
+
+						drill_gain_modifier = 0.5
+					}
+				}
+			}
+			the_hidden_imam = {
+				trigger = {
+					is_year = 1722
+					is_month = 1
+				}
+				chance = {
+					factor = 5
+					modifier = {
+						factor = 1.5
+						is_year = 1722
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1723
+					}
+					modifier = {
+						factor = 1.5
+						is_year = 1724
+					}
+					modifier = {
+						factor = 2
+						is_year = 1725
+					}
+					modifier = {
+						factor = 2
+						is_year = 1726
+					}
+				}
+				modifier = {
+					state_maintenance_modifier = -0.5
+					drill_decay_modifier = -0.25
+				}
+				teachings = {
+					eternally_living_guru = {
+						type = ADM
+						cost = 50
+
+						development_cost = -0.1
+					}
+					divine_justice = {
+						type = DIP
+						cost = 50
+
+						trade_efficiency = 0.1
+					}
+					the_unchanging_writing = {
+						type = MIL
+						cost = 50
+
+						drill_gain_modifier = 0.5
+					}
+				}
+			}
+		}
+	}
+	
+	mr_ahlehaqq = {
+		color = { 44 87 62 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			global_trade_goods_size_modifier = 0.1
+		}
+		country_as_secondary = {
+			global_ship_cost = -0.1
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		fervor = yes
+	}
+	
 	harmonized_modifier = harmonized_muslim
 	
 	crusade_name = JIHAD
+	
+	
 }
