@@ -139,4 +139,8 @@ spriteTypes = {
 		name = "GFX_icon_shingon_school"
 		texturefile = "gfx/interface/icon_shingon_school.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_none_school"
+		texturefile = "gfx/interface/icon_none_school.dds"
+	}
 }

@@ -772,6 +772,21 @@ christian = {
 			picture = "GFX_icon_christian_rite_baptist"
 			warscore_cost_vs_other_religion = -0.05
 		}
+		#clears schools for when converting to a christian faith without schools
+		mr_christian_no_school = {
+			potential_invite_scholar = {
+				always = no
+			}
+			can_invite_scholar = {
+				always = no
+			}
+			on_invite_scholar = {
+				#nothing happens
+			}
+			invite_scholar_modifier_display = mr_no_school_rite_modifier
+			picture = "GFX_icon_none_school"
+			republican_tradition = 0.1
+		}
 	}
 	catholic = {
 		color = { 204 204 0 }
@@ -1588,6 +1603,7 @@ christian = {
 			protestant
 		}
 		
+		reform_tooltip = CATHAR_REFORM_TOOLTIP
 		heretic = { REPENTANTCATHARS }
 		
 	}

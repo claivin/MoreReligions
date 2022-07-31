@@ -1,0 +1,58 @@
+cathar_disaster = {
+	potential = {
+		religion = mr_cathar
+	}
+	
+	can_start = {
+		always = yes
+		has_country_flag = cathar_flavor2_fired
+	}
+	
+	can_stop = {
+		has_country_flag = cathar_reformed
+	}
+	
+	progress = {
+		modifier = {
+			factor = 0.5
+			always = yes
+		}
+		modifier = {
+			factor = -5
+			has_ruler_modifier = mr_cathar_king
+		}
+		modifier = {
+			factor = 3
+			is_at_war = yes
+		}
+	}
+	
+	can_end = {
+		#if disaster procs, then game over
+		has_country_flag = cathar_reformed
+	}
+	
+	modifier = {
+		global_unrest = 5
+	}
+	
+	on_start = flavor_tus.9
+	on_end = flavor_tus.17
+	
+	on_monthly = {
+		events = {
+			# flavor_tus.15 # people turn against savonarola
+			# flavor_tus.18 # Savonarola the Prophet
+			# flavor_tus.19 # Papal condemnation
+		}
+		random_events = {
+			# 2000 = 0
+			# 50 = flavor_tus.14 # reforming the republic
+			# 50 = flavor_tus.13 # the people follow God
+			# 50 = flavor_tus.12 # people expect revelations
+			# 50 = flavor_tus.11 # medici agents
+			# 50 = flavor_tus.10 # bonfire of the vanities
+			# 50 = flavor_tus.16 #Savanorola Leaves This World
+		}
+	}
+}

@@ -19,3 +19,11 @@ LAT_pillar = {
 	build_cost = -0.10
 	fort_maintenance_modifier = -0.05
 }
+
+#CATHAR FLAVOR
+mr_cathar_king = {
+	tolerance_own = 4
+	stability_cost_modifier = -0.25
+	development_cost = -0.1
+	improve_relation_modifier = -0.2
+}

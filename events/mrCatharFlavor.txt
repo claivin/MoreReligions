@@ -1,0 +1,233 @@
+#events for both tolousse and catharism
+namespace = cathar_flavor
+
+#Conversion of the Cathar King
+country_event = {
+	id = cathar_flavor.1
+	title = cathar_flavor.1.t
+	desc = cathar_flavor.1.d
+	picture = POPE_PREACHING_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TOU
+		has_regency = no
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	#convert to cathar
+	option = {
+		name = cathar_flavor.1.a
+		change_religion = mr_cathar
+		set_ruler = mr_cathar
+		set_government_rank = 2
+		add_ruler_modifier = {
+			name = mr_cathar_king
+			duration = -1
+		}
+		add_historical_rival = PAP
+		PAP = {
+			add_historical_rival = ROOT
+		}
+		every_owned_province = {
+			limit = {
+				NOT = { religion = mr_cathar }
+			}
+			add_unrest = 10
+		}
+		
+	}
+
+	#stay catholic
+	option = {
+		name = cathar_flavor.1.b
+		add_reform_desire = -0.05
+		add_prestige = 10
+		add_dip_power = 50
+	}
+}
+
+#Disaster info
+country_event = {
+	id = cathar_flavor.2
+	title = cathar_flavor.2.t
+	desc = cathar_flavor.2.d
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		religion = mr_cathar
+		NOT = { has_country_flag = cathar_flavor2_fired }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		set_country_flag = cathar_flavor2_fired
+	}
+	
+	option = {
+		name = cathar_flavor.2.a
+		custom_tooltip = cathar_disaster_explanation
+	}
+}
+
+#change cow/cheese/whale provinces
+country_event = {
+	id = cathar_flavor.3
+	title = cathar_flavor.3.t
+	desc = cathar_flavor.3.d
+	picture = POPE_PREACHING_eventPicture
+	
+	#on_bi_yearly_pulse_5
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = mr_cathar
+		any_owned_province = {
+			OR = {
+				trade_goods = livestock
+				trade_goods = cheese
+				trade_goods = whales
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					trade_goods = livestock
+					trade_goods = cheese
+					trade_goods = whales
+				}
+			}
+			save_event_target_as = cathar_cow_province
+		}
+	}
+	
+	option = { #bread
+		name = cathar_flavor.3.a
+		event_target:cathar_cow_province = {
+			change_trade_goods = grain
+			add_base_production = 1
+		}
+	}
+	option = { #veggies
+		name = cathar_flavor.3.b
+		event_target:cathar_cow_province = {
+			change_trade_goods = vegetables
+			add_base_production = 1
+		}
+	}
+	option = { #fruit
+		name = cathar_flavor.3.c
+		event_target:cathar_cow_province = {
+			change_trade_goods = fruit
+			add_base_production = 1
+		}
+	}
+}
+
+#female advisor event
+country_event = {
+	id = cathar_flavor.4
+	title = cathar_flavor.4.t
+	desc = cathar_flavor.4.d
+	picture = POPE_PREACHING_eventPicture
+	
+	#on_bi_yearly_pulse_5
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = mr_cathar
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #theologian
+		name = cathar_flavor.4.a
+		define_advisor = {
+			type = theologian
+			skill = 1
+			religion = mr_cathar
+			cost_multiplier = 0.5
+		}
+	}
+	
+	option = { #missionary
+		name = cathar_flavor.4.b
+		define_advisor = {
+			type = inquisitor
+			skill = 1
+			religion = mr_cathar
+			cost_multiplier = 0.5
+		}
+	}
+}
+
+#change fish provinces
+country_event = {
+	id = cathar_flavor.5
+	title = cathar_flavor.5.t
+	desc = cathar_flavor.5.d
+	picture = POPE_PREACHING_eventPicture
+	
+	#on_bi_yearly_pulse_5
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = mr_cathar
+		any_owned_province = {
+			trade_goods = fish
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				trade_goods = fish
+			}
+			save_event_target_as = cathar_fish_province
+		}
+	}
+	
+	option = { #bread
+		name = cathar_flavor.3.a
+		event_target:cathar_fish_province = {
+			change_trade_goods = grain
+			add_base_production = 1
+		}
+	}
+	option = { #veggies
+		name = cathar_flavor.3.b
+		event_target:cathar_fish_province = {
+			change_trade_goods = vegetables
+			add_base_production = 1
+		}
+	}
+	option = { #fruit
+		name = cathar_flavor.3.c
+		event_target:cathar_fish_province = {
+			change_trade_goods = fruit
+			add_base_production = 1
+		}
+	}
+}
+

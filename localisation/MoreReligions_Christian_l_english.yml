@@ -160,6 +160,9 @@
  mr_baptist_rite_desc: "Baptists trace their religious traditon back to English Baptists. Reformed baptists adhere to the tenets of Calvinism and generally subscribe to the doctrines of soul competentcy."
  mr_baptist_rite_modifier: "Baptist Ministers"
  
+ mr_christian_no_school: "No Variant"
+ mr_christian_no_school_desc: "This Christian Denomination has no other Rites or theological schools and cannot invite scholars from other denominations."
+ 
  #School Initialization Event
  christian_school_events.20.t: "The Liturgical Rites of [Root.GetName]"
  christian_school_events.20.d: "Liturgical rites are codified practices of a religious community. Despite the name, it concerns more than just liturgy - manner of worship - but also includes spirtuality, theology, and doctrinal law. They are often expressions of local culture and history, through the lens of the Catholic Faith. Despite attempts by the Catholic Church to codify and officiate Roman Rites throughout Catholicism, regions throughout Europe still practice their own liturgical rites, either widespread, or as a minority. Time will tell if these will be preserved..."
