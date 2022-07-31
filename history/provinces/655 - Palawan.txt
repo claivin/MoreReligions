@@ -1,7 +1,7 @@
 #655 - Palawan
 
 culture = filipino
-religion = animism
+religion = nusantara
 capital = "Palawan"
 trade_goods = sugar
 hre = no

@@ -1,7 +1,7 @@
 #651 - Sulu
 
 culture = filipino
-religion = animism
+religion = nusantara
 capital = "Jolo"
 trade_goods = unknown
 hre = no

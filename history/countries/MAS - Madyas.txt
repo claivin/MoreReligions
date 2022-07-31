@@ -3,7 +3,7 @@ add_government_reform = oligarchy_reform
 technology_group = chinese
 primary_culture = filipino
 capital = 2700 #Panay
-religion = hinduism
+religion = nusantara
 government_rank = 1
 
 1365.1.1 = {

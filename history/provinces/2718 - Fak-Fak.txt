@@ -1,0 +1,20 @@
+#2718 - Fak-Fak
+
+culture = papuan
+religion = nusantara
+capital = "Fak-Fak"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 60
+native_ferocity = 6
+native_hostileness = 9
+
+
+ # Don Jorge de Mneses
+discovered_by = MKS
+discovered_by = TER
+discovered_by = TID
+

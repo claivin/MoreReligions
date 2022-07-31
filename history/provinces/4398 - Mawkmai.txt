@@ -3,7 +3,7 @@
 owner = MPA
 controller = MPA
 culture = shan
-religion = animism
+religion = mr_satsanaphi
 capital = "Mawkmai"
 trade_goods = rice
 hre = no

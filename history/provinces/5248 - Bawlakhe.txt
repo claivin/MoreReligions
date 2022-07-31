@@ -3,7 +3,7 @@
 owner = HSE
 controller = HSE
 culture = shan
-religion = animism
+religion = mr_satsanaphi
 capital = "Kengtung"
 trade_goods = lumber
 hre = no

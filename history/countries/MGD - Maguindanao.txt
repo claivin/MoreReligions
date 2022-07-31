@@ -4,7 +4,7 @@ government_rank = 1
 technology_group = chinese
 primary_culture = filipino
 capital = 652	# Maguindanao
-religion = animism
+religion = nusantara
 
 1444.1.1 = {
 	monarch = {

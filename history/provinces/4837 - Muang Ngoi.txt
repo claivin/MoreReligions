@@ -1,7 +1,7 @@
 owner = LUA
 controller = LUA
 culture = lao
-religion = animism
+religion = mr_satsanaphi
 capital = "Muang Ngoi"
 trade_goods = ivory
 hre = no

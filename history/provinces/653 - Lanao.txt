@@ -1,0 +1,17 @@
+#653 - Lanao
+
+culture = filipino
+religion = nusantara
+capital = "Marawi"
+trade_goods = spices
+is_city = yes
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+owner = MGD
+controller = MGD
+add_core = MGD
+add_core = LNO
+discovered_by = chinese
+

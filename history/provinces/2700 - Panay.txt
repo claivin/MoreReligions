@@ -1,0 +1,18 @@
+#2700 - Panay
+
+culture = filipino
+religion = nusantara
+capital = "Panay"
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 4
+base_manpower = 2
+add_core = MAS
+owner = MAS
+controller = MAS
+is_city = yes
+discovered_by = chinese
+extra_cost = 8
+center_of_trade = 1
+

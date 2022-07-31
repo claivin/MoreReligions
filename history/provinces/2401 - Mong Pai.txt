@@ -3,7 +3,7 @@
 owner = MPA
 controller = MPA
 culture = karen
-religion = animism
+religion = mr_satsanaphi
 capital = "Mong Pai"
 trade_goods = lumber
 hre = no

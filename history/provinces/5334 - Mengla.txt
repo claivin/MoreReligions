@@ -2,7 +2,7 @@
 owner = MMA
 controller = MMA
 culture = shan
-religion = animism
+religion = mr_satsanaphi
 capital = "mengla"
 trade_goods = lumber
 hre = no

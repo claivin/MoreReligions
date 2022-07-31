@@ -1,0 +1,16 @@
+#4351 - Buglas
+
+culture = filipino
+religion = nusantara
+capital = "Silay"
+trade_goods = sugar
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+add_core = MAS
+owner = MAS
+controller = MAS
+is_city = yes
+discovered_by = chinese
+

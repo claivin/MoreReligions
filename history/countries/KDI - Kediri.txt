@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = mandala_reform
+primary_culture = javanese
+technology_group = chinese
+religion = hinduism
+capital = 2691 
+
+

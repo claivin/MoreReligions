@@ -102,6 +102,7 @@ country_event = {
 				OR = {
 					tag = CEY
 					tag = KND
+					culture = sinhalese
 				}
 				religion = buddhism
 			}

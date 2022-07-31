@@ -5,7 +5,7 @@ controller = MMA
 
 add_core = MMA
 culture = shan
-religion = buddhism
+religion = mr_satsanaphi
 capital = "Sibsongbanna"
 trade_goods = tea
 hre = no

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = plutocratic_reform
 technology_group = chinese
-religion = sunni
+religion = nusantara
 primary_culture = filipino
 capital = 651	# Jolo
 religious_school = shafii_school

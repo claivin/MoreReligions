@@ -3,7 +3,7 @@
 owner = LUA
 controller = LUA
 culture = lao
-religion = buddhism
+religion = mr_satsanaphi
 capital = "Luang Namtha"
 trade_goods = tea
 hre = no

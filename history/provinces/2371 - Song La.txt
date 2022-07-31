@@ -3,7 +3,7 @@
 owner = MPH
 controller = MPH
 culture = lao
-religion = animism
+religion = mr_satsanaphi
 capital = "Song La"
 trade_goods = tea
 hre = no

@@ -3,7 +3,7 @@
 owner = BEI
 controller = BEI
 culture = bornean
-religion = mahayana
+religion = sunni
 capital = "Jesselton"
 trade_goods = spices
 hre = no

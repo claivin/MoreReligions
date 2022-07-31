@@ -3,7 +3,7 @@
 owner = ANK
 controller = ANK
 culture = khmer
-religion = mahayana
+religion = buddhism
 capital = "Khukhan"
 trade_goods = rice
 hre = no

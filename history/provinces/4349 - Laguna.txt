@@ -1,0 +1,16 @@
+#4349 - Laguna
+
+owner = TDO
+controller = TDO
+add_core = TDO
+culture = filipino
+religion = nusantara
+capital = "Laguna"
+trade_goods = grain
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 1
+is_city = yes
+discovered_by = chinese
+

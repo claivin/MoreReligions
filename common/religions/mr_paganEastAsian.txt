@@ -32,7 +32,42 @@ east_asian_pagan_group = {
 		aspects_name = RAVEN_ASPECTS
 		heretic = {  }
 	}
+	nusantara = {
+		color = { 200 86 129 }
+		icon = 11
+		country = {
+			tolerance_heathen = 1
+			merchants = 1 
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		fetishist_cult = yes
+		can_have_secondary_religion = yes
 		
+		heretic = { SNAKE_CLAN }
+	}
+	mr_satsanaphi = {
+		color = { 196 87 52 }
+		icon = 11
+		country = {
+			tolerance_heathen = 2
+			land_attrition = -0.15
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			loot_amount = 0.25
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { SNAKE_CLAN }
+	}
 	
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
