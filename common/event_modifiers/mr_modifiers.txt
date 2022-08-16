@@ -3,6 +3,15 @@ mr_raising_subject = {
 }
 aks_reelect = {
 }
+
+#Shugo Flavor
+shugo_1444 = {
+	land_forcelimit_modifier = 0.25
+	land_maintenance_modifier = -0.15
+	legitimacy = 1
+} 
+	
+#Latin Empire Flavor
 LAT_horses = {
 	diplomatic_reputation = 1 
 	monthly_splendor = 1 

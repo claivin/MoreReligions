@@ -75,8 +75,15 @@
  is_dutch_confederation: "Is a Low Countries Confederate"
  
  samanta_vassal: "Samanta"
- samanta_vassal_ong_desc: "The shattered vassals of the Rajput Empire."
+ samanta_vassal_long_desc: "The shattered vassals of the Rajput Empire."
  samanta_vassal_is_our:  "$NAME|Y$ is a fellow Samanta"
  samanta_vassal_title: "Samanta"
  samanta_vassal_title_plural: "Samantas"
  is_samanta_vassal: "Is a Samanta"
+ 
+ shugo_vassal: "Shugo"
+ shugo_vassal_long_desc: "The local governors of the Japanese Empire"
+ shugo_vassal_is_our: "$NAME|Y$ is a fellow Shugo"
+ shugo_vassal_title: "Shugo"
+ shugo_vassal_title_plural: "Shugo"
+ is_shugo_vassal: "Is a Shugo"

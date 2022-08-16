@@ -301,6 +301,10 @@
  NGP_ADJ: "Negapatam"
  NGP_ADJ2: "Negapatam"
  
+ CGS: "Cen"
+ CGS_ADJ: "Cen"
+ CGS_ADJ2: "Cen"
+ 
  hinduism: "Vaishnavism"
  hinduism_desc: "Vaishnavism is a major religion in South Asia"
  hinduism_rebels_demand:0 "Convert $COUNTRYNAME$"

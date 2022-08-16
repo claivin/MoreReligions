@@ -1,28 +1,33 @@
-vassal = {
+dependency = {
+	subject_type = "shugo_vassal"
 	first = JAP
 	second = NTT
 	start_date = 1444.11.11
 	end_date = 1573.7.1
 }
-vassal = {
+dependency = {
+	subject_type = "shugo_vassal"
 	first = JAP
 	second = HTK
 	start_date = 1444.11.11
 	end_date = 1573.7.1
 }
-vassal = {
+dependency = {
+	subject_type = "shugo_vassal"
 	first = JAP
 	second = SMZ
 	start_date = 1444.11.11
 	end_date = 1573.7.1
 }
-vassal = { 
+dependency = {
+	subject_type = "shugo_vassal"
 	first = JAP
 	second = HSK
 	start_date = 1444.11.11
 	end_date = 1573.7.1
 }
-vassal = { 
+dependency = {
+	subject_type = "shugo_vassal" 
 	first = JAP
 	second = AKT
 	start_date = 1444.11.11

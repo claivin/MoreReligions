@@ -19,6 +19,7 @@ on_startup = {
 			}
 		}
 	}
+	set_emperor_of_china = GHC
 	emperor = {
 		save_global_event_target_as = Emperor
 	}
@@ -1625,12 +1626,24 @@ on_mandate_of_heaven_gained = {
 		limit = {
 			OR = {
 				NOT = { government = monarchy }
+				NOT = { tag = GSC }
 				government = tribal
 			}
 		}
 		change_government_to_monarchy = yes
 	}
-	add_government_reform = celestial_empire
+	if = {
+		limit = {
+			not = { tag = GSC }
+		}
+		add_government_reform = celestial_empire
+	}
+	if = {
+		limit = {
+			tag = GSC
+		}
+		add_government_reform = empire_of_light_reform
+	}
 	set_mandate = 60
 	set_meritocracy = 60
 	add_country_modifier = {

@@ -1,0 +1,24 @@
+﻿l_english:
+#Shugo Estate
+ estate_shugo: "Shugo"
+ estate_shugo_desc: "The Shugo are provincial governors established by the Shogun. Many of these Shugo were intended to be civil appointees as opposed to military governors, but Emperor Go-Daigo opted to instead retain the loyalty of his supporters with these lands, and as such, they have gathered immense amounts of power and authority over the territory they govern. While they are loyal to the Emperor, there are still whispers of overthrowing him and placing instead a Shogun in power. Should their influence grow considerably, and if they saw a chance to reinstall a Shogunate, they would take the opportunity to do so."
+ shugo_regency_tt: "Will allow us to §Tdeclare war§! during a §YRegency Council§!"
+ shugo_1444_TT: "Every Shugo of ours will receive the following:"
+ shugo_1444_1_TT: "Every Shugo of ours will lose the following:"
+ shugo_1444: "Shugo Dominance"
+ estate_kuge: "Kuge"
+ estate_shugo_loyalty_modifier: "Shugo Loyalty Equilibrium"
+ estate_shugo_influence_modifier: "Shugo Influence"
+ shugo_loyalty_modifier: "Shugo Loyalty Equilibrium"
+ shugo_influence_modifier: "Shugo Influence"
+ 
+ #Shugo Privileges
+ estate_shugo_land_rights: "Shugo Territory Grants"
+ estate_shugo_land_redistribution: "Shugo Land Redistribution"
+ estate_shugo_shugodai_colony: "Shugodai Expulsion"
+ estate_shugo_regency_advisors: "Shikken Guarantees"
+ estate_shugo_poetry: "Samurai Poets"
+ shugo_colony_tt: "A §YRandom Colony§! will gain §G100§! §YSettlers§!."
+ estate_shugo_military: "Shugo Military Control"
+ estate_shugo_japan: "Go-Daigo Reforms"
+ 

@@ -1,0 +1,63 @@
+shugo_vassal = {
+	copy_from = vassal
+	count = vassal
+	sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmarch
+	diplomacy_subject_sprite = GFX_diplomacy_weakmarch
+	
+	# Properties:
+	has_power_projection = yes
+	takes_diplo_slot = no
+	gives_daimyo_bonuses = yes
+	gets_help_with_rebels = no
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	can_use_claims = no
+	forms_trade_companies = no
+	can_concentrate_development = no
+	joins_overlords_wars = yes
+	joins_colonial_wars = yes
+
+	trust_on_start = 0
+	
+	base_liberty_desire = 10.0
+	military_focus = 1.2
+
+	relative_power_class = 1
+	should_quit_wars_on_activation = yes
+
+	
+	# Subject Interactions
+	#(disable)
+	scutage = no
+	grant_core_claim = yes
+	grant_province = yes
+	place_relative_on_throne = yes
+	enforce_religion = no
+	enforce_culture = no
+	seize_territory = no
+	#(enable)
+	force_seppuku = yes
+	contribute_to_capital = yes
+	#force_isolation = yes
+	return_land = yes
+	conscript_general = yes
+	#(special)
+	#sword_hunt = yes
+	#sankin_kotai = yes
+	#expel_ronin = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = vassal_nation
+	}
+	modifier_overlord = {
+		modifier = vassal_subject
+	}
+
+	overlord_opinion_modifier = is_vassal
+	subject_opinion_modifier = is_vassal
+}

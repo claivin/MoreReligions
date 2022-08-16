@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = shogunate
+add_government_reform = feudalism_reform
 government_rank = 3
 primary_culture = japanese
 add_accepted_culture = togoku

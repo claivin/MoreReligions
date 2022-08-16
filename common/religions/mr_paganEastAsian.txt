@@ -40,8 +40,7 @@ east_asian_pagan_group = {
 			merchants = 1 
 		}
 		country_as_secondary = {
-			tolerance_own = 2
-			loot_amount = 0.25
+			trade_efficiency = 0.1
 		}
 		province = {
 			local_missionary_strength = 0.02
@@ -59,8 +58,7 @@ east_asian_pagan_group = {
 			land_attrition = -0.15
 		}
 		country_as_secondary = {
-			tolerance_own = 2
-			loot_amount = 0.25
+			land_attrition = -0.10
 		}
 		province = {
 			local_missionary_strength = 0.02
@@ -68,7 +66,54 @@ east_asian_pagan_group = {
 		
 		heretic = { SNAKE_CLAN }
 	}
-	
+	mr_mo = {
+		color = { 239 237 82 }
+		icon = 12
+		country = {
+			tolerance_own = 1
+			global_manpower_modifier = 0.10
+		}
+		country_as_secondary = {
+			global_manpower_modifier = 0.10
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { SNAKE_CLAN }
+	}
+	mr_bimo = {
+		color = { 209 119 165 }
+		icon = 12
+		country = {
+			state_governing_cost = 0.1 
+			num_accepted_cultures = 1 
+		}
+		country_as_secondary = {
+			num_accepted_cultures = 1 
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		heretic = { SNAKE_CLAN }
+	}
+	mr_miao = {
+		color = { 117 215 92 }
+		icon = 12
+		country = {
+			global_unrest = -1 
+			global_tax_modifier = 0.10
+		}
+		country_as_secondary = {
+			num_accepted_cultures = 1 
+		}
+		province = {
+			global_tax_modifier = 0.10
+		}
+		
+		heretic = { SNAKE_CLAN }
+	}
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
 }
