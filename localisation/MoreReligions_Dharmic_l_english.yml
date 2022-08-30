@@ -8,6 +8,12 @@
  shaivism_rebels_demand: "Convert $COUNTRYNAME$"
  shaivism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ #Shaivism Deities
+ kartikeya: "Kartikeya"
+ ayyanar: "Ayyanar"
+ devaraja: "Devaraja"
+ 
+ 
  svetembara:0 "Svetambara"
  svetembara_religion_desc:0 "Svetambara is a major religion in South Asia."
  svetembara_rebels_name: "Svetambara Zealots"
@@ -35,12 +41,28 @@
  shaktism_rebels_demand: "Convert $COUNTRYNAME$"
  shaktism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
- digambara:0 "Digambara"
- digambara_religion_desc:0 "Digambara is a minor religion in South Asia."
+ #Shakti Deities
+ kali: "Kali"
+ tripura_sundari: "Lalita"
+ bhunaveswari: "Dhunaveswari"
+ durga: "Durga"
+ matangi: "Matangi"
+ mahadevi: "Mahadevi"
+ 
+ digambara: "Digambara"
+ digambara_religion_desc: "Digambara is a minor religion in South Asia."
  digambara_rebels_name: "Digambara Zealots"
  digambara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  digambara_rebels_title: "$RELIGION$ Zealots"
  digambara_rebels_army: "$RELIGION$ Army"
  digambara_rebels_demand: "Convert $COUNTRYNAME$"
  digambara_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ #Vaishnava Deities
+ krishna: "Krishna"
+ krishna_desc: "Krishna is worshipped as an avatar of Vishnu"
+ rama: "Rama"
+ narasimha: "Narasimha"
+ jagannath: "Jagannath"
+ kalki: "Kalki"
  

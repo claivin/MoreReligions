@@ -1246,6 +1246,7 @@ guiTypes = {
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
 				format = centre
+				fixedsize = yes
 			}
 		}
 		

@@ -4497,6 +4497,12 @@ on_create_vassal = {
 		add_government_reform = papacy_reform
 		adopt_reform_progress = FROM
 	}
+	if = {
+		limit = {
+			FROM = { uses_karma = yes }
+		}
+		add_karma = 5
+	}
 }
 
 # ROOT = Country establishing it

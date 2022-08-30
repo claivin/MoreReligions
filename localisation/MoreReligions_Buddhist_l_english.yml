@@ -39,6 +39,15 @@
  nihon_rebels_demand: "Convert $COUNTRYNAME$"
  nihon_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ mr_maitreya: "Maitreya"
+ mr_maitreya_religion_desc: "The Maitreyan faith is a branch of Buddhism centered around the millenarian Boddhisatva Maitreya, who shall appear when the world is the farthest away from the Dharma and bring it back into the light. A prominent force in the Red Turban Rebellions, the movement remained prominent throughout the 13th and 14th century and found its home in the southern Song state by 1444."
+ mr_maitreya_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_maitreya_title: "$RELIGION$ Zealots"
+ mr_maitreya_rebels_army: "$RELIGION$ Army"
+ mr_maitreya_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_maitreya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+  
+ 
  
  ##Bodhisattvayana##
  mr_bodhisattvayana_school:0 "Bodhisattvayana"

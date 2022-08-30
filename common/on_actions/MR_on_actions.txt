@@ -1,0 +1,97 @@
+on_mandate_of_heaven_gained = {
+	save_global_event_target_as = EmperorOfChina
+	if = {
+		limit = {
+			technology_group = nomad_group
+		}
+		change_technology_group = chinese
+		change_unit_type = chinese
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { government = monarchy }
+				NOT = { tag = GSC }
+				government = tribal
+			}
+		}
+		change_government_to_monarchy = yes
+	}
+	if = {
+		limit = {
+			not = { tag = GSC }
+		}
+		add_government_reform = celestial_empire
+	}
+	if = {
+		limit = {
+			tag = GSC
+		}
+		add_government_reform = empire_of_light_reform
+	}
+	set_mandate = 60
+	set_meritocracy = 60
+	add_country_modifier = {
+		name = new_mandate_holder
+		duration = 9125
+	}
+	1816 = {
+		if = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+			add_core = root
+		}
+	}
+	1821 = {
+		if = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+			add_core = root
+		}
+	}
+	667 = {
+		if = {
+			limit = {
+				NOT = { owned_by = root }
+				NOT = { is_core = root }
+			}
+			add_core = root
+		}
+	}
+	china_superregion = {
+		limit = {
+			NOT = { is_core = ROOT }
+		}
+		add_permanent_claim = ROOT
+	}
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+		}
+		remove_faction = temples
+		remove_faction = enuchs
+		remove_faction = bureaucrats
+	}
+	if = {
+		limit = {
+			has_country_modifier = lost_mandate_of_heaven
+		}
+		remove_country_modifier = lost_mandate_of_heaven
+	}
+	country_event = { #Reforming the Bureaucracy
+		id = china_events.31
+		days = 365
+	}
+	country_event = {
+		id = china_events.32 #Records of the last Empire
+		days = 183
+	}
+	country_event = {
+		id = celestial_empire_events.2
+		days = 1825
+	}
+}
