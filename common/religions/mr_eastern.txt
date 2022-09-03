@@ -674,8 +674,8 @@ eastern = {
 		allowed_conversion = {
 			vajrayana
 			mahayana
-			yogavacara
 			azhaliism
+			yogavacara
 		}
 		country = {
 			tolerance_heretic = 2
@@ -719,6 +719,13 @@ eastern = {
 			horde_unity = 1
 			tolerance_heathen = 1
 		}
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = yogavacara
+				}
+			}
+		}
 		on_convert = {
 			add_prestige = -100
 			add_stability = -1
@@ -733,6 +740,7 @@ eastern = {
 		
 		uses_karma = yes
 		
+		date = 1520.1.1
 	
 	}
 
