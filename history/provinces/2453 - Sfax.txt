@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 # - Sfax
 
-owner = TUN
-controller = TUN 
+owner = DJB
+controller = DJB
 culture = tunisian
 religion = sunni
 capital = "Sfax"
@@ -12,7 +12,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = TUN
+add_core = DJB
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

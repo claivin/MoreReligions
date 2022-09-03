@@ -1,9 +1,9 @@
 #REGIONNORTHAFRICA
 #Demnate
 
-owner = TLC
-controller = TLC 
-add_core = TLC 
+owner = SOS
+controller = SOS
+add_core = SOS
 culture = moroccan
 religion = sunni
 capital = "Demnate"

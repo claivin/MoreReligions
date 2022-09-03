@@ -1,20 +1,23 @@
-#REGIONNORTHAFRICA
-#5267 - Medinine
+# - Ghadames
 
-owner = DJB
-controller = DJB
+owner = MZB
+controller = MZB
 culture = tunisian
 religion = sunni
-capital = "Gabes"
-trade_goods = grain
+capital = "Ghadames"
+trade_goods = spices #Dates
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = DJB
-# add_core = TRP
+add_core = GHD
+add_core = MZB
+
+
+
 discovered_by = western
+discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = eastern
+

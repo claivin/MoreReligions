@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 #344 - Marrakech
 
-owner = TLC
-controller = TLC 
+owner = MRK
+controller = MRK
 culture = moroccan
 religion = sunni
 capital = "Marrakech"
@@ -13,7 +13,8 @@ base_production = 5
 base_manpower = 2
 is_city = yes
 fort_15th = yes
-add_core = TLC
+add_core = MRK
+add_core = SOS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

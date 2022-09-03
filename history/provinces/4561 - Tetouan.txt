@@ -14,6 +14,7 @@ base_manpower = 2
 is_city = yes
 add_core = TLC
 # add_core = TET
+add_core = SOS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 # - Susa
 
-owner = TUN
-controller = TUN
+owner = QYW
+controller = QYW
 culture = tunisian
 religion = sunni
 capital = "Susa"
@@ -12,7 +12,8 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = TUN
+add_core = QYW
+add_core = AFR
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

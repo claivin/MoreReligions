@@ -1,20 +1,21 @@
-#REGIONNORTHAFRICA
-#2326 - Bardiyah
+#353 - Tataouine
 
-owner = EGY
-controller = EGY
-culture = al_misr_arabic
+owner = DJB
+controller = DJB
+culture = tunisian
 religion = sunni
-capital = "Bardiyah"
-trade_goods = livestock
+capital = "Tataouine"
+trade_goods = grain
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = EGY
+add_core = DJB
+
+
+
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-discovered_by = nomad_group

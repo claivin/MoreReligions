@@ -13,6 +13,7 @@ base_manpower = 1
 is_city = yes
 fort_15th = yes
 add_core = TLC
+add_core = SOS
 # add_core = GRA
 discovered_by = western
 discovered_by = muslim

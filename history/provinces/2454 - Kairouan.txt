@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 # - El Kef
 
-owner = TUN
-controller = TUN 
+owner = QYW
+controller = QYW
 culture = tunisian
 religion = sunni
 capital = "El Kef"
@@ -12,7 +12,8 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = TUN
+add_core = QYW
+add_core = AFR
 fort_15th = yes #El Kef fortifications
 discovered_by = western
 discovered_by = eastern

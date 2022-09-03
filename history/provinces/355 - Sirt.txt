@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 #355 - Sirt
 
-owner = TRP
-controller = TRP
+owner = CYR
+controller = CYR
 culture = tunisian
 religion = sunni
 capital = "Ben Jawad"
@@ -13,7 +13,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 # add_core = FZA
-add_core = TRP
+add_core = CYR
 # add_local_autonomy = 25
 discovered_by = western
 discovered_by = muslim

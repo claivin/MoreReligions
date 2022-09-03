@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = tunisian
+religion = sunni
+technology_group = muslim
+capital = 356
+religious_school = maliki_school
+
+1444.1.1 = {
+	monarch = {
+		name = ""
+		dynasty = "Banu Sulaym"
+		adm = 1
+		dip = 3
+		mil = 0
+		birthdate = 1414.3.5
+	}
+}

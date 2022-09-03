@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 #341 - Tunis
 
-owner = TUN
-controller = TUN 
+owner = AFR
+controller = AFR
 culture = tunisian
 religion = catholic
 capital = "Tunis"
@@ -12,7 +12,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 2
 is_city = yes
-add_core = TUN
+add_core = AFR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

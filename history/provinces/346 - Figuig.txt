@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 #346 - Tafilalt
 
-owner = TLC
-controller = TLC 
+owner = SOS
+controller = SOS
 culture = moroccan
 religion = sunni
 capital = "Tafilalt"
@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = TLC
+add_core = SOS
 # add_core = TFL
 discovered_by = western
 discovered_by = muslim

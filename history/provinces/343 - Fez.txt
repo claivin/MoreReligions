@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 #343 - Fez
 
-owner = TLC
-controller = TLC 
+owner = FEZ
+controller = FEZ
 culture = moroccan
 religion = sunni
 capital = "Fez"
@@ -13,8 +13,8 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = TLC
-# add_core = FEZ
+add_core = FEZ
+add_core = SOS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

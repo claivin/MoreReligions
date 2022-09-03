@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = pirate_republic
+primary_culture = tunisian
+religion = sunni
+technology_group = muslim
+capital = 2954 
+religious_school = maliki_school
+

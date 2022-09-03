@@ -112,3 +112,19 @@
  MDK: "Mandinka"
  MDK_ADJ: "Mandinka"
  MDK_ADJ2: "Mandinka"
+ 
+ DJB: "Djerba"
+ DJB_ADJ: "Djerba"
+ DJB_ADJ2: "Djerba"
+ 
+ CYR: "Cyrenaica"
+ CYR_ADJ: "Cyrenaican"
+ CYR_ADJ2: "Cyrenaican"
+ 
+ AFR: "Africa"
+ AFR_ADJ: "African"
+ AFR_ADJ2: "African"
+ 
+ QYW: "Qayrawan"
+ QYW_ADJ: "Qayrawani"
+ QYW_ADJ2: "Qayrawani"

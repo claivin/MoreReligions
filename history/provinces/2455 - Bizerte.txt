@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 # - Bizerte
 
-owner = TUN
-controller = TUN
+owner = QYW
+controller = QYW
 culture = tunisian
 religion = sunni
 capital = "Bizerte"
@@ -12,7 +12,8 @@ base_tax = 4
 base_production = 4
 base_manpower = 1
 is_city = yes
-add_core = TUN
+add_core = QYW
+add_core = AFR
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

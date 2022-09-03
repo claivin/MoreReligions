@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 # - Zuwarah
 
-owner = TRP
-controller = TRP 
+owner = DJB
+controller = DJB
 culture = tunisian
 religion = ibadi
 capital = "Zuwarah"
@@ -13,7 +13,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 # add_core = TUN
-add_core = TRP
+add_core = DJB
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

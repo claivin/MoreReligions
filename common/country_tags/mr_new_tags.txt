@@ -302,6 +302,13 @@ MSL = "countries/Mosul.txt"
 TRB = "countries/TurAdbin.txt"
 HRT = "countries/Herat.txt"
 
+
+#North Africa
+AFR = "countries/Africa.txt"
+DJB = "countries/Djerba.txt"
+CYR = "countries/Cyrenaica.txt"
+QYW = "countries/Qayrawan.txt"
+
 #India
 KNJ = "countries/Kannauj.txt"
 SBH = "countries/Sambhal.txt"

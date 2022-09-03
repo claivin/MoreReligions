@@ -1,8 +1,8 @@
 #REGIONNORTHAFRICA
 # - Oujda
 
-owner = TLC
-controller = TLC
+owner = FEZ
+controller = FEZ
 culture = berber
 religion = sunni
 capital = "Taza"
@@ -12,7 +12,8 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = TLC
+add_core = FEZ
+add_core = SOS
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
