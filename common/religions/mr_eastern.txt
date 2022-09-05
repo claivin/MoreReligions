@@ -1,5 +1,7 @@
 eastern = {
 
+	center_of_religion = 558
+
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
 	religious_schools = {
@@ -705,11 +707,20 @@ eastern = {
 	yogavacara = { #Tantric Theravada 
 		color = { 194 29 10 }
 		icon = 24
+		
 		allowed_conversion = {
 			vajrayana
 			buddhism
 			mahayana
 			azhaliism
+		}
+		allowed_center_conversion = {
+			buddhism
+			mr_satsanaphi
+			mahayana
+			vajrayana
+			azhaliism
+			maitreya
 		}
 		country = {
 			tolerance_heathen = 2

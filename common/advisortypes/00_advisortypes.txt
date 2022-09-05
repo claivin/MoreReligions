@@ -15,9 +15,6 @@
 ######################################################
 philosopher = {
 	monarch_power = ADM
-	hidden_effect = {
-		add_karma = 2
-	}
 	# Bonus
 	prestige = 1
 	skill_scaled_modifier = { meritocracy = 0.25 }

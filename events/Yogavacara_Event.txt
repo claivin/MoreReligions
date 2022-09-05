@@ -1,0 +1,27 @@
+namespace = yogavacara_flavor
+country_event = {
+	id = yogavacara_flavor.1
+	title = yogavacara_flavor.1.t
+	desc = yogavacara_flavor.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		enable_religion = yogavacara
+		change_religion = yogavacara
+		set_ruler_religion = yogavacara
+		random_owned_province = {
+			limit = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = yogavacara
+				}
+			}
+			add_reform_center = yogavacara
+			change_religion = yogavacara
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+		}
+	}
+}

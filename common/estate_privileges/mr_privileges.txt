@@ -276,10 +276,10 @@ estate_shugo_military = {
 	is_valid = {
 	}
 	penalties = {
-		add_army_professionalism = -5
-		add_legitimacy = -10
 	}
 	on_granted = {
+		add_army_professionalism = -5
+		add_legitimacy = -10
 	}
 	benefits = {
 		infantry_power = 0.1

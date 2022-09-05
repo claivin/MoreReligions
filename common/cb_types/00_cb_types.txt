@@ -1618,6 +1618,28 @@ cb_vassalize_mission_karma = {
 				religion_group = eastern
 			}
 		}
+		else_if = {
+			limit = {
+				ROOT = {
+					religion = yogavacara
+				}
+			}
+			FROM = {
+				is_neighbor_of = ROOT
+				religion_group = eastern
+			}
+		}
+		else_if = {
+			limit = {
+				had_global_flag = {
+					flag = centralized_buddh
+				}
+			}
+			FROM = {
+				is_neighbor_of = ROOT
+				religion_group = eastern
+			}
+		}
 		else = {
 			FROM = {
 				is_neighbor_of = ROOT
