@@ -1,0 +1,44 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+#As this list grow organize with categories.
+#Current loc keys in this file:
+#GetTributaryOverlord
+#GetOldEra
+#GetLocalPowerStructure
+#GetGovernmentSupporters
+#GetNoblesReplacementForOtherGovernments
+
+
+### Titular for Overlord
+#Ex: "On a mission to visit the [Son of Heaven]"
+defined_text = {
+    name = KARMA_DESC
+
+    text = {
+        localisation_key = KARMA_DESC_MAITREYA
+        trigger = {
+			religion = maitreya
+        }
+    }
+    text = {
+        localisation_key = KARMA_DESC_SHIN
+        trigger = {
+			religion = mr_shin
+        }
+    }
+	text = {
+        localisation_key = KARMA_DESC_YOG
+        trigger = {
+			religion = yogavacara
+        }
+	}
+	text = {
+		localisation_key = KARMA_DESC_GLOB
+		trigger = {
+			has_global_flag = text
+		}
+	}
+}

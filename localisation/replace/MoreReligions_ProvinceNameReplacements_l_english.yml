@@ -305,26 +305,4 @@
  CGS_ADJ: "Cen"
  CGS_ADJ2: "Cen"
  
- hinduism: "Vaishnavism"
- hinduism_desc: "Vaishnavism is a major religion in South Asia"
- hinduism_rebels_demand:0 "Convert $COUNTRYNAME$"
- hinduism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- hinduism_rebels_title:0 "Religious"
- hinduism_rebels_name:0 "$RELIGION$ Zealots"
- hinduism_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- hinduism_rebels_army:0 "$RELIGION$ Army"
  
- KARMA_DESC2:0 "Karma represents the divinity of your past actions in the eyes of the Buddhist faith and will rise or fall depending on the morality of actions you take. Too high Karma means you will gain the trust of the Sangha and become a paragon of vitrue at the cost of losing the trust of the common soldier, while too low Karma will make you a fearsome warlord - however, you will suffer in the diplomatic sphere. The ideal ruler will walk the middle path, gaining the most from both aspects."
- KARMA_DESC:0 "Karma increases from:\n- §YHonoring alliances§!\n- §YReleasing vassals§!\n- §YReleasing nations in peace deals§!\n- §YReturning cores§!\n- §YConstructing Temples§!\n- §YConverting Provinces§!\n- §YGranting Privileges to the Clergy§!\n\nKarma decreases from:\n- §YStarting wars§!\n- §YGranting Privileges to the Nobility§!\n- §YDestroying Temples§!\n- §YHaving less than 50 Legimitacy§!\n\nHaving §YNeutral Karma§! will grant access to the §YBuddhist Subjugation Casus Belli§! on all neighboring countries with the same religion."
- cb_vassalize_mission_karma: "Buddhist Subjugation"
- cb_vassalize_mission_karma_desc: "We have balanced the need of our state and our clergy. We shall now seek to dominate our neighbors and bring them into the fold!"
- 
- 
- shiite: "Imamiyyah"
- shiite_religion_desc: "Imamiyyah Muslims hold that the legitimate successor of the prophet Muhammad as Caliph and Imam was his cousin and son-in-law Ali. The Shiites believe that a number of Imams have followed Ali and still await the coming of his final successor."
- shiite_rebels_name: "Imamiyyah Zealots"
- shiite_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- shiite_title: "$RELIGION$ Zealots"
- shiite_rebels_army: "$RELIGION$ Army"
- shiite_rebels_demand: "Convert $COUNTRYNAME$"
- shia_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."

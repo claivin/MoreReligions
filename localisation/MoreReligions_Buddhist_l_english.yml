@@ -1,6 +1,6 @@
 ﻿l_english:
  yogavacara:0 "Yogavacara"
- yogavacara_religion_desc:0 "A blend of Esoteric Buddhism, Theravada Buddhism, and Folk Traditions. Formed in the mid 13th Century, it spread across Laos with very little resistance, and became the de facto faith of the decentralized city states."
+ yogavacara_religion_desc:0 "A blend of Esoteric Buddhism, Theravada Buddhism, and Folk Traditions. Formed in the mid 15th Century, it spread across Laos with very little resistance, and became the de facto faith of the region."
  
  yogavacara_rebels_name: "Yogavacara Zealots"
  yogavacara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -8,6 +8,18 @@
  yogavacara_rebels_army: "$RELIGION$ Army"
  yogavacara_rebels_demand: "Convert $COUNTRYNAME$"
  yogavacara_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ 
+ mr_shin: "Shin"
+ mr_shin_religion_desc: "The faith of the militant Ikko-Ikki warriors. Shin Buddhism is a branch of Japanese Buddhism which was founded by the Monk Shinran after leaving the corrupt Tendai school. It was incredibly popular with the clans of Hosokawa and Hatakeyama, as their message of The Age of Dharma spread like wildfire among those that disagreed with the Emperor's policies."
+ 
+ mr_shin_rebels_name: "Shin Zealots"
+ mr_shin_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_shin_rebels_title: "$RELIGION$ Zealots"
+ mr_shin_rebels_army: "$RELIGION$ Army"
+ mr_shin_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_shin_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
  
  ari:0 "Ari"
  ari_religion_desc:0 "An older, tantric form of Theravada Buddhism that formed prior to the rise of the Pagan Empire. With the empire's collapse and the rise of the Hanthawaddy Kingdom, the faith began to spread as an alternative to the traditional Theravadan Faith."
@@ -123,19 +135,19 @@
  mr_jonang_school_modifier:0 "Jonang"
  
  ###Shin Buddhism###
- mr_shin_school:0 "Shin"
- mr_shin_school_desc:0 "Shin buddhism is a branch of Japanese Buddhism which was founded by the Monk Shinran after leaving the corrupt Tendai school. It was incredibly popular with the clans of Oda and Tokugawa."
- mr_shin_school_modifier:0 "Shin"
+ mr_shin_school:0 "Jodo-Shinshu"
+ mr_shin_school_desc:0 "Jodo-Shinshu buddhism is a branch of Japanese Buddhism which was founded by the Monk Shinran after leaving the corrupt Tendai school. It was incredibly popular with the clans of Hosokawa and Hatakeyama, as their message of The Age of Dharma spread like wildfire among those that disagreed with the Emperor's policies."
+ mr_shin_school_modifier:0 "Jodo-Shinshu"
  
  ###Tendai Buddhism###
  mr_tendai_school:0 "Tendai"
  mr_tendai_school_desc:0 "Tendai Buddhism is an older school of Buddhism that flourished under the old regime, with many of the rituals being reminiscent of older tantric methods. However, it has since fallen out of favor, and is relatively unknown."
  mr_tendai_school_modifier:0 "Tendai"
  
- ###Jodo Buddhism###
- mr_jodo_school:0 "Jodo"
- mr_jodo_school_desc:0 "The Jodo School is a school of buddhism that heavily places emphasis on Mappo, or the Age of Dharma Decline. To this effect, society is becoming more corrupt, and disasters both natural and political are signs of this. Preaching to local peasants, it became an easy to follow path to enlightenment."
- mr_jodo_school_modifier:0 "Jodo"
+ ###Nichiren Buddhism###
+ mr_nichiren_school:0 "Nichiren"
+ mr_nichiren_school_desc:0 "The Nichiren School is a school of buddhism that heavily places emphasis on the Lotus Sutra. By acknowledging this Sutra and repeating it, the massess can find salvation in the Pure Land upon their death. Nichiren Buddhism focused heavily on the spread and propogation of the faith, and as such is known for its missions to those not yet aware of the good news."
+ mr_nichiren_school_modifier:0 "Nichiren"
  
  ###Rinzai Buddhism###
  mr_zen_school:0 "Zen"

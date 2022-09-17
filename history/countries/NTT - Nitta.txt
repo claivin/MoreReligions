@@ -5,6 +5,6 @@ primary_culture = togoku
 religion = nihon
 technology_group = chinese
 capital = 4188	# Shinano
-religious_school = mr_shingon_school
+religious_school = mr_shin_school
 
 

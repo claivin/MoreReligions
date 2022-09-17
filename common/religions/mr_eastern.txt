@@ -177,7 +177,7 @@ eastern = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
 					religion = nihon
-					
+					religion = mr_shin 
 				}
 			}
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
@@ -238,7 +238,7 @@ eastern = {
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			idea_cost = -0.1
 		}
-		mr_jodo_school = {
+		mr_nichiren_school = {
 			potential_invite_scholar = {
 				knows_of_scholar_country_capital_trigger = yes
 				OR = {
@@ -250,7 +250,7 @@ eastern = {
 			can_invite_scholar = {
 				adm_power_cost = 50
 				reverse_has_opinion = { who = FROM value = 150 }
-				NOT = { has_country_modifier = mr_jodo_school_modifier }
+				NOT = { has_country_modifier = mr_nichiren_school_modifier }
 				OR = {
 					alliance_with = FROM
 					is_subject_of = FROM
@@ -263,10 +263,10 @@ eastern = {
 				adm_power_cost = 50
 				clear_religious_scholar_modifiers_effect = yes
 				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = mr_jodo_school_modifier duration = 7300 }
+				add_country_modifier = { name = mr_nichiren_school_modifier duration = 7300 }
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = mr_jodo_school_modifier
+			invite_scholar_modifier_display = mr_nichiren_school_modifier
 			picture = "GFX_icon_jodo_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			global_unrest = -2
@@ -900,6 +900,27 @@ eastern = {
 		}
 		heretic = { SHUGENDO }
 		uses_isolationism = yes
+		
+		harmonized_modifier = harmonized_shinto
+		
+	}
+
+	mr_shin = {
+		color = { 226 6 103 }
+		icon = 43
+		country = {
+			infantry_power = 0.10
+			missionaries = 1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country_as_secondary = {
+			infantry_power = 0.10
+		}
+		heretic = { SHUGENDO }
+		
+		uses_karma = yes
 		
 		harmonized_modifier = harmonized_shinto
 		

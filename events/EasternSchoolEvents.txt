@@ -88,8 +88,8 @@ country_event = {
 				OR = {
 					culture = central_thai
 					culture = northern_thai
-					NOT = { tag = AYU }
 				}
+				NOT = { tag = AYU }
 				religion = buddhism
 			}
 			set_religious_school = {
@@ -217,7 +217,7 @@ country_event = {
 		}
 		set_religious_school = {
 			group = eastern
-			school = mr_jodo_school
+			school = mr_nichiren_school
 		}
 	}
 	option = {
