@@ -1,0 +1,356 @@
+namespace = safaviyya_event
+
+country_event = {
+	id = safaviyya_event.1
+	title = "safaviyya_event.1.t"
+	desc = "safaviyya_event.1.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1460
+		is_month = 1
+		NOT = { is_year = 1488 }
+		current_guru_is = shaykh_junayd
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.1.a"
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = safaviyya_event.2
+	title = "safaviyya_event.2.t"
+	desc = "safaviyya_event.2.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1488
+		is_month = 1
+		NOT = { is_year = 1501 }
+		current_guru_is = shaykh_haydar
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.2.a"
+		appoint_next_guru = yes
+	}
+}
+
+country_event = {
+	id = safaviyya_event.3
+	title = "safaviyya_event.3.t"
+	desc = "safaviyya_event.3.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1501
+		is_month = 1
+		NOT = { is_year = 1524 }
+		current_guru_is = shaykh_ali_mirza
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.3.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.4
+	title = "safaviyya_event.4.t"
+	desc = "safaviyya_event.4.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1524
+		is_month = 1
+		NOT = { is_year = 1576 }
+		current_guru_is = shaykh_ismail
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.4.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.5
+	title = "safaviyya_event.5.t"
+	desc = "safaviyya_event.5.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1576
+		is_month = 1
+		NOT = { is_year = 1587 }
+		current_guru_is = shaykh_tahmasp
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.5.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.6
+	title = "safaviyya_event.6.t"
+	desc = "safaviyya_event.6.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1587
+		is_month = 1
+		NOT = { is_year = 1629 }
+		current_guru_is = shaykh_mohammed_khodabanda
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.6.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.7
+	title = "safaviyya_event.7.t"
+	desc = "safaviyya_event.7.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1629
+		is_month = 1
+		NOT = { is_year = 1642 }
+		current_guru_is = shaykh_abbas
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.7.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.8
+	title = "safaviyya_event.8.t"
+	desc = "safaviyya_event.8.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1642
+		is_month = 1
+		NOT = { is_year = 1666 }
+		current_guru_is = shaykh_safi
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.8.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.9
+	title = "safaviyya_event.9.t"
+	desc = "safaviyya_event.9.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1666
+		is_month = 1
+		NOT = { is_year = 1694 }
+		current_guru_is = shaykh_abbas_II
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.9.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.10
+	title = "safaviyya_event.10.t"
+	desc = "safaviyya_event.10.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1694
+		is_month = 1
+		NOT = { is_year = 1722 }
+		current_guru_is = shaykh_suleiman
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.10.a"
+		appoint_next_guru = yes
+	}
+}
+country_event = {
+	id = safaviyya_event.11
+	title = "safaviyya_event.11.t"
+	desc = "safaviyya_event.11.d"
+	picture = ADVISOR_eventPicture
+
+	trigger = {
+		religion = mr_safaviyya
+		is_year = 1694
+		is_month = 1
+		NOT = { is_year = 1722 }
+		current_guru_is = shaykh_husayn
+		NOT = { has_global_flag = guru_event_happening }
+	}
+
+	mean_time_to_happen = {
+		days = 26
+	}
+
+	immediate = {
+		set_global_flag = guru_event_happening
+	}
+
+	after = {
+		clr_global_flag = guru_event_happening
+	}
+
+	option = {
+		name = "safaviyya_event.11.a"
+		appoint_next_guru = yes
+	}
+}
