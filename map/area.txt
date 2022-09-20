@@ -1631,7 +1631,7 @@ upper_nubia_area = { #5
 }
 
 sennar_area = { #3
-	1217 2799 4033 5348 5349
+	1217 2799 4033 5348 5347
 }
 
 red_sea_coast_area = { #4 +dankalia full

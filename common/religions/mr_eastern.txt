@@ -720,7 +720,7 @@ eastern = {
 			mahayana
 			vajrayana
 			azhaliism
-			maitreya
+			mr_maitreya
 		}
 		country = {
 			tolerance_heathen = 2
