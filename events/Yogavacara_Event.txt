@@ -3,10 +3,16 @@ country_event = {
 	id = yogavacara_flavor.1
 	title = yogavacara_flavor.1.t
 	desc = yogavacara_flavor.1.d
+	picture = BUDDHA_eventPicture
 	
-	is_triggered_only = yes
+	fire_only_once = yes
+	
+	is_triggered_only = ues
+	
+	
 	
 	option = {
+		name = yogavacara_flavor.1.a
 		enable_religion = yogavacara
 		change_religion = yogavacara
 		set_ruler_religion = yogavacara
@@ -23,5 +29,57 @@ country_event = {
 				duration = 9000
 			}
 		}
+		custom_tooltip = yogavacara_TT
+	}
+	
+	option = {
+		name = yogavacara_flavor.1.b
+		enable_religion = yogavacara
+		random_owned_province = {
+			change_religion = yogavacara
+		}
 	}
 }
+country_event = {
+	id = yogavacara_flavor.2
+	title = yogavacara_flavor.2.t
+	desc = yogavacara_flavor.2.d
+	picture = BUDDHA_eventPicture
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	trigger = {
+		current_age = age_of_reformation
+		OR = {
+			religion = buddhism
+			religion = mahayana
+			religion = vajrayana
+		}
+		capital_scope = {
+			religion = ROOT
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 2
+			is_religion_enabled = yogavacara
+		}
+	}
+	
+	
+	option = {
+		name = "yogavacara_flavor.2.a"
+		add_mil_power = 50
+		add_adm_power = 50
+		add_dip_power = 50
+		custom_tooltip = centralized_buddh_TT
+		set_global_flag = centralized_buddh
+	}
+}
+	
+	
+		

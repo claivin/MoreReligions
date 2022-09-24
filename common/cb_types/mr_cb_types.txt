@@ -31,9 +31,7 @@ cb_vassalize_mission_karma = {
 		}
 		else_if = {
 			limit = {
-				had_global_flag = {
-					flag = centralized_buddh
-				}
+				has_global_flag =  centralized_buddh
 			}
 			FROM = {
 				is_neighbor_of = ROOT

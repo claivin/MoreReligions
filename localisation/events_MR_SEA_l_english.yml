@@ -113,6 +113,19 @@
  pagan_bma:0 "The Empire of Pagan shall dominate once more!"
  mon_bma:0 "The Era of the Raman begins!"
  
+ yogavacara_flavor.1.t: "Yogavacara Flowering"
+ yogavacara_flavor.1.d: "The Esoteric Theravada tradition has been a long held one in the forest monasteries of Indochina. With the incredibly decentralized relationship between the monks within the walls of the capital and the hidden temples on the periphery, the lines between what is considered heretical and orthodox becomes increasingly distant. While the Ceylon tradition is still dominant within the region, a new movement centered around the Yogavacara Manual began to appear along the Mekong River, preaching of the need for ritual chanting and alchemy. However, this new movement was picked up specifically by those wishing to see an end to the current political status quo. They decried all those of foreign practice and tradition as being unift for rule, and enemies of the state have begun to rally around this new movement to overthrow or overturn their enemies. However, should a King instead turn to this new faith, perhpas it can be used as a tool to purge those very same elements within our country..." 
+ yogavacara_flavor.1.a: "We shall investigate this new tradition with great interest!"
+ yogavacara_TT: "§TWe will be able to use the Buddhist Subjugation Casus Belli on all neighboring countries within the Eastern Group should we become Yogavacara.§!"
+ yogavacara_flavor.1.b: "This movement needs to be stamped out at the source!"
+ 
+ 
+ yogavacara_flavor.2.t: "The Centralization of the Sangha"
+ yogavacara_flavor.2.d: "Within Buddhist tradition, the connection of the Sangha to the state was varied. Some emperors held tight control over what was considered heretical while others allowed varying traditions to exist throughout the world as they so desired. As states become more powerful and centralized in the modern era, more and more states are using a singular school or tradition of Buddhism to legitimize their rule. With the rise of various esoteric and reformist movements across the world, various Sangharajas find themselves not only promoting their own schools, but actively denouncing others for being untruthful and having the potential to lead their followers away from the path. In this new era, rulers will use whatever they can to justify their quests for power - and faith is merely another tool."
+ yogavacara_flavor.2.a: "And so the wheel turns..."
+ centralized_buddh_TT: "\n§TThis will allow all§! §YBuddhist§! §Tcountries to declare war on other nations in the§! §YEast Asian Group§! §Tusing the§! §YBuddhist Subjugation Casus Belli§!."
+ 
+ 
  LAT_flavor.1.t: "Reclaiming Byzantine Artifacts"
  LAT_flavor.1.d: "In the aftermath of the 4th Crusade, the Venetian crusaders took with them the lion's share of artifacts from the city of Constantinople. These artifacts have a large symbolic value to many of our Greek subjects - should we reclaim them from the merchants and lords who now own the items, it could be benefitial to our rule."
  LAT_flavor.1a: "Reclaim the Bronze Horses"
