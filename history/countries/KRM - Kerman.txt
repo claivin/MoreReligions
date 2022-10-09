@@ -1,11 +1,10 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = feudal_theocracy
 government_rank = 1
 primary_culture = persian
-religion = shiite
+religion = sunni
 technology_group = muslim
 capital = 432 # Kerman
-religious_school = ismaili_school
 
 1504.1.1 = {
 	religious_school = jafari_school

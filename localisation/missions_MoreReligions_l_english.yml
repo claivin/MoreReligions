@@ -1,0 +1,31 @@
+﻿l_english:
+ 
+ ###Pagan Missions####
+ pgn_unite_southern_burma_title:0 "Hanthawaddy's Legacy"
+ pgn_unite_southern_burma_desc:0 "The Hanthawaddy War lasted 40 years and brought devestation to us and the destruction of their kingdom. Now is the time to rebuild, and unify the lands of the first Pagan Kingdom."
+ play_patient_tt:0 "§MWe must wait for Events in the world to complete this Mission.§!"
+ control_peg_tt:0 "§TOur loyal vassals have stayed with us, and as such, we must work to integrate them into our nation. Complete the annexation decisions to finish this mission.§!"
+ dom_pegu_tt:0 "§RThe traitorous vassals have left us with no option. We shall show them who is fit to rule, and who is fit to serve. Conquer the Lower Burma Area!"
+ pgn_invade_arakan_title:0 "The Kingdom of Arakan"
+ pgn_invade_arakan_desc:0 "The Arakan Kingdom was our ally in the Hanthawaddy War, supporting us in the subjugation of the Pegu Kingdom. As a result, our courts have become quite close, with them paying a tribute to us in return for our protection. We should approach them about furthering our relationship..."
+ integrate_ark_pgn_tt:0 "§TThe Lord of Arakan have accepted our offer of integration, and we shall strive towards it! Complete the annexation decision to finish this mission.§!"
+ brutalize_ark_tt:0 "§RArakan has betrayed our king and his generous offer. We must make sure that his kingdom remembers its place; under our heel!§!"
+ 
+ ##Japanese Missions#
+ mr_jap_political_1_title: "Fate of the Empire"
+ BAKUFU_NAME_1: "Edo Bakufu"
+ BAKUFU_NAME_2: "Tokushima Bakufu"
+ BAKUFU_NAME_3: "Satsuma Bakufu"
+ BAKUFU_NAME_4: "Nara Bakufu"
+ BAKUFU_NAME_1_ADJ: "Bakufu"
+ BAKUFU_NAME_2_ADJ: "Bakufu"
+ BAKUFU_NAME_3_ADJ: "Bakufu"
+ BAKUFU_NAME_4_ADJ: "Bakufu"
+ 
+ 
+ #Ilkhanate Missions#
+ ilk_missionaries_1: "Ilkhanate Missionaries"
+ annexers_legacy_TT: "If we have the §YAnnexed Subject§! Country Modifier, it will be removed."
+ no_disaster_ilk: "This will prevent the §YAnarchy of Tabriz§! from being able to start."
+ ilk_religious_1_title: "End the Sufi Privileges"
+ ilk_political_2_title: "Stabalize the Court"

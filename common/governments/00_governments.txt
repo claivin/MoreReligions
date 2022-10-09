@@ -62,6 +62,7 @@ monarchy = {
 				polish_autocratic_monarchy
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
+				#New MR Reforms
 				akanya_sutta_elections
 				shan_federation_reform
 				pagan_reform
@@ -72,6 +73,7 @@ monarchy = {
 				maharajadhiraja_reform
 				kingdom_of_light_reform
 				empire_of_light_reform
+				mr_empire_of_japan
 			}
 		}
 		hereditary_vs_nobility = {

@@ -274,3 +274,26 @@ empire_of_light_reform = {
 		enables_aristocratic_idea_group = no
 	}
 }
+mr_empire_of_japan = {
+	icon = "shogunate"
+	allow_normal_conversion = no
+	potential = {
+		tag = JAP
+	}
+	nation_designer_trigger = {
+			culture_group = japanese_g
+	}
+	maintain_dynasty = yes
+	can_change_primary_culture = no
+	legacy_equivalent = feudal_monarchy
+	
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	lock_level_when_selected = yes
+	
+	modifiers = {
+		governing_capacity = 100
+		diplomatic_annexation_cost = -0.15
+		land_morale = 0.10
+	}
+}

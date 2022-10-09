@@ -1,0 +1,922 @@
+namespace = ilkhanate_flavor
+
+#Safaviyya Revolt
+country_event = {
+	id = ilkhanate_flavor.1
+	title = ilkhanate_flavor.1.t
+	desc = ilkhanate_flavor.1.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = ARL }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 4
+			OR = {
+				area = azerbaijan_area
+				area = shirvan_area
+			}
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			2212 = {
+				add_core = ARL
+			}
+			5324 = {
+				add_core = ARL
+			}
+			4338 = {
+				add_core = ARL
+			}
+			414 = {
+				add_core = ARL
+			}
+			4300 = {
+				add_core = ARL
+			}
+			424 = {
+				add_core = ARL
+			}
+			if = {
+				limit = {
+					ARL = {
+						is_subject = yes
+					}
+				}
+				grant_independence = ARL
+			}
+			else = {
+				release = ARL
+			}
+			ARL = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_government_reform = feudal_theocracy
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.1.a
+		add_prestige = -25
+		
+	}
+	option = {
+		name = ilkhanate_flavor.1.b
+		switch_tag = ARL
+	}
+}
+
+#Mushasha'iyya Revolt
+country_event = {
+	id = ilkhanate_flavor.2
+	title = ilkhanate_flavor.2.t
+	desc = ilkhanate_flavor.2.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = BSR }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 4
+			OR = {
+				area = khuzestan_area
+				area = basra_area
+			}
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			412 = {
+				add_core = BSR
+			}
+			408 = {
+				add_core = BSR
+			}
+			4288 = {
+				add_core = BSR
+			}
+			4290 = {
+				add_core = BSR
+			}
+			4289 = {
+				add_core = BSR
+			}
+		if = {
+			limit = {
+				BSR = {
+					is_subject = yes
+				}
+			}
+			grant_independence = BSR
+		}
+		else = {
+			limit = {
+				BSR = {
+					exists = no
+				}
+			}
+			release = BSR
+		}
+			BSR = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_government_reform = feudal_theocracy
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.2.a
+		add_prestige = -25
+	}
+	
+	option = {
+		name = ilkhanate_flavor.2.b
+		switch_tag = BSR
+	}
+}
+
+#Isfahan Revolt
+country_event = {
+	id = ilkhanate_flavor.3
+	title = ilkhanate_flavor.3.t
+	desc = ilkhanate_flavor.3.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = ISF }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 3
+			area = isfahan_area
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			429 = {
+				add_core = ISF
+			}
+			4171 = {
+				add_core = ISF
+			}
+		
+		if = {
+			limit = {
+				ISF = {
+					is_subject = yes
+				}
+			}
+			grant_independence = ISF
+		}
+		else = {
+			release = ISF
+		}
+			ISF = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_government_reform = feudal_theocracy
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.3.a
+		add_prestige = -25
+	}
+	
+	option = {
+		name = ilkhanate_flavor.3.b
+		switch_tag = ISF
+	}
+}	
+
+#Yazd Revolt
+country_event = {
+	id = ilkhanate_flavor.4
+	title = ilkhanate_flavor.4.t
+	desc = ilkhanate_flavor.4.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = YZD }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 3
+			area = isfahan_area
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			2222 = {
+				add_core = YZD
+			}
+			433 = {
+				add_core = YZD
+			}
+			if = {
+				limit = {
+					YZD = {
+						is_subject = yes
+					}
+				}
+				grant_independence = YZD
+			}
+			else = {
+				release = YZD
+			}
+			YZD = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.4.a
+		add_prestige = -25
+	}
+	
+	option = {
+		name = ilkhanate_flavor.4.b
+		switch_tag = YZD
+	}
+}
+
+
+#Alamut Revolt
+country_event = {
+	id = ilkhanate_flavor.5
+	title = ilkhanate_flavor.5.t
+	desc = ilkhanate_flavor.5.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = ALM }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 3
+			area = iraq_e_ajam_area
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			4335 = {
+				add_core = ALM
+			}
+			2213 = {
+				add_core = ALM
+			}
+			4337 = {
+				add_core = ALM
+			}
+			428 = {
+				add_core = ALM
+			}
+			2215 = {
+				add_core = ALM
+			}
+			if = {
+				limit = {
+					ALM = {
+						is_subject = yes
+					}
+				}
+				grant_independence = ALM
+			}
+			else = {
+				limit = {
+					ALM = {
+						exists = no
+					}
+				}
+				release = ALM
+			}
+			ALM = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				change_government = thoecray
+				add_government_reform = leading_clergy_reform
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.5.a
+		add_prestige = -25
+	}
+	
+	option = {
+		name = ilkhanate_flavor.5.b
+		switch_tag = ALM
+	}
+}
+#Sabzevar Revolt
+country_event = {
+	id = ilkhanate_flavor.6
+	title = ilkhanate_flavor.6.t
+	desc = ilkhanate_flavor.6.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = SBZ }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 4
+			region = khorasan_region
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			2236 = {
+				add_core = SBZ
+			}
+			2235 = {
+				add_core = SBZ
+			}
+			2216 = {
+				add_core = SBZ
+			}
+			427 = {
+				add_core = SBZ
+			}
+			4336 = {
+				add_core = SBZ
+			}
+			436 = {
+				add_core = SBZ
+			}
+			4334 = {
+				add_core = SBZ
+			}
+			if = {
+				limit = {
+					SBZ = {
+						is_subject = yes
+					}
+				}
+				grant_independence = SBZ
+			}
+			else = {
+				limit = {
+					SBZ = {
+						exists = no
+					}
+				}
+				release = SBZ
+			}
+			SBZ = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				change_government = thoecray
+				add_government_reform = leading_clergy_reform
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.5.a
+		add_prestige = -25
+	}
+	
+	option = {
+		name = ilkhanate_flavor.5.b
+		switch_tag = SBZ
+	}
+}
+
+#Kirmanshah Revolt
+country_event = {
+	id = ilkhanate_flavor.8
+	title = ilkhanate_flavor.8.t
+	desc = ilkhanate_flavor.8.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			NOT = { exists = KMS }
+			is_subject_of = ILK
+		}
+		num_of_owned_provinces_with = {
+			value = 4
+			or = {
+				area = shahrizor_area
+				area = luristan_area
+			}
+			controlled_by = REB
+		}
+		has_country_flag = control_lost_ilk
+	}
+	
+	immediate = {
+		hidden_effect = {
+			2210 = {
+				add_core = KMS
+			}
+			2209 = {
+				add_core = KMS
+			}
+			2211 = {
+				add_core = KMS
+			}
+			4294 = {
+				add_core = KMS
+			}
+			415 = {
+				add_core = KMS
+			}
+			4293  = {
+				add_core = KMS
+			}
+
+			if = {
+			limit = {
+				KMS = {
+					is_subject = yes
+				}
+			}
+			grant_independence = KMS
+			}
+			else = {
+				limit = {
+					KMS = {
+						exists = no
+					}
+				}
+				release = KMS
+			}
+			KMS = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_government_reform = feudal_theocracy
+			}
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.5.a
+		add_prestige = -25
+	}
+	
+	option = {
+		name = ilkhanate_flavor.5.b
+		switch_tag = KMS
+	}
+}
+#Sunni Revolt
+country_event = {
+	id = ilkhanate_flavor.9
+	title = ilkhanate_flavor.9.t
+	desc = ilkhanate_flavor.9.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			OR = {
+				NOT = { exists = FRS }
+				is_subject_of = ILK
+			}
+			OR = {
+				NOT = { exists = LRI }
+				is_subject_of = ILK
+			}
+			OR = {
+				NOT = { exists = KRM }
+				is_subject_of = ILK
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 10
+			controlled_by = REB
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 0
+			}
+			set_country_flag = control_lost_ilk
+			2220 = {
+				add_core = KRM
+			}
+			4327 = {
+				add_core = KRM
+			}
+			431 = {
+				add_core = KRM
+			}
+			413 = {
+				add_core = LRI
+			}
+			4342 = {
+				add_core = LRI
+			}
+			2217  = {
+				add_core = LRI
+			}
+			2209 = {
+				remove_core = LRI
+			}
+			2210 = {
+				remove_core = LRI
+			}
+			414 = {
+				remove_core = LRI
+			}
+			release = FRS
+			release = KRM
+			release = LRI
+			2209 = {
+				add_core = LRI
+			}
+			2210 = {
+				add_core = LRI
+			}
+			414 = {
+				add_core = LRI
+			}
+			create_march = FRS
+			create_march = LRI
+			create_march = KRM
+			change_variable = {
+				which = Ilkhanate_Vassal_Count
+				value = 1
+			}
+			
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.9.a
+		add_prestige = -25
+		custom_tooltip = Ilkhanate_Vassal_Count_TT
+	}
+	
+	option = {
+		name = ilkhanate_flavor.9.b
+		switch_tag = FRS
+		FRS = {
+			capital_scope = {
+					build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+			add_government_reform = iqta
+		}
+	}
+	option = {
+		name = ilkhanate_flavor.9.c
+		switch_tag = LRI
+		LRI = {
+			capital_scope = {
+					build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+			add_government_reform = iqta
+		}
+	}
+	option = {
+		name = ilkhanate_flavor.9.e
+		switch_tag = KRM
+		KRM = {
+			capital_scope = {
+					build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+			add_government_reform = feudal_theocracy
+		}
+	}
+}
+
+country_event = {
+	id = ilkhanate_flavor.10
+	title = ilkhanate_flavor.10.t
+	desc = ilkhanate_flavor.10.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = ilkhanate_flavor.10.a
+		add_stability = -5
+		424 = {
+			spawn_rebels = {
+				type = nationalist
+				size = 2
+				win = yes
+			}
+		}
+		412 = {
+			spawn_rebels = {
+				type = nationalist
+				size = 1
+				win = yes
+			}
+		}
+		random_heretic_province = { 
+			spawn_rebels = {
+				type = nationalist
+				size = 1
+				win = yes
+			}
+		}
+		random_heretic_province = { 
+			spawn_rebels = {
+				type = nationalist
+				size = 1
+				win = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ilkhanate_flavor.11
+	title = ilkhanate_flavor.11.t
+	desc = ilkhanate_flavor.11.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_ilkhanate_disaster
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.11.a
+		trigger = {
+			NOT = {
+				all_owned_province = {
+					area = tabriz_area
+				}
+			}
+		}
+		add_stability = 1
+		add_prestige = 20
+		persia_region = {
+			type = all
+			add_core = ilk
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.11.b
+		trigger = {
+			all_owned_province = {
+				area = tabriz_area
+			}
+		}
+		add_stability = 1
+		set_government_rank = 1
+		all_province = {
+			limit = {
+				OR = {
+					region = persia_region
+					region = khorasan_region
+				}
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			}
+			remove_core = ROOT
+		}
+	}
+}
+
+country_event = {
+	id = ilkhanate_flavor.12
+	title = ilkhanate_flavor.12.t
+	desc = ilkhanate_flavor.12.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			area = khorasan_region
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.12.a
+		random_owned_province = { 
+			limit = {
+				region = khorasan_region
+			}
+			spawn_rebels = {
+				type = shia_rebels
+				size = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ilkhanate_flavor.13
+	title = ilkhanate_flavor.13.t
+	desc = ilkhanate_flavor.13.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ilkhanate_flavor.13.a
+		add_manpower = 10
+	}
+}
+
+country_event = {
+	id = ilkhanate_flavor.14
+	title = ilkhanate_flavor.14.t
+	desc = ilkhanate_flavor.14.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = ilkhanate_flavor.14.a
+		add_corruption = 2
+		add_adm_power = 150
+	}
+	
+	option = {
+		name = ilkhanate_flavor.14.b
+		add_corruption = -4
+	}
+}
+country_event = {
+	id = ilkhanate_flavor.15
+	title = ilkhanate_flavor.15.t
+	desc = ilkhanate_flavor.15.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		any_owned_province = {
+			area = isfahan_area
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.15.a
+		random_owned_province = { 
+			limit = {
+				area = isfahan_area
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = ilkhanate_flavor.16
+	title = ilkhanate_flavor.16.t
+	desc = ilkhanate_flavor.16.d
+	picture = DHIMMI_ESTATE_UPSET_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		check_variable = {
+			which = Ilkhanate_Vassal_Count
+			value = 5
+		}
+	}
+	
+	option = {
+		name = ilkhanate_flavor.16.a
+		ILK = {
+			release_all_subjects = yes
+		}
+	}
+}

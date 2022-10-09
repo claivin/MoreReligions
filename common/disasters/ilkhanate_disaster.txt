@@ -1,0 +1,108 @@
+ilkhanate_disaster = {
+	potential = {
+		NOT = {
+			has_country_flag = had_ilkhanate_disaster
+			mission_completed = ilk_political_2
+		}
+		tag = ILK
+		religion = sunni
+		num_of_cities = 2
+		any_owned_province = {
+			is_capital = no
+			is_core = ROOT
+		}
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		normal_or_historical_nations = yes
+	}
+	
+	can_start = {
+        has_any_disaster = no
+        is_year = 1470
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			mission_completed = ilk_political_2
+		}		
+	}
+	
+	progress = {
+		modifier = {
+			factor = 5
+			tag = ILK
+		}
+		
+		modifier = {
+			factor = 2
+			calc_true_if = {
+				all_owned_province = {
+					NOT = { religion = ROOT }
+				}
+				amount = 5
+			}
+		}
+		
+		modifier = {
+			factor = 1
+			any_subject_country = {
+				liberty_desire = 50 
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			exists = IRQ
+		}
+		
+		modifier = {
+			factor = -2
+			stability = 1
+		}
+	}
+	
+	on_monthly = {
+        events = {
+			ilkhanate_flavor.1 #Ardabil Revolt
+			ilkhanate_flavor.2 #Basra Revolt
+			ilkhanate_flavor.3 #Isfahan Revolt
+			ilkhanate_flavor.4 #Yazd Revolt
+			ilkhanate_flavor.5 #Alamut Revolt
+			ilkhanate_flavor.6 #Sabzevar Revolt
+			ilkhanate_flavor.8 #Kirmanshah Revolt
+			ilkhanate_flavor.9 #Sunni Revolt
+			ilkhanate_flavor.16 #Vassal Break
+        }
+        random_events = { 	
+			1000 = 0
+			50 = ilkhanate_flavor.12
+			50 = ilkhanate_flavor.13
+			50 = ilkhanate_flavor.14
+			50 = ilkhanate_flavor.15
+        }
+	}
+	
+	modifier = {
+		global_unrest = 10
+		reduced_liberty_desire = -50
+		stability_cost_modifier = 0.25
+	}
+	
+	can_end = {
+		OR = {
+			AND = {
+				stability = 2
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = { num_of_rebel_armies = 1 }
+			}
+			all_owned_province = {
+					area = tabriz_area
+			}
+		}
+	}
+	
+	on_start = ilkhanate_flavor.10
+	on_end = ilkhanate_flavor.11
+		
+}

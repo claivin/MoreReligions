@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = confucian_bureaucracy
+government = republic
+add_government_reform = pirate_republic_reform
 primary_culture = korean
 religion = confucianism
 add_harmonized_religion = mahayana

@@ -1,0 +1,113 @@
+mr_ilk_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = ILK
+	}
+	
+}
+mr_ilk_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = ILK
+	}
+}
+mr_ilk_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = ILK
+	}
+	ilk_political_1 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = {}
+		position = 1
+		trigger = {
+			410 = {
+				owned_by = ROOT
+			}
+			iraq_arabi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			basra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			410 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			custom_tooltip = annexers_legacy_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_modifier = annexers_legacy
+					}
+					remove_country_modifier = annexers_legacy
+				}
+			}
+		}
+	}
+	ilk_political_2 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = { ilk_political_1 ilk_religious_1 }
+		position = 3
+		trigger = {
+			stability = 1
+			legitimacy = 90
+			all_owned_province = {
+				religion = sunni
+			}	
+		}
+		effect = {
+			remove_estate_privilege = estate_church_ilkhanate_dervish
+			custom_tooltip = no_disaster_ilk
+		}
+	}
+}
+mr_ilk_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = ILK
+	}
+	ilk_religious_1 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = { }
+		position = 2
+		trigger = {
+			num_of_religion = {
+				religion = sunni
+				value = 0.75
+			}	
+		}
+		effect = {
+			add_country_modifier = {
+				name = ilk_missionaries_1
+				duration = 3650
+			}
+		}
+	}
+}
+mr_ilk_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = ILK
+	}
+}

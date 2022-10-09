@@ -2,6 +2,6 @@ government = monarchy
 add_government_reform = iqta
 government_rank = 1
 primary_culture = persian
-religion = shiite
+religion = zoroastrian
 technology_group = muslim
 capital = 433 # Kerman

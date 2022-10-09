@@ -36,3 +36,12 @@ mr_cathar_king = {
 	development_cost = -0.1
 	improve_relation_modifier = -0.2
 }
+
+#Ilkhanate
+tolerance_of_dervishes = {
+	min_local_autonomy = 50 
+}
+ilk_missionaries_1 = {
+	missionaries = 1
+	global_missionary_strength = 0.2
+}

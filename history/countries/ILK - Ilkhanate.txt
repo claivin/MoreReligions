@@ -3,5 +3,6 @@ add_government_reform = iqta
 primary_culture = mongol
 religion = sunni
 technology_group = muslim
-capital = 4338 # soltaniyeh
+capital = 416
 add_accepted_culture = persian
+set_estate_privilege = estate_church_ilkhanate_dervish

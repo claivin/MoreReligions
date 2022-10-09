@@ -195,6 +195,7 @@ SKI = "countries/Suakin.txt"
 
 #Japan
 NTT = "countries/Nitta.txt"
+BFK = "countries/Bakufu.txt"
 
 #East Siberia
 KYK = "countries/Koryak.txt"
@@ -301,6 +302,9 @@ SRI = "countries/Sari.txt"
 MSL = "countries/Mosul.txt"
 TRB = "countries/TurAdbin.txt"
 HRT = "countries/Herat.txt"
+KMS = "countries/Kirmanshah.txt"
+ALM = "countries/Alamut.txt"
+SBZ = "countries/Sabzevar.txt"
 
 
 #North Africa

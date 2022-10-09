@@ -9,16 +9,3 @@ capital = 1020	# Yamashiro
 religious_school = mr_shingon_school
 set_estate_privilege = estate_shugo_japan
 
-1444.1.1 = {
-	monarch = {
-		name = "Tsuneatsu"
-		dynasty = "Yamato"
-		birth_date = 1410.1.1
-		adm = 3
-		dip = 5
-		mil = 2
-	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = well_advised_personality
-	add_ruler_personality = naive_personality
-}

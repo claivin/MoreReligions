@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = daimyo
+government = republic
+add_government_reform = pirate_republic_reform
 government_rank = 1
 primary_culture = kyushuan
 religion = nihon

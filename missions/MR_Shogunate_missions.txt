@@ -1,0 +1,79 @@
+mr_jap_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = HTK
+			tag = NTT
+			tag = HSK
+			tag = SMZ
+		}
+	}
+	
+	mr_jap_political_1 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			all_province = {
+				owner = {
+					is_subject_of_type_with_overlord =  { who = JAP type = shugo_vassal }
+				}
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = jap_political_1_TT
+				is_subject = no
+			}
+		}
+		
+		effect = { 
+			change_tag = BFK
+			if = {
+				limit = {
+					OR = {
+						tag = NTT
+						was_tag = NTT
+					}
+				}
+				override_country_name = BAKUFU_NAME_1
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = HSK
+						was_tag = HSK
+					}
+				}
+				override_country_name = BAKUFU_NAME_2
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = SMZ
+						was_tag = SMZ
+					}
+				}
+				override_country_name = BAKUFU_NAME_3
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = HTK
+						was_tag = HTK
+					}
+				}
+				override_country_name = BAKUFU_NAME_4
+			}
+			swap_non_generic_missions = yes
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+}

@@ -1,0 +1,212 @@
+#Japanese Empire
+mr_jap_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = JAP
+	}
+	mr_jap_naval_1 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = {}
+		position = 1
+		trigger = {
+			naval_forcelimit = 35
+			navy_size_percentage = 1
+		}
+		effect = {
+		}
+	}
+	
+	mr_jap_naval_2 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = { mr_jap_naval_1 }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4182
+				province_id = 1028
+			}
+		}
+		trigger = {
+			OR = {
+				4182 = {
+					OR = {
+						has_building = shipyard
+						has_building = grand_shipyard
+					}
+					OR = {
+						has_building = dock
+						has_building = drydock
+					}
+					base_production = 5
+					base_manpower = 5
+				}
+				
+				1028 = {
+					OR = {
+						has_building = shipyard
+						has_building = grand_shipyard
+					}
+					OR = {
+						has_building = dock
+						has_building = drydock
+					}
+					base_production = 7
+					base_manpower = 7
+				}
+			}	
+		}
+		effect = {
+		}
+	}
+	
+	mr_jap_naval_3 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = { mr_jap_naval_2 mr_jap_naval_5 }
+		position = 4
+		
+		trigger = {
+			calc_true_if = {
+				any_owned_province = {
+					has_building = wharf
+				}
+				amount = 3
+			}
+			OR = {
+				full_idea_group = maritime_ideas
+				full_idea_group = exploration_ideas
+			}
+		}
+		
+		effect = {
+		}
+	}
+			
+	
+}
+mr_jap_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = JAP
+	}
+	
+	mr_jap_naval_4 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = { mr_jap_naval_1 }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2741
+				province_id = 4651
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					SOO = {
+						vassal_of = ROOT
+					}
+					JEJ = {
+						vassal_of = ROOT
+					}
+				}
+				AND = {
+					2741 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					4651 = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			NOT = {
+				any_country = {
+					1376 = { 
+						has_privateer_share_in_trade_node = {
+							who = PREV
+							share = 0.01
+						}
+					}
+				}
+			}
+		}
+		effect = {
+		}
+	}
+	
+	mr_jap_naval_5 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = { mr_jap_naval_4 }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 1376
+		}
+		trigger = {
+			1376 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			num_of_heavy_ship = 15
+			num_of_light_ship = 15
+		}
+		effect = {
+		}
+	}
+}
+mr_jap_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = JAP
+	}
+}
+mr_jap_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = JAP
+	}
+	
+	mr_jap_political_1 = {
+		icon = "mission_mnd_siam_royal_duel"
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			all_province = {
+				owner = {
+					is_subject_of_type_with_overlord =  { who = JAP type = shugo_vassal }
+				}
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = jap_political_1_TT
+				has_global_flag = unite_japan_flag
+			}
+		}
+		effect = {
+		}
+		
+	}
+}
+mr_jap_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = JAP
+	}
+}

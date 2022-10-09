@@ -1,7 +1,7 @@
 #4336 - Tus
 
-owner = HRT
-controller = HRT
+owner = ILK
+controller = ILK
 culture = khorasani
 religion = sunni
 capital = "Tun"
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = HRT
+add_core = ILK
 add_core = KHO
 discovered_by = muslim
 discovered_by = ottoman
