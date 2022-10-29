@@ -5,4 +5,5 @@ add_accepted_culture = slovak
 religion = catholic
 technology_group = eastern
 historical_friend = BOH
+capital = 4236
 

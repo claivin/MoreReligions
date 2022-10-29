@@ -4,5 +4,16 @@ primary_culture = hungarian
 add_accepted_culture = slovak
 religion = catholic
 technology_group = eastern
-historical_friend = BOH
+historical_friend = POL
+capital = 162
 
+1444.1.1 = {
+	monarch = {
+		name = "Victor"
+		dynasty = "Aba"
+		birth_date = 1422.1.1	
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}

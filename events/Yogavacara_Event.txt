@@ -7,7 +7,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
-	is_triggered_only = ues
+	is_triggered_only = yes
 	
 	
 	

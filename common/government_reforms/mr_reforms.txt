@@ -297,3 +297,156 @@ mr_empire_of_japan = {
 		land_morale = 0.10
 	}
 }
+mr_hungary_anarchy = {
+	icon = black_market_consortium
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+
+
+	potential = {
+		tag = HUN
+		NOT = {
+			has_country_flag = HUN_thunder_dome_ready
+		}
+		NOT = {
+			has_country_flag = HUN_thunder_dome_winner
+		}
+	}
+	
+	modifiers = {
+		min_autonomy = 50
+		diplomatic_reputation = -2
+		capped_by_forcelimit = yes 
+	}
+}
+mr_hungary_faction = {
+	icon = soldiers
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	
+	potential = {
+		has_country_flag = HUN_thunder_dome_participant
+		NOT = {
+			has_country_flag = HUN_thunder_dome_winner
+		}
+	}
+	
+	modifiers = {
+		land_maintenance_modifier = -0.33
+		ae_impact = -0.15
+		land_forcelimit_modifier = 0.20
+	}	
+}
+
+mr_bohemian_hungary_reform = {
+	icon = commander_king_reform
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	maintain_dynasty = yes 
+	
+	potential = {
+		tag = HUN
+	}
+	
+	modifiers = {
+		development_cost = -0.1
+		global_prosperity_growth = 0.15
+		vassal_forcelimit_bonus = 0.50
+	}
+}
+mr_polish_hungary_reform = {
+	icon = english_monarchy
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	maintain_dynasty = yes 
+	
+	potential = {
+		tag = HUN
+	}
+	
+	modifiers = {
+		imperial_authority_value = 0.15
+		reasons_to_elect = 10 
+		advisor_cost = -0.10
+	}
+}
+mr_serbian_hungary_reform = {
+	icon = soldiers_4
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	maintain_dynasty = yes 
+	
+	potential = {
+		tag = HUN
+	}
+	
+	modifiers = {
+		global_heretic_missionary_strength = 0.03
+		yearly_army_professionalism = 0.05
+		infantry_power = 0.10
+	}
+}
+mr_hungary_hungary_reform = {
+	icon = black_army_reform
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	maintain_dynasty = yes 
+	
+	potential = {
+		tag = HUN
+	}
+	
+	has_parliament = yes
+	
+	modifiers = {
+		discipline = 0.05
+		min_autonomy_in_territories = -0.1
+		national_focus_years = -1 
+	}
+
+}
+mr_horde_hungary_reform = {
+	icon = "holy_horde"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	maintain_dynasty = yes 
+	
+	potential = {
+		tag = HUN
+		has_country_flag = HUN_thunder_dome_winner
+	}
+	
+	raze_province = yes 
+	
+	modifiers = {
+		cavalry_power = 0.15
+		movement_speed = 0.1
+	}
+}
+mr_hungarian_theocracy = {
+	icon = mission_to_kill_pirates_reform
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	valid_for_nation_designer = no
+	maintain_dynasty = yes 
+	
+	potential = {
+		tag = HUN
+	}
+	
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.20
+		war_exhaustion = -0.02
+	}
+}
+
+	

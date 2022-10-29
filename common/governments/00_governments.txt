@@ -74,6 +74,14 @@ monarchy = {
 				kingdom_of_light_reform
 				empire_of_light_reform
 				mr_empire_of_japan
+				#hungary_reforms
+				mr_hungary_anarchy
+				mr_hungary_faction
+				mr_bohemian_hungary_reform
+				mr_polish_hungary_reform
+				mr_serbian_hungary_reform
+				mr_hungary_hungary_reform
+				mr_horde_hungary_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -747,6 +755,7 @@ theocracy = {
 				militarized_crusader_order_reform
 				merchant_theocracy_reform
 				reformer_state_reform
+				mr_hungarian_theocracy
 			}
 		}
 		internal_vs_external_mission = {

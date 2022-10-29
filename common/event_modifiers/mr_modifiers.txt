@@ -37,6 +37,12 @@ mr_cathar_king = {
 	improve_relation_modifier = -0.2
 }
 
+#Hungarian Mission Modifiers
+KNN_diplo_core = {
+	diplomats = 1
+	improve_relation_modifier = 0.25
+}
+
 #Ilkhanate
 tolerance_of_dervishes = {
 	min_local_autonomy = 50 

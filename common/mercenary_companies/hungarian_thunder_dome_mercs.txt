@@ -1,0 +1,110 @@
+merc_bohemian_volunteers = {
+    regiments_per_development = 0.04        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.10                 # Fraction of the army that is composed of cavalry.
+    
+    cavalry_cap = 2                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+        AND = {
+            has_country_flag = HUN_thunder_dome_participant
+            tag = CSA
+        }
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        military_tactics = 0.10
+    }
+}
+
+merc_polish_volunteers = {
+    regiments_per_development = 0.04        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.10                 # Fraction of the army that is composed of cavalry.
+    
+    cavalry_cap = 2                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+        AND = {
+            has_country_flag = HUN_thunder_dome_participant
+            tag = AAB
+        }
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        land_morale = 0.10
+    }
+}
+
+merc_serbian_volunteers = {
+    regiments_per_development = 0.04        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.10                 # Fraction of the army that is composed of cavalry.
+    
+    cavalry_cap = 2                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+        AND = {
+            has_country_flag = HUN_thunder_dome_participant
+            tag = KSZ
+        }
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        siege_ability = 0.10
+    }
+}
+
+merc_horde_volunteers = {
+    regiments_per_development = 0.04        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.20                 # Fraction of the army that is composed of cavalry.
+    
+    cavalry_cap = 4                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+        AND = {
+            has_country_flag = HUN_thunder_dome_participant
+            tag = KNN
+        }
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        shock_damage = 0.15
+    }
+}
+
+merc_papal_volunteers = {
+    regiments_per_development = 0.04        # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+    cost_modifier = 0                    # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    cavalry_weight = 0.20                 # Fraction of the army that is composed of cavalry.
+    
+    cavalry_cap = 4                        # Mercenary company will never have more than this many cavalry.
+
+    sprites = { easterngfx_sprite_pack }    # Unit graphics that the mercenary company uses.
+
+    trigger = {                             # The conditions for the mercenary company to be shown in the mercenary recruitment tab.
+        AND = {
+            has_country_flag = HUN_thunder_dome_participant
+            tag = JAA
+        }
+    }
+
+    modifier = {                            # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        infantry_power = 0.10
+    }
+}
+

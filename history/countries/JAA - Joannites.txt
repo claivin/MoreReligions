@@ -1,8 +1,9 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
 primary_culture = hungarian
 add_accepted_culture = transylvanian
 religion = catholic
 technology_group = eastern
-historical_friend = BOH
+historical_friend = PAP
 capital = 4532

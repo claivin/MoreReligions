@@ -332,9 +332,9 @@
  CSA_ADJ: "Czak"
  CSA_ADJ2: "Czak"
  
- AAD: "Ada"
- AAD_ADJ: "Ada"
- AAD_ADJ2: "Ada"
+ AAB: "Aba"
+ AAB_ADJ: "Aba"
+ AAB_ADJ2: "Aba"
  
  KSZ: "Koszegis"
  KSZ_ADJ: "Koszegis"
@@ -344,9 +344,9 @@
  KNN_ADJ: "Kan"
  KNN_ADJ2: "Kan"
  
- JAA: "Joannites"
- JAA_ADJ: "Joannite"
- JAA_ADJ2: "Joannite"
+ JAA: "Severin"
+ JAA_ADJ: "Severin"
+ JAA_ADJ2: "Severin"
  
  MON: "Zeta"
  MON_ADJ: "Zetan"

@@ -13,13 +13,13 @@ country_event = {
 			4236 = { add_core = CSA }
 			1772 = { add_core = CSA }
 			154 = { add_core = CSA }
-			1318 = { add_core = AAD }
-			162 = { add_core = AAD }
+			1318 = { add_core = AAB }
+			162 = { add_core = AAB }
 			135 = { add_core = KSZ }
 			1864 = { add_core = KSZ }
 			4126 = { add_core = KSZ }
-			4125 = { add_core = AAD }
-			1953 = { add_core = AAD }
+			4125 = { add_core = AAB }
+			1953 = { add_core = AAB }
 			1952 = { add_core = KNN }
 			157 = { add_core = KNN }
 			4127 = { add_core = KNN }
@@ -30,7 +30,7 @@ country_event = {
 		}
 		hidden_effect = {
 			release = CSA
-			release = AAD
+			release = AAB
 			release = KSZ
 			release = KNN
 			1951 = {
@@ -42,13 +42,8 @@ country_event = {
 		}
 		hidden_effect = {
 			CSA = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.8
-						cavalry = 0.2
-					}
-				}
-				add_historical_rival = ADD
+				add_manpower = 10
+				add_historical_rival = AAB
 				add_historical_rival = KSZ
 				add_historical_rival = KNN
 				add_historical_rival = JAA
@@ -63,14 +58,25 @@ country_event = {
 					}
 					add_core = CSA
 				}
-			}
-			AAD = {
+				define_ruler = {
+					name = "Aliz"
+					dynasty = "Czak"
+					age = 41	
+						adm = 1
+						dip = 4
+						mil = 2
+				}
+				set_country_flag = HUN_thunder_dome_participant
+				add_government_reform = mr_hungary_faction
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
 					}
 				}
+			}
+			AAB = {
+				add_manpower = 10
 				add_historical_rival = CSA
 				add_historical_rival = KSZ
 				add_historical_rival = KNN
@@ -84,17 +90,28 @@ country_event = {
 							area = moldavia_area
 						}
 					}
-					add_core = AAD
+					add_core = AAB
 				}
-			}
-			KSZ = {
+				define_ruler = {
+					name = "Stephen"
+					dynasty = "Aba"
+					age = 41	
+						adm = 2
+						dip = 1
+						mil = 3
+				}
+				set_country_flag = HUN_thunder_dome_participant
+				add_government_reform = mr_hungary_faction
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
 					}
 				}
-				add_historical_rival = ADD
+			}
+			KSZ = {
+				add_manpower = 10
+				add_historical_rival = AAB
 				add_historical_rival = CSA
 				add_historical_rival = KNN
 				add_historical_rival = JAA
@@ -109,15 +126,26 @@ country_event = {
 					}
 					add_core = KSZ
 				}
-			}
-			KNN = {
+				define_ruler = {
+					name = "Adelbert"
+					dynasty = "Koszegis"
+					age = 41	
+						adm = 1
+						dip = 0
+						mil = 5
+				}
+				set_country_flag = HUN_thunder_dome_participant
+				add_government_reform = mr_hungary_faction
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
 					}
 				}
-				add_historical_rival = ADD
+			}
+			KNN = {
+				add_manpower = 10
+				add_historical_rival = AAB
 				add_historical_rival = KSZ
 				add_historical_rival = CSA
 				add_historical_rival = JAA
@@ -132,9 +160,25 @@ country_event = {
 					}
 					add_core = KNN
 				}
+				define_ruler = {
+					name = "Arpad"
+					dynasty = "Kan"
+					age = 41	
+						adm = 5
+						dip = 4
+						mil = 6
+				}
+				set_country_flag = HUN_thunder_dome_participant
+				add_government_reform = mr_hungary_faction
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
 			}
 			JAA = {
-				add_historical_rival = ADD
+				add_historical_rival = AAB
 				add_historical_rival = KSZ
 				add_historical_rival = KNN
 				add_historical_rival = CSA
@@ -149,13 +193,112 @@ country_event = {
 					}
 					add_core = JAA
 				}
+				set_country_flag = HUN_thunder_dome_participant
+				add_government_reform = mr_hungary_faction
 			}
 			HUN = {
-				add_historical_rival = ADD
+				add_historical_rival = AAB
 				add_historical_rival = KSZ
 				add_historical_rival = KNN
 				add_historical_rival = JAA
 				add_historical_rival = CSA
+				set_country_flag = HUN_thunder_dome_participant
+			}
+			HUN = {
+				declare_war_with_cb = {
+					who = CSA
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = AAB
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KSZ
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KNN
+					casus_belli = cb_annex
+				}
+			}
+			CSA = {
+				declare_war_with_cb = {
+					who = AAB
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KSZ
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KNN
+					casus_belli = cb_annex
+				}
+			}
+			AAB = {
+				declare_war_with_cb = {
+					who = CSA
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KSZ
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KNN
+					casus_belli = cb_annex
+				}
+			}
+			KSZ = {
+				declare_war_with_cb = {
+					who = CSA
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = AAB
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KNN
+					casus_belli = cb_annex
+				}
+			}
+			KNN = {
+				declare_war_with_cb = {
+					who = CSA
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KSZ
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = AAB
+					casus_belli = cb_annex
+				}
+			}
+			JAA = {
+				declare_war_with_cb = {
+					who = HUN
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = CSA
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KSZ
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = AAB
+					casus_belli = cb_annex
+				}
+				declare_war_with_cb = {
+					who = KNN
+					casus_belli = cb_annex
+				}
 			}
 		}
 	}
@@ -163,27 +306,198 @@ country_event = {
 	
 	option = {
 		name = HUN_flavor.1a
+		custom_tooltip = send_aid_hungary_TT
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			SER = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BOH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			PAP = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BLH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+		}
+				
 	}
 
 	option = {
 		name = HUN_flavor.1b
 		switch_tag = CSA
+		custom_tooltip = send_aid_hungary_TT
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			SER = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BOH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			PAP = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BLH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+		}
 	}
 	option = {
 		name = HUN_flavor.1c
-		switch_tag = AAD
+		switch_tag = AAB
+		custom_tooltip = send_aid_hungary_TT
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			SER = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BOH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			PAP = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BLH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+		}
 	}
+	
 	option = {
 		name = HUN_flavor.1d
 		switch_tag = KSZ
+		custom_tooltip = send_aid_hungary_TT
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			SER = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BOH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			PAP = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BLH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+		}
 	}
+	
 	option = {
 		name = HUN_flavor.1e
 		switch_tag = KNN
+		custom_tooltip = send_aid_hungary_TT
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			SER = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BOH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			PAP = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BLH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+		}
 	}
 	option = {
 		name = HUN_flavor.1f
 		switch_tag = JAA
+		custom_tooltip = send_aid_hungary_TT
+		hidden_effect = {
+			POL = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			SER = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BOH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			PAP = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+			BLH = {
+				country_event = {
+					id = hun_flavor.4
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -205,9 +519,19 @@ country_event = {
 	option = {
 		name = HUN_flavor.2a
 		add_prestige = -5
-			every_country = {
-				limit = {
-					NOT = { tag = ROOT }
+		
+		
+		custom_tooltip = hun_thunder_TT
+		hidden_effect = {
+			country_event = {
+				id = HUN_flavor.1
+				days = 1825
+				random = 100
+			}
+		}
+		every_country = {
+			limit = {
+				NOT = { tag = ROOT }
 					OR = {
 						is_neighbor_of = ROOT
 						capital_scope = {
@@ -284,3 +608,151 @@ country_event = {
 				tag = PAP
 			}
 	}
+}
+country_event = {
+	id = HUN_flavor.4
+	title = HUN_flavor.4.t
+	desc = HUN_flavor.4.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hun_flavor.4.a
+		trigger = {
+			tag = BOH
+		}
+		add_manpower = -5
+		add_treasury = -100
+		CSA = {
+			add_manpower = 5
+			add_treasury = 100
+		}
+	}
+	
+	option = {
+		name = hun_flavor.4.b
+		trigger = {
+			tag = PAP
+		}
+		add_manpower = -5
+		add_treasury = -100
+		JAA = {
+			add_manpower = 5
+			add_treasury = 100
+		}
+	}	
+	
+	option = {
+		name = hun_flavor.4.c
+		trigger = {
+			tag = BLH
+		}
+		add_manpower = -5
+		add_treasury = -100
+		KNN = {
+			add_manpower = 5
+			add_treasury = 100
+		}
+	}
+	
+	option = {
+		name = hun_flavor.4.e
+		trigger = {
+			tag = SRB
+		}
+		add_manpower = -5
+		add_treasury = -100
+		KSZ = {
+			add_manpower = 5
+			add_treasury = 100
+		}
+	}
+	
+	option = {
+		name = hun_flavor.4.f
+		trigger = {
+			tag = POL
+		}
+		add_manpower = -5
+		add_treasury = -100
+		AAB = {
+			add_manpower = 5
+			add_treasury = 100
+		}
+	}
+	
+	option = {
+		name = hun_flavor.4.g
+		add_prestige = -10
+	}
+}
+country_event = {
+	id = HUN_flavor.5
+	title = HUN_flavor.5.t
+	desc = HUN_flavor.5.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.5a
+		add_mil_power = 200
+		add_prestige = 10
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.5b
+		trigger = {
+			tag = KNN
+		}
+		BLH = {
+			country_event = {
+				id = HUN_flavor.6
+				days = 1
+			}
+		}
+		custom_tooltip = BLH_call_in_TT
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+}
+country_event = {
+	id = HUN_flavor.6
+	title = HUN_flavor.6.t
+	desc = HUN_flavor.6.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.6a
+		add_prestige = -10
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.6b
+		trigger = {
+			tag = BLH
+		}
+		BLH = {
+			join_all_defensive_wars_of = KNN
+			create_alliance = KNN
+			add_trust = {
+				who = KNN
+				mutual = yes
+				value = 20
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

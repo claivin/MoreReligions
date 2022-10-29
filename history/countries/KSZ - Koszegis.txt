@@ -4,5 +4,5 @@ primary_culture = hungarian
 add_accepted_culture = serbian
 religion = catholic
 technology_group = eastern
-historical_friend = BOH
+historical_friend = SER
 

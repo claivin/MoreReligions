@@ -657,7 +657,33 @@ country_event = {
 				which = Ilkhanate_Vassal_Count
 				value = 1
 			}
-			
+			FRS = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_government_reform = iqta
+			}
+			LRI = {
+				capital_scope = {
+						build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+				}
+				add_government_reform = iqta
+			}
+			KRM = {
+				capital_scope = {
+						build_to_forcelimit = {
+							infantry = 0.7
+							cavalry = 0.3
+						}
+				}
+				add_government_reform = feudal_theocracy
+			}
 		}
 	}
 	
@@ -670,41 +696,15 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.9.b
 		switch_tag = FRS
-		FRS = {
-			capital_scope = {
-					build_to_forcelimit = {
-					infantry = 0.7
-					cavalry = 0.3
-				}
-			}
-			add_government_reform = iqta
-		}
+		
 	}
 	option = {
 		name = ilkhanate_flavor.9.c
 		switch_tag = LRI
-		LRI = {
-			capital_scope = {
-					build_to_forcelimit = {
-					infantry = 0.7
-					cavalry = 0.3
-				}
-			}
-			add_government_reform = iqta
-		}
 	}
 	option = {
 		name = ilkhanate_flavor.9.e
 		switch_tag = KRM
-		KRM = {
-			capital_scope = {
-					build_to_forcelimit = {
-					infantry = 0.7
-					cavalry = 0.3
-				}
-			}
-			add_government_reform = feudal_theocracy
-		}
 	}
 }
 
@@ -723,28 +723,28 @@ country_event = {
 		add_stability = -5
 		424 = {
 			spawn_rebels = {
-				type = nationalist
+				type = nationalist_rebels
 				size = 2
 				win = yes
 			}
 		}
 		412 = {
 			spawn_rebels = {
-				type = nationalist
+				type = nationalist_rebels
 				size = 1
 				win = yes
 			}
 		}
 		random_heretic_province = { 
 			spawn_rebels = {
-				type = nationalist
+				type = nationalist_rebels
 				size = 1
 				win = yes
 			}
 		}
 		random_heretic_province = { 
 			spawn_rebels = {
-				type = nationalist
+				type = nationalist_rebels
 				size = 1
 				win = yes
 			}

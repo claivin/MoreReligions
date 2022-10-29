@@ -22,10 +22,19 @@
  BAKUFU_NAME_3_ADJ: "Bakufu"
  BAKUFU_NAME_4_ADJ: "Bakufu"
  
- 
+
  #Ilkhanate Missions#
  ilk_missionaries_1: "Ilkhanate Missionaries"
  annexers_legacy_TT: "If we have the §YAnnexed Subject§! Country Modifier, it will be removed."
  no_disaster_ilk: "This will prevent the §YAnarchy of Tabriz§! from being able to start."
  ilk_religious_1_title: "End the Sufi Privileges"
  ilk_political_2_title: "Stabalize the Court"
+ 
+ ##Hungary and breakaway Missions
+ 
+ knn_diplo_second_title: "Secure Kievan Alliance"
+ knn_diplo_first_title: "Gather Natural Allies"
+ knn_conquest_first_title: "Expand out of Carpethia"
+ knn_conquest_second_title: "End the Civil War"
+ knn_spy_first_title: "Infitrate the Enemy"
+ knn_spy_second_title: "Incite Uprisings"

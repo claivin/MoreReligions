@@ -1,0 +1,299 @@
+knn_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = KNN
+	}
+	
+	knn_diplo_second = {
+		icon = mission_noble_council
+		position = 2
+		required_missions = { knn_diplo_first }
+		trigger = {
+			OR = {
+				BLH = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					marriage_with = KNN
+				}
+				SAX = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+					marriage_with = KNN
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = HUN_thunder_dome_participant
+				}
+				country_event = {
+					id = HUN_flavor.5
+				}
+			}
+			else = {
+				add_dip_power = 200
+			}
+		}
+	}
+}
+knn_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = KNN
+	}
+	knn_diplo_first = {
+		icon = invade_poland
+		position = 1
+		required_missions = { }
+		trigger = {
+			OR = {
+				BLH = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+				SAX = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					BLH = {
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+					}
+				}
+				KNN = {
+					add_trust = {
+						who = BLH
+						value = 15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					SAX = {
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+					}
+				}
+				KNN = {
+					add_trust = {
+						who = SAX
+						value = 15
+					}
+				}
+			}
+			add_country_modifier = {
+				name = KNN_diplo_core
+				duration = 3650
+			}
+		}
+	}
+	
+		
+}
+knn_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = KNN
+	}
+	knn_conquest_first = {
+		icon = gory_to_the_black_army
+		position = 1
+		required_missions = { }
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					region = carpathia_region
+					NOT = {
+						OR = {
+							area = wallachia_area
+							area = moldavia_area
+							area = transylvania_area 
+						}
+					}
+					OR = {
+						controlled_by = ROOT
+						owned_by = ROOT
+					}
+				}
+				amount = 5
+			}
+		}
+		
+		effect = {
+			add_manpower = 5
+			define_general = {
+				shock = 3
+				fire = 3
+				manuever = 2
+				siege = 1
+			}
+		}
+	}
+	
+	knn_conquest_second = {
+		icon = mission_crusade_for_varna
+		position = 3
+		required_missions = { knn_conquest_first }
+		trigger = {
+			slovakia_area = { type = all owned_by = ROOT }
+			transylvania_area = { type = all owned_by = ROOT }
+			southern_transylvania_area = { type = all owned_by = ROOT }
+			transdanubia_area = { type = all owned_by = ROOT }
+			alfold_area = { type = all owned_by = ROOT }
+		}
+		
+		effect = {
+			change_tag = HUN
+			remove_government_reform = mr_hungary_faction
+			hidden_effect = {
+				clr_country_flag = HUN_thunder_dome_participant
+				set_country_flag = HUN_thunder_dome_winner
+			}
+			add_government_reform = mr_horde_hungary_reform
+			
+		}
+	}
+}
+knn_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = KNN
+	}
+	knn_spy_first = {
+		icon = mission_market_place_with_asian_traders
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			owner = {
+				has_country_flag = HUN_thunder_dome_participant
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			any_country = {
+				has_country_flag = HUN_thunder_dome_participant
+				has_spy_network_from = {
+					who = ROOT
+					value = 30
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = HUN_fow_tt
+			hidden_effect = {
+				ROOT = {
+					every_country = {
+						limit = { 
+							war_with = ROOT
+							has_country_flag = HUN_thunder_dome_participant
+							has_spy_network_from = {
+								who = ROOT
+								value = 30
+							}
+						}
+						remove_fow = 24
+					}
+				}
+			}
+		}
+	}
+}
+knn_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = KNN
+	}
+	knn_spy_second = {
+		icon = mission_impaled_soldies
+		position = 2
+		required_missions = { knn_spy_first }
+		provinces_to_highlight = {
+			owner = {
+				has_country_flag = HUN_thunder_dome_participant
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			any_country = {
+				has_country_flag = HUN_thunder_dome_participant
+				has_spy_network_from = {
+					who = ROOT
+					value = 35
+				}
+			}
+		}
+		
+		effect = {
+			custom_tooltip = HUN_rebel_tt
+			tooltip = {
+				spawn_rebels = { 
+					type = nationalist_rebels
+					separatists_target = KNN
+					size = 2
+					friend = KNN
+					should_take_capital = yes
+				}
+			}
+			hidden_effect = {
+				random_core_province = { 
+					limit = {
+						NOT = {
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
+							}
+						}
+						owner = {
+							has_spy_network_from = {
+								who = ROOT
+								value = 35
+							}
+							has_country_flag = HUN_thunder_dome_participant
+						}
+					}
+					spawn_rebels = { 
+						type = nationalist_rebels
+						separatists_target = KNN
+						size = 2
+						friend = KNN
+						should_take_capital = yes
+					}
+				}
+			}
+		}
+	}
+}
