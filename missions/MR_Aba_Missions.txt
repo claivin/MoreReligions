@@ -1,32 +1,23 @@
-knn_missions_first = {
+aba_missions_first = {
 	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		tag = AAB
 	}
 	
-	knn_diplo_second = {
+	aba_diplo_second = {
 		icon = mission_noble_council
 		position = 2
-		required_missions = { knn_diplo_first }
+		required_missions = { aba_diplo_first }
 		trigger = {
-			OR = {
-				BLH = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					marriage_with = KNN
+			POL = {
+				has_opinion = {
+					who = ROOT
+					value = 100
 				}
-				SAX = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					marriage_with = KNN
-				}
+				marriage_with = AAB
 			}
 		}
 		effect = {
@@ -44,69 +35,45 @@ knn_missions_first = {
 		}
 	}
 }
-knn_missions_second = {
+aba_missions_second = {
 	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		tag = AAB
 	}
-	knn_diplo_first = {
+	aba_diplo_first = {
 		icon = invade_poland
 		position = 1
 		required_missions = { }
 		trigger = {
-			OR = {
-				BLH = {
-					has_opinion = {
-						who = ROOT
-						value = 75
-					}
-				}
-				SAX = {
-					has_opinion = {
-						who = ROOT
-						value = 75
-					}
+			POL = {
+				has_opinion = {
+					who = ROOT
+					value = 75
 				}
 			}
 		}
 		effect = {
 			if = {
 				limit = {
-					BLH = {
+					POL = {
 						has_opinion = {
 							who = ROOT
 							value = 75
 						}
 					}
 				}
-				KNN = {
+				AAB = {
 					add_trust = {
 						who = BLH
 						value = 15
 					}
 				}
 			}
-			else_if = {
-				limit = {
-					SAX = {
-						has_opinion = {
-							who = ROOT
-							value = 75
-						}
-					}
-				}
-				KNN = {
-					add_trust = {
-						who = SAX
-						value = 15
-					}
-				}
-			}
 			add_country_modifier = {
-				name = KNN_diplo_core
+				name = HUN_diplo_core
 				duration = 3650
 			}
 		}
@@ -114,15 +81,15 @@ knn_missions_second = {
 	
 		
 }
-knn_missions_third = {
+aba_missions_third = {
 	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		tag = AAB
 	}
-	knn_conquest_first = {
+	aab_conquest_first = {
 		icon = gory_to_the_black_army
 		position = 1
 		required_missions = { }
@@ -134,7 +101,10 @@ knn_missions_third = {
 						OR = {
 							area = wallachia_area
 							area = moldavia_area
-							area = transylvania_area 
+							province_id = 162
+							province_id = 1318
+							province_id = 4125
+							province_id = 1953
 						}
 					}
 					OR = {
@@ -148,22 +118,22 @@ knn_missions_third = {
 		
 		effect = {
 			add_country_modifier = {
-				name = KNN_war_modifier 
+				name = AAB_war_modifier 
 				duration = 1825
 			}
 			define_general = {
 				shock = 3
-				fire = 3
-				manuever = 2
-				siege = 1
+				fire = 2
+				manuever = 1
+				siege = 2
 			}
 		}
 	}
 	
-	knn_conquest_second = {
+	aab_conquest_second = {
 		icon = mission_crusade_for_varna
 		position = 3
-		required_missions = { knn_conquest_first }
+		required_missions = { aab_conquest_first }
 		trigger = {
 			slovakia_area = { type = all owned_by = ROOT }
 			transylvania_area = { type = all owned_by = ROOT }
@@ -179,20 +149,20 @@ knn_missions_third = {
 				clr_country_flag = HUN_thunder_dome_participant
 				set_country_flag = HUN_thunder_dome_winner
 			}
-			add_government_reform = mr_horde_hungary_reform
+			add_government_reform = mr_polish_hungary_reform
 			
 		}
 	}
 }
-knn_missions_fourth = {
+aab_missions_fourth = {
 	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		tag = AAB
 	}
-	knn_spy_first = {
+	aab_spy_first = {
 		icon = mission_market_place_with_asian_traders
 		position = 1
 		required_missions = { }
@@ -232,18 +202,18 @@ knn_missions_fourth = {
 		}
 	}
 }
-knn_missions_fifth = {
+aab_missions_fifth = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		tag = AAB
 	}
-	knn_spy_second = {
+	aab_spy_second = {
 		icon = mission_impaled_soldies
 		position = 2
-		required_missions = { knn_spy_first }
+		required_missions = { aab_spy_first }
 		provinces_to_highlight = {
 			owner = {
 				has_country_flag = HUN_thunder_dome_participant
@@ -265,9 +235,9 @@ knn_missions_fifth = {
 			tooltip = {
 				spawn_rebels = { 
 					type = nationalist_rebels
-					separatists_target = KNN
+					separatists_target = AAB
 					size = 2
-					friend = KNN
+					friend = AAB
 					should_take_capital = yes
 				}
 			}
@@ -290,9 +260,9 @@ knn_missions_fifth = {
 					}
 					spawn_rebels = { 
 						type = nationalist_rebels
-						separatists_target = KNN
+						separatists_target = AAB
 						size = 2
-						friend = KNN
+						friend = AAB
 						should_take_capital = yes
 					}
 				}

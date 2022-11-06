@@ -38,9 +38,19 @@ mr_cathar_king = {
 }
 
 #Hungarian Mission Modifiers
-KNN_diplo_core = {
+HUN_diplo_core = {
 	diplomats = 1
 	improve_relation_modifier = 0.25
+}
+
+HUN_war_modifier = {
+	cavalry_power = 0.15
+	siege_ability = 0.10 
+}
+
+AAB_war_modifier = {
+	land_morale = 0.10
+	siege_ability = 0.10
 }
 
 #Ilkhanate

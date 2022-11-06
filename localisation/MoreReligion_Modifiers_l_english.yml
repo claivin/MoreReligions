@@ -1,2 +1,6 @@
 ﻿l_english:
- KNN_diplo_core: "Saxon Diplomatic Core"
+
+#Hungary
+ HUN_diplo_core: "Hungarian Diplomatic Core"
+ AAB_war_modifier: "Wrath of House Aba"
+ KNN_war_modifier: "Riders of House Kan"

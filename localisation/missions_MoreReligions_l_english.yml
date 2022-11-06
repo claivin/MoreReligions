@@ -34,7 +34,8 @@
  
  knn_diplo_second_title: "Secure Kievan Alliance"
  knn_diplo_first_title: "Gather Natural Allies"
- knn_conquest_first_title: "Expand out of Carpethia"
- knn_conquest_second_title: "End the Civil War"
- knn_spy_first_title: "Infitrate the Enemy"
+ knn_conquest_first_title: "Riders of the Kan"
+ knn_conquest_second_title: "End The Civil War"
+ knn_spy_first_title: "Infitrate The Enemy"
  knn_spy_second_title: "Incite Uprisings"
+ KNN_war_modifier: "Riders of the Kan"
