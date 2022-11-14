@@ -1,0 +1,21 @@
+# 1868 - Biberach
+owner = HHH
+controller = HHH
+add_core = HHH
+culture = swabian
+religion = catholic
+base_tax = 2
+base_production = 3
+trade_goods = grain 
+base_manpower = 4
+capital = "Gmund"
+is_city = yes
+hre = yes
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+

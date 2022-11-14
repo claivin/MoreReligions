@@ -70,9 +70,18 @@ BSS = "countries/Brussels.txt"
 
 #Germany
 MRN = "countries/Merania.txt"
+<<<<<<< Updated upstream
 KRN = "countries/Karnten.txt"
 KRI = "countries/Krain.txt"
 BGU = "countries/Burgau.txt"
+=======
+KRN = "countries/Kärnten.txt"
+KRI = "countries/Krain.txt"
+LBG = "countries/Lowerburgundy.txt"
+BUA = "countries/Burgau.txt"
+HHH = "countries/Hohenlohe.txt"
+
+>>>>>>> Stashed changes
 
 #Britain
 YRK = "countries/York.txt"

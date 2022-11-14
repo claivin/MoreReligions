@@ -1,7 +1,7 @@
 #REGIONGERMANY
 
-owner = SWI
-controller = SWI
+owner = LBG
+controller = LBG
 culture = swiss
 religion = catholic
 capital = "Fribourg"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = SWI
+add_core = LBG
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

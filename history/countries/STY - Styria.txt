@@ -37,4 +37,3 @@ capital = 1863	# Graz
 	}
 }
 
-

@@ -1,8 +1,8 @@
 #REGIONGERMANY
 #1869 - Zurich
 
-owner = SWI
-controller = SWI
+owner = LBG
+controller = LBG
 culture = swiss
 religion = catholic
 capital = "Zürich"
@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = SWI
+add_core = LBG
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
