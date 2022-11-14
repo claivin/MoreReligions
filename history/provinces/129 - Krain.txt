@@ -1,6 +1,10 @@
+<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
 # 129 - Krain
 
+=======
+# 129 - Krain
+>>>>>>> Stashed changes
 owner = KRI
 controller = KRI
 add_core = KRI
@@ -23,6 +27,7 @@ discovered_by = CRI
 discovered_by = GOL
 discovered_by = AST
 discovered_by = QAS
+<<<<<<< Updated upstream
 
 # 1452.1.1 = {
 	# owner = STY
@@ -36,3 +41,5 @@ discovered_by = QAS
 # 1525.5.1 = { unrest = 5 } # Farmer insurrections 
 # 1526.1.1 = { unrest = 0 }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+=======
+>>>>>>> Stashed changes

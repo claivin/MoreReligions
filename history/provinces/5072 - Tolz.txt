@@ -1,9 +1,15 @@
+<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
 #5072 - TOLZ
 
 owner = MRN
 controller = MRN
 capital = "Wasserburg"
+=======
+owner = MRN
+controller = MRN
+capital = "Tolz"
+>>>>>>> Stashed changes
 is_city = yes
 culture = bavarian
 religion = catholic
@@ -11,10 +17,18 @@ hre = yes
 base_tax = 2 
 base_production = 2
 base_manpower = 2
+<<<<<<< Updated upstream
 trade_goods = salt
+=======
+trade_goods = salt #Bad Reichenhall
+>>>>>>> Stashed changes
 add_core = MRN
 
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
+<<<<<<< Updated upstream
 discovered_by = ottoman
+=======
+discovered_by = ottoman
+>>>>>>> Stashed changes

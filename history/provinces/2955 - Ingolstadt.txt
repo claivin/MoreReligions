@@ -1,5 +1,8 @@
+<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
 #2955 - Ingolstadt
+=======
+>>>>>>> Stashed changes
 # - Ingolstadt + Neuburg
 
 owner = ING
@@ -23,6 +26,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
+<<<<<<< Updated upstream
 # #Last of the Ingolstadt Wittelsbachs dies
 # 1447.5.1 = {
 	# owner = LBV
@@ -46,3 +50,5 @@ discovered_by = ottoman
 # } # Bavaria is conquered by the Emperor, is however later restored for the balance of power
 # 1714.9.7 = { owner = BAV controller = BAV }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+=======
+>>>>>>> Stashed changes

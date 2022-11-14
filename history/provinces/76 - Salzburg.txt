@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
+=======
+>>>>>>> Stashed changes
 #76 - Salzburg
 
 owner = SLZ
@@ -22,6 +25,7 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
+<<<<<<< Updated upstream
 
 # 1731.11.11 = { unrest = 5 } # Leopold von Firmian declared that all Protestants would be banished
 # 1732.1.1 = { unrest = 0 }
@@ -48,3 +52,5 @@ discovered_by = ottoman
 	# add_core = HAB
 	# remove_core = BAV
 # } # Treaty of Paris
+=======
+>>>>>>> Stashed changes

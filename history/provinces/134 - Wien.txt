@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
+=======
+>>>>>>> Stashed changes
 #134 - Wien
 
 owner = HAB
@@ -26,7 +29,11 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 
+<<<<<<< Updated upstream
 # 1545.1.1 = { base_manpower = 3 }
 # 1650.1.1 = { base_manpower = 4 }
 # 1700.1.1 = { base_manpower = 6 }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+=======
+
+>>>>>>> Stashed changes

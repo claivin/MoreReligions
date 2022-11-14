@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
 # 4751 - Cilli
 
@@ -5,6 +6,13 @@ owner = STY
 controller = STY
 add_core = CLI
 add_core = STY
+=======
+# 4751 - Cilli
+owner = STY
+controller = STY
+add_core = STY
+add_core = CLI
+>>>>>>> Stashed changes
 culture = slovene
 religion = catholic
 base_tax = 3
@@ -22,6 +30,7 @@ discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
 discovered_by = AST
+<<<<<<< Updated upstream
 discovered_by = QAS
 
 # 1452.1.1 = {
@@ -37,3 +46,6 @@ discovered_by = QAS
 # 1525.5.1 = { unrest = 5 } # Farmer insurrections 
 # 1526.1.1 = { unrest = 0 }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+=======
+discovered_by = QAS
+>>>>>>> Stashed changes
