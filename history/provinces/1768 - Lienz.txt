@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 ##REGIONSOUTHGERMANY
-=======
->>>>>>> Stashed changes
 #1768 - Lienz
 
 owner = KRN
@@ -25,7 +22,6 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-<<<<<<< Updated upstream
 # 1452.1.1 = {
 	# owner = STY
 	# controller = STY
@@ -53,5 +49,3 @@ discovered_by = ottoman
 	# add_core = HAB
 	# remove_core = BAV
 # } # Treaty of Paris, ceded to the Habsburgs
-=======
->>>>>>> Stashed changes

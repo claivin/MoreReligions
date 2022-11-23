@@ -1,9 +1,6 @@
-<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
 #4707 - Rosenheim
 
-=======
->>>>>>> Stashed changes
 owner = MRN
 controller = MRN
 capital = "Wasserburg"
@@ -21,7 +18,6 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-<<<<<<< Updated upstream
 
 # #Last of the Ingolstadt Wittelsbachs dies
 # 1447.5.1 = {
@@ -44,5 +40,3 @@ discovered_by = ottoman
 # 1777.1.1 = { unrest = 3 } # Bavarian line of the Wittlelsbach family dies out and is replaced by the Pwesternate branch of the family. The people in Munich hate the new duke.
 # 1779.1.1 = { unrest = 0 }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-=======
->>>>>>> Stashed changes

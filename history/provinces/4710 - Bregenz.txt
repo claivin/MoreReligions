@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
-=======
->>>>>>> Stashed changes
 # 4710 - Vorarlberg
 
 owner = MBZ
@@ -22,7 +19,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-<<<<<<< Updated upstream
 # 1458.6.7 = { #sold to the Habsburgs
 	# owner = HAB
 	# controller = HAB
@@ -39,5 +35,3 @@ discovered_by = ottoman
 	# add_core = HAB
 # }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-=======
->>>>>>> Stashed changes

@@ -1,16 +1,9 @@
-<<<<<<< Updated upstream
 #REGIONGERMANY
 #1868 - Augsburg
 
 owner = BGU
 controller = BGU
 add_core = BGU
-=======
-# 1868 - Augsburg
-owner = BUA
-controller = BUA
-add_core = BUA
->>>>>>> Stashed changes
 culture = swabian
 religion = catholic
 base_tax = 7 
@@ -28,7 +21,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 
-<<<<<<< Updated upstream
 
 # 1803.1.1 = {
 	# add_core = BAV
@@ -36,5 +28,3 @@ discovered_by = ottoman
 	# controller = BAV
 # }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-=======
->>>>>>> Stashed changes

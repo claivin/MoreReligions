@@ -1,8 +1,9 @@
+#REGIONGERMANY
 #68 - Memmingen
 
-owner = BUA
-controller = BUA
-add_core = BUA
+owner = MEM
+controller = MEM
+add_core = MEM
 culture = swabian
 religion = catholic
 hre = yes
@@ -13,10 +14,7 @@ base_manpower = 3
 capital = "Memmingen" 
 is_city = yes
 
-
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-

@@ -1,7 +1,4 @@
-<<<<<<< Updated upstream
 #REGIONSOUTHGERMANY
-=======
->>>>>>> Stashed changes
 #1770 - Ostmarch
 
 owner = HAB
@@ -27,10 +24,7 @@ discovered_by = muslim
 discovered_by = ottoman
 
 
-<<<<<<< Updated upstream
 # 1545.1.1 = { base_manpower = 3 }
 # 1650.1.1 = { base_manpower = 4 }
 # 1700.1.1 = { base_manpower = 6 }
 # 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-=======
->>>>>>> Stashed changes
