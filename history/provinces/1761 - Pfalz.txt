@@ -1,0 +1,18 @@
+#1761 - Pfalz
+
+capital = "Pfalz"
+culture = hessian
+religion = catholic
+trade_goods = wine
+owner = PAL
+base_tax = 4
+base_production = 4
+base_manpower = 2
+is_city = yes
+controller = PAL
+add_core = PAL
+hre = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

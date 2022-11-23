@@ -305,4 +305,18 @@
  CGS_ADJ: "Cen"
  CGS_ADJ2: "Cen"
  
+ LAU: "Lauenburg"
+ LAU_ADJ: "Lauenburg"
+ LAU_ADJ2: "Lauenburg"
  
+ WOL: "Stralsund"
+ WOL_ADJ: "Stralsund"
+ WOL_ADJ2: "Stralsund"
+ 
+ STE: "Slavinia"
+ STE_ADJ: "Slavinia"
+ STE_ADJ2: "Slavinia"
+ 
+ LIE: "Loon"
+ LIE_ADJ: "Loon"
+ LIE_ADJ2: "Loon"

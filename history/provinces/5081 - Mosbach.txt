@@ -1,0 +1,19 @@
+#5081 - Mosbach
+
+capital = "Mosbach"
+culture = hessian
+religion = catholic
+trade_goods = wine
+owner = ALS
+base_tax = 5
+base_production = 4
+base_manpower = 4
+is_city = yes
+controller = ALS
+add_core = ALS
+hre = yes
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

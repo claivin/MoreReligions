@@ -1,7 +1,7 @@
 # 1868 - Biberach
-owner = BUA
-controller = BUA
-add_core = BUA
+owner = BGU
+controller = BGU
+add_core = BGU
 culture = swabian
 religion = catholic
 base_tax = 4

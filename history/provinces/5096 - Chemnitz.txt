@@ -1,0 +1,19 @@
+#5096 - Chemnitz
+
+owner = MEI
+controller = MEI
+add_core = MEI
+culture = saxon
+religion = catholic
+hre = yes
+base_tax = 2
+base_production = 3
+trade_goods = cloth
+base_manpower = 2
+capital = "Chemnitz"
+is_city = yes
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

@@ -1,9 +1,9 @@
 #REGIONGERMANY
 #68 - Memmingen
 
-owner = MEM
-controller = MEM
-add_core = MEM
+owner = BGU
+controller = BGU
+add_core = BGU
 culture = swabian
 religion = catholic
 hre = yes

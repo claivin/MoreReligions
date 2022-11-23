@@ -1,0 +1,19 @@
+#4974 - Belfort
+
+owner = DCP
+controller = DCP
+add_core = DCP
+capital = "Belfort"
+is_city = yes
+culture = swabian
+religion = catholic
+hre = yes
+base_tax = 3 
+base_production = 3
+trade_goods = iron
+base_manpower = 3
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

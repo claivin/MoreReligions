@@ -1,0 +1,18 @@
+#5105 - Cammin
+
+owner = CMM
+controller = CMM
+add_core = CMM
+capital = "Cammin"
+culture = prussian
+religion = catholic
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 4
+base_manpower = 3
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

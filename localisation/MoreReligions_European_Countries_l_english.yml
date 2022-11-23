@@ -503,3 +503,27 @@
  LBG: "Lesser Burgundy"
  LBG_ADJ: "Lesser Burgundian"
  LBG_ADJ2: "Lesser Burgundian"
+ 
+ BGU: "Burgau"
+ BGU_ADJ: "Burgau"
+ BGU_ADJ2: "Burgau"
+
+ HHH: "Hohenlohe"
+ HHH_ADJ: "Hohenlohe"
+ HHH_ADJ2: "Hohenlohe"
+ 
+ DCP: "Decaopolis"
+ DCP_ADJ: "Decaopolis"
+ DCP_ADJ2: "Decaopolis"
+ 
+ HDL: "Hildesheim"
+ HDL_ADJ: "Hildesheim"
+ HDL_ADJ2: "Hildesheim"
+
+ CMM: "Cammin"
+ CMM_ADJ: "Cammin"
+ CMM_ADJ2: "Cammin"
+ 
+ PMR: "Pomerelia"
+ PMR_ADJ: "Pomerelian"
+ PMR_ADJ2: "Pomerelian"
