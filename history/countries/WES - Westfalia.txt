@@ -2,4 +2,4 @@ government = republic
 primary_culture = hannoverian
 religion = catholic
 technology_group = western
-capital = 81	# Kassel
+capital = 82	# Kassel

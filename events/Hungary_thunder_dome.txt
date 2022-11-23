@@ -6,7 +6,8 @@ country_event = {
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
-
+	
+	fire_only_once = yes
 	
 	immediate = {
 		hidden_effect = {
@@ -33,6 +34,7 @@ country_event = {
 			release = AAB
 			release = KSZ
 			release = KNN
+			release = JAA
 			1951 = {
 				cede_province = JAA
 			}
@@ -48,6 +50,7 @@ country_event = {
 				add_historical_rival = KNN
 				add_historical_rival = JAA
 				add_historical_rival = HUN
+				add_historical_friend = BOH
 				every_province = {
 					limit = {
 						region = carpathia_region
@@ -82,6 +85,7 @@ country_event = {
 				add_historical_rival = KNN
 				add_historical_rival = JAA
 				add_historical_rival = HUN
+				add_historical_friend = POL
 				every_province = {
 					limit = {
 						region = carpathia_region
@@ -116,6 +120,7 @@ country_event = {
 				add_historical_rival = KNN
 				add_historical_rival = JAA
 				add_historical_rival = HUN
+				add_historical_friend = SER
 				every_province = {
 					limit = {
 						region = carpathia_region
@@ -150,6 +155,7 @@ country_event = {
 				add_historical_rival = CSA
 				add_historical_rival = JAA
 				add_historical_rival = HUN
+				add_historical_friend = BLH
 				every_province = {
 					limit = {
 						region = carpathia_region
@@ -183,6 +189,7 @@ country_event = {
 				add_historical_rival = KNN
 				add_historical_rival = CSA
 				add_historical_rival = HUN
+				add_historical_friend = PAP
 				every_province = {
 					limit = {
 						region = carpathia_region
@@ -310,27 +317,27 @@ country_event = {
 		hidden_effect = {
 			POL = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			SER = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BOH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			PAP = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BLH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 		}
@@ -344,27 +351,27 @@ country_event = {
 		hidden_effect = {
 			POL = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			SER = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BOH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			PAP = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BLH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 		}
@@ -376,27 +383,27 @@ country_event = {
 		hidden_effect = {
 			POL = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			SER = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BOH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			PAP = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BLH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 		}
@@ -409,27 +416,27 @@ country_event = {
 		hidden_effect = {
 			POL = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			SER = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BOH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			PAP = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BLH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 		}
@@ -442,27 +449,27 @@ country_event = {
 		hidden_effect = {
 			POL = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			SER = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BOH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			PAP = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BLH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 		}
@@ -474,27 +481,28 @@ country_event = {
 		hidden_effect = {
 			POL = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
+					days = 1
 				}
 			}
 			SER = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BOH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			PAP = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 			BLH = {
 				country_event = {
-					id = hun_flavor.4
+					id = HUN_flavor.4
 				}
 			}
 		}
@@ -579,6 +587,7 @@ country_event = {
 			trigger = {
 				tag = BOH
 			}
+			
 	}
 	
 	option = {
@@ -586,6 +595,7 @@ country_event = {
 			trigger = {
 				tag = SER
 			}
+			
 	}
 	
 	option = {
@@ -593,6 +603,7 @@ country_event = {
 			trigger = {
 				tag = POL
 			}
+			
 	}
 	
 	option = {
@@ -600,6 +611,7 @@ country_event = {
 			trigger = {
 				tag = BLH
 			}
+			
 	}
 	
 	option = {
@@ -607,6 +619,7 @@ country_event = {
 			trigger = {
 				tag = PAP
 			}
+			
 	}
 }
 country_event = {
@@ -674,7 +687,7 @@ country_event = {
 	option = {
 		name = hun_flavor.4.e
 		trigger = {
-			tag = SRB
+			tag = SER
 		}
 		add_manpower = -5
 		add_treasury = -100
@@ -682,7 +695,7 @@ country_event = {
 		KSZ = {
 			add_manpower = 5
 			add_treasury = 100
-			add_historical_friend = SRB
+			add_historical_friend = SER
 		}
 		ai_chance = {
 			factor = 1
@@ -749,6 +762,23 @@ country_event = {
 		}
 	}
 	
+	option = {
+		name = HUN_flavor.5c
+		trigger = {
+			tag = AAB
+		}
+		POL = {
+			country_event = {
+				id = HUN_flavor.6
+				days = 1
+			}
+		}
+		custom_tooltip = BLH_call_in_TT
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
 }
 country_event = {
 	id = HUN_flavor.6
@@ -778,6 +808,26 @@ country_event = {
 				who = KNN
 				mutual = yes
 				value = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.6c
+		trigger = {
+			tag = POL
+		}
+		POL = {
+			join_all_defensive_wars_of = AAB
+			create_alliance = AAB
+			add_trust = {
+				who = AAB
+				mutual = yes
+				value = 20
+			}
 		}
 		ai_chance = {
 			factor = 1

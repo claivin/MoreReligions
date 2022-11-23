@@ -1,0 +1,5 @@
+vassal = {
+	first = HUN
+	second = JAA
+	start_date = 1444.1.1
+}
