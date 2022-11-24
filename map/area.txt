@@ -1292,74 +1292,74 @@ al_jazira_area = { #5
 # Arabia				               #
 ########################################
 
-bahrain_area = { #5
+bahrain_area = { #5 no change full
 	394 395 396 2340 2347
 }
 
-pirate_coast_area = { #4
-	397 398 404 2333
+pirate_coast_area = { #4 + Al Ain full
+	397 398 404 2333 5374
 }
 
-nafud_area = { #3
-	393 2338 4272
+nafud_area = { #3 +Badiyat West/Badia East full
+	393 2338 4272 5353 2334
 }
 
-tabuk_area = { #4
-	383 2328 4268 4269
+tabuk_area = { #4 + Duba full
+	383 2328 4268 4269 5352
 }
 
-medina_area = { #3
+medina_area = { #3 + Rabigh/Hail full
 	color = { 225 158 92 }
-	384 2329 2330
+	384 2329 2330 5354 5355
 }
 
-mecca_area = { #5
+mecca_area = { #5 no change full
 	385 2331 2332 4277 4278
 }
 
-asir_area = { #3
-	386 391 4282
+asir_area = { #3 +Khamis Mushait/Sharurah full
+	386 391 4282 5358 5359
 }
 
-tihama_al_yemen_area = { #3
-	387 2346 4279
+tihama_al_yemen_area = { #3 +Al Hudaydah/Abha full
+	387 2346 4279 5356 5357
 }
 
-upper_yemen_area = { #3
+upper_yemen_area = { #3 +Huth/Baraqish full
 	color = { 220 41 155 }
-	390 2344 4281
+	390 2344 4281 5360 5361
 }
 
-yemen_area = { #Lower Yemen #
-	388 2345 4280
+yemen_area = { #Lower Yemen # +Shoqra/Ad Dali full
+	388 2345 4280 5362 5363
 }
 
-hadramut_area = { #3
-	389 2343 4283
+hadramut_area = { #3 +Tarim/Habban full
+	389 2343 4283 5364 5365
 }
 
-mahra_area = { #3
-	402 1099 4284
+mahra_area = { #3 +Salalah/Thumarait full
+	402 1099 4284 5366 5367
 }
 
-yamamah_area = { #4
-	2335 2336 2339 4275
+yamamah_area = { #4 +Rub al khali full
+	2335 2336 2339 4275 1779
 }
 
-qasim_area = { #4
-	392 2337 4273 4274
+qasim_area = { #4 +Jabal Tubaiq full
+	392 2337 4273 4274 4276
 }
 
-dhofar_area = { #3 (Dhofar + Masirah)
-	401 2341 2342
+dhofar_area = { #3 (Dhofar + Masirah) + Masirah(island)/Thabhloten full
+	401 2341 2342 5368 5369
 }
 
-oman_area = { #3 (Oman Proper)
-	403 4285 4287  
+oman_area = { #3 (Oman Proper) +Qarn Al Alam/Adam full
+	403 4285 4287 5370 5371
 }
 
-mascat_area = { #3 (Batinah and Muscat coast)
-	399 400 4286
+mascat_area = { #3 (Batinah and Muscat coast) +Seeb/Quriyat full
+	399 400 4286 5372 5373
 }
 
 syrian_desert_area = { #3 +baalbek/druze hills full
