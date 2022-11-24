@@ -1,0 +1,29 @@
+﻿l_english:
+ mr_institutions.1.t: "Patronage of The [Root.Culture.GetName] Arts"
+ mr_institutions.1.d: "Since the sudden and rapid decline of the Eastern Roman Empire, an undercurrent of cultural revival has grown within the native [Root.Culture.GetName] aristocracy. Many amongst them seek to step up and to claim the deprecated cultural mantle of the Byzantines. Though it is possible that they could patronize their own works, writing and art funded by the state may work to increase the prestige of [Root.Culture.GetName] culture, attracting other creatively minded people..."
+ mr_institutions.1.a: "I love the arts!"
+ mr_institutions.1.b: "We cannot spare these expenses."
+ YOUR_CULTURE_IS_ELIGBLE_TO_SPAWN_RENAISSANCE: "\n§YAll [Root.Culture.GetName] culture provinces will be eligible to spawn Renaissance§!"
+ 
+ mr_patronage_of_artists: "Patronage of the Arts"
+ desc_mr_patronage_of_artists: "Funding for the great writers and painters of our people."
+ mr_patronage_of_artists_province: "Subsidized Local Artists"
+ desc_mr_patronage_of_artists_province: "Funding for the great writers and painters of our people."
+ 
+ ren_culture_picked: "Cultural Arts Movement"
+ 
+ mr_institutions.2.t: "Greek Refugees Arrive in [Root.GetName]"
+ mr_institutions.2.d: "The turmoil in Greece following the fall of Byzantium and the continuing squabbles amongst the foreign Crusader States has spurred many Greeks to flee their homeland for greener pastures. Having arrived in [Root.GetName], they carry with them books and other curiosities from Byzantium, hoping to preserve their heritage. They are willing to deal with meager living conditions, as long as they are simply given the chance to get back on their legs and rebuild their community..."
+ mr_institutions.2.a: "They are welcome to stay."
+ mr_institutions.2.b: "We cannot afford to provide for them at this time."
+ 
+ MORE_LIKELY_FOR_RENAISSANCE: "§YRenaissance is more likely to spawn in [Root.GetName]§!"
+ 
+ mr_greek_migrants: "Greek Refugees"
+ 
+ mr_institutions.3.t: "The Church Funds the Arts"
+ mr_institutions.3.d: "The increase in heretical movements has been a worrying trend for The Church, especially as past attempts to squash them have been quiet failures. In taking other avenuse of combating heresy, some cardinals have recommened funding religious works to inspire and remind people of the majesty of God. Though the reach to the masses may be limited, surely it will inspire the upper classes."
+ mr_institutions.3.a: "An excellent proposal."
+ 
+ ELIGIBLE_IF_ARTIST_IS_HIRED: "§YAs long as you have a Level 3 or higher Artist hired, you will be eligible to spawn Renaissance.§!"
+ mr_church_funded_arts: "Church Sponsored Artists"

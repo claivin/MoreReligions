@@ -1,6 +1,36 @@
 namespace = mr_startup_events
 #All these events fire Day 1 to provide player with some lore context
 
+#hidden upkeep events
+country_event = {
+	id = mr_startup_events.1000
+	title = mr_startup_events.1000.t
+	desc = mr_startup_events.1000.d
+	
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = REB
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		4161 = {
+			set_variable = {
+				which = ren_cultural_patronage
+				value = 0
+			}
+		}
+	}
+	
+	option = {
+		name = mr_startup_events.1000.a
+	}
+}
+
 #France
 country_event = {
 	id = mr_startup_events.1

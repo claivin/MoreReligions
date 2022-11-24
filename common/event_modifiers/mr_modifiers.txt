@@ -61,3 +61,17 @@ ilk_missionaries_1 = {
 	missionaries = 1
 	global_missionary_strength = 0.2
 }
+
+#Institution Events
+mr_patronage_of_artists = {
+	adm_advisor_cost = 0.25
+	prestige = 0.5
+}
+
+mr_patronage_of_artists_province = {
+	local_tax_modifier = -0.05
+}
+
+mr_greek_migrants = {
+	local_development_cost = -0.05
+}
