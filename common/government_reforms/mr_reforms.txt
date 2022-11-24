@@ -336,9 +336,8 @@ mr_hungary_faction = {
 	}
 	
 	modifiers = {
-		land_maintenance_modifier = -0.33
-		ae_impact = -0.15
-		land_forcelimit_modifier = 0.20
+		war_exhaustion = -0.02
+		global_regiment_recruit_speed = -0.33
 	}	
 }
 

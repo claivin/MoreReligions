@@ -52,6 +52,21 @@ AAB_war_modifier = {
 	land_morale = 0.10
 	siege_ability = 0.10
 }
+CSA_war_modifier = {
+	infantry_power = 0.10
+	siege_ability = 0.10
+}
+
+hungary_war_good = {
+	ae_impact = -0.33
+	land_forcelimit_modifier = 0.50
+	land_maintenance_modifier = -0.50
+}
+
+hungary_war_bad = {
+	movement_speed = -0.10
+	global_attacker_dice_roll_bonus = -1
+}
 
 #Ilkhanate
 tolerance_of_dervishes = {

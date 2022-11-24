@@ -12,12 +12,20 @@ aba_missions_first = {
 		position = 2
 		required_missions = { aba_diplo_first }
 		trigger = {
-			POL = {
-				has_opinion = {
-					who = ROOT
-					value = 100
+			OR = {
+				POL = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+					marriage_with = AAB
 				}
-				marriage_with = AAB
+				POL = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
 			}
 		}
 		effect = {

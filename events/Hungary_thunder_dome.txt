@@ -71,6 +71,10 @@ country_event = {
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
+				add_country_modifier = {
+					name = hungary_war_good
+					duration = 3650
+				}
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
@@ -106,6 +110,10 @@ country_event = {
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
+				add_country_modifier = {
+					name = hungary_war_good
+					duration = 3650
+				}
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
@@ -141,6 +149,10 @@ country_event = {
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
+				add_country_modifier = {
+					name = hungary_war_good
+					duration = 3650
+				}
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
@@ -176,6 +188,10 @@ country_event = {
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
+				add_country_modifier = {
+					name = hungary_war_good
+					duration = 3650
+				}
 				capital_scope = {
 					build_to_forcelimit = {
 						infantry = 0.8
@@ -202,6 +218,16 @@ country_event = {
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
+				add_country_modifier = {
+					name = hungary_war_good
+					duration = 3650
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
 			}
 			HUN = {
 				add_historical_rival = AAB
@@ -210,6 +236,17 @@ country_event = {
 				add_historical_rival = JAA
 				add_historical_rival = CSA
 				set_country_flag = HUN_thunder_dome_participant
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = avoided_disaster_MAG
+						}
+					}
+					add_country_modifier = {
+						name = hungary_war_bad
+						duration = 3650
+					}
+				}
 			}
 			HUN = {
 				declare_war_with_cb = {
@@ -779,6 +816,23 @@ country_event = {
 		}
 	}
 	
+	option = {
+		name = HUN_flavor.5c
+		trigger = {
+			tag = CSA
+		}
+		BOH = {
+			country_event = {
+				id = HUN_flavor.6
+				days = 1
+			}
+		}
+		custom_tooltip = BLH_call_in_TT
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
 }
 country_event = {
 	id = HUN_flavor.6
@@ -825,6 +879,25 @@ country_event = {
 			create_alliance = AAB
 			add_trust = {
 				who = AAB
+				mutual = yes
+				value = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.6c
+		trigger = {
+			tag = BOH
+		}
+		BOH = {
+			join_all_defensive_wars_of = CSA
+			create_alliance = CSA
+			add_trust = {
+				who = CSA
 				mutual = yes
 				value = 20
 			}
