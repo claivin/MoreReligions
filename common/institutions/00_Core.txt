@@ -266,6 +266,204 @@ feudalism = {
 }
 
 #######################################
+# Early Modern Bureaucracy  
+# 
+# China, Korea, and republics around the world start with it
+#######################################
+early_modern_bureaucracy   = {
+
+	bonus = {
+		state_maintenance_modifier = -0.05
+	}
+
+	trade_company_efficiency = 0.5
+
+	history = {
+		is_year = 1350
+		OR = {
+			OR = {
+				region = south_china_region
+				region = xinan_region
+				region = north_china_region
+				region = korea_region
+			}
+			owner = { government = republic }
+		}
+	}
+	
+	# no need for events, as its there from the start.
+	#can_start = {	is_year = 1000	}
+	#start_chance = 100
+	#on_start = institution_events.1
+
+	can_embrace = {
+		always = yes
+	}
+
+	embracement_speed = {
+		modifier = { #adjacency
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_EMB
+				any_friendly_coast_border_province = {
+					early_modern_bureaucracy = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						early_modern_bureaucracy = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = NEIGHBOR_NOT_OWNED_IS_EMB
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					early_modern_bureaucracy = 100
+				}
+			}
+		}
+		modifier = { #colonial subj get it fast
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = PORT_OR_CAPITAL_IN_COLONY_FEUDAL
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = feudalism }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = feudalism
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_EMB_trade_company
+				is_owned_by_trade_company = yes
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = feudalism
+					government = republic 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_EMB_is_republic
+				owner = {
+					government = republic 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.6
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = feudalism
+					has_estate = estate_burghers
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_EMB_influential_merchants
+				estate_influence = {
+					estate = estate_burghers
+					influence = 80
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = feudalism
+					government = monarchy
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_EMB_is_a_kingdom
+				owner = {
+					government_rank = 2 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = feudalism
+					government = monarchy
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_EMB_is_a_empire
+				owner = {
+					government_rank = 3
+				}
+			}
+		}
+		modifier = {
+			factor = 1.4
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_EMB_paper
+				trade_goods = paper
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+#######################################
 # Renaissance
 # 
 # Flows from italy
@@ -281,7 +479,7 @@ renaissance = {
 	trade_company_efficiency = 0.4
 
 	#only used in bookmarks
-	historical_start_date = 1450.1.1
+	historical_start_date = 1455.1.1
 	historical_start_province = 116 # Florence
 
 	history = {
@@ -321,7 +519,7 @@ renaissance = {
 			is_year = 1480
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 25		#in 100 for when a province can_start
 	
 	
 	on_start = institution_events.2
@@ -493,7 +691,6 @@ renaissance = {
 		}
 	}
 }
-
 
 #######################################
 # New World

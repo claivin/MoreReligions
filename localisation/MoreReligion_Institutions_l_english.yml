@@ -27,3 +27,14 @@
  
  ELIGIBLE_IF_ARTIST_IS_HIRED: "§YAs long as you have a Level 3 or higher Artist hired, you will be eligible to spawn Renaissance.§!"
  mr_church_funded_arts: "Church Sponsored Artists"
+ 
+ early_modern_bureaucracy: "Early Modern Bureaucracy"
+ early_modern_bureaucracy_date: "1350"
+ FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_EMB: "Nearby Friendly Province has §YEarly Modern Bureaucracy§!"
+ NEIGHBOR_NOT_OWNED_IS_EMB: "Borders Nation with §YEarly Modern Bureaucracy§!"
+ tooltip_EMB_trade_company: "Is administrated as a trade company"
+ tooltip_EMB_is_republic: "Is a republic"
+ tooltip_EMB_influential_merchants: "Has over 80 merchant influence"
+ tooltip_EMB_is_a_kingdom: "Is monarchy of at least kingdom rank"
+ tooltip_EMB_is_a_empire: "Is a monarchy of at least empire rank"
+ tooltip_EMB_paper: "This province produces paper"

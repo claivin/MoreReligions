@@ -35,10 +35,7 @@ province_event = {
 			region = mashriq_region
 			region = anatolia_region
 		}
-		OR = {
-			has_owner_accepted_culture = yes
-			has_owner_culture = yes
-		}
+		has_owner_culture = yes
 	}
 	
 	mean_time_to_happen = {
@@ -86,19 +83,18 @@ province_event = {
 			set_province_flag = ren_culture_picked
 		}
 		
-		every_owned_province = {
-			limit = {
-				is_empty = no
-				is_wasteland = no
-				culture = variable:ROOT:ren_culture_which
-			}
-			add_province_modifier = {
-				name = mr_patronage_of_artists_province
-				duration = -1
-			}
-		}
-		
 		owner = {
+			every_owned_province = {
+				limit = {
+					is_empty = no
+					is_wasteland = no
+					culture = variable:ROOT:ren_culture_which
+				}
+				add_province_modifier = {
+					name = mr_patronage_of_artists_province
+					duration = -1
+				}
+			}
 			add_country_modifier = {
 				name = mr_patronage_of_artists
 				duration = 3650

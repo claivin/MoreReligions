@@ -35,19 +35,19 @@ country_event = {
 			has_religious_school = no
 			AND = {
 				religion = catholic
-				has_catholic_rite_trigger = yes
+				has_catholic_rite_trigger = no
 			}
 			AND = {
 				religion = mr_maronite
-				has_east_catholic_rite_trigger = yes
+				has_east_catholic_rite_trigger = no
 			}
 			AND = {
 				religion = orthodox
-				has_orthodox_rite_trigger = yes
+				has_orthodox_rite_trigger = no
 			}		
 			AND = {
 				religion = coptic
-				has_coptic_rite_trigger = yes
+				has_coptic_rite_trigger = no
 			}
 		}
 	}
