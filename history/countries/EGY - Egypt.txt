@@ -1,5 +1,4 @@
-government = monarchy
-add_government_reform = iqta
+government = republic
 primary_culture = al_misr_arabic
 religion = sunni
 technology_group = muslim

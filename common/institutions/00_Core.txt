@@ -22,7 +22,6 @@ feudalism = {
 
 	trade_company_efficiency = 0.2
 
-
 	history = {
 		is_year = 1000
 		OR = {
@@ -106,14 +105,20 @@ feudalism = {
 					technology_group = aboriginal_tech
 				}
 			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { has_reform = siberian_tribe }
-					NOT = { has_reform = steppe_horde }
+			OR = {
+				region = sahel_region
+				region = niger_region
+				region = sahara_region
+			}
+			owner = {
+				capital_scope = {
+					OR = {
+						region = sahel_region
+						region = niger_region
+						region = sahara_region
+					}
 				}
 			}
-			is_year = 1700
 		}
 	}
 	
@@ -433,6 +438,244 @@ early_modern_bureaucracy   = {
 			custom_trigger_tooltip = {
 				tooltip = tooltip_EMB_paper
 				trade_goods = paper
+			}
+		}
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+
+#######################################
+# Firearms
+# 
+# Spread by the Mongols
+#######################################
+
+firearms_institution = {
+
+	bonus = {
+		fire_damage = 0.05
+	}
+
+	trade_company_efficiency = 0.4
+
+	#only used in bookmarks
+	historical_start_date = 1455.1.1
+	historical_start_province = 116 # Florence
+
+	history = {
+		is_year = 1350
+		OR = {
+			OR = {
+				region = south_china_region
+				region = xinan_region
+				region = north_china_region
+				region = korea_region
+				AND = {
+					region = scandinavia_region
+					NOT = {
+						area = jutland_area
+						area = denmark_area
+						area = subarctic_islands_area
+						area = northern_norway
+						area = eastern_norway
+						area = skaneland_area
+					}
+				}
+				AND = {
+					region = low_countries_region
+					religion = mr_freespirit
+				}
+				region = egypt_region
+				region = anatolia_region
+				region = mashriq_region
+				#region = crimea_region
+				region = balkan_region
+				region = carpathia_region
+				region = persia_region
+				region = khorasan_region
+				region = caucasia_region
+				#region = mongolia_region
+				region = manchuria_region
+				region = korea_region
+				region = tibet_region
+				#region = central_asia_region
+				region = maghreb_region
+				region = malaya_region
+				region = indo_china_region
+				region = iberia_region
+			}
+			owner = {
+				OR = {
+					tag = POL
+					tag = BLH
+					tag = BOH
+				}
+			}
+		}
+	}
+	
+	#exists at game start
+	# can_start = { }
+	# start_chance = 25
+	# on_start = institution_events.2
+	
+	can_embrace = {
+		always = yes
+	}
+	
+	embracement_speed = {
+		modifier = { #adjacency bonuses
+			scale = yes
+			factor = 0.6
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_firearms
+				any_friendly_coast_border_province = {
+					firearms_institution = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						firearms_institution = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_firearms
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					firearms_institution = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.05
+			scale = yes
+			potential = {
+				owner = { NOT = { government = tribal } }
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_firearms_is_known
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+		}
+		modifier = {
+			factor = 0.15
+			scale = yes
+			potential = {
+				owner = { NOT = { government = tribal } }
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_firearms_is_known_15_dev
+				development = 15
+			}
+		}
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				owner = { NOT = { government = tribal } }
+				OR = {
+					continent = europe
+					continent = asia
+					continent = africa
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_firearms_is_known_cot_1
+				province_has_center_of_trade_of_level = 1
+			}
+		}
+		modifier = { #spread to colonies
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_firearms
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = firearms_institution }
+				}
+			}
+		}
+		modifier = { #has already embraced
+			factor = 3
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = firearms_institution
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_firearms_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = firearms_institution
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_firearms_warring_with_firearms_owner
+				owner = {
+					any_known_country = {
+						war_with = ROOT
+						has_institution = firearms_institution
+					}
+				}
 			}
 		}
 	}
