@@ -56,7 +56,21 @@ CSA_war_modifier = {
 	infantry_power = 0.10
 	siege_ability = 0.10
 }
+ksz_war_modifier = {
+	fire_damage = 0.10 
+	siege_ability = 0.10
+}
 
+buda_secured = {
+	local_development_cost = -0.10
+	local_build_cost = -0.10
+}
+
+buda_development = {
+	local_prosperity_growth = 0.15
+	allowed_num_of_buildings = 1 
+	local_great_project_upgrade_cost = -0.25 
+}
 hungary_war_good = {
 	ae_impact = -0.33
 	land_forcelimit_modifier = 0.50

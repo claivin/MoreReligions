@@ -265,6 +265,10 @@ country_event = {
 					who = KNN
 					casus_belli = cb_annex
 				}
+				declare_war_with_cb = {
+					who = JAA
+					casus_belli = cb_annex
+				}
 			}
 			CSA = {
 				declare_war_with_cb = {
@@ -323,10 +327,6 @@ country_event = {
 				}
 			}
 			JAA = {
-				declare_war_with_cb = {
-					who = HUN
-					casus_belli = cb_annex
-				}
 				declare_war_with_cb = {
 					who = CSA
 					casus_belli = cb_annex
@@ -833,6 +833,23 @@ country_event = {
 		}
 	}
 	
+	option = {
+		name = HUN_flavor.5c
+		trigger = {
+			tag = KSZ
+		}
+		SER = {
+			country_event = {
+				id = HUN_flavor.6
+				days = 1
+			}
+		}
+		custom_tooltip = BLH_call_in_TT
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
 }
 country_event = {
 	id = HUN_flavor.6
@@ -898,6 +915,25 @@ country_event = {
 			create_alliance = CSA
 			add_trust = {
 				who = CSA
+				mutual = yes
+				value = 20
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.6c
+		trigger = {
+			tag = SER
+		}
+		SER = {
+			join_all_defensive_wars_of = KSZ
+			create_alliance = KSZ
+			add_trust = {
+				who = KSZ
 				mutual = yes
 				value = 20
 			}

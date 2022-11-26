@@ -1,26 +1,26 @@
-aba_missions_first = {
+ksz_missions_first = {
 	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = AAB
+		tag = KSZ
 	}
 	
-	aba_diplo_second = {
+	ksz_diplo_second = {
 		icon = mission_noble_council
 		position = 2
-		required_missions = { aba_diplo_first }
+		required_missions = { ksz_diplo_first }
 		trigger = {
 			OR = {
-				POL = {
+				SER = {
 					has_opinion = {
 						who = ROOT
 						value = 120
 					}
-					marriage_with = AAB
+					marriage_with = KSZ
 				}
-				POL = {
+				SER = {
 					has_opinion = {
 						who = ROOT
 						value = 150
@@ -43,20 +43,21 @@ aba_missions_first = {
 		}
 	}
 }
-aba_missions_second = {
+ksz_missions_second = {
 	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = AAB
+		tag = KSZ
 	}
-	aba_diplo_first = {
+	
+	ksz_diplo_first = {
 		icon = invade_poland
 		position = 1
 		required_missions = { }
 		trigger = {
-			POL = {
+			KSZ = {
 				has_opinion = {
 					who = ROOT
 					value = 75
@@ -64,20 +65,10 @@ aba_missions_second = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					POL = {
-						has_opinion = {
-							who = ROOT
-							value = 75
-						}
-					}
-				}
-				AAB = {
-					add_trust = {
-						who = BLH
+			KSZ = {
+				add_trust = {
+						who = SER
 						value = 15
-					}
 				}
 			}
 			add_country_modifier = {
@@ -87,17 +78,16 @@ aba_missions_second = {
 		}
 	}
 	
-		
 }
-aba_missions_third = {
+ksz_missions_third = {
 	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = AAB
+		tag = KSZ
 	}
-	aab_conquest_first = {
+	ksz_conquest_first = {
 		icon = gory_to_the_black_army
 		position = 1
 		required_missions = { }
@@ -109,10 +99,7 @@ aba_missions_third = {
 						OR = {
 							area = wallachia_area
 							area = moldavia_area
-							province_id = 162
-							province_id = 1318
-							province_id = 4125
-							province_id = 1953
+							area = transylvania_area 
 						}
 					}
 					OR = {
@@ -126,22 +113,22 @@ aba_missions_third = {
 		
 		effect = {
 			add_country_modifier = {
-				name = AAB_war_modifier 
+				name = ksz_war_modifier 
 				duration = 1825
 			}
 			define_general = {
 				shock = 3
-				fire = 2
-				manuever = 1
-				siege = 2
+				fire = 3
+				manuever = 2
+				siege = 1
 			}
 		}
 	}
 	
-	aab_conquest_second = {
+	ksz_conquest_second = {
 		icon = mission_crusade_for_varna
 		position = 3
-		required_missions = { aab_conquest_first }
+		required_missions = { ksz_conquest_first }
 		trigger = {
 			slovakia_area = { type = all owned_by = ROOT }
 			transylvania_area = { type = all owned_by = ROOT }
@@ -157,20 +144,20 @@ aba_missions_third = {
 				clr_country_flag = HUN_thunder_dome_participant
 				set_country_flag = HUN_thunder_dome_winner
 			}
-			add_government_reform = mr_polish_hungary_reform
+			add_government_reform = mr_serbian_hungary_reform
 			
 		}
 	}
 }
-aab_missions_fourth = {
+ksz_missions_fourth = {
 	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = AAB
+		tag = KSZ
 	}
-	aab_spy_first = {
+	ksz_spy_first = {
 		icon = mission_market_place_with_asian_traders
 		position = 1
 		required_missions = { }
@@ -209,86 +196,19 @@ aab_missions_fourth = {
 			}
 		}
 	}
-	
-	aab_buda_first = {
-		icon = mission_market_place_with_asian_traders
-		position = 2
-		required_missions = { }
-		provinces_to_highlight = {
-			province_id = 153
-		}
-		trigger = {
-			153 = { 
-				owned_by = ROOT
-				development = 20
-				NOT = {
-					devastation = 1
-				}
-			}
-			is_at_war = no
-		}
-		
-		effect = {
-			153 = {
-				add_province_modifier = {
-					name = buda_secured
-					duration = -1
-				}
-			}
-			if = {
-				NOT = {
-					capital_scope = {
-						province_id = 153
-					}
-				}
-				set_capital = 153
-			}
-			else = {
-				add_adm_power = 50
-			}
-		}
-	}
-	
-	aab_buda_second = {
-		icon = mission_market_place_with_asian_traders
-		position = 3
-		required_missions = { aab_buda_first }
-		provinces_to_highlight = {
-			province_id = 153
-		}
-		
-		trigger = {
-			153 = {
-				has_tax_building_trigger = yes
-				has_trade_building_trigger = yes
-				religion = ROOT
-			}
-		}
-		
-		effect = {
-				153 = {
-					add_province_modifier = {
-						name = buda_prosperous
-						duration = -1
-				}
-			}
-		}
-	}		
-		
-			
 }
-aab_missions_fifth = {
+ksz_missions_fifth = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = AAB
+		tag = KSZ
 	}
-	aab_spy_second = {
+	ksz_spy_second = {
 		icon = mission_impaled_soldies
 		position = 2
-		required_missions = { aab_spy_first }
+		required_missions = { ksz_spy_first }
 		provinces_to_highlight = {
 			owner = {
 				has_country_flag = HUN_thunder_dome_participant
@@ -310,9 +230,9 @@ aab_missions_fifth = {
 			tooltip = {
 				spawn_rebels = { 
 					type = nationalist_rebels
-					separatists_target = AAB
+					separatists_target = KSZ
 					size = 2
-					friend = AAB
+					friend = KSZ
 					should_take_capital = yes
 				}
 			}
@@ -335,9 +255,9 @@ aab_missions_fifth = {
 					}
 					spawn_rebels = { 
 						type = nationalist_rebels
-						separatists_target = AAB
+						separatists_target = KSZ
 						size = 2
-						friend = AAB
+						friend = KSZ
 						should_take_capital = yes
 					}
 				}
