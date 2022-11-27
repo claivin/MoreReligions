@@ -68,9 +68,14 @@ buda_secured = {
 
 buda_development = {
 	local_prosperity_growth = 0.15
-	allowed_num_of_buildings = 1 
 	local_great_project_upgrade_cost = -0.25 
 }
+
+buda_development_1 = {
+	local_tax_modifier = 0.33
+	local_production_efficiency = 0.33
+}
+
 hungary_war_good = {
 	ae_impact = -0.33
 	land_forcelimit_modifier = 0.50
