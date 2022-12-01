@@ -1,0 +1,48 @@
+# In-game the entries are (stable) sorted by isolation_value (ascending) and mapped to 0-[number of entries - 1] levels. Negative values are not considered valid.
+
+open_doors_isolation = {
+	isolation_value = 0
+
+	modifier = {
+		tolerance_heretic = 3
+		monarch_admin_power = 1 
+		custom_tooltip = convert_shinbutso_1_TT
+	}
+}
+
+adaptive_isolation = {
+	isolation_value = 1
+
+	modifier = {
+		tolerance_heretic = 2
+		build_cost = -0.15
+	}
+}
+
+selective_integration_isolation = {
+	isolation_value = 2
+
+	modifier = {
+		idea_cost = -0.1
+		warscore_cost_vs_other_religion = -0.20
+	}
+}
+
+isolationism_isolation = {
+	isolation_value = 3
+
+	modifier = {
+		tolerance_own = 2
+		culture_conversion_cost = -0.15
+	}
+}
+
+closed_doors_isolation = {
+	isolation_value = 4
+
+	modifier = {
+		tolerance_own = 3
+		war_exhaustion = -0.03
+		custom_tooltip = convert_shinbutso_2_TT
+	}
+}
