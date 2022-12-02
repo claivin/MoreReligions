@@ -956,7 +956,7 @@ eastern = {
 			global_unrest = -1
 		}
 		heretic = { SHUGENDO }
-		uses_isolationism = yes
+		fervor = yes
 		
 		harmonized_modifier = harmonized_shinto
 		
