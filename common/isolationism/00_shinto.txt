@@ -6,7 +6,6 @@ open_doors_isolation = {
 	modifier = {
 		tolerance_heretic = 3
 		monarch_admin_power = 1 
-		custom_tooltip = convert_shinbutso_1_TT
 	}
 }
 
@@ -43,6 +42,6 @@ closed_doors_isolation = {
 	modifier = {
 		tolerance_own = 3
 		war_exhaustion = -0.03
-		custom_tooltip = convert_shinbutso_2_TT
+		
 	}
 }

@@ -237,3 +237,46 @@ BFK_ideas = {
 		build_cost = -0.10
 	}
 }
+KNJ_ideas = {
+	start = {
+		cavalry_power = 0.15
+		same_culture_advisor_cost = -0.33
+	}
+	bonus = {
+		global_prosperity_growth = 0.15
+	}
+	
+	trigger = {
+		tag = KNJ
+	}
+	free = yes
+	
+	KNJ_idea_1 = {
+		special_unit_forcelimit = 0.33
+	}
+	
+	KNJ_idea_2 = {
+		reduced_liberty_desire = 15 
+	}
+	
+	KNJ_idea_3 = {
+		missionaries = 1
+	}
+	
+	KNJ_idea_4 = {
+		diplomatic_annexation_cost = -0.25
+	}
+	
+	KNJ_idea_5 = {
+		idea_cost = -0.1
+		free_adm_policy = 1 
+	}
+	
+	KNJ_idea_6 = {
+		production_efficiency = 0.15
+	}
+	
+	KNJ_idea_7 = {
+		core_creation = -0.15
+	}
+}

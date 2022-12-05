@@ -105,7 +105,7 @@ knn_missions_second = {
 				}
 			}
 			add_country_modifier = {
-				name = KNN_diplo_core
+				name = HUN_diplo_core
 				duration = 3650
 			}
 		}
@@ -147,7 +147,7 @@ knn_missions_third = {
 		
 		effect = {
 			add_country_modifier = {
-				name = KNN_war_modifier 
+				name = HUN_war_modifier 
 				duration = 1825
 			}
 			define_general = {
