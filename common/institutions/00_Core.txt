@@ -275,7 +275,7 @@ feudalism = {
 # 
 # China, Korea, and republics around the world start with it
 #######################################
-early_modern_bureaucracy   = {
+renaissance = {
 
 	bonus = {
 		state_maintenance_modifier = -0.05
@@ -312,7 +312,7 @@ early_modern_bureaucracy   = {
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED_EMB
 				any_friendly_coast_border_province = {
-					early_modern_bureaucracy = 100
+					renaissance = 100
 				}
 			}
 		}
@@ -322,7 +322,7 @@ early_modern_bureaucracy   = {
 			potential = {
 				NOT = {
 					any_friendly_coast_border_province = {
-						early_modern_bureaucracy = 100
+						renaissance = 100
 					}
 				}
 			}
@@ -330,7 +330,7 @@ early_modern_bureaucracy   = {
 				tooltip = NEIGHBOR_NOT_OWNED_IS_EMB
 				any_neighbor_province = {
 					NOT = { owned_by = ROOT }
-					early_modern_bureaucracy = 100
+					renaissance = 100
 				}
 			}
 		}
@@ -712,233 +712,233 @@ firearms_institution = {
 # Flows from italy
 #######################################
 
-renaissance = {
+# renaissance = {
 
-	bonus = {
-		development_cost = -0.05
-		build_cost = -0.05
-	}
+	# bonus = {
+		# development_cost = -0.05
+		# build_cost = -0.05
+	# }
 
-	trade_company_efficiency = 0.4
+	# trade_company_efficiency = 0.4
 
-	#only used in bookmarks
-	historical_start_date = 1455.1.1
-	historical_start_province = 116 # Florence
+	# #only used in bookmarks
+	# historical_start_date = 1455.1.1
+	# historical_start_province = 116 # Florence
 
-	history = {
-		is_year = 2000
-		#no one has it, also used for bookmarks
-	}
+	# history = {
+		# is_year = 2000
+		# #no one has it, also used for bookmarks
+	# }
 	
-	can_start = {
-		is_year = 1455 #starts 5 years later
-		is_institution_enabled = feudalism
-		is_state = yes
-		is_island = no
-		OR = {
-			has_province_flag = ren_culture_picked
-			owner = {
-				has_country_flag = mr_church_funded_arts
-				artist = 3
-			}
-			AND = {
-				is_year = 1465
-				OR = {
-					region = france_region
-					region = italy_region
-					region = south_german_region
-					region = iberia_region
-					region = balkan_region
-					region = egypt_region
-					region = maghreb_region
-					region = mashriq_region
-					region = anatolia_region
-				}
-			}
-		}
-		OR = {
-			development = 15
-			normal_or_historical_nations = no
-			is_year = 1480
-		}
-	}
-	start_chance = 25		#in 100 for when a province can_start
+	# can_start = {
+		# is_year = 1455 #starts 5 years later
+		# is_institution_enabled = feudalism
+		# is_state = yes
+		# is_island = no
+		# OR = {
+			# has_province_flag = ren_culture_picked
+			# owner = {
+				# has_country_flag = mr_church_funded_arts
+				# artist = 3
+			# }
+			# AND = {
+				# is_year = 1465
+				# OR = {
+					# region = france_region
+					# region = italy_region
+					# region = south_german_region
+					# region = iberia_region
+					# region = balkan_region
+					# region = egypt_region
+					# region = maghreb_region
+					# region = mashriq_region
+					# region = anatolia_region
+				# }
+			# }
+		# }
+		# OR = {
+			# development = 15
+			# normal_or_historical_nations = no
+			# is_year = 1480
+		# }
+	# }
+	# start_chance = 25		#in 100 for when a province can_start
 	
 	
-	on_start = institution_events.2
+	# on_start = institution_events.2
 	
-	can_embrace = {
-		owner = { has_institution = feudalism }
-	}
+	# can_embrace = {
+		# owner = { has_institution = feudalism }
+	# }
 	
-	embracement_speed = {
-		modifier = {
-			scale = yes
-			factor = 0.6
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
-				any_friendly_coast_border_province = {
-					renaissance = 100
-				}
-			}
-		}
-		modifier = {
-			factor = 0.3
-			scale = yes
-			potential = {
-				NOT = {
-					any_friendly_coast_border_province = {
-						renaissance = 100
-					}
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_any_neighbor_has_embraced_renaissance
-				any_neighbor_province = {
-					NOT = { owned_by = ROOT }
-					renaissance = 100
-				}
-			}
-		}
-		modifier = {
-			factor = 1
-			potential = {
-				region = italy_region
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_italian_capital
-				is_capital = yes
-				region = italy_region
-				culture_group = latin
-			}
+	# embracement_speed = {
+		# modifier = {
+			# scale = yes
+			# factor = 0.6
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
+				# any_friendly_coast_border_province = {
+					# renaissance = 100
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 0.3
+			# scale = yes
+			# potential = {
+				# NOT = {
+					# any_friendly_coast_border_province = {
+						# renaissance = 100
+					# }
+				# }
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_any_neighbor_has_embraced_renaissance
+				# any_neighbor_province = {
+					# NOT = { owned_by = ROOT }
+					# renaissance = 100
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 1
+			# potential = {
+				# region = italy_region
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_italian_capital
+				# is_capital = yes
+				# region = italy_region
+				# culture_group = latin
+			# }
 			
 			
-		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_10
-				continent = europe
-				development = 10
-			}
-		}
-		modifier = {
-			factor = 0.05
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_20
-				development = 20
-				continent = europe
-			}
-		}
-		modifier = {
-			factor = 0.1
-			scale = yes
-			potential = {
-				continent = europe
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_development_5_post_1500
-				continent = europe
-				is_year = 1500
-				development = 5
-			}
-		}
-		modifier = {
-			factor = 0.5
-			scale = yes
-			potential = {
-				OR = {
-					area = flanders_area
-					area = tuscany_area
-					area = venetia_area
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_flanders_tuscany_venetia
-				OR = {
-					area = flanders_area
-					area = tuscany_area
-					area = venetia_area
-				}
-			}
-		}
-		modifier = {
-			factor = 5
-			scale = yes
-			potential = {
-				owner = {
-					is_colonial_nation = yes
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = tooltip_colonial_overlord_renaissance
-				OR = {
-					has_port = yes
-					is_capital = yes
-				}
-				owner = {
-					is_colonial_nation = yes
-					overlord = { has_institution = renaissance }
-				}
-			}
-		}
-		modifier = {
-			factor = 2
-			scale = yes
-			potential = {
-				owner = {
-					has_institution = renaissance
-				}
-			}
+		# }
+		# modifier = {
+			# factor = 0.05
+			# scale = yes
+			# potential = {
+				# continent = europe
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_development_10
+				# continent = europe
+				# development = 10
+			# }
+		# }
+		# modifier = {
+			# factor = 0.05
+			# scale = yes
+			# potential = {
+				# continent = europe
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_development_20
+				# development = 20
+				# continent = europe
+			# }
+		# }
+		# modifier = {
+			# factor = 0.1
+			# scale = yes
+			# potential = {
+				# continent = europe
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_development_5_post_1500
+				# continent = europe
+				# is_year = 1500
+				# development = 5
+			# }
+		# }
+		# modifier = {
+			# factor = 0.5
+			# scale = yes
+			# potential = {
+				# OR = {
+					# area = flanders_area
+					# area = tuscany_area
+					# area = venetia_area
+				# }
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_flanders_tuscany_venetia
+				# OR = {
+					# area = flanders_area
+					# area = tuscany_area
+					# area = venetia_area
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 5
+			# scale = yes
+			# potential = {
+				# owner = {
+					# is_colonial_nation = yes
+				# }
+			# }
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_colonial_overlord_renaissance
+				# OR = {
+					# has_port = yes
+					# is_capital = yes
+				# }
+				# owner = {
+					# is_colonial_nation = yes
+					# overlord = { has_institution = renaissance }
+				# }
+			# }
+		# }
+		# modifier = {
+			# factor = 2
+			# scale = yes
+			# potential = {
+				# owner = {
+					# has_institution = renaissance
+				# }
+			# }
 			
-			custom_trigger_tooltip = {
-				tooltip = tooltip_renaissance_embraced
-				is_owned_by_trade_company = no
-				owner = {
-					has_institution = renaissance
-				}
-			}
-		}
-	}
+			# custom_trigger_tooltip = {
+				# tooltip = tooltip_renaissance_embraced
+				# is_owned_by_trade_company = no
+				# owner = {
+					# has_institution = renaissance
+				# }
+			# }
+		# }
+	# }
 	
-	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
-		factor = 24
+	# ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		# factor = 24
 		
-		modifier = {
-			factor = 0.25
-			is_at_war = yes
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.1
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.2
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.3
-		}
-		modifier = {
-			factor = 2
-			neighbors_tech_discount = 0.4
-		}
-	}
-}
+		# modifier = {
+			# factor = 0.25
+			# is_at_war = yes
+		# }
+		# modifier = {
+			# factor = 2
+			# neighbors_tech_discount = 0.1
+		# }
+		# modifier = {
+			# factor = 2
+			# neighbors_tech_discount = 0.2
+		# }
+		# modifier = {
+			# factor = 2
+			# neighbors_tech_discount = 0.3
+		# }
+		# modifier = {
+			# factor = 2
+			# neighbors_tech_discount = 0.4
+		# }
+	# }
+# }
 
 #######################################
 # New World
 # 
-# Colonising is good.. mkay.-.
+# Renamed to Navigation, otherwise unchanged
 #######################################
 new_world_i = {
 
@@ -949,86 +949,15 @@ new_world_i = {
 	trade_company_efficiency = 0.6
 
 
-	historical_start_date = 1500.1.1
-	historical_start_province = 224 #Sevilla
+	historical_start_date = 1480.1.1
+	historical_start_province = 1 #placeholder
 
 	history = {
-		OR = {
-			AND = {
-				is_year = 1500
-				continent = europe
-				OR = {
-					owner = { has_idea = quest_for_the_new_world }
-					owner = { colony = 1 }
-				}
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1550
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1600
-				continent = europe
-			}
-			AND = {
-				is_year = 1625
-				superregion = persia_superregion
-			}
-			AND = {
-				is_year = 1650
-				superregion = india_superregion
-			}
-			
-			
-			AND = {
-				is_year = 1650
-				superregion = china_superregion
-			}
-			
-			AND = {
-				is_year = 1650
-				superregion = east_indies_superregion
-			}
-			AND = {
-				is_year = 1700
-				superregion = africa_superregion
-			}
-			is_year = 1800
-		}
+		is_year = 1480
 	}
 	
 	can_start = {
-		is_year = 1500
+		is_year = 1480
 		is_institution_enabled = renaissance
 		OR = {
 			continent = europe
@@ -1080,22 +1009,13 @@ new_world_i = {
 	}
 	start_chance = 5		#in 100 for when a province can_start
 	
-	
 	on_start = institution_events.3
-	
-	
-	
-
-	
 	
 	can_embrace = {
 		always = yes
 	}
 
-
-	
 	embracement_speed = {
-	
 		modifier = {
 			factor = 1.2
 			scale = yes
@@ -1107,7 +1027,6 @@ new_world_i = {
 			}
 			
 		}
-		
 		modifier = {
 			factor = 0.5
 			scale = yes
@@ -1127,7 +1046,6 @@ new_world_i = {
 				}
 			}
 		}
-		
 		#Port provinces in countries with colonial subjects
 		modifier = {
 			factor = 10
@@ -1243,83 +1161,10 @@ printing_press = {
 	trade_company_efficiency = 0.8
 
 	historical_start_date = 1550.1.1
-	historical_start_province = 1876 #Frankfurt
+	historical_start_province = 1 #placeholder
 
 	history = {
-		OR = {
-			AND = {
-				province_id = 1876
-				is_year = 1550
-			}
-			AND = {
-				is_year = 1560
-				OR = {
-					religion = protestant
-					religion = reformed
-					region = italy_region
-					region = france_region
-				}
-			}
-			AND = {
-				is_year = 1575
-				continent = europe
-				development = 12
-			}
-			AND = {
-				is_year = 1600
-				continent = europe
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1600
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1625
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1650
-				superregion = persia_superregion
-			}
-			AND = {
-				is_year = 1725
-				superregion = china_superregion
-			}
-			AND = {
-				is_year = 1725
-				superregion = india_superregion
-			}
-			AND = {
-				is_year = 1725
-				superregion = east_indies_superregion
-			}
-		}
+		is_year = 1550
 	}
 	
 	can_start = {
@@ -1329,16 +1174,16 @@ printing_press = {
 		is_island = no
 		is_state = yes
 		OR = {
-			development = 15
+			development = 25
 			is_capital = yes
 			trade_goods = paper
 		}
-		OR = {
-			religion = protestant
-			religion = reformed
-			region = north_german_region
-			region = south_german_region
-		}
+		# OR = {
+			# religion = protestant
+			# religion = reformed
+			# region = north_german_region
+			# region = south_german_region
+		# }
 
 	}
 	start_chance = 5		#in 100 for when a province can_start
@@ -1580,8 +1425,77 @@ printing_press = {
 }
 
 
+#######################################
+# Professional Armies
+#######################################
+prof_armies_inst = {
 
+	bonus = {
+		leader_cost = -0.1
+	}
 
+	trade_company_efficiency = 0.8
+
+	historical_start_date = 1550.1.1
+	historical_start_province = 1 #placeholder
+
+	history = {
+		is_year = 1550
+	}
+	
+	can_start = {
+
+	}
+	start_chance = 5		#in 100 for when a province can_start
+	
+	
+	on_start = institution_events.4
+	
+	
+	can_embrace = {
+		
+	}
+
+	
+	embracement_speed = {
+		modifier = {
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = {
+					printing_press = 100
+				}
+			}
+		}
+		
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
 
 #######################################
 # Global Trade
@@ -1598,71 +1512,7 @@ global_trade = {
 	historical_start_province = 97 #Holland
 
 	history = {
-		OR = {
-			AND = {
-				is_year = 1620
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1660
-				continent = europe
-			}	
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1660
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			AND = {
-				is_year = 1700
-				OR = {
-					region = maghreb_region
-					region = egypt_region
-					superregion = near_east_superregion
-				}
-			}
-			
-			AND = {
-				is_year = 1720
-				has_port = yes
-				OR = {
-					superregion = india_superregion
-					superregion = persia_superregion
-					superregion = east_indies_superregion
-				}
-			}
-			AND = {
-				is_year = 1750
-				has_port = yes
-				superregion = africa_superregion
-			}
-		}
+		is_year = 1600
 	}
 	
 	can_start = {
@@ -1885,6 +1735,151 @@ global_trade = {
 	}
 }
 
+#######################################
+#Centralization
+#######################################
+centralization_inst = {
+
+	bonus = {
+		global_autonomy = -0.05
+		autonomy_change_time = -0.25
+	}
+
+	trade_company_efficiency = 0.8
+
+	historical_start_date = 1610.1.1
+	historical_start_province = 1 #placeholder
+
+	history = {
+		is_year = 1610
+	}
+	
+	can_start = {
+
+	}
+	start_chance = 5		#in 100 for when a province can_start
+	
+	
+	on_start = institution_events.4
+	
+	
+	can_embrace = {
+		
+	}
+
+	
+	embracement_speed = {
+		modifier = {
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = {
+					printing_press = 100
+				}
+			}
+		}
+		
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
+
+#######################################
+#State Navy
+#######################################
+state_navy_inst = {
+
+	bonus = {
+		naval_maintenance = -0.1
+		min_autonomy_in_territories = -0.1
+	}
+
+	trade_company_efficiency = 0.8
+
+	historical_start_date = 1625.1.1
+	historical_start_province = 1 #placeholder
+
+	history = {
+		is_year = 1625
+	}
+	
+	can_start = {
+
+	}
+	start_chance = 5		#in 100 for when a province can_start
+	
+	
+	on_start = institution_events.4
+	
+	
+	can_embrace = {
+		
+	}
+
+	
+	embracement_speed = {
+		modifier = {
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = {
+					printing_press = 100
+				}
+			}
+		}
+		
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
 
 #######################################
 # Manufactories
@@ -1901,74 +1896,7 @@ manufactories = {
 	historical_start_province = 183 #Paris
 
 	history = {
-		OR = {
-			AND = {
-				is_year = 1680
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1720
-				continent = europe
-			}	
-			AND = {
-				is_year = 1750
-				superregion = china_superregion
-			}
-			AND = {
-				is_year = 1750
-				superregion = india_superregion
-			}
-			AND = {
-				is_year = 1750
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1750
-				region = maghreb_region
-			}
-			AND = {
-				is_year = 1750
-				region = egypt_region
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1760
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-			
-			AND = {
-				is_year = 1780
-				superregion = persia_superregion
-			}
-			
-		}
+		is_year = 1650
 	}
 	
 	can_start = {
@@ -2395,66 +2323,21 @@ manufactories = {
 
 #######################################
 # Enlightenment
+#Renamed to Policial Ideology
 #######################################
 enlightenment = {
 
 	bonus = {
-		culture_conversion_cost = -0.25
+		idea_cost = -0.25
 	}
 
 	trade_company_efficiency = 1.5
 
 	historical_start_date = 1700.1.1
-	historical_start_province = 236 #London
+	historical_start_province = 1 #placeholder
 
 	history = {
-		OR = {
-			AND = {
-				is_year = 1700
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1730
-				continent = europe
-			}	
-
-			AND = {
-				is_year = 1800
-				superregion = near_east_superregion
-			}
-			AND = {
-				is_year = 1770
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = south_america_superregion
-			}
-			AND = {
-				is_year = 1770
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = north_america_superregion
-			}
-			AND = {
-				is_year = 1770
-				owner = {
-					NOT = { technology_group = north_american }
-					NOT = { technology_group = mesoamerican }
-					NOT = { technology_group = south_american }
-					NOT = { technology_group = andean }
-				}
-				superregion = central_america_superregion
-			}
-		}
+		is_year = 1700
 	}
 	
 	can_start = {
@@ -2775,6 +2658,77 @@ enlightenment = {
 }
 
 
+#######################################
+#Mass Mobilization
+#######################################
+mass_mobilization_inst = {
+
+	bonus = {
+		global_manpower_modifier = 0.5
+	}
+
+	trade_company_efficiency = 0.8
+
+	historical_start_date = 1725.1.1
+	historical_start_province = 1 #placeholder
+
+	history = {
+		is_year = 1725
+	}
+	
+	can_start = {
+
+	}
+	start_chance = 5		#in 100 for when a province can_start
+	
+	
+	on_start = institution_events.4
+	
+	
+	can_embrace = {
+		
+	}
+
+	
+	embracement_speed = {
+		modifier = {
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				any_friendly_coast_border_province = {
+					printing_press = 100
+				}
+			}
+		}
+		
+	}
+	
+	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
+		factor = 24
+		
+		modifier = {
+			factor = 0.25
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.1
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.2
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.3
+		}
+		modifier = {
+			factor = 2
+			neighbors_tech_discount = 0.4
+		}
+	}
+}
 
 #######################################
 # Industrialisation
@@ -2784,29 +2738,14 @@ industrialization = {
 	trade_company_efficiency = 2.0
 
 	bonus = {
-		global_manpower_modifier = 0.25
-		global_tax_modifier = 0.15
+		development_cost_modifier = -0.33
 	}
 
 	historical_start_date = 1750.1.1
 	historical_start_province = 244 #Lancashire
 
 	history = {
-		OR = {
-			AND = {
-				is_year = 1780
-				continent = europe
-				owner = { technology_group = western }
-			}
-			
-			AND = {
-				is_year = 1820
-				OR = {
-					owner = { technology_group = western }
-					continent = europe
-				}
-			}
-		}
+		is_year = 1750
 	}
 	
 	can_start = {
