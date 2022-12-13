@@ -1007,7 +1007,7 @@ new_world_i = {
 			}
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 3		#changed from 5
 	
 	on_start = institution_events.3
 	
@@ -1174,7 +1174,7 @@ printing_press = {
 		is_island = no
 		is_state = yes
 		OR = {
-			development = 25
+			development = 25 #from 15
 			is_capital = yes
 			trade_goods = paper
 		}
@@ -1444,14 +1444,23 @@ prof_armies_inst = {
 	}
 	
 	can_start = {
-
+		is_year = 1550
+		is_in_capital_area = yes
+		is_state = yes
+		OR = {
+			has_manpower_building_trigger = yes
+			has_forcelimit_building_trigger = yes
+		}
+		has_fort_building_trigger = yes
+		owner = {
+			army_professionalism = 60
+		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
 	
-	
+	start_chance = 5
+		
 	on_start = institution_events.4
-	
-	
+
 	can_embrace = {
 		
 	}
@@ -1751,6 +1760,7 @@ centralization_inst = {
 	historical_start_province = 1 #placeholder
 
 	history = {
+		#doesnt exist at start
 		is_year = 1610
 	}
 	
@@ -1824,20 +1834,53 @@ state_navy_inst = {
 	historical_start_province = 1 #placeholder
 
 	history = {
-		is_year = 1625
+		#doesnt exist at start
 	}
 	
 	can_start = {
-
+		is_year = 1625
+		is_institution_enabled = prof_armies_inst
+		is_institution_enabled = global_trade
+		owner = {
+			has_institution = prof_armies_inst
+			navy_size_percentage = 1.0
+			navy_size = 60
+		}
+		if = {
+			limit = {
+				has_dlc = "Golden Century"
+			}
+			owner = {
+				has_flagship = yes
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Rule Britannia"
+					has_dlc = "Golden Century"
+					has_dlc = "Lions of the North"
+				}	
+			}
+			owner = {
+				num_of_marines = 3
+			}
+		}
+		has_port = yes
+		is_island = no
+		is_state = yes
+		OR = {
+			has_dock_building_trigger = yes
+			has_shipyard_building_trigger = yes
+			impressment_offices = yes
+		}
 	}
 	start_chance = 5		#in 100 for when a province can_start
 	
-	
 	on_start = institution_events.4
 	
-	
 	can_embrace = {
-		
+		always = yes
 	}
 
 	
