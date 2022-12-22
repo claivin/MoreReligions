@@ -204,6 +204,7 @@ SHI = "countries/Shendi.txt"
 FZG = "countries/Fazughli.txt"
 BTA = "countries/Butana.txt"
 SKI = "countries/Suakin.txt"
+ZNJ = "countries/Zanj.txt"
 
 #Japan
 NTT = "countries/Nitta.txt"

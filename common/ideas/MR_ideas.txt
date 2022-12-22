@@ -240,7 +240,7 @@ BFK_ideas = {
 KNJ_ideas = {
 	start = {
 		cavalry_power = 0.15
-		same_culture_advisor_cost = -0.33
+		same_culture_advisor_cost = -0.25
 	}
 	bonus = {
 		global_prosperity_growth = 0.15
@@ -256,7 +256,8 @@ KNJ_ideas = {
 	}
 	
 	KNJ_idea_2 = {
-		reduced_liberty_desire = 15 
+		reduced_liberty_desire = 10
+		improve_relation_modifier = 0.10
 	}
 	
 	KNJ_idea_3 = {
@@ -268,7 +269,7 @@ KNJ_ideas = {
 	}
 	
 	KNJ_idea_5 = {
-		idea_cost = -0.1
+		idea_cost = -0.05
 		free_adm_policy = 1 
 	}
 	
@@ -277,6 +278,51 @@ KNJ_ideas = {
 	}
 	
 	KNJ_idea_7 = {
-		core_creation = -0.15
+		leader_land_fire = 1
+	}
+}
+DVI_ideas = {
+	start = {
+		tolerance_heretic = 2
+		global_tax_modifier = 0.10
+	}
+	bonus = {
+		development_cost = -0.1 
+	}
+	
+	trigger = {
+		tag = DVI
+	}
+	free = yes
+	
+	DVI_idea_1 = {
+		technology_cost = -0.05
+		global_institution_spread = 0.1 
+	}
+	
+	DVI_idea_2 = {
+		land_morale = 0.10
+	}
+	
+	DVI_idea_3 = {
+		relation_with_accepted_culture = 5
+		manpower_in_accepted_culture_provinces = 0.10
+	}
+	
+	DVI_idea_4 = {
+		fire_damage_received = -0.15
+	}
+	
+	DVI_idea_5 = {
+		core_creation = -0.10
+	}
+	
+	DVI_idea_6 = {
+		great_project_upgrade_cost = -0.20 
+		tolerance_own = 1
+	}
+	
+	DVI_idea_7 = {
+		yearly_corruption = -0.1 
 	}
 }
