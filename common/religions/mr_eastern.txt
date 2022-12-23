@@ -861,11 +861,11 @@ eastern = {
 			mahayana
 		}
 		country = {
-			global_heretic_missionary_strength = 0.02
-			monthly_karma = 0.25
+			fire_damage_received = -0.10 
+			yearly_karma_decay = 0.05
 		}
 		country_as_secondary = {
-			global_heretic_missionary_strength = 0.02
+			fire_damage_received = -0.10 
 			tolerance_own = 1
 		}
 		on_convert = {

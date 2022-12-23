@@ -326,3 +326,100 @@ DVI_ideas = {
 		yearly_corruption = -0.1 
 	}
 }
+GSC_ideas = {
+	start = {
+		global_missionary_strength = 0.02
+		governing_capacity_modifier = 0.1 
+	}
+	bonus = {
+		missionaries = 1
+	}
+	
+	trigger = {
+		tag = GSC
+	}
+
+	free = yes
+
+	GSC_first = { #Heir of Han Lin'er
+		infantry_power = 0.10
+	}
+
+	
+	GSC_second = { #Cross the Yellow River
+		core_creation = -0.25
+	}
+
+	GSC_third = { #Land of Rice and Silk
+		global_trade_goods_size_modifier = 0.10
+	}
+	
+	GSC_fourth = { #Reorganizing the Civil Service Exams
+		free_adm_policy = 1 
+	}
+
+	GSC_fifth = { #King of Light
+		yearly_karma_decay = 0.01
+		tolerance_own = 1 
+	}
+
+	GSC_sixth = { #Fleets of the Four Rivers
+		galley_power = 0.1
+		galley_cost = -0.33
+	}
+
+	GSC_seventh = { #New Social Order
+		global_unrest = -1
+	}
+
+}
+GHC_ideas = {
+	start = {
+		ae_impact = -0.15
+		discipline = 0.05
+	}
+	bonus = {
+		core_creation = -0.25
+	}
+	
+	trigger = {
+		tag = GHC
+	}
+
+	free = yes
+
+	GHC_first = { #Xunfu Assignments
+		diplomats = 1
+	}
+
+
+	GHC_second = { #Weisuo System
+		land_forcelimit_modifier = 0.15
+	}
+
+	GHC_third = { #Reclamation of the Empire
+		province_warscore_cost = -0.15
+	}
+
+	GHC_fourth = { #Garrisons of the Great Wall
+		fort_maintenance_modifier = -0.10 
+		defensiveness = 0.15
+	}
+	
+	GHC_fifth = { #Holders of the Mandate
+		accept_vassalization_reasons = 10 
+	}
+
+	GHC_sixth = { #Folangji Development
+		fire_damage = 0.15
+	}
+
+	GHC_seventh = { #Developing Cash Crops
+		development_cost = -0.10
+	}
+
+}
+
+	
+		
+	
