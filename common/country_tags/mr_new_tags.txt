@@ -286,6 +286,7 @@ ABK = "countries/Abkhazia.txt"
 ADY = "countries/Adyghe.txt"
 KBD = "countries/Kabardia.txt"
 ANI = "countries/Ani.txt"
+LKS = "countries/Lak.txt"
 
 #Levant
 EDD = "countries/Edessa.txt"
