@@ -52,6 +52,25 @@ europe_pagan_group = {
 		heretic = {  }
 	}
 	
+	mr_caucaspagan = {
+		color = { 162 228 184 }
+		icon = 11
+		country = {
+			tolerance_own = 1
+			same_culture_advisor_cost = -0.20
+		}
+		country_as_secondary = {
+			same_culture_advisor_cost = -0.20
+		}
+		province = {
+			local_unrest = -1
+		}
+		personal_deity = yes
+		
+		heretic = {  }
+	}
+	
+	
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
 }

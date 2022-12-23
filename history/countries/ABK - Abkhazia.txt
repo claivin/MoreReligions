@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = circassian
-religion = orthodox
+religion = mr_caucaspagan
 technology_group = eastern
 capital = 1856 # Abkhazia
 

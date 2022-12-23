@@ -4,10 +4,26 @@
  mr_galindian: "Galindian"
 
  mr_samipaganism: "Sami"
- mr_samipaganism_desc: "The native religion of the Sapmi people. It is a shamanistic spirtual practice where it is believed that all things posses a soul. Animal spirit worship, particularlly of the bear, and ancestral veneration hold an important role in Sami Shamanism."
+ mr_samipaganism_religion_desc: "The native religion of the Sapmi people. It is a shamanistic spirtual practice where it is believed that all things posses a soul. Animal spirit worship, particularlly of the bear, and ancestral veneration hold an important role in Sami Shamanism."
  
  mr_finnishpaganism: "Finnic"
- mr_finnishpaganism_desc: "The native religion of the Finnish, Karelian, and Estonian people. It is a polytheistic religion which hosts a pantheon of gods, often with spheres of influence concerning nature."
+ mr_finnishpaganism_religion_desc: "The native religion of the Finnish, Karelian, and Estonian people. It is a polytheistic religion which hosts a pantheon of gods, often with spheres of influence concerning nature."
  
  mr_balticpaganism: "Baltic"
- mr_balticpaganism_desc: "The native religion of the many Baltic Tribes. It is a polytheistic religion which hosts a pantheon of gods. Once the ire of The Crusades, the Baltics have been free to practice their faith under the decree of Religious Freedom, instituted by the Holy Roman Emperor, the King of Poland."
+ mr_balticpaganism_religion_desc: "The native religion of the many Baltic Tribes. It is a polytheistic religion which hosts a pantheon of gods. Once the ire of The Crusades, the Baltics have been free to practice their faith under the decree of Religious Freedom, instituted by the Holy Roman Emperor, the King of Poland."
+ 
+ mr_caucaspagan: "Nart"
+ mr_caucaspagan_religion_desc: "The native religion practices by the peoples of the Northern Caucasus. It is a polytheistic religion which hosts a pantheon of gods. The people of the Northern Caucasus share the epic saga of Nart, a collection of folklore." 
+ 
+ tha: "Tha"
+ tha_desc: "Tha, also known as Theshxwe, is the primal God of the Northern Caucasus."
+ tlepsh: "Tlepsh"
+ tlepsh_desc: "Tlepsh is the Demi-God master blacksmith, who crafted the weapons of the divine."
+ pkharmat: "Pkharmat"
+ pkharmat_desc: "Pkharmat brought the knowledge of fire to mankind, which led to Pkharmat's eternal imprisonment by Seela in Mount Kazbek."
+ donbettyr: "Donbettyr"
+ donbettyr_desc: "Donbettyr is the God of all waters and guardian of fishermen and sailors."
+ satanaya: "Satanaya"
+ satanaya_desc: "Satanaya is the matriarch of the Demi-Gods and Goddess of fertility."
+ seela: "Seela"
+ seela_desc: "Seela is the God of thunder and lightning, regarded as being cruel and evil. He resides on top of Mount Kazbek."

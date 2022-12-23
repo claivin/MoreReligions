@@ -3,7 +3,7 @@
 owner = ADY
 controller = ADY
 culture = circassian
-religion = orthodox
+religion = mr_caucaspagan
 capital = "Sochi"
 trade_goods = livestock
 hre = no
