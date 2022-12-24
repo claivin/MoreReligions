@@ -347,3 +347,7 @@ NGT = "countries/Negapatam.txt"
 KNR = "countries/Kanara.txt"
 PRN = "countries/Purnia.txt"
 CAA = "countries/Champaran.txt"
+
+#Arabia
+ZBD = "countries/Zabid.txt"
+SOC = "countries/Socotra.txt"

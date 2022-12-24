@@ -104,6 +104,15 @@
  mr_hurufis_rebels_demand: "Convert $COUNTRYNAME$"
  mr_hurufis_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ mr_mustali: "Musta'li"
+ mr_mustali_religion_desc: "Placeholder"
+ mr_mustali_rebels_name: "Musta'li Zealots"
+ mr_mustali_rebels_title: "$RELIGION$ Zealots"
+ mr_mustali_rebels_army: "$RELIGION$ Army" 
+ mr_mustali_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_mustali_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ 
  mr_zaydi: "Zaydi"
  mr_zaydi_religion_desc: "Placeholder"
  

@@ -358,26 +358,6 @@ muslim = {
 		uses_piety = yes				# Uses piety mechanics
 	}
 	
-	mr_zaydi = {
-		color = { 0 60 0 }
-		icon = 16
-		country = {
-			heir_chance = 1.0
-			global_trade_goods_size_modifier = 0.1
-		}
-		country_as_secondary = {
-			global_ship_cost = -0.1
-			advisor_cost = -0.1
-		}
-		province = {
-			local_missionary_strength = -0.02
-		}
-			
-		heretic = { HARURI SUFRI NAJADAT AZRAQI }
-		
-		authority = yes			# Uses piety mechanics
-	}
-	
 	mr_hurufis = {
 		color = { 0 218 148 }
 		icon = 16
@@ -1637,6 +1617,46 @@ muslim = {
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
 		fervor = yes
+	}
+	
+	mr_zaydi = {
+		color = { 106 221 78 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			cavalry_power = 0.10
+		}
+		country_as_secondary = {
+			cavalry_power = 0.10
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		authority = yes		
+	}
+	
+	mr_mustali = {
+		color = { 104 174 73 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			trade_efficiency = 0.1 
+		}
+		country_as_secondary = {
+			trade_efficiency = 0.1 
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		authority = yes		
 	}
 	
 	harmonized_modifier = harmonized_muslim
