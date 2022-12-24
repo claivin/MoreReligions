@@ -137,6 +137,7 @@ categories =  {
 			5128 5136 #mr_poland
 			1133 #mr_wafrica
 			2317 4318 5277 5278 5279 5280 5281#mr_egypt
+			5380 #mr_mashriq
 		}		
 	}
 	
@@ -323,6 +324,7 @@ categories =  {
 			5132 #mr_poland
 			5286 5301 5300 5304 5305 2595 5296 5292#mr_russia
 			5338
+			5383 5382 #mr_anatolia
 		}
 	}
 	
@@ -398,6 +400,7 @@ categories =  {
 			5166 5172 5174 4812 4814 637#mr_SEA
 			5202 1117 #mr_wafrica
 			5357 5358 5360 5363 5365 #mr_arabia
+			5377 5391 5392#mr_mashriq
 		}
 	}
 
@@ -477,6 +480,7 @@ categories =  {
 			5089 5097 #mr_germany (north)
 			5178 #mr_wafrica
 			5297#mr_russia
+			5381 5389#mr_anatolia
 		}
 	}
 
@@ -588,6 +592,7 @@ categories =  {
 			5044 #baalbek
 			5257 5266 5350 5351 5346 5349 #mr_maghreb
 			5353 5355 5359 5361 5364 5367 5369 5370 5371 5374 #mr_arabia
+			5378 #mr_mashriq
 		}
 	}
 	
@@ -616,6 +621,7 @@ categories =  {
 			4867 4866 4865 2726 4849 4848 4847
 			5251 355#me_sahara
 			5352 5354 5362 5366 5372 5373#arabia
+			5375 #mr_mashriq
 		}	
 	}
 	
@@ -710,6 +716,8 @@ categories =  {
 			5250 5252 5259 5260 5261 5262 5263#mr_maghreb
 			360 4319 1231#mr_egypt
 			5318 5319 5321#mr_caucasus
+			5376 #mr_mashriq
+			5378 5379 5388#mr_anatolia
 		}
 	}
 
@@ -767,6 +775,7 @@ categories =  {
 			5284 #mr_egypt
 			5323 5324#mr_armenia
 			5325 5327 5328 5330 5331 5332 5335
+			5386 5384 5385 5392#mr_anatolia
 		}
 	}
 
@@ -859,6 +868,7 @@ categories =  {
 			
 			5176 5177 #mr_wafrica
 			5309 5310 5308 5311 5312 5313 #mr_pontic
+			5393 5394 5395 5396 5397 #mr_caucasus
 		}	
 	}
 	urban_terrain = {
