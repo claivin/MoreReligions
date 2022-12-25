@@ -1,15 +1,15 @@
-#463 - Circassia
+#5394 - Abazinia
 
 owner = ADY
 controller = ADY
 culture = circassian
 religion = mr_caucaspagan
-capital = "Bolokotov"
+capital = "Psyzh"
 trade_goods = livestock
 hre = no
 base_tax = 2 
 base_production = 2
-base_manpower = 3
+base_manpower = 2
 is_city = yes
 add_core = ADY
 discovered_by = muslim
@@ -17,3 +17,5 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
+
+

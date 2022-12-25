@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = tribal_monarchy
+primary_culture = dagestani
+religion = mr_caucaspagan
+technology_group = muslim
+capital = 5397 #Chechnya
+
+
+1444.1.1 = {			
+	monarch = {
+		name = "Khour II"
+		dynasty = "Sado-Orsoy"
+		adm = 3
+		dip = 3
+		mil = 5
+	}
+}
