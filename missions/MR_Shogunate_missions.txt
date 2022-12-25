@@ -1,4 +1,4 @@
-mr_jap_missions_fourth = {
+mr_shogun_missions_fourth = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -12,7 +12,7 @@ mr_jap_missions_fourth = {
 		}
 	}
 	
-	mr_jap_political_1 = {
+	mr_shogun_political_1 = {
 		icon = "mission_mnd_siam_royal_duel"
 		required_missions = {}
 		position = 1

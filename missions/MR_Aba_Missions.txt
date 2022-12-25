@@ -235,9 +235,11 @@ aab_missions_fourth = {
 				}
 			}
 			if = {
-				NOT = {
-					capital_scope = {
-						province_id = 153
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 153
+						}
 					}
 				}
 				set_capital = 153
@@ -287,7 +289,7 @@ aab_missions_fourth = {
 		trigger = {
 			153 = {
 				has_production_building_trigger = yes
-				has_center_of_trade_of_level = 2
+				province_has_center_of_trade_of_level = 2
 				base_tax = 10
 				base_production = 10
 				owned_by = ROOT

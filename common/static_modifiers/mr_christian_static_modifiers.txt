@@ -198,3 +198,11 @@ mr_baptist_rite_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	warscore_cost_vs_other_religion = -0.05
 }
+
+mr_no_school_rite_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	#no effect
+}

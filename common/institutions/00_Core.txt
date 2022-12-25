@@ -1824,7 +1824,7 @@ centralization_inst = {
 state_navy_inst = {
 
 	bonus = {
-		naval_maintenance = -0.1
+		naval_maintenance_modifier = -0.1
 		min_autonomy_in_territories = -0.1
 	}
 

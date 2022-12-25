@@ -1,0 +1,12 @@
+#placeholder
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = aka
+religion = shamanism #Fetishism
+technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
+capital = 1126 #Bono-Manso
+
+

@@ -16,6 +16,6 @@ controller = NBA
 add_core = NBA
 
 
-discovered_by = nubian
+discovered_by = east_african
 
 

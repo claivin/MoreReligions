@@ -11,7 +11,6 @@ historical_idea_groups = {
 	quantity_ideas
 	economic_ideas
 	humanist_ideas
-	offensive_ideas
 	aristocracy_ideas
 	trade_ideas	
 }

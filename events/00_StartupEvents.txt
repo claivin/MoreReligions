@@ -6,7 +6,7 @@ country_event = {
 	id = mr_startup_events.1000
 	title = mr_startup_events.1000.t
 	desc = mr_startup_events.1000.d
-	
+	picture = MYSTIC_IN_PRAYER_eventPicture
 	hidden = yes
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -18,12 +18,7 @@ country_event = {
 	}
 	
 	immediate = {
-		4161 = {
-			set_variable = {
-				which = ren_cultural_patronage
-				value = 0
-			}
-		}
+		#not used yet
 	}
 	
 	option = {
@@ -119,7 +114,7 @@ country_event = {
 country_event = {
 	id = mr_startup_events.2
 	title = mr_startup_events.2.t
-	
+	picture = MYSTIC_IN_PRAYER_eventPicture
 	desc = { #England and their normal vassals, but not the marcher lords
 		trigger = { 
 			OR = {

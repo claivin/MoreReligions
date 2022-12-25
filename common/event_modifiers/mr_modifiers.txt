@@ -97,15 +97,15 @@ ilk_missionaries_1 = {
 }
 
 #Institution Events
-mr_patronage_of_artists = {
-	adm_advisor_cost = 0.25
-	prestige = 0.5
-}
+birthplace_of_professional_armies = {
 
-mr_patronage_of_artists_province = {
-	local_tax_modifier = -0.05
 }
+birthplace_of_centralization_institution = {
 
-mr_greek_migrants = {
-	local_development_cost = -0.05
+}
+birthplace_of_state_navy_institution = {
+
+}
+birthplace_of_mass_mobilization_institution = {
+
 }

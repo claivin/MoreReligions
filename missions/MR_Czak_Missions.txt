@@ -89,7 +89,7 @@ CSA_missions_second = {
 	
 		
 }
-aba_missions_third = {
+CSA_missions_third = {
 	slot = 3
 	generic = no
 	ai = yes

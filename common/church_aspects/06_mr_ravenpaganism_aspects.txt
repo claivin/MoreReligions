@@ -17,7 +17,7 @@ fox_aspect = {
 	cost = 100
 	modifier = {
 		spy_offence = 0.2
-		may_infiltrate_administration = yes
+		#may_infiltrate_administration = yes
 	}
 }
 

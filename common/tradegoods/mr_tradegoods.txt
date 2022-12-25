@@ -506,7 +506,7 @@ tropical_fruit = {
 		}
 	}
 }
-horse = {
+horses = {
 	color = { 0.78 0.25 0.09 }
 	modifier = {
 		cavalry_power = 0.15

@@ -1,111 +1,111 @@
-namespace = LAT_flavor
-country_event = {
-	id = LAT_flavor.1
-	title = LAT_flavor.1.t
-	desc = LAT_flavor.1.d
-	picture = DEBATE_REPUBLICAN_eventPicture
+#decision or event?
+# country_event = {
+	# id = LAT_flavor.1
+	# title = LAT_flavor.1.t
+	# desc = LAT_flavor.1.d
+	# picture = DEBATE_REPUBLICAN_eventPicture
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = LAT_flavor.1a
-		trigger = {
-			NOT = {
-				has_country_flag = LAT_horse
-			}
-		}
-		if = {
-			limit = {
-				adm_power = 50
-				treasury = 100
-			}
-			add_country_modifier = {
-				name = LAT_horses
-				duration = -1
-			}
-			add_adm_power = -50
-			add_treasury = -50
-			set_country_flag = LAT_horse
-		}
-		else = {
-			custom_tooltip = LAT_horses_TT
-		}
-	}
-	option = {
-		name = LAT_flavor.1b
-		trigger = {
-			NOT = {
-				has_country_flag = LAT_doors
-			}
-		}
-		if = {
-			limit = {
-				dip_power = 25
-				treasury = 150
-			}
-			add_country_modifier = {
-				name = LAT_door
-				duration = -1
-			}
-			add_dip_power = -50
-			add_treasury = -150
-			set_country_flag = LAT_doors
-		}
-		else = {
-			custom_tooltip = LAT_doors_TT
-		}
-	}
-	option = {
-		name = LAT_flavor.1c
-		trigger = {
-			NOT = {
-				has_country_flag = LAT_saints
-			}
-		}
-		if = {
-			limit = {
-				adm_power = 25
-				treasury = 150
-			}
-			add_country_modifier = {
-				name = LAT_saint
-				duration = -1
-			}
-			add_adm_power = -50
-			add_treasury = -150
-			set_country_flag = LAT_saints
-		}
-		else = {
-			custom_tooltip = LAT_saints_TT
-		}
-	}
-	option = {
-		name = LAT_flavor.1d
-		trigger = {
-			NOT = {
-				has_country_flag = LAT_pillars
-			}
-		}
-		if = {
-			limit = {
-				dip_power = 25
-				treasury = 150
-			}
-			add_country_modifier = {
-				name = LAT_pillar
-				duration = -1
-			}
-			add_dip_power = -50
-			add_treasury = -150
-			set_country_flag = LAT_pillars
-		}
-		else = {
-			custom_tooltip = LAT_pillars_TT
-		}
-	}
+	# option = {
+		# name = LAT_flavor.1a
+		# trigger = {
+			# NOT = {
+				# has_country_flag = LAT_horse
+			# }
+		# }
+		# if = {
+			# limit = {
+				# adm_power = 50
+				# treasury = 100
+			# }
+			# add_country_modifier = {
+				# name = LAT_horses
+				# duration = -1
+			# }
+			# add_adm_power = -50
+			# add_treasury = -50
+			# set_country_flag = LAT_horse
+		# }
+		# else = {
+			# custom_tooltip = LAT_horses_TT
+		# }
+	# }
+	# option = {
+		# name = LAT_flavor.1b
+		# trigger = {
+			# NOT = {
+				# has_country_flag = LAT_doors
+			# }
+		# }
+		# if = {
+			# limit = {
+				# dip_power = 25
+				# treasury = 150
+			# }
+			# add_country_modifier = {
+				# name = LAT_door
+				# duration = -1
+			# }
+			# add_dip_power = -50
+			# add_treasury = -150
+			# set_country_flag = LAT_doors
+		# }
+		# else = {
+			# custom_tooltip = LAT_doors_TT
+		# }
+	# }
+	# option = {
+		# name = LAT_flavor.1c
+		# trigger = {
+			# NOT = {
+				# has_country_flag = LAT_saints
+			# }
+		# }
+		# if = {
+			# limit = {
+				# adm_power = 25
+				# treasury = 150
+			# }
+			# add_country_modifier = {
+				# name = LAT_saint
+				# duration = -1
+			# }
+			# add_adm_power = -50
+			# add_treasury = -150
+			# set_country_flag = LAT_saints
+		# }
+		# else = {
+			# custom_tooltip = LAT_saints_TT
+		# }
+	# }
+	# option = {
+		# name = LAT_flavor.1d
+		# trigger = {
+			# NOT = {
+				# has_country_flag = LAT_pillars
+			# }
+		# }
+		# if = {
+			# limit = {
+				# dip_power = 25
+				# treasury = 150
+			# }
+			# add_country_modifier = {
+				# name = LAT_pillar
+				# duration = -1
+			# }
+			# add_dip_power = -50
+			# add_treasury = -150
+			# set_country_flag = LAT_pillars
+		# }
+		# else = {
+			# custom_tooltip = LAT_pillars_TT
+		# }
+	# }
 	
-}
-		
+# }
+
 			
 	
 	
