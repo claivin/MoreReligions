@@ -1137,6 +1137,7 @@
  PROV5395: "Balkaria"
  PROV5396: "Ingushetia"
  PROV5397: "Chechnya"
+ PROV5398: "East Caucasus"
  
  PROV_ADJ5375: "Arish"
  PROV_ADJ5376: "Beersheba"
@@ -1161,5 +1162,6 @@
  PROV_ADJ5395: "Balkaria"
  PROV_ADJ5396: "Ingushetia"
  PROV_ADJ5397: "Chechnya"
+ PROV_ADJ5398: "East Caucasus"
  
  east_circassia_area: "East Circassia"
