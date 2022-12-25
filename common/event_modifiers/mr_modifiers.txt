@@ -76,6 +76,12 @@ buda_development_1 = {
 	local_production_efficiency = 0.33
 }
 
+buda_capital_modifier = {
+	local_manpower_modifier = 0.20
+	tax_income = 10
+	local_state_maintenance_modifier = -0.15
+}
+
 hungary_war_good = {
 	ae_impact = -0.33
 	land_forcelimit_modifier = 0.50

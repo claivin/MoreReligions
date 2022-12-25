@@ -272,7 +272,7 @@ aab_missions_fourth = {
 				153 = {
 					add_province_modifier = {
 						name = buda_development
-						duration = 7300
+						duration = -1
 				}
 			}
 		}
@@ -453,17 +453,38 @@ aab_missions_fifth = {
 					type = buda_castle
 					tier = 2
 				}
-			}
-			calc_true_if = {
-				any_province = {
-					NOT = { higher_development_than = 153 }
-					continent = europe
+				NOT = {
+					any_province = {
+						higher_development_than = PREV
+					}
 				}
-			}
+			}				
 		}
 		
 		effect = {
-			add_prestige = 10
+			153 = {
+				add_province_modifier = {
+					name = buda_capital_modifier
+					duration = -1
+				}
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			custom_tooltip = buda_capital_TT
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_great_power = yes 
+						NOT = {
+							any_province = {
+								higher_development_than = 153
+							}
+						}
+					}
+					add_prestige = -30
+				}
+			}
 		}
 	}
 						
