@@ -106,10 +106,11 @@ categories =  {
 			
 			 2312 257 2033 148
 			64 2955 2957 267 2979 2980 2981
-			
+			257
+			262
 			#Sorted from here:
 			
-			4384 4388 4390 4392 #France
+			4384 4388 4390 4392 183#France
 			
 			43 97 98 100 4382 4383 #Netherlands
 			
@@ -871,30 +872,6 @@ categories =  {
 			5393 5394 5395 5396 5397 #mr_caucasus
 		}	
 	}
-	urban_terrain = {
-		color = { 60 106 140  }
-
-		type = plains
-		sound_type = plains
-
-		type = plains
-		sound_type = plains
-
-		movement_cost = 1.0
-		local_development_cost = -0.1
-		supply_limit = 12
-		allowed_num_of_buildings = 3
-		local_defensiveness = 0.15
-		local_tax_modifier = 0.1
-		nation_designer_cost_multiplier = 1.1
-		
-		terrain_override = {
-				183 #paris
-				257 #warsaw
-				262 #krakow
-				
-		}	
-	}	
 }
 	
 ##################################################################

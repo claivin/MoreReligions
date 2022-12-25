@@ -11,6 +11,7 @@ tags={
 	"Gameplay"
 }
 name="Gods and Kings"
+replace_path="common/tradenodes"
 replace_path="common/institutions"
 replace_path="common/technologies"
 replace_path="common/religions"

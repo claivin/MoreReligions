@@ -406,6 +406,7 @@ caucasia_region = {
 		samtskhe_area
 		kartli_kakheti_area
 		east_armenia_area
+		east_circassia_area
 	}
 }
 

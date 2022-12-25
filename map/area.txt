@@ -1179,8 +1179,12 @@ shirvan_area = { #5 #Northern Azerbaijan full
 	421 424 4299 4305 4340
 }
 
-circassia_area = { #4 + julat full
-	463 2201 2195 2197 5313
+circassia_area = { #5 renamed to western circassia full
+	463 2195 5393 5394 5395
+}
+
+east_circassia_area = { #5 eastern circassia full
+	2197 2201 5313 5396 5397
 }
 
 dagestan_area = { #5 full
@@ -1192,77 +1196,77 @@ dagestan_area = { #5 full
 # Anatolia, The Levant & Mesopotamia   #
 ########################################
 
-rum_area = { #5
+rum_area = { #5 full
 	329 1846 2300 4314 4315
 }
 
-erzurum_area = { #3	Erzurum and Trebizond
-	330 331 2305
+erzurum_area = { #3	Erzurum and Trebizond +riza/bayburt full
+	330 331 2305 5391 5392
 }
 
-hudavendigar_area = { #3
-	316 317 2296
+hudavendigar_area = { #3 +balikesir/inegol full
+	316 317 2296 5381 5382
 }
 
-germiyan_area = { #4
+germiyan_area = { #4 +usak full
 	color = { 234 145 65 }
-	322 1848 4308 4311
+	322 1848 4308 4311 5383
 }
 
-aydin_area = { #5
+aydin_area = { #5 full
 	color = { 239 70 86 }
 	318 319 2297 2298 4309
 }
 
-ankara_area = { #3
+ankara_area = { #3 +corum/beypazari full
 	color = { 57 154 172 }
-	326 4312 4313
+	326 4312 4313 5384 5385	
 }
 
-aegean_archipelago_area = { #4
+aegean_archipelago_area = { #4 full
 	164 320 2348 3003 4700
 }
 
-kastamonu_area = { #4
-	325 328 2299 2304
+kastamonu_area = { #4 +ordu full
+	325 328 2299 2304 5389
 }
 
-karaman_area = { #4
-	323 324 2301 4307
+karaman_area = { #4 +nigde full
+	323 324 2301 4307 5386
 }
 
-cukurova_area = { #3
+cukurova_area = { #3 +mersin/alanya full
 	color = { 50 177 200 }
-	321 327 2302
+	321 327 2302 5387 5388
 }
 
-aleppo_area = { #4
-	377 1849 2313 4298
+aleppo_area = { #4 +Iskenderun full
+	377 1849 2313 4298 5379
 }
 
 syria_area = { #4 +Tyre full
 	378 382 1855 4297 5043
 }
 
-trans_jordan_area = { #3
-	380 381 2327
+trans_jordan_area = { #3 +al mudawwara/amman full
+	380 381 2327 5377 5378
 }
 
-palestine_area = { #3
-	364 379 1854
+palestine_area = { #3 +arish/beersheba full
+	364 379 1854 5375 5376
 }
 
-dulkadir_area = { # 4
+dulkadir_area = { # 4 +elazig full
 	color = { 184 54 72 }
-	332 2303 2308 4310
+	332 2303 2308 4310 5390
 }
 
-iraq_arabi_area = { #5 Lower Mesopotamia
+iraq_arabi_area = { #5 Lower Mesopotamia full
 	406 409 410 2310 4291
 }
 
-basra_area = { #4
-	408 2311 2312 4288
+basra_area = { #4 +hillah full
+	408 2311 2312 4288 5380 
 }
 
 luristan_area = { #4
