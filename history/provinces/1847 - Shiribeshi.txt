@@ -56,10 +56,8 @@ discovered_by = TKI
 discovered_by = UTN
 discovered_by = TTI
 discovered_by = ASK
-discovered_by = JAP
 
 1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
-
 1679.1.1 = {	
 	owner = TKG
 	controller = TKG

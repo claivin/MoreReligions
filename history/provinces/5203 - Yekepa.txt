@@ -1,7 +1,6 @@
 culture = mandinka
 religion = shamanism #Fetishism
 capital = "Nzerekore"
-trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1

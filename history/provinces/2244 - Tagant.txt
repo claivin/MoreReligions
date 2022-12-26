@@ -3,7 +3,6 @@
 culture = fulani 
 religion = shamanism #Fetishism
 capital = "Kiffa"
-trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
@@ -11,16 +10,10 @@ native_size = 40
 native_ferocity = 4
 native_hostileness = 9
 base_manpower = 1
-
-
-
 discovered_by = sub_saharan
-
-
-
-	owner = TKR
-	controller = TKR
-	add_core = TKR
-	trade_goods = salt
-	is_city = yes
+owner = TKR
+controller = TKR
+add_core = TKR
+trade_goods = salt
+is_city = yes
 

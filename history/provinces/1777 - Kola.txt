@@ -1,7 +1,6 @@
 #REGIONRUSSIA
 #Kola
 
-capital = "Kola"
 culture = sapmi
 religion = mr_samipaganism
 capital = "Kandalaksha"

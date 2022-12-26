@@ -1,5 +1,5 @@
 #REGIONIBERIA
-#222 - Almera
+#222 - Almer
 
 owner = GRA		#Mustapha Sa'd King of Granada
 controller = GRA

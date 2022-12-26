@@ -3,7 +3,6 @@
 culture = jukun
 religion = shamanism #Fetishism
 capital = "Kwararafa"
-trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1

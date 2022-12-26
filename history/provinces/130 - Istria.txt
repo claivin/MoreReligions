@@ -7,7 +7,6 @@ religion = catholic
 capital = "Pula"
 trade_goods = salt #Accounted for 1/4 of the total Salt imports of Venice
 #trade_goods = naval_supplies #Major Shipbuilding Centre
-hre = no
 base_tax = 2 
 base_production = 3
 base_manpower = 3

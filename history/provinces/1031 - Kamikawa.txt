@@ -13,8 +13,6 @@ controller = ANU
 add_core = ANU
 is_city = yes
 
-
-
 discovered_by = JAP
 discovered_by = AMA
 discovered_by = ASA
@@ -56,7 +54,6 @@ discovered_by = TKI
 discovered_by = UTN
 discovered_by = TTI
 discovered_by = ASK
-discovered_by = JAP
 
 1640.1.1 = { discovered_by = RUS } # Ivan Moskvitin
 

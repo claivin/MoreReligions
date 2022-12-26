@@ -1,5 +1,5 @@
 #REGIONIBERIA
-#224 - Andaluca
+#224 - Andaluc
 
 owner = SEV	#Juan II of Castille
 controller = SEV

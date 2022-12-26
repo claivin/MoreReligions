@@ -13,7 +13,6 @@ base_production = 4
 base_manpower = 3
 is_city = yes
 fort_15th = yes # Bala Hissar
-add_core = BLK
 discovered_by = KAS
 discovered_by = indian
 discovered_by = muslim
