@@ -1,8 +1,0 @@
-government = monarchy
-add_government_reform = confucian_bureaucracy
-primary_culture = korean
-add_accepted_culture = manchu
-religion = confucianism
-add_harmonized_religion = tengri_pagan_reformed
-technology_group = chinese
-capital = 2744 

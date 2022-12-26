@@ -17,15 +17,15 @@ capital = 2190
 	}
 }
 
-1229.1.1 = {
-	monarch = {
-		name = "Tolui"
-		dynasty = "Borjigin"
-		adm = 6
-		dip = 6
-		mil = 6
-	}
-}
+# 1229.1.1 = {
+	# monarch = {
+		# name = "Tolui"
+		# dynasty = "Borjigin"
+		# adm = 6
+		# dip = 6
+		# mil = 6
+	# }
+# }
 
 1229.1.1 = {
 	monarch = {

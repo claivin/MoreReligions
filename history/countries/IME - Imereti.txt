@@ -16,7 +16,11 @@ capital = 462 # Kutaisi
 	
 	heir = {
 		name = "Shamadavle"
+		monarch_name = "Shamadavle II"
 		dynasty = "Dadiani"
+		claim = 90
+		birth_date = 1401.1.1
+		death_date = 1460.1.1
 		adm = 3
 		dip = 2
 		mil = 1

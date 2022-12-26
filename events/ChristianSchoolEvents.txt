@@ -554,9 +554,11 @@ country_event = {
 			modifier = {
 				factor = 4
 				capital_scope = {
-					region = france_region
-					region = south_german_region
-					region = north_german_region
+					OR = {
+						region = france_region
+						region = south_german_region
+						region = north_german_region
+					}
 				}
 			}
 			modifier = {

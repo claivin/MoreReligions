@@ -4,7 +4,7 @@ technology_group = chinese
 primary_culture = lao
 religion = buddhism
 capital = 4839	# Champassak
-religious_school = mr_weizza_school
+religious_school = mr_yogavacara_school #formerly weizza
 
 # Champassak (splinter-kingdom of Lan Xang)	
 

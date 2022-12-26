@@ -26,9 +26,7 @@ country_decisions = {
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				is_core = ROOT
-				OR = {
-					culture = songhai
-				}
+				culture = songhai
 				value = 11
 			}
 			owns_core_province = 1133

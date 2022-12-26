@@ -66,12 +66,10 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		ai = no
-		AND = {
-			capital_scope = {
-				region = france_region
-			}
-			NOT = { tag = NRM }
-		}	
+		capital_scope = {
+			region = france_region
+		}
+		NOT = { tag = NRM }
 	}
 	mean_time_to_happen = {
 		days = 1

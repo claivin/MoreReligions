@@ -223,6 +223,7 @@ capital = 1020	# Yamashiro
 		dynasty = "Ashikaga"
 		birth_date = 1436.1.20
 		death_date = 1490.1.27
+		claim = 90
 		adm = 2
 		dip = 3
 		mil = 1

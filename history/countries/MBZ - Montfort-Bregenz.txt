@@ -15,7 +15,7 @@ capital = 4710 #Bregenz
 		MIL = 3
 		female = yes
 		birth_date = 1395.1.1
-		death_date = 1458.6.7
+		#death_date = 1458.6.7
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
@@ -39,6 +39,7 @@ capital = 4710 #Bregenz
 1430.1.1 = {
 	heir = {
 		name = "Ursula"
+		monarch_name = "Ursula II"
 		dynasty = "von Montfort-Bregenz"
 		birth_date = 1430.1.1
 		death_date = 1460.1.1
@@ -49,21 +50,3 @@ capital = 4710 #Bregenz
 		claim = 20
 	}
 }
-
-
-#Sold to Austria for a while
-
-
-1482.1.1 = {
-	monarch = {
-		name = "Hugo X"
-		dynasty = "von Montfort-Bregenz"
-		ADM = 2
-		DIP = 4
-		MIL = 2
-		birth_date = 1450.1.1
-		death_date = 1523.6.7
-	}
-}
-
-#Sold to Habsburgs again

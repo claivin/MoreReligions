@@ -20,6 +20,7 @@ capital = 463 # Circassia
 
 1470.1.1 = {
 	monarch = {
+		name = "Tribal Council"
 		adm = 0
 		mil = 0
 		dip = 0

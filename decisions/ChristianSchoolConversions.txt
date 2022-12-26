@@ -168,9 +168,7 @@ country_decisions = {
 				}
 			}
 			any_owned_province = {
-				OR = {
-					region = iberia_region
-				}
+				region = iberia_region
 			}
 		}
 		allow = {
@@ -217,9 +215,7 @@ country_decisions = {
 				}
 			}
 			any_owned_province = {
-				OR = {
-					region = british_isles_region
-				}
+				region = british_isles_region
 			}
 		}
 		allow = {
@@ -450,8 +446,10 @@ country_decisions = {
 			theologian = 1
 			stability = 2
 			any_owned_province = {
-				area = eastern_norway
-				area = western_norway
+				OR = {
+					area = eastern_norway
+					area = western_norway
+				}
 			}
 		}
 		effect = {

@@ -20,6 +20,7 @@ capital = 598
 1425.1.1 = {
 	heir = {
 		name = "Putri Wanang Seri"
+		monarch_name = "Putri II"
 		dynasty = "Pahang"
 		female = yes
 		birth_date = 1425.1.1
@@ -28,13 +29,5 @@ capital = 598
 		adm = 4
 		dip = 4
 		mil = 2
-	}
-}
-1480.1.1 = {
-	monarch = {
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
 	}
 }

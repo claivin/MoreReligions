@@ -133,3 +133,11 @@
  ZNJ_ADJ: "Zanj"
  ZNJ_ADJ2: "Zanj"
  
+ akan_decision_title: "akan decision placeholder"
+ akan_decision_desc: "akan desc decision placeholder"
+ 
+ kru_decision_title: "kru decision placeholder"
+ kru_decision_desc: "kru desc decision placeholder"
+ 
+ mdk_decision_title: "mandinka decision placeholder"
+ mdk_decision_desc: "mandinka desc decision placeholder"

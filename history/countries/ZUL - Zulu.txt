@@ -17,6 +17,6 @@ unlock_cult = cwezi_cult
 		dip = 3
 		mil = 6
 		birth_date = 1787.7.1
-		death_date = 1828.9.24
+		#death_date = 1828.9.24
 	}
 }

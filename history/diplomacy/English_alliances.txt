@@ -3,41 +3,49 @@ march = {
 	first = ENG
 	second = PEM
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 march = {
 	first = ENG
 	second = GLM
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 march = {
 	first = ENG
 	second = PWY
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 march = {
 	first = ENG
 	second = CHS
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = ENG
 	second = SHP
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = ENG
 	second = CRN
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = ENG
 	second = OXF
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = ENG
 	second = KNT
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 #York Relations
@@ -45,16 +53,19 @@ vassal = {
 	first = YRK
 	second = DRM
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = YRK
 	second = LCS
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = YRK
 	second = NOL
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 #Stuart Union
@@ -62,12 +73,14 @@ union = {
 	first = SCO
 	second = BRI
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 vassal = {
 	first = SCO
 	second = KOI
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 #Ireland
@@ -75,16 +88,19 @@ alliance = {
 	first = ULS
 	second = MCM
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 guarantee = {
 	first = ULS
 	second = MTH
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 guarantee = {
 	first = MCM
 	second = MTH
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }

@@ -4,12 +4,14 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1502.1.1
 }
-vassal = {
-	first = IFT
-	second = AUA
-	start_date = 1444.1.1
-	end_date = 1502.1.1
-}
+
+#AUA not real tag
+# vassal = {
+	# first = IFT
+	# second = AUA
+	# start_date = 1444.1.1
+	# end_date = 1502.1.1
+# }
 dependency = {
 	subject_type = "tributary_state"
 	first = IFT

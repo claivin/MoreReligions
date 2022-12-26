@@ -1,7 +1,0 @@
-government_rank = 1
-government = republic
-add_government_reform = peasants_republic #Juiz 
-primary_culture = galician
-religion = catholic
-technology_group = western
-capital = 4980	# CoutoMisto

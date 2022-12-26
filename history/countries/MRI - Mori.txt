@@ -5,6 +5,6 @@ primary_culture = japanese
 religion = nihon
 technology_group = chinese
 capital = 1024 # Aki
-religious_school = mr_jodo_school
+religious_school = mr_nichiren_school
 
 

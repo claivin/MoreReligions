@@ -6,20 +6,6 @@ religion = catholic
 technology_group = western
 capital = 84 # Berg
 
-
-1423.6.25 = {
-	monarch = {
-		name = "Adolf VII"
-		dynasty = "von Jülich-Berg"
-		birth_date = 1370.1.1
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = well_connected_personality
-}
-
 1416.1.1 = {
 	heir = {
 		name = "Gerhard"
@@ -32,6 +18,19 @@ capital = 84 # Berg
 		dip = 3
 		mil = 4
 	}
+}
+
+1423.6.25 = {
+	monarch = {
+		name = "Adolf VII"
+		dynasty = "von Jülich-Berg"
+		birth_date = 1370.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = well_connected_personality
 }
 
 1437.7.14 = {

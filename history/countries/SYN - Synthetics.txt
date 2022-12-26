@@ -1,4 +1,6 @@
 government = republic
 government_rank = 3
 technology_group = western
+primary_culture = jan_mayenese
+religion = animism
 capital = 1878	# Aachen

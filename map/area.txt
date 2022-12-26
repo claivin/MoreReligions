@@ -610,8 +610,8 @@ skaneland_area = { #4 +Laholm full
 	6  26 1982 4165 5111
 }
 
-gotaland_area = { #3 Östra Götaland +Jonkoping full
-	2 3 25 4166 5112
+gotaland_area = { #3 Östra Götaland +Jonkoping
+	2 3 4166 5112
 }
 
 vastra_gotaland_area = { #Västra Götaland #4 +Skovde full
@@ -3616,7 +3616,7 @@ northeast_mexico_area = { #5
 }
 
 durango_area = { #3
-    860 4647 4648 4646 4648
+    860 4647 4648 4646
 }
 
 chihuahua_area = { #4

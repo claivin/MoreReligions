@@ -3,51 +3,61 @@ union = {
 	first = FRA
 	second = ANJ
 	start_date = 1392.1.1
+	end_date = 1500.1.1
 }
 union = {
 	first = FRA
 	second = PRO
 	start_date = 1402.1.1
+	end_date = 1500.1.1
 }
 union = {
 	first = FRA
 	second = BAR
 	start_date = 1402.1.1
+	end_date = 1500.1.1
 }
 union = {
 	first = FRA
 	second = LOR
 	start_date = 1402.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = FRA
 	second = REI
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = FRA
 	second = LAO
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = FRA
 	second = LGR
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = FRA
 	second = BVS
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = FRA
 	second = CLN
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = FRA
 	second = NYN
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 
 
@@ -56,11 +66,13 @@ vassal = {
 	first = ORL
 	second = BLS
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = ORL
 	second = AGM
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 
 #Norman Relations
@@ -68,11 +80,13 @@ union = {
 	first = ENG
 	second = NRM
 	start_date = 1418.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = NRM
 	second = MNE
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 
 #Burgundy
@@ -80,6 +94,7 @@ union = {
 	first = BUR
 	second = FBR
 	start_date = 1384.12.6
+	end_date = 1500.1.1
 }
 
 #Aquitaine
@@ -87,11 +102,13 @@ vassal = {
 	first = GUY
 	second = PTO
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 vassal = {
 	first = GUY
 	second = AMG
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 
 #Picardy Relations
@@ -99,6 +116,7 @@ union = {
 	first = PIC
 	second = ATS
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 
 #Basque Union
@@ -106,6 +124,7 @@ union = {
 	first = NAV
 	second = BRN
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 
 #Three Bishophrics
@@ -113,29 +132,17 @@ alliance = {
 	first = VDN
 	second = TUL
 	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 alliance = {
 	first = VDN
 	second = MTZ
 	start_date = 1444.11.11
-}
-alliance = {
-	first = TUL
-	second = VDN
-	start_date = 1444.11.11
+	end_date = 1500.1.1
 }
 alliance = {
 	first = TUL
 	second = MTZ
 	start_date = 1444.11.11
-}
-alliance = {
-	first = MTZ
-	second = VDN
-	start_date = 1444.11.11
-}
-alliance = {
-	first = MTZ
-	second = TUL
-	start_date = 1444.11.11
+	end_date = 1500.1.1
 }

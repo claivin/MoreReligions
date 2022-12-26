@@ -12,10 +12,12 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1574.1.1
 }
-dependency = {
-	subject_type = "tributary_state"
-	first = DAI
-	second = MGI
-	start_date = 1444.1.1
-	end_date = 1574.1.1
-}
+#MGI not real tag
+
+# dependency = {
+	# subject_type = "tributary_state"
+	# first = DAI
+	# second = MGI
+	# start_date = 1444.1.1
+	# end_date = 1574.1.1
+# }

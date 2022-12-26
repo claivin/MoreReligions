@@ -14,7 +14,7 @@ religious_school = hanafi_school
 		name = "Iskandar Mirza"
 		dynasty = "Timurid"
 		birth_date = 1384.1.1
-		claim = 100
+		#claim = 100
 		adm = 4
 		dip = 4
 		mil = 5
@@ -30,6 +30,7 @@ religious_school = hanafi_school
 		#birth_date = 1419.5.13
 		#changed to underneath because it trips error
 		birth_date = 1415.5.13
+		death_date = 1456.1.1 #guess
 		claim = 95
 		adm = 3
 		dip = 2

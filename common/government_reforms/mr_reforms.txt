@@ -411,7 +411,6 @@ mr_hungary_hungary_reform = {
 		min_autonomy_in_territories = -0.1
 		national_focus_years = -1 
 	}
-
 }
 mr_horde_hungary_reform = {
 	icon = "holy_horde"

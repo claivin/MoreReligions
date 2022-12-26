@@ -63,3 +63,9 @@
  SOC: "Socotra"
  SOC_ADJ: "Socotran"
  SOC_ADJ2: "Socotran"
+ 
+ al_habash_decision_title: "al habash placeholder"
+ al_habash_decision_desc: "al habash desc placeholder"
+ 
+ beta_isrl_decision_title: "beta israel placeholder"
+ beta_isrl_decision_desc: "beta israel desc placeholder"

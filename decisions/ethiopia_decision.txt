@@ -72,6 +72,7 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
 	beta_isrl_decision = {
 		major = yes
 		potential = {
@@ -140,6 +141,7 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
 	al_habash_desicion = {
 		major = yes
 		potential = {

@@ -3,6 +3,7 @@ march = {
 	first = BLH
 	second = BUL
 	start_date = 1380.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -10,6 +11,7 @@ dependency = {
 	first = BLH
 	second = VOL
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -17,6 +19,7 @@ dependency = {
 	first = BLH
 	second = PLT
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -24,6 +27,7 @@ dependency = {
 	first = BLH
 	second = MOL
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -31,6 +35,7 @@ dependency = {
 	first = BLH
 	second = DRK
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -38,6 +43,7 @@ dependency = {
 	first = BLH
 	second = CHR
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -45,6 +51,7 @@ dependency = {
 	first = BLH
 	second = KUS
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -52,6 +59,7 @@ dependency = {
 	first = BLH
 	second = QAS
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -59,6 +67,7 @@ dependency = {
 	first = BLH
 	second = MOL
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 dependency = {
@@ -66,4 +75,5 @@ dependency = {
 	first = BLH
 	second = SMO
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }

@@ -1,5 +1,6 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government_rank = 1
+government = republic
+add_government_reform = peasants_republic #Juiz 
 primary_culture = galician
 religion = catholic
 technology_group = western

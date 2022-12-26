@@ -48,6 +48,7 @@ change_estate_land_share = {
 
 1406.12.26 = {
 	monarch = {
+		name = "Regency Council"
 		adm = 2
 		dip = 2
 		mil = 2

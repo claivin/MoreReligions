@@ -5,6 +5,7 @@ alliance = {
 	second = BRE
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 alliance = {
@@ -12,6 +13,7 @@ alliance = {
 	second = BGG
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 alliance = {
@@ -19,6 +21,7 @@ alliance = {
 	second = WGT
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 alliance = {
@@ -26,6 +29,7 @@ alliance = {
 	second = WRF
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 alliance = {
@@ -33,6 +37,7 @@ alliance = {
 	second = BGN
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 
 alliance = {
@@ -40,4 +45,5 @@ alliance = {
 	second = HOL
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }

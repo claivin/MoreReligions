@@ -6,7 +6,7 @@ primary_culture = tuscan
 religion = catholic
 technology_group = western
 capital = 5272 # Pisa
-fixed_capital = 5727 # Cannot move capital away from this province & no power cost to move to it
+fixed_capital = 5272 # Cannot move capital away from this province & no power cost to move to it
 
 1444.1.1 = {
 	monarch = {

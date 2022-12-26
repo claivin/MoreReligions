@@ -3,24 +3,28 @@ alliance = {
 	second = EPI
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 alliance = {
 	first = ACH
 	second = MOE
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 alliance = {
 	first = ACH
 	second = ART
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 alliance = {
 	first = ACH
 	second = CNT
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 alliance = {
 	first = ACH
@@ -34,9 +38,11 @@ alliance = {
 	second = CPH
 	trade_league = 1
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
 vassal = {
 	first = THR
 	second = CST
 	start_date = 1444.1.1
+	end_date = 1500.1.1
 }
