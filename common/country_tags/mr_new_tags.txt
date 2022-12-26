@@ -71,7 +71,7 @@ BSS = "countries/Brussels.txt"
 #Germany
 MRN = "countries/Merania.txt"
 BGU = "countries/Burgau.txt"
-KRN = "countries/Kärnten.txt"
+KRN = "countries/Karnten.txt"
 KRI = "countries/Krain.txt"
 LBG = "countries/Lowerburgundy.txt"
 HHH = "countries/Hohenlohe.txt"

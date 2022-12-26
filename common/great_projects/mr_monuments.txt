@@ -83,7 +83,9 @@ mr_carcasonne = {
 		country_modifiers = {
 		}
 		on_upgraded = {
-			add_splendor = 5
+			owner = {
+				add_splendor = 5
+			}
 		}
 	}
 	tier_2 = {
@@ -106,7 +108,9 @@ mr_carcasonne = {
 			land_forcelimit = 5
 		}
 		on_upgraded = {
-			add_splendor = 10
+			owner = {
+				add_splendor = 10
+			}
 		}
 	}
 	tier_3 = {
@@ -129,7 +133,9 @@ mr_carcasonne = {
 			land_forcelimit = 10
 		}
 		on_upgraded = {
-			add_splendor = 25
+			owner = {
+				add_splendor = 25
+			}
 		}
 	}
 }

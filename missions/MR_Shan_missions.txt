@@ -175,7 +175,7 @@ SST_missions_second = {
 	}
 	sst_institutions = {
 		icon = "mission_asian_trader"
-		required_missions { shan_confed }
+		required_missions = { shan_confed }
 		position = 4
 		trigger = {
 				has_institution = renaissance

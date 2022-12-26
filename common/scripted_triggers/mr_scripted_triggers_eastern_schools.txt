@@ -30,7 +30,7 @@ has_religious_scholars_trigger_eastern = {
 
 #Scholars from where?
 #Country Scope
-scholar_from_our_school_trigger = {
+scholar_from_our_school_trigger_eastern = {
 	has_country_modifier = $school$_school_modifier
 	ROOT = {
 		religious_school = {
@@ -39,7 +39,7 @@ scholar_from_our_school_trigger = {
 		}
 	}
 }
-our_scholar_matches_their_school_trigger = {
+our_scholar_matches_their_school_trigger_eastern = {
 	PREV = { has_country_modifier = $school$_school_modifier }
 	religious_school = {
 		group = eastern

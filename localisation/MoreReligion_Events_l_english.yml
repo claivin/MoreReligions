@@ -108,7 +108,7 @@
  Pagan_Empire:0 "Pagan Empire"
  Raman:0 "Raman"
  pagan_flavor.1.t:0 "A New Burmese State"
- pagan_flavor.1.d:0 "With the unification of all regions of Burma under our rule, from the Shan hills to the Hanthawaddy coast, is is time to establish ourselves upon the world stage!
+ pagan_flavor.1.d:0 "With the unification of all regions of Burma under our rule, from the Shan hills to the Hanthawaddy coast, is is time to establish ourselves upon the world stage!"
  burma_bma:0 "The Kingdom of Burma shall prosper!"
  pagan_bma:0 "The Empire of Pagan shall dominate once more!"
  mon_bma:0 "The Era of the Raman begins!"
@@ -152,7 +152,7 @@
  HUN_flavor.3d: "House Aba has the full support of the Holy Roman Emperor!"
  HUN_flavor.3e: "The Great Khan shall support house Kan...hah!"
  HUN_flavor.3f: "Contact the Joannites; we have use of them yet!"
- hun_thunder_TT: "The Hungarian Oligarchs will revolt in approximately §Y5 Years§!
+ hun_thunder_TT: "The Hungarian Oligarchs will revolt in approximately §Y5 Years§!"
  send_aid_hungary_TT: "§YForeign powers will send supplies and aid to the faction they support!§!"
  HUN_flavor.5.t: "Hungary Calls For Aid"
  HUN_flavor.5.d: "As the civil war rages on, we have gained allies from abroad who have expressed their desire for our faction to win the conflict. We could finalize this alliance, bring in our allies and absolutely dominate the conflict, but this could also risk escalating the conflict. We must be completely certain of our plan."

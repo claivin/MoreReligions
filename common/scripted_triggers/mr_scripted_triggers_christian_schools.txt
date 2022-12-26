@@ -37,7 +37,7 @@ has_religious_scholars_trigger_christian = {
 
 #Scholars from where?
 #Country Scope
-scholar_from_our_school_trigger = {
+scholar_from_our_school_trigger_christian = {
 	has_country_modifier = $school$_rite_modifier
 	ROOT = {
 		religious_school = {
@@ -46,7 +46,7 @@ scholar_from_our_school_trigger = {
 		}
 	}
 }
-our_scholar_matches_their_school_trigger = {
+our_scholar_matches_their_school_trigger_christian = {
 	PREV = { has_country_modifier = $school$_rite_modifier }
 	religious_school = {
 		group = christian

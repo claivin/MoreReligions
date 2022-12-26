@@ -2,10 +2,8 @@ cb_vassalize_mission_karma = {
 	valid_for_subject = no
 
 	prerequisites = {
-		AND = {
-			karma = -33
-			NOT = { karma = 33 }
-		}
+		karma = -33
+		NOT = { karma = 33 }
 		uses_karma = yes
 		if = {
 			limit = {
