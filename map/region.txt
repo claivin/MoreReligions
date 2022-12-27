@@ -221,7 +221,7 @@ baltic_region = {
 		curonia_area
 		west_prussia_area
 		east_prussia_area
-		pomerelia_area
+		#pomerelia_area --- deprecated
 		samogitia_area
 		baltic_islands_area_mr
 	}
@@ -479,7 +479,6 @@ sahel_region = {
 		bornu_area
 		azbin_area
 		kurdufan_area
-		western_sahara_area
 		dendi_area
 		baghena_area
 		niger_bend_area
@@ -500,7 +499,6 @@ sahara_region = {
 		tiris_zemmout_area
 		algerian_desert_area
 		central_sahara_area
-		east_azbin_area
 		western_desert_area
 		ennedi_plateau_area
 		cap_verde_area
@@ -1118,7 +1116,7 @@ indonesia_region = { #Eastern Indonesian/Malayan Islands.
 		central_java_area
 		west_java_area
 		lesser_sunda_islands_area
-		indonesian_islands_area
+		#indonesian_islands_area ----- deprecated
 		surabaya_area
 		banten_area
 	}

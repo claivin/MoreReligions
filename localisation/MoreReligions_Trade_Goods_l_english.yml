@@ -30,7 +30,7 @@
  steelDESC: "Wrought in foundries and forged for War, steel is strongest and most resilent material anyone can produce."
  
  silver:0 "Silver"
- steelDESC: "Though not as valuable as gold, it is certaintly not something you would want to pass up."
+ silverDESC: "Though not as valuable as gold, it is certaintly not something you would want to pass up."
  
  sulfur:0 "Sulfur"
  sulfurDESC: "An unholy stone that produces an even unholier smell."

@@ -1,0 +1,124 @@
+﻿l_english:
+ #Mushasha'iyya
+ mr_mushashaiyya: "Mushasha'iyya"
+ mr_mushashaiyya_religion_desc: "Placeholder"
+ 
+ mr_mushashaiyya_rebels_name: "Mushasha'iyya Zealots"
+ mr_mushashaiyya_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_mushashaiyya_rebels_title: "$RELIGION$ Zealots"
+ mr_mushashaiyya_rebels_army: "$RELIGION$ Army"
+ mr_mushashaiyya_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_mushashaiyya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ mr_safaviyya: "Safaviyya"
+ mr_safaviyya_religion_desc: "Placeholder"
+ 
+ mr_safaviyya_rebels_name: "Safaviyya Zealots"
+ mr_safaviyya_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_safaviyya_rebels_title: "$RELIGION$ Zealots"
+ mr_safaviyya_rebels_army: "$RELIGION$ Army"
+ mr_safaviyya_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_safaviyya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ #Safaviyya Shaykhs
+ shaykh_junayd: "Shaykh Junayd"
+ 
+ shaykh_haydar: "Shaykh Haydar"
+ shaykh_ali_mirza: "Shaykh Ali Mirza"
+ shaykh_ismail: "Shaykh Ismail"
+ shaykh_tahmasp: "Shaykh Tahmasp"
+ shaykh_mohammed_khodabanda: "Shaykh Mohammed Khodabanda"
+ shaykh_abbas: "Shaykh Abbas"
+ shaykh_safi: "Shaykh Safi"
+ shaykh_abbas_II: "Shaykh Abbas II"
+ shaykh_suleiman: "Shaykh Suleiman"
+ shaykh_husayn: "Shaykh Husayn"
+ the_hidden_imam: "The Hidden Imam"
+ #Safaviyya modifiers 
+ 
+ turkmeni_missions: "Conversion of the Turkmen"
+ temporal_rule: "Temporal Domination"
+ engage_in_ghaza: "Engage in Ghaza"
+ 
+ haydar_tomb: "Tomb of Hadyar"
+ divine_loyalty_haydar: "Divine Loyalty"
+ purging_circassia: "Purging the Heretics"
+ 
+ padeshah_mirza: "Padeshah Mirza"
+ safavi_founder: "Founder of the Safavi"
+ mobilized_sufis: "Mobilized Sufis"
+ 
+ shahanshah_ismail: "Shahanshah Ismail"
+ khata_poet: "Khata Poet"
+ conqueror_iran: "Conqueror of Iran"
+ 
+ legal_clergy_priv: "Clergy Legalism"
+ patron_of_arts: "Patron of the Arts"
+ defender_of_herat: "Defender of Herat"
+ 
+ loyal_consort: "Loyal Consort"
+ refined_taste: "Refined Taste"
+ shahs_guards: "Guardsmen of the Shah"
+ 
+ absolutist_ruler: "Absolutist Ruler"
+ chinese_ceramics: "Chinese Ceramics"
+ ghulams_warrior: "Integration of the Ghulams"
+ 
+ importation_of_wine: "Importation of Wine"
+ european_trading: "European Trading"
+ reconquest_wars: "Reconquest Wars"
+ 
+ progressive_court: "Progressive Court"
+ international_diplo: "International Diplomacy"
+ military_innovation: "Military Innovations"
+ 
+ grand_viziers: "The Grand Viziers"
+ caspian_guards: "Guards of the Caspian"
+ musketeer_corps: "Musketeer Corps"
+ 
+ anti_sufi_politics: "Anti-Sufi Politics"
+ sunni_relations: "Sunni Advisors"
+ defense_of_the_borders: "Defense of the Borders"
+ 
+ the_eternal_imam: "The Imam's Legacy"
+ the_will_of_god: "The Grace of God"
+ the_jihad_eternal: "The Jihad Eternal"
+ 
+ mr_ahlehaqq: "Ahl e Haqq"
+ mr_ahlehaqq_religion_desc: "Placeholder"
+ 
+ mr_ahlehaqq_rebels_name: "Ahl e Haqq Zealots"
+ mr_ahlehaqq_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_ahlehaqq_rebels_title: "$RELIGION$ Zealots"
+ mr_ahlehaqq_rebels_army: "$RELIGION$ Army" 
+ mr_ahlehaqq_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_ahlehaqq_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+
+ mr_hurufis: "Hurufi"
+ mr_hurufis_religion_desc: "Placeholder"
+ 
+ mr_hurufis_rebels_name: "Hurufi Zealots"
+ mr_hurufis_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_hurufis_rebels_title: "$RELIGION$ Zealots"
+ mr_hurufis_rebels_army: "$RELIGION$ Army" 
+ mr_hurufis_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_hurufis_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ mr_mustali: "Musta'li"
+ mr_mustali_religion_desc: "Placeholder"
+ mr_mustali_rebels_name: "Musta'li Zealots"
+ mr_mustali_rebels_title: "$RELIGION$ Zealots"
+ mr_mustali_rebels_army: "$RELIGION$ Army" 
+ mr_mustali_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_mustali_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ 
+ mr_zaydi: "Zaydi"
+ mr_zaydi_religion_desc: "Placeholder"
+ 
+ mr_zaydi_rebels_name: "Zaydi Zealots"
+ mr_zaydi_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_zaydi_rebels_title: "$RELIGION$ Zealots"
+ mr_zaydi_rebels_army: "$RELIGION$ Army"
+ mr_zaydi_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_zaydi_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."

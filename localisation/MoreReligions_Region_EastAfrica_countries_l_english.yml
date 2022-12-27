@@ -1,0 +1,71 @@
+﻿l_english:
+ AGW:0 "Agew"
+ AGW_ADJ:0 "Agewan"
+ SLM:0 "Solomon"
+ SLM_ADJ:0 "Solomonic"
+ ZGW:0 "Zagwe"
+ ZGW_ADJ:0 "Zagwan"
+ #AKS:0 "Aksum"
+ #AKS_ADJ:0 "Aksumite"
+ IFT:0 "Ifat"
+ IFT_ADJ:0 "Ifati"
+ BAE:0 "Bale"
+ BAE_ADJ:0 "Bale"
+ AUA:0 "Ausa"
+ AUA_ADJ:0 "Ausa"
+ HRA:0 "Harla"
+ HRA_ADJ:0 "Harlan"
+ ABH:0 "Al-Habash"
+ ABH_ADJ:0 "Habash"
+ BRL:0 "Beta Israel"
+ BRL_ADJ:0 "Beta Israelite"
+ 
+ DJJ: "Daju"
+ DJJ_ADJ: "Daju"
+ DJJ_ADJ2: "Daju"
+ 
+ NBA: "Nuba"
+ NBA_ADJ: "Nuban"
+ NBA_ADJ2: "Nuban"
+ 
+ SHG: "Shaigiya"
+ SHG_ADJ: "Shaigiyan"
+ SHG_ADJ2: "Shaigiyan"
+ 
+ JLI: "Ja'alin"
+ JLI_ADJ: "Ja'alin"
+ JLI_ADJ2: "Ja'alin"
+ 
+ SOB: "Soba"
+ SOB_ADJ: "Soban"
+ SOB_ADJ2: "Soban"
+ 
+ SHI: "Shendi"
+ SHI_ADJ: "Shendi"
+ SHI_ADJ2: "Shendi"
+ 
+ FZG: "Fazughli"
+ FZG_ADJ: "Fazughlian"
+ FZG_ADJ2: "Fazughlian"
+ 
+ BTA: "Butana"
+ BTA_ADJ: "Butanan"
+ BTA_ADJ2: "Butanan"
+ 
+ SKI: "Suakin"
+ SKI_ADJ: "Suakin"
+ SKI_ADJ2: "Suakin"
+ 
+ ZBD: "Zabid"
+ ZBD_ADJ: "Zabidi"
+ ZBD_ADJ2: "Zabidi"
+ 
+ SOC: "Socotra"
+ SOC_ADJ: "Socotran"
+ SOC_ADJ2: "Socotran"
+ 
+ al_habash_decision_title: "al habash placeholder"
+ al_habash_decision_desc: "al habash desc placeholder"
+ 
+ beta_isrl_decision_title: "beta israel placeholder"
+ beta_isrl_decision_desc: "beta israel desc placeholder"

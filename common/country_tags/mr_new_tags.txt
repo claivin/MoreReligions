@@ -268,7 +268,7 @@ TRG = "countries/Tuareg.txt"
 
 #Greece
 THR = "countries/Thracia.txt"
-ART = "countries/Arta.txt"
+ATR = "countries/Arta.txt"
 TSS = "countries/Thessalonica.txt"
 THS = "countries/Thessaly.txt"
 CNT = "countries/Corinth.txt"

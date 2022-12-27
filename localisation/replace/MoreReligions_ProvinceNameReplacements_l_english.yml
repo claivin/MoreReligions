@@ -15,9 +15,9 @@
  MTH_ADJ: "Dubliner"
  MTH_ADJ2: "Dubliner"
  
- HLS: "Slesvig"
- HLS_ADJ: "Slesviger"
- HLS_ADJ2: "Slesviger"
+ HLS: "Holstein"
+ HLS_ADJ: "Holsteiner"
+ HLS_ADJ2: "Holsteiner"
  
  MCM: "Cill Airne"
  MCM_ADJ: "Cill Airne"
@@ -67,9 +67,9 @@
  CRI_ADJ: "Don"
  CRI_ADJ2: "Don"
  
- CRI: "Suzdal"
- CRI_ADJ: "Suzdal"
- CRI_ADJ2: "Suzdal"
+ NZH: "Suzdal"
+ NZH_ADJ: "Suzdal"
+ NZH_ADJ2: "Suzdal"
  
  SOS: "Masmuda"
  SOS_ADJ: "Masmuda"
@@ -128,8 +128,8 @@
  PROV1934: "Matera"
  PROV_ADJ1934: "Matera"
  
- PROV1105: "Paamiut"
- PROV_ADJ1105: "Paamiut"
+ PROV1104: "Paamiut"
+ PROV_ADJ1104: "Paamiut"
  
  PROV1105: "Qaqortoq"
  PROV_ADJ1105: "Qaqortoq"
@@ -139,9 +139,6 @@
  
  PROV1280: "Awaji"
  PROV_ADJ1280: "Awaji"
- 
- PROV5102: "Frankfurt an der Oder"
- PROV_ADJ5102: "Frankfurt"
   
  PROV12: "Copenhagen"
  PROV_ADJ12: "Copenhagen"
@@ -353,3 +350,23 @@
  PROV4156: "West Caucasus"
  PROV_ADJ4156: "West Caucasus"
  
+ PROV1794: "Eksjö"
+ PROV_ADJ1794: "Eksjö"
+ 
+ EJZ: "Nanai"
+ EJZ_ADJ: "Nanai"
+ NHX: "Hoifu"
+ NHX_ADJ: "Hoifu"
+ 
+ LEB: "Labenon"
+ LEB_ADJ: "Labenese"
+ LEB_ADJ2: "Lebenese"
+ 
+ MON: "Zeta"
+ MON_ADJ: "Zetan"
+ MON_ADJ2: "Zetan"
+ 
+ APU: "Apulia"
+ 
+ PEG: "Hanthawaddy"
+ PEG_ADJ: "Hanthawaddian"

@@ -1,0 +1,13 @@
+﻿l_english:
+
+#Hungary
+ HUN_diplo_core: "Hungarian Diplomatic Core"
+ AAB_war_modifier: "Wrath of House Aba"
+ KNN_war_modifier: "Riders of House Kan"
+ MONOPOLY_INCOME_WINE_GRAIN_DESC: "from grain or wine production."
+ hun_wine_tt: "If we complete this mission while having a §YPlantation§! in §YPest§!, we will receive the following:"
+ buda_secured: "Buda Secured"
+ buda_development: "Growth of Buda City Center"
+ buda_development_1: "Grain and Wine Capital"
+ buda_capital_modifier: "The City of Budapest"
+ buda_capital_TT: "\nUpon completing this mission, all §YGreat Powers§! that §Ydo not§! have a province with more development than §YPest§! will recieve §R-30§! §YPrestige§!"

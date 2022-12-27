@@ -36,7 +36,7 @@ categories =  {
 			1356 1357 1401 1408 1409 1410
 			1348 1347 1345
 			1402 4357 1397 4358
-			1358 1353 1352 1351 1350 1354
+			1353 1352 1351 1350 1354
 		}
 	}	
 
@@ -106,8 +106,6 @@ categories =  {
 			
 			 2312 257 2033 148
 			64 2955 2957 267 2979 2980 2981
-			257
-			262
 			#Sorted from here:
 			
 			4384 4388 4390 4392 183#France
@@ -155,7 +153,7 @@ categories =  {
 		nation_designer_cost_multiplier = 0.9
 		
 		terrain_override = { 
-			2 4 8 9 11 18 29 30 31 315 4123 4124 # Sweden
+			2 4 8 9 11 18 29 30 31 315 4123 4124 1794# Sweden
 			309 1955 #Russia
 			2611 996 997 998 2575 #n am
 			
@@ -663,7 +661,7 @@ categories =  {
 			#channel islands
 			4946
 			5188 5189 5190 5210#jolof (mr_wafrica)
-			5275 5272 5273 5273#mr_meditereanean
+			5275 5272 5273 5274#mr_meditereanean
 			5356 5368#mr_arabia
 		}
 	}	

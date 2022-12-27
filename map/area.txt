@@ -610,8 +610,8 @@ skaneland_area = { #4 +Laholm full
 	6  26 1982 4165 5111
 }
 
-gotaland_area = { #3 Östra Götaland +Jonkoping
-	2 3 4166 5112
+gotaland_area = { #3 Östra Götaland +Jonkoping +Eksjo
+	2 3 4166 5112 1794
 }
 
 vastra_gotaland_area = { #Västra Götaland #4 +Skovde full
@@ -3803,140 +3803,140 @@ transvaal_area = { #4
 #Deprecated:
 #############################
 
-great_moluccas_area = {
+# great_moluccas_area = {
 
-}
+# }
 
-khorasan_area = {
-}
+# khorasan_area = {
+# }
 
-libyan_desert_area = {
-	 
-}
-
-gharbia_area = {
-}
-
-sharqiya_area = {
-}
-
-central_egypt_area = {
-}
-
-upper_egypt_area = {
-}
-
-eastern_mediterrenean_islands_area = {
-}
-
-western_aegean_area = {
-}
-
-odishi_area = {
-}
-
-#georgia_area = {}
-
-rakka_area = {
-}
-
-south_kurdistan_area = {
-}
-
-east_china_sea_islands_area = {
-
-}
-
-east_african_islands_area = {
-	 
-}
-
-arabian_sea_islands_area = {
-	 
-}
-
-# baltic_islands_area = {
+# libyan_desert_area = {
 	 
 # }
 
-east_altishahr_area = {
+# gharbia_area = {
+# }
 
-}
+# sharqiya_area = {
+# }
 
-amnok_area = {
+# central_egypt_area = {
+# }
 
-}
+# upper_egypt_area = {
+# }
 
-north_korea_area = {
+# eastern_mediterrenean_islands_area = {
+# }
 
-}
+# western_aegean_area = {
+# }
 
-hejaz_area = {
+# odishi_area = {
+# }
 
-}
+# #georgia_area = {}
 
-sarat_area = {
+# rakka_area = {
+# }
+
+# south_kurdistan_area = {
+# }
+
+# east_china_sea_islands_area = {
+
+# }
+
+# east_african_islands_area = {
+	 
+# }
+
+# arabian_sea_islands_area = {
+	 
+# }
+
+# # baltic_islands_area = {
+	 
+# # }
+
+# east_altishahr_area = {
+
+# }
+
+# amnok_area = {
+
+# }
+
+# north_korea_area = {
+
+# }
+
+# hejaz_area = {
+
+# }
+
+# sarat_area = {
 	
-}
+# }
 
-ad_dahna_area = {
-}
+# ad_dahna_area = {
+# }
 
-najd_area = {
+# najd_area = {
 
-}
+# }
 
-northern_england_area = {
-}
+# northern_england_area = {
+# }
 
-mercia_area = { 
-}
+# mercia_area = { 
+# }
 
-eastern_ireland_area = {
-}
+# eastern_ireland_area = {
+# }
 
-western_ireland_area = {
-}
+# western_ireland_area = {
+# }
 
 
-seine_area = {
-}
+# seine_area = {
+# }
 
-luxemburg_liege_area = {
-}
+# luxemburg_liege_area = {
+# }
 
-coromandel_area = {
-}
+# coromandel_area = {
+# }
 
-carnatic_area = {
+# carnatic_area = {
 
-}
+# }
 
-kerala_area = {
+# kerala_area = {
 
-}
-maharashtra_area = {
+# }
+# maharashtra_area = {
 
-}
-gujarat_area = { }
+# }
+# gujarat_area = { }
 
-central_doab_area = {
-}
+# central_doab_area = {
+# }
 
-#nepalese_area = { }
+# #nepalese_area = { }
 
-pomerelia_area = { }
+# pomerelia_area = { }
 
-sonora_y_sinaloa_area  = { }
+# sonora_y_sinaloa_area  = { }
 
-magadan_area = { }
+# magadan_area = { }
 
-netherlands_area = { }
+# netherlands_area = { }
 
-indonesian_islands_area = {  }
+# indonesian_islands_area = {  }
 
-iceland_area = { }
+# iceland_area = { }
 
-ceram_area = { }
+# ceram_area = { }
 
-south_laos_area = { }
+# south_laos_area = { }

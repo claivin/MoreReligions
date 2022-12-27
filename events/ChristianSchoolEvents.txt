@@ -390,7 +390,7 @@ country_event = {
 		custom_tooltip = mr_only_one_other_chance_to_change
 	}
 	option = { #uppsala
-		name = christian_school_events.20.t
+		name = christian_school_events.20.v
 		trigger = {
 			religion = catholic
 			tag = SWE
