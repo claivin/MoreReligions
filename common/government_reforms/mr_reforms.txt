@@ -424,11 +424,19 @@ mr_horde_hungary_reform = {
 		has_country_flag = HUN_thunder_dome_winner
 	}
 	
-	raze_province = yes 
+	nomad = yes 
+	raze_province = yes
 	
 	modifiers = {
-		cavalry_power = 0.15
-		movement_speed = 0.1
+		cavalry_power = 0.10
+		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.2
+		loot_amount = 0.50
+		global_institution_spread = -0.15
+		reinforce_cost_modifier = -0.5
+		cav_to_inf_ratio = 0.25
+		movement_speed = 0.2
+		years_of_nationalism = -5
 	}
 }
 mr_hungarian_theocracy = {

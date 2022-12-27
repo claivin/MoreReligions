@@ -196,6 +196,135 @@ ksz_missions_fourth = {
 			}
 		}
 	}
+	
+	aab_buda_first = {
+		icon = mission_market_place_with_asian_traders
+		position = 2
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 153
+		}
+		trigger = {
+			153 = { 
+				owned_by = ROOT
+				NOT = {
+					devastation = 1
+				}
+			}
+			is_at_war = no
+		}
+		
+		effect = {
+			153 = {
+				add_province_modifier = {
+					name = buda_secured
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						capital_scope = {
+							province_id = 153
+						}
+					}
+				}
+				set_capital = 153
+			}
+			else = {
+				add_adm_power = 50
+			}
+		}
+	}
+	
+	aab_buda_second = {
+		icon = mission_market_place_with_asian_traders
+		position = 3
+		required_missions = { aab_buda_first }
+		provinces_to_highlight = {
+			province_id = 153
+		}
+		
+		trigger = {
+			153 = {
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
+				development = 20
+				religion = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+				153 = {
+					add_province_modifier = {
+						name = buda_development
+						duration = -1
+				}
+			}
+		}
+	}
+
+	aab_buda_third = {
+		icon = mission_market_place_with_asian_traders
+		position = 5
+		required_missions = { aab_buda_second }
+		provinces_to_highlight = {
+			province_id = 153
+		}
+		
+		trigger = {
+			153 = {
+				has_production_building_trigger = yes
+				province_has_center_of_trade_of_level = 2
+				base_tax = 10
+				base_production = 10
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			153 = {
+				change_trade_goods = wine 
+				add_province_modifier = {
+					name = buda_development_1
+					duration = -1
+				}
+			}
+			custom_tooltip = hun_wine_tt
+			tooltip = {
+				add_years_of_owned_provinces_production_income = {
+					years = 10
+						trigger = {
+							OR = {
+								trade_goods = grain
+								trade_goods = wine
+							}
+						}
+						custom_tooltip = MONOPOLY_INCOME_WINE_GRAIN_DESC
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit  = {
+						153 = {
+							has_manufactory_no_custom_tooltip_trigger = yes
+						}
+					}
+					add_years_of_owned_provinces_production_income = {
+						years = 10
+							trigger = {
+								OR = {
+									trade_goods = grain
+									trade_goods = wine
+								}
+							}
+							custom_tooltip = MONOPOLY_INCOME_WINE_GRAIN_DESC
+					}
+				}
+			}
+		}
+	}
 }
 ksz_missions_fifth = {
 	slot = 5
@@ -260,6 +389,85 @@ ksz_missions_fifth = {
 						friend = KSZ
 						should_take_capital = yes
 					}
+				}
+			}
+		}
+	}
+	aab_buda_fourth = {
+		icon = mission_market_place_with_asian_traders
+		position = 4
+		required_missions = { aab_buda_second }
+		provinces_to_highlight = {
+			province_id = 153
+		}
+		
+		trigger = {
+			153 = {
+				OR = {
+					has_courthouse_building_trigger = yes
+					has_building = university
+				}
+				has_great_project = {
+					type = buda_castle
+					tier = 1
+				}
+				current_institution = 100
+			}
+		}
+		
+		effect = {
+			add_adm_tech = 1
+			add_ruler_personality = free_thinker_personality
+			153 = {
+				add_prosperity = 50
+			}
+		}
+	}
+	
+	aab_buda_fifth = {
+		icon = mission_market_place_with_asian_traders
+		position = 6
+		required_missions = { aab_buda_third aab_buda_fourth }
+		provinces_to_highlight = {
+			province_id = 153
+		}
+		trigger = {
+			153 = {
+				development = 35
+				has_great_project = {
+					type = buda_castle
+					tier = 2
+				}
+				NOT = {
+					any_province = {
+						higher_development_than = PREV
+					}
+				}
+			}				
+		}
+		
+		effect = {
+			153 = {
+				add_province_modifier = {
+					name = buda_capital_modifier
+					duration = -1
+				}
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			custom_tooltip = buda_capital_TT
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_great_power = yes 
+						NOT = {
+							any_province = {
+								higher_development_than = 153
+							}
+						}
+					}
+					add_prestige = -30
 				}
 			}
 		}

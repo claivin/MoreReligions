@@ -81,7 +81,7 @@ monarchy = {
 				mr_polish_hungary_reform
 				mr_serbian_hungary_reform
 				mr_hungary_hungary_reform
-				mr_horde_hungary_reform
+				
 			}
 		}
 		hereditary_vs_nobility = {
@@ -641,6 +641,7 @@ tribal = {
 				matrilineal_system
 				feudal_tribe
 				great_man
+				mr_horde_hungary_reform
 			}
 		}
 		tribal_cultural_values = {
