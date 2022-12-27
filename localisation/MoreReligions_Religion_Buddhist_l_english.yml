@@ -59,8 +59,16 @@
  mr_maitreya_rebels_demand: "Convert $COUNTRYNAME$"
  mr_maitreya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
   
- 
- 
+ mr_shenjiao: "Shenjiao"
+ mr_shenjiao_religion_desc: "The native religion of the Chinese empire, including the worship of spirits and local deities as well as ancestor worship."
+ mr_shenjiao_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_shenjiao_title: "$RELIGION$ Zealots"
+ mr_shenjiao_rebels_army: "$RELIGION$ Army"
+ mr_shenjiao_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_shenjiao_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+  
+ harmonized_shenjiao: "Harmonized Shenjiao"
+  
  ##Bodhisattvayana##
  mr_bodhisattvayana_school:0 "Bodhisattvayana"
  mr_bodhisattvayana_school_desc:0 "Bodhisattvayana is a tradition of Theravada Buddhism that has a focus on Bodhisattvas."

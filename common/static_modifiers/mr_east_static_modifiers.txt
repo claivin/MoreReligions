@@ -35,6 +35,10 @@ karma_too_low =
 	nobles_influence_modifier = 0.20
 }
 
+harmonized_shenjiao = {
+	global_tax_modifier = 0.10
+}
+
 shan_subject = {
 	#provides no modifers, maybe something sometime?
 }
