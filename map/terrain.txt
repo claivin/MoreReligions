@@ -137,6 +137,8 @@ categories =  {
 			1133 #mr_wafrica
 			2317 4318 5277 5278 5279 5280 5281#mr_egypt
 			5380 #mr_mashriq
+			5443 #mr_hungary
+			5441 #albania
 		}		
 	}
 	
@@ -247,6 +249,7 @@ categories =  {
 			5201 5203 5205 #mr_wafrica
 			5314 5315 #mr_caucaus
 			5334 5335
+			5440 #mr_hungary
 		}
 	}
 
@@ -400,6 +403,8 @@ categories =  {
 			5202 1117 #mr_wafrica
 			5357 5358 5360 5363 5365 #mr_arabia
 			5377 5391 5392#mr_mashriq
+			4322 5400 #mr_cafrica
+			5438 5439 #mr_hungary
 		}
 	}
 
@@ -480,6 +485,8 @@ categories =  {
 			5178 #mr_wafrica
 			5297#mr_russia
 			5381 5389#mr_anatolia
+			5442 #mr_hungary
+			5437 #mr_balkans
 		}
 	}
 
@@ -525,6 +532,7 @@ categories =  {
 			5034 5038 5039 5041 5042 #mr_indochina
 			5171 5175 5196 #mr_sea
 			5328 5329 5333 5334
+			4321 5399 5401 5407 5408 5409 #mr_cafrica
 		}
 	}	
 	
@@ -559,6 +567,7 @@ categories =  {
 			2702 #Philippines
 			4706 # 1.30 Greece and Bulgaria
 			2262 5183 5191 5193 5197 5347 #mr_wafrica
+			5433 5434 5436 #mr_cafrica
 		}
 	}
 	
@@ -660,9 +669,11 @@ categories =  {
 			
 			#channel islands
 			4946
-			5188 5189 5190 5210#jolof (mr_wafrica)
+			5188 5189 5190 5210#jolof
+			1785 2251#(mr_wafrica)
 			5275 5272 5273 5274#mr_meditereanean
 			5356 5368#mr_arabia
+			5444 5445 #mr_hungary
 		}
 	}	
 	
@@ -814,6 +825,8 @@ categories =  {
 			1092 4851 1094 4850 4846 4881
 			2384 #nong khai
 			5179 5180 5181 5182 5184 5185 5192 5194 5195 5198 5204 5348 5349 5345#mr_wafrica
+			#mr_cafrica
+			5402 5403 5404 5405 5406 5410 5411 5412 5413 5414 5415 5416 5417 5418 5419 5420 5421 5422 5423 5424 5425 5426 5427 5428 5429 5430 5431 5432 5435 
 		}		
 	}
 	

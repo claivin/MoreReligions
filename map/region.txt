@@ -457,11 +457,10 @@ guinea_region = {
 	areas = {
 		benin_area
 		guinea_coast_area
-		gulf_of_guinea_area
 		futa_jallon_area
 		west_africa_coast_area
 		jolof_area
-		sao_tome_area
+		#sao_tome_area -- deprecated
 		west_guniea_jungle_area
 		eastern_guniea_area
 	}
@@ -554,6 +553,25 @@ east_africa_region = {
 	monsoon = {
 		00.01.01
 		00.04.30
+	}
+}
+
+new_central_africa_region = {
+	areas = {
+		cameroon_area
+		adamaw_area
+		mambere_area
+		grebizi_area
+		mayo_kebbi_area
+		central_sahel_area
+		bahr_el_ghazal_area
+		greater_upper_nile_area
+		south_atlantic_islands_area
+		gulf_of_guinea_area
+	}
+	monsoon = {
+		00.06.01
+		00.09.30
 	}
 }
 
@@ -984,7 +1002,6 @@ la_plata_region = {
 		southern_pampas_area
 		buenos_aires_area
 		banda_oriental_area
-		south_atlantic_islands_area
 		southern_chile_area
 		central_chile_area
 		misiones_area

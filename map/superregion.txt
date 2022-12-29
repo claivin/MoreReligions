@@ -72,16 +72,23 @@ africa_superregion = {
 	niger_region
 	guinea_region
 	sahel_region
-	horn_of_africa_region
 	maghreb_region
 	sahara_region
 }
 
-southern_africa_superregion = {
-	east_africa_region
+central_africa_superregion = {
+	new_central_africa_region
 	kongo_region
-	south_africa_region
 	central_africa_region
+}
+
+east_africa_superregion = {
+	horn_of_africa_region
+	east_africa_region
+}
+
+southern_africa_superregion = {
+	south_africa_region
 }
 
 south_america_superregion = { # amazonia

@@ -370,3 +370,16 @@
  
  PEG: "Hanthawaddy"
  PEG_ADJ: "Hanthawaddian"
+ 
+ central_africa_region: "African Great Lakes"
+ 
+ PROV1795: "Principe"
+ PROV_ADJ1795: "Principe"
+ PROV1164: "Douala"
+ PROV_ADJ1164: "Douala"
+ PROV2251: "Kribi"
+ PROV_ADJ2251: "Kribi"
+ PROV4321: "Ikom"
+ PROV_ADJ4321: "Ikom"
+ PROV4322: "Bamenda"
+ PROV_ADJ4322: "Bamenda"

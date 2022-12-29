@@ -1067,86 +1067,86 @@ mecklenburg_area = { #5 full
 # South Eastern Europe 				   #
 ########################################
 
-macedonia_area = { #5 (Macedonia)
+macedonia_area = { #5 (Macedonia) full
 	148 1853 3001 4702 4780
 }
 
-morea_area = { #4 Central Greece & Crete
+morea_area = { #4 Central Greece & Crete full
 	145 146 163 1773 4701
 }
 
-northern_greece_area = { #3 #Northern Greece
+northern_greece_area = { #3 #Northern Greece full
 	142 144 147 4699 4698
 }
 
-thrace_area = { #5
-	149 151 1764 4779 4705 5337
+thrace_area = { #5 full
+	149 151 4779 4705 5337
 }
 
-bulgaria_area = { #5
-	150 1765 2746 2750 4703 5338
+bulgaria_area = { #5 full
+	150 1765 2750 4703 5338
 }
 
-silistria_area = {
-	4704 4706 159
+silistria_area = { #+burgas/Varna full
+	4704 4706 159 1764 5437
 }
 
-wallachia_area = { #5
+wallachia_area = { #5 full
 	160 161 2998 4531 4532
 }
 
-moldavia_area = { #5
+moldavia_area = { #5 full
 	268 1756 2405 4529 4530
 }
 
-transylvania_area = { #4 #Northern Transylvania
-	157 158 1952 4127
+transylvania_area = { #4 #Northern Transylvania + Beszterce full
+	157 158 1952 4127 5438
 }
 
-southern_transylvania_area = { #3
-	156 1951 4128
+southern_transylvania_area = { #3+ brazov/deva full
+	156 1951 4128 5439 5440
 }
 
-slovakia_area = { #5
+slovakia_area = { #5 full
 	154 162 1318 1772 4236
 }
 
-serbia_area = { #5
-	141 3000 4176 4239 4757
+serbia_area = { #5 full
+	141 4176 4239 4757 2746
 }
 
-rascia_area = { #4
-	138 1766 1827 4754
+rascia_area = { #4 +nis full
+	138 1766 1827 4754 3000
 }
 
-albania_area = { #4
-	143 4174 4175 4750
+albania_area = { #4 +tirana full
+	143 4174 4175 4750 5441
 }
 
-bosnia_area = { #5
+bosnia_area = { #5 full
 	139 140 1831 3002 4755
 }
 
-croatia_area = { #4
+croatia_area = { #4 +Ogulin full
 	color = { 18 126 16 }
-	131 1826 1828 4752
+	131 1826 1828 4752 5442
 }
 
-slavonia_area = { #4
-	152 4756 1767 4173
+slavonia_area = { #4 +novi sad full
+	152 4756 1767 4173 5443
 }
 
-east_adriatic_coast_area = { #3
-	136 137 4753
+east_adriatic_coast_area = { #3 +neum makarska full
+	136 137 4753 5444 5445
 }
 
-alfold_area = { #4
-	155 1953 1954 4125
+alfold_area = { #4 +bacs full
+	155 1953 1954 4125 4126
 }
 
-transdanubia_area = { #5
+transdanubia_area = { #5 -bacs +buda full
 	color = { 171 92 22 }
-	135 153 1864 4126 4240
+	135 153 1864 4240 5446
 }
 
 ########################################
@@ -1900,17 +1900,17 @@ atacora_oueme_area = { #5 full
     1140 1143 2291 2292 2295
 }
 
-gulf_of_guinea_area = { #4
-    1151 1163 1164 1165
+gulf_of_guinea_area = { #4 +kribi full
+    1151 1163 1164 1165 2251
 }
 
 benin_area = { #4 +nun full
 	1147 2289 2290 2294 5187
 }
 
-sao_tome_area = { #2
-	1097 1306
-}
+# sao_tome_area = { #2 + 
+	
+# }
 
 west_africa_coast_area = { #5 -Denrikya full
     1126 1139 1141 2258 5209
@@ -1920,8 +1920,8 @@ guinea_coast_area = { #4 +Conarky full
     1118 1119 2241 2242 5210
 }
 
-south_atlantic_islands_area = { #2
-	1095 2025
+south_atlantic_islands_area = { #2 + sao tome + principe + sthelena full
+	2025 1097 1098 1306 1795
 }
 
 matamba_area = { #3
@@ -1936,8 +1936,8 @@ kongo_area = { #5
 	798 1169 1170 1901 2949
 }
 
-angola_namibia_area = { #5
-	1098 1167 1171 1172 1174 
+angola_namibia_area = { #5 -st helena
+	1167 1171 1172 1174 
 }
 
 cape_of_good_hope_area = { #5
@@ -1972,7 +1972,7 @@ central_sahara_area = { #NEW AREA +takkeda, tassili najjer, tamanrasset, abaless
 	5230 5231 5339 5233 5340 
 }
 
-ajjer_area = {
+ajjer_area = { #full
 	2474 5341 5343 5342 5232 
 }	
 
@@ -1983,6 +1983,43 @@ western_desert_area = { #NEW AREA +tazirbu, jalu, matan as-sarra, waw an namu, k
 ennedi_plateau_area = { #1 NEW AREA medwa +fada,faya-largeau,al atrun, salal full
 	2801 5242 5243 5244 5245
 }
+
+########################################
+# Central Africa		               #
+########################################
+
+cameroon_area = { #NEW AREA - full
+	4321 4322 5399 5400 5401
+}
+
+adamaw_area = { #NEW AREA - full
+	5402 5403 5404 5405 5406
+}
+
+mambere_area = { #NEW AREA - full
+	5407 5408 5409 5410 5411
+}
+
+grebizi_area = { #NEW AREA - full
+	5412 5413 5414 5415 5416
+}
+
+mayo_kebbi_area = { #NEW AREA - full
+	5417 5418 5419 5420 5421
+}
+
+central_sahel_area = { #NEW AREA - full
+	5422 5423 5424 5425 5426
+}
+
+bahr_el_ghazal_area = { #NEW AREA - full
+	5427 5428 5429 5430 5431
+}
+
+greater_upper_nile_area = { #NEW AREA - full
+	5432 5433 5434 5435 5436
+}
+
 ########################################
 # Greater Persia		               #
 ########################################
