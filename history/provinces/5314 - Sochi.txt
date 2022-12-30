@@ -2,9 +2,9 @@
 
 owner = ABK
 controller = ABK
-culture = georgian
+culture = circassian
 religion = mr_caucaspagan
-capital = "Sochi"
+capital = "Gagra"
 trade_goods = wine
 hre = no
 base_tax = 2 
