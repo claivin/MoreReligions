@@ -982,6 +982,22 @@ eastern = {
 		harmonized_modifier = harmonized_shenjiao
 	}
 	
+	mr_taoism = {
+		color = { 157 173 193 }
+		icon = 9
+		country = {
+			advisor_cost = -0.10
+			yearly_corruption = -0.03
+		}
+		country_as_secondary = {
+			advisor_cost = -0.10
+			yearly_corruption = -0.03
+		}
+		heretic = { MAZUISM }
+		ancestors = yes
+		harmonized_modifier = harmonized_shenjiao
+	}
+	
 	crusade_name = CRUSADE
 	
 }

@@ -68,6 +68,8 @@
  mr_shenjiao_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
   
  harmonized_shenjiao: "Harmonized Shenjiao"
+ 
+ mr_taoism: "Taoism"
   
  ##Bodhisattvayana##
  mr_bodhisattvayana_school:0 "Bodhisattvayana"

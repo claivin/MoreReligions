@@ -1,0 +1,66 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+
+
+yawm_saub = {
+	sprite = 6
+	allow = {religion = mr_miao}
+		global_unrest = -1
+		culture_conversion_cost = -0.15
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+xob = {
+	sprite = 6
+	allow = {religion = mr_miao}
+		shock_damage = 0.10
+		land_attrition = -0.10 
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+hnub_hli = {
+	sprite = 6
+	allow = {religion = mr_miao}
+		tolerance_own = 2
+		diplomatic_reputation = 1
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+txhiaj_meej = {
+	sprite = 6
+	allow = {religion = mr_miao}
+		global_tax_modifier = 0.1
+		inflation_reduction = 0.1 
+	ai_will_do = {
+		factor = 1
+	}
+}
+xwm_kab = {
+	sprite = 6
+	allow = {religion = mr_miao}
+		movement_speed = 0.05
+		gold_depletion_chance_modifier = -0.33
+	ai_will_do = {
+		factor = 1
+	}
+}
+qhov_cub = {
+	sprite = 6
+	allow = {religion = mr_miao}
+		development_cost = -0.10
+		production_efficiency = 0.05 
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+
+
+
