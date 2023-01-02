@@ -197,7 +197,7 @@ ksz_missions_fourth = {
 		}
 	}
 	
-	aab_buda_first = {
+	ksz_buda_first = {
 		icon = mission_market_place_with_asian_traders
 		position = 2
 		required_missions = { }
@@ -237,10 +237,10 @@ ksz_missions_fourth = {
 		}
 	}
 	
-	aab_buda_second = {
+	ksz_buda_second = {
 		icon = mission_market_place_with_asian_traders
 		position = 3
-		required_missions = { aab_buda_first }
+		required_missions = { ksz_buda_first }
 		provinces_to_highlight = {
 			province_id = 153
 		}
@@ -265,10 +265,10 @@ ksz_missions_fourth = {
 		}
 	}
 
-	aab_buda_third = {
+	ksz_buda_third = {
 		icon = mission_market_place_with_asian_traders
 		position = 5
-		required_missions = { aab_buda_second }
+		required_missions = { ksz_buda_second }
 		provinces_to_highlight = {
 			province_id = 153
 		}
@@ -393,10 +393,10 @@ ksz_missions_fifth = {
 			}
 		}
 	}
-	aab_buda_fourth = {
+	ksz_buda_fourth = {
 		icon = mission_market_place_with_asian_traders
 		position = 4
-		required_missions = { aab_buda_second }
+		required_missions = { ksz_buda_second }
 		provinces_to_highlight = {
 			province_id = 153
 		}
@@ -424,10 +424,10 @@ ksz_missions_fifth = {
 		}
 	}
 	
-	aab_buda_fifth = {
+	ksz_buda_fifth = {
 		icon = mission_market_place_with_asian_traders
 		position = 6
-		required_missions = { aab_buda_third aab_buda_fourth }
+		required_missions = { ksz_buda_third ksz_buda_fourth }
 		provinces_to_highlight = {
 			province_id = 153
 		}

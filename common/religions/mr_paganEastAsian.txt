@@ -80,6 +80,18 @@ east_asian_pagan_group = {
 			local_missionary_strength = 0.02
 		}
 		
+		uses_anglican_power = yes
+		
+		 aspects = {
+			new_year_aspect
+			sanyuesan_aspect
+			cattle_soul_aspect
+			frog_festival_aspect
+			ghost_festival_aspect
+		}
+		
+		aspects_name = MO_ASPECTS
+		
 		heretic = { SNAKE_CLAN }
 	}
 	mr_bimo = {

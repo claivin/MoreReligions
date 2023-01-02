@@ -4,7 +4,7 @@ owner = GHC
 controller = GHC
 add_core = GHC
 culture = jin
-religion = confucianism
+religion = mr_shenjiao
 capital = "Datong"
 trade_goods = iron
 hre = no
@@ -17,25 +17,3 @@ fort_15th = yes #the Nine Garrisons
 discovered_by = chinese
 discovered_by = nomad_group
 
-1608.1.1 = { discovered_by = SPA }
-1628.1.1 = { unrest = 6 } # Li Zicheng rebellion
-1644.1.1 = {
-	unrest = 0
-	owner = CSH
-	controller = CSH
-	add_core = CSH
-} # Li Zicheng's Shun empire
-1644.10.3 = {
-	owner = QNG
-	controller = QNG
-	add_core = QNG
-}
-1649.5.1 = {
-	owner = GHC
-	controller = GHC
-}
-1650.11.11 = {
-	owner = QNG
-	controller = QNG
-}
-1662.1.1 = { remove_core = GHC }

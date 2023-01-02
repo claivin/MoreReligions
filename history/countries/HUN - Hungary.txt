@@ -6,6 +6,7 @@ add_accepted_culture = transylvanian
 religion = catholic
 technology_group = eastern
 capital = 153 # Buda
+add_manpower = -5
 
 change_estate_land_share = {
 	estate = estate_church

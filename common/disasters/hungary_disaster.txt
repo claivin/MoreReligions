@@ -1,0 +1,117 @@
+hungary_disaster = {
+
+	potential = {
+		tag = HUN
+		NOT = { has_country_flag = HUN_thunder_dome_participant }
+		NOT = { has_country_flag = HUN_thunder_dome_winner }
+		is_free_or_tributary_trigger = yes
+		normal_or_historical_nations = yes
+	}
+	
+	can_start = {
+		has_any_disaster = no
+	}
+	
+	can_stop = { 
+		has_any_disaster = yes
+	}
+	
+	progress = {
+		modifier = {
+			factor = 2
+			tag = HUN
+		}
+	}
+	
+	on_progress_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 1
+				}
+			}
+			country_event = {
+				id = HUN_flavor.2
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 10
+				}
+			}
+			country_event = {
+				id = HUN_flavor.7
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 20
+				}
+			}
+			country_event = {
+				id = HUN_flavor.8
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 35
+				}
+			}
+			country_event = {
+				id = HUN_flavor.9
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 50
+				}
+			}
+			country_event = {
+				id = HUN_flavor.10
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 75
+				}
+			}
+			country_event = {
+				id = HUN_flavor.11
+			}
+		}
+	}
+	
+	on_monthly = {
+		random_events = { 	
+			1000 = 0
+			100 = HUN_flavor.12
+			100 = HUN_flavor.13
+        }
+	}
+	
+	can_end = {
+		has_country_flag = HUN_thunder_dome_winner
+	}
+	
+
+	modifier = {
+		all_power_cost = 0.10
+		legitimacy = -3
+		global_attacker_dice_roll_bonus = -2
+		global_defender_dice_roll_bonus = -2
+	}
+	
+	on_start = HUN_flavor.1 # Initial Disaster
+	on_end = HUN_flavor.X # End of the Civil War
+}

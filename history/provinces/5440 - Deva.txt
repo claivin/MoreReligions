@@ -1,17 +1,16 @@
-#156 - Temes
+#5440 - Deva
 
 owner = HUN
-controller = HUN 
-culture = transylvanian
+controller = HUN
+culture = hungarian
 religion = catholic
-capital = "Temesvár"
-trade_goods = wool
+capital = "Gyula"
+trade_goods = wine
 hre = no
-base_tax = 3 
-base_production = 3
+base_tax = 1
+base_production = 1
 base_manpower = 2
 is_city = yes
-#fort_15th = yes #Timisoara Fortress wasn't built
 add_core = HUN
 discovered_by = KAZ
 discovered_by = CRI

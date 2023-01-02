@@ -19,12 +19,16 @@ country_event = {
 			135 = { add_core = KSZ }
 			1864 = { add_core = KSZ }
 			4126 = { add_core = KSZ }
+			5446 = { add_core = KSZ }
+			5443 = { add_core = KSZ }
 			4125 = { add_core = AAB }
 			1953 = { add_core = AAB }
 			1952 = { add_core = KNN }
 			157 = { add_core = KNN }
 			4127 = { add_core = KNN }
 			158 = { add_core = KNN }
+			5438 = { add_core = KNN }
+			5439 = { add_core = JAA }
 			1951 = { add_core = JAA }
 			4128 = { add_core = JAA }
 			4240 = { add_core = KSZ }
@@ -40,6 +44,9 @@ country_event = {
 			}
 			4128 = {
 				cede_province = JAA
+			}
+			5439 = { 
+				cede_province = JAA 
 			}
 		}
 		hidden_effect = {
@@ -217,7 +224,6 @@ country_event = {
 					add_core = JAA
 				}
 				set_country_flag = HUN_thunder_dome_participant
-				add_government_reform = mr_hungary_faction
 				add_country_modifier = {
 					name = hungary_war_good
 					duration = 3650
@@ -226,6 +232,15 @@ country_event = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = severin_boost
+					}
+					add_country_modifier = {
+						name = pap_keep_effect
+						duration = 3600
 					}
 				}
 			}
@@ -238,15 +253,35 @@ country_event = {
 				set_country_flag = HUN_thunder_dome_participant
 				if = {
 					limit = {
-						NOT = {
-							has_country_flag = avoided_disaster_MAG
-						}
+						has_country_flag = mil_prep_HUN_flag
 					}
 					add_country_modifier = {
-						name = hungary_war_bad
-						duration = 3650
+						name = martialling_troops_effect
+						duration = -1
 					}
+					clr_country_flag = mil_prep_HUN_flag
 				}
+				if = {
+					limit = {
+						has_country_flag = dip_reject_HUN_flag
+					}
+					add_country_modifier = {
+						name = information_leak_HUN
+						duration = -1
+					}
+					clr_country_flag = dip_reject_HUN_flag
+				}
+				if = {
+					limit = {
+						has_country_flag = advisor_keep_flag
+						army_organiser = 1
+					}
+					add_country_modifier = {
+						name = advisor_keep_effect
+						duration = -1
+					}
+					clr_country_flag = advisor_keep_flag
+				}	
 			}
 			HUN = {
 				declare_war_with_cb = {
@@ -553,6 +588,8 @@ country_event = {
 	
 	fire_only_once = yes
 	
+	is_triggered_only = yes
+	
 	trigger = {
 		tag = HUN
 	}
@@ -568,15 +605,9 @@ country_event = {
 		
 		custom_tooltip = hun_thunder_TT
 		hidden_effect = {
-			country_event = {
-				id = HUN_flavor.1
-				days = 1825
-				random = 100
-			}
-		}
-		every_country = {
-			limit = {
-				NOT = { tag = ROOT }
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
 					OR = {
 						is_neighbor_of = ROOT
 						capital_scope = {
@@ -584,7 +615,7 @@ country_event = {
 						}
 						capital_scope = {
 							region = balkan_region
-						}
+							}
 						tag = BOH
 						tag = SER
 						tag = POL
@@ -594,6 +625,7 @@ country_event = {
 				}
 				country_event = { id = HUN_flavor.3 }
 			}
+		}
 	}
 }
 country_event = {
@@ -671,6 +703,7 @@ country_event = {
 		name = hun_flavor.4.a
 		trigger = {
 			tag = BOH
+			NOT = { has_global_flag = dip_support_HUN_flag }
 		}
 		add_manpower = -5
 		add_treasury = -100
@@ -689,6 +722,7 @@ country_event = {
 		name = hun_flavor.4.b
 		trigger = {
 			tag = PAP
+			NOT = { has_global_flag = dip_support_HUN_flag }
 		}
 		add_manpower = -5
 		add_treasury = -100
@@ -707,6 +741,7 @@ country_event = {
 		name = hun_flavor.4.c
 		trigger = {
 			tag = BLH
+			NOT = { has_global_flag = dip_support_HUN_flag }
 		}
 		add_manpower = -5
 		add_treasury = -100
@@ -725,6 +760,7 @@ country_event = {
 		name = hun_flavor.4.e
 		trigger = {
 			tag = SER
+			NOT = { has_global_flag = dip_support_HUN_flag }
 		}
 		add_manpower = -5
 		add_treasury = -100
@@ -743,6 +779,7 @@ country_event = {
 		name = hun_flavor.4.f
 		trigger = {
 			tag = POL
+			NOT = { has_global_flag = dip_support_HUN_flag }
 		}
 		add_manpower = -5
 		add_treasury = -100
@@ -810,14 +847,14 @@ country_event = {
 				days = 1
 			}
 		}
-		custom_tooltip = BLH_call_in_TT
+		custom_tooltip = POL_call_in_TT
 		ai_chance = {
 			factor = 1
 		}
 	}
 	
 	option = {
-		name = HUN_flavor.5c
+		name = HUN_flavor.5e
 		trigger = {
 			tag = CSA
 		}
@@ -827,14 +864,14 @@ country_event = {
 				days = 1
 			}
 		}
-		custom_tooltip = BLH_call_in_TT
+		custom_tooltip = BOH_call_in_TT
 		ai_chance = {
 			factor = 1
 		}
 	}
 	
 	option = {
-		name = HUN_flavor.5c
+		name = HUN_flavor.5f
 		trigger = {
 			tag = KSZ
 		}
@@ -844,7 +881,7 @@ country_event = {
 				days = 1
 			}
 		}
-		custom_tooltip = BLH_call_in_TT
+		custom_tooltip = SER_call_in_TT
 		ai_chance = {
 			factor = 1
 		}
@@ -941,5 +978,282 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
+	}
+}
+country_event = {
+	id = HUN_flavor.7
+	title = HUN_flavor.7.t
+	desc = HUN_flavor..7.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.7.a
+		add_manpower = -5
+		custom_tooltip = regain_man_TT
+		set_country_flag = gave_mil_HUN_flag
+	}
+	
+	option = {
+		name = HUN_flavor.7.b
+		add_prestige = 10
+	}
+}
+
+country_event = {
+	id = HUN_flavor.8
+	title = HUN_flavor.8.t
+	desc = HUN_flavor..8.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.8.a
+		every_country = {
+			limit = {
+				alliance_with = HUN
+			}
+			break_alliance = HUN
+		}
+		custom_tooltip = dip_support_HUN_TT
+		hidden_effect = {
+			set_global_flag = dip_support_HUN_flag
+			set_country_flag = dip_sipport_HUN_2_flag
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.8.b
+		add_prestige = 10
+		custom_tooltip = bad_dip_support_HUN_TT
+		tooltip = {
+			add_country_modifier = {
+				name = information_leak_HUN
+				duration = 1825
+			}
+		}
+		hidden_effect = {
+			set_country_flag = dip_reject_HUN_flag
+		}
+	}
+}
+
+country_event = {
+	id = HUN_flavor.9
+	title = HUN_flavor.9.t
+	desc = HUN_flavor.9.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.9.a
+		add_country_modifier = {
+			name = martialling_troops_cost
+			duration = 5475
+		}
+		custom_tooltip = mil_support1_HUN_TT
+		tooltip = {
+			add_country_modifier = {
+				name = martialling_troops_effect
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			set_country_flag = mil_prep_HUN_flag
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.9.b
+		add_treasury = 250
+	}
+}
+
+country_event = {
+	id = HUN_flavor.10
+	title = HUN_flavor.10.t
+	desc = HUN_flavor.10.d
+	picture = CHURCH_ESTATE_1_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	
+	
+	option = {
+		name = HUN_flavor.10.a
+		add_country_modifier = {
+			name = papal_auth_cost
+			duration = 5475
+		}
+		custom_tooltip = mil_support1_HUN_TT
+		tooltip = {
+			add_country_modifier = {
+				name = papal_auth_effect
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			set_country_flag = papal_auth_effect_flag
+		}
+	}
+	option = {
+		name = HUN_flavor.10.b
+		add_country_modifier = {
+			name = pap_removal_cost
+			duration = 5475
+		}
+		PAP = {
+			add_opinion = {
+				who = HUN
+				modifier = mr_hungary_removed_pap
+			}
+		}
+		custom_tooltip = mil_support1_HUN_TT
+		tooltip = {
+			add_country_modifier = {
+				name = removed_papist_influence
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			set_country_flag = mil_prep1_HUN_flag
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.10.c
+		add_country_modifier = {
+			name = pap_keep_cost
+			duration = 5475
+		}
+		custom_tooltip = papal_keep_cost_TT
+		tooltip = {
+			JAA = {
+				add_country_modifier = {
+					name = pap_keep_effect
+					duration = 3600
+				}
+			}
+		}
+		hidden_effect = {
+			set_global_flag = severin_boost
+		}
+	}
+}
+country_event = {
+	id = HUN_flavor.11
+	title = HUN_flavor.11.t
+	desc = HUN_flavor.11.d
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.11.a
+		define_advisor = {
+			type = army_organiser
+			name = "Agoston Kovacs"
+			skill = 1
+			culture = ROOT
+			religion = ROOT
+		}
+		add_country_modifier = {
+			name = advisor_keep_cost
+			duration = 5475
+		}
+		custom_tooltip = advisor_keep_cost_TT
+		tooltip = {
+			add_country_modifier = {
+				name = advisor_keep_effect
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			set_country_flag = advisor_keep_flag
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.11.a
+		define_advisor = {
+			type = army_organiser
+			name = "Agoston Kovacs"
+			skill = 1
+			culture = ROOT
+			religion = ROOT
+		}
+		custom_tooltip = advisor_keep_cost_bad_TT
+		tooltip = {
+			add_country_modifier = {
+				name = advisor_keep_effect
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			set_country_flag = advisor_keep_bad_flag
+			set_country_flag = advisor_keep_flag
+		}
+	}
+}
+
+country_event = {
+	id = HUN_flavor.12
+	title = HUN_flavor.12.t
+	desc = HUN_flavor.12.d
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = advisor_keep_bad_flag
+	}
+	
+	option = {
+		name = HUN_flavor.12.a
+		if = {
+			limit = {
+				has_advisor = yes
+			}
+			remove_advisor = army_organiser
+		}
+		remove_country_modifier = advisor_keep_effect
+		hidden_effect = {
+			clr_country_flag = advisor_keep_bad_flag
+		}
+	}
+}
+
+country_event = {
+	id = HUN_flavor.13
+	title = HUN_flavor.13.t
+	desc = HUN_flavor.13.d
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = gave_mil_HUN_flag
+	}
+	
+	option = {
+		name = HUN_flavor.13.a
+		add_manpower = 10
 	}
 }

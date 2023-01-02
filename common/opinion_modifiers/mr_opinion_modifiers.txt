@@ -12,3 +12,8 @@ mr_opinion_switched_away_roman_rite_pope = {
 	opinion = -25
 	yearly_decay = 1
 }
+
+mr_hungary_removed_pap = {
+	opinion = -100
+	yearly_decay = 1
+}

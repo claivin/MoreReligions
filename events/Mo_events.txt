@@ -1,0 +1,111 @@
+namespace = mo_event
+
+country_event = {
+	id = mo_event.1
+	title = mo_event.1.t
+	desc = mo_event.1.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mo_event.1.a
+		add_country_modifier = {
+			name = new_year_celebration_1
+			duration = 5475
+		}
+	}
+	
+	option = {
+		name = mo_event.2.a
+		add_country_modifier = {
+			name = new_year_celebration_2
+			duration = 5475
+		}
+	}
+	
+	option = {
+		name = mo_event.3.a
+		add_country_modifier = {
+			name = new_year_celebration_3
+			duration = 5475
+		}
+	}
+}
+
+country_event = {
+	id = mo_event.2
+	title = mo_event.2.t
+	desc = mo_event.2.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mo_event.2.a
+		define_consort = {
+			adm = 3
+			dip = 4
+			mil = 1
+			country_of_origin = ROOT
+			religion = ROOT
+			culture = ROOT
+		}
+		add_queen_personality = righteous_personality 
+	}
+	
+	option = {
+		name = mo_event.2.b
+		trigger = {
+			has_heir = no
+		}
+		define_heir = {
+			dynasty = ROOT
+			age = 13
+			adm = 3
+			dip = 3
+			mil = 3
+			claim = 25
+			female = yes
+		}
+	}
+}
+country_event = {
+	id = mo_event.3
+	title = mo_event.3.t
+	desc = mo_event.3.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mo_event.3.a
+		add_country_modifier = {
+			name = ghost_deity_1
+			duration = 9125
+		}
+		add_stability = 1
+	}
+	
+	option = {
+		name = mo_event.3.b
+		random_list = {
+			30 = {
+				change_adm = 1
+			}
+			30 = {
+				change_dip = 1
+			}
+			30 = {
+				change_mil = 1
+			}
+		}
+		add_adm_power = 25
+		add_dip_power = 25
+		add_mil_power = 25
+		hidden_effect = {
+			add_country_modifier = {
+				name = ghost_deity_2
+				duration = 9125
+				hidden = yes
+			}
+		}
+	}
+}

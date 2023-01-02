@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_frog_aspect"
+		texturefile = "gfx/interface/church_aspects/frog_aspect.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_new_years_aspect"
+		texturefile = "gfx/interface/church_aspects/new_years_aspect.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ghost_festival_aspect"
+		texturefile = "gfx/interface/church_aspects/ghost_festival_aspect.dds"
+	}
+	spriteType = {
+		name = "GFX_cattle_soul_aspect"
+		texturefile = "gfx/interface/church_aspects/cattle_soul_aspect.dds"
+	}
+	spriteType = {
+		name = "GFX_sanyuesan_festival_aspect"
+		texturefile = "gfx/interface/church_aspects/sanyuesan_festival_aspect.dds"
+	}
+}	
+
+
+

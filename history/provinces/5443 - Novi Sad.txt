@@ -1,17 +1,16 @@
-#156 - Temes
+#4126 - Novi Sad 
 
 owner = HUN
 controller = HUN 
-culture = transylvanian
+culture = hungarian
 religion = catholic
-capital = "Temesvár"
-trade_goods = wool
+capital = "Novi Sad"
+trade_goods = livestock
 hre = no
-base_tax = 3 
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 2
+base_manpower = 1
 is_city = yes
-#fort_15th = yes #Timisoara Fortress wasn't built
 add_core = HUN
 discovered_by = KAZ
 discovered_by = CRI

@@ -1,0 +1,14 @@
+1430.1.1 = {
+	add_attacker = POL
+	add_attacker = BOH
+	add_attacker = SER
+	add_attacker = BLH
+	add_defender = HUN
+}
+1444.1.1 = {
+	rem_attacker = POL
+	rem_attacker = BOH
+	rem_attacker = SER
+	rem_attacker = BLH
+	rem_defender = HUN
+}

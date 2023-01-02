@@ -1,0 +1,155 @@
+new_year_aspect = {
+	sprite = "GFX_new_years_aspect"
+	cost = 100
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_modifier = new_year_celebration_1
+				has_country_modifier = new_year_celebration_2
+				has_country_modifier = new_year_celebration_3
+			}
+		}
+	}
+	effect = {
+		country_event = {
+			id = mo_event.1
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			ruler_age = 40
+		}
+		modifier = {
+			factor = 2
+			ruler_age = 60
+		}
+	}
+}
+sanyuesan_aspect = {
+	sprite = "GFX_sanyuesan_festival_aspect"
+	cost = 100
+	trigger = {
+		OR = {
+			has_consort = no
+			has_regency = no
+		}
+	}
+	effect = {
+		country_event = {
+			id = mo_event.2
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			ruler_age = 40
+		}
+		modifier = {
+			factor = 2
+			ruler_age = 60
+		}
+	}
+}
+cattle_soul_aspect = {
+	sprite = "GFX_cattle_soul_aspect"
+	cost = 100
+	trigger = {
+	}
+	effect = {
+		add_years_of_owned_provinces_production_income = {
+			years = 10
+				trigger = {
+					OR = {
+						trade_goods = livestock
+						trade_goods = grain
+					}
+				}
+			custom_tooltip = MONOPOLY_INCOME_LIVESTOCK_GRAIN_DESC
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			ruler_age = 40
+		}
+		modifier = {
+			factor = 2
+			ruler_age = 60
+		}
+	}
+}
+frog_festival_aspect = {
+	sprite = "GFX_frog_aspect"
+	cost = 100
+	trigger = {
+		custom_tooltip = WAIT_CATTLE_MO
+		NOT = {
+			has_country_modifier = WAIT_CATTLE_MO
+		}
+		any_owned_province = {
+			has_tax_building_trigger = yes
+		}
+	}
+	effect = {
+		custom_tooltip = FROG_MO_TT
+		hidden_effect = {
+			add_country_modifier = {
+				name = WAIT_CATTLE_MO
+				hidden = yes
+				duration = 2555
+			}
+			random_owned_province = {
+				limit = {
+					has_tax_building_trigger = yes
+					religion = mr_mo
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}			
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			ruler_age = 40
+		}
+		modifier = {
+			factor = 2
+			ruler_age = 60
+		}
+	}
+}
+ghost_festival_aspect = {
+	sprite = "GFX_ghost_festival_aspect"
+	cost = 100
+	trigger = {
+		NOT = {
+			OR = {
+				has_country_modifier = ghost_deity_1
+				has_country_modifier = ghost_deity_2
+			}
+		}	
+	}
+	effect = {
+		country_event = {
+			id = mo_event.3	
+		}
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			ruler_age = 40
+		}
+		modifier = {
+			factor = 2
+			ruler_age = 60
+		}
+	}
+}
