@@ -166,5 +166,9 @@
  HUN_thunder_dome_participant: "Hungarian Civil War Participant"
  HUN_rebel_tt: "Completing this mission will spawn the following in a province owned by a country with a §YSpy Network Size§! of §Y35§!:"
  HUN_fow_tt: "Every country with a §YSpy Network Size§! of §Y20§! will have their §YFog of War§! removed for §G2§! Years"
+ HUN_flavor.14.t: "The Fate of the Blue Horde"
+ HUN_flavor.14.d: "placeholder"
+ HUN_flavor.14.a: "We will maintain a close relationship with our allies."
+ HUN_flavor.14.b: "We will force these barbarians to heel!"
  
  

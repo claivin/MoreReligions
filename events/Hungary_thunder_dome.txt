@@ -1257,3 +1257,55 @@ country_event = {
 		add_manpower = 10
 	}
 }
+
+country_event = {
+	id = HUN_flavor.14
+	title = HUN_flavor.14.t
+	desc = HUN_flavor.14.d
+	picture = LAND_MILITARY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.14.a
+		trigger = {
+			BLH = { 
+				alliance_with = ROOT 
+			}
+		}
+		set_country_flag = support_BLH_flag
+		custom_tooltip = support_BLH_TT
+	}
+	
+	option = {
+		name = HUN_flavor.14.b
+		trigger = {
+			BLH = {
+				OR = {
+					is_rival = ROOT 
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = insulted
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = scornfully_insulted
+					}
+					exists = no 
+				}
+			}
+		}
+		if = {
+			limit = {
+				BLH = { 
+					alliance_with = ROOT 
+				}
+			}
+			break_alliance = BLH
+		}
+		remove_historical_friend = BLH
+		add_historical_rival = BLH
+		set_country_flag = attack_BLH_flag
+		custom_tooltip = attack_BLH_TT
+	}
+}

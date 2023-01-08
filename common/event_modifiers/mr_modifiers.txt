@@ -134,6 +134,37 @@ advisor_keep_effect = {
 	global_attacker_dice_roll_bonus = 1
 }
 
+razed_krakow_knn = {
+	raze_power_gain = 0.20
+	shock_damage = 0.10 
+}
+
+loss_of_prestige_POL = {
+	land_morale = -0.10
+	war_exhaustion = 0.02
+}
+settling_the_north = {
+	local_missionary_strength = 0.05
+	local_development_cost = -0.05
+}
+master_east_KNN = {
+	governing_capacity_modifier = 0.33
+	num_accepted_cultures = 3
+	global_unrest = -1
+}
+conversion_HUN = {
+	missionaries = 1
+	tolerance_own = 1
+}
+authority_KNN = {
+	yearly_patriarch_authority = 0.01
+	global_missionary_strength = 0.03
+}
+KNN_golden_era = {
+	war_exhaustion = -0.10 
+	tolerance_own = 3
+	global_tax_modifier = 0.10
+}
 #Ilkhanate
 tolerance_of_dervishes = {
 	min_local_autonomy = 50 

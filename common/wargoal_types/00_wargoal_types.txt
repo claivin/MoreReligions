@@ -2538,6 +2538,117 @@ push_back_colonizers = {
 
 	war_name = PUSH_BACK_COLONIZERS
 }
+
+take_capital_norwegian_throne = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+		
+		required_treaty_to_take_provinces = {
+			po_claim_norwegian_throne
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_claim_norwegian_throne
+		}
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = NORWEGIAN_THRONE_WAR_NAME
+}
+
+war_goal_usurp_electorate = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1.0	
+		
+		allowed_provinces = {
+			always = no
+		}
+		
+		allowed_provinces_are_eligible = yes
+		
+		peace_options = {
+			po_claim_elector_role
+			po_revoke_cores
+			po_release_vassals
+			po_release_annexed
+			po_return_cores
+			po_gold
+			po_annul_treaties
+			po_trade_power
+			po_steer_trade
+			po_humiliate
+		}
+		
+		deny_annex = yes
+		country_desc = ALL_COUNTRIES
+		prov_desc = NO_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = USURPT_ELECTORATE_WAR_NAME
+}
+
+take_province_balkans = {
+	type = take_province
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			region = balkan_region
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_return_cores
+			po_demand_provinces
+		}
+
+		prov_desc = ALL_BALKAN_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = BALKAN_UNIFICATION_WAR_NAME	
+}
+
 take_capital_vassalize_karma = {
 	type = take_capital
 	
@@ -2566,4 +2677,41 @@ take_capital_vassalize_karma = {
 	}
 
 	war_name = VASSAL_MISSION_WAR_NAME
+}
+
+take_province_rus = {
+	type = take_province
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 0.75
+		
+		allowed_provinces = {
+			OR = {
+				region = ruthenia_region
+				region = russia_region
+			}
+		}
+		allowed_provinces_are_eligible = yes
+
+		peace_options = {
+			po_return_cores
+			po_demand_provinces
+		}
+
+		prov_desc = ALL_RUS_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}
+
+	war_name = SUBJUGATION_RUS_WAR_NAME	
 }

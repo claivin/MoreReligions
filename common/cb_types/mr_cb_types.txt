@@ -46,3 +46,23 @@ cb_vassalize_mission_karma = {
 
 	war_goal = take_capital_vassalize_karma
 }
+
+cb_conquer_rus = {
+	valid_for_subject = no
+	
+	prerequisites = {
+		mission_completed = knn_raid_third
+		FROM = {
+			any_owned_province = {
+				OR = {
+					region = ruthenia_region
+					region = russia_region
+				}
+			}
+		}
+	}
+	
+	war_goal = take_province_rus
+}
+	
+	

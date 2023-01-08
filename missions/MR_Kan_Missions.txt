@@ -4,7 +4,10 @@ knn_missions_first = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		OR = {
+			was_tag = KNN
+			tag = KNN
+		}
 	}
 	
 	knn_diplo_second = {
@@ -43,13 +46,109 @@ knn_missions_first = {
 		}
 	}
 }
+knn_missions_branching_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			was_tag = KNN
+			tag = KNN
+		}
+		NOT = {
+			OR = {
+				has_country_flag = attack_BLH_flag
+				has_country_flag = support_BLH_flag
+			}
+		}
+	}
+	
+	knn_branching_1 = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = { knn_diplo_third }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				has_country_flag = branching_mission_flag
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	
+	knn_branching_2 = {
+		icon = mission_unknown_mission
+		position = 5
+		required_missions = { knn_branching_1 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				has_country_flag = branching_mission_flag
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	
+	knn_branching_3 = {
+		icon = mission_unknown_mission
+		position = 6
+		required_missions = { knn_branching_2 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				has_country_flag = branching_mission_flag
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	
+	knn_branching_4 = {
+		icon = mission_unknown_mission
+		position = 7
+		required_missions = { knn_branching_3 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				has_country_flag = branching_mission_flag
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	
+	knn_branching_5 = {
+		icon = mission_unknown_mission
+		position = 7
+		required_missions = { knn_branching_4 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				has_country_flag = branching_mission_flag
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+}	
 knn_missions_second = {
 	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		OR = {
+			was_tag = KNN
+			tag = KNN
+		}
 	}
 	knn_diplo_first = {
 		icon = invade_poland
@@ -110,7 +209,227 @@ knn_missions_second = {
 			}
 		}
 	}
+	knn_diplo_third = {
+		icon = invade_poland
+		position = 3
+		required_missions = { knn_diplo_first }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = HUN_thunder_dome_winner_TT
+				has_country_flag = HUN_thunder_dome_winner
+			}
+			BLH = { 
+				OR = { 
+					alliance_with = ROOT 
+					is_rival = ROOT 
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = insulted
+					}
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = scornfully_insulted
+					}
+					exists = no 
+				}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = HUN_flavor.14
+			}
+			custom_tooltip = UPDATE_MISSION_KNN
+		}
+	}	
+
+	knn_raid_first = {
+		icon = invade_poland
+		position = 4
+		required_missions = { knn_conquest_second }
+		provinces_to_highlight = {
+			OR = {
+				area = malopolska_area
+			}
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				262 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_province_modifier = province_razed
+				}
+				malopolska_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = razed_krakow_knn
+				duration = 5475
+			}
+			sandomierz_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			podlasie_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mazovia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_poland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4538 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 	
+	knn_raid_second = {
+		icon = invade_poland
+		position = 5
+		required_missions = { knn_raid_first }
+		provinces_to_highlight = {
+			OR = {
+				area = sandomierz_area
+				area = podlasie_area
+			}
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sandomierz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			podlasie_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			red_ruthenia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			volhynia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pripyat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = polish_defeat_TT
+				tooltip = {
+					POL = {
+						add_country_modifier = {
+							name = loss_of_prestige_POL
+							duration = 7300
+						}
+					}
+				}
+			custom_tooltip = conquest_complete_TT
+				tooltip = {
+					add_mil_power = 200
+					add_prestige = 10
+				}
+			hidden_effect = {
+				if = {
+					limit = {
+						exists = POL
+					}
+					POL = {
+						add_country_modifier = {
+							name = loss_of_prestige_POL
+							duration = 7300
+						}
+					}
+				}
+				else = {
+					add_mil_power = 200
+					add_prestige = 10
+				}
+			}
+		}
+	}
+	
+	knn_raid_third = {
+		icon = invade_poland
+		position = 7
+		required_missions = { knn_raid_second }
+		provinces_to_highlight = {
+			OR = {
+				area = red_ruthenia_area
+				area = pripyat_area
+				area = volhynia_area
+			}
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			red_ruthenia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pripyat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			volhynia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_mil_power = 50
+			add_country_modifier = {
+				name = conquest_hinterlands_KNN
+				duration = 5475
+			}
+			custom_tooltip = slavic_conquest_CB_TT
+		}
+		
+	}
 		
 }
 knn_missions_third = {
@@ -119,12 +438,27 @@ knn_missions_third = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		OR = {
+			was_tag = KNN
+			tag = KNN
+		}
 	}
 	knn_conquest_first = {
 		icon = gory_to_the_black_army
 		position = 1
 		required_missions = { }
+		provinces_to_highlight = {
+			region = carpathia_region
+			NOT = {
+				OR = {
+					area = wallachia_area
+					area = moldavia_area
+					area = transylvania_area 
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+			
 		trigger = {
 			calc_true_if = {
 				all_province = {
@@ -163,6 +497,18 @@ knn_missions_third = {
 		icon = mission_crusade_for_varna
 		position = 3
 		required_missions = { knn_conquest_first }
+		provinces_to_highlight = {
+			OR = {
+				area = slovakia_area
+				area = transylvania_area
+				area = southern_transylvania_area
+				area = transdanubia_area
+				area = alfold_area
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
 		trigger = {
 			slovakia_area = { type = all owned_by = ROOT }
 			transylvania_area = { type = all owned_by = ROOT }
@@ -183,6 +529,157 @@ knn_missions_third = {
 			
 		}
 	}
+	
+	knn_raid_fourth = {
+		icon = invade_poland
+		position = 5
+		required_missions = {
+			knn_raid_first
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = mazovia_area
+				area = central_poland_area
+			}
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			mazovia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			central_poland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		
+		effect = {
+			257 = {
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -4
+			}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 4
+			}
+			poland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	knn_raid_fifth = {
+		icon = invade_poland
+		position = 5
+		required_missions = {
+			knn_raid_fourth
+		}
+		provinces_to_highlight = {
+			OR = {
+				region = poland_region
+				area = east_prussia_area
+				area = west_prussia_area
+			}
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			poland_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			east_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			west_prussia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		
+		effect = {
+			custom_tooltip = settling_TT
+			tooltip = {
+				add_province_modifier = {
+					name = settling_the_north
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = { 
+					limit = {
+						OR = {
+							region = poland_region
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+					}
+					add_province_modifier = {
+						name = settling_the_north
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	knn_raid_sixth = {
+		icon = invade_poland
+		position = 8
+		required_missions = {
+			knn_raid_fifth
+			knn_raid_third
+		}
+		provinces_to_highlight = {
+			superregion = eastern_europe_superregion
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					superregion = eastern_europe_superregion
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				amount = 150
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = master_east_KNN
+				duration = -1
+			}
+			add_splendor = 200
+		}
+	}
 }
 knn_missions_fourth = {
 	slot = 4
@@ -190,7 +687,10 @@ knn_missions_fourth = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		OR = {
+			was_tag = KNN
+			tag = KNN
+		}
 	}
 	knn_spy_first = {
 		icon = mission_market_place_with_asian_traders
@@ -360,6 +860,75 @@ knn_missions_fourth = {
 		}
 	}
 	
+	knn_religion_first = {
+		icon = invade_poland
+		position = 5
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			region = carpathia_region
+			NOT = {
+				area = wallachia_area
+				area = moldavia_area
+			}
+			NOT = {
+				religion = orthodox
+			}
+		}
+		
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					region = carpathia_region
+					NOT = {
+						area = wallachia_area
+						area = moldavia_area
+					}
+					religion = orthodoxregion = carpathia_region
+			NOT = {
+				area = wallachia_area
+				area = moldavia_area
+			}
+			NOT = {
+				religion = orthodox
+			}
+				}
+				amount = 15
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = conversion_HUN
+				duration = 10950
+			}
+		}
+	}
+	
+	knn_religion_third = {
+		icon = invade_poland
+		position = 8
+		required_missions = {
+			knn_religion_first
+		}
+		provinces_to_highlight = {
+		}
+		
+		trigger = {
+			authority = 25
+			is_defender_of_faith_of_tier = 3
+			religious_unity = 0.95
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = authority_KNN
+				duration = -1
+			}
+			add_authority = 10
+		}
+	}
+	
 }
 knn_missions_fifth = {
 	slot = 5
@@ -367,7 +936,10 @@ knn_missions_fifth = {
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = KNN
+		OR = {
+			was_tag = KNN
+			tag = KNN
+		}
 	}
 	knn_spy_second = {
 		icon = mission_impaled_soldies
@@ -505,6 +1077,74 @@ knn_missions_fifth = {
 					}
 					add_prestige = -30
 				}
+			}
+		}
+	}
+	
+	knn_religion_second = {
+		icon = invade_poland
+		position = 6
+		required_missions = {
+			knn_religion_first
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				religion = orthodox
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				religion = orthodox
+				has_tax_building_trigger = yes
+			}
+		}
+		
+		effect = {
+			add_authority = 10
+			add_stability = 1
+		}
+	}
+	
+	knn_religion_fourth = {
+		icon = invade_poland
+		position = 7
+		required_missions = {
+			knn_religion_second
+		}
+		provinces_to_highlight = {
+			province_id = 280
+		}
+		
+		trigger = {
+			280 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_tax_building_trigger = yes
+			}
+			has_great_project = {
+				type = kiev_pechersk_lavra
+				tier = 2
+			}
+		}
+		
+		effect = {
+			
+			custom_tooltip = pol_if_used_ge_rest_else_30_years_extension_tt  
+			hidden_effect = {
+				if = {
+					limit = { has_had_golden_age = yes } 
+					reset_golden_age = yes 
+				}
+				else_if = {
+					limit = { in_golden_age = yes } 
+					extend_golden_age = 360
+				}
+			}
+			add_country_modifier = {
+				name = KNN_golden_era
+				duration = 10950 
 			}
 		}
 	}
