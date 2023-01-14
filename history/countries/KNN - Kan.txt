@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = hungarian
-add_accepted_culture = transylvanian
+add_accepted_culture = transylvanian 
 religion = orthodox
 technology_group = eastern
 historical_friend = BLH

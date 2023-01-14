@@ -149,7 +149,7 @@ settling_the_north = {
 }
 master_east_KNN = {
 	governing_capacity_modifier = 0.33
-	num_accepted_cultures = 3
+	num_accepted_cultures = 2
 	global_unrest = -1
 }
 conversion_HUN = {
@@ -165,6 +165,39 @@ KNN_golden_era = {
 	tolerance_own = 3
 	global_tax_modifier = 0.10
 }
+local_lordship_HUN = {
+	local_core_creation = -0.25
+	local_years_of_nationalism = -10
+}
+accepted_ruthenians = {
+	num_accepted_cultures = 1
+}
+purchase_success = {
+	spy_offence = 0.25
+	discovered_relations_impact = -0.10
+}
+bulgar_vassal_HUN = {
+	reduced_liberty_desire = 20
+	diplomatic_reputation = 1
+}
+BLH_union = {
+	years_to_integrate_personal_union = -25
+	diplomatic_reputation = 2
+}
+KNN_diplo_masters = {
+	accept_vassalization_reasons = 15
+	diplomats = 1 
+}
+black_mercenaries = {
+	mercenary_discipline = 0.05
+	mercenary_manpower = 0.10
+}
+cavalry_masters_KNN = {
+	cavalry_cost = -0.15
+	cav_to_inf_ratio = 0.50
+	cavalry_shock = 0.5
+}
+
 #Ilkhanate
 tolerance_of_dervishes = {
 	min_local_autonomy = 50 

@@ -1,0 +1,76 @@
+country_decisions = {
+	bulgaria_purchace = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = HUN
+			was_tag = KNN
+			has_country_flag = BUL_question_request
+			NOT = { has_country_flag = BUL_PURCHASE_COMPLET }
+		}
+		provinces_to_highlight = {
+			owned_by = BUL
+		}
+		allow = { 
+			reverse_has_opinion = {
+				who = BUL
+				value = 100
+			}
+			reverse_has_opinion = {
+				who = BLH
+				value = 100
+			}
+			treasury = 150
+			dip_power = 100
+			BUL = {
+				is_subject_of = BLH
+			}
+		}
+		effect = {
+			custom_tooltip = BUL_BUY_TT
+			BLH = {
+				country_event = {
+					id = HUN_flavor.15
+				}
+			}
+			set_country_flag = BUL_PURCHASE_COMPLET
+		}
+	}
+	
+
+	request_union_HUN = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			tag = HUN
+			was_tag = KNN
+			has_country_flag = BLH_request_union
+			NOT = { has_country_flag = BLH_request_union_complete }
+		}
+		provinces_to_highlight = {
+			owned_by = BLH
+		}
+		allow = { 
+			reverse_has_opinion = {
+				who = BLH
+				value = 180
+			}
+			treasury = 200
+			dip_power = 100
+			adm_power = 100
+			BLH = {
+				dynasty = ROOT
+			}
+			OR = {
+				army_size = BLH 
+				army_size = 50
+			}
+		}
+		effect = {
+			BLH = {
+				country_event = {
+					id = HUN_flavor.16
+				}
+			}
+			set_country_flag = BLH_request_union_complete
+		}

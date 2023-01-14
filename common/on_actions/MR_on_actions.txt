@@ -95,3 +95,32 @@ on_mandate_of_heaven_gained = {
 		days = 1825
 	}
 }
+on_battle_won_country = {
+	if = {
+		limit = {
+			ROOT = {
+				tag = ALB
+				NOT = { has_country_flag = albanian_victory }
+			}
+			FROM = {
+				tag = TUR
+			}
+		}
+		ROOT = { set_country_flag = albanian_victory }
+	}
+	if = {
+		limit = {
+			ROOT = {
+				religion = jewish
+				has_church_aspect = judaism_purim_teachings_aspect
+			}
+		}
+		ROOT = {
+			add_war_exhaustion = -0.05
+		}
+	}
+	count_won_battles_and_reward_at_end = {
+		counting_flag = teu_crusader_battle_counter
+		max_value = 20
+	}
+}
