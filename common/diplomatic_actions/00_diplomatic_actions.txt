@@ -190,10 +190,11 @@ allianceaction = {
 			NOT = { has_country_flag = dip_sipport_HUN_2_flag }
 		}
 		allow = {
-			FROM = {
-				has_country_flag = dip_sipport_HUN_2_flag }
+			NOT = {
+				FROM = {
+					has_country_flag = dip_sipport_HUN_2_flag 
+				}
 			}
-			{ has_country_flag = dip_sipport_HUN_2_flag }
 		}
 	}
 	

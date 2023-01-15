@@ -318,7 +318,6 @@ mr_hungary_anarchy = {
 	modifiers = {
 		min_autonomy = 33
 		land_forcelimit_modifier = -0.25
-		global_tax_modifier = -0.25
 		capped_by_forcelimit = yes 
 	}
 }

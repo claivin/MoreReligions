@@ -172,21 +172,10 @@ local_lordship_HUN = {
 accepted_ruthenians = {
 	num_accepted_cultures = 1
 }
-purchase_success = {
-	spy_offence = 0.25
-	discovered_relations_impact = -0.10
-}
-bulgar_vassal_HUN = {
-	reduced_liberty_desire = 20
-	diplomatic_reputation = 1
-}
-BLH_union = {
-	years_to_integrate_personal_union = -25
-	diplomatic_reputation = 2
-}
-KNN_diplo_masters = {
-	accept_vassalization_reasons = 15
-	diplomats = 1 
+defensive_strong_hold_TARG = {
+	local_defender_dice_roll_bonus = 1 
+	local_fort_maintenance_modifier = -0.15
+	local_hostile_attrition = 1
 }
 black_mercenaries = {
 	mercenary_discipline = 0.05

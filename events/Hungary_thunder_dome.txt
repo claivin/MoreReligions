@@ -288,97 +288,97 @@ country_event = {
 			HUN = {
 				declare_war_with_cb = {
 					who = CSA
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = AAB
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KSZ
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KNN
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = JAA
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 			}
 			CSA = {
 				declare_war_with_cb = {
 					who = AAB
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KSZ
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KNN
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 			}
 			AAB = {
 				declare_war_with_cb = {
 					who = CSA
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KSZ
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KNN
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 			}
 			KSZ = {
 				declare_war_with_cb = {
 					who = CSA
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = AAB
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KNN
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 			}
 			KNN = {
 				declare_war_with_cb = {
 					who = CSA
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KSZ
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = AAB
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 			}
 			JAA = {
 				declare_war_with_cb = {
 					who = CSA
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KSZ
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = AAB
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 				declare_war_with_cb = {
 					who = KNN
-					casus_belli = cb_annex
+					casus_belli = cb_hungary_thunderdome
 				}
 			}
 		}
@@ -989,7 +989,7 @@ country_event = {
 country_event = {
 	id = HUN_flavor.7
 	title = HUN_flavor.7.t
-	desc = HUN_flavor..7.d
+	desc = HUN_flavor.7.d
 	picture = MILITARY_CAMP_eventPicture
 	
 	fire_only_once = yes
@@ -1012,7 +1012,7 @@ country_event = {
 country_event = {
 	id = HUN_flavor.8
 	title = HUN_flavor.8.t
-	desc = HUN_flavor..8.d
+	desc = HUN_flavor.8.d
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 	
 	fire_only_once = yes
@@ -1267,41 +1267,24 @@ country_event = {
 country_event = {
 	id = HUN_flavor.14
 	title = HUN_flavor.14.t
-	desc = HUN_flavor.14.d
+	desc = {
+		trigger = {
+			exists = BLH
+		}
+		desc = "HUN_flavor.14.1d"
+	}
+	desc = {
+		trigger = {
+				NOT = { exists = BLH }
+		}
+		desc = "HUN_flavor.14.2d"
+	}
 	picture = LAND_MILITARY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = HUN_flavor.14.a
-		trigger = {
-			BLH = { 
-				alliance_with = ROOT 
-			}
-		}
-		set_country_flag = support_BLH_flag
-		custom_tooltip = support_BLH_TT
-		swap_non_generic_missions = yes 
-	}
-	
-	option = {
 		name = HUN_flavor.14.b
-		trigger = {
-			BLH = {
-				OR = {
-					is_rival = ROOT 
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = insulted
-					}
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = scornfully_insulted
-					}
-					exists = no 
-				}
-			}
-		}
 		if = {
 			limit = {
 				BLH = { 
@@ -1310,9 +1293,15 @@ country_event = {
 			}
 			break_alliance = BLH
 		}
+		wallachia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		remove_historical_friend = BLH
 		add_historical_rival = BLH
-		set_country_flag = attack_BLH_flag
 		custom_tooltip = attack_BLH_TT
 		swap_non_generic_missions = yes 
 	}

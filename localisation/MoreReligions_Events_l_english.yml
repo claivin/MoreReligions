@@ -167,14 +167,9 @@
  HUN_rebel_tt: "Completing this mission will spawn the following in a province owned by a country with a §YSpy Network Size§! of §Y35§!:"
  HUN_fow_tt: "Every country with a §YSpy Network Size§! of §Y20§! will have their §YFog of War§! removed for §G2§! Years"
  HUN_flavor.14.t: "The Fate of the Blue Horde"
- HUN_flavor.14.d: "placeholder"
- HUN_flavor.14.a: "We will maintain a close relationship with our allies."
+ HUN_flavor.14.1d: "With the Civil War ended, the Blue Horde hovers over us with expectations. They wish for compensation - little do they know we have none to give. We might have adopted their ways, but we are not under their wing. Instead, we shall ride against them, and it is high time they knew who they were dealing with; the rising Magyar Horde!"
+ HUN_flavor.14.2d: "The Blue Horde, our ally who fought with us throughout the Civil War, has fallen, replaced by those who would call us an enemy. We must avenge this death, bringing the people of the Ruthenian steppe once more back into the fold!"
  HUN_flavor.14.b: "We will force these barbarians to heel!"
- HUN_flavor.15.t: "Bulgarian Aquisition"
- HUN_flavor.15.a: "It is more trouble than it is worth!"
- HUN_flavor.15.b: "We shall not give an inch of our territory!"
- HUN_flavor.16.t: "Unification of the Tribes"
- HUN_flavor.16.a: "We shall join with our brothers across the Carpathians."
- HUN_flavor.16.b: "It would be a great shame to bow to such lowly fools!"
+ 
  
  

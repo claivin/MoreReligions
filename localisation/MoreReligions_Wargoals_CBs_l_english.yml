@@ -1,6 +1,12 @@
 ﻿l_english:
-  SUBJUGATION_RUS_WAR_NAME: "Conquest of the Rus"
+  SUBJUGATION_RUS_WAR_NAME: "$ORDER$$FIRST$-$SECOND_NAME$ Conquest of the Rus"
   ALL_RUS_PROVS: "All provinces in the Ruthenia and Russia region"
   cb_conquer_rus: "Conquest of the Rus"
   cb_conquer_rus_desc: "The Rus are weak and divided. We shall conquer these squabbling states and place them under our heel!"
  
+ HUNGARY_CIVIL_WAR_NAME: "$ORDER$$FIRST$-$SECOND$ War for Hungarian Throne"
+ cb_hungary_thunderdome: "Hungarian Civil War"
+ cb_hungary_thunderdome_desc: "The Hungarian Oligarchs battle with one another for dominance. Only one may come out on top. To war!"
+ po_hun_annex_desc: "[Root.GetName] will annex all provinces of [From.GetName]."
+ PEACE_po_hun_annex: "§YAnnex Hungarian State§!"
+ CB_ALLOWED_po_hun_annex: "§YAnnex Hungarian State!§!"

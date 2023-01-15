@@ -64,5 +64,16 @@ cb_conquer_rus = {
 	
 	war_goal = take_province_rus
 }
+cb_hungary_thunderdome = {
+	valid_for_subject = no
 	
+	prerequisites = {
+		has_country_flag = HUN_thunder_dome_participant
+		FROM = {
+			has_country_flag = HUN_thunder_dome_participant	
+		}
+	}
+	
+	war_goal = take_capital_annex_hun_cw 
+}
 	

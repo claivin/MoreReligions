@@ -33,10 +33,10 @@
  mr_empire_of_japan_desc: "The state of Japan is controlled by the Emperor, who, in the Kenmu Restoration took control back from the Shogun after 300 years of military control. Now, they must balance the needs of the still powerful samurai clans with the growing civilian government."
  
  mr_hungary_anarchy: "Hungarian Oligarchs"
- mr_hungary_anarchy_Dest: "The Hungarian Oligarchs are dominant within our politics. Our state is unravaling at the seams, and we cannot survive for much longer."
+ mr_hungary_anarchy_desc: "The Hungarian Oligarchs are dominant within our politics. Our state is unravaling at the seams, and we cannot survive for much longer."
  
  mr_hungary_faction: "Hungarian Warring State"
- mr_hungary_anarchy_desc: "The Hungarian Civil War rages on, and we must stand against our foes with swords drawn and forces at the ready!"
+ mr_hungary_faction_desc: "The Hungarian Civil War rages on, and we must stand against our foes with swords drawn and forces at the ready!"
  
  mr_hungarian_theocracy: "Holy Hungarian Order"
  mr_hungarian_theocracy_desc: "Founded by the Joannite Order of Severin, the Hungarian order siezed power of the state during the Hungarian Civil War of 1449. They now seek to expand and dominate all surrounding lands, bringing them back into the fold of the Papacy."
