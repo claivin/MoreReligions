@@ -11,7 +11,7 @@ po_hun_annex = {
 	power_projection = humiliated_rival
 	power_cost_base = 1.0
 	prestige_base = 0.20 # Base factor for prestige gain and loss. Scales with war score cost.
-	ae_base = 0.35
+	ae_base = 0.10
 	warscore_cost = {
 		# Which of the giver's provinces' war score costs are included and by how much. All entries default to 0. Any combination of entries can be used. Try negative values at your own risk.
 		all_provinces = 0.0 # All the giver's provinces

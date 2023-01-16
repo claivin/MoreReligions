@@ -268,7 +268,7 @@ knn_missions_branching_A = {
 	}
 	knn_blh_fifth = {
 		icon = invade_poland
-		position = 8
+		position = 9
 		required_missions = { knn_blh_fourth }
 		provinces_to_highlight = {
 			OR = {
@@ -1489,7 +1489,7 @@ knn_missions_fifth = {
 	
 	knn_religion_fourth = {
 		icon = invade_poland
-		position = 7
+		position = 9
 		required_missions = {
 			knn_religion_second
 		}
