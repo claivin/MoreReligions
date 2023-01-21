@@ -1,23 +1,23 @@
-#1849 - Hama
+#4270 - Azraq
 
 owner = MAM
 controller = MAM
-culture = al_suryah_arabic
+culture = bedouin_arabic
 religion = sunni
-capital = "Hama"
-trade_goods = cotton
+capital = "Al Azraq"
+trade_goods = livestock
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 1 
+base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = SYR
+add_core = FAD
 add_core = MAM
+add_core = SYR
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = western
-discovered_by = eastern
-discovered_by = nomad_group
 discovered_by = indian
+discovered_by = nomad_group
+discovered_by = BYZ
 

@@ -1,0 +1,21 @@
+#5375 Qarn Al Alam
+
+owner = OMA
+controller = OMA
+culture = omani_culture
+religion = ibadi
+capital = "Adam"
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = OMA
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = east_african
+
+

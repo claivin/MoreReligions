@@ -6,7 +6,7 @@ religion = sunni
 technology_group = muslim
 historical_rival = TUR
 historical_rival = TIM
-capital = 361 # Cairo
+capital = 382 # Cairo
 add_army_professionalism = 0.1
 religious_school = shafii_school
 

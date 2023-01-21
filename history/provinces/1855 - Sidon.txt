@@ -3,7 +3,7 @@
 owner = TPO
 controller = TPO
 culture = al_suryah_arabic
-religion = shiite
+religion = catholic
 capital = "Sayda"
 trade_goods = naval_supplies
 hre = no
@@ -21,8 +21,4 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
-1516.8.24 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-} # Part of the Ottoman Empire
+

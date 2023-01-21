@@ -1,17 +1,18 @@
-#1849 - Hama
+#4397 - Homs
 
 owner = MAM
 controller = MAM
 culture = al_suryah_arabic
 religion = sunni
-capital = "Hama"
+capital = "Homs"
 trade_goods = cotton
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 2
+base_tax = 2
+base_production = 2
+base_manpower = 1
 is_city = yes
 add_core = SYR
+add_core = FAD
 add_core = MAM
 discovered_by = east_african
 discovered_by = muslim

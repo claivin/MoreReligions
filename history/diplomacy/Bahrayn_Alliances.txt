@@ -1,0 +1,25 @@
+vassal = {
+	first = BHY
+	second = NAJ
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+vassal = {
+	first = BHY
+	second = SHM
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+vassal = {
+	first = BHY
+	second = DAW
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BHY
+	second = OMA
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}

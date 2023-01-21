@@ -1,17 +1,18 @@
-#1849 - Hama
+#5045 Druze Hills
 
 owner = MAM
 controller = MAM
 culture = al_suryah_arabic
 religion = sunni
-capital = "Hama"
-trade_goods = cotton
+capital = "Druze Hills"
+trade_goods = livestock
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = SYR
+add_core = FAD
 add_core = MAM
 discovered_by = east_african
 discovered_by = muslim
