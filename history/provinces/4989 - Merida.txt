@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #4989 - Merida
 
-owner = BJZ	
-controller = BJZ
-add_core = BJZ
+owner = CBD	
+controller = CBD
+add_core = CBD
 culture = leonese
 religion = catholic
 hre = no

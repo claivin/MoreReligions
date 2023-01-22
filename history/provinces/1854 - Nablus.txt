@@ -1,7 +1,7 @@
 #1854 - Negev
 
-owner = EGY
-controller = EGY
+owner = MAM
+controller = MAM
 culture = al_suryah_arabic
 religion = sunni
 capital = "Nablus"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = EGY
+add_core = MAM
 
 discovered_by = western
 discovered_by = muslim

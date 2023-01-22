@@ -5,4 +5,16 @@ technology_group = muslim
 primary_culture = catalan
 capital = 220	# Valencia
 government_rank = 1
+religious_school = zahiri_school
 override_country_name = MR_NAME_VALENCIA
+
+1444.1.1 = {
+	monarch = {
+		name = "Aamir"
+		dynasty = "ibn Mardanish"
+		birth_date = 1410.1.1
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}

@@ -1,12 +1,11 @@
 #REGIONIBERIA
 #Ibiza
 
-owner = VAL		# Alfons V of Aragon
-controller = VAL
-add_core = VAL
-# add_core = MJO
+owner = MJO	# Alfons V of Aragon
+controller = MJO
+add_core = MJO
 culture = catalan
-religion = sunni
+religion = mr_almohad
 hre = no
 base_tax = 1 
 base_production = 1 

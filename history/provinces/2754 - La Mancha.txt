@@ -2,9 +2,9 @@
 #REGIONIBERIA
 #2754 - La Mancha
 
-owner = SEV		#Juan II of Castille
-controller = SEV
-add_core = SEV
+owner = CBD		#Juan II of Castille
+controller = CBD
+add_core = CBD
 culture = castillian
 religion = sunni
 hre = no

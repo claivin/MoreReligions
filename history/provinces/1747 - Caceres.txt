@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #1747 - Caceres
 
-owner = BJZ		#Enrique III of Castille
-controller = BJZ
-add_core = BJZ
+owner = CBD		#Enrique III of Castille
+controller = CBD
+add_core = CBD
 # add_core = LON
 culture = leonese
 religion = sunni

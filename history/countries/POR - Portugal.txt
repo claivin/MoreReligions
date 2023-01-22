@@ -3,8 +3,19 @@ add_government_reform = feudalism_reform
 primary_culture = portugese
 religion = catholic
 technology_group = western
-historical_friend = SPA
-historical_friend = CAS
 capital = 231 # Lisboa
 add_army_professionalism = 0.05
 #national_focus = DIP
+
+1444.1.1 = {
+	monarch = {
+		name = "Francisco "
+		dynasty = "de Borgonha"
+		birth_date = 1411.1.1
+		death_date = 1454.7.20
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}

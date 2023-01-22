@@ -1,8 +1,9 @@
 #REGIONIBERIA
 #226 - Gibraltar
 
-owner = SEV		# Mustapha Sa'd King of Granada
-controller = SEV
+owner = CBD		# Mustapha Sa'd King of Granada
+controller = CBD
+add_core = CBD
 add_core = SEV
 culture = andalucian
 religion = sunni

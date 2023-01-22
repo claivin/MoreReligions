@@ -5,5 +5,18 @@ religion = sunni
 technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
-religious_school = maliki_school
+religious_school = zahiri_school
 override_country_name = MR_NAME_CORDOBA
+
+1444.1.1 = {
+	monarch = {
+		name = "Hamed"
+		dynasty = "ibn Hud"
+		birth_date = 1423.3.6
+		death_date = 1454.7.20
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

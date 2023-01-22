@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #4990 - Navalmoral
 
-owner = CAS	
-controller = CAS
-add_core = CAS
+owner = LON
+controller = LON
+add_core = LON
 culture = leonese
 religion = catholic
 hre = no

@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #221 - Murcia
 
-owner = GRA		# Juan II of Castille
-controller = GRA
-add_core = GRA
+owner = CBD # Juan II of Castille
+controller = CBD
+add_core = CBD
 culture = andalucian
 religion = sunni 
 hre = no

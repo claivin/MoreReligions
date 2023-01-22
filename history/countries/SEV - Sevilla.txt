@@ -5,5 +5,5 @@ religion = sunni
 technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
-religious_school = maliki_school
+religious_school = zahiri_school
 override_country_name = MR_NAME_SEVILLA

@@ -1,9 +1,10 @@
 #REGIONIBERIA
 #223 - Granada
 
-owner = GRA		# Mustapha Sa'd King of Granada
-controller = GRA
+owner = CBD	# Mustapha Sa'd King of Granada
+controller = CBD
 add_core = GRA
+add_core = CBD
 culture = andalucian
 religion = sunni
 hre = no

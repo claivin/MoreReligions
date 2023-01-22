@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #218 - Badajoz
 
-owner = BJZ		#Juan II of Castille
-controller = BJZ
-add_core = BJZ
+owner = CBD #Juan II of Castille
+controller = CBD
+add_core = CBD
 culture = andalucian
 religion = sunni
 hre = no

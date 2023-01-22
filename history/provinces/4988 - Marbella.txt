@@ -1,8 +1,9 @@
 #REGIONIBERIA
 #4988 - Marbella
 
-owner = GRA
-controller = GRA
+owner = CBD
+controller = CBD
+add_core = CBD
 add_core = GRA
 culture = andalucian
 religion = catholic

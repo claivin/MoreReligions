@@ -1,0 +1,25 @@
+#Iberian Relations
+union = {
+	first = NAV
+	second = ARA
+	start_date = 1392.1.1
+	end_date = 1500.1.1
+}
+union = {
+	first = NAV
+	second = CAT
+	start_date = 1402.1.1
+	end_date = 1500.1.1
+}
+union = {
+	first = LON
+	second = GAL
+	start_date = 1402.1.1
+	end_date = 1500.1.1
+}
+vassal = {
+	first = CBD
+	second = SEV
+	start_date = 1444.11.11
+	end_date = 1500.1.1
+}

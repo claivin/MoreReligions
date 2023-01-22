@@ -4,7 +4,7 @@
 owner = BJZ
 controller = BJZ
 culture = portugese
-religion = sunni
+religion = shiite
 capital = "	vora"
 trade_goods = wine
 hre = no

@@ -143,4 +143,8 @@ spriteTypes = {
 		name = "GFX_icon_none_school"
 		texturefile = "gfx/interface/icon_none_school.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_muslim_school_zahiri"
+		texturefile = "gfx/interface/icon_muslim_school_zahiri.dds"
+	}
 }

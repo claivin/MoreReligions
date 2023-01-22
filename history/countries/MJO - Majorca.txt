@@ -1,8 +1,6 @@
-government = monarchy
-
-add_government_reform = feudalism_reform
-
-religion = catholic
+government = republic
+add_government_reform = pirate_republic_reform
+religion = mr_almohad
 primary_culture = catalan
 technology_group = western
 capital = 333	# Majorca

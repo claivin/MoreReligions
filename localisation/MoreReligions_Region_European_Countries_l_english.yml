@@ -71,9 +71,9 @@
  CNL_ADJ: "Channel Islander"
  CNL_ADJ2: "Channel Islander"
  
- BJZ: "Badajoz"
- BJZ_ADJ: "Pacense"
- BJZ_ADJ2: "Pacense"
+ BJZ: "Algarve"
+ BJZ_ADJ: "Algarvan"
+ BJZ_ADJ2: "Algarvan"
  
  SEV: "Sevilla"
  SEV_ADJ: "Sevillan"
@@ -88,7 +88,7 @@
  MR_NAME_NAVARRA: "Nafara"
  MR_NAME_CASTILE: "Qishtala"
  MR_NAME_PORTUGAL: "Alburtughal"
- MR_NAME_BADAJOZ: "Batalyaws"
+ MR_NAME_AL-GHARB: "Al-Gharb"
  MR_NAME_SEVILLA: "Ishbiliyyah"
  MR_NAME_CORDOBA: "Qurtubah"
  MR_NAME_VALENCIA: "Balansiyya"

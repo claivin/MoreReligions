@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #2751 - Cuenca
 
-owner = VAL		#Juan II of Castille
-controller = VAL
-add_core = VAL
+owner = CAS		#Juan II of Castille
+controller = CAS
+add_core = CAS
 culture = castillian
 religion = sunni
 hre = no

@@ -1,9 +1,8 @@
-government = monarchy
-add_government_reform = iqta
+government = theocracy
+add_government_reform = monastic_order_reform
 primary_culture = andalucian
-religion = sunni
+religion = shiite
 technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
-religious_school = maliki_school
-override_country_name = MR_NAME_BADAJOZ
+override_country_name = MR_NAME_AL-GHARB
