@@ -1,0 +1,112 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_brewery"	
+		texturefile = "gfx//interface//buildings//mrb_brewery_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_creamery"	
+		texturefile = "gfx//interface//buildings//mrb_creamery_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_textileprocessor"	
+		texturefile = "gfx//interface//buildings//mrb_textileprocessor_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_steelmill"	
+		texturefile = "gfx//interface//buildings//mrb_steelmill_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_jewler"	
+		texturefile = "gfx//interface//buildings//mrb_jewler_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_confectionary"	
+		texturefile = "gfx//interface//buildings//mrb_confectionary_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_lumberyard"	
+		texturefile = "gfx//interface//buildings//mrb_lumberyard_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_winery"	
+		texturefile = "gfx//interface//buildings//mrb_winery_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_powdermill"	
+		texturefile = "gfx//interface//buildings//mrb_powdermill_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_gunsmith"	
+		texturefile = "gfx//interface//buildings//mrb_gunsmith_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_pasture"	
+		texturefile = "gfx//interface//buildings//mrb_pasture_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_mine"	
+		texturefile = "gfx//interface//buildings//mrb_mine_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_slavemarket"	
+		texturefile = "gfx//interface//buildings//mrb_slavemarket_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_apiary"	
+		texturefile = "gfx//interface//buildings//mrb_apiary_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_orchard"	
+		texturefile = "gfx//interface//buildings//mrb_orchard_icon.tga"
+		loadType = "INGAME"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = "GFX_mrb_quarry"	
+		texturefile = "gfx//interface//buildings//mrb_quarry_icon.tga"
+		loadType = "INGAME"
+	}
+}

@@ -100,8 +100,12 @@ technology = { #Workshop
 
 	#Workshop
 	farm_estate = yes
+	mrb_pasture = yes
 	workshop = yes
 	ramparts = yes
+	mrb_lumberyard = yes
+	mrb_winery = yes
+	mrb_orchard = yes
 }
 
 technology = { #Renaissance Thought
@@ -138,6 +142,10 @@ technology = { #The Scythe
 		printing_press = 0.10
 	}
 	
+	mrb_brewery = yes
+	mrb_creamery = yes
+	mrb_confectionary = yes
+	mrb_apiary = yes
 	#The Scythe
 	production_efficiency 	=	0.02
 	
@@ -168,7 +176,7 @@ technology = { #Textile Manufactory
 	
 	#Textile Manufactory
 	textile = yes  
-
+	mrb_textileprocessor = yes
 }
 
 technology = { #Early Modern Administration
@@ -184,6 +192,7 @@ technology = { #Early Modern Administration
 	administrative_republic	= yes
 	governing_capacity = 100
 	state_house = yes
+	mrb_jewler = yes
 }
 
 technology = { #Improved Drainage
@@ -194,6 +203,8 @@ technology = { #Improved Drainage
 		renaissance = 0.5
 		printing_press = 0.60
 	}
+	
+	mrb_quarry = yes
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
@@ -209,6 +220,8 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
+	mrb_mine = yes
+	mrb_powdermill = yes
 	allowed_idea_groups	= 4
 }
 
@@ -236,6 +249,8 @@ technology = { #Metallurgy
 	}
 	
 	mills = yes
+	mrb_steelmill = yes
+	mrb_gunsmith = yes
 	production_efficiency 	=	0.02
 
 

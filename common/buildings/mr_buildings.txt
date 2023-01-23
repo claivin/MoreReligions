@@ -1,0 +1,602 @@
+##
+# GOODS UPGRADE BUILDINGS
+##
+mrb_brewery = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		custom_trigger_tooltip = {
+			tooltip = 8DEVANDBREWGOODS
+		}
+		base_production = 8
+		OR = {
+			trade_goods = grain
+			trade_goods = honey
+			trade_goods = sugar
+		}
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = grain }
+			change_trade_goods = alcohol
+		}
+		else_if = {
+			limit = { trade_goods = honey }
+			change_trade_goods = honey_wine
+		}
+		else_if = {
+			limit = { trade_goods = sugar }
+			change_trade_goods = rum
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = alcohol }
+			change_trade_goods = grain
+		}
+		else_if = {
+			limit = { trade_goods = honey_wine }
+			change_trade_goods = honey
+		}
+		else_if = {
+			limit = { trade_goods = rum }
+			change_trade_goods = sugar
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_creamery = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		trade_goods = livestock
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = livestock }
+			change_trade_goods = cheese
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = cheese }
+			change_trade_goods = livestock
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_textileprocessor = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		OR = {
+			trade_goods = wool
+			trade_goods = cotton
+		}
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = wool }
+			change_trade_goods = cloth
+			add_permanent_province_modifier = {
+				name = was_wool_province
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = { trade_goods = cotton }
+			change_trade_goods = cloth
+			add_permanent_province_modifier = {
+				name = was_cotton_province
+				duration = -1
+				hidden = yes
+			}
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = was_wool_province }
+			change_trade_goods = wool
+			remove_province_modifier = was_wool_province
+		}
+		else = {
+			limit = { has_province_modifier = was_cotton_province }
+			change_trade_goods = cotton
+			remove_province_modifier = was_cotton_province
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_steelmill = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		trade_goods = iron
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = iron }
+			change_trade_goods = steel
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = steel }
+			change_trade_goods = iron
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_jewler = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		OR = {
+			trade_goods = ivory
+			trade_goods = gems
+		}
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = ivory }
+			change_trade_goods = jewelry
+			add_permanent_province_modifier = {
+				name = was_ivory_province
+				duration = -1
+				hidden = yes
+			}
+		}
+		else_if = {
+			limit = { trade_goods = gems }
+			change_trade_goods = jewelry
+			add_permanent_province_modifier = {
+				name = was_gems_province
+				duration = -1
+				hidden = yes
+			}
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { has_province_modifier = was_ivory_province }
+			change_trade_goods = ivory
+			remove_province_modifier = was_ivory_province
+		}
+		else = {
+			limit = { has_province_modifier = was_gems_province }
+			change_trade_goods = gems
+			remove_province_modifier = was_gems_province
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_confectionary = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		trade_goods = cocoa
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = cocoa }
+			change_trade_goods = chocolate
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = chocolate }
+			change_trade_goods = cocoa
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_lumberyard = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		trade_goods = lumber
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = lumber }
+			change_trade_goods = naval_supplies
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = naval_supplies }
+			change_trade_goods = lumber
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_winery = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		OR = {
+			trade_goods = rice
+			trade_goods = grapes
+		}
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = rice }
+			change_trade_goods = rice_wine
+		}
+		else_if = {
+			limit = { trade_goods = grapes }
+			change_trade_goods = wine
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = rice }
+			change_trade_goods = rice_wine
+		}
+		else_if = {
+			limit = { trade_goods = wine }
+			change_trade_goods = grapes
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_powdermill = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		trade_goods = sulfur
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = sulfur }
+			change_trade_goods = gunpowder
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = gunpowder }
+			change_trade_goods = sulfur
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+
+mrb_gunsmith = {
+	cost = 250
+	time = 24
+	
+	build_trigger = {
+		base_production = 8
+		trade_goods = steel
+		owner = {
+			any_owned_province = {
+				trade_goods = gunpowder
+			}
+		}
+	}
+	
+	modifier = {
+		local_state_maintenance_modifier = 1.0
+	}
+	
+	on_built = {
+		if = {
+			limit = { trade_goods = gunpowder }
+			change_trade_goods = military_supplies
+		}
+    }
+
+	on_destroyed = {
+		if = {
+			limit = { trade_goods = military_supplies }
+			change_trade_goods = gunpowder
+		}
+    }
+
+	on_obsolete = { }
+	
+	ai_will_do = {
+		factor = 1.5
+    }
+}
+##
+# NEW MANUFACTORIES
+##
+mrb_pasture = {
+	manufactory = {
+		livestock
+		horses
+		wool
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_mine = {
+	manufactory = {
+		copper
+		iron
+		sulfur
+		#silver
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_slavemarket = {
+	manufactory = {
+		slaves
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_apiary = {
+	manufactory = {
+		honey
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_orchard = {
+	manufactory = {
+		fruit
+		tropical_fruit
+		citrus
+		grapes
+		dates_figs
+		olives
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_quarry = {
+	manufactory = {
+		stone
+		marble
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}

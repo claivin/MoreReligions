@@ -1467,6 +1467,7 @@ wharf = {
 		naval_supplies
 		fish
 		salt
+		whales
 	}
 	onmap = yes
 	on_built = {
@@ -1518,8 +1519,9 @@ wharf = {
 
 weapons = {
 	manufactory = {
-		copper
-		iron
+		military_supplies
+		gunpowder
+		steel
 	}
 	onmap = yes
 	on_built = {
@@ -1546,7 +1548,6 @@ weapons = {
 
 textile = {
 	manufactory = {
-		wool
 		cloth
 		silk
 		dyes
@@ -1582,6 +1583,10 @@ plantations = {
 		tobacco
 		tea
 		cocoa
+		nutmeg
+		tumeric
+		ginger
+		saffron
 	}
 	onmap = yes
 	on_built = {
@@ -1609,11 +1614,19 @@ plantations = {
 tradecompany = {
 	manufactory = {
 		ivory
-		slaves
 		spices
 		cloves
 		fur
 		incense
+		alcohol
+		jewelry
+		cheese
+		chocolate
+		ice
+		rice_wine
+		rum
+		honey_wine
+		wine
 	}
 	onmap = yes
 	on_built = {
@@ -1641,8 +1654,10 @@ tradecompany = {
 farm_estate = {
 	manufactory = {
 		grain
-		livestock
-		wine
+		rice
+		vegetables
+		potato
+		tomato
 	}
 	onmap = yes
 	on_built = {
@@ -1674,6 +1689,7 @@ mills = {
 		tropical_wood
 		glass
 		chinaware
+		lumber
 	}
 	onmap = yes
 	on_built = {

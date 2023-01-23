@@ -1,0 +1,15 @@
+was_wool_province = {
+	#nothing
+}
+
+was_cotton_province = {
+	#nothing
+}
+
+was_ivory_province = {
+	#nothing
+}
+
+was_gems_province = {
+	#nothing
+}

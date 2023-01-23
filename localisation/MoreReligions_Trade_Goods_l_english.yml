@@ -1,4 +1,23 @@
 ﻿l_english:
+ GOODS_CHANGE_BUILDINGS: "Goods Upgrades"
+ building_mrb_brewery: "Brewery"
+ building_mrb_creamery: "Creamery"
+ building_mrb_textileprocessor: "Textile Processor"
+ building_mrb_steelmill: "Steel Mill"
+ building_mrb_jewler: "Jewler"
+ building_mrb_confectionary: "Confectionary"
+ building_mrb_lumberyard: "Lumber Yard"
+ building_mrb_winery: "Winery"
+ building_mrb_powdermill: "Powder Mill"
+ building_mrb_gunsmith: "Gunsmith"
+ building_mrb_pasture: "Pasture"
+ building_mrb_mine: "Mine"
+ building_mrb_slavemarket: "Slave Market"
+ building_mrb_apiary: "Apiary"
+ building_mrb_orchard: "Orchard"
+ building_mrb_quarry: "Quarry"
+ GOODS_CHANGE_BUILDINGS_REQ: "§GRequires\n§Y8§! Base Prod.§!"
+
  alcohol:0 "Alcohol"
  alcoholDESC:0 "Across both the old world and new, through the process of fermentation and distillation, Alcohol is quite the popular good. While it can lead to problems with addiction and overdose, the relative safety of the beverage has made even more popular than water in some areas."
  
