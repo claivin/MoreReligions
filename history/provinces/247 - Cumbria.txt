@@ -5,7 +5,7 @@
 owner = SCO
 controller = SCO
 culture = english
-religion = catholic
+religion = mr_lollard
 hre = no
 base_tax = 2 
 base_production = 2

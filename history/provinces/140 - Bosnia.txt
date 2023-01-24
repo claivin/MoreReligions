@@ -3,7 +3,7 @@
 owner = SER # Part of the Bosnian kingdom
 controller = SER 
 culture = bosnian
-religion = orthodox
+religion = mr_bogomil
 capital = "Doboj" #or Srebrenik
 trade_goods = salt
 hre = no

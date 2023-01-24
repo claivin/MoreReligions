@@ -3,7 +3,7 @@
 owner = SER
 controller = SER
 culture = bosnian
-religion = orthodox
+religion = mr_bogomil
 capital = "Herceg Novi"
 trade_goods = wool
 hre = no

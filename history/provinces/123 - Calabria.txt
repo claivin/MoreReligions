@@ -4,7 +4,7 @@
 owner = CBR
 controller = CBR
 culture = sicilian 
-religion = catholic 
+religion = mr_fraticelli 
 hre = yes
 base_tax = 2 
 base_production = 2

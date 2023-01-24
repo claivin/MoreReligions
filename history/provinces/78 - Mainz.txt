@@ -2,7 +2,7 @@
 
 capital = "Mainz"
 culture = hessian
-religion = catholic
+religion = mr_fraticelli
 trade_goods = paper
 owner = MAI
 base_tax = 4 

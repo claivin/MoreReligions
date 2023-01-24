@@ -4,7 +4,7 @@
 owner = NPI
 controller = NPI
 culture = neapolitan 
-religion = catholic 
+religion = mr_fraticelli 
 hre = yes
 base_tax = 8
 base_production = 8

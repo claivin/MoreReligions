@@ -5,7 +5,7 @@
 owner = CSE
 controller = CSE
 culture = neapolitan 
-religion = catholic 
+religion = mr_fraticelli 
 hre = yes
 base_tax = 1
 base_production = 1

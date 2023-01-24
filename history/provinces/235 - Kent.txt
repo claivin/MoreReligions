@@ -4,7 +4,7 @@
 owner = KNT
 controller = KNT
 culture = english
-religion = catholic
+religion = mr_lollard
 hre = no
 base_tax = 5
 base_production = 5

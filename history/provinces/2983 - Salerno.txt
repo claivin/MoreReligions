@@ -4,7 +4,7 @@
 owner = SLR
 controller = SLR
 culture = neapolitan 
-religion = catholic 
+religion = mr_waldensian 
 hre = yes
 base_tax = 5
 base_production = 1

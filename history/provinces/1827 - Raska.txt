@@ -3,7 +3,7 @@
 owner = SER
 controller = SER
 culture = serbian
-religion = orthodox
+religion = mr_bogomil
 capital = "Trgoviste"
 trade_goods = livestock
 hre = no

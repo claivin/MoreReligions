@@ -3,7 +3,7 @@
 owner = HUN
 controller = HUN 
 culture = hungarian
-religion = catholic
+religion = mr_bogomil
 capital = "Bács"
 trade_goods = livestock
 hre = no

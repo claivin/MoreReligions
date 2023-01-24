@@ -3,7 +3,7 @@
 owner = CRO
 controller = CRO
 culture = croatian
-religion = catholic
+religion = mr_bogomil
 capital = "Zagreb"
 trade_goods = cloth
 hre = no

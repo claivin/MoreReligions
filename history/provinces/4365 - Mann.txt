@@ -3,7 +3,7 @@
 owner = KOI
 controller = KOI
 culture = mr_manx
-religion = catholic
+religion = mr_lollard
 hre = no
 base_tax = 1 
 base_production = 1

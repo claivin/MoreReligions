@@ -4,7 +4,7 @@
 owner = POL
 controller = POL
 culture = polish
-religion = catholic
+religion = hussite
 capital = "Kalisz"
 trade_goods = cloth
 hre = yes

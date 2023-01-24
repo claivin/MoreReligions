@@ -3,7 +3,7 @@
 owner = SZO
 controller = SZO
 culture = piedmontese
-religion = catholic
+religion = mr_waldensian
 hre = yes
 base_tax = 3
 base_production = 4

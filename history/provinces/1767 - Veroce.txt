@@ -3,7 +3,7 @@
 owner = SER
 controller = SER
 culture = croatian
-religion = catholic
+religion = mr_bogomil
 capital = "Osijek"
 trade_goods = livestock
 hre = no

@@ -4,7 +4,7 @@
 owner = ENG
 controller = ENG
 culture = english
-religion = catholic
+religion = mr_lollard
 hre = no
 base_tax = 3
 base_production = 3

@@ -4,7 +4,7 @@
 owner = LBG
 controller = LBG
 culture = swiss
-religion = catholic
+religion = mr_waldensian
 capital = "Bern"
 trade_goods = iron
 hre = yes

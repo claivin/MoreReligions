@@ -4,7 +4,7 @@
 owner = OXF
 controller = OXF
 culture = english
-religion = catholic
+religion = mr_lollard
 hre = no
 base_tax = 4
 base_production = 4

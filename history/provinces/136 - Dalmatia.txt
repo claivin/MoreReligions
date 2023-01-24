@@ -3,7 +3,7 @@
 owner = SLT
 controller = SLT
 culture = dalmatian
-religion = catholic
+religion = mr_bogomil
 capital = "Split"
 trade_goods = wool
 hre = no

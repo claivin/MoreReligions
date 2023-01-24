@@ -3,7 +3,7 @@
 owner = SER
 controller = SER
 culture = bosnian
-religion = catholic
+religion = mr_bogomil
 capital = "Mostar"	# Unofficial capital of Herzegovina
 trade_goods = wool
 hre = no

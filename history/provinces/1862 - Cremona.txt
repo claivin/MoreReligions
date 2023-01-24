@@ -4,7 +4,7 @@
 owner = CMN
 controller = CMN
 culture = lombard
-religion = catholic
+religion = mr_fraticelli
 hre = yes
 base_tax = 6
 base_production = 5 

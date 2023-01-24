@@ -5,7 +5,7 @@
 owner = SIC
 controller = SIC
 culture = sicilian 
-religion = catholic 
+religion = mr_fraticelli 
 hre = no 
 base_tax = 1
 base_production = 1

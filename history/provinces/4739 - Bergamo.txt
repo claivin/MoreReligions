@@ -4,7 +4,7 @@
 owner = PDN
 controller = PDN
 culture = lombard 
-religion = catholic 
+religion = mr_fraticelli 
 hre = yes 
 base_tax = 4
 base_production = 3

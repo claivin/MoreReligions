@@ -3,7 +3,7 @@
 owner = SAX
 controller = SAX
 culture = saxon
-religion = catholic
+religion = mr_waldensian
 capital = "Wittenberg"
 trade_goods = wool
 hre = yes
