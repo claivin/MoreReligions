@@ -37,11 +37,11 @@
  
  #Waldensian Basics
  mr_waldensian: "Waldensian"
- mr_waldensian_religion_desc: "FLAVOR TEXT HERE"
+ mr_waldensian_religion_desc: "Originating as an ascetic movment, Waldensians evolved into larger movement after one of their core values - apostolic poverty, became diametrically opposed to the corruption of the Papacy and the Catholic Church. Although they were declared heretics in the 1200's, the movement continued to expand, forming small communities throughout Western and Central Europe.\nWaldensians reject office for preachers, the divinity of relics and holy water, the idolatry of the Catholic Church, as well as disagreeing on aspects of Sacraments, such as infant baptism."
  
  #Fraticelli Basics
  mr_fraticelli: "Fraticelli"
- mr_fraticelli_religion_desc: "FLAVOR TEXT HERE"
+ mr_fraticelli_religion_desc: "Fraticelli were a sectarian group that split from the Franciscans on grounds concerning apostolic poverty. They were declared heretical near the turn of the 1300's but continued to expaned within the religious communities, especially the more asetic types."
  
  #Bogomil Basics
  mr_bogomil: "Bogomilist"
@@ -58,6 +58,26 @@
  #Nestorian Basics
  mr_nestorian: "Nestorian"
  mr_nestorian_religion_desc: "FLAVOR TEXT HERE"
+ 
+ #Baptist Basics
+ mr_baptist: "Baptist"
+ mr_baptist_religion_desc: "FLAVOR TEXT HERE"
+ 
+ #Reformist Basics
+ mr_protoprotestant: "Reformist"
+ mr_protoprotestant_religion_desc: "FLAVOR TEXT HERE"
+ 
+ #Adamite Basics
+ mr_adamite: "Adamite"
+ mr_adamite_religion_desc: "FLAVOR TEXT HERE"
+ 
+ #Antipapist Basics
+ mr_antipapist: "Antipapist"
+ mr_antipapist_religion_desc: "In disaccordance with the Papal election, a second candidate for Papacy arose, albeit far from conclusively. This ambiguity has given way to political and factional tensions to boil over, propping up an Antipope as the true head of the Catholic Church. Should this go unresolved, this split could mirror the results of the Schism of 1054..."
+ 
+ #Counterantipapist Basics
+ mr_counterpapist: "Counterantipapist"
+ mr_counterpapist_religion_desc: "As the conflict of the antipapcy has grown ever more complicated, some cardinals - of both factions - have attempted to reconcile this conflict... only to create a second antipope. The weight of Christian Europe once sat on the shoulders of one man, but will it fare any better with three?"
  
  #Christian Schools
  mr_latin_rite: "Roman Rite"

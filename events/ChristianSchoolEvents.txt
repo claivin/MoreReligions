@@ -232,7 +232,11 @@ country_event = {
 		name = christian_school_events.20.j
 		trigger = {
 			religion = catholic
-			tag = POR
+			OR = {
+				tag = POR
+				tag = CMS
+				tag = GAL
+			}
 			ai = no
 		}
 		set_religious_school = {

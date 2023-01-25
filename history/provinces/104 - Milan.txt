@@ -4,7 +4,7 @@
 owner = MLO
 controller = MLO
 culture = lombard
-religion = mr_fraticelli
+religion = catholic
 hre = yes
 base_tax = 8
 base_production = 7
