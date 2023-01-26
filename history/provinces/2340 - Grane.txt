@@ -3,7 +3,7 @@
 owner = BHY
 controller = BHY
 culture = gulf_arabic
-religion = sunni
+religion = mr_qarmatian
 capital = "Grane" #old name for Kuwait
 trade_goods = fish
 hre = no

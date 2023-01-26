@@ -4,7 +4,7 @@
 owner = EGY
 controller = EGY
 culture = al_suryah_arabic
-religion = sunni
+religion = mr_hafizi
 capital = "Gazzah"
 trade_goods = salt
 hre = no

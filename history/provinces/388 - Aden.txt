@@ -3,7 +3,7 @@
 owner = ADE #Tahirids
 controller = ADE #Tahirids
 culture = yemeni_culture
-religion = mr_mustali
+religion = mr_tayyibi
 capital = "Aden"
 trade_goods = incense
 hre = no

@@ -3,7 +3,7 @@
 owner = BHY
 controller = BHY
 culture = gulf_arabic
-religion = shiite
+religion = mr_qarmatian
 capital = "Hofuf"
 trade_goods = spices #Dates
 hre = no

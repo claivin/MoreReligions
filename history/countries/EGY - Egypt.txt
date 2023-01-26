@@ -1,5 +1,5 @@
 government = republic
 primary_culture = al_misr_arabic
-religion = sunni
+religion = mr_hafizi
 technology_group = muslim
 capital = 361 # Cairo

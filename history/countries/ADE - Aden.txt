@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudal_theocracy
 primary_culture = yemeni_culture
-religion = mr_mustali
+religion = mr_tayyibi
 technology_group = muslim
 capital = 388	# Aden
 government_rank = 1

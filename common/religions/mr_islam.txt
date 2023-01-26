@@ -443,7 +443,7 @@ muslim = {
 	}
 	
 	mr_mushashaiyya = {
-		color = { 24 162 147 }
+		color = { 109 198 72 }
 		icon = 16
 		country = {
 			heir_chance = 1.0
@@ -1057,7 +1057,7 @@ muslim = {
 	}
 	
 	mr_safaviyya = {
-		color = { 44 87 62 }
+		color = { 127 223 106 }
 		icon = 16
 		country = {
 			heir_chance = 1.0
@@ -1664,7 +1664,7 @@ muslim = {
 	}
 	
 	mr_ahlehaqq = {
-		color = { 44 87 62 }
+		color = { 126 42 128 }
 		icon = 16
 		country = {
 			heir_chance = 1.0
@@ -1684,7 +1684,7 @@ muslim = {
 	}
 	
 	mr_zaydi = {
-		color = { 106 221 78 }
+		color = { 54 185 96 }
 		icon = 16
 		country = {
 			heir_chance = 1.0
@@ -1703,8 +1703,8 @@ muslim = {
 		authority = yes		
 	}
 	
-	mr_mustali = {
-		color = { 104 174 73 }
+	mr_tayyibi = {
+		color = { 91 190 169 }
 		icon = 16
 		country = {
 			heir_chance = 1.0
@@ -1720,10 +1720,93 @@ muslim = {
 			
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
-		authority = yes		
+		holy_sites = { 385 361 379 409 4279 }
+
+		blessings = {
+			blessing_missionary_work
+			blessing_taharah_thought
+			blessing_imam_doctrine
+			blessing_jihad_pillar
+			blessing_tayyibi
+		}	
 	}
-	mr_almohad = {
-		color = { 146 229 0 }
+	mr_nizari = {
+		color = { 20 172 110 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			discipline = 0.05
+		}
+		country_as_secondary = {
+			heir_chance = 1.0
+			discipline = 0.05
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		holy_sites = { 385 361 379 409 2215 }
+
+		blessings = {
+			blessing_missionary_work
+			blessing_taharah_thought
+			blessing_imam_doctrine
+			blessing_jihad_pillar
+			blessing_nizari
+		}	
+	}
+	mr_hafizi = {
+		color = { 68 136 90 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			merc_maintenance_modifier = -0.15
+		}
+		country_as_secondary = {
+			heir_chance = 1.0
+			merc_maintenance_modifier = -0.15
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		holy_sites = { 385 361 379 409 4566 }
+
+		blessings = {
+			blessing_missionary_work
+			blessing_taharah_thought
+			blessing_imam_doctrine
+			blessing_jihad_pillar
+			blessing_hafizi
+		}	
+	}
+	mr_qarmatian = {
+		color = { 97 185 225	 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			manpower_in_true_faith_provinces = 0.15 
+		}
+		country_as_secondary = {
+			heir_chance = 1.0
+			manpower_in_true_faith_provinces = 0.15 
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		holy_sites = { 385 361 379 409 4566 }
+
+		fervor = yes
+	}
+	mr_almuwahiddun = {
+		color = { 229 57 57 }
 		icon = 16
 		country = {
 			heir_chance = 1.0
@@ -1741,6 +1824,74 @@ muslim = {
 		
 		fervor = yes
 	}
+	mr_alevi = {
+		color = { 87 200 13 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			shock_damage = 0.10 
+		}
+		country_as_secondary = {
+			shock_damage = 0.10 
+			advisor_cost = -0.1
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		fervor = yes
+	}
+	
+	mr_druze = {
+		color = { 97 20 180 }
+		icon = 16
+		country = {
+			heir_chance = 1.0
+			tolerance_heathen = 2 
+		}
+		country_as_secondary = {
+			shock_damage = 0.10 
+			tolerance_heathen = 2 
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+			
+		heretic = { HARURI SUFRI NAJADAT AZRAQI }
+		
+		fervor = yes
+	}
+	
+	mr_yazidi  = {
+		icon = 26
+		color = { 215 90 238 }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			tolerance_own = 2
+			trade_efficiency = 0.1
+		}
+		country_as_secondary = {
+			merchants = 1
+			tolerance_own = 1
+		}
+
+		holy_sites = { 421 4430 2223 441 2235 }
+
+		blessings = {
+			blessing_yasna
+			blessing_haoma
+			blessing_navjote
+			blessing_manthras
+			blessing_dakhma
+		}
+		
+		heretic = { MAZDAKI MANICHEAN }	
+	}
+	
 	harmonized_modifier = harmonized_muslim
 	
 	crusade_name = JIHAD

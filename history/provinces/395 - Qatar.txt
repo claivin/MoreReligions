@@ -3,7 +3,7 @@
 owner = BHY
 controller = BHY
 culture = gulf_arabic
-religion = shiite
+religion = mr_qarmatian
 capital = "Qatar"
 trade_goods = gems
 hre = no

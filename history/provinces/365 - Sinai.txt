@@ -4,7 +4,7 @@
 owner = EGY
 controller = EGY
 culture = bedouin_arabic
-religion = sunni
+religion = mr_hafizi
 capital = "At Tur"
 trade_goods = gems #Turquoise
 hre = no
