@@ -18,3 +18,5 @@ base_manpower = 1
 discovered_by = sub_saharan
 fort_15th = yes
 
+
+1444.11.12 = { trade_goods = unknown }

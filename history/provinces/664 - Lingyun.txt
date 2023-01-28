@@ -12,3 +12,4 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
+1444.11.12 = { trade_goods = unknown }

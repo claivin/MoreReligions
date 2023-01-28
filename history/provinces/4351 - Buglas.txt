@@ -14,3 +14,5 @@ controller = MAS
 is_city = yes
 discovered_by = chinese
 
+
+1444.11.12 = { trade_goods = unknown }

@@ -21,3 +21,5 @@ discovered_by = chinese
 add_local_autonomy = 25
 add_vaisyas_or_burghers_effect = yes
 
+
+1444.11.12 = { trade_goods = unknown }

@@ -20,11 +20,4 @@ discovered_by = ottoman
 
 1405.1.1 = { discovered_by = MNG }
 
-1471.1.1 = { add_core = ATJ }
-1509.1.1 = { discovered_by = POR }
-1521.1.1 = {
-	owner = ATJ
-	controller = ATJ
-	remove_core = PSA
-}
-
+1444.11.12 = { trade_goods = unknown }

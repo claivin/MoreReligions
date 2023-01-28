@@ -33,3 +33,5 @@ owner = MNK
 add_core = MNK
 controller = MNK
 
+
+1444.11.12 = { trade_goods = unknown }

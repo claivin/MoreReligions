@@ -30,3 +30,5 @@ discovered_by = BAO
 owner = EHO
 controller = EHO
 add_core = EHO
+
+1444.11.12 = { trade_goods = unknown }

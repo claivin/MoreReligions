@@ -19,12 +19,4 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-# 1560.8.1 = { religion = reformed }
-# 1644.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB }
-# 1647.1.1 = { revolt = {} controller = SCO }
-# 1689.3.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Jacobite Rising
-# 1689.11.1 = { revolt = {} controller = SCO }
-# 1707.5.12 = {	owner = GBR
-	# controller = GBR
-	# add_core = GBR
-# }
+1444.11.12 = { trade_goods = unknown }

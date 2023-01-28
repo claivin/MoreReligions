@@ -21,3 +21,5 @@ discovered_by = nomad_group
 add_brahmins_or_church_effect = yes
 add_local_autonomy = 25
 
+
+1444.11.12 = { trade_goods = unknown }

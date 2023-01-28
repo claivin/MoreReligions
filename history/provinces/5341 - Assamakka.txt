@@ -16,3 +16,5 @@ owner = TED
 controller = TED
 add_core = TED
 
+
+1444.11.12 = { trade_goods = unknown }

@@ -18,14 +18,5 @@ discovered_by = indian
 extra_cost = 8
 center_of_trade = 1
 
-1682.1.1 = {
-	owner = ZUN
-	controller = ZUN
-	add_core = ZUN
-}
-1755.1.1 = {
-	owner = MGH
-	controller = MGH
-	add_core = MGH 
-}
-1759.1.1 = { owner = QNG controller = QNG add_core = QNG } # Part of the Manchu empire
+
+1444.11.12 = { trade_goods = unknown }

@@ -14,3 +14,4 @@ base_manpower = 1
 is_city = yes
 add_core = SOS
 # add_core = SOS
+1444.11.12 = { trade_goods = unknown }

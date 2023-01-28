@@ -22,4 +22,4 @@ discovered_by = ottoman
 	trade_goods = grain
 }
 
-1521.1.1 = { discovered_by = POR }
+1444.11.12 = { trade_goods = unknown }

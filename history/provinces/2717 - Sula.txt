@@ -16,3 +16,5 @@ native_hostileness = 2
 
 discovered_by = chinese
 
+
+1444.11.12 = { trade_goods = unknown }

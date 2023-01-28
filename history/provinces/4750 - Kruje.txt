@@ -24,3 +24,5 @@ discovered_by = eastern
 discovered_by = western
 
 
+
+1444.11.12 = { trade_goods = unknown }

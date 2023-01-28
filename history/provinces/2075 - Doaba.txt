@@ -20,3 +20,5 @@ discovered_by = ottoman
 discovered_by = chinese
 add_province_triggered_modifier = sikh_amritsar
 
+
+1444.11.12 = { trade_goods = unknown }

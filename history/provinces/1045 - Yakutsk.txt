@@ -18,3 +18,5 @@ is_city = yes
 discovered_by = YTK
 
 
+
+1444.11.12 = { trade_goods = unknown }

@@ -22,3 +22,5 @@ discovered_by = chinese
 extra_cost = 24
 center_of_trade = 3
 
+
+1444.11.12 = { trade_goods = unknown }

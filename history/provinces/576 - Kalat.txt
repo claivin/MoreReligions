@@ -15,3 +15,5 @@ fort_15th = yes
 add_core = SND
 
 
+
+1444.11.12 = { trade_goods = unknown }

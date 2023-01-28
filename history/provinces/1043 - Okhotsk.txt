@@ -27,3 +27,5 @@ discovered_by = KYK
 discovered_by = KLY
 discovered_by = YTK
 
+
+1444.11.12 = { trade_goods = unknown }

@@ -16,3 +16,5 @@ controller = DJJ
 add_core = DJJ
 
 
+
+1444.11.12 = { trade_goods = unknown }

@@ -19,3 +19,5 @@ discovered_by = chinese
 discovered_by = nomad_group
 discovered_by = indian
 
+
+1444.11.12 = { trade_goods = unknown }

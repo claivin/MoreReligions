@@ -22,11 +22,4 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-
-1451.1.1 = { owner = MON controller = MON remove_core = SER }
-1478.1.1 = { add_core = TUR } # Conquered Zabljak, but never fully conquered Zeta
-1482.1.1 = { capital = "Cetinje" }
-1499.1.1 = { owner = TUR controller = TUR }
-1515.1.1 = { owner = MON controller = MON remove_core = TUR } # Prince-bishops of Cetinje
-1709.1.1 = { unrest = 5 } # Montenegro's Muslim converts were massacred at Vladika Danilo's order
-1712.1.1 = { unrest = 2 } # Cetinje sacked again as a response
+1444.11.12 = { trade_goods = unknown }

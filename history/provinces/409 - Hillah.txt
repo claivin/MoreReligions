@@ -21,3 +21,5 @@ discovered_by = BYZ
 
 add_province_triggered_modifier = religious_center
 
+
+1444.11.12 = { trade_goods = unknown }

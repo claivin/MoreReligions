@@ -25,3 +25,5 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 add_core = DAL
+
+1444.11.12 = { trade_goods = unknown }

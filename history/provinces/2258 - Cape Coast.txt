@@ -36,3 +36,5 @@ owner = AKW
 controller = AKW
 
 
+
+1444.11.12 = { trade_goods = unknown }

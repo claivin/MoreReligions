@@ -18,3 +18,4 @@ discovered_by = ottoman
 add_core = MCM
 add_core = MNS
 center_of_trade = 1
+1444.11.12 = { trade_goods = unknown }

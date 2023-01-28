@@ -21,3 +21,5 @@ discovered_by = MAK
 discovered_by = east_african
 
 
+
+1444.11.12 = { trade_goods = unknown }

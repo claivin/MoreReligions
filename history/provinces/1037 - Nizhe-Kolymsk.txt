@@ -25,3 +25,4 @@ discovered_by = LMU
 discovered_by = KEK
 discovered_by = KYK
 discovered_by = KLY
+1444.11.12 = { trade_goods = unknown }

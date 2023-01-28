@@ -32,3 +32,5 @@ discovered_by = BAO
 
 
 
+
+1444.11.12 = { trade_goods = unknown }

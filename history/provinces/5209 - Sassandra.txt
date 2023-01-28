@@ -29,3 +29,4 @@ owner = ZHI
 controller = ZHI
 add_core = ZHI
 is_city = yes
+1444.11.12 = { trade_goods = unknown }

@@ -23,3 +23,5 @@ extra_cost = 5
 add_province_triggered_modifier = religious_center
 add_province_triggered_modifier = hindu_varanasi
 
+
+1444.11.12 = { trade_goods = unknown }

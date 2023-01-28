@@ -21,15 +21,5 @@ discovered_by = indian
 discovered_by = east_african
 
 
-1510.1.1 = {
-	discovered_by = NUB
-	owner = NUB
-	controller = NUB
-	add_core = NUB
-} # Funj replace Mamluks in control of Suakin
-#1517.1.1 = { } # Mamluks fall to Ottomans, Ottomans do not advance up Nile
-1540.1.1 = {
-	owner = ABB
-	controller = ABB
-	add_core = ABB 	
-} #Ottomans occupy Lower Nubia
+
+1444.11.12 = { trade_goods = unknown }

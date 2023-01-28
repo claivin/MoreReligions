@@ -22,3 +22,5 @@ fort_15th = yes #Fortress City of Amed/Diyarbakir which withstood repeated siege
 extra_cost = 8
 center_of_trade = 1
 
+
+1444.11.12 = { trade_goods = unknown }

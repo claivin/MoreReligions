@@ -21,13 +21,4 @@ discovered_by = ottoman
 discovered_by = eastern
 
 
-#1415.8.21 = { controller = POR add_core = POR }
-# 1415.9.1 = { controller = POR add_core = POR owner = POR capital = Ceuta }
-# 1500.1.1 = { religion = catholic }
-# 1640.1.1 = {
-	# owner = SPA
-	# controller = SPA
-	# add_core = SPA
-	# remove_core = POR
-# } # Ceuta decides to become Spanish and not Portuguese
-
+1444.11.12 = { trade_goods = unknown }

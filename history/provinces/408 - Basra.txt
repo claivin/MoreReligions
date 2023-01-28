@@ -22,3 +22,5 @@ extra_cost = 18
 center_of_trade = 1
 discovered_by = BYZ
 
+
+1444.11.12 = { trade_goods = unknown }

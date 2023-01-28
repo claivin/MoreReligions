@@ -28,3 +28,4 @@ discovered_by = SNT
 discovered_by = SNF
 discovered_by = DEN
 discovered_by = BAO
+1444.11.12 = { trade_goods = unknown }

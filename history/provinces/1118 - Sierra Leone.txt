@@ -33,3 +33,5 @@ is_city = yes
 trade_goods = slaves
 
 
+
+1444.11.12 = { trade_goods = unknown }

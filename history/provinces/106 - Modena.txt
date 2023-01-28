@@ -20,15 +20,4 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-
-# 1495.1.1 = { hre = no }
-# 1597.10.28 = {
-	# owner = MOD
-	# controller = MOD
-# }
-# 1797.6.29 = {
-	# owner = ITA
-	# controller = ITA
-	# add_core = ITA
-# } # Transpadane and Cispadane Merge
-# 1814.4.11 = { owner = MOD controller = MOD remove_core = ITA }
+1444.11.12 = { trade_goods = unknown }

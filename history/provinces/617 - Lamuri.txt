@@ -21,6 +21,4 @@ center_of_trade = 1
 
 1405.1.1 = { discovered_by = MNG }
 
-
-1471.1.1 = { capital = "Kutaraja" }
-1509.1.1 = { discovered_by = POR }
+1444.11.12 = { trade_goods = unknown }

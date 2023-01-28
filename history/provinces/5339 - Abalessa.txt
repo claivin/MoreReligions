@@ -16,3 +16,5 @@ owner = ABL
 controller = ABL
 add_core = ABL
 
+
+1444.11.12 = { trade_goods = unknown }

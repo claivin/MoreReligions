@@ -13,16 +13,4 @@ native_size = 5
 native_ferocity = 2
 native_hostileness = 9
 
-
-
-# 1720.1.1 = { discovered_by = DAN }
-
-# 1721.1.1 = {
-	# owner = DAN
-	# controller = DAN
-	# add_core = DAN
-	# culture = danish
-	# trade_goods = fur
-	# religion = protestant
-	# is_city = yes
-# }
+1444.11.12 = { trade_goods = unknown }

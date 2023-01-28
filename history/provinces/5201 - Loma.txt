@@ -30,3 +30,5 @@ add_core = TEE
 is_city = yes
 trade_goods = slaves
 capital = "Makeni"
+
+1444.11.12 = { trade_goods = unknown }

@@ -22,3 +22,5 @@ discovered_by = sub_saharan
 
 1446.1.1 = { discovered_by = POR } # Frenão do Pó
 
+
+1444.11.12 = { trade_goods = unknown }

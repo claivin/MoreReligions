@@ -16,3 +16,5 @@ owner = GHT
 controller = GHT
 add_core = GHT
 
+
+1444.11.12 = { trade_goods = unknown }

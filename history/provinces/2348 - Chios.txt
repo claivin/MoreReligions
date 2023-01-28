@@ -20,12 +20,4 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
-
-1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance
-1556.1.1 = { unrest = 0 }
-1566.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-}
-1740.1.1 = { base_tax = 1 base_production = 1 } # The decentralizing effect of the provincial system
+1444.11.12 = { trade_goods = unknown }

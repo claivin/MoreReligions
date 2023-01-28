@@ -23,13 +23,4 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
 
-1511.1.1 = { discovered_by = POR }
-
-1580.1.1 = {
-	owner = TER
-	controller = TER
-	add_core = TER
-	religion = sunni
-	is_city = yes
-	trade_goods = tropical_wood
-} # Ternate Sultanate expanded
+1444.11.12 = { trade_goods = unknown }

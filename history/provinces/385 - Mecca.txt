@@ -23,3 +23,5 @@ discovered_by = east_african
 add_province_triggered_modifier = religious_center
 add_province_triggered_modifier = christian_mecca
 
+
+1444.11.12 = { trade_goods = unknown }

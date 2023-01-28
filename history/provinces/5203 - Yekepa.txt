@@ -29,3 +29,4 @@ controller = YKB
 add_core = YKB
 is_city = yes
 trade_goods = lumber
+1444.11.12 = { trade_goods = unknown }

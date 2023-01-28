@@ -23,3 +23,4 @@ discovered_by = chinese
 } # Under the Balinese influence
 
 # 1512.1.1 = { discovered_by = POR }
+1444.11.12 = { trade_goods = unknown }

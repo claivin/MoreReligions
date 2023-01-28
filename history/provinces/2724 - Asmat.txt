@@ -20,3 +20,5 @@ discovered_by = TID
 
 1525.1.1 = { discovered_by = POR } # Don Jorge de Mneses
 
+
+1444.11.12 = { trade_goods = unknown }

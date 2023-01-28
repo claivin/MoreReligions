@@ -15,11 +15,4 @@ base_production = 3
 discovered_by = east_african
 discovered_by = muslim
 
-1650.1.1 = {
-	culture = oromo
-}
-1710.1.1 = {
-	owner = ETH
-	controller = ETH
-	add_core = ETH
-}
+1444.11.12 = { trade_goods = unknown }

@@ -16,3 +16,4 @@ capital = "Tavastehus"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+1444.11.12 = { trade_goods = unknown }

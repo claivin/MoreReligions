@@ -20,3 +20,5 @@ native_hostileness = 9
 
 discovered_by = sub_saharan
 
+
+1444.11.12 = { trade_goods = unknown }

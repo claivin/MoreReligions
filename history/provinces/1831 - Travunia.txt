@@ -24,9 +24,4 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-
-1482.1.1 = {
-	owner = TUR
-	controller = TUR
-	add_core = TUR
-}
+1444.11.12 = { trade_goods = unknown }
