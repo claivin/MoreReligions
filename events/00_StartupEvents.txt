@@ -268,3 +268,24 @@ country_event = {
 		}
 	}
 }
+
+#Poland only
+country_event = {
+	id = mr_startup_events.3
+	title = mr_startup_events.3.t
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	desc = mr_startup_events.3.d
+	is_triggered_only = yes
+	trigger = {
+		ai = no
+		tag = POL
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = mr_startup_events.2.a
+		#empty
+	}
+}
