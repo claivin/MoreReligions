@@ -3,7 +3,7 @@
 owner = RUM
 controller = RUM
 culture = turkish
-religion = shiite
+religion = mr_alevi
 capital = "Sivas"
 trade_goods = livestock
 hre = no

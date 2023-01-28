@@ -3,7 +3,7 @@
 owner = TUR
 controller = TUR
 culture = turkish
-religion = sunni
+religion = shiite
 capital = "Kütahya"
 trade_goods = cloth
 hre = no
@@ -13,6 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = TUR
 add_core = GRM
+add_core = MEN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

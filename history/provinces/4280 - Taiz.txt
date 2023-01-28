@@ -3,7 +3,7 @@
 owner = ZBD
 controller = ZBD
 culture = yemeni_culture
-religion = mr_mustali
+religion = mr_tayyibi
 capital = "Taiz"
 trade_goods = coffee
 hre = no

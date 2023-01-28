@@ -1775,7 +1775,7 @@ christian = {
 	
 	mr_nestorian = {
 
-		color = { 235 53 205 }
+		color = { 250 111 20 }
 		icon = 39
 		country = {
 			global_tax_income = 0.1

@@ -2,7 +2,7 @@ government = monarchy
 
 primary_culture = turkish
 
-religion = shiite
+religion = mr_alevi
 technology_group = ottoman
 
 capital = 4310 

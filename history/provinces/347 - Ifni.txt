@@ -4,7 +4,7 @@
 owner = SOS
 controller = SOS
 culture = berber
-religion = sunni
+religion = mr_almuwahiddun
 capital = "Sidi Ifni"
 trade_goods = fish
 hre = no

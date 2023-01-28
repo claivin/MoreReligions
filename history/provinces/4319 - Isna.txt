@@ -3,7 +3,7 @@
 owner = MAK
 controller = MAK
 culture = al_misr_arabic
-religion = sunni
+religion = coptic
 capital = "Isna"
 trade_goods = livestock
 hre = no

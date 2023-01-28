@@ -3,7 +3,7 @@
 owner = MAM
 controller = MAM
 culture = bedouin_arabic
-religion = shiite
+religion = mr_druze
 capital = "As-Suwayda"
 trade_goods = livestock
 hre = no

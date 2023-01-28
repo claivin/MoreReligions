@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = pirate_republic_reform
-religion = mr_almohad
+religion = mr_almuwahiddun
 primary_culture = catalan
 technology_group = western
 capital = 333	# Majorca

@@ -3,7 +3,7 @@
 owner = TUR
 controller = TUR
 culture = turkish
-religion = sunni
+religion = shiite
 capital = "Bursa"
 trade_goods = silk
 hre = no
@@ -12,6 +12,7 @@ base_production = 5
 base_manpower = 2
 is_city = yes
 add_core = TUR
+add_core = MEN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

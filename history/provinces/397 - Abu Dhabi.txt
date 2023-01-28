@@ -3,7 +3,7 @@
 owner = BHY
 controller = BHY
 culture = gulf_arabic
-religion = shiite
+religion = mr_qarmatian
 capital = "Abu Dhabi"
 trade_goods = livestock #Pearls
 hre = no
