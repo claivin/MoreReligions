@@ -282,7 +282,7 @@ fish = {
 		local_sailors_modifier = 0.25
 	}
 	chance = {
-		factor = 20
+		factor = 35
 		modifier = {
 			factor = 0
 			NOT = { has_port = yes }
@@ -514,7 +514,7 @@ copper = {
 		regiment_recruit_speed = -0.2
 	}
 	chance = {
-		factor = 15
+		factor = 8
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -535,27 +535,27 @@ copper = {
 				has_terrain = woods
 			}
 		}
-		modifier = {
-			factor = 0
-			is_random_new_world = no
-			NOT = { province_id = 990 } #St Maurice ironworks
-			NOT = { area = minas_gerais_area }
-			NOT = { area = diamantina_area }
-			NOT = { area = mato_grosso_area }
-			NOT = { area = great_valley_area }
-			NOT = { area = susquehanna_area }
-			NOT = { area = hudson_valley_area }
-			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
-			NOT = { area = upper_ontario_area }
-			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = maryland_area }
-			NOT = { area = ofaie_area }
-			NOT = { region = west_siberia_region }
-			NOT = { region = east_siberia_region }
-			NOT = { region = central_africa_region }
-		}
+		# modifier = {
+			# factor = 0
+			# is_random_new_world = no
+			# NOT = { province_id = 990 } #St Maurice ironworks
+			# NOT = { area = minas_gerais_area }
+			# NOT = { area = diamantina_area }
+			# NOT = { area = mato_grosso_area }
+			# NOT = { area = great_valley_area }
+			# NOT = { area = susquehanna_area }
+			# NOT = { area = hudson_valley_area }
+			# NOT = { area = lake_superior_area }
+			# NOT = { area = south_iroquoisia_area }
+			# NOT = { area = upper_ontario_area }
+			# NOT = { area = laurentian_area }
+			# NOT = { area = inner_ontario_area }
+			# NOT = { area = maryland_area }
+			# NOT = { area = ofaie_area }
+			# NOT = { region = west_siberia_region }
+			# NOT = { region = east_siberia_region }
+			# NOT = { region = central_africa_region }
+		# }
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -599,38 +599,38 @@ gold = {
 	#no modifiers
 	
 	chance = {
-		factor = 5
+		factor = 1
 		modifier = {
 			factor = 0
 			area = newfoundland_area
 		}
-		modifier = {
-			factor = 0
-			is_random_new_world = no
-			NOT = { region = west_siberia_region }
-			NOT = { region = east_siberia_region }
-			NOT = { region = cascadia_region }
-			NOT = { region = australia_region }
-			NOT = { region = california_region }
-			NOT = { region = south_africa_region }
-			NOT = { region = central_africa_region }
-			NOT = { region = peru_region }
-			NOT = { region = upper_peru_region }
-			NOT = { region = mexico_region }
-			NOT = { region = rio_grande_region }
-			NOT = { region = central_america_region }
-			NOT = { area = goias_area }
-			NOT = { area = pontal_area }
-			NOT = { area = mato_grosso_area }
-			NOT = { area = ofaie_area }
-			NOT = { area = minas_gerais_area }
-			NOT = { area = diamantina_area }
-			NOT = { area = guapore_area }
-			NOT = { area = grao_para_area }
-			NOT = { area = amapa_area }
-			NOT = { area = ucayali_area }
-			NOT = { area = amazon_area }
-		}
+		# modifier = {
+			# factor = 0
+			# is_random_new_world = no
+			# NOT = { region = west_siberia_region }
+			# NOT = { region = east_siberia_region }
+			# NOT = { region = cascadia_region }
+			# NOT = { region = australia_region }
+			# NOT = { region = california_region }
+			# NOT = { region = south_africa_region }
+			# NOT = { region = central_africa_region }
+			# NOT = { region = peru_region }
+			# NOT = { region = upper_peru_region }
+			# NOT = { region = mexico_region }
+			# NOT = { region = rio_grande_region }
+			# NOT = { region = central_america_region }
+			# NOT = { area = goias_area }
+			# NOT = { area = pontal_area }
+			# NOT = { area = mato_grosso_area }
+			# NOT = { area = ofaie_area }
+			# NOT = { area = minas_gerais_area }
+			# NOT = { area = diamantina_area }
+			# NOT = { area = guapore_area }
+			# NOT = { area = grao_para_area }
+			# NOT = { area = amapa_area }
+			# NOT = { area = ucayali_area }
+			# NOT = { area = amazon_area }
+		# }
 		modifier = {
 			factor = 0
 			is_random_new_world = yes
@@ -722,31 +722,31 @@ iron = {
 		local_build_time = -0.2
 	}
 	chance = {
-		factor = 10
+		factor = 5
 		modifier = {
 			factor = 0
 			area = newfoundland_area
 		}
-		modifier = {
-			factor = 0
-			normal_or_historical_nations = yes
-			NOT = { region = west_siberia_region }
-			NOT = { region = east_siberia_region }
-			NOT = { region = central_africa_region }
-			NOT = { province_id = 990 }
-			NOT = { area = great_valley_area }
-			NOT = { area = susquehanna_area }
-			NOT = { area = hudson_valley_area }
-			NOT = { area = lake_superior_area }
-			NOT = { area = south_iroquoisia_area }
-			NOT = { area = upper_ontario_area }
-			NOT = { area = laurentian_area }
-			NOT = { area = inner_ontario_area }
-			NOT = { area = maryland_area }
-			NOT = { area = ofaie_area }
-			NOT = { province_id = 18 }
-			is_random_new_world = no
-		}
+		# modifier = {
+			# factor = 0
+			# normal_or_historical_nations = yes
+			# NOT = { region = west_siberia_region }
+			# NOT = { region = east_siberia_region }
+			# NOT = { region = central_africa_region }
+			# NOT = { province_id = 990 }
+			# NOT = { area = great_valley_area }
+			# NOT = { area = susquehanna_area }
+			# NOT = { area = hudson_valley_area }
+			# NOT = { area = lake_superior_area }
+			# NOT = { area = south_iroquoisia_area }
+			# NOT = { area = upper_ontario_area }
+			# NOT = { area = laurentian_area }
+			# NOT = { area = inner_ontario_area }
+			# NOT = { area = maryland_area }
+			# NOT = { area = ofaie_area }
+			# NOT = { province_id = 18 }
+			# is_random_new_world = no
+		# }
 		modifier = {
 			factor = 1.2
 			normal_or_historical_nations = no
@@ -781,7 +781,7 @@ slaves = {
 		local_missionary_strength = 0.01
 	}
 	chance = {
-		factor = 15
+		factor = 0
 		modifier = {
 			factor = 0
 			holy_order = dominican_order
@@ -1575,7 +1575,7 @@ livestock = {
 		supply_limit_modifier = 0.5
 	}
 	chance = {
-		factor = 30
+		factor = 25
 		modifier = {
 			factor = 0
 			area = newfoundland_area
@@ -1730,6 +1730,10 @@ glass = {
 			factor = 2.0
 			development_discounting_tribal = 22
 		}
+		modifier = {
+			factor = 0
+			NOT = { province_has_center_of_trade_of_level = 1 }
+		}
 	}
 }
 
@@ -1754,6 +1758,10 @@ paper = {
 		modifier = {
 			factor = 2.0
 			development_discounting_tribal = 22
+		}
+		modifier = {
+			factor = 0
+			NOT = { province_has_center_of_trade_of_level = 1 }
 		}
 	}
 }
