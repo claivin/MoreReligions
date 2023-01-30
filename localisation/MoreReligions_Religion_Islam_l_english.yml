@@ -196,3 +196,36 @@
  mr_druze_rebels_demand: "Convert $COUNTRYNAME$"
  mr_druze_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
+ mr_yazidi: "Yazidi"
+ mr_yazidi_religion_desc: "Placeholder"
+ 
+ mr_yazidi_rebels_name: "Yazidi Zealots"
+ mr_yazidi_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_yazidi_rebels_title: "$RELIGION$ Zealots"
+ mr_yazidi_rebels_army: "$RELIGION$ Army"
+ mr_yazidi_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_yazidi_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ 
+ 
+ ##Yazidi Archangels
+ tawuse_melek: "Tawuse Melek"
+ tawuse_melek_desc: "The leader of the Archangels sent by God to protect and guide this world, otherwise known as Azrael."
+ 
+ jabrail: "Jabra'il"
+ jabrail_desc: "Otherwise known as Gabriel, this is one of the Seven Archangels of God."
+ 
+ mikail: "Mika'il"
+ mikail_desc: "Othersie known as Michael, this is one of the Seven Archangels of God."
+ 
+ rafail: "Rafa'il"
+ rafail_desc: "Otherwise known as Raphael, this is one of the Seven Archangels of God."
+ 
+ dadrail: "Dadra'il"
+ dadrail_desc: "One of the Seven Archangels of God."
+ 
+ izrafil: "Izraf'il"
+ izrafil_desc: "One of the Seven Archangels of God."
+ 
+ shemnail: "Shemna'il"
+ shemnail_desc: "Otherwise knwon as Shamsiel, this is one of the Seven Archangels of God."
+ 

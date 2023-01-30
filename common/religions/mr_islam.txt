@@ -1879,17 +1879,9 @@ muslim = {
 			tolerance_own = 1
 		}
 
-		holy_sites = { 421 4430 2223 441 2235 }
-
-		blessings = {
-			blessing_yasna
-			blessing_haoma
-			blessing_navjote
-			blessing_manthras
-			blessing_dakhma
-		}
+		personal_deity = yes
 		
-		heretic = { MAZDAKI MANICHEAN }	
+		heretic = { SUNNI SHIA }	
 	}
 	
 	harmonized_modifier = harmonized_muslim

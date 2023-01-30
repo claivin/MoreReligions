@@ -420,6 +420,55 @@ GHC_ideas = {
 
 }
 
+TOU_ideas = {
+	start = {
+		tolerance_heretic = 2
+		production_efficiency = 0.10
+	}
+	
+	bonus = {
+		global_missionary_strength = 0.02
+	}
+	
+	free = yes
+	
+	trigger = {
+		tag = TOU
+	}
+	
+	TOU_first = { #Victory at Carcassonne
+		defensiveness = 0.25
+		land_morale = 0.10
+	}
+	
+	TOU_second = { #Capitouls of Toulouse
+		adm_advisor_cost = -0.15
+	}
+	
+	TOU_third = { #Cathar Crusade
+		warscore_cost_vs_other_religion = -0.10
+	}
+		
+	
+	TOU_fourth = { #Visigothic Law
+		may_recruit_female_generals = yes 
+		leader_land_fire = 1 
+	}
+	
+	TOU_fifth = { #Protection of the Black Brotherhood
+		harsh_treatment_cost = -0.2 
+	}
+	
+	TOU_sixth = { #Bazacle Mills 
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	TOU_seventh = { #Consistori del Gay Saber
+		technology_cost = -0.05
+		prestige_decay = -0.01 
+	}	
+}
+		
 	
 		
 	

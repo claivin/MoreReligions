@@ -150,3 +150,15 @@
  #pgn_cavalry_desc
  pgn_land: "Mass Land Reform"
  #pg_land_desc
+ 
+ #Toulouse
+ TOU_ideas: "Toulouse Ideas"
+ TOU_ideas_start: "Toulouse Traditions"
+ TOU_ideas_bonus: "Toulouse Ambition"
+ TOU_first: "Victory at Carcassonne"
+ TOU_second: "Capitouls of Toulouse"
+ TOU_third: "Cathar State"
+ TOU_fourth: "Visigothic and Roman Law"
+ TOU_fifth: "Protection of the Black Brotherhood"
+ TOU_sixth: "Bazacle Mills"
+ TOU_seventh: "Consistori del Gay Saber"
