@@ -1453,7 +1453,7 @@ prof_armies_inst = {
 		}
 		has_fort_building_trigger = yes
 		owner = {
-			army_professionalism = 60
+			army_professionalism = 0.6
 		}
 	}
 	
@@ -1835,6 +1835,7 @@ state_navy_inst = {
 
 	history = {
 		#doesnt exist at start
+		is_year = 1625
 	}
 	
 	can_start = {
