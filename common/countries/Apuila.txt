@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = {  75  100  133 }
+color = {  63  115  164 }
 revolutionary_colors = { 15  6  16 } #Parthenopean Republic
 
 

@@ -1,7 +1,8 @@
 #copied from Volyn
 graphical_culture = easterngfx
 
-color = { 245 235 59 }
+#color = { 234 235 59 }
+color = { 241 244 158 }
 revolutionary_colors = { 13 5 8 }
 
 historical_idea_groups = {

@@ -1,7 +1,7 @@
 #2297 - Saruhan
 
-owner = SRU
-controller = SRU
+owner = TUR
+controller = TUR
 culture = turkish
 religion = shiite
 capital = "Manisa"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = SRU
+add_core = TUR
 add_core = MEN
 discovered_by = western
 discovered_by = eastern

@@ -2,7 +2,8 @@
 
 graphical_culture = africangfx
 
-color = { 232  159  46 }
+#color = { 232  159  46 }
+color = { 232  129  56 }
 revolutionary_colors = { 13 8 16 }
 
 historical_idea_groups = {
