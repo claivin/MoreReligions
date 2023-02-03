@@ -1,0 +1,3 @@
+mr_pol_against_pope_modifier = {
+	imperial_authority = 0.1
+}

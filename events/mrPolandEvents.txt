@@ -1,0 +1,123 @@
+#events for poland and polish missions
+namespace = mr_poland
+
+#Papal Diplomacy
+country_event = {
+	id = mr_poland.1
+	title = mr_poland.1.t
+	desc = {
+		trigger = { NOT = { has_country_modifier = the_statue_in_restraint_of_appeals }}
+		desc = mr_poland.1.da
+	}
+	desc = {
+		trigger = { has_country_modifier = the_statue_in_restraint_of_appeals }
+		desc = mr_poland.1.db
+	}
+	picture = POPE_PREACHING_eventPicture
+	
+	major = yes
+	major_trigger = {
+		religion_group = christian
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#by mission mr_pol_c5a
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = mr_poland.1.a
+		trigger = { NOT = { has_country_modifier = the_statue_in_restraint_of_appeals } }
+		hidden_effect = {
+			set_country_flag = mr_pol_with_pope
+			clr_country_flag = mr_pol_against_pope
+		}
+		custom_tooltip = mr_pol_unlock_with_pope_tt
+		swap_non_generic_missions = yes
+		add_papal_influence = 50
+		add_reform_desire = 0.02
+	}
+	option = {
+		name = mr_poland.1.b
+		trigger = { has_country_modifier = the_statue_in_restraint_of_appeals }
+		hidden_effect = {
+			set_country_flag = mr_pol_against_pope
+			clr_country_flag = mr_pol_with_pope
+		}
+		custom_tooltip = mr_pol_unlock_against_pope_tt
+		swap_non_generic_missions = yes
+		add_country_modifier = {
+			name = mr_pol_against_pope_modifier
+			duration = -1
+		}
+	}
+}
+
+#Christianization of the Baltics
+country_event = {
+	id = mr_poland.2
+	title = mr_poland.2.t
+	desc = mr_poland.2.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#by mission mr_pol_c5br2
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #prepare integration
+		name = mr_poland.2.a
+		ai_chance = {
+			factor = 50
+		}
+		every_subject_country = {
+			every_owned_province = {
+				limit = {
+					region = baltic_region
+				}
+				add_territorial_core = ROOT
+			}
+		}
+	}
+	option = { #establish a baltic duchy
+		name = mr_poland.2.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				POL = {
+					any_subject_country = {
+						ai = no
+					}
+				}
+			}
+		}
+		every_subject_country = {
+			every_owned_province = {
+				limit = {
+					region = baltic_region
+				}
+				add_core = BLT
+				cede_province = BLT
+			}
+		}
+		every_owned_province = {
+			limit = {
+				region = baltic_region
+			}
+			add_core = BLT
+			cede_province = BLT
+		}
+		create_march = BLT
+		BLT = {
+			set_dynasty = ROOT
+		}
+	}
+}

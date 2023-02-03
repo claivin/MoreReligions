@@ -1,0 +1,6 @@
+government = monarchy
+government_rank = 1
+primary_culture = baltic_prussian
+religion = catholic
+technology_group = eastern
+capital = 1841 # marienberg

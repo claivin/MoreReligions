@@ -1,0 +1,130 @@
+#papal starter
+mr_pol_c5a = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { tag = POL }
+	has_country_shield = yes
+
+	mr_pol_c5ar1 = { #Papal Diplomacy
+		icon = mission_unknown_mission
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+			owned_by = PAP
+		}
+		trigger = {
+			OR = {
+				AND = {
+					alliance_with = PAP
+					reverse_has_opinion = {
+						who = PAP
+						value = 200
+					}
+					NOT = { has_country_modifier =  the_statue_in_restraint_of_appeals }
+				}
+				has_country_modifier = the_statue_in_restraint_of_appeals
+			}
+		}
+		effect = {
+			custom_tooltip = mr_pol_c5ar1_tt
+			country_event = {
+				id = mr_poland.1
+			}
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+#with papacy - deal with pagans
+mr_pol_c5b = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = POL
+		has_country_flag = mr_pol_with_pope
+	}
+	has_country_shield = yes
+	
+	mr_pol_c5br2 = { #Christianize the Baltics
+		icon = mission_unknown_mission
+		required_missions = { mr_pol_c5ar1 }
+		position = 2
+		provinces_to_highlight = {
+			region = baltic_region
+			NOT = { religion = catholic }
+		}
+		trigger = {
+			calc_true_if  = {
+				baltic_region = {
+					religion = catholic
+				}
+				amount = 30
+			}
+		}
+		effect = {
+			country_event = {
+				id = mr_poland.2
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			add_estate_loyalty_modifier = {
+				estate = estate_church
+				desc = MR_CHRISTIANIZED_BALTICS
+				loyalty = 5
+				duration = 9125
+			}
+		}
+	}
+}
+
+#dummy papal branch
+mr_pol_c5a_dummy = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = POL
+		NOT = { has_country_flag = mr_pol_with_pope }
+		NOT = { has_country_flag = mr_pol_against_pope }
+	}
+	has_country_shield = yes
+	
+	mr_pol_c5ar2_dummy = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = { mr_pol_c5ar1 }
+		provinces_to_highlight = {}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+			OR = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = pol_with_pope_path_tt
+						always = no
+					}
+					
+				}
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = pol_against_pope_path_tt
+						always = no
+					}
+					
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = pol_with_pope_path_tt
+			custom_tooltip = pol_against_pope_path_tt
+		}
+	}
+}

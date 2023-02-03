@@ -145,6 +145,7 @@ POG = "countries/Pogesania.txt"
 WRM = "countries/Warmia.txt"
 SBI = "countries/Sambia.txt"
 LTV = "countries/Latvia.txt"
+BLT = "countries/Baltic.txt"
 
 #East Indochinese
 

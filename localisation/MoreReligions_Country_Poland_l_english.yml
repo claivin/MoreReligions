@@ -1,0 +1,30 @@
+﻿l_english:
+#missions
+ mr_pol_c5ar1_title: "Papal Diplomacy"
+ mr_pol_c5ar1_desc: "With the spiritual landscape of Europe deteriorating, there must be a drastic action undertaken. One with clear direction and purpose."
+ mr_pol_c5ar1_tt: "We will decide whether to reallign the Empire with the Papacy or not"
+ 
+ mr_pol_c5ar2_dummy_title: "Branching Mission"
+ mr_pol_c5ar2_dummy_desc: "This mission is a §YBranching Mission§!. Through events or through other missions, this mission will be replaced a new, final version."
+ pol_with_pope_path_tt: "If §Y[Root.GetName]§! chooses to mend relations with the Papacy, the following conditions will be required to complete this mission:"
+ pol_against_pope_path_tt: "If §Y[Root.GetName]§! chooses to further distance relations with the Papacy, the following conditions will be required to complete this mission:"
+ 
+ mr_pol_c5br2_title: "Baltic Crusades"
+ mr_pol_c5br2_desc: "Early missions into Prussia proved ineffective, and the problem was stalled futher on when Freedom of Religion was guaranteed. Fortunately, we no longer have to maintain the precarious status quo."
+#mission events
+ mr_poland.1.t: "Envoy to the Bishop of Rome"
+ mr_poland.1.da: "The Declaration of Religious Freedom in the Kingdom of Poland by Przemysl II in 1315 was and has always been a massive controversy; it has always been a pragmatic measure by Polish authority to sway German rulers' favor to and keep them in line under the then young Polish imperial regime. However, as the past century has shown, the declaration has proven to be far too lax and promoted a great deal of internal instability. Heresies have festered in communities throughout Europe, under the assumption they had the implicit protection of the Emperor, despite what spiritual authorities have declared. The time has come to correct this heavyhanded approach. Of course this will be no easy task as unconventional thought and heretical ideas have found their way into many facets of society. The process will be slow, careful, and if need be, forceful.\n\nOn [GetMonth] of the year [GetYear], an envoy arrived to Rome sent from Krakow. He reports that that [POL.Monarch.GetTitle] [POL.Monarch.GetName] has spent many weeks in deep conversation with the monks and priests of [POL.Monarch.GetHerHis] court. The [POL.Monarch.GetTitle] has decided to reverse the policy of his predecessors, and seeks Papal assistance."
+ mr_poland.1.a: "The work begins."
+ mr_pol_unlock_with_pope_tt: "Unlock the §YHeal Christendom§! mission path."
+ mr_poland.1.db: "In 1315, the Declaration of Religious Freedom in the Kingdom of Poland by Przemysl II set into motion the gradual and continual disintegration of Papal Authority. As we see it now, it has done the work of siphoning power away from Rome and towards Krakow, into the hands of the [POL.Monarch.GetTitle]. Several of our more fervent clergymen have warned that the unchecked growth of heretical thought could severly threaten the overall legitimacy of the Empire itself, considering its origins. Despite this, we have doubled down; the political identity of the Empire has cemented itself as an additional entity, connected to, but not dependent on the Church, after all.\n\nOn [GetMonth] of the year [GetYear], an envoy arrived to Rome sent from Krakow. After careful consideration with diplomats and the great strategists of [POL.Monarch.GetHerHis] court, declared that the Emperor will no longer act in subservience to the Bishop of Rome."
+ mr_poland.1.b: "Polish before Catholic."
+ mr_pol_unlock_against_pope_tt: "Unlock the §YRule from Krakow§! path."
+ 
+ mr_poland.2.t: "Lords of the Baltic"
+ mr_poland.2.d: "Although there are still some holdouts of paganism in the Baltics, the majority have turned to Christ. There is still the question of how to govern these new lands. Installing the previous chieftans as the new governors will ease their integration into the Kingdom, however it may be simpler to delegate a new duke to administrate the lands for us."
+ mr_poland.2.a: "Into the fold!"
+ mr_poland.2.b: "One of our nephews should be capable enough."
+ 
+#mission misc
+ mr_pol_against_pope_modifier: "Rule from Krakow"
+ MR_CHRISTIANIZED_BALTICS: "Clerical Expansion into the Baltics"
