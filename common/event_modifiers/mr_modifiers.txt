@@ -235,4 +235,18 @@ ghost_deity_2 = {
 
 WAIT_CATTLE_MO = {
 }
+
+#Hainan Funny
+shenist_tradition = {
+	diplomatic_reputation = 1
+	global_unrest = -2
+}
+muslim_leader_ma = {
+	missionaries = 1
+	infantry_power = 0.10
+}
+mahayana_leader_ma = {
+	religious_unity = 0.20
+	naval_morale = 0.15
+}
 	

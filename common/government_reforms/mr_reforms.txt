@@ -454,5 +454,50 @@ mr_hungarian_theocracy = {
 		war_exhaustion = -0.02
 	}
 }
-
+mr_hainan_pirate_republic_reform = {
+	icon = "pirate_republic"
+	allow_normal_conversion = no
+	legacy_equivalent = pirate_republic
+	lock_level_when_selected = yes
+	modifiers = {
+		republican_tradition = -0.5
+		max_absolutism = 10
+		naval_forcelimit_modifier = 0.5
+		capture_ship_chance = 0.33
+		state_governing_cost = 0.30
+		may_perform_slave_raid_on_same_religion = yes
+		allowed_marine_fraction = 0.5
+	}
+	trigger = {
+		OR = {
+			has_government_attribute = is_pirate_republic_reform
+			crown_stronger_than_estate = { estate = all }
+		}
+	}
+	valid_for_nation_designer = no
+	
+	can_form_trade_league = no
+	has_term_election = no
+	maintain_dynasty = yes
+	removed_effect = {
+		clr_country_flag = pirate_mutineer_council
+	}
+	
+	potential = {
+		tag = HEI
+	}
+	
+	factions_frame = 9
+	factions = {
+		pr_buccaneers
+		pr_smugglers
+		pr_captains
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+		is_pirate_republic_reform = yes
+		elections_increase_factions_influence = yes
+	}
+}
 	

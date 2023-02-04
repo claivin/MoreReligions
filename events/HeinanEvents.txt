@@ -1,0 +1,76 @@
+country_event = {
+	id = HEI_flavor.1
+	title = HEI_flavor.1.t
+	desc = HEI_flavor.1.d
+	picture = MALAYAN_PORT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HEI
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = HEI_flavor.1a
+		kill_ruler = yes
+		define_ruler = {
+			dynasty = "Ma"
+			culture = ROOT
+			religion = ROOT
+			adm = 6
+			dip = 3
+			mil = 4
+			age = 20
+			claim = 95
+		}
+		add_ruler_modifier = { 
+			name = shenist_tradition
+			duration = -1
+		}
+	}
+	
+	
+	option = {
+		name = HEI_flavor.1b
+		kill_ruler = yes
+		change_religion = sunni
+		define_ruler = {
+			dynasty = "Ma"
+			culture = ROOT
+			religion = sunni
+			adm = 3
+			dip = 4
+			mil = 6
+			age = 20
+			claim = 95
+		}
+		add_ruler_modifier = { 
+			name = muslim_leader_ma
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = HEI_flavor.1b
+		kill_ruler = yes
+		change_religion = mahayana
+		define_ruler = {
+			dynasty = "Ma"
+			culture = ROOT
+			religion = mahayana
+			adm = 4
+			dip = 6
+			mil = 3
+			age = 20
+			claim = 95
+		}
+		add_ruler_modifier = { 
+			name = mahayana_leader_ma
+			duration = -1
+		}
+	}
+}

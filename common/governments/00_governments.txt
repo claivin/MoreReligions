@@ -81,7 +81,6 @@ monarchy = {
 				mr_polish_hungary_reform
 				mr_serbian_hungary_reform
 				mr_hungary_hungary_reform
-				
 			}
 		}
 		hereditary_vs_nobility = {
@@ -393,6 +392,7 @@ republic = {
 				united_cantons_reform
 				kongsi_federation
 				millenarian_theocracy_reform
+				mr_hainan_pirate_republic_reform
 			}
 		}
 		republican_virtues = {

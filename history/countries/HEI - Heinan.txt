@@ -1,8 +1,8 @@
 government = republic
-add_government_reform = pirate_republic_reform
+add_government_reform = mr_hainan_pirate_republic_reform
 technology_group = chinese
 primary_culture = chimin
-religion = sunni
+religion = mr_jingtianfazu
 capital = 666 # Literally hell???
 
 1444.1.1 = {
@@ -12,6 +12,7 @@ capital = 666 # Literally hell???
 		adm = 6
 		dip = 6
 		mil = 6
-		birth_date = 1471.1.1
+		birth_date = 1371.1.1
+		death_date = 1445.7.20
 	}
 }
