@@ -1,10 +1,10 @@
 # 2161 - Limchow
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = ZHJ
+controller = ZHJ
+add_core = ZHJ
 culture = cantonese
-religion = confucianism
+religion = mr_taoism
 capital = "Limchow"
 trade_goods = incense
 hre = no

@@ -1,10 +1,10 @@
 #689 - Hanzhong
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = GHC
+controller = GHC
+add_core = GHC
 culture = xibei
-religion = mr_shenjiao
+religion = mr_jingtianfazu
 capital = "Hanzhong"
 trade_goods = iron
 hre = no

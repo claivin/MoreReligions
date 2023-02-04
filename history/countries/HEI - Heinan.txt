@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = pirate_republic_reform
+technology_group = chinese
+primary_culture = chimin
+religion = sunni
+capital = 666 # Literally hell???
+
+1444.1.1 = {
+	monarch = {
+		name = "He"
+		dynasty = "Ma"
+		adm = 6
+		dip = 6
+		mil = 6
+		birth_date = 1471.1.1
+	}
+}

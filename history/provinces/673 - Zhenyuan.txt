@@ -1,8 +1,7 @@
 #673 - Bozhou
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = CMI
+controller = CMI
 add_core = CMI
 culture = miao
 religion = mr_miao

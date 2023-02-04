@@ -1,10 +1,9 @@
 #4213 - Luzhou
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = SHU
+controller = SHU
 culture = sichuanese
-religion = confucianism
+religion = mr_jingtianfazu
 capital = "Yanjiang"
 trade_goods = grain
 hre = no

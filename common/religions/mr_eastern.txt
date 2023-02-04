@@ -966,7 +966,7 @@ eastern = {
 		
 	}
 	
-	mr_shenjiao = {
+	mr_jingtianfazu = {
 		color = { 242 219 113 }
 		icon = 9
 		country = {

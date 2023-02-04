@@ -30,3 +30,14 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1644.4.22
 }
+vassal = {
+	first = GSC
+	second = CTO
+	start_date = 1434.1.1
+	end_date = 1454.1.1
+}vassal = {
+	first = GSC
+	second = ZHJ
+	start_date = 1434.1.1
+	end_date = 1454.1.1
+}

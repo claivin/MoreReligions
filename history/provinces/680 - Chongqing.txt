@@ -1,8 +1,7 @@
 #680 - Chongqing
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = SHU
+controller = SHU
 culture = sichuanese
 religion = confucianism
 capital = "Chongqing"

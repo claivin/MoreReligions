@@ -1,8 +1,7 @@
 #4199 - Tongren
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = CMI
+controller = CMI
 culture = miao
 religion = mr_miao
 capital = "Tongren"

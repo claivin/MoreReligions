@@ -1,10 +1,10 @@
 #665 - Jiangmen
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = ZHJ
+controller = ZHJ
+add_core = ZHJ
 culture = cantonese
-religion = confucianism
+religion = mr_taoism
 capital = "Shiuhing"
 trade_goods = chinaware
 hre = no

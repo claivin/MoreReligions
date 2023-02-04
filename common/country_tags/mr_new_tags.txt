@@ -7,6 +7,9 @@ YNN = "countries/Yunnan.txt"
 GNN = "countries/Guangnan.txt"
 LNS = "countries/Liangshan.txt"
 SKY = "countries/Sakya.txt"
+HEI = "countries/Heinan.txt"
+CTO = "countries/Canton.txt"
+ZHJ = "countries/Zhanjiang.txt"
 
 #Korea
 BHH = "countries/Sanggyeong.txt"

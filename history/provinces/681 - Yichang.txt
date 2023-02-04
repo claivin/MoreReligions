@@ -2,9 +2,8 @@
 
 owner = GSC
 controller = GSC
-add_core = GSC
 culture = sichuanese
-religion = confucianism
+religion = mahayana
 capital = "Yichang"
 trade_goods = tea
 hre = no
@@ -14,6 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = CXI
 add_core = SHU
+add_core = GSC
 
 
 

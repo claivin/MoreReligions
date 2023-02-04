@@ -1,8 +1,8 @@
 #667 - Guangzhou
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = CTO
+controller = CTO
+add_core = CTO
 culture = cantonese
 religion = confucianism
 capital = "Canton"

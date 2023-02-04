@@ -1,10 +1,10 @@
 #668 - Macau
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = CTO
+controller = CTO
+add_core = CTO
 culture = cantonese
-religion = confucianism
+religion = mr_taoism
 capital = "Macau"
 trade_goods = fish
 hre = no

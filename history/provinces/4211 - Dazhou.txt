@@ -1,10 +1,9 @@
 # 4211 - Dazhou
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = SHU
+controller = SHU
 culture = sichuanese
-religion = mr_shenjiao
+religion = mr_jingtianfazu
 capital = "Dazhou"
 trade_goods = grain
 hre = no

@@ -1,10 +1,10 @@
 # 2159 - Leichow
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = ZHJ
+controller = ZHJ
+add_core = ZHJ
 culture = chimin
-religion = confucianism
+religion = mr_taoism
 capital = "Leichow"
 trade_goods = sugar
 hre = no
