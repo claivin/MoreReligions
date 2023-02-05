@@ -1,0 +1,250 @@
+#archbishophric decisions
+country_decisions = {
+	mr_archbishop_estonia_decision = {
+		potential = {
+			tag = POL
+			has_country_flag = mr_pol_with_pope
+			mission_completed = mr_pol_c5br2
+		}
+		allow = {
+			OR = {
+				BLT = {
+					development_in_provinces = {
+						value = 50
+						OR = {
+							area = estonia_ingria_area
+							province_id = 5115
+							province_id = 35
+						}
+					}
+				}
+				development_in_provinces = {
+					value = 60
+					OR = {
+						area = estonia_ingria_area
+						province_id = 5115
+						province_id = 35
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = mr_pol_est_archbishop_estonia
+			add_papal_influence = 50
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			estonia_ingria_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+			5115 = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+			35 = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mr_archbishop_latvia_decision = {
+		potential = {
+			tag = POL
+			has_country_flag = mr_pol_with_pope
+			mission_completed = mr_pol_c5br2
+		}
+		allow = {
+			OR = {
+				BLT = {
+					development_in_provinces = {
+						value = 30
+						OR = {
+							province_id = 5144
+							province_id = 5145
+							province_id = 5146
+							province_id = 4241
+							area = curonia_area
+						}
+					}
+					38 = {
+						development = 25
+					}
+				}
+				development_in_provinces = {
+					value = 40
+					OR = {
+						province_id = 5144
+						province_id = 5145
+						province_id = 5146
+						province_id = 4241
+						area = curonia_area
+					}
+				}
+				38 = {
+					development = 25
+				}
+			}
+		}
+		effect = {
+			set_country_flag = mr_pol_est_archbishop_latvia
+			add_papal_influence = 50
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			livonia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+			curonia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mr_archbishop_lithuania_decision = {
+		potential = {
+			tag = POL
+			has_country_flag = mr_pol_with_pope
+			mission_completed = mr_pol_c5br2
+		}
+		allow = {
+			OR = {
+				BLT = {
+					development_in_provinces = {
+					value = 80
+						OR = {
+							area = samogitia_area
+							area = lithuania_area
+						}
+					}
+				}
+				development_in_provinces = {
+					value = 90
+					OR = {
+						area = samogitia_area
+						area = lithuania_area
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = mr_pol_est_archbishop_lithuania
+			add_papal_influence = 50
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			samogitia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+			lithuania_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mr_archbishop_prussia_decision = {
+		potential = {
+			tag = POL
+			has_country_flag = mr_pol_with_pope
+			mission_completed = mr_pol_c5br2
+		}
+		allow = {
+			OR = {
+				BLT = {
+					development_in_provinces = {
+						value = 80
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+					}
+				}
+				development_in_provinces = {
+					value = 90
+					OR = {
+						area = east_prussia_area
+						area = west_prussia_area
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = mr_pol_est_archbishop_prussia
+			add_papal_influence = 50
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			east_prussia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+			west_prussia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = mr_pol_new_archbishopric
+					duration = 3650
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

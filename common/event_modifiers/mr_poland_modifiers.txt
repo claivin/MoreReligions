@@ -1,3 +1,12 @@
 mr_pol_against_pope_modifier = {
 	imperial_authority = 0.1
 }
+
+mr_pol_baltic_churches = {
+	papal_influence = 2
+}
+
+mr_pol_new_archbishopric = {
+	local_tax_modifier = 0.10
+	local_autonomy = -0.05
+}

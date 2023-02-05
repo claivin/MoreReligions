@@ -81,6 +81,98 @@ mr_pol_c5b = {
 			}
 		}
 	}
+	
+	mr_pol_c5br3 = { #Establish Communal Churches
+		icon = mission_unknown_mission
+		required_missions = { mr_pol_c5br2 }
+		position = 3
+		provinces_to_highlight = {
+			region = baltic_region
+			owns_or_non_sovereign_subject_of = ROOT
+			has_tax_building_trigger = no
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 15
+				region = baltic_region
+				has_tax_building_trigger = yes
+			}
+			num_of_provinces_owned_or_owned_by_subjects_with = {
+				value = 1
+				region = baltic_region
+				has_tax_building_trigger = yes
+				development = 20
+			}
+		}
+		effect = {
+			custom_tooltip = mr_pol_c5br3_WILL_BUILD_CATHEDERAL
+			hidden_effect = {
+				baltic_region = {
+					random_province = {
+						limit = {
+							owns_or_non_sovereign_subject_of = ROOT
+							development = 20
+							has_tax_building_trigger = 20
+						}
+						add_building_construction = {
+							building = cathederal
+							speed = 0.20
+							cost = 0
+						}
+					}
+				}
+			}
+			custom_tooltip = mr_pol_c5br3_EXTRA_REWARDS_FOR_SUBJ
+			tooltip = {
+				add_country_modifier = {
+					name = mr_pol_baltic_churches
+					duration  = 3650
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						BLT = {
+							exists = yes
+							is_subject_of = ROOT
+						}
+					}
+					add_country_modifier = {
+						name = mr_pol_baltic_churches
+						duration  = 3650
+					}
+				}
+			}
+		}
+	}
+	
+	mr_pol_c5br4 = { #New Archdioceses
+		icon = mission_unknown_mission
+		required_missions = { mr_pol_c5br3 }
+		position = 4
+		provinces_to_highlight = {
+			region = baltic_region
+			religion = catholic
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = mr_pol_est_archbishop_estonia_TT
+				has_country_flag = mr_pol_est_archbishop_estonia
+			}
+			custom_trigger_tooltip = {
+				tooltip = mr_pol_est_archbishop_latvia_TT
+				has_country_flag = mr_pol_est_archbishop_latvia
+			}
+			custom_trigger_tooltip = {
+				tooltip = mr_pol_est_archbishop_lithuania_TT
+				has_country_flag = mr_pol_est_archbishop_lithuania
+			}
+			custom_trigger_tooltip = {
+				tooltip = mr_pol_est_archbishop_prussia_TT
+				has_country_flag = mr_pol_est_archbishop_prussia
+			}
+		}
+	}
 }
 
 #dummy papal branch

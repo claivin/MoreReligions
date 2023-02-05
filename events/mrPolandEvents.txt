@@ -118,6 +118,7 @@ country_event = {
 		create_march = BLT
 		BLT = {
 			set_dynasty = ROOT
+			add_accepted_culture = baltic_prussian
 		}
 	}
 }

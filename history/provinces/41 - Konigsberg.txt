@@ -3,7 +3,7 @@
 
 owner = SBI
 controller = SBI
-capital = "Königsberg"
+capital = "Twangste"
 culture = baltic_prussian
 religion = mr_balticpaganism
 trade_goods = gems #Amber

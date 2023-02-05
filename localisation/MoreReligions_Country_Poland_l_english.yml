@@ -11,6 +11,19 @@
  
  mr_pol_c5br2_title: "Baltic Crusades"
  mr_pol_c5br2_desc: "Early missions into Prussia proved ineffective, and the problem was stalled futher on when Freedom of Religion was guaranteed. Fortunately, we no longer have to maintain the precarious status quo."
+ 
+ mr_pol_c5br3_title: "Build Church Communities"
+ mr_pol_c5br3_desc: "Military conquest and conversion rulers are only one part of prostelyzation. Without churches for Christian communities to rally around and develop their religious identity as newly inducted members of the Church, we cannot hope to truly convert the Baltics."
+ mr_pol_c5br3_WILL_BUILD_CATHEDERAL: "A cathederal will be constructed in a 20 development province with a church\n"
+ mr_pol_c5br3_EXTRA_REWARDS_FOR_SUBJ: "If §Y[BLT.GetName]§! is a subject, you will also recieve the following:"
+ 
+ mr_pol_c5br4_title: "Baltic Archbishops"
+ mr_pol_c5br4_desc: "Christianity has now been thoroughly cemented within the societies of the Baltics. As the faith begins to spread amongst the tribal peoples in more remote areas, it is apparent that new clerical administrations are needed. The Papacy has offered to shoulder some of the burden, of course."
+ mr_pol_est_archbishop_latvia_TT: "Archbishophric of Riga has been restored"
+ mr_pol_est_archbishop_estonia_TT: "Archbishophric of Tallinn has been founded"
+ mr_pol_est_archbishop_prussia_TT: "Archbishophric of Twangste has been founded"
+ mr_pol_est_archbishop_lithuania_TT: "Archbishophric of Vilnius has been founded"
+ 
 #mission events
  mr_poland.1.t: "Envoy to the Bishop of Rome"
  mr_poland.1.da: "The Declaration of Religious Freedom in the Kingdom of Poland by Przemysl II in 1315 was and has always been a massive controversy; it has always been a pragmatic measure by Polish authority to sway German rulers' favor to and keep them in line under the then young Polish imperial regime. However, as the past century has shown, the declaration has proven to be far too lax and promoted a great deal of internal instability. Heresies have festered in communities throughout Europe, under the assumption they had the implicit protection of the Emperor, despite what spiritual authorities have declared. The time has come to correct this heavyhanded approach. Of course this will be no easy task as unconventional thought and heretical ideas have found their way into many facets of society. The process will be slow, careful, and if need be, forceful.\n\nOn [GetMonth] of the year [GetYear], an envoy arrived to Rome sent from Krakow. He reports that that [POL.Monarch.GetTitle] [POL.Monarch.GetName] has spent many weeks in deep conversation with the monks and priests of [POL.Monarch.GetHerHis] court. The [POL.Monarch.GetTitle] has decided to reverse the policy of his predecessors, and seeks Papal assistance."
@@ -28,3 +41,17 @@
 #mission misc
  mr_pol_against_pope_modifier: "Rule from Krakow"
  MR_CHRISTIANIZED_BALTICS: "Clerical Expansion into the Baltics"
+ mr_pol_baltic_churches: "Baltic Churches"
+ mr_pol_new_archbishopric: "Newly Established Archbishophirc"
+ 
+ mr_archbishop_estonia_decision_title: "Found Archbishophric of Tallinn"
+ mr_archbishop_estonia_decision_desc: "The network of churches in Estonia has grown large enough that a new ecclastical province must be established. That Papacy has sent clergymen to assist in administration; meanwhile we've been given taxation rights."
+ 
+ mr_archbishop_latvia_decision_title: "Restore the Archbishophric of Riga"
+ mr_archbishop_latvia_decision_desc: "In the early 13th century Riga was occupied by the Teutonic Order at the request of the former Hanseatic League to protect the merchants there. The Archbishophirc of Riga was founded in the mid 13th Century, but subsequently fell derelict  after the Pagan Revolt of 1419. It has since served as an isolated Christian holdout amongst hostile pagans."
+ 
+ mr_archbishop_lithuania_decision_title: "Found Archbishophric of Vilnius"
+ mr_archbishop_lithuania_decision_desc: "The network of churches in Lithuania has grown large enough that a new ecclastical province must be established. That Papacy has sent clergymen to assist in administration; meanwhile we've been given taxation rights."
+ 
+ mr_archbishop_prussia_decision_title: "Found Archbishophric of Twangste"
+ mr_archbishop_prussia_decision_desc: "The network of churches in Prussia has grown large enough that a new ecclastical province must be established. That Papacy has sent clergymen to assist in administration; meanwhile we've been given taxation rights."

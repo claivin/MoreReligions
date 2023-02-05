@@ -221,7 +221,10 @@
  christian_school_events.21.da: "We will follow in the footsteps of the Baptists"
  mr_cannot_be_changed: "§RThis cannot be manually changed.§!"
  
- #decisions`
+ #decisions
+ mr_reaffirm_rites_title: "Reaffirm Rites"
+ mr_reaffirm_rites_desc: "We are steadfast in our choice of rites.\n\n§YDisables and hides decisions to change rites permanently.§!"
+ 
  mr_change_to_roman_rite_title: "Adopt Roman Rites"
  mr_change_to_roman_rite_desc: "Our current liturgical rites are insufficient and outdated for our religious community. We ought to reallign our rites to something more fitting for out people."
  mr_opinion_switched_to_our_rite: "Recently Adopted our Liturgical Rites"

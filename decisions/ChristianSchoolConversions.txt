@@ -1,5 +1,23 @@
 country_decisions = {
-
+	
+	mr_reaffirm_rites = {
+		potential = {
+			has_dlc = "Cradle of Civilization"
+			religion = catholic
+			NOT = { has_country_flag = has_changed_rites }
+		}
+		allow = {
+			stability = 1
+		}
+		effect = {
+			set_country_flag = has_changed_rites
+			add_prestige = 1
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
 	mr_change_to_roman_rite = {
 		potential = {
 			has_dlc = "Cradle of Civilization"
