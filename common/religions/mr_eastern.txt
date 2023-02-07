@@ -819,6 +819,37 @@ eastern = {
 		
 		uses_karma = yes
 	}
+	mr_tendai = {
+		color = { 242 59 132 }
+		icon = 23
+		allowed_conversion = {
+			vajrayana
+			buddhism
+			mahayana
+			mr_maitreya
+		}
+		country = {
+			defensiveness = 0.20
+			shock_damage_received = -0.10
+		}
+		country_as_secondary = {
+			defensiveness = 0.10
+			shock_damage = -0.05
+		}
+		on_convert = {
+			add_prestige = -100
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		
+		harmonized_modifier = harmonized_mahayana
+		
+		heretic = { ZEN }
+		
+		uses_karma = yes
+	}
 	azhaliism = {
 		color = { 208 134 119 }
 		icon = 23

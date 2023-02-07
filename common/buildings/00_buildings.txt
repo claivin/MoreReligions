@@ -119,6 +119,15 @@ temple = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				from = { has_reform = tendai_ministries }
+			}
+			add_province_modifier = {
+				name = give_missionary_strength_tend
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -139,6 +148,7 @@ temple = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		remove_province_modifier = give_missionary_strength_tend
 	}
 	on_obsolete = {
 	}
@@ -712,6 +722,15 @@ cathedral = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				from = { has_reform = tendai_ministries }
+			}
+			add_province_modifier = {
+				name = give_missionary_strength_tend
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -732,6 +751,7 @@ cathedral = {
 			}
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
+		remove_province_modifier = give_missionary_strength_tend
 	}
 	on_obsolete = {
 	}

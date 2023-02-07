@@ -5,10 +5,7 @@ incident_neo_confucianism = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-			OR = {
-				religion = shinto
-				religion = nihon
-			}
+		religion = nihon
 	}
 
 	trigger = {
@@ -40,10 +37,7 @@ incident_nanban = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = shinto
 	}
 
 	trigger = {
@@ -97,7 +91,7 @@ incident_nanban = {
 	}
 }
 
-incident_firearms = {
+incident_enryaku = {
 
 	frame = 3
 
@@ -105,14 +99,11 @@ incident_firearms = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = nihon
 	}
 
 	trigger = {
-		is_incident_happened = incident_nanban
+		is_incident_happened = incident_enryaku
 		custom_trigger_tooltip = {
 			tooltip = shinto_incident_recent_tooltip
 			is_incident_active = no
@@ -141,10 +132,7 @@ incident_spread_of_christianity = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = shinto
 	}
 
 	trigger = {
@@ -193,11 +181,7 @@ incident_shogunate_authority = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = shinto
 	}
 
 	trigger = {
@@ -215,8 +199,10 @@ incident_shogunate_authority = {
 				is_revolutionary = no
 				absolutism = 50
 			}
-			is_revolutionary = no
-			absolutism = 50
+			AND = {
+				is_revolutionary = no
+				absolutism = 50
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = shinto_incident_recent_tooltip
@@ -246,11 +232,7 @@ incident_ikko_shu = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = nihon
 	}
 
 	trigger = {
@@ -283,11 +265,7 @@ incident_wokou = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = shinto
 	}
 
 	trigger = {
@@ -327,11 +305,7 @@ incident_urbanization = {
 
 	potential = {
 		has_dlc = "Mandate of Heaven"
-		
-		OR = {
-			religion = shinto
-			religion = nihon
-		}
+		religion = shinto
 	}
 
 	trigger = {

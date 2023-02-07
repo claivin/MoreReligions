@@ -1,0 +1,15 @@
+shinto_priests = {
+	same_culture_advisor_cost = -0.33
+}
+hiei_stablized = {
+	global_rebel_suppression_efficiency = 0.15
+}
+jimon_faction = {
+	defensiveness = 0.15
+}
+sanmon_faction = {
+	tolerance_own = 1
+}
+give_missionary_strength_tend = {
+	local_missionary_strength = 0.015
+}

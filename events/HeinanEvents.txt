@@ -57,7 +57,7 @@ country_event = {
 	}
 	
 	option = {
-		name = HEI_flavor.1b
+		name = HEI_flavor.1c
 		kill_ruler = yes
 		change_religion = mahayana
 		define_ruler = {

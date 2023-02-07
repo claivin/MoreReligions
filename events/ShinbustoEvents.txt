@@ -1,0 +1,474 @@
+namespace = shinbutsu_events
+
+#Start of the Enryaku-ji Conflict, the Monks at Mt. Hiei begin to fight for dominance.
+country_event = {
+	id = shinbutsu_events.1
+	title = "shinbutsu_events.1.t"
+	desc = "shinbutsu_events.1.d"
+	picture = BUDDHA_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "shinbutsu_events.1.a" #Bring them to the Emperor's Feet, they must be taught a lesson! -
+		custom_tooltip = shinto_incident_enryaku.tt
+		custom_tooltip = shinbutsu_events.shinto.tt
+		add_mil_power = -50
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 3
+		}
+		country_event = {
+			id = shinbutsu_events.3
+			days = 365
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.1.b" #We shall send word to communicate with them.
+		custom_tooltip = shinto_incident_enryaku.tt
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		add_dip_power = -50
+		country_event = {
+			id = shinbutsu_events.2
+			days = 365
+		}
+	}
+}
+#Jimon and Sanmon Fighting Again
+country_event = {
+	id = shinbutsu_events.2
+	title = "shinbutsu_events.2.t"
+	desc = "shinbutsu_events.1.d"
+	picture = IKKO_IKKI_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "shinbutsu_events.4.a" #Grant the title of successor to Tendai to one school.
+		set_country_flag = give_tendai_flag
+		country_event = {
+			id = shinbutsu_events.4
+			days = 365
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.2.c" #This bickering...it is foolish! We shall remove them entirely.
+		custom_tooltip = shinbutsu_events.shinto.tt
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 3
+		}
+		country_event = {
+			id = shinbutsu_events.3
+			days = 365
+		}
+	}
+}
+#Preparing to Raid Mt. Hiei - is this the right thing to do?
+country_event = {
+	id = shinbutsu_events.3
+	title = "shinbutsu_events.3.t"
+	desc = "shinbutsu_events.3.d"
+	picture = IKKO_IKKI_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "shinbutsu_events.3.a" #They are a menace. We should not bow to them!"
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		custom_tooltip = stablized_province_tt
+		tooltip = {
+			add_country_modifier = {
+				name = hiei_stablized
+				duration = 18250
+			}
+		}
+		country_event = {
+			id = shinbutsu_events.5
+			days = 175
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.3.b" #When this is all over, we're going to give Hiei to the Priests."
+		set_country_flag = shinto_priest_support
+		custom_tooltip = shinbutsu_events.shinto.tt
+		custom_tooltip = shinto_priests_tt
+		tooltip = {
+			add_country_modifier = {
+				name = shinto_priests
+				duration = 18250
+			}
+		}
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 2
+		}
+		country_event = {
+			id = shinbutsu_events.5
+			days = 175
+		}
+	}
+}
+#What to do AFTER the raid on Mt. Hiei - how do we stop them from fighting again?
+country_event = {
+	id = shinbutsu_events.4
+	title = "shinbutsu_events.4.t"
+	desc = "shinbutsu_events.4.d"
+	picture = MERITOCRACY_eventPicture.
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "shinbutsu_events.2.a" #To end this once and for all, we shall side with the Jimon faction.
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		set_country_flag = jimon_faction_sided
+		custom_tooltip = jimon_faction_tt
+		tooltip = {
+			add_country_modifier = {
+				name = jimon_faction
+				duration = 18250
+			}
+		}
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 1
+		}
+		country_event = {
+			id = shinbutsu_events.5
+			days = 175
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.2.b" #To end this once and for all, we shall side with the Sanmon faction.
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		set_country_flag = sanmon_faction_sided
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 1
+		}
+		custom_tooltip = sanmon_faction_tt
+		tooltip = {
+			add_country_modifier = {
+				name = sanmon_faction
+				duration = 18250
+			}
+		}
+		country_event = {
+			id = shinbutsu_events.5
+			days = 175
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.4.b" #This is simply to end the violence. They shall return to the way they were when this is done
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 2
+		}
+		custom_tooltip = stablized_province_tt
+		tooltip = {
+			add_country_modifier = {
+				name = hiei_stablized
+				duration = 18250
+			}
+		}
+		country_event = {
+			id = shinbutsu_events.5
+			days = 175
+		}
+	}
+}
+#The Raid on Mt. Hiei
+country_event = {
+	id = shinbutsu_events.5
+	title = "shinbutsu_events.5.t"
+	desc = "shinbutsu_events.5.d"
+	picture = SENGOKU_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			1020 = {
+				spawn_rebels = {
+					type = mr_tendai_rebels
+					size = 3
+					win = yes
+				}
+			}
+			set_country_flag = raid_on_hiei
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.5.a" #Start the killing!
+		custom_tooltip = shinbutsu_events.shinto.tt
+		custom_tooltip = kill_mahayana_TT
+		set_country_flag = kill_mahayana_flag
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 1
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.5.b" #Take control - be gentle.
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = -1
+		}
+	}
+}
+#Aftermath of the Raid
+country_event = {
+	id = shinbutsu_events.6
+	title = "shinbutsu_events.6.t"
+	desc = "shinbutsu_events.6.d"
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	trigger = {
+		has_country_flag = raid_on_hiei
+		1020 = {
+			NOT = { has_rebel_faction = mr_tendai_rebels }
+		}
+		NOT = { has_country_flag = raid_begun_hiei }
+	}
+	
+	mean_time_to_happen = {
+		months = 5
+	}
+	
+	immediate = {
+		hidden_effect = {
+			1020 = {
+				change_religion = ROOT
+			}
+		}
+	}
+				
+	
+	option = {
+		name = "shinbutsu_events.6.a" #Give it to Jimon
+		trigger = {
+			has_country_flag = give_tendai_flag
+			has_country_flag = jimon_faction_sided
+		}
+		add_country_modifier = {
+			name = jimon_faction
+			duration = 18250
+		}
+		set_country_flag = raid_begun_hiei
+		country_event = {
+			id = shinbutsu_events.7
+			days = 100
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.6.b" #Give it to Sanmon
+		trigger = {
+			has_country_flag = give_tendai_flag
+			has_country_flag = sanmon_faction_sided
+		}
+		add_country_modifier = {
+			name = jimon_faction
+			duration = 18250
+		}
+		set_country_flag = raid_begun_hiei
+		country_event = {
+			id = shinbutsu_events.7
+			days = 100
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.6.c" #Give it to the Priests
+		trigger = {
+			has_country_flag = shinto_priest_support
+		}
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 2
+		}
+		add_country_modifier = {
+			name = shinto_priests
+			duration = 18250
+		}
+		set_country_flag = raid_begun_hiei
+		country_event = {
+			id = shinbutsu_events.7
+			days = 100
+		}
+	}
+	
+	option = {
+		name = "shinbutsu_events.6.e" #Order has been restored.
+		add_incident_variable_value = {
+			incident = incident_enryaku
+			value = 1
+		}
+		add_country_modifier = {
+			name = hiei_stablized
+			duration = 18250
+		}
+		set_country_flag = raid_begun_hiei
+		country_event = {
+			id = shinbutsu_events.7
+			days = 100
+		}
+	}
+}
+#End of the Conflict
+country_event = {
+	id = shinbutsu_events.7
+	title = "shinbutsu_events.7.t"
+	desc = "shinbutsu_events.7.d"
+	picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "shinbutsu_events.7.a"
+		trigger = {
+			incident_variable_value = {
+				incident = incident_enryaku
+				value = 6
+			}
+		}
+		add_isolationism = 1
+		end_incident = incident_enryaku
+	}
+	
+	option = {
+		name = "shinbutsu_events.7.b"
+		trigger = {
+			NOT = {
+				incident_variable_value = {
+					incident = incident_enryaku
+					value = 2
+				}
+			}
+		}
+		add_isolationism = -1
+		end_incident = incident_enryaku
+	}
+	option = {
+		name = "shinbutsu_events.7.c"
+		trigger = {
+			incident_variable_value = {
+				incident = incident_enryaku
+				value = 2
+			}
+			NOT = {
+				incident_variable_value = {
+					incident = incident_enryaku
+					value = 5
+				}
+			}
+		}
+		end_incident = incident_enryaku
+	}
+}
+
+#Fail to stop the monks, they take at least 5 of your provinces and force you to follow their new Tendai school of Buddhism.
+country_event = {
+	id = shinbutsu_events.8
+	title = "shinbutsu_events.8.t"
+	desc = "shinbutsu_events.8.d"
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+	
+	trigger = {
+		has_country_flag = raid_on_hiei
+		1020 = {
+			has_rebel_faction = mr_tendai_rebels 
+		}
+		NOT = { has_country_flag = raid_failed_hiei }
+		num_of_owned_provinces_with = {
+			value = 5
+			region = japan_region
+			has_rebel_faction = mr_tendai_rebels 
+			is_overseas = no
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = raid_failed_hiei
+		}
+	}
+	
+	option = {
+		name = shinbutsu_events.8.a
+		add_isolationism = -2
+		add_prestige = -35
+		if = {
+			limit = {
+				NOT = {
+					religious_school = {
+						group = eastern
+						school = mr_tendai_school
+					}
+				}
+			}
+		}
+		set_religious_school = {
+			group = eastern
+			school = mr_tendai_school
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_rebel_faction = mr_tendai_rebels 
+				}
+				change_controller = ROOT
+			}
+			disband_rebels = mr_tendai_rebels 
+		}
+		end_incident = incident_enryaku
+	}
+	
+	option = {
+		name = shinbutsu_events.8.b
+		country_event = {
+			id = shinbutsu_events.9
+			days = 5
+		}
+	}
+}
+country_event = {
+	id = shinbutsu_events.9
+	title = "shinbutsu_events.9.t"
+	desc = "shinbutsu_events.9.d"
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = shinbutsu_events.9.a
+		add_stability = -2
+		change_religion = mr_tendai
+		set_ruler_religion = mr_tendai
+		add_prestige = -100
+		add_government_reform = tendai_ministries
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_rebel_faction = mr_tendai_rebels 
+				}
+				change_controller = ROOT
+			}
+			disband_rebels = mr_tendai_rebels 
+		}
+	}
+}
+	
+			

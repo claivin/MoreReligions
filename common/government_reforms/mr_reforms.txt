@@ -500,4 +500,29 @@ mr_hainan_pirate_republic_reform = {
 		elections_increase_factions_influence = yes
 	}
 }
+tendai_ministries = {
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = no
+	legacy_equivalent = feudal_monarchy
+	lock_level_when_selected = yes
+	modifiers = {
+		global_tax_modifier = 0.15
+		missionary_maintenance_cost = -0.15
+		church_influence_modifier = 0.30
+		manpower_in_true_faith_provinces = 0.10
+	}
+	potential = {
+		religion = mr_tendai
+	}
+	
+	trigger = {
+		religion = mr_tendai
+		culture_group = japanese_g
+	}
+	
+	custom_tooltip = develop_temples_TT
+}
+	
+		
+	
 	

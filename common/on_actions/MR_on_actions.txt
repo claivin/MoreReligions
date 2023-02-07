@@ -627,3 +627,104 @@ on_battle_won_country = {
 		max_value = 20
 	}
 }
+
+# country
+# root = winning country, from = location
+on_siege_won_country = {
+	if = {
+		limit = {
+			from = { owned_by = SAX }
+			OR = {
+				is_in_war = {
+					defenders = root
+					defenders = THU
+					defenders = emperor
+					attackers = SAX
+				}
+				is_in_war = {
+					attackers = root
+					attackers = THU
+					attackers = emperor
+					defenders = SAX
+				}
+			}
+			THU = {
+				dynasty = "von Wettin"
+				is_elector = no
+				is_emperor = no
+				alliance_with = emperor
+			}
+			SAX = {
+				is_elector = yes
+				all_owned_province = {
+					NOT = { controlled_by = SAX }
+					OR = {
+						controlled_by = THU
+						controller = {
+							OR = {
+								is_in_war = {
+									defenders = this
+									defenders = THU
+									defenders = emperor
+									attackers = SAX
+								}
+								is_in_war = {
+									attackers = this
+									attackers = THU
+									attackers = emperor
+									defenders = SAX
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		THU = { country_event = { id = flavor_sax.10 } } # Ask Emperor for Saxon Electorate
+	}
+	if = {
+		limit = {
+			ROOT = {
+				religion = jewish
+				has_church_aspect = judaism_remember_passover_aspect
+			}
+			FROM = {
+				owner = {
+					war_with = ROOT
+				}
+				fort_level = 1
+			}
+		}
+		ROOT = {
+			add_church_power = 5
+		}
+	}
+	grant_manpower_from_capital_slave_raid = yes
+	if = {
+		limit = {
+			ROOT = {
+				has_country_flag = kill_mahayana_flag
+			}
+			FROM = {
+				province_id = 1020
+			}
+		}
+		1020 = {
+			add_devastation = 35
+		}
+		ROOT = {
+			clr_country_flag = kill_mahayana_flag
+		}
+	}
+	events = {
+		tyw_events.14 # Fall of Prague in Religious War
+		flavor_oir.5 # Oirats capture Beijing
+		flavor_lna.1 # Emerald Buddha
+		flavor_son.14 # Djenne surrenders to Songhai Trigger
+		flavor_teu.25 # Payback for the Hussite Wars
+	}
+	random_events = {
+		10 = army_professionalism_events.1 #City Sacked
+		100 = 0
+	}
+}

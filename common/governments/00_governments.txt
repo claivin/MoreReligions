@@ -74,6 +74,7 @@ monarchy = {
 				kingdom_of_light_reform
 				empire_of_light_reform
 				mr_empire_of_japan
+				tendai_ministries
 				#hungary_reforms
 				mr_hungary_anarchy
 				mr_hungary_faction

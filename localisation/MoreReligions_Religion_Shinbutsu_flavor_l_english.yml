@@ -1,0 +1,70 @@
+﻿l_english:
+
+ shinbutsu_events.shinto.tt: "This will move us towards the §YShinto§! outcome of the current Incident."
+ shinbutsu_events.buddhist.tt: "This will move us towards the §YBuddhist§! outcome of the current Incident."
+ 
+
+ shinto_incident_enryaku.tt: "This will start the §YMount Hiei Conflict§! Incident."
+
+ shinbutsu_events.1.t: "Warring Monks on Mt. Hiei"
+ shinbutsu_events.1.d: "The emperor can control many things, but there are some he cannot. The flow of the river, the roll of the die, or the monks atop Mt. Hiei. This fundemental aspect of Japanese society proved itself again and again during the Heian Era, as Sohei clashed around the mountain throughout this period. They were known to leave and attack other schools and even political rivals if they felt threatened, and when push came to shove even the forces of the Emperor himself. While there was some peace in the aftermath of the Genpei War, it seems conflict is brewing once more atop the mountain. Reports have emerged that civilians and monks who reside in the mountain have been found bruised and battered, with two coming up dead. This has been a reoccuring event within the last few years, and the violence is now spilling into Kyoto proper. We cannot simply abide this sectarian fighting occuring at the doorstep of a major city; something must be done." 
+ shinbutsu_events.1.a: "I shall have their heads for this!"
+ shinbutsu_events.1.b: "Before we act, let us learn."
+ 
+ shinbutsu_events.2.t: "Jimon and Sanmon Conflict"
+ shinbutsu_events.2.d: "As our spies investigated the matter, it became clear what was occuring at Mt. Hiei - a conflict between Enryaku-Ji and Mii-dera. Two rival temple complexes, formed in the aftermath of a sucession crisis of the Tendai school of Buddhism. The rivalry between the Enchin and Ennin factions has been ongoing since the 9th Century, with Sohei clashing left and right at various levels of intensity. According to our intel, both sides now continue to argue over which line should become Zasu of the Tendai school. If we wish to mediate this conflict, we must argue both politics and spiritualism, a subject that can be quite difficult to manage."
+ shinbutsu_events.2.a: "To end the conflict, we shall side with the Jimon faction"
+ shinbutsu_events.2.b: "To end the conflict, we shall side with the Sanmon faction"
+ shinbutsu_events.2.c: "What a foolish conflict. We must eradicate them all!"
+ 
+ shinbutsu_events.3.t: "War Against the Wise?"
+ shinbutsu_events.3.d: "To wage war against the Monks, one must give a reason why. The Tendai school, while less politically dominant than in the past, is still a major school of belief among the political elite. To wage an open war against them requires a certain reasoning, a justification for why they must be put down. More so than that, a plan of action for what would take their place, both spiritually within the hearts of their followers and functionally atop the mountain, is needed. So, while we prepare for a long siege, we must also prepare our rhetoric."
+ shinbutsu_events.3.b: "The Monks have grown corrupt, only the Priests we can cleanse them!"
+ shinto_priests_tt: "At the end of the Incident, we will gain the following:"
+ shinbutsu_events.3.a: "We Shall Remove the Threat to our Safety at any and all costs."
+ stablized_province_tt: "At the end of the Incident, we will gain the following:"
+ 
+ shinbutsu_events.4.t: "Choosing a Successor"
+ shinbutsu_events.4.d: "It has been confirmed that the conflict is between the Jimon and Sanmon Faction, and after a meeting with the heads of each faction, it seems that either are looking for support to dominate the other. If we are to end this fighting, we might wish to support one side of the conflict, and finally grant the title of Zasu to one leader of the Tendai school."
+ shinbutsu_events.4.a: "No Matter the Conflict, we shall attempt to mediate."
+ jimon_faction_tt: "At the end of the Incident, we will gain the following:"
+ sanmon_faction_tt: "At the end of the Incident, we will gain the following:"
+ shinbutsu_events.4.b: "We shall let the Sangha decide among themselves - we shall force both sides to stand down!"
+ 
+ shinbutsu_events.5.t: "The Siege of Hiei"
+ shinbutsu_events.5.d: "As troops gathered around Mt. Hiei, something unexpected happened. Instead of a protracted Siege, the Monks came rushing out of the mountain, armed and ready to fight! Not only that, local mercenary groups had joined forces with the Sohei, and had raised a sizable host to protect the mountain. Our forces were driven back as the fighting intensified, and soon, the Monks had effectively taken control over the city of Kyoto, seizing the gates and shutting them behind them. The envisioned skirmish has become a battle, and to win it we must not only take the mountain but reclaim the city for our Emperor!\n\n§YTo complete the incident, you must retake Kyoto. However, if you fail to regain Kyoto and lose several more provinces, you will instead break to the will of the Tendai Monks.§!"
+ shinbutsu_events.5.a: "They shall pay for their insolence! We shall turn their temples to ash!"
+ kill_mahayana_TT: "This will give §R35§! §Ydevestation§! to §YKyoto§! when we retake it!"
+ shinbutsu_events.5.b: "Take the mountain, reclaim our city!"
+ 
+ shinbutsu_events.6.t: "Aftermath of the Siege"
+ shinbutsu_events.6.d: "As the dust settles and the last Sohei falls, the siege has ended. At last, the Siege of Mt. Hiei has been won, with many losses on all sides. While it was a brutal battle, we can finally start to rebuild. However, some things must first be established before we can plant the first brick. Who is to take ownership of the temple grounds?"
+ shinbutsu_events.6.a: "The Jimon shall take their rightful place!"
+ shinbutsu_events.6.b: "The Sanmon shall take their rightful place!"
+ shinbutsu_events.6.c: "The Priests shall once more take control!"
+ shinbutsu_events.6.e: "The Sangha shall decide, it is not our place to choose"
+ 
+ shinbutsu_events.7.t: "End of the Mt. Hiei Conflict"
+ shinbutsu_events.7.d: "While the battle for Mt. Hiei was difficult, it has been won. With the new administration organizing the complexes, we can avoid the problems that had occured in the past. While the river might still be wild, and the die might still be random, the monks atop the mountain shall no longer  threaten the peace of our land."
+ shinbutsu_events.7.a: "The Shinto Priests thank us for our aid"
+ shinbutsu_events.7.b: "The Tendai school is once more united"
+ shinbutsu_events.7.c: "The Peace of Mt. Hiei has been established"
+ 
+ shinbutsu_events.8.t: "Chaos in Japan"
+ shinbutsu_events.8.d: "What was meant to be a swift raid has become utter chaos. The Monks have now swept out of Kyoto, gathering allies from across the empire to their cause. We can barely afford to fight back, as even more mercenaries and disaffected Shugo join their cause. As another province has fallen to the Tendai rebels, we must seek peace with them. They offer a fair deal - we embrace their school as our own, and we leave them to their own destiny atop Mt. Hiei. It would be a devastating loss to our prestige, but it will keep our power in tact."
+ shinbutsu_events.8.a: "We shall submit."
+ shinbutsu_events.8.b: "Never surrender!"
+ 
+ shinbutsu_events.9.t: "The Tendai Dominance"
+ shinbutsu_events.9.d: "Just as our ruler was about to call upon another general to lead another foolhardy strike into the Tendai controlled lands, the nobles around him raised their hands in objection. It was risky, what they were doing, but they so feared for their safety they had to do it. The Tendai had showcased military dominance - they were defeating garrisons and armies left and right. It was time to admit that we had lost, as even the loyal generals of the Empire bowed their heads in defeat. The Tendai offered new terms - the worship of the Kami was to be relegated to personal worship, and the Emperor was to only partake in the esoteric Tendai rituals. All schools of Buddhism were to disband in front of the powerful Tendai school, and the Emperors would join the Sangha both as young adults and when they retired from the position. With no hope of victory, we agreed to the terms."
+ shinbutsu_events.9.a: "The monks atop the mountain cannot be contained"
+ 
+ shinto_priests: "Priests on Mt. Hiei"
+ hiei_stablized: "Peace on Mt. Hiei"
+ jimon_faction: "Jimon on Mt. Hiei"
+ sanmon_faction: "Sanmon on Mt. Hiei"
+ incident_enryaku_title: "Mt. Hiei Conflict"
+ incident_enryaku_desc: "The temples atop Mt. Hiei are known for monks that fight and duel amongst one another. They can argue about issues related to succession or theology, but whatever it is the violence spills out from the halls of their temples to the streets of Kyoto. They will often use Sohei, or warrior monks, to battle and combat other monks. In this case, rumors of an escalating conflict is emerging from the mountain. How we deal with this issue will change our relation to Buddhism and could develop our state in yet-seen unknown ways."
+ 
+ mechanic_can_develop_temples: "§YTemples§! gain an additional §G+1.5%§! §YMissionary Strength§! in a Province.\n"
+ give_missionary_strength_tend: "Tendai Monasteries"
