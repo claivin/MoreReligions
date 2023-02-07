@@ -31,7 +31,4 @@ discovered_by = SNF
 discovered_by = DEN
 discovered_by = BAO
 
-1464.1.1 = { discovered_by = POR } 
-
-
 1444.11.12 = { trade_goods = unknown }

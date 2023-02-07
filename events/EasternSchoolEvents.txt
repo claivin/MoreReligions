@@ -68,9 +68,9 @@ country_event = {
 		else_if = {
 			limit = {
 				OR = {
-					primary_culture = AYU
-					primary_culture = LPB
-					primary_culture = KHM
+					tag = AYU
+					tag = LPB
+					tag = KHM
 				}
 				religion = buddhism
 			}

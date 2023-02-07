@@ -588,7 +588,7 @@ fruit = {
 		modifier = {
 			factor = 0.1
 			OR = {
-				has_terrain = mountains
+				has_terrain = mountain
 				has_terrain = highlands
 			}
 		}
@@ -653,13 +653,13 @@ horses = {
 			factor = 0
 			OR = {
 				has_terrain = woods
-				has_terrain = forests
+				has_terrain = forest
 			}
 		}
 		modifier = {
 			factor = 0.5
 			OR = {
-				has_terrain = mountains
+				has_terrain = mountain
 				has_terrain = hills
 				has_terrain = highlands
 			}
@@ -778,9 +778,11 @@ grapes = {
 		}
 		modifier = {
 			factor = 1.5
-			area = cuyo_area
-			region = france_region
-			region = italy_region
+			OR = {
+				area = cuyo_area
+				region = france_region
+				region = italy_region
+			}
 		}
 		modifier = {
 			factor = 1.1
@@ -899,7 +901,7 @@ vegetables = {
 		modifier = {
 			factor = 0.1
 			OR = {
-				has_terrain = mountains
+				has_terrain = mountain
 				has_terrain = highlands
 			}
 		}

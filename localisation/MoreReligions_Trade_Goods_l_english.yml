@@ -70,7 +70,7 @@
  honeyDESC: "Beekeeping is a difficulty and finnicky profession, but what it yields is ambrosia itself."
  
  ginger:0 "Ginger"
- dingerDESC: "A strange finger-like root vegetable hailing from East Asia, with a powerful taste."
+ gingerDESC: "A strange finger-like root vegetable hailing from East Asia, with a powerful taste."
  
  fruit:0 "Fruit"
  fruitDESC: "Representing the various fruits grown throughtout temperate regions of the world."
@@ -78,8 +78,8 @@
  tropical_fruit:0 "Tropical Fruit"
  tropical_fruitDESC: "Representing the various fruits grown throughtout tropical regions of the world."
  
- horse:0 "Horses"
- horse_fruitDESC: "Horses don't just spring out of the ground! Though they are far from their undomesticated ancestors, wide open spaces are conducive to their breeding."
+ horses:0 "Horses"
+ horsesDESC: "Horses don't just spring out of the ground! Though they are far from their undomesticated ancestors, wide open spaces are conducive to their breeding."
  
  chocolate:0 "Chocolate"
  chocolateDESC: "The delicious product of the New World cocoa."

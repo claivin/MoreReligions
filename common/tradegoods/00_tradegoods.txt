@@ -217,10 +217,12 @@ wool = {
 		}
 		modifier = {
 			factor = 0.15
-			has_terrain = grasslands
-			has_terrain = hills
-			has_terrain = forest
-			has_terrain = woods
+			OR = {
+				has_terrain = grasslands
+				has_terrain = hills
+				has_terrain = forest
+				has_terrain = woods
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -239,10 +241,6 @@ wool = {
 		modifier = {
 			factor = 1.5
 			region = tibet_region
-		}
-		modifier = {
-			factor = 0.5
-			
 		}
 	}
 }
@@ -865,9 +863,11 @@ ivory = {
 		}
 		modifier = {
 			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+			OR = {
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -1073,9 +1073,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			region = malaya_region
-			region = indonesia_region
-			region = moluccas_region
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1553,9 +1555,11 @@ tropical_wood = {
 		}
 		modifier = {
 			factor = 0.5
-			region = malaya_region
-			region = moluccas_region
-			region = indonesia_region
+			OR = {
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
 		}
 		modifier = {
 			factor = 2.0
