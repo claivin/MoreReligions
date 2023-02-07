@@ -146,7 +146,7 @@ mr_pol_c5b = {
 		}
 	}
 	
-	mr_pol_c5br4 = { #New Archdioceses
+	mr_pol_c5br4 = { #New Archbishops
 		icon = mission_unknown_mission
 		required_missions = { mr_pol_c5br3 }
 		position = 4

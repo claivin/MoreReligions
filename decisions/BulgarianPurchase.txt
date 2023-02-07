@@ -74,3 +74,5 @@ country_decisions = {
 			}
 			set_country_flag = BLH_request_union_complete
 		}
+	}
+}

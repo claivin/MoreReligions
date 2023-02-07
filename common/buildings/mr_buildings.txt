@@ -6,9 +6,6 @@ mrb_brewery = {
 	time = 24
 	
 	build_trigger = {
-		custom_trigger_tooltip = {
-			tooltip = 8DEVANDBREWGOODS
-		}
 		base_production = 8
 		OR = {
 			trade_goods = grain
@@ -135,7 +132,7 @@ mrb_textileprocessor = {
 			change_trade_goods = wool
 			remove_province_modifier = was_wool_province
 		}
-		else = {
+		else_if = {
 			limit = { has_province_modifier = was_cotton_province }
 			change_trade_goods = cotton
 			remove_province_modifier = was_cotton_province
@@ -226,7 +223,7 @@ mrb_jewler = {
 			change_trade_goods = ivory
 			remove_province_modifier = was_ivory_province
 		}
-		else = {
+		else_if = {
 			limit = { has_province_modifier = was_gems_province }
 			change_trade_goods = gems
 			remove_province_modifier = was_gems_province

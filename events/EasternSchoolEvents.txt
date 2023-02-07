@@ -34,9 +34,9 @@ country_event = {
 		if = { 
 			limit = {
 				OR = {
-					culture = burmese
-					culture = mon
-					culture = shan
+					primary_culture = burmese
+					primary_culture = mon
+					primary_culture = shan
 				}
 				religion = buddhism
 			}
@@ -47,9 +47,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				OR = {
-					tag = LNA
-				}
+				tag = LNA
 				religion = buddhism
 			}
 			set_religious_school = {
@@ -59,9 +57,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				OR = {
-					culture = lao
-				}
+				primary_culture = lao
 				religion = buddhism
 			}
 			set_religious_school = {
@@ -72,9 +68,9 @@ country_event = {
 		else_if = {
 			limit = {
 				OR = {
-					tag = AYU
-					tag = LPB
-					tag = KHM
+					primary_culture = AYU
+					primary_culture = LPB
+					primary_culture = KHM
 				}
 				religion = buddhism
 			}
@@ -86,8 +82,8 @@ country_event = {
 		else_if = {
 			limit = {
 				OR = {
-					culture = central_thai
-					culture = northern_thai
+					primary_culture = central_thai
+					primary_culture = northern_thai
 				}
 				NOT = { tag = AYU }
 				religion = buddhism
@@ -102,7 +98,7 @@ country_event = {
 				OR = {
 					tag = CEY
 					tag = KND
-					culture = sinhalese
+					primary_culture = sinhala
 				}
 				religion = buddhism
 			}

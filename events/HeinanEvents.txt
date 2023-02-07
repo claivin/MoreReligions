@@ -1,3 +1,5 @@
+namespace = HEI_flavor
+
 country_event = {
 	id = HEI_flavor.1
 	title = HEI_flavor.1.t

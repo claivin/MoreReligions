@@ -16,6 +16,7 @@ country_decisions = {
 							province_id = 5115
 							province_id = 35
 						}
+						religion = catholic
 					}
 				}
 				development_in_provinces = {
@@ -25,6 +26,7 @@ country_decisions = {
 						province_id = 5115
 						province_id = 35
 					}
+					religion = catholic
 				}
 			}
 		}
@@ -85,9 +87,11 @@ country_decisions = {
 							province_id = 4241
 							area = curonia_area
 						}
+						religion = catholic
 					}
 					38 = {
 						development = 25
+						religion = catholic
 					}
 				}
 				development_in_provinces = {
@@ -99,9 +103,11 @@ country_decisions = {
 						province_id = 4241
 						area = curonia_area
 					}
+					religion = catholic
 				}
 				38 = {
 					development = 25
+					religion = catholic
 				}
 			}
 		}
@@ -145,11 +151,12 @@ country_decisions = {
 			OR = {
 				BLT = {
 					development_in_provinces = {
-					value = 80
+						value = 80
 						OR = {
 							area = samogitia_area
 							area = lithuania_area
 						}
+						religion = catholic
 					}
 				}
 				development_in_provinces = {
@@ -158,6 +165,7 @@ country_decisions = {
 						area = samogitia_area
 						area = lithuania_area
 					}
+					religion = catholic
 				}
 			}
 		}
@@ -206,6 +214,7 @@ country_decisions = {
 							area = east_prussia_area
 							area = west_prussia_area
 						}
+						religion = catholic
 					}
 				}
 				development_in_provinces = {
@@ -214,6 +223,7 @@ country_decisions = {
 						area = east_prussia_area
 						area = west_prussia_area
 					}
+					religion = catholic
 				}
 			}
 		}

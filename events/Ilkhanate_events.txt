@@ -357,7 +357,7 @@ country_event = {
 				}
 				grant_independence = ALM
 			}
-			else = {
+			else_if = {
 				limit = {
 					ALM = {
 						exists = no
@@ -372,7 +372,7 @@ country_event = {
 						cavalry = 0.3
 					}
 				}
-				change_government = thoecray
+				change_government = thoecracy
 				add_government_reform = leading_clergy_reform
 			}
 			change_variable = {

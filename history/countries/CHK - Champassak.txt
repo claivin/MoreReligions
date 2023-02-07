@@ -17,5 +17,3 @@ religious_school = mr_yogavacara_school #formerly weizza
 		mil = 2
 	}
 }
-
-1

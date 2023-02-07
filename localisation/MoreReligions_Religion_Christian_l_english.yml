@@ -290,3 +290,16 @@
  
  mr_change_to_westorthodox_rite_title: "Adopt West Orthodox Rites"
  mr_change_to_westorthodox_rite_desc: "Our current liturgical rites are insufficient and outdated for our religious community. We ought to reallign our rites to something more fitting for out people."
+ 
+ #Western Schism Events
+ mr_catholic.2.t: "Cardinal Factionalism"
+ mr_catholic.2.d: "Since the twelfth century, the Church has been beset by drastic corruption, going from the lowest clergymen, bishops, and even up to several Popes. The increasing integration of clerical administration into the remenants of fragmented Europe are thought to have encouraged self-interested clergymen with little political oversight to clamor for their own power and wealth. The College of Cardinals is no exception: they act as petty lords, ruling with impunity within their own ecclestiastical provinces. For several Papal elections now, the College has been relatively united in electing weak Popes - those who will do little to reform the Church from within and act as a figurehead - oftentimes chosen from lesser cardinals or archbishops from European backwaters.\n\nIn recent times however, the several Cardinals he come to the conclusion that the unchecked spread of heresy within Europe will only lead to the collapse of Catholic institutions, and therefore their power. These Cardinals dubbed 'Reconstructionists' have grown to makeup nearly half the College and they stand in clear opposition to unalligned Cardinals who do not view heresy as a significant threat."
+ mr_catholic.2.a: "Interesting."
+ 
+ mr_catholic.3.t: "The College Divided"
+ mr_catholic.3.d: "Reconstructionists and staus quo Cardinals have now cemented their positions on the matter. They have chosen their respective candidates of the next Papacy, but it appears that there will not be a conclusive vote when the time comes."
+ mr_catholic.3.a: "Worrying."
+ 
+ mr_catholic.4.t: ""
+ mr_catholic.4.d: ""
+ mr_catholic.4.a: ""

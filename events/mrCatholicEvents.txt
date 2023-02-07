@@ -1,0 +1,114 @@
+#events for both catholic, antipapist, and counterantipapist, and eastern catholic
+namespace = mr_catholic
+
+#Western Schism
+country_event = {
+	id = mr_catholic.1
+	title = mr_catholic.1.t
+	desc = mr_catholic.1.d
+	picture = POPE_PREACHING_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	
+	trigger = {
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+}
+
+#Western Schism leadup
+#Cardinal Factionalism
+country_event = {
+	id = mr_catholic.2
+	title = mr_catholic.2.t
+	desc = mr_catholic.2.d
+	picture = POPE_PREACHING_eventPicture
+
+	trigger = {
+		tag = PAP
+		is_year = 1450
+		NOT = { has_country_flag = mr_western_schism_pt1_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = mr_western_schism_pt1_flag
+		}
+		every_province = {
+			limit = {
+				has_cardinal = yes
+				owner = {
+					NOT = { tag = PAP }
+					NOT = { has_country_flag = mr_western_schism_pt1_flag }
+				}
+			}
+			owner = {
+				country_event = {
+					id = mr_catholic.2
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = mr_catholic.2.a
+		#Interesting.
+	}
+}
+
+#Cardinal Factions Cement
+country_event = {
+	id = mr_catholic.3
+	title = mr_catholic.3.t
+	desc = mr_catholic.3.d
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		tag = PAP
+		has_country_flag = mr_western_schism_pt1_flag
+		NOT = { has_country_flag = mr_western_schism_pt2_flag }
+	}
+	
+	mean_time_to_happen = {
+		months = 120
+	}
+	
+	immediate = {
+		set_country_flag = mr_western_schism_pt2_flag
+	}
+	
+	option = {
+		name = mr_catholic.3.a
+		#worrying
+	}
+}
+
+#Cardinals side with pope of choice
+country_event = {
+	id = mr_catholic.4
+	title = mr_catholic.4.t
+	desc = mr_catholic.4.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		#triggered by mr_catholic.3
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		
+	}
+}
