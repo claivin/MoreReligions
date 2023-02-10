@@ -2,6 +2,7 @@
 
  shinbutsu_events.shinto.tt: "This will move us towards the §YShinto§! outcome of the current Incident."
  shinbutsu_events.buddhist.tt: "This will move us towards the §YBuddhist§! outcome of the current Incident."
+ shinbutsu_events.balance.tt: "This will move us towards a §YNeutral§! outcome of the current Incident."
  
 
  shinto_incident_enryaku.tt: "This will start the §YMount Hiei Conflict§! Incident."

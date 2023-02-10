@@ -103,7 +103,9 @@ incident_enryaku = {
 	}
 
 	trigger = {
-		is_incident_happened = incident_enryaku
+		1020 = {
+			owned_by = ROOT
+		}
 		custom_trigger_tooltip = {
 			tooltip = shinto_incident_recent_tooltip
 			is_incident_active = no
@@ -112,6 +114,9 @@ incident_enryaku = {
 				had_country_flag = { flag = shinto_incident_recent days = 10950 }
 			}
 		}
+		NOT = {
+			current_age = age_of_discovery
+		}
 	}
 
 	mean_time_to_happen = {
@@ -119,7 +124,7 @@ incident_enryaku = {
 	}
 
 	immediate_effect = {
-		country_event = { id = shinto_events.32 }
+		country_event = { id = shinbutsu_events.1 }
 		set_country_flag = active_incident_flag
 	}
 }

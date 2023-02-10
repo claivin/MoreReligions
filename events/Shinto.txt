@@ -787,7 +787,7 @@ country_event = {
 }
 
 #Ikkos
-
+#Redone for the Mod
 #Free Land Buddhism
 country_event = {
 	id = shinto_events.13
@@ -821,7 +821,7 @@ country_event = {
 	option = {
 		name = "shinto_events.13.a" #This fervor is inspiring! Let us patronize these temples.
 		custom_tooltip = shinto_incident_ikko.tt
-		custom_tooltip = shinto_events.open.tt
+		custom_tooltip = shinbutsu_events.buddhist.tt
 		event_target:ikko_province = {
 			add_local_autonomy = 75
 			add_base_manpower = 2
@@ -837,7 +837,7 @@ country_event = {
 	option = {
 		name = "shinto_events.13.b" #It is hard to have something against the strong convictions of the faithful.
 		custom_tooltip = shinto_incident_ikko.tt
-		custom_tooltip = shinto_events.middle_way.tt
+		custom_tooltip = shinbutsu_events.balance.tt
 		event_target:ikko_province = {
 			add_local_autonomy = 30
 		}
@@ -856,7 +856,7 @@ country_event = {
 	option = {
 		name = "shinto_events.13.c" #Let us be very restrictive against anything that empowers the poor.
 		custom_tooltip = shinto_incident_ikko.tt
-		custom_tooltip = shinto_events.isolation.tt
+		custom_tooltip = shinbutsu_events.shinto.tt
 		add_stability_or_adm_power = yes
 		event_target:ikko_province = {
 			add_province_modifier = {
@@ -890,7 +890,7 @@ country_event = {
 	
 	option = {
 		name = "shinto_events.14.a" #We must undercut these hornets nests.
-		custom_tooltip = shinto_events.isolation.tt
+		custom_tooltip = shinbutsu_events.shinto.tt
 		event_target:ikko_province = {
 			add_province_modifier = {
 				name = "enraged_ikko_ikki"
@@ -911,7 +911,7 @@ country_event = {
 	}
 	option = {
 		name = "shinto_events.14.b" #Let us strive to work together with these armies of the faithful.
-		custom_tooltip = shinto_events.middle_way.tt
+		custom_tooltip = shinbutsu_events.balance.tt
 		event_target:ikko_province = {
 			add_local_autonomy = 10
 			add_base_manpower = 1
@@ -930,7 +930,7 @@ country_event = {
 	
 	option = {
 		name = "shinto_events.14.c" #Authorize more Temple Towns to be built.
-		custom_tooltip = shinto_events.open.tt
+		custom_tooltip = shinbutsu_events.buddhist.tt
 		event_target:ikko_province = {
 			add_local_autonomy = 45
 			add_base_manpower = 2
@@ -961,7 +961,7 @@ country_event = {
 	option = {
 		name = "shinto_events.15.c" #This is only their right.
 		set_country_flag = end_of_ikko_chain
-		custom_tooltip = shinto_events.open.tt
+		custom_tooltip = shinbutsu_events.buddhist.tt
 		event_target:ikko_province = {
 			area = {
 				limit = {
@@ -980,7 +980,7 @@ country_event = {
 	option = {
 		name = "shinto_events.15.b" #They cannot spread beyond their current borders.
 		set_country_flag = end_of_ikko_chain
-		custom_tooltip = shinto_events.middle_way.tt
+		custom_tooltip = shinbutsu_events.balance.tt
 		add_stability = -1
 		add_incident_variable_value = {
 			incident = incident_ikko_shu
@@ -991,7 +991,7 @@ country_event = {
 	option = {
 		name = "shinto_events.15.a" #The time has come to crush these peasants!
 		set_country_flag = end_of_ikko_chain
-		custom_tooltip = shinto_events.isolation.tt
+		custom_tooltip = shinbutsu_events.shinto.tt
 		event_target:ikko_province = {
 			area = {
 				limit = {
@@ -3132,7 +3132,6 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 2
-				NOT = { tag = JAP }
 				NOT = { tag = TKD }
 				any_known_country = {
 					capital_scope = { region = japan_region }
@@ -3148,11 +3147,10 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 0.5
-				NOT = { tag = JAP }
 				NOT = { tag = TKD }
 				any_known_country = {
 					capital_scope = { region = japan_region }
-					religion = mahayana
+					religion = mr_shin
 				}
 			}
 		}
@@ -3162,15 +3160,15 @@ country_event = {
 		change_government_to_theocracy = yes
 		add_government_reform = leading_clergy_reform
 		add_stability = -2
-		change_religion = mahayana
+		change_religion = mr_shin
 		capital_scope = {
-			change_religion = mahayana
+			change_religion = mr_shin
 			random_neighbor_province = {
 				limit = {
 					owned_by = ROOT
 				}
 				spawn_rebels = {
-					type = shinto_rebels
+					type = nihon_rebels
 					size = 1
 				}
 			}
@@ -3188,11 +3186,10 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 0.5
-				NOT = { tag = JAP }
 				NOT = { tag = TKD }
 				any_known_country = {
 					capital_scope = { region = japan_region }
-					religion = mahayana
+					religion = mr_shin
 				}
 			}
 		}
@@ -3202,9 +3199,9 @@ country_event = {
 		change_government_to_republic = yes
 		add_government_reform = peasants_republic
 		add_stability = -2
-		change_religion = mahayana
+		change_religion = mr_shin
 		capital_scope = {
-			change_religion = mahayana
+			change_religion = mr_shin
 			random_neighbor_province = {
 				limit = {
 					owned_by = ROOT
@@ -3228,17 +3225,16 @@ country_event = {
 			factor = 20
 			modifier = {
 				factor = 0.5
-				NOT = { tag = JAP }
 				NOT = { tag = TKD }
 				any_known_country = {
 					capital_scope = { region = japan_region }
-					religion = mahayana
+					religion = mr_shin
 				}
 			}
 		}
-		change_religion = mahayana
+		change_religion = mr_shin
 		capital_scope = {
-			change_religion = mahayana
+			change_religion = mr_shin
 			spawn_rebels = {
 				type = ikko_ikki_rebels
 				size = 2
@@ -3248,7 +3244,7 @@ country_event = {
 					owned_by = ROOT
 				}
 				spawn_rebels = {
-					type = shinto_rebels
+					type = nihon_rebels
 					size = 1
 				}
 			}
