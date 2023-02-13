@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+primary_culture = greek
+religion = orthodox
+technology_group = eastern
+capital = 151
+
+1444.1.1 = {
+	monarch = {
+		name = "Vassilis"
+		dynasty = "Franopoulos"
+		birth_date = 1399.1.1
+		death_date = 1460.1.1
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}
