@@ -3,7 +3,8 @@
 owner = BLK
 controller = BLK
 add_core = BLK
-culture = afghani
+add_core = PST
+culture = pashtun
 religion = sunni
 capital = "Peshawar"
 trade_goods = livestock

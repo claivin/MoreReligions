@@ -2,7 +2,7 @@
 
 owner = HRT
 controller = HRT
-culture = khorasani
+culture = tajik
 religion = sunni
 capital = "Herat"
 trade_goods = paper

@@ -2,7 +2,7 @@
 
 owner = MGH
 controller = MGH
-culture = afghani
+culture = tajik
 religion = sunni
 capital = "Munjan"
 trade_goods = gems #Rubies, Saphires

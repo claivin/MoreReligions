@@ -2,7 +2,7 @@
 
 owner = HRT
 controller = HRT
-culture = turkmeni
+culture = tajik
 religion = sunni
 capital = "Merv"
 trade_goods = cotton

@@ -2,7 +2,7 @@
 
 owner = BLK
 controller = BLK
-culture = afghani
+culture = pashtun
 religion = sunni
 capital = "Kabul"
 trade_goods = gems #Emeralds
@@ -12,6 +12,7 @@ base_production = 7
 base_manpower = 5
 is_city = yes
 add_core = BLK
+add_core = PST
 discovered_by = KAS
 discovered_by = muslim
 discovered_by = ottoman

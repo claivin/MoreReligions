@@ -2,7 +2,7 @@
 
 owner = PUN
 controller = PUN
-culture = panjabi
+culture = pashtun
 religion = sunni
 capital = "Bannu"
 trade_goods = livestock

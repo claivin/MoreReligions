@@ -2,7 +2,7 @@
 
 owner = HRT
 controller = HRT
-culture = afghani
+culture = hazara
 religion = shiite
 capital = "Bamyan"
 trade_goods = dyes
@@ -12,7 +12,7 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = HRT
-add_core = AFG
+add_core = HAZ
 discovered_by = TEE
 discovered_by = LMA
 discovered_by = VAI

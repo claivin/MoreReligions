@@ -3,7 +3,7 @@
 owner = MGH
 controller = MGH
 add_core = MGH
-culture = uzbehk
+culture = tajik
 religion = shiite
 capital = "Yashilkul"
 trade_goods = livestock

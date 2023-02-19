@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudal_theocracy
+primary_culture = hazara
+religion = shiite
+technology_group = muslim
+capital = 2225 #Bamyan
+religious_school = jafari_school
+

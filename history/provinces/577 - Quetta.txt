@@ -2,7 +2,7 @@
 
 owner = BLK
 controller = BLK
-culture = baluchi
+culture = pashtun
 religion = sunni
 capital = "Quetta"
 trade_goods = grain
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = BAL
+add_core = PST
 add_core = BLK
 
 

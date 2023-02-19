@@ -2,7 +2,7 @@
 
 owner = BLK
 controller = BLK
-culture = afghani
+culture = hazara
 religion = sunni
 capital = "Balkh"
 trade_goods = cotton
@@ -12,6 +12,7 @@ base_production = 9
 base_manpower = 7
 is_city = yes
 add_core = BLK
+add_core = HAZ
 discovered_by = KAS
 discovered_by = muslim
 discovered_by = ottoman

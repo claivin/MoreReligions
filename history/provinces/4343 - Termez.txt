@@ -2,7 +2,7 @@
 
 owner = TRS
 controller = TRS
-culture = uzbehk
+culture = tajik
 religion = sunni
 capital = "Termez"
 trade_goods = livestock

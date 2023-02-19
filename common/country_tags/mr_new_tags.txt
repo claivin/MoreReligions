@@ -324,6 +324,8 @@ HRT = "countries/Herat.txt"
 KMS = "countries/Kirmanshah.txt"
 ALM = "countries/Alamut.txt"
 SBZ = "countries/Sabzevar.txt"
+HAZ = "countries/Hazarajat.txt"
+PST = "countries/Pashtunistan.txt"
 
 
 #North Africa

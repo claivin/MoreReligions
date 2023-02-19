@@ -2,7 +2,7 @@
 
 owner = HRT
 controller = HRT
-culture = afghani
+culture = tajik
 religion = sunni
 capital = "Maymana"
 trade_goods = cotton
