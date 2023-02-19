@@ -2,6 +2,7 @@ government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 1
 primary_culture = sulawesi
+add_accepted_culture = southern_sulawesi
 religion = nusantara
 technology_group = chinese
 capital = 2715	# Palopo

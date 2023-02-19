@@ -1,6 +1,6 @@
 
 culture = bornean
-religion = hinduism
+religion = nusantara
 capital = "Paser"
 trade_goods = unknown
 hre = no

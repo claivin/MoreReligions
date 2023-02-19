@@ -3,7 +3,7 @@ capital = "Kangar"
 
 owner = KED
 controller = KED
-culture = malayan
+culture = utara
 religion = sunni
 trade_goods = grain
 hre = no

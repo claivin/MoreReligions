@@ -2,8 +2,8 @@
 
 owner = BEI
 controller = BEI
-culture = bornean
-religion = sunni
+culture = dayak
+religion = nusantara
 capital = "Sigalang"
 trade_goods = gems
 hre = no

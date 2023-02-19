@@ -1,8 +1,9 @@
 government = monarchy
 add_government_reform = mandala_reform
 government_rank = 1
-primary_culture = sumatran
-religion = buddhism
+primary_culture = minang
+religion = nusantara
+secondary_religion = buddhism
 technology_group = chinese
 capital = 2681	# Pagarruyung
 

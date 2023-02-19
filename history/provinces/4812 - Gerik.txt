@@ -1,6 +1,6 @@
 owner = CHN
 controller = CHN
-culture = malayan
+culture = utara
 religion = sunni
 capital = "Gerik"
 trade_goods = tropical_wood

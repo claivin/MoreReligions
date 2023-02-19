@@ -3,7 +3,7 @@ add_government_reform = plutocratic_reform
 government_rank = 1
 primary_culture = bornean
 technology_group = chinese
-religion = hinduism
+religion = nusantara
 capital = 2710
 
 1444.1.1 = {

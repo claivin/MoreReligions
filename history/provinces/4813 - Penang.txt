@@ -1,6 +1,6 @@
 owner = KED
 controller = KED
-culture = malayan
+culture = utara
 religion = sunni
 capital = "Pengang"
 trade_goods = tropical_wood

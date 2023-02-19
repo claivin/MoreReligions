@@ -1,7 +1,7 @@
 #623 - Tulangbewang
 
-culture = sumatran
-religion = hinduism
+culture = malayan
+religion = nusantara
 capital = "Tulangbewang"
 trade_goods = spices
 hre = no

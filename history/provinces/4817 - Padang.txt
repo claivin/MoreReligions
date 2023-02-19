@@ -1,7 +1,7 @@
 owner = PGR
 controller = PGR
-culture = sumatran
-religion = hinduism
+culture = minang
+religion = nusantara
 capital = "Padang"
 trade_goods = grain
 hre = no

@@ -2,7 +2,7 @@
 owner = KUT
 controller = KUT
 culture = bornean
-religion = hinduism
+religion = nusantara
 capital = "Samarinda"
 trade_goods = spices
 hre = no

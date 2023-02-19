@@ -2,8 +2,8 @@
 
 owner = IND
 controller = IND
-culture = sumatran
-religion = hinduism
+culture = minang
+religion = nusantara
 capital = "Muko-Muko"
 trade_goods = grain
 hre = no

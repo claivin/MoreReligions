@@ -1,8 +1,9 @@
 government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
-primary_culture = malayan
-religion = mahayana
+primary_culture = utara
+add_accpeted_culture = malayan
+religion = nusantara
 technology_group = chinese
 capital = 598
 

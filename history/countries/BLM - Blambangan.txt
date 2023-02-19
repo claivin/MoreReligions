@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = autocracy_reform
-primary_culture = javanese
-religion = hinduism
+primary_culture = balinese
+religion = mr_tunggal_dharma
 technology_group = chinese
 capital = 627	# Blambangan
 

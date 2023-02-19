@@ -2,8 +2,8 @@
 
 owner = PAH
 controller = PAH
-culture = malayan
-religion = sunni
+culture = utara
+religion = nusantara
 capital = "Pahang"
 trade_goods = fish
 hre = no

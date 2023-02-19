@@ -1,6 +1,6 @@
 #2693 - Lombok
 
-culture = nusa_tenggara
+culture = balinese
 religion = nusantara
 capital = "Lombok"
 trade_goods = unknown

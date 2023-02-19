@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
-primary_culture = javanese
+primary_culture = balinese
 technology_group = chinese
 add_accepted_culture = nusa_tenggara
 religion = hinduism

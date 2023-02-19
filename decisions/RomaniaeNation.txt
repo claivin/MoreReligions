@@ -1,0 +1,63 @@
+country_decisions = {
+	romaniae_decision = {
+		major = yes
+		potential = {
+			OR = {
+				tag = THR
+				tag = TSS
+				tag = THR
+				AND = {
+					religion = catholic
+					OR = {
+						primary_culture = lombard
+						primary_culture = cosmopolitan_french
+						primary_culture = saxon
+					}
+					accepted_culture = greek
+					capital_scope = {
+						OR = {
+							area = macedonia_area
+							area = thrace_area
+							area = morea_area
+							area = northern_greece_area
+						}
+					}
+				}
+			}
+			NOT = { has_country_flag = formed_lat }
+		}
+		allow = {
+			is_nomad = no
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			accepted_culture = greek
+			151 = {
+				owned_by = ROOT
+			}
+			149 = {
+				owned_by = ROOT
+			}
+			146 = {
+				owned_by = ROOT
+			}
+			147 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = LAT
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_lat
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+		}
+	}
+}

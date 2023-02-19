@@ -2,8 +2,8 @@
 
 owner = MLY
 controller = MLY
-culture = sumatran
-religion = sunni
+culture = malayan
+religion = vajrayana
 capital = "Pekabaru"
 trade_goods = tropical_wood
 hre = no

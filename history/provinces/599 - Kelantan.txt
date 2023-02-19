@@ -2,8 +2,8 @@
 
 owner = CHN
 controller = CHN
-culture = malayan
-religion = sunni
+culture = utara
+religion = nusantara
 capital = "Kelantan"
 trade_goods = naval_supplies
 hre = no

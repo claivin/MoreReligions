@@ -3,8 +3,8 @@
 owner = BDU
 controller = BDU
 add_core = BDU
-culture = sumatran
-religion = hinduism
+culture = malayan
+religion = nusantara
 capital = "Belitung"
 trade_goods = unknown
 hre = no

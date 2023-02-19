@@ -2,8 +2,8 @@
 
 owner = DLI
 controller = DLI
-culture = sumatran
-religion = sunni
+culture = malayan
+religion = nusantara
 capital = "Riau"
 trade_goods = spices
 hre = no

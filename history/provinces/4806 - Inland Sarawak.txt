@@ -1,7 +1,7 @@
 owner = BEI
 controller = BEI
-culture = bornean
-religion = sunni
+culture = dayak
+religion = nusantara
 capital = "Kapit"
 trade_goods = tropical_wood
 hre = no

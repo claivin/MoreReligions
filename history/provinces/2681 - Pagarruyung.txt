@@ -2,7 +2,7 @@
 
 owner = PGR
 controller = PGR
-culture = sumatran
+culture = minang
 religion = buddhism
 capital = "Pagarruyung"
 trade_goods = gold

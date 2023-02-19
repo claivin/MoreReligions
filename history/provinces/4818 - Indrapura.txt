@@ -1,7 +1,7 @@
 owner = IND
 controller = IND
-culture = sumatran
-religion = hinduism
+culture = minang
+religion = nusantara
 capital = "Indrapura"
 trade_goods = grain
 hre = no

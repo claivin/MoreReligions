@@ -1,10 +1,9 @@
 government = monarchy
 add_government_reform = mandala_reform
-primary_culture = sumatran
-religion = sunni
+primary_culture = malayan
+religion = nusantara
 technology_group = chinese
 capital = 618
-religious_school = shafii_school
 
 1444.1.1 = {
 	monarch = {

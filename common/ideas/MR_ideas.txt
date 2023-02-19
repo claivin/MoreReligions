@@ -493,5 +493,51 @@ POL_ideas_mr = {
 		war_exhaustion = -0.06
 	}
 }
+
+LAT_ideas = {
+	start = {
+		manpower_in_true_faith_provinces = 0.15
+		num_accepted_cultures = 1
+	}
+	bonus = {
+	 	cb_on_religious_enemies = yes 
+	}
+	trigger = { tag = LAT }
+	free = yes
+	
+	LAT_ideas_1 = { #Latin Patriarchs
+		papal_influence = 2
+		curia_powers_cost = -0.15
+	}
+	
+	LAT_ideas_2 = { #Incorperate Greek Commerce
+		trade_efficiency = 0.10
+	}
+	
+	LAT_ideas_3 = { # Legacy of the Latin Wars
+		discipline = 0.05
+	}
+	
+	LAT_ideas_4 = { #Vassals of the Empire
+		vassal_income = 0.2 
+		reduced_liberty_desire = 15
+	}
+	
+	LAT_ideas_5 = { # Reconciliation with the Pope
+		diplomats = 1
+	}
+	
+	LAT_ideas_6 = { #Dominate the Aegean
+		galley_power = 0.15
+	}
+	
+	LAT_ideas_7 = { #Modernization of the Empire
+		fire_damage = 0.10 
+		yearly_army_professionalism = 0.02
+	}
+}
+	
+
+
 		
 	

@@ -2,7 +2,7 @@
 
 owner = CHN
 controller = CHN
-culture = malayan
+culture = utara
 religion = sunni
 capital = "Pattani"
 trade_goods = tropical_wood

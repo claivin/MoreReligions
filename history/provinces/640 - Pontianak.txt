@@ -1,7 +1,7 @@
 #640 - Pontianak
 
 culture = bornean
-religion = hinduism
+religion = nusantara
 capital = "Pontianak"
 trade_goods = unknown
 hre = no

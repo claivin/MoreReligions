@@ -1,7 +1,7 @@
 owner = KUT
 controller = KUT
 culture = bornean
-religion = hinduism
+religion = nusantara
 capital = "Sangkulirang"
 trade_goods = spices
 hre = no

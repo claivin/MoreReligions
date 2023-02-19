@@ -1,7 +1,7 @@
 owner = BEI
 controller = BEI
-culture = bornean
-religion = sunni
+culture = dayak
+religion = nusantara
 capital = "Kuching"
 trade_goods = fish
 hre = no

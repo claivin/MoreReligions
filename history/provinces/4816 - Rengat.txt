@@ -1,7 +1,7 @@
 owner = MLY
 controller = MLY
-culture = sumatran
-religion = sunni
+culture = malayan
+religion = vajrayana
 capital = "Rengat"
 trade_goods = fish
 hre = no

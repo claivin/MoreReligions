@@ -1,8 +1,8 @@
 
 owner = CHN
 controller = CHN
-culture = malayan
-religion = sunni
+culture = utara
+religion = nusantara
 capital = "Chintawangsa"
 trade_goods = fish
 hre = no

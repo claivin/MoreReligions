@@ -1,7 +1,7 @@
 owner = PAH
 controller = PAH
 culture = malayan
-religion = sunni
+religion = nusantara
 capital = "Singapura"
 trade_goods = fish
 hre = no

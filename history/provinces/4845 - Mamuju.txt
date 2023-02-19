@@ -1,6 +1,6 @@
 #644 - Manado
 
-culture = sulawesi
+culture = southern_sulawesi
 owner = MMJ
 controller = MMJ
 add_core = MMJ

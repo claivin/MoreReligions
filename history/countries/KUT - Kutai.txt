@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = mandala_reform
 primary_culture = bornean
 technology_group = chinese
-religion = hinduism
+religion = nusantara
 capital = 638	# Kutai
 
 1399.1.1 = {

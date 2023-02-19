@@ -3,7 +3,7 @@
 owner = KUT
 controller = KUT
 culture = bornean
-religion = hinduism
+religion = nusantara
 capital = "Kutai"
 trade_goods = fish
 hre = no

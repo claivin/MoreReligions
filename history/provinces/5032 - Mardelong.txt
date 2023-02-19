@@ -2,7 +2,7 @@
 
 owner = TMM
 controller = TMM
-culture = malayan
+culture = utara
 religion = sunni
 capital = "Thalang"
 trade_goods = fish

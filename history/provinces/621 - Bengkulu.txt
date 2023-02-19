@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-culture = sumatran
-religion = hinduism
+culture = malayan
+religion = nusantara
 capital = "Bengkulu"
 hre = no
 base_tax = 3

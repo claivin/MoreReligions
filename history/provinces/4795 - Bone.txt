@@ -1,6 +1,6 @@
 owner = BNE
 controller = BNE
-culture = sulawesi
+culture = southern_sulawesi
 religion = nusantara
 capital = "Bone"
 trade_goods = spices

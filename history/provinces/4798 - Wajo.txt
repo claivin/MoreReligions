@@ -1,7 +1,7 @@
 
 owner = LUW
 controller = LUW
-culture = sulawesi
+culture = southern_sulawesi
 religion = nusantara
 capital = "Wajo"
 trade_goods = spices

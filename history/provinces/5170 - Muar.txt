@@ -3,7 +3,7 @@
 owner = PAH
 controller = PAH
 culture = malayan
-religion = sunni
+religion = nusantara
 capital = "Muar"
 trade_goods = chinaware
 hre = no

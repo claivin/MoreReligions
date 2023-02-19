@@ -2,7 +2,7 @@
 
 owner = KED
 controller = KED
-culture = malayan
+culture = utara
 religion = sunni
 capital = "Kedah"
 trade_goods = grain
