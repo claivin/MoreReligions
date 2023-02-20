@@ -536,7 +536,46 @@ LAT_ideas = {
 		yearly_army_professionalism = 0.02
 	}
 }
+AFR_ideas = {
+	start = {
+		defensiveness = 0.15
+		infantry_power = 0.10
+	}
+	bonus = {
+		technology_cost = -0.05
+	}
+	trigger = {
+		tag = AFR
+	}
+	free = yes
 	
+	AFR_first = { #Reconquest of Africa
+		leader_land_shock = 1 
+	}
+	AFR_second = { #Mahdian Trade Wars
+		global_ship_trade_power = 0.15
+		trade_range_modifier = 0.25
+	}
+	AFR_third = { #Amil Leadership
+		tolerance_heathen = 3
+	}
+	AFR_fourth = { #Mediterranean Fleets
+		galley_power = 0.10
+		global_ship_repair = 0.10
+	}
+	AFR_fifth = { #Gold Dust Merchants
+		monthly_gold_inflation_modifier = -0.15
+	}
+	AFR_sixth = { #Rex Africae
+		province_warscore_cost = -0.15
+		global_manpower_modifier = 0.10
+	}
+	
+	AFR_seventh = { #Modern African Army
+		artillery_power = 0.15
+	}
+}
+		
 
 
 		

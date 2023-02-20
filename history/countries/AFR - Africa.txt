@@ -7,3 +7,13 @@ add_accepted_culture = tunisian
 capital = 341	
 
 
+1444.1.1 = {
+	monarch = {
+		name = "Francis"
+		dynasty = "Hauteville"
+		birth_date = 1411.2.14	
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}

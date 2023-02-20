@@ -188,3 +188,23 @@
  POL_ideas_mr_7: "Rebuild the Villages"
  POL_ideas_mr_7_desc: "After treaties are drawn up and executed, the fighting concludes, but the work does not. Soldiers returning home are continued to be paid for the work of going from town to town rebuilding and replanting lost produce. This was in fact a declaration for humanitarian purpose, but serves a double purpose of fostering good favor with subjects of the crown."
  KHM_ideas_mr_bonus: "Polish Ambitions"
+ 
+ #Africa
+ AFR_ideas: "African Ideas"
+ AFR_ideas_start: "African Traditions"
+ AFR_ideas_bonus: "African Ambition"
+ AFR_first: "Reconquest of Africa"
+ AFR_first_desc: "The Kingdom of Africa, initially founded in the 10th Century, was one of the most powerful states in the region for a time. While some, including the Almohad, had to be maintaned via strategic tributary arrangements, many feared to press into the established Kingdom of Africa. However, the revolt of 1354 has left the kingdom in a dismal state. As the rebels of Kairouan continued to harrass trade routes and supply lines, the kingdom's influence became limited to the region around Tunisia. From here, our generals prepare to strike out - we shall retake the land of Africa for ourselves!"
+ AFR_second: "Mahdian Trade Wars"
+ AFR_second_desc: "We have learned much from the battles of trade with the now rival city of Mahdia. While it used to be under our control, it now lays just beyond our reach, and our merchant fleets now learn to avoid and pull trade away from our once great capital. Until we retake the port, our merchants will dominate the sea."
+ AFR_third: "Amil Leadership"
+ AFR_third_desc: "We are foreign rulers in a foreign land. We cannot hope to rule through our own will and authority alone - we must rely on local, established lords to help control our countryside. They may establish customs and laws as they wish, with religious laws being left in the hands of the governed. While we are Christian, we shall not enforce our faith on the heathen - they can come to it through the truth and certainty of His word."
+ AFR_fourth: "Mediterranean Fleets"
+ AFR_fourth_desc: "The Mediterranean is a wild, untameable beast. To match this, our shipbuilders and craftsmen are masters at repairing and replacing destroyed ships. Our sailors are prepared to face the toughest storms and battle from ship to ship, musket and saber in hand."
+ AFR_fifth: "Gold Dust Merchants"
+ AFR_fifth_desc: "The gold trade comes from the far south, in the land beneath the Sahara. We are simply the end line of it, pushing it up past the coast of Africa and into the wider world. We have mastered monitoring how much gold we are taking in, making sure to not inflate our coffers and destroy our economy. It is a delicate balancing act, but it is one that we must do in order to recieve the riches of gold and silver."
+ AFR_sixth: "Rex Africae"
+ AFR_sixth_desc: "When Roger II first landed on the shores of Tripoli, he acknowledged no Sultan of the region. He instead conquered and established his own land, creating a mighty kingdom. The Prince of Africa, is what they called him, with gold and silk flowing plentifully into the capital. We were the shining light in the region, making it glorious while the kingdoms around us crumbled into dust. Yet now we too fade into night. We stand at the edge of being destroyed, total annihilation approaching. We are as the Romans; but unlike them, we shall not fall nor shall we fall. The Kingdom of Africa will prosper once more!"
+ AFR_seventh: "Modern African Army"
+ AFR_seventh_desc: "To fight in the current era, gunpowder is a necessity. Cannons, muskets, all of the firepower that modern weaponry can bring about are crucial in winning a victory. We cannot let time pass us by, we must embrace the changing landscape of battle and truly create a new and improved army for Africa."
+ 
