@@ -736,6 +736,8 @@ tibet_region = {
 		kham_area
 		bhutan_area
 		ngari_area
+		purang_area
+		west_kham_area
 	}
 }
 
