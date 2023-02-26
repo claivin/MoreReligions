@@ -502,3 +502,31 @@ estate_nomadic_tribes_hun_faith = {
 	ai_will_do = {
 	}
 }
+estate_nobles_gallowglass_unit = {
+	icon = privilege_promote_purbias
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.30
+	land_share = 5
+	can_select = {
+	}
+	is_valid = {
+	}
+	mechanics = {
+		enables_rajput_regiments
+	}
+	penalties = {
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = gallowglass_unit
+			duration = -1
+		}
+	}
+	benefits = {
+		special_unit_forcelimit = 0.10 
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}

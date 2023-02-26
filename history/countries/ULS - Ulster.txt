@@ -7,3 +7,4 @@ primary_culture = irish
 capital = 4121	# Ulster
 historical_friend = MCM
 historical_friend = MTH
+set_estate_privilege = estate_nobles_gallowglass_unit

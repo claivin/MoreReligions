@@ -1,0 +1,5 @@
+gallowglass_unit = {
+	is_rajput_modifier = yes
+	shock_damage = 0.10
+	movement_speed = 0.05
+}
