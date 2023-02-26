@@ -21,13 +21,14 @@
  RAJPUT_REGIMENT:0 "Elite Infantry\n$EFFECT$"
  ONLY_RAJPUT_MODIFIER:0 "§YAffects only Elite Infantry§!"
  REGCAT_rajput:0 "Elite Infantry"
- RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Elite Infantry"
+ RAJPUT_NAME:0 "$HOME$'s $NUM$$ORDER$ Elite"
  ADD_RAJPUT_SUB_UNIT_EFFECT:0 "Get '§YElite Infantry§!' $UNIT$ in $WHERE|Y$."
- RAJPUT_REGIMENT_TYPE:0 "Elite"
+ RAJPUT_REGIMENT_TYPE:0 "Elite Infantry"
  HAVE_LESS_RAJPUT_THAN:0 "Have less Elite Infantry than $VALUE|Y$.\n"
  HAVE_AT_LEAST_RAJPUT_THAN:0 "Have at least $VALUE|Y$ Elite Infantry.\n"
  RAJPUT_DESC:2 "The §YElite Infantry§! of our country have their own unique modifiers and bonuses. They shall aid us in maintaining the security of our state."
  RAJPUT_FORCELIMIT:1 "We can recruit up to $VAL|%Y$ of our force-limit of $FL$ as §YElite Infantry§! due to:\n"
  enables_rajput_regiments:0 "Elite Infantry"
+
  
  
