@@ -1,8 +1,8 @@
 # 2184 - Xining
 
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = XZH
+controller = XZH
+add_core = XZH
 culture = xibei
 religion = vajrayana
 capital = "Xining"

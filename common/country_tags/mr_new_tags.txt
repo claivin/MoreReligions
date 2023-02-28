@@ -10,6 +10,7 @@ SKY = "countries/Sakya.txt"
 HEI = "countries/Heinan.txt"
 CTO = "countries/Canton.txt"
 ZHJ = "countries/Zhanjiang.txt"
+XZH = "countries/Xuanzheng.txt"
 
 #Korea
 BHH = "countries/Sanggyeong.txt"

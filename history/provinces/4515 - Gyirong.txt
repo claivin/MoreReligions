@@ -1,7 +1,8 @@
 #4515 - Gyirong
 
-owner = SKY
-controller = SKY
+owner = TIB
+controller = TIB
+add_core = TIB
 add_core = SKY
 add_core = PHA
 culture = tibetan

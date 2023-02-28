@@ -1,0 +1,23 @@
+#5447 - Korchak
+
+owner = TIB
+controller = TIB
+add_core = TIB
+add_core = GUG
+add_core = PHA
+culture = tibetan
+religion = vajrayana
+capital = "Korchak"
+trade_goods = livestock
+hre = no
+base_tax = 1 
+base_production = 2
+base_manpower = 1
+is_city = yes
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group
+
+
+
+1444.11.12 = { trade_goods = unknown }

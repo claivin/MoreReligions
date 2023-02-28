@@ -1,8 +1,9 @@
 #678 - Kham
 
-owner = SKY
-controller = SKY
-add_core = SKY
+owner = TIB
+controller = TIB
+add_core = TIB
+add_core = KAM
 culture = tibetan
 religion = vajrayana
 capital = "Tachienlu"

@@ -1,8 +1,9 @@
 #677 - Qamdo
 
-owner = SKY
-controller = SKY
+owner = TIB
+controller = TIB
 add_core = SKY
+add_core = TIB
 culture = tibetan
 religion = vajrayana
 capital = "Lhasa"

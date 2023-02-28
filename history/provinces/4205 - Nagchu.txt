@@ -1,8 +1,8 @@
 #4205 - Nagchu
 
-owner = SKY
-controller = SKY
-add_core = SKY
+owner = TIB
+controller = TIB
+add_core = TIB
 culture = tibetan
 religion = vajrayana
 capital = "Nagchu"

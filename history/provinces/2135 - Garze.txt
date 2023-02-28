@@ -1,8 +1,9 @@
 # 2135 - Garze
 
-owner = SKY
-controller = SKY
-add_core = SKY
+owner = TIB
+controller = TIB
+add_core = KAM
+add_core = TIB
 culture = tibetan
 religion = vajrayana
 capital = "Garze"

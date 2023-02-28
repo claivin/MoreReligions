@@ -1,7 +1,8 @@
 #676 - U-Tsang
 
-owner = SKY
-controller = SKY
+owner = TIB
+controller = TIB
+add_core = TIB
 add_core = SKY
 culture = tibetan
 religion = vajrayana

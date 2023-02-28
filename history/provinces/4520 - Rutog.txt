@@ -1,9 +1,9 @@
 #4520 - Rutog
 
-owner = GUG
-controller = GUG
+owner = TIB
+controller = TIB
 add_core = GUG
-add_core = LDK
+add_core = TIB
 culture = tibetan
 religion = vajrayana
 capital = "Rutog"

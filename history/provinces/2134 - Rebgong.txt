@@ -1,8 +1,8 @@
 # 2134 - Rebgong
 
-owner = SKY
-controller = SKY
-add_core = SKY
+owner = XZH
+controller = XZH
+add_core = XZH
 culture = tibetan
 religion = vajrayana
 capital = "Rebgong"

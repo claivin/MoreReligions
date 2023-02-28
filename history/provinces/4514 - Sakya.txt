@@ -1,9 +1,9 @@
 #4514 - Sakya
 
-owner = SKY
-controller = SKY
+owner = TIB
+controller = TIB
+add_core = TIB
 add_core = SKY
-add_core = PHA
 culture = tibetan
 religion = vajrayana
 capital = "Sakya"
