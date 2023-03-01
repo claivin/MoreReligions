@@ -1384,42 +1384,43 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		movement_speed_in_fleet_modifier = 1
-		infantry_power = 0.1
-	}
-	
-	bonus = {
-		global_tariffs = 0.20
-	}
-	
-	trigger = {
-		tag = POR
-	}
-	free = yes		#will be added at load.
-	
-	legacy_of_the_navigator = {
-		naval_morale = 0.1
-		range = 0.20
-	}
-	afonsine_ordinances = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	case_de_india = {
-		global_trade_power = 0.1
-	}
-	land_before_faith = {
-		global_colonial_growth = 15
-	}
-	the_bandeirantes = {
-		trade_efficiency = 0.15
-	}
-	royal_absolutism = {
-		build_cost = -0.15
-		yearly_absolutism = 0.5
-	}
-	por_royal_military_academy = {
-		defensiveness = 0.1
-		artillery_fire = 1
+	war_exhaustion = -0.05
+        global_missionary_strength = 0.15
+    }
+    
+    bonus = {
+        enforce_religion_cost = -1.0
+    }
+    
+    trigger = {
+        tag = POR
+    }
+    free = yes        #will be added at load.
+    
+    legacy_of_the_conqueror = {
+        movement_speed = 0.20
+        war_taxes_cost_modifier = -0.50
+    }
+    pure_blood_lusitanian = {
+        cavalry_cost = -0.15
+        cav_to_inf_ratio = 0.20
+    }
+    never_ending_reconquista = {
+        army_tradition_from_battle = 0.5
+    }
+    faith_before_land = {
+        recover_army_morale_speed = 0.15
+    }
+    the_cavaleiros = {
+        cavalry_power = 0.15
+    }
+    christian_fanaticism = {
+        prestige_per_development_from_conversion = 0.5
+        local_missionary_maitenance_cost = -0.3
+    }
+    gloria_a_Deus_nas_alturas = {
+        land_attrition = -0.10
+        leader_land_manuever = 3
 	}
 }
 
@@ -8435,12 +8436,13 @@ MAZ_ideas = {
 
 GAL_ideas = {
     start = {
-		light_ship_cost = -0.15
-		navy_tradition = 1
+		papal_influence = 2.0
+		devotion = 1
+		republican_tradition = 0.3
     }
 
     bonus = {
-		merchants = 1
+		development_cost = -0.10
     }
 
     trigger = {
@@ -8449,26 +8451,29 @@ GAL_ideas = {
 
 	free = yes        #will be added at load.
 
-    gal_way_of_st_james = {
-		global_tax_modifier = 0.1
+    gal_the_cross_and_hammer = {
+		global_autonomy = -0.05
     }
-    gal_la_bella = {
-		defensiveness = 0.2
+    gal_the_burgos = {
+		burghers_loyalty_modifier = 0.20
+		global_trade_goods_size_modifier = 0.1
     }
-    gal_rein_in_the_cities = {
-		stability_cost_modifier = -0.1
+    gal_foreign_pilgrims = {
+		local_tax_modifier = 0.1
     }
-    gal_shipyards = {
-		ship_durability = 0.05
+    gal_volunteer_militias = {
+		land_maintenance_modifier = -0.10
     }
-	gal_santiago_y_cierra = {
-		land_morale = 0.1
+	gal_foreign_markets = {
+		trade_range_modifier = 0.30
+		range = 0.3
     }
-    gal_sailors_of_the_cantabrian_sea = {
-		sunk_ship_morale_hit_recieved = -0.2
+    gal_compete_with_basque_whalers = {
+		ship_power_propagation = 0.20
     }
-    gal_irmandinos = {
-		infantry_power = 0.1
+    gal_abolish_serfdom = {
+		global_unrest = -1
+		production_efficiency = 0.5
     }
 }
 
