@@ -1,0 +1,215 @@
+cms_mission_first = {
+
+    slot = 3
+    generic = no
+    ai = no
+
+    potential = {
+        tag = CMS
+    }
+    has_country_shield = yes
+
+    cms_harvest_season = {
+        icon = mission_rb_import_potatoes
+        required_missions = { }
+        position = 1
+        
+        provinces_to_highlight = {
+            province_id = 4980
+            NOT = {
+                4980 = {
+                    development = 6
+                }
+            }
+        }
+
+        trigger = {
+            4980 = {
+                owned_by = CMS
+                development = 6
+            }
+        }
+
+        effect = {
+            add_adm_power = 200
+			add_dip_power = 200
+			add_mil_power = 200
+        }
+    }
+	cms_trinity_church = {
+		icon = mission_early_game_buildings
+		required_missions = { cms_harvest_season }
+		position = 2
+		
+		provinces_to_highlight = {
+			province_id = 4980
+			NOT = {
+				4980 = {
+					has_tax_building_trigger = yes
+					}
+			}
+		}
+
+		trigger = {
+			4980 = {
+				owned_by = CMS
+				has_building = temple
+			}
+		}	
+		
+		effect = {
+			4980 = {
+				add_base_tax = 3
+				}
+				add_prestige = 10
+				define_advisor = {
+					type = theologian
+					name = "Ricardo Reis"
+					skill = 1
+					discount = yes
+					culture = Galician
+					religion = catholic
+								}	
+				}
+	}
+}	
+
+cms_mission_second = {
+		
+		slot = 2
+		generic = no
+		ai = no
+		
+		potential = {
+        tag = CMS
+    }
+	has_country_shield = yes
+	
+	cms_militia_commander = {
+		icon = mercenary_companies
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			land_forcelimit = 5
+		}
+		
+		effect = { 
+			4980 = {
+				add_base_manpower = 1
+				}
+				define_general = {
+					shock = 3
+					fire = 3
+					manuever = 3
+					siege = 3
+					}
+				}
+			}
+	cms_portuguese_cavaleiro = {
+		icon = mission_protect_albania
+		required_missions = { cms_militia_commander }
+		position = 2
+		
+		trigger = {
+			army_professionalism = 0.10
+			}
+			
+		effect = {
+			add_army_professionalism = 0.10
+			define_advisor = {
+					type = grand_captain
+					name = "Rui da Silva"
+					skill = 1
+					discount = yes
+					culture = portugese
+					religion = catholic
+						}
+					}	
+		}
+	}
+
+cms_mission_third = {
+
+		slot = 4
+		generic = no
+		ai = no
+		
+		potential = {
+		tag = CMS
+	}
+	has_country_shield = yes
+
+	cms_peasant_family_connections = {
+		icon = mission_peasantry
+		required_missions = { }
+		position = 1
+		
+		trigger = {
+			has_opinion = {
+				who = GAL
+				value = 100
+				}
+			}	
+	
+		effect = {
+			create_alliance = GAL
+			}
+		}	
+	
+	cms_basque_investment = {
+		icon = mission_fish_markets
+		required_missions = { cms_peasant_family_connections }
+		position = 2
+		
+		trigger = { 
+			treasury = 50
+			has_opinion = {
+				who = NAV
+				value = 100
+				}
+			}	
+	
+		effect = {
+			add_treasury = 100
+			define_advisor = {
+					type = trader
+					name = "Frantzisko Aristu"
+					skill = 1
+					discount = yes
+					culture = basque
+					religion = catholic
+					}
+				}
+		}		
+	}
+	
+cms_mission_fourth = {
+			slot = 3
+			generic = no
+			ai = no
+			
+			potential = {
+			tag = CMS
+		}
+		has_country_shield = yes
+			
+		cms_popular_assembly = {
+			icon = mission_european_church
+			required_missions { cms_trinity_church cms_portuguese_cavaleiro cms_basque_investment }
+				position = 3
+				
+				trigger = {
+					stability = 3
+					}
+					
+				effect = {	
+					add_republican_tradition = 20
+					add_treasury = 70
+					add_adm_power = 200
+					add_dip_power = 200
+					add_mil_power = 200
+					}
+				}
+	}	
+				
