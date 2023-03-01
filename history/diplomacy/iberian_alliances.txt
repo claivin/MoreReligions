@@ -11,12 +11,6 @@ union = {
 	start_date = 1402.1.1
 	end_date = 1500.1.1
 }
-union = {
-	first = LON
-	second = GAL
-	start_date = 1402.1.1
-	end_date = 1500.1.1
-}
 vassal = {
 	first = CBD
 	second = SEV
