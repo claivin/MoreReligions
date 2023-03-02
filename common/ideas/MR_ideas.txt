@@ -575,7 +575,48 @@ AFR_ideas = {
 		artillery_power = 0.15
 	}
 }
+TRG_ideas = {
+	start = {
+		movement_speed = 0.15
+		cavalry_power = 0.10
+	}
+	bonus = {
+		merchants = 1
+	}
+	free = yes
+	trigger = {
+		tag = TRG
+	}
+	TRG_first = { #Amenukal of all Tuaregs
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 1
+	}
+	TRG_second = { #Riches of the Sahara
+		global_trade_goods_size_modifier = 0.15
+	}
+	TRG_third = { #Mobilization of the Imghad
+		global_manpower_modifier = 0.10
+		leader_land_fire = 1
+	}
+	TRG_fourth = { #Protection of the Saharan Trade
+		trade_efficiency = 0.15
+	}
+	TRG_fifth = { #The Cross of Agadez
+		discipline = 0.05
+	}
+	TRG_sixth = { #Ineslemen Leadership
+		free_adm_policy = 1 
+		institution_spread_from_true_faith = 0.15
+	}
+	TRG_seventh = { #Matrilineage of Tin Hinan
+		female_advisor_chance = 0.50
+		may_recruit_female_generals = yes
+		defensiveness = 0.20
+	}
+}
+	
 		
+	
 
 
 		

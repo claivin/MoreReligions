@@ -46,3 +46,10 @@ POR_ideas: "Portugal Ideas"
  gal_compete_with_basque_whalers: "Compete with the Basque whalers"
  gal_abolish_serfdom_desc: "The Burgos have grown exceddingly powerful, nothing now can stop them from claiming total control over Galicia. We are completely at their mercy and so, we shall offer one last concession in the hopes of retaining at least our ceremonial position. We shall abolish serfdom in the entire land of Galicia, from this point on every man in Galicia is free to live as they choose without having to awnser to any lord. May God help us."
  gal_abolish_serfdom: "Abolish Serfdom"
+ 
+ AIR_ideas: "Tuareg Tribe Ideas"
+ AIR_ideas_start: "Tuareg Tribe Traditions"
+ AIR_ideas_bonus: "Tuareg Tribe Ambition"
+ mines_of_takedda: "Mines of Takedda"
+ mines_of_takedda_desc: "The copper that flows from the mines of Takedda have long since been a staple of the West African trans-Saharan trade network. We shall protect and propogate this resource."
+ 

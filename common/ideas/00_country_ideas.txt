@@ -5225,7 +5225,7 @@ AIR_ideas = {
 	}
 	
 	trigger = {
-		TAG = AIR
+		primary_culture = tuareg
 	}
 	
 	free = yes		#will be added at load.
@@ -5233,14 +5233,14 @@ AIR_ideas = {
 	taghlamt = {
 		trade_efficiency = 0.10
 	}
-	cross_of_agades = { 
+	legacy_of_tin_hinan = {
 		land_morale = 0.15
 	}
-	legacy_of_tin_hinan = {
-		legitimacy = 1
+	mines_of_takedda = {
+		global_trade_goods_size_modifier = 0.1 
 	}
 	blue_people = { 
-		prestige = 1
+		same_culture_advisor_cost = -0.15
 	}
 	inadan_castes = {
 		production_efficiency = 0.1
