@@ -29,6 +29,25 @@
  RAJPUT_DESC:2 "The §YElite Infantry§! of our country have their own unique modifiers and bonuses. They shall aid us in maintaining the security of our state."
  RAJPUT_FORCELIMIT:1 "We can recruit up to $VAL|%Y$ of our force-limit of $FL$ as §YElite Infantry§! due to:\n"
  enables_rajput_regiments:0 "Elite Infantry"
+ 
+ #Hussars - > Elephant Cavalry
+ HUSSARS_NAME:0 "$HOME$'s $NUM$$ORDER$ Elephant Cavalry"
+ MODIFIER_HAS_HUSSARS:0 "Allows Elephant Cavalry"
+ HUSSARS_CANT_HAVE:0 "Your nation cannot raise Elephant Cavalry."
+ HUSSARS_DESC:1 "Elephant Cavalry are a powerful unit in South Asian warfare. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YElephant Cavalry§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 100 development."
+ REGCAT_hussars:0 "Elephant"
+ hussars_regiment:0 "Elephant Cavalry"
+ ADD_HUSSARS_SUB_UNIT_EFFECT:0 "Get '§GElephant Cavalry§!' $UNIT$ in $WHERE|Y$."
+ HUSSARS_REGIMENT:0 "Elephant Cavalry\n$EFFECT$"
+ HAVE_LESS_HUSSARS_THAN:0 "Have less Elephant Cavalry Regiments than $VALUE|Y$.\n"
+ HAVE_AT_LEAST_HUSSARS_THAN:0 "Have at least $VALUE|Y$ Elephant Cavalry Regiments.\n"
+ MODIFIER_AMOUNT_OF_HUSSARS:0 "Possible Elephant Cavalry"
+ MODIFIER_LOCAL_AMOUNT_OF_HUSSARS:0 "Possible Elephant Cavalry from development"
+ MODIFIER_CAN_RECRUIT_HUSSARS:0 "May recruit §YElephant Cavalry§!"
+ HUSSARS_REGIMENT_TYPE:0 "Elephant Cavalry"
+ STATE_HUSSARS_CREATED_REGIMENTS:0 "This will cost $MILAMOUNT|Y$ £mil£, and $NUM|Y$ Elephant Cavalry will spawn in $PROV|Y$.\nDo you want to create a Elephant Cavalry regiment?"
+ ONLY_HUSSARS_MODIFIER:0 "§YAffects only Elephant Cavalry§!"
+ HUSSARS_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Elephant Cavalry Regiments here."
 
  
  

@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = MR_thai_tributary
 primary_culture = central_thai
 religion = buddhism
 technology_group = chinese
@@ -18,11 +18,11 @@ capital = 2387
 
 1432.1.1 = {
 	monarch = {
-		name = "Mongkut"
+		name = "Ramesuan II"
 		dynasty = "Uthong"
-		adm = 2
+		adm = 1
 		dip = 4
-		mil = 1
+		mil = 2
 	}
 }
 

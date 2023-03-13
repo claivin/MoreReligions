@@ -6898,7 +6898,7 @@ thai_group = {
 		}
 	}
 	lao = {
-		primary = LUA
+		primary = PMN
 		dynasty_names = { 
 			"Luang Prabang" "Champassak" Vientiane Phuan Nan
 		}

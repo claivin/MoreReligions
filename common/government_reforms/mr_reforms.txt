@@ -522,6 +522,32 @@ tendai_ministries = {
 	
 	custom_tooltip = develop_temples_TT
 }
+MR_thai_tributary = {
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	
+	custom_attributes = {
+		MR_thai_mechanic = yes
+	}
+	modifiers = {
+		vassal_forcelimit_bonus = 0.5
+		amount_of_hussars = 1
+		can_recruit_hussars = yes 
+	}
+	
+	trigger = {
+		culture_group = thai_group
+	}
+	
+	potential = {
+		AND = {
+			is_subject_of_type = tributary_state
+			is_subject_of = ANK
+		}
+	}
+}
 	
 		
 	

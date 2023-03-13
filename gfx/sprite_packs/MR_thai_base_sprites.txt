@@ -1,0 +1,38 @@
+mr_thai_base_sprite_pack = {
+	# Tests against every tag in game
+	country_trigger = {
+		OR = {
+			tag = RTC
+			tag = AYU
+			tag = SUK
+			tag = PTC
+			tag = LPB
+			tag = LNA
+			tag = TMM
+			tag = SYM
+			tag = MGT
+			tag = SIA
+		}
+	}
+
+	sprite_infantry = {
+		0 = AYU_INFANTRY_1
+		1 = AYU_INFANTRY_2
+		2 = AYU_INFANTRY_3
+		3 = AYU_INFANTRY_4
+	}
+
+	sprite_cavalry = {
+        0 = south_east_asian_special_CAVALRY_1
+        1 = south_east_asian_special_CAVALRY_2
+        2 = south_east_asian_special_CAVALRY_3
+        3 = south_east_asian_special_CAVALRY_3
+   	 }
+	
+	sprite_artillery = {
+		0 = AYU_ARTILLERY_1
+		1 = AYU_ARTILLERY_2
+		2 = AYU_ARTILLERY_3
+		3 = AYU_ARTILLERY_4
+	}
+}

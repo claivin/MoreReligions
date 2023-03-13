@@ -23,6 +23,10 @@
  tendai_ministries: "Enforced Tendai State"
  tendai_ministries_desc: "The Tendai school has come to dominate the state of Japan. The emperors are enforced into cloistered rule by the Tendai administration should they try to object to the monasteries' power, and as such only those loyal to the monks can rule Japan. The Tendai School guides Japan into the future..."
  
+ MR_thai_tributary: "Thai Tributary State"
+ MR_thai_tributary_desc: "We have been subujgated by the Angkor Empire. However, we still retain control from within their Mandala. We utilize our Buddhist heritage to gain legitimacy and power over our neighbours."
+ mechanic_MR_thai_mechanic_yes: "Everytime we §Ywin a battle§!, we will gain §G+1§! §YKarma§!"
+ 
  samanta_vassal_reform: "Samanta State"
  samanta_vassal_reform_desc: ""
  maharajadhiraja_reform: "Samrajya"

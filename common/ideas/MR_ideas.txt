@@ -648,7 +648,7 @@ PTC_ideas = {
     PTC_fifth = { #Fishing Industries
         production_efficiency = 0.10
     }
-    PTC_sixth = { #Building Petchaburi
+    PTC_sixth = { #Grand Temples and Palaces
         build_cost = -0.10
     }
     PTC_seventh = { #Local Mueng Militias
@@ -685,7 +685,7 @@ RTC_ideas = {
     RTC_fifth = { #Unify the Thai States
         province_warscore_cost = -0.10
     }
-    RTC_sixth = { #Ratchabumm Acadamy
+    RTC_sixth = { #Ratchabum Acadamy
         mil_tech_cost_modifier = -0.1 
     }
     RTC_seventh = { #Professional Armies

@@ -614,6 +614,14 @@ on_battle_won_country = {
 	if = {
 		limit = {
 			ROOT = {
+				has_reform = MR_thai_tributary
+			}
+		}
+		add_karma = 1
+	}
+	if = {
+		limit = {
+			ROOT = {
 				religion = jewish
 				has_church_aspect = judaism_purim_teachings_aspect
 			}

@@ -118,3 +118,28 @@ was_never_end_game_tag_trigger = {	#Country Scope
 		}
 	}
 }
+has_dharma_elephants_trigger = {
+	OR = {
+		has_dlc = "Dharma"
+		has_dlc = "Dharma - Indian Sultanate Pack"
+		has_dlc = "Dharma - Hindu Unit Pack"
+	}
+	OR = {
+		culture_group = hindusthani
+		culture_group = eastern_aryan
+		culture_group = western_aryan
+		culture_group = dravidian
+		culture_group = central_indic
+		culture_group = southeastasian_group
+		culture_group = burman
+		culture_group = thai_group
+		primary_culture = cham
+		primary_culture = sumatran
+		primary_culture = javanese
+		primary_culture = malayan
+		primary_culture = central_thai
+		primary_culture = northern_thai
+		primary_culture = lao
+		tag = CDL #Dali
+	}
+}

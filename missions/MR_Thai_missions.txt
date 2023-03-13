@@ -1,0 +1,399 @@
+MR_siam_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
+	
+	mr_siam_conquest_1 = {
+		icon = mission_mnd_khm_protect_the_cham
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			army_size_percentage = 1
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		effect = {
+			tenasserim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_tenasserim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sukhothai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4832 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_siam_capital_1 = {
+		icon = mission_mnd_khm_protect_the_cham
+		required_missions = { mr_siam_conquest_1 }
+		provinces_to_highlight = {
+			is_capital = yes 
+			owned_by = ROOT
+		}
+		
+		trigger = {
+			capital_scope = {
+				has_fort_building_trigger = yes
+				base_manpower = 8
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = MR_thai_fortifications
+					duration = -1
+				}
+			}
+		}
+	}
+}
+MR_siam_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
+	
+	mr_siam_conquest_2 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { mr_siam_conquest_1 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 592
+				province_id = 4832
+				province_id = 601	
+				province_id = 2387
+				province_id = 593 
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					OR = {
+						province_id = 592
+						province_id = 4832
+						province_id = 601	
+						province_id = 2387
+						province_id = 593 
+					}
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			600 = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			4831 = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			northern_thai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								OR = {
+									province_id = 592
+									province_id = 4832
+									province_id = 601	
+									province_id = 2387
+									province_id = 593 
+								}
+								country_or_non_sovereign_subject_holds = ROOT 
+							}
+							amount = 4
+						}
+					}
+				}
+				add_country_modifier = {
+					name = warring_state_lvl_1
+					duration = 5475
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						calc_true_if = {
+							all_province = {
+								OR = {
+									province_id = 592
+									province_id = 4832
+									province_id = 601	
+									province_id = 2387
+									province_id = 593 
+								}
+								country_or_non_sovereign_subject_holds = ROOT 
+							}
+							amount = 5
+						}
+					}
+				}
+				add_country_modifier = {
+					name = warring_state_lvl_2
+					duration = 5475
+				}
+			}
+			else_if = {
+				limit = {
+					calc_true_if = {
+						all_province = {
+							OR = {
+								province_id = 592
+								province_id = 4832
+								province_id = 601	
+								province_id = 2387
+								province_id = 593 
+							}
+							country_or_non_sovereign_subject_holds = ROOT 
+						}
+						amount = 5
+					}
+				}
+				add_country_modifier = {
+					name = warring_state_lvl_3
+					duration = 5475
+				}
+			}
+		}
+	}
+	mr_siam_conquest_3 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 4
+		required_missions = { mr_siam_conquest_2 }
+		provinces_to_highlight = {
+			area = northern_thai_area 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			northern_thai_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+}
+
+MR_siam_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
+	
+	mr_siam_conquest_4 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 3
+		required_missions = { mr_siam_conquest_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 600
+				province_id = 4831
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			600 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4831 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			central_thai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			khorat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = BANGKOK_CAP_TT
+			set_country_flag = bangkok_capital
+		}
+	}
+}
+
+MR_siam_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
+}
+
+MR_siam_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
+	mr_siam_elephants_1 = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 3
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.30
+				}
+				num_of_hussars = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SIA_elephant
+				duration = 10950
+			}
+		}
+	}
+	
+	mr_siam_elephants_2 = {
+		icon = mission_mnd_siam_royal_duel 
+		position = 4
+		required_missions = { mr_siam_elephants_1 }
+		provinces_to_highlight = {
+			trade_goods = ivory
+			NOT = {
+				owned_by = ROOT
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = ivory
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+			num_of_hussars = 7
+		}
+		effect = {
+			add_country_modifier = {
+				name = elephant_breeding
+				duration = 7300
+			}
+			custom_tooltip = siamese_elephant_TT
+			tooltip = {
+				add_province_modifier = {
+					name = elephant_hub
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = ivory
+						has_manufactory_no_custom_tooltip_trigger = yes
+					}
+					add_province_modifier = {
+						name = elephant_hub
+						duration = -1
+					}
+				}
+			}
+		}	
+				
+	}
+			
+			
+}
