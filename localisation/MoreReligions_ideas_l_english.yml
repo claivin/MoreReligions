@@ -264,3 +264,29 @@
  RTC_sixth_desc: "In the aftermath of the foundation of the Ratchaburi state, Songtham built an academy for the training of future soldiers. His army was filled with competent leaders and commanders, who had experienced war for years and years. Since the state was founded on warfare, Songtham placed heavy emphasis on making sure his army surpased all his rivals."
  RTC_seventh: "Professional Armies"
  RTC_seventh_desc: "The mercenary army that was brought into the Ratchaburi territory has now become the standing army of the state. It has transformed from an unorganized, roudy group of warriors that fight for coin and treasure, into a crack military force. They fight for their king, they fight for their state, they fight for their home. None can stand agains tthem, as they stand strong above all else!"
+ 
+ #Syamistan Ideas
+ SYM_ideas: "Syamistani Ideas"
+ SYM_ideas_start: "Syamistani Traditions"
+ SYM_ideas_bonus: "Syamistani Ambition"
+ SYM_first: "The Jihad for Nusantara"
+ SYM_second: "Religion of the Book"
+ SYM_third: "Builders of Great Cities"
+ SYM_fourth: "Expand the Ivory Trade"
+ SYM_fifth: "Krom Asa Mahon"
+ SYM_sixth: "Laws of Naresuan"
+ SYM_seventh: "Alfil Riders"
+ 
+ #Muang Thai Ideas
+ MGT_ideas: "Thai Ideas"
+ MGT_ideas_start: "Thai Traditions"
+ MGT_ideas_bonus: "Thai Ambition"
+ MGT_first: "Sakdina Reforms"
+ MGT_second: "New Golden Era"
+ MGT_third: "Modern Mandala"
+ MGT_fourth: "The War Elephants"
+ MGT_fifth: "Kingdom of Rice and Fish"
+ MGT_sixth: "Integrated Krom Asas"
+ MGT_seventh: "Empire of Chao Phraya"
+ 
+ 
