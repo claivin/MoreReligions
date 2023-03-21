@@ -950,7 +950,8 @@ north_china_region = {
 	areas = {
 		hebei_area
 		south_hebei_area
-		shandong_area
+		east_shandong_area
+		west_shandong_area
 		henan_area
 		shanxi_area
 		gansu_area

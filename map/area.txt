@@ -2930,6 +2930,7 @@ ngari_area = { #3
 
 purang_area = {
 	5447 5448 5449 5450 4516 
+}
 
 hebei_area = { #4 (North Hebei)
 	703 1816 2136 4194
@@ -2939,8 +2940,12 @@ south_hebei_area = { #4
 	695 696 2137 4195
 }
 
-shandong_area = { #5
-	690 691 2138 2139 2140
+east_shandong_area = { #5
+	690 2139 5462 5463 5464
+}
+
+west_shandong_area = {
+	2140 5465 5466 691 2138
 }
 
 jiangsu_area = { #3

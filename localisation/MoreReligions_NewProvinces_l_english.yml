@@ -1363,6 +1363,11 @@
  PROV5459: "Lhatse"
  PROV5460: "Gasa"
  PROV5461: "Trashiyangtse"
+ PROV5462: "Jiao'ao"
+ PROV5463: "Ninghai"
+ PROV5464: "Linyi"
+ PROV5465: "Dongping"
+ PROV5466: "Tai'an"
  
  PROV_ADJ5447: "Korchak"
  PROV_ADJ5448: "Gotsuk"
@@ -1379,3 +1384,11 @@
  PROV_ADJ5459: "Lhatse"
  PROV_ADJ5460: "Gasa"
  PROV_ADJ5461: "Trashiyangtse"
+ PROV_ADJ5462: "Jiao'ao"
+ PROV_ADJ5463: "Ninghai"
+ PROV_ADJ5464: "Linyi"
+ PROV_ADJ5465: "Dongping"
+ PROV_ADJ5466: "Tai'an"
+ 
+ east_shandong_area: "East Shandong"
+ west_shandong_area: "West Shandong"

@@ -140,6 +140,11 @@ categories =  {
 			5380 #mr_mashriq
 			5443 #mr_hungary
 			5441 #albania
+			5462 #Jiao'ao
+			5463 #Ninghai
+			5464 #Linyi
+			5465 #Dongping
+			5466 #Tai'an
 		}		
 	}
 	
