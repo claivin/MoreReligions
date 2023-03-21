@@ -251,6 +251,85 @@ MR_siam_3 = {
 	}
 	has_country_shield = yes
 	
+	mr_siam_karma_2 = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 2
+		required_missions = { mr_siam_karma_start }
+		provinces_to_highlight = { }
+		trigger = {
+			num_of_subjects = 3
+			all_subject_country = { 
+				NOT = { liberty_desire = 50 }
+			}
+		}
+		effect = {
+			custom_tooltip = karma_start_TT_1
+			tooltip = {
+				change_adm = 1
+				add_country_modifier = {
+					name = karma_neutral_2
+					duration = 7300
+				}	
+			}
+			custom_tooltip = karma_good_TT_2
+			tooltip = {
+				change_dip = 1
+				add_country_modifier = {
+					name = karma_good_2
+					duration = 18250
+				}
+			}
+			custom_tooltip = karma_start_TT_3
+			tooltip = {
+				change_mil = 1
+				add_country_modifier = {
+					name = karma_bad_2
+					duration = 7300
+				}
+			}
+			custom_tooltip = karma_start_TT_4
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							karma = -33
+							NOT = { karma = 33 }
+						}
+					}
+					add_country_modifier = {
+						name = karma_neutral_2
+						duration = 7300
+					}
+					change_adm = 1
+				}
+				else_if = {
+					limit = {
+						karma = 34
+					}
+					every_subject_country = { 
+						add_country_modifier = {
+							name = karma_good_2
+							duration = 18250
+						}
+					}
+					change_dip = 1 
+				}
+				else_if = {
+					limit = {
+						NOT = { karma = -34 }
+					}
+					add_country_modifier = {
+						name = karma_bad_2
+						duration = 7300
+					}
+					change_mil = 1 
+				}
+				else = {
+					add_adm_power = 100
+				}
+			}
+		}
+	}
 	mr_siam_conquest_4 = {
 		icon = mission_mnd_khm_protect_the_cham
 		position = 3
@@ -287,11 +366,66 @@ MR_siam_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			cambodia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vientiane_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			custom_tooltip = BANGKOK_CAP_TT
 			set_country_flag = bangkok_capital
 		}
 	}
+	mr_siam_conquest_6 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 5
+		required_missions = { mr_siam_conquest_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = vientiane_area
+				province_id = 2386
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			vientiane_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			2386 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			champasak_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_laos_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			define_advisor = {
+				type = treasurer
+				skill = 3
+				culture = ROOT
+				discount = yes
+			}
+		}
+	}
 }
+		
 
 MR_siam_4 = {
 	slot = 4
@@ -308,6 +442,162 @@ MR_siam_4 = {
 		}
 	}
 	has_country_shield = yes
+	mr_siam_karma_start = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			temple = 15
+			grown_by_development = 50 
+		}
+		
+		effect = {
+			custom_tooltip = karma_start_TT_1
+			tooltip = {
+				add_country_modifier = {
+					name = karma_start_1
+					duration = 7300
+				}
+			}
+			custom_tooltip = karma_start_TT_2
+			tooltip = {
+				add_country_modifier = {
+					name = karma_start_2
+					duration = 7300
+				}
+			}
+			custom_tooltip = karma_start_TT_3
+			tooltip = {
+				add_country_modifier = {
+					name = karma_start_3
+					duration = 7300
+				}
+			}
+			custom_tooltip = karma_start_TT_4
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							karma = -33
+							NOT = { karma = 33 }
+						}
+					}
+					add_country_modifier = {
+						name = karma_start_1
+						duration = 7300
+					}
+				}
+				else_if = {
+					limit = {
+						karma = 34
+					}
+					add_country_modifier = {
+						name = karma_start_2
+						duration = 7300
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { karma = -34 }
+					}
+					add_country_modifier = {
+						name = karma_start_3
+						duration = 7300
+					}
+				}
+				else = {
+					add_adm_power = 100
+				}
+			}
+		}
+	}	
+	mr_siam_karma_final = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 3
+		required_missions = { mr_siam_karma_start }
+		provinces_to_highlight = { }
+		trigger = {
+			government_rank = 3 
+			temple = 30
+			OR = {
+				total_development = 300 
+				num_of_subjects = 5
+			}
+		}
+		effect = {
+			custom_tooltip = karma_final_TT_1
+			custom_tooltip = karma_start_TT_4
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							karma = -33
+							NOT = { karma = 33 }
+						}
+					}
+					set_country_flag = karma_final_neutral
+				}
+				else_if = {
+					limit = {
+						karma = 34
+					}
+					set_country_flag = karma_final_good
+				}
+				else_if = {
+					limit = {
+						NOT = { karma = -34 }
+					}
+					set_country_flag = karma_final_bad
+				}
+				else = {
+					add_adm_power = 100
+				}
+			}
+		}
+	}
+	
+	mr_siam_conquest_5 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 4
+		required_missions = { mr_siam_conquest_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = khorat_area
+				area = cambodia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			khorat_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			cambodia_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		
+		effect = {
+			angkor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mekong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			add_ruler_modifier = {
+				name = SIA_angkor_victory
+				duration = -1
+			}
+		}
+	}
+				
 }
 
 MR_siam_5 = {
@@ -327,7 +617,7 @@ MR_siam_5 = {
 	has_country_shield = yes
 	mr_siam_elephants_1 = {
 		icon = mission_mnd_khm_avenge_angkor
-		position = 3
+		position = 2
 		required_missions = {  }
 		provinces_to_highlight = {
 		}
@@ -391,9 +681,129 @@ MR_siam_5 = {
 					}
 				}
 			}
-		}	
-				
+		}		
 	}
-			
+	mr_siam_angkor_1 = {
+		icon = mission_mnd_siam_royal_duel 
+		position = 5
+		required_missions = { mr_siam_conquest_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = mekong_area
+				area = angkor_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			angkor_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			mekong_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		
+		effect = {
+			champa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tay_nguyen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			609 = {
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -5
+				add_devastation = 33
+			}
+			capital_scope = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 5
+				add_prosperity = 50
+			}
+			custom_tooltip = sia_angkor_brahmin_TT
+			tooltip = {
+				add_province_modifier = {
+					name = SIA_angkor_brahmin
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religious_school = {
+							group = eastern
+							school = mr_brahmin_school
+						}
+					}
+					every_owned_province = {
+						limit = {
+							religion_group = dharmic
+							culture = khmer
+						}
+						add_province_modifier = {
+							name = SIA_angkor_brahmin
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	mr_siam_angkor_2 = {
+		icon = mission_mnd_siam_royal_duel 
+		position = 7
+		required_missions = { mr_siam_angkor_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = mekong_area
+				area = angkor_area
+				area = khorat_area
+				area = cambodia_area
+			}
+			NOT = {
+				religion = ROOT
+			}
+		}
+		
+		trigger = {
+			OR = {
+				accepted_culture = khmer
+				AND = {
+					has_global_modifier_value = {
+						which = tolerance_own
+						value = 6
+					}
+					employed_advisor = {
+						culture = khmer
+					}
+				}
+			}
+			mekong_area = { religion = ROOT type = all }
+			angkor_area = { religion = ROOT type = all }
+			khorat_area = { religion = ROOT type = all }
+			cambodia_area = { religion = ROOT type = all }
+		}
+		
+		effect = {
+			add_prestige = 20
+			every_owned_province = {
+				limit = {
+					culture = khmer
+				}
+				add_province_modifier = {
+					name = victory_khmer
+					duration = -1
+				}
+			}
+		}
+	}
+					
+					
 			
 }

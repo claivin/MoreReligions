@@ -2,9 +2,30 @@ cb_vassalize_mission_karma = {
 	valid_for_subject = no
 
 	prerequisites = {
-		karma = -33
-		NOT = { karma = 33 }
 		uses_karma = yes
+		NOT = { has_country_flag = karma_final_neutral }
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = karma_final_good
+					has_country_flag = karma_final_bad
+				}
+			}
+			karma = -33
+			NOT = { karma = 33 }
+		}
+		else_if = {
+			limit = {
+				has_country_flag = karma_final_good
+			}
+			karma = -33
+		}
+		else_if = {
+			limit = {
+				has_country_flag = karma_final_bad
+			}
+			NOT = { karma = 33 }
+		}
 		if = {
 			limit = {
 				ROOT = {
@@ -45,6 +66,54 @@ cb_vassalize_mission_karma = {
 	}	
 
 	war_goal = take_capital_vassalize_karma
+}
+
+cb_better_vassalize_mission_karma = {
+	valid_for_subject = no
+
+	prerequisites = {
+		uses_karma = yes
+		has_country_flag = { karma_final_neutral }
+		if = {
+			limit = {
+				ROOT = {
+					religion = mr_maitreya
+				}
+			}
+			FROM = {
+				is_neighbor_of = ROOT
+				religion_group = eastern
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					religion = yogavacara
+				}
+			}
+			FROM = {
+				is_neighbor_of = ROOT
+				religion_group = eastern
+			}
+		}
+		else_if = {
+			limit = {
+				has_global_flag =  centralized_buddh
+			}
+			FROM = {
+				is_neighbor_of = ROOT
+				religion_group = eastern
+			}
+		}
+		else = {
+			FROM = {
+				is_neighbor_of = ROOT
+				religion = ROOT
+			}
+		}
+	}	
+
+	war_goal = better_take_capital_vassalize_karma
 }
 
 cb_conquer_rus = {

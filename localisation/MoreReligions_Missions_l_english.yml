@@ -162,4 +162,12 @@
  mr_siam_elephants_1_title: "The Siamese Cavalry"
  mr_siam_elephants_2_title: "Royal Elephant Protection"
  siamese_elephant_TT: "Every province with the §YIvory§! Trade Good and a §YManufactory§! will gain the following:"
+ karma_start_TT_1: "If we complete this mission while having §YNeutral Karma§!, we will gain the following:"
+ karma_start_TT_2: "If we complete this mission while having §YPositive Karma§!, we will gain the following:"
+ karma_start_TT_3: "If we complete this mission while having §YNegative Karma§!, we will gain the following:"
+ karma_start_TT_4: "If we do not use Karma, we will instead gain §Y100§! Admin Power."
+ karma_good_TT_2: "If we complete this mission while having §YPositive Karma§!, our subjects will gain the following:"
+ karma_final_TT_1: "If we complete this mission while having §YNeutral Karma§!, we will gain an enhanced version of the §YBuddhist Subjugation Casus Belli§!.\n\nIf we complete this mission while having §YPositive Karma§!, we will gain the ability to use the §YBuddhist Subjugation Casus Belli§! while having §YPositive Karma§!.\n\nIf we complete this mission while having §YNegative Karma§!, we will gain the ability to use the §YBuddhist Subjugation Casus Belli§! while having §YNegative Karma§!."
+ sia_angkor_brahmin_TT: "If we complete this mission while having the §YKambujavamsa§! school, all §YKhmer§! and §YDharmic§! Provinces will recieve the following:"
+ 
  

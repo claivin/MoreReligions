@@ -699,7 +699,7 @@ TMM_ideas = {
         defensiveness = 0.2
     }
     bonus = {
-        warscore_cost_vs_other_religion = -0.25
+        warscore_cost_vs_other_religion = -0.10
     }
     trigger = {
         tag = TMM
@@ -708,7 +708,7 @@ TMM_ideas = {
     free = yes
 
     tmm_first = {
-        improve_relation_modifier = 0.15
+        improve_relation_modifier = 0.10
         legitimacy = 0.5
     }
     tmm_second = {
@@ -716,13 +716,13 @@ TMM_ideas = {
     }
     tmm_third = {
         build_cost = -0.1
-        development_cost = -0.1
+        build_time = -0.15
     }
     tmm_fourth = {
         production_efficiency = 0.10
     }
     tmm_fifth = {
-        global_manpower_modifier = 0.20
+        global_manpower_modifier = 0.15
     }
     tmm_sixth = {
         shock_damage = 0.1
@@ -732,7 +732,87 @@ TMM_ideas = {
         religious_unity = 0.25
     }
 }
-		
+MGT_ideas = {
+	start = {
+		tolerance_own = 2
+		core_creation = -0.15
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	free = yes
+	trigger = {
+		tag = MGT
+	}
+	MGT_first = { #Sakdina Reforms
+		global_unrest = -1
+	}
+	
+	MGT_second = { #New Golden Era
+		idea_cost = -0.10
+		technology_cost = -0.05
+	}
+	
+	MGT_third = { #Modern Mandala 
+		vassal_forcelimit_bonus = 1
+		vassal_income = 0.2
+	}
+	
+	MGT_fourth = { #The War Elephants
+		cavalry_fire = 1
+		amount_of_hussars = 5 #Elephant Cav Now
+	}
+	
+	MGT_fifth = { #The Kingdom of Rice and Fish 
+		global_tax_modifier = 0.20
+	}
+	
+	MGT_sixth = { #Krom Asa
+		fire_damage_received = -0.10
+	}
+	
+	MGT_seventh = { #Empire of Chao Phraya
+		advisor_cost = -0.10
+		num_accepted_cultures = 1
+	}
+}
+SYM_ideas = {
+	start = {
+		tolerance_heathen = 3
+		land_morale = 0.15
+    }
+	bonus = {
+		global_manpower_modifier = 0.25
+	}
+	trigger = {
+		tag = SYM
+	}
+	free = yes
+	SYM_first = { #The Jihad for Nusantara
+		warscore_cost_vs_other_religion = -0.15
+	}
+	SYM_second = { #Religion of the Book
+		improve_relation_modifier = 0.10
+        envoy_travel_time = -0.25
+	}
+	SYM_third = { #Builders of Great Cities
+		development_cost = -0.10
+	}
+	SYM_fourth = { #Expand the Ivory Trade
+		global_trade_goods_size_modifier = 0.15
+	}
+	SYM_fifth = { #Krom Asa Mahon
+		infantry_power = 0.15
+		free_mil_policy = 1 
+	}
+	SYM_sixth = { #Laws of Narai
+		no_religion_penalty = yes 
+	}
+	SYM_seventh = { #Alfil Riders
+		cavalry_shock = 1
+		amount_of_hussars = 5 #Elephant Cav Now
+	}
+}
 	
 
 
