@@ -2933,11 +2933,11 @@ purang_area = {
 }
 
 hebei_area = { #4 (North Hebei)
-	703 1816 2136 4194
+	703 1816 2136 4194 5473
 }
 
 south_hebei_area = { #4
-	695 696 2137 4195
+	695 696 2137 4195 5474
 }
 
 east_shandong_area = { #5

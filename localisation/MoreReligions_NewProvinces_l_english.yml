@@ -1374,6 +1374,8 @@
  PROV5470: "Linhai"
  PROV5471: "Quzhou"
  PROV5472: "Lishui"
+ PROV5473: "Tianjin"
+ PROV5474: "Guangping"
  
  PROV_ADJ5447: "Korchak"
  PROV_ADJ5448: "Gotsuk"
@@ -1401,6 +1403,8 @@
  PROV_ADJ5470: "Linhai"
  PROV_ADJ5471: "Quzhou"
  PROV_ADJ5472: "Lishui"
+ PROV_ADJ5473: "Tianjin"
+ PROV_ADJ5474: "Guangping"
  
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"

@@ -377,7 +377,7 @@ trade_company_north_china = {
 		695 696 2137 4195 #South Hebei
 		704 726 2112 2113 4652  #Liaoning
 		693 694 697 2177 2178 #Shanxi
-		4670
+		4670 5473 5474
 	}
 	
 	# Specific

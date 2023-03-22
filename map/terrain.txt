@@ -149,6 +149,8 @@ categories =  {
 			5468 #Jiaxing
 			5469 #Yanzhou
 			5470 #Linhai
+			5473 #Tianjin
+			5474 #Guangping
 		}		
 	}
 	
