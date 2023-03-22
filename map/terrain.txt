@@ -145,6 +145,10 @@ categories =  {
 			5464 #Linyi
 			5465 #Dongping
 			5466 #Tai'an
+			5467 #Songjiang
+			5468 #Jiaxing
+			5469 #Yanzhou
+			5470 #Linhai
 		}		
 	}
 	
@@ -256,6 +260,7 @@ categories =  {
 			5314 5315 #mr_caucaus
 			5334 5335
 			5440 #mr_hungary
+			5471 5472 #MR China
 		}
 	}
 

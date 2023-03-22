@@ -2953,7 +2953,7 @@ jiangsu_area = { #3
 }
 
 south_jiangsu_area = { #4
-	685 1821 1822 2145
+	685 1821 1822 2145 5467
 }
 
 anhui_area = { #3 (North Anhui)
@@ -2964,8 +2964,12 @@ south_anhui_area = { #3
 	686 2146 2147
 }
 
-zhejiang_area = { #5
-	684 1824 2148 2149 2150
+north_zhejiang_area = { #5
+	684 5468 5469 2148 2149
+}
+
+south_zhejiang_area = {
+	1824 2150 5471 5472 5470 	
 }
 
 jiangxi_area = { #4

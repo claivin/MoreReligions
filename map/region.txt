@@ -920,7 +920,8 @@ south_china_region = {
 		fujian_area
 		jiangxi_area
 		huguang_area
-		zhejiang_area
+		north_zhejiang_area
+		south_zhejiang_area
 		south_anhui_area
 		taiwan_area
 		south_jiangsu_area
