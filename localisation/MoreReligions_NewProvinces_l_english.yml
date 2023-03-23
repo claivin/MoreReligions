@@ -1378,6 +1378,8 @@
  PROV5474: "Guangping"
  PROV5475: "Weihui"
  PROV5476: "Zhangde"
+ PROV5477: "Ruzhou"
+ PROV5478: "Huangchuan"
  
  PROV_ADJ5447: "Korchak"
  PROV_ADJ5448: "Gotsuk"
@@ -1409,6 +1411,8 @@
  PROV_ADJ5474: "Guangping"
  PROV_ADJ5475: "Weihui"
  PROV_ADJ5476: "Zhangde"
+ PROV_ADJ5477: "Ruzhou"
+ PROV_ADJ5478: "Huangchuan"
  
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"
