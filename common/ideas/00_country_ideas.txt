@@ -1384,12 +1384,12 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-	war_exhaustion = -0.05
-        global_missionary_strength = 0.15
+	war_exhaustion = -0.03
+        global_missionary_strength = 0.015
     }
     
     bonus = {
-        enforce_religion_cost = -1.0
+        enforce_religion_cost = -0.5
     }
     
     trigger = {
@@ -1420,7 +1420,7 @@ POR_ideas = {
     }
     gloria_a_Deus_nas_alturas = {
         land_attrition = -0.10
-        leader_land_manuever = 3
+        leader_land_manuever = 1
 	}
 }
 
@@ -8455,11 +8455,11 @@ GAL_ideas = {
 		global_autonomy = -0.05
     }
     gal_the_burgos = {
-		burghers_loyalty_modifier = 0.20
+		burghers_loyalty_modifier = 0.10
 		global_trade_goods_size_modifier = 0.1
     }
     gal_foreign_pilgrims = {
-		local_tax_modifier = 0.1
+		global_tax_modifier = 0.1
     }
     gal_volunteer_militias = {
 		land_maintenance_modifier = -0.10
@@ -8473,7 +8473,7 @@ GAL_ideas = {
     }
     gal_abolish_serfdom = {
 		global_unrest = -1
-		production_efficiency = 0.5
+		production_efficiency = 0.05
     }
 }
 
