@@ -151,6 +151,8 @@ categories =  {
 			5470 #Linhai
 			5473 #Tianjin
 			5474 #Guangping
+			5475 #Weihui
+			5476 #Zhangde
 		}		
 	}
 	

@@ -291,7 +291,7 @@ mild_winter = {
 	4307 5386 5385 5383 5384 #mr_anatolia
 	5393 #mr_caucasus
 	5441 5437 5442#mr_balkans
-	5462 5463 5465 5466 5473 5474 #MR China
+	5462 5463 5465 5466 5473 5474 5475 5476 #MR China
 }
 
 #Example: Inland Europe & Scandinavia

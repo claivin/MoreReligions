@@ -3037,7 +3037,7 @@ henan_area = { #3 (South Henan)
 }
 
 north_henan_area = { #3
-	688 692 1836
+	688 692 1836 5475 5476
 }
 
 shanxi_area = { #5
