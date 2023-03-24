@@ -17,6 +17,8 @@
  javanese_adj: "Jawanese"
  southeastasian_group: "Indo-Chinese"
  
+ estate_church_lao_animism_effect_tooltip: "Every owned province of the §YSatsana Phi§! faith gains:\nLocal Missionary Strength: §R-100§!\nLocal Religious Unity Contribution: §G-100%§!"
+ estate_church_lao_animism_revoke_effect_tooltip: "The modifier §Y'Tolerance of Folk Religions'§! is removed from all owned §YSatsana Phi§! provinces."
  #Rajput - > Elite Infantry 
  RAJPUT_REGIMENT:0 "Elite Infantry\n$EFFECT$"
  ONLY_RAJPUT_MODIFIER:0 "§YAffects only Elite Infantry§!"

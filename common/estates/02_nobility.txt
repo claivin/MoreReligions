@@ -438,6 +438,7 @@ estate_nobles =
 		estate_nobles_leidang_elite_conscription
 		estate_nobles_sponsor_hussars
 		estate_nobles_gallowglass_unit
+		estate_nobles_rice_wine
 	}
 
 	agendas = {

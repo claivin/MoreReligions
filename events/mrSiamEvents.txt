@@ -1,0 +1,60 @@
+namespace = MR_siam_flavor
+country_event = {
+	id = MR_siam_flavor.1
+	title = MR_siam_flavor.1.t
+	desc = MR_siam_flavor.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = karma_goal_good
+				}
+				clr_country_flag = karma_goal_good
+			}
+			else_if = {
+				limit = {
+					has_country_flag = karma_goal_neutral
+				}
+				clr_country_flag = karma_goal_neutral
+			}
+			else_if = {
+				limit = {
+					has_country_flag = karma_goal_bad
+				}
+				clr_country_flag = karma_goal_bad
+			}
+		}
+	}
+	
+	option = {
+		name = MR_siam.flavor.1.a
+		custom_tooltip = karma_goal_good_TT
+		hidden_effect = {
+			set_country_flag = karma_goal_good
+		}
+	}
+	
+	option = {
+		name = MR_siam.flavor.1.b
+		custom_tooltip = karma_goal_neutral_TT
+		hidden_effect = {
+			set_country_flag = karma_goal_neutral
+		}
+	}
+	
+	option = {
+		name = MR_siam.flavor.1.c
+		custom_tooltip = karma_goal_bad_TT
+		hidden_effect = {
+			set_country_flag = karma_goal_bad
+		}
+	}
+}
+	
+	
+	
+			

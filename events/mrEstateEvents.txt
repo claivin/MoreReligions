@@ -1,0 +1,45 @@
+namespace = MRestate_privileges_and_agendas_events
+country_event = {
+	id = MRestate_privileges_and_agendas_events.5 #Siamese Breweries Update
+	title = MRestate_privileges_and_agendas_events.5.name
+	desc = MRestate_privileges_and_agendas_events.5.desc
+	picture = MRNOBLE_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+
+	trigger = {
+		has_estate_privilege = estate_nobles_rice_wine
+	}
+
+	immediate = {
+		every_owned_province = {
+			if = {
+				limit = {
+					trade_goods = rice
+				}
+				add_province_modifier = { 
+					name = grain_bonus_prod 
+					duration = -1
+					hidden = yes
+				}
+			}
+			if = {
+				limit = {
+					trade_goods = rice_wine
+				}
+				add_province_modifier = { 
+					name = wine_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

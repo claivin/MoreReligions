@@ -14,6 +14,121 @@ MR_siam_1 = {
 	}
 	has_country_shield = yes
 	
+	mr_siam_capital_1 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 2
+		required_missions = { mr_siam_conquest_1 }
+		provinces_to_highlight = {
+			is_capital = yes 
+			owned_by = ROOT
+		}
+		
+		trigger = {
+			capital_scope = {
+				has_fort_building_trigger = yes
+				base_manpower = 8
+			}
+		}
+		
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = MR_thai_fortifications
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_siam_dev_1 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 4
+		required_missions = { }
+		provinces_to_highlight = {
+			culture = central_thai 
+			NOT = { 
+				development = 15 
+				country_or_non_sovereign_subject_holds = ROOT
+				has_tax_building_trigger = yes
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					culture = central_thai
+					country_or_non_sovereign_subject_holds = ROOT
+					development = 15
+					has_tax_building_trigger = yes
+				}
+				amount = 10
+			}	
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					culture = central_thai
+					development = 15
+					has_tax_building_trigger = yes
+				}
+				add_province_modifier = {
+					name = revitalized_tax_revenue
+					duration = 14600
+				}
+			}
+		}
+	}
+	mr_siam_dev_3 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 6
+		required_missions = { 
+			mr_siam_dev_1
+		}
+		provinces_to_highlight = {
+			trade_goods = rice
+			NOT = {
+				owned_by = ROOT
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = rice
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				trade_goods = rice_wine
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = rice_lord_SIA
+				duration = -1
+			}
+			custom_tooltip = rice_lord_SIA_TT
+		}
+	}
+				
+		
+}
+MR_siam_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
 	mr_siam_conquest_1 = {
 		icon = mission_mnd_khm_protect_the_cham
 		required_missions = {  }
@@ -21,9 +136,7 @@ MR_siam_1 = {
 		}
 		trigger = {
 			army_size_percentage = 1
-			employed_advisor = {
-				category = MIL
-			}
+			manpower_percentage = 0.50 
 		}
 		effect = {
 			tenasserim_area = {
@@ -54,52 +167,17 @@ MR_siam_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-	}
-	mr_siam_capital_1 = {
-		icon = mission_mnd_khm_protect_the_cham
-		required_missions = { mr_siam_conquest_1 }
-		provinces_to_highlight = {
-			is_capital = yes 
-			owned_by = ROOT
-		}
-		
-		trigger = {
-			capital_scope = {
-				has_fort_building_trigger = yes
-				base_manpower = 8
-			}
-		}
-		
-		effect = {
-			capital_scope = {
-				add_province_modifier = {
-					name = MR_thai_fortifications
-					duration = -1
-				}
+			define_advisor = {
+				type = commandant
+				skill = 1
+				discount = yes
+				culture = ROOT
 			}
 		}
 	}
-}
-MR_siam_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = LPB
-			tag = TMM
-			tag = SUK
-			tag = AYU
-			tag = RTC
-			tag = PTC
-		}
-	}
-	has_country_shield = yes
-	
 	mr_siam_conquest_2 = {
 		icon = mission_mnd_khm_protect_the_cham
-		position = 2
+		position = 3
 		required_missions = { mr_siam_conquest_1 }
 		provinces_to_highlight = {
 			OR = {
@@ -145,6 +223,7 @@ MR_siam_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = warring_state_TT
 			if = {
 				limit = {
 					NOT = {
@@ -230,7 +309,97 @@ MR_siam_2 = {
 			}
 		}
 		effect = {
-			add_prestige = 10
+			custom_tooltip = northern_thai_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							accepted_culture = northern_thai
+						}
+					}
+					add_accepted_culture = northern_thai
+				}
+				else = {
+					add_adm_power = 100
+				}
+			}
+		}
+	}
+	mr_siam_dev_2 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 5
+		required_missions = { 
+			mr_siam_conquest_4
+			mr_siam_dev_1
+		}
+		provinces_to_highlight = {
+			province_id = 4831
+			NOT = {
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+				base_tax = 6
+			base_production = 6
+			}
+		}
+		trigger = {
+			4831 = {
+				has_tax_building_trigger = yes
+				has_production_building_trigger = yes
+					base_tax = 6
+				base_production = 6
+			}
+		}
+		effect = {
+			4831 = {
+				change_trade_goods = cloth
+				add_province_modifier = {
+					name = small_trade_relevancy
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_siam_dev_4 = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 7
+		required_missions = { 
+			mr_siam_dev_2
+		}
+		provinces_to_highlight = {
+			province_id = 4831
+			NOT = {
+				has_trade_building_trigger = yes
+				has_dock_building_trigger = yes
+				base_tax = 8
+				base_production = 8
+			}
+		}
+		trigger = {
+			4831 = {
+				has_trade_building_trigger = yes
+				has_dock_building_trigger = yes
+				base_tax = 8
+				base_production = 8
+			}
+			1365 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			4831 = {
+				add_center_of_trade_level = 2
+				if = {
+					limit = {
+						has_province_modifier = small_trade_relevancy
+					}
+					remove_province_modifier = small_trade_relevancy
+				}
+				add_province_modifier = {
+					name = med_trade_relevancy
+					duration = -1
+				}
+				
+			}
 		}
 	}
 }
@@ -332,7 +501,7 @@ MR_siam_3 = {
 	}
 	mr_siam_conquest_4 = {
 		icon = mission_mnd_khm_protect_the_cham
-		position = 3
+		position = 4
 		required_missions = { mr_siam_conquest_2 }
 		provinces_to_highlight = {
 			OR = {
@@ -386,7 +555,7 @@ MR_siam_3 = {
 	}
 	mr_siam_conquest_6 = {
 		icon = mission_mnd_khm_protect_the_cham
-		position = 5
+		position = 6
 		required_missions = { mr_siam_conquest_4 }
 		provinces_to_highlight = {
 			OR = {
@@ -424,6 +593,50 @@ MR_siam_3 = {
 			}
 		}
 	}
+	mr_siam_conquest_7 = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 7
+		required_missions = { mr_siam_conquest_6 }
+		provinces_to_highlight = {
+			OR = {
+				area = north_laos_area
+				area = champasak_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			north_laos_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			champasak_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			red_river_delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vietnam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = dominate_laos_SIA
+				duration = 9125
+			}
+			custom_tooltip = lao_religion_tt
+			tooltip = {
+				add_province_modifier = {
+					name = estate_church_lao_animism_mod
+					duration = -1
+				}
+			}
+		}
+	}
+				
 }
 		
 
@@ -454,6 +667,9 @@ MR_siam_4 = {
 		}
 		
 		effect = {
+			country_event = {
+				id = MR_siam_flavor.1
+			}
 			custom_tooltip = karma_start_TT_1
 			tooltip = {
 				add_country_modifier = {
@@ -560,7 +776,7 @@ MR_siam_4 = {
 	
 	mr_siam_conquest_5 = {
 		icon = mission_mnd_khm_protect_the_cham
-		position = 4
+		position = 5
 		required_missions = { mr_siam_conquest_4 }
 		provinces_to_highlight = {
 			OR = {
@@ -597,95 +813,9 @@ MR_siam_4 = {
 			}
 		}
 	}
-				
-}
-
-MR_siam_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = LPB
-			tag = TMM
-			tag = SUK
-			tag = AYU
-			tag = RTC
-			tag = PTC
-		}
-	}
-	has_country_shield = yes
-	mr_siam_elephants_1 = {
-		icon = mission_mnd_khm_avenge_angkor
-		position = 2
-		required_missions = {  }
-		provinces_to_highlight = {
-		}
-		trigger = {
-			OR = {
-				has_global_modifier_value = {
-					which = cavalry_power
-					value = 0.30
-				}
-				num_of_hussars = 5
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = SIA_elephant
-				duration = 10950
-			}
-		}
-	}
-	
-	mr_siam_elephants_2 = {
-		icon = mission_mnd_siam_royal_duel 
-		position = 4
-		required_missions = { mr_siam_elephants_1 }
-		provinces_to_highlight = {
-			trade_goods = ivory
-			NOT = {
-				owned_by = ROOT
-				has_manufactory_no_custom_tooltip_trigger = yes
-			}
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 10
-				trade_goods = ivory
-				has_manufactory_no_custom_tooltip_trigger = yes
-			}
-			num_of_hussars = 7
-		}
-		effect = {
-			add_country_modifier = {
-				name = elephant_breeding
-				duration = 7300
-			}
-			custom_tooltip = siamese_elephant_TT
-			tooltip = {
-				add_province_modifier = {
-					name = elephant_hub
-					duration = -1
-				}
-			}
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						trade_goods = ivory
-						has_manufactory_no_custom_tooltip_trigger = yes
-					}
-					add_province_modifier = {
-						name = elephant_hub
-						duration = -1
-					}
-				}
-			}
-		}		
-	}
 	mr_siam_angkor_1 = {
 		icon = mission_mnd_siam_royal_duel 
-		position = 5
+		position = 6
 		required_missions = { mr_siam_conquest_5 }
 		provinces_to_highlight = {
 			OR = {
@@ -755,6 +885,192 @@ MR_siam_5 = {
 			}
 		}
 	}
+	siam_ankgor_3 = {
+		icon = mission_mnd_siam_royal_duel 
+		position = 8
+		required_missions = { mr_siam_angkor_1 mr_siam_conquest_7 }
+		provinces_to_highlight = {
+			region = indo_china_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			indo_china_region = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			add_country_modifier = {
+				name = dominate_the_region_2
+				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = { 
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			else = {
+				add_adm_power = 150
+			}
+		}
+	}
+}
+
+MR_siam_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LPB
+			tag = TMM
+			tag = SUK
+			tag = AYU
+			tag = RTC
+			tag = PTC
+		}
+	}
+	has_country_shield = yes
+	mr_siam_karma_3 = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 2
+		required_missions = { mr_siam_karma_start }
+		provinces_to_highlight = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 30
+				culture = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = karma_start_TT_1
+			tooltip = {
+				add_country_modifier = {
+					name = karma_neutral_3
+					duration = 7300
+				}	
+			}
+			custom_tooltip = karma_start_TT_2
+			tooltip = {
+				add_country_modifier = {
+					name = karma_good_3
+					duration = 18250
+				}
+			}
+			custom_tooltip = karma_start_TT_3
+			tooltip = {
+				add_country_modifier = {
+					name = karma_bad_3
+					duration = 7300
+				}
+			}
+			custom_tooltip = karma_start_TT_4
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							karma = -33
+							NOT = { karma = 33 }
+						}
+					}
+					add_country_modifier = {
+						name = karma_neutral_3
+						duration = 7300
+					}
+				}
+				else_if = {
+					limit = {
+						karma = 34
+					}
+					add_country_modifier = {
+						name = karma_good_3
+						duration = 18250
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = { karma = -34 }
+					}
+					add_country_modifier = {
+						name = karma_bad_3
+						duration = 7300
+					}
+				}
+				else = {
+					add_adm_power = 100
+				}
+			}
+		}
+	}
+	mr_siam_elephants_1 = {
+		icon = mission_mnd_khm_avenge_angkor
+		position = 4
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				has_global_modifier_value = {
+					which = cavalry_power
+					value = 0.30
+				}
+				num_of_hussars = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = SIA_elephant
+				duration = 10950
+			}
+		}
+	}
+	
+	mr_siam_elephants_2 = {
+		icon = mission_mnd_siam_royal_duel 
+		position = 5
+		required_missions = { mr_siam_elephants_1 }
+		provinces_to_highlight = {
+			trade_goods = ivory
+			NOT = {
+				owned_by = ROOT
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				trade_goods = ivory
+				has_manufactory_no_custom_tooltip_trigger = yes
+			}
+			num_of_hussars = 7
+		}
+		effect = {
+			add_country_modifier = {
+				name = elephant_breeding
+				duration = 7300
+			}
+			custom_tooltip = siamese_elephant_TT
+			tooltip = {
+				add_province_modifier = {
+					name = elephant_hub
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = ivory
+						has_manufactory_no_custom_tooltip_trigger = yes
+					}
+					add_province_modifier = {
+						name = elephant_hub
+						duration = -1
+					}
+				}
+			}
+		}		
+	}
 	mr_siam_angkor_2 = {
 		icon = mission_mnd_siam_royal_duel 
 		position = 7
@@ -791,19 +1107,25 @@ MR_siam_5 = {
 		}
 		
 		effect = {
-			add_prestige = 20
-			every_owned_province = {
-				limit = {
-					culture = khmer
-				}
+			add_prestige = 30
+			custom_tooltip = victory_khmer_TT
+			tooltip = {
 				add_province_modifier = {
 					name = victory_khmer
 					duration = -1
 				}
 			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = khmer
+					}
+					add_province_modifier = {
+						name = victory_khmer
+						duration = -1
+					}
+				}
+			}
 		}
 	}
-					
-					
-			
 }

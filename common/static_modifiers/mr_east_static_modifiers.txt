@@ -19,7 +19,7 @@ karma_just_right =
 
 karma_too_high =
 {
-	diplomatic_reputation = 2
+	diplomatic_reputation = 1
 	development_cost = -0.05
 	global_manpower_modifier = -0.15
 	church_influence_modifier = 0.20

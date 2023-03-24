@@ -9136,10 +9136,15 @@ estate_burghers_tropical_nation = {
 estate_church_lao_animism = {
 	icon = privilege_tolerance_heathen
 	loyalty = -0.05
-	influence = 0.6
+	influence = 0.2
 	can_select = {
-		primary_culture = lao
-		religion_group = eastern
+		OR = {
+			AND = {
+				primary_culture = lao
+				religion_group = eastern
+			}
+			mission_completed = mr_siam_conquest_7 
+		}
 	}
 	is_valid = {
 		OR = {
@@ -9148,6 +9153,7 @@ estate_church_lao_animism = {
 				religion_group = eastern
 				primary_culture = lao
 			}
+			mission_completed = mr_siam_conquest_7 
 		}
 	}
 	on_granted = {
@@ -9156,7 +9162,7 @@ estate_church_lao_animism = {
 	on_granted_province = {
 		if = {
 			limit = {
-				religion = animism
+				religion = mr_satsanaphi
 			}
 			add_province_modifier = {
 				name = estate_church_lao_animism_mod
