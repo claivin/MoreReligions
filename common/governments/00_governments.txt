@@ -83,6 +83,7 @@ monarchy = {
 				mr_serbian_hungary_reform
 				mr_hungary_hungary_reform
 				MR_thai_tributary
+				MR_thai_princedom
 			}
 		}
 		hereditary_vs_nobility = {

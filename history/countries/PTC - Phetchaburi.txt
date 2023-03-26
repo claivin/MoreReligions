@@ -4,6 +4,7 @@ primary_culture = central_thai
 religion = buddhism
 technology_group = chinese
 capital = 2387
+religious_school = mr_bodhisattvayana_school
 
 
 1395.1.1 = {

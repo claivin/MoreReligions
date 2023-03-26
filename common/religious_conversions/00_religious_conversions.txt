@@ -26,6 +26,14 @@ propagate_religion_policy = {
 		
 		modifier = {
 			factor = 0
+			religion = buddhism
+			owner = {
+				mission_completed = mr_siam_nusantara_7
+			}
+		}
+		
+		modifier = {
+			factor = 0
 			owner = {
 				has_country_flag = immunity_against_propogate_religion
 			}

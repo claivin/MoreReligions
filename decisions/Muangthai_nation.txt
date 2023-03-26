@@ -66,4 +66,45 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+
+	move_capital_to_bangkok = {
+		potential = {
+			mission_completed = mr_siam_conquest_4
+			normal_or_historical_nations = yes
+			OR = {
+				is_playing_custom_nation = no
+			}
+			owns = 4831
+			4831 = {
+				is_state = yes
+			}
+			NOT = { capital = 4831 }
+			NOT = { has_country_flag = relocated_capital_bangkok }
+		}
+		allow = {
+			is_core = 4831
+			is_at_war = no
+			treasury = 150
+		}
+		effect = {
+			set_country_flag = relocated_capital_bangkok
+			4831 = {
+				move_capital_effect = yes
+			}
+			add_prestige = 20
+			add_treasury = -150
+			4831 = {
+			 	add_base_tax = 1 
+				add_base_production = 1
+			 	add_base_manpower = 1
+				add_great_project_tier = {
+    					type = the_grand_palace
+   					tier = 1
+				}	
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

@@ -5,7 +5,7 @@ primary_culture = central_thai
 religion = buddhism
 technology_group = chinese
 capital = 601	# Sukhothai
-religious_school = mr_brahmin_school
+religious_school = mr_bodhisattvayana_school
 
 1376.1.1 = {
 	monarch = {

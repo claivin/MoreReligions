@@ -10,12 +10,13 @@ MR_siam_1 = {
 			tag = AYU
 			tag = RTC
 			tag = PTC
+			tag = MGT
 		}
 	}
 	has_country_shield = yes
 	
 	mr_siam_capital_1 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_conquer_lower_burma_tau
 		position = 2
 		required_missions = { mr_siam_conquest_1 }
 		provinces_to_highlight = {
@@ -40,7 +41,7 @@ MR_siam_1 = {
 		}
 	}
 	mr_siam_dev_1 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_mnd_khm_avenge_angkor
 		position = 4
 		required_missions = { }
 		provinces_to_highlight = {
@@ -78,7 +79,7 @@ MR_siam_1 = {
 		}
 	}
 	mr_siam_dev_3 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_che_botanical_exports
 		position = 6
 		required_missions = { 
 			mr_siam_dev_1
@@ -111,9 +112,170 @@ MR_siam_1 = {
 			custom_tooltip = rice_lord_SIA_TT
 		}
 	}
-				
-		
 }
+MR_MGT_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGT
+			tag = SYM
+			tag = SIA
+		}
+	}
+	has_country_shield = yes
+	mr_siam_burma_1 = {
+		icon = mission_restore_the_pagan_kingdom
+		position = 8
+		required_missions = { }
+		provinces_to_highlight = {
+			owned_by = PGN
+		}
+		trigger = {
+			or = {
+				is_rival = PGN
+				total_development = PGN
+				NOT = { exists = PGN }
+			}
+		}
+		effect = {
+			lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			karenni_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			create_general = { tradition = 50 } 
+		}
+	}
+	mr_siam_burma_2 = {
+		icon = mission_kanbawzathadi_palace 
+		position = 10
+		required_missions = { mr_siam_burma_1 }
+		provinces_to_highlight = {
+			area = lower_burma_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lower_burma_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			central_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = mr_siam_burma_2_TT
+			hidden_effect = {
+				every_country = { 
+					limit = {
+						is_subject_of = PGN
+					}
+					add_liberty_desire = 25
+				}
+			}
+			add_country_modifier = {
+				name = conquest_lower_burma_SIA
+				duration = 9125
+			}
+			
+		}
+	}
+	
+	mr_siam_burma_3 = {
+		icon = mission_annex_prome
+		position = 11
+		required_missions = { mr_siam_burma_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = central_burma_area
+				area = upper_burma_area 
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			central_burma_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			upper_burma_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			chindwin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_burma_area = {
+				add_devastation = 30
+				add_province_modifier = {
+					name = victory_over_burmese_SIA
+					duration = 9125
+				}
+			}
+			upper_burma_area = {
+				add_devastation = 30
+				add_province_modifier = {
+					name = victory_over_burmese_SIA
+					duration = 9125
+				}
+			}
+		}
+	}
+	mr_siam_nusantara_5 = {
+		icon = mission_war_chest
+		position = 15
+		required_missions = { mr_siam_nusantara_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = batak_area
+				area = minangkabau_area
+			}
+			not = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			batak_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			minangkabau_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			2681 = {
+				base_production = 10
+			}
+		}
+		effect = {
+			2681 = {
+				add_country_modifier = {
+					name = gold_mine_pagg
+					duration = -1
+				}
+			}
+			add_yearly_manpower = 0.5
+		}
+	}
+}
+		
 MR_siam_2 = {
 	slot = 2
 	generic = no
@@ -126,6 +288,7 @@ MR_siam_2 = {
 			tag = AYU
 			tag = RTC
 			tag = PTC
+			tag = MGT
 		}
 	}
 	has_country_shield = yes
@@ -176,7 +339,7 @@ MR_siam_2 = {
 		}
 	}
 	mr_siam_conquest_2 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_conquer_siam
 		position = 3
 		required_missions = { mr_siam_conquest_1 }
 		provinces_to_highlight = {
@@ -294,7 +457,7 @@ MR_siam_2 = {
 		}
 	}
 	mr_siam_conquest_3 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_a_million_rice_fields
 		position = 4
 		required_missions = { mr_siam_conquest_2 }
 		provinces_to_highlight = {
@@ -326,7 +489,7 @@ MR_siam_2 = {
 		}
 	}
 	mr_siam_dev_2 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_mnd_dai_universities
 		position = 5
 		required_missions = { 
 			mr_siam_conquest_4
@@ -337,16 +500,18 @@ MR_siam_2 = {
 			NOT = {
 				has_tax_building_trigger = yes
 				has_production_building_trigger = yes
-				base_tax = 6
-			base_production = 6
+				base_tax = 5
+				base_production = 5
+				base_manpower = 5
 			}
 		}
 		trigger = {
 			4831 = {
 				has_tax_building_trigger = yes
 				has_production_building_trigger = yes
-					base_tax = 6
-				base_production = 6
+				base_tax = 5
+				base_production = 5
+				base_manpower = 5
 			}
 		}
 		effect = {
@@ -360,7 +525,7 @@ MR_siam_2 = {
 		}
 	}
 	mr_siam_dev_4 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_mnd_siam_subjugate_vietnam
 		position = 7
 		required_missions = { 
 			mr_siam_dev_2
@@ -370,16 +535,18 @@ MR_siam_2 = {
 			NOT = {
 				has_trade_building_trigger = yes
 				has_dock_building_trigger = yes
-				base_tax = 8
-				base_production = 8
+				base_tax = 10
+				base_production = 10
+				base_manpower = 10
 			}
 		}
 		trigger = {
 			4831 = {
 				has_trade_building_trigger = yes
 				has_dock_building_trigger = yes
-				base_tax = 8
-				base_production = 8
+				base_tax = 10
+				base_production = 10
+				base_manpower = 10
 			}
 			1365 = {
 				is_strongest_trade_power = ROOT
@@ -388,11 +555,13 @@ MR_siam_2 = {
 		effect = {
 			4831 = {
 				add_center_of_trade_level = 2
-				if = {
-					limit = {
-						has_province_modifier = small_trade_relevancy
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = small_trade_relevancy
+						}
+						remove_province_modifier = small_trade_relevancy
 					}
-					remove_province_modifier = small_trade_relevancy
 				}
 				add_province_modifier = {
 					name = med_trade_relevancy
@@ -403,7 +572,243 @@ MR_siam_2 = {
 		}
 	}
 }
-
+MR_MGT_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGT
+			tag = SYM
+			tag = SIA
+		}
+	}
+	has_country_shield = yes
+	mr_siam_dev_5 = {
+		icon = mission_mnd_siam_revolution
+		position = 8
+		required_missions = { 
+			mr_siam_dev_4
+		}
+		provinces_to_highlight = {
+			province_id = 4831
+			NOT = {
+				base_tax = 15
+				base_production = 15
+				base_manpower = 15
+				has_great_project = {
+					type = the_grand_palace
+					tier = 3
+				}
+			}
+		}
+		trigger = {
+			4831 = {
+				base_tax = 15
+				base_production = 15
+				base_manpower = 15
+				has_great_project = {
+					type = the_grand_palace
+					tier = 3
+				}
+			}
+		}
+		effect = {
+			4831 = {
+				hidden_effect = {
+					if = {
+						limit = {
+							has_province_modifier = med_trade_relevancy
+						}
+						remove_province_modifier = med_trade_relevancy
+					}
+				}
+				add_province_modifier = {
+					name = best_trade_relevancy
+					duration = -1
+				}
+			}
+		}
+	}	
+			
+	mr_siam_burma_4 = {
+		icon = mission_end_the_shan_domination
+		position = 9
+		required_missions = { mr_siam_burma_1 }
+		provinces_to_highlight = {
+			area = karenni_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			karenni_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			shan_hill_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kachin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4398 = {
+				add_latest_building = [[fort]]
+				add_province_modifier = {
+					name = gateway_shan_fort
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_siam_burma_5 = {
+		icon = mission_annex_prome
+		position = 10
+		required_missions = { mr_siam_burma_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = kachin_area
+				area = shan_hill_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kachin_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			shan_hill_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			custom_tooltip = shan_cb_TT
+			hidden_effect = {
+				every_province = {
+					limit = {
+						culture = shan
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = local_cultures_accepted_SIA
+				duration = -1
+			}
+		}
+	}
+	
+	mr_siam_burma_7 = {
+		icon = mission_protect_lankan_buddhism
+		position = 12
+		required_missions = { mr_siam_burma_5 mr_siam_burma_3 }
+		provinces_to_highlight = {
+			region = burma_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			burma_region = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			add_country_modifier = {
+				name = new_thai_empire_SIA
+				duration = -1
+			}
+		}
+	}
+	mr_siam_nusantara_4 = {
+		icon = mission_follow_the_brahmaputra
+		position = 14
+		required_missions = { mr_siam_nusantara_3 }
+		provinces_to_highlight = { 
+			OR = {
+				area = central_sumatra_area
+				area = north_sumatra_area
+				area = jambi_area
+			}
+			not = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			central_sumatra_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			north_sumatra_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			jambi_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			malaya_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			banten_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = crack_marine_SIA
+				duration = 12775
+			}
+		}
+	}
+	
+	mr_siam_nusantara_7 = {
+		icon = mission_open_up_china
+		position = 16
+		required_missions = { mr_siam_nusantara_4 mr_siam_nusantara_5 mr_siam_nusantara_6 }
+		provinces_to_highlight = { }
+		trigger = {
+			navy_size = 75
+			1361 = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			indonesia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			moluccas_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = spread_religion_siam_TT
+			tooltip = {
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { religion = buddhism }
+					}
+					add_mil_power = 100
+					add_adm_power = 100
+					add_dip_power = 100
+				}
+				else = {
+					set_country_flag = can_propagate_religion_in_abrahamic_provinces
+				}
+			}
+		}
+	}
+	
+}				
 MR_siam_3 = {
 	slot = 3
 	generic = no
@@ -416,17 +821,18 @@ MR_siam_3 = {
 			tag = AYU
 			tag = RTC
 			tag = PTC
+			tag = MGT
 		}
 	}
 	has_country_shield = yes
 	
 	mr_siam_karma_2 = {
-		icon = mission_mnd_khm_avenge_angkor
+		icon = mission_mnd_maj_end_disaster
 		position = 2
 		required_missions = { mr_siam_karma_start }
 		provinces_to_highlight = { }
 		trigger = {
-			num_of_subjects = 3
+			num_of_subjects = 5
 			all_subject_country = { 
 				NOT = { liberty_desire = 50 }
 			}
@@ -500,7 +906,7 @@ MR_siam_3 = {
 		}
 	}
 	mr_siam_conquest_4 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_rule_indochina
 		position = 4
 		required_missions = { mr_siam_conquest_2 }
 		provinces_to_highlight = {
@@ -554,7 +960,7 @@ MR_siam_3 = {
 		}
 	}
 	mr_siam_conquest_6 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_bengal_campaign
 		position = 6
 		required_missions = { mr_siam_conquest_4 }
 		provinces_to_highlight = {
@@ -594,7 +1000,7 @@ MR_siam_3 = {
 		}
 	}
 	mr_siam_conquest_7 = {
-		icon = mission_mnd_khm_avenge_angkor
+		icon = mission_asian_trader
 		position = 7
 		required_missions = { mr_siam_conquest_6 }
 		provinces_to_highlight = {
@@ -638,8 +1044,205 @@ MR_siam_3 = {
 	}
 				
 }
-		
-
+MR_MGT_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGT
+			tag = SYM
+			tag = SIA
+		}
+	}
+	has_country_shield = yes
+	mr_siam_china_1 = {
+		icon = mission_chinese_general_riding
+		position = 8
+		required_missions = { }
+		provinces_to_highlight = {
+			region = xinan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					region = xinan_region
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				amount = 10
+			}
+		}
+		effect = {
+			xinan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = master_of_xinan
+				duration = 10950
+			}
+		}
+	}
+	mr_siam_burma_6 = {
+		icon = mission_unite_home_region
+		position = 11
+		required_missions = { mr_siam_burma_5 }
+		provinces_to_highlight = {
+			culture = shan
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			NOT = {
+				any_province = {
+					culture = shan
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					unrest = 1
+				}
+			}
+			accepted_culture = shan
+		}
+		effect = {
+			custom_tooltip = shan_thai_TT
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = shan
+					}
+					change_culture = shan_thai
+				}
+				add_accepted_culture = shan_thai
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						accepted_culture = shan
+					}
+					remove_accepted_culture = shan
+				}
+			}
+		}
+	}
+	mr_siam_nusantara_3 = {
+		icon = mission_indian_soldier_elephant
+		position = 13
+		required_missions = { mr_siam_nusantara_2 }
+		provinces_to_highlight = { 
+			OR = {
+				area = malacca_area
+				area = johor_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			malacca_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			johor_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			central_sumatra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jambi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_sumatra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					NOT = { religion_group = muslim }
+				}
+				custom_tooltip = port_of_islam_TT
+				tooltip = {
+					add_province_modifier = {
+							name = port_of_islam_SIA
+							duration = -1
+						}
+				}
+				hidden_effect = {
+					malaya_area = {
+						add_province_modifier = {
+							name = port_of_islam_SIA
+							duration = -1
+						}
+					}
+					north_malaya_area = {
+						add_province_modifier = {
+							name = port_of_islam_SIA
+							duration = -1
+						}
+					}
+					johor_area = {
+						add_province_modifier = {
+							name = port_of_islam_SIA
+							duration = -1
+						}
+					}
+					malacca_area = {
+						add_province_modifier = {
+							name = port_of_islam_SIA
+							duration = -1
+						}
+					}
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = port_of_islam_SIA_2
+					duration = 5475
+				}
+			}
+		}
+	}
+	mr_siam_nusantara_6 = {
+		icon = mission_junk_boat
+		position = 15
+		required_missions = { mr_siam_nusantara_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = south_sumatra_area
+				area = banten_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			south_sumatra_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			banten_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			2679 = {
+				has_dock_building_trigger = yes
+				has_coast_defense_building_trigger = yes
+			}
+		}
+		effect = {
+			2679 = {
+				add_base_manpower = 3
+				add_base_production = 5
+				add_base_tax = 3
+				add_province_modifier = {
+					name = belitung_fortress
+					duration = -1
+				}
+			}
+		}
+	}
+}
 MR_siam_4 = {
 	slot = 4
 	generic = no
@@ -652,11 +1255,12 @@ MR_siam_4 = {
 			tag = AYU
 			tag = RTC
 			tag = PTC
+			tag = MGT
 		}
 	}
 	has_country_shield = yes
 	mr_siam_karma_start = {
-		icon = mission_mnd_khm_avenge_angkor
+		icon = mission_mnd_khm_restore_angkor
 		position = 1
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -730,16 +1334,15 @@ MR_siam_4 = {
 		}
 	}	
 	mr_siam_karma_final = {
-		icon = mission_mnd_khm_avenge_angkor
+		icon = mission_chakravarti
 		position = 3
 		required_missions = { mr_siam_karma_start }
 		provinces_to_highlight = { }
 		trigger = {
-			government_rank = 3 
 			temple = 30
 			OR = {
 				total_development = 300 
-				num_of_subjects = 5
+				num_of_subjects = 7
 			}
 		}
 		effect = {
@@ -775,7 +1378,7 @@ MR_siam_4 = {
 	}
 	
 	mr_siam_conquest_5 = {
-		icon = mission_mnd_khm_protect_the_cham
+		icon = mission_mnd_khm_restored_empire
 		position = 5
 		required_missions = { mr_siam_conquest_4 }
 		provinces_to_highlight = {
@@ -814,7 +1417,7 @@ MR_siam_4 = {
 		}
 	}
 	mr_siam_angkor_1 = {
-		icon = mission_mnd_siam_royal_duel 
+		icon = mission_mnd_khm_resurgence
 		position = 6
 		required_missions = { mr_siam_conquest_5 }
 		provinces_to_highlight = {
@@ -885,8 +1488,8 @@ MR_siam_4 = {
 			}
 		}
 	}
-	siam_ankgor_3 = {
-		icon = mission_mnd_siam_royal_duel 
+	mr_siam_angkor_3 = {
+		icon = mission_the_chola_campaigns
 		position = 8
 		required_missions = { mr_siam_angkor_1 mr_siam_conquest_7 }
 		provinces_to_highlight = {
@@ -915,7 +1518,179 @@ MR_siam_4 = {
 		}
 	}
 }
-
+MR_MGT_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGT
+			tag = SYM
+			tag = SIA
+		}
+	}
+	has_country_shield = yes
+	mr_siam_china_3 = {
+		icon = mission_non-western_cavalry_raid
+		position = 9
+		required_missions = { mr_siam_china_1 mr_siam_china_2 }
+		provinces_to_highlight = {
+			OR = {
+				region = xinan_region
+				region = south_china_region
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					OR = {
+						region = xinan_region
+						region = south_china_region
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				amount = 50
+			}
+		}
+		effect = {
+			custom_tooltip = challenge_china_TT
+			tooltip = {
+				add_country_modifier = {
+					name = challenged_china_SIA
+					duration = 9125
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						any_country = {
+							is_emperor_of_china = yes 
+						}
+					}
+					every_country = {
+						limit = {
+							is_emperor_of_china = yes 
+						}
+						add_country_modifier = {
+							name = challenged_china_SIA
+							duration = 9125
+						}
+					}
+				}
+				else = {
+					china_superregion = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+	mr_siam_china_4 = {
+		icon = mission_manchu_warrior
+		position = 10
+		required_missions = { mr_siam_china_3 }
+		provinces_to_highlight = {
+			superregion = china_superregion
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			china_superregion = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			stability = 2
+		}
+		effect = {
+			add_country_modifier = {
+				name = great_mandala_SIA
+				duration = -1
+			}
+			custom_tooltip = siam_china_4_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						ROOT = { is_emperor_of_china = yes }
+					}
+					add_mandate = 30
+					add_meritocracy = 25
+				}
+			}
+		}
+	}			
+	mr_siam_nusantara_2 = {
+		icon = mission_galleys_in_port 
+		position = 12
+		required_missions = { mr_siam_nusantara_1 }
+		provinces_to_highlight = { 
+			OR = {
+				area = malaya_area
+				area = north_malaya_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			malaya_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			north_malaya_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+		}
+		effect = {
+			malacca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			johor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			594 = {
+				add_province_modifier = {
+					name = thai_base_malaya
+					duration = -1
+				}
+			}
+			5165 = {
+				add_province_modifier = {
+					name = thai_base_malaya
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_siam_navy_3 = {
+		icon = mission_unite_coromandel
+		position = 14
+		required_missions = { mr_siam_navy_2 }
+		trigger = {
+			has_flagship = yes 
+			NOT = {
+				any_country = {
+					capital_scope = {
+						continent = asia
+					}
+					navy_size = ROOT 
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = naval_hegemon_SIA
+				duration = -1
+			}
+		}
+	}
+}			
 MR_siam_5 = {
 	slot = 5
 	generic = no
@@ -928,11 +1703,12 @@ MR_siam_5 = {
 			tag = AYU
 			tag = RTC
 			tag = PTC
+			tag = MGT
 		}
 	}
 	has_country_shield = yes
 	mr_siam_karma_3 = {
-		icon = mission_mnd_khm_avenge_angkor
+		icon = mission_a_great_mandala
 		position = 2
 		required_missions = { mr_siam_karma_start }
 		provinces_to_highlight = { }
@@ -1004,7 +1780,7 @@ MR_siam_5 = {
 		}
 	}
 	mr_siam_elephants_1 = {
-		icon = mission_mnd_khm_avenge_angkor
+		icon = mission_a_million_elephants
 		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {
@@ -1072,7 +1848,7 @@ MR_siam_5 = {
 		}		
 	}
 	mr_siam_angkor_2 = {
-		icon = mission_mnd_siam_royal_duel 
+		icon = mission_se_along_the_river
 		position = 7
 		required_missions = { mr_siam_angkor_1 }
 		provinces_to_highlight = {
@@ -1083,17 +1859,33 @@ MR_siam_5 = {
 				area = cambodia_area
 			}
 			NOT = {
-				religion = ROOT
+				OR = {
+					religion = ROOT
+					AND = {
+						culture = khmer
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						NOT = { unrest = 1 }
+					}
+				}
 			}
 		}
 		
 		trigger = {
 			OR = {
-				accepted_culture = khmer
+				AND = {
+					accepted_culture = khmer
+					NOT = {
+						any_province = {
+							culture = khmer
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+							NOT = { unrest = 1 }
+						}
+					}
+				}
 				AND = {
 					has_global_modifier_value = {
 						which = tolerance_own
-						value = 6
+						value = 8
 					}
 					employed_advisor = {
 						culture = khmer
@@ -1129,3 +1921,135 @@ MR_siam_5 = {
 		}
 	}
 }
+MR_MGT_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = MGT
+			tag = SYM
+			tag = SIA
+		}
+	}
+	has_country_shield = yes
+	mr_siam_china_2 = {
+		icon = mission_kowtow
+		position = 8
+		required_missions = { }
+		provinces_to_highlight = {
+			region = south_china_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				calc_true_if = {
+					all_province = {
+						region = south_china_region
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					amount = 10
+				}
+				AND = {
+					GSC = {
+						is_rival = ROOT
+					}
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 50
+					}
+				}
+			}
+		}
+		effect = {
+			south_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = invade_southern_china
+				duration = 10950
+			}
+		}
+	}
+	mr_siam_nusantara_1 = {
+		icon = mission_mnd_siam_royal_duel 
+		position = 11
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			navy_size_percentage = 1
+			num_of_galley = 10
+			num_of_light_ship = 15
+		}
+		effect = {
+			north_malaya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malaya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = early_navy_SIA
+				duration = 5475
+			}
+		}
+	}
+	mr_siam_navy_1 = {
+		icon = mission_caribbean_cn
+		position = 12
+		required_missions = { mr_siam_nusantara_1 }
+		trigger = {
+			num_of_light_ship = 25
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = light_ship_SIA
+				duration = 18250
+			}
+		}
+	}
+	mr_siam_navy_2 = {
+		icon = mission_look_west
+		position = 13
+		required_missions = { mr_siam_navy_1 }
+		trigger = {
+			navy_tradition = 35
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = impressment_offices
+			}
+		}
+		effect = {
+			define_admiral = {
+				shock = 3
+				fire = 3
+				manuever = 4
+				siege = 1
+				female = yes
+			}
+			add_country_modifier = {
+				name = naval_acadamy_SIA
+				duration = 18250
+			}
+		}
+	}
+}
+				

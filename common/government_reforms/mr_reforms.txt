@@ -542,10 +542,31 @@ MR_thai_tributary = {
 	}
 	
 	potential = {
-		AND = {
-			is_subject_of_type = tributary_state
-			is_subject_of = ANK
-		}
+		is_subject_of_type = tributary_state
+	}
+}
+MR_thai_princedom = {
+	icon = "warrior_monks_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	
+	custom_attributes = {
+		MR_thai_mechanic = yes
+	}
+	modifiers = {
+		vassal_forcelimit_bonus = 0.5
+		vassal_income = 0.25
+		amount_of_hussars = 1
+		can_recruit_hussars = yes 
+	}
+	
+	trigger = {
+		culture_group = thai_group
+	}
+	
+	potential = {
+		is_subject = no
 	}
 }
 	
