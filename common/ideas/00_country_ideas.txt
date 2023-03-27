@@ -16027,8 +16027,8 @@ SIA_ideas = {
 		idea_cost = -0.1
 	}
 	sia_advanced_elephant_warfare = {
-		cavalry_power = 0.15
 		cavalry_fire = 1
+		can_recruit_hussars = yes
 	}
 	sia_experienced_ambassadors = {
 		diplomatic_reputation = 2

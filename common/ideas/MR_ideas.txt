@@ -760,7 +760,7 @@ MGT_ideas = {
 	
 	MGT_fourth = { #The War Elephants
 		cavalry_fire = 1
-		amount_of_hussars = 5 #Elephant Cav Now
+		can_recruit_hussars = yes  #Elephant Cav Now
 	}
 	
 	MGT_fifth = { #The Kingdom of Rice and Fish 
@@ -797,6 +797,7 @@ SYM_ideas = {
 	}
 	SYM_third = { #Builders of Great Cities
 		development_cost = -0.10
+		expand_administration_cost = -0.25 
 	}
 	SYM_fourth = { #Expand the Ivory Trade
 		global_trade_goods_size_modifier = 0.15
@@ -810,7 +811,7 @@ SYM_ideas = {
 	}
 	SYM_seventh = { #Alfil Riders
 		cavalry_shock = 1
-		amount_of_hussars = 5 #Elephant Cav Now
+		can_recruit_hussars = yes  #Elephant Cav Now
 	}
 }
 	
