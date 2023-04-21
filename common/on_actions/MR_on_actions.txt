@@ -18,10 +18,22 @@ on_startup = {
 			}
 		}
 	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
 	events = {
 		#vanilla events
 		muslim_school_events.20 #Pick School
-		flavor_got.1
+		flavor_got.1 #Event for Gotland to select their mission tree
+		flavor_mng.42 #Event for the starting situation of the Ming 
+		#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+		flavor_mos.1 #Event regarding the Tatar Yoke
 		
 		christian_school_events.20
 		christian_school_events.21 #pick reformed denomination
@@ -79,8 +91,97 @@ on_startup = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
+	#if = {
+	#	limit = {
+	#		OR = {
+	#			primary_culture = norse
+	#			AND = {
+	#				culture_group = scandinavian
+	#				religion = norse_pagan_reformed
+	#			}
+	#		}
+	#		NOT = { has_idea_group = norse_ideas }
+	#		is_playing_custom_nation = no
+	#	}
+	#	country_event = { id = ideagroups.1 } #Swap Ideas
+	#}
+	if = {
+		limit = { 
+			has_dlc = "Domination" 
+			tag = FRA 
+			NOT = { is_year = 1445 } 
+		}
+		country_event = { id = flavor_fra.206 }
+	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = end_of_the_tatar_yoke }
+			owns = 466
+			is_year = 1480
+		}
+		set_global_flag = end_of_the_tatar_yoke
+	}
+	if = {
+		limit = {
+			OR = {
+				has_country_modifier = rise_of_the_ottomans
+				has_country_modifier = zenith_of_the_ottomans
+				has_country_modifier = twilight_of_the_ottomans
+				has_country_modifier = decline_of_the_ottomans
+			}
+		}
+		remove_country_modifier = rise_of_the_ottomans
+		remove_country_modifier = zenith_of_the_ottomans
+		remove_country_modifier = twilight_of_the_ottomans
+		remove_country_modifier = decline_of_the_ottomans
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_discovery
+		}
+		add_country_modifier = {
+			name = rise_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_reformation
+		}
+		add_country_modifier = {
+			name = zenith_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_absolutism
+		}
+		add_country_modifier = {
+			name = twilight_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
+	if = {
+		limit = {
+			has_government_mechanic = ottoman_decadence_mechanic
+			current_age = age_of_revolutions
+		}
+		add_country_modifier = {
+			name = decline_of_the_ottomans
+			duration = -1
+			desc = until_end_of_age_desc
+		}
+	}
 }
 
+# country
 on_religion_change = {
 	on_religion_change_estate_privileges_effect = yes
 	judaism_on_religion_change_effect = yes
@@ -207,17 +308,36 @@ on_religion_change = {
 		every_owned_province = {
 			limit = {
 				has_province_modifier = son_fetishism_as_secondary_religion_province
-			 
-			 
-			 
-			 
-			 
-			 
-			 
 			}
 			remove_province_modifier = son_fetishism_as_secondary_religion_province
 		}
-							
+	}
+	if = { 
+		limit = { 
+			has_country_flag = fra_papal_lap_dop_flag 
+		}
+		clr_country_flag = fra_papal_lap_dop_flag 
+		set_country_flag = fra_chose_to_piss_off_pope_flag
+		swap_non_generic_missions = yes 
+		remove_country_modifier = fra_catholic_head_of_state_modifier 
+		remove_country_modifier = fra_fervent_call_to_arms_modifier 
+		clr_country_flag = enable_holy_orders_flag 
+		if = { 
+			limit = { 
+				KOJ = { is_subject_of = ROOT } 
+			}
+			KOJ = { add_liberty_desire = 25 } 
+		}
+		remove_country_modifier = fra_sword_of_christianity_modifier
+		remove_country_modifier = fra_sword_of_christianity_modifier2
+		remove_country_modifier = fra_sword_of_christianity_modifier3
+		remove_country_modifier = fra_sword_of_christianity_modifier4
+		remove_country_modifier = fra_sword_of_christianity_modifier5
+		remove_country_modifier = fra_jerusalem_modifier
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+		propagate_religion_events.7 #Propagated Country is now Muslim
 	}
 	if = {
 		limit = {
@@ -262,91 +382,15 @@ on_religion_change = {
 }
 
 on_new_monarch = {
+	on_new_monarch_effect = yes
 	crimean_succession_effect = yes #Scripted effect
 	slesvig_question_effect = yes #Scripted effect
-	if = {
-		limit = {
-			has_consort_regency = no
-			any_owned_province = {
-				has_province_modifier = domain_of_spouses_family
-			}
-		}
-		every_owned_province = {
-			limit = { has_province_modifier = domain_of_spouses_family }
-			remove_province_modifier = domain_of_spouses_family
-		}
-	}
-	if = {
-		limit = {
-			has_consort_regency = no
-			any_owned_province = {
-				has_province_modifier = home_of_consort
-			}
-		}
-		every_owned_province = {
-			limit = { has_province_modifier = home_of_consort }
-			remove_province_modifier = home_of_consort
-		}
-	}
-	if = {
-		limit = {
-			NOT = { has_dlc = "Mandate of Heaven" }
-			has_country_modifier = the_mandate_of_heaven
-			NOT = { legitimacy = 80 }
-		}
-		country_event = { id = china_events.32 }	# History of last ruler
-	}
-	if = {
-		limit = {
-			religion = jewish
-		}
-		clr_country_flag = ruler_is_messiah
-	}
 	# ambrosian_republic_effect = yes
 	succession_culture_religion_effect = yes
 	sheik_ul_islam_effect = yes
 	hab_remove_mission_mods_if_not_emperor_effect = yes
-	if = {
-		limit = {
-			is_or_was_tag = {
-				tag = TEU
-			}
-			is_emperor = no
-			NOT = { tag = HLR }
-			has_country_modifier = teu_pru_imperial_crown
-		}
-		remove_country_modifier = teu_pru_imperial_crown
-	}
 	thu_remain_von_wettin_effect = yes
 	ladislaus_postumus_union_effect = yes
-	if = {
-		limit = { has_any_heir_cult_active = yes }
-		remove_heir_cult = yes
-	}
-	if = {
-		limit = { 
-			has_government_attribute = kalmar_union_succession
-			has_regency = no
-			has_consort_regency = no
-		}
-		if = {
-			limit = { has_country_flag = dan_new_elected_ruler }
-			clr_country_flag = dan_new_elected_ruler
-		}
-		else = {
-			country_event = {
-				id = kalmar_union_events.1	# A new king of the Kalmar Union
-			}
-		}
-	}
-	if = {
-		limit = { has_government_attribute = absolutism_reduction_on_ruler_death }
-		add_absolutism = -60
-		set_variable = {
-			which = election_term
-			value = 1
-		}
-	}
 	events = {
 		tribal_succession.1		# Harsh anti-tribals.
 		9492 					# Remove some event modifiers
@@ -377,6 +421,9 @@ on_new_monarch = {
 		flavor_daimyo.4			#Shiba Yoshikado
 		flavor_fra.9000			# François Villon
 		flavor_sca.2			# Education Focus of the new Ruler
+		flavor_rus.128			# Peter the Great
+		flavor_rus.131			# Streltsy Payment
+		flavor_gbr.102			# Religious Stance of the King
 		
 		christian_school_events.20 #no rite
 		eastern_school_events.20
@@ -414,16 +461,6 @@ on_monarch_death = {
 	}
 	if = {
 		limit = {
-			religious_school = {
-				group = eastern
-				school = mr_akanya_sutta_school
-			}
-			NOT = { has_country_modifier = aks_reelect }
-		}
-		country_event = { id = eastern_school_events.21 }
-	}
-	if = {
-		limit = {
 			tag = SAX
 			has_country_flag = sax_thuringen_split_to_happen
 			OR = {
@@ -454,6 +491,16 @@ on_monarch_death = {
 		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
 		add_stability = 1
 	}
+	if = {
+		limit = {
+			religious_school = {
+				group = eastern
+				school = mr_akanya_sutta_school
+			}
+			NOT = { has_country_modifier = aks_reelect }
+		}
+		country_event = { id = eastern_school_events.21 }
+	}
 	burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
 	joan_de_trastamara_king_died_effect = yes
@@ -468,6 +515,7 @@ on_monarch_death = {
 		majapahit.8 # Majapahit pretenders
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
+		government_events.3	# Election of a new Ruler
 	}
 }
 
@@ -479,6 +527,16 @@ on_mandate_of_heaven_gained = {
 		}
 		change_technology_group = chinese
 		change_unit_type = chinese
+	}
+	if = {
+		limit = { 
+			has_dlc = "Domination" 
+			NOT = { primary_culture = mongol }
+			NOT = { primary_culture = chahar }
+			NOT = { primary_culture = khalkha }
+			NOT = { primary_culture = oirats }
+		}
+		swap_non_generic_missions = yes 
 	}
 	if = {
 		limit = {
@@ -583,13 +641,14 @@ on_bi_yearly_pulse_3 = {
 		MRestate_privileges_and_agendas_events.5
 	}
 	random_events = {
-		100 = new_court_flavour_events.21 #religious resignation
 		100 = new_court_flavour_events.25 #blood is thicker than water
 		200 = 0
 	}
 }
 
 on_battle_won_country = {
+	#on_battle_ended_effect = yes
+	on_battle_won_country_effect = yes
 	if = {
 		limit = {
 			ROOT = {
@@ -602,6 +661,20 @@ on_battle_won_country = {
 		}
 		ROOT = { set_country_flag = albanian_victory }
 	}
+	count_won_battles_and_reward_at_end = {
+		counting_flag = teu_crusader_battle_counter
+		max_value = 20
+		effect = "
+			country_event = {
+				id = flavor_teu.12
+			}
+		"
+	}
+	count_won_battles_and_reward_at_end = {
+		counting_flag = has_rus_kill_counter
+		max_value = 40
+		effect = "set_country_flag = rus_finished_kill_mission"
+	}
 	if = {
 		limit = {
 			ROOT = {
@@ -609,21 +682,6 @@ on_battle_won_country = {
 			}
 		}
 		add_karma = 1
-	}
-	if = {
-		limit = {
-			ROOT = {
-				religion = jewish
-				has_church_aspect = judaism_purim_teachings_aspect
-			}
-		}
-		ROOT = {
-			add_war_exhaustion = -0.05
-		}
-	}
-	count_won_battles_and_reward_at_end = {
-		counting_flag = teu_crusader_battle_counter
-		max_value = 20
 	}
 }
 
@@ -721,6 +779,9 @@ on_siege_won_country = {
 		flavor_lna.1 # Emerald Buddha
 		flavor_son.14 # Djenne surrenders to Songhai Trigger
 		flavor_teu.25 # Payback for the Hussite Wars
+		flavor_tur.240 # Collapse of teh Mamluks
+		flavor_kor.16 # Tripitaka Koreana
+		flavor_tur.211 # Fall of Vienna
 	}
 	random_events = {
 		10 = army_professionalism_events.1 #City Sacked

@@ -815,7 +815,173 @@ SYM_ideas = {
 	}
 }
 	
+POR_ideas_mr = {
+	start = {
+	war_exhaustion = -0.03
+        global_missionary_strength = 0.015
+    }
+    
+    bonus = {
+        enforce_religion_cost = -0.5
+    }
+    
+    trigger = {
+        tag = POR
+    }
+    free = yes        #will be added at load.
+    
+    legacy_of_the_conqueror = {
+        movement_speed = 0.20
+        war_taxes_cost_modifier = -0.50
+    }
+    pure_blood_lusitanian = {
+        cavalry_cost = -0.15
+        cav_to_inf_ratio = 0.20
+    }
+    never_ending_reconquista = {
+        army_tradition_from_battle = 0.5
+    }
+    faith_before_land = {
+        recover_army_morale_speed = 0.15
+    }
+    the_cavaleiros = {
+        cavalry_power = 0.15
+    }
+    christian_fanaticism = {
+        prestige_per_development_from_conversion = 0.5
+        local_missionary_maitenance_cost = -0.3
+    }
+    gloria_a_Deus_nas_alturas = {
+        land_attrition = -0.10
+        leader_land_manuever = 1
+	}
+}
 
-
-		
+AIR_ideas = {
+	start = {
+		movement_speed = 0.15
+		caravan_power = 0.2
+	}
 	
+	bonus = {
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		primary_culture = tuareg
+	}
+	
+	free = yes		#will be added at load.
+	
+	taghlamt = {
+		trade_efficiency = 0.10
+	}
+	legacy_of_tin_hinan = {
+		land_morale = 0.15
+	}
+	mines_of_takedda = {
+		global_trade_goods_size_modifier = 0.1 
+			  
+							
+				 
+				 
+	}
+	blue_people = { 
+		same_culture_advisor_cost = -0.15
+	}
+	inadan_castes = {
+		production_efficiency = 0.1
+	}
+	nomadic_traditions = {
+		leader_land_manuever = 1
+	}
+	ineslemen_teachings = {
+		global_missionary_strength = 0.01
+	}
+	
+}
+
+GAL_ideas = {
+    start = {
+		papal_influence = 2.0
+		devotion = 1
+		republican_tradition = 0.3
+    }
+
+    bonus = {
+		development_cost = -0.10
+    }
+
+    trigger = {
+        tag = GAL
+    }
+
+	free = yes        #will be added at load.
+
+    gal_the_cross_and_hammer = {
+		global_autonomy = -0.05
+    }
+    gal_the_burgos = {
+		burghers_loyalty_modifier = 0.10
+		global_trade_goods_size_modifier = 0.1
+    }
+    gal_foreign_pilgrims = {
+		global_tax_modifier = 0.1
+    }
+    gal_volunteer_militias = {
+		land_maintenance_modifier = -0.10
+    }
+	gal_foreign_markets = {
+		trade_range_modifier = 0.30
+		range = 0.3
+    }
+    gal_compete_with_basque_whalers = {
+		ship_power_propagation = 0.20
+    }
+    gal_abolish_serfdom = {
+		global_unrest = -1
+		production_efficiency = 0.05
+    }
+}
+
+SIA_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.3
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = SIA
+	}
+	free = yes
+	sia_royal_poets = {
+		prestige = 0.5
+		idea_cost = -0.1
+	}
+	sia_advanced_elephant_warfare = {
+		cavalry_fire = 1
+		can_recruit_hussars = yes
+	}
+	sia_experienced_ambassadors = {
+		diplomatic_reputation = 2
+	}
+	sia_encourage_immigration = {
+		development_cost = -0.1
+	}
+	sia_integrating_the_realm = {
+		diplomatic_annexation_cost = -0.2
+										  
+	}
+	sia_education_reform = {
+		technology_cost = -0.1
+	}
+	sia_royal_absolutism = {
+		yearly_absolutism = 1
+		legitimacy = 1
+							  
+	 
+							
+	}
+}
