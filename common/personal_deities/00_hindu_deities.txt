@@ -3,9 +3,12 @@
 
 
 #Old Deities / Smarta Deities
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
 buddha = {
 	sprite = 6
-	allow = { 
+	potential = { 
 		religion = hinduism
 		OR = {
 			mission_completed = mnd_maj_candi_shrines
@@ -13,8 +16,11 @@ buddha = {
 			mission_completed = mnd_khm_religion
 		}
 	}
+	trigger = {}
 	tolerance_heathen = 2
 	advisor_cost = -0.1
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -30,20 +36,22 @@ buddha = {
 	}
 }
 
-shiva =
-{
+shiva = {
 	# (Diplomatic - War)
 	ae_impact = -0.05
 	core_creation = -0.10
 	
-	allow = { 
+	potential = {
 		OR = {
 			religion = smarta
 			religion = shaivism
-		}
+		} 
 	}
+	trigger = {}
 	sprite = 1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -57,20 +65,22 @@ shiva =
 	}
 }
 
-ganesha = 
-{
+ganesha = {
 	#(Diplomatic - Peace)
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.20
 	
-	allow = { 
+	potential = { 
 		OR = {
 			religion = shaivism
 			religion = smarta
 		}
 	}
+	trigger = {}
 	sprite = 2
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -84,15 +94,17 @@ ganesha =
 	}	
 }
 
-surya =
-{
+surya = {
 	#(Economic - Income)
 	global_tax_modifier = 0.10
 	trade_efficiency = 0.10
 	
-	allow = { religion = smarta }
+	potential = { religion = smarta }
+	trigger = {}
 	sprite = 3
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -106,15 +118,17 @@ surya =
 	}	
 }
 
-ganga = 
-{
+ganga = {
 	#(Economic - Savings)
 	interest = -0.25
 	build_cost = -0.10
 	
-	allow = { religion = smarta }
+	potential = { religion = smarta }
+	trigger = {}
 	sprite = 4
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -128,20 +142,22 @@ ganga =
 	}	
 }
 
-shakti = 
-{ 
+shakti = { 
 	#(Military - Offensive) 
 	siege_ability = 0.05
 	discipline = 0.05
 	
-	allow = { 
+	potential = {
 		OR = {
 			religion = smarta
 			religion = shaivism
 		}
 	}
+	trigger = {}
 	sprite = 5
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -155,15 +171,22 @@ shakti =
 	}	
 }
 
-vishnu =
-{
+vishnu = {
 	# (Military - Defensive)
 	defensiveness = 0.2
 	global_missionary_strength = 0.02
 	
-	allow = { religion = smarta }
+	potential = { 
+		OR = {
+			religion = smarta 
+			religion = hinduism
+		}
+	}
+	trigger = {}
 	sprite = 6
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -182,9 +205,11 @@ krishna = {
 	production_efficiency = 0.1
 	diplomatic_reputation = 2
 	
-	allow = { religion = hinduism }
+	potential = { religion = hinduism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -193,9 +218,11 @@ rama = {
 	infantry_power = 0.10 
 	monthly_reform_progress_modifier = 0.15
 	
-	allow = { religion = hinduism }
+	potential = { religion = hinduism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -204,9 +231,11 @@ narasimha = {
 	tolerance_own = 2
 	global_missionary_strength = 0.02
 	
-	allow = { religion = hinduism }
+	potential = { religion = hinduism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -215,9 +244,11 @@ jagannath = {
 	tolerance_heretic = 2
 	cavalry_power = 0.10
 	
-	allow = { religion = hinduism }
+	potential = { religion = hinduism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -226,9 +257,11 @@ kalki = {
 	fire_damage = 0.10 
 	stability_cost_modifier = -0.15
 	
-	allow = { religion = hinduism }
+	potential = { religion = hinduism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -238,9 +271,11 @@ kartikeya = {
 	trade_efficiency = 0.05
 	general_cost = -0.25
 	
-	allow = { religion = shaivism }
+	potential = { religion = shaivism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -249,9 +284,11 @@ ayyanar = {
 	global_tax_modifier = 0.10
 	movement_speed = 0.10 
 	
-	allow = { religion = shaivism }
+	potential = { religion = shaivism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -260,14 +297,16 @@ devaraja = {
 	legitimacy = 1
 	tolerance_heathen = 2
 	
-	allow = { 
+	potential = { 
 		religion = shaivism
 		capital_scope = {
 			superregion = east_indies_superregion
 		}
 	}
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -277,9 +316,11 @@ kali = {
 	land_morale = 0.10
 	loot_amount = 0.15
 	
-	allow = { religion = shaktism }
+	potential = { religion = shaktism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -288,9 +329,11 @@ tripura_sundari = {
 	development_cost = -0.10
 	may_recruit_female_generals = yes 
 	
-	allow = { religion = shaktism }
+	potential = { religion = shaktism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -299,9 +342,11 @@ bhunaveswari = {
 	defensiveness = 0.2
 	advisor_cost = -0.10
 	
-	allow = { religion = shaktism }
+	potential = { religion = shaktism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -310,9 +355,11 @@ durga = {
 	warscore_cost_vs_other_religion = -0.10
 	improve_relation_modifier = 0.15
 	
-	allow = { religion = shaktism }
+	potential = { religion = shaktism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -321,9 +368,11 @@ matangi = {
 	idea_cost = -0.1
 	spy_offence = 0.15
 	
-	allow = { religion = shaktism }
+	potential = { religion = shaktism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -332,9 +381,11 @@ mahadevi = {
 	build_cost = -0.1 
 	yearly_corruption = -0.05
 	
-	allow = { religion = shaktism }
+	potential = { religion = shaktism }
 	sprite = 6
-	
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}

@@ -291,10 +291,14 @@ mr_empire_of_japan = {
 	nation_designer_cost = 60
 	lock_level_when_selected = yes
 	
+	government_abilities = {
+		shugo_dominance_mechanic
+	}
+	
 	modifiers = {
 		governing_capacity = 100
-		diplomatic_annexation_cost = -0.15
-		land_morale = 0.10
+		diplomatic_annexation_cost = -0.10
+		land_morale = 0.05
 	}
 }
 mr_hungary_anarchy = {
@@ -509,7 +513,7 @@ tendai_ministries = {
 		global_tax_modifier = 0.15
 		missionary_maintenance_cost = -0.15
 		church_influence_modifier = 0.30
-		manpower_in_true_faith_provinces = 0.10
+		can_recruit_samurai = yes 
 	}
 	potential = {
 		religion = mr_tendai
@@ -543,6 +547,7 @@ MR_thai_tributary = {
 	
 	potential = {
 		is_subject_of_type = tributary_state
+		culture_group = thai_group
 	}
 }
 MR_thai_princedom = {
@@ -567,6 +572,7 @@ MR_thai_princedom = {
 	
 	potential = {
 		is_subject = no
+		culture_group = thai_group
 	}
 }
 	

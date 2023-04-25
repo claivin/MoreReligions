@@ -5,9 +5,12 @@
 
 tha = {
 	sprite = 6
-	allow = {religion = mr_caucaspagan}
+	potential = {religion = mr_caucaspagan}
 	core_creation = -0.15
 	diplomatic_reputation = 1
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -15,9 +18,12 @@ tha = {
 
 tlepsh = {
 	sprite = 6
-	allow = {religion = mr_caucaspagan}
+	potential = {religion = mr_caucaspagan}
 	discipline = 0.05
 	infantry_cost = -0.10
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -25,7 +31,10 @@ tlepsh = {
 
 pkharmat = {
 	sprite = 6
-	allow = {religion = mr_caucaspagan}
+	potential = {religion = mr_caucaspagan}
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	technology_cost = -0.05
 	innovativeness_gain = 0.5
 	ai_will_do = {
@@ -35,7 +44,10 @@ pkharmat = {
 
 donbettyr = {
 	sprite = 6
-	allow = {religion = mr_caucaspagan}
+	potential = {religion = mr_caucaspagan}
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	galley_power = 0.15
 	global_sailors_modifier = 0.1
 	ai_will_do = {
@@ -45,7 +57,10 @@ donbettyr = {
 
 satanaya = {
 	sprite = 6
-	allow = {religion = mr_caucaspagan}
+	potential = {religion = mr_caucaspagan}
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	global_tax_modifier = 0.1
 	global_manpower_modifier = 0.10
 	ai_will_do = {
@@ -55,7 +70,10 @@ satanaya = {
 
 seela = {
 	sprite = 6
-	allow = {religion = mr_caucaspagan}
+	potential = {religion = mr_caucaspagan}
+	trigger = {}
+	effect = {}
+	removed_effect = {}
 	global_missionary_strength = 0.02
 	siege_ability = 0.05
 	ai_will_do = {

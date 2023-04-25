@@ -44,6 +44,11 @@
  
  mr_empire_of_japan: "Chrysanthemum Throne"
  mr_empire_of_japan_desc: "The state of Japan is controlled by the Emperor, who, in the Kenmu Restoration took control back from the Shogun after 300 years of military control. Now, they must balance the needs of the still powerful samurai clans with the growing civilian government."
+ shugo_dominance_mechanic: "Shugo Dominance"
+ 
+ ability_shugo_dominance_mechanic: "§YShugo Dominance§!"
+ 
+ 
  
  mr_hungary_anarchy: "Hungarian Oligarchs"
  mr_hungary_anarchy_desc: "The Hungarian Oligarchs are dominant within our politics. Our state is unravaling at the seams, and we cannot survive for much longer."

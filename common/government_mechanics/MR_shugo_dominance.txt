@@ -1,0 +1,29 @@
+shugo_dominance_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 12
+	available = {
+		tag = JAP
+	}
+
+	powers = {
+		shugo_dominance_mechanic = {
+			gui = shugo_dominance_gov_mech
+			max = 100
+			reset_on_new_ruler = no
+			base_monthly_growth = 0
+			is_good = no
+			
+			scaled_modifier = {
+				modifier = {
+					land_forcelimit_modifier = -0.50
+					reform_progress_growth = -1
+					shugo_influence_modifier = 0.5
+					discipline = -0.075
+					manpower_recovery_speed = -0.5
+					reduced_liberty_desire = -50
+					legitimacy = -3
+				}
+			}
+		}
+	}
+}

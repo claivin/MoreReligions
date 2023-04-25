@@ -50,6 +50,23 @@
  STATE_HUSSARS_CREATED_REGIMENTS:0 "This will cost $MILAMOUNT|Y$ £mil£, and $NUM|Y$ Elephant Cavalry will spawn in $PROV|Y$.\nDo you want to create a Elephant Cavalry regiment?"
  ONLY_HUSSARS_MODIFIER:0 "§YAffects only Elephant Cavalry§!"
  HUSSARS_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so you cannot recruit Elephant Cavalry Regiments here."
+ 
+ #Samurai - > Sohei
+ MODIFIER_HAS_SAMURAI:0 "Country Allows Sohei Infantry"
+ SAMURAI_NAME:0 "$HOME$'s $NUM$$ORDER$ Sohei Regiment"
+ MODIFIER_ALLOWED_SAMURAI_FRACTION:0 "Sohei Force Limit"
+ MODIFIER_LOCAL_HAS_SAMURAI:0 "Province Allows Sohei Infantry"
+ SAMURAI_FORCELIMIT:0 "We can recruit up to $LIMIT|Y$ §GSohei§! owing to:\n$FLAMOUNT|Y$ from $PERC|%Y$ of our force-limit of $FL$:\n"
+ SAMURAI_LIMIT_CULTURE:0 "$PROVINCE$ is a $CULTURE$ province, so can not recruit Sohei Infantry here."
+ ADD_SAMURAI_SUB_UNIT_EFFECT:0 "Get '§GSohei§!' $UNIT$ in $WHERE|Y$."
+ SAMURAI_DESC:0 "The Sohei are Buddhist warrior monks that often lived within temples or monastic orders across Japan. They first came about during the Heian Era, and have been a major factor in Japanese politics and religiosity since. The Tendai monks of Mt. Hiei supported Go-Daigo during his rebellion against the Kamakura Shogunate, and have since been a present and powerful faction across Japan."
+ REGCAT_samurai:0 "Sohei"
+ SAMURAI_REGIMENT:0 "Sohei Regiment\n$EFFECT$"
+ HAVE_LESS_SAMURAI_THAN:0 "Have less Sohei than §Y$VALUE$§!.\n"
+ samurai_modifier:0 "Sohei Hired"
+ HAVE_AT_LEAST_SAMURAI_THAN:0 "Have at least §Y$VALUE$§! Sohei.\n"
+ MODIFIER_AMOUNT_OF_SAMURAI:0 "Sohei Force Limit"
+ ONLY_SAMURAI_MODIFIER:0 "§YAffects only Sohei Regiments§!"
 
  
  
