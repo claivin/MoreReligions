@@ -285,7 +285,7 @@ country_event = {
 	}
 	
 	option = {
-		name = mr_startup_events.2.a
+		name = mr_startup_events.3.a
 		#empty
 	}
 }

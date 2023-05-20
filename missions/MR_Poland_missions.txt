@@ -1,4 +1,190 @@
-#papal starter
+#diplomacy starter
+mr_pol_c1a = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = POL }
+	has_country_shield = yes
+	
+	mr_pol_c1a1 = { #secure electoral backing
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			owner = {
+				is_elector = yes
+			} 
+		}
+		trigger = {
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				calc_true_if = {
+					desc = gen_hre_electors.tooltip
+					all_elector = {
+						preferred_emperor = ROOT
+					}
+					amount = 6
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = mr_pol_c1a1_TT
+			tooltip = {
+				add_dip_power = 75
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { mission_completed = mr_pol_c2a1 } }
+					add_dip_power = 125
+				}
+			}
+			custom_tooltip = mr_pol_TT_always
+			add_dip_power = 50
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+mr_pol_c2a = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { tag = POL }
+	has_country_shield = yes
+	
+	mr_pol_c2a1 = { #secure szlatcha backing
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {}
+		trigger = {
+			num_of_estate_privileges = {
+				estate = estate_nobles
+				value = 5
+			}
+		}
+		effect = {
+			custom_tooltip = mr_pol_c2a1_TT
+			tooltip = {
+				add_mil_power = 50
+			}
+			hidden_effect = {
+				if = {
+					limit = { NOT = { mission_completed = mr_pol_c1a1 } }
+					add_mil_power = 50
+				}
+			}
+			custom_tooltip = mr_pol_TT_always
+			random_owned_province = {
+				add_base_manpower = 1
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			country_event = {
+				id = mr_poland.3
+			}
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+mr_pol_c3a = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { tag = POL }
+	has_country_shield = yes
+	
+	mr_pol_c3a1 = { #Fortify Eastern Poland
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				area = podlasie_area
+				area = pripyat_area
+				area = volhynia_area
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				OR = {
+					area = podlasie_area
+					area = pripyat_area
+					area = volhynia_area
+				}
+				fort_level = 2
+			}
+		}
+		effect = {
+			custom_tooltip = mr_pol_c3a1_TT
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = podlasie_area
+							area = pripyat_area
+							area = volhynia_area
+						}
+					}
+					add_province_modifier = {
+						duration = -1
+						name = mr_pol_fortified_east
+					}
+				}
+			}
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = podlasie_area
+							area = pripyat_area
+							area = volhynia_area
+						}
+						fort_level = 2
+					}
+					add_province_modifier = {
+						duration = -1
+						name = mr_pol_fortified_east
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = podlasie_area
+							area = pripyat_area
+							area = volhynia_area
+						}
+						fort_level = 2
+					}
+					add_province_modifier = {
+						duration = -1
+						name = mr_pol_fortified_east
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+#papal starter - leads to branching path
 mr_pol_c5a = {
 	slot = 5
 	generic = no
@@ -7,7 +193,7 @@ mr_pol_c5a = {
 	has_country_shield = yes
 
 	mr_pol_c5ar1 = { #Papal Diplomacy
-		icon = mission_unknown_mission
+		icon = mission_build_up_to_force_limit
 		required_missions = {  }
 		position = 1
 		provinces_to_highlight = {
@@ -33,7 +219,7 @@ mr_pol_c5a = {
 			}
 		}
 		ai_weight = {
-			factor = 75
+			factor = 500
 		}
 	}
 }
@@ -50,7 +236,7 @@ mr_pol_c5b = {
 	has_country_shield = yes
 	
 	mr_pol_c5br2 = { #Christianize the Baltics
-		icon = mission_unknown_mission
+		icon = mission_build_up_to_force_limit
 		required_missions = { mr_pol_c5ar1 }
 		position = 2
 		provinces_to_highlight = {
@@ -83,7 +269,7 @@ mr_pol_c5b = {
 	}
 	
 	mr_pol_c5br3 = { #Establish Communal Churches
-		icon = mission_unknown_mission
+		icon = mission_build_up_to_force_limit
 		required_missions = { mr_pol_c5br2 }
 		position = 3
 		provinces_to_highlight = {
@@ -147,7 +333,7 @@ mr_pol_c5b = {
 	}
 	
 	mr_pol_c5br4 = { #New Archbishops
-		icon = mission_unknown_mission
+		icon = mission_build_up_to_force_limit
 		required_missions = { mr_pol_c5br3 }
 		position = 4
 		provinces_to_highlight = {

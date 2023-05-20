@@ -599,3 +599,64 @@ estate_nobles_rice_wine = {
 		factor = 5
 	}
 }
+
+#polish privleges
+estate_nobles_mr_strong_szlachta = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -40
+	loyalty = 0.10
+	influence = 0.25
+	is_valid = {
+		has_estate_privilege = estate_nobles_mr_strong_szlachta
+	}
+	can_revoke = {
+		crown_land_share = 0.75
+	}
+	penalties = {
+		min_autonomy = 25
+	}
+	benefits = {
+		global_manpower_modifier = 0.20
+		development_cost_in_primary_culture = -0.1
+		estate_nobles_privilege_slots = 2
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+
+estate_nobles_mr_balanced_szlachta = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -25
+	loyalty = 0
+	influence = 0.10
+	is_valid = {
+		has_estate_privilege = estate_nobles_mr_balanced_szlachta
+	}
+	can_revoke = { #5 reforms
+		if = {
+			limit = {
+				has_dlc = "Emperor"
+			}
+			hre_reform_passed = emperor_perpetual_diet
+		}
+		else = {
+			hre_reform_passed = landfriede
+		}
+	}
+	penalties = {
+		all_estate_loyalty_equilibrium = -0.05
+		prestige = -1
+		stability_cost_modifier = 0.15
+	}
+	benefits = {
+		improve_relation_modifier = 0.15
+		imperial_authority = 0.05
+		max_electors = 2
+		reasons_to_elect = 5
+		estate_nobles_privilege_slots = 1
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}

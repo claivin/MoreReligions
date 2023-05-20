@@ -122,3 +122,34 @@ country_event = {
 		}
 	}
 }
+
+#Ensuring Szlatcha Loyalty
+country_event = {
+	id = mr_poland.3
+	title = mr_poland.3.t
+	desc = mr_poland.3.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#by mission mr_pol_c2a1
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = { #Szlatch Privleges - support local szlachta
+		name = mr_poland.3.a
+		ai_chance = {
+			factor = 50
+		}
+		set_estate_privilege = estate_nobles_mr_strong_szlachta
+	}
+	option = { #Szlatch Privleges - balance szlachta with princely interests
+		name = mr_poland.3.b
+		ai_chance = {
+			factor = 50
+		}
+		set_estate_privilege = estate_nobles_mr_balanced_szlachta
+	}
+}

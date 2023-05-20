@@ -1,5 +1,18 @@
 ﻿l_english:
 #missions
+ mr_pol_c1a1_title: "Secure Electoral Backing"
+ mr_pol_c1a1_desc: "These influential electors hold the power to shape the destiny of the Holy Roman Empire, their votes determining the next emperor. With their favor, one gains legitimacy, authority, and the ability to command the vast resources and diverse territories of the Empire."
+ mr_pol_c1a1_TT: "If this mission is completed before §YSecure Szlachta Loyalty§!:"
+ mr_pol_TT_always: "\nAlways:"
+ 
+ mr_pol_c2a1_title: "Secure Szlachta Loyalty"
+ mr_pol_c2a1_desc: "The Polish nobility, renowned for their influence in Imperial politics, wield immense power within the political landscape. By cultivating their loyalty, a ruler gains access to their military might, financial backing, and the ability to implement effective governance."
+ mr_pol_c2a1_TT: "If this mission is completed before §YSecure Electoral Backing§!:"
+
+ mr_pol_c3a1_title: "Fortify Eastern Poland"
+ mr_pol_c3a1_desc: "Historically, the relentless incursions from Russians  and steppe adversaries pose a constant threat to the security and prosperity of the eastern regions. By fortifying the border and maintaining a robust defense, one ensures the safety of vital trade routes, the preservation of valuable resources, and the well-being of the populace."
+ mr_pol_c3a1_TT: "Will apply to §Ytwo§! fort provinces in these areas:"
+
  mr_pol_c5ar1_title: "Papal Diplomacy"
  mr_pol_c5ar1_desc: "With the spiritual landscape of Europe deteriorating, there must be a drastic action undertaken. One with clear direction and purpose."
  mr_pol_c5ar1_tt: "We will decide whether to reallign the Empire with the Papacy or not"
@@ -38,11 +51,17 @@
  mr_poland.2.a: "Into the fold!"
  mr_poland.2.b: "One of our nephews should be capable enough."
  
+ mr_poland.3.t: "Not Quite Feudal"
+ mr_poland.3.d: "Feudalism had never fully taken hold within Poland, owing to the original founder's of the Polish Kingdom's gracious integration of tribal leaders. As the years have passed, the Slzachta maintained a powerful and influential position within the Polish Realm - in recent decades, this has meant that they've held undue power within the Empire as well. The unfortunate reality of all this means Polish Emperors were tasked with balancing powerful slzachta against the German nobles - should they priortize domestic nobles to bolster the crown's manpower, or seek the support of German princes? Either way, we must tread carefully."
+ mr_poland.3.a: "Politics is a dangerous game..."
+ mr_poland.3.b: "Keep our friends close..."
+ 
 #mission misc
  mr_pol_against_pope_modifier: "Rule from Krakow"
  MR_CHRISTIANIZED_BALTICS: "Clerical Expansion into the Baltics"
  mr_pol_baltic_churches: "Baltic Churches"
  mr_pol_new_archbishopric: "Newly Established Archbishophirc"
+ mr_pol_fortified_east: "Eastern Fortifications"
  
  mr_archbishop_estonia_decision_title: "Found Archbishophric of Tallinn"
  mr_archbishop_estonia_decision_desc: "The network of churches in Estonia has grown large enough that a new ecclastical province must be established. That Papacy has sent clergymen to assist in administration; meanwhile we've been given taxation rights."
@@ -55,3 +74,9 @@
  
  mr_archbishop_prussia_decision_title: "Found Archbishophric of Twangste"
  mr_archbishop_prussia_decision_desc: "The network of churches in Prussia has grown large enough that a new ecclastical province must be established. That Papacy has sent clergymen to assist in administration; meanwhile we've been given taxation rights."
+ 
+ estate_nobles_mr_strong_szlachta: "Szlachta Primacy"
+ estate_nobles_mr_strong_szlachta_desc: "Granting the Szlachta greater influence is a two-sided blade: they wield more power, but we do as well."
+ 
+ estate_nobles_mr_balanced_szlachta: "Imperial Nobility"
+ estate_nobles_mr_balanced_szlachta_desc: "Balancing the interests of the Szlachta with the feudal German nobles can help with  our integration into the the Empire, and likewise, their integration into our court."
