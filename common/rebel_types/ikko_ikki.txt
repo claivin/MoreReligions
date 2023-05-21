@@ -139,7 +139,6 @@ ikko_ikki_rebels = {
 			}
 		}
 	}
-	}
 	
 	# Country scope
 	can_negotiate_trigger = {

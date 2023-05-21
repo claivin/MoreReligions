@@ -2199,13 +2199,14 @@ west_slavic = {
 			Stibor Bel Kollar Podmanický Hatnanský Pongrac Bosniak Veseléni Zichy Turzo Andráši
 			Zapolský Palfi Cáki Balaša Báthory
 		}
-	dynasty_names = {
-		Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
-		Poniatowski Radziwill Zamoyski Potocki Lubomirski 
-		Premyslovci Podebrad 
-		# CKII
-		"Jankovský z Vlašimi" Chotek Lichnowsky
-		"Kounic" "Vítkovec" "Zerotín" "Czernín" "von Harrach"
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+			Premyslovci Podebrad 
+			# CKII
+			"Jankovský z Vlašimi" Chotek Lichnowsky
+			"Kounic" "Vítkovec" "Zerotín" "Czernín" "von Harrach"
+		}
 	}
 	male_names = {
 		# BOHEMIAN 

@@ -73,7 +73,7 @@ cb_better_vassalize_mission_karma = {
 
 	prerequisites = {
 		uses_karma = yes
-		has_country_flag = { karma_final_neutral }
+		has_country_flag = karma_final_neutral
 		if = {
 			limit = {
 				ROOT = {

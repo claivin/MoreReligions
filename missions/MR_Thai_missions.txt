@@ -658,7 +658,10 @@ MR_MGT_2 = {
 				add_permanent_claim = ROOT
 			}
 			4398 = {
-				add_latest_building = [[fort]]
+				add_latest_building = {
+					fort = yes
+					builder = ROOT
+				}
 				add_province_modifier = {
 					name = gateway_shan_fort
 					duration = -1

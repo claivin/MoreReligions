@@ -196,7 +196,7 @@ cms_mission_fourth = {
 			
 		cms_popular_assembly = {
 			icon = mission_european_church
-			required_missions { cms_trinity_church cms_portuguese_cavaleiro cms_basque_investment }
+			required_missions = { cms_trinity_church cms_portuguese_cavaleiro cms_basque_investment }
 				position = 3
 				
 				trigger = {
