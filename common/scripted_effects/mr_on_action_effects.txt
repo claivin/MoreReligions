@@ -98,3 +98,31 @@ change_iberian_name_to_arabic_effect = {
 		override_country_name = MR_NAME_GRANADA
 	}
 }
+#Religious Schools:
+#Country Scope
+clear_religious_scholar_modifiers_effect = {
+	remove_country_modifier = hanafi_scholar_modifier
+	remove_country_modifier = hanbali_scholar_modifier
+	remove_country_modifier = maliki_scholar_modifier
+	remove_country_modifier = shafii_scholar_modifier
+	remove_country_modifier = ismaili_scholar_modifier
+	remove_country_modifier = jafari_scholar_modifier
+	remove_country_modifier = zaidi_scholar_modifier
+	remove_country_modifier = mr_bodhisattvayana_school_modifier
+	remove_country_modifier = mr_akanya_sutta_school_modifier
+	remove_country_modifier = mr_yogavacara_school_modifier
+	remove_country_modifier = mr_brahmin_school_modifier
+	remove_country_modifier = mr_mahavihara_school_modifier
+	remove_country_modifier = mr_shin_school_modifier
+	remove_country_modifier = mr_tendai_school_modifier
+	remove_country_modifier = mr_nichiren_school_modifier
+	remove_country_modifier = mr_zen_school_modifier
+	remove_country_modifier = mr_shingon_school_modifier
+	remove_country_modifier = mr_nyingma_school_modifier
+	remove_country_modifier = mr_gelug_school_modifier
+	remove_country_modifier = mr_karma_kagyu_school_modifier
+	remove_country_modifier = mr_drukpa_kagyu_school_modifier
+	remove_country_modifier = mr_drikung_kagyu_school_modifier
+	remove_country_modifier = mr_sakya_school_modifier
+	remove_country_modifier = mr_jonang_school_modifier
+}

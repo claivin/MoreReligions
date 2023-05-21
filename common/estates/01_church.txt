@@ -410,6 +410,13 @@ estate_church = {
 		estate_church_bishopric_of_courland
 		estate_church_bishopric_of_reval
 		estate_church_ilkhanate_dervish
+		estate_church_japanese_christian_communities_privilege
+		estate_church_development_of_temples
+		estate_church_expand_the_theology
+		estate_church_clerical_education
+		estate_church_religious_delegation
+		estate_church_institutionalized_clergy
+		estate_church_donation_right
 	}
 
 	agendas = {

@@ -6,7 +6,7 @@ shugo_dominance_mechanic = {
 	}
 
 	powers = {
-		shugo_dominance_mechanic = {
+		shugo_dominance_mechanic_power = {
 			gui = shugo_dominance_gov_mech
 			max = 100
 			reset_on_new_ruler = no

@@ -909,6 +909,7 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			clear_religious_scholar_modifiers_effect = yes
 		}
 		
 		harmonized_modifier = harmonized_mahayana
