@@ -751,16 +751,16 @@ fort_16th = {
 
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
-	}
-
-	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
-	on_obsolete = {
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
 			}
 			remove_province_modifier = estate_nobles_development_of_castles_mod
 		}
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings destroyed!
+	on_obsolete = {
 	}
 
 	onmap = yes
@@ -1968,7 +1968,7 @@ farm_estate = {
 		}
 	}
 	on_destroyed = {
-		add_dev_from_building = {
+		remove_development_from_building = {
 			building = manufactory 
 			type = production 
 			value = 1 

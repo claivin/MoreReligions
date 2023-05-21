@@ -1325,7 +1325,7 @@ latin = {
 
 iberian	= {
 	graphical_culture = westerngfx
-
+	
 	country = { }
 	province = { local_has_tercio = yes }
 	castillian = {
@@ -1669,7 +1669,6 @@ iberian	= {
 	
 french	= {
 	graphical_culture = westerngfx
-
 	cosmopolitan_french = {
 		primary = FRA
 		dynasty_names = {
