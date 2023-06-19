@@ -10,28 +10,251 @@ country_event = {
 	
 	major = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
-		
+		has_global_flag = mr_western_schism_pt1_flag
+		has_global_flag = mr_western_schism_pt2_flag
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		days = 1
+		#triggered by Pope dying after mr_catholic.3
+	}
+	
+	immediate = {
+		enable_religion = mr_antipapist
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = mr_supports_antipope
+				}
+				change_religion = mr_antipapist
+			}
+			if = { #if poland is center of antipapcy
+				limit = {
+					has_global_flag = mr_polish_papcy
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = poland_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						90 = { change_religion = mr_antipapist }
+						10 = { }
+					}
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								region = carpathia_region
+								region = north_german_region
+							}
+						}
+						religion = catholic
+					}
+					random_list = {
+						50 = { change_religion = mr_antipapist }
+						50 = {}
+					}
+				}
+			}
+			else_if = { #if france is
+				limit = {
+					has_global_flag = mr_french_papcy
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = france_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						90 = { change_religion = mr_antipapist }
+						10 = { }
+					}
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = low_countries_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						75 = { change_religion = mr_antipapist }
+						25 = {}
+					}
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = south_german_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						50 = { change_religion = mr_antipapist }
+						50 = {}
+					}
+				}
+			}
+			else_if = { #if germany is
+				limit = {
+					has_global_flag = mr_german_papcy
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								region = north_german_region
+								region = south_german_region
+							}
+							
+						}
+						religion = catholic
+					}
+					random_list = {
+						60 = { change_religion = mr_antipapist }
+						40 = { }
+					}
+				}
+			}
+			else_if = { #if britain is
+				limit = {
+					has_global_flag = mr_british_papcy
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = british_isles_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						90 = { change_religion = mr_antipapist }
+						10 = { }
+					}
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = scandinavia_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						80 = { change_religion = mr_antipapist }
+						20 = {}
+					}
+				}
+			}
+			else_if = { #if scandinavia is
+				limit = {
+					has_global_flag = mr_nordic_papcy
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = scandinavia_region
+						}
+						religion = catholic
+					}
+					change_religion = mr_antipapist
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = british_isles_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						75 = { change_religion = mr_antipapist }
+						25 = {}
+					}
+				}
+			}
+			else_if = { #if carpathia is
+				limit = {
+					has_global_flag = mr_carpathian_papcy
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = carpathia_region
+						}
+						religion = catholic
+					}
+					change_religion = mr_antipapist
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								region = south_german_region
+								region = poland_region
+							}
+						}
+						religion = catholic
+					}
+					random_list = {
+						75 = { change_religion = mr_antipapist }
+						25 = {}
+					}
+				}
+			}
+			else = {
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = iberia_region
+						}
+						religion = catholic
+					}
+					change_religion = mr_antipapist
+				}
+				every_country = {
+					limit = {
+						capital_scope = {
+							region = france_region
+						}
+						religion = catholic
+					}
+					random_list = {
+						75 = { change_religion = mr_antipapist }
+						25 = {}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = mr_catholic.1.a
+		
 	}
 }
 
 #Western Schism leadup
-#Cardinal Factionalism
+#Cardinal Factionalism - for pope
 country_event = {
 	id = mr_catholic.2
 	title = mr_catholic.2.t
 	desc = mr_catholic.2.d
 	picture = POPE_PREACHING_eventPicture
 
+	fire_only_once = yes
+	
 	trigger = {
 		tag = PAP
 		is_year = 1450
-		NOT = { has_country_flag = mr_western_schism_pt1_flag }
+		NOT = { has_global_flag = mr_western_schism_pt1_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -40,20 +263,15 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = mr_western_schism_pt1_flag
+			set_global_flag = mr_western_schism_pt1_flag
 		}
-		every_province = {
+		every_country = {
 			limit = {
-				has_cardinal = yes
-				owner = {
-					NOT = { tag = PAP }
-					NOT = { has_country_flag = mr_western_schism_pt1_flag }
-				}
+				NOT = { has_global_flag = mr_western_schism_pt1_flag }
+				num_of_cardinals = 1
 			}
-			owner = {
-				country_event = {
-					id = mr_catholic.2
-				}
+			country_event = {
+				id = mr_catholic.3
 			}
 		}
 	}
@@ -64,17 +282,39 @@ country_event = {
 	}
 }
 
-#Cardinal Factions Cement
+#Cardinal Factionalism - for everyone with cardinals
 country_event = {
 	id = mr_catholic.3
 	title = mr_catholic.3.t
 	desc = mr_catholic.3.d
 	picture = POPE_PREACHING_eventPicture
 	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mr_catholic.2
+	}
+	
+	mean_time_to_happen = { days = 1 }
+
+	option = { # for everyone else
+		name = mr_catholic.3.a
+		add_reform_desire = 0.001
+	}
+}
+
+#Cardinal Factions Cement - pope
+country_event = {
+	id = mr_catholic.4
+	title = mr_catholic.4.t
+	desc = mr_catholic.4.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	
 	trigger = {
 		tag = PAP
-		has_country_flag = mr_western_schism_pt1_flag
-		NOT = { has_country_flag = mr_western_schism_pt2_flag }
+		has_global_flag = mr_western_schism_pt1_flag
+		NOT = { has_global_flag = mr_western_schism_pt2_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -82,33 +322,348 @@ country_event = {
 	}
 	
 	immediate = {
-		set_country_flag = mr_western_schism_pt2_flag
+		hidden_effect = {
+			set_global_flag = mr_western_schism_pt2_flag
+		}
+		every_country = {
+			limit = {
+				num_of_cardinals = 1
+			}
+			random_list = {
+				50 = { set_country_flag = mr_supports_pope }
+				50 = { set_country_flag = mr_supports_antipope }
+			}
+			country_event = {
+				id = mr_catholic.6
+			}
+		}
+		PAP = {
+			set_ruler_flag = mr_after_this_pope_dies_start_schism
+		}
 	}
 	
 	option = {
-		name = mr_catholic.3.a
+		name = mr_catholic.4.a
 		#worrying
 	}
 }
 
-#Cardinals side with pope of choice
+#nobility side with antipope
 country_event = {
-	id = mr_catholic.4
-	title = mr_catholic.4.t
-	desc = mr_catholic.4.d
+	id = mr_catholic.5
+	title = mr_catholic.5.t
+	desc = mr_catholic.5.d
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		has_global_flag = mr_western_schism_pt1_flag
+		has_global_flag = mr_western_schism_pt2_flag
+		has_global_flag = mr_schism_geopolitics
+		NOT = { has_country_flag = mr_nobility_decided_schism_side }
+		religion = catholic
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		set_country_flag = mr_nobility_decided_schism_side
+	}
+	
+	option = { #support the noble choice
+		name = mr_catholic.5.a
+		ai_chance = { factor = 80 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		if = {
+			limit = {
+				event_target:mr_second_papacy = {
+					region_for_scope_province = {
+						type = all
+						is_capital_of = ROOT
+					}
+				}
+			}
+			set_country_flag = mr_supports_antipope
+		}
+	}
+	
+	option = { #do not support the noble choice
+		name = mr_catholic.5.b
+		ai_chance = { factor = 20 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+	}
+}
+
+#Cardinal Factions Cement - everyone else
+country_event = {
+	id = mr_catholic.6
+	title = mr_catholic.6.t
+	desc = {
+		trigger = { has_country_flag = mr_supports_pope }
+		desc = mr_catholic.6.da
+	}
+	desc = {
+		trigger = { has_country_flag = mr_supports_antipope }
+		desc = mr_catholic.6.db
+	}
 	picture = POPE_PREACHING_eventPicture
 	
 	is_triggered_only = yes
-	
 	trigger = {
 		#triggered by mr_catholic.3
 	}
 	
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #agree with supporting pope
+		name = mr_catholic.6.a
+		trigger = { has_country_flag = mr_supports_pope }
+		add_papal_influence = 15
+	}
+	option = { #disagree with supporting pope
+		name = mr_catholic.6.b
+		trigger = { has_country_flag = mr_supports_pope }
+		add_papal_influence = -100
+		custom_tooltip = mr_cardinal_expulsion_TT
+		hidden_effect = {
+			while = {
+				limit = {
+					any_owned_province = {
+						has_cardinal = yes
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_cardinal = yes
+					}
+					remove_cardinal = yes
+				}
+				random_neighbor_country = {
+					limit = {
+						NOT = { has_country_flag = mr_supports_antipope }
+					}
+					random_owned_province = {
+						add_cardinal = yes
+					}
+				}
+			}
+		}
+	}
+	option = { #agree with supporting antipope
+		name = mr_catholic.6.c
+		trigger = { has_country_flag = mr_supports_antipope }
+		add_reform_desire = 0.005
+	}
+	option = { #disagree with supporting antipope
+		name = mr_catholic.6.e
+		trigger = { has_country_flag = mr_supports_antipope }
+		add_papal_influence = 50
+		custom_tooltip = mr_cardinal_expulsion_TT
+		hidden_effect = {
+			while = {
+				limit = {
+					any_owned_province = {
+						has_cardinal = yes
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_cardinal = yes
+					}
+					remove_cardinal = yes
+				}
+				random_neighbor_country = {
+					limit = {
+						NOT = { has_country_flag = mr_supports_antipope }
+					}
+					random_owned_province = {
+						add_cardinal = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+#geopolitical position
+country_event = {
+	id = mr_catholic.7
+	title = mr_catholic.7.t
+	desc = mr_catholic.7.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		tag = PAP
+		has_global_flag = mr_western_schism_pt1_flag
+		has_global_flag = mr_western_schism_pt2_flag
+		NOT = { has_global_flag = mr_schism_geopolitics }
+	}
+	
 	mean_time_to_happen = {
-		days = 1
+		months = 12
+	}
+	
+	immediate = {
+		set_global_flag = mr_schism_geopolitics
+		if = {
+			limit = {
+				POL = {
+					has_country_flag = mr_pol_against_pope
+				}
+			}
+			random_province = {
+				limit = {
+					region = poland_region
+					owned_by = POL
+				}
+			}
+			set_global_flag = mr_polish_papcy
+		}
+		else = {
+			random_list = {
+				30 = { #france and low countries
+					random_province = {
+						limit = {
+							OR = {
+								region = france_region
+								region = low_countries_region
+							}
+							religion = catholic
+							is_capital = no
+						}
+						set_global_flag = mr_french_papcy
+						save_global_event_target_as = mr_second_papacy
+					}
+				}
+				30 = { #germany
+					random_province = {
+						limit = {
+							OR = {
+								region = north_german_region
+								region = south_german_region
+							}
+							religion = catholic
+							is_capital = no
+						}
+						set_global_flag = mr_german_papcy
+						save_global_event_target_as = mr_second_papacy
+					}
+				}
+				10 = { #scandinavia
+					random_province = {
+						limit = {
+							region = scandinavia_region
+							religion = catholic
+							is_capital = no
+						}
+						set_global_flag = mr_nordic_papcy
+						save_global_event_target_as = mr_second_papacy
+					}
+				}
+				20 = { #england
+					random_province = {
+						limit = {
+							region = british_isles_region
+							religion = catholic
+							is_capital = no
+						}
+						set_global_flag = mr_british_papcy
+						save_global_event_target_as = mr_second_papacy
+					}
+				}
+				5 = { #carpathia
+					random_province = {
+						limit = {
+							region = carpathia_region
+							religion = catholic
+							is_capital = no
+						}
+						set_global_flag = mr_carpathian_papcy
+						save_global_event_target_as = mr_second_papacy
+					}
+				}
+				5 = { #iberia
+					random_province = {
+						limit = {
+							region = iberia_region
+							religion = catholic
+							is_capital = no
+						}
+						set_global_flag = mr_iberian_papcy
+						save_global_event_target_as = mr_second_papacy
+					}
+				}
+			}
+		}
 	}
 	
 	option = {
-		
+		name = mr_catholic.7.a
+		#Far from italy, I see...
+	}
+	
+	after = {
+		event_target:mr_second_papacy = {
+			owner = {
+				country_event = {
+					id = mr_catholic.8
+				}
+			}
+		}
+	}
+}
+
+#tells the country that owns the defecting bishop
+country_event = {
+	id = mr_catholic.8
+	title = mr_catholic.8.t
+	desc = mr_catholic.8.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mr_catholic.7
+	}
+	
+	option = { #support him
+		name = mr_catholic.8.a
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 25
+		}
+		add_opinion = {
+			who = PAP
+			modifier = mr_supported_defecting_bishop
+		}
+	}
+	
+	option = { #condemn him
+		name = mr_catholic.8.b
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = MR_CONDEMENED_BISHOP
+			influence = -15
+			duration = 9125
+		}
+		add_papal_influence = 25
+		event_target:mr_second_papacy = {
+			add_local_autonomy = 75
+			add_base_tax = -1
+			if = {
+				limit = {
+					has_building = temple
+				}
+				remove_building = temple
+			}
+		}
 	}
 }

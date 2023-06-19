@@ -209,6 +209,7 @@ country_event = {
 		custom_tooltip = shinbutsu_events.shinto.tt
 		custom_tooltip = kill_mahayana_TT
 		set_country_flag = kill_mahayana_flag
+		custom_tooltip = shinbutsu_events.5_tt
 		add_incident_variable_value = {
 			incident = incident_enryaku
 			value = 1
@@ -218,6 +219,7 @@ country_event = {
 	option = {
 		name = "shinbutsu_events.5.b" #Take control - be gentle.
 		custom_tooltip = shinbutsu_events.buddhist.tt
+		custom_tooltip = shinbutsu_events.5_tt
 		add_incident_variable_value = {
 			incident = incident_enryaku
 			value = -1
@@ -263,10 +265,20 @@ country_event = {
 			duration = 18250
 		}
 		set_country_flag = raid_begun_hiei
+		if = { 
+			limit = { 
+				has_country_flag = kill_mahayana_flag 
+			} 
+			add_great_project_tier = {
+				type = imperial_city_kyoto
+				tier = -1
+			}
+		}
 		country_event = {
 			id = shinbutsu_events.7
 			days = 100
 		}
+		
 	}
 	
 	option = {
@@ -280,10 +292,20 @@ country_event = {
 			duration = 18250
 		}
 		set_country_flag = raid_begun_hiei
+		if = { 
+			limit = { 
+				has_country_flag = kill_mahayana_flag 
+			} 
+			add_great_project_tier = {
+				type = imperial_city_kyoto
+				tier = -1
+			}
+		}
 		country_event = {
 			id = shinbutsu_events.7
 			days = 100
 		}
+		
 	}
 	
 	option = {
@@ -300,10 +322,20 @@ country_event = {
 			duration = 18250
 		}
 		set_country_flag = raid_begun_hiei
+		if = { 
+			limit = { 
+				has_country_flag = kill_mahayana_flag 
+			} 
+			add_great_project_tier = {
+				type = imperial_city_kyoto
+				tier = -1
+			}
+		}
 		country_event = {
 			id = shinbutsu_events.7
 			days = 100
 		}
+		
 	}
 	
 	option = {
@@ -317,10 +349,20 @@ country_event = {
 			duration = 18250
 		}
 		set_country_flag = raid_begun_hiei
+		if = { 
+			limit = { 
+				has_country_flag = kill_mahayana_flag 
+			} 
+			add_great_project_tier = {
+				type = imperial_city_kyoto
+				tier = -1
+			}
+		}
 		country_event = {
 			id = shinbutsu_events.7
 			days = 100
 		}
+		
 	}
 }
 #End of the Conflict

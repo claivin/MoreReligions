@@ -33,9 +33,10 @@
  shinbutsu_events.4.b: "We shall let the Sangha decide among themselves - we shall force both sides to stand down!"
  
  shinbutsu_events.5.t: "The Siege of Hiei"
- shinbutsu_events.5.d: "As troops gathered around Mt. Hiei, something unexpected happened. Instead of a protracted Siege, the Monks came rushing out of the mountain, armed and ready to fight! Not only that, local mercenary groups had joined forces with the Sohei, and had raised a sizable host to protect the mountain. Our forces were driven back as the fighting intensified, and soon, the Monks had effectively taken control over the city of Kyoto, seizing the gates and shutting them behind them. The envisioned skirmish has become a battle, and to win it we must not only take the mountain but reclaim the city for our Emperor!\n\n§YTo complete the incident, you must retake Kyoto. However, if you fail to regain Kyoto and lose several more provinces, you will instead break to the will of the Tendai Monks.§!"
+ shinbutsu_events.5.d: "As troops gathered around Mt. Hiei, something unexpected happened. Instead of a protracted Siege, the Monks came rushing out of the mountain, armed and ready to fight! Not only that, local mercenary groups had joined forces with the Sohei, and had raised a sizable host to protect the mountain. Our forces were driven back as the fighting intensified, and soon, the Monks had effectively taken control over the city of Kyoto, seizing the gates and shutting them behind them. The envisioned skirmish has become a battle, and to win it we must not only take the mountain but reclaim the city for our Emperor! 
  shinbutsu_events.5.a: "They shall pay for their insolence! We shall turn their temples to ash!"
- kill_mahayana_TT: "This will give §R35§! §Ydevestation§! to §YKyoto§! when we retake it!"
+ kill_mahayana_TT: "This will give §R35§! §Ydevestation§! to §YKyoto§! and lower the §TImperial City of Kyoto§! Great Project down by 1 tier when we retake it."
+ shinbutsu_events.5_tt: "\n§YTo complete the incident, you must retake Kyoto. However, if you fail to regain Kyoto and lose several more provinces, you will instead break to the will of the Tendai Monks.§!"
  shinbutsu_events.5.b: "Take the mountain, reclaim our city!"
  
  shinbutsu_events.6.t: "Aftermath of the Siege"
