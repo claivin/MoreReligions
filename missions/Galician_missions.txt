@@ -1,0 +1,279 @@
+gal_mission_first = {
+
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = GAL
+		}
+		has_country_shield = yes
+		
+		gal_rebellious_son = {
+			icon = mission_lusitanian_empire
+			required_missions = {}
+			position = 1
+			
+			trigger = {
+				OR = {
+					POR = {
+						is_rival = ROOT
+						}
+					POR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+									}
+							}
+					}
+				}	
+			effect = {
+				if = {
+					limit = {
+						POR = {
+							is_rival = ROOT
+						}
+					}
+					add_casus_belli = {
+						target = POR
+						type = cb_vassalize_mission
+						months = 24
+					}
+				}	
+				else = {
+					create_alliance = POR				
+				}	
+			}
+		}
+		gal_cement_our_independence = {
+			icon = mission_noble_council
+			required_missions = { gal_rebellious_son }
+			position = 2
+			
+			trigger = {
+				OR = {
+					GAL = {
+						is_rival = LON
+						}
+					GAL = {
+						is_rival = CAS
+						}
+					}
+			}
+			effect = {
+				if = {
+					limit = {
+						GAL = {
+							is_rival = LON
+						}
+					}	
+						CAS = {
+					add_historical_friend = GAL
+						}
+				}	
+					else_if = {
+						limit = {
+						GAL = { is_rival = CAS }
+						}	
+						LON = {
+						add_historical_friend = GAL
+						}
+					}
+			}
+		}
+}
+
+gal_mission_second = {
+
+	slot = 2
+	generic = no
+	ai = yes 
+	
+	potential = {
+		tag = GAL
+		}
+		has_country_shield = yes
+		
+		gal_papal_connection = {
+			icon = catholic_confraternity
+			required_missions {}
+			position = 1
+			
+			trigger = {
+				PAP = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+				}
+			}	
+			effect = {
+				206 = {
+					add_cardinal = yes }
+				add_papal_influence = 25
+			}
+		}
+		gal_renovate_santiago = {
+			icon = mission_european_church
+			required_missions { gal_papal_connection }
+			position = 2
+			
+			trigger = {
+				206 = {
+					owned_by = GAL
+					has_building = temple
+					}
+				}
+			effect = {
+				206 = {
+					remove_building = temple
+					add_building = cathedral 
+				}
+			}
+		}
+}	
+
+gal_mission_third = {
+	
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = GAL
+		}
+		has_country_shield = yes
+		
+		gal_burgo_economic_oversight = {
+			icon = mission_african_gold
+			required_missions {}
+			position = 1
+			
+			trigger = {
+				has_estate_privilege = estate_burghers_control_over_monetary_policy
+			}
+			effect = {
+				add_treasury = 200
+			}
+		}
+		gal_burgo_markets = {
+			icon = purely_for_commerce
+			required_missions { gal_burgo_economic_oversight }
+			position = 2
+			
+			trigger = {
+				206 = {
+					owned_by = GAL
+					has_building = marketplace
+				}
+			}
+			effect = {
+				206 = {
+					center_of_trade = 1
+				}
+			}
+		}
+}
+
+gal_mission_fourth = {
+
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = GAL
+		}
+		has_country_shield = yes
+		
+		gal_militia_exercises = {
+			icon = mission_hessian_jaeger_corps
+			required_missions {}
+			position = 1
+			
+			trigger = {
+				army_size_percentage = 1.0
+			}
+			effect = {
+				add_army_professionalism = 0.05
+			}
+		}
+		gal_sell_army_commision = {
+			icon = mission_plc_prevent_deluge
+			required_missions {gal_militia_exercises}
+			position = 2
+			
+			trigger = {
+				num_of_generals = 1
+			}
+			effect = {
+				create_advisor = army_reformer
+			}
+		}
+}		
+	
+gal_mission_fifth = {
+
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = GAL
+		}
+		has_country_shield = yes
+		
+		gal_autonomous_communities = {
+			icon = mission_peasantry
+			required_missions {}
+			position = 1
+			
+			trigger = {
+				206 = {
+					development = 10
+					}
+				4554 = {
+					development = 10
+					}
+				4555 = {
+					development = 10
+					}
+				4558 = {
+					development = 10
+					}
+			}
+			effect = {
+				add_casus_belli = {
+				target = CMS
+				type = cb_vassalize_mission
+						months = 24
+				}
+			}
+			
+		}
+		gal_la_coruna = {
+			icon = mission_guilds_of_barcelona
+			required_missions {gal_autonomous_communities}
+			position = 2
+			
+			trigger = {
+				206 = {
+					development = 30
+				}
+			}
+			effect = {
+				add_stability = 1
+				add_prestige = 30
+				}
+		}
+		gal_pilgrim_trap = {
+			icon = mission_sell_indulgences
+			required_missions {gal_la_coruna gal_sell_army_commision gal_burgo_markets gal_renovate_santiago gal_cement_our_independence}
+			position = 3
+			
+			trigger = {}
+			effect = {
+				add_government_reform = merchant_theocracy_reform
+				}
+		}
+}	
