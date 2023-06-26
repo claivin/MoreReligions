@@ -281,4 +281,19 @@
  MR_siam_flavor.1.b: "We shall follow the advice of both the Sangha and Nobility"
  MR_siam_flavor.1.c: "We shall follow the advice and goals of the Nobility"
  
+ #Couto Misto Missions#
+ cms_harvest_season_title: "Harvest Season"
+ cms_harvest_season_desc: "Autumn is coming to an end, and with it the villagers bring the bounty of our free land into both their pantries and into the communal stockpile. There's a chill in the air though. A small thought, an instinct seems to have overtaken all of us and our Juiz ponders...soon enough everything will change, and we must be ready for whatever fate has in store. For now though we celebrate and party to this years hardwork. Saude!"
+ cms_trinity_church_title: "The opening of Trinity Church"
+ cms_trinity_church_desc: "For years we lacked a central church, but that has come to an end. Thanks to donations and volunteering from Mistelos, the aptly named Igreja da Trindade has been opened. This new structure will fullfill the spiritual needs of our peasantry. As well as serving as a rallying point and public spot for other communal uses, if need be. "
+ cms_militia_commander_title: "Elect a Militia Commander"
+ cms_militia_commander_desc: "Altough every peasant in couto misto is highly encouraged to own weapons and defend their own land and homes, we are in dire need of military leadership of some sort. The time has come for the peasants to come together and elect one of us to become field commander and lead the peasantry against any who dares to oppress us."
+ cms_portuguese_cavaleiro_title: "Invite a Cavaleiro"
+ cms_portuguese_cavaleiro_desc: "Portugal has made great advancements in war, and none is as impressive as their Cavaleiros. We'll invite one to come to Couto Misto and teach us, so that we might improve our militia. Only issue will be stopping the peasants from throwing rocks and insults at the noble born cavaleiro. Maybe offer a ham to each family as long as they swear to behave themselves...yes that works. Who doesn't like ham? "
+ cms_peasant_family_connections_title: "Extended Peasant Ties"
+ cms_peasant_family_connections_desc: "It's no secret that peasant families are often quite large. Being so large means that many of our own families have ties, either of blood or marriage, to other peasant families and groups spread across northwestern Iberia. We should make use of these ties to better assert our independence and spread our way of life."
+ cms_basque_investment_title: "Basque Investments"
+ cms_basque_investment_desc: "No realm in Iberia has become as rich as that of Navarra. The basque people are overflowing with gold, either from their goods production or from the rising profits of whaling. We could never compete with them economically, but perhaps we could strike a deal with a independent minded merchant. Guns and weapons from couto misto in exchange for a steady supply of iron, perhaps?"
+ cms_popular_assembly_title: "The 313th Assembly"
+ cms_popular_assembly_desc: "The time has come to convene the yearly Assembly of Couto Misto. It is when every peasant in our realm gathers together, and through popular voting we decide the focus of our resources. This year however will be special, we'll gather all of the peasantry inside the Trinity Church. Our Juiz will seat in a raised platform at the center of the church, moderating the debates and counting the votes, while below and surrounding him in a circle, will be the entire peasantry. In the house of the lord, we shall be respectful of one another and walk together in unity towards liberation."
  
