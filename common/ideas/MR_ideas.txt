@@ -962,10 +962,6 @@ AIR_ideas = {
 	}
 	mines_of_takedda = {
 		global_trade_goods_size_modifier = 0.1 
-			  
-							
-				 
-				 
 	}
 	blue_people = { 
 		same_culture_advisor_cost = -0.15
