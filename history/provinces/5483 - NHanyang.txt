@@ -1,0 +1,23 @@
+# 5483 - Hanyang
+
+owner = GSC
+controller = GSC
+add_core = GSC
+culture = hubei
+religion = confucianism
+capital = "Hanyang"
+trade_goods = cloth
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 3
+is_city = yes
+add_core = CXI
+add_core = CHC
+
+
+
+discovered_by = chinese
+discovered_by = nomad_group
+
+1444.11.12 = { trade_goods = unknown }

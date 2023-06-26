@@ -1,0 +1,18 @@
+#5480 - Hezhou
+
+owner = GHC
+controller = GHC
+add_core = GHC
+culture = jianghuai
+religion = mahayana
+capital = "Hezhou"
+trade_goods = grain
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1444.11.12 = { trade_goods = unknown }

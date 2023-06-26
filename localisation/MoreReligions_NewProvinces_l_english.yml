@@ -1380,6 +1380,18 @@
  PROV5476: "Zhangde"
  PROV5477: "Ruzhou"
  PROV5478: "Huangchuan"
+ PROV5479: "Chuzhou"
+ PROV5480: "Hezhou"
+ PROV5481: "Taiping"
+ PROV5482: "Chizhou"
+ PROV5483: "Hanyang"
+ PROV5484: "De'an"
+ PROV5485: "Mianyang"
+ PROV5486: "Anlu"
+ PROV5487: "Yunyang"
+
+
+
  
  PROV_ADJ5447: "Korchak"
  PROV_ADJ5448: "Gotsuk"
@@ -1413,9 +1425,19 @@
  PROV_ADJ5476: "Zhangde"
  PROV_ADJ5477: "Ruzhou"
  PROV_ADJ5478: "Huangchuan"
+ PROV_ADJ5479: "Chuzhou"
+ PROV_ADJ5480: "Hezhou"
+ PROV_ADJ5481: "Taiping"
+ PROV_ADJ5482: "Chizhou"
+ PROV_ADJ5483: "Hanyang"
+ PROV_ADJ5484: "De'an"
+ PROV_ADJ5485: "Mianyang"
+ PROV_ADJ5486: "Anlu"
+ PROV_ADJ5487: "Yunyang"
  
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"
  north_zhejiang_area: "North Zhejiang"
  south_zhejiang_area: "South Zhejiang"
  west_kham_area: "West Kham"
+ north_hubei_area: "North Hubei"

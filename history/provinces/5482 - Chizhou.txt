@@ -1,0 +1,18 @@
+#5482 - Chizhou
+
+owner = GSC
+controller = GSC
+add_core = GSC
+culture = jianghuai
+religion = mr_maitreya
+capital = "Chizhou"
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 2
+base_manpower = 2
+is_city = yes
+discovered_by = chinese
+discovered_by = nomad_group
+
+1444.11.12 = { trade_goods = unknown }

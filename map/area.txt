@@ -2957,11 +2957,11 @@ south_jiangsu_area = { #4
 }
 
 anhui_area = { #3 (North Anhui)
-	1838 2143 2144
+	1838 2143 2144 5479 5480
 }
 
 south_anhui_area = { #3
-	686 2146 2147
+	686 2146 2147 5481 5482
 }
 
 north_zhejiang_area = { #5
@@ -3024,8 +3024,12 @@ chuanbei_area = { #3
 	2169 2170 4211
 }
 
-huguang_area = { #5 (Hubei)
-	681 682 2171 2172 4197
+huguang_area = { #5 (Southern Hubei)
+	681 682 2172 5483 5485
+}
+
+north_hubei_area = {
+	5487 2171 5484 5486 4197
 }
 
 hunan_area = { #4

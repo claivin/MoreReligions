@@ -155,6 +155,13 @@ categories =  {
 			5476 #Zhangde
 			5477 #Ruzhou
 			5478 #Huangchuan
+			5479 #Chuzhou
+			5480 #Hezhou
+			5481 #Taiping
+			5483 #Hanyang
+			5484 #De'an
+			5485 #Mianyang
+			5486 #Anlu
 		}		
 	}
 	
@@ -266,7 +273,7 @@ categories =  {
 			5314 5315 #mr_caucaus
 			5334 5335
 			5440 #mr_hungary
-			5471 5472 #MR China
+			5471 5472 5482 5487 #MR China
 		}
 	}
 
