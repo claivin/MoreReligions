@@ -574,8 +574,7 @@ MR_thai_princedom = {
 		is_subject = no
 		culture_group = thai_group
 	}
-}
-	
+}	
 		
 	
 	

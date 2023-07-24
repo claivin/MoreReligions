@@ -1,0 +1,123 @@
+sicilian_ambitions = {
+	ae_impact = -0.10 
+	naval_morale = 0.1 
+}
+reclamation_of_mainland = {
+	local_development_cost = -0.15
+	local_governing_cost = -0.25 
+}
+palazzo_dei_normanni = {
+	local_prosperity_growth = 0.25
+	allowed_num_of_manufactories = 1 
+	local_state_maintenance_modifier = -0.25 
+}
+royal_court_sic = {
+	advisor_cost = -0.20
+	prestige_decay = -0.01
+}
+neapolitan_acceptance = {
+	local_years_of_nationalism = -10
+	local_governing_cost = -0.10
+}
+renewed_crusade_sic = {
+	global_heathen_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.1 
+}
+sic_sea_war = {
+	galley_power = 0.10
+	sailors_recovery_speed = 0.15
+}
+norman_invasion_fleet = {
+	regiment_disembark_speed = 0.33
+	leader_naval_fire = 1 
+	max_flagships = 1 
+}
+rebuilding_jerba = {
+	local_defensiveness = 0.25
+	local_center_of_trade_upgrade_cost = -0.50
+	local_build_cost = -0.15
+}
+zayyanid_campaign = {
+	movement_speed = 0.05
+	infantry_power = 0.10
+}
+conquest_of_maghreb = {
+	core_creation = -0.15
+}
+africa_road_network = {
+	local_friendly_movement_speed = 0.15
+	supply_limit_modifier = 0.33
+}
+jerba_trade_domination = {
+	trade_goods_size_modifier = 0.25 
+	local_tax_modifier = 0.15
+	allowed_num_of_manufactories = 1 
+}
+crusader_state_SIC = {
+	missionaries = 1
+	global_missionary_strength = 0.03 
+}
+alexandria_port = {
+	province_trade_power_value = 10
+}
+on_our_own_CMS = {
+	land_morale = 0.10
+	defensiveness = 0.10
+	diplomatic_reputation = 2
+}
+italian_unification_war_SIC = {
+	province_warscore_cost = -0.20
+	land_morale = 0.10
+}
+trade_hubs_florence = {
+	local_center_of_trade_upgrade_cost = -0.33
+	province_trade_power_modifier = 0.1 
+}
+romagnol_vineyards = {
+	build_cost = -0.10
+	local_tax_modifier = 0.15 
+}
+venetian_conquest = {
+	global_ship_trade_power = 0.2 
+	merchants = 1
+}
+saluzzo_mines_SIC = {
+	local_development_cost = -0.25
+	local_production_efficiency = 0.15
+}
+shipyard_genoa_SIC = {
+	ship_recruit_speed = -0.20
+	local_ship_cost = -0.2 
+}
+heir_to_caeser = {
+	all_power_cost = -0.05
+	army_tradition_decay = -0.01
+}
+sicilian_development = {
+	local_development_cost = -0.25
+}
+modernized_italy_TT = {
+	development_cost_modifier = -0.10
+}
+expansion_of_the_south = {
+	allowed_num_of_buildings = 1 
+	trade_goods_size_modifier = 0.10
+	local_prosperity_growth = 0.15
+}
+purging_of_heretics_SIC = {
+	global_heretic_missionary_strength = 0.03 
+	tolerance_heretic = -3
+	papal_influence = 0.5
+}
+servant_of_the_church = {
+	curia_powers_cost = -0.25
+	tolerance_own = 2
+}
+papal_resistance_SIC = {
+	local_religious_conversion_resistance = 1
+	defensiveness = 0.15
+}
+fraticelli_expansion = {
+	monthly_fervor_increase = 2
+	tolerance_own = 1 
+}

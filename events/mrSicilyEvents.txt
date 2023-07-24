@@ -1,0 +1,169 @@
+namespace = MR_sicily_flavor
+country_event = {
+	id = MR_sicily_flavor.1
+	title = MR_sicily_flavor.1.t
+	desc = MR_sicily_flavor.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_sicily_flavor.1.a
+		trigger = {
+			NOT = {
+				exists = AFR
+			}
+		}
+		ai_chance = { factor = 9 }
+		hidden_effect = {
+			tunisia_area = {
+				type = all
+				add_core = AFR
+			}
+			release = AFR
+			AFR = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = ROOT
+				add_accepted_culture = tunisian
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+		}
+		create_subject = {
+			subject_type = personal_union
+			who = AFR
+		}
+		add_country_modifier = {
+			name = renewed_crusade_sic
+			duration = 3650
+		}
+		djerba_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	option = {
+		name = MR_sicily_flavor.1.b
+		trigger = {
+			AFR = {
+				is_subject_of = ROOT
+			}
+		}
+		ai_chance = { factor = 9 }
+		create_union = AFR
+		add_country_modifier = {
+			name = renewed_crusade_sic
+			duration = 3650
+		}
+		djerba_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	option = {
+		name = MR_sicily_flavor.1.c
+		trigger = {
+			exists = AFR
+			AFR = {
+				NOT = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		ai_chance = { factor = 9 }
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			months = 300
+			target = AFR
+		}
+		add_country_modifier = {
+			name = renewed_crusade_sic
+			duration = 3650
+		}
+		djerba_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	option = {
+		name = MR_sicily_flavor.1.e 
+		add_adm_power = 100
+		add_dip_power = 100
+		add_country_modifier = {
+			name = renewed_crusade_sic
+			duration = 3650
+		}
+		djerba_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+country_event = {
+	id = MR_sicily_flavor.2
+	title = MR_sicily_flavor.2.t
+	desc = MR_sicily_flavor.2.d
+	picture = RELIGION_eventPicture
+	
+	option = {
+		name = MR_sicily_flavor.2.a
+		add_country_modifier = {
+			name = purging_of_heretics_SIC
+			duration = 3650
+		}
+		hidden_effect = {
+			set_country_flag = sic_frat_1
+		}
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = MR_sicily_flavor.2.b
+		change_religion = mr_fraticelli
+		set_ruler_religion = mr_fraticelli
+		set_heir_religion = mr_fraticelli
+		add_stability = -2
+		add_prestige = -50
+		add_country_modifier = {
+			name = "conversion_zeal"
+			duration = 3650
+		}
+		hidden_effect = {
+			remove_country_modifier = counter_reformation
+			remove_country_modifier = the_statue_in_restraint_of_appeals
+			remove_country_modifier = revocation_of_restraint_of_appeals
+			remove_country_modifier = bavarian_jesuits
+			remove_country_modifier = the_societas_jesu
+			remove_country_modifier = the_declaration_of_indulgence
+			remove_country_modifier = de_heretico_comburendo
+			remove_country_modifier = the_conventicle_act
+			set_country_flag = sic_frat_2
+		}
+		swap_non_generic_missions = yes 
+		
+	}
+}
+			
+			
+	

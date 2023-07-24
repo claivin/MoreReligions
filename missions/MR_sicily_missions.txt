@@ -1,0 +1,1629 @@
+mr_sicily_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+	}
+	mr_sicily_island_1 = {
+		icon = crusader_fleet
+		required_missions = { mr_sicily_conquest_1 }
+		position = 2
+		provinces_to_highlight = {
+			area = corsica_sardinia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = sic_sea_war
+				duration = 5475
+			}
+			corsica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_island_2 = {
+		icon = adriatic_access
+		required_missions = { mr_sicily_island_1 }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = corsica_area
+				area = baleares_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			corsica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baleares_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			125 = {
+				create_flagship = {    
+					name = "Normanni"
+					type = heavy_ship
+				}
+			}
+			add_country_modifier = {
+				name = norman_invasion_fleet
+				duration = -1
+			}
+		}
+    }
+	mr_sicily_africa_3 = {
+		icon = mission_control_the_barbary_coast
+		position = 5
+		required_missions = { mr_sicily_africa_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = kabylia_area
+				area = barbary_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kabylia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			barbary_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = zayyanid_campaign
+				duration = 7300
+			}
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hautes_plaines_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2458 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = if_africa_TT
+			tooltip = {
+				kabylia_area = {
+					type = all
+					add_core = AFR
+				}
+				barbary_coast_area = {
+					type = all
+					add_core = AFR
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						AFR = {
+							is_subject_of_type_with_overlord = { who = ROOT type = personal_union }
+						}
+					}
+					kabylia_area = {
+						type = all
+						add_core = AFR
+					}
+					barbary_coast_area = {
+						type = all
+						add_core = AFR
+					}
+				}
+			}			
+		}
+	}
+	mr_sicily_africa_4 = {
+		icon = mission_unite_home_region
+		position = 6
+		required_missions = { mr_sicily_africa_3 }
+		provinces_to_highlight {
+			OR = {
+				area = algiers_area
+				area = northern_morocco_area
+				area = hautes_plaines_area
+				province_id = 2458
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			algiers_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hautes_plaines_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2358 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = conquest_of_maghreb
+				duration = 7300
+			}
+			maghreb_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_africa_7 = {
+		icon = mission_arabian_fort 
+		required_missions = { mr_sicily_africa_6  mr_sicily_africa_4 }
+		position = 7
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 50
+				religion = ROOT
+				region = maghreb_region
+			}
+		}
+		effect = {
+			add_mil_power = 150
+			add_country_modifier = {
+				name = crusader_state_SIC
+				duration = 18250
+			}
+		}
+	}
+}
+mr_sicily_missions_branching_1 = {
+	slot = 1
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sic_frat_1
+				has_country_flag = sic_frat_2
+			}
+		}
+	}
+	mr_sicily_branching_3 = {
+		icon = mission_unknown_mission
+		position = 8
+		required_missions = { mr_sicily_religion_1 }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_sicily_branching_4 = {
+		icon = mission_unknown_mission
+		position = 9
+		required_missions = { mr_sicily_branching_3 }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+}
+mr_sicily_missions_religion_c = {
+	slot = 1
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+		has_country_flag = sic_frat_1
+	}
+	mr_sicily_religion_4a = {
+		icon = xxx
+		position = 8
+		required_missions = { mr_sicily_religion_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
+				area = lazio_area
+			}
+			NOT = { religion = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = naples_religion_TT
+				naples_area = {
+					religion = ROOT
+					type = all
+				}
+				calabria_area = {
+					religion = ROOT
+					type = all
+				}
+				apulia_area = {
+					religion = ROOT
+					type = all
+				}
+				lazio_area = {
+					religion = ROOT
+					type = all
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = no_occupation_of_rome
+			add_stability = 1
+		}
+	}
+	mr_sicily_religion_4b = {
+		icon = xxx
+		position = 9
+		required_missions = { mr_sicily_religion_4a }
+		trigger = {
+			NOT = { 
+				OR = {
+					current_age = age_of_discovery 
+					current_age = age_of_reformation
+				}
+			}
+			is_defender_of_faith = yes
+			religion = catholic
+		}
+		effect = {
+		}	
+	}
+}	
+mr_sicily_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+	}
+	mr_sicily_conquest_1 = {
+		icon = mission_italian_condottiere
+		required_missions = { }
+		position = 1
+		trigger = {
+			navy_size_percentage = 1
+			manpower_percentage = 0.85
+		}
+		effect = {
+			add_country_modifier = {
+				name = sicilian_ambitions
+				duration = 7300
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_africa_1 = {
+		icon = africa_proconsulare
+		required_missions = { mr_sicily_conquest_1 }
+		position = 2
+		provinces_to_highlight = {
+			area = tunisia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = MR_sicily_flavor.1
+			}
+			custom_tooltip = sicily_flavor.1_insight
+		}
+	}
+	mr_sicily_africa_2 = {
+		icon = mission_control_the_barbary_coast
+		required_missions = { mr_sicily_africa_1 }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = tunisia_area
+				area = djerba_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT religion = ROOT }
+		}
+		trigger = {
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root 
+			}
+			djerba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			2954 = {
+				add_province_modifier = {
+					name = rebuilding_jerba
+					duration = -1
+				}
+			}
+			tripolitania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cyrenaica_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabylia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			barbary_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = if_africa_TT
+			tooltip = {
+				djerba_area = {
+					type = all
+					add_core = AFR
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						AFR = {
+							is_subject_of_type_with_overlord = { who = ROOT type = personal_union }
+						}
+					}
+					djerba_area = {
+						type = all
+						add_core = AFR
+					}
+				}
+			}
+		}
+	}
+	mr_sicily_africa_6 = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { mr_sicily_africa_2 }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 2954
+			NOT = {
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
+				base_tax = 10
+				base_production = 10
+			}
+		}
+		trigger = {
+			2954 = {
+				has_production_building_trigger = yes
+				base_production = 10
+				province_has_center_of_trade_of_level = 2 
+			}
+			341 = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			2954 = {
+				change_trade_goods = cloth
+				add_province_modifier = {
+					name = jerba_trade_domination
+					duration = -1
+				}
+				add_center_of_trade_level = 1
+			}
+		}
+	}	
+	mr_sicily_religion_1 = {
+		icon = mission_religious
+		required_missions = { }
+		position = 7
+		trigger = {
+			OR = {
+				AND = {
+					inquisitor = 1
+					papal_influence = 25
+				}
+				stability = 2
+			}
+		}
+		effect = {
+			country_event = {
+				id = MR_sicily_flavor.2
+				custom_tooltip = sicily_flavor.2_insight
+			}
+		}
+	}	
+}
+mr_sicily_missions_branching_2 = {
+	slot = 2
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+		NOT = {
+			OR = {
+				has_country_flag = sic_frat_1
+				has_country_flag = sic_frat_2
+			}
+		}
+	}
+	mr_sicily_branching_1 = {
+		icon = mission_unknown_mission
+		position = 8
+		required_missions = { mr_sicily_religion_1 }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_sicily_branching_2 = {
+		icon = mission_unknown_mission
+		position = 9
+		required_missions = { mr_sicily_branching_1 }
+		trigger = { 
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+}
+mr_sicily_missions_religion_a = {
+	slot = 2
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+		has_country_flag = sic_frat_1
+	}
+	mr_sicily_religion_2a = {
+		icon = xxx
+		position = 8 
+		required_missions = { mr_sicily_religion_1 }
+		trigger = {
+			religious_unity = 1
+		}
+		effect = {
+			add_papal_influence = 25
+			125 = {
+				add_province_modifier = {
+					name = papal_resistance_SIC
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_sicily_religion_3a = {
+		icon = xxx
+		position = 9
+		required_missions = { mr_sicily_religion_2a }
+		trigger = {
+			is_papal_controller = yes
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = servant_of_the_church
+				duration = 7300
+			}
+			add_curia_treasury = 50
+		}
+	}
+}
+mr_sicily_missions_religion_b = {
+	slot = 2
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+		has_country_flag = sic_frat_2
+	}
+	mr_sicily_religion_2b = {
+		icon = xxx
+		position = 8 
+		required_missions = { mr_sicily_religion_1 }
+		trigger = {
+			religious_unity = 1
+		}
+		effect = {
+			add_fervor = 50
+			125 = {
+				if = {
+					limit = { ROOT = { adm_tech = 19 } }
+					add_building = cathedral
+				}
+				else = {
+					add_building = temple
+				}
+			}
+		}
+	}
+	mr_sicily_religion_3b = {
+		icon = xxx
+		position = 9
+		required_missions = { mr_sicily_religion_2b }
+		trigger = {
+			fervor = 100
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fraticelli_expansion
+				duration = 7300
+			}
+		}
+	}
+}
+mr_sicily_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+	}
+	mr_sicily_conquest_2 = {
+		icon = claim_the_borderlands
+		required_missions = { mr_sicily_conquest_1 }
+		position = 2
+		provinces_to_highlight = {
+			area = calabria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_yearly_manpower = 0.75
+			custom_tooltip = invade_by_1455_tt
+			tooltip = {
+					calabria_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+						}
+						add_core = ROOT
+					}
+					apulia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+						}
+						add_core = ROOT
+					}
+					naples_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+						}
+						add_core = ROOT
+					}
+			}
+			
+			custom_tooltip = not_invade_by_1455_tt
+				tooltip = {
+					apulia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					naples_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { year = 1456 }
+					}
+					calabria_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+						}
+						add_core = ROOT
+					}
+					apulia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+						}
+						add_core = ROOT
+					}
+					naples_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+						}
+						add_core = ROOT
+					}
+				}
+				else = {
+					apulia_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+					naples_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}		
+			}
+		}
+	}
+	mr_sicily_conquest_3 = {
+		icon = king_of_naples
+		position = 3
+		required_missions = { mr_sicily_conquest_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = apulia_area
+				area = naples_area
+			}
+			NOT =  { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			121 = {
+				add_province_modifier = {
+					name = reclamation_of_mainland
+					duration = -1
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+	mr_sicily_africa_5 = {
+		icon = mission_conquer_tunisia
+		required_missions = { mr_sicily_africa_2 }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = tripolitania_area
+				area = cyrenaica_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tripolitania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cyrenaica_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tripolitania_area = {
+				type = all
+				add_province_modifier = {
+					name = africa_road_network
+					duration = -1
+				}
+			}
+			cyrenaica_area = {
+				type = all
+				add_province_modifier = {
+					name = africa_road_network
+					duration = -1
+				}
+			}
+			delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bahari_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vostani_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = if_africa_TT
+			tooltip = {
+				tripolitania_area = {
+					type = all
+					add_core = AFR
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						AFR = {
+							is_subject_of_type_with_overlord = { who = ROOT type = personal_union }
+						}
+					}
+					tripolitania_area = {
+						type = all
+						add_core = AFR
+					}
+				}
+			}
+		}
+	}
+	mr_sicily_africa_8 = {
+		icon = mission_egyptian_mamluk_soldier
+		position = 6
+		required_missions = { mr_sicily_africa_5 }
+		provinces_to_highlight = {
+			OR = {	
+				area = delta_area
+				area = bahari_area
+				area = vostani_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			delta_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bahari_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			vostani_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			add_years_of_income = 3
+			358 = {
+				add_province_modifier = {
+					name = alexandria_port
+					duration = -1
+				}
+			}
+			red_sea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palestine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_africa_9 = {
+		icon = mission_bedouins
+		position = 7
+		required_missions = { mr_sicily_africa_8 }
+		provinces_to_highlight = {
+			OR = {
+				area = red_sea_area
+				area = palestine_area
+			}
+		}
+		trigger = {
+			red_sea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			palestine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			379 = {
+				add_great_project_tier = {
+					type = holy_city_jerusalem
+					tier = 2
+				}
+			}
+			syria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			cukurova_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_italy_3 = {
+		icon = italian_riches
+		position = 8
+		required_missions = { mr_sicily_italy_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = po_valley_area
+				area = lombardy_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			po_valley_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lombardy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			change_government_reform_progress = 100 
+			define_advisor = {
+				type = philosopher
+				discount = yes
+				culture = lombard
+				skill = 3
+			}
+			piedmont_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_italy_5 = {
+		icon = alpine_defenses
+		position = 9
+		required_missions = { mr_sicily_italy_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+				area = liguria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			4727 = {
+				add_province_modifier = {
+					name = saluzzo_mines_SIC
+					duration = -1
+				}
+			}
+			liguria_area = {
+				add_province_modifier = {
+					name = shipyard_genoa_SIC
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_sicily_italy_6 = {
+		icon = complete_the_risorgimento
+		required_missions = { mr_sicily_italy_4 mr_sicily_italy_5 }
+		position = 10
+		provinces_to_highlight = {
+			region = italy_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			italy_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			is_great_power = yes 
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = heir_to_caeser
+				duration = -1
+			}
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+		}
+	}
+}
+mr_sicily_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+	}
+	mr_sicily_tall_3 = {
+		icon = all_bases_covered
+		position = 2
+		required_missions = { mr_sicily_tall_1 }
+		trigger = {
+			employed_advisor = {
+				category = ADM 
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+			estate_influence = {
+				estate = estate_nobles
+				influence = 80
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = royal_court_sic
+				duration = 5475
+			}
+		}
+	}
+	mr_sicily_tall_4 = {
+		icon = develop_naples
+		position = 4
+		required_missions = { mr_sicily_tall_3 mr_sicily_conquest_3 }
+		provinces_to_highlight = { 
+			OR = {
+				area = apulia_area
+				area = naples_area
+				area = calabria_area
+			}
+			NOT = { 
+				development = 10
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				development = 10
+				OR = {
+					area = apulia_area
+					area = naples_area
+					area = calabria_area
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = willbecoolevent_TT
+			custom_tooltip = neapolitan_accepted_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							accepted_culture = neapolitan 
+						}
+					}
+					add_accepted_culture = neapolitan
+				}
+				else = {
+					add_dip_power = 150
+				}
+			}
+			custom_tooltip =  neapoltian_acceptance_modifier_TT
+			tooltip = {
+				add_province_modifier = {
+					name = neapolitan_acceptance
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							area = apulia_area
+							area = naples_area
+							area = calabria_area
+						}
+					}
+					add_province_modifier = {
+						name = neapolitan_acceptance
+						duration = -1
+					}
+				}
+			}
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_italy_1 = {
+		icon = answer_the_roman_question
+		position = 5
+		required_missions = {
+			mr_sicily_tall_4 
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lazio_area
+				area = central_italy_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = own_lazio-umbria_TT
+				4732 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				4731 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				5017 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				2976 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = italian_unification_war_SIC
+				duration = 10950
+			}
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_italy_2 = {
+		icon = sweep_the_po
+		position = 7
+		required_missions = {
+			mr_sicily_italy_1
+		}
+		provinces_to_highlight = {
+			or = {
+				area = tuscany_area
+				area = emilia_romagna_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tuscany_area = {
+				type = all
+				add_province_modifier = {
+					name = trade_hubs_florence
+					duration = -1
+				}
+			}
+			emilia_romagna_area = {
+				type = all
+				add_province_modifier = {
+					name = romagnol_vineyards
+					duration = -1
+				}
+			}
+			po_valley_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			venetia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lombardy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_sicily_italy_4 = {
+		icon = nuova_promissione_ducale
+		position = 9
+		required_missions = { mr_sicily_italy_2 }
+		provinces_to_highlight = {
+			area = venetia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = venetian_conquest
+				duration = -1
+			}
+			custom_tooltip = VEN_island_holding
+			hidden_effect = {
+				every_province = {
+					limit = {
+						owned_by = VEN
+						island = yes
+						OR = {
+							continent = europe
+							continent = asia
+							continent = africa
+						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+}
+mr_sicily_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+	}
+	mr_sicily_tall_1 = {
+		icon = invest_in_the_rich_trades
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 125
+		}
+		trigger = {
+			125 = {
+				base_tax = 10
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = natural_scientist
+				skill = 2
+				discount = yes
+			}
+			125 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 100
+				}
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { province_id = 125 }
+				}
+				add_institution_embracement = {
+					which = renaissance
+					value = 25
+				}
+			}
+		}
+	}
+	
+	mr_sicily_tall_2 = {
+		icon = develop_provence
+		position = 3
+		required_missions = { mr_sicily_tall_1 }
+		provinces_to_highlight = {
+			province_id = 125
+		}
+		trigger = {
+			125 = {
+				has_trade_building_trigger = yes 
+				has_manpower_building_trigger = yes
+				base_production = 10
+				base_manpower = 10
+			}
+		}
+		effect = {
+			125 = {
+				add_center_of_trade_level = 1
+				add_building = mrb_winery
+				add_province_modifier = {
+					name = palazzo_dei_normanni
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	mr_sicily_italy_7 = {
+		icon = king_of_sicily
+		position = 5
+		required_missions = {
+			mr_sicily_tall_4 
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = western_sicily_area
+				area = sicily_area
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
+			}
+			NOT = { has_production_building_trigger = yes base_production = 8 }
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+					area = naples_area
+					area = calabria_area
+					area = apulia_area
+				}
+				has_production_building_trigger = yes 
+				base_production = 8
+			}
+		}
+		effect = {
+			custom_tooltip = sicilian_development_TT
+			tooltip = {
+				add_province_modifier = {
+					name = sicilian_development
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						area = western_sicily_area
+						area = sicily_area
+						area = naples_area
+						area = calabria_area
+						area = apulia_area
+						OR = {
+							has_terrain = mountain
+							has_terrain = hills
+						}
+					}
+				}
+				add_province_modifier = {
+					name = sicilian_development
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	mr_sicily_italy_8 = {
+		icon = medici_bank_ledgers
+		position = 6
+		required_missions = { mr_sicily_italy_7 }
+		provinces_to_highlight = {
+			OR = {
+				area = western_sicily_area
+				area = sicily_area
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
+			}
+			NOT = { has_courthouse_building_trigger = yes local_autonomy = 10 }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+					area = naples_area
+					area = calabria_area
+					area = apulia_area
+				}
+				has_courthouse_building_trigger = yes
+				NOT = { local_autonomy = 10 }
+			}
+		}
+		effect = {
+			custom_tooltip = dev_boost_southern_italy_TT
+			add_stability_or_adm_power = yes
+			increase_legitimacy_large_effect = yes
+		}
+	}
+	
+	mr_sicily_italy_9 = {
+		icon = industrialized_rhineland
+		position = 8
+		required_missions = { mr_sicily_italy_8 }
+		provinces_to_highlight = {
+			OR = {
+				area = western_sicily_area
+				area = sicily_area
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
+			}
+			NOT = { has_manufactory_trigger = yes development = 20 }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+					area = naples_area
+					area = calabria_area
+					area = apulia_area
+				}
+				has_manufactory_trigger = yes 
+				development = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = modernized_italy_TT
+				duration = 12775
+			}
+			custom_tooltip = south_sicily_expansion
+			tooltip = {
+				add_province_modifier = {
+					name = expansion_of_the_south
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						OR = {
+							area = western_sicily_area
+							area = sicily_area
+							area = naples_area
+							area = calabria_area
+							area = apulia_area
+						}
+					}
+					add_province_modifier = {
+						name = expansion_of_the_south
+						duration = -1
+					}
+				}
+			}
+		}
+	}		
+}

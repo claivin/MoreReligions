@@ -146,16 +146,116 @@ cms_mission_third = {
 		position = 1
 		
 		trigger = {
-			has_opinion = {
-				who = GAL
-				value = 100
+			OR = {
+				reverse_has_opinion = {
+					who = GAL
+					value = 100
 				}
-			}	
-	
-		effect = {
-			create_alliance = GAL
+				reverse_has_opinion = {
+					who = POR
+					value = 100
+				}
+				AND = {
+					is_rival = POR
+					is_rival = GAL
+				}
 			}
-		}	
+		}
+		effect = {
+			if = {
+				limit = {
+					reverse_has_opinion = {
+						who = GAL
+						value = 100
+					}
+				}
+				custom_tooltip = cms_connection_TT_1_yes
+				tooltip = {
+					create_alliance = GAL
+				}
+			}
+			else = {
+				custom_tooltip = cms_connection_TT_1_no
+				tooltip = {
+					create_alliance = GAL
+				}
+			}
+			if = {
+				limit = {
+					reverse_has_opinion = {
+						who = POR
+						value = 100
+					}
+				}
+				custom_tooltip = cms_connection_TT_2_yes
+				tooltip = {
+					create_alliance = POR
+				}
+			}
+			else = {
+				custom_tooltip = cms_connection_TT_2_no
+				tooltip = {
+					create_alliance = POR
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						is_rival = POR
+						is_rival = GAL
+					}
+				}
+				custom_tooltip = cms_connection_TT_3_yes
+				tooltip = {
+					add_country_modifier = {
+						name = on_our_own_CMS
+						duration = 3650
+					}
+				}
+			}
+			else = {
+				custom_tooltip = cms_connection_TT_3_no
+				tooltip = {
+					add_country_modifier = {
+						name = on_our_own_CMS
+						duration = 3650
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						reverse_has_opinion = {
+							who = GAL
+							value = 100
+						}
+					}
+					create_alliance = GAL
+				}
+				if = {
+					limit = {
+						reverse_has_opinion = {
+							who = POR
+							value = 100
+						}
+						create_alliance = GAL
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							is_rival = POR
+							is_rival = GAL
+						}
+					}
+					add_country_modifier = {
+						name = on_our_own_CMS
+						duration = 3650
+					}
+				}
+			}
+		}
+	}	
 	
 	cms_basque_investment = {
 		icon = mission_fish_markets

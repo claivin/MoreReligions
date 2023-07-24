@@ -371,6 +371,10 @@
  PEG: "Hanthawaddy"
  PEG_ADJ: "Hanthawaddian"
  
+ NPI: "Napoli"
+ NPI_ADJ: "Napoli"
+ NPI_ADJ2: "Napoli"
+ 
  central_africa_region: "African Great Lakes"
  
  PROV1795: "Principe"
@@ -407,3 +411,4 @@
  PROV_ADJ4831: "Krung Thep"
  
  huguang_area: "South Hubei"
+ 
