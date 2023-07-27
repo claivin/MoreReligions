@@ -1,7 +1,7 @@
 government = tribal
 add_government_reform = tribal_kingdom
 primary_culture = soninke
-add_accepted_culture = mandinka
+add_accepted_culture = mane
 religion = shamanism #Fetishism
 technology_group = sub_saharan
 unlock_cult = yemoja_cult

@@ -8902,7 +8902,7 @@ mande = {
 			Refilwe Sethunya Tumelo
 		}
 	}
-	mandinka = {
+	mane = {
 		primary = LMA
 		dynasty_names = {
 			Ghana Diarisso Kante

@@ -1,8 +1,8 @@
 
 
-owner = GYR
-controller = GYR
-add_core = GYR
+owner = SNT
+controller = SNT
+add_core = SNT
 is_city = yes
 culture = aka 
 religion = shamanism #Fetishism
