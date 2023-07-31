@@ -1746,6 +1746,34 @@ christian = {
 			local_missionary_strength = -0.01
 		}
 		
+		fervor = yes
+		
+		will_get_center = { #Refered to even for initial CoR Spawn
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					RELIGION = mr_fraticelli
+				}
+			}
+		}
+		on_convert = {
+			add_stability = -2
+			add_prestige = -50
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+			hidden_effect = {
+				remove_country_modifier = counter_reformation
+				remove_country_modifier = the_statue_in_restraint_of_appeals
+				remove_country_modifier = revocation_of_restraint_of_appeals
+				remove_country_modifier = bavarian_jesuits
+				remove_country_modifier = the_societas_jesu
+				remove_country_modifier = the_declaration_of_indulgence
+				remove_country_modifier = de_heretico_comburendo
+				remove_country_modifier = the_conventicle_act
+				
+			}
+		}
 		heretic = { FRATICELLIHERETICS }
 		
 	}

@@ -442,6 +442,7 @@ can_have_center_of_reformation_trigger = { #Province Scope
 		religion = reformed
 		religion = buddhism
 		religion = yogavacara
+		religion = mr_fraticelli
 	}
 	NOT = { province_id = 118 }
 	is_in_capital_area = yes

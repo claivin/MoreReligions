@@ -305,6 +305,14 @@
  mr_sicily_branching_2_title: "Branching Missions"
  mr_sicily_branching_3_title: "Branching Missions"
  mr_sicily_branching_4_title: "Branching Missions"
+ mr_sicily_religion_2a_title: "Purging the Heretics"
+ mr_sicily_religion_3a_title: "Lead the Faithful"
+ mr_sicily_religion_4a_title: "The Soul of the South"
+ mr_sicily_religion_4b_title: "Weather the Storm"
+ mr_sicily_religion_2b_title: "Spreading the Fervor"
+ mr_sicily_religion_3b_title: "Fury of the Faithful"
+ mr_sicily_religion_4d_title: "Cleansing the South"
+ mr_sicily_religion_4e_title: "Embracing the Reformation"
  
  sicilian_ambitions: "Sicilian Ambitions"
  invade_by_1455_tt: "If we complete this mission by the end of §Y1455§!, we will recieve the following:"
@@ -350,8 +358,12 @@
  servant_of_the_church: "Servant of the Church"
  papal_resistance_SIC: "Reformation Resistance"
  fraticelli_expansion: "Expansion of the Fraticelli"
- naples_religion_TT: "All of §YSouthern Italy§! must be [Root.GetReligion]."
+ naples_religion_TT: "All of §YSouthern Italy§! must be our §YReligion§!."
  no_occupation_of_rome: "This will allow us to take §YRome§! without getting the §YOccupation of Rome§! province modifier."
+ war_against_heretics_SIC: "War Against the Heretics"
+ FRAT_saint_petersburgh: "We will gain access to the §YSaint Peter's Basilica§! Monument"
+ fraticelli_ferver: "Fury of the Fraticelli"
+ spawn_mr_fraticelli_cof: "This will spawn a §YFraticelli§! Center of Reformation within our country."
  
  
  

@@ -264,7 +264,7 @@ mr_sicily_missions_branching_1 = {
 	}
 	mr_sicily_branching_4 = {
 		icon = mission_unknown_mission
-		position = 9
+		position = 10
 		required_missions = { mr_sicily_branching_3 }
 		trigger = { 
 			custom_trigger_tooltip = {
@@ -290,7 +290,7 @@ mr_sicily_missions_religion_c = {
 		has_country_flag = sic_frat_1
 	}
 	mr_sicily_religion_4a = {
-		icon = xxx
+		icon = mission_rule_italy
 		position = 8
 		required_missions = { mr_sicily_religion_1 }
 		provinces_to_highlight = {
@@ -329,8 +329,8 @@ mr_sicily_missions_religion_c = {
 		}
 	}
 	mr_sicily_religion_4b = {
-		icon = xxx
-		position = 9
+		icon = crush_heretic_strongholds
+		position = 10
 		required_missions = { mr_sicily_religion_4a }
 		trigger = {
 			NOT = { 
@@ -343,9 +343,92 @@ mr_sicily_missions_religion_c = {
 			religion = catholic
 		}
 		effect = {
+			add_country_modifier = {
+				name = war_against_heretics
+				duration = -1
+			}
 		}	
 	}
-}	
+}
+mr_sicily_missions_religion_d = {
+	slot = 1
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = SIC
+			was_tag = SIC
+		}
+		has_country_flag = sic_frat_2
+	}
+	mr_sicily_religion_4d = {
+		icon = mission_rule_italy
+		position = 8
+		required_missions = { mr_sicily_religion_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = naples_area
+				area = calabria_area
+				area = apulia_area
+				area = lazio_area
+			}
+			NOT = { religion = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = naples_religion_TT
+				naples_area = {
+					religion = ROOT
+					type = all
+				}
+				calabria_area = {
+					religion = ROOT
+					type = all
+				}
+				apulia_area = {
+					religion = ROOT
+					type = all
+				}
+				lazio_area = {
+					religion = ROOT
+					type = all
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = FRAT_saint_petersburgh
+			add_stability = 1
+		}
+	}
+	mr_sicily_religion_4e = {
+		icon = hussite_regency
+		position = 10
+		required_missions = { mr_sicily_religion_4d }
+		trigger = {
+			current_age = age_of_reformation
+			is_defender_of_faith = yes
+			religion = mr_fraticelli
+		}
+		effect = {
+			custom_tooltip = spawn_mr_fraticelli_cof
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						can_have_center_of_reformation_trigger = {
+							RELIGION = mr_fraticelli
+						}
+					}
+					add_reform_center = mr_fraticelli
+				}
+			}
+			add_country_modifier = {
+				name = fraticelli_ferver
+				duration = -1
+			}
+		}
+	}
+}						
 mr_sicily_missions_second = {
 	slot = 2
 	generic = no
@@ -655,7 +738,7 @@ mr_sicily_missions_religion_b = {
 		has_country_flag = sic_frat_2
 	}
 	mr_sicily_religion_2b = {
-		icon = xxx
+		icon = mission_european_church
 		position = 8 
 		required_missions = { mr_sicily_religion_1 }
 		trigger = {
@@ -675,7 +758,7 @@ mr_sicily_missions_religion_b = {
 		}
 	}
 	mr_sicily_religion_3b = {
-		icon = xxx
+		icon = mission_hands_praying
 		position = 9
 		required_missions = { mr_sicily_religion_2b }
 		trigger = {

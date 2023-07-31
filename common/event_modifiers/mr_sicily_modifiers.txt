@@ -121,3 +121,11 @@ fraticelli_expansion = {
 	monthly_fervor_increase = 2
 	tolerance_own = 1 
 }
+war_against_heretics_SIC = {
+	war_exhaustion = -0.01
+	manpower_in_true_faith_provinces = 0.15
+}
+fraticelli_ferver = {
+	discipline = 0.025
+	manpower_in_true_faith_provinces = 0.15
+}
