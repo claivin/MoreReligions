@@ -1062,3 +1062,43 @@ SIA_ideas = {
 							
 	}
 }
+
+NAV_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.35
+		production_efficiency = 0.1
+	}
+	bonus = {
+		trade_efficiency = 0.2
+	}
+	trigger = {
+		tag = NAV
+	}
+	free = yes			#will be added at load.
+
+	nav_sailors_of_viscaya = {
+		global_sailors_modifier = 0.25
+	}
+	nav_taming_the_winds = {
+		leader_naval_manuever = 2
+		naval_maintenance_modifier = -0.1
+	}
+	nav_the_ocean_call = {
+		range = 0.15
+		trade_steering = 0.1
+	}
+	nav_iron_forges_of_navarra = {
+		local_build_cost = -0.15
+	}
+	nav_navarrese_company = {
+		mercenary_manpower = 0.20
+		mercenary_discipline = 0.05
+	}
+	nav_private_armies_state_forts = {
+		merc_maintenance_modifier = -0.25
+	}
+	nav_global_whaling_monopoly = {
+		global_trade_goods_size_modifier = 0.1
+		province_trade_power_value = 5
+	}
+}
