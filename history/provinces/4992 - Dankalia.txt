@@ -1,8 +1,8 @@
 #REGIONHORNOF AFRICA
 #4992 Dankalia
 
-owner = IFT
-controller = IFT
+owner = AFA
+controller = AFA
 add_core = AFA
 add_core = IFT
 culture = tigray

@@ -1,7 +1,7 @@
 #2764 - Aussa
 
-owner = IFT
-controller = IFT
+owner = AFA
+controller = AFA
 add_core = IFT
 add_core = AFA
 culture = afar

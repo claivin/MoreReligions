@@ -14,6 +14,7 @@ base_tax = 3
 base_production = 3
 add_local_autonomy = 10
 add_core = SOA
+add_core = IFT
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

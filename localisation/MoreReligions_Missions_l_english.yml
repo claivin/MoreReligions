@@ -366,6 +366,13 @@
  spawn_mr_fraticelli_cof: "This will spawn a §YFraticelli§! Center of Reformation within our country."
  
  
+ #Ifat Missions
+ 
+ 
+ end_afar_raids_TT: "Every province in the §YIfat Area§! and Province will recieve -50 Devastation."
+ afar_accepted_TT: "We will gain §YAfar§! as an §YAccepted Culture§!.\nIf we already have §YAfar§! as an accepted culture, we will instead gain £dip£ §G100§! §YDiplomatic Power§!."
+ 
+ 
  
  #To be moved to the Event Localization File
  MR_siam_flavor.1.t: "The Wheel of Karma Turns..."

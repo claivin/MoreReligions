@@ -1,0 +1,10 @@
+1430.1.1 = {
+	add_attacker = AFA
+	add_attacker = SOA
+	add_defender = IFT
+}
+1444.1.1 = {
+	rem_attacker = AFA
+	rem_attacker = SOA
+	rem_defender = IFT
+}

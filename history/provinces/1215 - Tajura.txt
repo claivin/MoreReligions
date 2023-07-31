@@ -1,7 +1,7 @@
 #1215 - Tajura
 
-owner = IFT
-controller = IFT
+owner = AFA
+controller = AFA
 add_core = IFT
 add_core = AFA
 culture = afar

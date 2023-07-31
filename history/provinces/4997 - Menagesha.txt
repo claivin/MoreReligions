@@ -4,6 +4,7 @@
 owner = SOA
 controller = SOA
 add_core = SOA
+add_core = IFT
 culture = amhara
 religion = sunni
 hre = no

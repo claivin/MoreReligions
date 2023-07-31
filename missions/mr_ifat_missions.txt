@@ -1,0 +1,152 @@
+mr_ifat_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = IFT }
+	has_country_shield = yes
+	
+	mr_ifat_eth_1 = {
+		icon = xxx
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = aussa_area
+				province_id = 4992
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aussa_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			4992 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 15
+			}
+			custom_tooltip = end_afar_raids_TT
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = ifat_area
+							province_id = 4995
+						}
+					}
+					add_devastation = -50
+				}
+			}
+		}
+	}
+	mr_ifat_eth_1b = {
+		icon = xxx
+		position = 3
+		required_missions = { mr_ifat_eth_1 }
+		provinces_to_highlight = {
+			province_id = 2764
+			NOT = {
+				has_tax_building_trigger = yes
+			}
+		}
+		trigger = {
+			2764 = {
+				has_tax_building_trigger = yes
+				base_manpower = 5
+			}
+		}
+		effect = {
+			custom_tooltip = afar_accepted_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							accepted_culture = afar 
+						}
+					}
+					add_accepted_culture = afar
+				}
+				else = {
+					add_dip_power = 100
+				}
+			}
+		}
+	}
+}
+mr_ifat_missions_2 = { 
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { tag = IFT }
+	has_country_shield = yes
+	
+	mr_ifat_eth_3 = {
+		icon = xxx
+		position = 2
+		required_missions = { mr_ifat_eth_1 mr_ifat_eth_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = aussa_area
+				area = shewa_area
+				province_id = 4992
+				province_id = 1210
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aussa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shewa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4992 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1210 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+	}
+}
+mr_ifat_missions_3 = { 
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { tag = IFT }
+	has_country_shield = yes
+	
+	mr_ifat_eth_2 = {
+		icon = xxx
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2791
+				province_id = 4997
+				province_id = 1213
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			2791 = { country_or_non_sovereign_subject_holds = ROOT }
+			1213 = { country_or_non_sovereign_subject_holds = ROOT }
+			4997 = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_prestige = 10
+		}
+	}
+}
+mr_ifat_missions_4 = { 
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { tag = IFT }
+	has_country_shield = yes
+}
+mr_ifat_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { tag = IFT }
+	has_country_shield = yes
+}

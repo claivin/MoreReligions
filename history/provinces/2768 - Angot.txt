@@ -1,7 +1,7 @@
 #2768 - Ashenge
 
-owner = IFT
-controller = IFT
+owner = AFA
+controller = AFA
 add_core = AFA
 add_core = IFT
 culture = afar

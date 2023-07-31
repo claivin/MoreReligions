@@ -126,6 +126,8 @@ country_event = {
 	desc = MR_sicily_flavor.2.d
 	picture = RELIGION_eventPicture
 	
+	is_triggered_only = yes
+	
 	option = {
 		name = MR_sicily_flavor.2.a
 		add_country_modifier = {
