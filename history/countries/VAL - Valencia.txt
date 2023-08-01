@@ -13,8 +13,8 @@ override_country_name = MR_NAME_VALENCIA
 		name = "Aamir"
 		dynasty = "ibn Mardanish"
 		birth_date = 1410.1.1
-		adm = 2
-		dip = 1
-		mil = 1
+		adm = 3
+		dip = 2
+		mil = 4
 	}
 }
