@@ -1,7 +1,7 @@
 #REGIONIBERIA
-#1750 - Al‡cant
+#1750 - Al√†cant
 
-owner = VAL		#MartÌ I of Aragon
+owner = VAL		#Mart√≠ I of Aragon
 controller = VAL
 add_core = VAL
 # add_core = VAL
@@ -10,9 +10,9 @@ religion = sunni
 hre = no
 base_tax = 3
 base_production = 3
-trade_goods = wine
+trade_goods = naval_supplies
 base_manpower = 3 
-capital = "Al‡cant" 
+capital = "Al√†cant" 
 is_city = yes
 discovered_by = western
 discovered_by = eastern
