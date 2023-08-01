@@ -145,10 +145,11 @@ country_event = {
 		change_religion = mr_fraticelli
 		set_ruler_religion = mr_fraticelli
 		set_heir_religion = mr_fraticelli
-		swap_non_generic_missions = yes 
+		
 		hidden_effect = {
 			set_country_flag = sic_frat_2
 		}
+		swap_non_generic_missions = yes 
 	}
 }
 			

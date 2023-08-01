@@ -737,6 +737,14 @@ on_siege_won_country = {
 				}
 			}
 		}
+		if = {
+			limit = {  
+				FROM = { has_government_mechanic = abyssinian_unity_mechanic }
+				ROOT = { tag = REB }
+			}
+		}
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -2 }
+	}
 		THU = { country_event = { id = flavor_sax.10 } } # Ask Emperor for Saxon Electorate
 	}
 	if = {
@@ -934,5 +942,99 @@ on_mil_development = {
 			80 = { } 
 		}
 	}
-
+}
+on_culture_promoted = {
+	on_culture_promoted_estate_privileges_effect = yes
+	judaism_on_culture_country_effect = yes
+	imperial_modifiers_on_culture_country_effect = yes
+	
+	if = { 
+		limit = { has_country_flag = reduce_ae_from_prom_cultures_flag }
+		every_country = {
+			add_aggressive_expansion = {
+				who = ROOT 
+				value = -3
+				apply_calc = no 
+			}
+		}
+	}
+	if = {
+		limit = { has_government_mechanic = abyssinian_unity_mechanic }
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
+	}
+}
+on_culture_demoted = {
+	on_culture_demoted_estate_privileges_effect = yes
+	judaism_on_culture_country_effect = yes
+	imperial_modifiers_on_culture_country_effect = yes
+	on_culture_demoted_effect = yes
+	if = {
+		limit = { has_government_mechanic = abyssinian_unity_mechanic }
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -25 }
+	}
+}
+# province
+on_province_religion_converted = {
+	on_province_religion_changed_effect = yes
+	on_province_religion_converted_effect = yes
+	if = {
+		limit = { 
+			owner = { 
+				has_government_attribute = more_25_tax_in_true_faith_provinces
+			}
+			religion_group = owner 
+			NOT = { has_province_modifier = ottoman_siyasah_tax_reform_tax }
+		}
+		add_province_modifier = {
+			name = ottoman_siyasah_tax_reform_tax
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_attribute = more_25_tax_in_true_faith_provinces } 
+				}
+				NOT = { religion_group = owner }
+			}
+			has_province_modifier = ottoman_siyasah_tax_reform_tax
+		}
+		remove_province_modifier = ottoman_siyasah_tax_reform_tax
+	}
+	if = {
+		limit = { 
+			owner = { 
+				has_government_attribute = more_15_manpower_in_heathen_provinces
+			}
+			NOT ={ religion_group = owner }
+			NOT = { has_province_modifier = ottoman_siyasah_tax_reform_manpower }
+		}
+		add_province_modifier = {
+			name = ottoman_siyasah_tax_reform_manpower
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				NOT = { 
+					owner = { has_government_attribute = more_15_manpower_in_heathen_provinces } 
+				}
+				religion_group = owner 
+			}
+			has_province_modifier = ottoman_siyasah_tax_reform_manpower
+		}
+		remove_province_modifier = ottoman_siyasah_tax_reform_manpower
+	}
+	if = {
+		limit = {  
+			owner = { has_government_mechanic = abyssinian_unity_mechanic }
+			OR = {
+				has_owner_accepted_culture = yes 
+				has_owner_culture = yes
+			}
+		}
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 0.5 }
+	}
 }

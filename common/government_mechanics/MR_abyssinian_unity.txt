@@ -1,0 +1,44 @@
+abyssinian_unity_mechanic = {
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		abyssinian_unity_power = {
+			gui = abyssinian_unity_mech
+			max = 100	#Unity direction
+			min = -100	#HELP HELP HELP direction
+			base_monthly_growth = -0.25
+			reset_on_new_ruler = no
+			
+			scaled_modifier = {
+				modifier = {
+					max_absolutism = 30
+					governing_capacity_modifier = 0.15
+					advisor_cost = -0.1 
+					manpower_in_true_faith_provinces = 0.33
+					custom_tooltip = abyssinian_unity_TT
+				}
+				start_value = 0
+				end_value = 100	
+			}
+			reverse_scaled_modifier = {
+				modifier = {
+					global_unrest = 2
+					global_autonomy = 0.20
+					stability_cost_modifier = 0.20
+					reduced_liberty_desire = -30 
+					
+				}
+				start_value = -100
+				end_value = 0
+			}
+			on_max_reached = {
+				
+			}
+			on_min_reached = {
+	
+			}
+		}
+	}
+}

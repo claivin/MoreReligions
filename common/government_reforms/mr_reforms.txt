@@ -575,6 +575,39 @@ MR_thai_princedom = {
 		culture_group = thai_group
 	}
 }	
-		
+mr_al_habash_empire = {
+	icon = "musa_rule"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = IFT
+			was_tag = IFT
+		}
+	}
+	trigger = {
+		mission_completed = mr_ifat_eth_4
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	legacy_equivalent = solomonic_empire_legacy
+
+	modifiers = {
+		tolerance_own = 2
+		cavalry_power = 0.10
+		cavalry_cost = -0.15
+		amount_of_cawa = 1
+	}
+	
+	government_abilities = {
+		abyssinian_unity_mechanic
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+}		
 	
 	

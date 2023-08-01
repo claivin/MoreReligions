@@ -1,0 +1,4 @@
+deposition_of_makhzumi = {
+	infantry_power = 0.1
+	global_regiment_recruit_speed = -0.10 
+}

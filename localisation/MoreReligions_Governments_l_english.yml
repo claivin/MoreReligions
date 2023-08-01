@@ -49,7 +49,14 @@
  ability_shugo_dominance_mechanic: "§YShugo Dominance§!"
  shugo_dominance_mechanic_power: "§YShugo Dominance§!"
  
+ abyssinian_unity_mechanic: "Abyssinian Unity"
+ ability_abyssinian_unity_mechanic: "§YAbyssinian Unity§!"
+ abyssinian_unity_power: "§YAbyssinian Unity§!"
+ monthly_abyssinian_unity_power: "Monthly Abyssinian Unity"
+ abyssinian_unity_power_desc: "Abyssinian Unity is a measure of how stable and powerful the state of Abyssinia is. Since the empire is often rocked with internal schisms and violence from outsiders, making sure that the different ethnicities are working together is a key challenge of the state.\n\n§YAbyssinian Unity§! can be affected by doing the following:\n - Promoting Cultures: §G+10§!\n - Converting Provinces of Accepted Culture or Core Culture to our religion: §G+0.5§!\n - Demoting Cultures: §R-25§!\n - Rebel Sieging a Province: §R-2§!\n\n"
  
+ mr_al_habash_empire: "The Zeila Empire"
+ mr_al_habash_empire_desc: "The Walashama Dynasty has conquered and subjugated the remains of the old Ethiopian Empire. Through the use of light cavalry, our Somali and Harari units managed to overcome the great walls of Lasta and Semien. Now, the dynasty has to maintain the balance between the various ethnic and tribal groups of the Horn of Africa, lest it fall into chaos."
  
  mr_hungary_anarchy: "Hungarian Oligarchs"
  mr_hungary_anarchy_desc: "The Hungarian Oligarchs are dominant within our politics. Our state is unravaling at the seams, and we cannot survive for much longer."

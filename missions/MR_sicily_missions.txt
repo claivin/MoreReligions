@@ -344,7 +344,7 @@ mr_sicily_missions_religion_c = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = war_against_heretics
+				name = war_against_heretics_SIC
 				duration = -1
 			}
 		}	
@@ -689,7 +689,7 @@ mr_sicily_missions_religion_a = {
 		has_country_flag = sic_frat_1
 	}
 	mr_sicily_religion_2a = {
-		icon = xxx
+		icon = mission_early_modern_university
 		position = 8 
 		required_missions = { mr_sicily_religion_1 }
 		trigger = {
@@ -706,7 +706,7 @@ mr_sicily_missions_religion_a = {
 		}
 	}
 	mr_sicily_religion_3a = {
-		icon = xxx
+		icon = catholic_volunteers
 		position = 9
 		required_missions = { mr_sicily_religion_2a }
 		trigger = {

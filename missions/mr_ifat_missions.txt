@@ -6,7 +6,7 @@ mr_ifat_missions_1 = {
 	has_country_shield = yes
 	
 	mr_ifat_eth_1 = {
-		icon = xxx
+		icon = conquer_ksj
 		position = 1
 		provinces_to_highlight = {
 			OR = {
@@ -39,7 +39,7 @@ mr_ifat_missions_1 = {
 		}
 	}
 	mr_ifat_eth_1b = {
-		icon = xxx
+		icon = military_expertise
 		position = 3
 		required_missions = { mr_ifat_eth_1 }
 		provinces_to_highlight = {
@@ -80,7 +80,7 @@ mr_ifat_missions_2 = {
 	has_country_shield = yes
 	
 	mr_ifat_eth_3 = {
-		icon = xxx
+		icon = mission_indian_stateman
 		position = 2
 		required_missions = { mr_ifat_eth_1 mr_ifat_eth_2 }
 		provinces_to_highlight = {
@@ -95,18 +95,77 @@ mr_ifat_missions_2 = {
 		trigger = {
 			aussa_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			shewa_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			4992 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
-			1210 = { country_or_non_sovereign_subject_holds = ROOT }
+			1210 = { owned_by = ROOT }
+		}
+		effect = {
+			define_advisor = {
+				type = recruitmaster
+				skill = 3
+				discount = yes
+				culture = ROOT
+			}
+			central_ethiopia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tigray_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			damot_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
+	mr_ifat_eth_4 = {
+		icon = xxx
+		position = 4
+		required_missions = { mr_ifat_eth_3 }
+		provinces_to_highlight = {
+			OR = {
+				area = central_ethiopia_area
+				area = tigray_area
+				area = damot_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			central_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tigray_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			damot_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+		}
+	}
+		
 }
 mr_ifat_missions_3 = { 
 	slot = 3
@@ -116,7 +175,7 @@ mr_ifat_missions_3 = {
 	has_country_shield = yes
 	
 	mr_ifat_eth_2 = {
-		icon = xxx
+		icon = mission_impaled_soldies
 		position = 1
 		provinces_to_highlight = {
 			OR = {
@@ -132,7 +191,10 @@ mr_ifat_missions_3 = {
 			4997 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
-			add_prestige = 10
+			add_country_modifier = {
+				name = deposition_of_makhzumi 
+				duration = 3650
+			}
 		}
 	}
 }
