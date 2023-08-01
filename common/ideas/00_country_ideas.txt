@@ -7998,8 +7998,6 @@ CAT_ideas = {
     trigger = {
 		OR = {
 			tag = CAT
-			tag = VAL
-			tag = MJO
 		}
     }
     free = yes
