@@ -1102,3 +1102,39 @@ NAV_ideas = {
 		province_trade_power_value = 5
 	}
 }
+VAL_ideas = {
+	start = {
+		religious_unity = 0.25
+		monthly_piety = -0.01
+	}
+	bonus = {
+		idea_cost = -0.1
+	}
+	trigger = {
+		tag = VAL
+	}
+	free = yes			#will be added at load.
+	
+	val_footsteps_al_judhami = {
+		infantry_power = 0.10
+	}
+	val_resist_qurtubah = {
+		shock_damage_received = -0.15
+	}
+	val_united_against_intolerance = {
+		dhimmi_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
+	}
+	val_prepare_against_piracy = {
+		own_coast_naval_combat_bonus = 1.0
+	}
+	val_welcome_religious_refugees = {
+		advisor_cost = -0.20
+	}
+	val_embrace_mozarabic_identity = {
+		num_accepted_cultures = 2
+	}
+	val_abhramic_harmony = {
+		tolerance_heathen = 2
+	}
+}	
