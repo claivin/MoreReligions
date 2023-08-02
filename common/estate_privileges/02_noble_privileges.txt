@@ -20,7 +20,7 @@ estate_nobles_land_rights = {
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = abyssinian_unity_mechanic }
-		modifier = { monthly_abyssinian_unity_power = 0.05 }
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
 	}
 	benefits = {
 		governing_capacity = 100
@@ -628,7 +628,7 @@ estate_nobles_supremacy_over_crown = {
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = abyssinian_unity_mechanic }
-		modifier = { monthly_abyssinian_unity_power = -0.05 }
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
 	}
 	#conditional_modifier = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
@@ -1362,10 +1362,6 @@ estate_nobles_better_integration = {
 	}
 	benefits = {
 		diplomatic_annexation_cost = -0.05
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = abyssinian_unity_mechanic }
-		modifier = { monthly_abyssinian_unity_power = -0.05 }
 	}
 	cooldown_years = 10
 	conditional_modifier = {

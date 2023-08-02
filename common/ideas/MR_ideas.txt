@@ -1138,3 +1138,39 @@ VAL_ideas = {
 		tolerance_heathen = 2
 	}
 }	
+IFT_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		land_attrition = -0.10 
+	}
+	bonus = {
+		general_cost = -0.33
+	}
+	free = yes
+	trigger = {
+		tag = IFT
+	}
+	IFT_first = { #Makhzumite Successors
+		monthly_piety_accelerator = 0.005
+	}
+	IFT_second = { #Haqq al-Din's Rebellion
+		leader_land_fire = 1 
+		fire_damage = 0.10 
+	}
+	IFT_third = { #Fleet of Zeila
+		naval_morale_damage = 0.10
+	}
+	IFT_fourth = { #Seven Muslim States
+		free_adm_policy = 1 
+		adm_advisor_cost = -0.10
+	}
+	IFT_fifth = { #Domination of the Christians
+		warscore_cost_vs_other_religion = -0.10
+	}
+	IFT_sixth = { #Agrobba Agriculture
+		global_trade_goods_size_modifier = 0.1 
+	}
+	IFT_seventh = { #Fort of Harar
+		defensiveness = 0.10
+	}
+}

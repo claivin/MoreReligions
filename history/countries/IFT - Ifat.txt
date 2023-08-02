@@ -8,3 +8,24 @@ add_accepted_culture = harari
 capital = 4995	# Deker, Harer
 religious_school = shafii_school
 
+
+1422.1.1 = {
+	monarch = {
+		name = "Mansur"
+		dynasty = "Walashma"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+1444.1.1 = {
+	heir = {
+		name = "Mahamed"
+		dynasty = "Walashma"
+		birth_date = 1436.1.1
+		claim = 95
+		adm = 4
+		dip = 0
+		mil = 4
+	}
+}

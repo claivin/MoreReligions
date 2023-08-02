@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government_rank = 3
+government_rank = 2
 primary_culture = amhara
 religion = sunni
 technology_group = east_african
@@ -9,10 +9,10 @@ capital = 2791 #Ankober
 religious_school = shafii_school
 
 #Solomonid Rulers of Shewa
-1682.1.1 = {
+1427.1.1 = {
 	monarch = {
-		name = "Negasi Krestos"
-		dynasty = "Solomonid"
+		name = "Krestos"
+		dynasty = "Makhzumi"
 		adm = 3
 		dip = 3
 		mil = 1
@@ -20,62 +20,3 @@ religious_school = shafii_school
 	religion = coptic
 }
 
-1703.1.1 = {
-	monarch = {
-		name = "Sebestyanos"
-		dynasty = "Solomonid"
-		adm = 3
-		dip = 3
-		mil = 3
-	}
-}
-
-1718.1.1 = {
-	monarch = {
-		name = "Kidane Kale"
-		dynasty = "Solomonid"
-		adm = 3
-		dip = 4
-		mil = 3
-	}
-}
-
-1744.1.1 = {
-	monarch = {
-		name = "Amha Iyasus"
-		dynasty = "Solomonid"
-		adm = 2
-		dip = 3
-		mil = 3
-	}
-}
-
-1775.1.1 = {
-	monarch = {
-		name = "Asfaw Wossen"
-		dynasty = "Solomonid"
-		adm = 4
-		dip = 3
-		mil = 3
-	}
-}
-
-1808.1.1 = {
-	monarch = {
-		name = "Wossen Seged"
-		dynasty = "Solomonid"
-		adm = 3
-		dip = 4
-		mil = 3
-	}
-}
-
-1813.1.1 = {
-	monarch = {
-		name = "Sahle Selassie"
-		dynasty = "Solomonid"
-		adm = 6
-		dip = 6
-		mil = 4
-	}
-}
