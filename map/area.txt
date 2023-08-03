@@ -3013,11 +3013,11 @@ yun_gui_borderland_area = { #5
 }
 
 sichuan_area = { #3
-	679 680 4212 5336
+	679 680 4212 4213 5336
 }
 
 chuannan_area = { #4
-	675 2168 2748 4213 5335
+	675 2168 2748 5335
 }
 
 chuanbei_area = { #3
