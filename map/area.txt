@@ -3049,7 +3049,7 @@ shanxi_area = { #5
 }
 
 shaanxi_area = { #4
-	689 700 2179 4198
+	689 700 2179 4198 5488
 }
 
 gansu_area = { #5 (East Gansu)
