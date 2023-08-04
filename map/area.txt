@@ -3021,7 +3021,7 @@ chuannan_area = { #4
 }
 
 chuanbei_area = { #3
-	2169 2170 4211
+	2169 2170 4211 5489 5490
 }
 
 huguang_area = { #5 (Southern Hubei)

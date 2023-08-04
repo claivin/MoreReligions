@@ -1390,6 +1390,9 @@
  PROV5486: "Anlu"
  PROV5487: "Yunyang"
  PROV5488: "Ankang"
+ PROV5489: "Nanchong"
+ PROV5490: "Tongchuan"
+
 
 
 
@@ -1436,6 +1439,8 @@
  PROV_ADJ5486: "Anlu"
  PROV_ADJ5487: "Yunyang"
  PROV_ADJ5488: "Ankang"
+ PROV_ADJ5489: "Nanchong"
+ PROV_ADJ5490: "Tongchuan"
 
  
  east_shandong_area: "East Shandong"
