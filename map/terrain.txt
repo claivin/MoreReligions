@@ -165,6 +165,7 @@ categories =  {
 			680 #Chongqing
 			5489 #Nanchong
 			5490 #Tongchuan
+			5491 #Yuezhou
 		}		
 	}
 	
@@ -276,7 +277,7 @@ categories =  {
 			5314 5315 #mr_caucaus
 			5334 5335
 			5440 #mr_hungary
-			5471 5472 5482 5487 #MR China
+			5471 5472 5482 5487 5492 5493 5494 5495 5496 #MR China
 		}
 	}
 

@@ -3032,8 +3032,12 @@ north_hubei_area = {
 	5487 2171 5484 5486 4197
 }
 
-hunan_area = { #4
-	671 672 2173 2174
+hunan_area = { #4 (Northern Hunan)
+	671 672 2173 5491 5492
+}
+
+south_hunan_area = {
+	2174 5493 5494 5495 5496
 }
 
 henan_area = { #3 (South Henan)

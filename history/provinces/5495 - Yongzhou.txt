@@ -1,0 +1,21 @@
+# 5495 - Yongzhou
+
+owner = GSC
+controller = GSC
+add_core = GSC
+add_core = CMI
+culture = xiang
+religion = mr_jingtianfazu
+capital = "Yongzhou"
+trade_goods = grain
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+is_city = yes
+add_core = CHC
+discovered_by = chinese
+discovered_by = nomad_group
+
+
+1444.11.12 = { trade_goods = unknown }

@@ -1392,6 +1392,12 @@
  PROV5488: "Ankang"
  PROV5489: "Nanchong"
  PROV5490: "Tongchuan"
+ PROV5491: "Yuezhou"
+ PROV5492: "Yongshun"
+ PROV5493: "Jingxian"
+ PROV5494: "Baoqing"
+ PROV5495: "Yongzhou"
+ PROV5496: "Chenzhou"
 
 
 
@@ -1441,7 +1447,12 @@
  PROV_ADJ5488: "Ankang"
  PROV_ADJ5489: "Nanchong"
  PROV_ADJ5490: "Tongchuan"
-
+ PROV_ADJ5491: "Yuezhou"
+ PROV_ADJ5492: "Yongshun"
+ PROV_ADJ5493: "Jingxian"
+ PROV_ADJ5494: "Baoqing"
+ PROV_ADJ5495: "Yongzhou"
+ PROV_ADJ5496: "Chenzhou"
  
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"
@@ -1449,3 +1460,4 @@
  south_zhejiang_area: "South Zhejiang"
  west_kham_area: "West Kham"
  north_hubei_area: "North Hubei"
+ south_hunan_area: "South Hunan"
