@@ -6,7 +6,7 @@ mr_ifat_missions_1 = {
 	has_country_shield = yes
 	
 	mr_ifat_eth_1 = {
-		icon = conquer_ksj
+		icon = mission_mal_jihad_upon_own_population
 		position = 1
 		provinces_to_highlight = {
 			OR = {
@@ -33,13 +33,13 @@ mr_ifat_missions_1 = {
 							province_id = 4995
 						}
 					}
-					add_devastation = -50
+					add_devastation = -10
 				}
 			}
 		}
 	}
 	mr_ifat_eth_1b = {
-		icon = military_expertise
+		icon = mission_son_fetishist_alliances
 		position = 3
 		required_missions = { mr_ifat_eth_1 }
 		provinces_to_highlight = {
@@ -71,6 +71,185 @@ mr_ifat_missions_1 = {
 			}
 		}
 	}
+	mr_ifat_nubia_2 = {
+		icon = mission_mal_subjugate_zaf
+		position = 6
+		required_missions = { mr_ifat_nubia_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = kurdufan_area
+				area = darfur_central_sahara_area
+				province_id = 2801
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kurdufan_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			darfur_central_sahara_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2801 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			kanem_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bornu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			darfur_central_sahara_area = {
+				type = all
+				add_province_modifier = {
+					name = across_the_sahara
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_ifat_nubia_3 = {
+		icon = mission_mal_west_african_great_power
+		position = 8
+		required_missions = { mr_ifat_nubia_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = kanem_area
+				area = bornu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kanem_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			bornu_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = central_africa_campaigns
+				duration = -1
+			}
+			custom_tooltip = west_africa_campaigns_TT
+		}
+	}
+	mr_ifat_som_3 = {
+		icon = mission_war_chest
+		position = 9
+		required_missions = { mr_ifat_som_1 }
+		provinces_to_highlight = {
+			area = somaliland_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			somaliland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			majarteen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1209 = {
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			2786 = {
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+	mr_ifat_som_9 = {
+		icon = mission_arabian_fort
+		position = 10
+		required_missions = { mr_ifat_som_3 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1209
+				province_id = 2786
+			}
+			NOT = { has_dock_building_trigger = yes has_shipyard_building_trigger = yes }
+		}
+		trigger = {
+			1209 = {
+				has_dock_building_trigger = yes
+				has_shipyard_building_trigger = yes
+			}
+			2786 = {
+				has_dock_building_trigger = yes
+				has_shipyard_building_trigger = yes
+			}
+		}
+		effect = {
+			custom_tooltip = enable_port_city_IFAT_TT
+			add_country_modifier = {
+				name = ifat_marines
+				duration = 3650
+			}
+		}
+	}
+	mr_ifat_india_4 = {
+		icon = mission_indian_soldier_elephant
+		position = 13
+		required_missions = { mr_ifat_india_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = tapti_area
+				area = ahmedabad_area
+				area = saurashtra_area
+				area = sindh_area 
+				province_id = 503
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tapti_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ahmedabad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT  
+			}
+			saurashtra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			503 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_adm_power = 100
+			add_country_modifier = {
+				name = master_of_india_IFT
+				duration = -1
+			}
+		}
+	}
 }
 mr_ifat_missions_2 = { 
 	slot = 2
@@ -90,7 +269,7 @@ mr_ifat_missions_2 = {
 				province_id = 4992
 				province_id = 1210
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
 			aussa_area = {
@@ -137,7 +316,7 @@ mr_ifat_missions_2 = {
 		}
 	}
 	mr_ifat_eth_4 = {
-		icon = xxx
+		icon = mission_son_military_expertise
 		position = 4
 		required_missions = { mr_ifat_eth_3 }
 		provinces_to_highlight = {
@@ -163,9 +342,322 @@ mr_ifat_missions_2 = {
 			}
 		}
 		effect = {
+			sennar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			red_sea_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			change_government_reform_progress = 50
+			custom_tooltip = mr_ifat_eth_4_TT
+			tigray_area = {
+				type = all
+				add_province_modifier = {
+					name = humilitation_of_christians_IFT
+					duration = -1
+				}
+			}
+			damot_area = {
+				type = all
+				add_province_modifier = {
+					name = humilitation_of_christians_IFT
+					duration = -1
+				}
+			}
+			central_ethiopia_area = {
+				type = all
+				add_province_modifier = {
+					name = humilitation_of_christians_IFT
+					duration = -1
+				}
+			}
 		}
 	}
-		
+	mr_ifat_nubia_1 = {
+		icon = mission_kon_protector_of_africa
+		position = 5
+		required_missions = { mr_ifat_eth_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = sennar_area 
+				area = upper_nubia_area
+				area = red_sea_coast_area
+			}
+		}
+		trigger = {
+			sennar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			upper_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			red_sea_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			kurdufan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			darfur_central_sahara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2801 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dongola_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			said_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = amhara_unrest_TT
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = amhara
+					}
+					add_unrest = -2
+				}
+			}
+		}
+	}
+	mr_ifat_nubia_4 = {
+		icon = mission_kon_conquer_kub
+		position = 7
+		required_missions = { mr_ifat_nubia_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = dongola_area
+				area = lower_nubia_area
+				area = said_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			dongola_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			said_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			egypt_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = sultan_of_makuria_tt
+				duration = 3650
+			}
+			custom_tooltip = abyssinian_unity_TT_1
+			hidden_effect = {
+				if = {
+					limit = {
+						1234 = {
+							religion = ROOT
+						}
+					}
+					add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
+				}
+			}
+		}
+	}
+				
+	mr_ifat_som_1 = {
+		icon = mission_kon_conquer_ksj
+		position = 8
+		required_missions = { }
+		provinces_to_highlight = {
+			owner = {
+				primary_culture = somali
+			}
+		}
+		trigger = {
+			any_country = {
+				is_rival = ROOT
+				is_enemy = ROOT
+				primary_culture = somali
+			}
+			army_size = 20
+		}
+		effect = {
+			ogaden_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			somaliland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = desert_warfare_IFT
+				duration = 3650
+			}
+		}
+	}
+	mr_ifat_india_1 = {
+		icon = mission_assemble_an_army
+		position = 11
+		required_missions = { mr_ifat_som_9 }
+		provinces_to_highlight = {
+			province_id = 2089
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			2089 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_manpower = 7
+			}
+		}
+		effect = {
+			konkan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2089 = {
+				add_province_modifier = {
+					name = defensive_konkan
+					duration = -1
+				}
+			}				
+		}
+	}
+	mr_ifat_india_2 = {
+		icon = mission_unite_home_region
+		position = 12
+		required_missions = { mr_ifat_india_1 }
+		provinces_to_highlight = {
+			area = konkan_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			konkan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			kanara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malabar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tapti_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ahmedabad_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			saurashtra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			503 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sindh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = india_campaigns_IFT
+				duration = 9125
+			}
+		}
+	}
+	
 }
 mr_ifat_missions_3 = { 
 	slot = 3
@@ -195,8 +687,307 @@ mr_ifat_missions_3 = {
 				name = deposition_of_makhzumi 
 				duration = 3650
 			}
+			hadiya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_ethiopia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
+	mr_ifat_eth_5 = {
+		icon = mission_mal_fighting_musa
+		position = 3
+		required_missions = { mr_ifat_eth_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = southern_ethiopia_area 
+				area = hadiya_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			southern_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			hadiya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			southern_ethiopia_area = {
+				type = all
+				add_province_modifier = {
+					name = conquest_of_fetishists_IFT
+					duration = 5475
+				}
+			}
+			hadiya_area = {
+				type = all
+				add_province_modifier = {
+					name = conquest_of_fetishists_IFT
+					duration = 5475
+				}
+			}
+		}
+	}
+	mr_ifat_eth_6 = {
+		icon = prester_john
+		position = 5
+		required_missions = { mr_ifat_eth_4 mr_ifat_eth_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = southern_ethiopia_area
+				area = hadiya_area
+				area = tigray_area
+				area = central_ethiopia_area
+				area = damot_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT religion = ROOT }
+		}
+		trigger = {	
+			southern_ethiopia_area = {
+				type = all
+				religion = ROOT
+			}
+			hadiya_area = {
+				type = all
+				religion = ROOT
+			}
+			tigray_area = {
+				type = all
+				religion = ROOT
+			}
+			central_ethiopia_area = {
+				type = all
+				religion = ROOT
+			}
+			damot_area = {
+				type = all
+				religion = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = al_habash_rulers
+				duration = 9125
+			}
+		}
+	}
+	mr_ifat_arab_3 = {
+		icon = mission_unite_home_region
+		position = 7
+		required_missions = { mr_ifat_arab_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = upper_yemen_area
+				area = asir_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			5361 = {
+				add_province_modifier = {
+					name = improved_horse_sales
+					duration = 3650
+				}
+			}
+			add_country_modifier = {
+				name = arabian_mares_IFT
+				duration = 3650
+			}
+		}
+	}
+	mr_ifat_nubia_5 = {
+		icon = mission_fatimid_caliphate
+		position = 8
+		required_missions = { mr_ifat_nubia_4 }
+		provinces_to_highlight = {
+			region = egypt_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					region = egypt_region
+					country_or_non_sovereign_subject_holds = ROOT 
+				}
+				amount = 20
+			}
+			358 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			361 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			custom_tooltip = reduce_time_canal_IFT_tt
+			custom_tooltip = abyssinian_unity_TT_2
+			hidden_effect = {
+				if = {
+					limit = {
+						358 = {
+							religion = ROOT
+						}
+					}
+					add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
+				}
+			}
+		}
+	}	
+	mr_ifat_som_2 = {
+		icon = mission_sw_against_the_desert
+		position = 9
+		required_missions = { mr_ifat_som_1 }
+		provinces_to_highlight = {
+			area = ogaden_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			ogaden_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			ajuuran_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mogadishu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ogaden_area = {
+				type = all
+				add_province_modifier = {
+					name = defensive_line_ift
+					duration = 3650
+				}
+			}
+		}
+	}
+	mr_ifat_som_4 = {
+		icon = mission_kon_greatest_power_kongo
+		position = 10
+		required_missions = { mr_ifat_som_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = ajuuran_area 
+				area = mogadishu_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ajuuran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mogadishu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			northern_swahili_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mombasa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_swahili_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1205 = {
+				set_center_level_3_center_of_trade = yes
+			}
+		}
+	}
+	mr_ifat_india_3 = {
+		icon = mission_zim_strong_rulership
+		position = 13
+		required_missions = { mr_ifat_india_2 }
+		provinces_to_highlight = {
+			OR = {
+				area = kanara_area
+				area = malabar_area
+			}
+		}
+		trigger = {
+			kanara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			malabar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = india_hegemon_FT
+			tooltip = {
+				add_province_modifier = {
+					name = trade-hegemon_emerging_FT
+					duration = 18250
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = deccan_region
+					}
+					add_province_modifier = {
+						name = trade-hegemon_emerging_FT
+						duration = 18250
+					}
+				}
+			}
+		}
+	}
+	
 }
 mr_ifat_missions_4 = { 
 	slot = 4
@@ -204,6 +995,550 @@ mr_ifat_missions_4 = {
 	ai = yes
 	potential = { tag = IFT }
 	has_country_shield = yes
+	
+	mr_ifat_tall_1 = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1211
+		}
+		trigger = {
+			1211 = {
+				NOT = { devastation = 1 }
+				has_tax_building_trigger = yes
+				base_tax = 5
+			}
+		}
+		effect = {
+			1211 = {
+				if = {
+					limit = {
+						NOT = {
+							renaissance = 100
+						}
+					}
+					add_institution_embracement = {
+						which = renaissance
+						value = 50
+					}
+				}
+				else = {
+					owner = { add_prestige = 20 }
+				}
+				add_base_manpower = 3
+			}
+		}
+	}
+	mr_ifat_tall_3 = {
+		icon = mission_central_asian_city
+		position = 2
+		required_missions = { mr_ifat_tall_1 mr_ifat_tall_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1211
+				province_id = 1212
+			}
+			NOT = {
+				development = 20
+			}
+		}
+		trigger = {
+			OR = {
+				1211 = {
+					has_production_building_trigger = yes
+					development = 20
+					renaissance = 100
+					firearms_institution = 100
+				}
+				1212 = {
+					has_trade_building_trigger = yes
+					development = 20
+					renaissance = 100
+					firearms_institution = 100
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = MR_ifat_flavor.1
+			}
+		}
+	}
+	mr_ifat_tall_6 = {
+		icon = mission_high_income
+		position = 3
+		required_missions = { mr_ifat_tall_4 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2757
+				province_id = 2762
+			}
+		}
+		trigger = {
+			2757 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 7
+				is_core = ROOT
+			}
+			2762 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 7
+				is_core = ROOT
+			}
+		}
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_control_over_the_mint
+			}
+			2762 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
+			}
+			2757 = {
+				add_local_autonomy = -100
+				add_province_modifier = {
+					name = eth_increased_gold_mining
+					duration = 9125
+				}
+			}
+		}
+	}
+	mr_ifat_tall_7 = {
+		icon = mission_war_chest
+		position = 4
+		required_missions = { mr_ifat_tall_6 }
+		provinces_to_highlight = { }
+		trigger = {
+			gold_income = 30
+			NOT = { inflation = 1 }
+			master_of_mint = 3
+		}
+		effect = {
+			custom_tooltip = malus_mining_removed
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = estate_burghers_control_over_gold_mine
+					}
+					remove_province_modifier = estate_burghers_control_over_gold_mine
+				}
+			}
+			add_country_modifier = {
+				name = managed_controlled_gold
+				duration = -1
+			}
+		}
+	}
+	mr_ifat_arab_1 = {
+		icon = mission_trade_in_gold_coast
+		position = 5
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1215
+			NOT = { has_dock_building_trigger = yes country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			1215 = {
+				has_dock_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1215 = {
+				add_province_modifier = {
+					name = port_of_babs
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_ifat_arab_2 = {
+		icon = mission_conquer_aden
+		position = 6
+		required_missions = { mr_ifat_arab_1 }
+		provinces_to_highlight = {
+			OR = {
+				area = yemen_area
+				area = tihama_al_yemen_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			yemen_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			tihama_al_yemen_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = {
+			upper_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mecca_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hadramut_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			387 = {
+				add_province_modifier = {
+					name = slowed_ifat_movement
+					duration = -1
+				}
+			}
+			1215 = {
+			add_province_modifier = {
+					name = slowed_ifat_movement
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_ifat_arab_4 = {
+		icon = mission_tear_down_spanish_strongholds
+		position = 8
+		required_missions = { mr_ifat_arab_2 }
+		provinces_to_highlight = {
+			area = mecca_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mecca_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			medina_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tabuk_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mecca_area = {
+				type = all
+				add_province_modifier = {
+					name = freedom_from_shiites
+					duration = 7300
+				}
+			}
+			385 = {
+				if = {
+					limit = {
+						NOT = {
+							has_great_project = {
+								type = kaaba 
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = kaaba
+						tier = 1
+					}
+				}
+				else = {
+					add_adm_power = 200
+				}
+			}
+		}	
+	}
+	mr_ifat_arab_8 = {
+		icon = mission_african_trade_post
+		position = 10
+		required_missions = { mr_ifat_arab_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = tabuk_area
+				area = medina_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tabuk_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			medina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			qasim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yamamah_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nafud_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = kill_bahrayn_2_TT
+			tooltip = {
+				add_country_modifier = {
+					name = kill_bahrayn_2
+					duration = 5475
+				}
+
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						mission_completed = mr_ifat_arab_8
+					}
+					add_country_modifier = {
+						name = kill_bahrayn_2
+						duration = 5475
+					}
+				}
+				else = {
+					add_mil_power = 100
+				}
+			}
+		}
+	}	
+	mr_ifat_som_5 = {
+		icon = mission_ottoman_harem
+		position = 11
+		required_missions = { mr_ifat_som_4 }
+		provinces_to_highlight = {
+			OR = {
+				area = northern_swahili_coast_area
+				area = mombasa_area
+				area = central_swahili_coast_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_swahili_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mombasa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_swahili_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			east_africa_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1196 = {
+				if = {
+					limit = {
+						NOT = {
+							has_great_project = {
+								type = kilwa_city
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = kilwa_city
+						tier = 1
+					}
+				}
+				else = {
+					add_adm_power = 200
+				}
+			}
+			1201 = {
+				add_base_production = 2
+				add_base_tax = 2
+				add_base_manpower = 2
+			}
+			
+		}
+	}
+	mr_ifat_som_7 = {
+		icon = mission_into_persia_1
+		position = 12
+		required_missions = { mr_ifat_som_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = mozambique_area
+				area = uticulo_makuana_area
+				area = shire_area
+				area = lower_zambezi_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			mozambique_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			uticulo_makuana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_zambezi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			butua_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zimbabwe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			quelimane_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = zimbabwe_killer_TT
+			tooltip = {
+				add_country_modifier = {
+					name = zimbabwe_deadge
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						exists = GZI
+					}
+					GZI = {
+						add_country_modifier = {
+							name = zimbabwe_deadge
+							duration = 7300
+						}
+					}
+				}
+				else = {
+					add_mil_power = 200
+				}
+			}
+		}
+	}
+	mr_ifat_som_8 = {
+		icon = mission_empire
+		position = 14
+		required_missions = { mr_ifat_som_7 }
+		provinces_to_highlight = {
+			OR = {
+				area = butua_area
+				area = zimbabwe_area
+				area = quelimane_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger ={
+			butua_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zimbabwe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			quelimane_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			south_africa_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = heir_to_zimbabwe_IFT
+				duration = 18250
+			}
+		}
+	}	
 }
 mr_ifat_missions_5 = {
 	slot = 5
@@ -211,4 +1546,340 @@ mr_ifat_missions_5 = {
 	ai = yes
 	potential = { tag = IFT }
 	has_country_shield = yes
+	
+	mr_ifat_tall_2 = {
+		icon = mission_dharma_mission_arabian_trade
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1212
+		}
+		trigger = {
+			1212 = {
+				NOT = { devastation = 1 }
+				has_tax_building_trigger = yes
+				base_tax = 5
+			}
+		}
+		effect = {
+			1212 = {
+				if = {
+					limit = {
+						NOT = {
+							firearms_institution = 100
+						}
+					}
+					add_institution_embracement = {
+						which = firearms_institution
+						value = 50
+					}
+				}
+				else = {
+					owner = { add_prestige = 20 }
+				}
+				add_base_production = 3
+			}
+		}
+	}
+	mr_ifat_tall_4 = {
+		icon = mission_dharma_mission_the_riches_of_india
+		position = 2
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1211
+				province_id = 2773
+				province_id = 4996
+			}
+			NOT = { base_production = 5 }
+		}
+		trigger = {
+			1211 = {
+				base_production = 5
+			}
+			2773 = {
+				base_production = 5
+			}
+			4996 = {
+				base_production = 5
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = natural_scientist
+				skill = 2
+				culture = ROOT
+				religion = ROOT
+				discount = yes
+			}
+			add_dip_power = 100
+		}
+	}
+	mr_ifat_tall_5 = {
+		icon = mission_industrialize_bengal
+		position = 4
+		required_missions = { mr_ifat_tall_4 }
+		provinces_to_highlight = {
+			region = horn_of_africa_region
+			trade_goods = coffee
+			NOT = { country_or_non_sovereign_subject_holds = ROOT has_manufactory_trigger = yes }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 7
+				region = horn_of_africa_region
+				trade_goods = coffee
+				has_manufactory_trigger = yes
+			}
+		}
+		effect = {
+			custom_tooltip = horn_coffee_tt
+			tooltip = {
+				add_province_modifier = {
+					name = horn_coffee
+					duration = 9125
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						region = horn_of_africa_region
+						trade_goods = coffee
+						has_manufactory_trigger = yes
+					}
+					add_province_modifier = {
+						name = horn_coffee
+						duration = 9125
+					}
+				}
+			}
+		}
+	}
+	
+	mr_ifat_tall_8 = {
+		icon = mission_dominate_home_trade_node
+		position = 4
+		required_missions = { mr_ifat_tall_5 }
+		provinces_to_highlight = {
+			region = arabia_region
+			trade_goods = coffee
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			NOT = {
+				any_province = {
+					region = arabia_region
+					trade_goods = coffee
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+			}
+		}
+		effect = {
+			change_price = {
+				trade_goods = coffee
+				key = monopoly_of_coffee_IFT
+				value = 0.5
+				duration = -1
+			}
+		}
+	}
+	mr_ifat_arab_5 = {
+		icon = mission_invade_island
+		position = 7
+		required_missions = { mr_ifat_arab_2 }
+		provinces_to_highlight = {
+			area = hadramut_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			hadramut_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			mahra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dhofar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			define_advisor = {
+				type = commandant 
+				skill = 3
+				discount = yes
+				culture = yemeni
+			}
+		}
+	}
+	mr_ifat_arab_6 = {
+		icon = mission_mosque
+		position = 9
+		required_missions = { mr_ifat_arab_5 }
+		provinces_to_highlight = {
+			or = {
+				area = mahra_area
+				area = dhofar_area
+			}
+		}
+		trigger = {
+			mahra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dhofar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			pirate_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			oman_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mascat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			custom_tooltip = kill_bahrayn_1_TT
+			tooltip = {
+				add_country_modifier = {
+						name = kill_bahrayn_1
+						duration = 5475
+					}
+				}
+			hidden_effect = {
+				if = {
+					limit = {
+						mission_completed = mr_ifat_arab_7
+					}
+					add_country_modifier = {
+						name = kill_bahrayn_1
+						duration = 5475
+					}
+				}
+				else = {
+					add_mil_power = 100
+				}
+			}
+		}
+	}
+	mr_ifat_arab_9 = {
+		icon = mission_assemble_an_army
+		position = 11
+		required_missions = { mr_ifat_arab_8 mr_ifat_arab_6 }
+		provinces_to_highlight = {
+			region = arabia_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT is_empty = yes }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = own_all_colonized_provinces_ift_TT
+				calc_true_if = {
+					all_province = {
+						region = arabia_region
+						NOT = { is_empty = yes }
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					amount = 81
+				}
+			}
+		
+		}
+		effect = {
+			add_country_modifier = {
+				name = master_of_arabia_TT
+				duration = 18250
+			}
+			every_province = {
+				limit = {
+					region = arabia_region
+					is_empty = yes
+				}
+				add_siberian_construction = 400 
+			}
+			custom_tooltip = add_estate_tribes_TT
+		}
+	}
+	mr_ifat_som_6 = {
+		icon = mission_establish_high_seas_navy
+		position = 12
+		required_missions = { mr_ifat_som_5 }
+		provinces_to_highlight = {
+			OR = {
+				area = sakalava_area
+				area = betsimasaraka_area
+				area = madagascar_highlands_area
+				area = southern_madagascar
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			sakalava_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			betsimasaraka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			madagascar_highlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_madagascar = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1193 = {
+				add_province_modifier = {
+					name = madagascar_security
+					duration = -1
+				}
+			}
+			4024 = {
+				add_province_modifier = {
+					name = madagascar_security
+					duration = -1
+				}
+			}
+			1193 = {
+				add_province_modifier = {
+					name = madagascar_security
+					duration = -1
+				}
+			}
+			4029 = {
+				add_province_modifier = {
+					name = madagascar_security
+					duration = -1
+				}
+			}
+			
+		}
 }

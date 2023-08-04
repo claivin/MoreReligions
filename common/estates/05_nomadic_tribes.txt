@@ -17,6 +17,7 @@ estate_nomadic_tribes = {
 						is_colonial_nation = no
 					}
 					has_unlocked_estate = { estate = estate_nomadic_tribes }
+					completed_mission = mr_ifat_arab_9
 				}
 				NOT = { has_government_attribute = is_merchant_republic }
 				NOT = { government = native }

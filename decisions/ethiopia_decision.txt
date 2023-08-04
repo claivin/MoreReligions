@@ -208,4 +208,33 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	port_in_india_decision_IFT = {
+		major = no
+		potential = {
+			mission_completed = mr_ifat_som_9
+			NOT = {
+				has_country_flag = port_in_india_decision_IFT_FLAG
+			}
+		}
+		allow = {
+			treasury = 500
+			manpower = 10
+		}
+		effect = {
+			set_country_flag = port_in_india_decision_IFT_FLAG
+			hidden_effect = {
+				save_event_target_as = ifat_person_target
+			}
+			2089 = {
+				owner = {
+					country_event = {
+						id = MR_ifat_flavor.3
+					}
+				}
+			}
+			add_manpower = -10
+			add_treasury = -500
+			
+		}
+	|
 }

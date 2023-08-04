@@ -1,0 +1,83 @@
+########################################
+# Events about Abyssinian Unity
+########################################
+
+namespace = abyssinian_event
+
+# Assigning Translaters
+country_event = {
+	id = abyssinian_event.1
+	title = "abyssinian_event.1.t"
+	desc = "abyssinian_event.1.d"
+	picture = xxx
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		army_size = 30
+		num_accepted_cultures = 3
+		has_government_mechanic = abyssinian_unity_mechanic 
+	}
+	
+	option = {
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
+		add_country_modifier = {
+			name = paid_translaters_abyss
+			duration = 5475
+		}
+	}
+	
+	option = {
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+		add_country_modifier = {
+			name = let_them_do_it_abyss
+			duration = 5475
+		}
+	}
+}
+
+# Local Chieftans Land Rights 
+country_event = {
+	id = abyssinian_event.2
+	title = "abyssinian_event.2.t"
+	desc = "abyssinian_event.2.d"
+	picture = xxx
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_government_mechanic = abyssinian_unity_mechanic 
+	}
+	
+	immediate_effect = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { culture = ROOT }
+				}
+				save_event_target_as = abyssinian_event_target_1
+			}
+		}
+	}
+	option = {
+		name = abyssinian_event.2.a 
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
+		event_target:abyssinian_event_target_1 = {
+			add_unrest = -5
+			add_province_modifier = {
+				name = local_power_to_ruler
+			}
+		}
+	}
+	
+	option = {
+		name = abyssinian_event.2.b
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+		event_target:abyssinian_event_target_1 = {
+			add_unrest = 5
+			add_province_modifier = {
+				name = stripped_authority
+			}
+		}
+	}
+}

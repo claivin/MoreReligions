@@ -17,7 +17,6 @@ abyssinian_unity_mechanic = {
 					governing_capacity_modifier = 0.15
 					advisor_cost = -0.1 
 					manpower_in_true_faith_provinces = 0.33
-					custom_tooltip = abyssinian_unity_TT
 				}
 				start_value = 0
 				end_value = 100	

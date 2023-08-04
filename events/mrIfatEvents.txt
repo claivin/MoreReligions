@@ -1,0 +1,112 @@
+namespace = MR_sicily_flavor
+country_event = {
+	id = MR_ifat_flavor.1
+	title = MR_ifat_flavor.1.t
+	desc = MR_ifat_flavor.1.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_ifat_flavor.1.a
+		trigger = {
+			1211 = {
+				has_production_building_trigger = yes
+				development = 20
+				renaissance = 100
+				firearms_institution = 100
+			}
+		}
+		set_capital = 1211
+		1211 = {
+			add_province_modifier = {
+				name = new_capital_harar
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = MR_ifat_flavor.1.a
+		trigger = {
+			1212 = {
+				has_trade_building_trigger = yes
+				development = 20
+				renaissance = 100
+				firearms_institution = 100
+			}
+		}
+		set_capital = 1212
+		1212 = {
+			add_province_modifier = {
+				name = new_capital_zeila
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = MR_ifat_flavor.2
+	title = MR_ifat_flavor.2.t
+	desc = MR_ifat_flavor.2.d
+	picture = BORDER_TENSION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = IFT
+	}
+	
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = MR_ifat_flavor.2.a
+		ifat_area = {
+			type = all
+			add_devastation = 30
+		}
+		add_opinion = {
+			who = AFA
+			modifier = cossack_raids_opinion
+		}
+		AFA = {
+			add_treasury = 200
+		}
+	}
+}
+country_event = {
+	id = MR_ifat_flavor.3
+	title = MR_ifat_flavor.3.t
+	desc = MR_ifat_flavor.3
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_ifat_flavor.3.a
+		2089 = {
+			add_core = event_target:ifat_person_target
+			cede_province = event_target:ifat_person_target
+			remove_core = ROOT
+		}
+		add_treasury = 500
+		
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = MR_ifat_flavor.3.b
+		2089 = {
+			add_core = event_target:ifat_person_target
+		}
+		add_prestige = 10
+		event_target:ifat_person_target = {
+			add_treasury = 500
+			add_manpower = 10
+		}
+		ai_chance = { factor = 0 }
+	}
+		
+		

@@ -89,6 +89,13 @@ philosopher = {
 		modifier = { tolerance_heretic = 1 }
 	}
 
+	#G&K
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { mission_completed = mr_ifat_nubia_1 }
+		}
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
+	}
 	chance = {
 		factor = 1
 	}
@@ -186,6 +193,12 @@ natural_scientist = {
 			monthly_karma = -0.1
 		}
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { mission_completed = mr_ifat_nubia_1 }
+		}
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
+	}
 	
 	chance = {
 		factor = 1
@@ -272,7 +285,13 @@ artist = {
 		}
 		modifier = { tolerance_own = 1 }
 	}
-
+	##G&K
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { mission_completed = mr_ifat_nubia_1 }
+		}
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
+	}
 	chance = {
 		factor = 1
 	}
@@ -288,6 +307,7 @@ artist = {
 			NOT = { stability = 0 }
 		}
 	}
+	
 }
 
 ######################################################
@@ -366,7 +386,13 @@ treasurer = {
 		}
 		modifier = { religious_unity = 0.15 }
 	}
-	
+	##G&K
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { mission_completed = mr_ifat_nubia_1 }
+		}
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
+	}
 	chance = {
 		factor = 1
 	}
@@ -463,6 +489,12 @@ theologian = {
 		modifier = {
 			monthly_karma = 0.1
 		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { mission_completed = mr_ifat_nubia_1 }
+		}
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
 	}
 	
 	chance = {
@@ -672,6 +704,13 @@ inquisitor = {
 		modifier = {
 			monthly_karma = 0.1
 		}
+	}
+	#G&K
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { mission_completed = mr_ifat_nubia_1 }
+		}
+		modifier = { monthly_abyssinian_unity_power = 0.10 }
 	}
 	
 	chance = {
