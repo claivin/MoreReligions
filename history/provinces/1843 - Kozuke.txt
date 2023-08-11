@@ -1,7 +1,7 @@
 #1843 - Kozuke
 
-owner = NTT
-controller = NTT
+owner = JAP
+controller = JAP
 culture = togoku
 religion = nihon
 capital = "Mayabashi"
@@ -11,7 +11,8 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = NTT
+add_core = JAP
+add_core = UES
 discovered_by = chinese
 discovered_by = MCH
 discovered_by = KHA

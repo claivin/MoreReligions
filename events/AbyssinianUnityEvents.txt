@@ -1,3 +1,4 @@
+
 ########################################
 # Events about Abyssinian Unity
 ########################################
@@ -49,35 +50,160 @@ country_event = {
 		has_government_mechanic = abyssinian_unity_mechanic 
 	}
 	
-	immediate_effect = {
+	immediate = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
 					NOT = { culture = ROOT }
 				}
-				save_event_target_as = abyssinian_event_target_1
+				set_province_flag = abyssinian_event_target_1
 			}
 		}
 	}
 	option = {
 		name = abyssinian_event.2.a 
 		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
-		event_target:abyssinian_event_target_1 = {
+		random_owned_province = {
+			limit = {
+				has_province_flag = abyssinian_event_target_1
+			}
 			add_unrest = -5
 			add_province_modifier = {
 				name = local_power_to_ruler
 			}
+			clr_province_flag = abyssinian_event_target_1
 		}
 	}
 	
 	option = {
 		name = abyssinian_event.2.b
 		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
-		event_target:abyssinian_event_target_1 = {
+		random_owned_province = {
+			limit = {
+				has_province_flag = abyssinian_event_target_1
+			}
 			add_unrest = 5
 			add_province_modifier = {
 				name = stripped_authority
 			}
+			clr_province_flag = abyssinian_event_target_1
+		}
+	}
+}
+
+# Separatism Grows in Regions
+country_event = {
+	id = abyssinian_event.3
+	title = "abyssinian_event.3.t"
+	desc = "abyssinian_event.3.d"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_government_mechanic = abyssinian_unity_mechanic 
+		overextension_percentage = 0.50
+		
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { culture = ROOT }
+				}
+				set_province_flag = abyssinian_event_target_2
+			}
+		}
+	}
+	
+	#Clamp Down! We are United!
+	option = {
+		name = abyssinian_event.3.a 
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 5 }
+		random_owned_province = {
+			limit = {
+				has_province_flag = abyssinian_event_target_2
+			}
+			add_nationalism = 30
+			add_unrest = -2
+			clr_province_flag = abyssinian_event_target_2
+		}
+	}
+	
+	#We can allow them some degree of Autonomy.
+	option = {
+		name = abyssinian_event.3.b
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -5 }
+		random_owned_province = {
+			limit = {
+				has_province_flag = abyssinian_event_target_2
+			}
+			add_local_autonomy = 50
+			clr_province_flag = abyssinian_event_target_2
+		}
+	}
+}
+
+# Advisor Faces Backlash
+country_event = {
+	id = abyssinian_event.4
+	title = "abyssinian_event.4.t"
+	desc = "abyssinian_event.4.d"
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_government_mechanic = abyssinian_unity_mechanic 
+		employed_advisor = {
+			NOT = { culture = root }
+		}
+	}
+	
+	#We cannot fire our trusted advisor.
+	option = {
+		name = abyssinian_event.4.a
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 10 }
+		add_country_modifier = {
+			name = improve_advisor_cost_abys
+			duration = 5475
+		}
+	}
+	
+	#Remove them, we cannot cause more problems with our people.
+	option = {
+		name = abyssinian_event.4.b
+		if = {
+			limit = {
+				employed_advisor = {
+					category = ADM
+					NOT = { culture = root }
+				}
+			}
+			remove_advisor_by_category = ADM 
+			add_adm_power = 50
+			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+		}
+		if = {
+			limit = {
+				employed_advisor = {
+					category = DIP
+					NOT = { culture = root }
+				}
+			}
+			remove_advisor_by_category = DIP 
+			add_dip_power = 50
+			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+		}
+		if = {
+			limit = {
+				employed_advisor = {
+					category = MIL
+					NOT = { culture = root }
+				}
+			}
+			remove_advisor_by_category = MIL 
+			add_mil_power = 50
+			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
 		}
 	}
 }

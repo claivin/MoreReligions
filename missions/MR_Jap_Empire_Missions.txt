@@ -7,83 +7,6 @@ mr_jap_missions_first = {
 	potential = {
 		tag = JAP
 	}
-	mr_jap_naval_1 = {
-		icon = "mission_mnd_siam_royal_duel"
-		required_missions = {}
-		position = 1
-		trigger = {
-			naval_forcelimit = 35
-			navy_size_percentage = 1
-		}
-		effect = {
-		}
-	}
-	
-	mr_jap_naval_2 = {
-		icon = "mission_mnd_siam_royal_duel"
-		required_missions = { mr_jap_naval_1 }
-		position = 2
-		provinces_to_highlight = {
-			OR = {
-				province_id = 4182
-				province_id = 1028
-			}
-		}
-		trigger = {
-			OR = {
-				4182 = {
-					OR = {
-						has_building = shipyard
-						has_building = grand_shipyard
-					}
-					OR = {
-						has_building = dock
-						has_building = drydock
-					}
-					base_production = 5
-					base_manpower = 5
-				}
-				
-				1028 = {
-					OR = {
-						has_building = shipyard
-						has_building = grand_shipyard
-					}
-					OR = {
-						has_building = dock
-						has_building = drydock
-					}
-					base_production = 7
-					base_manpower = 7
-				}
-			}	
-		}
-		effect = {
-		}
-	}
-	
-	mr_jap_naval_3 = {
-		icon = "mission_mnd_siam_royal_duel"
-		required_missions = { mr_jap_naval_2 mr_jap_naval_5 }
-		position = 4
-		
-		trigger = {
-			calc_true_if = {
-				any_owned_province = {
-					has_building = wharf
-				}
-				amount = 3
-			}
-			OR = {
-				full_idea_group = maritime_ideas
-				full_idea_group = exploration_ideas
-			}
-		}
-		
-		effect = {
-		}
-	}
-			
 	
 }
 mr_jap_missions_second = {
@@ -94,69 +17,48 @@ mr_jap_missions_second = {
 	potential = {
 		tag = JAP
 	}
-	
-	mr_jap_naval_4 = {
-		icon = "mission_mnd_siam_royal_duel"
-		required_missions = { mr_jap_naval_1 }
+	mr_jap_SD_5 = {
+		icon = jap_financial_cliques
 		position = 2
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2741
-				province_id = 4651
-			}
-		}
+		required_missions = { mr_jap_SD_1 }
+		provinces_to_highlight = { }
 		trigger = {
-			OR = {
-				AND = {
-					SOO = {
-						vassal_of = ROOT
-					}
-					JEJ = {
-						vassal_of = ROOT
-					}
-				}
-				AND = {
-					2741 = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					4651 = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+			num_of_estate_privileges = {
+				estate = estate_nobles
+				value = 5
 			}
-			NOT = {
-				any_country = {
-					1376 = { 
-						has_privateer_share_in_trade_node = {
-							who = PREV
-							share = 0.01
-						}
-					}
-				}
+			estate_influence = {
+				estate = estate_nobles
+				influence = 70
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = ticking_SD_3
+				duration = -1
+			}
 		}
 	}
-	
-	mr_jap_naval_5 = {
-		icon = "mission_mnd_siam_royal_duel"
-		required_missions = { mr_jap_naval_4 }
-		position = 2
-		provinces_to_highlight = {
-			province_id = 1376
-		}
+	mr_jap_SD_6 = {
+		icon = mission_high_income
+		position = 4
+		required_missions = { mr_jap_SD_5 }
+		provinces_to_highlight = { }
 		trigger = {
-			1376 = {
-				trade_share = {
-					country = ROOT
-					share = 50
-				}
+			estate_loyalty = {
+				estate = estate_nobles 
+				loyalty = 70
 			}
-			num_of_heavy_ship = 15
-			num_of_light_ship = 15
+			custom_trigger_tooltip = {
+				tooltip = estate_shugo_mission_1_TT
+				crown_land_share = estate_shugo
+			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = rebuilding_japan_MR
+				duration = 3650
+			}
 		}
 	}
 }
@@ -168,6 +70,81 @@ mr_jap_missions_third = {
 	potential = {
 		tag = JAP
 	}
+	mr_jap_SD_1 = {
+		icon = mission_plc_governance_act 
+		position = 1
+		required_missions = { }
+		provinces_to_highlight  = { }
+		trigger = {
+			employed_advisor = {
+				category = ADM
+			}
+			employed_advisor = {
+				category = DIP
+			}
+			employed_advisor = {
+				category = MIL
+			}
+			employed_advisor = {
+				level = 2
+			}
+		}
+		effect = {
+			add_government_power = { mechanic_type = shugo_dominance_mechanic power_type = shugo_dominance_mechanic_power value = -10 }
+			add_country_modifier = {
+				name = advisor_cost_JAP_1
+				duration = 3650
+			}
+		}
+	}
+	
+	mr_jap_SD_2 = {
+		icon = jap_balance_shinokosho
+		position = 3
+		provinces_to_highlight = { }
+		required_missions = { mr_jap_SD_1 }
+		trigger = {
+			crown_land_share = 30
+		}
+		effect = {
+			add_country_modifier = {
+				name = ticking_SD_1
+				duration = -1
+			}
+		}
+	}
+	
+	mr_jap_SD_7 = {
+		icon = jap_restoration
+		position = 5
+		provinces_to_highlight = { }
+		required_missions = { mr_jap_SD_2 mr_jap_SD_6 mr_jap_SD_4 }
+		trigger = {
+			OR = {
+				and = {
+					NOT = {
+						has_government_power = {
+							mechanic_type = shugo_dominance_mechanic
+							power_type = shugo_dominance_mechanic_power
+							value = 10
+						}
+					}
+					NOT = { has_disaster = hotoku_war }
+				}
+				and = {
+					custom_trigger_tooltip = {
+						tooltip = win_the_civil_war
+						has_global_flag = end_of_war_SHUGO
+					}
+				}
+			}
+		}
+		effect = {
+			add_prestige = 10
+			remove_estate_privilege = estate_shugo_japan
+		}
+	}
+					
 }
 mr_jap_missions_fourth = {
 	slot = 4
@@ -177,28 +154,37 @@ mr_jap_missions_fourth = {
 	potential = {
 		tag = JAP
 	}
-	
-	mr_jap_political_1 = {
-		icon = "mission_mnd_siam_royal_duel"
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			all_province = {
-				owner = {
-					is_subject_of_type_with_overlord =  { who = JAP type = shugo_vassal }
-				}
-			}
-		}
-		
+	mr_jap_SD_3 = {
+		icon = mission_japanese_samurai
+		position = 2
+		required_missions = { mr_jap_SD_1 }
+		provinces_to_highlight = { }
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = jap_political_1_TT
-				has_global_flag = unite_japan_flag
-			}
+			army_size = 35
+			army_professionalism = 0.05
 		}
 		effect = {
+			add_country_modifier = {
+				name = ticking_SD_2
+				duration = -1
+			}
 		}
-		
+	}
+	mr_jap_SD_4 = {
+		icon = jap_train_samurai
+		position = 4
+		required_missions = { mr_jap_SD_3 }
+		provinces_to_highlight = { }
+		trigger = {
+			army_professionalism = 0.1
+			manpower_percentage = 0.75
+		}
+		effect = {
+			add_country_modifier = {
+				name = rebuilt_imperial_army_MR
+				duration = 5475
+			}
+		}
 	}
 }
 mr_jap_missions_fifth = {

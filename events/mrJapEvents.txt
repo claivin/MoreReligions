@@ -1,0 +1,769 @@
+namespace = mrJapEvents
+
+country_event = {
+	id = mrJapEvents.1
+	title = mrJapEvents.1.t
+	desc = mrJapEvents.1.d
+	picture = SENGOKU_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = yes
+	
+	immediate = {
+		hidden_effect = {
+			1014 = {
+				change_controller = SMZ
+			}
+			5064 = {
+				change_controller = SMZ
+			}
+			1818 = {
+				change_controller = SMZ
+			}
+			4182 = {
+				change_controller = SMZ
+			}
+			4131 = {
+				change_controller = AKT
+			}
+			4192 = {
+				change_controller = AKT
+			}
+			1825 = {
+				change_controller = HSK
+			}
+			4184 = {
+				change_controller = HSK
+			}
+			1843 = {
+				change_controller = NTT
+			}
+			4191 = {
+				change_controller = NTT
+			}
+			4187 = {
+				add_core = ROOT
+			}
+			1820 = {
+				add_core = ROOT
+			}
+			1012 = {
+				add_core = ROOT
+			}
+			1028 = {
+				add_core = ROOT
+			}
+			4193 = {
+				add_core = ROOT
+			}
+			if = {
+				limit = {
+					SMZ = { ai = yes }
+					HSK = { ai = yes }
+					HTK = { ai = yes }
+					AKT = { ai = yes }
+					NTT = { ai = yes }
+				}
+				NTT = {
+					create_alliance = SMZ
+					create_alliance = HSK
+					create_alliance = HTK
+					create_alliance = AKT
+					declare_war_with_cb = {
+						who = JAP
+						casus_belli = cb_annex
+					}
+					every_country = {
+						limit = {
+							alliance_with = NTT
+						}
+						join_all_offensive_wars_of = NTT
+					}
+					save_global_event_target_as = leader_of_shugo
+				}
+			}
+			else_if = {
+				limit = {
+					SMZ = { ai = no }
+				}
+				SMZ = {
+					create_alliance = NTT
+					create_alliance = HSK
+					create_alliance = HTK
+					create_alliance = AKT
+					declare_war_with_cb = {
+						who = JAP
+						casus_belli = cb_annex
+					}
+					every_country = {
+						limit = {
+							alliance_with = SMZ
+						}
+						join_all_offensive_wars_of = SMZ
+					}
+					save_global_event_target_as = leader_of_shugo
+				}
+			}
+			else_if = {
+				limit = {
+					HSK = { ai = no }
+				}
+				HSK = {
+					create_alliance = NTT
+					create_alliance = SMZ
+					create_alliance = HTK
+					create_alliance = AKT
+					declare_war_with_cb = {
+						who = JAP
+						casus_belli = cb_annex
+					}
+					every_country = {
+						limit = {
+							alliance_with = HSK
+						}
+						join_all_offensive_wars_of = HSK
+					}
+					save_global_event_target_as = leader_of_shugo
+				}
+			}
+			else_if = {
+				limit = {
+					HTK = { ai = no }
+				}
+				HTK = {
+					create_alliance = NTT
+					create_alliance = SMZ
+					create_alliance = HSK
+					create_alliance = AKT
+					declare_war_with_cb = {
+						who = JAP
+						casus_belli = cb_annex
+					}
+					every_country = {
+						limit = {
+							alliance_with = HTK
+						}
+						join_all_offensive_wars_of = HTK
+					}
+					save_global_event_target_as = leader_of_shugo
+				}
+			}
+			else_if = {
+				limit = {
+					AKT = { ai = no }
+				}
+				AKT = {
+					create_alliance = NTT
+					create_alliance = SMZ
+					create_alliance = HSK
+					create_alliance = HTK
+					declare_war_with_cb = {
+						who = JAP
+						casus_belli = cb_annex
+					}
+					every_country = {
+						limit = {
+							alliance_with = AKT
+						}
+						join_all_offensive_wars_of = AKT
+					}
+					save_global_event_target_as = leader_of_shugo
+				}
+			}
+			else = {
+				NTT = {
+					create_alliance = SMZ
+					create_alliance = HSK
+					create_alliance = HTK
+					create_alliance = AKT
+					declare_war_with_cb = {
+						who = JAP
+						casus_belli = cb_annex
+					}
+					every_country = {
+						limit = {
+							alliance_with = NTT
+						}
+						join_all_offensive_wars_of = NTT
+					}
+					save_global_event_target_as = leader_of_shugo
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = mrJapEvents.1.a
+		add_prestige = 10
+	}
+}
+country_event = {
+	id = mrJapEvents.2
+	title = mrJapEvents.2.t
+	desc = {
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					NOT = { controlled_by = ROOT }
+				}
+				amount = 20
+			}
+			1020 = { 
+				NOT = { controlled_by = ROOT }
+			}
+		}
+		desc = mrJapEvents.2.d.1
+	}
+	desc = {
+		trigger = {
+			1020 = { 
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			1820 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			1028 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			1012 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			4187 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			4193 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		desc = mrJapEvents.2.d.2
+	}
+	picture = SHOGUNATE_AUTHORITY_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = end_of_war_SHUGO
+		}
+	}
+	
+	
+	#Shugo Victory, total imperial death.
+	option = {
+		name = mrJapEvents.2.a 
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					NOT = { controlled_by = ROOT }
+				}
+				amount = 20
+			}
+			1020 = { 
+				NOT = { controlled_by = ROOT }
+			}
+		}
+		custom_tooltip = lands_of_japan_divided_tt
+		hidden_effect = {
+			#Shimazu Gains
+			4181 = {
+				cede_province = SMZ
+			}
+			#Ouchi Gains
+			release = OUC
+			OUC = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = saigoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			5061 = {
+				cede_province = OUC
+				add_core = OUC
+			}
+			1017 = {
+				cede_province = OUC
+				add_core = OUC
+			}
+			4183 = {
+				cede_province = OUC
+				add_core = OUC
+			}
+			#Yamana Gains
+			release = YMN
+			YMN = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = saigoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			4184 = {
+				cede_province = YMN
+				add_core = YMN
+			}
+			1019 = {
+				cede_province = YMN
+				add_core = YMN
+			}
+			1825 = {
+				cede_province = YMN
+				add_core = YMN
+			}
+			#Amago Releases
+			release = AMA
+			AMA = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = saigoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1018 = {
+				add_core = AMA
+				cede_province = AMA
+			}
+			5060 = {
+				cede_province = AMA
+				add_core = AMA
+			}
+			1830 = {
+				cede_province = AMA
+				add_core = AMA
+			}
+			#Shiba Releases
+			release = SBA
+			SBA = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = saigoku
+				add_accepted_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			4185 = {
+				add_core = SBA
+				cede_province = SBA
+			}
+			1023 = {
+				add_core = SBA
+				cede_province = SBA
+			}
+			5056 = {
+				add_core = SBA
+				cede_province = SBA
+			}
+			5055 = {
+				add_core = SBA
+				cede_province = SBA
+			}
+			1837 = {
+				add_core = SBA
+				cede_province = SBA
+			}
+			#Takeda Releases
+			release = TKD
+			TKD = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1029 = {
+				add_core = TKD
+				cede_province = TKD
+			}
+			4118 = {
+				add_core = TKD
+				cede_province = TKD
+			}
+			#Imagawa Releases
+			release = IMG
+			IMG = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1839 = {
+				add_core = IMG
+				cede_province = IMG
+			}
+			#Tokugawa Releases
+			release = TKG
+			TKG = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			4360 = {
+				add_core = TKG
+				cede_province = TKG
+			}
+			#Toki Releases
+			release = TKI
+			TKI = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1835 = {
+				add_core = TKI
+				cede_province = TKI
+			}
+			#Oda Releases (for people to do the stupid larp.)
+			release = ODA
+			ODA = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1030 = {
+				add_core = ODA
+				cede_province = ODA
+			}
+			#Date Releases
+			release = DTE
+			DTE = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1026 = {
+				add_core = DTE
+				cede_province = DTE
+			}
+			5049 = {
+				add_core = DTE
+				cede_province = DTE
+			}
+			1025 = {
+				add_core = DTE
+				cede_province = DTE
+			}
+			
+			#Andou gains land
+			4192 = {
+				add_core = AKT 
+				cede_province = AKT 
+			}
+			4131 = {
+				add_core = AKT
+				cede_province = AKT
+			}
+			#Ogasawara Releases
+			release = OGS
+			OGS = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			4188 = {
+				add_core = OGS
+				cede_province = OGS
+			}
+			5054 = {
+				add_core = OGS
+				cede_province = OGS
+			}
+			#Uesugi Releases
+			release = UES
+			UES = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1024 = {
+				add_core = UES
+				cede_province = UES
+			}
+			1843 = {
+				add_core = UES
+				cede_province = UES
+			}
+			#Utsunomiya Releases
+			release = UTN
+			UTN = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = togoku
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			4191 = {
+				add_core = UTN
+				cede_province = UTN
+			}
+			#Otomo Releases
+			release = OTM
+			OTM = {
+				change_religion = ROOT
+				change_government = monarchy
+				change_primary_culture = kyushuan
+				add_adm_power = 112
+				add_dip_power = 112
+				add_mil_power = 112
+				add_treasury = 136
+				add_manpower = 8
+				add_sailors = 3000
+				add_army_tradition = 5
+			}
+			1818 = {
+				add_core = OTM
+				cede_province = OTM
+			}
+			1014 = {
+				add_core = OTM
+				cede_province = OTM
+			}
+			5064 = {
+				add_core = OTM
+				cede_province = OTM
+			}
+			4182 = {
+				add_core = OTM
+				cede_province = OTM
+			}
+			#Some final clean up in case Japan took some land.
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = kinai_area
+						area = chubu_area
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cede_province = HTK
+			}
+			every_owned_province = {
+				limit = {
+					area = kyushu_area
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cede_province = SMZ
+			}
+			every_owned_province = {
+				limit = {
+					area = shikoku_area
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cede_province = HSK
+			} 
+			every_owned_province = {
+				limit = {
+					area = hokkaido_area
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cede_province = AKT
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = kanto_area
+						area = eastern_kanto_area
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cede_province = NTT
+			}
+			event_target:leader_of_shugo = {
+				1020 = {
+					add_core = event_target:leader_of_shugo
+					cede_province = event_target:leader_of_shugo
+				}
+			}
+			every_country = {
+				limit = {
+					capital_scope = {
+						region = japan_region
+					}
+				}
+				country_event = {
+					id = mrJapEvents.3
+					days = 3
+				}
+			}
+		}
+	}
+	
+	#Victory of the Empire
+	option = {
+		name = mrJapEvents.2.b
+		trigger = {
+			1020 = { 
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			1820 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			1028 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			1012 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			4187 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			4193 = {
+				OR = {
+					controlled_by = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		JAP = {
+			inherit = SMZ
+			inherit = HSK
+			inherit = HTK
+			inherit = NTT
+			inherit = AKT
+		}
+		custom_tooltip = remove_shugo_TT
+		hidden_effect = {
+			set_country_flag = removed_shugo
+		}
+	}	
+}
+
+#The Sengoku Jidai
+country_event = {
+	id = mrJapEvents.3
+	title = mrJapEvents.3.t
+	desc = mrJapEvents.3.d 
+	picture = FIREARMS_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+
+		
+	option = {	
+		name = mrJapEvents.3.a
+		custom_tooltip = sengoku_jidai_TT
+		hidden_effect = {
+			set_country_flag = sengoku_jidai_flag_MR
+		}
+	}
+	
+	option = {
+		name = mrJapEvents.3.b
+	}
+}

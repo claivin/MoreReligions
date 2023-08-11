@@ -1,0 +1,16 @@
+defeat_the_pretenders_BNG_1 = {
+	land_morale = 0.05
+	manpower_recovery_speed = 0.10
+}
+burgher_influence_BEN = {
+	burghers_loyalty_modifier = 0.10
+	burghers_influence_modifier = 0.3
+}
+clergy_influence_BEN = {
+	church_loyalty_modifier = 0.10
+	church_influence_modifier = 0.3
+}
+nobles_influence_BEN = {
+	rajput_loyalty_modifier = 0.10
+	rajput_influence_modifier = 0.3
+}

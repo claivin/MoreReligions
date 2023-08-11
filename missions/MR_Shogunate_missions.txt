@@ -27,7 +27,7 @@ mr_shogun_missions_fourth = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = jap_political_1_TT
-				is_subject = no
+				ai = no
 			}
 		}
 		

@@ -47,7 +47,25 @@
  sh_foreign_allies_tt:0 "Have either §G2 Tributaries of Pagan at 100 Opinion§!, or have §G1 Rival of Pagan at 100 Opinion.§!"
 
  ##Japanese Missions#
- mr_jap_political_1_title: "Fate of the Empire"
+ 
+ mr_jap_SD_1_title: "Establish the New Court"
+ mr_jap_SD_2_title: "Reorganize the Kokushi"
+ mr_jap_SD_3_title: "Align the Samurai Clans"
+ mr_jap_SD_4_title: "Defense of the Emperor"
+ mr_jap_SD_5_title: "Expand the Kuge"
+ mr_jap_SD_6_title: "Strip the Kanrei"
+ mr_jap_SD_7_title: "End the Shugo Dominance"
+ 
+ 
+ estate_shugo_mission_1_TT: "Have more §YCrown Land§! than the §YShugo§! Estate."
+ THIS_WILL_KILL_YOU_TT: "§RIf this happens, it will end your campaign and destroy Japan!§!"
+ advisor_cost_JAP_1: "A New Court Era"
+ ticking_SD_1: "Reorganizing the Government"
+ ticking_SD_2: "Reorganizing the Army"
+ ticking_SD_3: "New Revenue Sources"
+ rebuilding_japan_MR: "Expand the Rice Fields"
+ rebuilt_imperial_army_MR: "Rebuilt Imperial Army"
+ 
  BAKUFU_NAME_1: "Edo Bakufu"
  BAKUFU_NAME_2: "Tokushima Bakufu"
  BAKUFU_NAME_3: "Satsuma Bakufu"
@@ -463,6 +481,9 @@
  let_them_do_it_abyss: "Noble Privilege"
  local_power_to_ruler: "Local Authority Affirmed"
  stripped_authority: "Local Authority Stripped"
+ 
+ 
+ #Japanese Missions
  
  
  #To be moved to the Event Localization File

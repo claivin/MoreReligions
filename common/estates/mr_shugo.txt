@@ -35,6 +35,7 @@ estate_shugo =
 		NOT = { has_reform = revolutionary_empire_reform }
 		culture_group = japanese_g
 		NOT = { is_subject_of_type = shugo_vassal }
+		NOT = { has_country_flag = removed_shugo }
 		AND = {
 			OR = {
 				NOT = { has_reform = leading_clergy_reform }

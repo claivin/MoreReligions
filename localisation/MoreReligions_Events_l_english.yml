@@ -210,3 +210,35 @@
  MR_ifat_flavor.3.a: "We shall gladly take their money!"
  MR_ifat_flavor.3.b: "They can shove it!"
  
+ 
+ #Bengal Events
+ mrBengalEvents.1.t: "The Crisis of the Sena"
+ mrBengalEvents.1.a: "Daksha remains, with Smarta Noble Dominance!"
+ mrBengalEvents.2.b: "Balaaditya takes power with the Mahayana Monks!"
+ mrBengalEvents.2.c: "Alauddin wrests coontrol with the Tayyibi Merchants!
+ nobles_influence_BEN: "Noble Backing"
+ clergy_influence_BEN: "Monastic Backing"
+ burgher_influence_BEN: "Merchant Backing"
+ defeat_the_pretenders_BNG_1: "Defeat the Pretenders"
+ 
+ 
+ #Japan Events
+ mrJapEvents.1.t: "The Hotoku War Begins"
+ mrJapEvents.1.d: "As the Imperial Throne of Japan fails to reign in their rebellious military governors, the Shugo, a plan was set in place. When [JAP.Monarch.GetTitle] [JAP.Monarch.GetName] announced that Tetsuya Nitta, younger brother of the Shugo [NTT.Monarch.GetName], would be the next Shogun, in a blatant attempt to weaken the institution of the military, they launched an offensive.\n\nIn Sanyodo, the provinces of Nagato, Suo, and Aki were taken by rebel forces, while in Tohoku, Mutso and Ugo were swiftly taken by loyalist forces. The Emperor called his loyal samurai and army to ride and defeat the traitors, and thus, the Hotoku Disturbance had begun. Should the Empire fall, the Shogunate could be restored, or perhaps this event shall only strengthen Imperial rule..."
+ mrJapEvents.1.a: "For the Emperor!"
+ 
+ mrJapEvents.2.t: "End of the Hotoku War"
+ mrJapEvents.2.a: "Owari da..."
+ mrJapEvents.2.b: "The Emperor is Triumphant!"
+ mrJapEvents.2.d.1: "Just like at the end of the Heian Period, the era of imperial rule that began in the 14th Century has come to a close. With Shugo forces making their way through the imperial capital and holding the Emperor himself hostage, the fight was over. While the heads of clan Nitta, Shimazu, Hosokawa, Hatakeyama, and Andou all argue behind closed doors about who would be the next Shogun, the samurai and Japan prepare for the next era of military control."
+ mrJapEvents.2.d.2: "With the fall of the last rebel stronghold, the Hotoku Disturbance came to a close. With the remaining Shugo having either been executed or they declared their loyalty to his majesty, an Era of Peace and Tranquility has begun across the Japanese isles, forever united."
+
+ lands_of_japan_divided_tt: "§YThe Territory of the Empire shall be divded between various Shugo.§!"
+ 
+ mrJapEvents.3.t: "The Sengoku Jidai"
+ mrJapEvents.3.d: "At the end of the Hotoku War, the Emperor of Japan had to step back and accept the dominance of the Shogun. Smaller, local, Shugo have expanded their domains and taken charge within their borders as imperial control recedes to the borders of Kyoto. However, despite the five major Shugo rallying behind a single leader during the war itself, in the aftermath they each seemed to have conflicting goals and desires. This eventually led to a situation where a council of all the Shugo could not decide clearly who the next Shogun should be.\n\nIn the absence of a diplomatic solution, military might will decide the victor of these warring states - the Sengoku Jidai has begun!"
+ mrJapEvents.3.a: "To the victor goes the spoils."
+ mrJapEvents.3.b: "Who are some of the players in the conflict?"
+ sengoku_jidai_TT: "This will enable the Sengoku Jidai Casus Belli"
+ 
+ 

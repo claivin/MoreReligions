@@ -120,3 +120,7 @@ local_power_to_ruler = {
 stripped_authority = {
 	local_autonomy = -33
 }
+improve_advisor_cost_abys = {
+	advisor_cost = -0.10
+	advisor_pool = 1 
+}

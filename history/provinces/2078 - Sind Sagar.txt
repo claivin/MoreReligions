@@ -3,7 +3,7 @@
 owner = PUN
 controller = PUN
 culture = pashtun
-religion = sunni
+religion = mr_tayyibi
 capital = "Bannu"
 trade_goods = livestock
 hre = no

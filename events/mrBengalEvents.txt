@@ -1,0 +1,131 @@
+namespace = mrBengalEvents
+
+country_event = {
+	id = mrBengalEvents.1
+	title = mrBengalEvents.1.t
+	desc = mrBengalEvents.1.d
+	picture = COURT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BNG
+	}
+	
+	mean_time_to_happen = {
+		months = 10
+	}
+	
+	option = {
+		name = mrBengalEvents.1.a
+		add_stability = 1
+		add_country_modifier = {
+			name = defeat_the_pretenders_BNG_1
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = nobles_influence_BEN
+			duration = 3650
+		}
+		random_owned_province = {
+			limit = {
+				religion = mahayana
+			}
+			spawn_rebels = {
+				type = mahayana_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes 
+			}
+			spawn_rebels = {
+				type =  particularist_rebels
+				size = 1
+			}
+		}
+		swap_non_generic_missions = yes 
+	}
+	
+	option = {
+		name = mrBengalEvents.2.b
+		exile_ruler_as = { name = rejected_ruler }
+		change_religion = mahayana
+		define_ruler = {
+			name = "Balaaditya"
+			adm = 3
+			dip = 3
+			dynasty = ROOT
+			culture = ROOT
+			religion = mahayana
+		}
+		add_country_modifier = {
+			name = defeat_the_pretenders_BNG_1
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = clergy_influence_BEN
+			duration = 3650
+		}
+		random_owned_province = {
+			limit = {
+				religion = hinduism
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_port = yes 
+			}
+			spawn_rebels = {
+				type =  particularist_rebels
+				size = 1
+			}
+		}
+		swap_non_generic_missions = yes 
+	}
+	
+	option = {
+		name = mrBengalEvents.2.c
+		exile_ruler_as = { name = rejected_ruler }
+		change_religion = mr_tayyibi
+		define_ruler = {
+			name = "Alauddin"
+			dip = 3
+			mil = 3
+			dynasty = ROOT
+			culture = ROOT
+			religion = mr_tayyibi
+		}
+		add_country_modifier = {
+			name = defeat_the_pretenders_BNG_1
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = burgher_influence_BEN
+			duration = 3650
+		}
+		random_owned_province = {
+			limit = {
+				religion = hinduism
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = mahayana
+			}
+			spawn_rebels = {
+				type =  mahayana_rebels
+				size = 2
+			}
+		}
+		swap_non_generic_missions = yes 
+	}

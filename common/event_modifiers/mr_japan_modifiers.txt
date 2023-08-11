@@ -1,0 +1,25 @@
+advisor_cost_JAP_1 = {
+	advisor_cost = -0.1
+	advisor_pool = 1 
+}
+ticking_SD_1 = {
+	monthly_shugo_dominance_mechanic_power = -0.5
+	reform_progress_growth = 0.35
+	legitimacy = 1
+}
+ticking_SD_2 = {
+	monthly_shugo_dominance_mechanic_power = -0.15
+	discipline = 0.05
+	land_forcelimit_modifier = 0.25
+}
+ticking_SD_3 = {
+	monthly_shugo_dominance_mechanic_power = -0.15
+	global_tax_modifier = 0.15
+}
+rebuilt_imperial_army_MR = {
+	manpower_recovery_speed = 0.25
+	reduced_liberty_desire = 25
+}
+rebuilding_japan_MR = {
+	development_cost = -0.15
+}

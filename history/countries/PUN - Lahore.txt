@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 technology_group = indian
 primary_culture = panjabi
-religion = sunni
+religion = mr_tayyibi
 capital = 507	# Lahore
 
 #Lodis

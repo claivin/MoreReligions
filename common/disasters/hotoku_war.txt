@@ -1,0 +1,147 @@
+hotoku_war = {
+	potential = {
+		NOT = {
+			has_global_flag = end_of_war_SHUGO
+			mission_completed = mr_jap_SD_7
+		}
+		tag = JAP
+		num_of_cities = 2
+		any_owned_province = {
+			is_capital = no
+			is_core = ROOT
+		}
+		is_free_or_tributary_trigger = yes
+		uses_doom = no
+		normal_or_historical_nations = yes
+	}
+	
+	can_start = {
+        has_any_disaster = no
+		has_government_power = {
+			mechanic_type = shugo_dominance_mechanic
+			power_type = shugo_dominance_mechanic_power
+			value = 75
+		}
+	}
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			mission_completed = mr_jap_SD_7
+			NOT = { 
+				has_government_power = {
+					mechanic_type = shugo_dominance_mechanic
+					power_type = shugo_dominance_mechanic_power
+					value = 50
+				}
+			}
+		}
+	}
+	
+	progress = {
+		modifier = {
+			factor = 5
+			tag = JAP
+		}
+		
+		modifier = {
+			factor = 2
+			has_government_power = {
+				mechanic_type = shugo_dominance_mechanic
+				power_type = shugo_dominance_mechanic_power
+				value = 80
+			}
+			NOT = { 
+				has_government_power = {
+					mechanic_type = shugo_dominance_mechanic
+					power_type = shugo_dominance_mechanic_power
+					value = 90
+				}
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			has_government_power = {
+				mechanic_type = shugo_dominance_mechanic
+				power_type = shugo_dominance_mechanic_power
+				value = 90
+			}
+		}
+		
+		modifier = {
+			factor = -2
+			stability = 3
+		}
+	}
+	
+	on_monthly = {
+        events = {
+        }
+        random_events = { 	
+			1000 = 0
+        }
+	}
+	
+	modifier = {
+		global_unrest = 2
+	}
+	
+	can_end = {
+		OR = {
+			AND = {
+				calc_true_if = {
+					all_owned_province = {
+						NOT = { controlled_by = ROOT }
+					}
+					amount = 20
+				}
+				1020 = { 
+					NOT = { controlled_by = ROOT }
+				}
+				custom_tooltip = THIS_WILL_KILL_YOU_TT
+			}
+			AND = {
+				1020 = { 
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				1820 = {
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				1028 = {
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				1012 = {
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				4187 = {
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				4193 = {
+					OR = {
+						controlled_by = ROOT
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+	}
+	
+	on_start = mrJapEvents.1
+	on_end = mrJapEvents.2
+}
