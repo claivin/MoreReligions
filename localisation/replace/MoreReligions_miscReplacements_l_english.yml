@@ -67,6 +67,10 @@
  HAVE_AT_LEAST_SAMURAI_THAN:0 "Have at least §Y$VALUE$§! Sohei.\n"
  MODIFIER_AMOUNT_OF_SAMURAI:0 "Sohei Force Limit"
  ONLY_SAMURAI_MODIFIER:0 "§YAffects only Sohei Regiments§!"
+ 
+ empire_of_china_title:0 "Claim The Empire of China"
+ empire_of_china_desc:0 "Ever since the chaotic end of the Yuan dynasty, no ruler has been able to secure unopposed claim to the Mandate of Heaven. With our hegemony over the Middle Kingdom now uncontested, our [Root.Monarch.GetTitle] must be proclaimed the new Son of Heaven once we have secured the traditional capitals of the Empire."
+
 
  
  

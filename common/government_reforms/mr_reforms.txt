@@ -218,14 +218,16 @@ kingdom_of_light_reform = {
 	nation_designer_trigger = {
 			culture_group = chinese
 	}
+	maintain_dynasty = yes
 	legacy_equivalent = feudal_theocracy_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
+	fixed_rank = 2
 	modifiers = {
 		missionaries = 1
 		global_missionary_strength = 0.01
 		tolerance_own = 2
-		governing_capacity = 50
+		governing_capacity = 500
 		brahmins_hindu_loyalty_modifier = 0.05
 		church_loyalty_modifier = 0.05
 	}
@@ -237,6 +239,8 @@ kingdom_of_light_reform = {
 		}
 	}
 	custom_attributes = {
+		locked_government_type = yes
+		has_unify_china_cb = yes
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
@@ -251,14 +255,16 @@ empire_of_light_reform = {
 	nation_designer_trigger = {
 			culture_group = chinese
 	}
+	maintain_dynasty = yes
 	legacy_equivalent = feudal_theocracy_legacy
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
+	fixed_rank = 3
 	modifiers = {
 		missionaries = 1
 		global_missionary_strength = 0.01
 		tolerance_own = 2
-		governing_capacity = 150
+		governing_capacity = 500
 		brahmins_hindu_loyalty_modifier = 0.05
 		church_loyalty_modifier = 0.05
 	}
@@ -269,7 +275,15 @@ empire_of_light_reform = {
 			feudal_theocracy_mechanic
 		}
 	}
+	
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		has_meritocracy = yes
+	}
+	
 	custom_attributes = {
+		locked_government_type = yes
+		has_unify_china_cb = yes
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}

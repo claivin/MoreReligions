@@ -4995,55 +4995,6 @@ nahuatl_monarchy = {
 	}
 }
 
-chinese_monarchy = {
-	rank = {
-		1 = PRINCEDOM
-		2 = KINGDOM
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = PRINCE
-		2 = KING
-		3 = EMPEROR
-	}
-
-	ruler_female = {
-		1 = PRINCESS
-		2 = QUEEN
-		3 = EMPRESS
-	}
-	
-	consort_male = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
-	}
-
-	consort_female = {
-		1 = CONSORT
-		2 = CONSORT
-		3 = CONSORT
-	}
-
-	heir_male = {
-		1 = HEIR
-		2 = HEIR
-		3 = HEIR
-	}
-
-	heir_female = {
-		1 = HEIR_fem
-		2 = HEIR_fem
-		3 = HEIR_fem
-	}
-
-	trigger = {
-		government = monarchy
-		culture_group = east_asian #Chinese
-	}
-}
-
 hindu_monarchy = {
 	rank = {
 		1 = PRINCEDOM
@@ -5742,5 +5693,154 @@ gov_japanese_divine_empire = {
 
 	trigger = {
 		has_reform = japanese_divine_empire
+	}
+}
+
+han_emperor = {
+	rank = {
+		1 = PRINCEDOM
+		2 = EMPIRE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = EMPEROR
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = EMPRESS
+		3 = EMPRESS
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		tag = GHC
+		has_reform = chinese_warlord
+	}
+}
+
+kingdom_of_light = {
+	rank = {
+		1 = PRINCEDOM
+		2 = EMPIRE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = LORD_OF_LIGHT
+		2 = KING_OF_LIGHT
+		3 = EMPEROR_OF_LIGHT
+	}
+
+	ruler_female = {
+		1 = LADY_OF_LIGHT
+		2 = QUEEN_OF_LIGHT
+		3 = EMPRESS_OF_LIGHT
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		OR = {
+			has_reform = kingdom_of_light_reform
+			has_reform = empire_of_light_reform
+		}
+	}
+}
+
+chinese_monarchy = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = PRINCE
+		2 = KING
+		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	consort_female = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = HEIR
+		3 = HEIR
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = HEIR_fem
+		3 = HEIR_fem
+	}
+
+	trigger = {
+		government = monarchy
+		culture_group = east_asian #Chinese
 	}
 }

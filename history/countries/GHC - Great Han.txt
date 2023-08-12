@@ -1,5 +1,5 @@
 government = monarchy
-government_rank = 2
+add_government_reform = chinese_warlord
 technology_group = chinese
 religion = confucianism
 add_harmonized_religion = mr_jingtianfazu
@@ -7,26 +7,26 @@ religious_school =  mr_neo_confucian_school
 primary_culture = jianghuai
 capital = 1816	# Nanjing
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Dharma"
-			has_dlc = "Emperor"
-		}
-	}
-	change_estate_land_share = {
-		estate = estate_burghers
-		share = 10
-	}
-	change_estate_land_share = {
-		estate = estate_church
-		share = 10
-	}
-	change_estate_land_share = {
-		estate = estate_nobles
-		share = -20
-	}
-}
+#if = {
+#	limit = {
+#		OR = {
+#			has_dlc = "Dharma"
+#			has_dlc = "Emperor"
+#		}
+#	}
+#	change_estate_land_share = {
+#		estate = estate_burghers
+#		share = 10
+#	}
+#	change_estate_land_share = {
+#		estate = estate_church
+#		share = 10
+#	}
+#	change_estate_land_share = {
+#		estate = estate_nobles
+#		share = -20
+#	}
+#}
 
 1368.1.1 = {
 	monarch = {

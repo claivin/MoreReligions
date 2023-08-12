@@ -1,10 +1,9 @@
 government = monarchy
 add_government_reform = kingdom_of_light_reform 
-government_rank = 3
 technology_group = chinese
 religion = mr_maitreya
 primary_culture = jianghuai
-capital = 667	# Nanjing
+capital = 684	# Hangzhou
 
 
 

@@ -1,2 +1,2 @@
 1260.5.5 = { celestial_emperor = KHA }
-1368.1.23 = { celestial_emperor = GHC }
+1368.1.23 = { celestial_emperor = --- }
