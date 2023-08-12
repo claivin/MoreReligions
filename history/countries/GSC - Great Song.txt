@@ -4,6 +4,8 @@ technology_group = chinese
 religion = mr_maitreya
 primary_culture = jianghuai
 capital = 684	# Hangzhou
+historical_rival = GHC
+historical_rival = SHU
 
 
 

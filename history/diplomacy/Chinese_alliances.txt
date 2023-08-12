@@ -30,14 +30,37 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1644.4.22
 }
-vassal = {
+dependency = {
+	subject_type = "tributary_state"
 	first = GSC
 	second = CTO
 	start_date = 1434.1.1
 	end_date = 1454.1.1
-}vassal = {
+}
+dependency = {
+	subject_type = "tributary_state"
 	first = GSC
 	second = ZHJ
 	start_date = 1434.1.1
 	end_date = 1454.1.1
+}
+guarantee = {
+	first = KLK
+	second = SJI
+	start_date = 1444.1.1
+	end_date = 1454.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = KLK
+	second = XZH
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MGH
+	second = TIB
+	start_date = 1444.1.1
+	end_date = 1644.4.22
 }

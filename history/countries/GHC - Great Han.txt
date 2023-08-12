@@ -6,6 +6,8 @@ add_harmonized_religion = mr_jingtianfazu
 religious_school =  mr_neo_confucian_school
 primary_culture = jianghuai
 capital = 1816	# Nanjing
+historical_rival = GSC
+historical_rival = SHU
 
 #if = {
 #	limit = {

@@ -1,6 +1,8 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = chinese_warlord
 technology_group = chinese
 religion = mr_jingtianfazu
 primary_culture = sichuanese
 capital = 679	#Chengdu
+historical_rival = GHC
+historical_rival = GSC

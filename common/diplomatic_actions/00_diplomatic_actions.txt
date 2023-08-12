@@ -540,6 +540,27 @@ invite_to_trade_league = {
 tributary_state_action = {
 	condition = {
 		potential = {
+			FROM = {
+				OR = {
+					has_reform = chinese_warlord
+					has_reform = kingdom_of_light_reform
+				}
+			}
+		}
+		tooltip = CHINESE_WARLORD_NO_TRIB
+		allow = {
+			FROM = {
+				NOT = { 
+					OR = { 
+						has_reform = chinese_warlord
+						has_reform = kingdom_of_light_reform
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		potential = {
 			ai = yes
 		}
 		allow = {

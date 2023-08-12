@@ -71,6 +71,7 @@
  empire_of_china_title:0 "Claim The Empire of China"
  empire_of_china_desc:0 "Ever since the chaotic end of the Yuan dynasty, no ruler has been able to secure unopposed claim to the Mandate of Heaven. With our hegemony over the Middle Kingdom now uncontested, our [Root.Monarch.GetTitle] must be proclaimed the new Son of Heaven once we have secured the traditional capitals of the Empire."
 
-
+ chinese_warlord:0 "Chinese Kingdom"
+ chinese_warlord_desc:0 "A kingdom of the fractured Celestial Empire which refuses to accept the authority of any competing state."
  
  
