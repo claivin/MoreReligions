@@ -1,0 +1,55 @@
+﻿l_english:
+ g_mission_sea_access_title: "Sea Ports"
+ g_mission_sea_access_desc: "Without access to the sea, our foreign policy and economy are totally dependant on the whims of our neighbors. We need a port to take a step towards real independence."
+ g_mission_sea_access_tt: "A random province fulfilling these conditions will recieve these following:"
+ 
+ g_mission_naval_projection_title: "Seagoing Administration"
+ g_mission_naval_projection_desc: "As our state grows richer, our navy will become a key part in how we interact abroad. With only limited resources, we must keep our efforst focused in specific affairs."
+ 
+ g_mission_trade_centers_title: "Wealthy Ports"
+ g_mission_trade_centers_desc: "a"
+ 
+ g_mission_military_ethos_title: "A New Army"
+ g_mission_military_ethos_desc: "A state cannot exist if it cannot defend itself."
+ 
+ g_mission_expand_country_title: "A Regional Power"
+ g_mission_expand_country_desc: "Look beyond the confines of our realm and see the dangers that luck beyond and the riches that sit unclaimed. Some may be content to continue idly, but we would leave no mark in history."
+ 
+ g_mission_growing_power_title: "A Great Power" 
+ g_mission_growing_power_desc: "As we have ascended to a formidable regional power, the possibility of leaving leaving a mark on history is all but decided. What remains now is to take the reins and write history ourselves."
+ 
+ generic_mission_events.1.t: "Martial Mastery"
+ generic_mission_events.1.d: "The call to arms reverberates throughout the land, and the time has come to forge a standard army that will carry the might of your nation into battle. As your soldiers march forward, you must decide upon a specialized focus that will shape the core strength of your military forces. The path you choose will determine the tactics and strategy that define your armed forces for generations to come."
+ generic_mission_events.1.a: "Embrace the strength of the traditional feudal system."
+ generic_mission_events.1.b: "Formidiable horsemanship is the future."
+ generic_mission_events.1.c: "Cutting edge technology is the key."
+ generic_mission_events.1.e: "Establish a strict hierarcy. Order is the way."
+ generic_mission_events.1.f: "Concentrate on security."
+ gme_later_better_modifier_army: "This will influence the direction of our Military Ethos and will grant different modifiers in the future"
+ 
+ generic_mission_events.2.t: "The Army of [Root.GetName]"
+ generic_mission_events.2.da: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The echoes of the past beckon; local nobility and militias stand ready to bolster your ranks, offering vast manpower for your campaigns. Modern conscription methods which evoke the image of a thousand years of levies ensure a robust and resilient army, rooted in tradition. Your commitment to this specialization can lead to more frequent mobilization of levies, expanded manpower reserves, and the ability to overwhelm your adversaries through sheer numbers."
+ generic_mission_events.2.db: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The thunder of hooves and the swift strike of cavalry resonates with your nation's identity. By focusing on the dominance of cavalry, you reaffirm your commitment to mobility, shock tactics, and swift maneuvers on the battlefield. Your cavalry forces become renowned, capable of breaking enemy lines and executing hit-and-run raids with unmatched precision. This specialization offers superior mobility, increased shock damage, and the ability to exploit weaknesses in enemy formations."
+ generic_mission_events.2.dc: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The roar of muskets, the thunder of cannons, and the tactical advantage of firearms have become your nation's hallmark. By continuing to invest in firearms, you cement a reputation for advanced technology and devastating firepower. Your infantry units become a force to be reckoned with, able to unleash volleys of gunfire that decimate enemy ranks. The legacy of your firearms revolution will reshape the battlefield and leave a mark on the course of history."
+ generic_mission_events.2.de: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The foundations of a disciplined and organized military hierarchy have been laid, and now you must solidify this approach. Your commitment to a structured and coordinated military ensures that your forces are resilient, well-organized, and capable of executing complex maneuvers. Your commitment to a perfected military hierarchy will resonate through the annals of history as one of the first modern armies."
+ generic_mission_events.2.df: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The strategic importance of defense, fortified borders, and strongholds has become the cornerstone of your nation's identity. By continuing to invest in defensive strategies, you ensure that your borders remain secure, and your nation can withstand sieges and assaults with resilience. Your nation becomes known as a fortress, able to defend its sovereignty with steadfast determination. The legacy of your defensive prowess will be remembered as an immovable stone which has weathered the course of history."
+ generic_mission_events.1.a: "Unity Makes Strength"
+ generic_mission_events.1.b: "Swift And Bold"
+ generic_mission_events.1.c: "Strength Through Weapons"
+ generic_mission_events.1.e: "Always Faithful"
+ generic_mission_events.1.f: "If You Want Peace, Prepare for War"
+ 
+ generic_mission_events.3.t: "A New Naval Ethos"
+ generic_mission_events.3.d: "As we have opened our new ports in [Root.GetName], it has become apparent that oceangoing will be a part of our foreign policy going forwards, even if we can only keep a small fleet in for now."
+ generic_mission_events.3.a: "Support a merchant fleet."
+ generic_mission_events.3.b: "Look across the seas for new lands."
+ generic_mission_events.3.c: "Support our armies."
+ gme_later_better_modifier: "This will influence the direction of our Naval Ethos and will grant different modifiers in the future."
+ 
+ generic_mission_events.4.t: "Naval Expansion"
+ generic_mission_events.4.da: "As the sun sets on the shores of [Root.GetName], a new era of naval prowess dawns. Recognizing the importance of a formidable trade fleet in expanding the nation's influence and securing vital trade routes, your government has embarked on an ambitious endeavor to transform the maritime capabilities of the realm. The shipyards buzz with activity, and seasoned naval architects labor tirelessly to design sleek, swift vessels optimized for commerce and naval dominance. The fruits of their labor are beginning to take shape, and you stand at the forefront of a crucial decision that will define the future of your naval development strategy."
+ generic_mission_events.4.db: "As the maritime ambitions of [Root.GetName] soar to new heights, a vision of uncharted horizons and distant lands has captured the imagination of your people. With a determined focus on building an exploratory fleet, your nation has set its sights on uncovering the secrets of the world and expanding its knowledge beyond the known boundaries. The shipyards echo with the sound of innovation, and skilled navigators, cartographers, and explorers prepare to embark on a series of daring voyages. The potential rewards of these journeys are immeasurable, promising to unveil exotic resources, valuable trade routes, and opportunities to establish new colonies or forge diplomatic ties with enigmatic civilizations."
+ generic_mission_events.4.dc: "The shores of [Root.GetName] are abuzz with the clamor of shipyards, as your vision for a formidable warfleet takes shape. Recognizing the pivotal role that naval supremacy plays in securing your military ambitions, you have embarked on a journey to create a professional and battle-hardened fleet. The ships being crafted are not just vessels of trade or exploration; they are instruments of power and dominion on the high seas. The horizon is dotted with opportunities for expansion, conquest, and strategic dominance. A well-equipped warfleet can serve as a deterrent to your rivals, secure your coastal borders, facilitate swift military deployments, and enable the projection of force far beyond your shores. The challenge before you is to maintain a disciplined and focused approach, channeling resources into naval innovations and battle-tested strategies."
+ generic_mission_events.4.a: "There's money to be made!"
+ generic_mission_events.4.b: "Over the Horizon!"
+ generic_mission_events.4.c: "To Arms!"

@@ -65,7 +65,7 @@ gme_logistics = {
 }
 
 gme_trade_navy_perm = {
-	merchants = 1
+	#merchants = 1
 	mercantilism_cost = -0.15
 	burghers_loyalty_modifier = 0.1
 }
@@ -78,5 +78,5 @@ gme_colonial_perm = {
 gme_logistics_perm = {
 	transport_cost = -0.2
 	global_supply_limit_modifier = 0.1
-	global_naval_barrage_cost = -0.1
+	#global_naval_barrage_cost = -0.1
 }

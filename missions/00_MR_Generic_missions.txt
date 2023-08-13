@@ -1,4 +1,4 @@
-generic_military_missions_1 = {
+generic_military_missions_2 = { #naval line
 	slot = 2
 	generic = yes
 	ai = no
@@ -6,7 +6,7 @@ generic_military_missions_1 = {
 	
 	g_mission_sea_access = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { g_mission_expand_country }
+		required_missions = { }
 		position = 1
 		trigger = {
 			any_owned_province = {
@@ -16,21 +16,37 @@ generic_military_missions_1 = {
 			}
 		}
 		effect = {
-			random_owned_province = {
-				limit = {
-					has_port = yes
-					development = 15
-					has_dock_building_trigger = yes
-				}
-				add_unit_construction = {
-					type = light_ship
-					amount = 4
-					speed = 0.1
-					cost = 0
+			custom_tooltip = g_mission_sea_access_tt
+			tooltip = {
+				random_owned_province = {
+					add_unit_construction = {
+						type = light_ship
+						amount = 3
+						speed = 1
+						cost = 0
+					}
+					province_event = {
+						id = generic_mission_events.3
+					}
 				}
 			}
-			country_event = {
-				id = generic_mission_events.3
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						has_port = yes
+						development = 15
+						has_dock_building_trigger = yes
+					}
+					add_unit_construction = {
+						type = light_ship
+						amount = 3
+						speed = 1
+						cost = 0
+					}
+					province_event = {
+						id = generic_mission_events.3
+					}
+				}
 			}
 		}
 	}
@@ -46,8 +62,14 @@ generic_military_missions_1 = {
 				has_dock_building_trigger = yes
 				has_shipyard_building_trigger = yes
 			}
-			naval_forcelimit = 25
+			naval_forcelimit = 30
 			navy_size_percentage = 1.0
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				has_flagship = yes
+			}
 		}
 		effect = {
 			country_event = { #Naval Ethos
@@ -56,15 +78,24 @@ generic_military_missions_1 = {
 		}
 	}
 	
+}
+
+generic_military_missions_3 = { #economy line
+	slot = 3
+	generic = yes
+	ai = no
+	potential = { always = yes }
+	
 	g_mission_trade_centers = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { g_mission_expand_country }
+		required_missions = { g_mission_naval_projection }
 		position = 3
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 2
 				is_capital = no
-				province_has_center_of_trade_of_level = 1
+				province_has_center_of_trade_of_level = 2
+				has_trade_building_trigger = yes
 			}
 		}
 		effect = {
@@ -72,9 +103,8 @@ generic_military_missions_1 = {
 		}
 	}
 }
-
-generic_military_missions_2 = {
-	slot = 2
+generic_military_missions_4 = { #military line
+	slot = 4
 	generic = yes
 	ai = no
 	potential = { always = yes }
@@ -105,6 +135,7 @@ generic_military_missions_2 = {
 		position = 2
 		trigger = {
 			grown_by_development = 50
+			total_development = 100
 			crown_land_share = 60
 		}
 		effect = {
@@ -145,7 +176,7 @@ generic_military_missions_2 = {
 						has_dlc = "Rights of Man"
 					}
 				}
-				great_power_rank = 8
+				NOT = { great_power_rank = 8 }
 			}
 			else = {
 				total_development = 1000
