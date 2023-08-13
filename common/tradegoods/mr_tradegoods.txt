@@ -638,7 +638,7 @@ horses = {
 		cavalry_power = 0.15
 	}
 	province = {
-		movement_speed = 0.10
+		local_friendly_movement_speed = 0.1 
 	}
 	chance = {
 		factor = 5

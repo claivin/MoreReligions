@@ -2953,7 +2953,7 @@ stpeters_cathedral = {
 			province_is_or_accepts_religion = {
 				religion = catholic
 			}
-			mission_completed = mr_sicily_religion_4d
+			owner = { mission_completed = mr_sicily_religion_4d }
 		}
 	}
 
@@ -2973,7 +2973,7 @@ stpeters_cathedral = {
 			province_is_or_accepts_religion = {
 				religion = catholic
 			}
-			mission_completed = mr_sicily_religion_4d
+			owner = { mission_completed = mr_sicily_religion_4d }
 		}
 	}
 
@@ -2983,7 +2983,7 @@ stpeters_cathedral = {
 			province_is_or_accepts_religion = {
 				religion = catholic
 			}
-			mission_completed = mr_sicily_religion_4d
+			owner = { mission_completed = mr_sicily_religion_4d }
 		}
 	}
 

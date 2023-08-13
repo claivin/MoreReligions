@@ -137,10 +137,12 @@ mr_sicily_missions_first = {
 				kabylia_area = {
 					type = all
 					add_core = AFR
+					cede_province = AFR
 				}
 				barbary_coast_area = {
 					type = all
 					add_core = AFR
+					cede_province = AFR
 				}
 			}
 			hidden_effect = {
@@ -153,10 +155,12 @@ mr_sicily_missions_first = {
 					kabylia_area = {
 						type = all
 						add_core = AFR
+						cede_province = AFR
 					}
 					barbary_coast_area = {
 						type = all
 						add_core = AFR
+						cede_province = AFR
 					}
 				}
 			}			
@@ -188,7 +192,7 @@ mr_sicily_missions_first = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			2358 = { country_or_non_sovereign_subject_holds = ROOT }
+			2458 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_country_modifier = {
@@ -558,6 +562,7 @@ mr_sicily_missions_second = {
 				djerba_area = {
 					type = all
 					add_core = AFR
+					cede_province = AFR
 				}
 			}
 			hidden_effect = {
@@ -570,6 +575,7 @@ mr_sicily_missions_second = {
 					djerba_area = {
 						type = all
 						add_core = AFR
+						cede_province = AFR
 					}
 				}
 			}
@@ -594,8 +600,18 @@ mr_sicily_missions_second = {
 				base_production = 10
 				province_has_center_of_trade_of_level = 2 
 			}
-			341 = {
-				is_strongest_trade_power = ROOT
+			OR = {
+				AND = {
+					AFR = {
+						is_subject_of_type_with_overlord = { who = ROOT type = personal_union }
+					}
+					341 = {
+						is_strongest_trade_power = AFR
+					}
+				}
+				341 = {
+					is_strongest_trade_power = ROOT
+				}
 			}
 		}
 		effect = {
@@ -606,6 +622,26 @@ mr_sicily_missions_second = {
 					duration = -1
 				}
 				add_center_of_trade_level = 1
+			}
+			custom_tooltip = if_africa_TT
+			tooltip = {
+				add_country_modifier = {
+					name = overlord_master_SIC
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						AFR = {
+							is_subject_of_type_with_overlord = { who = ROOT type = personal_union }
+						}
+					}
+					add_country_modifier = {
+						name = overlord_master_SIC
+						duration = -1
+					}
+				}
 			}
 		}
 	}	
@@ -980,6 +1016,7 @@ mr_sicily_missions_third = {
 				tripolitania_area = {
 					type = all
 					add_core = AFR
+					cede_province = AFR
 				}
 			}
 			hidden_effect = {
@@ -992,6 +1029,21 @@ mr_sicily_missions_third = {
 					tripolitania_area = {
 						type = all
 						add_core = AFR
+						cede_province = AFR
+					}
+					tripolitania_area = {
+						type = all
+						add_province_modifier = {
+							name = africa_road_network
+							duration = -1
+						}
+					}
+					cyrenaica_area = {
+						type = all
+						add_province_modifier = {
+							name = africa_road_network
+							duration = -1
+						}
 					}
 				}
 			}
@@ -1058,7 +1110,7 @@ mr_sicily_missions_third = {
 			}
 		}
 		trigger = {
-			red_sea_area = {
+			gulf_of_arabia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1596,13 +1648,15 @@ mr_sicily_missions_fifth = {
 			hidden_effect = {
 				every_province = {
 					limit = {
-						area = western_sicily_area
-						area = sicily_area
-						area = naples_area
-						area = calabria_area
-						area = apulia_area
 						OR = {
-							has_terrain = mountain
+							area = western_sicily_area
+							area = sicily_area
+							area = naples_area
+							area = calabria_area
+							area = apulia_area
+						}
+						OR = {
+							has_terrain = mountains
 							has_terrain = hills
 						}
 					}

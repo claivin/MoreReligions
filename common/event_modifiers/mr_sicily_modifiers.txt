@@ -74,7 +74,7 @@ trade_hubs_florence = {
 	province_trade_power_modifier = 0.1 
 }
 romagnol_vineyards = {
-	build_cost = -0.10
+	local_build_cost = -0.10
 	local_tax_modifier = 0.15 
 }
 venetian_conquest = {
@@ -115,7 +115,7 @@ servant_of_the_church = {
 }
 papal_resistance_SIC = {
 	local_religious_conversion_resistance = 1
-	defensiveness = 0.15
+	local_defensiveness = 0.15
 }
 fraticelli_expansion = {
 	monthly_fervor_increase = 2
@@ -128,4 +128,9 @@ war_against_heretics_SIC = {
 fraticelli_ferver = {
 	discipline = 0.025
 	manpower_in_true_faith_provinces = 0.15
+}
+overlord_master_SIC = {
+	liberty_desire_from_subject_development = -0.25 
+	vassal_income = 0.25
+	vassal_forcelimit_bonus = 0.10
 }

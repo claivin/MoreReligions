@@ -1742,6 +1742,10 @@ christian = {
 		country_as_secondary = {
 			yearly_corruption = -0.05
 		}
+		allowed_center_conversion = {
+			catholic
+			protestant
+		}
 		province = {
 			local_missionary_strength = -0.01
 		}
