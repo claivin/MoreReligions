@@ -1174,3 +1174,47 @@ IFT_ideas = {
 		defensiveness = 0.10
 	}
 }
+
+SHU_ideas = {
+	start = {
+		tolerance_heretic = 2
+		defensiveness = 0.20
+	}
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+		imperial_mandate = 0.05
+	}
+	free = yes
+	trigger = {
+		tag = SHU
+	}
+	SHU_first = { #Continue the Examinations
+		advisor_cost = -0.1
+		advisor_pool = 1
+	}
+	SHU_second = { #Surrounded by Enemies
+		diplomatic_reputation = 1
+	}
+	SHU_third = { #Masters of Mountain Passes
+		global_defender_dice_roll_bonus = 1
+	}
+	SHU_fourth = { #Farmlands of Sichuan
+		development_cost = -0.05
+		great_project_upgrade_cost = -0.1
+	}
+	SHU_fifth = { #Legacy of Shu
+		global_unrest = -1
+		prestige = 1
+	}
+	SHU_sixth = { #Recruit the Tribes
+		manpower_recovery_speed = 0.10
+		global_manpower_modifier = 0.15
+	}
+	SHU_seventh = { #Reclaim the Empire
+		core_creation = -0.20
+	}
+}

@@ -92,6 +92,12 @@ defined_text = {
 			tag = GHC
 		}
     }
+	text = {
+        localisation_key = string_start_title_ming_xia
+        trigger = {
+			tag = SHU
+		}
+    }
 	#Americas:
 	
 	#Europe:
@@ -815,6 +821,12 @@ defined_text = {
         localisation_key = string_start_great_han
         trigger = {
 			tag = GHC
+        }
+    }	
+	text = { #Ming Xia
+        localisation_key = string_start_ming_xia
+        trigger = {
+			tag = SHU
         }
     }		
 	
