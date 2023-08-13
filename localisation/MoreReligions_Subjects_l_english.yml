@@ -87,3 +87,6 @@
  shugo_vassal_title: "Shugo"
  shugo_vassal_title_plural: "Shugo"
  is_shugo_vassal: "Is a Shugo"
+ CANNOT_ANNEX_SHUGO: "§RThe Shugo would refuse this, they are far too powerful.§!"
+ CANNOT_SUPPORT_SHUGO: "§RWe cannot support a Shugo State.§!"
+ 

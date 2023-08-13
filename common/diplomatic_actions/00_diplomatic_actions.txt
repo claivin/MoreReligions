@@ -419,6 +419,19 @@ integrationaction = {
 		}
 	}
 	condition = {
+		tooltip = CANNOT_ANNEX_SHUGO
+		potential = {
+			FROM = {
+				is_subject_of_type = shugo_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { is_subject_of_type = shugo_vassal }
+			}
+		}
+	}
+	condition = {
 		tooltip = PUINTEGRATIONIMPOSSIBLE
 		potential = {
 			has_government_attribute = cannot_integrate_personal_unions
@@ -441,7 +454,21 @@ integrationaction = {
 		}
 	}
 }
-
+support_independence_action = {
+	condition = {
+		tooltip = CANNOT_SUPPORT_SHUGO
+		potential = {
+			FROM = {
+				is_subject_of_type = shugo_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { is_subject_of_type = shugo_vassal }
+			}
+		}
+	}
+}
 vassalaction = {
 	condition = {
 		tooltip = VASSALINVALID
