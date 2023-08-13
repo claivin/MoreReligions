@@ -1,11 +1,11 @@
 #1821 - Nanjing
 
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = GSC
+controller = GSC
+add_core = GSC
 culture = jianghuai
 religion = mahayana
-capital = "Jiankang"
+capital = "Yingtian"
 trade_goods = silk
 hre = no
 base_tax = 15 

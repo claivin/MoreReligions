@@ -1,8 +1,8 @@
 # 2145 - Zhenjiang
 
-owner = GHC
-controller = GHC
-add_core = GHC
+owner = GSC
+controller = GSC
+add_core = GSC
 culture = jianghuai
 religion = mahayana
 capital = "Zhenjiang"

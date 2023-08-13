@@ -1,8 +1,8 @@
 # 2172 - Jingzhou
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = GHC
+controller = GHC
+add_core = GHC
 culture = hubei
 religion = mahayana
 capital = "Jingzhou"

@@ -1,8 +1,8 @@
 # 5483 - Hanyang
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = GHC
+controller = GHC
+add_core = GHC
 culture = hubei
 religion = confucianism
 capital = "Hanyang"
@@ -12,6 +12,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
+fort_15th = yes 
 add_core = CXI
 add_core = CHC
 

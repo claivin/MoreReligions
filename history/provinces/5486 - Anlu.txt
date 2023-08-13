@@ -1,8 +1,8 @@
 # 5486 - Anlu
 
-owner = GSC
-controller = GSC
-add_core = GSC
+owner = GHC
+controller = GHC
+add_core = GHC
 culture = hubei
 religion = mahayana
 capital = "Anlu"
