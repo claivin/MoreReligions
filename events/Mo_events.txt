@@ -4,6 +4,7 @@ country_event = {
 	id = mo_event.1
 	title = mo_event.1.t
 	desc = mo_event.1.d
+	picture = URBANISATION_INCIDENT_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -16,7 +17,7 @@ country_event = {
 	}
 	
 	option = {
-		name = mo_event.2.a
+		name = mo_event.1.b
 		add_country_modifier = {
 			name = new_year_celebration_2
 			duration = 5475
@@ -24,7 +25,7 @@ country_event = {
 	}
 	
 	option = {
-		name = mo_event.3.a
+		name = mo_event.1.c
 		add_country_modifier = {
 			name = new_year_celebration_3
 			duration = 5475
@@ -36,6 +37,7 @@ country_event = {
 	id = mo_event.2
 	title = mo_event.2.t
 	desc = mo_event.2.d
+	picture = MERITOCRACY_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -72,6 +74,7 @@ country_event = {
 	id = mo_event.3
 	title = mo_event.3.t
 	desc = mo_event.3.d
+	picture = IMPERIAL_SEAL_eventPicture 
 	
 	is_triggered_only = yes
 	
@@ -82,6 +85,13 @@ country_event = {
 			duration = 9125
 		}
 		add_stability = 1
+		hidden_effect = {
+			add_country_modifier = {
+				name = ghost_deity_2
+				duration = 9125
+				hidden = yes
+			}
+		}
 	}
 	
 	option = {
