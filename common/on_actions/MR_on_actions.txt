@@ -492,6 +492,8 @@ on_monarch_death = {
 		limit = { has_government_attribute = no_stability_loss_on_monarch_death }
 		add_stability = 1
 	}
+	
+	#GK
 	if = {
 		limit = {
 			religious_school = {
@@ -502,6 +504,12 @@ on_monarch_death = {
 		}
 		country_event = { id = eastern_school_events.21 }
 	}
+	if = { #Triggers Western Schism
+		limit = { tag = PAP }
+		country_event = { id = mr_catholic.1 }
+	}
+	
+	
 	burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
 	joan_de_trastamara_king_died_effect = yes

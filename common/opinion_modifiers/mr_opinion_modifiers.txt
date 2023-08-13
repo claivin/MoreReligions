@@ -17,3 +17,8 @@ mr_hungary_removed_pap = {
 	opinion = -100
 	yearly_decay = 1
 }
+
+mr_supported_defecting_bishop = {
+	opinion = -100
+	yearly_decay = 1
+}

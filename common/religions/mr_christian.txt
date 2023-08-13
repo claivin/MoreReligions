@@ -1920,6 +1920,7 @@ christian = {
 		
 		heretic = { ANTIANTIPAPISTS }
 		
+		date = 1480.1.1 #Western Schism
 	}
 	
 	#third pope, second antipope
@@ -1939,6 +1940,7 @@ christian = {
 		
 		heretic = { ANTIANTIPAPISTS }
 		
+		date = 1480.1.1 #Western Schism
 	}
 	
 	harmonized_modifier = harmonized_christian
