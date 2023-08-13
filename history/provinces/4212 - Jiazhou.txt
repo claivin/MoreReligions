@@ -3,7 +3,7 @@
 owner = SHU
 controller = SHU
 culture = sichuanese
-religion = confucianism
+religion = mr_jingtianfazu
 capital = "Jiazhou"
 trade_goods = tea
 hre = no
