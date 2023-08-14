@@ -22,149 +22,91 @@ change_estate_land_share = {
 }
 
 #Kings of Mali
+1308.1.1 = {
+	monarch = {
+		name = "Muhammad I"
+		dynasty = "Keita"
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}
+1335.1.1 = {
+	monarch = {
+		name = "Muhammad"
+		monarch_name = "Muhammad II"
+		dynasty = "Keita"
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}
+
+1340.1.1 = {
+	monarch = {
+		name = "Magha"
+		dynasty = "Keita"
+		dip = 1
+		adm = 2
+		mil = 5
+	}
+}
+1343.1.1 = {
+	monarch = {
+		name = "Muhammad"
+		monarch_name = "Muhammad II"
+		dynasty = "Keita"
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}
+1348.1.1 = {
+	monarch = {
+		name = "Mahmud Magha"
+		dynasty = "Keita"
+		dip = 1
+		adm = 2
+		mil = 5
+	}
+}
 1390.1.1 = {
 	monarch = {
-		name = "Mahmud"
+		name = "Abu Bakr"
+		monarch_name = "Abu Bakr II"
 		dynasty = "Keita"
-		dip = 2
+		dip = 3
+		mil = 5
 		adm = 1
-		mil = 2
-	}
-	add_piety = -0.15
-}
-
-1390.1.1 = {
-	heir = {
-		name = "Musa"
-		monarch_name = "Musa III"
-		dynasty = "Keita"
-		birth_date = 1370.1.1
-		death_date = 1450.1.1
-		claim = 95
-		adm = 1
-		dip = 0
-		mil = 0
 	}
 }
-
-1430.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Musa III"
+		name = "Abu Bakr"
+		monarch_name = "Abu Bakr III"
 		dynasty = "Keita"
-		adm = 1
-		dip = 0
-		mil = 0
+		dip = 3
+		mil = 3
+		adm = 5
+		birth_date = 1398.1.1
+		death_date = 1460.1.1
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
+	add_ruler_personality = secretive_personality
 }
-
-1430.1.1 = {
+1444.1.1 = {
 	heir = {
-		name = "Uli"
-		monarch_name = "Uli II"
-		dynasty = "Keita"
-		birth_date = 1430.1.1
-		death_date = 1481.9.1
-		claim = 95
-		adm = 1
+		name = "Gao"
+		dynasty = Keita"
+		adm = 2
+		mil = 4
 		dip = 1
-		mil = 1
+		birth_date = 1425.1.1
+		death_date = 1445.1.1
 	}
 }
 
-1450.1.1 = {
-	monarch = {
-		name = "Uli II"
-		dynasty = "Keita"
-		dip = 1
-		adm = 1
-		mil = 1
-	}
-}
-
-1460.1.1 = {
-	heir = {
-		name = "Mamadu"
-		monarch_name = "Mamadu II"
-		dynasty = "Keita"
-		birth_date = 1460.1.1
-		death_date = 1496.1.1
-		claim = 95
-		adm = 2
-		dip = 3
-		mil = 2
-	}
-}
-
-1481.9.1 = {
-	monarch = {
-		name = "Mamadu II"
-		dynasty = "Keita"
-		dip = 3
-		adm = 2
-		mil = 2
-	}
-}
-
-1481.9.1 = {
-	heir = {
-		name = "Mamadu"
-		monarch_name = "Mamadu III"
-		dynasty = "Keita"
-		birth_date = 1480.1.1
-		death_date = 9999.1.1
-		claim = 95
-		adm = 2
-		dip = 3
-		mil = 1
-	}
-}
-
-1496.1.1 = {
-	monarch = {
-		name = "Mamadu III"
-		dynasty = "Keita"
-		dip = 3
-		adm = 2
-		mil = 1
-	}
-}
-
-1520.1.1 = {
-	heir = {
-		name = "Mamadu"
-		monarch_name = "Mamadu IV"
-		dynasty ="Keita"
-		birth_Date = 1520.1.1
-		death_date = 1600.1.1
-		claim = 95
-		adm = 0
-		dip = 0
-		mil = 0
-	}
-}
-
-1535.1.1 = {
-	monarch = {
-		name = "Mamadu IV"
-		dynasty = "Keita"
-		dip = 0
-		adm = 0
-		mil = 0
-	}
-}
-
-#Mali collapses in 1600, leaving a rump state behind.
-#Unspecified numbers of unknown rulers of Kangaba, chief of the remaining rump states
-
-1660.1.1 = {
-	monarch = {
-		name = "Mama Maghan I"
-		dynasty = "Keita"
-		dip = 1
-		adm = 1
-		mil = 2
-	}
-}
 
 
 

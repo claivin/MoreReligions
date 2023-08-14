@@ -576,12 +576,12 @@ defined_text = {
 			NOT = { is_year = 1445 }
         }
     }	
-	text = { #Mali
-        localisation_key = string_start_mali
-        trigger = {
-			tag = MAL
-        }
-    }	
+	#text = { #Mali
+     #   localisation_key = string_start_mali
+      #  trigger = {
+		#	tag = MAL
+        #}
+    #}	
 	text = { #Songhai
         localisation_key = string_start_songhai
         trigger = {
@@ -646,6 +646,14 @@ defined_text = {
         localisation_key = string_start_kongo
         trigger = {
 			tag = KON
+        }
+    }
+	
+	#G&K 
+	text = { #Mali
+        localisation_key = string_start_mali_GK
+        trigger = {
+			tag = MAL
         }
     }
 	
@@ -811,6 +819,7 @@ defined_text = {
 			tag = PEG
 		}
 	}
+	#G&K
 	text = { #Great Song
         localisation_key = string_start_great_song
         trigger = {
