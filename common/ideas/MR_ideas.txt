@@ -1255,3 +1255,41 @@ CBD_ideas = {
 	monthly_splendor = 1
 	}
 }
+
+BGU_ideas = {
+	start = {
+		fort_maintainance_modifier = -0.20
+		diplomatic_reputation = +1
+	}
+	bonus = {
+		development_cost = -0.10
+	}
+	free = yes
+	trigger = {
+		tag = BGU
+	}
+	BGU_first = { #Deeds of Udine
+		ae_impact = -0.10
+		fabricate_claims_cost = -0.25
+	}
+	BGU_second = { #Hohenstauffen Legacy
+		prestige = 1
+	}
+	BGU_third = { #Crushing the Peasantry
+		land_morale = 0.10
+		global_rebel_suppression_efficiency = -0.25
+	}
+	BGU_fourth = { #Fugger Banking
+		inflation_reduction = 0.05
+		interest = -0.5
+	}
+	BGU_fifth = { #Bulwark against all Conquerors
+		defensiveness = 0.25
+	}
+	BGU_sixth = { #Crossroads of Swabia
+		global_own_trade_power = 0.2
+	}
+	BGU_seventh = { #Pilgrims' Ways
+		global_tax_modifier = 0.10
+	}
+}
