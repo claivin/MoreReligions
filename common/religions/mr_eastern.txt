@@ -886,10 +886,6 @@ eastern = {
 		color = { 184 0 58 }
 		icon = 23
 		allowed_conversion = {
-			vajrayana
-			buddhism
-			yogavacara
-			mahayana
 		}
 		province = {
 			local_missionary_strength = -0.02
