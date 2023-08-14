@@ -4827,45 +4827,45 @@ CYP_ideas = {
 	}
 }
 
-NAV_ideas = {
-	start = {
-		morale_damage = 0.1
-		diplomatic_reputation = 1
-	}
-	bonus = {
-		leader_naval_fire = 1
-	}
-	trigger = {
-		tag = NAV
-	}
-	free = yes
-
-	fearless_seamen = {
-		ship_durability = 0.05
-		naval_morale = 0.15
-	}
-	shipbuiling_experts = {
-		naval_forcelimit_modifier = 0.33
-	}
-	basque_ferocity = {
-		discipline = 0.05
-	}
-	camara_de_comptos = {
-		free_adm_policy = 1
-		inflation_reduction = 0.1
-	}
-	people_of_the_sea = {
-		allowed_marine_fraction = 0.2
-		global_sailors_modifier = 0.25
-	}
-	royal_basque_society = {
-		technology_cost = -0.1
-	}
-	an_industrious_folk = {
-		culture_conversion_cost = -0.1
-		development_cost_in_primary_culture = -0.15
-	}
-}
+#NAV_ideas = {
+#	start = {
+#		morale_damage = 0.1
+#		diplomatic_reputation = 1
+#	}
+#	bonus = {
+#		leader_naval_fire = 1
+#	}
+#	trigger = {
+#		tag = NAV
+#	}
+#	free = yes
+#
+#	fearless_seamen = {
+#		ship_durability = 0.05
+#		naval_morale = 0.15
+#	}
+#	shipbuiling_experts = {
+#		naval_forcelimit_modifier = 0.33
+#	}
+#	basque_ferocity = {
+#		discipline = 0.05
+#	}
+#	camara_de_comptos = {
+#		free_adm_policy = 1
+#		inflation_reduction = 0.1
+#	}
+#	people_of_the_sea = {
+#		allowed_marine_fraction = 0.2
+#		global_sailors_modifier = 0.25
+#	}
+#	royal_basque_society = {
+#		technology_cost = -0.1
+#	}
+#	an_industrious_folk = {
+#		culture_conversion_cost = -0.1
+#		development_cost_in_primary_culture = -0.15
+#	}
+#}
 
 AZT_ideas = {
 	start = {
