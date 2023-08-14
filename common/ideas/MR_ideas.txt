@@ -1218,3 +1218,40 @@ SHU_ideas = {
 		core_creation = -0.20
 	}
 }
+CBD_ideas = {
+	start = {
+		monthly_piety = 0.01
+		global_manpower_modifier = 0.10
+	}
+	bonus = {
+		all_power_cost = -0.03
+	}
+	free = yes
+	trigger = {
+		tag = CBD
+	}
+	cbd_a_loyal_army = {
+		discipline = 0.05
+		drill_gain_modifier = 0.05
+	}
+	cbd_merchants_seville = {
+		merchants = 1
+	}
+	cbd_legacy_of_islam = {
+		technology_cost = -0.1
+	}
+	cbd_moor_sails = {
+		max_flagships = 1
+		global_naval_barrage_cost = -0.1
+	}
+	cbd_sephardic_communities = {
+		advisor_cost = -0.1
+	}
+	cbd_restore_andalus = {
+		core_creation = -0.1
+	}
+	cbd_jewel_of_the_west = {
+	prestige = 1
+	monthly_splendor = 1
+	}
+}
