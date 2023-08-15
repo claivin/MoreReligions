@@ -849,7 +849,7 @@ POR_ideas_mr = {
     }
     christian_fanaticism = {
         prestige_per_development_from_conversion = 0.5
-        local_missionary_maitenance_cost = -0.3
+        missionary_maintenance_cost = -0.3
     }
     gloria_a_Deus_nas_alturas = {
         land_attrition = -0.10
@@ -931,7 +931,7 @@ POR_ideas = {
     }
     christian_fanaticism = {
         prestige_per_development_from_conversion = 0.5
-        local_missionary_maitenance_cost = -0.3
+        missionary_maintenance_cost = -0.3
     }
     gloria_a_Deus_nas_alturas = {
         land_attrition = -0.10
@@ -1088,7 +1088,7 @@ NAV_ideas = {
 		trade_steering = 0.1
 	}
 	nav_iron_forges_of_navarra = {
-		local_build_cost = -0.15
+		build_cost = -0.15
 	}
 	nav_navarrese_company = {
 		mercenary_manpower = 0.20
@@ -1258,7 +1258,7 @@ CBD_ideas = {
 
 BGU_ideas = {
 	start = {
-		fort_maintainance_modifier = -0.20
+		fort_maintenance_modifier = -0.20
 		diplomatic_reputation = +1
 	}
 	bonus = {

@@ -90,6 +90,10 @@ improved_horse_sales = {
 	local_production_efficiency = 0.10
 	local_tax_modifier = 0.15
 }
+freedom_from_shiites = {
+	local_missionary_strength = 0.03
+	local_years_of_nationalism = -5 
+}
 arabian_mares_IFT = {
 	cavalry_shock = 0.25
 	cavalry_flanking = 0.33
@@ -115,10 +119,10 @@ let_them_do_it_abyss = {
 	nobles_loyalty_modifier = 0.10
 }	
 local_power_to_ruler = {
-	local_autonomy = 33
+	local_autonomy = 0.05
 }
 stripped_authority = {
-	local_autonomy = -33
+	local_autonomy = -0.05
 }
 improve_advisor_cost_abys = {
 	advisor_cost = -0.10

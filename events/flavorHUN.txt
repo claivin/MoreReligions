@@ -289,116 +289,113 @@ country_event = {
 
 
 #The Catholics in Bohemia seek our aid
-country_event = {
-	id = flavor_hun.13
-	title = flavor_hun.13.t
-	desc = flavor_hun.13.d
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-
-	is_triggered_only = yes
-
-	option = {
-		name = flavor_hun.13.a
-		ai_chance = {
-			factor = 90
-			modifier = {
-				factor = 0
-				alliance_with = BOH
-			}
-			modifier = {
-				factor = 0
-				is_subject_of = BOH
-			}
-			modifier = {
-				factor = 0
-				overlord_of = BOH
-			}
-			modifier = {
-				factor = 0.1
-				is_at_war = yes
-			}
-		}
-		add_opinion = {
-			who = BOH
-			modifier = hun_crowned_by_rebels
-		}
-		add_prestige = 10
-		if = {
-			limit = {
-				265 = { #Moravia
-					owned_by = BOH
-				}
-			}
-			265 = { add_permanent_claim = HUN }
-		}
-		if = {
-			limit = {
-				4237 = { #Moravia
-					owned_by = BOH
-				}
-			}
-			4237 = { add_permanent_claim = HUN }
-		}
-		if = {
-			limit = {
-				silesia_area = {
-					country_or_non_sovereign_subject_holds = BOH
-				}
-			}
-			silesia_area = {
-				limit = { country_or_non_sovereign_subject_holds = BOH }
-				add_permanent_claim = HUN
-			}
-		}
-		BOH = {
-			265 = {
-				spawn_rebels = {
-					type = heretic_rebels
-					size = 1
-					friend = HUN
-				}
-			}
-			2970 = {
-				spawn_rebels = {
-					type = heretic_rebels
-					size = 1
-					friend = HUN
-				}
-			}
-			hidden_effect = {
-				country_event = { id = flavor_hun.14 }
-			}
-		}
-	}
-	option = {
-		name = flavor_hun.13.b
-		ai_chance = {
-			factor = 10
-		}
-		add_prestige = -10
-		reverse_add_opinion = {
-			who = BOH
-			modifier = hun_refused_to_help_rebels
-		}
-		BOH = {
-			add_prestige = 10
-			265 = {
-				spawn_rebels = {
-					type = heretic_rebels
-					size = 1
-				}
-			}
-			2970 = {
-				spawn_rebels = {
-					type = heretic_rebels
-					size = 1
-				}
-			}
-		}
-	}
-}
+#country_event = {
+#	id = flavor_hun.13
+#	title = flavor_hun.13.t
+#	desc = flavor_hun.13.d
+#	picture = BAD_WITH_MONARCH_eventPicture
+#
+#	fire_only_once = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = flavor_hun.13.a
+#		ai_chance = {
+#			factor = 90
+#			modifier = {
+#				factor = 0
+#				alliance_with = BOH
+#			}
+#			modifier = {
+#				factor = 0
+#				is_subject_of = BOH
+#			}
+#			modifier = {
+#				factor = 0
+#				overlord_of = BOH
+#			}
+#			modifier = {
+#				factor = 0.1
+#				is_at_war = yes
+#			}
+#		}
+#		add_opinion = {
+#			who = BOH
+#			modifier = hun_crowned_by_rebels
+#		}
+#		add_prestige = 10
+##		if = {
+#			limit = {
+#				265 = { #Moravia
+#					owned_by = BOH
+#				}
+#			}
+#			265 = { add_permanent_claim = HUN }
+#		}
+#		if = {
+#			limit = {
+#				4237 = { #Moravia
+#					owned_by = BOH
+#				}
+#			}
+#			4237 = { add_permanent_claim = HUN }
+#		}
+#		if = {
+#			limit = {
+#				silesia_area = {
+#					country_or_non_sovereign_subject_holds = BOH
+#				}
+#			}
+#			silesia_area = {
+#				limit = { country_or_non_sovereign_subject_holds = BOH }
+#				add_permanent_claim = HUN
+#			}
+#		}
+#		BOH = {
+#			265 = {
+#				spawn_rebels = {
+#					type = heretic_rebels
+#					size = 1
+#					friend = HUN
+#				}
+#			}
+#			2970 = {
+#				spawn_rebels = {
+#					type = heretic_rebels
+#					size = 1
+#					friend = HUN
+#				}
+#			}
+#		}
+#	}
+#	option = {
+#		name = flavor_hun.13.b
+#		ai_chance = {
+#			factor = 10
+#		}
+#		add_prestige = -10
+#		reverse_add_opinion = {
+#			who = BOH
+#			modifier = hun_refused_to_help_rebels
+#		}
+#		BOH = {
+#			add_prestige = 10
+#			265 = {
+#				spawn_rebels = {
+#					type = heretic_rebels
+#					size = 1
+#				}
+#			}
+#			2970 = {
+#				spawn_rebels = {
+#					type = heretic_rebels
+#					size = 1
+#				}
+#			}
+#		}
+#	}
+#}
 
 
 #Banditry in Slovakia

@@ -527,7 +527,7 @@ tendai_ministries = {
 		global_tax_modifier = 0.15
 		missionary_maintenance_cost = -0.15
 		church_influence_modifier = 0.30
-		can_recruit_samurai = yes 
+		has_samurai = yes 
 	}
 	potential = {
 		religion = mr_tendai
@@ -538,7 +538,7 @@ tendai_ministries = {
 		culture_group = japanese_g
 	}
 	
-	custom_tooltip = develop_temples_TT
+	#custom_tooltip = develop_temples_TT
 }
 MR_thai_tributary = {
 	icon = "warrior_monks_reform"

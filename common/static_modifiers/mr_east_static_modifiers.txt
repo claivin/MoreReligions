@@ -36,6 +36,9 @@ karma_too_low =
 harmonized_shenjiao = {
 	global_tax_modifier = 0.10
 }
+harmonized_tunggal_dharma = {
+	global_sailors_modifier = 0.1 
+}
 
 shan_subject = {
 	#provides no modifers, maybe something sometime?

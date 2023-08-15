@@ -1921,7 +1921,7 @@ guinea_coast_area = { #4 +Conarky full
 }
 
 south_atlantic_islands_area = { #2 + sao tome + principe + sthelena full
-	2025 1097 1098 1306 1795
+	2025 1097 1098 1306 1795 1095
 }
 
 matamba_area = { #3

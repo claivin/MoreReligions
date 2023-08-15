@@ -85,9 +85,7 @@ mr_jap_missions_third = {
 			employed_advisor = {
 				category = MIL
 			}
-			employed_advisor = {
-				level = 2
-			}
+			prestige = 15
 		}
 		effect = {
 			add_government_power = { mechanic_type = shugo_dominance_mechanic power_type = shugo_dominance_mechanic_power value = -10 }

@@ -324,10 +324,6 @@ MR_siam_2 = {
 				add_permanent_claim = ROOT
 			}
 			4832 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			define_advisor = {
@@ -368,16 +364,20 @@ MR_siam_2 = {
 		}
 		effect = {
 			600 = {
-				limit = {
-					NOT = { is_core = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+					}
+					add_core = ROOT
 				}
-				add_core = ROOT
 			}
 			4831 = {
-				limit = {
-					NOT = { is_core = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+					}
+					add_core = ROOT
 				}
-				add_core = ROOT
 			}
 			northern_thai_area = {
 				limit = {

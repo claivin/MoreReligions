@@ -236,5 +236,5 @@ country_decisions = {
 			add_treasury = -500
 			
 		}
-	|
+	}
 }

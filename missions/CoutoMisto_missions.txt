@@ -238,8 +238,8 @@ cms_mission_third = {
 							who = POR
 							value = 100
 						}
-						create_alliance = GAL
 					}
+					create_alliance = GAL
 				}
 				if = {
 					limit = {

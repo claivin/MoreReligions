@@ -126,11 +126,13 @@ mr_sicily_missions_first = {
 				add_permanent_claim = ROOT
 			}
 			2458 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			custom_tooltip = if_africa_TT
 			tooltip = {
@@ -661,8 +663,8 @@ mr_sicily_missions_second = {
 		effect = {
 			country_event = {
 				id = MR_sicily_flavor.2
-				custom_tooltip = sicily_flavor.2_insight
 			}
+			custom_tooltip = sicily_flavor.2_insight
 		}
 	}	
 }
@@ -881,7 +883,7 @@ mr_sicily_missions_third = {
 			hidden_effect = {
 				if = {
 					limit = {
-						NOT = { year = 1456 }
+						NOT = { is_year = 1456 }
 					}
 					calabria_area = {
 						limit = {

@@ -5,12 +5,12 @@
 
 namespace = abyssinian_event
 
-# Assigning Translaters
+# Assigning Translators
 country_event = {
 	id = abyssinian_event.1
 	title = "abyssinian_event.1.t"
 	desc = "abyssinian_event.1.d"
-	picture = xxx
+	picture = MUSLIM_PAGAN_DISPUTE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -42,7 +42,7 @@ country_event = {
 	id = abyssinian_event.2
 	title = "abyssinian_event.2.t"
 	desc = "abyssinian_event.2.d"
-	picture = xxx
+	picture = NEGUSA_NAGAST_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -96,6 +96,7 @@ country_event = {
 	id = abyssinian_event.3
 	title = "abyssinian_event.3.t"
 	desc = "abyssinian_event.3.d"
+	picture = AFRICAN_BATTLE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -149,6 +150,7 @@ country_event = {
 	id = abyssinian_event.4
 	title = "abyssinian_event.4.t"
 	desc = "abyssinian_event.4.d"
+	picture = MALI_DECLINE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -176,34 +178,31 @@ country_event = {
 			limit = {
 				employed_advisor = {
 					category = ADM
-					NOT = { culture = root }
 				}
 			}
 			remove_advisor_by_category = ADM 
-			add_adm_power = 50
-			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+			add_adm_power = 100
+			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -5 }
 		}
 		if = {
 			limit = {
 				employed_advisor = {
 					category = DIP
-					NOT = { culture = root }
 				}
 			}
 			remove_advisor_by_category = DIP 
-			add_dip_power = 50
-			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+			add_dip_power = 100
+			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -5 }
 		}
 		if = {
 			limit = {
 				employed_advisor = {
 					category = MIL
-					NOT = { culture = root }
 				}
 			}
 			remove_advisor_by_category = MIL 
-			add_mil_power = 50
-			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -10 }
+			add_mil_power = 100
+			add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -5 }
 		}
 	}
 }

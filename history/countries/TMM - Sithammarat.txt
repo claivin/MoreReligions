@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = MR_thai_tributary
 primary_culture = central_thai
-add_accepted_culutre = utara
+add_accepted_culture = utara
 religion = sunni
 technology_group = chinese
 capital = 593 # Nakhon Si Thammarat

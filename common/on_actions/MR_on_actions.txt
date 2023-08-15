@@ -46,6 +46,7 @@ on_startup = {
 		mr_startup_events.1
 		mr_startup_events.2
 		mr_startup_events.3
+		HUN_flavor.2
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {
@@ -746,15 +747,14 @@ on_siege_won_country = {
 				}
 			}
 		}
-		if = {
-			limit = {  
-				FROM = { has_government_mechanic = abyssinian_unity_mechanic }
-				ROOT = { tag = REB }
-			}
-		}
-		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -2 }
-	}
 		THU = { country_event = { id = flavor_sax.10 } } # Ask Emperor for Saxon Electorate
+	}
+	if = {
+		limit = {  
+			FROM = { has_government_mechanic = abyssinian_unity_mechanic }
+			ROOT = { tag = REB }
+		}	
+		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = -2 }
 	}
 	if = {
 		limit = {

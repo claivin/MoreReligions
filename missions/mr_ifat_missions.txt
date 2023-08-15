@@ -429,11 +429,13 @@ mr_ifat_missions_2 = {
 				add_permanent_claim = ROOT
 			}
 			2801 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			dongola_area = {
 				limit = {
@@ -638,11 +640,13 @@ mr_ifat_missions_2 = {
 				add_permanent_claim = ROOT
 			}
 			503 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 			sindh_area = {
 				limit = {
@@ -1716,7 +1720,7 @@ mr_ifat_missions_5 = {
 				type = commandant 
 				skill = 3
 				discount = yes
-				culture = yemeni
+				culture = yemeni_culture
 			}
 		}
 	}

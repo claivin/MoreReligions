@@ -592,13 +592,6 @@ country_event = {
 	
 	is_triggered_only = yes
 	
-	trigger = {
-		tag = HUN
-	}
-	
-	mean_time_to_happen = {
-		days = 5
-	}
 	
 	option = {
 		name = HUN_flavor.2a
@@ -1391,7 +1384,7 @@ country_event = {
 			add_adm_power = -100
 			create_union = BLH
 		}
-		prestige = -30
+		add_prestige = -30
 	}
 	
 	option = {
@@ -1403,7 +1396,7 @@ country_event = {
 				months = -1
 			}
 		}
-		prestige = 30
+		add_prestige = 30
 	}
 }
 			

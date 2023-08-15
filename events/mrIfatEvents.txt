@@ -1,4 +1,4 @@
-namespace = MR_sicily_flavor
+namespace = MR_ifat_flavor
 country_event = {
 	id = MR_ifat_flavor.1
 	title = MR_ifat_flavor.1.t

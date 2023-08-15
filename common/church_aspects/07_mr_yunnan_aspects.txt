@@ -86,12 +86,14 @@ frog_festival_aspect = {
 	sprite = "GFX_frog_aspect"
 	cost = 100
 	trigger = {
-		custom_tooltip = WAIT_CATTLE_MO
-		NOT = {
-			has_country_modifier = WAIT_CATTLE_MO
-		}
-		any_owned_province = {
-			has_tax_building_trigger = yes
+		custom_trigger_tooltip ={
+			tooltip = WAIT_CATTLE_MO
+			NOT = {
+				has_country_modifier = WAIT_CATTLE_MO
+			}
+			any_owned_province = {
+				has_tax_building_trigger = yes
+			}
 		}
 	}
 	effect = {
