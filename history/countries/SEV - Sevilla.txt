@@ -1,9 +1,9 @@
-government = monarchy
-add_government_reform = iqta
+government = republic
+add_government_reform = merchants_reform
 primary_culture = andalucian
 religion = sunni
 technology_group = muslim
-capital = 223	# Granada
+capital = 224	# Andaluc
 government_rank = 1
 religious_school = zahiri_school
 override_country_name = MR_NAME_SEVILLA
