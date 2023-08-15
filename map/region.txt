@@ -920,7 +920,7 @@ south_china_region = {
 		fujian_area
 		jiangxi_area
 		huguang_area
-		north_zhejiang_area
+		zhejiang_area
 		south_zhejiang_area
 		south_anhui_area
 		taiwan_area
@@ -953,7 +953,7 @@ north_china_region = {
 	areas = {
 		hebei_area
 		south_hebei_area
-		east_shandong_area
+		shandong_area
 		west_shandong_area
 		henan_area
 		shanxi_area

@@ -88,6 +88,23 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
+				random_owned_province = {
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+				}
 			}
 			AAB = {
 				add_manpower = 10
@@ -125,6 +142,23 @@ country_event = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
+					}
+				}
+				random_owned_province = {
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
 					}
 				}
 			}
@@ -166,6 +200,23 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
+				random_owned_province = {
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+				}
 			}
 			KNN = {
 				add_manpower = 10
@@ -184,6 +235,23 @@ country_event = {
 						}
 					}
 					add_core = KNN
+				}
+				random_owned_province = {
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
 				}
 				add_accepted_culture = transylvanian 
 				define_ruler = {
@@ -234,6 +302,23 @@ country_event = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
+					}
+				}
+				random_owned_province = {
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
+					}
+					ROOT = {
+						infantry = PREV
 					}
 				}
 				if = {
@@ -810,7 +895,11 @@ country_event = {
 		add_mil_power = 200
 		add_prestige = 10
 		ai_chance = {
-			factor = 0
+			factor = 10
+			modifier = {
+				factor = 0
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -826,8 +915,15 @@ country_event = {
 			}
 		}
 		custom_tooltip = BLH_call_in_TT
+		hidden_effect = {
+			set_global_flag = war_has_escalated
+		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 10
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -843,8 +939,15 @@ country_event = {
 			}
 		}
 		custom_tooltip = POL_call_in_TT
+		hidden_effect = {
+			set_global_flag = war_has_escalated
+		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 10
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -860,8 +963,15 @@ country_event = {
 			}
 		}
 		custom_tooltip = BOH_call_in_TT
+		hidden_effect = {
+			set_global_flag = war_has_escalated
+		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 10
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -877,8 +987,15 @@ country_event = {
 			}
 		}
 		custom_tooltip = SER_call_in_TT
+		hidden_effect = {
+			set_global_flag = war_has_escalated
+		}
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 10
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -891,11 +1008,17 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	major = yes
+	
 	option = {
 		name = HUN_flavor.6a
 		add_prestige = -10
 		ai_chance = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 0
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -915,7 +1038,11 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 0
+			modifier = {
+				factor = 1
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -935,7 +1062,10 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			modifier = {
+				factor = 1
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -955,7 +1085,10 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			modifier = {
+				factor = 1
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 	
@@ -975,7 +1108,10 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			modifier = {
+				factor = 1
+				has_global_flag = war_has_escalated
+			}
 		}
 	}
 }
@@ -1355,11 +1491,13 @@ country_event = {
 				add_permanent_claim = ROOT
 			}
 			2746 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 		add_prestige = 25

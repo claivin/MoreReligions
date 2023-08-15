@@ -15,10 +15,12 @@
  bornean_adj: "Kalimantan"
  javanese: "Jawa"
  javanese_adj: "Jawanese"
+ balinese: "Bali"
+ balinese: "Balinese"
  southeastasian_group: "Indo-Chinese"
  
  #Trade Nodes
- guinea: "Guinea
+ guinea: "Guinea"
  niani: "Niani"
  
  estate_church_lao_animism_effect_tooltip: "Every owned province of the §YSatsana Phi§! faith gains:\nLocal Missionary Strength: §R-100§!\nLocal Religious Unity Contribution: §G-100%§!"

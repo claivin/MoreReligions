@@ -99,7 +99,9 @@ hotoku_war = {
 				1020 = { 
 					NOT = { controlled_by = ROOT }
 				}
-				custom_tooltip = THIS_WILL_KILL_YOU_TT
+				custom_trigger_tooltip = {
+					tooltip = THIS_WILL_KILL_YOU_TT
+				}
 			}
 			AND = {
 				1020 = { 

@@ -709,10 +709,6 @@ eastern = {
 		icon = 24
 		
 		allowed_conversion = {
-			vajrayana
-			buddhism
-			mahayana
-			azhaliism
 		}
 		allowed_center_conversion = {
 			buddhism

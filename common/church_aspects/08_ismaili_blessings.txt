@@ -57,7 +57,7 @@ blessing_nizari = {
 	is_blessing = yes
 
 	modifier = {
-		morale_damage_recieved = -0.15
+		 morale_damage_received = -0.15
 	}
 	ai_will_do = {
 		factor = 10

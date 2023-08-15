@@ -2940,7 +2940,7 @@ south_hebei_area = { #4
 	695 696 2137 4195 5474
 }
 
-east_shandong_area = { #5
+shandong_area = { #5
 	690 2139 5462 5463 5464
 }
 
@@ -2964,7 +2964,7 @@ south_anhui_area = { #3
 	686 2146 2147 5481 5482
 }
 
-north_zhejiang_area = { #5
+zhejiang_area = { #5
 	684 5468 5469 2148 2149
 }
 

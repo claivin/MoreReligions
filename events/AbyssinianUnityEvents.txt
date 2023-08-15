@@ -156,9 +156,7 @@ country_event = {
 	
 	trigger = {
 		has_government_mechanic = abyssinian_unity_mechanic 
-		employed_advisor = {
-			NOT = { culture = root }
-		}
+		has_advisor = yes 
 	}
 	
 	#We cannot fire our trusted advisor.
