@@ -1344,7 +1344,7 @@ SEV_ideas = {
 	}
 	sev_the_seville_patricians = {
 		trade_efficiency = 0.1
-		burghers_loyalty_modifier = 0.10
+		nobility_loyalty_modifier = 0.10
 	}
 	sev_protect_against_piracy = {
 		naval_forcelimit_modifier = 0.20
