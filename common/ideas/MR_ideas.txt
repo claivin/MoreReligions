@@ -1293,3 +1293,78 @@ BGU_ideas = {
 		global_tax_modifier = 0.10
 	}
 }
+BJZ_ideas = {
+	start = {
+		own_territory_dice_roll_bonus = 1
+		rival_border_fort_maintenance = -0.50
+	}
+	bonus = {
+		garrison_size = 0.30
+	}
+	free = yes
+	trigger = {
+		tag = BJZ
+	}
+	bjz_enemies_everywhere = {
+		morale_damage_received = -0.10
+	}
+	bjz_bastion_sufism = {
+		monthly_piety = -0.03
+		devotion = 1
+		}
+	bjz_iberian_jihad = {
+		missionaries = 1
+		manpower_in_true_faith_provinces = 0.10
+	}
+	bjz_vast_fields = {
+		state_maintenance_modifier = -0.15
+	}
+	bjz_world_ends = {
+		global_sailors_modifier = 0.15
+	}
+	bjz_imam = {
+		tolerance_own = 2
+		defensiveness = 0.10}
+	bjz_unwavering_faith = {
+		manpower_recovery_speed = 0.15
+	}
+}
+
+SEV_ideas = {
+	start = {
+		merchants = 1
+		placed_merchant_power = 5
+	}
+	bonus = {
+		mercantilism_cost = -0.3
+	}
+	free = yes
+	trigger = {
+		tag = SEV
+	}
+	sev_the_seville_patricians = {
+		trade_efficiency = 0.1
+		burghers_loyalty_modifier = 0.10
+	}
+	sev_protect_against_piracy = {
+		naval_forcelimit_modifier = 0.20
+		galley_cost = -0.1
+	}
+	sev_university_of_seville = {
+		innovativeness_gain = 0.25
+		global_institution_spread = 0.2
+	}
+	sev_urbanism = {
+		development_cost = -0.1
+	}
+	sev_berber_mercenaries = {
+		mercenary_cost = -0.20
+	}
+	sev_the_bank_of_iberia = {
+		inflation_reduction = 0.5
+	}
+	sev_ever_upwards = {
+		expand_infrastructure_cost_modifier = -0.2
+		center_of_trade_upgrade_cost = -0.1
+	}
+}
