@@ -1,3 +1,11 @@
+generic_military_missions_1 = { #diplomacy line
+	slot = 1
+	generic = yes
+	ai = no
+	potential = { always = yes }
+	
+}
+
 generic_military_missions_2 = { #naval line
 	slot = 2
 	generic = yes

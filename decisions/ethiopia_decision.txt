@@ -223,7 +223,7 @@ country_decisions = {
 		effect = {
 			set_country_flag = port_in_india_decision_IFT_FLAG
 			hidden_effect = {
-				save_event_target_as = ifat_person_target
+				save_event_target_as = ifat_person_target #this isnt used anywhere?
 			}
 			2089 = {
 				owner = {

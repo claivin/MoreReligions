@@ -172,7 +172,7 @@ mr_sicily_missions_first = {
 		icon = mission_unite_home_region
 		position = 6
 		required_missions = { mr_sicily_africa_3 }
-		provinces_to_highlight {
+		provinces_to_highlight = {
 			OR = {
 				area = algiers_area
 				area = northern_morocco_area

@@ -57,6 +57,7 @@ country_event = {
 				capital_scope = {
 					NOT = { fort_level = 2 }
 				}
+				ai = no
 			}
 			capital_scope = {
 				add_building_construction = {

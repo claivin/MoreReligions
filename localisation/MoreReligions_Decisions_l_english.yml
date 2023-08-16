@@ -1,15 +1,66 @@
 ﻿l_english:
- ethiopia_decision_title:0 "Reform the Empire of Ethiopia"
- ethiopia_decision_desc:0 "Ethiopia was fractured in the aftermath of the Solomonic Civil War and the Rise of the Ifat Sultanate. With our subjugation of the princes and the defeat of the Somali sultans, we now stand as the true heirs to Ethiopia; long live the Negus!"
+ ethiopia_decision_title: "Reform the Empire of Ethiopia"
+ ethiopia_decision_desc: "Ethiopia was fractured in the aftermath of the Solomonic Civil War and the Rise of the Ifat Sultanate. With our subjugation of the princes and the defeat of the Somali sultans, we now stand as the true heirs to Ethiopia; long live the Negus!"
+ 
  ayneha_decision_title: "Unite the Ayneha"
  ayneha_decision_desc: "The Ayneha are a divided group within the lands of the Sahel. If united, they could dominate all those who stand in their way. We must take the core cities and bring together the Ayneha people!"
+ 
  romaniae_decision_title: "Reform the Romaniae Empire"
  romaniae_decision_desc: "For far too long has the lands of the Frankocratia remained separated and divided. We will unite the crusader states and bring Greece under our heel!"
+ 
  muang_thai_decision_title: "Unite the Thai Muangs"
  muang_thai_decision_desc: "In the aftermath of the 1382 sack of Ayutthaya, the central Thai princedoms remain fractured and broken. It is time for a new empire to emerge, one that can rival and suprass the glory of even Angkor!"
+ 
  syyam_decision_title: "Establish the Sultanate of Syamistan"
  syyam_decision_desc: "With the unfication of the Thai states, we must establish a new kingdom in the heart of Siam, one founded upon the principles of Islam!" 
+ 
  BANGKOK_CAP_TT: "We will gain the decision to move our capital to §YBangkok§!."
  move_capital_to_bangkok_title: "Establish Capital at Krung Thep"
  move_capital_to_bangkok_desc: "With the unification of the Thai kingdoms, the need for a new capital is pressing. Each Thai dynasty requires to be great builders and city planners, and for our state we shall build a new capital just south of the old city. Krung Thep, the city of gods."
+ 
  al_habash_desicion_title: "Unite Al-Habasha"
+ al_habash_desicion_desc: "wip"
+ 
+ request_union_HUN_title: "wip"
+ request_union_HUN_desc: "wip"
+ 
+ bulgaria_purchace_title: "wip"
+ bulgaria_purchace_desc: "wip"
+ 
+ port_in_india_decision_IFT_title: "wip"
+ port_in_india_decision_IFT_desc: "wip"
+ 
+ reinforce_tripitaka_koreana_decision_title: "wip"
+ reinforce_tripitaka_koreana_decision_desc: "wip"
+ 
+ evacuate_tripitaka_koreana_decision_title: "wip"
+ evacuate_tripitaka_koreana_decision_desc: "wip"
+ tripitaka_koreana_defenses_tt: "wip"
+ evacuate_tripitaka_koreana_decision_tt: "wip"
+ 
+ enforce_hangeul_alphabet_decision_tt: "wip"
+ hangeul_alphabet_decision_ct: "wip"
+ 
+ revoke_hangeul_alphabet_decision_title: "wip"
+ revoke_hangeul_alphabet_decision_desc: "wip"
+ 
+ hopae_system_decision_title: "wip"
+ hopae_system_decision_desc: "wip"
+ 
+ establish_sinmun_office_title: "wip"
+ establish_sinmun_office_desc: "wip"
+ 
+ enforce_hangeul_alphabet_decision_title: "wip"
+ enforce_hangeul_alphabet_decision_desc: "wip"
+ 
+ annex_arakan_decision_desc: "wip"
+ 
+ annex_sadhuim_decision_desc: "wip"
+ 
+ annex_pegu_decision_desc: "wip"
+ 
+ tuareg_decision_title: "wip"
+ tuareg_decision_desc: "wip"
+ 
+ zanj_decision_title: "wip"
+ zanj_decision_desc: "wip"

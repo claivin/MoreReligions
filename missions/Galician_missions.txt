@@ -96,7 +96,7 @@ gal_mission_second = {
 		
 		gal_papal_connection = {
 			icon = catholic_confraternity
-			required_missions {}
+			required_missions = {}
 			position = 1
 			
 			trigger = {
@@ -115,7 +115,7 @@ gal_mission_second = {
 		}
 		gal_renovate_santiago = {
 			icon = mission_european_church
-			required_missions { gal_papal_connection }
+			required_missions = { gal_papal_connection }
 			position = 2
 			
 			trigger = {
@@ -146,7 +146,7 @@ gal_mission_third = {
 		
 		gal_burgo_economic_oversight = {
 			icon = mission_african_gold
-			required_missions {}
+			required_missions = {}
 			position = 1
 			
 			trigger = {
@@ -158,7 +158,7 @@ gal_mission_third = {
 		}
 		gal_burgo_markets = {
 			icon = purely_for_commerce
-			required_missions { gal_burgo_economic_oversight }
+			required_missions = { gal_burgo_economic_oversight }
 			position = 2
 			
 			trigger = {
@@ -188,7 +188,7 @@ gal_mission_fourth = {
 		
 		gal_militia_exercises = {
 			icon = mission_hessian_jaeger_corps
-			required_missions {}
+			required_missions = {}
 			position = 1
 			
 			trigger = {
@@ -200,7 +200,7 @@ gal_mission_fourth = {
 		}
 		gal_sell_army_commision = {
 			icon = mission_plc_prevent_deluge
-			required_missions {gal_militia_exercises}
+			required_missions = {gal_militia_exercises}
 			position = 2
 			
 			trigger = {
@@ -225,7 +225,7 @@ gal_mission_fifth = {
 		
 		gal_autonomous_communities = {
 			icon = mission_peasantry
-			required_missions {}
+			required_missions = {}
 			position = 1
 			
 			trigger = {
@@ -253,7 +253,7 @@ gal_mission_fifth = {
 		}
 		gal_la_coruna = {
 			icon = mission_guilds_of_barcelona
-			required_missions {gal_autonomous_communities}
+			required_missions = {gal_autonomous_communities}
 			position = 2
 			
 			trigger = {
@@ -268,7 +268,7 @@ gal_mission_fifth = {
 		}
 		gal_pilgrim_trap = {
 			icon = mission_sell_indulgences
-			required_missions {gal_la_coruna gal_sell_army_commision gal_burgo_markets gal_renovate_santiago gal_cement_our_independence}
+			required_missions = {gal_la_coruna gal_sell_army_commision gal_burgo_markets gal_renovate_santiago gal_cement_our_independence}
 			position = 3
 			
 			trigger = {}

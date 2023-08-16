@@ -1886,4 +1886,5 @@ mr_ifat_missions_5 = {
 			}
 			
 		}
+	}
 }

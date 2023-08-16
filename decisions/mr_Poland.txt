@@ -47,21 +47,25 @@ country_decisions = {
 				}
 			}
 			5115 = {
-				limit = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				add_province_modifier = {
-					name = mr_pol_new_archbishopric
-					duration = 3650
+				if = {
+					limit = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					add_province_modifier = {
+						name = mr_pol_new_archbishopric
+						duration = 3650
+					}
 				}
 			}
 			35 = {
-				limit = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-				add_province_modifier = {
-					name = mr_pol_new_archbishopric
-					duration = 3650
+				if = {
+					limit = {
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					add_province_modifier = {
+						name = mr_pol_new_archbishopric
+						duration = 3650
+					}
 				}
 			}
 		}

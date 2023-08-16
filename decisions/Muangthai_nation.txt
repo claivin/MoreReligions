@@ -72,9 +72,7 @@ country_decisions = {
 		potential = {
 			mission_completed = mr_siam_conquest_4
 			normal_or_historical_nations = yes
-			OR = {
-				is_playing_custom_nation = no
-			}
+			is_playing_custom_nation = no
 			owns = 4831
 			4831 = {
 				is_state = yes
@@ -89,19 +87,17 @@ country_decisions = {
 		}
 		effect = {
 			set_country_flag = relocated_capital_bangkok
-			4831 = {
-				move_capital_effect = yes
-			}
 			add_prestige = 20
 			add_treasury = -150
 			4831 = {
+				move_capital_effect = yes
 			 	add_base_tax = 1 
 				add_base_production = 1
 			 	add_base_manpower = 1
 				add_great_project_tier = {
     					type = the_grand_palace
    					tier = 1
-				}	
+				}
 			}
 		}
 		ai_will_do = {
