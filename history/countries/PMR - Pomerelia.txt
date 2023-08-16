@@ -5,3 +5,15 @@ primary_culture = pommeranian
 religion = catholic
 technology_group = western
 capital = 2995	#Stolp
+
+1387.1.1 = {
+	monarch = {
+		name = "Leszek II"
+		dynasty = "Piast"
+		birth_date = 1371.11.11
+		culture = polish
+		dip = 2
+		adm = 2
+		mil = 1
+	}
+}

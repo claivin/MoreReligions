@@ -1,5 +1,18 @@
-government = republic
+government = monarchy
+add_government_reform = feudalism_reform
 primary_culture = hannoverian
+government_rank = 1
 religion = catholic
 technology_group = western
-capital = 82	# Kassel
+capital = 82	# Arnsberg
+
+1433.11.9 = {
+	monarch = {
+		name = "Gottfried IV"
+		dynasty = "von Cappenberg"
+		birth_date = 1400.10.04
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}
