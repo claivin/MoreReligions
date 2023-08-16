@@ -4,6 +4,62 @@ generic_military_missions_1 = { #diplomacy line
 	ai = no
 	potential = { always = yes }
 	
+	g_mission_allies = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = building_alliances.tooltip
+					num_of_allies = 2
+					calc_true_if = {
+						all_ally = {
+							has_opinion = {
+								who = ROOT
+								value = 150
+							}
+						}
+						amount = 2
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = obj_humiliate_rival_tooltip
+					has_country_flag = humiliated_rival
+				}
+				trade_income_percentage = 0.40
+			}
+		}
+		effect = {
+			custom_tooltip = g_mission_allies_tt
+			country_event = {
+				id = generic_mission_events.5
+			}
+			custom_tooltip = g_mission_allies_tt2
+		}
+	}
+	
+	g_mission_long_game = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_allies }
+		position = 2
+		trigger = {
+			OR = {
+				any_country = {
+					historical_friend_with = ROOT
+				}
+				any_country = {
+					historical_rival_with = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gme_diplomat
+				duration = 9125
+			}
+		}
+	}
 }
 
 generic_military_missions_2 = { #naval line

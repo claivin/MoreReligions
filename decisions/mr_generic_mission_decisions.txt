@@ -1,0 +1,68 @@
+country_decisions = {
+	declare_long_term_diplo_friend = { #create a historical friendship
+		potential = {
+			#ai = no
+			mission_completed = g_mission_allies
+			NOT = { has_country_flag = gme_has_used_historical_friend_decision_successfully }
+			NOT = { has_country_flag = historical_friend_decision_in_progress }
+		}
+		allow = {
+			any_ally = {
+				trust = {
+					who = ROOT
+					value = 100
+				}
+				capital_scope = {
+					infantry_in_province = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = historical_friend_gme_tt
+			hidden_effect = {
+				random_ally = {
+					limit = {
+						trust = {
+						who = ROOT
+						value = 100
+					}
+						capital_scope = {
+							infantry_in_province = ROOT
+						}
+					}
+					save_global_event_target_as = gme_declare_historical_friend
+				}
+			}
+			country_event = {
+				id = generic_mission_events.6
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	declare_long_term_diplo_rival = { #create a historical rivalry
+		potential = {
+			#ai = no
+			mission_completed = g_mission_allies
+			NOT = { has_country_flag = declared_rival_event }
+		}
+		allow = {
+			any_rival_country = {
+				capital_scope = {
+					controlled_by = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = historical_rival_gme_tt
+			country_event = {
+				id = generic_mission_events.9
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

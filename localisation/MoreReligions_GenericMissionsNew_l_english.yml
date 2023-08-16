@@ -1,4 +1,13 @@
 ﻿l_english:
+ g_mission_allies_title: "Basic Diplomacy"
+ g_mission_allies_desc: "We observe the dealings of courts and kings abroad and find that existing as an outsider is all the more difficult. We should draw up connections with our neighbors, or at the very least, let them know how we feel."
+ g_mission_allies_tt: "Different rewards will be available depending on which conditions you have fulfilled\n"
+ g_mission_allies_tt2: "\n§YUnlocks Decisions§! to create a §RHistorical Rival§! and a §GHistorical Friend§!"
+ 
+ g_mission_long_game_title: "Political Strategy"
+ g_mission_long_game_desc: "Diplomacy continues long after a diplomat has passed; the friends and enemies we make now cast long shadows as the future marches on."
+
+
  g_mission_sea_access_title: "Sea Ports"
  g_mission_sea_access_desc: "Without access to the sea, our foreign policy and economy are totally dependant on the whims of our neighbors. We need a port to take a step towards real independence."
  g_mission_sea_access_tt: "A random province fulfilling these conditions will recieve these following:"
@@ -18,6 +27,14 @@
  g_mission_growing_power_title: "A Great Power" 
  g_mission_growing_power_desc: "As we have ascended to a formidable regional power, the possibility of leaving leaving a mark on history is all but decided. What remains now is to take the reins and write history ourselves."
  
+ declare_long_term_diplo_friend_title: "Request a Long Term Alliance"
+ declare_long_term_diplo_friend_desc: "Standing together through thick and thin, our ally has proven themselves loyal and it may be in our interests to form a stronger tie than usual with them."
+ historical_friend_gme_tt: "We ask our ally to become Historical Friends"
+ 
+ declare_long_term_diplo_rival_title: "Enemies 'til the End"
+ declare_long_term_diplo_rival_desc: "There are rivals, and there are Rivals."
+ historical_rival_gme_tt: "We will make a Rival into a Historical Rival."
+ 
  generic_mission_events.1.t: "Martial Mastery"
  generic_mission_events.1.d: "The call to arms reverberates throughout the land, and the time has come to forge a standard army that will carry the might of your nation into battle. As your soldiers march forward, you must decide upon a specialized focus that will shape the core strength of your military forces. The path you choose will determine the tactics and strategy that define your armed forces for generations to come."
  generic_mission_events.1.a: "Embrace the strength of the traditional feudal system."
@@ -28,7 +45,7 @@
  gme_later_better_modifier_army: "This will influence the direction of our Military Ethos and will grant different modifiers in the future"
  
  generic_mission_events.2.t: "The Army of [Root.GetName]"
- generic_mission_events.2.da: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The echoes of the past beckon; local nobility and militias stand ready to bolster your ranks, offering vast manpower for your campaigns. Modern conscription methods which evoke the image of a thousand years of levies ensure a robust and resilient army, rooted in tradition. Your commitment to this specialization can lead to more frequent mobilization of levies, expanded manpower reserves, and the ability to overwhelm your adversaries through sheer numbers."
+ generic_mission_events.2.da: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The echoes of the past beckon; local nobility and militias stand ready to bolster your ranks, offering vast manpower for your campaigns. Modern cuonscription methods which evoke the image of a thousand years of levies ensure a robust and resilient army, rooted in tradition. Your commitment to this specialization can lead to more frequent mobilization of levies, expanded manpower reserves, and the ability to overwhelm your adversaries through sheer numbers."
  generic_mission_events.2.db: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The thunder of hooves and the swift strike of cavalry resonates with your nation's identity. By focusing on the dominance of cavalry, you reaffirm your commitment to mobility, shock tactics, and swift maneuvers on the battlefield. Your cavalry forces become renowned, capable of breaking enemy lines and executing hit-and-run raids with unmatched precision. This specialization offers superior mobility, increased shock damage, and the ability to exploit weaknesses in enemy formations."
  generic_mission_events.2.dc: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The roar of muskets, the thunder of cannons, and the tactical advantage of firearms have become your nation's hallmark. By continuing to invest in firearms, you cement a reputation for advanced technology and devastating firepower. Your infantry units become a force to be reckoned with, able to unleash volleys of gunfire that decimate enemy ranks. The legacy of your firearms revolution will reshape the battlefield and leave a mark on the course of history."
  generic_mission_events.2.de: "Having ascended to the ranks of great powers, [Root.GetName] now stands at a crossroads, seeking to solidify its military prowess. The foundations of a disciplined and organized military hierarchy have been laid, and now you must solidify this approach. Your commitment to a structured and coordinated military ensures that your forces are resilient, well-organized, and capable of executing complex maneuvers. Your commitment to a perfected military hierarchy will resonate through the annals of history as one of the first modern armies."
@@ -53,3 +70,39 @@
  generic_mission_events.4.a: "There's money to be made!"
  generic_mission_events.4.b: "Over the Horizon!"
  generic_mission_events.4.c: "To Arms!"
+ 
+ generic_mission_events.5.t: "Basic Diplomacy"
+ generic_mission_events.5.d: "As [Root.GetName] ventures beyond its borders, the dawn of foreign relations beckons. The time has come to make crucial decisions that will set the tone for your nation's diplomatic engagements: alliances to forge, rivals to challenge, and trade agreements to pursue."
+ generic_mission_events.5.a: "A statesman is what we need!"
+ generic_mission_events.5.b: "A diplomat is what we need!"
+ generic_mission_events.5.c: "An enemy is what we need!"
+ generic_mission_events.5.e: "A bag of money is what we need!"
+ generic_mission_events.5.f: "Caution is needed."
+ 
+ generic_mission_events.6.t: "An Olive Branch"
+ generic_mission_events.6.d: "[Root.GetMonarch.GetTitle] [Root.GetMonarch.GetName] has conceived a proposal of profound importance. A long-standing strategic alliance that could span generations is within reach. As the ink dries on the parchment, you ponder if you should extend an offer that goes beyond the ordinary alliances of the world. This pact would signify not just an investment in mutual interests, but a deep and lasting bond that could shape the course of history for both nations."
+ generic_mission_events.6.a: "Make the Proposal."
+ generic_mission_events.6.b: "On the other hand, who is a better ally than ourselves?"
+ generic_mission_events.6.c: "Only robots can see this."
+ gme_event_6_tt: "If they accept, we will lose all cores and claims on their territory and vice versa"
+ 
+ generic_mission_events.7.t: "A Proposal From [From.GetName]"
+ generic_mission_events.7.d: "[Root.GetMonarch.GetTitle] [Root.GetMonarch.GetName] has offered us a long-term strategic alliance. Our mutual trust has drawn us close together, so this would be a decisive step in cementing our nations' relationships."
+ generic_mission_events.7.a: "We accept!"
+ generic_mission_events.7.b: "Unfortunately, we must decline."
+ 
+ generic_mission_events.8.t: "The [Root.GetName]-[gme_declare_historical_friend.GetName] Alliance"
+ generic_mission_events.8.d: "[gme_declare_historical_friend.GetMonarch.GetTitle] [gme_declare_historical_friend.GetMonarch.GetName] of [gme_declare_historical_friend.GetName] has accept our offer. A great feast his held in each other's courts to mark the occassion."
+ generic_mission_events.8.a: "This is the start of a great friendship."
+ generic_mission_events.8.b: "What a shame."
+ 
+ generic_mission_events.9.t: "A Feud For The Ages"
+ generic_mission_events.9.d: "Relationships between [Root.GetName] and [gme_historical_rival.GetName] have never been as rocky as they have in recent years; between incursions into each other's territories, feuding merchants, and less than cordial relations between each other's nobles tensions have reached a boiling point. In the midst of this war, the hostilites flared to its highest yet, setting a precedent for a rivalry neither will ever be able to forgive."
+ generic_mission_events.9.a: "Torch [gme_historical_rival.Capital.GetName]!"
+ generic_mission_events.9.b: "Regicide!"
+ generic_mission_events.9.c: "Loot their coffers!"
+ generic_mission_events.9.e: "Seize their artifacts!"
+ 
+ generic_mission_events.10.t: "The Razing of [Root.Capital.GetName]"
+ generic_mission_events.10.d: "The brutes of [From.GetName] have sieged our capital. Disregarding all conventions of civilized warfare, the animals have torched homes and buildings indiscriminately. An unfortunate tempest further exacerbated these flames, and within moments a great firestorm had formed...\n\n[Root.Capital.GetName] is in ashes."
+ generic_mission_events.10.a: "Does their evil know no bounds!?"

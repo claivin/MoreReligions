@@ -80,3 +80,16 @@ gme_logistics_perm = {
 	global_supply_limit_modifier = 0.1
 	#global_naval_barrage_cost = -0.1
 }
+
+gme_ae_diplo_reduction = {
+	ae_impact = -0.1
+}
+
+gme_trade_diplo_starter = {
+	trade_efficiency = 0.1
+	diplomatic_reputation = 1
+}
+
+gme_diplomat = {
+	diplomats = 1
+}

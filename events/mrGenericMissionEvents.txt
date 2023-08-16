@@ -12,6 +12,7 @@ country_event = {
 	
 	option = { #Expanded Feudal Levys
 		name = generic_mission_events.1.a
+		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = gme_expanded_feudal_levy
 			duration = 9125
@@ -22,6 +23,7 @@ country_event = {
 	
 	option = { #Cavalry Focus
 		name = generic_mission_events.1.b
+		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = gme_expanded_stables
 			duration = 9125
@@ -32,6 +34,7 @@ country_event = {
 	
 	option = { #GUNS!
 		name = generic_mission_events.1.c
+		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = gme_firearms_adoption
 			duration = 9125
@@ -42,6 +45,7 @@ country_event = {
 	
 	option = { #Hierarcy
 		name = generic_mission_events.1.e
+		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = gme_military_hierarchy
 			duration = 9125
@@ -52,6 +56,7 @@ country_event = {
 	
 	option = { #Defense
 		name = generic_mission_events.1.f
+		ai_chance = { factor = 1 }
 		if = {
 			limit = {
 				capital_scope = {
@@ -173,6 +178,7 @@ province_event = { #naval ethos
 	
 	option = { #trade interests
 		name = generic_mission_events.3.a
+		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = gme_trade_navy
 			duration = 9125
@@ -187,6 +193,7 @@ province_event = { #naval ethos
 	
 	option = { #colonial ambitions
 		name = generic_mission_events.3.b
+		ai_chance = { factor = 1 }
 		create_explorer = {
 			tradition = 30
 		}
@@ -197,6 +204,7 @@ province_event = { #naval ethos
 	
 	option = { #logistics
 		name = generic_mission_events.3.c
+		ai_chance = { factor = 1 }
 		add_country_modifier = {
 			name = gme_logistics
 			duration = 9125
@@ -258,5 +266,354 @@ country_event = { #naval ethos
 		clr_country_flag = gme_trade_navy_flag
 		clr_country_flag = gme_colonial_flag
 		clr_country_flag = gme_logistics_flag
+	}
+}
+
+country_event = { #diplo mission opener
+	id = generic_mission_events.5
+	title = generic_mission_events.5.t
+	desc = generic_mission_events.5.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #default
+		name = generic_mission_events.5.f
+		ai_chance = { factor = 1 }
+		add_dip_power = 100
+	}
+	
+	option = { #cheap diplomat
+		name = generic_mission_events.5.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			num_of_allies = 2
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				amount = 2
+			}
+		}
+		define_advisor = {
+			type = diplomat
+			culture = ROOT
+			religion = ROOT
+			skill = 1
+			cost_multiplier = 0.5
+		}
+	}
+	
+	option = { #cheap statesman
+		name = generic_mission_events.5.b
+		ai_chance = { factor = 1 }
+		trigger = {
+			num_of_allies = 2
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				amount = 2
+			}
+		}
+		define_advisor = {
+			type = statesman
+			culture = ROOT
+			religion = ROOT
+			skill = 1
+			cost_multiplier = 0.5
+		}
+	}
+	
+	option = { #humiliated
+		name = generic_mission_events.5.c
+		ai_chance = { factor = 1 }
+		trigger = { has_country_flag = humiliated_rival }
+		
+		add_country_modifier = {
+			name = gme_ae_diplo_reduction
+			duration = 9125
+		}
+	}
+	
+	option = { #traders
+		name = generic_mission_events.5.e
+		ai_chance = { factor = 1 }
+		trigger = { trade_income_percentage = 0.40 }
+		
+		add_country_modifier = {
+			name = gme_trade_diplo_starter
+			duration = 9125
+		}
+	}
+}
+
+country_event = { #declare historical friend - first person asks
+	id = generic_mission_events.6
+	title = generic_mission_events.6.t
+	desc = generic_mission_events.6.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = historical_friend_decision_in_progress
+		}
+	}
+	
+	option = { #do declare historical friend
+		name = generic_mission_events.6.a
+		ai_chance = { factor = 1 }
+		
+		custom_tooltip = gme_event_6_tt
+		event_target:gme_declare_historical_friend = {
+			country_event = {
+				id = generic_mission_events.7
+			}
+		}
+	}
+	
+	option = { #DONT declare historical friend - player only
+		name = generic_mission_events.6.b
+		ai_chance = { factor = 1 }
+		trigger = { ai = no }
+		change_dip = 1
+		hidden_effect = {
+			clr_country_flag = historical_friend_decision_in_progress
+		}
+	}
+	
+	option = { #DONT declare historical friend - ai only
+		name = generic_mission_events.6.c
+		ai_chance = { factor = 1 }
+		trigger = { ai = yes }
+		
+		add_dip_power = 100
+		hidden_effect = {
+			clr_country_flag = historical_friend_decision_in_progress
+		}
+	}
+}
+
+country_event = { #declare historical friend - second person agrees
+	id = generic_mission_events.7
+	title = generic_mission_events.7.t
+	desc = generic_mission_events.7.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #accept
+		name = generic_mission_events.7.a
+		ai_chance = { factor = 100 }
+		FROM = {
+			set_country_flag = gme_historical_friend_agrees
+			set_country_flag = gme_has_used_historical_friend_decision_successfully
+			country_event = {
+				id = generic_mission_events.8
+			}
+		}
+	}
+	
+	option = { #decline
+		name = generic_mission_events.7.b
+		ai_chance = { factor = 0 }
+		FROM = {
+			country_event = {
+				id = generic_mission_events.8
+			}
+		}
+	}
+}
+
+country_event = { #declare historical friend - first person informed of choice
+	id = generic_mission_events.8
+	title = generic_mission_events.8.t
+	desc = generic_mission_events.8.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = { #they accepted
+		name = generic_mission_events.8.a
+		trigger = { 
+			has_country_flag = gme_historical_friend_agrees
+		}
+		add_historical_friend = event_target:gme_declare_historical_friend
+		remove_core = event_target:gme_declare_historical_friend
+		remove_claim = event_target:gme_declare_historical_friend
+		
+		event_target:gme_declare_historical_friend = {
+			every_owned_province = {
+				remove_core = ROOT
+				remove_claim = ROOT
+			}
+			add_historical_friend = ROOT
+		}
+	}
+	
+	option = { #they declined
+		name = generic_mission_events.8.b
+		trigger = { 
+			NOT = { has_country_flag = gme_historical_friend_agrees }
+		}
+	}
+	
+	after = {
+		clr_country_flag = gme_historical_friend_agrees
+		clear_global_event_target = gme_declare_historical_friend
+	}
+}
+
+country_event = { #declare historical rival
+	id = generic_mission_events.9
+	title = generic_mission_events.9.t
+	desc = generic_mission_events.9.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		hidden_effect = {
+			random_rival_country = {
+				limit = {
+					capital_scope = {
+						controlled_by = ROOT
+					}
+				}
+				save_event_target_as = gme_historical_rival
+			}
+		}
+	}
+	
+	option = { #torch the capital!
+		name = generic_mission_events.9.a
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0.01
+				has_global_flag = capital_already_torched_once
+			}
+		}
+		
+		event_target:gme_historical_rival = {
+			add_historical_rival = ROOT
+			capital_scope = {
+				add_devastation = 100
+				set_base_tax = 1
+				set_base_production = 1
+				set_base_manpower = 1
+			}
+			country_event = {
+				id = generic_mission_events.10
+			}
+		}
+		all_known_country = {
+			add_aggressive_expansion = {
+				who = ROOT
+				value = 25
+				apply_calc = yes
+			}
+		}
+		add_historical_rival = event_target:gme_historical_rival
+		
+		if = {
+			limit = {
+				NOT = { has_global_flag = capital_already_torched_once }
+			}
+			set_global_flag = capital_already_torched_once
+		}
+	}
+	
+	option = { #kill the king!
+		name = generic_mission_events.9.b
+		ai_chance = { factor = 10 }
+		
+		event_target:gme_historical_rival = {
+			add_historical_rival = ROOT
+			kill_ruler = yes
+			add_stability = -1
+		}
+		add_ruler_personality = cruel_personality
+		add_historical_rival = event_target:gme_historical_rival
+	}
+	
+	option = { #loot their coffers!
+		name = generic_mission_events.9.c
+		ai_chance = { factor = 30 }
+		
+		event_target:gme_historical_rival = {
+			add_historical_rival = ROOT
+			add_years_of_income = -5
+		}
+		add_historical_rival = event_target:gme_historical_rival
+		add_years_of_income = 1
+	}
+	
+	option = { #steal their artifacts!
+		name = generic_mission_events.9.e
+		ai_chance = { factor = 50 }
+		
+		event_target:gme_historical_rival = {
+			add_historical_rival = ROOT
+			add_prestige = -200
+		}
+		add_historical_rival = event_target:gme_historical_rival
+		add_prestige = 50
+	}
+	
+	after = {
+		set_country_flag = declared_rival_event
+	}
+}
+
+country_event = { #declare historical rival
+	id = generic_mission_events.10
+	title = generic_mission_events.10.t
+	desc = generic_mission_events.10.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	major = yes
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = generic_mission_events.10.e
+		
+		
+		tooltip = {
+			add_historical_rival = ROOT
+			capital_scope = {
+				add_devastation = 100
+				set_base_tax = 1
+				set_base_production = 1
+				set_base_manpower = 1
+			}
+			all_known_country = {
+				add_aggressive_expansion = {
+					who = FROM
+					value = 25
+					apply_calc = yes
+				}
+			}
+		}
 	}
 }
