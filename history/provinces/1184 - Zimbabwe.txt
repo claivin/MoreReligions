@@ -1,0 +1,21 @@
+#1184 - Zimbabwe
+
+owner = GZI
+controller = GZI
+add_core = GZI
+culture = shona
+religion = shamanism
+capital = "Zimbabwe"
+is_city = yes
+base_manpower = 5
+trade_goods = gold
+hre = no
+base_tax = 5
+base_production = 4
+discovered_by = east_african
+discovered_by = central_african
+extra_cost = 8
+center_of_trade = 1
+
+
+

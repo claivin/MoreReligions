@@ -68,6 +68,19 @@
  BHY_ADJ: "Bahrayni"
  BHY_ADJ2: "Bahrayni"
  
+ ZNZ: "Zanzibar"
+ ZNZ_ADJ: "Zanzibari"
+ ZNZ_ADJ2: "Zanzibari"
+ 
+ MOZ: "Mozambique"
+ MOZ_ADJ: "Mozambique"
+ MOZ_ADJ2: "Mozambique"
+ 
+ SIH: "Swahili"
+ SIH_ADJ: "Swahilian"
+ SIH_ADJ2: "Swahilian"
+ 
+ 
  al_habash_decision_title: "al habash placeholder"
  al_habash_decision_desc: "al habash desc placeholder"
  

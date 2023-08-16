@@ -1,0 +1,19 @@
+#1197 - Mzizima
+
+owner = ZNZ
+controller = ZNZ
+add_core = ZNZ
+culture = swahili
+religion = shamanism #Fetishism
+capital = "Mzizima"
+is_city = yes
+base_manpower = 1
+trade_goods = gems #Pearls - a general export of the Swahili coast
+hre = no
+base_tax = 1
+base_production = 1
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = central_african
+discovered_by = east_african

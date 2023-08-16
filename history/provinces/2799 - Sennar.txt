@@ -1,8 +1,8 @@
 #2799 - Sennar
 
-owner = NUB
-controller = NUB
-add_core = NUB
+owner = FZG
+controller = FZG
+add_core = FZG
 culture = funj
 religion = shamanism
 capital = "Sennar"
