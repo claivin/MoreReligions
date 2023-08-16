@@ -525,10 +525,10 @@ country_event = { #declare historical rival
 				id = generic_mission_events.10
 			}
 		}
-		all_known_country = {
+		every_neighbor_country = {
 			add_aggressive_expansion = {
 				who = ROOT
-				value = 25
+				value = 6
 				apply_calc = yes
 			}
 		}
@@ -598,22 +598,813 @@ country_event = { #declare historical rival
 	option = {
 		name = generic_mission_events.10.e
 		
-		
+		custom_tooltip = capital_torched_tt
 		tooltip = {
 			add_historical_rival = ROOT
-			capital_scope = {
-				add_devastation = 100
-				set_base_tax = 1
-				set_base_production = 1
-				set_base_manpower = 1
-			}
-			all_known_country = {
+			every_neighbor_country = {
 				add_aggressive_expansion = {
 					who = FROM
-					value = 25
+					value = 6
 					apply_calc = yes
 				}
 			}
 		}
+	}
+}
+
+country_event = { #choose new cash crop
+	id = generic_mission_events.11
+	title = generic_mission_events.11.t
+	desc = generic_mission_events.11.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		set_country_flag = cash_crop_menu_active
+		
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					base_production = 12
+					has_production_building_trigger = yes
+				}
+				save_event_target_as = new_cash_crop_target
+			}
+		}
+	}
+	
+	option = { #go back
+		name = generic_mission_events.11.a
+	}
+#####################	
+	option = { #we are fine with the current good
+		name = generic_mission_events.11.b
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = {
+				base_production = 12
+				has_production_building_trigger = yes
+			}
+		}
+		event_target:new_cash_crop_target = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = gme_increased_productivity
+				duration = -1
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #tea unavailable
+		name = generic_mission_events.11.c
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = tea } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = tea
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_tea_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #tea available
+		name = generic_mission_events.11.c
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = tea } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = tea
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = tea
+			add_province_modifier = {
+				name = gme_cash_crop
+				duration = -1
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #spices unavailable
+		name = generic_mission_events.11.e
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = spices } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = spices
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_spices_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #spices available
+		name = generic_mission_events.11.e
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = spices } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = spices
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = spices
+			add_province_modifier = {
+				name = gme_cash_crop
+				duration = -1
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #coffee unavailable
+		name = generic_mission_events.11.f
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = coffee } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = coffee
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_coffee_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #coffee available
+		name = generic_mission_events.11.f
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = coffee } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = coffee
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = coffee
+			if = {
+				limit = {
+					OR = {
+						has_climate = tropical
+						has_climate = arid
+					}
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #cotton unavailable
+		name = generic_mission_events.11.g
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = cotton } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = cotton
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_cotton_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #cotton available
+		name = generic_mission_events.11.g
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = cotton } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = cotton
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = cotton
+			if = {
+				limit = {
+					OR = {
+						has_climate = tropical
+						has_climate = arid
+					}
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #sugar unavailable
+		name = generic_mission_events.11.h
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = sugar } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = sugar
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_sugar_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #sugar available
+		name = generic_mission_events.11.h
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = sugar } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = sugar
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = sugar
+			if = {
+				limit = {
+					has_climate = tropical
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #tobacco unavailable
+		name = generic_mission_events.11.i
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = tobacco } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = tobacco
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_tobacco_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #tobacco available
+		name = generic_mission_events.11.i
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = tobacco } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = tobacco
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = tobacco
+			add_province_modifier = {
+				name = gme_cash_crop
+				duration = -1
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #cocoa unavailable
+		name = generic_mission_events.11.j
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = cocoa } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = cocoa
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_cocoa_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #cocoa available
+		name = generic_mission_events.11.j
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = cocoa } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = cocoa
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = cocoa
+			if = {
+				limit = {
+					has_climate = tropical
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	# option = { #cloves unavailable
+		# name = generic_mission_events.11.k
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = cloves } }
+			# NOT = {
+				# num_of_owned_provinces_with = {
+					# value = 1
+					# trade_goods = cloves
+				# }
+			# }
+		# }
+		# custom_tooltip = generic_mission_events_11_cloves_unavailable
+		# hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	# }
+	# option = { #cloves available
+		# name = generic_mission_events.11.k
+		# highlight = yes
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = cloves } }
+			# num_of_owned_provinces_with = {
+				# value = 1
+				# trade_goods = cloves
+			# }
+		# }
+		# event_target:new_cash_crop_target = {
+			# change_trade_goods = cloves
+			# add_province_modifier = {
+				# name = gme_cash_crop
+				# duration = -1
+			# }
+		# }
+		# set_country_flag = used_cash_crop_decision
+	# }
+	
+	option = { #nutmeg unavailable
+		name = generic_mission_events.11.l
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = nutmeg } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = nutmeg
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_nutmeg_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #nutmeg available
+		name = generic_mission_events.11.l
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = nutmeg } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = nutmeg
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = nutmeg
+			if = {
+				limit = {
+					has_climate = tropical
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #tumeric unavailable
+		name = generic_mission_events.11.m
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = tumeric } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = tumeric
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_turmeric_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #tumeric available
+		name = generic_mission_events.11.m
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = tumeric } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = tumeric
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = tumeric
+			if = {
+				limit = {
+					has_climate = tropical
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	# option = { #saffron unavailable
+		# name = generic_mission_events.11.n
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = saffron } }
+			# NOT = {
+				# num_of_owned_provinces_with = {
+					# value = 1
+					# trade_goods = saffron
+				# }
+			# }
+		# }
+		# custom_tooltip = generic_mission_events_11_saffron_unavailable
+		# hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	# }
+	# option = { #saffron available
+		# name = generic_mission_events.11.n
+		# highlight = yes
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = saffron } }
+			# num_of_owned_provinces_with = {
+				# value = 1
+				# trade_goods = saffron
+			# }
+		# }
+		# event_target:new_cash_crop_target = {
+			# change_trade_goods = saffron
+			# add_province_modifier = {
+				# name = gme_cash_crop
+				# duration = -1
+			# }
+		# }
+		# set_country_flag = used_cash_crop_decision
+	# }
+	
+	# option = { #fruit unavailable
+		# name = generic_mission_events.11.o
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = fruit } }
+			# NOT = {
+				# num_of_owned_provinces_with = {
+					# value = 1
+					# trade_goods = fruit
+				# }
+			# }
+		# }
+		# custom_tooltip = generic_mission_events_11_fruit_unavailable
+		# hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	# }
+	# option = { #fruit available
+		# name = generic_mission_events.11.o
+		# highlight = yes
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = fruit } }
+			# num_of_owned_provinces_with = {
+				# value = 1
+				# trade_goods = fruit
+			# }
+		# }
+		# event_target:new_cash_crop_target = {
+			# change_trade_goods = fruit
+			# add_province_modifier = {
+				# name = gme_cash_crop
+				# duration = -1
+			# }
+		# }
+		# set_country_flag = used_cash_crop_decision
+	# }
+	
+	option = { #ginger unavailable
+		name = generic_mission_events.11.p
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = ginger } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = ginger
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_ginger_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #ginger available
+		name = generic_mission_events.11.p
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = ginger } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = ginger
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = ginger
+			add_province_modifier = {
+				name = gme_cash_crop
+				duration = -1
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	# option = { #tropical_fruit unavailable
+		# name = generic_mission_events.11.q
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = tropical_fruit } }
+			# NOT = {
+				# num_of_owned_provinces_with = {
+					# value = 1
+					# trade_goods = tropical_fruit
+				# }
+			# }
+		# }
+		# custom_tooltip = generic_mission_events_11_tropical_fruit_unavailable
+		# hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	# }
+	# option = { #tropical_fruit available
+		# name = generic_mission_events.11.q
+		# highlight = yes
+		# trigger = {
+			# event_target:new_cash_crop_target = { NOT = { trade_goods = tropical_fruit } }
+			# num_of_owned_provinces_with = {
+				# value = 1
+				# trade_goods = tropical_fruit
+			# }
+		# }
+		# event_target:new_cash_crop_target = {
+			# change_trade_goods = tropical_fruit
+			# add_province_modifier = {
+				# name = gme_cash_crop
+				# duration = -1
+			# }
+		# }
+		# set_country_flag = used_cash_crop_decision
+	# }
+	
+	option = { #citrus unavailable
+		name = generic_mission_events.11.r
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = citrus } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = citrus
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_citrus_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #citrus available
+		name = generic_mission_events.11.r
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = citrus } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = citrus
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = citrus
+			add_province_modifier = {
+				name = gme_cash_crop
+				duration = -1
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #grapes unavailable
+		name = generic_mission_events.11.s
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = grapes } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = grapes
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_grapes_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #grapes available
+		name = generic_mission_events.11.s
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = grapes } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = grapes
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = grapes
+			if = {
+				limit = {
+					NOT = { has_climate = tropical }
+					NOT = { has_climate = arid }
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #dates_figs unavailable
+		name = generic_mission_events.11.v
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = dates_figs } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = dates_figs
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_dates_figs_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #dates_figs available
+		name = generic_mission_events.11.v
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = dates_figs } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = dates_figs
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = dates_figs
+			if = {
+				limit = {
+					has_climate = arid
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+	
+	option = { #olives unavailable
+		name = generic_mission_events.11.u
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = olives } }
+			NOT = {
+				num_of_owned_provinces_with = {
+					value = 1
+					trade_goods = olives
+				}
+			}
+		}
+		custom_tooltip = generic_mission_events_11_olives_unavailable
+		hidden_effect = { country_event = { id = generic_mission_events.12 } }
+	}
+	option = { #olives available
+		name = generic_mission_events.11.u
+		highlight = yes
+		trigger = {
+			event_target:new_cash_crop_target = { NOT = { trade_goods = olives } }
+			num_of_owned_provinces_with = {
+				value = 1
+				trade_goods = olives
+			}
+		}
+		event_target:new_cash_crop_target = {
+			change_trade_goods = olives
+			if = {
+				limit = {
+					NOT = { has_climate = tropical }
+					NOT = { has_climate = arid }
+				}
+				add_province_modifier = {
+					name = gme_cash_crop
+					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = bad_climate_gme_tt
+				add_province_modifier = {
+					name = gme_cash_crop_bad_climate
+					duration = -1
+				}
+			}
+		}
+		set_country_flag = used_cash_crop_decision
+	}
+#################
+	after = {
+		clr_country_flag = cash_crop_menu_active
+	}
+}
+
+country_event = { #choose new cash crop refresh
+	id = generic_mission_events.12
+	title = generic_mission_events.12.t
+	desc = generic_mission_events.12.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+        name = generic_mission_events.12.a
+		country_event = { id = generic_mission_events.11 }
 	}
 }

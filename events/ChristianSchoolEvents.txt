@@ -371,7 +371,7 @@ country_event = {
 		}
 		set_religious_school = {
 			group = christian
-			school = mr_cologne_rite
+			school = mr_metz_rite
 		}
 		custom_tooltip = mr_only_one_other_chance_to_change
 	}
@@ -389,7 +389,7 @@ country_event = {
 		}
 		set_religious_school = {
 			group = christian
-			school = mr_cologne_rite
+			school = mr_lyonese_rite
 		}
 		custom_tooltip = mr_only_one_other_chance_to_change
 	}

@@ -93,3 +93,21 @@ gme_trade_diplo_starter = {
 gme_diplomat = {
 	diplomats = 1
 }
+
+gme_tax_offices = {
+	governing_capacity = 20
+}
+
+gme_increased_productivity = {
+	local_production_efficiency = 0.25
+}
+
+gme_cash_crop = {
+	trade_goods_size = 1
+	state_governing_cost = 0.5
+}
+
+gme_cash_crop_bad_climate = {
+	trade_goods_size = 0.5
+	state_governing_cost = 0.25
+}

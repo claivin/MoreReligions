@@ -4,9 +4,8 @@
  g_mission_allies_tt: "Different rewards will be available depending on which conditions you have fulfilled\n"
  g_mission_allies_tt2: "\n§YUnlocks Decisions§! to create a §RHistorical Rival§! and a §GHistorical Friend§!"
  
- g_mission_long_game_title: "Political Strategy"
+ g_mission_long_game_title: "Focused Diplomacy"
  g_mission_long_game_desc: "Diplomacy continues long after a diplomat has passed; the friends and enemies we make now cast long shadows as the future marches on."
-
 
  g_mission_sea_access_title: "Sea Ports"
  g_mission_sea_access_desc: "Without access to the sea, our foreign policy and economy are totally dependant on the whims of our neighbors. We need a port to take a step towards real independence."
@@ -16,16 +15,24 @@
  g_mission_naval_projection_desc: "As our state grows richer, our navy will become a key part in how we interact abroad. With only limited resources, we must keep our efforst focused in specific affairs."
  
  g_mission_trade_centers_title: "Wealthy Ports"
- g_mission_trade_centers_desc: "a"
+ g_mission_trade_centers_desc: "A vision of the future: foreign ships move to and fro within our ports, and bring riches from far beyond the sea. Merchants from abroad speak in unidentifiable accents, trying to push their goods. Uncountable numbers of coins exchange hands. Life is good. Life is rich."
  
  g_mission_military_ethos_title: "A New Army"
  g_mission_military_ethos_desc: "A state cannot exist if it cannot defend itself."
  
  g_mission_expand_country_title: "A Regional Power"
  g_mission_expand_country_desc: "Look beyond the confines of our realm and see the dangers that luck beyond and the riches that sit unclaimed. Some may be content to continue idly, but we would leave no mark in history."
+ claims_mission_tt: "\n(You will not recieve claims on Historical Friends)\n"
  
  g_mission_growing_power_title: "A Great Power" 
  g_mission_growing_power_desc: "As we have ascended to a formidable regional power, the possibility of leaving leaving a mark on history is all but decided. What remains now is to take the reins and write history ourselves."
+ 
+ g_mission_econ_starter_title: "Tax Collectors"
+ g_mission_econ_starter_desc: "The strength of a state is not only with its army, its ships, or even its people - it is with its tax income."
+ 
+ g_mission_new_goods_title: "New Cash Crops"
+ g_mission_new_goods_desc: "While most fields sprout with grain and feed for the people, we should not ignore the potential of planting crops which are simply meant to be sold."
+ g_mission_new_goods_tt: "§YUnlocks Decision§! to plant a new cash crop in one of your provinces"
  
  declare_long_term_diplo_friend_title: "Request a Long Term Alliance"
  declare_long_term_diplo_friend_desc: "Standing together through thick and thin, our ally has proven themselves loyal and it may be in our interests to form a stronger tie than usual with them."
@@ -34,6 +41,40 @@
  declare_long_term_diplo_rival_title: "Enemies 'til the End"
  declare_long_term_diplo_rival_desc: "There are rivals, and there are Rivals."
  historical_rival_gme_tt: "We will make a Rival into a Historical Rival."
+ 
+ create_new_cash_crop_gme_title: "Plant a New Cash Crop"
+ create_new_cash_crop_gme_desc: "We should encourage some of our farmers to grow some crops for the benefit of the state!"
+ 
+ mr_recruiting_effort: "Recruiting Effort"
+ mr_territorial_ambitions: "Territorial Ambitions"
+ gme_diplomat: "Diplomatic Effort"
+ 
+ gme_expanded_feudal_levy: "Feudal Levies"
+ gme_expanded_stables: "Expanded Stables"
+ gme_firearms_adoption: "Firearms Adoption"
+ gme_military_hierarchy: "Military Hierarcy"
+ gme_defense: "Defensive Focus"
+ 
+ gme_expanded_feudal_levy_perm: "Feudal Traditions"
+ gme_expanded_stables_perm: "State Horse Breeders"
+ gme_firearms_adoption_perm: "Gunpowder State"
+ gme_military_hierarchy_perm: "Military Bureaucracy"
+ gme_defense_perm: "Fortress State"
+ 
+ gme_trade_navy: "Merchantile Focus"
+ gme_logistics: "Logistical Focus"
+ 
+ gme_trade_navy_perm: "Merchant Marine"
+ gme_colonial_perm: "Expeditionary Companies"
+ gme_logistics_perm: "Another Branch of the Army"
+ 
+ gme_ae_diplo_reduction: "Aggressive Foreign Policy"
+ gme_trade_diplo_starter: "Trade Agreements"
+ 
+ gme_tax_offices: "Tax Offices"
+ 
+ gme_cash_crop_bad_climate: "State Cash Crop (Poor Climate)"
+ gme_cash_crop: "State Cash Crop"
  
  generic_mission_events.1.t: "Martial Mastery"
  generic_mission_events.1.d: "The call to arms reverberates throughout the land, and the time has come to forge a standard army that will carry the might of your nation into battle. As your soldiers march forward, you must decide upon a specialized focus that will shape the core strength of your military forces. The path you choose will determine the tactics and strategy that define your armed forces for generations to come."
@@ -106,3 +147,46 @@
  generic_mission_events.10.t: "The Razing of [Root.Capital.GetName]"
  generic_mission_events.10.d: "The brutes of [From.GetName] have sieged our capital. Disregarding all conventions of civilized warfare, the animals have torched homes and buildings indiscriminately. An unfortunate tempest further exacerbated these flames, and within moments a great firestorm had formed...\n\n[Root.Capital.GetName] is in ashes."
  generic_mission_events.10.a: "Does their evil know no bounds!?"
+ capital_torched_tt: "§RAll development in [Root.Capital.GetName] is lost§!"
+ 
+ generic_mission_events.11.t: "A New Cash Crop"
+ generic_mission_events.11.d: "Farmers is [Root.GetCapitalName] have prepared new plots of land to start cultivating more profitable goods."
+ generic_mission_events.11.a: "Go Back"
+ generic_mission_events.11.b: "Just plant more of what we already have!"
+ generic_mission_events.11.c: "Tea!"
+ generic_mission_events.11.e: "Spices!"
+ generic_mission_events.11.f: "Coffee!"
+ generic_mission_events.11.g: "Cotton!"
+ generic_mission_events.11.h: "Sugar!"
+ generic_mission_events.11.i: "Tobacco!"
+ generic_mission_events.11.j: "Cocoa!"
+ generic_mission_events.11.k: "Cloves!"
+ generic_mission_events.11.l: "Nutmeg!"
+ generic_mission_events.11.m: "Turmeric!"
+ generic_mission_events.11.n: "Saffron!"
+ generic_mission_events.11.o: "Fruit!"
+ generic_mission_events.11.p: "Ginger!"
+ generic_mission_events.11.q: "Tropical Fruit!"
+ generic_mission_events.11.r: "Oranges!"
+ generic_mission_events.11.s: "Grapes!"
+ generic_mission_events.11.v: "Dates!"
+ generic_mission_events.11.u: "Olives!"
+ generic_mission_events_11_tea_unavailable: "£no£ You must own §Yat least 1 tea province§! to plant tea in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_spices_unavailable: "£no£ You must own §Yat least 1 spice province§! to plant spice in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_coffee_unavailable: "£no£ You must own §Yat least 1 coffee province§! to plant coffee in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_cotton_unavailable: "£no£ You must own §Yat least 1 cotton province§! to plant cotton in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_sugar_unavailable: "£no£ You must own §Yat least 1 sugar province§! to plant sugar in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_tobacco_unavailable: "£no£ You must own §Yat least 1 tobacco province§! to plant tobacco in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_cocoa_unavailable: "£no£ You must own §Yat least 1 cocoa province§! to plant cocoa in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_cloves_unavailable: "£no£ You must own §Yat least 1 cloves province§! to plant cloves in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_nutmeg_unavailable: "£no£ You must own §Yat least 1 nutmeg province§! to plant nutmeg in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_turmeric_unavailable: "£no£ You must own §Yat least 1 turmeric province§! to plant turmeric in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_saffron_unavailable: "£no£ You must own §Yat least 1 saffron province§! to plant saffron in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_ginger_unavailable: "£no£ You must own §Yat least 1 ginger province§! to plant ginger in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_citrus_unavailable: "£no£ You must own §Yat least 1 citrus province§! to plant citrus in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_grapes_unavailable: "£no£ You must own §Yat least 1 grapes province§! to plant grapes in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_dates_figs_unavailable: "£no£ You must own §Yat least 1 dates and figs province§! to plant dates and figs in [new_cash_crop_target.GetName]\n"
+ generic_mission_events_11_olives_unavailable: "£no£ You must own §Yat least 1 olives province§! to plant olives in [new_cash_crop_target.GetName]\n"
+ 
+ bad_climate_gme_tt: "\nThe climate in [new_cash_crop_target.GetName] is not suited well for growing this crop...\n"
+ 

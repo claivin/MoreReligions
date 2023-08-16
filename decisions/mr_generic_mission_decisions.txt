@@ -65,4 +65,26 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	create_new_cash_crop_gme = { #create a new cash crop
+		potential = {
+			mission_completed = g_mission_new_goods
+			NOT = { has_country_flag = cash_crop_menu_active }
+			NOT = { has_country_flag = used_cash_crop_decision }
+		}
+		allow = {
+			any_owned_province = {
+				base_production = 12
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			country_event = {
+				id = generic_mission_events.11
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

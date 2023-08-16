@@ -60,6 +60,24 @@ generic_military_missions_1 = { #diplomacy line
 			}
 		}
 	}
+	
+	g_mission_trade_centers = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_naval_projection }
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				is_capital = no
+				province_has_center_of_trade_of_level = 2
+				development = 20
+				has_trade_building_trigger = yes
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+		}
+	}
 }
 
 generic_military_missions_2 = { #naval line
@@ -150,20 +168,36 @@ generic_military_missions_3 = { #economy line
 	ai = no
 	potential = { always = yes }
 	
-	g_mission_trade_centers = {
+	g_mission_econ_starter = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { g_mission_naval_projection }
-		position = 3
+		required_missions = {}
+		position = 1
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 2
-				is_capital = no
-				province_has_center_of_trade_of_level = 2
-				has_trade_building_trigger = yes
+			total_base_tax = 50
+		}
+		effect = {
+			capital_scope = {
+				add_building = courthouse
+				add_province_modifier = {
+					name = gme_tax_offices
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	g_mission_new_goods = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_econ_starter }
+		position = 2
+		trigger = {
+			any_owned_province = {
+				base_production = 12
+				has_production_building_trigger = yes
 			}
 		}
 		effect = {
-			
+			custom_tooltip = g_mission_new_goods_tt
 		}
 	}
 }
@@ -208,6 +242,9 @@ generic_military_missions_4 = { #military line
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
+						owner = {
+							NOT = { historical_friend_with = ROOT }
+						}
 					}
 					add_permanent_claim = ROOT 
 				}
@@ -217,10 +254,20 @@ generic_military_missions_4 = { #military line
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
+						owner = {
+							NOT = { historical_friend_with = ROOT }
+						}
 					}
 					add_claim = ROOT
 				}
 			}
+			if = {
+				limit = {
+					has_country_flag = gme_has_used_historical_friend_decision_successfully
+				}
+				custom_tooltip = claims_mission_tt
+			}
+			
 			add_country_modifier = {
 				name = mr_territorial_ambitions
 				duration = 9125
