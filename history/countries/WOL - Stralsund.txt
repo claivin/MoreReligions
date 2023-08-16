@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = pommeranian
+religion = catholic
+technology_group = western
+capital = 47 #Stralsund
+fixed_capital = 79 # Cannot move capital away from this province & no power cost to move to it
+
+1427.12.6 = {
+	monarch = {
+		name = "Barnim VII"
+		dynasty = "Gryf"
+		birth_date = 1404.6.6
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
