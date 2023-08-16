@@ -1,0 +1,19 @@
+#Lolo
+
+owner = GZI
+controller = GZI
+add_core = GZI
+add_core = MKU
+culture = nyasa
+religion = shamanism #Fetishism
+capital = "Lolo"
+is_city = yes
+base_manpower = 1
+trade_goods = ivory
+hre = no
+base_tax = 1
+base_production = 1
+add_local_autonomy = 40
+discovered_by = central_african
+discovered_by = east_african
+

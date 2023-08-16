@@ -1,0 +1,17 @@
+# - Madanda
+
+owner = GZI
+controller = GZI
+add_core = GZI
+culture = shona
+religion = shamanism
+capital = "Madanda"
+is_city = yes
+base_manpower = 1
+trade_goods = ivory
+hre = no
+base_tax = 1 
+base_production = 1
+discovered_by = east_african
+discovered_by = central_african
+

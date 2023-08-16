@@ -189,7 +189,7 @@ BGI = "countries/Benggai.txt"
 BMA = "countries/Burma.txt"
 
 
-#Ethiopia
+#East Africa
 AGW = "countries/Agew.txt"
 SLM = "countries/Solomon.txt"
 ZGW = "countries/Zagwe.txt"
@@ -210,6 +210,9 @@ FZG = "countries/Fazughli.txt"
 BTA = "countries/Butana.txt"
 SKI = "countries/Suakin.txt"
 ZNJ = "countries/Zanj.txt"
+ZNZ = "countries/Zanzibar.txt"
+MOZ = "countries/Mozambique.txt"
+SIH = "countries/SwahiliMR.txt"
 
 #Japan
 NTT = "countries/Nitta.txt"

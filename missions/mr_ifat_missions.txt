@@ -1422,7 +1422,16 @@ mr_ifat_missions_4 = {
 				add_base_tax = 2
 				add_base_manpower = 2
 			}
-			
+			if = {
+				limit = {
+					4035 = {
+						is_empty = yes
+					}
+				}
+				4035 = {
+					add_siberian_construction = 400
+				}
+			}
 		}
 	}
 	mr_ifat_som_7 = {
@@ -1435,6 +1444,7 @@ mr_ifat_missions_4 = {
 				area = uticulo_makuana_area
 				area = shire_area
 				area = lower_zambezi_area
+				province_id = 4047
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1453,6 +1463,9 @@ mr_ifat_missions_4 = {
 			}
 			lower_zambezi_area = {
 				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4047 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -1511,7 +1524,8 @@ mr_ifat_missions_4 = {
 			OR = {
 				area = butua_area
 				area = zimbabwe_area
-				area = quelimane_area
+				province_id = 1186
+				province_id = 1192
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1524,8 +1538,10 @@ mr_ifat_missions_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			quelimane_area = {
-				type = all
+			1186 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1192 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
