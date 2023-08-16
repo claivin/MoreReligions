@@ -5,3 +5,14 @@ primary_culture = pommeranian
 religion = catholic
 technology_group = western
 capital = 1858	# Stettin
+
+1434.1.1 = {
+	monarch = {
+		name = "Joachim II"
+		dynasty = "Gryf"
+		birth_date = 1424.6.6
+		dip = 2
+		adm = 3
+		mil = 1
+	}
+}

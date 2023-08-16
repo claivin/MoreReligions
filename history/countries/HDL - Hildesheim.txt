@@ -1,7 +1,19 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = theocracy
+add_government_reform = leading_clergy_reform
 government_rank = 1
-technology_group = western
 primary_culture = lower_saxon
 religion = catholic
-capital = 5090 #Hildesheim
+technology_group = western
+capital = 5090	# Hildesheim
+fixed_capital = 5090 # Cannot move capital away from this province & no power cost to move to it
+
+1424.1.1 = {
+	monarch = {
+		name = "Magnus"
+		dynasty = "Askanier"
+		birth_date = 1390.1.1
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}

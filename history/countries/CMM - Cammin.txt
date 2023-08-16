@@ -1,7 +1,17 @@
-government = monarchy
-add_government_reform = feudalism_reform
+government = theocracy
+add_government_reform = leading_clergy_reform
 government_rank = 1
 primary_culture = pommeranian
 religion = catholic
 technology_group = western
 capital = 5105	#Cammin
+
+1424.1.1 = {
+	monarch = {
+		name = "Siegfried II"
+		dynasty = "von Bock"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}
