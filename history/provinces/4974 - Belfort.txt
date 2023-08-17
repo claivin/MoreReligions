@@ -1,8 +1,8 @@
 #4974 - Belfort
 
-owner = DCP
-controller = DCP
-add_core = DCP
+owner = MLH
+controller = MLH
+add_core = MLH
 capital = "Belfort"
 is_city = yes
 culture = swabian

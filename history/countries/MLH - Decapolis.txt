@@ -5,7 +5,6 @@ technology_group = western
 religion = catholic
 primary_culture = swabian
 capital = 4765	# Mulhouse
-fixed_capital = 4765 # Cannot move capital away from this province & no power cost to move to it
 
 1442.1.1 = {
 	monarch = {

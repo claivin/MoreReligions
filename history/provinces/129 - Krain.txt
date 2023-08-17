@@ -1,9 +1,8 @@
 #REGIONSOUTHGERMANY
 # 129 - Krain
 
-owner = KRI
-controller = KRI
-add_core = KRI
+owner = CLI
+controller = CLI
 add_core = CLI
 culture = slovene
 religion = catholic
