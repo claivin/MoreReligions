@@ -1,16 +1,16 @@
 
-owner = HGH
-controller = HGH
-culture = bai
+owner = YNN
+controller = YNN
+culture = khatso
 religion = azhaliism 
 capital = "Hongta"
 trade_goods = vegetables
 hre = no
 base_tax = 1
 base_production = 2
-base_manpower = 1
+base_manpower = 2
 is_city = yes
-add_core = HGH
+add_core = YNN
 
 
 

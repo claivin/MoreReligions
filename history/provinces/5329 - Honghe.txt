@@ -1,7 +1,7 @@
 
 owner = HGH
 controller = HGH
-culture = bai
+culture = panthay
 religion = sunni 
 capital = "Mengzi"
 trade_goods = ginger

@@ -1,9 +1,11 @@
 government = monarchy
 add_government_reform = autocracy_reform
-primary_culture = bai
+primary_culture = khatso
 religion = azhaliism 
 technology_group = chinese
 capital = 662	
+add_accepted_culture = yi
+add_accepted_culture = bai
 
 1430.5.13 = {
 	monarch = {

@@ -1,9 +1,10 @@
 government = monarchy
 add_government_reform = autocracy_reform
-primary_culture = bai
+primary_culture = panthay
 religion = sunni 
 technology_group = chinese
 capital = 5329 
+add_accepted_culture = bai
 
 1430.5.13 = {
 	monarch = {

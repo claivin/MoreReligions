@@ -2,8 +2,8 @@
 
 owner = HGH
 controller = HGH
-culture = bai
-religion = azhaliism 
+culture = panthay
+religion = sunni 
 capital = "Guangnan"
 trade_goods = copper
 hre = no
