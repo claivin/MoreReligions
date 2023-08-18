@@ -3054,7 +3054,7 @@ take_province_rus = {
 }
 
 take_capital_annex_hun_cw = {
-	type = superiority
+	type = take_capital
 	
 	attacker = {
 		badboy_factor = 1

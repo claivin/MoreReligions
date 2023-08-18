@@ -2,7 +2,6 @@ hungary_disaster = {
 
 	potential = {
 		tag = HUN
-		NOT = { has_country_flag = HUN_thunder_dome_participant }
 		NOT = { has_country_flag = HUN_thunder_dome_winner }
 		is_free_or_tributary_trigger = yes
 		normal_or_historical_nations = yes
@@ -90,6 +89,17 @@ hungary_disaster = {
 				id = HUN_flavor.11
 			}
 		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hungary_disaster_progress
+					value = 90
+				}
+			}
+			country_event = {
+				id = HUN_flavor.17
+			}
+		}
 	}
 	
 	on_monthly = {
@@ -101,7 +111,26 @@ hungary_disaster = {
 	}
 	
 	can_end = {
-		has_country_flag = HUN_thunder_dome_winner
+		alfold_area = {
+			owned_by = ROOT
+			type = ALL
+		}
+		slovakia_area = {
+			owned_by = ROOT
+			type = all
+		}
+		transylvania_area = {
+			owned_by = ROOT
+			type = all
+		}
+		southern_transylvania_area = {
+			owned_by = ROOT
+			type = all
+		}
+		transdanubia_area = {
+			owned_by = ROOT
+			type = all
+		}
 	}
 	
 
@@ -113,5 +142,5 @@ hungary_disaster = {
 	}
 	
 	on_start = HUN_flavor.1 # Initial Disaster
-	on_end = HUN_flavor.X # End of the Civil War
+	on_end = HUN_flavor.18 # End of the Civil War
 }

@@ -20,7 +20,6 @@ country_event = {
 			1864 = { add_core = KSZ }
 			4126 = { add_core = KSZ }
 			5446 = { add_core = KSZ }
-			5443 = { add_core = KSZ }
 			4125 = { add_core = AAB }
 			1953 = { add_core = AAB }
 			1952 = { add_core = KNN }
@@ -88,21 +87,28 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
-				random_owned_province = {
-					ROOT = {
+				if = {
+					limit = {
+						HUN = {
+							has_country_flag = kill_units_HUNCW
+						}
+					}
+					random_owned_province = {
+					CSA = {
 						infantry = PREV
 					}
-					ROOT = {
+					CSA = {
 						infantry = PREV
 					}
-					ROOT = {
+					CSA = {
 						infantry = PREV
 					}
-					ROOT = {
+					CSA = {
 						infantry = PREV
 					}
-					ROOT = {
+					CSA = {
 						infantry = PREV
+					}
 					}
 				}
 			}
@@ -144,21 +150,28 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
-				random_owned_province = {
-					ROOT = {
+				if = {
+					limit = {
+						HUN = {
+							has_country_flag = kill_units_HUNCW
+						}
+					}
+					random_owned_province = {
+					AAB = {
 						infantry = PREV
 					}
-					ROOT = {
+					AAB = {
 						infantry = PREV
 					}
-					ROOT = {
+					AAB = {
 						infantry = PREV
 					}
-					ROOT = {
+					AAB = {
 						infantry = PREV
 					}
-					ROOT = {
+					AAB = {
 						infantry = PREV
+					}
 					}
 				}
 			}
@@ -200,21 +213,28 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
-				random_owned_province = {
-					ROOT = {
+				if = {
+					limit = {
+						HUN = {
+							has_country_flag = kill_units_HUNCW
+						}
+					}
+					random_owned_province = {
+					KSZ = {
 						infantry = PREV
 					}
-					ROOT = {
+					KSZ = {
 						infantry = PREV
 					}
-					ROOT = {
+					KSZ = {
 						infantry = PREV
 					}
-					ROOT = {
+					KSZ = {
 						infantry = PREV
 					}
-					ROOT = {
+					KSZ = {
 						infantry = PREV
+					}
 					}
 				}
 			}
@@ -236,23 +256,6 @@ country_event = {
 					}
 					add_core = KNN
 				}
-				random_owned_province = {
-					ROOT = {
-						infantry = PREV
-					}
-					ROOT = {
-						infantry = PREV
-					}
-					ROOT = {
-						infantry = PREV
-					}
-					ROOT = {
-						infantry = PREV
-					}
-					ROOT = {
-						infantry = PREV
-					}
-				}
 				add_accepted_culture = transylvanian 
 				define_ruler = {
 					name = "Arpad"
@@ -273,6 +276,30 @@ country_event = {
 					build_to_forcelimit = {
 						infantry = 0.8
 						cavalry = 0.2
+					}
+				}
+				if = {
+					limit = {
+						HUN = {
+							has_country_flag = kill_units_HUNCW
+						}
+					}
+					random_owned_province = {
+					KNN = {
+						infantry = PREV
+					}
+					KNN = {
+						infantry = PREV
+					}
+					KNN = {
+						infantry = PREV
+					}
+					KNN = {
+						infantry = PREV
+					}
+					KNN = {
+						infantry = PREV
+					}
 					}
 				}
 			}
@@ -304,21 +331,28 @@ country_event = {
 						cavalry = 0.2
 					}
 				}
-				random_owned_province = {
-					ROOT = {
+				if = {
+					limit = {
+						HUN = {
+							has_country_flag = kill_units_HUNCW
+						}
+					}
+					random_owned_province = {
+					JAA = {
 						infantry = PREV
 					}
-					ROOT = {
+					JAA = {
 						infantry = PREV
 					}
-					ROOT = {
+					JAA = {
 						infantry = PREV
 					}
-					ROOT = {
+					JAA = {
 						infantry = PREV
 					}
-					ROOT = {
+					JAA = {
 						infantry = PREV
+					}
 					}
 				}
 				if = {
@@ -368,7 +402,13 @@ country_event = {
 						duration = -1
 					}
 					clr_country_flag = advisor_keep_flag
-				}	
+				}
+				if = {
+					limit = {
+						has_country_flag = kill_units_HUNCW
+					}
+					add_manpower = -10
+				}
 			}
 			HUN = {
 				declare_war_with_cb = {
@@ -465,6 +505,32 @@ country_event = {
 					who = KNN
 					casus_belli = cb_hungary_thunderdome
 				}
+			}
+			every_country = {
+				limit = {
+					AND = {
+						OR = {
+							is_neighbor_of = AAB
+							is_neighbor_of = HUN
+							is_neighbor_of = JAA
+							is_neighbor_of = CSA
+							is_neighbor_of = KSZ
+							is_neighbor_of = KNN
+						}
+						NOT = { tag = AAB }
+						NOT = { tag = HUN }
+						NOT = { tag = JNN }
+						NOT = { tag = CSA }
+						NOT = { tag = KSZ }
+						NOT = { tag = KNN }
+					}
+				}
+				add_truce_with = AAB
+				add_truce_with = HUN 
+				add_truce_with = JAA
+				add_truce_with = CSA
+				add_truce_with = KSZ
+				add_truce_with = KNN
 			}
 		}
 	}
@@ -1062,6 +1128,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
+			factor = 0
 			modifier = {
 				factor = 1
 				has_global_flag = war_has_escalated
@@ -1085,6 +1152,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
+			factor = 0
 			modifier = {
 				factor = 1
 				has_global_flag = war_has_escalated
@@ -1108,6 +1176,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
+			factor = 0
 			modifier = {
 				factor = 1
 				has_global_flag = war_has_escalated
@@ -1161,6 +1230,9 @@ country_event = {
 			set_global_flag = dip_support_HUN_flag
 			set_country_flag = dip_sipport_HUN_2_flag
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	
 	option = {
@@ -1175,6 +1247,9 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = dip_reject_HUN_flag
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -1205,11 +1280,17 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = mil_prep_HUN_flag
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	
 	option = {
 		name = HUN_flavor.9.b
-		add_treasury = 250
+		add_treasury = 100
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 
@@ -1241,6 +1322,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = papal_auth_effect_flag
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	option = {
 		name = HUN_flavor.10.b
@@ -1264,6 +1348,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = mil_prep1_HUN_flag
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	
 	option = {
@@ -1283,6 +1370,9 @@ country_event = {
 		}
 		hidden_effect = {
 			set_global_flag = severin_boost
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
@@ -1319,6 +1409,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = advisor_keep_flag
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	
 	option = {
@@ -1340,6 +1433,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = advisor_keep_bad_flag
 			set_country_flag = advisor_keep_flag
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
@@ -1537,4 +1633,179 @@ country_event = {
 		add_prestige = 30
 	}
 }
-			
+country_event = {
+	id = HUN_flavor.17
+	title = HUN_flavor.17.t
+	desc = HUN_flavor.17.d
+	picture = LAND_MILITARY_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HUN_flavor.17.a
+		add_treasury = -150
+		if = {
+			limit = {
+				has_leader_with = {
+					general = yes
+				}
+			}
+			kill_leader = { type = general }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.17.b
+		custom_tooltip = will_cause_problems_TT
+		hidden_effect = {
+			set_country_flag = kill_units_HUNCW
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = HUN_flavor.18
+	title = HUN_flavor.18.t 
+	desc = HUN_flavor.18.d
+	
+	is_triggered_only = yes
+	
+	fire_only_once = yes
+	
+	option = {
+		name = HUN_flavor.18.a
+		set_country_flag = HUN_thunder_dome_winner
+	}
+}
+
+country_event = {
+	id = HUN_flavor.19
+	title = HUN_flavor.19.t
+	desc = HUN_flavor.19.d 
+	picture = LAND_MILITARY_eventPicture
+	
+	trigger = {
+		has_country_flag = HUN_thunder_dome_participant
+		NOT = { has_country_flag = HUN_thunder_dome_winner }
+		is_in_war = {
+			casus_belli = cb_hungary_thunderdome
+		}
+		capital_scope = {
+			NOT = { controlled_by = ROOT }
+			NOT = { has_province_flag = can_be_annexed_HUN }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				set_province_flag = can_be_annexed_HUN
+			}
+		}
+	}
+	
+	option = {
+		name = HUN_flavor.19.a
+		custom_tooltip = can_be_annexed_1_year_TT
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = HUN_flavor.20
+	title = HUN_flavor.20.t
+	desc = HUN_flavor.20.d
+
+	trigger = {
+		is_at_war = yes
+		has_country_flag = HUN_thunder_dome_participant
+		NOT = { has_country_flag = HUN_thunder_dome_winner }
+		capital_scope = {
+			had_province_flag = {
+				flag = can_be_annexed_HUN
+				days = 182
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				capital_scope = {
+					NOT = {
+						controlled_by = ROOT
+					}
+				}
+			}
+			capital_scope = {
+				controller = {
+					save_event_target_as = leader_of_annexation
+				}
+			}
+		}
+	}
+	
+	option = {
+		trigger = {
+			capital_scope = {
+				NOT = {
+					controlled_by = ROOT
+				}
+			}
+		}
+		capital_scope = {
+			clr_province_flag = can_be_annexed_HUN
+		}
+		every_owned_province = {
+			limit = {
+				controlled_by = ROOT
+			}
+			cede_province = event_target:leader_of_annexation
+		}
+		every_owned_province = {
+			limit = {
+				controlled_by  = event_target:leader_of_annexation
+			}
+			cede_province = event_target:leader_of_annexation
+		}
+		every_owned_province  = {
+			limit = {
+				NOT = { controlled_by = ROOT }
+				NOT = { controlled_by = event_target:leader_of_annexation }
+			}
+			cede_province = controller
+		}
+		every_owned_province = {
+			limit = {
+				controlled_by = nationalist_rebels
+			}
+			cede_province = nationalist_rebels
+		}
+	}
+	
+	option = {
+		trigger = {
+			capital_scope = {
+				controlled_by = ROOT
+			}
+		}
+		capital_scope = {
+			clr_province_flag = can_be_annexed_HUN
+		}
+	}
+	

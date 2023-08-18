@@ -135,6 +135,7 @@ cb_conquer_rus = {
 }
 cb_hungary_thunderdome = {
 	valid_for_subject = no
+	ai_peace_desire = -100
 	
 	prerequisites = {
 		has_country_flag = HUN_thunder_dome_participant

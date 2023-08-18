@@ -170,7 +170,15 @@
  HUN_flavor.14.1d: "With the Civil War ended, the Blue Horde hovers over us with expectations. They wish for compensation - little do they know we have none to give. We might have adopted their ways, but we are not under their wing. Instead, we shall ride against them, and it is high time they knew who they were dealing with; the rising Magyar Horde!"
  HUN_flavor.14.2d: "The Blue Horde, our ally who fought with us throughout the Civil War, has fallen, replaced by those who would call us an enemy. We must avenge this death, bringing the people of the Ruthenian steppe once more back into the fold!"
  HUN_flavor.14.b: "We will force these barbarians to heel!"
- 
+ HUN_flavor.17.t: "Rebellions in the Army"
+ HUN_flavor.17.d: "The great army of Hungary has been divided ever since the Oligarchs of Hungary established a new constitution for the state. Members of the army must come from the royal houses, and while they are effectively leased out to the crown, they are still loyal to none but their original noble lord. Now, on the eve of the great convention that King Nicholas is planning on organizing, there are rumors of a rebellion - something is brewing in the countryside. Several of our top generals have been seen conversing with Oligarchs, trying to assertain which side would be the most beneficial for them to join - they are plotting to rebel."
+ HUN_flavor.17.a: "Purge disloyal generals, and pay off our soldiers!"
+ HUN_flavor.17.b: "Not now, I'm preparing my speech."
+ will_cause_problems_TT: "When the §YHungarian Civil War§! begins, we will lose §R10,000§! §YManpower§! and all rebel tags will gain 5 §YUnits of Infantry.§!"
+ HUN_flavor.19.t: "Fall of Oligarch Holdout"
+ HUN_flavor.19.d: "Our capital has fallen! With this, our legitimacy as a claimant to the throne of Hungary is in question. We must quickly persue victory!"
+ HUN_flavor.19.a: "We shall act quickly!"
+ can_be_annexed_1_year_TT: "We have 182 Days to §Yreclaim our capital§! before an event will divide up our lands between the rest of the Oligarchs!"
  
  ##Hainan
  shenist_tradition: "Traditional Heir"
