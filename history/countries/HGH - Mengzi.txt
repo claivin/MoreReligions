@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = bai
+religion = sunni 
+technology_group = chinese
+capital = 5329 
+
+1430.5.13 = {
+	monarch = {
+		name = "Nizam al-Din"
+		dynasty = "al-Bukhari"
+		birth_date = 1405.1.1
+		#claim = 100
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = entrepreneur_personality
+	add_ruler_personality = reformist_personality
+
+}

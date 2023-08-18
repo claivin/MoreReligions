@@ -5,3 +5,17 @@ religion = azhaliism
 technology_group = chinese
 capital = 662	
 
+1430.5.13 = {
+	monarch = {
+		name = "Ayurbarwada"
+		dynasty = "Borjigin"
+		birth_date = 1421.1.1
+		#claim = 50
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
+	
+}

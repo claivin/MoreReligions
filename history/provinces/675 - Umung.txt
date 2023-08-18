@@ -1,9 +1,9 @@
 #675 - Qujing
 
-owner = LNS
-controller = LNS
+owner = YNN
+controller = YNN
 add_core = LNS
-add_core = CYI
+add_core = YNN
 culture = yi
 religion = mr_bimo
 capital = "Umung"

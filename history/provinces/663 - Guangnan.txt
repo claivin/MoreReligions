@@ -1,7 +1,7 @@
 #663 - Wenshan
 
-owner = GNN
-controller = GNN
+owner = HGH
+controller = HGH
 culture = bai
 religion = azhaliism 
 capital = "Guangnan"
@@ -11,7 +11,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = CDL
 add_core = GNN
 
 

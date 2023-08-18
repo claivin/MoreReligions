@@ -1,10 +1,9 @@
 #2406 - Jianchang
 
-owner = LNS
-controller = LNS
+owner = YNN
+controller = YNN
 add_core = LNS
-add_core = CYI
-add_core = CDL
+add_core = YNN
 culture = yi
 religion = mr_bimo
 capital = "Jianchang"
@@ -14,7 +13,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = CXI
 
 
 
