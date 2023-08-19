@@ -20,9 +20,6 @@ country_event = {
 			5064 = {
 				change_controller = SMZ
 			}
-			1818 = {
-				change_controller = SMZ
-			}
 			4182 = {
 				change_controller = SMZ
 			}
@@ -741,6 +738,42 @@ country_event = {
 		custom_tooltip = remove_shugo_TT
 		hidden_effect = {
 			set_country_flag = removed_shugo
+			if = {
+				limit = {
+					NOT = { mission_completed = mr_jap_SD_1 }
+				}
+				complete_mission = mr_jap_SD_1
+			}
+			if = {
+				limit = {
+					NOT = { mission_completed = mr_jap_SD_2 }
+				}
+				complete_mission = mr_jap_SD_2
+			}
+			if = {
+				limit = {
+					NOT = { mission_completed = mr_jap_SD_3 }
+				}
+				complete_mission = mr_jap_SD_3
+			}
+			if = {
+				limit = {
+					NOT = { mission_completed = mr_jap_SD_4 }
+				}
+				complete_mission = mr_jap_SD_4
+			}
+			if = {
+				limit = {
+					NOT = { mission_completed = mr_jap_SD_5 }
+				}
+				complete_mission = mr_jap_SD_5
+			}
+			if = {
+				limit = {
+					NOT = { mission_completed = mr_jap_SD_6 }
+				}
+				complete_mission = mr_jap_SD_6
+			}
 		}
 	}	
 }
@@ -759,7 +792,7 @@ country_event = {
 		name = mrJapEvents.3.a
 		custom_tooltip = sengoku_jidai_TT
 		hidden_effect = {
-			set_country_flag = sengoku_jidai_flag_MR
+			set_global_flag = sengoku_jidai_flag_MR
 		}
 	}
 	

@@ -132,7 +132,7 @@ mr_jap_missions_third = {
 				and = {
 					custom_trigger_tooltip = {
 						tooltip = win_the_civil_war
-						has_global_flag = end_of_war_SHUGO
+						has_country_flag = removed_shugo
 					}
 				}
 			}
