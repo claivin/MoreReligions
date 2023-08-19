@@ -11,14 +11,27 @@ kerei_missions_first = {
 		required_missions = {}
 		position = 1
 		trigger = {
+		OR = {
 		    war_score_against = {
 	          who = NOG
 	          value = 75
 			}
+			NOT = { exists = NOG }			
+			}
 		    controls = 465
 		}
 		effect = {
-			inherit = NOG
+		if = {
+			limit = {exists = NOG}
+			        inherit = NOG}
+
+			change_tag = KZH
+		    on_change_tag_effect = yes
+			
+		    hidden_effect = {
+			ROOT = { every_owned_province = {remove_core = NOG}
+			       }
+			}
 		}
 	}
 }

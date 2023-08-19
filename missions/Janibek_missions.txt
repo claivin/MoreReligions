@@ -11,15 +11,29 @@ janibek_missions_first = {
 		required_missions = {}
 		position = 1
 		trigger = {
+		OR = {
 		    war_score_against = {
 	          who = SHY
 	          value = 75
+			}
+			NOT = { exists = SHY }			
 			}
 		    controls = 1970
 			controls = 476
 		}
 		effect = {
-			inherit = SHY
+		if = {
+			limit = {exists = SHY}
+			        inherit = SHY}
+					
+			change_tag = KZH
+		    on_change_tag_effect = yes
+			set_capital = 1970
+			
+			hidden_effect = {
+			ROOT = { every_owned_province = {remove_core = SHY}
+			       }
+			}
 		}
 	}
 }
