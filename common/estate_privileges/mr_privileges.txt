@@ -556,7 +556,7 @@ estate_nobles_rice_wine = {
 						trade_goods = rice
 					}
 					add_province_modifier = { 
-						name = grain_bonus_prod 
+						name = rice_bonus_prod 
 						duration = -1
 						hidden = yes
 					}
@@ -566,7 +566,7 @@ estate_nobles_rice_wine = {
 						trade_goods = rice_wine
 					}
 					add_province_modifier = { 
-						name = wine_bonus_prod
+						name = rice_wine_bonus_prod
 						duration = -1
 						hidden = yes
 					}
@@ -580,15 +580,15 @@ estate_nobles_rice_wine = {
 			every_owned_province = {
 				if = {
 					limit = {
-						has_province_modifier = grain_bonus_prod
+						has_province_modifier = rice_bonus_prod
 					}
-					remove_province_modifier = grain_bonus_prod
+					remove_province_modifier = rice_bonus_prod
 				}
 				if = {
 					limit = {
-						has_province_modifier = wine_bonus_prod
+						has_province_modifier = rice_wine_bonus_prod
 					}
-					remove_province_modifier = wine_bonus_prod
+					remove_province_modifier = rice_wine_bonus_prod
 				}
 			}
 		}

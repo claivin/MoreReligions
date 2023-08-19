@@ -330,6 +330,16 @@ mrb_winery = {
 			limit = { trade_goods = grapes }
 			change_trade_goods = wine
 		}
+		if = {
+			limit = { has_estate_privilege = estate_nobles_rice_wine has_province_modifier = rice_bonus_prod  }
+			remove_province_modifier = rice_bonus_prod
+			add_province_modifier = { 
+				name = rice_wine_bonus_prod
+				duration = -1
+				hidden = yes
+			}
+		}
+			
     }
 
 	on_destroyed = {
@@ -340,6 +350,15 @@ mrb_winery = {
 		else_if = {
 			limit = { trade_goods = wine }
 			change_trade_goods = grapes
+		}
+		if = {
+			limit = { has_estate_privilege = estate_nobles_rice_wine has_province_modifier = rice_wine_bonus_prod  }
+			remove_province_modifier = rice_wine_bonus_prod
+			add_province_modifier = { 
+				name = rice_bonus_prod
+				duration = -1
+				hidden = yes
+			}
 		}
     }
 

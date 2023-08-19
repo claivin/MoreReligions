@@ -289,6 +289,9 @@
  invade_southern_china: "Invade the Song"
  challenged_china_SIA: "Challenged Imperial Might"
  great_mandala_SIA: "Great Mandala of All Nations"
+ rice_bonus_prod: "Siamese Liquor Monopoly"
+ rice_wine_bonus_prod: "Siamese Liquor Monopoly"
+ mr_siam_dev_1_TT: "Every Siamese province with 15 Development and a Temple or Great Temple will recieve the following:"
  
  #Sicily Missions
  mr_sicily_conquest_1_title: "Sicilian Ambitions"

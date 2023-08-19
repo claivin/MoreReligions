@@ -65,15 +65,24 @@ MR_siam_1 = {
 		}
 		
 		effect = {
-			every_owned_province = {
-				limit = {
-					culture = central_thai
-					development = 15
-					has_tax_building_trigger = yes
-				}
+			custom_tooltip = mr_siam_dev_1_TT
+			tooltip = {
 				add_province_modifier = {
 					name = revitalized_tax_revenue
 					duration = 14600
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = central_thai
+						development = 15
+						has_tax_building_trigger = yes
+					}
+					add_province_modifier = {
+						name = revitalized_tax_revenue
+						duration = 14600
+					}
 				}
 			}
 		}
@@ -266,7 +275,7 @@ MR_MGT_1 = {
 		}
 		effect = {
 			2681 = {
-				add_country_modifier = {
+				add_province_modifier = {
 					name = gold_mine_pagg
 					duration = -1
 				}
@@ -553,8 +562,8 @@ MR_siam_2 = {
 			}
 		}
 		effect = {
+			
 			4831 = {
-				add_center_of_trade_level = 2
 				hidden_effect = {
 					if = {
 						limit = {
@@ -567,7 +576,7 @@ MR_siam_2 = {
 					name = med_trade_relevancy
 					duration = -1
 				}
-				
+				center_of_trade = 2
 			}
 		}
 	}
@@ -729,14 +738,20 @@ MR_MGT_2 = {
 			OR = {
 				area = central_sumatra_area
 				area = north_sumatra_area
-				area = jambi_area
+				province_id = 2676
+				province_id = 4816
+				province_id = 659
+				province_id = 2677
 			}
 			not = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			central_sumatra_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
 			north_sumatra_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
-			jambi_area = { country_or_non_sovereign_subject_holds = ROOT type = all }
+			2676 = { country_or_non_sovereign_subject_holds = ROOT }
+			4816 = { country_or_non_sovereign_subject_holds = ROOT }
+			2677 = { country_or_non_sovereign_subject_holds = ROOT }
+			659 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			malaya_region = {
@@ -752,6 +767,16 @@ MR_MGT_2 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					5172 = {
+						is_empty = yes
+					}
+				}
+				5172 = {
+					add_siberian_construction = 400
+				}
 			}
 			add_country_modifier = {
 				name = crack_marine_SIA
@@ -1274,9 +1299,6 @@ MR_siam_4 = {
 		}
 		
 		effect = {
-			country_event = {
-				id = MR_siam_flavor.1
-			}
 			custom_tooltip = karma_start_TT_1
 			tooltip = {
 				add_country_modifier = {
@@ -1813,14 +1835,14 @@ MR_siam_5 = {
 			trade_goods = ivory
 			NOT = {
 				owned_by = ROOT
-				has_manufactory_no_custom_tooltip_trigger = yes
+				has_building = tradecompany
 			}
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 10
 				trade_goods = ivory
-				has_manufactory_no_custom_tooltip_trigger = yes
+				has_building = tradecompany
 			}
 			num_of_hussars = 7
 		}
@@ -1840,7 +1862,7 @@ MR_siam_5 = {
 				every_owned_province = {
 					limit = {
 						trade_goods = ivory
-						has_manufactory_no_custom_tooltip_trigger = yes
+						has_building = tradecompany
 					}
 					add_province_modifier = {
 						name = elephant_hub
