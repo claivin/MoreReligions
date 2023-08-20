@@ -90,6 +90,9 @@ generic_military_missions_2 = { #naval line
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = {
+			has_port = yes
+		}
 		trigger = {
 			any_owned_province = {
 				has_port = yes
@@ -137,6 +140,9 @@ generic_military_missions_2 = { #naval line
 		icon = mission_build_up_to_force_limit
 		required_missions = { g_mission_sea_access }
 		position = 2
+		provinces_to_highlight = {
+			has_port = yes
+		}
 		trigger = {
 			any_owned_province = {
 				has_port = yes
@@ -160,6 +166,56 @@ generic_military_missions_2 = { #naval line
 		}
 	}
 	
+	# g_mission_interests_abroad = {
+		# icon = mission_build_up_to_force_limit
+		# required_missions = { g_mission_sea_access }
+		# position = 2
+		# trigger = {
+			# custom_trigger_tooltip = {
+				# tooltip = g_mission_interests_abroad_tt
+			# }
+			# if = {
+				# limit = {
+					# has_country_modifier = gme_trade_navy_perm
+				# }
+				# stability = 1
+			# }
+			# if = {
+				# limit = {
+					# has_country_modifier = gme_colonial_perm
+				# }
+				# stability = 2
+			# }
+			# if = {
+				# limit = {
+					# has_country_modifier = gme_logistics_perm
+				# }
+				# stability = 3
+			# }
+		# }
+		# effect = {
+			# tooltip = g_mission_interests_abroad_tt2
+			# if = {
+				# limit = {
+					# has_country_modifier = gme_trade_navy_perm
+				# }
+				# stability = 1
+			# }
+			# if = {
+				# limit = {
+					# has_country_modifier = gme_colonial_perm
+				# }
+				# stability = 2
+			# }
+			# if = {
+				# limit = {
+					# has_country_modifier = gme_logistics_perm
+				# }
+				# stability = 3
+			# }
+		# }
+	# }
+	
 }
 
 generic_military_missions_3 = { #economy line
@@ -172,6 +228,9 @@ generic_military_missions_3 = { #economy line
 		icon = mission_build_up_to_force_limit
 		required_missions = {}
 		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
 		trigger = {
 			total_base_tax = 50
 		}
@@ -190,7 +249,11 @@ generic_military_missions_3 = { #economy line
 		icon = mission_build_up_to_force_limit
 		required_missions = { g_mission_econ_starter }
 		position = 2
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
 		trigger = {
+			share_of_starting_income = 3.0
 			any_owned_province = {
 				base_production = 12
 				has_production_building_trigger = yes
@@ -198,6 +261,40 @@ generic_military_missions_3 = { #economy line
 		}
 		effect = {
 			custom_tooltip = g_mission_new_goods_tt
+		}
+	}
+	
+	g_mission_currency = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_new_goods }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = gold
+				trade_goods = silver
+				trade_goods = copper
+			}
+		}
+		trigger = {
+			total_development = 500
+			grown_by_development = 500
+			treasurer = 3
+			any_owned_province = {
+				OR = {
+					trade_goods = gold
+					trade_goods = silver
+					trade_goods = copper
+				}
+			}
+		}
+		effect = {
+			add_inflation = -5
+			
+			custom_tooltip = g_mission_currency_tt
+			
+			country_event = {
+				id = generic_mission_events.13
+			}
 		}
 	}
 }
@@ -231,6 +328,9 @@ generic_military_missions_4 = { #military line
 		icon = mission_conquer_50_development
 		required_missions = { g_mission_military_ethos }
 		position = 2
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
 		trigger = {
 			grown_by_development = 50
 			total_development = 100

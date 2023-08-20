@@ -126,3 +126,92 @@ clear_religious_scholar_modifiers_effect = {
 	remove_country_modifier = mr_sakya_school_modifier
 	remove_country_modifier = mr_jonang_school_modifier
 }
+
+#updated from simple_bonuses_penalties
+add_manufactory = {
+	if = {
+		limit = {
+			trade_goods = coal
+			has_dlc = "Rule Britannia"
+		}
+		add_building = furnace
+	}
+	if = {
+		limit = {
+			has_wharf_trade_goods = yes
+		}
+		add_building = wharf
+	}
+	if = {
+		limit = {
+			has_weapons_trade_goods = yes
+		}
+		add_building = weapons
+	}
+	if = {
+		limit = { 
+			has_textile_trade_goods = yes
+		}
+		add_building = textile
+	}
+	if = {
+		limit = {
+			has_plantation_trade_goods = yes
+		}
+		add_building = plantations
+	}
+	if = {
+		limit = {
+			has_trade_company_trade_goods = yes
+		}
+		add_building = tradecompany
+	}
+	if = {
+		limit = {
+			has_farm_trade_goods = yes
+		}
+		add_building = farm_estate
+	}
+	if = {
+		limit = {
+			has_mills_trade_goods = yes
+		}
+		add_building = mills
+	}
+	if = {
+		limit = {
+			has_pasture_trade_goods = yes
+		}
+		add_building = mrb_pasture
+	}
+	if = {
+		limit = {
+			has_mine_trade_goods = yes
+		}
+		add_building = mrb_mine
+	}
+	if = {
+		limit = {
+			has_slavemarket_trade_goods = yes
+		}
+		add_building = mrb_slavemarket
+	}
+	if = {
+		limit = {
+			has_apiary_trade_goods = yes
+		}
+		add_building = mrb_apiary
+	}
+	if = {
+		limit = {
+			has_orchard_trade_goods = yes
+		}
+		add_building = mrb_orchard
+	}
+	if = {
+		limit = {
+			has_quarry_trade_goods = yes
+		}
+		add_building = mrb_quarry
+	}
+}

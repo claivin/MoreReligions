@@ -1724,7 +1724,7 @@ wharf = {
 			type = production 
 			value = 1 
 		}
-		
+		set_province_flag = had_manufactory
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1737,6 +1737,7 @@ wharf = {
 			type = production 
 			value = 1
 		}
+		clr_province_flag = had_manufactory
 	}
 	on_obsolete = {
 	}
@@ -1925,6 +1926,7 @@ tradecompany = {
 			type = production 
 			value = 1 
 		}
+		set_province_flag = had_manufactory
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1937,6 +1939,7 @@ tradecompany = {
 			type = production 
 			value = 1
 		}
+		set_province_flag = had_manufactory
 	}
 	on_obsolete = {
 	}
@@ -2043,6 +2046,181 @@ furnace = {
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+##
+# NEW MANUFACTORIES
+##
+mrb_pasture = {
+	manufactory = {
+		livestock
+		horses
+		wool
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_mine = {
+	manufactory = {
+		copper
+		iron
+		sulfur
+		#silver
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_slavemarket = {
+	manufactory = {
+		slaves
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_apiary = {
+	manufactory = {
+		honey
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_orchard = {
+	manufactory = {
+		fruit
+		tropical_fruit
+		citrus
+		grapes
+		dates_figs
+		olives
+	}
+	onmap = yes
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+mrb_quarry = {
+	manufactory = {
+		stone
+		marble
+	}
+	onmap = yes
 	on_built = {
 		add_development_from_building = {
 			building = manufactory

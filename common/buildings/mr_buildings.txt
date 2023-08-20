@@ -19,32 +19,36 @@ mrb_brewery = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = grain }
-			change_trade_goods = alcohol
-		}
-		else_if = {
-			limit = { trade_goods = honey }
-			change_trade_goods = honey_wine
-		}
-		else_if = {
-			limit = { trade_goods = sugar }
-			change_trade_goods = rum
+		ROOT = {
+			if = {
+				limit = { trade_goods = grain }
+				change_trade_goods = alcohol
+			}
+			else_if = {
+				limit = { trade_goods = honey }
+				change_trade_goods = honey_wine
+			}
+			else_if = {
+				limit = { trade_goods = sugar }
+				change_trade_goods = rum
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = alcohol }
-			change_trade_goods = grain
-		}
-		else_if = {
-			limit = { trade_goods = honey_wine }
-			change_trade_goods = honey
-		}
-		else_if = {
-			limit = { trade_goods = rum }
-			change_trade_goods = sugar
+		ROOT = {
+			if = {
+				limit = { trade_goods = alcohol }
+				change_trade_goods = grain
+			}
+			else_if = {
+				limit = { trade_goods = honey_wine }
+				change_trade_goods = honey
+			}
+			else_if = {
+				limit = { trade_goods = rum }
+				change_trade_goods = sugar
+			}
 		}
     }
 
@@ -69,16 +73,20 @@ mrb_creamery = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = livestock }
-			change_trade_goods = cheese
+		ROOT = {
+			if = {
+				limit = { trade_goods = livestock }
+				change_trade_goods = cheese
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = cheese }
-			change_trade_goods = livestock
+		ROOT = {
+			if = {
+				limit = { trade_goods = cheese }
+				change_trade_goods = livestock
+			}
 		}
     }
 
@@ -106,36 +114,32 @@ mrb_textileprocessor = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = wool }
-			change_trade_goods = cloth
-			add_permanent_province_modifier = {
-				name = was_wool_province
-				duration = -1
-				hidden = yes
+		ROOT = {
+			if = {
+				limit = { trade_goods = wool }
+				change_trade_goods = cloth
+				set_province_flag = was_wool_province
 			}
-		}
-		else_if = {
-			limit = { trade_goods = cotton }
-			change_trade_goods = cloth
-			add_permanent_province_modifier = {
-				name = was_cotton_province
-				duration = -1
-				hidden = yes
+			else_if = {
+				limit = { trade_goods = cotton }
+				change_trade_goods = cloth
+				set_province_flag = was_cotton_province
 			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { has_province_modifier = was_wool_province }
-			change_trade_goods = wool
-			remove_province_modifier = was_wool_province
-		}
-		else_if = {
-			limit = { has_province_modifier = was_cotton_province }
-			change_trade_goods = cotton
-			remove_province_modifier = was_cotton_province
+		ROOT = {
+			if = {
+				limit = { has_province_flag = was_wool_province }
+				change_trade_goods = wool
+				clr_province_flag = was_wool_province
+			}
+			else_if = {
+				limit = { has_province_flag = was_cotton_province }
+				change_trade_goods = cotton
+				clr_province_flag = was_cotton_province
+			}
 		}
     }
 
@@ -160,16 +164,20 @@ mrb_steelmill = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = iron }
-			change_trade_goods = steel
+		ROOT = {
+			if = {
+				limit = { trade_goods = iron }
+				change_trade_goods = steel
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = steel }
-			change_trade_goods = iron
+		ROOT = {
+			if = {
+				limit = { trade_goods = steel }
+				change_trade_goods = iron
+			}
 		}
     }
 
@@ -197,36 +205,32 @@ mrb_jewler = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = ivory }
-			change_trade_goods = jewelry
-			add_permanent_province_modifier = {
-				name = was_ivory_province
-				duration = -1
-				hidden = yes
+		ROOT = {
+			if = {
+				limit = { trade_goods = ivory }
+				change_trade_goods = jewelry
+				set_province_flag = was_ivory_province
 			}
-		}
-		else_if = {
-			limit = { trade_goods = gems }
-			change_trade_goods = jewelry
-			add_permanent_province_modifier = {
-				name = was_gems_province
-				duration = -1
-				hidden = yes
+			else_if = {
+				limit = { trade_goods = gems }
+				change_trade_goods = jewelry
+				set_province_flag = was_gems_province
 			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { has_province_modifier = was_ivory_province }
-			change_trade_goods = ivory
-			remove_province_modifier = was_ivory_province
-		}
-		else_if = {
-			limit = { has_province_modifier = was_gems_province }
-			change_trade_goods = gems
-			remove_province_modifier = was_gems_province
+		ROOT = {
+			if = {
+				limit = { has_province_flag = was_ivory_province }
+				change_trade_goods = ivory
+				clr_province_flag = was_ivory_province
+			}
+			else_if = {
+				limit = { has_province_flag = was_gems_province }
+				change_trade_goods = gems
+				clr_province_flag = was_gems_province
+			}
 		}
     }
 
@@ -251,16 +255,20 @@ mrb_confectionary = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = cocoa }
-			change_trade_goods = chocolate
+		ROOT = {
+			if = {
+				limit = { trade_goods = cocoa }
+				change_trade_goods = chocolate
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = chocolate }
-			change_trade_goods = cocoa
+		ROOT = {
+			if = {
+				limit = { trade_goods = chocolate }
+				change_trade_goods = cocoa
+			}
 		}
     }
 
@@ -285,16 +293,20 @@ mrb_lumberyard = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = lumber }
-			change_trade_goods = naval_supplies
+		ROOT = {
+			if = {
+				limit = { trade_goods = lumber }
+				change_trade_goods = naval_supplies
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = naval_supplies }
-			change_trade_goods = lumber
+		ROOT = {
+			if = {
+				limit = { trade_goods = naval_supplies }
+				change_trade_goods = lumber
+			}
 		}
     }
 
@@ -322,42 +334,51 @@ mrb_winery = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = rice }
-			change_trade_goods = rice_wine
-		}
-		else_if = {
-			limit = { trade_goods = grapes }
-			change_trade_goods = wine
-		}
-		if = {
-			limit = { has_estate_privilege = estate_nobles_rice_wine has_province_modifier = rice_bonus_prod  }
-			remove_province_modifier = rice_bonus_prod
-			add_province_modifier = { 
-				name = rice_wine_bonus_prod
-				duration = -1
-				hidden = yes
+		ROOT = {
+			if = {
+				limit = { trade_goods = rice }
+				change_trade_goods = rice_wine
+			}
+			else_if = {
+				limit = { trade_goods = grapes }
+				change_trade_goods = wine
+			}
+			if = {
+				limit = {
+					owner = { has_estate_privilege = estate_nobles_rice_wine }
+					has_province_modifier = rice_bonus_prod
+				}
+				remove_province_modifier = rice_bonus_prod
+				add_province_modifier = { 
+					name = rice_wine_bonus_prod
+					duration = -1
+					hidden = yes
+				}
 			}
 		}
-			
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = rice }
-			change_trade_goods = rice_wine
-		}
-		else_if = {
-			limit = { trade_goods = wine }
-			change_trade_goods = grapes
-		}
-		if = {
-			limit = { has_estate_privilege = estate_nobles_rice_wine has_province_modifier = rice_wine_bonus_prod  }
-			remove_province_modifier = rice_wine_bonus_prod
-			add_province_modifier = { 
-				name = rice_bonus_prod
-				duration = -1
-				hidden = yes
+		ROOT = {
+			if = {
+				limit = { trade_goods = rice_wine }
+				change_trade_goods = rice
+			}
+			else_if = {
+				limit = { trade_goods = wine }
+				change_trade_goods = grapes
+			}
+			if = {
+				limit = {
+					owner = { has_estate_privilege = estate_nobles_rice_wine }
+					has_province_modifier = rice_wine_bonus_prod
+				}
+				remove_province_modifier = rice_wine_bonus_prod
+				add_province_modifier = { 
+					name = rice_bonus_prod
+					duration = -1
+					hidden = yes
+				}
 			}
 		}
     }
@@ -383,16 +404,20 @@ mrb_powdermill = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = sulfur }
-			change_trade_goods = gunpowder
+		ROOT = {
+			if = {
+				limit = { trade_goods = sulfur }
+				change_trade_goods = gunpowder
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = gunpowder }
-			change_trade_goods = sulfur
+		ROOT = {
+			if = {
+				limit = { trade_goods = gunpowder }
+				change_trade_goods = sulfur
+			}
 		}
     }
 
@@ -422,16 +447,20 @@ mrb_gunsmith = {
 	}
 	
 	on_built = {
-		if = {
-			limit = { trade_goods = gunpowder }
-			change_trade_goods = military_supplies
+		ROOT = {
+			if = {
+				limit = { trade_goods = gunpowder }
+				change_trade_goods = military_supplies
+			}
 		}
     }
 
 	on_destroyed = {
-		if = {
-			limit = { trade_goods = military_supplies }
-			change_trade_goods = gunpowder
+		ROOT = {
+			if = {
+				limit = { trade_goods = military_supplies }
+				change_trade_goods = gunpowder
+			}
 		}
     }
 
@@ -440,179 +469,4 @@ mrb_gunsmith = {
 	ai_will_do = {
 		factor = 1.5
     }
-}
-##
-# NEW MANUFACTORIES
-##
-mrb_pasture = {
-	manufactory = {
-		livestock
-		horses
-		wool
-	}
-	onmap = yes
-	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_obsolete = {
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-mrb_mine = {
-	manufactory = {
-		copper
-		iron
-		sulfur
-		#silver
-	}
-	onmap = yes
-	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_obsolete = {
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-mrb_slavemarket = {
-	manufactory = {
-		slaves
-	}
-	onmap = yes
-	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_obsolete = {
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-mrb_apiary = {
-	manufactory = {
-		honey
-	}
-	onmap = yes
-	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_obsolete = {
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-mrb_orchard = {
-	manufactory = {
-		fruit
-		tropical_fruit
-		citrus
-		grapes
-		dates_figs
-		olives
-	}
-	onmap = yes
-	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_obsolete = {
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
-}
-
-mrb_quarry = {
-	manufactory = {
-		stone
-		marble
-	}
-	onmap = yes
-	on_built = {
-		add_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_destroyed = {
-		remove_development_from_building = {
-			building = manufactory
-			type = production
-			value = 2
-		}
-	}
-	on_obsolete = {
-	}
-
-	ai_will_do = {
-		factor = 1
-	}
 }

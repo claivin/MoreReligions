@@ -1408,3 +1408,86 @@ country_event = { #choose new cash crop refresh
 		country_event = { id = generic_mission_events.11 }
 	}
 }
+
+country_event = { #currency
+	id = generic_mission_events.13
+	title = generic_mission_events.13.t
+	desc = generic_mission_events.13.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {#mixed coinage
+		name = generic_mission_events.13.a
+		add_country_modifier = {
+			name = gme_mixed_coinage
+		}
+	}
+
+	option = {
+		name = generic_mission_events.13.b
+		trigger = { any_owned_province = { trade_goods = gold } }
+		random_owned_province = {
+			limit = {
+				trade_goods = gold
+			}
+			add_province_modifier = {
+				name = gme_mint
+				duration = -1
+			}
+		}
+	}
+	option = {
+        name = generic_mission_events.13.c
+		trigger = { any_owned_province = { trade_goods = silver } }
+		random_owned_province = {
+			limit = {
+				trade_goods = silver
+			}
+			add_province_modifier = {
+				name = gme_mint
+				duration = -1
+			}
+		}
+	}
+	option = {
+        name = generic_mission_events.13.e
+		trigger = { any_owned_province = { trade_goods = copper } }
+		random_owned_province = {
+			limit = {
+				trade_goods = copper
+			}
+			add_province_modifier = {
+				name = gme_copper_mint
+				duration = -1
+			}
+		}
+	}
+}
+
+province_event = { #test
+	id = generic_mission_events.14
+	title = generic_mission_events.14.t
+	desc = generic_mission_events.14.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = generic_mission_events.14.a
+		add_building_construction = {
+			building = mrb_textileprocessor
+			speed = 0.01
+			cost = 0
+		}
+	}
+	
+	option = {
+		name = generic_mission_events.14.a
+		change_trade_goods = fish
+	}
+}

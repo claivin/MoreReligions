@@ -1177,3 +1177,32 @@ on_province_owner_change = {
 		}
 	}
 }
+
+
+# Fixes trade goods changing T2 good's deleting manufactories
+# ROOT = province, FROM = country
+on_trade_good_changed = {
+	on_trade_good_changed_estate_privileges_effect = yes
+	on_trade_good_changed_government_effect = yes
+	ROOT = {
+		if = {
+			limit = { 
+				trade_goods = coal 
+				FROM = { economic_ideas = 3 }
+				has_manufactory_trigger = yes 
+				base_production = 2
+			}
+		}
+		add_base_production = -1 
+	}
+	
+	# ###MR
+	ROOT = {
+		if = {
+			limit = {
+				has_t2_goods = no
+			}
+			remove_t2_manufactory = yes
+		}
+	}
+}

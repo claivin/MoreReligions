@@ -34,6 +34,15 @@
  g_mission_new_goods_desc: "While most fields sprout with grain and feed for the people, we should not ignore the potential of planting crops which are simply meant to be sold."
  g_mission_new_goods_tt: "§YUnlocks Decision§! to plant a new cash crop in one of your provinces"
  
+ g_mission_currency_title: "Currency Reform"
+ g_mission_currency_desc: "Our nation has grown to quite a size, with merchants crossing to the far ends of the realm. So far, trade is facilitated with a large variety of coinage and legacy standards inherited from older realms. To grease the wheels of commerce, it would be better to adopt a new standard."
+ g_mission_currency_tt: "We will choose from available metals to create our new currency standard\n"
+ 
+ g_mission_interests_abroad_title: "Interests Abroad"
+ g_mission_interests_abroad_desc: ""
+ g_mission_interests_abroad_tt: "Mission requirement is dependent on your previously chosen Naval Ethos"
+ g_mission_interests_abroad_tt: "Mission reward is dependent on your previously chosen Naval Ethos"
+ 
  declare_long_term_diplo_friend_title: "Request a Long Term Alliance"
  declare_long_term_diplo_friend_desc: "Standing together through thick and thin, our ally has proven themselves loyal and it may be in our interests to form a stronger tie than usual with them."
  historical_friend_gme_tt: "We ask our ally to become Historical Friends"
@@ -150,7 +159,7 @@
  capital_torched_tt: "§RAll development in [Root.Capital.GetName] is lost§!"
  
  generic_mission_events.11.t: "A New Cash Crop"
- generic_mission_events.11.d: "Farmers is [Root.GetCapitalName] have prepared new plots of land to start cultivating more profitable goods."
+ generic_mission_events.11.d: "Farmers in [new_cash_crop_target.GetCapitalName] have prepared new plots of land to start cultivating more profitable goods."
  generic_mission_events.11.a: "Go Back"
  generic_mission_events.11.b: "Just plant more of what we already have!"
  generic_mission_events.11.c: "Tea!"
@@ -190,3 +199,14 @@
  
  bad_climate_gme_tt: "\nThe climate in [new_cash_crop_target.GetName] is not suited well for growing this crop...\n"
  
+ 
+ generic_mission_events.12.t: "You"
+ generic_mission_events.12.d: "Aren't Supposed to see this"
+ generic_mission_events.12.a: ":)"
+ 
+ generic_mission_events.13.t: "New Coin Act"
+ generic_mission_events.12.d: "In the treasury of the [Root.GetMonarch.GetTitle], [Root.GetName] faces a pivotal decision that will shape its financial future. An expert in fiscal matters has come to re-standardize the national currency; they have studied the the policies of other nations and their effects on the wider economy. Now, the choice between gold, silver, and copper as the new standard looms large, carrying implications for trade, wealth, and fiscal policy."
+ generic_mission_events.12.a: "A mixed coinage would be the most stable."
+ generic_mission_events.12.b: "Gold, of course!"
+ generic_mission_events.12.c: "Silver - every bit as good as gold!"
+ generic_mission_events.12.e: "Copper may not quite as rare, but every bit as valuable."

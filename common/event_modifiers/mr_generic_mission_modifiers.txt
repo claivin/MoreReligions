@@ -111,3 +111,16 @@ gme_cash_crop_bad_climate = {
 	trade_goods_size = 0.5
 	state_governing_cost = 0.25
 }
+
+gme_mixed_coinage = {
+	inflation_action_cost = -0.33
+}
+
+gme_mint = {
+	local_gold_depletion_chance_modifier = -0.25
+}
+
+gme_copper_mint = {
+	local_development_cost = -0.20
+	trade_goods_size_modifier = 0.50
+}

@@ -633,7 +633,12 @@ has_manufactory_trigger = { #Province Scope
 			has_building = ramparts
 			has_building = soldier_households
 			has_building = impressment_offices
-			has_building = state_house
+			has_building = mrb_pasture
+			has_building = mrb_mine
+			has_building = mrb_slavemarket
+			has_building = mrb_apiary
+			has_building = mrb_orchard
+			has_building = mrb_quarry
 		}
 	}
 }
@@ -2577,6 +2582,7 @@ has_any_exploration_idea = {
 	}
 }
 
+#updated with new goods
 ###HAS ANY TRADE GOODS IMPORTANT FOR THE MANUFACTORIES###
 #For Wharf manufactories
 has_wharf_trade_goods = {
@@ -2584,14 +2590,16 @@ has_wharf_trade_goods = {
 		trade_goods = salt
 		trade_goods = fish
 		trade_goods = naval_supplies
+		trade_goods = whales
 	}
 }
 
 #For Weapons manufactories
 has_weapons_trade_goods = {
 	OR = {
-		trade_goods = copper
-		trade_goods = iron
+		trade_goods = military_supplies
+		trade_goods = gunpowder
+		trade_goods = steel
 	}
 }
 
@@ -2614,6 +2622,10 @@ has_plantation_trade_goods = {
 		trade_goods = tobacco
 		trade_goods = tea
 		trade_goods = cocoa
+		trade_goods = nutmeg
+		trade_goods = tumeric
+		trade_goods = ginger
+		trade_goods = saffron
 	}
 }
 
@@ -2621,11 +2633,19 @@ has_plantation_trade_goods = {
 has_trade_company_trade_goods = {
 	OR = {
 		trade_goods = ivory
-		trade_goods = slaves
 		trade_goods = spices
+		trade_goods = cloves
 		trade_goods = fur
 		trade_goods = incense
-		trade_goods = cloves
+		trade_goods = alcohol
+		trade_goods = jewelry
+		trade_goods = cheese
+		trade_goods = chocolate
+		trade_goods = ice
+		trade_goods = rice_wine
+		trade_goods = rum
+		trade_goods = honey_wine
+		trade_goods = wine
 	}
 }
 
@@ -2633,8 +2653,10 @@ has_trade_company_trade_goods = {
 has_farm_trade_goods = {
 	OR = {						
 		trade_goods = grain
-		trade_goods = livestock
-		trade_goods = wine
+		trade_goods = rice
+		trade_goods = vegetables
+		trade_goods = potato
+		trade_goods = tomato
 	}
 }
 
@@ -2646,12 +2668,96 @@ has_mills_trade_goods = {
 		trade_goods = tropical_wood
 		trade_goods = glass
 		trade_goods = chinaware
+		trade_goods = lumber
+	}
+}
+
+#For Pasture manufactories
+has_pasture_trade_goods = {
+	OR = {
+		trade_goods = livestock
+		trade_goods = horses
+		trade_goods = wool
+	}
+}
+
+#For Mine manufactories
+has_mine_trade_goods = {
+	OR = {
+		trade_goods = copper
+		trade_goods = iron
+		trade_goods = sulfur
+	}
+}
+
+#For Slave manufactories
+has_slavemarket_trade_goods = {
+	trade_goods = slaves
+}
+
+#For Apiary manufactories
+has_apiary_trade_goods = {
+	trade_goods = slaves
+}
+
+#For Orchard manufactories
+has_orchard_trade_goods = {
+	OR = {
+		trade_goods = fruit
+		trade_goods = tropical_fruit
+		trade_goods = citrus
+		trade_goods = grapes
+		trade_goods = dates_figs
+		trade_goods = olives
+	}
+}
+
+#For Quarry manufactories
+has_quarry_trade_goods = {
+	OR = {
+		trade_goods = stone
+		trade_goods = marble
 	}
 }
 
 #For special gold trade goods
 has_valuable_resource = {
 	trade_goods = gold
+	trade_goods = silver
+}
+
+#For Trade Upgrade Buildings
+has_t2_goods_manufactory = {
+	OR = {
+		has_building = mrb_brewery
+		has_building = mrb_creamery
+		has_building = mrb_textileprocessor
+		has_building = mrb_steelmill
+		has_building = mrb_jewler
+		has_building = mrb_confectionary
+		has_building = mrb_lumberyard
+		has_building = mrb_winery
+		has_building = mrb_powdermill
+		has_building = mrb_gunsmith
+	}
+}
+
+has_t2_goods = {
+	OR = {
+		trade_goods = alcohol
+		trade_goods = honey_wine
+		trade_goods = rum
+		trade_goods = cheese
+		trade_goods = cloth
+		trade_goods = steel
+		trade_goods = jewelry
+		trade_goods = chocolate
+		trade_goods = naval_supplies
+		trade_goods = rice_wine
+		trade_goods = wine
+		trade_goods = gunpowder
+		trade_goods = military_supplies
+	}
 }
 
 #country scope
