@@ -1,0 +1,11 @@
+name = "War of the Two Brothers" 
+war_goal = {
+	type = take_capital_throne
+	casus_belli = cb_claim_throne
+	tag = CAS
+}
+
+1444.1.1 = {
+	add_attacker = CAS
+	add_defender = LON
+}
