@@ -1398,8 +1398,8 @@
  PROV5494: "Baoqing"
  PROV5495: "Yongzhou"
  PROV5496: "Chenzhou"
-
-
+ PROV5497: "Jiujiang"
+ PROV5498: "Zhangzhou"
 
 
  
@@ -1453,6 +1453,8 @@
  PROV_ADJ5494: "Baoqing"
  PROV_ADJ5495: "Yongzhou"
  PROV_ADJ5496: "Chenzhou"
+ PROV_ADJ5497: "Jiujiang"
+ PROV_ADJ5498: "Zhangzhou"
  
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"

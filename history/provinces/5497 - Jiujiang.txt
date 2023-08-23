@@ -1,0 +1,19 @@
+#5497 - Jiujiang
+
+owner = GSC
+controller = GSC
+add_core = GSC
+culture = gan
+religion = mr_taoism
+capital = "Jiujiang"
+trade_goods = rice
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 3
+is_city = yes
+add_core = NNG
+discovered_by = chinese
+discovered_by = nomad_group
+
+1444.11.12 = { trade_goods = unknown }
