@@ -1099,7 +1099,7 @@ NAV_ideas = {
 	}
 	nav_global_whaling_monopoly = {
 		global_trade_goods_size_modifier = 0.1
-		province_trade_power_value = 5
+        global_trade_power = 0.05
 	}
 }
 VAL_ideas = {
