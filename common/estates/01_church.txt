@@ -25,7 +25,10 @@ estate_church = {
 					NOT = { tag = USA }
 					government = theocracy
 				}
-				is_nomad = no
+				OR = {
+					is_nomad = no
+					tag = BLH
+				}
 				is_colonial_nation = no
 			}
 		}

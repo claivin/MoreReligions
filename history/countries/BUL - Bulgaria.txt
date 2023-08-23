@@ -20,6 +20,10 @@ add_government_reform = retain_tribal_hierarchy_reform
 		dip = 3
 		mil = 6
 	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = strict_personality
+	add_ruler_personality = tolerant_personality
+	add_ruler_personality = greedy_personality
 }
 
 1410.1.1 = {
@@ -33,5 +37,12 @@ add_government_reform = retain_tribal_hierarchy_reform
 		adm = 3
 		dip = 3
 		mil = 3
+	}
+	define_heir_to_general = {
+		fire = 3
+		shock = 6
+		manuever = 2
+		siege = 0
+		trait = born_to_the_saddle_personality
 	}
 }

@@ -146,4 +146,17 @@ cb_hungary_thunderdome = {
 	
 	war_goal = take_capital_annex_hun_cw 
 }
+
+cb_bulgaria_bluehorde_war = {
+	valid_for_subject = no
 	
+	prerequisites = {
+		FROM = {
+			tag = BLH
+		}
+		tag = BUL
+		has_country_flag = bul_invade_bluehorde
+	}
+	
+	war_goal = take_capital_blue_horde
+}

@@ -1,0 +1,45 @@
+﻿l_english:
+ #events
+ blue_horde_flavor.1.t: "Ugechi Khan Passes"
+ blue_horde_flavor.1.da: "Despite his best efforts, Ugechi Khan never completely succeded in transitioning to a feudal state. On his departure from our world, the tribes retained a great deal of influence in regional politics, especially far away from the center of Kiev. This of course has put the Metropolis at odds with the tribal leaders who now have ample oppurtunity to vie for power in the disorganization left behind by this passing.\n\nFailing to completely cowe the Bulgarian Khanate, the Khan's ambitious nephew Theodore turns his gaze to Kiev."
+ blue_horde_flavor.1.db: "With incredible effort, the Khan spent the last years of his life getting all matters of succession, administration, and organization in order. Countless meetings and discussions with the clergy and the tribal leaders and the old nobility of this land have brought the Blue Horde together to a modern feudal state."
+ blue_horde_flavor.1.a: "A sad day made even more."
+ blue_horde_flavor.1.b: "We pray for his passing."
+ blh_church_regency: "\n§YChurch authorities will rule in interregnum§!\n"
+ blh_bul_may_dow_us: "§RThe Bulgarian Ilkhanate may declare war on us§!"
+ 
+ blue_horde_flavor.2.t: "The Khan of Kiev Dies!"
+ blue_horde_flavor.2.d: "To the surprise of no one, the aged Khan Ugechi has died, leaving behind much unfinished work in bringing together the various powers of the state. Though a sad day, there will be oppurtunity to grieve after this matter is settled.\n\nBulgaria, led by the Khan's younger brother, made it's own name as a formidiable force - but under the rule of the Khan in Kiev. Now, Chaka Khan, with much convincing from his son now considers taking Kiev himself, lest it be ruled by those duplicitous clergymen."
+ blue_horde_flavor.3.a: "Sieze Kiev!"
+ blue_horde_flavor.3.b: "An invasion at this time is as good as betrayal!"
+ blue_horde_flavor.3.c: "We must honor our agreements."
+ blh_random_chance_to_turn: "Theodore will attempt to seize control."
+ 
+ blue_horde_flavor.3.t: "Envoy from Bulgaria"
+ blue_horde_flavor.3.da: "Thodore of Bulgaria has assumed control of his forces and is on his way to Kiev as we speak! It is any wonder why Chaka Khan as allowed this, but many have suspected that he would aim for Kiev someday."
+ blue_horde_flavor.3.db: "The Ilkhanate has cast off it's chains, citing the death of Ugechi Khan as the dissolution of their contracts."
+ blue_horde_flavor.3.dc: "In an great display of honor, Chaka Khan has stayed loyal to his brother's wishes, and continues to rule Bulgaria as he had done. This is not without sad news, as it was later discovered his own son had plotted to overthrow him and march on Kiev with is own men."
+ blue_horde_flavor.3.a: "They betryal!"
+ blue_horde_flavor.3.b: "Nothing we can do..."
+ blue_horde_flavor.3.c: "Blood runs thicker than water."
+ 
+ blue_horde_flavor.4.t: "Kiev Defects!"
+ blue_horde_flavor.4.d: "In the midst of what is essentially tribal squabbling, the Metroplitan of Kiev has brought it upon himself to seperate the city from the rest of the fighting. The large influence of the clergy in court politics, centered within the city, has allowed the city to politically seperate with practically no consequence. Last words about the situation seem to indicate some sort of deal that will be struck with Bulgaria..."
+ blue_horde_flavor.4.a: "Them too?!"
+ blue_horde_flavor.4.b: "§YPlay as Kiev§!"
+ 
+ blue_horde_flavor.5.t: "Kiev Strikes a Deal"
+ blue_horde_flavor.5.d: "An envoy is sent to [BUL.GetCapital.GetName] to work out some kind of peace. The War of Ruthenian Khans, was, of course started to take Kiev. However, like in the days of old, the Khan of Bulgaria may accept a nominal subjugation in the form of tribute. In exchange, we will even allow the Khan to be crowned and baptized in St. Sophia Cathederal as well as adopt titles previously beloning to Ugechi Khan."
+ blue_horde_flavor.5.a: "Become their tributary"
+ blue_horde_flavor.5.b: "Pay them for some leeway"
+ blue_horde_flavor.5.c: "We can make it on our own"
+ 
+#modifiers
+ EST_BLH_CHURCH_REGENCY: "Metropolitan of Kiev Intervenes"
+ blh_no_heir_till_war_over: "Searching for a Proper Heir"
+ bul_upstart_khan: "Upstart Future Khan"
+ 
+#misc
+ BLH_BUL_WAR_NAME: "War of the Ruthenian Khans"
+ cb_bulgaria_bluehorde_war: "Usurp Kiev"
+ take_capital_blue_horde: "Take Capital"

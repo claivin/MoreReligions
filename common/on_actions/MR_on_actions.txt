@@ -46,6 +46,7 @@ on_startup = {
 		mr_startup_events.1
 		mr_startup_events.2
 		mr_startup_events.3
+		mr_startup_events.4
 		HUN_flavor.2
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
@@ -509,6 +510,11 @@ on_monarch_death = {
 		limit = { tag = PAP }
 		country_event = { id = mr_catholic.1 }
 	}
+	if = { #starts the Blue Horde/Bulgaria Conflict
+		limit = { tag = BLH }
+		country_event = { id = blue_horde_flavor.1 }
+	}
+	
 	
 	
 	burgundian_inheritance_start_effect = yes
@@ -1201,8 +1207,73 @@ on_trade_good_changed = {
 		if = {
 			limit = {
 				has_t2_goods = no
+				has_t2_goods_manufactory = yes
 			}
 			remove_t2_manufactory = yes
+			if = {
+				limit = { trade_goods = alcohol }
+				change_trade_goods = grain
+			}
+			else_if = {
+				limit = { trade_goods = honey_wine }
+				change_trade_goods = honey
+			}
+			else_if = {
+				limit = { trade_goods = rum }
+				change_trade_goods = sugar
+			}
+			else_if = {
+				limit = { trade_goods = cheese }
+				change_trade_goods = livestock
+			}
+			else_if = {
+				limit = { has_province_flag = was_wool_province }
+				change_trade_goods = wool
+				clr_province_flag = was_wool_province
+			}
+			else_if = {
+				limit = { has_province_flag = was_cotton_province }
+				change_trade_goods = cotton
+				clr_province_flag = was_cotton_province
+			}
+			else_if = {
+				limit = { trade_goods = steel }
+				change_trade_goods = iron
+			}
+			else_if = {
+				limit = { has_province_flag = was_ivory_province }
+				change_trade_goods = ivory
+				clr_province_flag = was_ivory_province
+			}
+			else_if = {
+				limit = { has_province_flag = was_gems_province }
+				change_trade_goods = gems
+				clr_province_flag = was_gems_province
+			}
+			else_if = {
+				limit = { trade_goods = chocolate }
+				change_trade_goods = cocoa
+			}
+			else_if = {
+				limit = { trade_goods = naval_supplies }
+				change_trade_goods = lumber
+			}
+			else_if = {
+				limit = { trade_goods = rice_wine }
+				change_trade_goods = rice
+			}
+			else_if = {
+				limit = { trade_goods = wine }
+				change_trade_goods = grapes
+			}
+			else_if = {
+				limit = { trade_goods = gunpowder }
+				change_trade_goods = sulfur
+			}
+			else_if = {
+				limit = { trade_goods = military_supplies }
+				change_trade_goods = gunpowder
+			}
 		}
 	}
 }

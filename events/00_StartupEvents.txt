@@ -289,3 +289,32 @@ country_event = {
 		#empty
 	}
 }
+
+#Blue Horde and Bulgaria
+country_event = {
+	id = mr_startup_events.4
+	title = mr_startup_events.4.t
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	desc = mr_startup_events.4.d
+	is_triggered_only = yes
+	trigger = {
+		ai = no
+		OR = {
+			tag = BLH
+			tag = BUL
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_startup_events.4.a
+		trigger = { tag = BLH }
+		custom_tooltip = blh_warning_tt
+	}
+	
+	option = {
+		name = mr_startup_events.4.b
+		trigger = { tag = BUL }
+		#empty
+	}
+}

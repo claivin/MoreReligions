@@ -1,0 +1,7 @@
+blh_no_heir_till_war_over = {
+	heir_chance = -1.0
+}
+
+bul_upstart_khan = {
+	liberty_desire = 30
+}
