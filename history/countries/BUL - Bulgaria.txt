@@ -45,4 +45,8 @@ add_government_reform = retain_tribal_hierarchy_reform
 		siege = 0
 		trait = born_to_the_saddle_personality
 	}
+	add_country_modifier = {
+		name = bul_upstart_khan
+		duration = -1
+	}
 }

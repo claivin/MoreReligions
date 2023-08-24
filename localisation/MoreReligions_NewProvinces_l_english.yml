@@ -1463,3 +1463,6 @@
  west_kham_area: "West Kham"
  north_hubei_area: "North Hubei"
  south_hunan_area: "South Hunan"
+ 
+ #custom group
+ black_earth_region: "Black Earth Region"

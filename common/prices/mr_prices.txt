@@ -3,7 +3,7 @@
 
 ####MR TRADE GOODS###
 alcohol = {
-	base_price = 3
+	base_price = 5
 }
 military_supplies = {
 	base_price = 4.5

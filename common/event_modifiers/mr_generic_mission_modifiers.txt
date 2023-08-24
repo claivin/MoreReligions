@@ -45,7 +45,7 @@ gme_firearms_adoption_perm = {
 }
 
 gme_military_hierarchy_perm = {
-	general_cost = -0.2
+	general_cost = -0.1
 	free_leader_pool = 1
 	army_tradition = 0.5
 }
@@ -53,7 +53,7 @@ gme_military_hierarchy_perm = {
 gme_defense_perm = {
 	fort_maintenance_modifier = -0.10
 	defensiveness = 0.1
-	war_exhaustion_cost = -0.1
+	war_exhaustion = -0.05
 }
 
 gme_trade_navy = {

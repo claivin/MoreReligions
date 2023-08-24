@@ -1277,3 +1277,27 @@ on_trade_good_changed = {
 		}
 	}
 }
+
+
+# country
+# root = winning country, from = loser country
+on_main_war_won = {
+	on_main_war_won_effect = yes
+	events = {
+		native_americans.7
+		flavor_kor.15
+		
+		#mr
+		blue_horde_flavor.7
+	}
+}
+
+on_main_war_lost = {
+	events = {
+		flavor_kor.15
+		flavor_tur.300 #Defeat of the Ottomans
+		
+		#mr
+		blue_horde_flavor.8
+	}
+}

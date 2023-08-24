@@ -1,0 +1,24 @@
+black_earth_region = {
+	5309 #okachiv
+	5152 #kirovohrad
+	2406 #ingil
+	5310 #mykytyn rih
+	283 #zaporozhia
+	2412 #mariupol
+	5311 #donbass
+	2411 #samara
+	291 #kharkov
+	5155 #dnipro
+	290 #poltava
+	5161 #sumy
+	4543 #rylsk
+	298 #kursk
+	5163 #stary oskol
+	2408 #yelets
+	299 #voronezh
+	2413 #tyn
+	2409 #bahmut
+	5312 #boguchar
+	467 #borisoglebsk
+	302 #tambov
+}

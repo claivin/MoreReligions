@@ -7,14 +7,14 @@ culture = goths
 religion = orthodox
 hre = no
 base_tax = 3 
-base_production = 3
-trade_goods = wine
-base_manpower = 3
+base_production = 4
+trade_goods = grapes
+base_manpower = 2
 capital = "Mangul"
 is_city = yes
 add_core = TRE
 add_core = BLH
-
+add_local_autonomy = 20
 
 
 discovered_by = western

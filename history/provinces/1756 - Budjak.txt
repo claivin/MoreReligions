@@ -6,7 +6,7 @@ controller = BLH
 culture = romanian
 religion = orthodox
 hre = no
-base_tax = 5 
+base_tax = 1
 base_production = 4
 capital = "Kilia"
 is_city = yes
@@ -15,7 +15,7 @@ base_manpower = 2
 fort_15th = yes #Akkerman Fortress
 add_core = MOL
 add_core = BLH
-
+add_local_autonomy = 75
 
 
 discovered_by = western

@@ -27,7 +27,10 @@ estate_church = {
 				}
 				OR = {
 					is_nomad = no
-					tag = BLH
+					AND = {
+						tag = BLH
+						NOT = { has_country_flag = mr_blh_lost_clergy }
+					}
 				}
 				is_colonial_nation = no
 			}

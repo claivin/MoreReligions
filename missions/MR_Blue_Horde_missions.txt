@@ -1,0 +1,165 @@
+#pre death missions
+mr_blh_c1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = BLH }
+	has_country_shield = yes
+	
+	mr_blh_c1a1 = { #Barter with the Bishops
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+		}
+		trigger = {
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_church
+				value = 3
+			}
+		}
+		effect = {
+			custom_tooltip = mr_barter_with_bishops
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+mr_blh_c2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { tag = BLH }
+	has_country_shield = yes
+	
+	mr_blh_c2a1 = { #Loyalty of the Tribes
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+		}
+		trigger = {
+			estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_nomadic_tribes
+				value = 2
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 6
+				is_capital = no
+			}
+		}
+		effect = {
+			change_government_reform_progress = 15 
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+mr_blh_c3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { tag = BLH }
+	has_country_shield = yes
+	
+	mr_blh_c3a1 = { #Diplomacy to Bulgaria
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			owned_by = BUL
+			is_capital = yes
+		}
+		trigger = {
+			BUL = {
+				NOT = { liberty_desire = 30 }
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = mr_diplomacy_bulgaria_tt
+			
+			BUL = {
+				limit = {
+					has_country_modifier = bul_upstart_khan
+				}
+				remove_country_modifier = bul_upstart_khan
+			}
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+mr_blh_c4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { tag = BLH }
+	has_country_shield = yes
+	
+	mr_blh_c4a1 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}
+
+mr_blh_c5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { tag = BLH }
+	has_country_shield = yes
+	
+	mr_blh_c5a1 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+		ai_weight = {
+			factor = 75
+		}
+	}
+}

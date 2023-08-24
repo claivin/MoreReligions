@@ -1,4 +1,16 @@
 ﻿l_english:
+ #missions
+ mr_blh_c1a1_title: "Barter with the Bishops"
+ mr_blh_c1a1_desc: "Ever since the rule of the Blue Horde under Orthodox Christianity by way of the leadership of Sartaq Khan, the religious leaders of Ruthenia and especially the urban centers of Kiev have played a large role in the politics of the state."
+ mr_barter_with_bishops: "We will not lose stability if Ugechi Khan dies before the Blue Horde has reformed"
+ 
+ mr_blh_c2a1_title: "Loyalty of the Tribes"
+ mr_blh_c2a1_desc: "Traditionally the tribal leaders led the state, but since the conversion to Christianity, they have been slowly relegated to delegating the countryside. We must convince them that progress towards a modern state is not something to be worried of."
+ 
+ mr_blh_c3a1_title: "Diplomacy to Bulgaria"
+ mr_blh_c3a1_desc: "Chaka Khan, ruler of the Bulgarian Ilkhanate is an honorable man serving alongside and under his brother to rule Ruthenia and Bulgaria. We have caught wind that his son, however, wishes to expand his lot and has has spent much time trying to convince the Khan to do... something if Ugechi were to pass suddenly."
+ mr_diplomacy_bulgaria_tt: "The odds of Bulgaria invading are greatly reduced"
+ 
  #events
  blue_horde_flavor.1.t: "Ugechi Khan Passes"
  blue_horde_flavor.1.da: "Despite his best efforts, Ugechi Khan never completely succeded in transitioning to a feudal state. On his departure from our world, the tribes retained a great deal of influence in regional politics, especially far away from the center of Kiev. This of course has put the Metropolis at odds with the tribal leaders who now have ample oppurtunity to vie for power in the disorganization left behind by this passing.\n\nFailing to completely cowe the Bulgarian Khanate, the Khan's ambitious nephew Theodore turns his gaze to Kiev."
@@ -33,11 +45,15 @@
  blue_horde_flavor.5.a: "Become their tributary"
  blue_horde_flavor.5.b: "Pay them for some leeway"
  blue_horde_flavor.5.c: "We can make it on our own"
+ MR_IF_THEY_ACCEPT_TT: "If they accept:\n"
+ 
  
 #modifiers
  EST_BLH_CHURCH_REGENCY: "Metropolitan of Kiev Intervenes"
  blh_no_heir_till_war_over: "Searching for a Proper Heir"
  bul_upstart_khan: "Upstart Future Khan"
+ blh_no_less_reform: "Discord Between Estates"
+ blh_tribal_powergrab: "Tribal Powergrab"
  
 #misc
  BLH_BUL_WAR_NAME: "War of the Ruthenian Khans"

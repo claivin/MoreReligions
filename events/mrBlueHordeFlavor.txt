@@ -31,8 +31,13 @@ country_event = {
 		trigger = { is_tribal = yes }
 		
 		#additional stab lost counteracted with mission?
-		add_stability = -1
-		
+		if = {
+			limit = {
+				NOT = { mission_completed = mr_blh_c1a1 }
+			}
+			add_stability = -1
+		}
+
 		custom_tooltip = blh_church_regency
 		hidden_effect = {
 			define_ruler = {
@@ -46,11 +51,23 @@ country_event = {
 			influence = 20
 			duration = 10950
 		}
-		
+		add_estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = -15
+		}
 		add_ruler_modifier = {
 			name = blh_no_heir_till_war_over
 			duration = -1
 		}
+		add_ruler_modifier = {
+			name = blh_no_less_reform
+			duration = -1
+		}
+		add_country_modifier = {
+			name = blh_tribal_powergrab
+			duration = -1
+		}
+		change_government_reform_progress = -100
 		
 		custom_tooltip = blh_bul_may_dow_us
 		hidden_effect = {
@@ -66,7 +83,7 @@ country_event = {
 		name = blue_horde_flavor.2.a
 		trigger = { is_tribal = no }
 		
-		#asdf
+		add_adm_power = 200
 	}
 }
 
@@ -89,10 +106,10 @@ country_event = {
 		name = blue_horde_flavor.3.a
 		ai_chance = {
 			factor = 50
-			# modifier = {
-				# factor = 10
-				# BLH = { NOT = { mission_completed = placeholder } }
-			# }
+			modifier = {
+				factor = 0.5
+				BLH = { mission_completed = mr_blh_c3a1 }
+			}
 		}
 		
 		grant_independence = yes
@@ -113,11 +130,11 @@ country_event = {
 		name = blue_horde_flavor.3.b
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 0
-				always = yes
-				#BLH = { NOT = { mission_completed = placeholder } }
-			}
+			# modifier = {
+				# factor = 0
+				# always = yes
+				# BLH = { NOT = { mission_completed = placeholder } }
+			# }
 		}
 		
 		grant_independence = yes
@@ -340,10 +357,6 @@ country_event = {
 			}
 			add_truce_with = ROOT
 			swap_non_generic_missions = yes
-			country_event = {
-				id = blue_horde_flavor.5
-				days = 1
-			}
 		}
 	}
 	
@@ -395,10 +408,7 @@ country_event = {
 			}
 			add_truce_with = ROOT
 			swap_non_generic_missions = yes
-			country_event = {
-				id = blue_horde_flavor.5
-				days = 1
-			}
+			
 		}
 		switch_tag = KIE
 	}
@@ -412,26 +422,42 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	fire_only_once = yes
-	major = yes
-	is_triggered_only = yes
-	major_trigger = {
-		OR = {
-			tag = BUL
-			tag = BHL
+	
+	trigger = {
+		tag = KIE
+		exists = BUL
+	}
+	
+	mean_time_to_happen = {
+		months = 8
+		modifier = {
+			factor = 0.2
+			BUL = {
+				war_with = BHL
+			}
 		}
 	}
-	trigger = {} #triggered by blue_horde_flavor.4
 	
 	option = { #Kiev asks to be a tributary
 		name = blue_horde_flavor.5.a
 		ai_chance = {
 			factor = 80
 		}
-		BUL = {
-			create_subject = {
-				subject_type = tributary_state
-				subject = KIE
+		custom_tooltip = MR_IF_THEY_ACCEPT_TT
+		tooltip = {
+			BUL = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = KIE
+				}
 			}
+		}
+		
+		BUL = {
+			country_event = {
+				id = blue_horde_flavor.6
+			}
+			set_country_flag = kie_asked_to_be_trib
 		}
 	}
 	
@@ -440,10 +466,19 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		add_treasury = -200
+		custom_tooltip = MR_IF_THEY_ACCEPT_TT
+		tooltip = {
+			add_treasury = -200
+			BUL = {
+				add_treasury = 200
+				add_truce_with = KIE
+			}
+		}
 		BUL = {
-			add_treasury = 200
-			add_truce_with = KIE
+			country_event = {
+				id = blue_horde_flavor.6
+			}
+			set_country_flag = kie_asked_for_truce
 		}
 	}
 	
@@ -451,6 +486,124 @@ country_event = {
 		name = blue_horde_flavor.5.c
 		ai_chance = {
 			factor = 10
+		}
+	}
+}
+
+#ask bulgaria if they want to trib or peace
+country_event = {
+	id = blue_horde_flavor.6
+	title = blue_horde_flavor.6.t
+	desc = {
+		desc = blue_horde_flavor.6.da
+		trigger = {
+			has_country_flag = kie_asked_to_be_trib
+		}
+		desc = blue_horde_flavor.6.db
+		trigger = {
+			has_country_flag = kie_asked_for_truce
+		}
+	}
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+	
+	trigger = {} #triggered by blue_horde_flavor.5
+	
+	option = { #Kiev asks to be a tributary
+		name = blue_horde_flavor.6.a
+		ai_chance = { factor = 100 }
+		trigger = { has_country_flag = kie_asked_to_be_trib }
+		create_subject = {
+			subject_type = tributary_state
+			subject = KIE
+		}
+		clr_country_flag = kie_asked_to_be_trib
+	}
+	
+	option = { #Kiev asks for a truce
+		name = blue_horde_flavor.6.b
+		ai_chance = { factor = 100 }
+		trigger = { has_country_flag = kie_asked_for_truce }
+		KIE = {
+			add_treasury = -200
+		}
+		add_treasury = 200
+		add_truce_with = KIE
+		clr_country_flag = kie_asked_for_truce
+	}
+	
+	option = { #Decline Offer
+		name = blue_horde_flavor.6.b
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+#both end of war events are fired from BUL perspective
+#the war ends, Blue Horde Won
+country_event = {
+	id = blue_horde_flavor.7
+	title = blue_horde_flavor.7.t
+	desc = blue_horde_flavor.7.d
+	trigger = { }
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { #triggered by end of war with Blue horde defeat
+		tag = BLH
+	}
+	option = {
+		name = blue_horde_flavor.7.b
+		inherit = BUL
+	}
+	
+	
+}
+
+#the war ends, Blue Horde Lost
+country_event = {
+	id = blue_horde_flavor.8
+	title = blue_horde_flavor.8.t
+	desc = blue_horde_flavor.8.d
+	trigger = { }
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { #triggered by end of war with Blue horde defeat
+		tag = BLH
+	}
+	
+	option = {
+		name = blue_horde_flavor.8.b
+		
+		set_country_flag = mr_blh_lost_clergy
+		if = {
+			limit = {
+				exists = KIE
+			}
+			custom_tooltip = mr_blh_clergy_leaves_tt
+			every_owned_province = {
+				limit = {
+					is_core = KIE
+				}
+				cede_province = KIE
+			}
+		}
+		change_government_reform_progress = -100
+		if = {
+			limit = {
+				has_reform = retain_tribal_hierarchy_reform
+			}
+			remove_government_reform = retain_tribal_hierarchy_reform
+		}
+		else_if = {
+			limit = {
+				has_reform = centralize_tribal_power_reform
+			}
+			remove_government_reform = centralize_tribal_power_reform
 		}
 	}
 }

@@ -5,3 +5,11 @@ blh_no_heir_till_war_over = {
 bul_upstart_khan = {
 	liberty_desire = 30
 }
+
+blh_no_less_reform = {
+	monthly_reform_progress_modifier = -0.25
+}
+
+blh_tribal_powergrab = {
+	land_forcelimit_modifier = -0.40
+}
