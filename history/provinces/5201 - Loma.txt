@@ -24,6 +24,7 @@ discovered_by = SNT
 discovered_by = SNF
 discovered_by = DEN
 discovered_by = BAO
+
 owner = TEE
 controller = TEE
 add_core = TEE

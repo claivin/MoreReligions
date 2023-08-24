@@ -1368,3 +1368,44 @@ SEV_ideas = {
 		center_of_trade_upgrade_cost = -0.1
 	}
 }
+
+MAL_ideas = {
+	start = {
+		naval_forcelimit_modifier = 0.15 #To ensure naval focus too
+		tolerance_heathen = 2
+	}
+	
+	bonus = {
+		infantry_power = 0.10
+	}
+	
+	trigger = {
+		tag = MAL
+	}
+	free = yes		# will be added at load
+
+	restore_malian_suzerainity = { #Because Vassal Forcelimit to add mil strength here
+		vassal_income = 0.25
+		vassal_forcelimit_bonus = 0.5
+	}
+	gold_of_bure = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	reclamation_of_land = { #Added dev cost, just though it was quirky
+		global_manpower_modifier = 0.10
+		development_cost = 0.05
+	}
+	mandinka_warrior_spirit = {
+		discipline = 0.05
+	}
+	lost_fleet_of_abubukari_ii = { #Reworked to be about how he CAME BACK
+		navy_tradition = 0.5
+		trade_steering = 0.15
+	}
+	seek_new_markets_for_salt = {
+		merchants = 1
+	}
+	west_african_slave_trade = {
+		trade_efficiency = 0.1
+	}
+}

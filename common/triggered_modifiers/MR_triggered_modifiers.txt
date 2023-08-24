@@ -1,0 +1,60 @@
+#Guinean Invasions
+guinean_triggered_modifier = {
+	potential = {
+		NOT = { has_global_flag = guinea_wars_ended }
+		OR = {
+			tag = TEE
+			tag = YKB
+			tag = VAI
+			tag = SNF
+			tag = KWA
+			tag = BEE
+			tag = ZHI
+			tag = BAO
+			tag = EHO
+			tag = SNT
+			tag = DEN
+			tag = AKW
+			tag = MNK
+			tag = LGB
+			tag = BON
+			tag = DAH
+			tag = DGB
+			tag = KRU
+			tag = MDK
+			tag = AKA
+		}
+	}
+	trigger = {
+		any_country = {
+			war_with = ROOT
+			total_development = 20
+			NOT = {
+				OR = {
+					tag = TEE
+					tag = YKB
+					tag = VAI
+					tag = SNF
+					tag = KWA
+					tag = BEE
+					tag = ZHI
+					tag = BAO
+					tag = EHO
+					tag = SNT
+					tag = DEN
+					tag = AKW
+					tag = MNK
+					tag = LGB
+					tag = BON
+					tag = DAH
+					tag = DGB
+					tag = KRU
+					tag = MDK
+					tag = AKA
+				}
+			}
+		}	
+	}
+	own_territory_dice_roll_bonus = 2
+	hostile_attrition = 2
+}

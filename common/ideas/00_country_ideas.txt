@@ -4125,45 +4125,6 @@ KON_ideas = {
 	}
 }
 
-
-MAL_ideas = {
-	start = {
-		land_attrition = -0.10
-		tolerance_heathen = 2
-	}
-	
-	bonus = {
-		infantry_power = 0.10
-	}
-	
-	trigger = {
-		tag = MAL
-	}
-	free = yes		# will be added at load
-
-	restore_malian_suzerainity = {
-		vassal_income = 0.20
-	}
-	gold_of_bure = {
-		global_trade_goods_size_modifier = 0.1
-	}
-	reclamation_of_land = {
-		global_manpower_modifier = 0.10
-	}
-	mandinka_warrior_spirit = {
-		discipline = 0.05
-	}
-	lost_fleet_of_abubukari_ii = {
-		navy_tradition = 0.5
-	}
-	seek_new_markets_for_salt = {
-		merchants = 1
-	}
-	west_african_slave_trade = {
-		trade_efficiency = 0.1
-	}
-}
-
 HUR_ideas = {
 	start = {
 		land_morale = 0.1
@@ -16754,45 +16715,6 @@ MSA_ideas = {
 	msa_spice_kings = {
 		global_trade_goods_size_modifier = 0.1
 	}
-}
-
-SIA_ideas = {
-    start = {
-        land_morale = 0.1
-        global_manpower_modifier = 0.25
-    }
-    bonus = {
-		discipline = 0.05
-    }
-    trigger = {
-        tag = SIA
-    }
-    free = yes
-    sia_royal_poets = {
-		prestige = 0.5
-		adm_advisor_cost = -0.15
-    }
-    sia_advanced_elephant_warfare = {
-		cavalry_power = 0.15
-		cavalry_fire = 1
-    }
-    sia_experienced_ambassadors = {
-        diplomatic_reputation = 2
-    }
-    sia_encourage_immigration = {
-        development_cost = -0.1
-    }
-    sia_integrating_the_realm = {
-        diplomatic_annexation_cost = -0.15
-        culture_conversion_cost = -0.15
-    }
-    sia_royal_absolutism = {
-        global_autonomy = -0.05
-		yearly_absolutism = 0.5
-    }
-    sia_education_reform = {
-        idea_cost = -0.1
-    }
 }
 
 LFA_ideas = {

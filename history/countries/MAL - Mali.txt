@@ -8,6 +8,12 @@ unlock_cult = roog_cult
 unlock_cult = nyame_cult
 capital = 1124	# Niani
 religious_school = maliki_school
+5202 = {
+	 undiscover_country = MAL
+}
+5201 = {
+	undiscover_country = MAL
+}
 
 change_estate_land_share = {
 	estate = estate_nobles
