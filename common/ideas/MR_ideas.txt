@@ -1409,3 +1409,72 @@ MAL_ideas = {
 		trade_efficiency = 0.1
 	}
 }
+BLH_ideas = {
+	start = { #theme of ideas religious/cav mil
+		tolerance_own = 2
+		cavalry_flanking = 0.5
+	}
+	bonus = { #late game industrial theme
+		manpower_in_true_faith_provinces = 0.5
+	}
+	free = yes
+	trigger = { tag = BLH }
+	BLH_ideas_1 = { #Steppe Knights
+		cavalry_power = 0.20
+	}
+	BLH_ideas_2 = { #Ruthenian Auxilaries
+		shock_damage_received = -0.1
+	}
+	BLH_ideas_3 = { #Patriarchate of Kiev
+		church_loyalty_modifier = 0.1
+		yearly_patriarch_authority = 0.5
+	}
+	BLH_ideas_4 = { #Steppe Incursions
+		morale_damage_received = -0.1
+	}
+	BLH_ideas_5 = { #Black Earth Settlements
+		development_cost = -0.1
+	}
+	BLH_ideas_6 = { #Legacy of Sartaq
+		build_cost = -0.1
+		great_project_upgrade_cost = -0.10
+	}
+	BLH_ideas_7 = { #Breadbasket of Europe
+		global_trade_goods_size_modifier = 0.15
+	}
+}
+BUL_ideas = {
+	start = { #extremely powerul cav military
+		discipline = 0.05
+		shock_damage = 0.25
+	}
+	bonus = {
+		cavalry_shock = 1
+	}
+	free = yes
+	trigger = { tag = BUL }
+	BUL_ideas_1 = { #Mongolic Manuevers
+		cav_to_inf_ratio = 0.25
+		leader_land_shock = 1	
+	}
+	BUL_ideas_2 = { #Horse Crossbreeds
+		cavalry_power = 0.1
+		movement_speed = 0.1
+	}
+	BUL_ideas_3 = { #Raze of Thrace
+ 		morale_damage = 0.20
+	}
+	BUL_ideas_4 = { #City of Great Tarnovo
+		num_accepted_cultures  = 1
+	}
+	BUL_ideas_5 = { #Ready to Fight
+		drill_gain_modifier = 0.50
+		drill_decay_modifier = -0.50
+	}
+	BUL_ideas_6 = { #Preslav Literary School
+		technology_cost = -0.1
+	}
+	BUL_ideas_7 = { #Second Bulgarian Empire
+		max_absolutism = 10
+	}
+}

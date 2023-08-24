@@ -3,13 +3,12 @@ add_government_reform = steppe_horde
 technology_group = nomad_group
 primary_culture = crimean
 religion = orthodox
-capital = 150	# Sofia
+capital = 4704 #Tarnovo
 
 set_government_rank = 2
 add_accepted_culture = bulgarian
 add_government_reform = martial_society_reform
 add_government_reform = religious_societies_reform
-add_government_reform = retain_tribal_hierarchy_reform
 
 1383.1.1 = {
 	monarch = {

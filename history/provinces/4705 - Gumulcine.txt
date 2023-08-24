@@ -3,11 +3,11 @@ controller = TSS
 culture = greek
 religion = orthodox
 capital = "Gumulcine"
-trade_goods = livestock
+trade_goods = olives
 hre = no
-base_tax = 2
+base_tax = 1
 base_production = 1
-base_manpower = 3
+base_manpower = 1
 is_city = yes
 add_core = TSS
 

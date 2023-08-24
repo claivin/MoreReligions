@@ -6326,47 +6326,47 @@ LVA_ideas = {
 	}
 }
 
-BUL_ideas = {
-	start = {	
-		merchants = 1
-		core_creation = -0.1		
-	}
+# BUL_ideas = {
+	# start = {	
+		# merchants = 1
+		# core_creation = -0.1		
+	# }
 	
-	bonus = {
-		infantry_power = 0.15
-	}
+	# bonus = {
+		# infantry_power = 0.15
+	# }
 	
-	trigger = {
-		tag = BUL
-	}
-	free = yes
+	# trigger = {
+		# tag = BUL
+	# }
+	# free = yes
 	
-	bul_idea_1 = {
-		stability_cost_modifier = -0.1
-	}
-	bul_idea_2 = {
-		global_heretic_missionary_strength = 0.02		
-	}
-	bul_idea_3 = {
- 		global_unrest = -1
-	}
-	bul_idea_4 = {
-		infantry_cost = -0.1
-	}
-	bul_idea_5 = {
-		prestige = 1
-	}
-	bul_idea_6 = {
-		land_morale = 0.10
-	}
-	bul_idea_7 = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
-	}
-}
+	# bul_idea_1 = {
+		# stability_cost_modifier = -0.1
+	# }
+	# bul_idea_2 = {
+		# global_heretic_missionary_strength = 0.02		
+	# }
+	# bul_idea_3 = {
+ 		# global_unrest = -1
+	# }
+	# bul_idea_4 = {
+		# infantry_cost = -0.1
+	# }
+	# bul_idea_5 = {
+		# prestige = 1
+	# }
+	# bul_idea_6 = {
+		# land_morale = 0.10
+	# }
+	# bul_idea_7 = {
+		# legitimacy = 1
+		# devotion = 1
+		# republican_tradition = 0.3
+		# meritocracy = 1
+		# horde_unity = 1
+	# }
+# }
 
 KIE_ideas = {
 	start = {

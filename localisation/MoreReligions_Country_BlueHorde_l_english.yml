@@ -47,6 +47,36 @@
  blue_horde_flavor.5.c: "We can make it on our own"
  MR_IF_THEY_ACCEPT_TT: "If they accept:\n"
  
+ blue_horde_flavor.6.t: "An offer from Kiev"
+ blue_horde_flavor.6.da: "The [KIE.GetMonarch.GetTitle] of Kiev, having defected from the Blue Horde, has proposed submission to the Bulgarian Khan offering to pay tribute and officiate various titles in exchange for some local autonomy."
+ blue_horde_flavor.6.db: "The [KIE.GetMonarch.GetTitle] of Kiev, having defected from the Blue Horde, has proposed submission to the Bulgarian Khan offering a large sum of coins in exchange for some leeway in this war."
+ blue_horde_flavor.6.a: "A reasonable offer."
+ blue_horde_flavor.6.b: "Such a short time will only do so much."
+ blue_horde_flavor.6.c: "I refuse."
+ 
+ blue_horde_flavor.7.t: "Triumph of the Blue Horde"
+ blue_horde_flavor.7.d: "The turmoil following the events of the death of Ugechi Khan has finally subsided. A relative of the former Khan, [Root.GetMonarch.GetName] has been found and legitimized as his successor. Theodore has been found dead in creek with an arrow piercing his chest; his father has abdicated in both equal measures of grief and shame. The Bulgarian Ilkhanate has been dissolved."
+ blue_horde_flavor.7.a: "I have little sympathy for traitors."
+ 
+ blue_horde_flavor.8.t: "Collapse of the Blue Horde"
+ blue_horde_flavor.8.d: "As empires rise and fall, so did ours. Once the seat of civilization in Eastern Europe, poised to claim and make real the title of 'Third Rome', it has all come crashing down in one fell swoop. Perhaps we may recover, but it will be a long and arduous road."
+ blue_horde_flavor.8.a: "It begins."
+ 
+ blue_horde_flavor.9.t: "The Second Bulgarian Empire"
+ blue_horde_flavor.9.d: "With the defeat of the Blue Horde, the Bulgarian Khanate has ascended to greater heights than it could ever reach as a subordinate. The military prowess that was matured as a march of the Blue Horde and feared throughout Europe and across the steppes has been set loose upon the world.\n\nThough it is ruled by and in the fashion of a Mongolic state, the Second Bulgarian Empire follows in the footsteps of the First, jockeying for position as a top dog in Eastern Europe. With the center of the Ruthenian Orthodox Church and multiple key urban centers, who can deny it?"
+ blue_horde_flavor.9.a: "God have mercy on our enemies."
+ 
+ blue_horde_flavor.10.t: "Out of the Blue"
+ blue_horde_flavor.10.d: "As each of the former tribal leaders kneel and swear loyalty to the [Root.GetMonarch.GetTitle] of the former Blue Horde, the final acts of fealty are complete. What once was a state formed around the old Mongol traditions and clans, we have created a modern state. It is only befitting that such a drastic change of policy and character be met with an equally drastic inauguration.\n\nAs the [Root.GetMonarch.GetTitle] stands to greet the his new subjects, he looks past them and into the crowd of other counts and dukes and new nobles for this new country. He waits for the lull in the cheering and declares: On this day, in the Year of Our Lord [GetYear], this country will be christened as..."
+ blue_horde_flavor.10.a: "Ruthenia!"
+ blue_horde_flavor.10.b: "Ukraina!"
+ blue_horde_flavor.10.c: "Cumania!"
+ blue_horde_flavor.10.e: "Kiev!"
+ 
+ NAME_RUTHENIA: "Ruthenia"
+ NAME_UKRAINE: "Ukraina"
+ NAME_CUMANIA: "Cumania"
+ NAME_KIEV: "Kiev"
  
 #modifiers
  EST_BLH_CHURCH_REGENCY: "Metropolitan of Kiev Intervenes"

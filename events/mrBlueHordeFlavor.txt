@@ -534,7 +534,7 @@ country_event = {
 	}
 	
 	option = { #Decline Offer
-		name = blue_horde_flavor.6.b
+		name = blue_horde_flavor.6.c
 		ai_chance = { factor = 0 }
 	}
 }
@@ -548,18 +548,35 @@ country_event = {
 	desc = blue_horde_flavor.7.d
 	trigger = { }
 	picture = POPE_PREACHING_eventPicture
-
+	
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			superregion = eastern_europe_superregion
+		}
+	}
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = { #triggered by end of war with Blue horde defeat
 		tag = BLH
 	}
-	option = {
-		name = blue_horde_flavor.7.b
-		inherit = BUL
+	
+	immediate = {
+		remove_country_modifier = blh_no_heir_till_war_over
+		remove_country_modifier = blh_no_less_reform
+		remove_country_modifier = blh_tribal_powergrab
+		
+		define_ruler = {
+			dynasty = "Sartakovich"
+			culture = ROOT
+			religion = ROOT
+		}
 	}
 	
-	
+	option = {
+		name = blue_horde_flavor.7.a
+		inherit = BUL
+	}
 }
 
 #the war ends, Blue Horde Lost
@@ -576,8 +593,26 @@ country_event = {
 		tag = BLH
 	}
 	
+	immediate = {
+		remove_country_modifier = blh_no_heir_till_war_over
+		remove_country_modifier = blh_no_less_reform
+		remove_country_modifier = blh_tribal_powergrab
+		
+		define_ruler = {
+			dynasty = "Sartakovich"
+			culture = ROOT
+			religion = ROOT
+		}
+		
+		BUL = {
+			country_event = {
+				id = blue_horde_flavor.9
+			}
+		}
+	}
+	
 	option = {
-		name = blue_horde_flavor.8.b
+		name = blue_horde_flavor.8.a
 		
 		set_country_flag = mr_blh_lost_clergy
 		if = {
@@ -605,5 +640,68 @@ country_event = {
 			}
 			remove_government_reform = centralize_tribal_power_reform
 		}
+	}
+}
+
+#Bulgarian Empire
+country_event = {
+	id = blue_horde_flavor.9
+	title = blue_horde_flavor.9.t
+	desc = blue_horde_flavor.9.d
+	trigger = { }
+	picture = POPE_PREACHING_eventPicture
+	
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			OR = {
+				superregion = eastern_europe_superregion
+				superregion = europe_superregion
+			}
+		}
+	}
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { } #triggered by blue_horde_flavor.9
+	
+	option = {
+		name = blue_horde_flavor.9.a
+		set_government_rank = 3
+		change_adm = 1
+	}
+}
+
+#Blue Horde picks name
+country_event = {
+	id = blue_horde_flavor.10
+	title = blue_horde_flavor.10.t
+	desc = blue_horde_flavor.10.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {} #triggered by taking final reform to switch away from tribal
+	
+	option = {
+		name = blue_horde_flavor.10.a
+		override_country_name = NAME_RUTHENIA
+	}
+	
+	option = {
+		name = blue_horde_flavor.10.b
+		override_country_name = NAME_UKRAINE
+	}
+	
+	option = {
+		name = blue_horde_flavor.10.c
+		override_country_name = NAME_CUMANIA
+	}
+	
+	option = {
+		name = blue_horde_flavor.10.e
+		trigger = {
+			owns = 280
+		}
+		override_country_name = NAME_KIEV
 	}
 }
