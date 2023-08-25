@@ -1478,3 +1478,35 @@ BUL_ideas = {
 		max_absolutism = 10
 	}
 }
+YNN_ideas = {
+	start = {
+		tolerance_heretic = 3
+		land_morale = 0.15
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	free = yes
+	trigger = { tag = YNN }
+	YNN_ideas_1 = { #Yuan Legitimacy
+		core_creation = -0.15
+	}
+	YNN_ideas_2 = { #Naiman Cavalry
+		cavalry_power = 0.20
+	}
+	YNN_ideas_3 = { #Mineral Fields of Yunnan
+ 		global_trade_goods_size_modifier = 0.1
+	}
+	YNN_ideas_4 = { #Communities of Zhongjing
+		idea_cost = -0.1
+	}
+	YNN_ideas_5 = { #Artisan Households
+		artillery_cost = -0.20
+	}
+	YNN_ideas_6 = { #Central Asian Tanmachi
+		global_unrest = -2
+	}
+	YNN_ideas_7 = { #The Mountain Province
+		defensiveness = 0.30
+	}
+}
