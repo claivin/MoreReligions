@@ -28,3 +28,31 @@ maitreya_luoyang = {
 	}
 	
 }
+
+sacred_taishan = {
+	potential = {
+			normal_or_historical_nations = yes
+	}
+	trigger = {
+		owner = {
+			OR = {
+				religion = mr_jingtianfazu
+				religion = mr_taoism
+			}
+		}
+	}
+	
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

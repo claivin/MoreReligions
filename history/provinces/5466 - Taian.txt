@@ -16,4 +16,6 @@ add_core = QIC
 discovered_by = chinese
 discovered_by = nomad_group
 
+add_province_triggered_modifier = sacred_taishan
+
 1444.11.12 = { trade_goods = unknown }
