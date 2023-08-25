@@ -418,8 +418,8 @@
  PROV4211: "Kuizhou"
  PROV_ADJ4211: "Kuizhou"
  
- PROV672: "Chengde"
- PROV_ADJ672: "Chengde"
+ PROV672: "Changde"
+ PROV_ADJ672: "Changde"
  
  hunan_area: "North Hunan"
  
@@ -428,6 +428,9 @@
  
  PROV667: "Guangzhou"
  PROV_ADJ667: "Guangzhou"
+ 
+ PROV1816: "Beiping"
+ PROV_ADJ1816: "Beiping"
  
  CMI: "Xuanweisi"
  CMI_ADJ: "Xuanweisi"
