@@ -4,8 +4,8 @@ technology_group = chinese
 religion = confucianism
 add_harmonized_religion = mr_jingtianfazu
 religious_school =  mr_neo_confucian_school
-primary_culture = jianghuai
-capital = 1816	# Nanjing
+primary_culture = zhongyuan
+capital = 688 # Kaifeng
 historical_rival = GSC
 historical_rival = SHU
 
@@ -47,6 +47,7 @@ historical_rival = SHU
 		adm = 3
 		dip = 2
 		mil = 4
+		birth_date = 1402.12.14
 	}
 }
 
