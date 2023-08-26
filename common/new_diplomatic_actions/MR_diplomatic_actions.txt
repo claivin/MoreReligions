@@ -1,0 +1,95 @@
+mr_vassalize_tributary = {
+    category = influence          # Which diplomatic action list the action will appear in.
+	
+    require_acceptance = no  # Whether the action needs to be accepted by the target country for the accept effect to execute.
+    
+    # Determines when the action is visible
+    is_visible = {
+        uses_karma = yes
+		FROM = { is_subject_of_type_with_overlord = { who = ROOT type = tributary_state } }
+    }
+    
+    # Determines when the action can be taken
+    is_allowed = {
+        FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 200
+			}
+			NOT = { liberty_desire = 5 } 
+		}
+		custom_trigger_tooltip = {
+			tooltip = has_neutral_karma_tooltip
+			NOT = { karma = 33 }
+			karma = -33
+		}
+		custom_trigger_tooltip = {
+			tooltip = not_annexed_within_10_years
+			NOT = {
+				has_country_modifier = annexed_subject_tribute_MOD
+			}
+		}
+		variable_arithmetic_trigger = {
+			custom_tooltip = root_dip_10_times_more
+			export_to_variable = {
+				which = from_total_development
+				value = trigger_value:total_development
+				who = FROM
+			}
+			export_to_variable = {
+				which = our_total_dip
+				value = trigger_value:dip_power
+			}
+			multiply_variable = { which = from_total_development value = 10 }
+			check_variable = { which = our_total_dip which = from_total_development }
+		}
+		variable_arithmetic_trigger = {
+		custom_tooltip = from_total_development_is_30_percent_times_bigger_than_ours
+			export_to_variable = {
+				which = our_total_development_1
+				value = trigger_value:total_development
+			}
+			export_to_variable = {
+				which = from_total_development_1
+				value = trigger_value:total_development
+				who = FROM
+			}
+			multiply_variable = { which = from_total_development_1 value = 1.3 }
+			check_variable = { which = our_total_development_1 which = from_total_development_1 }
+		}
+    }
+    
+    # Which effects to execute on acceptance
+    on_accept = {
+       vassalize = FROM
+	   add_karma = -50
+	   add_country_modifier = {
+			name = annexed_subject_tribute_MOD
+			hidden = yes
+			duration = 3650
+		}
+		export_to_variable = {
+			which = from_total_development_2
+			value = trigger_value:total_development
+			who = FROM
+		}
+		while = {
+			limit = {
+				#While their total development has 1, lower dip power by 10.
+				check_variable = {
+					which = from_total_development_2
+					value = 1
+				}
+			}
+			add_dip_power = -10
+			subtract_variable = {
+				which = from_total_development_2
+				value = 1
+			}
+		}
+    }
+	
+    ai_will_do = {
+        always = yes
+	}
+}

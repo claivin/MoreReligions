@@ -2,6 +2,7 @@ cb_vassalize_mission_karma = {
 	valid_for_subject = no
 
 	prerequisites = {
+		has_global_flag = NO_BUDDHIST_FLG_TT
 		uses_karma = yes
 		NOT = { has_country_flag = karma_final_neutral }
 		if = {
@@ -72,6 +73,7 @@ cb_better_vassalize_mission_karma = {
 	valid_for_subject = no
 
 	prerequisites = {
+		has_global_flag = NO_BUDDHIST_FLG_TT
 		uses_karma = yes
 		has_country_flag = karma_final_neutral
 		if = {

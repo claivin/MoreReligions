@@ -535,7 +535,6 @@ add_innovativeness_or_monarch_power = {
 		[[mil]add_mil_power = $mil$]
 	}
 }
-
 change_piety_effect = {
 	if = {
 		limit = { uses_piety = yes }

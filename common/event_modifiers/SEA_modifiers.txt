@@ -12,3 +12,5 @@ shan_tech = {
 shan_dominance = {
 	culture_conversion_cost = -0.15
 }
+annexed_subject_tribute_MOD = {
+}

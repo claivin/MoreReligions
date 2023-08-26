@@ -22,3 +22,13 @@
  
  
  guinean_triggered_modifier: "Guinean Invasion"
+ 
+ annexed_subject_tribute_MOD: "Annexed Subject"
+ 
+ mr_vassalize_tributary_title: "Vassalize Tributary"
+ mr_vassalize_tributary_tooltip: "Vassalize our Tributary using diplomacy and religious authority."
+ from_total_development_is_30_percent_times_bigger_than_ours: "Our total development is §Y30%§! more than the target."
+ not_annexed_within_10_years: "We have not Vassalized a Tributary in the past 10 Years."
+ root_dip_10_times_more: "We need §Y10§! Diplomatic Power times the target's §YTotal Development§!."
+ mr_vassalize_tributary_desc: "Vassalize our Tributary using diplomacy and religious authority.\n\nThis will cause us to §YVassalize the target§!.\n\nWe will gain §R-50§! §YKarma§!.\n\nWe will lose §Y10§! Diplomatic Power for each point of the target's §YTotal Development§!.\n\nWe will not be able to do this for another §Y10 years§!."
+ 
