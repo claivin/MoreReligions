@@ -2,7 +2,7 @@
 
 graphical_culture = indiangfx
 
-color = { 156  21  152 }
+color = { 123  69  160 }
 
 historical_idea_groups = {
 	aristocracy_ideas

@@ -800,3 +800,52 @@ country_event = {
 		name = mrJapEvents.3.b
 	}
 }
+
+#Japan Start up event
+country_event = {
+	id = mrJapEvents.4
+	title = mrJapEvents.4.t
+	desc = {
+		trigger = {
+			tag = JAP
+		}
+		desc = mrJapEvents.4.d
+	}
+	desc = {
+		trigger = {
+			OR = {
+				tag = AKT
+				tag = NTT
+				tag = HSK
+				tag = HTK
+				tag = SMZ
+			}
+		}
+		desc = mrJapEvents.4.d.1
+	}
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mrJapEvents.4.a
+		trigger = {
+			tag = JAP
+		}
+		custom_tooltip = mr_jap_4_TT
+	}
+	
+	option = {
+		name = mrJapEvents.4.b
+		trigger = {
+			OR = {
+				tag = AKT
+				tag = NTT
+				tag = HSK
+				tag = HTK
+				tag = SMZ
+			}
+		}
+		custom_tooltip = mr_jap_4_TT_1
+	}
+}

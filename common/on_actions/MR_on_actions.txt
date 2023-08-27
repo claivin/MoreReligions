@@ -48,6 +48,7 @@ on_startup = {
 		mr_startup_events.3
 		mr_startup_events.4
 		HUN_flavor.2
+		mr_startup_events.5
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {

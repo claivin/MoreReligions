@@ -318,3 +318,50 @@ country_event = {
 		#empty
 	}
 }
+country_event = {
+	id = mr_startup_events.5
+	title = mr_startup_events.5.t
+	desc = {
+		trigger = {
+			tag = JAP
+		}
+		desc = mr_startup_events.5.d
+	}
+	desc = {
+		trigger = {
+			OR = {
+				tag = AKT
+				tag = NTT
+				tag = HSK
+				tag = HTK
+				tag = SMZ
+			}
+		}
+		desc = mr_startup_events.5.d.1
+	}
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = mr_startup_events.5.a
+		trigger = {
+			tag = JAP
+		}
+		custom_tooltip = mr_jap_4_TT
+	}
+	
+	option = {
+		name = mr_startup_events.5.b
+		trigger = {
+			OR = {
+				tag = AKT
+				tag = NTT
+				tag = HSK
+				tag = HTK
+				tag = SMZ
+			}
+		}
+		custom_tooltip = mr_jap_4_TT_1
+	}
+}
