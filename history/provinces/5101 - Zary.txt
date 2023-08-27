@@ -1,4 +1,4 @@
-#5101 - Zary
+#5101 - Žary
 
 owner = SOR
 controller = SOR

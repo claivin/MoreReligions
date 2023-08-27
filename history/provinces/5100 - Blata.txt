@@ -3,10 +3,10 @@
 owner = SOR
 controller = SOR
 add_core = SOR
-capital = "Blata"
+capital = "Grodk"
 culture = sorbian
 religion = catholic
-trade_goods = cloth
+trade_goods = livestock
 hre = yes
 base_tax = 2
 base_production = 2

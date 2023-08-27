@@ -1,17 +1,17 @@
-#5089 - Cloppenberg
+#5105 - Bütow
 
-owner = MUN
-controller = MUN
-culture = hannoverian
+owner = CMM
+controller = CMM
+add_core = CMM
+capital = "Bütow"
+culture = pommeranian
 religion = catholic
-trade_goods = cloth
-capital = "Cloppenberg"
-base_tax = 3
-base_production = 3
+trade_goods = livestock
+hre = no
+base_tax = 2
+base_production = 2
 base_manpower = 1
 is_city = yes
-hre = yes
-add_core = MUN
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

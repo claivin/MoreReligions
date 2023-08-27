@@ -1,16 +1,17 @@
-#5104 - Butow
+#5104 - Köslin
 
 owner = PMR
 controller = PMR
 add_core = PMR
+add_core = CMM
 culture = pommeranian
 religion = catholic
 hre = yes
 base_tax = 2
 base_production = 2
 trade_goods = fish
-base_manpower = 1
-capital = "Bütow"
+base_manpower = 2
+capital = "Köslin"
 is_city = yes
 
 discovered_by = eastern

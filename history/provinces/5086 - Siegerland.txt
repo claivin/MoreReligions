@@ -3,14 +3,14 @@
 owner = NSA
 controller = NSA
 add_core = NSA
-capital = "Siegerland"
-trade_goods = copper
+capital = "Siegen"
+trade_goods = iron
 hre = yes
-culture = hessian
+culture = hannoverian
 religion = mr_fraticelli
 base_tax = 3 
-base_production = 3
-base_manpower = 3
+base_production = 4
+base_manpower = 2
 is_city = yes
 
 discovered_by = eastern

@@ -4,12 +4,12 @@ owner = LUX
 controller = LUX 
 capital = "Bitburg"
 is_city = yes
-culture = wallonian
+culture = hessian
 religion = catholic 
 hre = yes
-base_tax = 5
-base_production = 5
-trade_goods = iron
+base_tax = 3
+base_production = 3
+trade_goods = grain
 base_manpower = 2
 add_core = LUX
 

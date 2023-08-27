@@ -1,15 +1,15 @@
-#5107 - Kromeriz
+#5107 - Kroměříž
 
 owner = BOH
 controller = BOH
-capital = "Kromeriz"
+capital = "Kroměříž"
 culture = czech
 religion = hussite
-trade_goods = wine 
+trade_goods = grain
 hre = yes
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 2
+base_production = 2
+base_manpower = 1
 #is_city = yes
 add_core = BOH
 add_core = MVA

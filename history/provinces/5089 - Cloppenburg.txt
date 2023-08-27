@@ -1,17 +1,17 @@
-#5105 - Cammin
+#5089 - Cloppenburg
 
-owner = CMM
-controller = CMM
-add_core = CMM
-capital = "Cammin"
-culture = prussian
+owner = MUN
+controller = MUN
+culture = hannoverian
 religion = catholic
-trade_goods = grain
-hre = no
-base_tax = 3 
-base_production = 4
+trade_goods = livestock
+capital = "Cloppenburg"
+base_tax = 3
+base_production = 2
 base_manpower = 3
 is_city = yes
+hre = yes
+add_core = MUN
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
