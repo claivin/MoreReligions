@@ -1,0 +1,176 @@
+#MR events for China not relating to a specific tag
+namespace = mrChinaEvents
+normal_or_historical_nations = yes
+
+#The Prince of Chu's Ambition
+country_event = {
+	id = mrChinaEvents.0
+	title = "mrChinaEvents.0.t"
+	desc = "mrChinaEvents.0.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = GSC
+			tag = GHC
+			tag = SHU
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = { 
+		name = "mrChinaEvents.0.a" 
+		custom_tooltip = mrChinaEvents.0.a.tt
+		
+		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					OR = {
+						tag = GSC
+						tag = GHC
+						tag = SHU
+					}
+				}
+				country_event = { id = mrChinaEvents.1 }
+			}
+			GHC = {
+				country_event = { id = mrChinaEvents.2 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+			}
+		}
+	}
+}
+
+#The Prince of Chu's Ambition - for whoever didn't fire the first one 
+country_event = {
+	id = mrChinaEvents.1
+	title = "mrChinaEvents.0.t"
+	desc = "mrChinaEvents.0.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = "mrChinaEvents.0.a" 
+		custom_tooltip = mrChinaEvents.0.a.tt
+	}
+}
+
+#Prince of Chu gets idea to invade Song
+country_event = {
+	id = mrChinaEvents.2
+	title = "mrChinaEvents.2.t"
+	desc = "mrChinaEvents.2.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "mrChinaEvents.2.a"
+		
+		hidden_effect = {
+			GSC = {
+				country_event = { id = mrChinaEvents.3 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+			}
+		}
+	}
+}
+
+#Prince of Chu starts preparations for invasion - Song event
+country_event = {
+	id = mrChinaEvents.3
+	title = "mrChinaEvents.3.t"
+	desc = "mrChinaEvents.3.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "mrChinaEvents.3.a"
+		
+		hidden_effect = {
+			GHC = {
+				country_event = { id = mrChinaEvents.4 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+			}
+		}
+	}
+}
+
+#Prince of Chu crosses the border - Han event
+country_event = {
+	id = mrChinaEvents.4
+	title = "mrChinaEvents.4.t"
+	desc = "mrChinaEvents.4.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "mrChinaEvents.4.a"
+	
+		hidden_effect = {
+			GSC = {
+				country_event = { id = mrChinaEvents.5 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+			}
+		}
+	}
+}
+
+#Prince of Chu crosses the border - Song event
+country_event = {
+	id = mrChinaEvents.5
+	title = "mrChinaEvents.5.t"
+	desc = "mrChinaEvents.5.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "mrChinaEvents.5.a"
+	
+		hidden_effect = {
+			GHC = {
+				country_event = { id = mrChinaEvents.6 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+			}
+		}
+	}
+}
+
+#Han declares war on Song 
+country_event = {
+	id = mrChinaEvents.6
+	title = "mrChinaEvents.6.t"
+	desc = "mrChinaEvents.6.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "mrChinaEvents.6.a"
+	
+		hidden_effect = {
+			GSC = {
+				country_event = { id = mrChinaEvents.7 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+			}
+		}
+	}
+}
+
+#Song received declaration of war
+country_event = {
+	id = mrChinaEvents.7
+	title = "mrChinaEvents.7.t"
+	desc = "mrChinaEvents.7.d"
+	picture = CHINESE_GENERAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "mrChinaEvents.7.a"	
+	}
+}
