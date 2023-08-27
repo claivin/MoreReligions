@@ -955,3 +955,149 @@ tomato = {
 		}
 	}
 }
+maize = {
+	color = { 1.00 0.93 0.35 }
+	modifier = {
+		governing_capacity_modifier = 0.10
+	}
+	province = {
+		local_defensiveness = 0.1
+	}
+	chance = {
+		factor = 30
+		#will not spawn outside america
+		modifier = {
+			factor = 0
+			OR = {
+				continent = europe
+				continent = asia
+				continent = africa
+				continent = oceania
+			}
+		}
+	}
+}
+jade = {
+	color = { 0.45 0.84 0.61 }
+	modifier = {
+		governing_capacity_modifier = 0.10
+	}
+	province = {
+		local_defensiveness = 0.1
+	}
+	chance = {
+		factor = 10
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = steppe
+				has_terrain = desert
+				has_terrain = coastal_desert
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = coastline
+				has_terrain = glacier
+				has_terrain = jungle
+				has_terrain = farmlands
+				has_terrain = woods
+			}
+		}
+	}
+}
+shellfish = {
+	color = { 0.98 0.40 0.55 }
+	modifier = {
+		governing_capacity_modifier = 0.10
+	}
+	province = {
+		local_defensiveness = 0.1
+	}
+	chance = { #copied fish weights
+		factor = 20
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
+		modifier = {
+			factor = 0.65
+			OR = {
+				region = carribeans_region
+				region = malaya_region
+				region = moluccas_region
+				region = indonesia_region
+			}
+		}
+		modifier = {
+			factor = 15
+			area = newfoundland_area
+		}
+		modifier = {
+			factor = 1.1
+			OR = {
+				has_terrain = coastline
+				has_terrain = coastal_desert
+			}
+		}
+		modifier = {
+			factor = 1.2
+			has_terrain = glacier
+		}
+	}
+}
+tin = {
+	color = { 0.25 0.28 0.34 }
+	modifier = {
+		governing_capacity_modifier = 0.10
+	}
+	province = {
+		local_defensiveness = 0.1
+	}
+	chance = { #copied silver weights
+		factor = 4
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = steppe
+				has_terrain = desert
+				has_terrain = coastal_desert
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = coastline
+				has_terrain = glacier
+				has_terrain = jungle
+				has_terrain = farmlands
+				has_terrain = woods
+			}
+		}
+	}
+}
+amber = {
+	color = { 0.98 0.63 0.11 }
+	modifier = {
+		governing_capacity_modifier = 0.10
+	}
+	province = {
+		local_defensiveness = 0.1
+	}
+	chance = { #copied silver weights
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				has_terrain = steppe
+				has_terrain = desert
+				has_terrain = coastal_desert
+				has_terrain = drylands
+				has_terrain = grasslands
+				has_terrain = savannah
+				has_terrain = coastline
+				has_terrain = glacier
+				has_terrain = jungle
+				has_terrain = farmlands
+				has_terrain = woods
+			}
+		}
+	}
+}

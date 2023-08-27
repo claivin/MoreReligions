@@ -101,3 +101,18 @@ potato = {
 tomato = {
 	base_price = 2.5
 }
+maize = {
+	base_price = 2.5
+}
+jade = {
+	base_price = 2.5
+}
+shellfish = {
+	base_price = 2.5
+}
+tin = {
+	base_price = 2.5
+}
+amber = {
+	base_price = 2.5
+}

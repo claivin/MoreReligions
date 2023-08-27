@@ -116,3 +116,18 @@
  
  tomato:0 "Tomatoes"
  tomatoDESC: "Juicy, slightly acidic, red, and plump."
+ 
+ maize: "Maize"
+ maizeDESC: ""
+ 
+ jade: "Jade"
+ jadeDESC: ""
+ 
+ shellfish: "Shellfish"
+ shellfishDESC: ""
+  
+ tin: "Tin"
+ tinDESC: ""
+ 
+ amber: "Amber"
+ amberDESC: ""
