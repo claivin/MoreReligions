@@ -400,3 +400,48 @@ generic_military_missions_4 = { #military line
 		}
 	}
 }
+generic_military_missions_5 = { #extra line
+	slot = 5
+	generic = yes
+	ai = no
+	potential = { always = yes }
+	
+	g_mission_elite_regiments = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { g_mission_military_ethos }
+		position = 2
+		trigger = {
+			OR = {
+				OR = {
+					full_idea_group = offensive_ideas
+					full_idea_group = defensive_ideas
+					full_idea_group = quality_ideas
+				}
+				has_institution = prof_armies_inst
+			}
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = init_elite_units }
+					}
+					set_variable = {
+						which = elite_unit_xp
+						value = 0
+					}
+					set_country_flag = init_elite_units
+				}
+			}
+			add_country_modifier = {
+				name = gme_basic_elite_units_unlocked
+				duration = -1
+			}
+			add_country_modifier = {
+				name = gme_basic_elite_units_modifier
+				duration = -1
+			}
+			custom_tooltip = elite_regiments_mission_tt
+		}
+	}
+}

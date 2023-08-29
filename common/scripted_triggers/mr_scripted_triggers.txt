@@ -37,5 +37,14 @@ has_unified_culture = {
 		}
 	}
 }
-	
-		
+
+has_not_unlocked_t1_elite_units = {
+	NOT = { has_country_modifier = elite_royal_guard_1 }
+	NOT = { has_country_modifier = elite_sapper_1 }
+	NOT = { has_country_modifier = elite_vanguard_1 }
+}
+
+has_not_unlocked_t2_elite_units = {
+	NOT = { has_country_modifier = elite_royal_guard_11 }
+	NOT = { has_country_modifier = elite_royal_guard_12 }
+}

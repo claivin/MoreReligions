@@ -215,3 +215,106 @@ add_manufactory = {
 		add_building = mrb_quarry
 	}
 }
+
+
+#for elite unit xp
+elite_unit_xp_combat_effect = {
+	set_variable = {
+		which = base_xp
+		value = 1
+	}
+	#find ratio or rajput/total FL
+	export_to_variable = {
+		variable_name = xp_num_of_rajput_var
+		value = trigger_value:num_of_rajput
+		who = ROOT
+	}
+	multiply_variable = {
+		which = base_xp
+		which = xp_num_of_rajput_var
+	}
+	export_to_variable = {
+		variable_name = xp_army_size_var
+		value = trigger_value:army_size
+		who = ROOT
+	}
+	divide_variable = {
+		which = base_xp
+		which = xp_army_size_var
+	}
+	
+	#########
+	set_variable = {
+		which = land_units_killed_copy
+		which = land_units_killed
+	}
+	set_variable = {
+		which = land_units_lost_copy
+		which = land_units_lost
+	}
+	#ratio of battle
+	divide_variable = {
+		which = land_units_killed_copy
+		which = land_units_lost_copy
+	}
+	
+	#extra xp from casualties maxed out at 2x
+	if = {
+		limit = {
+			check_variable = {
+				which = land_units_killed_copy
+				value = 2
+			}
+		}
+		set_variable = {
+			which = land_units_killed_copy
+			value = 2
+		}
+	}
+	
+	multiply_variable = {
+		which = base_xp
+		which = land_units_killed_copy
+	}
+	
+	#add to elite_unit_xp
+	#elite_unit_xp initialized in generic_mission_events.50
+	change_variable = {
+		which = elite_unit_xp
+		which = base_xp
+	}
+}
+
+set_xp_costs_effect = {
+
+	##cost modifiers for levelups
+	set_variable = {
+		which = branchA_base_cost
+		value = 100
+	}
+	set_variable = {
+		which = branchB_base_cost
+		value = 100
+	}
+	set_variable = {
+		which = branchC_base_cost
+		value = 100
+	}
+	######
+	set_variable = {
+		which = branchApath_base_cost
+		value = 200
+	}
+	##modifiers for cost changes go here vvv
+	
+	#for example
+	# if = {
+		# limit = {
+			# has_country_flag = cheaper_sappers
+		# }
+		# change_variable = {
+			# which = branchB_base_cost
+			# value = -20
+		# }
+	# }
+}

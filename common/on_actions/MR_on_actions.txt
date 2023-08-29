@@ -714,6 +714,12 @@ on_battle_won_country = {
 		}
 		add_karma = 1
 	}
+	if = {
+		limit = {
+			mission_completed = g_mission_elite_regiments
+		}
+		elite_unit_xp_combat_effect = yes
+	}
 }
 
 # country

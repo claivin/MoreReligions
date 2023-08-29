@@ -1,0 +1,25 @@
+elite_royal_guard_1 = {
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
+	is_rajput_modifier = yes
+}
+elite_sapper_1 = {
+	siege_ability = 0.05
+	is_rajput_modifier = yes
+}
+elite_vanguard_1 = {
+	morale_damage = 0.025
+	is_rajput_modifier = yes
+}
+
+#Royal Guard Tiers
+elite_royal_guard_11 = { #Heavy Armor
+	shock_damage_received = -0.10
+	fire_damage_received = -0.10
+	is_rajput_modifier = yes
+}
+elite_royal_guard_12 = { #Shield and Polearm
+	shock_damage_received = -0.15
+	fire_damage_received = -0.05
+	is_rajput_modifier = yes
+}

@@ -339,6 +339,10 @@ country_event = {
 		}
 		desc = mr_startup_events.5.d.1
 	}
+	trigger = {
+		ai = no
+		tag = JAP
+	}
 	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
 	
 	is_triggered_only = yes

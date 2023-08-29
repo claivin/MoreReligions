@@ -43,6 +43,10 @@
  g_mission_interests_abroad_tt: "Mission requirement is dependent on your previously chosen Naval Ethos"
  g_mission_interests_abroad_tt: "Mission reward is dependent on your previously chosen Naval Ethos"
  
+ g_mission_elite_regiments_title: "Elite Regiments"
+ g_mission_elite_regiments_desc: ""
+ elite_regiments_mission_tt: "Unlocks §PElite Units§!\nUnlocks §PElite Unit§! Specialization"
+ 
  declare_long_term_diplo_friend_title: "Request a Long Term Alliance"
  declare_long_term_diplo_friend_desc: "Standing together through thick and thin, our ally has proven themselves loyal and it may be in our interests to form a stronger tie than usual with them."
  historical_friend_gme_tt: "We ask our ally to become Historical Friends"
@@ -53,6 +57,10 @@
  
  create_new_cash_crop_gme_title: "Plant a New Cash Crop"
  create_new_cash_crop_gme_desc: "We should encourage some of our farmers to grow some crops for the benefit of the state!"
+ 
+ elite_unit_menu_gme_title: "§PElite Unit§! Specialization"
+ elite_unit_menu_gme_desc: "..."
+ display_current_xp_tt: "Current §PElite Unit§! Experience: [Root.elite_unit_xp.GetValue]/100--[Root.land_units_killed.GetValue]--[Root.land_units_lost.GetValue]--bxp[Root.base_xp.GetValue]--raj[Root.xp_num_of_rajput_var.GetValue]--landunitsratio[Root.land_units_killed_copy.GetValue]"
  
  mr_recruiting_effort: "Recruiting Effort"
  mr_territorial_ambitions: "Territorial Ambitions"
@@ -210,3 +218,18 @@
  generic_mission_events.12.b: "Gold, of course!"
  generic_mission_events.12.c: "Silver - every bit as good as gold!"
  generic_mission_events.12.e: "Copper may not quite as rare, but every bit as valuable."
+ 
+ generic_mission_events.50.t: "Elite Unit Specialization"
+ generic_mission_events.50.d: "..."
+ generic_mission_events.50.a: "§YGo Back§!"
+ generic_mission_events.50.a1: "Inaugurate the Royal Guard."
+ generic_mission_events.50.a2: "Form the Sapper Corps."
+ generic_mission_events.50.a3: "Train Vanguard Units."
+ 
+ generic_mission_events.50.a11: "Equip the Royal Guard with heavy armor."
+ generic_mission_events.50.a12: "Equip the Royal Guard with heavy shields and polearms."
+ 
+ elite_unit_xp: "Elite Unit Experience"
+ gme_not_enough_xpA: "£no£ You must have at least §Y[Root.branchA_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpB: "£no£ You must have at least §Y[Root.branchB_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpC: "£no£ You must have at least §Y[Root.branchC_base_cost.GetValue] Elite Unit Experience§! to select this specialization."

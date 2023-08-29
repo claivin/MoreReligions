@@ -1711,6 +1711,7 @@ wharf = {
 		fish
 		salt
 		whales
+		shellfish
 	}
 	onmap = yes
 	on_built = {
@@ -1913,6 +1914,7 @@ tradecompany = {
 		rum
 		honey_wine
 		wine
+		amber
 	}
 	onmap = yes
 	on_built = {
@@ -1956,6 +1958,7 @@ farm_estate = {
 		vegetables
 		potato
 		tomato
+		maize
 	}
 	onmap = yes
 	on_built = {
@@ -2105,6 +2108,7 @@ mrb_mine = {
 		iron
 		sulfur
 		#silver
+		tin
 	}
 	onmap = yes
 	on_built = {
@@ -2219,6 +2223,7 @@ mrb_quarry = {
 	manufactory = {
 		stone
 		marble
+		jade
 	}
 	onmap = yes
 	on_built = {

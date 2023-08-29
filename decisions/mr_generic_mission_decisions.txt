@@ -87,4 +87,25 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	elite_unit_menu_gme = { #elite unit menu
+		potential = {
+			mission_completed = g_mission_elite_regiments
+			NOT = { has_country_flag = elite_unit_menu_active }
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = display_current_xp_tt
+				always = yes
+			}
+		}
+		effect = {
+			country_event = {
+				id = generic_mission_events.50
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

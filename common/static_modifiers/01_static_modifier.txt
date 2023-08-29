@@ -1,4 +1,5 @@
 rajput_regiment = {
+
 }
 army_tradition = {
 	recover_army_morale_speed = 0.1
