@@ -100,10 +100,12 @@ mr_blh_c3 = {
 			custom_tooltip = mr_diplomacy_bulgaria_tt
 			
 			BUL = {
-				limit = {
-					has_country_modifier = bul_upstart_khan
+				if = {
+					limit = {
+						has_country_modifier = bul_upstart_khan
+					}
+					remove_country_modifier = bul_upstart_khan
 				}
-				remove_country_modifier = bul_upstart_khan
 			}
 		}
 		ai_weight = {

@@ -100,7 +100,7 @@ karma_neutral_3 = {
 }
 karma_good_3 = {
 	build_cost = -0.10
-	missionary_strength = 0.02
+	global_missionary_strength = 0.02
 }
 karma_bad_3 = {
 	harsh_treatment_cost = -0.50

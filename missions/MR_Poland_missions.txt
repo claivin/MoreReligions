@@ -298,7 +298,7 @@ mr_pol_c5b = {
 						limit = {
 							owns_or_non_sovereign_subject_of = ROOT
 							development = 20
-							has_tax_building_trigger = 20
+							has_tax_building_trigger = yes
 						}
 						add_building_construction = {
 							building = cathederal
