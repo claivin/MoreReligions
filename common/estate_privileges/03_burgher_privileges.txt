@@ -2660,3 +2660,105 @@ estate_burghers_promote_burgher_bookkeeping = {
 		factor = 10
 	}
 }
+estate_burghers_cordoban_scholars = {
+icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.00
+	can_select = {
+	mission_completed = nav_keys_of_cordoba
+	}
+	is_valid = {
+		tag = NAV
+	}
+	benefits = {
+		tolerance_heathen = 3
+		tolerance_heretic = 3
+		idea_cost = -0.05
+	}
+	penalties = {
+		church_loyalty_modifier = -0.10
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+estate_burghers_control_over_the_coinage_catalonia = {
+	icon = privilege_gold_mint
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+	mission_completed = nav_catalonia_merchants
+	}
+	is_valid = {
+		tag = NAV
+	}
+	benefits = {
+		adm_advisor_cost = -0.2
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MINISTER_BURGHERS
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_BURGHERS
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_BURGHERS
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
+estate_burghers_polar_experts = {
+	icon = privilege_reqruit_conouistador
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = 0
+	can_select = {
+		mission_completed = nav_antarctic_fishing
+	}
+	is_valid = {
+		tag = NAV
+	}
+	benefits = {
+	}
+	on_granted_province = {
+			if = {
+				limit = {
+					OR = {
+					has_terrain = glacier
+					has_climate = arctic
+					}
+				}	
+				add_province_modifier = {
+					name = polar_experts
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_province_modifier = polar_experts
+				}
+				remove_province_modifier = polar_experts
+			}
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = polar_experts
+			}
+			remove_province_modifier = polar_experts
+		}
+	}	
+	ai_will_do = {
+		factor = 5
+	}
+}	
