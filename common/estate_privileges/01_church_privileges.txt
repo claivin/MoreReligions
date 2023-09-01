@@ -2783,3 +2783,48 @@ estate_church_donation_right = {
 		}
 	}
 }
+estate_church_waldensian_studies = {
+	icon = privilege_missionary
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	can_select = {
+	mission_completed = nav_bearn_clergy
+	}
+	is_valid = {
+		tag = NAV
+	}
+	benefits = {
+	global_missionary_strength = 0.02
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = RECRUIT_MINISTER_CHURCH
+		}
+		custom_tooltip = empty_text
+		enable_estate_action = {
+			estate_action = RECRUIT_INQUISITOR_CHURCH
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_CHURCH
+		}
+		custom_tooltip = empty_text
+		disable_estate_action = {
+			estate_action = RECRUIT_INQUISITOR_CHURCH
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = RECRUIT_MINISTER_CHURCH
+		}
+		disable_estate_action = {
+			estate_action = RECRUIT_INQUISITOR_CHURCH
+		}
+	}
+	ai_will_do = {
+		factor = 5
+	}
+}
