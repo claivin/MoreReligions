@@ -3459,3 +3459,42 @@ estate_nobles_expedition_rights = {
 		factor = 0
 	}
 }
+estate_nobles_diet_right_aragon = {
+	icon = privilege_government
+	loyalty = 0.0
+	influence = 0.05
+	max_absolutism = -5
+	can_select = {
+	mission_completed = nav_aragon_nobility
+	}
+	is_valid = {
+		tag = NAV
+	}
+	benefits = {
+		heir_chance = 0.5
+	}
+	on_granted = {
+		enable_estate_action = {
+			estate_action = CALL_DIET_NOBLES
+		}
+	}
+	on_invalid = {
+		disable_estate_action = {
+			estate_action = CALL_DIET_NOBLES
+		}
+	}
+	on_revoked = {
+		disable_estate_action = {
+			estate_action = CALL_DIET_NOBLES
+		}
+	}
+	mechanics = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.1
+			is_absolutism_active = yes
+		}
+	}
+}
