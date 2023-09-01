@@ -256,4 +256,14 @@
  mr_startup_events.5.a: "Flowers will bloom, even in grass that has been stomped upon..."
  mr_startup_events.5.b: "To lose is to win..."
  
- 
+  #Navarra Events
+ navarra_events.1.t: "The Luso-Basque Wedding"
+ navarra_events.2.t: "Claim the Lusitanian Crown"
+ navarra_events.3.t: "Demote the Portuguese crown back to a County"
+ navarra_events.4.t: "The Warden of Compostela"
+ navarra_events.5.t: "There can only be one"
+ navarra_events.6.t: "Amnesty to the Muslims"
+ navarra_events.7.t: "The Iberian Federation"
+ navarra_events.8.t: "The Golden Age of Whaling"
+ navarra_events.9.t: "Punish the Peasants of Couto Misto"
+ navarra_events.10.t: "The Abyss stared back"
