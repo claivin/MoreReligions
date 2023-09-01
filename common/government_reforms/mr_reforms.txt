@@ -216,7 +216,7 @@ kingdom_of_light_reform = {
 		tag = GSC
 	}
 	nation_designer_trigger = {
-			culture_group = chinese
+			culture_group = east_asian
 	}
 	maintain_dynasty = yes
 	legacy_equivalent = feudal_theocracy_legacy
@@ -253,7 +253,7 @@ empire_of_light_reform = {
 		is_emperor_of_china = yes
 	}
 	nation_designer_trigger = {
-			culture_group = chinese
+			culture_group = east_asian
 	}
 	maintain_dynasty = yes
 	legacy_equivalent = feudal_theocracy_legacy

@@ -31,4 +31,7 @@
  not_annexed_within_10_years: "We have not Vassalized a Tributary in the past 10 Years."
  root_dip_10_times_more: "We need §Y10§! Diplomatic Power times the target's §YTotal Development§!."
  mr_vassalize_tributary_desc: "Vassalize our Tributary using diplomacy and religious authority.\n\nThis will cause us to §YVassalize the target§!.\n\nWe will gain §R-50§! §YKarma§!.\n\nWe will lose §Y10§! Diplomatic Power for each point of the target's §YTotal Development§!.\n\nWe will not be able to do this for another §Y10 years§!."
+
+ han_song_war_loser: "Legitimacy in Tatters"
+ desc_han_song_war_loser: "Recent defeat by our greatest rival has left many both within and without our realm questioning our claim to the Mandate of Heaven."
  

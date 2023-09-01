@@ -3110,3 +3110,39 @@ take_capital_blue_horde = {
 
 	war_name = BLH_BUL_WAR_NAME
 }
+
+
+take_capital_han_song = {
+	type = take_capital
+	
+	attacker = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_demand_provinces
+#			po_create_mandate #commented out for now
+		}
+
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 1.0
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_demand_provinces
+#			po_create_mandate #commented out for now
+		}
+
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+	
+	war_name = HAN_SONG_WAR_NAME
+}
+		

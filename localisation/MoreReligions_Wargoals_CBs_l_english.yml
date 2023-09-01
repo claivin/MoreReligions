@@ -13,3 +13,14 @@
  
  cb_better_vassalize_mission_karma: "Buddhist Subjugation"
  cb_better_vassalize_mission_karma_desc: "We have balanced the need of our state and our clergy. We shall now seek to dominate our neighbors and bring them into the fold!"
+
+ HAN_SONG_WAR_NAME: "Great Han-Song War"
+ cb_han_song_war: "Great Han-Song War"
+ cb_han_song_war_desc: "The war between north and south can no longer be avoided. Only one Chinese state can claim the Mandate of Heaven."
+ po_create_mandate: "§YClaim the Mandate of Heaven§!"
+ po_create_mandate_desc: "[Root.GetName] will claim the Mandate of Heaven and become the undisputed §YEmperor of China§!."
+ CB_ALLOWED_po_create_mandate: "§YClaim the Mandate of Heaven§!"
+ PEACE_po_create_mandate: "§YClaim the Mandate of Heaven§!"
+ take_capital_han_song: "Take [From.GetCapitalName]"
+ take_capital_han_song_desc: "War goal is to take the capital."
+ 

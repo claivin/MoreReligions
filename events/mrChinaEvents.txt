@@ -40,7 +40,7 @@ country_event = {
 				country_event = { id = mrChinaEvents.1 }
 			}
 			GHC = {
-				country_event = { id = mrChinaEvents.2 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+				country_event = { id = mrChinaEvents.2 days = 365 random = 60 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
 			}
 		}
 	}
@@ -75,7 +75,7 @@ country_event = {
 		
 		hidden_effect = {
 			GSC = {
-				country_event = { id = mrChinaEvents.3 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+				country_event = { id = mrChinaEvents.3 days = 365 random = 60 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
 			}
 		}
 	}
@@ -95,7 +95,7 @@ country_event = {
 		
 		hidden_effect = {
 			GHC = {
-				country_event = { id = mrChinaEvents.4 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+				country_event = { id = mrChinaEvents.4 days = 180 random = 30 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
 			}
 		}
 	}
@@ -115,7 +115,7 @@ country_event = {
 	
 		hidden_effect = {
 			GSC = {
-				country_event = { id = mrChinaEvents.5 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+				country_event = { id = mrChinaEvents.5 days = 15 random = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
 			}
 		}
 	}
@@ -135,7 +135,7 @@ country_event = {
 	
 		hidden_effect = {
 			GHC = {
-				country_event = { id = mrChinaEvents.6 days = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+				country_event = { id = mrChinaEvents.6 days = 15 random = 5 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
 			}
 		}
 	}
@@ -149,13 +149,34 @@ country_event = {
 	picture = CHINESE_GENERAL_eventPicture
 	
 	is_triggered_only = yes
+	trigger = {
+		is_subject = no
+		exists = GSC
+		NOT = { alliance_with = GSC }
+		NOT = { war_with = GSC }
+		NOT = { truce_with = GSC }
+	}
+	
+	major = yes
 	
 	option = {
 		name = "mrChinaEvents.6.a"
+		
+		GHC = {
+			set_country_flag = han_song_war_ongoing 
+			declare_war_with_cb = {
+				who = GSC
+				casus_belli = cb_han_song_war
+			}
+		}
+
+		GSC = {
+			set_country_flag = han_song_war_ongoing
+		}
 	
 		hidden_effect = {
 			GSC = {
-				country_event = { id = mrChinaEvents.7 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
+				country_event = { id = mrChinaEvents.7 days = 3 } #THIS IS FOR TESTING ONLY CHANGE THIS LATER
 			}
 		}
 	}
@@ -172,5 +193,40 @@ country_event = {
 	
 	option = {
 		name = "mrChinaEvents.7.a"	
+	}
+}
+
+#Nerfing loser
+country_event = {
+	id = mrChinaEvents.8
+	title = "mrChinaEvents.8.t"
+	desc = "mrChinaEvents.8.d"
+	picture = "BAD_WITH_MONARCH_eventPicture"
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			AND = {
+				tag = GSC
+				truce_with = GHC
+			}
+			AND = {
+				tag = GHC
+				truce_with = GSC
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = han_song_war_ongoing
+			add_country_modifier = { name = han_song_war_loser duration = 9125 }
+		}
+	}
+
+	option = {
+		name = "mrChinaEvents.8.a"
+		add_stability = -2
 	}
 }

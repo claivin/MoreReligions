@@ -1,0 +1,11 @@
+﻿l_english:
+ china_events.31.t:0 "The fall of the pretenders"
+ china_events.31.d:0 "Our enemies have fallen and the [Root.Monarch.Dynasty.GetName] dynasty is now believed to be the new holders of the Mandate of Heaven. We are expected to pick up the mantle of the Emperor and bring the Chinese people into a new era of prosperity and stability.\nIf we want to win over the remaining supporters of the former dynasty's rule we must start to build our own Imperial bureaucracy and invest in a strong and durable state. On the other hand [Root.Monarch.GetName] worries that disloyal officials will remain within any organization we inherit from [Root.Monarch.GetHerHis] predecessors."
+ china_events.31.a:0 "We must be merciful if we are to build something lasting."
+ china_events.31.b:0 "Purge any remaining loyalists!"
+ china_events.31.c:0 "The Imperial treasury needs to be filled first."
+ china_events.32.t:0 "History of the Song Empire"
+ china_events.32.d:1 "[Root.Monarch.GetTitle], your reign has ushered in a new era and as the [Root.Monarch.Dynasty.GetName] complete their take-over China will undoubtedly prosper for many years to come. Perhaps the time has come to look back to the Song empire and start the compilation of their history. Compiling a the fortunes of China during the entire reign of the last legitimate Chinese empire would cost a fair bit of money and take many bureaucrats quite some time, but the benefits might outweigh the costs."
+ china_events.32.da:0 "[Root.Monarch.GetTitle], your reign has ushered in a new era and China will undoubtedly prosper for many years to come. Perhaps the time has come to look back to the past days of the [Root.GetName] empire and start the compilation of our history. Compiling a the fortunes of China during the entire reign would cost a fair bit of money and take many bureaucrats quite some time, but the benefits might outweigh the costs."
+ china_events.32.a:0 "Time is of the essence!"
+ china_events.32.b:0 "A thorough work for a solid rule."
