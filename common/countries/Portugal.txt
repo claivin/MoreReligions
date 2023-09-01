@@ -142,7 +142,7 @@ ship_names = {
 	"Nossa Senhora da Esperanca" "Nossa Senhora da Vitória" "Oliveira de Guimarães" "Padre Eterno" Pérola Polifemo "Princesa Carlota" "Princesa da Beira"
 	"Princesa da Beira e Portuguesa" "Princesa do Brasil" "Princesa do Céu" "Princesa Real" "Príncipe do Brasil" "Príncipe Dom Pedro" "Príncipe Real"
 	"Príncipe Regente" Quietação "Rainha de Portugal" "Rainha dos Anjos" "Rainha Santa Isabel" "Real Carolina" "Real Fidelíssima" "Real Fonsor" "Real Fonza"
-	"Real Voador" Relíquias Sacramento "Salvador do Mundo" "Santa Ana" "Santa Ana e Maria" "Santa Ana e São Joaquim" "Santa Catarina" "Santa Catarina do Monte Sinai"
+	"Real Voador" Relíquias "Salvador do Mundo" "Santa Ana" "Santa Ana e Maria" "Santa Ana e São Joaquim" "Santa Catarina" "Santa Catarina do Monte Sinai"
 	"Santa Clara" "Santa Cruz" "Santa Cruz do Ouro" "Santa Maria Isabel de Saboia" "Santa Rosa" "Santa Teresa" "Santa Teresa de Jesus" Santiago "Santiago Maior"
 	"Santíssimo Sacramento" "Santíssima Trinidade" "Santo Alberto" "Santo Andre" "Santo António" "Santo António de Flores" "Santo António de Padua"
 	"Santo António de Tanna" "Santo António e São Joaquim" "Santo António e São José" "Santo Agustinho" "Santo Miguel" "São António" "São Bartholomeu"
@@ -150,7 +150,7 @@ ship_names = {
 	"São Fransisco Xavier" "São Fransisco Xavier e Santo António" "São Fransisco Xavier e Todo o Bem" "São João" "São João Baptista" "São João de Deus"
 	"São João Magnânimo" "São Jorge" "São José" "São José e N. Sra. da Conceição" "São José e N. Sra. das Mercês" "São José Paquete África" "São Lourenço"
 	"São Martinho" "São Nicolau" "São Pedro" "São Pedro Goncalves" "São Rafael" "São Salvador" "São Sebasteio" "São Simão" "São Tomé" "Sacramento"
-	"Santíssimo Sacramento" "Sem Nome" Serpente "Serpento do Mar" "Simenta de Carvalho" Successo Taforea Tejo "Temível Portuguesa" "Todos os Santos" Torta
+	"Sem Nome" Serpente "Serpento do Mar" "Simenta de Carvalho" Successo Taforea Tejo "Temível Portuguesa" "Todos os Santos" Torta
 	Tritão Ulisses União Unido Unilo Urania Vale "Vasco da Gama" Vénus Vingança Voador Volador Vulcano "Zabra Augusta" "Zabra Júlia" "São Gabriel" Bérrio
 	Gonçalo Nunes Argo "Arca de Noé" Júpiter Jesus Cristo "Jesus Cristo" Lisboa
 }

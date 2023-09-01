@@ -20,9 +20,7 @@ mr_carcasonne = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			4695 = {
-			owned_by = NAV
-			}
+			OWNER = { tag = NAV }
 			religion = mr_cathar
 		}
 		has_owner_religion = yes
@@ -38,19 +36,17 @@ mr_carcasonne = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-		4695 = {
-		owned_by = NAV
+			OWNER = { tag = NAV }
+			religion = mr_cathar
 		}
-		religion = mr_cathar
 		has_owner_religion = yes
 	}
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-		4695 = {
-		owned_by = NAV
+			OWNER = { tag = NAV }
+			religion = mr_cathar
 		}
-		religion = mr_cathar
 		has_owner_religion = yes
 	}
 	#can our country keep it or is it destroyed when we get hold of it?

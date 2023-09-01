@@ -125,7 +125,7 @@ ship_names = {
 	"Charles Galley" "Charles V" Chatham Chester Chichester Christ Christopher "Christopher of Bream" "Christopher Spayne" Clarence "Clove Tree"
 	Colchester Collingwood Colossus Conqueror Conquestador "Constant Reformation" "Constant Warwick" Content Convertine Cornelius Cornwall
 	Coronation Courageux Coventry Covertine Crane Cressy Crocodile Crown "Crowned Lion" Culloden Cumberland Dainty Daisy Dartmouth "Deal Castle"
-	Dee Defence Defiance Deptford Devastation Devonshire Devonshire Diadem Diamond Dido Diomede Director Dolphin Dorsetshire Dover Dragon Drake
+	Dee Defence Defiance Deptford Devastation Devonshire Diadem Diamond Dido Diomede Director Dolphin Dorsetshire Dover Dragon Drake
 	Dreadnaught Druid Dublin Duchess "Due Repulse" Duke Dunbar Duncan Duncannon Dunkirk Eagle Edgar Edinburgh "Edward Bonaventure" "Edward Howard"
 	Egmont Elephant Elias Elizabeth "Elizabeth Jonas" Ellynore Essex Europa Excellent Exchange Exeter Exmouth Expedition Experiment Fagons Fairfax
 	Falcon Falkland Falmouth Fame Faversham Favourite Fellowship Ferme Firm Flamborough Fleetwood Flight Flirt Folkestone Formidable Forrester
@@ -144,7 +144,7 @@ ship_names = {
 	"Mary Howard" "Mary Imperial" "Mary James" "Mary Norwell" "Mary Odierne" "Mary Rose" "Mary Thomas" "Mary Willoughby" Matthew "Matthew Gonson"
 	"Mawdlyn of Deptford" Medusa Medway Meeanee Melville Mercury Merhonour Merlin Mermaid Michael Milford Minden Minion Minnikin Minotaur Moderate
 	Monarch Monck Monmouth Montagu Moon Moor Mordaunt Mulgrave Namur Naseby Nassau Neptune "New Bark" Newark Newcastle Nightingale Nonpareil Nonsuch
-	Norfolk Northumberland Norwich Nottingham Ocean Orford Orion Ormonde Ossory Oxford Pallas Pansy Panther Parrot Patrick Paul Pelican Pembroke
+	Norfolk Northumberland Norwich Nottingham Ocean Orford Orion Ormonde Ossory Oxford Pallas Pansy Panther Parrot Patrick Pelican Pembroke
 	Pendennis Perseus Peter "Peter Pomegranate" "Philip and Mary" Pitt Plymouth Poictiers Polyphemus Popinjay Porcupine "Port Mahon" Portland
 	Powerful President Preston Primrose "Primrose Hoy" Prince "Prince Consort" "Prince Frederick" "Prince George" "Prince of Orange" "Prince of Wales"
 	"Prince Royal" "Princess Amelia" "Princess Caroline" "Princess Louisa" "Princess Royal" Promt Prudent Queen "Queen Charlotte" Quittance Rainbow

@@ -88,4 +88,5 @@
 #misc
  BLH_BUL_WAR_NAME: "War of the Ruthenian Khans"
  cb_bulgaria_bluehorde_war: "Usurp Kiev"
+ cb_bulgaria_bluehorde_war_desc: "We must sieze the reins of the Blue Horde!"
  take_capital_blue_horde: "Take Capital"

@@ -22,7 +22,7 @@ germanic = {
 			Bartosz Bartolomeus Bedrich 
 			Frederick Bezprzym Blazej Blaise Bogislaw Bohdan Bogdan Bohumir Boleslaw Boleslav 
 			Boriwoj Borijov Bozydar Theodat Branimir Branislav
-			Bretislav Bretislaus Casimir Ctibor Ctibor Dobieslaw Dobromil Drosuk Dytryk Thierry Frantisek 
+			Bretislav Bretislaus Casimir Ctibor Dobieslaw Dobromil Drosuk Dytryk Thierry Frantisek 
 			Francis Gawel Grzegorz Gregory Havel Gallus Jacenty Hyacinth Jakub Jakusz Jacob 
 			Janusz John Jaromar
 			Jaromil Jaromir Jaroslav Jedrzej Jindrich Henry Jirí George Jozef Joseph 
@@ -35,7 +35,7 @@ germanic = {
 			Premysl Przybyslaw Radomil Radomir Radoslav Rostislav Ryszard Richard Sambor Sobieslav Sobeslaus 
 			Stanislaw
 			Strasz Swietopelk Svatopluk Swietoslaw Sviatoslav Szczepan Stephen Szczesny Szymon Tadeusz 
-			Theodore Tomasz Thomas Udalrich Urjasz Vojtech Albert Waclaw Walenty Valentin Wratislaw 
+			Theodore Tomasz Thomas Udalrich Urjasz Vojtech Albert Waclaw Walenty Valentin 
 			Vratislav Wawrzyniec Laurence Wenceslaw Vaclav
 			Wincenty Vincent Wizlaw Wladyslaw Wlodek Wlodzimierz Wlodzislaw Wratislaw 
 			Zbigniew Zbynek Zdenek Zdislav Zygmunt Sigmund
@@ -46,7 +46,7 @@ germanic = {
 			Dobroniega Dorota Dorothy Dragomira Edyta Ewa Geira Gertruda Gertrude
 			Gracja Grazyna Halina Hanna Irena Izabela Jadwiga Jarka Jarmila Jolanta Judyta Judith Kamila 
 			Katarina Catherine Kenna Kornelia Krystyna Christina Ksenia Lidia
-			Ludmila Magda Magdalena Magdalena Magdalena Malgorzata Marcelina Maria Markéta Martyna 
+			Ludmila Magda Magdalena Malgorzata Marcelina Maria Markéta Martyna 
 			Mateja Matylda Matilda Milena Miroslava Pechna Róza Radomila Radomira Radoslava
 			Raina Regelinda Rycheza Salomea Smiechna Stanislava Stefana Stephania Svetlana Urszula Václava 
 			Vladislava Wera Wojslawa Zdenka Zofia Zwinislawa
@@ -67,9 +67,9 @@ germanic = {
 	prussian = {
 		primary = PRU
 		male_names = {
-			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
+			Albrecht Friedrich August Emil Ferdinand Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
 			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
-			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf 
+			Horst Joachim Kaspar Kurt Leo Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf 
 			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis 
 			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas 
 			Prusas Sergonis Ulinniks Ulitis
@@ -81,7 +81,7 @@ germanic = {
 	baltic_german = {
 		primary = RIG
 		male_names = {
-			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
+			Albrecht Friedrich August Emil Ferdinand Karl Wilhelm Adolf Alfred Anton Benedikt 
 			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
 			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf 
 			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis 
@@ -117,12 +117,12 @@ germanic = {
 	hessian = {
 		primary = HES
 		male_names = {
-			Wilhelm Ludwig Friedrich Hermann Karl Moritz Philipp Heinrich Otto Adolf Christian Georg Leopold 
+			Wilhelm Ludwig Friedrich Hermann Karl Moritz Heinrich Otto Adolf Christian Georg Leopold 
 			Philipp Adelmar Albrecht Barnabas Denis Egon Erich Gerhard Gottlieb Gregor Hagan Helmut Isaak Isidor 
 			Joachim Joseph Kreszens Lothar Oskar Siegfried Stefan Thomas Wenzel Werner Wolfram Maximilian Ivo
 		}
 		female_names = {
-			Corinna Else Hedwig Helene Helen Hildegard Hildegard Hrothwina Ida Ida Imma Emma Irmgard Charlotte Chiara 
+			Corinna Else Hedwig Helene Helen Hildegard Hrothwina Ida Imma Emma Irmgard Charlotte Chiara 
 			Christa Christel Christiane Christina Christine Clara Claudia Constanze
 		}
 	}
@@ -131,15 +131,15 @@ germanic = {
 		male_names = {
 			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor 
 			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang 
-			Andreas Bruno Burkhard Günther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Peter Ralph Reginald Sigehelm Wulfhelm Wulfhere Alfred
-			Alwin Adémar Alwin Adolf Albert Albrecht Arnold Baltasar
+			Andreas Bruno Burkhard Günther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Reginald Sigehelm Wulfhelm Wulfhere Alfred
+			Alwin Adémar Adolf Arnold Baltasar
 			Benedict Bernd Bernard Bernhard Bertold Bertram Bertrand Burchard 
 			Claus Nicholas Cobbo Cord Dietmar Diederik Ekkehard Ekbert Engelbert Engelhard 
-			Erik Albert Ewald Frederick Gerard Gebhard Giselmar Gottschalk Günther Hans 
-			Heideke Herbert Hermann Hinrik Jacob Jaspar Caspar Jochim Joakim Johann Kersten 
-			Christian Laurentz Lambert Liawizo Liemar Liudger Otto Ludolf Ludwig
+			Erik Albert Ewald Frederick Gerard Gebhard Giselmar Gottschalk Hans 
+			Heideke Herbert Hermann Hinrik Jacob Jaspar Caspar Jochim Joakim Kersten 
+			Laurentz Lambert Liawizo Liemar Liudger Otto Ludolf Ludwig
 			Louis Mathias Matthew Meinwerk Merten Martin Michael Norbert Ordulf 
-			Peter Philip Renard Reinmar Roger Rudolf Ralph Sigbert Sigisbert
+			Peter Philip Renard Reinmar Roger Ralph Sigbert Sigisbert
 			Sigfrid Siegfried Sigward Sigurd Simon Steffen Thomas Waldemar
 			Werner Victor Werneke Weybrecht Wichbert Wichmann Wigebert Wolter Walter Wulff Ulf
 		}
@@ -148,17 +148,17 @@ germanic = {
 			Agatha Balthild
 			Christina Cuthburg 
 			Cynehild Cyneswith Cynethryth Eadburg Edith 
-			Gunhilda Gunhild Helga Judith
-			Maud Matilda Sigri 
+			Gunhilda Gunhild Helga
+			Maud Sigri 
 			Wulfhild
-			Addila Adela Adelheid Alof Agnes Anna Athela Beatrix Beatrice Bertha Bertha 
-			Bertrada Bia Beatrice Bisina Bithild Brigida Brigid Elisabeth 
+			Addila Adela Adelheid Alof Agnes Anna Athela Beatrix Beatrice Bertha 
+			Bertrada Bia Bisina Bithild Brigida Brigid 
 			Elisabeth Enda Gertrud Gisela
 			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard 
 			Judith Katharina
 			Margarete Mathilde Matilda Mechthild Reginlint 
-			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke 
-			Wiltrud Wulfhild Ulfhild
+			Richardis Ricarda Rodelinda Sophia Suanhilde Swanahild Wienke 
+			Wiltrud Ulfhild
 		}
 		dynasty_names = {
 			"von Schwarzburg" "von Schönburg" "von Schlotheim" "von Salza" "von Kospoth"
@@ -194,9 +194,9 @@ germanic = {
 		primary = BAV
 		male_names = {
 			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand  
-			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph  
-			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard 
-			Raphael Karl Kajetan Clemens
+			Leopold Philipp Theodor Adalbert Alois Clemens August Friedrich Joseph  
+			Luitpold Otto Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard 
+			Raphael Karl Kajetan
 		}
 		female_names = {
 			Hiltraud Friede Juliane
@@ -206,7 +206,7 @@ germanic = {
 			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
 			"von Württemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
 			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
-			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
+			"Griespek von Griespach" "von Trockau" "von Guttenberg" "von Gumppenberg"
 			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
 			"von Knöringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
 			"von Parsberg" "Pfäffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
@@ -236,22 +236,22 @@ germanic = {
 	dutch = {
 		primary = NED
 		male_names = {
-			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnold Arnulf Arnulf Balderik Barend 
-			Barnaerd Bernard Bartolomeus Bartolomeus
-			Bavo Bertold Boudewijn Baldwin Claes Nicholas Claeuwaert Daevit David Damaes Diederick 
-			Thierry Dirk Thierry Douwe Eduard Edward Egmund Ekbert
+			Adriaen Albrecht Albert Alwin Ambroos Antoon Arnold Arnulf Balderik Barend 
+			Barnaerd Bernard Bartolomeus
+			Bavo Bertold Boudewijn Baldwin Claes Claeuwaert Daevit David Damaes Diederick 
+			Thierry Dirk Douwe Eduard Edward Egmund Ekbert
 			Emmo Engelbrecht Filips Philip Floris Folbert Frans Francis Frederik Frederick Gerard Gerolt 
 			Gerulf
-			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy Gwijde 
-			Gwijde Hendrik Henry Herman Herman Hubert
+			Gerrit Gijsbrecht Giselbert Gilbert Godfried Godfrey Godschalk Gozewijn Guij Guy 
+			Gwijde Hendrik Henry Herman Hubert
 			Hugo Hugh Ijsbrand Ijsbrecht Jacco Jacob Jan John Karel Charles Koenraad Konrad
-			Kristof Christopher Lambert Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
+			Kristof Christopher Lambert Lodewijk Louis Ludewijn Lutbert Luthard Maertijn Martin
 			Marquart Niclaes Nicholas
-			Olivier Oliver Otto Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
-			Robert Robert Robert Rodulf 
+			Olivier Oliver Otto Otwin Onno Pieter Peter Reinaerd Reinoud Reinhold Reginar Robrecht
+			Robert Rodulf 
 			Roelof Roland Rutger Sebastiaen Sebastian Sicco Simon Steven Stephen Steyn Sten Theodolf
-			Waelram Walter Walter
-			Wicher Willem William Wolfard Hendrik Maurits
+			Waelram Walter
+			Wicher Willem William Wolfard Maurits
 			Adriaan Andries Antonius Gaspar Isaac Johan Laurens Paul Abraham Barthout Christiaan
 			Christoffel Constantijn Cornelis Daniel Eise Gabriel Gerben Hans Jeroen Joost Nicolaas 
 			Roeland Rogier Thomas Vincent Zacharias
@@ -375,26 +375,26 @@ germanic = {
 	}
 	dynasty_names = {
 		"von Oldenburg" "von Mecklenburg" "von Hohenzollern" "von Habsburg"
-		"von Zweibrücken" "von Wittelsbach" "von Holstein" "von Hesse-Kassel" "von Holstein-Gottorp"
+		"von Zweibrücken" "von Holstein" "von Hesse-Kassel" "von Holstein-Gottorp"
 		"von Pfalz-Neumarkt" "von Braunschweig-Lüneburg" "von Hannover" "von Wettin"
 		# CKII
 		"von Rügen" "von Diepholz" "von Silesia-Glogau" "von Bibra" "von Bodeck" 
 		"Boeselager" "Jaworski" "Brauchitsch" "von Bülow" 
 		"von Calw" "von Cham" "von Steutzlingen" "von Wetterau" "von Julichgau" 
 		"von Helffenstein" "von Venis" "von Kyburg" "von Arbon" "von Urach" "von Cilli" "von Utlede" 
-		"von Katzenelnbogen" "von Altena" "von der Marck" "von Hessen" "von Arnsberg" "von Bucheck" 
+		"von Katzenelnbogen" "von Altena" "von der Marck" "von Arnsberg" "von Bucheck" 
 		"Walter" "Grelle" "von Dolen" "von Liebnitz" "von Virneberg"
 		"Rübsamen" "von Bardewik" "Vorrade" "Warendorp" "Lüneburg" "Wittenborg" "von Klingenberg" 
-		"von Parchim" "von Kärnten" "von Rügen" "von Neuenburg" "von Werle" "von Mecklemburg" 
-		"von Wittenberg" "von Brandenburg" "von Glogau" "von Rendsburg" "von Pommern" 
+		"von Parchim" "von Kärnten" "von Neuenburg" "von Werle" "von Mecklemburg" 
+		"von Wittenberg" "von Brandenburg" "von Glogau" "von Pommern" 
 		"von Slesvig" "von Plain" "von Formbach" "von Wasserburg" 
 		"von Lengenfeld" "von Eberstein" "von Heinsberg" "von Weimar"
 		"von Andechs" "von Sulzbach" "von Kleve" "von Versfleth" "von Wickerode" 
-		"von Winzenburg" "von Thüringen" "von Bogen" "von Meissen" "von Genf" 
-		"von Arstein" "von Veldenz" "von Landsberg" "von Franken" "von Babenberg" "von Berg" "von Hohenstauf" 
+		"von Winzenburg" "von Bogen" "von Meissen" "von Genf" 
+		"von Arstein" "von Veldenz" "von Landsberg" "von Babenberg" "von Berg" "von Hohenstauf" 
 		"von Saarbrucken" "von Puteledorg" "von Henneberg" "von Stade" "von Sommerchenberg" 
-		"von Kirchberg" "von Württemberg" "von Tübingen" "von Raabs" 
-		"von Heimbach" "von Nörvenich" "von Jülich" "von Metz" "von Limburg" 
+		"von Kirchberg" "von Tübingen" "von Raabs" 
+		"von Heimbach" "von Metz" "von Limburg" 
 		"von Eppstein" "von Luxemburg" "von Hornes" "von Sachsen" 
 		"von Beilstein" "von Eppenstein" "von Lusatia" "Orlamunde"
 		"von Hohenstaufen" "von Otakar" "Weimar" "von Tirol"
@@ -404,50 +404,50 @@ germanic = {
 		"Witte" "von Hagen" "von Mölln" "Runese" Pleskow 
 		"von Supplingenburg" "von Plotzkau" "von Katlenburg" "von Goslar"
 		"von Wunstorf" "von Goltern" "von Wölpe" "von Nellenburg" "von Arnstein" "von Holte"
-		"von Wippra" "von der Mark" "von Diest" "von Rietberg" "von Löningen" "von Corvey" 
+		"von Wippra" "von Diest" "von Rietberg" "von Löningen" "von Corvey" 
 		"von Steinfurt" "von Tecklenburg" "von Rüssel" "von Waldeck" "von Ravensberg" "von Weyhe" "von Hoya" 
 		"von Dachau" "von Bassenheim" "von Kerpen" "von Tunna" "von Salza" "von Malberg" "von Hohenlohe" 
 		"von Wüllersleben" "von Osterna" "von Sangershausen" "von Heldrungen" 
 		"von Orseln" "von Nauen" "Suerbeer" "von Lunen" 
-		"von Vechta" "Pernstein" "von Schwerin" "von Dorpat" "von Haseldorf" "von Vyshusen" "von Dolen" 
+		"von Vechta" "Pernstein" "von Schwerin" "von Dorpat" "von Haseldorf" "von Vyshusen"
 		"von Friesack" "von Hildesheim" "von Lechsgmünd" "von Komburg" 
 		"von Stahleck" "von Ziegenhain" "von Dinslaken" "von Lambach" "von Pluyvoise" 
 		"von Scharfenberg" "von Leistenberg" "von Schwarzburg" "von Badewide" "von Wassel" 
-		"von Dassel" "von Greyerz" "von Grenchen" "von Abensberg" "von Grünberg" 
+		"von Dassel" "von Greyerz" "von Grenchen" "von Grünberg" 
 		"von Lichtenberg" "von Hachberg" "von Wartenberg" "von Wolfach" "von Gudensberg"
 		"von Gerhausen" "von Signau" "von Groitzsch" "von Frickingen" "von Sigmaringen" "von Regensburg" 
 		"von Lurngau" "von Leibrechtskirchen" "von Meran" "von Treven" "Gross" "Gualch" "Beck"
 		"zu Schwaben" "von Attems" "von Schweipünt" "von Saffenberg" "von Nörvenich" "von Querfurt" 
-		"von Mansfeld" "von Kärnten" "von Eschenloch" "von Naumburg" "von Schrapelnau" 
-		"von Magdeburg" "von Hardegg" "von Arneburg" "von Seeburg" "von Veldenz" "von Schmidtburg" 
+		"von Mansfeld" "von Eschenloch" "von Naumburg" "von Schrapelnau" 
+		"von Magdeburg" "von Hardegg" "von Arneburg" "von Seeburg" "von Schmidtburg" 
 		"von Bamberg" "von Kyrburg" "von Baumberg" "von Stolzenberg" "von Altenbaumberg" "von Tyrol" 
-		"von Ortenburg" "von Wangen" "von Frontenhausen" "von Andechs" "von Eurasburg" "von Geroldseck" 
+		"von Ortenburg" "von Wangen" "von Frontenhausen" "von Eurasburg" "von Geroldseck" 
 		"von Bocksberg" "von Vinstingen" "von Schoenecken" "von Daun" "von Leiningen" 
 		"von Hohenfels" "von Hunolstein" "von Blankenheim" "von Salm" "von Falkenstein" "von Sponheim" 
-		"von Brunshorn" "von Stein" "von Bikkenbach" "von Heinsberg" "van Valkenburg" "von Sayn" 
+		"von Brunshorn" "von Stein" "von Bikkenbach" "van Valkenburg" "von Sayn" 
 		"von Veringen" "von Gruningen" "von Eselsberg" "von Muhlhausen" "von Pfirt" 
 		"von Lövenstein" "von Landau" "von Tschudi" "von Glarus" "von Chalôns" "von Ratzeburg" 
 		"von Schlawe" "von Schwelz" "von Liebschau" "von der Lippe" "von Schauenburg" "von Rostock" 
 		"von Gustrow" "von Rendsburg" "von Segeberg" "von Neuhaus" "von Friedenthal" "von Rosenberg" 
 		"von Waldenstein" "von Altenburg" "von Pernstein" "von Monheim" "von Urslingen" 
-		"von Assel" "von Osnabrück" "von Münster" "von Kleve" "von Jülich" 
+		"von Assel" "von Osnabrück" "von Münster" "von Jülich" 
 		"von Andernach" "von Göttingen"
-		"von Pfalz" "von Baden" "von Nordgau" "von Metz" "von Sundgau" "von Bern" 
+		"von Pfalz" "von Nordgau" "von Sundgau" "von Bern" 
 		"von Schwyz" "von Neuchatel" "von Aargau" "von Breisgau" "von Fürstenberg"
-		"von Württemberg" "von Franken" "von Thüringen" "von Weimar" "von Celle" 
+		"von Württemberg" "von Franken" "von Thüringen" "von Celle" 
 		"von Amsberg" "von Wolgast" "von Altmark" "von Anhalt" 
 		"von Plauen" "von Ansbach" "von Kempten" "von Arnim" "von Trent" 
 		"von Innsbruck" "von Lausitz" "von Stettin" 
 		"von Abensberg"  "von Berlichingen" "von Beetzen" 
 		"Sieghardinger" "von Walbeck"
 		#Prussian
-		"von Knorring" "von Creytzen" Sack "von Taube" "Wöhrmann"
+		"von Knorring" "von Creytzen" Sack "Wöhrmann"
 		#Rheinlaender
 		"von Keller" "von der Mark" "von Wittelsbach" "von Baden" "Rotberg"
 		#Hessian
 		"von Frankenstein" "von Taube" "von Uffeln" "von Hessen" "von Boyneburg"
 		#Hannoveran
-		"von Schack" "von Fabrice" "von Hardenberg" "von Welf" "von Schauenburg" "von Holstein-Gottorp" "Askanier" "von Oldenburg"
+		"von Schack" "von Fabrice" "von Hardenberg" "von Welf" "Askanier"
 	}
 }
 
