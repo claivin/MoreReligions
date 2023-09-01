@@ -18,8 +18,13 @@ mr_carcasonne = {
 	#project type
 	type = monument
 	#can we build it?
-	build_trigger = {	
-		religion = mr_cathar
+	build_trigger = {
+		OR = {
+			4695 = {
+			owned_by = NAV
+			}
+			religion = mr_cathar
+		}
 		has_owner_religion = yes
 	}
 	#what to do when it's built
@@ -32,11 +37,19 @@ mr_carcasonne = {
 	}
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		OR = {
+		4695 = {
+		owned_by = NAV
+		}
 		religion = mr_cathar
 		has_owner_religion = yes
 	}
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		OR = {
+		4695 = {
+		owned_by = NAV
+		}
 		religion = mr_cathar
 		has_owner_religion = yes
 	}
