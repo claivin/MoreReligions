@@ -1,4 +1,10 @@
 ﻿l_english:
+ generic_missions_1: "Generic Missions Column 1"
+ generic_missions_2: "Generic Missions Column 2"
+ generic_missions_3: "Generic Missions Column 3"
+ generic_missions_4: "Generic Missions Column 4"
+ generic_missions_5: "Generic Missions Column 5"
+ 
  g_mission_allies_title: "Basic Diplomacy"
  g_mission_allies_desc: "We observe the dealings of courts and kings abroad and find that existing as an outsider is all the more difficult. We should draw up connections with our neighbors, or at the very least, let them know how we feel."
  g_mission_allies_tt: "Different rewards will be available depending on which conditions you have fulfilled\n"

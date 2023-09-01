@@ -973,9 +973,11 @@ mr_ifat_missions_3 = {
 		effect = {
 			custom_tooltip = india_hegemon_FT
 			tooltip = {
-				add_province_modifier = {
-					name = trade-hegemon_emerging_FT
-					duration = 18250
+				capital_scope = {
+					add_province_modifier = {
+						name = trade-hegemon_emerging_FT
+						duration = 18250
+					}
 				}
 			}
 			hidden_effect = {

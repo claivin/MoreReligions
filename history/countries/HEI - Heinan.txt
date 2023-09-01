@@ -13,6 +13,6 @@ capital = 666 # Literally hell???
 		dip = 6
 		mil = 6
 		birth_date = 1371.1.1
-		death_date = 1445.7.20
+		#death_date = 1445.7.20
 	}
 }

@@ -21,5 +21,9 @@ set_estate_privilege = estate_shugo_japan
 	clear_scripted_personalities = yes
 	add_ruler_personality = well_advised_personality
 	add_ruler_personality = naive_personality
-	add_government_power = { mechanic_type = shugo_dominance_mechanic power_type = shugo_dominance_mechanic_power value = 50 } #adds government power
+	add_government_power = {
+		mechanic_type = shugo_dominance_mechanic
+		power_type = shugo_dominance_mechanic_power
+		value = 50
+	} #adds government power
 }

@@ -453,12 +453,10 @@ aab_missions_fifth = {
 					type = buda_castle
 					tier = 2
 				}
-				NOT = {
-					any_province = {
-						higher_development_than = PREV
-					}
-				}
-			}				
+			}
+			any_owned_province = {
+				NOT = { higher_development_than = 153 }
+			}
 		}
 		
 		effect = {
