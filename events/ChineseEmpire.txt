@@ -1,3 +1,5 @@
+#Edits 2
+
 namespace = celestial_empire_events
 
 country_event = {

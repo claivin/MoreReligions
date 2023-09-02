@@ -1,5 +1,3 @@
-#this is actually unchanged, I just added it to get rid of a script error to clean up the error log
-
 country_decisions = {
 
 	turkish_nation = {
