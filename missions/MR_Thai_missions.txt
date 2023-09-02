@@ -97,7 +97,7 @@ MR_siam_1 = {
 			trade_goods = rice
 			NOT = {
 				owned_by = ROOT
-				has_manufactory_no_custom_tooltip_trigger = yes
+				has_manufactory_trigger = yes
 			}
 		}
 		
@@ -105,12 +105,12 @@ MR_siam_1 = {
 			num_of_owned_provinces_with = {
 				value = 10
 				trade_goods = rice
-				has_manufactory_no_custom_tooltip_trigger = yes
+				has_manufactory_trigger = yes
 			}
 			num_of_owned_provinces_with = {
 				value = 5
 				trade_goods = rice_wine
-				has_manufactory_no_custom_tooltip_trigger = yes
+				has_manufactory_trigger = yes
 			}
 		}
 		effect = {
