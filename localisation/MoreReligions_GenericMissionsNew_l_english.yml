@@ -144,19 +144,19 @@
  generic_mission_events.5.f: "Caution is needed."
  
  generic_mission_events.6.t: "An Olive Branch"
- generic_mission_events.6.d: "[Root.GetMonarch.GetTitle] [Root.GetMonarch.GetName] has conceived a proposal of profound importance. A long-standing strategic alliance that could span generations is within reach. As the ink dries on the parchment, you ponder if you should extend an offer that goes beyond the ordinary alliances of the world. This pact would signify not just an investment in mutual interests, but a deep and lasting bond that could shape the course of history for both nations."
+ generic_mission_events.6.d: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] has conceived a proposal of profound importance. A long-standing strategic alliance that could span generations is within reach. As the ink dries on the parchment, you ponder if you should extend an offer that goes beyond the ordinary alliances of the world. This pact would signify not just an investment in mutual interests, but a deep and lasting bond that could shape the course of history for both nations."
  generic_mission_events.6.a: "Make the Proposal."
  generic_mission_events.6.b: "On the other hand, who is a better ally than ourselves?"
  generic_mission_events.6.c: "Only robots can see this."
  gme_event_6_tt: "If they accept, we will lose all cores and claims on their territory and vice versa"
  
  generic_mission_events.7.t: "A Proposal From [From.GetName]"
- generic_mission_events.7.d: "[Root.GetMonarch.GetTitle] [Root.GetMonarch.GetName] has offered us a long-term strategic alliance. Our mutual trust has drawn us close together, so this would be a decisive step in cementing our nations' relationships."
+ generic_mission_events.7.d: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] has offered us a long-term strategic alliance. Our mutual trust has drawn us close together, so this would be a decisive step in cementing our nations' relationships."
  generic_mission_events.7.a: "We accept!"
  generic_mission_events.7.b: "Unfortunately, we must decline."
  
  generic_mission_events.8.t: "The [Root.GetName]-[gme_declare_historical_friend.GetName] Alliance"
- generic_mission_events.8.d: "[gme_declare_historical_friend.GetMonarch.GetTitle] [gme_declare_historical_friend.GetMonarch.GetName] of [gme_declare_historical_friend.GetName] has accept our offer. A great feast his held in each other's courts to mark the occassion."
+ generic_mission_events.8.d: "[gme_declare_historical_friend.Monarch.GetTitle] [gme_declare_historical_friend.Monarch.GetName] of [gme_declare_historical_friend.GetName] has accept our offer. A great feast his held in each other's courts to mark the occassion."
  generic_mission_events.8.a: "This is the start of a great friendship."
  generic_mission_events.8.b: "What a shame."
  

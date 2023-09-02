@@ -104,12 +104,12 @@ vassal = {
 	start_date = 1444.11.11
 	end_date = 1500.1.1
 }
-vassal = {
-	first = GUY
-	second = AMG
-	start_date = 1444.11.11
-	end_date = 1500.1.1
-}
+# vassal = {
+	# first = GUY
+	# second = AMG
+	# start_date = 1444.11.11
+	# end_date = 1500.1.1
+# }
 
 #Picardy Relations
 union = {

@@ -19,26 +19,35 @@ country_decisions = {
 		}
 		effect = {
 			custom_tooltip = historical_friend_gme_tt
-			hidden_effect = {
-				random_ally = {
-					limit = {
-						trust = {
-						who = ROOT
-						value = 100
-					}
-						capital_scope = {
-							infantry_in_province = ROOT
-						}
-					}
-					save_global_event_target_as = gme_declare_historical_friend
-				}
-			}
+			#done inside event
+			# hidden_effect = {
+				# random_ally = {
+					# limit = {
+						# trust = {
+						# who = ROOT
+						# value = 100
+					# }
+						# capital_scope = {
+							# infantry_in_province = ROOT
+						# }
+					# }
+					# save_global_event_target_as = gme_declare_historical_friend
+				# }
+			# }
 			country_event = {
 				id = generic_mission_events.6
 			}
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { full_idea_group = diplomatic_ideas }
+			}
+			modifier = {
+				factor = 0
+				NOT = { full_idea_group = influence_ideas }
+			}
 		}
 	}
 	
@@ -71,6 +80,9 @@ country_decisions = {
 			mission_completed = g_mission_new_goods
 			NOT = { has_country_flag = cash_crop_menu_active }
 			NOT = { has_country_flag = used_cash_crop_decision }
+			
+			#will come up with more ai restrictions on this, but no ai for now
+			ai = no
 		}
 		allow = {
 			any_owned_province = {

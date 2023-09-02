@@ -7,7 +7,7 @@
  cathar_disaster: "Endura"
  
  #events
- cathar_flavor.1.t: "[TOU.Monarch.GetName][TOU.Monarch.GetDynasty], The Cathar King"
+ cathar_flavor.1.t: "[TOU.Monarch.GetName][TOU.Monarch.Dynasty], The Cathar King"
  cathar_flavor.1.d: "The years after the failed Cathar Crusade proved to be difficult for the Counts of Toulouse, who were accused by The Church of alligning themselves with heretics. Although officially Catholic, it was difficult to dispute that the House of Toulouse made little attempt to reign in the spread of Catharism in Southern France, favoring the loyalty and mutual gains of protecting their subjects. Count Raymond VI and his predecessors were known to play the diplomatic game, lending their support to the King of France and the Papacy in Crusades and other regional conflicts; it was this lip-service which allowed a tenouous continuity over Southern France.\n\nIn recent times, [TOU.Monarch.GetTitle] [TOU.Monarch.GetName] has shown disinterest in continuing these disingenuous games, owing his lack of trust in the Church to his forefathers. With Catharism still simmering under his rule, his conversion would prove to be a great boon to centralizing his domain, but the consequences could be dire."
  cathar_flavor.1.a: "Political matters should never trump Spiritual Matters!"
  cathar_flavor.1.b: "It is a matter of pragmatism, not faith."

@@ -185,18 +185,18 @@ on_startup = {
 	}
 	
 	#hides those two siberian tags
-	every_country = {
-		limit = {
-			OR = {
-				technology_group = western
-				technology_group = eastern
-				technology_group = muslim
-			}
-		}
-		east_siberia_region = {
-			undiscover_country = ROOT
-		}
-	}
+	# every_country = {
+		# limit = {
+			# OR = {
+				# technology_group = western
+				# technology_group = eastern
+				# technology_group = muslim
+			# }
+		# }
+		# east_siberia_region = {
+			# undiscover_country = ROOT
+		# }
+	# }
 }
 
 # country

@@ -369,6 +369,19 @@ country_event = { #declare historical friend - first person asks
 	immediate = {
 		hidden_effect = {
 			set_country_flag = historical_friend_decision_in_progress
+			
+			random_ally = {
+				limit = {
+					trust = {
+					who = ROOT
+					value = 100
+				}
+					capital_scope = {
+						infantry_in_province = ROOT
+					}
+				}
+				save_global_event_target_as = gme_declare_historical_friend
+			}
 		}
 	}
 	

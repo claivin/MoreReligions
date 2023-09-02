@@ -33,13 +33,13 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1502.1.1
 }
-dependency = {
-	subject_type = "tributary_state"
-	first = ILK
-	second = QAR
-	start_date = 1444.1.1
-	end_date = 1502.1.1
-}
+# dependency = {
+	# subject_type = "tributary_state"
+	# first = ILK
+	# second = QAR
+	# start_date = 1444.1.1
+	# end_date = 1502.1.1
+# }
 dependency = {
 	subject_type = "tributary_state"
 	first = ILK

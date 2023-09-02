@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = yakut
 religion = tengri_pagan_reformed
 technology_group = chinese
-capital = 1035
+capital = 1045
 
 
 1444.11.11 = {
