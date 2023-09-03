@@ -6,3 +6,35 @@ han_song_war_loser = {
 	manpower_recovery_speed = -0.20
 	reduced_liberty_desire = -50
 }
+
+SHU_small_war_buff = {
+	war_exhaustion = -0.02
+}
+
+SHU_medium_war_buff = {
+	manpower_recovery_speed = 0.15
+	reinforce_speed = 0.15
+}
+
+SHU_big_war_buff = {
+	manpower_recovery_speed = 0.20
+	reinforce_speed = 0.33
+}
+
+SHU_ruler_leading = {
+	land_morale = 0.10
+}
+
+SHU_post_war_prosperity = {
+	global_prosperity_growth = 0.2
+	development_cost_in_primary_culture = -0.1
+}
+
+SHU_exploited_population = {
+	global_unrest = +1
+}
+
+SHU_devastated_population = {
+	development_cost_in_primary_culture = +0.10
+	manpower_recovery_speed = -0.15
+}

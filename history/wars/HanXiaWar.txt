@@ -1,0 +1,16 @@
+#This is just to give Han a starting truce with Xia, dates and lore need to be messed with
+name = "Han Invasion of Xia"
+war_goal = {
+	type = superiority_chinese_unification
+	casus_belli = cb_chinese_unification	
+}
+
+1440.1.1 = {
+	add_attacker = GHC
+	add_defender = SHU
+}
+#they just go home or something idk
+1443.1.1 = {
+	rem_attacker = GHC
+	rem_defender = SHU
+}

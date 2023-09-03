@@ -1,4 +1,5 @@
 ﻿l_english:
+#Non tag-specific events
  mrChinaEvents.0.t:0 "The Prince of Chu's Ambition"
  mrChinaEvents.0.d:0 "It has for some time been the case that princes of the imperial clan of Han enjoy relative autonomy and maintain their own armies, but none in the short history of the state have taken this as far as the current Prince of Chu, Hong Chen. His own heritage is dubious; some claim him to be the son of a Mongol or Jurchen concubine of the previous emperor of Han, who was known to indulge in the company of his multicultural harem.\n\nWhatever standing in the imperial clan he lacked by blood, however, he has made up for through deeds. He excelled in his studies of the classics and now at the age of 36 has already far outstripped the military accomplishments of his older brother, the current emperor. While he cut his teeth defending the northern borders against the threat of Mongol raids, he now resides in Hubei as the Prince of Chu, ostensibly as protector of Han against the threats of Song and Xia.\n\nIt is widely known, even in the upper echelons of the Han court, that he will not be content to remain idle there forever. Surrounded by men loyal personally to him (of both a scholarly and military bent), the Prince of Chu laments the state of China and believes that he may be the one to cure her ills. To claim the full extent of his title, to lay low foreign pretenders, and perhaps to claim the mandate of heaven for himself..."
  mrChinaEvents.0.a:0 "A wildcard to be sure..."
@@ -24,3 +25,33 @@
  mrChinaEvents.8.t:0 "A State in Decline"
  mrChinaEvents.8.d:0 "Our military defeat at the hands of our greatest rivals has dealt a devastating blow to our legitimacy in the eyes of our own people and the wider world. Only time will tell if we are able to survive the fallout of this disaster."
  mrChinaEvents.8.a:0 "Has heaven forsaken us?"
+
+#Xia (SHU) events
+ mrXiaEvents.0.t:0 "The Invasion of Xia"
+ mrXiaEvents.0.d:0 "The position of the Xia state has always been precarious, with only the mutual animosity between the rival emperors of Han and Song preventing their commitment to all-out invasion of Sichuan.\n\nAt long last, it seems that this caution has been cast aside and now one of China's dominant powers has sent the full weight of their military might against our beleaguered kingdom. A diplomatic solution is impossible, and our court has no choice but to stand and fight or face certain annihilation at the hands of our vengeful enemies. While our resources are meagre compared to those of our enemies, [Root.Monarch.GetName] must draw on everything Sichuan can provide if [Root.Monarch.GetHerHis] ambitions of a unified China under the Xia are ever to come to fruition."
+ mrXiaEvents.0.a:0 "Call up all available reserves!"
+ mrXiaEvents.0.b:0 "Surely conscripting a few more peasants can't hurt?"
+ mrXiaEvents.0.c:0 "Get every able-bodied man on the front, now!"
+ SHU_naughtiness_tt:0 "§YExploiting our subjects may be necessary to win this war, but doing so may have consequences in the future!§!"
+ SHU_big_naughtiness_tt:0 "§RDesperate measures may substantially improve our chances of defending ourselves, but the long term impact could be disastrous!§!"
+ mrXiaEvents.1.t:0 "Replacing our Losses"
+ mrXiaEvents.1.d:0 "Upon the outbreak of the war, we raised all we thought possible from the populace in order to defend ourselves. Even this conscription may not be enough, however, as our forces continue to take casualties at a rate we cannot easily keep pace with, particularly with our early deployment of reserve and garrison forces. It may be time to begin scraping the barrel and sending more of the civilian populace to the front."
+ mrXiaEvents.1.a:0 "No, we have already asked enough of the people."
+ mrXiaEvents.1.b:0 "Scour the countryside for anyone avoiding service!"
+ mrXiaEvents.1.c:0 "The elderly and infirm have been getting off too easy."
+ mrXiaEvents.2.t:0 "Leading from the Front?"
+ mrXiaEvents.2.d:0 "While the war for Xia's survival continues to demand everything our state has to offer and then some, it has become glaringly obvious to many that the [Root.Monarch.GetTitle] seems reluctant to make the same sacrifices [Root.Monarch.GetSheHe] demands of [Root.Monarch.GetHerHis] subjects.\n\nUltimately [Root.Monarch.GetTitle] [Root.Monarch.GetName] is under no enforcable obligation to take up military command, but it is becoming increasingly clear that personally leading [Root.Monarch.GetHerHis] forces could do wonders for [Root.Monarch.GetHerHis] legitimacy and the morale of Xia's armies."
+ mrXiaEvents.2.a:0 "Of course! It is the duty of a [Root.Monarch.GetTitle] to lead [Root.Monarch.GetHerHis] people."
+ mrXiaEvents.2.b:0 "I hear the palace is lovely this time of year..."
+ mrXiaEvents.3.t:0 "The Cost of War"
+ mrXiaEvents.3.d:0 "The economy of Xia was healthy before the onset of the current war, but we are now faced with the reality that our financial resources are dwarfed by those of the rest of China. Such a war was not entirely unexpected, and the government is capable of raising some additional funds to handle the expenses of waging a war for survival.\n\nCalling in favours and selling off state property can only get so far, however. It may be wise to ensure that our war chest is large enough to supply our now oversized armies and sustain a longer defensive campaign, and to do so would require a few "expropriations"..."
+ mrXiaEvents.3.a:0 "We cannot stoop so low. Raise funds only through mutually agreed means."
+ mrXiaEvents.3.b:0 "Squeeze some ill-gotten gains out of the merchants."
+ mrXiaEvents.3.c:0 "Take whatever we can get from these leeches."
+ mrXiaEvents.4.t:0 "Peace At Last"
+ mrXiaEvents.4.d:0 "Our struggle for survival is finally at an end. As soldiers begin to return to their fields, we can only pray that the peace we were able to achieve was worth the price the people of Xia were made to pay."
+ mrXiaEvents.4.a:0 "May we always rule with benevolence."
+ mrXiaEvents.4.b:0 "Sacrifices had to be made."
+ mrXiaEvents.4.c:0 "Xia lies in ruins..."
+ 
+ 

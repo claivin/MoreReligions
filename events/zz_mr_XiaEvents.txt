@@ -1,0 +1,358 @@
+#MR events for Xia, remember Xia's tag is vanilla SHU
+namespace = mrXiaEvents
+normal_or_historical_nations = yes
+
+#Han/Song has invaded, conscript as much as possible
+country_event = {
+	id = mrXiaEvents.0
+	title = "mrXiaEvents.0.t"
+	desc = "mrXiaEvents.0.d"
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SHU
+		OR = {
+			defensive_war_with = GHC
+			defensive_war_with = GSC
+		}
+		owns = 679 #Chengdu
+		controls = 679
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = SHU_war_for_survival
+			set_variable = {
+				which = SHU_naughty_variable
+				value = 0
+			}
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.0.a"
+		679 = {
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.0.b"
+		679 = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+		}
+		custom_tooltip = SHU_naughtiness_tt
+		hidden_effect = {
+			change_variable = {
+				which = SHU_naughty_variable
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.0.c"
+		679 = {
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+		}
+		custom_tooltip = SHU_big_naughtiness_tt
+		hidden_effect = {
+			change_variable = {
+				which = SHU_naughty_variable
+				value = 2
+			}
+		}
+	}
+}
+
+#Bringing up more reserves
+country_event = {
+	id = mrXiaEvents.1
+	title = "mrXiaEvents.1.t"
+	desc = "mrXiaEvents.1.d"
+	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SHU
+		has_country_flag = SHU_war_for_survival
+		OR = {
+			defensive_war_with = GHC
+			defensive_war_with = GSC
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 160
+	}
+
+	option = {
+		name = "mrXiaEvents.1.a" #be lenient
+		add_country_modifier = { 
+			name = SHU_small_war_buff 
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.1.b" #dig deep
+		add_country_modifier = {
+			name = SHU_medium_war_buff
+			duration = -1
+		}
+		custom_tooltip = SHU_naughtiness_tt
+		hidden_effect = {
+			change_variable = {
+				which = SHU_naughty_variable
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.1.c" #balls to the wall
+		add_country_modifier = {
+			name = SHU_big_war_buff
+			duration = -1
+		}
+		custom_tooltip = SHU_big_naughtiness_tt
+		hidden_effect = {
+			change_variable = {
+				which = SHU_naughty_variable
+				value = 2
+			}
+		}
+	}
+}
+
+#Should ruler lead armies?
+country_event = {
+	id = mrXiaEvents.2
+	title = "mrXiaEvents.2.t"
+	desc = "mrXiaEvents.2.d"
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SHU
+		has_country_flag = SHU_war_for_survival
+		OR = {
+			defensive_war_with = GHC
+			defensive_war_with = GSC
+		}
+		is_monarch_leader = no
+	}
+
+	mean_time_to_happen = {
+		days = 45
+	}
+
+	option = {
+		name = "mrXiaEvents.2.a" #yes
+		if = {
+			limit = {
+				NOT = { is_monarch_leader = yes }
+			}
+			define_ruler_to_general = {
+				fire = 2
+				shock = 3
+				manuever = 3
+				siege = 1
+			}
+		}
+		add_country_modifier = {
+			name = SHU_ruler_leading
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.2.b" #no
+		add_legitimacy = -10
+		add_war_exhaustion = 2
+	}
+}
+
+#Raising funds
+country_event = {
+	id = mrXiaEvents.3
+	title = "mrXiaEvents.3.t"
+	desc = "mrXiaEvents.3.d"
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SHU
+		has_country_flag = SHU_war_for_survival
+		OR = {
+			defensive_war_with = GHC
+			defensive_war_with = GSC
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = "mrXiaEvents.3.a" #take a little
+		add_years_of_income = 1
+	}
+
+	option = {
+		name = "mrXiaEvents.3.b" #take a lot
+		add_years_of_income = 2
+		custom_tooltip = SHU_naughtiness_tt
+		hidden_effect = {
+			change_variable = {
+				which = SHU_naughty_variable
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.3.c" #take absolutely everything
+		add_years_of_income = 4
+		custom_tooltip = SHU_big_naughtiness_tt
+		hidden_effect = {
+			change_variable = {
+				which = SHU_naughty_variable
+				value = 2
+			}
+		}
+	}
+}
+
+#End of war punish/reward event and modifier cleanup
+country_event = {
+	id = mrXiaEvents.4
+	title = "mrXiaEvents.4.t"
+	desc = "mrXiaEvents.4.d"
+	picture = CHINESE_GENERAL_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_modifier = SHU_small_war_buff
+				}
+				remove_country_modifier = SHU_small_war_buff 
+			}
+			if = {
+				limit = {
+					has_country_modifier = SHU_medium_war_buff
+				}
+				remove_country_modifier = SHU_medium_war_buff
+			}
+			if = {
+				limit = {
+					has_country_modifier = SHU_big_war_buff
+				}
+				remove_country_modifier = SHU_big_war_buff
+			}
+			if = {
+				limit = {
+					has_country_modifier = SHU_ruler_leading
+				}
+				remove_country_modifier = SHU_ruler_leading
+			}
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.4.a" #we were nice
+		trigger = {
+			NOT = {
+				check_variable = {
+					which = SHU_naughty_variable
+					value = 2
+				}
+			}
+		}
+		add_stability_or_adm_power = yes
+		add_ruler_personality = just_personality
+		add_ruler_modifier = {
+			name = SHU_post_war_prosperity
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.4.b" #we did a little trolling
+		trigger = {
+			AND = {
+				check_variable = {
+					which = SHU_naughty_variable
+					value = 2
+				}
+				NOT = {
+					check_variable = {
+						which = SHU_naughty_variable
+						value = 5
+					}
+				}
+			}
+		}
+		add_stability = -1
+		add_country_modifier = {
+			name = SHU_exploited_population
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "mrXiaEvents.4.c" #we were evil
+		trigger = {
+			check_variable = {
+				which = SHU_naughty_variable
+				value = 5
+			}
+		}
+		add_stability = -1
+		if = {
+			limit = {
+				ruler_has_personality = just_personality
+			}
+			remove_ruler_personality = just_personality #serves you right for not roleplaying I guess
+		}
+		add_ruler_personality = cruel_personality
+		add_country_modifier = {
+			name = SHU_devastated_population
+			duration = 3650
+		}
+		679 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		680 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+	}
+}

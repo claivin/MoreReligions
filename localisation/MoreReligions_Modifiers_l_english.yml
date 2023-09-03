@@ -32,6 +32,22 @@
  root_dip_10_times_more: "We need §Y10§! Diplomatic Power times the target's §YTotal Development§!."
  mr_vassalize_tributary_desc: "Vassalize our Tributary using diplomacy and religious authority.\n\nThis will cause us to §YVassalize the target§!.\n\nWe will gain §R-50§! §YKarma§!.\n\nWe will lose §Y10§! Diplomatic Power for each point of the target's §YTotal Development§!.\n\nWe will not be able to do this for another §Y10 years§!."
 
+#China stuff
  han_song_war_loser: "Legitimacy in Tatters"
  desc_han_song_war_loser: "Recent defeat by our greatest rival has left many both within and without our realm questioning our claim to the Mandate of Heaven."
+ SHU_small_war_buff: "War of Resistance"
+ desc_SHU_small_war_buff: "We can ask nothing more from the commoners than what they have already given. We can only hope that they appreciate this gesture."
+ SHU_medium_war_buff: "Conscription Brigades"
+ desc_SHU_medium_war_buff: "Small gangs of armed men (thugs, some may say) are travelling the countryside to track down any suspected draft dodgers."
+ SHU_big_war_buff: "Emptied Villages"
+ desc_SHU_big_war_buff: "The farmlands lay empty as even those normally considered unfit for military service are conscripted under threat of exile or death."
+ SHU_ruler_leading: "Ruler's Resolve"
+ desc_SHU_ruler_leading: "Our [Root.Monarch.GetTitle]'s personal leadership has emboldened the resolve of our forces."
+ SHU_post_war_prosperity: "Post-War Prosperity"
+ desc_SHU_post_war_prosperity: "[Root.Monarch.GetName]'s refusal to exploit [Root.Monarch.GetHerHis] people has facilitated their relatively smooth transition back to peacetime activities now that our position is more secure."
+ SHU_exploited_population: "Exploited Population"
+ desc_SHU_exploited_population: "The people of Sichuan are rather disgruntled at the extent to which they were exploited to win our recent war."
+ SHU_devastated_population: "Devastated Population"
+ desc_SHU_devastated_population: "It will take some time before the population of Sichuan can recover from the suffering inflicted by both external enemies and their own government."
+ 
  
