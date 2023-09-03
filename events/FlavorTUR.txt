@@ -1,4 +1,5 @@
-#remove references to janissary disasters
+#modified
+	#101, 102, 111, 105, 106, 107, 108, 206, 261, 292, 293triggers
 
 ########################################
 # Major Flavor Events                  #

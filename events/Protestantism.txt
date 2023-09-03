@@ -1,6 +1,8 @@
+#modified
+	#23 immediate/trigger
+
 ########################################
 # Protestantism Events
-#
 # Scripted by Henrik Lohmander
 ########################################
 

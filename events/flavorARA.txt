@@ -1,6 +1,8 @@
+#modified
+	#13 trigger
+
 ########################################
 # Flavor Events for Aragon
-#
 # written by Sara Wendel-Örtqvist
 ########################################
 

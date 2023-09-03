@@ -1,4 +1,5 @@
-#Edits 2
+#modified
+	#2 trigger
 
 namespace = celestial_empire_events
 

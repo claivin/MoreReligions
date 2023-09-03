@@ -1,6 +1,8 @@
+#modified
+	#3, 24 trigger
+
 ####################################################
 # Price Change Events
-#
 # written by Johan Andersson & Henrik Lohmander
 ####################################################
 

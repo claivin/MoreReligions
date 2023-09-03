@@ -1,6 +1,8 @@
+#modified
+	#2 trigger
+
 ########################################
 # Events for Gujarat
-#
 # written by Henrik Lohmander
 ########################################
 

@@ -1,6 +1,8 @@
+#modified
+	#1 trigger
+
 ########################################
 # Flavor Events for Manchu
-#
 # Scripted by Sara Wendel-Örtqvist
 ########################################
 

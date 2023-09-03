@@ -1,15 +1,533 @@
-#removes 1,2,3,10,7,9,13,14
-#edits 4,5,16,24,32
-
+#removes 1,2,201,3,10,7,9,13,14
+#edits 
+	#4,5,16 trigger
+	#24 option.a
+	#32 option.a/b
+	
 ########################################
 # Events for Hungary
-#
 # written by Johan Andersson & Henrik Lohmander
 ########################################
 
 namespace = flavor_hun
 normal_or_historical_nations = yes
 
+# # Diet of 1445
+# country_event = {
+	# id = flavor_hun.1
+	# title = flavor_hun.1.t
+	# desc = flavor_hun.1.d
+	# picture = DEBATE_REPUBLICAN_eventPicture
+
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = HUN
+		# has_regency = yes
+		# has_consort_regency = no
+		# is_lesser_in_union = no
+		# has_leader = "János Hunyadi"
+		# is_year = 1445
+		# NOT = { is_year = 1470 }
+		# has_government_attribute = heir
+	# }
+
+	# mean_time_to_happen = {
+		# months = 6
+	# }
+
+	# option = {
+		# ai_chance = { factor = 50 }
+		# trigger = {
+			# HAB = { has_heir = "Ladislaus Postumus" }
+		# }
+		# name = flavor_hun.1.a
+		# define_ruler = {
+			# name = "János"
+			# dynasty = "Hunyadi"
+			# DIP = 5
+			# ADM = 4
+			# MIL = 5
+			# age = 39
+			# attach_leader = "János Hunyadi"
+		# }
+		# if = {
+			# limit = {
+				# has_states_general_mechanic = yes
+			# }
+			# change_statists_vs_orangists = 1
+		# }
+		# if = {
+			# limit = {
+				# has_dlc = "Rights of Man"
+			# }
+			# hidden_effect = { add_ruler_personality_ancestor = { key = bold_fighter } }
+		# }
+		# define_heir = {
+			# name = "Ladislaus Postumus"
+			# dynasty = "von Habsburg"
+			# culture = austrian
+			# adm = 3
+			# dip = 3
+			# mil = 2
+			# block_disinherit = yes
+			# birth_date = 1440.2.22
+		# }
+		# custom_tooltip = hun_ladislaus_postumus_warning_tooltip
+		# hidden_effect = { set_country_flag = hun_ladislaus_postumus_heir }
+		# every_country = {
+			# limit = {
+				# NOT = { tag = ROOT }
+				# dynasty = "von Habsburg"
+			# }
+			# add_opinion = {
+				# who = root
+				# modifier = hun_habsburgs_spurned
+			# }
+		# }
+		# add_estate_loyalty = {
+			# estate = estate_nobles
+			# loyalty = 10
+		# }
+	# }
+	# option = {
+		# name = flavor_hun.1.b
+		# trigger = {
+			# HAB = { has_heir = "Ladislaus Postumus" }
+		# }
+		# ai_chance = { factor = 50 }
+		# add_stability_or_adm_power = yes
+		# define_heir = {
+			# name = "Ladislaus Postumus"
+			# dynasty = "von Habsburg"
+			# culture = austrian
+			# adm = 3
+			# dip = 3
+			# mil = 2
+			# birth_date = 1440.2.22
+		# }
+		# hidden_effect = {
+			# define_ruler = {
+				# ADM = 0
+				# DIP = 0
+				# MIL = 0
+				# regency = yes
+			# }
+		# }
+		# custom_tooltip = hun_ladislaus_postumus_warning_tooltip
+		# hidden_effect = { set_country_flag = hun_ladislaus_postumus_heir }
+		# add_estate_loyalty = {
+			# estate = estate_nobles
+			# loyalty = -15
+		# }
+
+	# }
+	# option = {
+		# ai_chance = { factor = 1 }
+		# trigger = {
+			# HAB = { NOT = { has_heir = "Ladislaus Postumus" } }
+		# }
+		# name = flavor_hun.1.c
+		# define_ruler = {
+			# name = "János"
+			# dynasty = "Hunyadi"
+			# DIP = 5
+			# ADM = 4
+			# MIL = 5
+			# age = 39
+			# attach_leader = "János Hunyadi"
+		# }
+		# define_heir = {
+			# name = "Mátyás"
+			# culture = hungarian
+			# dynasty = "Hunyadi"
+			# adm = 4
+			# dip = 5
+			# mil = 6
+			# claim = 50
+			# birth_date = 1443.2.23
+		# }
+		# hidden_effect = {
+			# set_country_flag = hun_matyas_already_existed
+		# }
+		# if = {
+			# limit = {
+				# has_states_general_mechanic = yes
+			# }
+			# change_statists_vs_orangists = 1
+		# }
+		# if = {
+			# limit = {
+				# has_dlc = "Rights of Man"
+			# }
+			# hidden_effect = { add_ruler_personality_ancestor = { key = bold_fighter } }
+		# }
+		# add_estate_loyalty = {
+			# estate = estate_nobles
+			# loyalty = 10
+		# }
+	# }
+# }
+
+# # Mattias Corvinus or a Habsburg king
+# country_event = {
+	# id = flavor_hun.2
+	# title = flavor_hun.2.t
+	# desc = flavor_hun.2.d
+	# picture = ELECTION_REPUBLICAN_eventPicture
+
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = HUN
+		# is_year = 1450
+		# NOT = { is_year = 1457 }
+		# OR = {
+			# heir_age = 15
+			# has_heir = no
+		# }
+		# if = {
+			# limit = {
+				# has_heir = no
+			# }
+			# NOT = { has_country_flag = hun_matyas_already_existed }
+		# }
+		# has_regency = no
+		# is_subject = no
+		# HAB = {
+			# is_subject = no
+			# government = monarchy
+			# has_regency = no
+		# }
+		# has_government_attribute = heir
+		# NOT = { has_country_flag = hun_has_had_matthias_corvinus_event }
+	# }
+
+	# mean_time_to_happen = {
+		# months = 1
+	# }
+
+	# immediate = {
+		# hidden_effect = {
+			# set_country_flag = hun_has_had_matthias_corvinus_event #for missions
+		# }
+	# }
+
+	# option = {
+		# ai_chance = { factor = 75 }
+		# trigger = {
+			# OR = {
+				# has_heir = no
+				# has_heir = "Ladislaus Postumus"
+			# }
+		# }
+		# name = flavor_hun.2.a
+		# remove_historical_friend = HAB
+		# HAB = { remove_historical_friend = HUN }
+		# hidden_effect = { clr_country_flag = hun_ladislaus_postumus_heir }
+		# define_heir = {
+			# name = "Mátyás"
+			# culture = hungarian
+			# dynasty = "Hunyadi"
+			# adm = 4
+			# dip = 5
+			# mil = 6
+			# claim = 50
+			# birth_date = 1443.2.23
+		# }
+		# if = {
+			# limit = {
+				# has_dlc = "Rights of Man"
+			# }
+			# hidden_effect = { add_heir_personality_ancestor = { key = just } }
+		# }
+		# set_country_flag = hun_keep_ladislaus_alive
+		# define_ruler = {
+			# regency = yes
+			# ADM = 2
+			# DIP = 2
+			# MIL = 2
+		# }
+		# HAB = {
+			# tooltip = {
+				# add_casus_belli = {
+					# target = HUN
+					# type = cb_restore_personal_union
+					# months = 60
+				# }
+			# }
+			# hidden_effect = {
+				# country_event = { id = flavor_hun.10 days = 1 }
+			# }
+		# }
+	# }
+	# option = {
+		# name = flavor_hun.2.b
+		# ai_chance = { factor = 25 }
+		# add_stability_or_adm_power = yes
+		# HUN = {
+			# if = {
+				# limit = { senior_union_with = CRO }
+				# inherit = CRO
+			# }
+		# }
+		# HAB = {
+			# create_union = HUN
+			# hidden_effect = {
+				# country_event = { id = flavor_hun.3 days = 1 }
+			# }
+		# }
+	# }
+	# option = {
+		# name = flavor_hun.2.c
+		# trigger = {
+			# has_heir = yes
+			# NOT = { has_heir = "Ladislaus Postumus" }
+			# NOT = { dynasty = HAB }
+		# }
+		# ai_chance = {
+			# factor = 25
+			# modifier = {
+				# factor = 10
+				# heir_adm = 5
+				# heir_mil = 5
+				# heir_dip = 5
+			# }
+		# }
+		# remove_historical_friend = HAB
+		# HAB = { remove_historical_friend = HUN }
+		# kill_ruler = yes
+		# HAB = {
+			# tooltip = {
+				# add_casus_belli = {
+					# target = HUN
+					# type = cb_restore_personal_union
+					# months = 60
+				# }
+			# }
+			# hidden_effect = {
+				# country_event = { id = flavor_hun.10 days = 1 }
+			# }
+		# }
+	# }
+# }
+
+# # Ladislaus Postumus dies of Leukemia (copy of flavor_hun.2 with adaptations)
+# country_event = {
+	# id = flavor_hun.201
+	# title = flavor_hun.201.name
+	# desc = {
+		# trigger = {
+			# has_ruler = "Ladislaus Postumus I"
+			# has_heir = no
+		# }
+		# desc = flavor_hun.201.d.king_no_heir
+	# }
+	# desc = {
+		# trigger = {
+			# has_ruler = "Ladislaus Postumus I"
+			# has_heir = yes
+		# }
+		# desc = flavor_hun.201.d.king
+	# }
+	# desc = {
+		# trigger = {
+			# has_heir = "Ladislaus Postumus"
+		# }
+		# desc = flavor_hun.201.d.heir
+	# }
+	# picture = DEATH_OF_HEIR_eventPicture
+
+	# mean_time_to_happen = {
+		# years = 20 #so it should happen about 1/3 of games
+	# }
+
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = HUN
+		# is_year = 1450
+		# NOT = { is_year = 1457 }
+		# OR = {
+			# has_heir = "Ladislaus Postumus"
+			# has_ruler = "Ladislaus Postumus I"
+		# }
+		# HAB = {
+			# OR = {
+				# has_heir = "Ladislaus Postumus"
+				# has_ruler = "Ladislaus Postumus"
+			# }
+		# }
+		# NOT = { has_country_flag = hun_has_had_matthias_corvinus_event }
+		# is_subject = no
+	# }
+
+	# immediate = {
+		# set_country_flag = hun_has_had_matthias_corvinus_event
+	# }
+
+	# option = { #Heir dies, get Matyas
+		# name = flavor_hun.201.a
+		# ai_chance = { factor = 1 }
+		# trigger = {
+			# has_heir = "Ladislaus Postumus"
+		# }
+		# remove_historical_friend = HAB
+		# HAB = { remove_historical_friend = HUN }
+		# kill_heir = { allow_new_heir = no }
+		# define_heir = {
+			# name = "Mátyás"
+			# culture = hungarian
+			# dynasty = "Hunyadi"
+			# adm = 4
+			# dip = 5
+			# mil = 6
+			# claim = 50
+			# birth_date = 1443.2.23
+		# }
+		# if = {
+			# limit = {
+				# has_dlc = "Rights of Man"
+			# }
+			# hidden_effect = { add_heir_personality_ancestor = { key = just } }
+		# }
+		# HAB = {
+			# tooltip = {
+				# add_casus_belli = {
+					# target = HUN
+					# type = cb_restore_personal_union
+					# months = 60
+				# }
+			# }
+			# hidden_effect = {
+				# country_event = { id = flavor_hun.10 days = 1 }
+			# }
+		# }
+	# }
+	# option = { #Ruler dies, keep his heir
+		# name = flavor_hun.201.b
+		# ai_chance = { factor = 1 }
+		# trigger = {
+			# has_ruler = "Ladislaus Postumus I"
+			# has_heir = yes
+		# }
+		# kill_ruler = yes
+	# }
+	# option = { #Ruler dies with no heir, take a union
+		# name = flavor_hun.201.c
+		# ai_chance = { factor = 1 }
+		# trigger = {
+			# has_ruler = "Ladislaus Postumus I"
+			# has_heir = no
+		# }
+		# add_stability_or_adm_power = yes
+		# kill_ruler = yes
+		# HUN = {
+			# if = {
+				# limit = { senior_union_with = CRO }
+				# inherit = CRO
+			# }
+		# }
+		# HAB = {
+			# create_union = HUN
+			# hidden_effect = {
+				# country_event = { id = flavor_hun.3 days = 1 }
+			# }
+		# }
+	# }
+	# option = { #Ruler dies with no heir, take Matyas
+		# name = flavor_hun.201.d
+		# ai_chance = { factor = 3 }
+		# trigger = {
+			# has_ruler = "Ladislaus Postumus I"
+			# has_heir = no
+		# }
+		# remove_historical_friend = HAB
+		# HAB = { remove_historical_friend = HUN }
+		# define_heir = {
+			# name = "Mátyás"
+			# culture = hungarian
+			# dynasty = "Hunyadi"
+			# adm = 4
+			# dip = 5
+			# mil = 6
+			# claim = 50
+			# birth_date = 1443.2.23
+		# }
+		# if = {
+			# limit = {
+				# has_dlc = "Rights of Man"
+			# }
+			# hidden_effect = { add_heir_personality_ancestor = { key = just } }
+		# }
+		# kill_ruler = yes
+		# HAB = {
+			# tooltip = {
+				# add_casus_belli = {
+					# target = HUN
+					# type = cb_restore_personal_union
+					# months = 60
+				# }
+			# }
+			# hidden_effect = {
+				# country_event = { id = flavor_hun.10 days = 1 }
+			# }
+		# }
+	# }
+# }
+
+# # Union with Hungary
+# country_event = {
+	# id = flavor_hun.3
+	# title = flavor_hun.3.t
+	# desc = flavor_hun.3.d
+	# picture = DIPLOMACY_eventPicture
+
+	# fire_only_once = yes
+	# is_triggered_only = yes
+
+	# option = {
+		# name = flavor_hun.3.a
+		# add_legitimacy = 5
+		# add_prestige = 5
+	# }
+# }
+
+# # The magyar Throne
+# country_event = {
+	# id = flavor_hun.10
+	# title = flavor_hun.10.t
+	# desc = flavor_hun.10.d
+	# picture = DIPLOMACY_eventPicture
+
+	# is_triggered_only = yes
+
+	# option = {
+		# name = flavor_hun.10.a
+		# if = { #Only add if we haven't got one already.
+			# limit = {
+				# has_casus_belli = {
+					# type = cb_restore_personal_union
+					# target = HUN
+				# }
+			# }
+			# tooltip = {
+				# add_casus_belli = {
+					# target = HUN
+					# type = cb_restore_personal_union
+					# months = 120
+				# }
+			# }
+		# }
+		# else = {
+			# add_casus_belli = {
+				# target = HUN
+				# type = cb_restore_personal_union
+				# months = 120
+			# }
+		# }
+	# }
+# }
 
 
 # Administrative and Social Reforms of Mathias Corvinus
@@ -127,6 +645,111 @@ country_event = {
 	}
 }
 
+# Decline of Royal Power
+# country_event = {
+	# id = flavor_hun.7
+	# title = flavor_hun.7.t
+	# desc = flavor_hun.7.d
+	# picture = COURT_eventPicture
+
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = HUN
+		# is_year = 1490
+		# NOT = { is_year = 1530 }
+		# is_neighbor_of = TUR
+		# has_regency = no
+		# NOT = { ADM = 5 }
+	# }
+
+	# mean_time_to_happen = {
+		# months = 12
+	# }
+
+	# option = {
+		# name = flavor_hun.7.a
+		# add_ruler_modifier = {
+			# name = hun_power_to_magnates
+		# }
+		# add_estate_loyalty = {
+			# estate = estate_nobles
+			# loyalty = 15
+		# }
+	# }
+	# option = {
+		# name = flavor_hun.7.b
+		# add_stability = -3
+		# random_owned_province = {
+			# noble_rebels = 2
+		# }
+		# add_estate_loyalty = {
+			# estate = estate_nobles
+			# loyalty = -25
+		# }
+
+	# }
+# }
+
+#Advance of the Turks.
+# country_event = {
+	# id = flavor_hun.9
+	# title = flavor_hun.9.t
+	# desc = flavor_hun.9.d
+	# picture = BATTLE_eventPicture
+
+	# fire_only_once = yes
+
+	# trigger = {
+		# tag = HUN
+		# truce_with = TUR
+		# exists = HAB
+		# HAB = {
+			# is_emperor = yes
+		# }
+		# TUR = {
+			# any_owned_province = {
+				# OR = {
+					# area = alfold_area
+					# area = transdanubia_area
+				# }
+				# previous_owner = HUN
+			# }
+		# }
+		# NOT = { is_year = 1650 }
+	# }
+
+	# mean_time_to_happen = {
+		# months = 12
+	# }
+
+	# option = {
+		# name = flavor_hun.9.a
+		# every_owned_province = {
+			# limit = {
+				# NOT = { is_core = TRA }
+				# OR = {
+					# area = transylvania_area
+					# area = southern_transylvania_area
+					# area = alfold_area #Additional just to be sure:
+					# area = wallachia_area
+					# area = moldavia_area
+					# area = bulgaria_area
+					# area = red_ruthenia_area
+					# region = ruthenia_region
+					# region = crimea_region
+				# }
+			# }
+			# add_core = TRA
+		# }
+		# every_owned_province = {
+			# limit = {
+				# NOT = { is_core = TRA }
+			# }
+			# add_permanent_claim = HAB
+		# }
+	# }
+# }
 
 # Elizabeth Bathory
 country_event = {
@@ -400,9 +1023,56 @@ country_event = {
 #	}
 #}
 
+#Crowning of X
+# country_event = {
+	# id = flavor_hun.14
+	# title = flavor_hun.14.t
+	# desc = flavor_hun.14.d
+	# picture = BAD_WITH_MONARCH_eventPicture
+
+	# fire_only_once = yes
+
+	# is_triggered_only = yes
+
+	# option = {
+		# name = flavor_hun.14.a
+		# add_opinion = {
+			# who = FROM
+			# modifier = hun_crowned_by_rebels
+		# }
+		# tooltip = {
+			# if = {
+				# limit = {
+					# 265 = { #Moravia
+						# owned_by = BOH
+					# }
+				# }
+				# 265 = { add_permanent_claim = HUN }
+			# }
+			# if = {
+				# limit = {
+					# 4237 = { #Moravia
+						# owned_by = BOH
+					# }
+				# }
+				# 4237 = { add_permanent_claim = HUN }
+			# }
+			# if = {
+				# limit = {
+					# silesia_area = {
+						# country_or_non_sovereign_subject_holds = BOH
+					# }
+				# }
+				# silesia_area = {
+					# limit = { country_or_non_sovereign_subject_holds = BOH }
+					# add_permanent_claim = HUN
+				# }
+			# }
+		# }
+	# }
+# }
 
 #Banditry in Slovakia
-
 country_event = {
 	id = flavor_hun.15
 	title = flavor_hun.15.t

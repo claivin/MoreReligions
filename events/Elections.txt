@@ -1,3 +1,6 @@
+#modified
+	#700,701,800 trigger
+
 namespace = elections
 
 # Election!

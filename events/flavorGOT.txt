@@ -1,6 +1,8 @@
+#modified
+	#15 option.a
+
 ##############################
-# Gotland Flavor Events
-#                            
+# Gotland Flavor Events                 
 # Written by Ogulcan Yildirim
 ##############################
 

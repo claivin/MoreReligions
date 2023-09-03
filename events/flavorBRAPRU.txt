@@ -1,6 +1,9 @@
+#modified
+	#42 immediate/option.a
+	#44 trigger
+
 ########################################
 # Flavor Events for Brandenburg - Prussia
-#
 # written by Sara Wendel-Örtqvist
 ########################################
 

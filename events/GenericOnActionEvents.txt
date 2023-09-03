@@ -1,3 +1,6 @@
+#modified
+	#611 trigger
+
 # Integrating FROMCOUNTRY
 country_event = {
 	id = 610

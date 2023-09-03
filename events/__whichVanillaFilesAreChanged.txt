@@ -23,3 +23,45 @@
 	#KnightsMissionEvents
 	#ManchuMissionEvents
 	#Westphalia_missions
+	#flavorMNG
+	
+#Modified - Specific changes at top of file
+	#flavorHUN
+	#flavorZIM
+	#flavorSUN
+	#flavorMAJ
+	#EstatePrivilegesAndAgendasEvents
+	#FlavorTUR
+	#Elections
+	#HaremEvents
+	#flavorTEU
+	#flavorFRA
+	#Monument_Events
+	#flavorETH
+	#PriceChanges
+	#flavorGUJ
+	#flavorSWI
+	#Hinduism
+	#flavorARA
+	#flavorRUS
+	#flavorBRAPRU
+	#flavorMCH
+	#flavorENG
+	#ExplorationEvents
+	#flavorGOT
+	#flavorPOL
+	#GenericOnActionEvents
+	#flavorMAL
+	#WomenInHistory
+	#disaster_Revolution
+	#Protestantism
+	#center_of_revolution_events
+	#flavorGBR
+	#estate_janissaries
+	#flavorHSA
+	#Shinto
+	#Religious
+	#CulturalEvents
+	#ChineseEmpire
+	#TribalSuccession
+	#flavorBOH

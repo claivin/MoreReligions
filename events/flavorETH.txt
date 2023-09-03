@@ -1,6 +1,8 @@
+#modified
+	#29 trigger
+
 ########################################
 # Events for Ethiopia
-#
 # written by Johan Andersson
 ########################################
 

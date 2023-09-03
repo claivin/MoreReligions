@@ -1,3 +1,8 @@
+#modified
+	#1,10 trigger
+	
+	#5 trigger/options
+
 # Flavour events for Teutonic Order - The Prussian Confederation
 # By Daniel Tolman
 

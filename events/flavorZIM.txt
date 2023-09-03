@@ -1,6 +1,8 @@
+#modified
+	#1,9,10 trigger
+
 ########################################
 # Events for Mutapa
-#
 # written by Ogulcan Yildirim
 ########################################
 

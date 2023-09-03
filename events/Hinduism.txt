@@ -1,6 +1,8 @@
+#modified
+	#1 option.h
+
 ########################################
 # Hindu Deity Events
-#
 # written by Rufus Tronde
 ########################################
 

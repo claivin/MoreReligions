@@ -1,4 +1,5 @@
-#remove reference from english cw
+#modified
+	#118 trigger
 
 #####################################################
 # 1.35 Events for Great Britain / Angevin Kingdom

@@ -1,3 +1,6 @@
+#modified
+	#5 trigger
+
 namespace = monument_events
 
 # Monument reaches highest tier

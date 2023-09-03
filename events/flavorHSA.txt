@@ -1,4 +1,4 @@
-#removed: 23
+#removed 23
 
 ########################################
 # Flavor Events for Hansa

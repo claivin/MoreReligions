@@ -1,5 +1,4 @@
-#Respurposes 3
-
+#removes 3
 
 ###################
 # Cultural Events #

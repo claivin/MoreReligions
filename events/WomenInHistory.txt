@@ -1,6 +1,8 @@
+#modified
+	#11 trigger
+
 ########################################
 # Events for Women in History
-#
 # written by Sara Wendel-Örtqvist
 ########################################
 

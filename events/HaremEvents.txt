@@ -1,3 +1,6 @@
+#modified
+	#2, 3, 4, 17, 18, 19, 20, 21, 24 trigger
+	#10, 22, 23 mtth
 ########################################
 # Ottoman Harem Events		           #
 # Written by Henrik Lohmander		   #

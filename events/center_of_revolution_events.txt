@@ -1,6 +1,8 @@
+#modified
+	#1 trigger
+
 ########################################
 # Events concerning Revolution Spread
-#
 # written by Pierre du Plessis
 ########################################
 

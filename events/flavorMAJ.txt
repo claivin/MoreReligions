@@ -1,3 +1,6 @@
+#modified
+	#8 trigger
+
 # Flavour events for Majapahit
 # Written by Daniel Tolman
 

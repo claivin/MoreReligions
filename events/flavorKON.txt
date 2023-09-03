@@ -862,7 +862,7 @@ country_event = {
 	}
 }
 
-# # Kongo gets the cardinal
+# Kongo gets the cardinal
 country_event = {
 	id = flavor_kon.15
 	title = flavor_kon.15.t
@@ -919,7 +919,7 @@ country_event = {
 	}
 }
 
-# # Gurantee a cardinal exists in the province with "Cardinal of Africa"
+# Gurantee a cardinal exists in the province with "Cardinal of Africa"
 province_event = {
 	id = flavor_kon.103
 	title = none

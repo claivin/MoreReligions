@@ -1,6 +1,8 @@
+#modified
+	#4 trigger
+
 ########################################
 # Event for Switzerland
-#
 # written by Katya Magnusson
 ########################################
 
