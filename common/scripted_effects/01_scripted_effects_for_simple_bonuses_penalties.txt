@@ -574,3 +574,166 @@ change_karma_effect = {
 		}
 	}
 }
+
+harmonise_culture_slot_effect = {
+   if = {
+        limit = { has_harmonized_with = christian }
+		add_country_modifier = {
+		name = harmony_culture_slot_christian
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = muslim }
+		add_country_modifier = {
+		name = harmony_culture_slot_islam
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = jewish_group }
+		add_country_modifier = {
+		name = harmony_culture_slot_jewish
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = zoroastrian_group }
+		add_country_modifier = {
+		name = harmony_culture_slot_zoroastrian
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = dharmic }
+		add_country_modifier = {
+		name = harmony_culture_slot_dharmic
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = mahayana }
+		add_country_modifier = {
+		name = harmony_culture_slot_mahayana
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = buddhism }
+		add_country_modifier = {
+		name = harmony_culture_slot_buddhism
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = nihon }
+		add_country_modifier = {
+		name = harmony_culture_slot_shinto
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = vajrayana }
+		add_country_modifier = {
+		name = harmony_culture_slot_vajrayana
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = mr_maitreya }
+		add_country_modifier = {
+		name = harmony_culture_slot_maitreya
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = mr_shin }
+		add_country_modifier = {
+		name = harmony_culture_slot_shin
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = mr_tunggal_dharma }
+		add_country_modifier = {
+		name = harmony_culture_slot_tunggal
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = mr_jingtianfazu }
+		add_country_modifier = {
+		name = harmony_culture_slot_jingtianfazu
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = mr_taoism }
+		add_country_modifier = {
+		name = harmony_culture_slot_taoism
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = azhaliism }
+		add_country_modifier = {
+		name = harmony_culture_slot_azhaliism
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = mr_tendai }
+		add_country_modifier = {
+		name = harmony_culture_slot_tendai
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = yogavacara }
+		add_country_modifier = {
+		name = harmony_culture_slot_yogavacara
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = pagan }
+		add_country_modifier = {
+		name = harmony_culture_slot_pagan
+		duration = -1
+		hidden = yes 
+        }
+    }
+   if = {
+        limit = { has_harmonized_with = east_asian_pagan_group }
+		add_country_modifier = {
+		name = harmony_culture_slot_east_pagan
+		duration = -1
+		hidden = yes 
+        }
+    }	
+   if = {
+        limit = { has_harmonized_with = europe_pagan_group }
+		add_country_modifier = {
+		name = harmony_culture_slot_EU_pagan
+		duration = -1
+		hidden = yes 
+        }
+    }	
+}

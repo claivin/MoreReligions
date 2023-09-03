@@ -1969,6 +1969,76 @@ estate_burghers_mountain_expansion = {
 	}
 }
 
+estate_burghers_jungle_expansion = {
+	icon = privilege_development_efficiency
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	influence = 0.05
+	loyalty = 0.05
+	is_valid = {
+		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_jungle_expansion }
+	}
+	can_select = {
+		any_owned_province = {
+				has_terrain = jungle
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_burghers_jungle_expansion_gt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = jungle
+				}
+				add_province_modifier = {
+					name = estate_burghers_jungle_expansion_jungles
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_burghers_jungle_expansion_rt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+						has_province_modifier = estate_burghers_jungle_expansion_jungles
+				}
+				remove_province_modifier = estate_burghers_jungle_expansion_jungles
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				has_terrain = jungle
+			}
+			add_province_modifier = {
+				name = estate_burghers_jungle_expansion
+				duration = -1
+			}
+		}
+	}	
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 2
+			num_of_owned_provinces_with = {
+					has_terrain = jungle
+				value = 8
+			}
+		}
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+
 estate_burghers_orthodox_tolerance = {
 	icon = privilege_tolerance_heretics
 	max_absolutism = -5

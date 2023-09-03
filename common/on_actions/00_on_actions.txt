@@ -6278,3 +6278,308 @@ on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
 on_heir_disinherited = {
 	on_heir_disinherited_or_death_effect = yes
 }
+
+
+##MR_harmonised effects
+on_harmonized_pagan = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.1
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_pagan
+				   duration = -1
+		           hidden = yes 
+		        }
+	}	 
+}
+on_harmonized_east_asian_pagan_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.1
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_east_pagan
+				   duration = -1
+		           hidden = yes 
+		        }
+	}	 
+}
+on_harmonized_europe_pagan_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.1
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_EU_pagan
+				   duration = -1
+		           hidden = yes 
+		        }
+	}	 
+}
+on_harmonized_christian = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.2
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_christian
+				   duration = -1
+		           hidden = yes 
+		        }
+	}		
+}
+on_harmonized_muslim = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.3
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_islam
+				   duration = -1
+		           hidden = yes 
+		        }
+	}	
+}
+on_harmonized_jewish_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.5
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_jewish
+				   duration = -1
+		           hidden = yes 
+		        }
+	}		
+}
+on_harmonized_zoroastrian_group = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.6
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_zoroastrian
+				   duration = -1
+		           hidden = yes 
+		        }
+	}		
+}
+on_harmonized_dharmic = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.4
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_dharmic
+				   duration = -1
+		           hidden = yes 
+		        }
+	}		
+}
+on_harmonized_mahayana = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.9
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_mahayana
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_buddhism = { #Theravada
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.8
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_therevada
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_nihon = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_shinto
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_vajrayana = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.10
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_vajrayana
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_mr_maitreya = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_maitreya
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_mr_shin = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_shin
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_mr_tunggal_dharma = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_tunggal
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_mr_jingtianfazu = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_jingtianfazu
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_mr_taoism = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_taoism
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_azhaliism = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_azhaliism
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_mr_tendai = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_tendai
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+on_harmonized_yogavacara = {
+	on_harmonized_effect = yes
+	on_harmonized_religion_estate_privileges_effect = yes
+	events = {
+		confucian_events.7
+	}
+	if = {
+	     limit = { has_country_flag = harmony_culture_slots }
+		         add_country_modifier = {
+				   name = harmony_culture_slot_yogavacara
+				   duration = -1
+		           hidden = yes 
+		        }
+	}
+}
+
+##EndOfHarmony##

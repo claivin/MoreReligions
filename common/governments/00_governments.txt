@@ -164,6 +164,7 @@ monarchy = {
 				house_of_lords_reform
 				ministerialis_promotion_reform
 				separation_of_boyars_from_court_reform
+				MR_bureau_military_affairs_reform
 			}
 		}
 		bureaucracy = {

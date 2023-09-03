@@ -1,0 +1,167 @@
+yunnan_masters_of_bengal = {
+	merchants = 1
+}
+yunnan_yuelu_academy_patronage = {
+    innovativeness_gain = 0.5	
+}
+yunnan_yuelu_academy_examinations = {
+    advisor_pool = 1
+    advisor_cost = -0.15	
+}
+yunnan_yuelu_academy_destroyed = {
+    build_cost = -0.15	
+}
+pearl_estuary_plus = {
+province_trade_power_value = 20
+}
+yunnan_burmese_campaigns = {
+global_supply_limit_modifier = 0.33
+}
+yunnan_burmese_veterans = {
+global_supply_limit_modifier = 0.50
+}
+yunnan_pegu_trade_route = {
+caravan_power = 0.15
+}
+yunnan_unifier_of_china = {
+no_stability_loss_on_monarch_death = yes 
+global_unrest = -1
+imperial_mandate = 0.05
+}
+yunnan_conquest_south_china = {
+local_autonomy = -0.05
+} 
+yunnan_conquest_north_china = {
+local_autonomy = -0.05
+} 
+yunnan_panthay_bodyguards = {
+infantry_power = 0.05
+} 
+yunnan_panthay_royalguards = {
+infantry_power = 0.10
+leader_land_fire = 1
+} 
+yunnan_naiman_bodyguards = {
+cavalry_power = 0.05
+}
+yunnan_naiman_royalguards = {
+cavalry_power = 0.10
+leader_land_shock = 1
+}
+yunnan_executed_emperor = {
+local_unrest = +10
+} 
+setter_of_suns = {
+prestige = 1
+country_military_power = 2
+}
+dual_emperorship = {
+prestige = 1
+country_diplomatic_power = 1
+diplomatic_reputation = 2
+} 
+sole_emperor = {
+prestige = 1
+country_admin_power = 1
+reduced_liberty_desire = 30
+} 
+yunnan_pirates_vanquished = {
+diplomatic_reputation = 1
+prestige_from_naval = 1
+}
+yunnan_pirates_recruited = {
+allowed_marine_fraction = 0.1
+capture_ship_chance = 0.25
+}
+yunnan_gold_from_copper_exports = {
+global_tax_income = 24
+trade_efficiency = 0.1
+}
+yunnan_exchange_ideas = {
+improve_relation_modifier = 0.15
+idea_cost = -0.05
+}
+yunnan_industrialization = {
+global_allowed_num_of_manufactories = 1
+global_trade_goods_size_modifier = 0.15
+}
+estate_burghers_jungle_expansion_jungles = {
+local_development_cost = -0.25
+}
+
+
+
+
+#HARMONYSLOTS
+harmony_culture_slot_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_east_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_NA_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_EU_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_SEA_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_AFR_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_SA_pagan = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_christian = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_islam = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_zoroastrian = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_dharmic = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_jewish = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_jingtianfazu = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_taoism = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_shinto = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_vajrayana = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_mahayana = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_therevada = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_maitreya = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_azhaliism = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_tunggal = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_shin = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_tendai = {
+num_accepted_cultures = 1
+}
+harmony_culture_slot_yogavacara = {
+num_accepted_cultures = 1
+}

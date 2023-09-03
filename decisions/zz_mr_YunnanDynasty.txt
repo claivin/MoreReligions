@@ -1,0 +1,112 @@
+country_decisions = {
+	yunnan_dynasty_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = YNN_imperial_dynasty }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			was_never_end_game_tag_trigger = yes
+			tag = YNN
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 700
+				province_id = 1816
+				province_id = 688
+				province_id = 1836
+				province_id = 684
+				province_id = 1821
+			}
+		}
+		allow = { 
+			is_at_war = no
+			
+			OR = {
+				owns_core_province = 700
+				owns_core_province = 1816
+				owns_core_province = 688
+				owns_core_province = 1836
+				owns_core_province = 684
+				owns_core_province = 1821
+			}
+			OR = {
+			    mission_completed = ynn_conquer_shaanxi
+				mission_completed = ynn_conquer_hunan
+				}
+			development_in_provinces = {
+	         value = 450
+	         superregion = china_superregion
+            }	
+ 		}
+		effect = {
+			country_event = {id = MR_yunnan_flavor.12 }
+            set_government_rank = 3 			
+			set_country_flag = YNN_imperial_dynasty
+			custom_tooltip = yunnan_imperial_guard
+			hidden_effect = {
+			if = {
+			limit = {has_country_modifier = yunnan_panthay_bodyguards}
+			remove_country_modifier = yunnan_panthay_bodyguards 
+			add_country_modifier = {
+			        name = yunnan_panthay_royalguards
+					duration = -1
+					}
+			}
+			else_if = { 
+			limit = {has_country_modifier = yunnan_naiman_bodyguards}
+			remove_country_modifier = yunnan_naiman_bodyguards 
+			add_country_modifier = {
+			        name = yunnan_naiman_royalguards
+					duration = -1
+					}
+				}
+		 }
+		}
+				
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+	
+	yuan_khanbaliq_decision = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = YUA_khanbaliq }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			was_never_end_game_tag_trigger = yes
+			tag = YUA
+			1816 = { NOT = {is_capital_of = ROOT} } 
+		}
+		provinces_to_highlight = {
+				province_id = 1816
+		}
+		allow = { 
+			is_at_war = no
+			
+				owns_core_province = 1816
+			    mission_completed = ynn_eat_khanbaliq
+
+ 		}
+		effect = { 			
+			set_country_flag = YUA_khanbaliq
+			1816 = {
+			  move_capital_effect = yes
+			  add_base_tax = 2
+			  add_base_manpower = 2
+			}
+		}
+				
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

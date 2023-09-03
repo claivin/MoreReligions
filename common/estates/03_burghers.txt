@@ -274,6 +274,7 @@ estate_burghers = {
 		estate_burghers_statutory_rights
 		estate_burghers_orang_laut_alliances
 		estate_burghers_control_over_the_mint
+		estate_burghers_jungle_expansion
 		estate_burghers_hydraulic_rights
 		estate_burghers_forest_expansion
 		estate_burghers_mountain_expansion

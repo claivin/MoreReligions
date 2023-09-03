@@ -3,7 +3,7 @@
 owner = GSC
 controller = GSC
 add_core = GSC
-culture = zhuang
+culture = xiang
 religion = mr_mo
 capital = "Guilin"
 trade_goods = silk

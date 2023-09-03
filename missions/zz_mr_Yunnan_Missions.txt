@@ -1,0 +1,1563 @@
+mr_yunnan_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = YNN
+			tag = LNG
+		}
+	}
+    ynn_conquer_mongmao = {
+		icon = mission_suppress_the_saophasa
+		position = 2
+		required_missions = {ynn_build_army}
+		provinces_to_highlight = {area = yun_gui_borderland_area}
+		trigger = {
+			yun_gui_borderland_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+       		kachin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+       		shan_hill_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+				662 = {
+                add_province_modifier = {
+				name = yunnan_burmese_campaigns
+				duration = 3650
+			    }	
+		      }
+		    }
+	}
+	ynn_burmese_invasion = {
+		icon = mission_conquer_lower_burma_tau
+		position = 4
+		required_missions = {ynn_conquer_mongmao}
+		provinces_to_highlight = {
+			OR = {
+				area = shan_hill_area
+				area = kachin_area
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			shan_hill_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kachin_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+       		chindwin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+       		upper_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+			central_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+            karenni_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+			custom_tooltip = yunnan_extend_campaign
+					
+			    hidden_effect = {
+                if = {
+                    662 = {
+					limit = { has_province_modifier = yunnan_burmese_campaigns } 
+                    extend_province_modifier = { 
+                        name = yunnan_burmese_campaigns 
+                        duration = 3650 
+                    }                    
+                   }
+				  } 
+                }		                  		               			   
+		    }
+	}
+    ynn_crush_pagan = {
+		icon = mission_kowtow
+		position = 5
+		required_missions = {ynn_burmese_invasion}
+		provinces_to_highlight = {
+		region = burma_region
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = burma_region
+				value = 20
+			}
+			owns_core_province = 2399
+		}
+		effect = {
+       		lower_burma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+            arakan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+			country_event = { 
+            id = MR_yunnan_flavor.9 
+           } 
+			
+			custom_tooltip = yunnan_extend_campaign
+					
+			    hidden_effect = {
+                if = {
+                    662 = {
+					limit = { has_province_modifier = yunnan_burmese_campaigns } 
+                    extend_province_modifier = { 
+                        name = yunnan_burmese_campaigns 
+                        duration = 3650 
+                    }                    
+                   }
+				  } 
+                }				
+		    }
+	}
+    ynn_pegu_trade = {
+		icon = mission_invade_arakan
+		position = 6
+		required_missions = {ynn_crush_pagan}
+		provinces_to_highlight = {
+		OR = {
+				area = arakan_area
+				area = lower_burma_area
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+			arakan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_burma_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+                    add_country_modifier = { 
+					name = yunnan_pegu_trade_route
+					duration = -1 
+                     }
+       		564 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+       		561 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+			custom_tooltip = yunnan_complete_campaign
+			
+			hidden_effect = {
+                if = {
+                    limit = {
+					662 = { has_province_modifier = yunnan_burmese_campaigns } 
+					}
+					662 = { remove_province_modifier = yunnan_burmese_campaigns }				    
+                    add_country_modifier = { 
+					name = yunnan_burmese_veterans
+					duration = -1 
+					desc = yunnan_burmese_veterans_tooltip
+                     }                 
+                   }
+				  } 
+                }
+		    
+	}
+    ynn_bengali_entrepot = {
+		icon = mission_conquer_bengal_tau
+		position = 7
+		required_missions = {ynn_pegu_trade}
+		provinces_to_highlight = {
+		OR = {
+			province_id = 564
+			province_id = 561
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+			561 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			564 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+		    bengal_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				}
+       		564 = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = {
+							province_has_center_of_trade_of_level = 2
+						}						
+					}
+					add_center_of_trade_level = 1
+				 }
+			    }
+       		561 = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = {
+							province_has_center_of_trade_of_level = 2
+						}						
+					}
+					add_center_of_trade_level = 1
+				 }
+			    }
+                add_country_modifier = {
+				name = yunnan_masters_of_bengal
+				duration = -1
+				hidden = yes
+			    }	
+				custom_tooltip = yunnan_bengali_merchant
+		    }
+	}
+        ynn_integrate_mengzi = {
+		icon = mng_form_depots
+		position = 9
+		required_missions = {}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 5329
+		province_id = 663
+		}
+		NOT = { owned_by = ROOT }	
+		}
+		trigger = {
+			5329 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			663 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			red_river_delta_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }    
+		    }
+	}  	
+        ynn_kill_viet = {
+		icon = mission_mnd_dai_prevent_division
+		position = 10
+		required_missions = {ynn_integrate_mengzi}
+		provinces_to_highlight = {
+        area = red_river_delta_area
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+		
+			red_river_delta_area = {
+			    type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+       		vietnam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+       		champa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }
+       		tay_nguyen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			    }				
+		    }
+	}
+        ynn_kill_champa = {
+		icon = mission_mnd_khm_protect_the_cham
+		position = 11
+		required_missions = {ynn_kill_viet}
+		provinces_to_highlight = {
+		OR = {
+        area = tay_nguyen_area
+		area = vietnam_area
+		area = champa_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+		
+			tay_nguyen_area = {
+			    type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			vietnam_area = {
+			    type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			champa_area = {
+			    type = all 
+				owned_by = ROOT
+				is_core = ROOT
+			}			
+		}
+		effect = {
+		        custom_tooltip = yunnan_indonesian_claims
+				trade_company_indonesia = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+					province_has_center_of_trade_of_level = 1
+				}
+				add_permanent_claim = ROOT
+			  }	
+		            custom_tooltip = yunnan_sino_vietnamese 
+        		    update_entire_culture_foreign = {
+					culture = vietnamese
+					}
+                add_accepted_culture_or_dip_power = { culture = vietnamese_new }					
+		    }
+	}  	
+}
+
+mr_yunnan_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = YNN
+			tag = LNG
+		}
+	}
+		ynn_build_army = {
+		icon = mission_mnd_dai_control_the_army
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+		           num_of_generals = 1
+		           army_size_percentage = 0.9				  
+				   }
+		effect = {
+			country_event = { 
+            id = MR_yunnan_flavor.4 
+           } 	
+		
+		    dali_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yun_gui_borderland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+       		sichuan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+			    }
+	}
+	
+        ynn_conquer_dali = {
+		icon = mission_steppe_warriors
+		position = 2
+		required_missions = {ynn_build_army}
+		provinces_to_highlight = {area = dali_area}
+		trigger = {
+			dali_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			    dali_area = {add_nationalism = -30}	
+				custom_tooltip = yunnan_three_pagodas
+		    }
+	}  
+
+        ynn_align_tibet = {
+		icon = mission_diplomatic_relation
+		position = 3
+		required_missions = {ynn_conquer_xia}
+		provinces_to_highlight = {province_id = 2184}
+		trigger = {
+		if = {
+		limit = {exists = XZH}
+		OR = {
+			reverse_has_opinion = {
+	        who = XZH
+	        value = 150
+            }
+		if = {
+		    limit = {
+			 XZH = {is_subject_of = KLK}
+			}
+			army_size = KLK
+	      }
+		  else = { army_size = XZH}
+		 }
+		}
+		else = { 
+	    2170 = {
+		is_core = ROOT
+		owned_by = ROOT
+		}
+		}
+	 }
+		effect = {
+		if = {
+		limit = {exists = XZH}
+		XZH = {
+		country_event = { 
+        id = MR_yunnan_flavor.1
+        days = 3
+       }
+	  }
+     }
+        else = {
+       		amdo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+	    }	
+    }
+  }    	
+		ynn_lingbei_expedition = {
+		icon = mission_tumu_crisis
+		position = 7
+		required_missions = {ynn_eat_khanbaliq}
+		provinces_to_highlight = {
+        region = mongolia_region
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}
+		trigger = {
+           	4678 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		num_of_owned_provinces_with = {
+				region = mongolia_region
+				is_core = ROOT
+				value = 35
+			}			
+		}
+		effect = {
+        	mongolia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}	
+		    }
+	}
+		ynn_rebuild_karakorum = {
+		icon = mng_pure_land 
+		position = 8
+		required_missions = {ynn_lingbei_expedition}
+		provinces_to_highlight = {
+        province_id = 4678
+		}
+		trigger = {
+           	4678 = {
+				owned_by = ROOT
+				is_core = ROOT
+				OR = {
+				has_building = temple
+				has_building = cathedral
+				}
+				fort_level = 1
+				development = 20
+				OR = {
+				has_building = workshop
+				has_building = counting_house
+				}				
+			}
+		
+		}
+		effect = {
+		        4678 = {change_province_name = "Helin"}
+		   
+		        custom_tooltip = yunnan_sino_altaic
+				hidden_effect = {	
+				every_province = {
+						limit = {
+							OR = {
+								culture = mongol
+								culture = oirats
+								culture = khalkha
+								culture = chahar
+							}
+						}
+						change_culture = altaic_new
+					}            		
+		        }
+				add_accepted_culture_or_dip_power = { culture = altaic_new }
+				
+			}
+	}  	
+}
+mr_yunnan_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = YNN
+			tag = LNG
+		}
+	}
+	ynn_conquer_xia = {
+		icon = mission_asian_city
+		position = 2
+		required_missions = {ynn_build_army}
+		provinces_to_highlight = {area = sichuan_area}
+		trigger = {
+			sichuan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			country_event = { 
+            id = MR_yunnan_flavor.5
+           } 			
+					chuanbei_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  }
+       		        shaanxi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  } 		    
+		    }
+	}
+	
+		ynn_conquer_shaanxi = {
+		icon = mission_mnd_dai_temples
+		position = 3
+		required_missions = {ynn_conquer_xia}
+		provinces_to_highlight = {area = shaanxi_area}
+		trigger = {
+			shaanxi_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+		        add_prestige_or_monarch_power = { amount = 30 }
+		
+					north_henan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  }
+       		        henan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  } 		    
+		    }
+	}
+		ynn_ancestral_lands = {
+		icon = mng_jing_hang_grand_canal
+		position = 4
+		required_missions = {ynn_conquer_shaanxi}
+		provinces_to_highlight = {
+		OR = { 
+		area = north_henan_area
+		area = henan_area 
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}
+		trigger = {
+			henan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_henan_area = {
+			    type = all
+				owned_by = ROOT
+			}
+           	688 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}			
+		}
+		effect = {
+		           country_event = { 
+                   id = MR_yunnan_flavor.6
+                   } 		 
+					north_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  } 		    
+		    }
+	}
+		ynn_eat_khanbaliq = {
+		icon = mng_outer_city_beijing
+		position = 6
+		required_missions = {ynn_ancestral_lands}
+		provinces_to_highlight = {
+        province_id = 1816
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}
+		trigger = {
+           	1816 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}			
+		}
+		effect = {
+		        1816 = {change_province_name = "Khanbaliq"}
+		        custom_tooltip = yunnan_north_china
+			    hidden_effect = {
+				every_owned_province = {
+					limit = { region = north_china_region }
+					add_province_modifier = {
+						name = "yunnan_conquest_north_china"
+						duration = 7300
+					}
+				}
+			}
+					manchuria_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  }
+					mongolia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  } 					  
+		    }
+	}
+		ynn_liaoyang_expedition = {
+		icon = mission_manchu_warrior
+		position = 7
+		required_missions = {ynn_eat_khanbaliq}
+		provinces_to_highlight = {
+		OR = {
+        area = liaoning_area
+		area = jilin_area
+		area = ningguta_area
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}
+		trigger = {
+			liaoning_area = {
+				type = all
+				owned_by = ROOT
+			}
+			jilin_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ningguta_area = {
+				type = all
+				owned_by = ROOT
+			}			
+		}
+		effect = {
+					korea_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 					  
+		    }
+	}
+  }	
+		ynn_conquer_korea = {
+		icon = mjz_into_korea
+		position = 8
+		required_missions = {ynn_liaoyang_expedition}
+		provinces_to_highlight = {
+		region = korea_region
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	        value = 20
+	        region = korea_region
+            }			
+		}
+		effect = {
+		2745 = { 
+		add_building = grand_shipyard 
+		}
+		735 = { 
+		add_building = grand_shipyard 
+		}
+		        custom_tooltip = yunnan_sino_korean
+        		update_entire_culture_foreign = {
+			    culture = korean
+				}	
+			add_accepted_culture_or_dip_power = { culture = korean_new }	
+	}
+  }
+		ynn_rebuild_fleet = {
+		icon = mission_raid_christian_trade
+		position = 9
+		required_missions = {ynn_conquer_korea}
+		provinces_to_highlight = { }
+		trigger = {
+	    num_of_galley = JAP
+		num_of_heavy_ship = 5
+		num_of_transport = 10
+		}
+		effect = {
+				create_admiral = {
+				tradition = 85
+			    }        
+       		     kyushu_area = {
+				    limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  } 
+       		     northern_kyushu_area = {
+				    limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  } 			  
+	}
+  }
+		ynn_japanese_foothold = {
+		icon = mission_japanese_samurai
+		position = 10
+		required_missions = {ynn_rebuild_fleet}
+		provinces_to_highlight = {
+		OR = {
+		area = kyushu_area
+		area = northern_kyushu	
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kyushu_area = {
+				type = all
+				owned_by = ROOT
+			}
+			northern_kyushu = {
+				type = all
+				owned_by = ROOT
+			}        
+		}
+		effect = {
+		
+				japan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 					  
+		    }			  
+	}
+  }
+		ynn_humble_emperor = {
+		icon = mng_end_sengoku_jidai
+		position = 11
+		required_missions = {ynn_japanese_foothold}
+		provinces_to_highlight = {
+        region = japan_region
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			1020 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	        value = 30
+	        region = japan_region
+            }			
+        
+		}
+		effect = {	
+		 country_event = { 
+                id = MR_yunnan_flavor.7
+                } 
+	}
+  }
+	ynn_settle_frontier = {
+		icon = mission_rice_field
+		position = 13
+		required_missions = {ynn_yunnan_copper}
+		provinces_to_highlight = { }		
+		trigger = {
+			#if = {
+			#	limit = {
+			#		has_estate = estate_burghers
+			#	}
+				#num_of_estate_agendas_completed = {
+				#	estate = estate_burghers
+				#	value = 2
+				#}
+			#}
+			#else = {
+			#	NOT = { has_estate = estate_burghers }
+			#}
+        num_of_owned_provinces_with = {
+	        value = 10
+            has_terrain = jungle
+           }				
+		}
+		effect = {
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				unlock_estate_privilege = {
+					estate_privilege = estate_burghers_jungle_expansion
+				}
+				add_estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 15
+				}
+			}
+			else = {
+				add_dip_power = 100
+				hidden_effect = {
+					unlock_estate_privilege = {
+						estate_privilege = estate_burghers_jungle_expansion
+					}
+				}
+			}
+		}
+	}	  
+ 	
+}
+mr_yunnan_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = YNN
+			tag = LNG
+		}
+	}
+	ynn_conquer_miao = {
+		icon = mission_kowtow
+		position = 2
+		required_missions = {ynn_integrate_shuixi}
+		provinces_to_highlight = {area = guizhou_area}
+		trigger = {
+			guizhou_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+					hunan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  }
+       		        south_hunan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			  }
+			  if = {
+			  limit = {
+			  NOT = {army_size_percentage = 1}
+			  }
+                capital_scope = {
+                   ROOT = {
+                 infantry = PREV
+                }
+              }
+                capital_scope = {
+                   ROOT = {
+                 infantry = PREV
+                }
+              }	
+             }
+            else = { 
+			ROOT = {add_manpower = 2}		 
+		    }
+		}	
+	}
+		ynn_conquer_hunan = {
+		icon = mission_vedic_education
+		position = 3
+		required_missions = {ynn_conquer_miao}
+		provinces_to_highlight = {
+			OR = {
+				area = hunan_area
+				area = south_hunan_area
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+        }		
+		trigger = {
+			hunan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_hunan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+             country_event = { 
+                id = MR_yunnan_flavor.8
+                } 
+             south_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				} 			 
+		   }
+	}
+	ynn_conquer_chiangche = {
+		icon = jap_restoration
+		position = 4
+		required_missions = {ynn_conquer_hunan}
+		provinces_to_highlight = {
+			OR = {
+				area = zhejiang_area
+				area = south_zhejiang_area
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+        }		
+		trigger = {
+			zhejiang_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_zhejiang_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+		
+			custom_tooltip = yunnan_south_china
+			hidden_effect = {
+				every_owned_province = {
+					limit = { region = south_china_region }
+					add_province_modifier = {
+						name = "yunnan_conquest_south_china"
+						duration = 7300
+					}
+				}
+			}		
+		
+		
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+					is_harmonizing_with = mr_maitreya
+				}
+				add_harmonization_progress = 25
+			}
+			else_if = {
+				limit = { has_harmonized_with = mr_maitreya }
+				add_adm_power = 150
+			}		
+			custom_tooltip = yunnan_harmonise_maitreya
+		   }
+	}
+	ynn_unify_china = {
+		icon = qng_balance_mandate 
+		position = 7
+		required_missions = {
+		ynn_conquer_chiangche
+		ynn_eat_khanbaliq
+		}
+		provinces_to_highlight = {
+		OR = {
+	    region = north_china_region
+		region = south_china_region
+		region = xinan_region
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+        }		
+		trigger = {
+		if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				OR = {
+					is_emperor_of_china = yes
+					custom_trigger_tooltip = {
+						tooltip = no_country_is_EoC
+						NOT = {
+							any_country = {
+								is_emperor_of_china = yes
+							}
+						}
+					}
+				}
+			}
+	
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			south_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+		}
+		effect = {
+			add_country_modifier = {
+				name = yunnan_unifier_of_china
+				duration = 18250
+	   		}
+			add_stability_or_adm_power = yes
+		   }
+	}
+	ynn_yunnan_copper = {
+		icon = mission_african_gold
+		position = 12
+		required_missions = { }
+		provinces_to_highlight = {
+        AND = {
+		owned_by = ROOT
+        trade_goods = copper
+		region = xinan_region
+		OR = {
+		NOT = { has_building = workshop}
+		NOT = { base_production = 8 }
+		}
+         }	
+		}		
+		trigger = {
+        num_of_owned_provinces_with = {
+	        value = 4
+            region = xinan_region
+			has_building = workshop
+			base_production = 8
+           }	
+		}
+		effect = {
+		country_event = {
+	     id = MR_yunnan_flavor.11
+		 }
+      }
+	}
+	ynn_new_ideas = {
+		icon = mission_european_politics
+		position = 13
+		required_missions = {ynn_yunnan_copper}
+		provinces_to_highlight = { }		
+		trigger = {
+        has_more_institutions_than_westerns = yes
+		OR = {		
+		 has_better_tech_than_westerns = yes 
+         any_ally = { technology_group = western }	
+         }		 
+		}
+		effect = {
+        add_country_modifier {
+        name = yunnan_exchange_ideas
+		duration = -1		
+		}
+	  }
+	}
+	ynn_industrialisation = {
+		icon = industrialized_rhineland
+		position = 14
+		required_missions = {
+		ynn_settle_frontier
+		ynn_new_ideas
+		ynn_protect_markets
+		}
+		provinces_to_highlight = { }		
+		trigger = {
+        num_of_trading_bonuses = 10
+        num_of_owned_provinces_with = {
+		has_manufactory_trigger = yes 
+		value = 35 
+		}
+        OR = {
+        has_institution = industrialization
+        is_hegemon_of_type = economic_hegemon		
+		}
+		}
+		effect = {
+        add_country_modifier = {
+        name = yunnan_industrialization
+        duration = -1	
+           }		
+	    }
+	}
+	
+}
+mr_yunnan_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = YNN
+			tag = LNG
+		}
+	}
+	ynn_integrate_shuixi = {
+		icon = mission_the_chola_campaigns
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {
+		OR = {
+			province_id = 5325
+			province_id = 674
+			province_id = 2168 
+			}
+		}
+		trigger = {
+		OR = {
+			674 = {
+				owned_by = GYA
+				development = 10
+			}
+			    
+			AND = {
+			674 = {owned_by = ROOT} 
+			5325 = {owned_by = ROOT}
+			2168 = {owned_by = ROOT}
+			}
+		}	
+		}
+		effect = {
+		     custom_tooltip = yunnan_integrate_shuixi
+
+			 hidden_effect = { 
+             if = { 
+              limit = {
+						674 = {development = 10}
+						GYA = {is_subject_of = ROOT}
+					}					
+					inherit = GYA
+			}
+			else = { 674 = {
+			add_base_production = 2
+			add_base_tax = 2
+			}
+		 }
+		 }
+	        custom_tooltip = yunnan_develop_shuixi
+			guizhou_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				} 
+            guangxi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				} 			 				
+		} 
+	}
+	ynn_conquer_zhuang = {
+		icon = mission_mnd_maj_subjugate_makassar
+		position = 2
+		required_missions = {ynn_integrate_shuixi}
+		provinces_to_highlight = {
+		culture = zhuang
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+				culture = zhuang
+				value = 3
+			}
+         		2163 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}		
+		}
+		effect = {
+		            custom_tooltip = yunnan_sino_zhuang 
+        		    update_entire_culture_foreign = {
+					culture = zhuang
+					}
+                add_accepted_culture_or_dip_power = { culture = zhuang_new }
+                
+			guangdong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				} 
+            west_guangdong_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				}                 				
+		} 
+	}
+	ynn_conquer_south_coast = {
+		icon = mission_to_the_south_china_sea
+		position = 3
+		required_missions = {ynn_conquer_zhuang}
+		provinces_to_highlight = {
+		OR = {
+				province_id = 2161 
+				province_id = 667
+				province_id = 668
+				province_id = 2159  
+				province_id = 665
+			}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+         		2161 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+         		667 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+         		668 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+         		2159 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+         		665 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}			
+		}
+		effect = {
+		            custom_tooltip = yunnan_upgrade_pearl_estuary
+               		667 = {
+				      if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = {
+							province_has_center_of_trade_of_level = 2
+						}						
+					}
+					add_center_of_trade_level = 1
+				 }
+				 hidden_effect = {
+				   add_permanent_province_modifier = { 
+                   name = pearl_estuary_plus
+                   duration = -1 
+                 } 
+				 remove_province_modifier = pearl_estuary_modifier
+			    }  
+				} 
+                 				
+		} 
+	}
+	ynn_hainan_scoundrels = {
+		icon = mission_sea_battles
+		position = 4
+		required_missions = {ynn_conquer_south_coast}
+		provinces_to_highlight = {
+		OR = {
+		province_id = 666
+		province_id = 2160 
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+		}
+		trigger = {
+         		666 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}	
+         		2160 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}					
+		}
+		effect = {
+			country_event = { 
+            id = MR_yunnan_flavor.10
+           } 
+		} 
+	}	
+	ynn_endorse_temples = {
+		icon = mission_buddhist_monk_praying
+		position = 8
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+		num_of_harmonized = 5
+        OR = {
+		temple = 25
+		cathedral = 25
+		}
+		}
+		effect = {
+	    custom_tooltip = yunnan_temple_harmony 
+		set_country_flag = temple_harmony
+		} 
+	}
+	ynn_religious_humanist = {
+		icon = mission_hands_praying
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+        OR = {
+		full_idea_group = religious_ideas
+		full_idea_group = humanist_ideas
+		}
+		}
+		effect = {
+		custom_tooltip = yunnan_harmony_culture_slots
+		harmonise_culture_slot_effect
+		if = { 
+		limit = {full_idea_group = humanist_ideas}  
+		set_country_flag = harmony_culture_slots
+		}
+		else = {
+        add_stability_or_adm_power = 2
+        }		
+	}
+  }	
+	ynn_bureau_restoration = {
+		icon = mission_mnd_dai_examination_system
+		position = 12
+		required_missions = { }
+		provinces_to_highlight = { }		
+		trigger = {
+		reform_level = 2
+        grown_by_development = 200		
+		}
+		effect = {
+        add_government_reform = MR_bureau_military_affairs_reform		
+		   }
+	}
+	ynn_protect_markets = {
+		icon = mission_rb_scottish_the_darien_scheme 
+		position = 13
+		required_missions = {ynn_yunnan_copper}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 667
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 75
+						}
+					}
+				}
+				AND = {
+					province_id = 684
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 75
+						}
+					}
+				}
+				AND = {
+					province_id = 1816
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 75
+						}
+					}
+				}
+				AND = {
+					province_id = 679
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 75
+						}
+					}
+				}
+				AND = {
+					province_id = 700
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 75
+						}
+					}
+				}				
+			}
+		}		
+		trigger = {
+			667 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			684 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			1816 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			679 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}
+			700 = {
+				trade_share = {
+					country = ROOT
+					share = 75
+				}
+			}			
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Mare Nostrum"
+				}
+				add_country_modifier = {
+					name = "protected_markets_modifier"
+					duration = -1
+				}
+			}
+			else = {
+				add_mercantilism = 10
+			}
+		}
+	}		
+	
+	
+}

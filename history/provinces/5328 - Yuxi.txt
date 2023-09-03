@@ -1,10 +1,10 @@
 
 owner = YNN
 controller = YNN
-culture = khatso
+culture = bai
 religion = azhaliism 
 capital = "Hongta"
-trade_goods = vegetables
+trade_goods = copper
 hre = no
 base_tax = 1
 base_production = 2

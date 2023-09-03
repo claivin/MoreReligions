@@ -621,6 +621,25 @@ mr_al_habash_empire = {
 		}
 		allow_cawa = yes
 	}
-}		
+}
+MR_bureau_military_affairs_reform = {
+	icon = "people_walking"
+	allow_normal_conversion = yes
+	potential = {
+		is_revolutionary = no
+		mission_completed = ynn_bureau_restoration
+	}
+	modifiers = {
+		global_manpower_modifier = 0.25
+		nobles_influence_modifier = 0.2
+	}
+	ai = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { max_manpower = 12 }
+		}
+	}
+}			
 	
 	
