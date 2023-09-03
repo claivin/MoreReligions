@@ -34,12 +34,12 @@ parliamentarians_rebels = {
 	
 	spawn_chance = {
 		factor = 20	#Unique to the English Civil War for now
-		# modifier = {
-			# factor = 0
-			# owner = {
-				# NOT = { has_disaster = english_civil_war }
-			# }
-		# }
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = { has_country_flag = english_civil_war }
+			}
+		}
 	}
  
  	# This is checked for EACH province in the Area of Operations

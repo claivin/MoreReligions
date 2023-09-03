@@ -421,12 +421,11 @@ mr_hungary_hungary_reform = {
 		tag = HUN
 	}
 	
-	has_parliament = yes
 	
 	modifiers = {
 		discipline = 0.05
 		min_autonomy_in_territories = -0.1
-		national_focus_years = -1 
+		national_focus_years = -5
 	}
 }
 mr_horde_hungary_reform = {
