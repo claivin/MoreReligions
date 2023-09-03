@@ -880,6 +880,7 @@ mr_yunnan_missions_third = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 	        value = 30
 	        region = japan_region
+			not = { exists = JAP }
             }			
         
 		}
