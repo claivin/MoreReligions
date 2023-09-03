@@ -193,6 +193,7 @@ nav_missions_1 = {
 			207 = {
 				add_permanent_province_modifier = {
 					name = covadonga_court
+					duration = -1
 				}
 			}
 		}
@@ -289,7 +290,8 @@ nav_missions_2 = {
 		effect = {
 			210 = {
 				add_permanent_province_modifier = {
-				name = erriberiko_errege_jauregia
+					name = erriberiko_errege_jauregia
+					duration = -1
 				}
 			}	
 		}
@@ -703,7 +705,7 @@ nav_missions_3 = {
 		position = 14
 		
 		trigger = {
-			institution = enlightenment
+			has_institution = enlightenment
 			university = 5
 		}
 		effect = {
@@ -766,7 +768,7 @@ nav_missions_4 = {
 	nav_naval_funding = {
 		icon = mission_aragonese_navy
 		required_missions = {}
-		positions = 1
+		position = 1
 		
 		trigger = {
 			naval_forcelimit = 20
@@ -782,7 +784,7 @@ nav_missions_4 = {
 	nav_royal_nau = {
 		icon = mission_launch_a_flagship
 		required_missions = {nav_naval_funding}
-		positions = 2
+		position = 2
 		
 		trigger = {
 			has_flagship = yes
@@ -1094,9 +1096,9 @@ nav_missions_4 = {
 				add_permanent_claim = 1988
 			}
 			remove_country_modifier = misto_sharpshooters
-			disband_mercenary_company = {
-				merc_peasant_sharpshooters
-			}
+			# merc_peasant_sharpshooters = {
+				# disband_mercenary_company = THIS
+			# }
 		}
 	}
 	

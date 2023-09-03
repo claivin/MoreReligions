@@ -376,7 +376,7 @@ absolutist_france_reform = {
 				is_playing_custom_nation = yes
 				have_had_reform = absolutist_france_reform
 			}
-			mission_completed = fra_movement_centralization
+			#mission_completed = fra_movement_centralization
 		}
 	}
 	trigger = {
@@ -3505,10 +3505,10 @@ lithuanian_grand_empire = {
 				have_had_reform = lithuanian_grand_empire
 			}
 			has_reform = lithuanian_grand_empire
-			AND = {
-				mission_completed = sca_mission_lit_polish_union
+			# AND = {
+				# mission_completed = sca_mission_lit_polish_union
 				total_development = 1000 
-			}
+			#}
 		}
 	}
 	legacy_equivalent = despotic_monarchy
@@ -6353,16 +6353,16 @@ mng_seal_of_the_emperor_reform = {
 	icon = "mng_seal_of_the_emperor_reform"
 	allow_normal_conversion = yes
 	potential = {
-		OR = { 
+		#OR = { 
 			has_reform = mng_seal_of_the_emperor_reform
-			mission_completed = mng_crisis_ming_dynasty
-		}
+			#mission_completed = mng_crisis_ming_dynasty
+		#}
 	}
 	trigger = {
-		OR = { 
+		#OR = { 
 			has_reform = mng_seal_of_the_emperor_reform
-			mission_completed = mng_crisis_ming_dynasty
-		}
+			#mission_completed = mng_crisis_ming_dynasty
+		#}
 	}
 	modifiers = {
 		allow_free_estate_privilege_revocation = yes 
@@ -6378,10 +6378,10 @@ qng_grand_council_reform = {
 	icon = "royal_court"
 	allow_normal_conversion = no
 	potential = {
-		OR = { 
-			mission_completed = qng_junji_chu
+		#OR = { 
+			#mission_completed = qng_junji_chu
 			has_reform = qng_grand_council_reform
-		}
+		#}
 	}
 	
 	modifiers = {
@@ -6402,7 +6402,7 @@ absolute_shogunate_reform = {
 				has_reform = absolute_shogunate_reform
 			}
 			have_had_reform = absolute_shogunate_reform
-			mission_completed = jap_restoration
+			#mission_completed = jap_restoration
 		}
 	}
 	valid_for_nation_designer = yes
@@ -6432,7 +6432,7 @@ japanese_divine_empire = {
 			}
 			has_country_flag = JPE_gov_flag
 			have_had_reform = japanese_divine_empire
-			mission_completed = jap_restoration
+			#mission_completed = jap_restoration
 		}
 		NOT = { has_reform = absolute_shogunate_reform }
 	}
@@ -6485,7 +6485,7 @@ land_christian_sun_reform = {
 				is_playing_custom_nation = yes
 			}
 			have_had_reform = land_christian_sun_reform
-			mission_completed = jap_spread_the_christian_faith
+			#mission_completed = jap_spread_the_christian_faith
 			has_reform = land_christian_sun_reform
 		}
 	}
@@ -6526,16 +6526,16 @@ strengthen_bakuhan_system_reform = {
 	icon = "strengthen_bakuhan_system_reform"
 	allow_normal_conversion = no
 	potential = {
-		OR = { 
+		#OR = { 
 			have_had_reform = strengthen_bakuhan_system_reform
-			mission_completed = jap_strengthen_bakuhan_system
-		}
+			#mission_completed = jap_strengthen_bakuhan_system
+		#}
 	}
 	trigger = {
-		OR = {
+		#OR = {
 			have_had_reform = strengthen_bakuhan_system_reform
-			mission_completed = jap_strengthen_bakuhan_system
-		}
+			#mission_completed = jap_strengthen_bakuhan_system
+		#}
 	}
 	modifiers = {
 		max_absolutism_effect = 0.2
@@ -6549,7 +6549,7 @@ system_of_councils_reform = {
 	potential = {
 		OR = { 
 			has_reform = system_of_councils_reform
-			mission_completed = spa_system_councils
+			#mission_completed = spa_system_councils
 			AND = { 
 				religion_group = christian 
 				culture_group = iberian 
@@ -6557,10 +6557,10 @@ system_of_councils_reform = {
 		}
 	}
 	trigger = {
-		OR = { 
+		#OR = { 
 			has_reform = system_of_councils_reform
-			mission_completed = spa_system_councils
-		}
+			#mission_completed = spa_system_councils
+		#}
 	}
 	government_abilities = {
 		system_of_councils_mechanic

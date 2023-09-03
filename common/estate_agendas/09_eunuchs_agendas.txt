@@ -152,10 +152,10 @@ estate_eunuchs_gather_x_gov_reform_agenda = {
 	can_select = {
 		reform_level = 3 
 		NOT = { has_reform = examination_system_reform }
-		OR = { 
+		# OR = { 
 			is_emperor_of_china = yes 
-			mission_completed = mng_examination_system
-		}
+			#mission_completed = mng_examination_system
+		#}
 	}
 	task_requirements = {
 		if = {

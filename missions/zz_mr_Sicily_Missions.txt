@@ -1338,9 +1338,11 @@ mr_sicily_missions_fourth = {
 			}
 			custom_tooltip =  neapoltian_acceptance_modifier_TT
 			tooltip = {
-				add_province_modifier = {
-					name = neapolitan_acceptance
-					duration = -1
+				random_owned_province = {
+					add_province_modifier = {
+						name = neapolitan_acceptance
+						duration = -1
+					}
 				}
 			}
 			hidden_effect = {
@@ -1658,7 +1660,7 @@ mr_sicily_missions_fifth = {
 							area = apulia_area
 						}
 						OR = {
-							has_terrain = mountains
+							has_terrain = mountain
 							has_terrain = hills
 						}
 					}

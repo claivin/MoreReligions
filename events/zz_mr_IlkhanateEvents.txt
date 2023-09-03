@@ -816,7 +816,7 @@ country_event = {
 	
 	trigger = {
 		any_owned_province = {
-			area = khorasan_region
+			region = khorasan_region
 		}
 	}
 	

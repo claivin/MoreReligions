@@ -10,11 +10,11 @@ buddha = {
 	sprite = 6
 	potential = { 
 		religion = hinduism
-		OR = {
-			mission_completed = mnd_maj_candi_shrines
-			mission_completed = sun_candi_temples
-			mission_completed = mnd_khm_religion
-		}
+		# OR = {
+			# mission_completed = mnd_maj_candi_shrines
+			# mission_completed = sun_candi_temples
+			# mission_completed = mnd_khm_religion
+		# }
 	}
 	trigger = {}
 	tolerance_heathen = 2

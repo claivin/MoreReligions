@@ -1674,6 +1674,7 @@ country_event = {
 	id = HUN_flavor.18
 	title = HUN_flavor.18.t 
 	desc = HUN_flavor.18.d
+	picture = LAND_MILITARY_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -1726,7 +1727,8 @@ country_event = {
 	id = HUN_flavor.20
 	title = HUN_flavor.20.t
 	desc = HUN_flavor.20.d
-
+	picture = LAND_MILITARY_eventPicture
+	
 	trigger = {
 		is_at_war = yes
 		has_country_flag = HUN_thunder_dome_participant
@@ -1790,12 +1792,13 @@ country_event = {
 			}
 			cede_province = controller
 		}
-		every_owned_province = {
-			limit = {
-				controlled_by = nationalist_rebels
-			}
-			cede_province = nationalist_rebels
-		}
+		#you cant ced to rebels
+		# every_owned_province = {
+			# limit = {
+				# controlled_by = nationalist_rebels
+			# }
+			# cede_province = nationalist_rebels
+		# }
 	}
 	
 	option = {

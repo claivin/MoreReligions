@@ -2168,7 +2168,7 @@ country_event = {
 		NOT = { current_age = age_of_discovery }
 		NOT = { current_age = age_of_reformation }
 		NOT = { current_age = age_of_absolutism }
-		mission_completed = rus_the_age_of_revolution
+		#mission_completed = rus_the_age_of_revolution
 		has_country_modifier = rus_great_power_of_the_east
 		NOT = { has_country_flag = rus_has_rev_missions }
 	}

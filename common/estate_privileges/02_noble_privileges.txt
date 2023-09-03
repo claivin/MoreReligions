@@ -273,11 +273,11 @@ estate_nobles_nobility_primacy = {
 			factor = 1.25
 			NOT = { mil = 2 }
 		}
-		modifier = {
-			factor = 1000
-			has_mission = kon_reform_army
-			NOT = { mission_completed = kon_reform_army }
-		}
+		# modifier = {
+			# factor = 1000
+			# has_mission = kon_reform_army
+			# NOT = { mission_completed = kon_reform_army }
+		# }
 	}
 }
 
@@ -666,13 +666,13 @@ estate_nobles_monopoly_of_metals = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+			# NOT = { has_disaster = french_revolution }
+			# NOT = {
+				# has_disaster_progress = {
+					# disaster = french_revolution
+					# value = 1
+				# }
+			# }
 		}
 	}
 	on_granted = {
@@ -786,13 +786,13 @@ estate_nobles_monopoly_of_livestock = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+			# NOT = { has_disaster = french_revolution }
+			# NOT = {
+				# has_disaster_progress = {
+					# disaster = french_revolution
+					# value = 1
+				# }
+			# }
 		}
 	}
 	on_granted = {
@@ -896,13 +896,13 @@ estate_nobles_monopoly_of_gems = {
 					value = 1
 				}
 			}
-			NOT = { has_disaster = french_revolution }
-			NOT = {
-				has_disaster_progress = {
-					disaster = french_revolution
-					value = 1
-				}
-			}
+			# NOT = { has_disaster = french_revolution }
+			# NOT = {
+				# has_disaster_progress = {
+					# disaster = french_revolution
+					# value = 1
+				# }
+			# }
 		}
 	}
 	on_granted = {
@@ -1132,7 +1132,7 @@ estate_nobles_golden_liberty = {
 					NOT = { has_reform = elective_monarchy }
 				}
 				has_reform = polish_autocratic_monarchy
-				mission_completed = plc_golden_liberty
+				#mission_completed = plc_golden_liberty
 				absolutism = 70
 				AND = {
 					is_year = 1615

@@ -76,25 +76,25 @@ country_decisions = {
 			# hidden_effect = {
 				# complete_mission = eng_rb_war_of_roses
 			# }
-			hidden_effect = {
-				if = {
-					limit = {
-						tag = SCO
-					}
-					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-				}	
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						tag = IRE
-					}
-					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-					complete_mission = conquer_ireland
-				}	
-			}
+			# hidden_effect = {
+				# if = {
+					# limit = {
+						# tag = SCO
+					# }
+					# complete_mission = eng_mighty_army
+					# complete_mission = conquer_scotland
+				# }	
+			# }
+			# hidden_effect = {
+				# if = {
+					# limit = {
+						# tag = IRE
+					# }
+					# complete_mission = eng_mighty_army
+					# complete_mission = conquer_scotland
+					# complete_mission = conquer_ireland
+				# }	
+			# }
 			change_tag = GBR
 			#on_change_tag_effect = yes				 
 			restore_country_name = yes
@@ -120,7 +120,7 @@ country_decisions = {
 			set_country_flag = formed_great_britain_flag
 			if = {
 				limit = {
-					mission_completed = conquer_scotland
+					#mission_completed = conquer_scotland
 					has_dlc = "Rule Britannia"
 				}
 				369 = {
@@ -259,16 +259,16 @@ country_decisions = {
 				}
 				inherit = ENG
 			}
-			hidden_effect = {
-				if = {
-					limit = {
-						tag = SCO
-					}
-					complete_mission = eng_mighty_army
-					complete_mission = conquer_scotland
-					complete_mission = eng_rb_war_of_roses
-				}	
-			}
+			# hidden_effect = {
+				# if = {
+					# limit = {
+						# tag = SCO
+					# }
+					# complete_mission = eng_mighty_army
+					# complete_mission = conquer_scotland
+					# complete_mission = eng_rb_war_of_roses
+				# }	
+			# }
 			change_tag = GBR
 			on_change_tag_effect = yes
 			restore_country_name = yes

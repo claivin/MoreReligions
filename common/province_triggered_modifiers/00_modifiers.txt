@@ -885,7 +885,7 @@ promised_land_modifier = {
 kongo_cardinal_modifier = {
 	potential = {
 		owner = {
-			mission_completed = kon_gain_cardinal
+			tag = KON
 		}
 	}
 	trigger = {
@@ -903,20 +903,20 @@ kongo_cardinal_modifier = {
 	papal_influence = 1
 }
 
-ajuuran_place_of_istunka = {
-	potential = {
-		owner = {
-			mission_completed = aju_invent_istunka
-		}
-	}
-	trigger = {
-		owner = {
-			mission_completed = aju_invent_istunka
-		}
-	}
-	local_development_cost = -0.05
-	global_unrest = -1
-}
+# ajuuran_place_of_istunka = {
+	# potential = {
+		# owner = {
+			# mission_completed = aju_invent_istunka
+		# }
+	# }
+	# trigger = {
+		# owner = {
+			# mission_completed = aju_invent_istunka
+		# }
+	# }
+	# local_development_cost = -0.05
+	# global_unrest = -1
+# }
 
 city_of_401_deities = {
 	potential = {}
@@ -1243,17 +1243,17 @@ heddal_stave_church_modifier_non_leviathan_reformation = {
 	local_tax_modifier = 0.25
 }
 
-mng_hanlin_academy_modifier = {
-	potential = {
-		owner = { mission_completed = mng_examination_system }
-	}
-	trigger = {
-		owner = { has_reform = examination_system_reform }
-	}
-	eunuchs_loyalty_modifier = 0.05
-	governing_capacity_modifier = 0.05
-	yearly_corruption = -0.03
-}
+# mng_hanlin_academy_modifier = {
+	# potential = {
+		# owner = { mission_completed = mng_examination_system }
+	# }
+	# trigger = {
+		# owner = { has_reform = examination_system_reform }
+	# }
+	# eunuchs_loyalty_modifier = 0.05
+	# governing_capacity_modifier = 0.05
+	# yearly_corruption = -0.03
+# }
 
 mng_islamic_mosque_of_beijing_modifier = { 
 	potential = { owner = { has_country_flag = mng_islamic_mosque_of_beijing_flag } }
@@ -1280,23 +1280,23 @@ mng_islamic_mosque_of_beijing_modifier = {
 	improve_relation_modifier = 0.15
 }
 
-fra_roi_palace_triggered_modifier = {
-	potential = {
-		owner = { mission_completed = fra_league_cambrai }
-	}
-	trigger = {
-		NOT = {
-			has_great_project = {
-				type = doges_palace
-				tier = 1
-			}
-		}
-	}
+# fra_roi_palace_triggered_modifier = {
+	# potential = {
+		# owner = { mission_completed = fra_league_cambrai }
+	# }
+	# trigger = {
+		# NOT = {
+			# has_great_project = {
+				# type = doges_palace
+				# tier = 1
+			# }
+		# }
+	# }
 	
-	reform_progress_growth = 0.15
-	all_estate_loyalty_equilibrium = 0.05
-	diplomatic_upkeep = 1 
-}
+	# reform_progress_growth = 0.15
+	# all_estate_loyalty_equilibrium = 0.05
+	# diplomatic_upkeep = 1 
+# }
 
 # fra_palais_de_papes_triggered_modifier = {
 	# potential = {

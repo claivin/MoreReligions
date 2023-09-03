@@ -662,26 +662,26 @@ tower_of_london = {
 		on_upgraded = {
 		}
 		
-		conditional_modifier = {
-			trigger = {
-				owner = { 
-					OR = { 
-						tag = FRA 
-						was_tag = FRA 
-						overlord = {
-							OR = { 
-								tag = FRA 
-								was_tag = FRA 
-							}
-						}
-					}
-				}
-				FRA = { mission_completed = fra_london }
-			}
-			modifier = {
-				max_absolutism = 5
-			}
-		}	
+		# conditional_modifier = {
+			# trigger = {
+				# owner = { 
+					# OR = { 
+						# tag = FRA 
+						# was_tag = FRA 
+						# overlord = {
+							# OR = { 
+								# tag = FRA 
+								# was_tag = FRA 
+							# }
+						# }
+					# }
+				# }
+				# FRA = { mission_completed = fra_london }
+			# }
+			# modifier = {
+				# max_absolutism = 5
+			# }
+		# }	
 	}
 
 	tier_2 = {
@@ -714,27 +714,27 @@ tower_of_london = {
 		on_upgraded = {
 		}
 		
-		conditional_modifier = {
-			trigger = {
-				owner = { 
-					OR = { 
-						tag = FRA 
-						was_tag = FRA 
-						overlord = {
-							OR = { 
-								tag = FRA 
-								was_tag = FRA 
-							}
-						}
-					}
-				}
-				FRA = { mission_completed = fra_london }
-			}
-			modifier = {
-				max_absolutism = 10
-				max_revolutionary_zeal = 5
-			}
-		}	
+		# conditional_modifier = {
+			# trigger = {
+				# owner = { 
+					# OR = { 
+						# tag = FRA 
+						# was_tag = FRA 
+						# overlord = {
+							# OR = { 
+								# tag = FRA 
+								# was_tag = FRA 
+							# }
+						# }
+					# }
+				# }
+				# FRA = { mission_completed = fra_london }
+			# }
+			# modifier = {
+				# max_absolutism = 10
+				# max_revolutionary_zeal = 5
+			# }
+		# }	
 	}
 
 	tier_3 = {
@@ -767,27 +767,27 @@ tower_of_london = {
 		on_upgraded = {
 		}
 		
-		conditional_modifier = {
-			trigger = {
-				owner = { 
-					OR = { 
-						tag = FRA 
-						was_tag = FRA 
-						overlord = {
-							OR = { 
-								tag = FRA 
-								was_tag = FRA 
-							}
-						}
-					}
-				}
-				FRA = { mission_completed = fra_london }
-			}
-			modifier = {
-				max_absolutism = 10
-				max_revolutionary_zeal = 10
-			}
-		}	
+		# conditional_modifier = {
+			# trigger = {
+				# owner = { 
+					# OR = { 
+						# tag = FRA 
+						# was_tag = FRA 
+						# overlord = {
+							# OR = { 
+								# tag = FRA 
+								# was_tag = FRA 
+							# }
+						# }
+					# }
+				# }
+				# FRA = { mission_completed = fra_london }
+			# }
+			# modifier = {
+				# max_absolutism = 10
+				# max_revolutionary_zeal = 10
+			# }
+		# }	
 	}
 }
 
@@ -9207,18 +9207,18 @@ versailles = {
 			nobles_loyalty_modifier = 0.15
 			nobles_influence_modifier = 0.1
 		}
-		conditional_modifier = {
-			trigger = {
-				owner = { 
-					mission_completed = fra_means_expansion 
-					is_emperor = yes 
-				}
-			}
-			modifier = {
-				leader_land_fire = 1 
-				reinforce_speed = 0.2
-			}
-		}
+		# conditional_modifier = {
+			# trigger = {
+				# owner = { 
+					# mission_completed = fra_means_expansion 
+					# is_emperor = yes 
+				# }
+			# }
+			# modifier = {
+				# leader_land_fire = 1 
+				# reinforce_speed = 0.2
+			# }
+		# }
 		#what effects happen when this tier is achieved
 		on_upgraded = {	
 		}
@@ -9525,26 +9525,26 @@ potosi = {
 		on_upgraded = {
 		}
 		
-		conditional_modifier = {
-			trigger = {
-				owner = {
-					OR = { 
-						alliance_with = MNG 
-						overlord = { alliance_with = MNG }
-						any_ally = { is_emperor_of_china = yes }
-						is_subject_of = MNG
-					}
-				}
-				MNG = { 
-					mission_completed = mng_single_whip_law
-					has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
-				}
-			}
-			modifier = {
-				trade_goods_size = 1
-				inflation_reduction = 0.02
-			}
-		}				
+		# conditional_modifier = {
+			# trigger = {
+				# owner = {
+					# OR = { 
+						# alliance_with = MNG 
+						# overlord = { alliance_with = MNG }
+						# any_ally = { is_emperor_of_china = yes }
+						# is_subject_of = MNG
+					# }
+				# }
+				# MNG = { 
+					# mission_completed = mng_single_whip_law
+					# has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+				# }
+			# }
+			# modifier = {
+				# trade_goods_size = 1
+				# inflation_reduction = 0.02
+			# }
+		# }				
 	}
 
 	tier_2 = {
@@ -9577,26 +9577,26 @@ potosi = {
 		on_upgraded = {
 		}
 		
-		conditional_modifier = {
-			trigger = {
-				owner = {
-					OR = { 
-						alliance_with = MNG 
-						overlord = { alliance_with = MNG }
-						any_ally = { is_emperor_of_china = yes }
-						is_subject_of = MNG
-					}
-				}
-				MNG = { 
-					mission_completed = mng_single_whip_law
-					has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
-				}
-			}
-			modifier = {
-				trade_goods_size = 2
-				inflation_reduction = 0.03
-			}
-		}	
+		# conditional_modifier = {
+			# trigger = {
+				# owner = {
+					# OR = { 
+						# alliance_with = MNG 
+						# overlord = { alliance_with = MNG }
+						# any_ally = { is_emperor_of_china = yes }
+						# is_subject_of = MNG
+					# }
+				# }
+				# MNG = { 
+					# mission_completed = mng_single_whip_law
+					# has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+				# }
+			# }
+			# modifier = {
+				# trade_goods_size = 2
+				# inflation_reduction = 0.03
+			# }
+		# }	
 	}
 
 	tier_3 = {
@@ -9629,26 +9629,26 @@ potosi = {
 		on_upgraded = {
 		}
 		
-		conditional_modifier = {
-			trigger = {
-				owner = {
-					OR = { 
-						alliance_with = MNG 
-						overlord = { alliance_with = MNG }
-						any_ally = { is_emperor_of_china = yes }
-						is_subject_of = MNG
-					}
-				}
-				MNG = { 
-					mission_completed = mng_single_whip_law
-					has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
-				}
-			}
-			modifier = {
-				trade_goods_size = 3
-				inflation_reduction = 0.05
-			}
-		}	
+		# conditional_modifier = {
+			# trigger = {
+				# owner = {
+					# OR = { 
+						# alliance_with = MNG 
+						# overlord = { alliance_with = MNG }
+						# any_ally = { is_emperor_of_china = yes }
+						# is_subject_of = MNG
+					# }
+				# }
+				# MNG = { 
+					# mission_completed = mng_single_whip_law
+					# has_estate_privilege = estate_eunuchs_single_whip_law_privilege 
+				# }
+			# }
+			# modifier = {
+				# trade_goods_size = 3
+				# inflation_reduction = 0.05
+			# }
+		# }	
 	}
 }
 
@@ -11016,13 +11016,13 @@ brandenburg_gate = {
 			monthly_prussian_militarized_society_2 = 0.05
 			monthly_prussian_militarized_society_3 = 0.05
 		}
-		conditional_modifier = {
-			trigger = { owner = { mission_completed = emp_brapru_the_balance_of_power } }
-			modifier = {
-				max_absolutism_effect = 0.1
-				manpower_in_culture_group_provinces = 0.1 
-			}
-		}
+		# conditional_modifier = {
+			# trigger = { owner = { mission_completed = emp_brapru_the_balance_of_power } }
+			# modifier = {
+				# max_absolutism_effect = 0.1
+				# manpower_in_culture_group_provinces = 0.1 
+			# }
+		# }
 		on_upgraded = {
 		}
 	}

@@ -429,6 +429,13 @@ guiTypes = {
 				position = { x = 73 y = 1 }
 			}
 
+			guiButtonType =
+			{
+				name = "remove_parliament"
+				quadTextureSprite = "GFX_remove_parliament_icon"
+				position = { x = 73 y = 1 }
+			}
+			
 			iconType =
 			{
 				name = "have_capital"
@@ -2810,11 +2817,19 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
+
 			smoothListboxType = {
 				name = "stateviews_listbox"
 				backGround = ""
 				position = { x = 12 y = 414 }
-				size = { x = 458 y = 246 }
+				if_resolution = {
+					max_height = 899
+					size = { x = 458 y = 155 }
+				}
+				if_resolution = {
+					min_height = 900
+					size = { x = 458 y = 246 }
+				}
 				Orientation = "UPPER_LEFT"
 				horizontal = 0
 				scrollbartype = "standardlistbox_slider"

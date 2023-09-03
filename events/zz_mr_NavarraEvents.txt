@@ -91,15 +91,15 @@ country_event = {
 	}
 	option = {
 		name = "navarra_events.3.2"
-			NAV = {
+		NAV = {
 			add_casus_belli = {
 				target = POR
 				type = cb_restore_personal_union
 				months = 240
 			}
-			ai_chance = {
-				factor = 50
-			}
+		}
+		ai_chance = {
+			factor = 50
 		}
 	}
 }
@@ -143,18 +143,18 @@ country_event = {
 				type = cb_vassalize_mission
 				months = 240
 			}
-			ai_chance = {
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
 				factor = 50
-				modifier = {
-					factor = 50
-					NAV = {
-					is_excommunicated
-					}
+				NAV = {
+					is_excommunicated = yes
 				}
 			}
 		}
 	}
-}	
+}
 country_event = {
 	id = navarra_events.5
 	title = navarra_events.5.t
@@ -202,16 +202,16 @@ country_event = {
 				type = cb_restore_personal_union
 				months = 240
 			}
-			ai_chance = {
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
 				factor = 50
-				modifier = {
-					factor = 50
-					CAS = {
-						is_rival = NAV
-					}
-					LON = {
-						is_rival = NAV
-					}
+				CAS = {
+					is_rival = NAV
+				}
+				LON = {
+					is_rival = NAV
 				}
 			}
 		}

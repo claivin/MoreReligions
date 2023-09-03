@@ -339,20 +339,20 @@ enact_revolution_effect = {
 		}
 		if = {
 			limit = {
-				OR = {
-					has_disaster = french_revolution
+				#OR = {
+					#has_disaster = french_revolution
 					has_country_flag = use_french_disaster_exile_effect
-				}
+				#}
 				has_regency = no
 			}
 			set_country_flag = ruler_of_france_exiled
 		}
 		if = {
 			limit = {
-				OR = {
-					has_disaster = french_revolution
+				#OR = {
+					#has_disaster = french_revolution
 					has_country_flag = use_french_disaster_exile_effect
-				}
+				#}
 				has_heir = yes
 			}
 			exile_heir_as = heir_of_france
@@ -388,10 +388,10 @@ enact_revolution_effect = {
 	}
 	if = {
 		limit = {
-			OR = {
-				has_disaster = french_revolution
+			#OR = {
+				#has_disaster = french_revolution
 				has_country_flag = use_french_disaster_exile_effect
-			}
+			#}
 		}
 		hidden_effect = {
 			exile_ruler_as = { name = ruler_of_france }
@@ -1745,10 +1745,10 @@ remove_random_development = {
 mal_add_disaster_stability = {
 	custom_tooltip = mal_add_disaster_stability_tt
 	hidden_effect = {
-		if = {
-			limit = {
-				has_disaster = decline_of_mali
-			}
+		# if = {
+			# limit = {
+				# has_disaster = decline_of_mali
+			# }
 			if = {
 				limit = { NOT = { stability = 3 } }
 				add_stability = 1
@@ -1756,7 +1756,7 @@ mal_add_disaster_stability = {
 			else = {
 				add_adm_power = 50
 			}
-		}
+		#}
 	}
 }
 
@@ -8318,7 +8318,7 @@ determine_value_of_trade_goods_unknown = {
 # 4. Trade goods above 3 value also cost ADM power.
 # 5. Every time you select a certain trade good, the price increases
 # 6. The new price is calculated with this formula: (1 + (times you upgraded it)) * 5 (base trade good price)
-# 7. ADM costs are calculated as follows: (base trade good pirce - 2.5) * 25 * (times YOU upgraded it) as long (base trade good pirce - 2.5) => 0
+# 7.< ADM costs are calculated as follows: (base trade good pirce - 2.5) * 25 * (times YOU upgraded it) as long (base trade good pirce - 2.5) => 0
 # 7. Gold will be counted as having a trade value of 10 Ducats so not all of the whole new world becomes one huge gold cluster
 
 calculate_trade_goods_price = {
