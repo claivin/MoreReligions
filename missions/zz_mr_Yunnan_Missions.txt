@@ -896,18 +896,18 @@ mr_yunnan_missions_third = {
 		required_missions = {ynn_yunnan_copper}
 		provinces_to_highlight = { }		
 		trigger = {
-			#if = {
-			#	limit = {
-			#		has_estate = estate_burghers
-			#	}
-				#num_of_estate_agendas_completed = {
-				#	estate = estate_burghers
-				#	value = 2
-				#}
-			#}
-			#else = {
-			#	NOT = { has_estate = estate_burghers }
-			#}
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				num_of_estate_agendas_completed = {
+					estate = estate_burghers
+					value = 2
+				}
+			}
+			else = {
+				NOT = { has_estate = estate_burghers }
+			}
         num_of_owned_provinces_with = {
 	        value = 10
             has_terrain = jungle
@@ -1153,6 +1153,7 @@ mr_yunnan_missions_fourth = {
             region = xinan_region
 			has_building = workshop
 			base_production = 8
+			trade_goods = copper
            }	
 		}
 		effect = {
@@ -1414,8 +1415,8 @@ mr_yunnan_missions_fifth = {
 		trigger = {
 		num_of_harmonized = 5
         OR = {
-		temple = 25
-		cathedral = 25
+		temple = 10
+		cathedral = 10
 		}
 		}
 		effect = {
