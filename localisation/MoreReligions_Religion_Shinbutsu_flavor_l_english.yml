@@ -4,8 +4,14 @@
  shinbutsu_events.buddhist.tt: "This will move us towards the §YBuddhist§! outcome of the current Incident."
  shinbutsu_events.balance.tt: "This will move us towards a §YNeutral§! outcome of the current Incident."
  
+ shinbutsu_events.10.t: "Era of Zen"
+ shinbutsu_events.10.d: "While it was during the reign of the Kamakura that Hojo regent Tokiyori first patronized the Rinzai school of Zen Buddhism, the tradition of the Zenji has existed in Japan for over a century prior. Originating from the Chan School in China, Zen Buddhism follows a path of ordained members of the Sangha who have each achieved enlightenment, with each one of these enlightened ones tracing their lineage and achieving legitimacy from their teacher, their own master. Some trace their lineage to the Bodhidharma Patriarch, while others still come from the dirt, from the layman peasantry, and showcase their ability to achieve enlightenment.\n\nIn the era since the Kenmu Restoration, Zen Buddhism has become extremely prominent across our realm. The common man has found its teachings simple and easy to follow, while learned scholars are able to master its dense and detailed philosophy for their own benefit. Go-Daigo patronized Shingon Buddhism the most, but with the recent surge of the Zen practice, perhaps it is time to change our approach to the path of Dharma…"
+ shinbutsu_events.10.a: "Let us learn about this new path..."
+ shinbutsu_events.10.b: "What a fascinating story."
+ 
 
  shinto_incident_enryaku.tt: "This will start the §YMount Hiei Conflict§! Incident."
+ shinbutsu_events.zen.tt: "This will start the §YEra of Zen§! Incident."
 
  shinbutsu_events.1.t: "Warring Monks on Mt. Hiei"
  shinbutsu_events.1.d: "The emperor can control many things, but there are some he cannot. The flow of the river, the roll of the die, or the monks atop Mt. Hiei. This fundemental aspect of Japanese society proved itself again and again during the Heian Era, as Sohei clashed around the mountain throughout this period. They were known to leave and attack other schools and even political rivals if they felt threatened, and when push came to shove even the forces of the Emperor himself. While there was some peace in the aftermath of the Genpei War, it seems conflict is brewing once more atop the mountain. Reports have emerged that civilians and monks who reside in the mountain have been found bruised and battered, with two coming up dead. This has been a reoccuring event within the last few years, and the violence is now spilling into Kyoto proper. We cannot simply abide this sectarian fighting occuring at the doorstep of a major city; something must be done." 

@@ -144,6 +144,19 @@ declarewar = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_WAR_SHUGO
+		potential = {
+			ROOT = {
+				is_subject_of_type = shugo_vassal
+			}
+		}
+		allow = {
+			ROOT = {
+				NOT = { is_subject_of_type = shugo_vassal }
+			}
+		}
+	}
 	effect = {
 		on_war_declaration_effect = yes
 		if = {
@@ -399,6 +412,19 @@ annexationaction = {
 		}
 		allow = {
 			crown_land_share = 50
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_SHUGO
+		potential = {
+			FROM = {
+				is_subject_of_type = shugo_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { is_subject_of_type = shugo_vassal }
+			}
 		}
 	}
 }

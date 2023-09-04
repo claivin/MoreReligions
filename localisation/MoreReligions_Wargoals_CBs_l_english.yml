@@ -24,3 +24,9 @@
  take_capital_han_song: "Take [From.GetCapitalName]"
  take_capital_han_song_desc: "War goal is to take the capital."
  
+ 
+ cb_shugo_independence: "Shugo Independence War"
+ cb_shugo_independence:_desc: "The Shugo fight for their supremacy over the Emperor, to be more powerful than he ever was!"
+ hotoku_war_name: "Hotoku War"
+ CANNOT_WAR_SHUGO: "The Shugo are not yet ready to fight for their independence."
+ 

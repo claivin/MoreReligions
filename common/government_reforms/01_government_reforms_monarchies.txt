@@ -234,7 +234,7 @@ shogunate = {
 					province_id = 1020
 				}
 				culture_group = japanese_g
-				NOT = { exists = JAP }
+				NOT = { tag = JAP }
 			}
 			AND = {
 				is_playing_custom_nation = yes

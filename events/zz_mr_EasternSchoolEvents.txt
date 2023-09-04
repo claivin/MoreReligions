@@ -109,7 +109,17 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				tag = YMN
+				tag = JAP
+				religion = nihon
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_shin_school
+			}
+		}
+		else_if = {
+			limit = {
+				tag = ODA
 				religion = nihon
 			}
 			set_religious_school = {
@@ -124,7 +134,37 @@ country_event = {
 			}
 			set_religious_school = {
 				group = eastern
+				school = mr_shin_school
+			}
+		}
+		else_if = {
+			limit = {
+				religion = nihon
+				primary_culture = japanese
+			}
+			set_religious_school = {
+				group = eastern
 				school = mr_tendai_school
+			}
+		}
+		else_if = {
+			limit = {
+				religion = nihon
+				primary_culture = kyushuan
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_zen_school
+			}
+		}
+		else_if = {
+			limit = {
+				religion = nihon
+				primary_culture = togoku 
+			}
+			set_religious_school = {
+				group = eastern
+				school = mr_nichiren_school
 			}
 		}
 	}
