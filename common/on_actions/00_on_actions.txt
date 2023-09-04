@@ -24,10 +24,11 @@ on_startup = {
 	}
 	if = {
 		limit = {
-			is_emperor_of_china = yes
+			is_emperor_of_china = yes #there isn't one but leaving this in shouldn't do any harm
 		}
 		save_global_event_target_as = EmperorOfChina
 	}
+	set_global_flag = empire_of_china_dismantled
 	events = {
 		muslim_school_events.20 #Pick School
 		flavor_got.1 #Event for Gotland to select their mission tree

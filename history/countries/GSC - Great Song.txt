@@ -7,6 +7,10 @@ capital = 684	# Hangzhou
 historical_rival = GHC
 historical_rival = SHU
 
+1368.1.1 = {
+	set_estate_privilege = estate_nobles_mr_warlord_aristocracy_gsc
+}
+
 1440.5.11 = {
 	monarch = {
 		name = "Shuang" 

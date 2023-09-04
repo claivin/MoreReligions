@@ -35,3 +35,5 @@
  #Nobility
  estate_nobles_rice_wine: "Siamese Liquor Monopolies"
  estate_nobles_rice_wine_desc: "The Thai kingdoms are fueled by rice production. The rice farmers have their goods taxed and redistributed at their lord's wishes - they will often go towards feeding and growing an army, or donated to members of the sangha. As the world modernizes around us, we must modernize this core tenant of Thai society. we shall redistribute the land that the rice is grown on, and give it to those who can maintain and organize it the best. This meritocratic system shall keep the rice growing efficiently and profits high."  
+ estate_nobles_mr_warlord_aristocracy_gsc: "Warlord Aristocracy"
+ estate_nobles_mr_warlord_aristocracy_gsc_desc: "The [Root.Monarch.GetTitle] has long relied on the loyalty of powerful warlords in order to maintain [Root.Monarch.GetHerHis] rule. While this does somewhat offset the cost of fielding a large army, it puts a substantial limit on [Root.Monarch.GetHerHis] practical authority and must be addressed if [Root.GetName] is to move beyond its current stagnation."

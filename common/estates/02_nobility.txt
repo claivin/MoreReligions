@@ -466,6 +466,7 @@ estate_nobles =
 		estate_nobles_mr_strong_szlachta
 		estate_nobles_mr_balanced_szlachta
 		estate_nobles_diet_right_aragon
+		estate_nobles_mr_warlord_aristocracy_gsc
 	}
 
 	agendas = {
