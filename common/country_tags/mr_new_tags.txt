@@ -84,6 +84,10 @@ HDL = "countries/Hildesheim.txt"
 CMM = "countries/Cammin.txt"
 PMR = "countries/Pomerelia.txt"
 
+#Antipapacy
+ANP = "countries/Antipapacy.txt"
+
+#Antipapacy 2
 
 #Britain
 YRK = "countries/York.txt"
@@ -96,7 +100,6 @@ GLM = "countries/Glamorgan.txt"
 PWY = "countries/Powys.txt"
 SHP = "countries/Shropshire.txt"
 KNT = "countries/Kent.txt"
-
 WGT = "countries/Wight.txt"
 WRF = "countries/Waterford.txt"
 

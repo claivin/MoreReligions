@@ -611,3 +611,890 @@ country_event = {
 		custom_tooltip = mr_cannot_be_changed
 	}
 }
+
+#change catholic rite decision
+country_event = {
+	id = christian_school_events.22
+	title = christian_school_events.22.t
+	desc = christian_school_events.22.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { } #fired by decision mr_change_catholic_rite
+
+	is_triggered_only = yes
+	
+	option = { #go back
+		name = christian_school_events.22.a
+	}
+	
+#####################
+	option = { #Roman Rite unavailable
+		name = christian_school_events.22.b
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_latin_rite
+				}
+			}
+			NOT = {
+				OR = {
+					stability = 2
+					PAP = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						} 
+					}
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Roman Rite available
+		name = christian_school_events.22.c
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_latin_rite
+				}
+			}
+			OR = {
+				stability = 2
+				PAP = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					} 
+				}
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religion = catholic
+				religious_school = {
+					group = christian
+					school = mr_latin_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_latin_rite
+		}
+	}
+########################	
+	option = { #Ambrosian Rite unavailable
+		name = christian_school_events.22.d2
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_ambrosian_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = lombardy_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Ambrosian Rite available
+		name = christian_school_events.22.e
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_ambrosian_rite
+				}
+			}
+			any_owned_province = {
+				area = lombardy_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_ambrosian_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_ambrosian_rite
+		}
+	}
+########################	
+	option = { #Aquelian Rite unavailable
+		name = christian_school_events.22.f
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_aqueilian_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = venetia_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Aquelian Rite available
+		name = christian_school_events.22.g
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_aqueilian_rite
+				}
+			}
+			any_owned_province = {
+				area = venetia_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_aqueilian_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_aqueilian_rite
+		}
+	}
+########################	
+	option = { # Rite unavailable
+		name = christian_school_events.22.h
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_braga_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = beieras_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { # Rite available
+		name = christian_school_events.22.i
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_braga_rite
+				}
+			}
+			any_owned_province = {
+				area = beieras_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_braga_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_braga_rite
+		}
+	}
+########################	
+	option = { #Durham Rite unavailable
+		name = christian_school_events.22.j
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_durham_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = yorkshire_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Durham Rite available
+		name = christian_school_events.22.k
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_durham_rite
+				}
+			}
+			any_owned_province = {
+				area = yorkshire_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_durham_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_durham_rite
+		}
+	}
+########################	
+	option = { #Mozarbic Rite unavailable
+		name = christian_school_events.22.l
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_mozarbic_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+				region = iberia_region
+				}
+				OR = {
+					accepted_culture = castillian
+					accepted_culture = leonese
+					accepted_culture = aragonese
+					accepted_culture = catalan
+					accepted_culture = galician
+					accepted_culture = andalucian
+					accepted_culture = portugese
+					accepted_culture = basque
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Mozarbic Rite available
+		name = christian_school_events.22.m
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_mozarbic_rite
+				}
+			}
+			any_owned_province = {
+				region = iberia_region
+			}
+			OR = {
+				accepted_culture = castillian
+				accepted_culture = leonese
+				accepted_culture = aragonese
+				accepted_culture = catalan
+				accepted_culture = galician
+				accepted_culture = andalucian
+				accepted_culture = portugese
+				accepted_culture = basque
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_mozarbic_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_mozarbic_rite
+		}
+	}
+########################	
+	option = { #Sarum Rite unavailable
+		name = christian_school_events.22.n
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_sarum_rite
+				}
+			}
+			NOT = {
+				prestige = 50
+				stability = 2
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Sarum Rite available
+		name = christian_school_events.22.o
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_sarum_rite
+				}
+			}
+			prestige = 50
+			stability = 2
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_sarum_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_sarum_rite
+		}
+	}
+########################	
+	option = { #Carmelite Rite unavailable
+		name = christian_school_events.22.p
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_carmelite_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					OR = {
+						region = mashriq_region
+						region = egypt_region
+					}
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Carmelite Rite available
+		name = christian_school_events.22.q
+		highlight = yes
+		trigger = {
+			has_idea = deus_vult
+			any_owned_province = {
+				OR = {
+					region = mashriq_region
+					region = egypt_region
+				}
+			}
+			OR = {
+				KOJ = {
+					OR = {
+						alliance_with = ROOT
+						is_subject_of = ROOT
+					}
+					exists = yes
+				}
+				tag = KOJ
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_carmelite_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_carmelite_rite
+		}
+	}
+########################	
+	option = { #Nidaros Rite unavailable
+		name = christian_school_events.22.r
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_nidaros_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					OR = {
+						area = eastern_norway
+						area = western_norway
+					}
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Nidaros Rite available
+		name = christian_school_events.22.s
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_nidaros_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					area = eastern_norway
+					area = western_norway
+				}
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_nidaros_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_nidaros_rite
+		}
+	}
+########################	
+	option = { #Carthusian Rite unavailable
+		name = christian_school_events.22.t2
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_carthusian_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = savoy_dauphine_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Carthusian Rite available
+		name = christian_school_events.22.u
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_carthusian_rite
+				}
+			}
+			any_owned_province = {
+				area = savoy_dauphine_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_carthusian_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_carthusian_rite
+		}
+	}
+########################	
+	option = { #Cologne Rite unavailable
+		name = christian_school_events.22.v
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_cologne_rite
+				}
+			}
+			NOT = {
+				OR = {
+					any_owned_province = {
+						OR = {
+							area = north_rhine_area
+							area = lower_rhineland_area
+						}
+					}
+					reverse_has_opinion = {
+						who = KOL
+						value = 50
+					}
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { # Rite available
+		name = christian_school_events.22.w
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_cologne_rite
+				}
+			}
+			OR = {
+				any_owned_province = {
+					OR = {
+						area = north_rhine_area
+						area = lower_rhineland_area
+					}
+				}
+				reverse_has_opinion = {
+					who = KOL
+					value = 50
+				}
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_cologne_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_cologne_rite
+		}
+	}
+########################	
+	option = { #Metz Rite unavailable
+		name = christian_school_events.22.x
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_metz_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = lorraine_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Metz Rite available
+		name = christian_school_events.22.y
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_metz_rite
+				}
+			}
+			any_owned_province = {
+				area = lorraine_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_metz_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_metz_rite
+		}
+	}
+########################	
+	option = { #Lyonese Rite unavailable
+		name = christian_school_events.22.z
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_lyonese_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = savoy_dauphine_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Lyonese Rite available
+		name = christian_school_events.22.za
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_lyonese_rite
+				}
+			}
+			any_owned_province = {
+				area = savoy_dauphine_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_lyonese_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_lyonese_rite
+		}
+	}
+########################	
+	option = { #Uppsala Rite unavailable
+		name = christian_school_events.22.zb
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_uppsala_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					area = svealand_area
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Uppsala Rite available
+		name = christian_school_events.22.zc
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_uppsala_rite
+				}
+			}
+			any_owned_province = {
+				area = svealand_area
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_uppsala_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_uppsala_rite
+		}
+	}
+########################	
+	option = { #Esztergom Rite unavailable
+		name = christian_school_events.22.zd
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_esztergom_rite
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					OR = {
+						area = slovakia_area
+						area = transdanubia_area
+					}
+				}
+			}
+		}
+		custom_tooltip = change_catholic_rite_only_once
+		hidden_effect = { country_event = { id = christian_school_events.23 } }
+	}
+	option = { #Esztergom Rite available
+		name = christian_school_events.22.ze
+		highlight = yes
+		trigger = {
+			NOT = {
+				religious_school = {
+					group = christian
+					school = mr_esztergom_rite
+				}
+			}
+			any_owned_province = {
+				OR = {
+					area = slovakia_area
+					area = transdanubia_area
+				}
+			}
+		}
+		set_country_flag = has_changed_rites
+		add_adm_power = -100
+		every_country = {
+			limit = {
+				religious_school = {
+					group = christian
+					school = mr_esztergom_rite
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = mr_opinion_switched_to_our_rite
+			}
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_esztergom_rite
+		}
+	}
+}
+
+country_event = { #choose rite refresh
+	id = christian_school_events.23
+	title = christian_school_events.23
+	desc = christian_school_events.23
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	trigger = { always = yes }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+        name = christian_school_events.23
+		country_event = { id = generic_mission_events.22 }
+	}
+}

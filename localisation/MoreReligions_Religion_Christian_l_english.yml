@@ -293,13 +293,22 @@
  
  #Western Schism Events
  mr_catholic.2.t: "Cardinal Factionalism"
- mr_catholic.2.d: "Since the twelfth century, the Church has been beset by drastic corruption, going from the lowest clergymen, bishops, and even up to several Popes. The increasing integration of clerical administration into the remenants of fragmented Europe are thought to have encouraged self-interested clergymen with little political oversight to clamor for their own power and wealth. The College of Cardinals is no exception: they act as petty lords, ruling with impunity within their own ecclestiastical provinces. For several Papal elections now, the College has been relatively united in electing weak Popes - those who will do little to reform the Church from within and act as a figurehead - oftentimes chosen from lesser cardinals or archbishops from European backwaters.\n\nIn recent times however, the several Cardinals he come to the conclusion that the unchecked spread of heresy within Europe will only lead to the collapse of Catholic institutions, and therefore their power. These Cardinals dubbed 'Reconstructionists' have grown to makeup nearly half the College and they stand in clear opposition to unalligned Cardinals who do not view heresy as a significant threat."
- mr_catholic.2.a: "Interesting."
+ mr_catholic.2.d: "Since the twelfth century, the Church has been beset by drastic corruption, going from the lowest clergymen, bishops, and even up to several Popes. The increasing integration of clerical administration into the remenants of fragmented Europe are thought to have encouraged self-interested clergymen with little political oversight to clamor for their own power and wealth. The College of Cardinals is no exception: they act as petty lords, ruling with impunity within their own ecclestiastical provinces. For several Papal elections now, the College has been relatively united in electing weak Popes - those who will do little to reform the Church from within and act as a figurehead - oftentimes chosen from lesser cardinals or archbishops from European backwaters.\n\nIn recent times however, several Cardinals he come to the conclusion that the unchecked spread of heresy within Europe will only lead to the collapse of Catholic institutions, and therefore their power. These Cardinals dubbed 'Reconstructionists' have grown to makeup nearly half the College and they stand in clear opposition to unalligned Cardinals who do not view heresy as a significant threat."
+ mr_catholic.2.a: "This will pass."
+ western_schism_disaster_enabled: "§RWestern Schism Diasaster enabled!\nChoices of events in other Catholic countries will advance or regress disasater progress." 
+ 
+ mr_catholic.3.t: "Cardinal Factionalism"
+ mr_catholic.3.d: "Since the twelfth century, the Church has been beset by drastic corruption, going from the lowest clergymen, bishops, and even up to several Popes. The increasing integration of clerical administration into the remenants of fragmented Europe are thought to have encouraged self-interested clergymen with little political oversight to clamor for their own power and wealth. The College of Cardinals is no exception: they act as petty lords, ruling with impunity within their own ecclestiastical provinces. For several Papal elections now, the College has been relatively united in electing weak Popes - those who will do little to reform the Church from within and act as a figurehead - oftentimes chosen from lesser cardinals or bishops from European backwaters.\n\nIn recent times however, several Cardinals he come to the conclusion that the unchecked spread of heresy within Europe will only lead to the collapse of Catholic institutions, and therefore their power. These Cardinals, dubbed 'Reconstructionists' have grown to makeup nearly a quarter of the College and they stand in clear opposition to unalligned Cardinals who do not view heresy as a significant threat."
  mr_catholic.3.a: "We should keep a close eye on the clergy..."
  
  mr_catholic.4.t: "The College Divided"
  mr_catholic.4.d: "Reconstructionists and staus quo Cardinals have now cemented their positions on the matter. They have chosen their respective candidates of the next Papacy, but it appears that there will not be a conclusive vote when the time comes."
  mr_catholic.4.a: "Worrying."
+ 
+ mr_catholic.5.t: "Nobles Support the Reformists"
+ mr_catholic.5.d: "Certain nobles have expressed concern as the situation in Rome has developed. They speak of the need to take a clear stance on supporting the reformist candidate or the status quo candidate, stressing the importance of a clear policy on faith within the realm."
+ mr_catholic.5.a: "Heresy has been on the rise..."
+ mr_catholic.5.b: "Leave matters of faith to the clergy."
  
  mr_catholic.6.t: "The Cardinal's Candidate"
  mr_catholic.6.da: "Our cardinals have declared their favor for the next Pope, an unalligned candidate with no intentions of shifting the status quo."
@@ -310,11 +319,45 @@
  mr_catholic.6.c: "Heresy is out of control! We need change!"
  mr_catholic.6.e: "These reformists are playing a dangerous game."
  
- mr_catholic.5.t: "Nobles Support the Reformists"
- mr_catholic.5.d: "Certain nobles have expressed concern as the situation in Rome has developed. They speak of the need to take a clear stance on supporting the reformist candidate or the status quo candidate, stressing the importance of a clear policy on faith within the realm."
- mr_catholic.5.a: "Heresy has been on the rise..."
- mr_catholic.5.b: "Leave matters of faith to the clergy."
- 
- mr_catholic.7.t: "The Bishop of [mr_second_papacy.GetName] Defects!"
- mr_catholic.7.d: "In a stunning turn of events, the Bishop of [mr_second_papacy.GetName] has declared ecclestiastical independence until the next Papal election is resolved... with his prefered Reconstructionist candidate. He has offered his church lands as a place to convene, lest the election goes unresolved..."
+ mr_catholic.7.t: "Geopolitics of the Church"
+ mr_catholic.7.d: "wip"
  mr_catholic.7.a: "Far from Italy, I see..."
+ 
+ mr_catholic.15.t: "Bishop of [mr_second_papacy.GetName] Requests Holdings"
+ mr_catholic.15.d: "wip"
+ mr_catholic.15.a: "It's only a small place..."
+ mr_catholic.15.b: "§YPlay as the Antipope§!"
+ 
+ mr_catholic.151.t: Bishop of [mr_second_papacy.GetName] Demands Holdings""
+ mr_catholic.151.d: "wip"
+ mr_catholic.151.a: "Begrudge the demand."
+ mr_catholic.151.b: "How dare he!"
+ 
+ mr_catholic.8.t: "The Bishop of [mr_second_papacy.GetName] Defects!"
+ mr_catholic.8.d: "In a stunning turn of events, the Bishop of [mr_second_papacy.GetName] has declared ecclestiastical independence until the next Papal election is resolved... with his prefered Reconstructionist candidate. He has offered his church lands as a place to convene, lest the election goes unresolved..."
+ 
+ mr_catholic.17.t: "Clergy Support the Reformists"
+ mr_catholic.17.d: "wip"
+ mr_catholic.17.a: "Enlightened men of faith lead the way in these dark times..."
+ mr_catholic.17.b: "This is foolish idealism."
+ 
+ mr_catholic.18.t: "On the Matter of the Reformists"
+ mr_catholic.18.d: "wip"
+ mr_catholic.18.a: "Mediate a compromise in favor of the Reformists."
+ mr_catholic.18.a: "Mediate a compromise in favor of the Stats Quo."
+ mr_catholic.18.a: "Let them sort it out themselves."
+ 
+ mr_catholic.19.t: "Reconstructionist Opposition Consolidates"
+ mr_catholic.19.d: "From the outside, the Reconstructionist block is seemingly united in their demands: The Catholic Church must both return to form, destroy and rebuild the corrupt clergy, and squash the heretics. While they grow in influence, the opposition has done little but bicker and act in self-interest - business as usual for most of them.\n\nSurprisingly, a respectable group has found each other, lead by a cardinal from [guy_who_formed_status_quo_faction.GetName]. They claim that they wish to reform the Church from within, wresting the levers of corruption away from those who abuse it most. In turn, they hope that newfound stability will reorient the powers of the Church back to its rightful place. With support from the Pope, even a weak one, they might even have a chance."
+ mr_catholic.19.a: "Grant them what they need."
+ mr_catholic.19.b: "We must play our cards carefully."
+ 
+ mr_catholic.20.t: "Reformists Find Support"
+ mr_catholic.20.d: ""
+ mr_catholic.20.a: "A little money may help things along."
+ mr_catholic.20.b: "We can only offer our support."
+ 
+ mr_catholic.21.t: ""
+ mr_catholic.21.d: ""
+ mr_catholic.21.a: ""
+ mr_catholic.21.a: ""

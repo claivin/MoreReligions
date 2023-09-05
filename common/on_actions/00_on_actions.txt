@@ -1365,10 +1365,6 @@ on_monarch_death = {
 		}
 		country_event = { id = eastern_school_events.21 }
 	}
-	if = { #Triggers Western Schism
-		limit = { tag = PAP }
-		country_event = { id = mr_catholic.1 }
-	}
 	if = { #starts the Blue Horde/Bulgaria Conflict
 		limit = { tag = BLH }
 		country_event = { id = blue_horde_flavor.1 }
