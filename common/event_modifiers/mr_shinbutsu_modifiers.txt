@@ -13,3 +13,7 @@ sanmon_faction = {
 give_missionary_strength_tend = {
 	local_missionary_strength = 0.015
 }
+kyoto_improve_modifier = {
+	local_great_project_upgrade_cost = -0.25
+	local_great_project_upgrade_time = -0.33
+}

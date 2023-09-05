@@ -269,9 +269,11 @@ country_event = {
 			limit = { 
 				has_country_flag = kill_mahayana_flag 
 			} 
-			add_great_project_tier = {
-				type = imperial_city_kyoto
-				tier = -1
+			1020 = {
+				add_great_project_tier = {
+					type = imperial_city_kyoto
+					tier = -1
+				}
 			}
 		}
 		country_event = {
@@ -295,10 +297,12 @@ country_event = {
 		if = { 
 			limit = { 
 				has_country_flag = kill_mahayana_flag 
-			} 
-			add_great_project_tier = {
-				type = imperial_city_kyoto
-				tier = -1
+			}
+			1020 = {
+				add_great_project_tier = {
+					type = imperial_city_kyoto
+					tier = -1
+				}
 			}
 		}
 		country_event = {
@@ -326,9 +330,11 @@ country_event = {
 			limit = { 
 				has_country_flag = kill_mahayana_flag 
 			} 
-			add_great_project_tier = {
-				type = imperial_city_kyoto
-				tier = -1
+			1020 = {
+				add_great_project_tier = {
+					type = imperial_city_kyoto
+					tier = -1
+				}
 			}
 		}
 		country_event = {
@@ -353,9 +359,11 @@ country_event = {
 			limit = { 
 				has_country_flag = kill_mahayana_flag 
 			} 
-			add_great_project_tier = {
-				type = imperial_city_kyoto
-				tier = -1
+			1020 = {
+				add_great_project_tier = {
+					type = imperial_city_kyoto
+					tier = -1
+				}
 			}
 		}
 		country_event = {
@@ -513,4 +521,118 @@ country_event = {
 	}
 }
 	
-			
+country_event = {
+	id = shinbutsu_events.10
+	title = "shinbutsu_events.10.t"
+	desc = "shinbutsu_events.10.d"
+	picture = BUDDHA_eventPicture
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = shinbutsu_events.10.a
+		custom_tooltip = shinbutsu_events.zen.tt
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		add_incident_variable_value = {
+			incident = incident_zen
+			value = 1
+		}
+		country_event = {
+			id = shinbutsu_events.11
+			days = 2
+		}
+		add_prestige = 10
+	}
+	
+	option = {
+		name = shinbutsu_events.10.b
+		custom_tooltip = shinbutsu_events.zen.tt
+		custom_tooltip = shinbutsu_events.balance.tt
+		country_event = {
+			id = shinbutsu_events.11
+			days = 2
+		}
+	}
+}
+country_event = {
+	id = shinbutsu_events.11
+	title = "shinbutsu_events.11.t"
+	desc = "shinbutsu_events.11.d"
+	picture = BUDDHA_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				NOT = {
+					has_tax_building_trigger = yes
+				}
+			}
+			save_event_target_as = shinbutsu_11_target
+		}
+	}
+	
+	option = {
+		name = shinbutsu_events.11.a 
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		add_incident_variable_value = {
+			incident = incident_zen
+			value = 1
+		}
+		event_target:shinbutsu_11_target = {
+			add_latest_building = tax
+			add_base_tax = 2
+		}
+		add_years_of_income = -0.5
+	}
+	
+	option = {
+		name = shinbutsu_events.11.b
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		event_target:shinbutsu_11_target = {
+			add_latest_building = tax
+			add_base_tax = 5
+		}
+		add_incident_variable_value = {
+			incident = incident_zen
+			value = 1
+		}
+		add_years_of_income = -1
+	}
+	
+	option = {
+		name = shinbutsu_events.11.e
+		custom_tooltip = shinbutsu_events.shinto.tt
+		add_years_of_income = 1
+		add_prestige = -20
+		add_incident_variable_value = {
+			incident = incident_zen
+			value = -1
+		}
+	}
+	
+	option = {
+		name = shinbutsu_events.11.c
+		highlight = yes
+		trigger = {
+			1020 = { owned_by = ROOT }
+		}
+		custom_tooltip = shinbutsu_events.buddhist.tt
+		1020 = {
+			add_province_modifier = {
+				name = kyoto_improve_modifier
+				duration = 9125
+			}
+			add_base_tax = 4
+		}
+		add_incident_variable_value = {
+			incident = incident_zen
+			value = 2
+		}
+		add_years_of_income = -1
+	}
+}
+	
+	
+		

@@ -1,0 +1,22 @@
+bookmark =
+{
+	name = "ERA_OF_THE_CHAKRAVARTI"
+	desc = "ERA_OF_THE_CHAKRAVARTI_DESC"
+	date = 1444.11.11
+	
+	center = 4831
+	default = yes
+	
+	country = ANK
+	country = PGN
+	country = PMN
+	country = DAI
+	country = SUK
+	country = TMM
+	country = MMA
+	country = CHA
+	
+	# easy_country = CAS
+	# easy_country = POR
+	# easy_country = TUR
+}

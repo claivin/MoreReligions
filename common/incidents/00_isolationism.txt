@@ -129,6 +129,39 @@ incident_enryaku = {
 	}
 }
 
+incident_zen = {
+
+	frame = 5
+
+	variable_initial = 1
+
+	potential = {
+		has_dlc = "Mandate of Heaven"
+		religion = nihon
+	}
+
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = shinto_incident_recent_tooltip
+			is_incident_active = no
+			OR = {
+				NOT = { has_country_flag = shinto_incident_recent }
+				had_country_flag = { flag = shinto_incident_recent days = 10950 }
+			}
+		}
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 150
+	}
+
+	immediate_effect = {
+		country_event = { id = shinbutsu_events.10 }
+		set_country_flag = active_incident_flag
+	}
+}
+
 incident_spread_of_christianity = {
 
 	frame = 4

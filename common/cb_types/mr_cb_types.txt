@@ -172,3 +172,12 @@ cb_han_song_war = {
 	
 	war_goal = take_capital_han_song
 }
+
+cb_shugo_independence = {
+	independence = yes
+	ai_peace_desire = -30
+
+	is_triggered_only = yes
+
+	war_goal = defend_capital_independence
+}

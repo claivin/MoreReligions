@@ -45,6 +45,7 @@ province_event = {
 	trigger = {
 		# OBS! These checks are also hard coded in WouldBecomeShogunIfTaking() for AI and interface reasons. Change code too if this trigger changes.
 		province_id = 1020
+		NOT = event_target:leader_of_shugo
 		#owner = {
 		#	OR = {
 		#		has_reform = daimyo

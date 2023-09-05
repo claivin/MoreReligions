@@ -10,120 +10,120 @@ namespace = flavor_jap
 normal_or_historical_nations = yes
 
 # Onin War
-country_event = {
-	id = flavor_jap.1
-	title = "flavor_jap.EVTNAME1"
-	desc = "flavor_jap.EVTDESC1"
-	picture = BATTLE_eventPicture
-
-	fire_only_once = yes
-	
-	trigger = {
-		has_reform = daimyo
-		any_country = {
-			offensive_war_with = ROOT
-			has_reform = daimyo
-			is_in_war = {
-				defender_leader = ROOT
-				attacker_leader = THIS
-			}
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			save_event_target_as = onin_defensive_war_leader
-			random_country = {
-				limit = {
-					offensive_war_with = ROOT
-					has_reform = daimyo
-					is_in_war = {
-						defender_leader = ROOT
-						attacker_leader = THIS
-					}
-				}
-				save_event_target_as = onin_offensive_war_leader
-			}
-			every_country = {
-				limit = {
-					NOT = { tag = ROOT }
-					OR = {
-						has_reform = daimyo
-						has_reform = shogunate
-					}
-				}
-				country_event = { id = flavor_jap.56 }
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "flavor_jap.EVTOPTA1"
-		custom_tooltip = shogunate_mechanic_explanation
-		add_country_modifier = {
-			name = jap_sengoku_jidai
-			duration = 10950
-		}
-	}
-}
+#country_event = {
+#	id = flavor_jap.1
+#	title = "flavor_jap.EVTNAME1"
+#	desc = "flavor_jap.EVTDESC1"
+#	picture = BATTLE_eventPicture
+#
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		has_reform = daimyo
+#		any_country = {
+#			offensive_war_with = ROOT
+#			has_reform = daimyo
+#			is_in_war = {
+#				defender_leader = ROOT
+#				attacker_leader = THIS
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			save_event_target_as = onin_defensive_war_leader
+#			random_country = {
+#				limit = {
+#					offensive_war_with = ROOT
+#					has_reform = daimyo
+#					is_in_war = {
+#						defender_leader = ROOT
+#						attacker_leader = THIS
+#					}
+#				}
+#				save_event_target_as = onin_offensive_war_leader
+#			}
+#			every_country = {
+#				limit = {
+#					NOT = { tag = ROOT }
+#					OR = {
+#						has_reform = daimyo
+#						has_reform = shogunate
+#					}
+#				}
+#				country_event = { id = flavor_jap.56 }
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = "flavor_jap.EVTOPTA1"
+#		custom_tooltip = shogunate_mechanic_explanation
+#		add_country_modifier = {
+#			name = jap_sengoku_jidai
+#			duration = 10950
+#		}
+#	}
+#}
 
 # Onin War
-country_event = {
-	id = flavor_jap.56
-	title = "flavor_jap.EVTNAME1"
-	desc = {
-	    trigger = { 
-	    	any_known_country = {
-				defensive_war_with = ROOT
-				has_reform = daimyo
-				is_in_war = {
-					defender_leader = THIS
-					attacker_leader = ROOT
-				}
-			}
-	    }
-	    desc = "flavor_jap.EVTDESC1B"
-	}
-	desc = {
-	    trigger = { has_reform = daimyo }
-	    desc = "flavor_jap.EVTDESC56"
-	}
-	desc = {
-	    trigger = { has_reform = shogunate }
-	    desc = "flavor_jap.EVTDESC56B"
-	}
-	picture = BATTLE_eventPicture
-
-	is_triggered_only = yes
-	
-	option = {
-		name = "flavor_jap.EVTOPTA1"
-		trigger = {
-			has_reform = daimyo
-		}
-		custom_tooltip = shogunate_mechanic_explanation
-		add_country_modifier = {
-			name = jap_sengoku_jidai
-			duration = 10950
-		}
-	}
-	option = {
-		name = "flavor_jap.EVTOPTB56"
-		trigger = {
-			has_reform = shogunate
-		}
-		custom_tooltip = shogunate_mechanic_explanation
-		add_country_modifier = {
-			name = jap_sengoku_jidai
-			duration = 10950
-		}
-		add_legitimacy = -20
-	}
-}
+#country_event = {
+#	id = flavor_jap.56
+#	title = "flavor_jap.EVTNAME1"
+#	desc = {
+#	    trigger = { 
+#	    	any_known_country = {
+#				defensive_war_with = ROOT
+#				has_reform = daimyo
+#				is_in_war = {
+#					defender_leader = THIS
+#					attacker_leader = ROOT
+#				}
+#			}
+#	    }
+#	    desc = "flavor_jap.EVTDESC1B"
+#	}
+#	desc = {
+#	    trigger = { has_reform = daimyo }
+#	    desc = "flavor_jap.EVTDESC56"
+#	}
+#	desc = {
+#	    trigger = { has_reform = shogunate }
+#	    desc = "flavor_jap.EVTDESC56B"
+#	}
+#	picture = BATTLE_eventPicture
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = "flavor_jap.EVTOPTA1"
+#		trigger = {
+#			has_reform = daimyo
+#		}
+#		custom_tooltip = shogunate_mechanic_explanation
+#		add_country_modifier = {
+#			name = jap_sengoku_jidai
+#			duration = 10950
+#		}
+#	}
+#	option = {
+#		name = "flavor_jap.EVTOPTB56"
+#		trigger = {
+#			has_reform = shogunate
+#		}
+#		custom_tooltip = shogunate_mechanic_explanation
+#		add_country_modifier = {
+#			name = jap_sengoku_jidai
+#			duration = 10950
+#		}
+#		add_legitimacy = -20
+#	}
+#}
 
 # Ikko-ikkis rising!
 country_event = {

@@ -56,6 +56,22 @@ country_event = {
 			4193 = {
 				add_core = ROOT
 			}
+			every_country = {
+				limit = {
+					OR = {
+						war_with = SMZ
+						war_with = HSK
+						war_with = HTK
+						war_with = AKT
+						war_with = NTT
+					}
+				}
+				white_peace = SMZ
+				white_peace = HSK
+				white_peace = HTK
+				white_peace = AKT
+				white_peace = NTT
+			}
 			if = {
 				limit = {
 					SMZ = { ai = yes }
@@ -71,7 +87,7 @@ country_event = {
 					create_alliance = AKT
 					declare_war_with_cb = {
 						who = JAP
-						casus_belli = cb_annex
+						casus_belli = cb_shugo_independence
 					}
 					every_country = {
 						limit = {
@@ -93,7 +109,7 @@ country_event = {
 					create_alliance = AKT
 					declare_war_with_cb = {
 						who = JAP
-						casus_belli = cb_annex
+						casus_belli = cb_shugo_independence
 					}
 					every_country = {
 						limit = {
@@ -115,7 +131,7 @@ country_event = {
 					create_alliance = AKT
 					declare_war_with_cb = {
 						who = JAP
-						casus_belli = cb_annex
+						casus_belli = cb_shugo_independence
 					}
 					every_country = {
 						limit = {
@@ -137,7 +153,7 @@ country_event = {
 					create_alliance = AKT
 					declare_war_with_cb = {
 						who = JAP
-						casus_belli = cb_annex
+						casus_belli = cb_shugo_independence
 					}
 					every_country = {
 						limit = {
@@ -159,7 +175,7 @@ country_event = {
 					create_alliance = HTK
 					declare_war_with_cb = {
 						who = JAP
-						casus_belli = cb_annex
+						casus_belli = cb_shugo_independence
 					}
 					every_country = {
 						limit = {
@@ -178,7 +194,7 @@ country_event = {
 					create_alliance = AKT
 					declare_war_with_cb = {
 						who = JAP
-						casus_belli = cb_annex
+						casus_belli = cb_shugo_independence
 					}
 					every_country = {
 						limit = {
@@ -285,6 +301,21 @@ country_event = {
 			}
 		}
 		custom_tooltip = lands_of_japan_divided_tt
+		event_target:leader_of_shugo = {
+			every_province = {
+				limit = {
+					owned_by = JAP
+				}
+				cede_province = event_target:leader_of_shugo
+			}	
+			1020 = {
+				add_core = event_target:leader_of_shugo
+				cede_province = event_target:leader_of_shugo
+			}
+			set_capital = 1020
+			grant_independence = yes
+			add_government_reform = shogunate
+		}
 		hidden_effect = {
 			#Shimazu Gains
 			4181 = {
@@ -296,6 +327,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = japanese
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -322,6 +355,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = japanese
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -348,6 +383,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = japanese
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -375,6 +412,8 @@ country_event = {
 				change_government = monarchy
 				change_primary_culture = japanese
 				add_accepted_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -409,6 +448,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -431,6 +472,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -449,6 +492,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -467,6 +512,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -485,6 +532,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -503,6 +552,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -539,6 +590,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -561,6 +614,8 @@ country_event = {
 				change_religion = ROOT
 				change_government = monarchy
 				change_primary_culture = togoku
+				add_government_reform = daimyo
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -582,7 +637,9 @@ country_event = {
 			UTN = {
 				change_religion = ROOT
 				change_government = monarchy
+				add_government_reform = daimyo
 				change_primary_culture = togoku
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -600,7 +657,9 @@ country_event = {
 			OTM = {
 				change_religion = ROOT
 				change_government = monarchy
+				add_government_reform = daimyo
 				change_primary_culture = kyushuan
+				set_country_flag = tobedaimyo
 				add_adm_power = 112
 				add_dip_power = 112
 				add_mil_power = 112
@@ -667,11 +726,22 @@ country_event = {
 				}
 				cede_province = NTT
 			}
-			event_target:leader_of_shugo = {
-				1020 = {
-					add_core = event_target:leader_of_shugo
-					cede_province = event_target:leader_of_shugo
+			every_country = {
+				limit = {
+					NOT = { tag = event_target:leader_of_shugo }
+					OR = {
+						tag = SMZ
+						tag = HSK
+						tag = HTK
+						tag = NTT
+						tag = AKT
+						has_country_flag = tobedaimyo
+					}
 				}
+				event_target:leader_of_shugo = {
+					vassalize = PREV
+				}
+				add_government_reform = daimyo
 			}
 			every_country = {
 				limit = {
@@ -790,62 +860,100 @@ country_event = {
 		
 	option = {	
 		name = mrJapEvents.3.a
-		custom_tooltip = sengoku_jidai_TT
-		hidden_effect = {
-			set_global_flag = sengoku_jidai_flag_MR
+		custom_tooltip = shogunate_mechanic_explanation
+		add_country_modifier = {
+			name = jap_sengoku_jidai
+			duration = 10950
 		}
 	}
 	
 	option = {
 		name = mrJapEvents.3.b
+		trigger = {
+			ai = no
+		}
+		country_event = {
+			id = mrJapEvents.4
+		}
 	}
 }
 
-#Japan Start up event
+#Who's who?
 country_event = {
 	id = mrJapEvents.4
 	title = mrJapEvents.4.t
-	desc = {
-		trigger = {
-			tag = JAP
-		}
-		desc = mrJapEvents.4.d
-	}
-	desc = {
-		trigger = {
-			OR = {
-				tag = AKT
-				tag = NTT
-				tag = HSK
-				tag = HTK
-				tag = SMZ
-			}
-		}
-		desc = mrJapEvents.4.d.1
-	}
-	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
+	desc = mrJapEvents.4.d
+	picture = FIREARMS_INCIDENT_eventPicture
 	
 	is_triggered_only = yes
 	
+	option = { 
+		name = mrJapEvents.4.z
+		add_prestige = 1
+	}
+	
 	option = {
 		name = mrJapEvents.4.a
-		trigger = {
-			tag = JAP
-		}
-		custom_tooltip = mr_jap_4_TT
+		switch_tag = DTE
 	}
 	
 	option = {
 		name = mrJapEvents.4.b
-		trigger = {
-			OR = {
-				tag = AKT
-				tag = NTT
-				tag = HSK
-				tag = HTK
-				tag = SMZ
-			}
-		}
-		custom_tooltip = mr_jap_4_TT_1
+		switch_tag = UES
+	}
+	
+	option = {
+		name = mrJapEvents.4.c
+		switch_tag = TKD
+	}
+	
+	option = {
+		name = mrJapEvents.4.e
+		switch_tag = OGS
+	}
+	
+	option = {
+		name = mrJapEvents.4.f
+		switch_tag = IMG
+	}
+	
+	option = {
+		name = mrJapEvents.4.g
+		switch_tag = TKG
+	}
+	
+	option = {
+		name = mrJapEvents.4.h
+		switch_tag = ODA
+	}
+	
+	option = {
+		name = mrJapEvents.4.i
+		switch_tag = TKI
+	}
+	
+	option = {
+		name = mrJapEvents.4.j
+		switch_tag = SBA
+	}
+	
+	option = {
+		name = mrJapEvents.4.k
+		switch_tag = YMN
+	}
+	
+	option = {
+		name = mrJapEvents.4.l
+		switch_tag = AMA
+	}
+	
+	option = {
+		name = mrJapEvents.4.m
+		switch_tag = OUC
+	}
+	
+	option = {
+		name = mrJapEvents.4.n
+		switch_tag = OTM
 	}
 }
