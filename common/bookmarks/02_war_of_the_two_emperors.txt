@@ -1,0 +1,21 @@
+bookmark =
+{
+	name = "THE_TWO_EMPERORS"
+	desc = "THE_TWO_EMPERORS_DESC"
+	date = 1444.11.11
+	
+	center = 1816
+	default = yes
+	
+	country = GHC
+	country = GSC
+	country = YNN
+	country = KLK
+	country = SHU
+	country = HEI
+	country = TIB
+	
+	# easy_country = CAS
+	# easy_country = POR
+	# easy_country = TUR
+}
