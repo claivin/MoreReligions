@@ -1,8 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_disaster_ilkhanate_disaster"
-		texturefile = "gfx//interface//disasters//ilkhanate_disaster.dds"
-		noOfFrames = 3
-		loadType = "INGAME"
-	}
-}

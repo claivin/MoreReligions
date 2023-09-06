@@ -291,11 +291,16 @@
  mr_change_to_westorthodox_rite_title: "Adopt West Orthodox Rites"
  mr_change_to_westorthodox_rite_desc: "Our current liturgical rites are insufficient and outdated for our religious community. We ought to reallign our rites to something more fitting for out people."
  
+ #disaster
+ mr_western_schism: "Western Schism"
+ WESTERN_SCHISM_HAS_IN_PROGRESS: "Reconstructionists have not been appeased"
+ WESTERN_SCHISM_HAS_CONCLUDED: "Western Schism has concluded"
+ 
  #Western Schism Events
  mr_catholic.2.t: "Cardinal Factionalism"
  mr_catholic.2.d: "Since the twelfth century, the Church has been beset by drastic corruption, going from the lowest clergymen, bishops, and even up to several Popes. The increasing integration of clerical administration into the remenants of fragmented Europe are thought to have encouraged self-interested clergymen with little political oversight to clamor for their own power and wealth. The College of Cardinals is no exception: they act as petty lords, ruling with impunity within their own ecclestiastical provinces. For several Papal elections now, the College has been relatively united in electing weak Popes - those who will do little to reform the Church from within and act as a figurehead - oftentimes chosen from lesser cardinals or archbishops from European backwaters.\n\nIn recent times however, several Cardinals he come to the conclusion that the unchecked spread of heresy within Europe will only lead to the collapse of Catholic institutions, and therefore their power. These Cardinals dubbed 'Reconstructionists' have grown to makeup nearly half the College and they stand in clear opposition to unalligned Cardinals who do not view heresy as a significant threat."
  mr_catholic.2.a: "This will pass."
- western_schism_disaster_enabled: "§RWestern Schism Diasaster enabled!\nChoices of events in other Catholic countries will advance or regress disasater progress." 
+ western_schism_disaster_enabled: "§RWestern Schism Diasaster enabled!§!\n\n§YChoices of events in other Catholic countries can§! §Radvance§! §Yor§! §Gregress§! §Ydisasater progress.§!" 
  
  mr_catholic.3.t: "Cardinal Factionalism"
  mr_catholic.3.d: "Since the twelfth century, the Church has been beset by drastic corruption, going from the lowest clergymen, bishops, and even up to several Popes. The increasing integration of clerical administration into the remenants of fragmented Europe are thought to have encouraged self-interested clergymen with little political oversight to clamor for their own power and wealth. The College of Cardinals is no exception: they act as petty lords, ruling with impunity within their own ecclestiastical provinces. For several Papal elections now, the College has been relatively united in electing weak Popes - those who will do little to reform the Church from within and act as a figurehead - oftentimes chosen from lesser cardinals or bishops from European backwaters.\n\nIn recent times however, several Cardinals he come to the conclusion that the unchecked spread of heresy within Europe will only lead to the collapse of Catholic institutions, and therefore their power. These Cardinals, dubbed 'Reconstructionists' have grown to makeup nearly a quarter of the College and they stand in clear opposition to unalligned Cardinals who do not view heresy as a significant threat."
@@ -353,7 +358,7 @@
  mr_catholic.19.b: "We must play our cards carefully."
  
  mr_catholic.20.t: "Reformists Find Support"
- mr_catholic.20.d: ""
+ mr_catholic.20.d: "wip"
  mr_catholic.20.a: "A little money may help things along."
  mr_catholic.20.b: "We can only offer our support."
  

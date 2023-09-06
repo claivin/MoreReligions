@@ -1,0 +1,35 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_hungary_disaster"
+		texturefile = "gfx//interface//disasters//hungary_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_ilkhanate_disaster"
+		texturefile = "gfx//interface//disasters//ilkhanate_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_hotoku_war"
+		texturefile = "gfx//interface//disasters//hotoku_war.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_mr_western_schism"
+		texturefile = "gfx//interface//disasters//western_schism_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

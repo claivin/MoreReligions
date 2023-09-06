@@ -308,7 +308,8 @@ country_event = {
 	option = { # for everyone else
 		name = mr_catholic.3.a
 		add_reform_desire = 0.001
-		pap_add_schism_progress = { value = 0.5 }
+		pap_add_schism_progress = { VALUE = 0.5 }
+		log = "0.5-[GetDate]"
 		hidden_effect = { set_country_flag = mr_catholic3_flag }
 	}
 }
@@ -395,7 +396,8 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
-		pap_add_schism_progress = { value = 1 }
+		pap_add_schism_progress = { VALUE = 1 }
+		log = "1.0-[GetDate]"
 		set_country_flag = mr_nobility_supports_antipope
 	}
 	
@@ -435,13 +437,15 @@ country_event = {
 		name = mr_catholic.6.a
 		trigger = { has_country_flag = mr_supports_pope }
 		add_papal_influence = 15
-		pap_add_schism_progress = { value = -1 }
+		pap_add_schism_progress = { VALUE = -1 }
+		log = "-1-[GetDate]"
 	}
 	option = { #disagree with supporting pope
 		name = mr_catholic.6.b
 		trigger = { has_country_flag = mr_supports_pope }
 		add_papal_influence = -100
-		pap_add_schism_progress = { value = 2 }
+		pap_add_schism_progress = { VALUE = 2 }
+		log = "2.0-[GetDate]"
 		custom_tooltip = mr_cardinal_expulsion_TT
 		hidden_effect = {
 			while = {
@@ -471,13 +475,15 @@ country_event = {
 		name = mr_catholic.6.c
 		trigger = { has_country_flag = mr_supports_antipope }
 		add_reform_desire = 0.005
-		pap_add_schism_progress = { value = 4 }
+		pap_add_schism_progress = { VALUE = 4 }
+		log = "4.0-[GetDate]"
 	}
 	option = { #disagree with supporting antipope
 		name = mr_catholic.6.e
 		trigger = { has_country_flag = mr_supports_antipope }
 		add_papal_influence = 50
-		pap_add_schism_progress = { value = -2 }
+		pap_add_schism_progress = { VALUE = -2 }
+		log = "-2.0-[GetDate]"
 		custom_tooltip = mr_cardinal_expulsion_TT
 		hidden_effect = {
 			while = {
@@ -667,7 +673,8 @@ country_event = {
 			}
 			set_country_flag = mr_supported_bishop
 		}
-		pap_add_schism_progress = { value = 10 }
+		pap_add_schism_progress = { VALUE = 10 }
+		log = "10.0-[GetDate]"
 	}
 	
 	option = { #condemn him
@@ -724,7 +731,8 @@ country_event = {
 	
 	option = { #he gets his own lands
 		name = mr_catholic.15.a
-		pap_add_schism_progress = { value = 25 }		
+		pap_add_schism_progress = { VALUE = 25 }		
+		log = "25.0-[GetDate]"
 		event_target:mr_second_papacy = {
 			hidden_effect = {
 				discover_country = ANP
@@ -761,7 +769,8 @@ country_event = {
 	
 	option = { #he gets his own lands - play as them
 		name = mr_catholic.15.b
-		pap_add_schism_progress = { value = 25 }
+		pap_add_schism_progress = { VALUE = 25 }
+		log = "25.0-[GetDate]"
 		event_target:mr_second_papacy = {
 			hidden_effect = {
 				discover_country = ANP
@@ -811,7 +820,8 @@ country_event = {
 	option = { #he gets his own lands
 		name = mr_catholic.151.a
 		ai_chance = { factor = 30 }
-		pap_add_schism_progress = { value = 25 }		
+		pap_add_schism_progress = { VALUE = 25 }
+		log = "25.0-[GetDate]"
 		event_target:mr_second_papacy = {
 			hidden_effect = {
 				discover_country = ANP
@@ -855,7 +865,8 @@ country_event = {
 		ai_chance = { factor = 70 }
 				
 		add_stability = -1
-		pap_add_schism_progress = { value = -5 }
+		pap_add_schism_progress = { VALUE = -5 }
+		log = "-5.0-[GetDate]"
 		event_target:mr_second_papacy = {
 			spawn_rebels = {
 				type = heretic_rebels
@@ -1020,7 +1031,8 @@ country_event = {
 			estate = estate_church
 			loyalty = 20
 		}
-		pap_add_schism_progress = { value = 2 }
+		pap_add_schism_progress = { VALUE = 2 }
+		log = "2.0-[GetDate]"
 		set_country_flag = mr_clergy_supports_antipope
 	}
 	
@@ -1032,7 +1044,8 @@ country_event = {
 			estate = estate_church
 			loyalty = -20
 		}
-		pap_add_schism_progress = { value = -1 }
+		pap_add_schism_progress = { VALUE = -1 }
+		log = "-1.0-[GetDate]"
 	}
 }
 
@@ -1080,7 +1093,8 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 5
 		}
-		pap_add_schism_progress = { value = 2 }
+		pap_add_schism_progress = { VALUE = 2 }
+		log = "2.0-[GetDate]"
 		hidden_effect = { set_country_flag = mr_supports_antipope }
 	}
 	option = {
@@ -1096,7 +1110,8 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 5
 		}
-		pap_add_schism_progress = { value = -1 }
+		pap_add_schism_progress = { VALUE = -1 }
+		log = "-1.0-[GetDate]"
 		hidden_effect = { set_country_flag = mr_supports_pope }
 	}
 	option = {
@@ -1131,7 +1146,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 36
+		months = 120
 		modifier = {
 			factor = 0.5
 			has_disaster_progress = {
@@ -1139,26 +1154,37 @@ country_event = {
 				value = 30
 			} 
 		}
+		modifier = {
+			factor = 0.5
+			has_disaster_progress = {
+				disaster = mr_western_schism
+				value = 50
+			} 
+		}
 	}
 	
 	immediate = {
-		random_province = {
-			limit = {
-				has_cardinal = yes
+		hidden_effect = {
+			random_province = {
+				limit = {
+					has_cardinal = yes
+				}
+				save_event_target_as = guy_who_formed_status_quo_faction
 			}
-			save_event_target_as = guy_who_formed_status_quo_faction
 		}
 	}
 	
 	option = { #grant the cardinals what they need
 		name = mr_catholic.19.a
 		add_adm_power = -300
-		pap_add_schism_progress = { value = -20 }
+		pap_add_schism_progress = { VALUE = -20 }
+		log = "-20.0-[GetDate]"
 	}
 	
 	option = { #we must play our cards carefully
 		name = mr_catholic.19.b
-		pap_add_schism_progress = { value = -5 }
+		pap_add_schism_progress = { VALUE = -5 }
+		log = "-5.0-[GetDate]"
 	}
 	
 	after = {
@@ -1252,13 +1278,15 @@ country_event = {
 	option = { #A little money may help things along
 		name = mr_catholic.20.a
 		add_years_of_income = -2
-		pap_add_schism_progress = { value = -5 }
+		pap_add_schism_progress = { VALUE = -5 }
+		log = "-5.0-[GetDate]"
 	}
 	
 	option = { #We can only offer our support
 		name = mr_catholic.20.b
 		add_adm_power = -50
-		pap_add_schism_progress = { value = -2 }
+		pap_add_schism_progress = { VALUE = -2 }
+		log = "-2.0-[GetDate]"
 	}
 } 
 
@@ -1277,12 +1305,27 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 36
+		months = 240
+		modifier = {
+			factor = 0.5
+			has_disaster_progress = {
+				disaster = mr_western_schism
+				value = 10
+			}
+		}
+		modifier = {
+			factor = 0.5
+			has_disaster_progress = {
+				disaster = mr_western_schism
+				value = 60
+			}
+		}
 	}
 	
 	option = { #
 		name = mr_catholic.21.a
 		add_corruption = -1
-		pap_add_schism_progress = { value = - 4 }
+		pap_add_schism_progress = { VALUE = -4 }
+		log = "-4.0-[GetDate]"
 	}
 }

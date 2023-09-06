@@ -21,7 +21,7 @@ change_estate_land_share = {
 	share = 5
 }
 
-add_corruption = 25
+add_corruption = 40
 
 1389.10.15 = {
 	monarch = {

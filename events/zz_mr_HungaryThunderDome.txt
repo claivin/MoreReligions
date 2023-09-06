@@ -766,7 +766,7 @@ country_event = {
 						tag = SER
 						tag = POL
 						tag = BLH
-						tag = PAP
+						#tag = PAP
 					}
 				}
 				country_event = { id = HUN_flavor.3 }
@@ -791,7 +791,7 @@ country_event = {
 						tag = SER
 						tag = POL
 						tag = BLH
-						tag = PAP
+						#tag = PAP
 					}
 				}
 			}
@@ -829,13 +829,13 @@ country_event = {
 			
 	}
 	
-	option = {
-		name = HUN_flavor.3f
-			trigger = {
-				tag = PAP
-			}
+	# option = {
+		# name = HUN_flavor.3f
+			# trigger = {
+				# tag = PAP
+			# }
 			
-	}
+	# }
 }
 country_event = {
 	id = HUN_flavor.4

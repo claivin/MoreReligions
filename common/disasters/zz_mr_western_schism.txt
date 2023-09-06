@@ -3,12 +3,18 @@ mr_western_schism = {
 		normal_or_historical_nations = yes
 		tag = PAP
 		has_global_flag = mr_western_schism_pt1_flag
-		current_age = age_of_discovery
-		current_age = age_of_reformation
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
 	}
 
 	can_start = {
-		always = yes
+		custom_trigger_tooltip = {
+			tooltip = WESTERN_SCHISM_HAS_IN_PROGRESS
+			always = yes
+		}
+		corruption = 5
 	}
 	
 	can_stop = {
@@ -21,13 +27,38 @@ mr_western_schism = {
 	}
 	
 	progress = {
-		#progresses through events
+		#progresses mostly through events
+		modifier = {
+			factor = 0.1
+			corruption = 10
+        }
+		modifier = {
+			factor = 0.1
+			corruption = 20
+        }
+		modifier = {
+			factor = 0.1
+			corruption = 30
+        }
+		modifier = {
+			factor = 0.1
+			corruption = 40
+        }
+		modifier = {
+			factor = 0.1
+			corruption = 50
+        }
 	}
 
 	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = WESTERN_SCHISM_HAS_CONCLUDED
+			OR = {
+				has_global_flag = mr_western_schism_ended_conclusively_flag
+				has_global_flag = mr_western_schism_ended_inconclusively_flag
+			}
+		}
 		OR = {
-			has_global_flag = mr_western_schism_ended_conclusively_flag
-			has_global_flag = mr_western_schism_ended_inconclusively_flag
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}

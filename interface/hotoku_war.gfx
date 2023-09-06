@@ -1,8 +1,0 @@
-spriteTypes = {
-	spriteType = {
-		name = "GFX_disaster_hotoku_war"
-		texturefile = "gfx//interface//disasters//hotoku_war.dds"
-		noOfFrames = 3
-		loadType = "INGAME"
-	}
-}
