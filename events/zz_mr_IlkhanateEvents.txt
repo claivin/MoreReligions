@@ -76,11 +76,38 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.1.a
 		add_prestige = -25
-		
+		ARL = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = ARL
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	option = {
 		name = ilkhanate_flavor.1.b
 		switch_tag = ARL
+		ARL = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = ARL
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }
 
@@ -162,11 +189,39 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.2.a
 		add_prestige = -25
+		BSR = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = BSR
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = ilkhanate_flavor.2.b
 		switch_tag = BSR
+		BSR = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = BSR
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }
 
@@ -232,11 +287,39 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.3.a
 		add_prestige = -25
+		ISF = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = ISF
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = ilkhanate_flavor.3.b
 		switch_tag = ISF
+		ISF = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = ISF
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }	
 
@@ -300,11 +383,39 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.4.a
 		add_prestige = -25
+		YZD = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = YZD
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = ilkhanate_flavor.4.b
 		switch_tag = YZD
+		YZD = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = YZD
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }
 
@@ -385,11 +496,39 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.5.a
 		add_prestige = -25
+		ALM = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = ALM
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = ilkhanate_flavor.5.b
 		switch_tag = ALM
+		ALM = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = ALM
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }
 #Sabzevar Revolt
@@ -474,11 +613,39 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.5.a
 		add_prestige = -25
+		SBZ = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = SBZ
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = ilkhanate_flavor.5.b
 		switch_tag = SBZ
+		SBZ = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = SBZ
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }
 
@@ -566,11 +733,39 @@ country_event = {
 	option = {
 		name = ilkhanate_flavor.5.a
 		add_prestige = -25
+		KMS = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = KMS
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 	
 	option = {
 		name = ilkhanate_flavor.5.b
 		switch_tag = KMS
+		KMS = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						num_of_rebel_armies = 1
+						num_of_rebel_controlled_provinces = 1
+					}
+				}
+				change_controller = KMS
+				kill_units = {
+					who = enemy
+				}
+			}
+		}
 	}
 }
 #Sunni Revolt
@@ -724,28 +919,28 @@ country_event = {
 		424 = {
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 2
+				size = 3
 				win = yes
 			}
 		}
 		412 = {
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 3
 				win = yes
 			}
 		}
 		random_heretic_province = { 
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 3
 				win = yes
 			}
 		}
 		random_heretic_province = { 
 			spawn_rebels = {
 				type = nationalist_rebels
-				size = 1
+				size = 3
 				win = yes
 			}
 		}
@@ -827,7 +1022,7 @@ country_event = {
 				region = khorasan_region
 			}
 			spawn_rebels = {
-				type = shia_rebels
+				type = shiite_rebels
 				size = 3
 			}
 		}
@@ -845,7 +1040,7 @@ country_event = {
 	
 	option = {
 		name = ilkhanate_flavor.13.a
-		add_manpower = 10
+		add_manpower = 5
 	}
 }
 
