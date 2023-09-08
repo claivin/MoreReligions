@@ -123,4 +123,18 @@ gme_mint = {
 gme_copper_mint = {
 	local_development_cost = -0.20
 	trade_goods_size_modifier = 0.50
+<<<<<<< Updated upstream
+=======
+}
+
+gme_basic_elite_units_unlocked = {
+	can_recruit_rajputs = yes
+	allowed_rajput_fraction = 0.25
+}
+
+gme_basic_elite_units_modifier = {
+	land_maintenance_modifier = 0.2
+	discipline = 0.025
+	is_rajput_modifier = yes
+>>>>>>> Stashed changes
 }
