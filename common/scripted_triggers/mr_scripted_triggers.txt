@@ -133,4 +133,5 @@ can_have_mountaineers = {
 		primary_culture = austrian
 		culture_group = georgian
 		culture_group = iranian
+	}
 }
