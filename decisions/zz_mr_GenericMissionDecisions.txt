@@ -101,6 +101,7 @@ country_decisions = {
 	}
 	
 	elite_unit_menu_gme = { #elite unit menu
+		color = { 171 130 209 }
 		potential = {
 			mission_completed = g_mission_elite_regiments
 			NOT = { has_country_flag = elite_unit_menu_active }
@@ -125,6 +126,25 @@ country_decisions = {
 					value = 300
 				} 
 			}
+		}
+	}
+	
+	disband_elite_units = {
+		color = { 171 130 209 }
+		potential = {
+			mission_completed = g_mission_elite_regiments
+			NOT = { has_country_flag = elite_unit_menu_active }
+			has_unlocked_t1_elite_units = yes
+		}
+		allow = {
+			has_unlocked_t1_elite_units = yes
+		}
+		effect = {
+			custom_tooltip = disband_elite_units_TT
+			reset_elite_units = yes
+		}
+		ai_will_do = {
+			factor = 0
 		}
 	}
 }

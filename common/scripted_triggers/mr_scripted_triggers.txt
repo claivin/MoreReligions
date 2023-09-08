@@ -38,13 +38,99 @@ has_unified_culture = {
 	}
 }
 
-has_not_unlocked_t1_elite_units = {
-	NOT = { has_country_modifier = elite_royal_guard_1 }
-	NOT = { has_country_modifier = elite_sapper_1 }
-	NOT = { has_country_modifier = elite_vanguard_1 }
+has_unlocked_t1_elite_units = {
+	custom_trigger_tooltip = {
+		tooltip = has_unlocked_t1_elite_units_TT
+		OR = {
+			has_country_modifier = elite_royal_guard_1
+			has_country_modifier = elite_sapper_1
+			has_country_modifier = elite_vanguard_1
+		}
+	}
 }
 
-has_not_unlocked_t2_elite_units = {
-	NOT = { has_country_modifier = elite_royal_guard_11 }
-	NOT = { has_country_modifier = elite_royal_guard_12 }
+has_unlocked_t2_elite_units = {
+	OR = {
+		has_country_modifier = elite_royal_guard_11
+		has_country_modifier = elite_royal_guard_12
+		has_country_modifier = elite_sapper_11
+	}
+}
+
+has_unlocked_t3_elite_units = {
+	OR = {
+		has_country_modifier = elite_royal_guard_1X1
+		has_country_modifier = elite_sapper_111
+		has_country_modifier = elite_sapper_112
+	}
+}
+
+has_unlocked_t4_elite_units = {
+	OR = {
+		has_country_modifier = elite_royal_guard_1X11
+		has_country_modifier = elite_royal_guard_1X12
+		has_country_modifier = elite_sapper_1111
+		has_country_modifier = elite_sapper_1122
+	}
+}
+
+has_unlocked_t5_elite_units = {
+	OR = {
+		has_country_modifier = elite_royal_guard_1X111
+		has_country_modifier = elite_royal_guard_1X122
+		has_country_modifier = elite_royal_guard_1X123
+		has_country_modifier = elite_sapper_11111
+		has_country_modifier = elite_sapper_11222
+	}
+}
+
+has_royal_guard = {
+	custom_trigger_tooltip = {
+		tooltip = has_royal_guard_TT
+		OR = {
+			has_country_modifier = elite_royal_guard_1
+			has_country_modifier = elite_royal_guard_11
+			has_country_modifier = elite_royal_guard_12
+			has_country_modifier = elite_royal_guard_1X1
+			has_country_modifier = elite_royal_guard_1X11
+			has_country_modifier = elite_royal_guard_1X12
+			has_country_modifier = elite_royal_guard_1X111
+			has_country_modifier = elite_royal_guard_1X122
+			has_country_modifier = elite_royal_guard_1X123
+		}
+	}
+}
+
+has_sappers ={
+	custom_trigger_tooltip = {
+		tooltip = has_sappers_TT
+		OR = {
+			has_country_modifier = elite_sapper_1
+		}
+	}
+}
+
+has_vanguard = {
+	custom_trigger_tooltip = {
+		tooltip = has_vanguard_TT
+		OR = {
+			has_country_modifier = elite_vanguard_1
+		}
+	}
+}
+
+has_enough_xp = {
+	check_variable = {
+		which = elite_unit_xp
+		which = $XPCOST$
+	}
+}
+
+#used as cultural example
+can_have_mountaineers = {
+	OR = {
+		primary_culture = swiss
+		primary_culture = austrian
+		culture_group = georgian
+		culture_group = iranian
 }

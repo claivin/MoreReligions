@@ -6,3 +6,106 @@ pap_add_schism_progress = {
 		}
 	}
 }
+
+
+set_xp_costs_effect = {
+	##cost modifiers for levelups
+	set_variable = {
+		which = branchA_base_cost
+		value = 100
+	}
+	set_variable = {
+		which = branchB_base_cost
+		value = 100
+	}
+	set_variable = {
+		which = branchC_base_cost
+		value = 100
+	}
+	######
+	set_variable = {
+		which = branchApath_base_cost
+		value = 200
+	}
+	set_variable = {
+		which = branchBpath_base_cost
+		value = 200
+	}
+	set_variable = {
+		which = branchCpath_base_cost
+		value = 200
+	}
+	######
+	set_variable = {
+		which = branchU_base_cost
+		value = 200
+	}
+	set_variable = {
+		which = branchUpath_base_cost
+		value = 200
+	}
+	
+	##modifiers for cost changes go here vvv
+	
+	#for example
+	# if = {
+		# limit = {
+			# has_country_flag = cheaper_sappers
+		# }
+		# change_variable = {
+			# which = branchB_base_cost
+			# value = -20
+		# }
+	# }
+}
+
+elite_unit_menu_invalid_choice_effect = {
+	custom_tooltip = gme_not_enough_xp$BRANCH$
+	hidden_effect = { country_event = { id = generic_mission_events.51 } }
+}
+
+buy_elite_unit_tier = {
+	add_country_modifier = {
+		name = $ELITE_UNIT_MODIFIER$
+		duration = -1
+	}
+	hidden_effect = {
+		multiply_variable = { #makes negative so can subtract
+			which = branch$BRANCH$_base_cost
+			value = -1
+		}
+	}
+	change_variable = {
+		which = elite_unit_xp
+		which = branch$BRANCH$_base_cost
+	}
+	hidden_effect = {
+		multiply_variable = { #undoes negative cost
+			which = branch$BRANCH$_base_cost
+			value = -1
+		}
+	}
+}
+
+reset_elite_units = {
+	if = {
+		limit = {
+			has_royal_guard = yes
+		}
+		remove_country_modifier = elite_royal_guard_1
+		remove_country_modifier = elite_royal_guard_11
+		remove_country_modifier = elite_royal_guard_12
+	}
+	else_if = {
+		limit = {
+			has_sappers = yes
+		}
+		remove_country_modifier = elite_sapper_1
+	}
+	else_if = {
+		limit = {
+			has_sappers = yes
+		}
+		remove_country_modifier = elite_vanguard_1
+	}
+}

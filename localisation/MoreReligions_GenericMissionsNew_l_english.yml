@@ -50,9 +50,10 @@
  g_mission_interests_abroad_tt: "Mission reward is dependent on your previously chosen Naval Ethos"
  
  g_mission_elite_regiments_title: "Elite Regiments"
- g_mission_elite_regiments_desc: ""
+ g_mission_elite_regiments_desc: "wip"
  elite_regiments_mission_tt: "Unlocks §PElite Units§!\nUnlocks §PElite Unit§! Specialization"
  
+#DECISIONS
  declare_long_term_diplo_friend_title: "Request a Long Term Alliance"
  declare_long_term_diplo_friend_desc: "Standing together through thick and thin, our ally has proven themselves loyal and it may be in our interests to form a stronger tie than usual with them."
  historical_friend_gme_tt: "We ask our ally to become Historical Friends"
@@ -64,10 +65,15 @@
  create_new_cash_crop_gme_title: "Plant a New Cash Crop"
  create_new_cash_crop_gme_desc: "We should encourage some of our farmers to grow some crops for the benefit of the state!"
  
- elite_unit_menu_gme_title: "§PElite Unit§! Specialization"
- elite_unit_menu_gme_desc: "..."
- display_current_xp_tt: "Current §PElite Unit§! Experience: [Root.elite_unit_xp.GetValue]/100--[Root.land_units_killed.GetValue]--[Root.land_units_lost.GetValue]--bxp[Root.base_xp.GetValue]--raj[Root.xp_num_of_rajput_var.GetValue]--landunitsratio[Root.land_units_killed_copy.GetValue]"
+ elite_unit_menu_gme_title: "Elite Unit Specialization"
+ elite_unit_menu_gme_desc: "wip"
+ display_current_xp_tt: "Current Elite Unit Experience: §Y[Root.elite_unit_xp.GetValue]§! XP\nYour last victorious battle earned: §G[Root.base_xp.GetValue]§!"
  
+ disband_elite_units_title: "Disband Elite Units"
+ disband_elite_units_desc: "wip"
+ disband_elite_units_TT: "§RElite Unit Experience will NOT be refunded§!"
+ 
+#MODIFIERS
  mr_recruiting_effort: "Recruiting Effort"
  mr_territorial_ambitions: "Territorial Ambitions"
  gme_diplomat: "Diplomatic Effort"
@@ -225,8 +231,9 @@
  generic_mission_events.12.c: "Silver - every bit as good as gold!"
  generic_mission_events.12.e: "Copper may not quite as rare, but every bit as valuable."
  
+#Elite unit stuff
  generic_mission_events.50.t: "Elite Unit Specialization"
- generic_mission_events.50.d: "..."
+ generic_mission_events.50.d: "wip"
  generic_mission_events.50.a: "§YGo Back§!"
  generic_mission_events.50.a1: "Inaugurate the Royal Guard."
  generic_mission_events.50.a2: "Form the Sapper Corps."
@@ -235,7 +242,36 @@
  generic_mission_events.50.a11: "Equip the Royal Guard with heavy armor."
  generic_mission_events.50.a12: "Equip the Royal Guard with heavy shields and polearms."
  
+ has_royal_guard_TT: "Has Royal Guard Specialization"
+ has_sappers_TT: "Has Sapper Corps Specialization"
+ has_vanguard_TT: "Has Vanguard Specialization"
+ has_unlocked_t1_elite_units_TT: "Has chosen an Elite Unit Specialization"
+ has_unlocked_t1_elite_units_event_TT: "Has NOT chosen an Elite Unit Specialization"
+ 
+ gme_basic_elite_units_unlocked: "Elite Units"
+ gme_basic_elite_units_modifier: "Basic Elite Units"
+ elite_royal_guard_1: "Royal Guard"
+ elite_sapper_1: "Sapper Corps"
+ elite_vanguard_1: "Vanguard"
+ 
+ elite_royal_guard_11: "Royal Guard: Heavy Armor"
+ elite_royal_guard_12: "Royal Guard: Shields and Improved Polearms"
+ 
  elite_unit_xp: "Elite Unit Experience"
+ branchA_base_cost: "Royal Guard Unlock Cost"
+ branchB_base_cost: "Sapper Corps Unlock Cost"
+ branchC_base_cost: "Vanguard Unlock Cost"
+ branchU_base_cost: "Unique Elite Unit Unlock Cost"
+ branchApath_base_cost: "Royal Guard Upgrade Cost"
+ branchBpath_base_cost: "Sapper Corps Upgrade Cost"
+ branchCpath_base_cost: "Sapper Corps Upgrade Cost"
+ branchUpath_base_cost: "Unique Elite Unit Upgrade Cost"
+ 
  gme_not_enough_xpA: "£no£ You must have at least §Y[Root.branchA_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
  gme_not_enough_xpB: "£no£ You must have at least §Y[Root.branchB_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
  gme_not_enough_xpC: "£no£ You must have at least §Y[Root.branchC_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpU: "£no£ You must have at least §Y[Root.branchU_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpApath: "£no£ You must have at least §Y[Root.branchApath_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpBpath: "£no£ You must have at least §Y[Root.branchBpath_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpCpath: "£no£ You must have at least §Y[Root.branchCpath_base_cost.GetValue] Elite Unit Experience§! to select this specialization."
+ gme_not_enough_xpUpath: "£no£ You must have at least §Y[Root.branchUpath_base_cost.GetValue] Elite Unit Experience§! to select this specialization."

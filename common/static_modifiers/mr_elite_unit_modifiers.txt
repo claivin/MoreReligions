@@ -1,18 +1,24 @@
+gme_basic_elite_units_unlocked = {
+	can_recruit_rajputs = yes
+	allowed_rajput_fraction = 0.1
+}
+
+gme_basic_elite_units_modifier = {
+	land_maintenance_modifier = 0.2
+	discipline = 0.025
+	is_rajput_modifier = yes
+}
+
+#unique traits
+elite_mountaineer = {}
+
+#Royal Guard Tiers - T1
 elite_royal_guard_1 = {
 	shock_damage_received = -0.05
 	fire_damage_received = -0.05
 	is_rajput_modifier = yes
 }
-elite_sapper_1 = {
-	siege_ability = 0.05
-	is_rajput_modifier = yes
-}
-elite_vanguard_1 = {
-	morale_damage = 0.025
-	is_rajput_modifier = yes
-}
-
-#Royal Guard Tiers
+#T2
 elite_royal_guard_11 = { #Heavy Armor
 	shock_damage_received = -0.10
 	fire_damage_received = -0.10
@@ -21,5 +27,38 @@ elite_royal_guard_11 = { #Heavy Armor
 elite_royal_guard_12 = { #Shield and Polearm
 	shock_damage_received = -0.15
 	fire_damage_received = -0.05
+	is_rajput_modifier = yes
+}
+#T3
+elite_royal_guard_1X1 = {}
+#T4
+elite_royal_guard_1X11 = {}
+elite_royal_guard_1X12 = {}
+#T5
+elite_royal_guard_1X111 = {}
+elite_royal_guard_1X122 = {}
+elite_royal_guard_1X123 = {}
+
+
+#Sapper Corps Tiers - T1
+elite_sapper_1 = {
+	siege_ability = 0.05
+	is_rajput_modifier = yes
+}
+#T2
+elite_sapper_11 = {}
+#T3
+elite_sapper_111 = {}
+elite_sapper_112 = {}
+#T4
+elite_sapper_1111 = {}
+elite_sapper_1122 = {}
+#T5
+elite_sapper_11111 = {}
+elite_sapper_11222 = {}
+
+#Vanguard Tiers - T1
+elite_vanguard_1 = {
+	morale_damage = 0.025
 	is_rajput_modifier = yes
 }

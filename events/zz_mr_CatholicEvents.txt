@@ -718,6 +718,79 @@ country_event = {
 	}
 }
 
+#Death of the Pope - set papal regency
+country_event = {
+	id = mr_catholic.9
+	title = mr_catholic.9.t
+	desc = mr_catholic.9.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {} #triggered by death of pope after .7
+	
+	immediate = {
+		set_global_flag = pope_died_before_schism
+		hidden_effect = {
+			define_ruler = {
+				name = "College of Cardinals"
+				adm = 0
+				dip = 0
+				mil = 0
+				fixed = yes
+				regency = yes
+			}
+		}
+	}
+	
+	option = {
+		name = mr_catholic.9.a
+		tooltip = {
+			define_ruler = {
+				name = "College of Cardinals"
+				adm = 0
+				dip = 0
+				mil = 0
+				fixed = yes
+				regency = yes
+			}
+		}
+		pap_add_schism_progress = { VALUE = 25 }
+		log = "25.0-[GetDate]"
+	}
+	
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = mr_catholic.10
+				days = 365
+				random = 200
+			}
+		}
+	}
+}
+
+#Cardinal Stalemate
+country_event = {
+	id = mr_catholic.10
+	title = mr_catholic.10.t
+	desc = mr_catholic.10.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { } #triggered by .9
+	
+	immediate = {
+		
+	}
+	
+	option = {
+		name = mr_catholic.10.a
+		
+	}
+}
+
 #bishop granted own holdings - accepted
 country_event = {
 	id = mr_catholic.15

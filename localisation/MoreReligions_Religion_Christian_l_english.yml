@@ -341,6 +341,14 @@
  mr_catholic.8.t: "The Bishop of [mr_second_papacy.GetName] Defects!"
  mr_catholic.8.d: "In a stunning turn of events, the Bishop of [mr_second_papacy.GetName] has declared ecclestiastical independence until the next Papal election is resolved... with his prefered Reconstructionist candidate. He has offered his church lands as a place to convene, lest the election goes unresolved..."
  
+ mr_catholic.9.t: "In Sede Vacante"
+ mr_catholic.9.d: ""
+ mr_catholic.9.a: "Let us hope this resolves quickly."
+ 
+ mr_catholic.10.t: "Cardinal Stalemate"
+ mr_catholic.10.d: "Over a year of stalemate within an electoral deadlock has left"
+ mr_catholic.10.a: ""
+ 
  mr_catholic.17.t: "Clergy Support the Reformists"
  mr_catholic.17.d: "wip"
  mr_catholic.17.a: "Enlightened men of faith lead the way in these dark times..."

@@ -320,37 +320,3 @@ elite_unit_xp_combat_effect = {
 		which = base_xp
 	}
 }
-
-set_xp_costs_effect = {
-
-	##cost modifiers for levelups
-	set_variable = {
-		which = branchA_base_cost
-		value = 100
-	}
-	set_variable = {
-		which = branchB_base_cost
-		value = 100
-	}
-	set_variable = {
-		which = branchC_base_cost
-		value = 100
-	}
-	######
-	set_variable = {
-		which = branchApath_base_cost
-		value = 200
-	}
-	##modifiers for cost changes go here vvv
-	
-	#for example
-	# if = {
-		# limit = {
-			# has_country_flag = cheaper_sappers
-		# }
-		# change_variable = {
-			# which = branchB_base_cost
-			# value = -20
-		# }
-	# }
-}

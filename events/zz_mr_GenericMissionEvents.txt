@@ -1481,252 +1481,158 @@ country_event = { #currency
 	}
 }
 
-province_event = { #elite unit menu
+country_event = { #elite unit menu
 	id = generic_mission_events.50
 	title = generic_mission_events.50.t
 	desc = generic_mission_events.50.d
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	
 	is_triggered_only = yes
-	trigger = { always = yes }
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { } #triggered by decision elite_unit_menu_gme
 	
 	immediate = {
 		set_country_flag = elite_unit_menu_active
-		
-		set_xp_costs_effect = yes
+		hidden_effect = { set_xp_costs_effect = yes }
 	}
 	
-	#go back
-	option = {
+	option = { #go back
 		name = generic_mission_events.50.a
-	}
-	
-	
+		ai_chance = { factor = 0 }
+	}	
 ##################
-##################
-	option = { #Not enough XP for starter branch A
+	option = { #Not enough XP for starter branch A (Royal Guard)
 		name = generic_mission_events.50.a1
 		trigger = {
-			NOT = {
-				check_variable = {
-					which = elite_unit_xp
-					which = branchA_base_cost
-				}
-			}
-			has_not_unlocked_t1_elite_units = yes
-			has_not_unlocked_t2_elite_units = yes
+			NOT = { has_enough_xp = { XPCOST = branchA_base_cost } }
+			NOT = { has_unlocked_t1_elite_units = yes }
 		}
-		custom_tooltip = gme_not_enough_xpA
-		hidden_effect = { country_event = { id = generic_mission_events.51 } }
+		elite_unit_menu_invalid_choice_effect = { BRANCH = A }
 	}
 	option = { #Enough XP for starter branch A
 		name = generic_mission_events.50.a1
 		highlight = yes
 		trigger = {
-			check_variable = {
-				which = elite_unit_xp
-				which = branchA_base_cost
-			}
-			has_not_unlocked_t1_elite_units = yes
-			has_not_unlocked_t2_elite_units = yes
-		}
-		add_country_modifier = {
-			name = elite_royal_guard_1
-			duration = -1
-		}
-		hidden_effect = {
-			multiply_variable = {
-				which = branchA_base_cost
-				value = -1
+			has_enough_xp = { XPCOST = branchA_base_cost }
+			custom_trigger_tooltip = { #because it shows up as a checkmark, so use negative
+				tooltip = has_unlocked_t1_elite_units_event_TT
+				NOT = { has_unlocked_t1_elite_units = yes }
 			}
 		}
-		change_variable = {
-			which = elite_unit_xp
-			which = branchA_base_cost
-		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1 BRANCH = A }
 	}
-	
-	option = { #Not enough XP for starter branch B
+##################
+	option = { #Not enough XP for starter branch B (Sappers)
 		name = generic_mission_events.50.a2
 		trigger = {
-			NOT = {
-				check_variable = {
-					which = elite_unit_xp
-					which = branchB_base_cost
-				}
-			}
-			has_not_unlocked_t1_elite_units = yes
-			has_not_unlocked_t2_elite_units = yes
+			NOT = { has_enough_xp = { XPCOST = branchB_base_cost } }
+			NOT = { has_unlocked_t1_elite_units = yes }
 		}
-		custom_tooltip = gme_not_enough_xpB
-		hidden_effect = { country_event = { id = generic_mission_events.51 } }
+		elite_unit_menu_invalid_choice_effect = { BRANCH = B }
 	}
 	option = { #Enough XP for starter branch B
 		name = generic_mission_events.50.a2
 		highlight = yes
 		trigger = {
-			check_variable = {
-				which = elite_unit_xp
-				which = branchB_base_cost
-			}
-			has_not_unlocked_t1_elite_units = yes
-			has_not_unlocked_t2_elite_units = yes
-		}
-		add_country_modifier = {
-			name = elite_sapper_1
-			duration = -1
-		}
-		hidden_effect = {
-			multiply_variable = {
-				which = branchB_base_cost
-				value = -1
+			has_enough_xp = { XPCOST = branchB_base_cost }
+			custom_trigger_tooltip = {
+				tooltip = has_unlocked_t1_elite_units_event_TT
+				NOT = { has_unlocked_t1_elite_units = yes }
 			}
 		}
-		change_variable = {
-			which = elite_unit_xp
-			which = branchB_base_cost
-		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_1 BRANCH = B }
 	}
-	
-	option = { #Not enough XP for starter branch C
+##################
+	option = { #Not enough XP for starter branch C (Vanguard)
 		name = generic_mission_events.50.a3
 		trigger = {
-			NOT = {
-				check_variable = {
-					which = elite_unit_xp
-					which = branchC_base_cost
-				}
-			}
-			has_not_unlocked_t1_elite_units = yes
-			has_not_unlocked_t2_elite_units = yes
+			NOT = { has_enough_xp = { XPCOST = branchC_base_cost } }
+			NOT = { has_unlocked_t1_elite_units = yes }
 		}
-		custom_tooltip = gme_not_enough_xpC
-		hidden_effect = { country_event = { id = generic_mission_events.51 } }
+		elite_unit_menu_invalid_choice_effect = { BRANCH = C }
 	}
 	option = { #Enough XP for starter branch C
 		name = generic_mission_events.50.a3
 		highlight = yes
 		trigger = {
-			check_variable = {
-				which = elite_unit_xp
-				which = branchC_base_cost
-			}
-			has_not_unlocked_t1_elite_units = yes
-			has_not_unlocked_t2_elite_units = yes
-		}
-		add_country_modifier = {
-			name = elite_vanguard_1
-			duration = -1
-		}
-		hidden_effect = {
-			multiply_variable = {
-				which = branchC_base_cost
-				value = -1
+			has_enough_xp = { XPCOST = branchC_base_cost }
+			custom_trigger_tooltip = {
+				tooltip = has_unlocked_t1_elite_units_event_TT
+				NOT = { has_unlocked_t1_elite_units = yes }
 			}
 		}
-		change_variable = {
-			which = elite_unit_xp
-			which = branchC_base_cost
-		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_vanguard_1 BRANCH = C }
 	}
 	
-######################
-#
-#Royal Guard Branch
-#
-######################
-
-	option = { #Not enough XP for branch A T2 1
+########################
+###Cultural/Regional Specialties
+###
+###Mountaineer as example
+########################
+	option = { #Not enough XP for unique trait (ex. mountaineer)
+		name = generic_mission_events.50.s1
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchUpath_base_cost } }
+			has_unlocked_t1_elite_units = yes
+			can_have_mountaineers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Upath }
+	}
+	option = { #Enough XP for unique trait (ex. mountaineer)
+		name = generic_mission_events.50.s1
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchUpath_base_cost }
+			has_unlocked_t1_elite_units = yes
+			can_have_mountaineers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_mountaineer BRANCH = Upath }
+	}
+########################
+###
+###Royal Guard Branch
+###
+########################
+	option = { #Not enough XP for starter branch A T2 1
 		name = generic_mission_events.50.a11
 		trigger = {
-			NOT = {
-				check_variable = {
-					which = elite_unit_xp
-					which = branchApath_base_cost
-				}
-			}
-			has_country_modifier = elite_royal_guard_1
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t1_elite_units = yes
+			has_royal_guard = yes
 		}
-		custom_tooltip = gme_not_enough_xp
-		hidden_effect = { country_event = { id = generic_mission_events.51 } }
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
 	}
 	option = { #Enough XP for starter branch A T2 1
 		name = generic_mission_events.50.a11
 		highlight = yes
 		trigger = {
-			check_variable = {
-				which = elite_unit_xp
-				which = branchApath_base_cost
-			}
-			has_country_modifier = elite_royal_guard_1
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t1_elite_units = yes
+			has_royal_guard = yes
 		}
-		
-		remove_country_modifier = elite_royal_guard_1
-		add_country_modifier = {
-			name = elite_royal_guard_11
-			duration = -1
-		}
-		
-		hidden_effect = {
-			multiply_variable = {
-				which = branchApath_base_cost
-				value = -1
-			}
-		}
-		change_variable = {
-			which = elite_unit_xp
-			which = branchApath_base_cost
-		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_11 BRANCH = Apath }
 	}
-
-	option = { #Not enough XP for branch A T2 2
+##################	
+	option = { #Not enough XP for starter branch A T2 2
 		name = generic_mission_events.50.a12
 		trigger = {
-			NOT = {
-				check_variable = {
-					which = elite_unit_xp
-					which = branchApath_base_cost
-				}
-			}
-			has_country_modifier = elite_royal_guard_1
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t1_elite_units = yes
+			has_royal_guard = yes
 		}
-		custom_tooltip = gme_not_enough_xp
-		hidden_effect = { country_event = { id = generic_mission_events.51 } }
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
 	}
 	option = { #Enough XP for starter branch A T2 2
 		name = generic_mission_events.50.a12
 		highlight = yes
 		trigger = {
-			check_variable = {
-				which = elite_unit_xp
-				which = branchApath_base_cost
-			}
-			has_country_modifier = elite_royal_guard_1
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t1_elite_units = yes
+			has_royal_guard = yes
 		}
-		
-		remove_country_modifier = elite_royal_guard_1
-		add_country_modifier = {
-			name = elite_royal_guard_12
-			duration = -1
-		}
-		
-		hidden_effect = {
-			multiply_variable = {
-				which = branchApath_base_cost
-				value = -1
-			}
-		}
-		change_variable = {
-			which = elite_unit_xp
-			which = branchApath_base_cost
-		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_12 BRANCH = Apath }
 	}
-
 ##################
-	after = {
-		clr_country_flag = elite_unit_menu_active
-	}
+	after = { clr_country_flag = elite_unit_menu_active }
 }
 
 #############
@@ -1738,8 +1644,7 @@ country_event = { #refresh unit specialization menu
 	
 	hidden = yes
 	is_triggered_only = yes
-	trigger = { always = yes }
-	mean_time_to_happen = { days = 1 }
+	mean_time_to_happen = { } #triggered by .50
 	
 	option = {
         name = generic_mission_events.51.a

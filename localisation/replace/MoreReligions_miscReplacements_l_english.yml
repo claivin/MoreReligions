@@ -83,4 +83,5 @@
  SHU:0 "Xia"
  SHU_ADJ:0 "Xia"
  
- 
+ MODIFIER_ALLOWED_COSSACK_FRACTION:0 "Elite Unit Force Limit Fraction"
+ MODIFIER_CAN_RECRUIT_RAJPUTS:0 "Can recruit Elite Units"
