@@ -1,0 +1,31 @@
+#MR events for Song
+namespace = mrSongEvents
+normal_or_historical_nations = yes
+
+#fired only by mission, war council at start of Han-Song war
+country_event = {
+	id = mrSongEvents.0
+	title = "mrSongEvents.0.t"
+	desc = "mrSongEvents.0.d"
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "mrSongEvents.0.a"
+		add_country_modifier = {
+			name = gsc_defensive_strategy
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.0.b"
+		add_country_modifier = {
+			name = gsc_offensive_strategy
+			duration = 3650
+		}
+	}
+}

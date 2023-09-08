@@ -49,5 +49,13 @@
  desc_SHU_exploited_population: "The people of Sichuan are rather disgruntled at the extent to which they were exploited to win our recent war."
  SHU_devastated_population: "Devastated Population"
  desc_SHU_devastated_population: "It will take some time before the population of Sichuan can recover from the suffering inflicted by both external enemies and their own government."
- 
- 
+ gsc_defensive_strategy: "Defensive Strategy"
+ desc_gsc_defensive_strategy: "We have adopted a defensive approach to the current war so that the enemy may bleed themselves dry against our fortifications."
+ gsc_offensive_strategy: "Offensive Strategy"
+ desc_gsc_offensive_strategy: "We have adopted an offensive approach to the current war so that we may drive the enemy from our lands completely."
+ gsc_defence_of_wuchang: "Defence of Wuchang"
+ desc_gsc_defence_of_wuchang: "Our successful defence of Wuchang has convinced the soldiery that the war is turning in our favour."
+ gsc_siege_mastery: "Siege Mastery"
+ desc_gsc_siege_mastery: "We are at the cutting edge of siege warfare technologically, and boast some of the most experienced siege engineers in the world."
+ gsc_conversion_zeal: "Spread the Faith"
+ desc_gsc_conversion_zeal: "If Song is to prosper the status of the state religion as a minority faith must be changed via state funding of missionary efforts."

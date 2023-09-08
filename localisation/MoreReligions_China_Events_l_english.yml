@@ -53,5 +53,11 @@
  mrXiaEvents.4.a:0 "May we always rule with benevolence."
  mrXiaEvents.4.b:0 "Sacrifices had to be made."
  mrXiaEvents.4.c:0 "Xia lies in ruins..."
+
+#Song events
+ mrSongEvents.0.t:0 "The Armies of Great Song"
+ mrSongEvents.0.d:0 "Song has always maintained a large military force in order to keep its enemies at bay, but the recent Han invasion has caught us unprepared in terms of strategic direction. The [Root.Monarch.GetTitle] has called an emergency meeting of all high-ranking generals not already engaged on the front in order to set the agenda for the war, as leaving each commander to determine his own would surely be disastrous."
+ mrSongEvents.0.a:0 "Secure the Yangtze and weather the storm."
+ mrSongEvents.0.b:0 "Push those barbarians back where they came from!"
  
  

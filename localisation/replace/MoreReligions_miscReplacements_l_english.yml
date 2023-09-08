@@ -37,6 +37,8 @@
  RAJPUT_DESC:2 "The §YElite Infantry§! of our country have their own unique modifiers and bonuses. They shall aid us in maintaining the security of our state."
  RAJPUT_FORCELIMIT:1 "We can recruit up to $VAL|%Y$ of our force-limit of $FL$ as §YElite Infantry§! due to:\n"
  enables_rajput_regiments:0 "Elite Infantry"
+ MODIFIER_ALLOWED_COSSACK_FRACTION:0 "Elite Unit Force Limit Fraction"
+ MODIFIER_CAN_RECRUIT_RAJPUTS:0 "Can recruit Elite Units"
  
  #Hussars - > Elephant Cavalry
  HUSSARS_NAME:0 "$HOME$'s $NUM$$ORDER$ Elephant Cavalry"
@@ -74,6 +76,8 @@
  MODIFIER_AMOUNT_OF_SAMURAI:0 "Sohei Force Limit"
  ONLY_SAMURAI_MODIFIER:0 "§YAffects only Sohei Regiments§!"
  
+ #misc China stuff
+ 
  empire_of_china_title:0 "Claim The Empire of China"
  empire_of_china_desc:0 "Ever since the chaotic end of the Yuan dynasty, no ruler has been able to secure unopposed claim to the Mandate of Heaven. With our hegemony over the Middle Kingdom now uncontested, our [Root.Monarch.GetTitle] must be proclaimed the new Son of Heaven once we have secured the traditional capitals of the Empire."
 
@@ -82,6 +86,8 @@
  
  SHU:0 "Xia"
  SHU_ADJ:0 "Xia"
+
+ cb_chinese_unification_desc:2 "Unify lands of the Chinese Subcontinent."
  
- MODIFIER_ALLOWED_COSSACK_FRACTION:0 "Elite Unit Force Limit Fraction"
- MODIFIER_CAN_RECRUIT_RAJPUTS:0 "Can recruit Elite Units"
+
+

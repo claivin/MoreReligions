@@ -183,6 +183,15 @@ on_startup = {
 			desc = until_end_of_age_desc
 		}
 	}
+#Song siege counting variable
+	if = {
+		limit = {
+			tag = GSC
+		}
+		set_variable = {
+			which = gsc_sieges_won_variable value = 0
+		}
+	}	
 }
 
 # country
@@ -1126,6 +1135,23 @@ on_siege_won_country = {
 		10 = army_professionalism_events.1 #City Sacked
 		100 = 0
 	}
+	if = {
+		limit = {
+			ROOT = {
+				tag = GSC
+			}
+			FROM = {
+				fort_level = 1
+			}
+			NOT = {
+				mission_completed = gsc_siege_engineers
+			}
+		}
+		change_variable = {
+			which = gsc_sieges_won_variable
+			value = 15
+		}
+	}
 }
 
 # country
@@ -1171,6 +1197,7 @@ on_siege_won_province = {
 		limit = {
 			superregion = china_superregion
 			controller = {
+				has_country_flag = enable_free_cores_with_china_cb
 				has_government_attribute = has_unify_china_cb
 				OR = {
 					is_in_war = {
@@ -4641,6 +4668,12 @@ on_province_religion_converted = {
 		}
 		add_government_power = { mechanic_type = abyssinian_unity_mechanic power_type = abyssinian_unity_power value = 0.5 }
 	}
+	if = {
+		limit = {
+			owner = { has_country_modifier = gsc_conversion_zeal }
+		}
+		owner = { add_manpower = 0.5 }
+	}
 }
 
 on_province_religion_changed = {
@@ -6251,15 +6284,17 @@ on_scorch_earth  = { #ROOT - scorching country, FROM - scorched province
 }
 
 on_war_ended = { #ROOT - Winer FROM - Loser
-	if = {
-		limit = {
-			tag = SHU
-			has_country_flag = SHU_war_for_survival
-			is_at_war = no
-		}
-		clr_country_flag = SHU_war_for_survival
-		country_event = {
-			id = mrXiaEvents.4
+	SHU = {
+		if = {
+			limit = {
+				tag = SHU
+				has_country_flag = SHU_war_for_survival
+				is_at_war = no
+			}
+			clr_country_flag = SHU_war_for_survival
+			country_event = {
+				id = mrXiaEvents.4
+			}
 		}
 	}
 }

@@ -1,0 +1,873 @@
+##BranchStart 0
+mr_gsc_missions_first = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = GSC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gsc_cross_yangtze = {
+		icon = mng_jing_hang_grand_canal
+		required_missions = {
+			gsc_han_song_war
+		}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = north_hubei_area
+				area = huguang_area
+				area = south_anhui_area
+				area = anhui_area
+				area = south_jiangsu_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }	
+			NOT = { controlled_by = ROOT }
+			fort_level = 1
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = gsc_cross_yangtze_trigger_tt
+				calc_true_if = {
+					all_province = {
+						OR = {
+							area = north_hubei_area
+							area = huguang_area
+							area = south_anhui_area
+							area = anhui_area
+							area = south_jiangsu_area
+						}
+						fort_level = 1
+						controlled_by = ROOT
+						NOT = {
+							OR = {
+								province_id = 681
+								province_id = 682
+								province_id = 5482
+								province_id = 1821
+							}
+						}					
+					}
+					amount = 2
+				}
+			}
+		}
+		effect = {
+			north_hubei_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			huguang_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			south_anhui_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}	
+			anhui_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}		
+			south_jiangsu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}					
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_siege_engineers = {
+		icon = mission_mnd_siam_revolution
+		required_missions = {
+			gsc_cross_yangtze
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = gsc_won_sieges_trigger_tt
+				check_variable = {
+					which = gsc_sieges_won_variable
+					value = 1
+				}
+			}
+			fortification_expert = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = gsc_siege_mastery
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_tributary_relations = {
+		icon = mng_deal_kama_kagyu
+		required_missions = {
+			gsc_new_light_for_china
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_reclaim_jiaozhi = {
+		icon = mng_thirteen_provinces
+		required_missions = {
+			gsc_secure_borders
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_southeast_asia = {
+		icon = mission_mnd_dai_temples
+		required_missions = {
+			gsc_reclaim_jiaozhi
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+mr_gsc_missions_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GSC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gsc_han_song_war = {
+		icon = mission_chinese_general_riding
+		required_missions = {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = gsc_han_song_war_ongoing_tt
+				OR = {
+					has_country_flag = han_song_war_ongoing 
+					has_country_flag = won_han_song_war
+					has_country_modifier = han_song_war_loser
+					is_year = 1460 #fallback
+				}
+			}
+		}
+		effect = {
+			country_event_with_insight = {
+				id = mrSongEvents.0
+				insight_tooltip = gsc_war_council_tt
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_relieve_wuchang = {
+		icon = qng_north_china
+		required_missions = {
+			gsc_han_song_war
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_id = 682
+		}
+		trigger = {
+			682 = {
+				owned_by = ROOT
+				is_core = ROOT
+				controlled_by = ROOT
+				has_siege = no
+			}
+			OR = {
+				is_in_war = {
+					attacker_leader = GHC
+					duration = 730
+				}
+				is_year = 1452
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = gsc_defence_of_wuchang
+				duration = 3650
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_breaking_deadlock = {
+		icon = mission_tumu_crisis
+		required_missions = {
+			gsc_cross_yangtze gsc_relieve_wuchang
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				is_in_war = {
+					attacker_leader = GHC
+					war_score = 50
+				}
+				custom_trigger_tooltip = {
+					tooltip = gsc_won_han_song_war_tt
+					has_country_flag = won_han_song_war
+				}
+				NOT = {
+					exists = GHC
+				}
+			}
+		}
+		effect = {
+			add_war_exhaustion = -2
+			add_prestige = 15
+			add_legitimacy = 15
+			custom_tooltip = enable_free_cores_with_china_cb_tt
+			set_country_flag = enable_free_cores_with_china_cb
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_press_advantage = {
+		icon = mng_heavens_will
+		required_missions = {
+			gsc_breaking_deadlock
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_secure_borders = {
+		icon = mission_expand_great_wall
+		required_missions = {
+			gsc_new_light_for_china
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_no_safe_havens = {
+		icon = mng_kingdom_joseon
+		required_missions = {
+			gsc_secure_borders
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_surpass_tang = {
+		icon = qng_modernize_the_banners
+		required_missions = {
+			gsc_reclaim_jiaozhi gsc_no_safe_havens
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_journey_to_west = {
+		icon = mission_to_the_south_china_sea
+		required_missions = {
+			gsc_surpass_tang
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+mr_gsc_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GSC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gsc_strengthen_faith = {
+		icon = mission_buddhist_monk_praying
+		required_missions = {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = {
+				has_owner_religion = yes
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_owned_province = {
+					has_owner_religion = yes
+				}
+				amount = 10
+			}
+		}
+		effect = {
+			add_stability_or_adm_power = yes
+			add_country_modifier = {
+				name = gsc_conversion_zeal
+				duration = 3650
+			}
+			custom_tooltip = gsc_conversion_zeal_manpower_tt
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_red_turban_spirit = {
+		icon = qng_ten_grand_campaigns
+		required_missions = {
+			gsc_han_song_war gsc_strengthen_faith
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_ming_xia = {
+		icon = mission_unite_home_region
+		required_missions = {
+			gsc_red_turban_spirit
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_purge_warlords = {
+		icon = jap_fate_mandate
+		required_missions = {
+			gsc_ming_xia
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_new_light_for_china = {
+		icon = mission_seize_the_dragon_throne
+		required_missions = {
+			gsc_press_advantage gsc_purge_warlords
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_fate_of_eunuchs = {
+		icon = mng_form_depots
+		required_missions = {
+			gsc_new_light_for_china
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_new_imperial_capital = {
+		icon = mng_outer_city_beijing
+		required_missions = {
+			gsc_fate_of_eunuchs
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_divine_emperor = {
+		icon = mng_shengshi_zhishi
+		required_missions = {
+			gsc_new_imperial_capital
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+mr_gsc_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GSC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gsc_reign_in_feudatories = {
+		icon = mission_kowtow
+		required_missions = {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_integrate_miao = {
+		icon = mng_survey_ocean_shores
+		required_missions = {
+			gsc_reign_in_feudatories
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_root_out_yuan = {
+		icon = mission_impaled_soldies
+		required_missions = {
+			gsc_integrate_miao
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_expand_tusi = {
+		icon = mission_mnd_dai_control_the_army
+		required_missions = {
+			gsc_root_out_yuan
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_faiths_of_china = {
+		icon = mission_hands_praying
+		required_missions = {
+			gsc_new_light_for_china
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_pure_land = {
+		icon = mng_pure_land
+		required_missions = {
+			gsc_faiths_of_china
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_ketumati_temple = {
+		icon = mission_protect_lankan_buddhism
+		required_missions = {
+			gsc_new_imperial_capital gsc_pure_land
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_economic_hegemony = {
+		icon = qng_high_qing_era
+		required_missions = {
+			gsc_role_of_trade
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+mr_gsc_missions_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = GSC
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	gsc_rice_market_changsha = {
+		icon = mission_asian_city
+		required_missions = {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_protect_guangdong = {
+		icon = mission_junk_boat
+		required_missions = {
+			gsc_reign_in_feudatories
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_expand_bogue = {
+		icon = mng_expand_bogue
+		required_missions = {
+			gsc_protect_guangdong
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_end_mongol_legacy = {
+		icon = qng_end_yuan
+		required_missions = {
+			gsc_root_out_yuan
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_revitalise_north_china = {
+		icon = mission_rice_field
+		required_missions = {
+			gsc_new_light_for_china
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_tame_china_sorrow = {
+		icon = mng_tame_china_sorrow
+		required_missions = {
+			gsc_revitalise_north_china
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_role_of_trade = {
+		icon = mission_asian_trader
+		required_missions = {
+			gsc_tame_china_sorrow
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	gsc_japanese_relations = {
+		icon = jap_financial_cliques
+		required_missions = {
+			gsc_role_of_trade
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4
