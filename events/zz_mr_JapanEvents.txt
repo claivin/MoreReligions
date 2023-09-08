@@ -462,7 +462,7 @@ country_event = {
 				add_core = TKD
 				cede_province = TKD
 			}
-			4118 = {
+			4188 = {
 				add_core = TKD
 				cede_province = TKD
 			}

@@ -18,7 +18,7 @@ ilkhanate_disaster = {
 	
 	can_start = {
         has_any_disaster = no
-        is_year = 1470
+        is_year = 1460
 	}
 	
 	can_stop = {
