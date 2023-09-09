@@ -1175,7 +1175,7 @@ mr_yunnan_missions_fourth = {
          }		 
 		}
 		effect = {
-        add_country_modifier {
+        add_country_modifier = {
         name = yunnan_exchange_ideas
 		duration = -1		
 		}
@@ -1430,20 +1430,20 @@ mr_yunnan_missions_fifth = {
 		required_missions = { }
 		provinces_to_highlight = { }
 		trigger = {
-        OR = {
-		full_idea_group = religious_ideas
-		full_idea_group = humanist_ideas
-		}
+			OR = {
+				full_idea_group = religious_ideas
+				full_idea_group = humanist_ideas
+			}
 		}
 		effect = {
-		custom_tooltip = yunnan_harmony_culture_slots
-		harmonise_culture_slot_effect
+			custom_tooltip = yunnan_harmony_culture_slots
+			harmonise_culture_slot_effect = yes
 		if = { 
-		limit = {full_idea_group = humanist_ideas}  
-		set_country_flag = harmony_culture_slots
+			limit = {full_idea_group = humanist_ideas}  
+			set_country_flag = harmony_culture_slots
 		}
 		else = {
-        add_stability_or_adm_power = 2
+			add_stability_or_adm_power = 2
         }		
 	}
   }	

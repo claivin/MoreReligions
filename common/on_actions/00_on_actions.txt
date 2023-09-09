@@ -5658,7 +5658,7 @@ on_rebels_break_country = {
 
 # this = country
 ## Fires when you fire or replace your ADM advisor, in the moment before they are actually removed from their post.
-## Note: Defining a new advisor here will result in the shortest appointment in history. Use on_post_adm_advisor_fired instead :)
+##( Note: Defining a new advisor here will result in the shortest appointment in history. Use on_post_adm_advisor_fired instead :)
 on_pre_adm_advisor_fired = {
 	if = {
 		limit = {

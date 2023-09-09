@@ -1,0 +1,21 @@
+#792 - Copiapo
+
+culture = mapuche
+
+
+
+discovered_by = south_american
+discovered_by = andean
+
+religion = animism
+capital = "Copiapo"
+trade_goods = unknown
+hre = no
+base_tax = 2 
+base_production = 1
+base_manpower = 1
+native_size = 20
+native_ferocity = 2
+native_hostileness = 2
+
+1444.11.12 = { trade_goods = unknown }

@@ -234,39 +234,38 @@ country_event = {
         hidden = no
         }
 		custom_tooltip = yunnan_japan_separatism
-		hidden_effect {
-		every_owned_province = {
-		limit = { region = japan_region }
-		add_nationalism = -25 
-        }
+		hidden_effect = {
+			every_owned_province = {
+				limit = { region = japan_region }
+				add_nationalism = -25 
+			}
+		}
 	  }
-	}
 	option = {
 		name = MR_yunnan_flavor.7.c #Japanese DEAD
 		
 		trigger = {
-        1020 = {owned_by = ROOT}		
+			1020 = { owned_by = ROOT }		
 		}		
 
         add_ruler_modifier = { 
-        name = setter_of_suns
-        duration = -1  
-        hidden = no
+			name = setter_of_suns
+			duration = -1  
+			hidden = no
 		}
 		custom_tooltip = yunnan_executed_emperor_madge
 		custom_tooltip = yunnan_japan_separatism
-		hidden_effect {
+		hidden_effect = {
 		every_owned_province = {
-		limit = { region = japan_region }
-		add_nationalism = -25 
+			limit = { region = japan_region }
+			add_nationalism = -25 
+		}
 		add_province_modifier = {
-		name = yunnan_executed_emperor
-		duration = 3650
+			name = yunnan_executed_emperor
+			duration = 3650
 		  }
         }
 	  }		
-
-	}
 		
 }
 
@@ -337,7 +336,7 @@ country_event = {
 		}
 		
 		custom_tooltip = yunnan_burma_separatism
-		hidden_effect {
+		hidden_effect = {
 		every_owned_province = {
 		limit = { region = burma_region }
 		add_nationalism = -25 

@@ -333,7 +333,7 @@
  mr_catholic.15.a: "It's only a small place..."
  mr_catholic.15.b: "§YPlay as the Antipope§!"
  
- mr_catholic.151.t: Bishop of [mr_second_papacy.GetName] Demands Holdings""
+ mr_catholic.151.t: "Bishop of [mr_second_papacy.GetName] Demands Holdings"
  mr_catholic.151.d: "wip"
  mr_catholic.151.a: "Begrudge the demand."
  mr_catholic.151.b: "How dare he!"

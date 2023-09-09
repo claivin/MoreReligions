@@ -601,6 +601,7 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				land_christian_sun_reform			 
 			}
 		}
 		republican_virtues = {
@@ -1137,6 +1138,7 @@ theocracy = {
 				absolute_shogunate_reform
 				japanese_divine_empire
 				sisterhood_of_jeanne_darc_reform
+				land_christian_sun_reform
 				#gk
 				mr_hungarian_theocracy
 			}
