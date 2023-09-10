@@ -6,7 +6,7 @@ government_rank = 1
 primary_culture = chickasaw
 religion = totemism
 technology_group = north_american
-capital = 919	# Chickasaw
+# capital = 919	# Chickasaw
 
 1444.11.11 = {
 	monarch = {

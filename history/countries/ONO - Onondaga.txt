@@ -8,7 +8,7 @@ government_rank = 1
 primary_culture = iroquois
 religion = totemism
 technology_group = north_american
-capital = 960
+# capital = 960
 
 federation = { 
 	name = "iroquois_federation_name" 

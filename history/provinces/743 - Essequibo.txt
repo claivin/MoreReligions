@@ -1,14 +1,14 @@
 #743 - Essequibo
 
-owner = ARW
-controller = ARW
-add_core = ARW
+# owner = ARW
+# controller = ARW
+# add_core = ARW
 culture = guajiro
 discovered_by = south_american
 religion = animism
 capital = "Essequibo"
 trade_goods = sugar
-is_city = yes
+# is_city = yes
 hre = no
 base_tax = 1 
 base_production = 1

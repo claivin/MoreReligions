@@ -8,7 +8,7 @@ government_rank = 1
 primary_culture = iroquois
 religion = totemism
 technology_group = north_american
-capital = 959
+# capital = 959
 
 1444.11.11 = {
 	monarch = {

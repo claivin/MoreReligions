@@ -1,0 +1,22 @@
+# No previous file for Wappus
+
+# owner = NAK
+# controller = NAK
+# add_core = NAK
+culture = bungi
+religion = totemism
+capital = "Wappus"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+
+
+
+discovered_by = north_american
+
+1444.11.12 = { trade_goods = unknown }

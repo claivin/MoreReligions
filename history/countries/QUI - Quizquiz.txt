@@ -8,7 +8,7 @@ government_rank = 1
 primary_culture = natchez
 religion = totemism
 technology_group = north_american
-capital = 2528
+# capital = 2528
 
 1444.11.11 = {
 	monarch = {

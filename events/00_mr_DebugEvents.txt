@@ -1,0 +1,74 @@
+#for testing
+
+namespace = debug_events
+
+#self explanatory
+country_event = {
+	id = debug_events.1
+	title = debug_events.1.t
+	desc = debug_events.1.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	is_triggered_only = yes
+	trigger = {}
+	
+	option = {
+		name = debug_events.1.a
+		custom_tooltip = delete_all_but_west_east_europe
+		hidden_effect = { #massive tooltip will 
+			every_province = {
+				limit = {
+					NOT = {
+						OR = {
+							superregion = europe_superregion
+							superregion = eastern_europe_superregion
+						}
+					}
+				}
+				decolonize = this
+			}
+		}
+	}
+	
+	option = {
+		name = debug_events.1.b
+		custom_tooltip = delete_all_but_east_asia
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = {
+						OR = {
+							superregion = china_superregion
+							superregion = far_east_superregion
+							superregion = tartary_superregion
+						}
+					}
+				}
+				decolonize = this
+			}
+		}
+	}
+}
+
+#disables ai from DoW you
+country_event = {
+	id = debug_events.2
+	title = debug_events.2.t
+	desc = debug_events.2.d
+	picture = MYSTIC_IN_PRAYER_eventPicture
+	is_triggered_only = yes
+	trigger = {}
+	
+	option = {
+		name = debug_events.2.a
+		trigger = { NOT = { has_country_flag = debug_no_wars_on_me} }
+		custom_tooltip = disable_ai_DoW_on_you
+		set_country_flag = debug_no_wars_on_me
+	}
+	
+	option = {
+		name = debug_events.2.b
+		trigger = { has_country_flag = debug_no_wars_on_me }
+		custom_tooltip = enable_ai_DoW_on_you
+		clr_country_flag = debug_no_wars_on_me
+	}
+}

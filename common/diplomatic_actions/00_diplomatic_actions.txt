@@ -117,6 +117,16 @@ declarewar = {
 	#	}
 	#}
 	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_DEBUG_NOT_ALLOWED
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			ROOT = { has_country_flag = debug_no_wars_on_me }
+		}
+	}
+	condition = {
 		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
 		potential = {
 			ai = yes

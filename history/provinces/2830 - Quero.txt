@@ -1,0 +1,22 @@
+# - Quero
+
+# owner = CSU
+# controller = CSU
+culture = inca
+religion = inti
+capital = "Quero"
+trade_goods = wool
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+# is_city = yes
+# add_core = CSU
+
+
+
+discovered_by = south_american
+discovered_by = andean
+
+
+1444.11.12 = { trade_goods = unknown }

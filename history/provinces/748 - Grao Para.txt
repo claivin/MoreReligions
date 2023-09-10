@@ -1,14 +1,14 @@
 #748 - Grao Para
 
-owner = TPA
-controller = TPA
-add_core = TPA
+# owner = TPA
+# controller = TPA
+# add_core = TPA
 culture = tupinamba
 discovered_by = south_american
 religion = animism
 capital = "Belém"
 trade_goods = cocoa
-is_city = yes
+# is_city = yes
 hre = no
 base_tax = 1
 base_production = 2

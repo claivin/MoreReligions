@@ -1,0 +1,22 @@
+# - Tiahuanoco
+
+# owner = PCJ
+# controller = PCJ
+# add_core = PCJ
+culture = aimara
+religion = inti
+capital = "Tiahuanoco"
+# is_city = yes
+trade_goods = grain
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+
+
+
+discovered_by = south_american
+discovered_by = andean
+
+
+1444.11.12 = { trade_goods = unknown }

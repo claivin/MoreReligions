@@ -7,7 +7,7 @@ add_government_reform = native_settle_down_reform
 primary_culture = yuchi
 religion = totemism
 technology_group = north_american
-capital = 935
+# capital = 935
 
 1444.11.11 = {
 	monarch = {

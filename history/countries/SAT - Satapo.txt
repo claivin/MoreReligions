@@ -8,7 +8,7 @@ government_rank = 1
 primary_culture = creek
 religion = totemism
 technology_group = north_american
-capital = 2527
+# capital = 2527
 
 1444.11.11 = {
 	monarch = {

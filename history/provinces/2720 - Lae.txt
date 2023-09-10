@@ -1,0 +1,15 @@
+#2720 - Lae
+
+culture = papuan
+religion = animism
+capital = "Lae"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 40
+native_ferocity = 6
+native_hostileness = 4
+
+1444.11.12 = { trade_goods = unknown }

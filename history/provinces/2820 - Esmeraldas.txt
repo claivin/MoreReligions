@@ -1,0 +1,22 @@
+# - Esmeraldas
+
+# owner = QTO
+# controller = QTO
+culture = cara
+religion = inti
+capital = "Esmeraldas"
+# is_city = yes
+trade_goods = fish
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 1
+# add_core = QTO
+
+
+
+discovered_by = south_american
+discovered_by = andean
+
+
+1444.11.12 = { trade_goods = unknown }

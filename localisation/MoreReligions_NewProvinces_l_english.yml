@@ -1464,5 +1464,13 @@
  north_hubei_area: "North Hubei"
  south_hunan_area: "South Hunan"
  
+ #trade node
+ central_africa: "Central Africa"
+ 
+ #trade company
+ trade_company_central_africa: "Central Africa Charter"
+ TRADE_COMPANY_CENTRAL_AFRICA_Root_Culture_GetName: "[Root.GetAdjective] Central Africa Company"
+ TRADE_COMPANY_CENTRAL_Africa_Trade_Company: "Central Africa Trade Company"
+ 
  #custom group
  black_earth_region: "Black Earth Region"

@@ -1,16 +1,15 @@
-#2688 - Cirebon
-
+#or cirebon? idk
 owner = SUN
 controller = SUN
 add_core = SUN
 culture = sundanese
 religion = hinduism
-capital = "Cirebon"
+capital = "Sumedang"
 trade_goods = spices
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 3 
+base_production = 3
+base_manpower = 2
 is_city = yes
 
 

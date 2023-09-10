@@ -1,0 +1,23 @@
+# - Tarija
+
+# owner = CCQ
+# controller = CCQ
+# add_core = CCQ
+# is_city = yes
+culture = aimara
+
+
+
+discovered_by = south_american
+discovered_by = andean
+
+religion = inti
+capital = "Tarija"
+trade_goods = wool
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 1
+
+
+1444.11.12 = { trade_goods = unknown }

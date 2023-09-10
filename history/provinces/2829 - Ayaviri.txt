@@ -1,0 +1,21 @@
+# - Ayaviri
+
+# owner = CSU
+# controller = CSU
+# add_core = CSU
+culture = aimara
+religion = inti
+capital = "Ayaviri"
+# is_city = yes
+trade_goods = wool
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 2
+
+
+
+discovered_by = south_american
+discovered_by = andean
+
+1444.11.12 = { trade_goods = unknown }

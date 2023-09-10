@@ -8,7 +8,7 @@ government_rank = 1
 primary_culture = tionontate
 religion = totemism
 technology_group = north_american
-capital = 2586
+# capital = 2586
 
 1444.11.11 = {
 	monarch = {

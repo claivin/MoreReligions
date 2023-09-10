@@ -8,7 +8,7 @@ government_rank = 1
 primary_culture = yoron
 religion = totemism
 technology_group = north_american
-capital = 897
+# capital = 897
 
 1444.11.11 = {
 	monarch = {

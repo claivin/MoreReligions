@@ -3203,6 +3203,8 @@ country_event = {
 	}
 	trigger = {
 		has_dlc = "Domination"
+		current_age = age_of_absolutism
+		tag = ENG
 		#has_disaster = english_civil_war
 		religion_group = christian
 	}

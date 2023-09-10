@@ -1,0 +1,23 @@
+# No previous file for Mahmikiwiniyak
+
+# owner = NEH
+# controller = NEH
+# add_core = NEH
+# is_city = yes
+culture = plains_cree
+religion = totemism
+capital = "Mahmikiwiniyak"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
+
+
+
+discovered_by = north_american
+
+1444.11.12 = { trade_goods = unknown }

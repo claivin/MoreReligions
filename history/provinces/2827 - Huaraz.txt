@@ -1,0 +1,22 @@
+# - Huaraz
+
+# owner = HJA
+# controller = HJA
+culture = inca
+religion = inti
+capital = "Huaraz"
+trade_goods = grain
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+# is_city = yes
+# add_core = HJA
+
+
+
+discovered_by = south_american
+discovered_by = andean
+discovered_by = CHM
+
+1444.11.12 = { trade_goods = unknown }

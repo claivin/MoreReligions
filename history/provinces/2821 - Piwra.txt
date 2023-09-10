@@ -1,0 +1,22 @@
+# - Piwra
+
+# owner = CHM
+# controller = CHM
+culture = chimuan
+religion = inti
+capital = "Piwra"
+trade_goods = fish
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+# is_city = yes
+# add_core = CHM
+
+
+
+discovered_by = CHM
+discovered_by = south_american
+discovered_by = andean
+
+1444.11.12 = { trade_goods = unknown }

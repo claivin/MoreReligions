@@ -6,7 +6,7 @@ government_rank = 1
 primary_culture = caddo
 religion = totemism
 technology_group = north_american
-capital = 2014 # Caddo
+# capital = 2014 # Caddo
 
 1444.11.11 = {
 	monarch = {

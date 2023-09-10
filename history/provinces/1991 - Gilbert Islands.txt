@@ -1,0 +1,16 @@
+#1991 - Gilbert Islands
+
+culture = polynesian
+religion = animism
+capital = "Tarawa"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 1
+native_ferocity = 1
+native_hostileness = 1
+discovered_by = polynesian_tech
+
+1444.11.12 = { trade_goods = unknown }
