@@ -2125,23 +2125,23 @@ merc_swiss_canton_mercenaries = {
 	}
 }
 
-merc_japanese_volunteers = {
-    regiments_per_development = 0.02
-	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
-	cavalry_weight = 0.1
-	artillery_weight = 0.3
-	cavalry_cap = 2
-    home_province = 600
-	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
-    trigger = {
-		is_allowed_to_recruit_mercenaries = yes
-		#mission_completed = mnd_siam_japan
-	}
-	modifier = {
-		infantry_power = 0.1
-        discipline = 0.025
-	}
-}
+#merc_japanese_volunteers = {
+#   regiments_per_development = 0.02
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+#	cavalry_weight = 0.1
+#	artillery_weight = 0.3
+#	cavalry_cap = 2
+#   home_province = 600
+#	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
+#   trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
+#		#mission_completed = mnd_siam_japan
+#	}
+#	modifier = {
+#		infantry_power = 0.1
+#       discipline = 0.025
+#	}
+#}
 
 merc_militant_order_of_saint_joan = {
     regiments_per_development = 0.025

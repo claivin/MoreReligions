@@ -367,7 +367,8 @@ mr_bohemian_hungary_reform = {
 	maintain_dynasty = yes 
 	
 	potential = {
-		tag = HUN
+		tag = CSA
+		has_country_flag = HUN_thunder_dome_winner
 	}
 	
 	modifiers = {
@@ -384,7 +385,8 @@ mr_polish_hungary_reform = {
 	maintain_dynasty = yes 
 	
 	potential = {
-		tag = HUN
+		tag = AAB
+		has_country_flag = HUN_thunder_dome_winner
 	}
 	
 	modifiers = {
@@ -401,7 +403,8 @@ mr_serbian_hungary_reform = {
 	maintain_dynasty = yes 
 	
 	potential = {
-		tag = HUN
+		tag = KSZ
+		has_country_flag = HUN_thunder_dome_winner
 	}
 	
 	modifiers = {
@@ -419,6 +422,7 @@ mr_hungary_hungary_reform = {
 	
 	potential = {
 		tag = HUN
+		has_country_flag = HUN_thunder_dome_winner
 	}
 	
 	
@@ -436,7 +440,7 @@ mr_horde_hungary_reform = {
 	maintain_dynasty = yes 
 	
 	potential = {
-		tag = HUN
+		tag = KNN
 		has_country_flag = HUN_thunder_dome_winner
 	}
 	
@@ -463,7 +467,8 @@ mr_hungarian_theocracy = {
 	maintain_dynasty = yes 
 	
 	potential = {
-		tag = HUN
+		tag = JAA
+		has_country_flag = HUN_thunder_dome_winner
 	}
 	
 	modifiers = {
