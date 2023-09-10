@@ -1,0 +1,15 @@
+#1182 - Delagoa Bay
+
+culture = nguni
+religion = shamanism #Fetishism
+capital = "Xefina"
+trade_goods = unknown
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 1
+native_size = 70
+native_ferocity = 4
+native_hostileness = 9 
+
+1444.11.12 = { trade_goods = unknown }

@@ -1,0 +1,17 @@
+#1177 - Cape
+
+culture = khoisan
+religion = shamanism #Fetishism
+capital = "Cape"
+trade_goods = unknown
+hre = no
+base_tax = 7 
+base_production = 7
+base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 0
+extra_cost = 8
+center_of_trade = 1
+
+1444.11.12 = { trade_goods = unknown }

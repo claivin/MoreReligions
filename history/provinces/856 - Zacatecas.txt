@@ -1,0 +1,17 @@
+#856 - Zacatecas
+
+culture = chichimecan 
+religion = animism
+#is_city = yes
+#owner = CCM
+#controller = CCM
+#add_core = CCM
+# tribal_owner = CCM
+capital = "Zacatecas" 
+trade_goods = gold
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+1444.11.12 = { trade_goods = unknown }
