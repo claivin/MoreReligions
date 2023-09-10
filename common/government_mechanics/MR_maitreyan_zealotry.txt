@@ -1,0 +1,37 @@
+maitreyan_zealotry_mechanic = {
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 10
+	available = {
+		has_dlc = "Domination"
+	}
+
+	powers = {
+		maitreyan_zealotry = {
+			gui = maitreyan_zealotry_gov_mech
+			max = 100
+			base_monthly_growth = 0
+			scaled_modifier = {
+				modifier = {
+					tolerance_own = 2
+					morale_damage_received = -0.2
+					war_exhaustion = -0.05
+				}
+			}
+			scaled_modifier = {
+				trigger = {
+					has_government_power = {
+						mechanic_type = maitreyan_zealotry_mechanic
+						power_type = maitreyan_zealotry
+						value = 100
+					}
+				}
+				modifier = {
+					warscore_cost_vs_other_religion = -0.20
+				}
+			}
+			on_max_reached = {
+				custom_tooltip = MAITREYAN_MAX_ZEALOTRY
+			}
+		}
+	}
+}

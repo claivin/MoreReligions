@@ -83,3 +83,13 @@
  
  mr_horde_hungary_reform: "The Hungarian Horde"
  mr_horde_hungary_reform_desc: "The House of Kan has managed to sieze control of Hungary during the crisis of the Oligarchs through the aid of the Blue Horde. After this, they saw that their way of living, their sedentary style of statecraft, was simply not adequate. The house of Kan then returned to the ancient tradition of the Magyar people, the way of the nomad, the way of the rider."
+
+#Maitreyan Zealotry mechanic
+ maitreyan_zealotry_mechanic:0 "Millenarian Fervour"
+ ability_maitreyan_zealotry:0 "Millenarian Fervour"
+ maitreyan_zealotry:0 "Millenarian Fervour"
+ maitreyan_zealotry_desc:0 "The state of Song has its origin in the millenarian followers of the White Lotus sects who initially opposed Yuan rule and rallied around Han Lin'er, the Little Lord of Light who would herald a new age of enlightenment on earth.\n\nThis fervour has long since decayed and been replaced by apathy and realpolitik, but if reignited could be a massive boon to our cause.\n\n§YMillenarian Fervour§! can be earned by:\n - Converting provinces to §YMaitreya§! (§G+0.25§!)\n - Winning battles against §YHeretics§! and §YHeathens§! (§G+0.5§!)\n\n§YMillenarian Fervour§! can be lost by:\n - Losing battles against §YHeretics§! and §YHeathens§! (§R-1§!)\n - Upon the §Ydeath§! of a §Ymonarch§! (§R-10§!)\n\n"
+ maitreyan_zealotry_gain_modifier:0 "Millenarian Fervour Gain Modifier"
+ monthly_maitreyan_zealotry:0 "Monthly Millenarian Fervour"
+ ability_maitreyan_zealotry_mechanic:0 "Millenarian Fervour"
+ MAITREYAN_MAX_ZEALOTRY:0 "War Score Cost vs Other Religions: §G-20%§!"

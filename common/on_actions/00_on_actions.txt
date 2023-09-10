@@ -805,6 +805,19 @@ on_battle_won_country = {
 		}
 		elite_unit_xp_combat_effect = yes
 	}
+	if = {
+		limit = { 
+			has_government_mechanic = maitreyan_zealotry_mechanic
+			FROM = {
+				NOT = { religion = ROOT }
+			}
+		}
+		add_government_power = { 
+			mechanic_type = maitreyan_zealotry_mechanic
+			power_type = maitreyan_zealotry
+			value = 0.5
+		}
+	}
 }
 
 # country
@@ -815,6 +828,19 @@ on_battle_lost_country = {
 	random_events = {
 		90 = 0
 		10 = friendship_events.1 #Historical Friendship Broken
+	}
+	if = {
+		limit = { 
+			has_government_mechanic = maitreyan_zealotry_mechanic
+			FROM = {
+				NOT = { religion = ROOT }
+			}
+		}
+		add_government_power = { 
+			mechanic_type = maitreyan_zealotry_mechanic
+			power_type = maitreyan_zealotry
+			value = -1
+		}
 	}
 }
 
@@ -1149,7 +1175,7 @@ on_siege_won_country = {
 		}
 		change_variable = {
 			which = gsc_sieges_won_variable
-			value = 15
+			value = 1
 		}
 	}
 }
@@ -1403,8 +1429,16 @@ on_monarch_death = {
 		}
 		country_event = { id = mr_catholic.9 }
 	}
-	
-	
+	if = {
+		limit = { 
+			has_government_mechanic = maitreyan_zealotry_mechanic
+		}
+		add_government_power = { 
+			mechanic_type = maitreyan_zealotry_mechanic
+			power_type = maitreyan_zealotry
+			value = -10.0
+		}
+	}
 	#burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
 	joan_de_trastamara_king_died_effect = yes
@@ -4673,6 +4707,21 @@ on_province_religion_converted = {
 			owner = { has_country_modifier = gsc_conversion_zeal }
 		}
 		owner = { add_manpower = 0.5 }
+	}
+	if = {
+		limit = {
+			owner = { 
+				has_government_mechanic = maitreyan_zealotry_mechanic
+			}
+			religion = mr_maitreya
+		}
+		owner = {
+			add_government_power = {
+				mechanic_type = maitreyan_zealotry_mechanic
+				power_type = maitreyan_zealotry
+				value = 0.25
+			}
+		}
 	}
 }
 
