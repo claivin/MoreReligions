@@ -121,10 +121,16 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				check_variable = {
-					which = elite_unit_xp
-					value = 300
-				} 
+				NOT = {
+					check_variable = {
+						which = elite_unit_xp
+						value = 200
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_unlocked_t5_elite_units = yes
 			}
 		}
 	}
