@@ -437,7 +437,6 @@ ksz_missions_fifth = {
 				}
 			}
 		}
-		}
 	}
 	ksz_buda_fourth = {
 		icon = mission_market_place_with_asian_traders

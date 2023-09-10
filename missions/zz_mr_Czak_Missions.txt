@@ -458,6 +458,7 @@ CSA_missions_fifth = {
 			else = {
 				add_dip_power = 100
 			}
+			}
 		}
 	}
 	csa_buda_fourth = {
