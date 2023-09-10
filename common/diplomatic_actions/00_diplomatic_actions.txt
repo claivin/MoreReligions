@@ -120,10 +120,13 @@ declarewar = {
 		tooltip = AI_CANNOT_DECLARE_WHEN_DEBUG_NOT_ALLOWED
 		potential = {
 			ai = yes
+			FROM = { ai = no }
 		}
 		allow = {
-			ai = yes
-			ROOT = { has_country_flag = debug_no_wars_on_me }
+			OR = {
+				FROM = { NOT = { has_country_flag = debug_no_wars_on_me } }
+				FROM = { overlord = { NOT = { has_country_flag = debug_no_wars_on_me } }
+			}
 		}
 	}
 	condition = {
