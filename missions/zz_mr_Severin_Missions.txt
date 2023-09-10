@@ -1,26 +1,26 @@
-CSA_missions_first = {
+JAA_missions_first = {
 	slot = 1
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = CSA
+		tag = JAA
 	}
 	
-	CSA_diplo_second = {
+	JAA_diplo_second = {
 		icon = mission_noble_council
 		position = 2
-		required_missions = { CSA_diplo_first }
+		required_missions = { JAA_diplo_first }
 		trigger = {
 			OR = {
-				BOH = {
+				PAP = {
 					has_opinion = {
 						who = ROOT
 						value = 120
 					}
-					marriage_with = CSA
+					marriage_with = JAA
 				}
-				BOH = {
+				PAP = {
 					has_opinion = {
 						who = ROOT
 						value = 150
@@ -43,20 +43,20 @@ CSA_missions_first = {
 		}
 	}
 }
-CSA_missions_second = {
+JAA_missions_second = {
 	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = CSA
+		tag = JAA
 	}
-	CSA_diplo_first = {
+	JAA_diplo_first = {
 		icon = invade_poland
 		position = 1
 		required_missions = { }
 		trigger = {
-			BOH = {
+			PAP = {
 				has_opinion = {
 					who = ROOT
 					value = 75
@@ -66,16 +66,16 @@ CSA_missions_second = {
 		effect = {
 			if = {
 				limit = {
-					BOH = {
+					PAP = {
 						has_opinion = {
 							who = ROOT
 							value = 75
 						}
 					}
 				}
-				CSA = {
+				JAA = {
 					add_trust = {
-						who = BOH
+						who = PAP
 						value = 15
 					}
 				}
@@ -89,15 +89,15 @@ CSA_missions_second = {
 	
 		
 }
-CSA_missions_third = {
+JAA_missions_third = {
 	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = CSA
+		tag = JAA
 	}
-	CSA_conquest_first = {
+	JAA_conquest_first = {
 		icon = gory_to_the_black_army
 		position = 1
 		required_missions = { }
@@ -109,10 +109,11 @@ CSA_missions_third = {
 						OR = {
 							area = wallachia_area
 							area = moldavia_area
-							province_id = 162
-							province_id = 1318
-							province_id = 4125
-							province_id = 1953
+							province_id = 160
+							province_id = 4532
+							province_id = 4128
+							province_id = 5439
+							province_id = 1951
 						}
 					}
 					OR = {
@@ -126,7 +127,7 @@ CSA_missions_third = {
 		
 		effect = {
 			add_country_modifier = {
-				name = CSA_war_modifier 
+				name = JAA_war_modifier 
 				duration = 1825
 			}
 			define_general = {
@@ -138,10 +139,10 @@ CSA_missions_third = {
 		}
 	}
 	
-	CSA_conquest_second = {
+	JAA_conquest_second = {
 		icon = mission_crusade_for_varna
 		position = 3
-		required_missions = { CSA_conquest_first }
+		required_missions = { JAA_conquest_first }
 		trigger = {
 			slovakia_area = { type = all owned_by = ROOT }
 			transylvania_area = { type = all owned_by = ROOT }
@@ -156,22 +157,22 @@ CSA_missions_third = {
 				clr_country_flag = HUN_thunder_dome_participant
 				set_country_flag = HUN_thunder_dome_winner
 			}
-			add_government_reform = mr_bohemian_hungary_reform
+			add_government_reform = mr_hungarian_theocracy 
 			country_event = {
 				id = HUN_flavor.21
 			}
 		}
 	}
 }
-CSA_missions_fourth = {
+JAA_missions_fourth = {
 	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = CSA
+		tag = JAA
 	}
-	CSA_spy_first = {
+	JAA_spy_first = {
 		icon = mission_market_place_with_asian_traders
 		position = 1
 		required_missions = { }
@@ -237,7 +238,7 @@ CSA_missions_fourth = {
 			}
 		}
 	}
-	csa_buda_first = {
+	JAA_buda_first = {
 		icon = mission_market_place_with_asian_traders
 		position = 2
 		required_missions = { }
@@ -277,10 +278,10 @@ CSA_missions_fourth = {
 		}
 	}
 	
-	csa_buda_second = {
+	JAA_buda_second = {
 		icon = mission_market_place_with_asian_traders
 		position = 3
-		required_missions = { csa_buda_first }
+		required_missions = { JAA_buda_first }
 		provinces_to_highlight = {
 			province_id = 153
 		}
@@ -305,10 +306,10 @@ CSA_missions_fourth = {
 		}
 	}
 
-	csa_buda_third = {
+	JAA_buda_third = {
 		icon = mission_market_place_with_asian_traders
 		position = 5
-		required_missions = { csa_buda_second }
+		required_missions = { JAA_buda_second }
 		provinces_to_highlight = {
 			province_id = 153
 		}
@@ -366,18 +367,18 @@ CSA_missions_fourth = {
 		}
 	}
 }
-CSA_missions_fifth = {
+JAA_missions_fifth = {
 	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
 	potential = {
-		tag = CSA
+		tag = JAA
 	}
-	CSA_spy_second = {
+	JAA_spy_second = {
 		icon = mission_impaled_soldies
 		position = 2
-		required_missions = { CSA_spy_first }
+		required_missions = { JAA_spy_first }
 		provinces_to_highlight = {
 			owner = {
 				has_country_flag = HUN_thunder_dome_participant
@@ -415,16 +416,15 @@ CSA_missions_fifth = {
 				limit = {
 					any_country = {
 						has_country_flag = HUN_thunder_dome_participant
-						NOT = { tag = ROOT }
 					}
 				}
 			custom_tooltip = HUN_rebel_tt
 			tooltip = {
 				spawn_rebels = { 
 					type = nationalist_rebels
-					separatists_target = CSA
+					separatists_target = JAA
 					size = 2
-					friend = CSA
+					friend = JAA
 					should_take_capital = yes
 				}
 			}
@@ -444,26 +444,27 @@ CSA_missions_fifth = {
 								controlled_by = ROOT
 							}
 						}
-						can_spawn_rebels = nationalist_rebels 
+						can_spawn_rebels = nationalist_rebels
 					}
 					spawn_rebels = { 
 						type = nationalist_rebels
-						separatists_target = CSA
+						separatists_target = JAA
 						size = 2
-						friend = CSA
+						friend = JAA
 						should_take_capital = yes
 					}
 				}
 			}
-			else = {
-				add_dip_power = 100
-			}
+		}
+		else = {
+			add_dip_power = 100
+		}
 		}
 	}
-	csa_buda_fourth = {
+	JAA_buda_fourth = {
 		icon = mission_market_place_with_asian_traders
 		position = 4
-		required_missions = { csa_buda_second }
+		required_missions = { JAA_buda_second }
 		provinces_to_highlight = {
 			province_id = 153
 		}
@@ -491,10 +492,10 @@ CSA_missions_fifth = {
 		}
 	}
 	
-	csa_buda_fifth = {
+	JAA_buda_fifth = {
 		icon = mission_market_place_with_asian_traders
 		position = 6
-		required_missions = { csa_buda_third csa_buda_fourth }
+		required_missions = { JAA_buda_third JAA_buda_fourth }
 		provinces_to_highlight = {
 			province_id = 153
 		}

@@ -56,6 +56,10 @@ CSA_war_modifier = {
 	infantry_power = 0.10
 	siege_ability = 0.10
 }
+JAA_war_modifier = {
+	discipline = 0.05
+	siege_ability = 0.10
+}
 ksz_war_modifier = {
 	fire_damage = 0.10 
 	siege_ability = 0.10

@@ -138,14 +138,15 @@ ksz_missions_third = {
 		}
 		
 		effect = {
-			change_tag = HUN
 			remove_government_reform = mr_hungary_faction
 			hidden_effect = {
 				clr_country_flag = HUN_thunder_dome_participant
 				set_country_flag = HUN_thunder_dome_winner
 			}
 			add_government_reform = mr_serbian_hungary_reform
-			
+			country_event = {
+				id = HUN_flavor.21
+			}
 		}
 	}
 }
@@ -168,31 +169,58 @@ ksz_missions_fourth = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			any_country = {
-				has_country_flag = HUN_thunder_dome_participant
-				has_spy_network_from = {
-					who = ROOT
-					value = 20
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = HUN_thunder_dome_participant
+						NOT = { tag = ROOT }
+					}
+				}
+				any_country = {
+					has_country_flag = HUN_thunder_dome_participant
+					has_spy_network_from = {
+						who = ROOT
+						value = 20
+					}	
+				}
+			}
+			else = {
+				any_country = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 20
+					}	
 				}
 			}
 		}
 		
 		effect = {
-			custom_tooltip = HUN_fow_tt
-			hidden_effect = {
-				ROOT = {
-					every_country = {
-						limit = { 
-							war_with = ROOT
-							has_country_flag = HUN_thunder_dome_participant
-							has_spy_network_from = {
-								who = ROOT
-								value = 20
-							}
-						}
-						remove_fow = 24
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = HUN_thunder_dome_participant
+						NOT = { tag = ROOT }
 					}
 				}
+				custom_tooltip = HUN_fow_tt
+				hidden_effect = {
+					ROOT = {
+						every_country = {
+							limit = { 
+								war_with = ROOT
+								has_country_flag = HUN_thunder_dome_participant
+								has_spy_network_from = {
+									who = ROOT
+									value = 20
+								}
+							}
+							remove_fow = 24
+						}
+					}
+				}
+			}
+			else = {
+				add_dip_power = 100
 			}
 		}
 	}
@@ -345,11 +373,27 @@ ksz_missions_fifth = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			any_country = {
-				has_country_flag = HUN_thunder_dome_participant
-				has_spy_network_from = {
-					who = ROOT
-					value = 35
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = HUN_thunder_dome_participant
+						NOT = { tag = ROOT }
+					}
+				}
+				any_country = {
+					has_country_flag = HUN_thunder_dome_participant
+					has_spy_network_from = {
+						who = ROOT
+						value = 35
+					}
+				}
+			}
+			else = {
+				any_country = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 35
+					}
 				}
 			}
 		}
@@ -368,12 +412,6 @@ ksz_missions_fifth = {
 			hidden_effect = {
 				random_core_province = { 
 					limit = {
-						NOT = {
-							OR = {
-								owned_by = ROOT
-								controlled_by = ROOT
-							}
-						}
 						owner = {
 							has_spy_network_from = {
 								who = ROOT
@@ -381,6 +419,13 @@ ksz_missions_fifth = {
 							}
 							has_country_flag = HUN_thunder_dome_participant
 						}
+						NOT = {
+							OR = {
+								owned_by = ROOT
+								controlled_by = ROOT
+							}
+						}
+						can_spawn_rebels = nationalist_rebels 
 					}
 					spawn_rebels = { 
 						type = nationalist_rebels
@@ -391,6 +436,7 @@ ksz_missions_fifth = {
 					}
 				}
 			}
+		}
 		}
 	}
 	ksz_buda_fourth = {

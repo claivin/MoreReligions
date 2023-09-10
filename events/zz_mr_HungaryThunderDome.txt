@@ -743,6 +743,9 @@ country_event = {
 	
 	is_triggered_only = yes
 	
+	trigger = {
+		tag = HUN
+	}
 	
 	option = {
 		name = HUN_flavor.2a
@@ -769,7 +772,7 @@ country_event = {
 						#tag = PAP
 					}
 				}
-				country_event = { id = HUN_flavor.3 }
+				country_event = { id = HUN_flavor.3 days = 2 }
 			}
 		}
 	}
@@ -777,7 +780,7 @@ country_event = {
 country_event = {
 	id = HUN_flavor.3
 	title = HUN_flavor.2.t
-	desc = HUN_flavor.2.d
+	desc = HUN_flavor.3.d
 	picture = OVEREXTENSION_eventPicture
 			
 	is_triggered_only = yes
@@ -791,7 +794,7 @@ country_event = {
 						tag = SER
 						tag = POL
 						tag = BLH
-						#tag = PAP
+						tag = PAP
 					}
 				}
 			}
@@ -829,13 +832,12 @@ country_event = {
 			
 	}
 	
-	# option = {
-		# name = HUN_flavor.3f
-			# trigger = {
-				# tag = PAP
-			# }
-			
-	# }
+	option = {
+		name = HUN_flavor.3f
+			trigger = {
+				tag = PAP
+			}
+	}
 }
 country_event = {
 	id = HUN_flavor.4
@@ -1792,13 +1794,12 @@ country_event = {
 			}
 			cede_province = controller
 		}
-		#you cant ced to rebels
-		# every_owned_province = {
-			# limit = {
-				# controlled_by = nationalist_rebels
-			# }
-			# cede_province = nationalist_rebels
-		# }
+		every_owned_province = {
+			limit = {
+				controlled_by = nationalist_rebels
+			}
+			cede_province = event_target:leader_of_annexation
+		}
 	}
 	
 	option = {
@@ -1811,5 +1812,24 @@ country_event = {
 			clr_province_flag = can_be_annexed_HUN
 		}
 	}
+}
+country_event = {
+	id = HUN_flavor.21
+	title = HUN_flavor.21.t
+	desc = HUN_flavor.21.d
+	picture = DIPLOMACY_SIGNING_eventPicture
 	
+	major = yes 
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes 
+	
+	option = {
+		name = HUN_flavor.21.a
+		override_country_name = HUNGARY_RENAME
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
 }
