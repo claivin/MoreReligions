@@ -59,5 +59,10 @@
  mrSongEvents.0.d:0 "Song has always maintained a large military force in order to keep its enemies at bay, but the recent Han invasion has caught us unprepared in terms of strategic direction. The [Root.Monarch.GetTitle] has called an emergency meeting of all high-ranking generals not already engaged on the front in order to set the agenda for the war, as leaving each commander to determine his own would surely be disastrous."
  mrSongEvents.0.a:0 "Secure the Yangtze and weather the storm."
  mrSongEvents.0.b:0 "Push those barbarians back where they came from!"
+ mrSongEvents.1.t:0 "The Fall of Xia"
+ mrSongEvents.1.d:0 "The pretender dynasty of Xia carved out during the Red Turban Rebellion has been a stubborn stain on the face of China for far too long. Finally, our victorious armies have been able to wipe out this thorn in our side and bring the province of Sichuan back into the hands of the true emperor.\n\nThe "imperial dynasty" of Xia will, of course, not be spared, and already any surviving members of their clan are being hunted down and put to death. However, some among the civilian and military administration of the regime are willing to join our cause and pledge their loyalty to the [Root.Monarch.GetTitle] in return for pardons for their earlier hostility towards us. It may be wise to incorporate these experienced officials to ease the burden on our own administration as our state continues to expand, but as our former enemies their loyalty remains suspect."
+ mrSongEvents.1.a:0 "Their earlier service was misguided. Leave them to rule Sichuan in our name."
+ mrSongEvents.1.b:0 "We shall incorporate them into our administration, but bring them to [Root.Capital.GetCapitalName]."
+ mrSongEvents.1.c:0 "We cannot forgive traitors so easily."
  
  

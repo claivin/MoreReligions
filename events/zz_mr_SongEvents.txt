@@ -29,3 +29,55 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mrSongEvents.1
+	title = "mrSongEvents.1.t"
+	desc = "mrSongEvents.1.d"
+	picture = IMPERIAL_SEAL_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "mrSongEvents.1.a"
+		SHU = {
+			every_core_province = {
+				limit = {
+					owned_by = root
+				}
+				add_province_modifier = {
+					name = gsc_pardoned_xia_admin
+					duration = 5475
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.1.b"
+		add_adm_power = 75
+		add_dip_power = 75
+		add_mil_power = 75
+	}
+
+	option = {
+		name = "mrSongEvents.1.c"
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				has_dlc = "Domination"
+				has_government_mechanic = maitreyan_zealotry_mechanic
+			}
+			add_government_power = {
+				mechanic_type = maitreyan_zealotry_mechanic
+				power_type = maitreyan_zealotry
+				value = 10
+			}
+		}
+		else = {
+			add_legitimacy = 20
+		}
+	}
+}

@@ -295,13 +295,55 @@ mr_gsc_missions_second = {
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = north_china_region
+			NOT = {
+				owned_by = ROOT
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			calc_true_if = {
+				all_province = {
+					region = north_china_region
+					owned_by = ROOT
+				}
+				amount = 10
+			}
+			owns_core_province = 688
 		}
 		effect = {
-			##MISSIONEFFECT
+			custom_tooltip = gsc_isolate_han_tt
+			if = {
+				limit = {
+					GHC = {
+						humiliated_by = ROOT
+					}
+				}
+				custom_tooltip = gsc_humiliated_ghc_tt
+			}
+			else = {
+				custom_tooltip = gsc_humiliated_ghc_no_tt
+			}
+			hidden_effect = {
+				GHC = {
+					every_known_country = {
+						set_ai_attitude = {
+							attitude = attitude_hostile
+							who = GHC
+							locked = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						GHC = {
+							humiliated_by = ROOT
+						}
+					}
+					add_adm_power = 100
+					add_dip_power = 100
+					add_mil_power = 100
+				}
+			}
 		}
 	}
 	##Mission End
@@ -406,11 +448,9 @@ mr_gsc_missions_third = {
 			}
 		}
 		trigger = {
-			calc_true_if = {
-				all_owned_province = {
-					has_owner_religion = yes
-				}
-				amount = 10
+			num_of_owned_provinces_with = {
+				religion = ROOT
+				value = 10
 			}
 		}
 		effect = {
@@ -434,10 +474,62 @@ mr_gsc_missions_third = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			if = {
+				limit = {
+					has_dlc = "Domination"
+					has_government_mechanic = maitreyan_zealotry_mechanic
+				}
+				has_government_power = {
+					mechanic_type = maitreyan_zealotry_mechanic
+					power_type = maitreyan_zealotry
+					value = 20
+				}
+			}
+			else = {
+				army_tradition = 30
+				calc_true_if = {
+					all_owned_province = {
+						has_owner_religion = yes
+					}
+					amount = 20
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			if = {
+				limit = {
+					has_dlc = "Domination"
+					has_government_mechanic = maitreyan_zealotry_mechanic
+				}
+				add_government_power = {
+					mechanic_type = maitreyan_zealotry_mechanic
+					power_type = maitreyan_zealotry
+					value = 10
+				}
+				else = {
+					add_country_modifier = {
+						name = gsc_increased_zealotry
+						duration = 5475
+					}
+				}
+			}
+			create_general = {
+				tradition = 60
+			}
+			sichuan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
+			chuanbei_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT 
+			}
 		}
 	}
 	##Mission End
@@ -449,13 +541,20 @@ mr_gsc_missions_third = {
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			owned_by = SHU
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			owns_core_province = 679
+			owns_core_province = 680
+			NOT = {
+				exists = SHU
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			country_event_with_insight = {
+				id = mrSongEvents.1
+				insight_tooltip = gsc_xia_conquest_tt
+			}
 		}
 	}
 	##Mission End
@@ -470,10 +569,112 @@ mr_gsc_missions_third = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			OR = {
+				AND = {
+					crown_land_share = 50
+					legitimacy_equivalent = 95
+					if = {
+						limit = {
+							ai = no
+						}
+						stability = 2
+					}
+				}
+				AND = {
+					if = {
+						limit = {
+							has_dlc = "Domination"
+							has_government_mechanic = maitreyan_zealotry_mechanic
+						}
+						has_government_power = {
+							mechanic_type = maitreyan_zealotry_mechanic
+							power_type = maitreyan_zealotry
+							value = 40
+						}
+					}
+					army_tradition = 40
+					manpower_percentage = 0.5
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			custom_tooltip = gsc_revoke_warlord_aristocracy_tt
+			hidden_effect = {
+				ROOT = {
+					random_owned_province = {
+						limit = { controlled_by = ROOT }
+						spawn_rebels = {
+							type = noble_rebels
+							size = 2
+						}
+					}
+					if = {
+						limit = {
+							estate_influence = {
+								estate = estate_nobles
+								influence = 40
+							}
+						}
+						random_owned_province = {
+							limit = { controlled_by = ROOT }
+							spawn_rebels = {
+								type = noble_rebels
+								size = 2
+							}
+						}						
+					}
+					if = {
+						limit = {
+							estate_influence = {
+								estate = estate_nobles
+								influence = 60
+							}
+						}
+						random_owned_province = {
+							limit = { controlled_by = ROOT }
+							spawn_rebels = {
+								type = noble_rebels
+								size = 2
+							}
+						}						
+					}
+					if = {
+						limit = {
+							estate_influence = {
+								estate = estate_nobles
+								influence = 80
+							}
+						}
+						random_owned_province = {
+							limit = { controlled_by = ROOT }
+							spawn_rebels = {
+								type = noble_rebels
+								size = 3
+							}
+						}						
+					}
+					if = {
+						limit = {
+							estate_influence = {
+								estate = estate_nobles
+								influence = 100
+							}
+						}
+						random_owned_province = {
+							limit = { controlled_by = ROOT }
+							spawn_rebels = {
+								type = noble_rebels
+								size = 3
+							}
+						}						
+					}
+				}
+			}
+			remove_estate_privilege = estate_nobles_mr_warlord_aristocracy_gsc
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -30
+			}
 		}
 	}
 	##Mission End
@@ -485,13 +686,21 @@ mr_gsc_missions_third = {
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			superregion = china_superregion
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			is_emperor_of_china = yes
+			imperial_mandate = 70
+			has_any_disaster = no
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = gsc_rebuilding_china
+				duration = 9125
+			}
 		}
 	}
 	##Mission End
@@ -550,7 +759,6 @@ mr_gsc_missions_third = {
 	}
 	##Mission End
 	##
-	
 }
 ##BranchEnd 2
 ##BranchStart 3
@@ -572,13 +780,146 @@ mr_gsc_missions_fourth = {
 		}
 		position = 1
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				owned_by = ZHJ
+				owned_by = CTO
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			OR = {
+				AND = {
+					ZHJ = {
+						custom_trigger_tooltip = {
+							tooltip = gsc_sent_gift_tt
+							has_opinion_modifier = {
+								who = root
+								modifier = sent_gift
+								value = 25
+							}
+						}
+						has_spy_network_from = {
+							who = root
+							value = 30
+						}
+						is_subject_of_type_with_overlord = {
+							who = GSC
+							type = tributary_state
+						}
+						NOT = {
+							total_development = 75
+						}
+					}
+					CTO = {
+						custom_trigger_tooltip = {
+							tooltip = gsc_sent_gift_tt
+							has_opinion_modifier = {
+								who = root
+								modifier = sent_gift
+								value = 25
+							}
+						}
+						has_spy_network_from = {
+							who = root
+							value = 30
+						}
+						is_subject_of_type_with_overlord = {
+							who = GSC
+							type = tributary_state
+						}
+						NOT = {
+							total_development = 75
+						}
+					}
+				}
+				guangdong_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				west_guangdong_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			if = {
+				limit = {
+					ZHJ = {
+						is_subject_of_type_with_overlord = {
+							who = GSC
+							type = tributary_state
+						}
+					}
+				}
+				ZHJ = {
+#					grant_independence = yes
+					ROOT = {
+						create_subject = {
+							subject_type = vassal
+							subject = ZHJ
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					CTO = {
+						is_subject_of_type_with_overlord = {
+							who = GSC
+							type = tributary_state
+						}
+					}
+				}
+				CTO = {
+#					grant_independence = yes
+					ROOT = {
+						create_subject = {
+							subject_type = vassal
+							subject = CTO
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					guangdong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					west_guangdong_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}				
+				}
+				guangdong_area = {
+					add_territorial_core = root
+				}
+				west_guangdong_area = {
+					add_territorial_core = root
+				}
+			}
+			guangxi_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			guizhou_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	##Mission End
@@ -590,13 +931,76 @@ mr_gsc_missions_fourth = {
 		}
 		position = 2
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				culture = miao
+				culture = zhuang
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			num_of_owned_provinces_with = {
+				culture = miao
+				value = 6
+			}
+			num_of_owned_provinces_with = {
+				culture = zhuang
+				value = 3
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			custom_tooltip = gsc_sinify_miao_zhuang_tt
+			update_entire_culture_foreign = {
+				culture = zhuang
+			}
+			update_entire_culture_foreign = {
+				culture = miao
+			}
+			chuannan_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			yun_gui_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			dali_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			yun_gui_borderland_area = {
+				limit = {
+					NOT = {
+						is_core = ROOT
+					}
+					NOT = {
+						is_permanent_claim = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	##Mission End

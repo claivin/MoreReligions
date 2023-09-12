@@ -61,3 +61,18 @@ gsc_siege_mastery = {
 gsc_conversion_zeal = {
 	missionary_maintenance_cost = -0.50
 }
+
+gsc_increased_zealotry = {
+	morale_damage_received = -0.10
+}
+
+gsc_pardoned_xia_admin = {
+	local_unrest = -4
+	local_core_creation = -0.25
+}
+
+gsc_rebuilding_china = {
+	build_cost = -0.10
+	build_time = -0.10
+	development_cost = -0.10
+}
