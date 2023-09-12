@@ -487,6 +487,10 @@ sulfur = {
 	}
 	chance = {
 		factor = 3
+		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
+		}
 	}
 }
 nutmeg = {
@@ -565,6 +569,10 @@ honey = {
 	}
 	chance = {
 		factor = 2
+		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
+		}
 	}
 }
 fruit = {
@@ -648,6 +656,10 @@ horses = {
 				continent = north_america
 				continent = south_america
 			}
+		}
+		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
 		}
 		modifier = {
 			factor = 0

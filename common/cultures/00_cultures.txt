@@ -1029,36 +1029,36 @@ gaelic	= {
 			Gearóid Muiris Tadhg Seán Niall Einrí Conn Eoghan Aonghus Comhghall Maeleachlain Diarmaid Flann Aerdghal 
 			Bearach Caoímhin Donnabhain Eíhmhín Fearghal Iarfhlaith Lorccán Mathúin Naomhán Oisín Pádraig Ríagáin 
 			Somhairle
-			Aaron Aaron Abbán Abner Abner Abél Abel Adomnán Áed Hugh Áedgen Áeducán Áedán Hugh Áengus 
+			Aaron Abbán Abner Abél Abel Adomnán Hugh Áedgen Áeducán Áedán Áengus 
 			Affiath Ailbe Ailbrend Ailbrenn Ailchú Aildobur Ailgel Áilgenán Ailgus Ailill Ailpín Alwin 
-			Ainbchellach Áindle Ainftech Enfidaig Ainmere Airechtach Airfhindán Airfhindán Airfhinnán 
-			Airleid Airmedach Amalgaid Amlaíb Olaf Anfudán Anlón Anmchaid Ánrothán Ardgal Ardgar Art 
-			Arthur Angus
+			Ainbchellach Áindle Ainftech Enfidaig Ainmere Airechtach Airfhindán Airfhinnán 
+			Airleid Airmedach Amalgaid Amlaíb Olaf Anfudán Anlón Anmchaid Ánrothán Ardgal Ardgar 
+			Angus
 			Artbran Artgal Artgus Artucán Artúr Arthur Assiucc Augaire Augustín Augustine Aurthuile 
 			Báethgalach Báethíne Báetán Béoáed Barrfhind Beccán Berrach Bhátair Walter Blathmacc Bran 
-			Brandub Brangen Bressal Brian Brian Briccéne Briccíne Broccán Bruatur Bruide Bride Brénaind 
+			Brandub Brangen Bressal Briccéne Briccíne Broccán Bruatur Bruide Bride Brénaind 
 			Brénainn Bróen Búaidbéo Caicher Cailech Cailte Cairbre Carbrey Cairell Caisséne Caissín 
-			Canann Canannán Carlus Charles Cathal Cathalán Cathassach Cathbad Cathmáel Cathmál Cathnio 
+			Canann Canannán Carlus Charles Cathalán Cathassach Cathbad Cathmáel Cathmál Cathnio 
 			Cathub Causantín Constantine Caílte Caínchomrac Caíndelbán Ceithernach Cellach Cellachán 
 			Cennétig Kentigern Cenn-Fáelad Cennlachán Cerball Cernach Cernachán Cian Ciarán Cilléne 
-			Cináed Kenneth Clemens Clement Cobthach Coirpre Colcu Colmán Nicholas Columb Nicholas Comgán 
-			Conaing Conall Conall Conallán Conamail Conán Conan Conchenn Conchobar Condla Condla Congal 
-			Congalach Congus Conlang Conmac Conmacc Conmáel Conmál Conn Conn Connla Conrí Constans 
-			Constantius Constantín Constantine Corbb Corbán Corccán Corcrán Cormac Coscrach Coílboth 
-			Crimthann Crundmáel Crundmáel Cruinnmáel Crundmáel Críchán Crónán Cuilén Cuindles Cuircthe 
+			Cináed Kenneth Clemens Clement Cobthach Coirpre Colcu Colmán Nicholas Columb Comgán 
+			Conaing Conall Conallán Conamail Conán Conan Conchenn Conchobar Condla Congal 
+			Congalach Congus Conlang Conmac Conmacc Conmáel Conmál Connla Conrí Constans 
+			Constantius Constantín Corbb Corbán Corccán Corcrán Cormac Coscrach Coílboth 
+			Crimthann Crundmáel Cruinnmáel Críchán Crónán Cuilén Cuindles Cuircthe 
 			Cummascach Cáemán Cóelbad Cóelub Cóemán Cú-Allaid Cú-Bretan Cú-Caech Cú-Cen Cú-Cen-Máthair 
 			Cú-Cúaráin Cú-Gamna Cú-Roí Cúanu Cúldub Cúán Cúánán Dabíd David Daigre Dalbach Dallán Daniél 
 			Daniel Dathal Dathgus Demmán Diarmait Dermid Doedgus Domangart Domnall Donald Donn Donnchad 
-			Duncan Donncuan Duncan Donndubán Donngal Donnucán Duncan Doélgus Drost Drust Dub-dá-Lethe 
+			Donncuan Donndubán Donngal Donnucán Doélgus Drost Drust Dub-dá-Lethe 
 			Dubcenn Dubgenn Dubh Duff Dubhghall Dugald Dubhglais Douglas Dubthach Dubáed Dubán Duiblesc 
 			Duibne Dunáed Dálach Dícuill Díglach Dímmae Dímmasach Dímmán Dínertach Dúnacán Dúnadach 
 			Duncan Dúngal Dúngalach Dúnlang Éamonn Edmund Echmarcach Échtgal Échtgus Echthigern Echuid 
-			Éicnech Éicnechán Eláir Énna Énri Henry Éochad Eochaid Eochaid Eochu Eochucán Éogan Eugene 
-			Eric Ercaid Ercáed Ercán Éremón Érennach Ernán Eterscél Eógan Eugene Eóganán Eugene Fachtna 
+			Éicnech Éicnechán Eláir Énna Énri Henry Éochad Eochaid Eochu Eochucán Éogan 
+			Eric Ercaid Ercáed Ercán Éremón Érennach Ernán Eterscél Eógan Eugene Eóganán Fachtna 
 			Fairchellach Fallaman Farannán Faílbe Fearghus Fergus Fechtnach Fedach Fearchar Farquhar 
-			Fedelmid Feirgil Felic Fer-Fugaill Feradach Feradach Ferdomnach Fergal Fergus Fergus 
-			Fianchú Findbarr Fingen Finguine Finn Finn Finnacán Finnbarr Finnchú Finnlagh Findlay 
-			Finnsnechtae Fintan Flaithbertach Flaithem Flaithemán Flaithgus Flaithrí Flann Flannacán 
+			Fedelmid Feirgil Felic Fer-Fugaill Feradach Ferdomnach Fergal 
+			Fianchú Findbarr Fingen Finguine Finn Finnacán Finnbarr Finnchú Finnlagh Findlay 
+			Finnsnechtae Fintan Flaithbertach Flaithem Flaithemán Flaithgus Flaithrí Flannacán 
 			Flannchad Flannán Fogartach Folachtach Forannán Forbassach Fothad Fothud Fuacarta Fubthad 
 			Fuirechtach Fursu Fáelcar Fáelchad Fáelchú Fáeldobur Fáelgus Fáelán Fáelbe Fíachnae Fíadchú 
 			Fíngin Fínsnechta Fócarta Gabrán Garalt Garbith Gilla-Íosa Gilla-Brígte Gilbert Gilla-Coluim 
@@ -1068,38 +1068,38 @@ gaelic	= {
 			Lachtnán Lachtnéne Laidcenn Laidgenn Laidíne Laisrén Lennán Lennon Lethlobur Liam William 
 			Lochlann Loingsech Lonán Lorcán Lugh Leon Lugaid Lugáed Láegaire Lóchéne Lóchíne Lóeguire 
 			Mac-Laisre Mainchíne Maine Manchán Martan Mathgamain Matudán Minchán Mo-Chonna Mo-Lua 
-			Móenach Máel-Anfaid Liber Fiachnae Erc Dúnchad Cillíne Caissíne Bran
+			Móenach Máel-Anfaid Liber Fiachnae Erc Dúnchad Cillíne Caissíne
 			Morand Morann Mugrón Muirchertach Muirecán Muiredach Murdoch Muirgius Murchad Murchú 
 			Máel-Bresail Máel-Brígte Máel-Cein Máel-Cianáin Máel-Ciaráin Máel-Coluim Malcolm Máel-Corgis 
 			Máel-Dubh Maldoven Máel-Dúin Máel-Fothartaig Máel-Fábaill Máel-Íosa Malise Máel-Máedóc 
 			Máel-Martain Máel-Mórda Máel-Muire Malmure Máel-Míchíl Máel-Petair Máel-Pátraic Máel-Ruanaid 
 			Máel-Sechnaill Máel-Tólai Máelán Máenach Máthair Múadán Nadarchu Nannid Natfraech Natfraich 
-			Natsluaig Nechtan Nathan Niall Nigel Niallgus Niallán Nuadu Odrán Óengus Angus Óenucán 
-			Oissíne Olcán Ólchobar Onchú Orthanach Oscar Oscar Pátraic Patrick Petair Peter Pilib Pól 
+			Natsluaig Nechtan Nathan Nigel Niallgus Niallán Nuadu Odrán Óengus Óenucán 
+			Oissíne Olcán Ólchobar Onchú Orthanach Oscar Pátraic Patrick Petair Peter Pilib Pól 
 			Paul Proinsias Francis Rechtabra Riacán Riaguil Robartach Rogallach Rogellach Ruah Roy 
 			Roderick Ruarcc Rumann Ráthach Rígán Ríán Ródán Rónchú Rónán Ronan Rúadacán Rúadán Scandal 
-			Scandlán Scellán Scolaige Séaghdha Shaw Séafra Godfrey Séamas Jacob Seán John Sechnassach 
-			Selbach Senchán Seoán John Sinach Siothrún Godfrey Slébíne Snedgus Sogan Somhairle Somerled 
-			Suibne Sweeny Sáerbrethach Sárán Séigíne Sétna Sétnae Tadg Tadg Taithlech Talorc Talore 
+			Scandlán Scellán Scolaige Séaghdha Shaw Séafra Séamas Sechnassach 
+			Selbach Senchán Seoán John Sinach Siothrún Slébíne Snedgus Sogan Somerled 
+			Suibne Sweeny Sáerbrethach Sárán Séigíne Sétna Sétnae Tadg Taithlech Talorc Talore 
 			Talorcán Temnén Tigernach Tigernán Tipraite Tomaltach Tomás Thomas Torccán Trenchad Trengus 
 			Tressach Tuathalán Tuireann Taran Tálán Tóla Túathal Tuathal Ualgarg Ualan Valentin Ualtar 
-			Walter Úamnachán Uargal Uargalach Uargus Uilliam William Ultán Ruaidrí Philip Oisséne
+			Úamnachán Uargal Uargalach Uargus Uilliam Ultán Ruaidrí Philip Oisséne
 		}
 		female_names = {
 			Saraid Órfhlaith Fedelma
-			Ablach Áedammair Affraic Euphemia Aíbinn Aibilín Eva Aileann Áine Agnes Anlaith Aróc Aíbinn 
-			Barrdub Ben-Laigen Ben-Míde Ben-Muman Ben-Ulad Brigit Brigit Bé-Fáil Bébinn Cacht 
-			Caillech-Fhinnéin Cainnech Caisséne Caitilín Catherine Caíntigern Caírech Cathán Catríona 
-			Catherine Cellach Ciar Cnes Coblaith Cobflaith Cobflaith Cobflaith Conchenn Condál Crínóch 
-			Crístina Christina Cumman Deirdre Der-bForgaill Devorguilla Derbáil Derborgaill Devorguilla 
+			Ablach Áedammair Affraic Euphemia Aibilín Eva Aileann Áine Agnes Anlaith Aróc Aíbinn 
+			Barrdub Ben-Laigen Ben-Míde Ben-Muman Ben-Ulad Brigit Bé-Fáil Bébinn Cacht 
+			Caillech-Fhinnéin Cainnech Caisséne Caitilín Caíntigern Caírech Cathán Catríona 
+			Catherine Cellach Ciar Cnes Coblaith Cobflaith Conchenn Condál Crínóch 
+			Crístina Christina Cumman Deirdre Der-bForgaill Derbáil Derborgaill Devorguilla 
 			Der-Ilei Derilla Der-Lugdach Dianaim Doriend Dub-Dil Dub-Essa Dub-Lemna Dubchoblaig Dubgilla 
-			Dúinsech Dúnlaith Echrad Éibhleann Eilionora Eleanor Eithne Eithne Ellbríg Emer Emer Étaín 
-			Eva Euginia Eugenia Faílenn Fedelm Finneacht Finnguala Finnguala Flann Forbflaith Fíne Garb 
-			Gelgéis Gerróc Gnathnad Gormflaith Gormflaith Gormlaith Gormflaith Gráinne Imag Íte Lann 
-			Lasairfíona Lathir Lerben Lerthan Lígach Lucia Lucia Martha Martha Mauda Matilda Muadhnait 
+			Dúinsech Dúnlaith Echrad Éibhleann Eilionora Eleanor Eithne Ellbríg Emer Étaín 
+			Euginia Eugenia Faílenn Fedelm Finneacht Finnguala Flann Forbflaith Fíne Garb 
+			Gelgéis Gerróc Gnathnad Gormflaith Gormlaith Gráinne Imag Íte Lann 
+			Lasairfíona Lathir Lerben Lerthan Lígach Lucia Martha Mauda Matilda Muadhnait 
 			Muirenn Murron Muirgel Muriel Muirne Morna Máel-Mide Máel-Muire Malmure Máire Maria Máiread 
-			Máirgred Margaret Mór Mor Mór-Muman Nárbflaith Nuala Finnguala Órlaith Órnat Róis Ros Sadb 
-			Samthann Scáthach Sébdann Selblaith Seonaid Joan Sinech Siobán Joan Sisuile Sláíne Slaine 
+			Máirgred Margaret Mór Mor Mór-Muman Nárbflaith Nuala Órlaith Órnat Róis Ros Sadb 
+			Samthann Scáthach Sébdann Selblaith Seonaid Sinech Siobán Joan Sisuile Sláíne Slaine 
 			Sorcha Suaibsech Sáerlaith Sétach Síthmaith Tailefhlaith Tailltiu Temair Tuathflaith Tómnat 
 			Uallach Uasal Úna Una Mona Éua
 		}
@@ -1109,7 +1109,7 @@ gaelic	= {
 
 		male_names = {
 			Aonghas Alasdair Ailbeart Adhamh Ailean Anndra Arailt Artair Aaron Amhlaidh Ailpein
-			Bhaltair Boisil Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard Bhaltair
+			Bhaltair Brian Benneit Beathan Boisil Brus Bruadar Breacan Bearnard
 			Cresdean Calum Conan Conal Cormac Cailean
 			Domhnall Donnchadh Dughall Daibhidh Diarmid Dolan Daniel Deorsa Dughlas
 			Eoghan Eobhann Eideard Eachann Eoin Eosaph Eanruig Ellair
@@ -1118,7 +1118,7 @@ gaelic	= {
 			Hamish Harailt Horas
 			Iain Iacob Iosag Iomhar Iosaph Iona
 			Lucais Labhrainn
-			Maoilios Murchadh Martain Mascual Marcus Mata Mecheil Morgan Mungan Murchadh
+			Maoilios Murchadh Martain Mascual Marcus Mata Mecheil Morgan Mungan
 			Neacal Niall Niallghas
 			Oilbhreis Oisean
 			Padraig Pol Peadar
@@ -1178,7 +1178,7 @@ latin = {
 		primary = FER
 
 		dynasty_names = {
-			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" Bevilacqua "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
+			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" Rangoni Monesi "da Fogliano" "da Correggio" Platoni Biondelli Arrigoni Castiglione Cavriani d'Arco Ceresara Donesmondi
 		}
 	}
 	ligurian = {
@@ -1201,7 +1201,7 @@ latin = {
 			Lavincia Ledrus Liber
 			Messor Madecus
 			Naren
-			Paiio Panes Panias Panius Panentius Panthia Panes Panto Pinsus Pladomenus Platino
+			Paiio Panes Panias Panius Panentius Panthia Panto Pinsus Pladomenus Platino
 			Samuntio Seiio Silvanus Statanius Staticus Stato Status Sestus Sextus Sexto
 			Taulant  Teuta Tito Thana Tizius Tritus Titus
 			Varro Vidasus Vidaza
@@ -1211,9 +1211,9 @@ latin = {
 			Mares Marco Maroe Marinus Matheus Michael Nale Nichiforus Nicola
 			Pascalis Pasqualis Petragna Petrus Piero Perue Rassinus Rusco
 			Stane Thoma Tuone Vallius Vita
-			Adam Aguastin Alecuandur Aliau Aliard Andre Antune Antuone Blasi Buartol Bunedec Bunin Caunstantin
+			Adam Aguastin Alecuandur Aliau Aliard Antune Antuone Blasi Buartol Bunedec Bunin Caunstantin
 			Caurnel Clemiant Crastin Cuarl Dimitre Domienc Domienja Fabri Faguor Fiaurens Filip Frane
-			Giorgi Guaspar Jacop Jiolian Joan Jualb Liaun Marc Marjan Matei Mihial Mouro Muerten Nadual Nicaul
+			Guaspar Jacop Jiolian Joan Jualb Liaun Marc Marjan Matei Mihial Mouro Muerten Nadual Nicaul
 			Paladen Piar Ponsio Puol Puoskal Raimaun Savjan Simaun Sismaun Stanislau Sthepan Taumas Taumasin
 			Teodor Timotei Vait Valdemaur Vidual Vittaur
 		}
@@ -1222,11 +1222,11 @@ latin = {
 			Ane Aneta Ante Anka Albina Augustina Amaica Amaura Alecuandra Amilja Andreja
 			Bepina Blanca Bruva Buni Catriana Cauleta Caunstantina Cvita Ibrica Ivka
 			Joana Lucia Krysto Matija Manda Nicauleta Pernica Piara Puola
-			Antolina Antonia Anussa Babalio Bodacia Catarena Caterina Clara Clara
-			Drase Dea Descia Deia Deussa Elena Eloija Fiaura Filippa Helene Giva
+			Antolina Antonia Anussa Babalio Bodacia Catarena Caterina Clara
+			Drase Dea Descia Deia Deussa Elena Eloija Fiaura Filippa Giva
 			Jachussa Jacobica Jelussa Laurica Lene Helene
-			Magdalena Magdalena Margerita Margaret Maria Mauressa Micha Mira Nicoletta Nixa
-			Rade Rado Regina Regina Rossa Rosa Schimosa Thome Viola Vele Vittaurja
+			Magdalena Margerita Margaret Maria Mauressa Micha Mira Nicoletta Nixa
+			Rade Rado Regina Rossa Rosa Schimosa Thome Viola Vele Vittaurja
 		}
 	}
 	neapolitan = {
@@ -1314,7 +1314,7 @@ latin = {
 		"di Castello" "Allucingolli" "di Conti" "di Squillache" "da Romano" "degli Ubaldini"
 		"Cybo" "Pallavicini" "Adorno" "Campofregoso" "Bentivoglio" "Tiepolo" "Gradenigo" "Borromeo"
 		"Capponi" "Castracani" "Cenci" "Grimaldi" "Colleoni" 
-		"Concini" "Obertenghi" "Crispo" "Dandolo" "Fieschi" "Gattilusio" "Bandinelli" "Serra" "Sfondrati" 
+		"Concini" "Obertenghi" "Crispo" "Fieschi" "Gattilusio" "Bandinelli" "Serra" "Sfondrati" 
 		"Doria" "di Morra" "Savelli" "Mancini" "da Correggio"
 		"Condulmer" "Moneta" "Parentucelli" "Valente" "Ziani" "Strozzi" "Sturzo" "di Piombino" "Monaldeschi"
 		"Sommaripa" "Borgia" "Orseolo" "Antelminelli" "Beccaria" "de Bonacolsi"
@@ -9833,7 +9833,7 @@ sudanese = {
 		primary = NBA
 	}
 	funj = {
-		primaru = NUB
+		primary = NUB
 	}
 	daju = {
 		primary = DJJ

@@ -125,7 +125,7 @@ declarewar = {
 		allow = {
 			OR = {
 				FROM = { NOT = { has_country_flag = debug_no_wars_on_me } }
-				FROM = { overlord = { NOT = { has_country_flag = debug_no_wars_on_me } }
+				FROM = { overlord = { NOT = { has_country_flag = debug_no_wars_on_me } } }
 			}
 		}
 	}

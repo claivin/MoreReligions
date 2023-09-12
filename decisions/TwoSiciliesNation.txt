@@ -33,27 +33,25 @@ country_decisions = {
 					province_id = 121
 					province_id = 125
 				}
-				OR = {
-					AND = {
-						OR = {
-							culture = sicilian
-							culture = neapolitan
-						}
-						ROOT = {
-							NOT = {
-								num_of_owned_provinces_with = {
-									value = 10
-									OR = {
-										culture = sicilian
-										culture = neapolitan
-									}
-									region = italy_region
-									owned_by = ROOT
+				AND = {
+					OR = {
+						culture = sicilian
+						culture = neapolitan
+					}
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 10
+								OR = {
+									culture = sicilian
+									culture = neapolitan
 								}
+								region = italy_region
+								owned_by = ROOT
 							}
-							owns_core_province = 121
-							owns_core_province = 125
 						}
+						owns_core_province = 121
+						owns_core_province = 125
 					}
 				}
 			}
