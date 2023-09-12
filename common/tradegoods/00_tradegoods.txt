@@ -175,6 +175,10 @@ wool = {
 			area = newfoundland_area
 		}
 		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
+		}
+		modifier = {
 			factor = 0
 			OR = {
 				has_terrain = glacier
@@ -602,6 +606,10 @@ gold = {
 			factor = 0
 			area = newfoundland_area
 		}
+		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
+		}
 		# modifier = {
 			# factor = 0
 			# is_random_new_world = no
@@ -724,6 +732,10 @@ iron = {
 		modifier = {
 			factor = 0
 			area = newfoundland_area
+		}
+		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
 		}
 		# modifier = {
 			# factor = 0
@@ -1583,6 +1595,10 @@ livestock = {
 		modifier = {
 			factor = 0
 			area = newfoundland_area
+		}
+		modifier = {
+			factor = 0 #taghaza salt mine
+			province_id = 5224
 		}
 		modifier = {
 			factor = 0

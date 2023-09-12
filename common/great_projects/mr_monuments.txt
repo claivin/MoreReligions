@@ -20,7 +20,7 @@ mr_carcasonne = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			OWNER = { tag = NAV }
+			owner = { tag = NAV }
 			religion = mr_cathar
 		}
 		has_owner_religion = yes
@@ -36,7 +36,7 @@ mr_carcasonne = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			OWNER = { tag = NAV }
+			owner = { tag = NAV }
 			religion = mr_cathar
 		}
 		has_owner_religion = yes
@@ -44,7 +44,7 @@ mr_carcasonne = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			OWNER = { tag = NAV }
+			owner = { tag = NAV }
 			religion = mr_cathar
 		}
 		has_owner_religion = yes

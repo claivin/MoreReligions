@@ -1,0 +1,19 @@
+#5223 - Akjoujt
+culture = berber
+religion = sunni
+capital = "Akjoujt"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 500
+native_ferocity = 4
+native_hostileness = 3
+discovered_by = sub_saharan
+add_permanent_province_modifier = {
+	name = mr_sahara
+	duration = -1
+}
+
+1444.11.12 = { trade_goods = unknown }

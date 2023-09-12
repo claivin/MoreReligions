@@ -143,7 +143,7 @@ unknown = {
 }
 ####MR TRADE GOODS###
 alcohol = {
-	base_price = 3
+	base_price = 5
 }
 military_supplies = {
 	base_price = 4.5
@@ -162,4 +162,98 @@ jewelry = {
 }
 cheese = {
 	base_price = 3.5
+}
+whales = {
+	base_price = 3
+}
+rice = {
+	base_price = 2
+}
+steel = {
+	base_price = 4
+}
+silver = {
+	base_price = 0
+	goldtype = yes
+}
+sulfur = {
+	base_price = 3
+}
+gunpowder = {
+	base_price = 4
+}
+nutmeg = {
+	base_price = 6
+}
+tumeric = {
+	base_price = 6
+}
+honey = {
+	base_price = 2.5
+}
+ginger = {
+	base_price = 4.5
+}
+fruit = {
+	base_price = 2
+}
+tropical_fruit = {
+	base_price = 3
+}
+horses = {
+	base_price = 3
+}
+saffron = {
+	base_price = 6
+}
+chocolate = {
+	base_price = 5
+}
+ice = {
+	base_price = 2.5
+}
+rice_wine = {
+	base_price = 3.5
+}
+citrus = {
+	base_price = 3
+}
+grapes = {
+	base_price = 2.5
+}
+dates_figs = {
+	base_price = 2
+}
+rum = {
+	base_price = 4
+}
+honey_wine = {
+	base_price = 4
+}
+olives = {
+	base_price = 2.5
+}
+vegetables = {
+	base_price = 2
+}
+potato = {
+	base_price = 2.5
+}
+tomato = {
+	base_price = 2.5
+}
+maize = {
+	base_price = 2.5
+}
+jade = {
+	base_price = 4
+}
+shellfish = {
+	base_price = 2.5
+}
+tin = {
+	base_price = 2.5
+}
+amber = {
+	base_price = 2.5
 }

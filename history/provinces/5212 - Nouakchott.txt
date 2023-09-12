@@ -1,0 +1,14 @@
+#5211 - Nouakchott
+culture = berber
+religion = sunni
+capital = "Nouakchott"
+trade_goods = unknown
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 5000
+native_ferocity = 9
+native_hostileness = 4
+discovered_by = sub_saharan
+1444.11.12 = { trade_goods = unknown }

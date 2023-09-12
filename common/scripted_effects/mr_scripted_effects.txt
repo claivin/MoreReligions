@@ -1,8 +1,15 @@
 pap_add_schism_progress = {
-	PAP = {
-		add_disaster_progress = {
-			disaster = mr_western_schism
-			value = $VALUE$
+	if = {
+		limit = {
+			PAP = {
+				has_disaster = mr_western_schism
+			}
+		}
+		PAP = {
+			add_disaster_progress = {
+				disaster = mr_western_schism
+				value = $VALUE$
+			}
 		}
 	}
 }
