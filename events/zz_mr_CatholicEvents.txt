@@ -10,17 +10,7 @@ country_event = {
 	
 	major = yes
 	fire_only_once = yes
-	is_triggered_only = yes
-	
-	trigger = {
-		has_global_flag = mr_western_schism_pt1_flag
-		has_global_flag = mr_western_schism_pt2_flag
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-		#triggered by mr_western_schism diasaster firing
-	}
+	is_triggered_only = yes #triggered by mr_western_schism diasaster firing
 	
 	immediate = {
 		enable_religion = mr_antipapist
@@ -252,9 +242,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = PAP
 		is_year = 1450
 		NOT = { has_global_flag = mr_western_schism_pt1_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
+		tag = PAP
 	}
 	
 	mean_time_to_happen = {
@@ -286,8 +278,10 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		has_global_flag = mr_western_schism_pt1_flag
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		num_of_cardinals = 1
 		religion = catholic
 		NOT = { has_country_flag = mr_catholic3_flag }
@@ -323,9 +317,11 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		has_global_flag = mr_western_schism_pt1_flag
 		NOT = { has_global_flag = mr_western_schism_pt2_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		tag = PAP
 		calc_true_if = { #requires .3 to fire at least 10 times
 			all_country = {
@@ -371,10 +367,12 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		has_global_flag = mr_western_schism_pt1_flag
 		has_global_flag = mr_western_schism_pt2_flag
 		has_global_flag = mr_schism_geopolitics
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		religion = catholic
 		has_estate = estate_nobles
 		NOT = { has_country_flag = mr_nobility_decided_schism_side }
@@ -424,12 +422,7 @@ country_event = {
 	}
 	picture = POPE_PREACHING_eventPicture
 	
-	is_triggered_only = yes
-	trigger = {
-		#triggered by mr_catholic.4
-	}
-	
-	mean_time_to_happen = { days = 1 }
+	is_triggered_only = yes #triggered by mr_catholic.4
 	
 	option = { #agree with supporting pope
 		name = mr_catholic.6.a
@@ -514,10 +507,12 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		has_global_flag = mr_western_schism_pt1_flag
 		has_global_flag = mr_western_schism_pt2_flag
 		NOT = { has_global_flag = mr_schism_geopolitics }
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		tag = PAP
 	}
 	
@@ -645,8 +640,7 @@ country_event = {
 	desc = mr_catholic.8.d
 	picture = POPE_PREACHING_eventPicture
 
-	is_triggered_only = yes
-	trigger = {} #triggered by mr_catholic.7
+	is_triggered_only = yes #triggered by mr_catholic.7
 	
 	option = { #support him
 		name = mr_catholic.8.a
@@ -719,8 +713,7 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = {} #triggered by death of pope after .7
+	is_triggered_only = yes #triggered by death of pope after .7
 	
 	immediate = {
 		set_global_flag = pope_died_before_schism
@@ -768,8 +761,7 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	fire_only_once = yes
-	is_triggered_only = yes
-	trigger = { } #triggered by .9
+	is_triggered_only = yes #triggered by .9
 	
 	immediate = {
 		
@@ -789,8 +781,7 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	major = yes
-	is_triggered_only = yes
-	trigger = { }#triggered by mr_catholic.8
+	is_triggered_only = yes #triggered by mr_catholic.8
 	
 	option = { #he gets his own lands
 		name = mr_catholic.15.a
@@ -875,8 +866,7 @@ country_event = {
 	desc = mr_catholic.151.d
 	picture = POPE_PREACHING_eventPicture
 
-	is_triggered_only = yes
-	trigger = { }#triggered by mr_catholic.8
+	is_triggered_only = yes #triggered by mr_catholic.8
 	
 	option = { #he gets his own lands
 		name = mr_catholic.151.a
@@ -1066,10 +1056,12 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		has_global_flag = mr_western_schism_pt1_flag
 		has_global_flag = mr_western_schism_pt2_flag
 		has_global_flag = mr_schism_geopolitics
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		religion = catholic
 		has_estate = estate_church
 		NOT = { has_country_flag = mr_clergy_decided_schism_side }
@@ -1114,8 +1106,10 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		has_global_flag = mr_western_schism_pt1_flag
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		religion = catholic
 		OR = {
 			AND = {
@@ -1195,8 +1189,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
 		has_global_flag = mr_western_schism_pt1_flag
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		tag = PAP
 	}
 	
@@ -1255,8 +1251,10 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
 		has_global_flag = mr_western_schism_pt1_flag
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		tag = PAP
 		has_country_flag = status_quo_faction_made
 	}
@@ -1341,7 +1339,7 @@ country_event = {
 	}
 } 
 
-#Reform some law
+#Reform: Limitations on Beneficium
 country_event = {
 	id = mr_catholic.21
 	title = mr_catholic.21.t
@@ -1350,8 +1348,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		NOT = { has_global_flag = mr_western_schism_started }
 		has_global_flag = mr_western_schism_pt1_flag
+		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
+		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
+		PAP = { NOT = { has_disaster = mr_western_schism } }
 		tag = PAP
 	}
 	
@@ -1373,9 +1373,18 @@ country_event = {
 		}
 	}
 	
+	option = { #With some modifications
+		name = mr_catholic.21.a
+		add_corruption = -4
+		pap_add_schism_progress = { VALUE = -4 }
+	}
+	
 	option = { #
 		name = mr_catholic.21.a
-		add_corruption = -1
-		pap_add_schism_progress = { VALUE = -4 }
+		add_country_modifier = {
+			name = mr_beneficium
+			duration = 3650
+		}
+		pap_add_schism_progress = { VALUE = -8 }
 	}
 }
