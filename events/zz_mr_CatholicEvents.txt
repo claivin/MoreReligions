@@ -1388,3 +1388,5 @@ country_event = {
 		pap_add_schism_progress = { VALUE = -8 }
 	}
 }
+
+###
