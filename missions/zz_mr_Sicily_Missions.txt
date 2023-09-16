@@ -451,7 +451,7 @@ mr_sicily_missions_second = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			navy_size_percentage = 1
+			num_of_generals = 2 
 			manpower_percentage = 0.85
 		}
 		effect = {
@@ -1555,7 +1555,7 @@ mr_sicily_missions_fifth = {
 		}
 		trigger = {
 			125 = {
-				base_tax = 10
+				base_tax = 8
 				has_tax_building_trigger = yes
 			}
 		}
