@@ -430,7 +430,7 @@ baleares_area = { #5 +formentera/manacor full
 	333 4559 4560 5274 5275
 }
 
-corsica_area = { #NEW +ajaccio/cismote/bastia/elba/capria full
+corsica_area = { #NEW +ajaccio/cismote/bastia/elba/bonifazio full
 	1247 5066 5271 5272 5273
 }
 

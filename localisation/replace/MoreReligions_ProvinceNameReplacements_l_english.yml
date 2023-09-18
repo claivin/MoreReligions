@@ -3,14 +3,6 @@
  GUY_ADJ: "Aquitain"
  GUY_ADJ2: "Aquitain"
  
- GEL: "Elberg"
- GEL_ADJ: "Elberger"
- GEL_ADJ2: "Elberger"
- 
- HOL: "Amsterdam"
- HOL_ADJ: "Amsterdammer"
- HOL_ADJ2: "Amsterdammer"
- 
  MTH: "Dublin"
  MTH_ADJ: "Dubliner"
  MTH_ADJ2: "Dubliner"
@@ -96,6 +88,10 @@
  MEN: "Milas"
  MEN_ADJ: "Milas"
  MEN_ADJ2: "Milas"
+
+ BAS: "Bastia"
+ BAS_ADJ: "Bastian"
+ BAS_ADJ2: "Bastian"
  
  home_counties_area: "South East England"
  

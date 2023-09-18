@@ -1,9 +1,9 @@
 #REGIONLOWCOUNTRIES
 # 97 - North Holland - Principal cities: Amsterdam, Haarlem
 
-owner = HOL
-controller = HOL
-add_core = HOL
+owner = DHG
+controller = DHG
+add_core = DHG
 capital = "Amsterdam"
 is_city = yes
 culture = dutch

@@ -44,7 +44,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4131;4193;sea;1387;4999;1357;5005;1351;Oshima-Mutsu
 1032;1852;sea;4225;5099;1408;5073;1386;Kurils-Tokachi
 1199;1201;sea;1448;-1;-1;-1;-1;Bagamoyo-Zanzibar
-1247;5067;sea;1298;-1;-1;-1;-1;Ajaccio-OlbiaTempio
+5273;5067;sea;1298;-1;-1;-1;-1;Bonifazio-OlbiaTempio
 394;396;sea;4347;3589;1076;3592;1074;Al Hasa-Bahrain
 395;396;sea;4347;3596;1071;3601;1071;Qatar-Bahrain
 4354;4351;sea;4357;4726;791;4732;786;Zamboanga-Buglas
@@ -117,9 +117,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 35;5115;sea;1926;-1;-1;-1;-1;Hiiumaa-Saaremaa
 4815;5169;sea;1361;-1;-1;-1;-1;Singapore-Batam
 5188;5189;sea;1468;-1;-1;-1;-1;Cacheu-Bissagos
-117;5272;sea;1298;-1;-1;-1;-1;Siena-Elba
-5272;5273;sea;1298;-1;-1;-1;-1;Capria-Elba
-115;5273;sea;1298;-1;-1;-1;-1;Capria-Pisa
+115;5272;sea;1298;-1;-1;-1;-1;Pisa-Elba
 4560;5274;sea;1298;-1;-1;-1;-1;Ibiza-Formentera
 2341;5368;sea;1333;-1;-1;-1;-1;Masirah-Duqm
 -1;-1;;-1;-1;-1;-1;-1;-1;

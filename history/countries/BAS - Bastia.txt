@@ -1,0 +1,10 @@
+government = republic
+add_government_reform = trading_city
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = sardinian
+capital = 5271	# Bastia
+mercantilism = 25
+
+fixed_capital = 5271 # Cannot move capital away from this province & no power cost to move to it

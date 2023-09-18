@@ -1,0 +1,17 @@
+#Ligurian League relations
+
+alliance = {
+	first = GEN
+	second = BFZ
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = GEN
+	second = BAS
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}

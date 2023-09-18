@@ -1,7 +1,7 @@
 #Low Countries Relations
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = HLM
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -9,14 +9,14 @@ dependency = {
 
 # dependency = {
 	# subject_type = "dutch_confederation"
-	# first = DHG
-	# second = HOL
+	# first = HOL
+	# second = DHG
 	# start_date = 1380.1.1
 # }
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = UTR
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -24,7 +24,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = GEL
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -32,7 +32,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = ARH
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -40,7 +40,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = BRD
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -48,7 +48,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = VLG
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -56,7 +56,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = EHV
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -64,7 +64,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = TLB
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -72,7 +72,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = LER
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -80,7 +80,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = ATP
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -88,7 +88,7 @@ dependency = {
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = GHE
 	start_date = 1380.1.1
 	end_date = 1500.1.1
@@ -96,14 +96,14 @@ dependency = {
 
 # dependency = {
 	# subject_type = "dutch_confederation"
-	# first = DHG
+	# first = HOL
 	# second = BGG
 	# start_date = 1380.1.1
 # }
 
 dependency = {
 	subject_type = "dutch_confederation"
-	first = DHG
+	first = HOL
 	second = DKK
 	start_date = 1380.1.1
 	end_date = 1500.1.1
