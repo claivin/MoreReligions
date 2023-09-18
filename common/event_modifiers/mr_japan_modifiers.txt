@@ -3,7 +3,7 @@ advisor_cost_JAP_1 = {
 	advisor_pool = 1 
 }
 ticking_SD_1 = {
-	monthly_shugo_dominance_mechanic_power = -0.5
+	monthly_shugo_dominance_mechanic_power = -0.3
 	reform_progress_growth = 0.35
 	legitimacy = 1
 }

@@ -23,19 +23,21 @@ mr_jap_missions_second = {
 		required_missions = { mr_jap_SD_1 }
 		provinces_to_highlight = { }
 		trigger = {
-			num_of_estate_privileges = {
-				estate = estate_nobles
-				value = 5
-			}
-			estate_influence = {
-				estate = estate_nobles
-				influence = 70
+			OR = {
+				num_of_estate_privileges = {
+					estate = estate_nobles
+					value = 4
+				}
+				estate_influence = {
+					estate = estate_nobles
+					influence = 60
+				}
 			}
 		}
 		effect = {
 			add_country_modifier = {
 				name = ticking_SD_3
-				duration = -1
+				duration = 3650
 			}
 		}
 	}
@@ -139,6 +141,35 @@ mr_jap_missions_third = {
 		effect = {
 			add_prestige = 10
 			remove_estate_privilege = estate_shugo_japan
+			custom_tooltip = low_shugo_annex_TT
+			tooltip = {
+				inherit = NTT
+				inherit = SMZ
+				inherit = HSK
+				inherit = HTK
+				inherit = AKT
+			}
+			hidden_effect = {
+				if ={
+					limit = {
+						and = {
+							NOT = {
+								has_government_power = {
+									mechanic_type = shugo_dominance_mechanic
+									power_type = shugo_dominance_mechanic_power
+									value = 10
+								}
+							}
+							NOT = { has_disaster = hotoku_war }
+						}
+					}
+					inherit = NTT
+					inherit = SMZ
+					inherit = HSK
+					inherit = HTK
+					inherit = AKT
+				}
+			}
 		}
 	}
 					
@@ -157,13 +188,12 @@ mr_jap_missions_fourth = {
 		required_missions = { mr_jap_SD_1 }
 		provinces_to_highlight = { }
 		trigger = {
-			army_size = 35
-			army_professionalism = 0.05
+			army_size = 30
 		}
 		effect = {
 			add_country_modifier = {
 				name = ticking_SD_2
-				duration = -1
+				duration = 3650
 			}
 		}
 	}
@@ -173,8 +203,8 @@ mr_jap_missions_fourth = {
 		required_missions = { mr_jap_SD_3 }
 		provinces_to_highlight = { }
 		trigger = {
-			army_professionalism = 0.1
-			manpower_percentage = 0.75
+			army_professionalism = 0.05
+			manpower_percentage = 0.5
 		}
 		effect = {
 			add_country_modifier = {
