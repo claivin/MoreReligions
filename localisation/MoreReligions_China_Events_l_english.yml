@@ -64,5 +64,9 @@
  mrSongEvents.1.a:0 "Their earlier service was misguided. Leave them to rule Sichuan in our name."
  mrSongEvents.1.b:0 "We shall incorporate them into our administration, but bring them to [Root.Capital.GetCapitalName]."
  mrSongEvents.1.c:0 "We cannot forgive traitors so easily."
+ mrSongEvents.2.t:0 "The Fall of Kunming"
+ mrSongEvents.2.d:0 "After a lengthy siege in abhorrent conditions, our armies have captured the greatest city of the southwest, Kunming, and eradicated the last holdouts of Yuan power in the region.\n\nThe self-styled "Emperors of Liang" are now no more, and a persistent threat to our flank has been permanently removed. The campaign was costly, with countless soldiers succumbing to the deadly diseases of the region or the violent resistance of the Yunnanese regime.\n\nThe difficulty of the campaign and the status of our enemies as hated Mongol remnants has led to many within our forces venting their frustrations through wanton looting and pillaging of captured settlements, and the city of Kunming is no exception. The riches of the city would certainly not go amiss in our coffers, and our forces would surely appreciate being allowed to take a cut for themselves. However, there is also something to be said for restraining their impulses and endearing ourselves to our new subjects."
+ mrSongEvents.2.a:0 "Let them have their fun, they have earned it."
+ mrSongEvents.2.b:0 "The people of Yunnan are our subjects and shall be protected."
  
  

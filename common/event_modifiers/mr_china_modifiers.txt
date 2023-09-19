@@ -76,3 +76,33 @@ gsc_rebuilding_china = {
 	build_time = -0.10
 	development_cost = -0.10
 }
+
+gsc_piracy_curbed = {
+	local_monthly_devastation = -0.50
+}
+
+gsc_removed_pirates = {
+	diplomatic_reputation = 1
+	diplomatic_annexation_cost = -0.15
+}
+
+gsc_expanded_tusi = {
+	local_manpower_modifier = 1
+	local_manpower = 0.75
+	local_development_cost = -0.20
+}
+
+gsc_tamed_mongols = {
+	reduced_liberty_desire = 10
+	diplomatic_reputation = 1
+}
+
+gsc_destroyed_yuan_legacy = {
+	military_tactics = 0.1
+	global_unrest = -1
+}
+
+gsc_changsha_rice_market = {
+	trade_goods_size = 2
+	province_trade_power_value = 10
+}

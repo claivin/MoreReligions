@@ -92,3 +92,10 @@
  gsc_humiliated_ghc_no_tt:0 "\n£no£ Completing this mission after §Yhumiliating§! @GHC §YHan§! will also grant §G100§! of each monarch power."
  gsc_sent_gift_tt:0 "Has §G+25§! relations from a §Ygift§!"
  gsc_sinify_miao_zhuang_tt:0 "\n§GWe will bring the §YMiao§! and §YZhuang§! into the Chinese cultural sphere.§!\n"
+ gsc_remove_pirate_dev_tt:0 "Any provinces belonging to §Yourselves§!, @ZHJ §YZhanjiang§!, or @CTO §YGuangzhou§! which have suffered from pirate raids will lose §G0.50§! monthly devastation for 15 years."
+ gsc_sack_kunming_tt:0 "With the Yuan remnants ousted from Yunnan, we must make the decision whether to allow our victorious soldiers free reign in Kunming."
+ gsc_expand_tusi_tt:0 "§YThree§! random provinces fulfilling the requirements will receive §Gthe following modifier§!:\n"
+ gsc_mongol_trib_reward_tt:0 "\nIf we complete this mission by §Ybringing the Mongols to heel§!, we will gain the following modifier:\n"
+ gsc_mongol_destruction_reward_tt:0 "\nAlternatively, if we complete the mission by §Ywiping out all Yuan remnants§!, we will instead gain:\n"
+ gsc_additional_mandate_reward_tt:0 "\nEither way, we will also gain an additional §G15 Mandate§! if we are currently the §YEmperor of China§!."
+ 
