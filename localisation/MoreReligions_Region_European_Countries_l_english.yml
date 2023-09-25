@@ -188,13 +188,13 @@
  HLM_ADJ: "Haarlem"
  HLM_ADJ2: "Haarlem"
  
- DHG: "Amsterdam"
- DHG_ADJ: "Amsterdammer"
- DHG_ADJ2: "Amsterdammer"
+ DHG: "Den Haag"
+ DHG_ADJ: "Hagenaar"
+ DHG_ADJ2: "Hagenaar"
  
- VLG: "Zeeland"
- VLG_ADJ: "Zeelander"
- VLG_ADJ2: "Zeelander"
+ VLG: "Vlissingen"
+ VLG_ADJ: "Vlissinger"
+ VLG_ADJ2: "Vlissinger"
  
  ATP: "Antwerp"
  ATP_ADJ: "Antwerper"
@@ -473,10 +473,6 @@
  ELB: "Elba"
  ELB_ADJ: "Elban"
  ELB_ADJ2: "Elban"
-
- BFZ: "Bunifaziu"
- BFZ_ADJ: "Bunifazian"
- BFZ_ADJ2: "Bunifazian"
  
  DRK: "Drutsk"
  DRK_ADJ: "Drutski"
@@ -557,3 +553,7 @@
  BLT: "Balta"
  BLT_ADJ: "Baltic"
  BLT_ADJ2: "Baltic"
+ 
+ IBF: "Iberia"
+ IBF_ADJ: "Iberian"
+ IBF_ADJ2: "Iberian"

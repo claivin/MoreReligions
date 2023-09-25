@@ -16,6 +16,11 @@ country_event = {
 			male = yes
 			culture = basque
 		}
+		NAV = {
+			country_event = {
+				id = navarra_events.2
+			}
+		}	
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -34,35 +39,37 @@ country_event = {
 	
 	option = {
 		name = "navarra_events.1.2"
-		country_event = {
-			id = navarra_events.2 
-		}
+		NAV = {
+			country_event = {
+			id = navarra_events.3
+			}
+		}	
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 55
 				has_heir = yes
 			}
-		}
+			modifier = {
+				factor = 100
+				POR = {
+					is_rival = NAV
+				}
+			}
+		}	
 	}
 }
 country_event = {
 	id = navarra_events.2
 	title = navarra_events.2.t
 	desc = navarra_events.2.d
-	picture = CONQUEST_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = "navarra_events.2.1"
-		NAV = {
-			add_casus_belli = {
-				target = POR
-				type = cb_restore_personal_union
-				months = 240
-			}
-		}
+		add_prestige = 10
 	}
 }
 country_event = {
@@ -76,30 +83,11 @@ country_event = {
 	option = {
 		name = "navarra_events.3.1"
 		NAV = {
-			create_union = POR
-		}
-		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 50
-				trust = {
-					who = NAV
-						value = 100
-				}
-			}
-		}
-	}
-	option = {
-		name = "navarra_events.3.2"
-		NAV = {
 			add_casus_belli = {
 				target = POR
 				type = cb_restore_personal_union
 				months = 240
 			}
-		}
-		ai_chance = {
-			factor = 50
 		}
 	}
 }
@@ -107,14 +95,88 @@ country_event = {
 	id = navarra_events.4
 	title = navarra_events.4.t
 	desc = navarra_events.4.d
-	picture = POPE_PREACHING_eventPicture
+	picture = CONQUEST_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
 		name = "navarra_events.4.1"
 		NAV = {
-			create_vassal = GAL
+			country_event = {
+				id = navarra_events.5
+			}
+		}	
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 50
+				trust = {
+					who = NAV
+						value = 70
+				}
+			}
+		}
+	}
+	option = {
+		name = "navarra_events.4.2"
+		NAV = {
+			country_event = {
+				id = navarra_events.6
+			}
+		}	
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+country_event = {
+	id = navarra_events.5
+	title = navarra_events.5.t
+	desc = navarra_events.5.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.5.1"
+		NAV = {
+			create_union = POR
+		}
+	}
+}	
+country_event = {
+	id = navarra_events.6
+	title = navarra_events.6.t
+	desc = navarra_events.6.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.6.1"
+		NAV = {
+			add_casus_belli = {
+			target = POR
+			type = cb_restore_personal_union
+			months = 240
+			}
+		}
+	}
+}	
+country_event = {
+	id = navarra_events.7
+	title = navarra_events.7.t
+	desc = navarra_events.7.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.7.1"
+		NAV = {
+			country_event = {
+				id = navarra_events.8
+			}
 		}
 		ai_chance = {
 			factor = 50
@@ -136,12 +198,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = "navarra_events.4.2"
+		name = "navarra_events.7.2"
 		NAV = {
-			add_casus_belli = {
-				target = GAL
-				type = cb_vassalize_mission
-				months = 240
+			country_event = {
+				id = navarra_events.9
 			}
 		}
 		ai_chance = {
@@ -156,19 +216,54 @@ country_event = {
 	}
 }
 country_event = {
-	id = navarra_events.5
-	title = navarra_events.5.t
-	desc = navarra_events.5.d
+	id = navarra_events.8
+	title = navarra_events.8.t
+	desc = navarra_events.8.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.8.1"
+		NAV = {
+			create_union = GAL
+		}
+	}
+}
+country_event = {
+	id = navarra_events.9
+	title = navarra_events.9.t
+	desc = navarra_events.9.d
+	picture = POPE_PREACHING_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.9.1"
+		NAV = {
+			add_casus_belli = {
+				target = GAL
+				type = cb_vassalize_mission
+				months = 240
+			}
+		}
+	}
+}
+country_event = {
+	id = navarra_events.10
+	title = navarra_events.10.t
+	desc = navarra_events.10.d
 	picture = RELIGIOUS_WARS_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "navarra_events.5.1"
+		name = "navarra_events.10.1"
 		NAV = {
-			create_union = CAS
-			create_union = LON
+			country_event = {
+				id = navarra_events.11
 			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -190,17 +285,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = "navarra_events.5.2"
+		name = "navarra_events.10.2"
 		NAV = {
-			add_casus_belli = {
-				target = CAS
-				type = cb_restore_personal_union
-				months = 240
-			}
-			add_casus_belli = {
-				target = LON
-				type = cb_restore_personal_union
-				months = 240
+			country_event = {
+				id = navarra_events.12
 			}
 		}
 		ai_chance = {
@@ -218,17 +306,59 @@ country_event = {
 	}
 }
 country_event = {
-	id = navarra_events.6
-	title = navarra_events.6.t
-	desc = navarra_events.6.d
+	id = navarra_events.11
+	title = navarra_events.11.t
+	desc = navarra_events.11.d
+	picture = RELIGIOUS_WARS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.11.1"
+		NAV = {
+			create_union = CAS
+			create_union = LON
+		}
+	}
+}
+country_event = {
+	id = navarra_events.12
+	title = navarra_events.12.t
+	desc = navarra_events.12.d
+	picture = RELIGIOUS_WARS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.12.1"
+		NAV = {
+			add_casus_belli = {
+				target = CAS
+				type = cb_restore_personal_union
+				months = 240
+			}
+			add_casus_belli = {
+				target = LON
+				type = cb_restore_personal_union
+				months = 240
+			}
+		}
+	}
+}
+country_event = {
+	id = navarra_events.13
+	title = navarra_events.13.t
+	desc = navarra_events.13.d
 	picture = BATTLE_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "navarra_events.6.1"
+		name = "navarra_events.13.1"
 		NAV = {
-			create_vassal = CBD
+			country_event = {
+				id = navarra_events.14
+			}
 		}
 		ai_chance = {
 			factor = 30
@@ -250,12 +380,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = "navarra_events.6.2"
+		name = "navarra_events.13.2"
 		NAV = {
-			add_casus_belli = {
-				target = CBD
-				type = cb_vassalize_mission
-				months = 240
+			country_event = {
+				id = navarra_events.15
 			}
 		}
 		ai_chance = {
@@ -270,9 +398,43 @@ country_event = {
 	}
 }
 country_event = {
-	id = navarra_events.7
-	title = navarra_events.7.t
-	desc = navarra_events.7.d
+	id = navarra_events.14
+	title = navarra_events.14.t
+	desc = navarra_events.14.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.14.1"
+		NAV = {
+			create_union = CBD
+		}
+	}
+}
+country_event = {
+	id = navarra_events.15
+	title = navarra_events.15.t
+	desc = navarra_events.15.d
+	picture = BATTLE_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "navarra_events.15.1"
+		NAV = {
+			add_casus_belli = {
+				target = CBD
+				type = cb_vassalize_mission
+				months = 240
+			}
+		}
+	}
+}
+country_event = {
+	id = navarra_events.16
+	title = navarra_events.16.t
+	desc = navarra_events.16.d
 	picture = COURT_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -282,24 +444,42 @@ country_event = {
 	}
 	
 	option = {
-		name = "navarra_events.7.1"
+		name = "navarra_events.16.1"
 		add_country_modifier = {
 			name = iberian_federation
 			duration = -1
 		}
 	}
-}
+	option = {
+		name = "navarra_events.16.2"
+		change_tag = IBF
+		inherit = POR
+		inherit = GAL
+		inherit = CMS
+		inherit = ARA
+		inherit = CAT
+		inherit = CBD
+		inherit = ADR
+		inherit = CAS
+		inherit = LON
+		inherit = BRN
+		inherit = BJZ
+		inherit = SEV
+		inherit = VAL
+		inherit = MJO
+	}
+}	
 country_event = {
-	id = navarra_events.8
-	title = navarra_events.8.t
-	desc = navarra_events.8.d
+	id = navarra_events.17
+	title = navarra_events.17.t
+	desc = navarra_events.17.d
 	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	major = yes
 	
 	option = {
-		name = "navarra_events.8.1"
+		name = "navarra_events.17.1"
 		change_price = {
 			trade_goods = whales
 			key = golden_age_of_whaling
@@ -309,59 +489,26 @@ country_event = {
 	}
 }
 country_event = {
-	id = navarra_events.9
-	title = navarra_events.9.t
-	desc = navarra_events.9.t
-	picture = COLONIZATION_eventPicture
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = "navarra_events.9.1"
-		489 = {
-			add_core = CMS
-			cede_province = CMS
-		}
-		4980 = {
-			remove_core = CMS
-			cede_province = NAV
-		}
-		vassalize = CMS
-	}
-}
-country_event = {
-	id = navarra_events.10
-	title = navarra_events.10.t
-	desc = navarra_events.10.d
+	id = navarra_events.18
+	title = navarra_events.18.t
+	desc = navarra_events.18.d
 	picture = COMET_SIGHTED_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {
-		name = "navarra_events.10.1"
+		name = "navarra_events.18.1"
 		change_innovativeness = 30
-		add_country_modifier = {
-			name = lux_in_tenebris
-			duration = -1
-		}
+		
 	}
 	
 	option = {
-		name = "navarra_events.10.2"
-		add_country_modifier = {
-			name = embalmed_kraken
-			duration = -1
-		}
+		name = "navarra_events.18.2"
+		add_prestige = 100
 	}
 	
 	option = {
-		name = "navarra_events.10.3"
-		add_manpower = 30
-		add_sailors = 30000
-	}
-	
-	option = {
-		name = "navarra_events.10.3"
+		name = "navarra_events.18.3"
 		add_treasury = 10000
 	}
 }	

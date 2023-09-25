@@ -404,7 +404,7 @@ generic_missions_5 = { #extra line
 	slot = 5
 	generic = yes
 	ai = no
-	potential = { always = yes }
+	potential = { always = yes not = {tag = NAV} }
 	
 	g_mission_elite_regiments = {
 		icon = mission_build_up_to_force_limit

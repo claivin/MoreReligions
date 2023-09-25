@@ -59,8 +59,8 @@ MTZ = "countries/Metz.txt"
 
 #Low Countries
 HLM = "countries/Haarlem.txt"
-DHG = "countries/Amsterdam.txt"
-VLG = "countries/Zeeland.txt"
+DHG = "countries/DenHaag.txt"
+VLG = "countries/Vlissingen.txt"
 ATP = "countries/Antwerp.txt"
 GHE = "countries/Ghent.txt"
 DKK = "countries/Dunkirk.txt"
@@ -109,6 +109,7 @@ SEV = "countries/Sevilla.txt"
 BJZ = "countries/Badajoz.txt"
 ADR = "countries/Andorra.txt"
 CMS = "countries/CoutoMisto.txt"
+IBF = "countries/IberianFed.txt"
 
 
 #Eastern Europe
@@ -320,8 +321,6 @@ CRM = "countries/Crema.txt"
 CMN = "countries/Cremona.txt"
 MSS = "countries/Massa.txt"
 ELB = "countries/Elba.txt"
-BFZ = "countries/Bunifaziu.txt"
-BAS = "countries/Bastia.txt"
 
 #Middle East
 SRI = "countries/Sari.txt"
