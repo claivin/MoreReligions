@@ -1,0 +1,153 @@
+##############################
+# Iceland Flavor Events                 
+# Written by Prince De
+##############################
+
+namespace = MR_iceland_flavor
+normal_or_historical_nations = yes
+
+
+# Chose between Commonwealth missions and Church missions for Iceland
+country_event = {
+	id = MR_iceland_flavor.1
+	title = MR_iceland_flavor.1.t
+	desc = MR_iceland_flavor.desc
+	picture = LORD_OF_GOTLAND_eventPicture
+
+	trigger = {
+		tag = ICE
+		NOT = { has_country_flag = ice_commonwealth_missions }
+		NOT = { has_country_flag = ice_church_missions }
+		NOT = { has_country_flag = ice_subject_missions }
+		NOT = { has_country_flag = ice_had_missions_event }
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = ice_had_missions_event }
+	}
+	is_triggered_only = yes
+	
+	option = {	#Stand against the Church!
+		name = MR_iceland_flavor.1.a
+		set_country_flag = ice_commonwealth_missions
+		clr_country_flag = ice_church_missions
+		if = {
+			limit = {
+				tag = ICE
+			}
+			custom_tooltip = MR_iceland_flavor.1.a.tt
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = {
+				NOT = { government = republic }
+			}
+			change_government = republic
+			add_republican_tradition = 100
+		}
+		else = {
+			add_stability_or_adm_power = yes
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	#They are too powerful, we must surrender!
+		name = MR_iceland_flavor.1.b
+		clr_country_flag = ice_commonwealth_missions
+		if = {
+			limit = {
+				tag = ICE
+			}
+			custom_tooltip = MR_iceland_flavor.b.tt
+			country_event = {
+				id = MR_iceland_flavor.2
+				days = 5
+			}
+		}
+		if = {
+			limit = {
+				NOT = { government = theocracy }
+			}
+			change_government = theocracy
+			add_government_reform = leading_clergy_reform
+			add_devotion = 100
+		}
+		else = {
+			add_stability_or_adm_power = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Choose between Clergy missions and Submitting to a PU 
+country_event = {
+	id = MR_iceland_flavor.2
+	title = MR_iceland_flavor.2.t
+	desc = MR_iceland_flavor.2.desc
+	picture = SMUGGLERS_eventPicture
+	is_triggered_only = yes
+	
+	option = {	#The Bishop takes power 
+		name = MR_iceland_flavor.2.a
+		set_country_flag = ice_church_missions
+		swap_non_generic_missions = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	
+	option = {	#The King of Norway is the King of Iceland
+		name = MR_iceland_flavor.2.b
+		set_country_flag = ice_subject_missions
+		swap_non_generic_missions = yes
+		if = {
+			limit = {
+				NOT = { government = monarchy }
+			}
+			change_government = monarchy
+			add_legitimacy = 100
+		}
+		NOR = {
+		country_event = { 
+        id = MR_iceland_flavor.3
+        days = 3
+           }
+        }
+		ai_chance = {
+			factor = 9
+		}
+	}
+}
+
+#Norway gets the PU 
+country_event = {
+	id = MR_iceland_flavor.3
+	title = MR_iceland_flavor.3.t
+	desc = MR_iceland_flavor.3.desc
+	picture = SMUGGLERS_eventPicture
+	is_triggered_only = yes
+	
+	option = {	#The King of Iceland 
+		name = MR_iceland_flavor.3.a
+         NOR = {
+		   create_union = ICE
+           }
+
+		ai_chance = {
+			factor = 10
+		}		   
+	}
+	
+	option = {	#Iceland? Not for me  
+		name = MR_iceland_flavor.3.b
+        add_stability = 1  
+		
+		ai_chance = {
+			factor = 0
+		}		
+	}	
+}
