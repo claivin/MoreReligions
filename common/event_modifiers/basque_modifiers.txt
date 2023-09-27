@@ -47,6 +47,7 @@ economic_capital_of_iberia = {
 	expand_infrastructure_cost_modifier = -0.5
 }
 moor_sailed_whalers = {
+	allowed_caravel_fraction = 0.3
 	has_caravel = yes
 }
 whaler_port = {
