@@ -63,7 +63,7 @@ nav_missions_1 = {
 						value = 70
 						}
 					AND = {
-						NAV = {
+						ROOT = {
 							legitimacy = 100
 							army_strength = {
 									who = POR
@@ -137,7 +137,6 @@ nav_missions_1 = {
 							who = ROOT
 							value = 120
 					}
-					dynasty = NAV
 						trust = {
 						who = NAV
 						value = 70
@@ -148,7 +147,6 @@ nav_missions_1 = {
 							who = ROOT
 							value = 120
 					}
-					dynasty = NAV
 						trust = {
 						who = NAV
 						value = 70
@@ -266,7 +264,7 @@ nav_missions_1 = {
 		position = 8
 		
 		trigger = {
-			NAV = {
+			ROOT = {
 				is_emperor = yes
 			}
 		}
@@ -284,12 +282,12 @@ nav_missions_1 = {
 			province_id = 980
 		}
 		trigger = {
-			NAV = {
+			ROOT = {
 			has_discovered = 980
 			}
 		}	
 		effect = {
-			NAV = {
+			ROOT = {
 				add_country_modifier = {
 					name = sailor_stories
 					duration = 3650
@@ -325,7 +323,7 @@ nav_missions_1 = {
 			980 = {
 				change_trade_goods = whales
 			}
-			NAV = {
+			ROOT = {
 				country_event = {
 				id = navarra_events.17
 				}
@@ -422,7 +420,7 @@ nav_missions_1 = {
 			}
 		}
 		effect = {
-			NAV = {
+			ROOT = {
 				add_permanent_claim = 1988
 			}
 			add_country_modifier = {
@@ -441,7 +439,7 @@ nav_missions_1 = {
 			province_id = 1988
 		}
 		trigger = {
-			NAV = {
+			ROOT = {
 				owns = 1988
 			}
 		}
@@ -454,7 +452,7 @@ nav_missions_1 = {
 				}
 			}
 			northern_polynesia_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -504,7 +502,7 @@ nav_missions_1 = {
 				}
 			}
 			alaska_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -553,7 +551,7 @@ nav_missions_1 = {
 					duration = -1
 				}
 			}
-			NAV = {
+			ROOT = {
 				add_permanent_claim = 1243
 				add_permanent_claim = 1989
 			}
@@ -572,7 +570,7 @@ nav_missions_1 = {
 			}
 		}	
 		trigger = {
-			NAV = {
+			ROOT = {
 				owns = 1243
 				owns = 1989
 			}
@@ -666,8 +664,8 @@ nav_missions_2 = {
 			}
 		}	
 		effect = {
-			toledo_area = {
-				add_core = ARA
+			alentejo_area = {
+				add_core = POR
 			}
 		}
 	}
@@ -696,9 +694,7 @@ nav_missions_2 = {
 			}
 		}
 		effect = {
-			alentejo_area = {
-				add_core = POR
-			}
+			add_papal_influence = 50
 		}
 	}
 	
@@ -811,7 +807,7 @@ nav_missions_2 = {
 			province_id = 1293
 		}
 		trigger = {
-			NAV = {
+			ROOT = {
 			1293 = { #sevilla
 				trade_share = {
 					country = NAV
@@ -865,10 +861,10 @@ nav_missions_2 = {
 		}
 		trigger = {
 			1500 = { 	#chesapeake_bay
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 			1516 = { 	#carribean_trade
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
@@ -889,7 +885,7 @@ nav_missions_2 = {
 		}
 		trigger = {
 			1466 = { 	#ivory_coast
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
@@ -917,19 +913,19 @@ nav_missions_2 = {
 		}	
 		trigger = {
 			1466 = { 	#ivory_coast
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 			1500 = { 	#chesapeake_bay
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 			1516 = { 	#carribean_trade
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 			1460 = {	#cape_of_good_hope
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 			1490 = {	#st_lawrence
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
@@ -1042,7 +1038,7 @@ nav_missions_3 = {
 		}
 		effect = {
 			valencia_area = {
-					add_permanent_claim = ARA
+				add_core = ARA
 			}
 			remove_estate_privilege = estate_nobles_diet_right
 			set_estate_privilege = estate_nobles_diet_right_aragon
@@ -1099,13 +1095,13 @@ nav_missions_3 = {
 			remove_estate_privilege = estate_church_expand_the_theology
 			set_estate_privilege = estate_church_waldensian_studies
 			pyrenees_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			guyenne_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			languedoc_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1122,7 +1118,7 @@ nav_missions_3 = {
 			}
 		}	
 		trigger = {
-			NAV = {
+			ROOT = {
 				owns = 4695
 				owns = 175
 			}
@@ -1151,7 +1147,7 @@ nav_missions_3 = {
 		}
 		trigger = {
 			OR = {
-				NAV = {
+				ROOT = {
 					owns = 4970
 				}
 				ADR = {
@@ -1183,7 +1179,7 @@ nav_missions_3 = {
 			}
 		}
 		effect = {
-			NAV = {
+			ROOT = {
 				country_event = {
 				id = navarra_events.16
 				}
@@ -1307,8 +1303,8 @@ nav_missions_3 = {
 		required_missions = {nav_pampas_cornucopia}
 		position = 16
 		
-		triger = {
-			NAV = {
+		trigger = {
+			ROOT = {
 			colony = 5
 			}
 		}	
@@ -1352,7 +1348,7 @@ nav_missions_3 = {
 			has_discovered = 1674
 		}
 		effect = {
-			NAV = {
+			ROOT = {
 				country_event = {
 				id = navarra_events.18
 				}
@@ -1396,7 +1392,6 @@ nav_missions_4 = {
 		
 		trigger = {
 			num_of_marines = 1
-			quartermaster = 1
 			navy_size_percentage = 0.7
 		}
 		effect = {
@@ -1583,7 +1578,7 @@ nav_missions_5 = {
 		}
 		effect = {
 			209 = {
-				center_of_trade = 2
+				center_of_trade = 1
 			}
 		}	
 	}
@@ -1620,7 +1615,7 @@ nav_missions_5 = {
 		}
 		trigger = {
 			1276 = { 	#bordeaux
-				is_strongest_trade_power = NAV
+				is_strongest_trade_power = ROOT
 			}
 		}
 		effect = {
@@ -1643,7 +1638,7 @@ nav_missions_5 = {
 			has_discovered = 367
 		}
 		effect = {
-			NAV = {
+			ROOT = {
 				add_permanent_claim = 367
 			}
 			add_country_modifier = {
@@ -1666,19 +1661,19 @@ nav_missions_5 = {
 		}
 		effect = {
 			greenland_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			macaronesia_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			south_atlantic_islands_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			newfoundland_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			greater_antilles_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			367 = {
 				change_trade_goods = whales
@@ -1761,7 +1756,7 @@ nav_missions_5 = {
 		}	
 		effect = {
 			cape_of_good_hope_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}	
 			1097 = {
 				change_trade_goods = whales
@@ -1845,10 +1840,10 @@ nav_missions_5 = {
 		}
 		effect = {
 			mascarenes_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			indian_ocean_islands_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 			1177 = {
 				change_trade_goods = whales
@@ -1960,7 +1955,7 @@ nav_missions_5 = {
 				}
 			}
 			taiwan_area = {
-				add_permanent_claim = NAV
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1982,21 +1977,21 @@ nav_missions_5 = {
 		}
 		effect = {
 			738 = {
-				change_trage_goods = whales
+				change_trade_goods = whales
 				add_permanent_province_modifier = {
 					name = faraoese_cliffs
 					duration = -1
 				}
 			}
 			2155 = {
-				change_trage_goods = whales
+				change_trade_goods = whales
 				add_permanent_province_modifier = {
 					name = faraoese_cliffs
 					duration = -1
 				}
 			}
 			2154 = {
-				change_trage_goods = whales
+				change_trade_goods = whales
 				add_permanent_province_modifier = {
 					name = faraoese_cliffs
 					duration = -1

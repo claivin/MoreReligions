@@ -14,7 +14,7 @@ merc_andorra_borderguard = {
 		is_allowed_to_recruit_mercenaries = yes
 	}
 	counts_towards_force_limit = no
-	min_size = 10
-	max_size = 24
-	manpower_pool = 50
+	min_size = 5
+	max_size = 12
+	manpower_pool = 10
 	

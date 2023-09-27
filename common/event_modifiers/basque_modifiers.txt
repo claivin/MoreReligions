@@ -29,14 +29,6 @@ iberian_federation = {
 iberian_parliament = {
 	num_of_parliament_issues = 1
 }
-boiling_the_blubber = {
-	prestige_decay = -0.05
-}
-power_to_monarch = {
-	monarch_admin_power = 1
-	monarch_diplomatic_power = 1
-	monarch_military_power = 1
-}
 naval_funds = {
 	naval_maintenance_modifier = -0.1
 }
@@ -48,7 +40,7 @@ veteran_whalers = {	#Permanent
 	is_marine_modifier = yes
 }
 integrated_catalonian_fleet = {
-	merchants = 1
+	ship_power_propagation = 0.1
 }
 economic_capital_of_iberia = {
 	local_development_cost = -0.15
@@ -149,13 +141,6 @@ onboard_processing = {
 a_whale_oiled_machine = {
 	all_power_cost = -0.03
 }
-lux_in_tenebris = {
-	technology_cost = -0.1
-}
-embalmed_kraken = {
-	prestige = 1.0
-	monthly_splendor = 1
-}
 native_fur_trade = {
 	trade_efficiency = 0.2
 	global_colonial_growth = 10
@@ -164,7 +149,7 @@ state_travelers = {
 	colonists = 1
 }
 cash_crops = {
-	production_efficiency = 0.1
+	global_trade_goods_size = 0.4
 }
 colonial_breadbasket = {
 	manpower_recovery_speed = 0.30
