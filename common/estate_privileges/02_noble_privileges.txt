@@ -3461,7 +3461,7 @@ estate_nobles_expedition_rights = {
 }
 estate_nobles_diet_right_aragon = {
 	icon = privilege_government
-	loyalty = 0.0
+	loyalty = 0.5
 	influence = 0.05
 	max_absolutism = -5
 	can_select = {
@@ -3471,7 +3471,7 @@ estate_nobles_diet_right_aragon = {
 		tag = NAV
 	}
 	benefits = {
-		heir_chance = 0.5
+		diplomatic_upkeep = 5
 	}
 	on_granted = {
 		enable_estate_action = {

@@ -728,7 +728,6 @@ nav_missions_2 = {
 		position = 7
 		
 		trigger = {
-		has_estate_privilege = estate_burghers_enforced_interfaith_dialogue
 			OR = {
 				CBD = {
 					is_subject = yes
@@ -744,7 +743,6 @@ nav_missions_2 = {
 			
 		}	
 		effect = {
-			remove_estate_privilege = estate_burghers_enforced_interfaith_dialogue
 			set_estate_privilege = estate_burghers_cordoban_scholars
 		}
 	}
@@ -777,21 +775,57 @@ nav_missions_2 = {
 				name = moor_sailed_whalers
 				duration = -1
 			}
-			209 = {
+			4548 = {
 				add_province_modifier = {
-					name = whaler_port
+					name = andalusian_docks
 					duration = -1
 				}
 			}
-			4985 = {
+			224 = {
 				add_province_modifier = {
-					name = whaler_port
+					name = andalusian_docks
 					duration = -1
 				}
 			}
-			173 = {
+			1749 = {
 				add_province_modifier = {
-					name = whaler_port
+					name = andalusian_docks
+					duration = -1
+				}
+			}
+			226 = {
+				add_province_modifier = {
+					name = andalusian_docks
+					duration = -1
+				}
+			}
+			4546 = {
+				add_province_modifier = {
+					name = andalusian_docks
+					duration = -1
+				}
+			}
+			4988 = {
+				add_province_modifier = {
+					name = andalusian_docks
+					duration = -1
+				}
+			}
+			223 = {
+				add_province_modifier = {
+					name = andalusian_docks
+					duration = -1
+				}
+			}
+			222 = {
+				add_province_modifier = {
+					name = andalusian_docks
+					duration = -1
+				}
+			}
+			221 = {
+				add_province_modifier = {
+					name = andalusian_docks
 					duration = -1
 				}
 			}
@@ -846,7 +880,7 @@ nav_missions_2 = {
 		effect = {
 			add_country_modifier = {
 				name = integrated_catalonian_fleet
-				duration = 3650
+				duration = 7200
 			}
 		}
 	}
@@ -884,10 +918,18 @@ nav_missions_2 = {
 			province_id = 1466
 		}
 		trigger = {
-			1466 = { 	#ivory_coast
-				is_strongest_trade_power = ROOT
+			OR = {
+				1466 = { 	#ivory_coast
+					is_strongest_trade_power = ROOT
+				}
+				MAL = {
+					has_opinion = {
+					who = ROOT
+					value = 200
+					}
+				}
 			}
-		}
+		}	
 		effect = {
 			add_mercantilism = 5
 			add_country_modifier = {

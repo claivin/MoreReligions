@@ -31,9 +31,19 @@
  ilk_tolerance_TT: "All Heathen and Heretical provinces will have the Modifier §YTolerance of the Sufi Dervishes§! removed."
  ilk_dervishes_TT: "All Heathen and Heretical provinces:"
  ilk_political_1_title: "Management of the State"
+ estate_church_waldensian_studies: "Counter-Heresy Studies"
+ estate_church_waldensian_studies_desc: "We will fund and establish the creation of counter-heresy seminars for any aspiring Basque clergymen. For in order to properly fight against the dangers and evils of heresy, a missionary must first understand and know what they are fighting against. Know thy enemy."
  
  #Nobility
  estate_nobles_rice_wine: "Siamese Liquor Monopolies"
  estate_nobles_rice_wine_desc: "The Thai kingdoms are fueled by rice production. The rice farmers have their goods taxed and redistributed at their lord's wishes - they will often go towards feeding and growing an army, or donated to members of the sangha. As the world modernizes around us, we must modernize this core tenant of Thai society. we shall redistribute the land that the rice is grown on, and give it to those who can maintain and organize it the best. This meritocratic system shall keep the rice growing efficiently and profits high."  
  estate_nobles_mr_warlord_aristocracy_gsc: "Warlord Aristocracy"
  estate_nobles_mr_warlord_aristocracy_gsc_desc: "The [Root.Monarch.GetTitle] has long relied on the loyalty of powerful warlords in order to maintain [Root.Monarch.GetHerHis] rule. While this does somewhat offset the cost of fielding a large army, it puts a substantial limit on [Root.Monarch.GetHerHis] practical authority and must be addressed if [Root.GetName] is to move beyond its current stagnation."
+ estate_nobles_diet_right_aragon: "Aragonese Low Noble Diplomats"
+ estate_nobles_diet_right_aragon_desc: "By pushing the lower nobles of Aragon into a diplomatic carrer, we will not only have our needs for a greater Diplomatic corp fullfilled, we will also provide the regional nobility with a prestigious carrer beffiting their status, thus reducing their chances of rebellion."
+ 
+ #Burghers
+ estate_burghers_control_over_the_coinage_catalonia: "Catalonian Bureucrats"
+ estate_burghers_control_over_the_coinage_catalonia_desc: "The Catalonian merchants and burghers have proved themselves to be among the best administrators and bureucrats in all of Iberia. As such we will hire and incoporate them into the government and leave the matters of financial control to the savy Catalonian traders. "
+ estate_burghers_cordoban_scholars: "Cordoban Scholars"
+ estate_burghers_cordoban_scholars_desc: "Ever since they first pierced into Iberia, the muslims have been at the forefront of innovation and knowledge. There's plenty of well learned, educated and smart men among the ranks of Andalusia and it would be a waste to not hire these men simply on the basis of religious differences. We will protect and promote these learned moors among our educational elite."

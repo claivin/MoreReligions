@@ -50,7 +50,7 @@ moor_sailed_whalers = {
 	allowed_caravel_fraction = 0.3
 	has_caravel = yes
 }
-whaler_port = {
+andalusian_docks = {
 	local_has_caravel = yes
 }
 deep_sea_fishing = {

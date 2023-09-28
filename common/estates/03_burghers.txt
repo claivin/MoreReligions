@@ -294,7 +294,6 @@ estate_burghers = {
 		estate_burghers_promote_burgher_bookkeeping
 		estate_burghers_cordoban_scholars
 		estate_burghers_control_over_the_coinage_catalonia
-		estate_burghers_polar_experts
 	}
 
 	agendas = {
