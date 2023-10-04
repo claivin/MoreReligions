@@ -743,7 +743,10 @@ nav_missions_2 = {
 			
 		}	
 		effect = {
-			set_estate_privilege = estate_burghers_cordoban_scholars
+			hidden_effect = {
+				set_estate_privilege = estate_burghers_cordoban_scholars
+			}
+			custom_tooltip = cordoban_researcher
 		}
 	}
 	
@@ -775,6 +778,7 @@ nav_missions_2 = {
 				name = moor_sailed_whalers
 				duration = -1
 			}
+			hidden_effect = {
 			4548 = {
 				add_province_modifier = {
 					name = andalusian_docks
@@ -828,6 +832,7 @@ nav_missions_2 = {
 					name = andalusian_docks
 					duration = -1
 				}
+			}
 			}
 		}
 	}
@@ -1082,8 +1087,11 @@ nav_missions_3 = {
 			valencia_area = {
 				add_core = ARA
 			}
-			remove_estate_privilege = estate_nobles_diet_right
-			set_estate_privilege = estate_nobles_diet_right_aragon
+			custom_tooltip = aragon_counts
+			hidden_effect = {
+				remove_estate_privilege = estate_nobles_diet_right
+				set_estate_privilege = estate_nobles_diet_right_aragon
+			}	
 		}
 	}
 	
@@ -1108,8 +1116,11 @@ nav_missions_3 = {
 			baleares_area = {
 				add_permanent_claim = CAT
 			}
-			remove_estate_privilege = estate_burghers_control_over_the_coinage
-			set_estate_privilege = estate_burghers_control_over_the_coinage_catalonia
+			custom_tooltip = catalonia_merchant
+			hidden_effect = {
+				remove_estate_privilege = estate_burghers_control_over_the_coinage
+				set_estate_privilege = estate_burghers_control_over_the_coinage_catalonia
+			}	
 		}
 	}
 	
@@ -1134,8 +1145,10 @@ nav_missions_3 = {
 			}
 		}
 		effect = {
-			remove_estate_privilege = estate_church_expand_the_theology
-			set_estate_privilege = estate_church_waldensian_studies
+			hidden_effect = {
+				remove_estate_privilege = estate_church_expand_the_theology
+				set_estate_privilege = estate_church_waldensian_studies
+			}	
 			pyrenees_area = {
 				add_permanent_claim = ROOT
 			}
@@ -1145,6 +1158,7 @@ nav_missions_3 = {
 			languedoc_area = {
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = bearn_clergy
 		}
 	}
 	

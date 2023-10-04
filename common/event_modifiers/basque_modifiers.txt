@@ -14,7 +14,7 @@ erriberiko_errege_jauregia = {
 	local_fort_maintenance_modifier = -0.1
 }
 dream_of_iberia = {
-	monthly_favor_modifier = 0.1
+	monthly_favor_modifier = 0.2
 }
 misto_sharpshooters = {
 	allow_mercenary_drill = yes
@@ -65,9 +65,6 @@ whalers_into_marines = {
 chasing_the_whale = {
 	range = 0.1
 }
-icebreaking_methods = {
-	range = 0.1
-}
 faraoese_cliffs = {
 	hostile_fleet_attrition = 5
 }
@@ -92,18 +89,8 @@ basque_slave_trade = {
 cape_shipyard = {
 	ship_recruit_speed = -0.25
 }
-polar_experts = {
-	local_development_cost = -0.5
-}
 naval_pioneers = {
 	navy_tradition = 1
-}
-subverting_the_colonies = {
-	reduced_liberty_desire_on_other_continent = 10
-}
-fix_broken_promisses = {
-	max_revolutionary_zeal = 20
-	yearly_revolutionary_zeal = 1.0
 }
 vineboom = {
 	local_production_efficiency = 0.1
