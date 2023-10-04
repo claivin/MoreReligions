@@ -957,3 +957,176 @@ country_event = {
 		switch_tag = OTM
 	}
 }
+
+#Appoint Explorer
+country_event = {
+	id = mrJapEvents.5
+	title = mrJapEvents.5.t
+	desc = mrJapEvents.5.d 
+	picture = MERITOCRACY_eventPicture
+
+	is_triggered_only = yes 
+
+	option = {
+		name = mrJapEvents.5.a
+		create_explorer = { tradition = 40 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1
+				num_of_explorers = 2
+			}
+		}
+	}
+
+	option = {
+		name = mrJapEvents.5.b
+		create_conquistador = { tradition = 40 }	
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1
+				num_of_conquistadors = 2
+			}
+		}
+	}
+
+	option = {
+		name = mrJapEvents.5.c
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		random_owned_province = {
+			limit = { has_port = yes }
+			man_of_war_heavy = ROOT
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1
+				navy_size_percentage = 1
+			}
+		}
+	}
+}
+
+#Appoint Shogun
+country_event = {
+	id = mrJapEvents.6
+	title = mrJapEvents.6.t
+	desc = mrJapEvents.6.d 
+	picture = FIREARMS_INCIDENT_eventPicture
+
+	is_triggered_only = yes 
+
+	option = {
+		name = mrJapEvents.6.a
+		define_advisor = {
+			type = commandant
+			skill = 3
+			culture = ROOT
+			religion = ROOT
+			discount = yes
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1
+				commandant = 1
+			}
+		}
+	}
+
+	option = {
+		name = mrJapEvents.6.b
+		create_general = { tradition = 60 }	
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 1
+				num_of_generals = 3
+			}
+		}
+	}
+
+	option = {
+		name = mrJapEvents.6.c
+		trigger = {
+			num_of_subjects = 1
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of = ROOT
+			}
+			add_liberty_desire = -15	
+		}
+	}
+}
+
+#Administer Survey
+country_event = {
+	id = mrJapEvents.7
+	title = mrJapEvents.7.t
+	desc = mrJapEvents.7.d 
+	picture = URBANISATION_INCIDENT_eventPicture
+
+	is_triggered_only = yes 
+
+	immediate = {
+		random_owned_province = {
+			save_event_target_as = survery_target_JAP
+		}
+	}
+
+	option = {
+		name = mrJapEvents.7.a
+		trigger = {
+			event_target:survery_target_JAP = {
+				num_free_building_slots = 1
+			}
+		}
+		event_target:survery_target_JAP = {
+			add_latest_building = { builder = ROOT tax = yes }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = mrJapEvents.7.b
+		trigger = {
+			event_target:survery_target_JAP = {
+				num_free_building_slots = 1
+			}
+		}
+		event_target:survery_target_JAP = {
+			add_latest_building = { builder = ROOT production = yes }
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+
+	option = {
+		name = mrJapEvents.7.c
+		event_target:survery_target_JAP = {
+			random_list = {
+				33 = {
+					add_base_tax = 2
+				}
+				33 = {
+					add_base_production = 2
+				}
+				33 = {
+					add_base_manpower = 2
+				}
+			}
+		}
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

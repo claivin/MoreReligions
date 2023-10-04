@@ -1,0 +1,65 @@
+japanese_splendor_mechanic = {
+	gui = japanese_splendor_gov_mech
+	alert_icon_gfx = GFX_alerticons_government_mechanics
+	alert_icon_index = 16
+	available = {
+		has_dlc = "Domination"
+	}
+	
+	interactions = {
+		conduct_survey = {
+			icon = GFX_conduct_survey
+		
+			trigger = {
+				splendor = 100
+			}
+			effect = { 
+				add_splendor = -100
+				country_event = {
+					id =  mrJapEvents.7
+				}
+				custom_tooltip = mrJapEvents.7_insight
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+		establish_explorers = {
+			icon = GFX_establish_explorers
+			trigger = { 
+				splendor = 100
+			}
+			effect = { 
+				add_splendor = -100
+				country_event = {
+					id =  mrJapEvents.5
+					
+				}
+				custom_tooltip = mrJapEvents.5_insight
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+		establish_shogun = {
+			icon = GFX_establish_shogun
+			trigger = {
+				splendor = 100
+			}
+			effect = { 
+				add_splendor = -100
+				country_event = {
+					id =  mrJapEvents.6
+					
+				}
+				custom_tooltip = mrJapEvents.6_insight
+			}
+			cooldown_years = 10
+			ai_chance = {
+				factor = 1
+			}
+		}
+	}
+}

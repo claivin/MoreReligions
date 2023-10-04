@@ -150,6 +150,10 @@ incident_zen = {
 			}
 		}
 		current_age = age_of_discovery
+		custom_trigger_tooltip = {
+			tooltip = NOT_COMPLETE_YET_TT
+			always = no
+		}
 	}
 
 	mean_time_to_happen = {

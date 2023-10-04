@@ -56,6 +56,15 @@
  abyssinian_unity_power: "§YAbyssinian Unity§!"
  monthly_abyssinian_unity_power: "Monthly Abyssinian Unity"
  abyssinian_unity_power_desc: "Abyssinian Unity is a measure of how stable and powerful the state of Abyssinia is. Since the empire is often rocked with internal schisms and violence from outsiders, making sure that the different ethnicities are working together is a key challenge of the state.\n\n§YAbyssinian Unity§! can be affected by doing the following:\n - Promoting Cultures: §G+10§!\n - Converting Provinces of Accepted Culture or Core Culture to our religion: §G+0.5§!\n - Demoting Cultures: §R-25§!\n - Rebel Sieging a Province: §R-2§!\n\n"
+
+ japanese_splendor_mechanic: "Japanese Splendor"
+ ability_japanese_splendor_mechanic: "§YJapanese Splendor§!"
+ conduct_survey: "Conduct a Kenchi"
+ conduct_survey_desc: "In order to maintain both a better control over our state as well as increase the economic wellbeing of the entire state, we must make sure our records and surveys of the realm are accurate and up to date. We shall conduct a land survey, and with our prestige and power we shall force those who know of their secret holdings to repent and reveal their secrets.\n"
+ establish_explorers: "Assist the Tanken-ka"
+ establish_explorers_desc: "With our colonies expanding in the far east, we are constantly in need of new explorers, surveyors, and ships to grow and expand our burgoning empire. Whether they be great admirals leading our sailors over the rough seas, or leaders trekking through desert and jungle, or a new treasure fleet to assist our grand armada in dominating the waves. We will use our influence to promote and shift around admirals and generals and resources to assist this effort.\n"
+ establish_shogun: "Appoint a Sei Taishogun"
+ establish_shogun_desc: "Despite the threat the Shogun had presented during the era of the Shugo Dominance, now the shogun is a mere position that we monitor and control. The position changes every decade, with the position no longer being hereditary and instead completely appointed by our own state. We must carefully decide who shall rule our state, however, as should we choose wrong, could potentially limit our growth.\n"
  
  mr_al_habash_empire: "The Zeila Empire"
  mr_al_habash_empire_desc: "The Walashama Dynasty has conquered and subjugated the remains of the old Ethiopian Empire. Through the use of light cavalry, our Somali and Harari units managed to overcome the great walls of Lasta and Semien. Now, the dynasty has to maintain the balance between the various ethnic and tribal groups of the Horn of Africa, lest it fall into chaos."

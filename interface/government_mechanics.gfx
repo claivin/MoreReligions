@@ -549,4 +549,21 @@ spriteTypes = {
 		size = { x = 235 y = 18 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+
+	##Japanese SPlendor
+
+	spriteType = {
+		name = "GFX_conduct_survey"
+		texturefile = "gfx/interface/government_mechanics/japanese_splendor/conduct_survey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_establish_explorers"
+		texturefile = "gfx/interface/government_mechanics/japanese_splendor/establish_explorers.dds"
+	}
+
+	spriteType = {
+		name = "GFX_establish_shogun"
+		texturefile = "gfx/interface/government_mechanics/japanese_splendor/establish_shogun.dds"
+	}
 }
