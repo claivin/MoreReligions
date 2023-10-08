@@ -13,6 +13,10 @@ estate_shugo_land_rights = {
 	benefits = {
 		governing_capacity = 100
 	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = shugo_dominance_mechanic }
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
+	}
 	ai_will_do = {
 		factor = 5
 		modifier = {
@@ -187,23 +191,30 @@ estate_shugo_land_rights = {
 
 estate_shugo_land_redistribution = {
 	icon = privilege_give_money
-	land_share = 10
+	land_share = 5
 	max_absolutism = -15
-	loyalty = 0.15
-	influence = 0.25
+	loyalty = 0.05
+	influence = 0.20
 	can_select = {
 	}
 	is_valid = {
-	
 	}
 	penalties = {
 	}
 	benefits = {
-		development_cost = -0.1
-		build_cost = -0.15
+		development_cost = -0.05
+		build_cost = -0.10
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = shugo_dominance_mechanic }
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
 	}
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			factor = 10
+			has_government_mechanic = shugo_dominance_mechanic
+		}
 	}
 }
 estate_shugo_shugodai_colony = {
@@ -243,7 +254,7 @@ estate_shugo_shugodai_colony = {
 estate_shugo_regency_advisors = {
 	icon = privilege_golden_liberty
 	max_absolutism = -15
-	loyalty = 0.05
+	loyalty = 0.00
 	influence = 0.25
 	can_select = {
 		OR = {
@@ -254,16 +265,25 @@ estate_shugo_regency_advisors = {
 	is_valid = {
 		government = monarchy
 	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = shugo_dominance_mechanic }
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
+	}
 	penalties = {
 	}
 	on_granted = {
 		custom_tooltip = shugo_regency_tt
 	}
 	benefits = {
-		monarch_military_power = 2
+		legitimacy = -1
+		country_military_power = 2
 	}
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			factor = 10
+			has_government_mechanic = shugo_dominance_mechanic
+		}
 	}
 }
 estate_shugo_military = {
@@ -280,7 +300,10 @@ estate_shugo_military = {
 	}
 	on_granted = {
 		add_army_professionalism = -0.05
-		add_legitimacy = -10
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = shugo_dominance_mechanic }
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
 	}
 	benefits = {
 		infantry_power = 0.1
@@ -289,27 +312,41 @@ estate_shugo_military = {
 	}
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			factor = 10
+			has_government_mechanic = shugo_dominance_mechanic
+		}
 	}
 }
 estate_shugo_poetry = {
 	icon = privilege_monopoly_of_goods_paper
 	max_absolutism = 0
-	loyalty = 0.10
-	influence = 0.05
+	loyalty = 0.05
+	influence = 0.15
 	can_select = {
-		prestige = 25
+		NOT = { prestige = 100 }
 	}
 	is_valid = {
 	}
 	penalties = {
 	
 	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = shugo_dominance_mechanic }
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
+	}
 	on_granted = {
+		add_prestige = 10
 	}
 	benefits = {
+		prestige_decay = -0.01
 	}
 	ai_will_do = {
 		factor = 5
+		modifier = {
+			factor = 10
+			has_government_mechanic = shugo_dominance_mechanic
+		}
 	}
 }
 estate_shugo_japan = {
@@ -329,6 +366,72 @@ estate_shugo_japan = {
 				has_country_flag = remove_shugo_JAP
 			}
 		}
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_government_mechanic = shugo_dominance_mechanic 
+			NOT = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 30
+				}
+			}
+		}
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_government_mechanic = shugo_dominance_mechanic 
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 30
+				}
+			}
+		}
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_government_mechanic = shugo_dominance_mechanic 
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 30
+				}
+			}
+		}
+		modifier = { monthly_shugo_dominance_mechanic_power = 0.10 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_government_mechanic = shugo_dominance_mechanic 
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+		}
+		modifier = { monthly_shugo_dominance_mechanic_power = -0.10 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_government_mechanic = shugo_dominance_mechanic 
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		modifier = { monthly_shugo_dominance_mechanic_power = -0.10 }
+	}
+	conditional_modifier = {
+		trigger = { 
+			has_government_mechanic = shugo_dominance_mechanic 
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+		}
+		modifier = { monthly_shugo_dominance_mechanic_power = -0.10 }
 	}
 	penalties = {
 	}

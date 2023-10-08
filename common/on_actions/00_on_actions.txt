@@ -819,6 +819,16 @@ on_battle_won_country = {
 			value = 0.5
 		}
 	}
+	if = {
+		limit = { 
+			has_government_mechanic = shugo_dominance_mechanic
+		}
+		add_government_power = { 
+			mechanic_type = shugo_dominance_mechanic
+			power_type = shugo_dominance_mechanic_power
+			value = -0.5
+		}
+	}
 }
 
 # country
@@ -841,6 +851,16 @@ on_battle_lost_country = {
 			mechanic_type = maitreyan_zealotry_mechanic
 			power_type = maitreyan_zealotry
 			value = -1
+		}
+	}
+	if = {
+		limit = { 
+			has_government_mechanic = shugo_dominance_mechanic
+		}
+		add_government_power = { 
+			mechanic_type = shugo_dominance_mechanic
+			power_type = shugo_dominance_mechanic_power
+			value = 0.5
 		}
 	}
 }
@@ -2278,6 +2298,16 @@ on_adm_development = {
 			80 = { } 
 		}
 	}
+	if = {
+		limit = { 
+			has_government_mechanic = shugo_dominance_mechanic
+		}
+		add_government_power = { 
+			mechanic_type = shugo_dominance_mechanic
+			power_type = shugo_dominance_mechanic_power
+			value = -0.25
+		}
+	}
 }
 
 # province
@@ -2311,6 +2341,16 @@ on_dip_development = {
 		random_list = { 
 			20 = { add_base_production = 1 } 
 			80 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			has_government_mechanic = shugo_dominance_mechanic
+		}
+		add_government_power = { 
+			mechanic_type = shugo_dominance_mechanic
+			power_type = shugo_dominance_mechanic_power
+			value = -0.25
 		}
 	}
 
@@ -2347,6 +2387,16 @@ on_mil_development = {
 		random_list = { 
 			20 = { add_base_manpower = 1 } 
 			80 = { } 
+		}
+	}
+	if = {
+		limit = { 
+			has_government_mechanic = shugo_dominance_mechanic
+		}
+		add_government_power = { 
+			mechanic_type = shugo_dominance_mechanic
+			power_type = shugo_dominance_mechanic_power
+			value = -0.25
 		}
 	}
 }

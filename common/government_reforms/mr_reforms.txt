@@ -311,8 +311,7 @@ mr_empire_of_japan = {
 	lock_level_when_selected = yes
 	
 	government_abilities = {
-		#shugo_dominance_mechanic
-		japanese_splendor_mechanic
+		shugo_dominance_mechanic
 	}
 	
 	modifiers = {

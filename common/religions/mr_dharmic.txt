@@ -6,7 +6,7 @@ dharmic = {
 
 	hinduism = {
 		color = { 0 204 204 }
-		icon = 8
+		icon = 60
 		allowed_conversion = {
 			sikhism
 			shaivism
@@ -42,7 +42,7 @@ dharmic = {
 	
 	shaivism = {
 		color = { 0 185 135 }
-		icon = 8
+		icon = 62
 		allowed_conversion = {
 			sikhism
 			hinduism
@@ -78,7 +78,7 @@ dharmic = {
 	
 	shaktism = {
 		color = { 195 41 0 }
-		icon = 8
+		icon = 61
 		allowed_conversion = {
 			sikhism
 			shaivism
@@ -114,7 +114,7 @@ dharmic = {
 	
 	svetembara = {
 		color = { 160 54 224 }
-		icon = 8
+		icon = 59
 		allowed_conversion = {
 			sikhism
 			shaivism
@@ -184,7 +184,7 @@ dharmic = {
 	}
 	digambara = {
 		color = { 28 236 229 }
-		icon = 8
+		icon = 58
 		allowed_conversion = {
 			sikhism
 			shaivism

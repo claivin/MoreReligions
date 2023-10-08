@@ -6,7 +6,7 @@ east_asian_pagan_group = {
 
 	mr_ravenpaganism = {
 		color = { 191 223 224 }
-		icon = 11
+		icon = 81
 		country = {
 			improve_relation_modifier = 0.1
 			cav_to_inf_ratio = 0.25
@@ -52,7 +52,7 @@ east_asian_pagan_group = {
 	}
 	mr_satsanaphi = {
 		color = { 196 87 52 }
-		icon = 11
+		icon = 45
 		country = {
 			tolerance_heathen = 2
 			land_attrition = -0.15
@@ -68,7 +68,7 @@ east_asian_pagan_group = {
 	}
 	mr_mo = {
 		color = { 239 237 82 }
-		icon = 12
+		icon = 46
 		country = {
 			tolerance_own = 1
 			global_manpower_modifier = 0.10
@@ -96,7 +96,7 @@ east_asian_pagan_group = {
 	}
 	mr_bimo = {
 		color = { 209 119 165 }
-		icon = 12
+		icon = 47
 		country = {
 			state_governing_cost = -0.1 
 			num_accepted_cultures = 1 
@@ -112,7 +112,7 @@ east_asian_pagan_group = {
 	}
 	mr_miao = {
 		color = { 117 215 92 }
-		icon = 12
+		icon = 48
 		country = {
 			infantry_cost = -0.10 
 			build_cost = -0.10

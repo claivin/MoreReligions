@@ -301,20 +301,22 @@ country_event = {
 			}
 		}
 		custom_tooltip = lands_of_japan_divided_tt
-		event_target:leader_of_shugo = {
-			every_province = {
-				limit = {
-					owned_by = JAP
+		hidden_effect = {
+			event_target:leader_of_shugo = {
+				every_province = {
+					limit = {
+						owned_by = JAP
+					}
+					cede_province = event_target:leader_of_shugo
+				}	
+				1020 = {
+					add_core = event_target:leader_of_shugo
+					cede_province = event_target:leader_of_shugo
 				}
-				cede_province = event_target:leader_of_shugo
-			}	
-			1020 = {
-				add_core = event_target:leader_of_shugo
-				cede_province = event_target:leader_of_shugo
+				set_capital = 1020
+				grant_independence = yes
+				add_government_reform = shogunate
 			}
-			set_capital = 1020
-			grant_independence = yes
-			add_government_reform = shogunate
 		}
 		hidden_effect = {
 			#Shimazu Gains
@@ -753,6 +755,20 @@ country_event = {
 					id = mrJapEvents.3
 					days = 3
 				}
+			}
+			every_province = {
+				limit = {
+					is_core = JAP
+				}
+				remove_core = JAP
+			}
+			every_country = {
+				limit = {
+					is_in_war = {
+						attacker_leader = event_target:leader_of_shugo
+					}
+				}
+				white_peace = event_target:leader_of_shugo
 			}
 		}
 	}

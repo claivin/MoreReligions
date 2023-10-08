@@ -848,7 +848,7 @@ eastern = {
 	}
 	azhaliism = {
 		color = { 208 134 119 }
-		icon = 23
+		icon = 50
 		allowed_conversion = {
 			vajrayana
 			buddhism
@@ -880,7 +880,7 @@ eastern = {
 	
 	mr_maitreya = {
 		color = { 184 0 58 }
-		icon = 23
+		icon = 52
 		allowed_conversion = {
 		}
 		province = {
@@ -913,7 +913,7 @@ eastern = {
 	
 	nihon = {
 		color = { 214 31 48 }
-		icon = 10
+		icon = 44
 		country = {
 			diplomatic_reputation = 1
 			land_morale = 0.05
@@ -927,7 +927,7 @@ eastern = {
 		}
 		heretic = { SHUGENDO }
 		uses_isolationism = yes
-		
+		declare_war_in_regency = yes
 		harmonized_modifier = harmonized_shinto
 		
 	}
@@ -940,7 +940,7 @@ eastern = {
 			missionaries = 1
 		}
 		province = {
-			local_missionary_strength = -0.02
+			local_missionary_strength = -0.03
 		}
 		country_as_secondary = {
 			infantry_power = 0.10
@@ -955,7 +955,7 @@ eastern = {
 	
 	mr_tunggal_dharma = {
 		color = { 220 59 16 }
-		icon = 43
+		icon = 51
 		country = {
 			trade_efficiency = 0.10
 			great_project_upgrade_cost = -0.25
@@ -976,7 +976,7 @@ eastern = {
 	
 	confucianism = {
 		color = { 214 229 140 }
-		icon = 9
+		icon = 53
 		country = {
 			tolerance_heretic = 2
 			adm_tech_cost_modifier = -0.1
@@ -1012,7 +1012,7 @@ eastern = {
 	
 	mr_jingtianfazu = {
 		color = { 242 219 113 }
-		icon = 9
+		icon = 76
 		country = {
 			global_tax_modifier = 0.10
 			build_cost = -0.1

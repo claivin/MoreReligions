@@ -3,7 +3,7 @@
 owner = NTT
 controller = NTT
 culture = togoku
-religion = nihon
+religion = mr_shin
 capital = "Saitama"
 trade_goods = rice
 hre = no

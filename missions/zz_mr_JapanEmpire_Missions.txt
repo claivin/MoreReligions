@@ -7,7 +7,96 @@ mr_jap_missions_first = {
 	potential = {
 		tag = JAP
 	}
-	
+	mr_jap_shinbutsu_1 = {
+		icon = mission_diplomatic_relation 
+		position = 1
+		provinces_to_highlight = {
+			culture_group = east_asian
+			NOT = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				any_owned_province = {
+					OR = {
+						region = north_china_region
+						region = south_china_region
+					}
+				}
+				any_known_country = {
+					culture_group = east_asian
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 3
+				religion = confucianism
+				discount = yes
+			}
+			capital_scope = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 45
+				}
+			}
+		}
+	}
+	mr_jap_shinbutsu_2 = {
+		icon = balance_the_estates
+		position = 3
+		required_missions = { 
+			mr_jap_shinbutsu_1
+		}
+		trigger = {
+			OR = {
+				is_incident_happened = incident_neo_confucianism
+				AND = {
+					has_institution = renaissance
+					monthly_adm = 10
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = if_neo_confucian_done
+			tooltip = {
+				add_province_modifier = {
+					name = confucian_scholars_JAP
+						duration = -1
+				}
+			}
+			custom_tooltip = if_neo_confucian_not
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							is_incident_happened = incident_neo_confucianism
+						}
+					}
+					set_country_flag = can_start_neo_confucianism_decision
+				}
+				else = {
+					capital_scope = {
+						add_province_modifier = {
+							name = confucian_scholars_JAP
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
 }
 mr_jap_missions_second = {
 	slot = 2
@@ -49,7 +138,7 @@ mr_jap_missions_second = {
 		trigger = {
 			estate_loyalty = {
 				estate = estate_nobles 
-				loyalty = 70
+				loyalty = 60
 			}
 			custom_trigger_tooltip = {
 				tooltip = estate_shugo_mission_1_TT
@@ -87,6 +176,7 @@ mr_jap_missions_third = {
 			employed_advisor = {
 				category = MIL
 			}
+			crown_land_share = 25
 		}
 		effect = {
 			add_government_power = { mechanic_type = shugo_dominance_mechanic power_type = shugo_dominance_mechanic_power value = -10 }

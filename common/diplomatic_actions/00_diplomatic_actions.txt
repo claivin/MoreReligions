@@ -130,6 +130,16 @@ declarewar = {
 		}
 	}
 	condition = {
+		tooltip = SHINBUTSU_CANNOT_DECLARE_TT
+		potential = {
+			religion = nihon
+			has_regency = yes
+		}
+		allow = {
+			ROOT = { has_estate_privilege = estate_shugo_regency_advisors }
+		}
+	}
+	condition = {
 		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
 		potential = {
 			ai = yes
@@ -251,7 +261,6 @@ allianceaction = {
 			}
 		}
 	}
-	
 	condition = {
 		tooltip = REPUBLIC_DENIED_ALLIANCE
 		potential = {

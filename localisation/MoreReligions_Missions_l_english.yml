@@ -55,6 +55,8 @@
  mr_jap_SD_5_title: "Expand the Kuge"
  mr_jap_SD_6_title: "Strip the Kanrei"
  mr_jap_SD_7_title: "End the Shugo Dominance"
+ mr_jap_shinbutsu_1_title: "Invite Foreign Scholars"
+ mr_jap_shinbutsu_2_title: "Confucianism in the Court"
  
  
  estate_shugo_mission_1_TT: "Have more §YCrown Land§! than the §YShugo§! Estate."
@@ -65,6 +67,9 @@
  ticking_SD_3: "New Revenue Sources"
  rebuilding_japan_MR: "Expand the Rice Fields"
  rebuilt_imperial_army_MR: "Rebuilt Imperial Army"
+ if_neo_confucian_done: "If we have completed the §YNeo-Confucianism§! Incident, we will gain the following in our Capital:"
+ if_neo_confucian_not: "If we have not completed the §YNeo-Confucianism§! Incident, we will gain the ability to start the Incident via a Decision."
+confucian_scholars_JAP: "Confucian Scholars"
  
  BAKUFU_NAME_1: "Edo Bakufu"
  BAKUFU_NAME_2: "Tokushima Bakufu"

@@ -48,6 +48,7 @@
  
  ability_shugo_dominance_mechanic: "§YShugo Dominance§!"
  shugo_dominance_mechanic_power: "§YShugo Dominance§!"
+ shugo_dominance_mechanic_power_desc: "The Kenmu Restoration was only partially successful. Even with the Shogun's power restricted, the influence and power of the Shugo grows with each passing day. Soon, their dominance will be all but assured, and perhaps they might be inspired to stage an incident - the Japanese Emperor must ensure his own survival by preventing such a possibly and bringing control back to the aristocracy.\n\n§YShugo Dominance§! can be decreased by:\n - Winning Battles (§G-0.5§!)\n - Loyal Estates (§G-0.1 Per Month Per Loyal Estate§!)\n - Developing Provinces (§G-0.25§!)\n\n§YShugo Dominance§! can be increased by:\n - Losing Battles (§R+0.5§!)\n - Disloyal Estates (§R+0.1 Per Month Per Disloyal Estate§!)\n - Granting §YPrivileges§! to the §YShugo§! Estate (§R-0.1 Per Month§!)\n\n"
  monthly_shugo_dominance_mechanic_power: "Monthly §YShugo Dominance§!"
  
  

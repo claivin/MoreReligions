@@ -23,3 +23,6 @@ rebuilt_imperial_army_MR = {
 rebuilding_japan_MR = {
 	development_cost = -0.15
 }
+confucian_scholars_JAP = {
+	institution_growth = 3
+}

@@ -6,7 +6,7 @@ europe_pagan_group = {
 
 	mr_finnishpaganism = {
 		color = { 53 161 53 }
-		icon = 11
+		icon = 79
 		country = {
 			global_tax_modifier = 0.1
 		}
@@ -22,7 +22,7 @@ europe_pagan_group = {
 	
 	mr_samipaganism = {
 		color = { 149 230 175 }
-		icon = 11
+		icon = 78
 		country = {
 			global_tax_modifier = 0.1
 		}
@@ -38,7 +38,7 @@ europe_pagan_group = {
 	
 	mr_balticpaganism = {
 		color = { 52 194 100 }
-		icon = 11
+		icon = 80
 		country = {
 			global_tax_modifier = 0.1
 		}
@@ -54,7 +54,7 @@ europe_pagan_group = {
 	
 	mr_caucaspagan = {
 		color = { 162 228 184 }
-		icon = 11
+		icon = 77
 		country = {
 			tolerance_own = 1
 			same_culture_advisor_cost = -0.20

@@ -3,7 +3,7 @@
 owner = JAP
 controller = JAP
 culture = japanese
-religion = nihon
+religion = mr_shin
 capital = "Takefu"
 trade_goods = paper
 hre = no
