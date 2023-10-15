@@ -17,4 +17,4 @@ merc_andorra_borderguard = {
 	min_size = 5
 	max_size = 12
 	manpower_pool = 10
-	
+}

@@ -135,3 +135,15 @@ can_have_mountaineers = {
 		culture_group = iranian
 	}
 }
+
+is_levantine_crusader_state = {
+	# Crusaders = Antioch, Edessa, Lebanon, Tripoli
+	# Also keep it valid for Jerusalem
+	OR = {
+		tag = ATI
+		tag = EDD
+		tag = LEB
+		tag = TPO
+		tag = KOJ
+	}
+}
