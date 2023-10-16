@@ -339,33 +339,41 @@ crusader_missions_domination_path = {
 		}
 
 		effect = {
-			palestine_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			trans_jordan_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			syria_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			aleppo_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			syrian_desert_area = {
-				limit = { NOT = { owned_by = ROOT } }
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					is_in_outremer = yes
+				}
 				add_permanent_claim = ROOT
 			}
 
+			# palestine_area = {
+			# 	limit = { NOT = { owned_by = ROOT } }
+			# 	add_permanent_claim = ROOT
+			# }
+			# trans_jordan_area = {
+			# 	limit = { NOT = { owned_by = ROOT } }
+			# 	add_permanent_claim = ROOT
+			# }
+			# syria_area = {
+			# 	limit = { NOT = { owned_by = ROOT } }
+			# 	add_permanent_claim = ROOT
+			# }
+			# aleppo_area = {
+			# 	limit = { NOT = { owned_by = ROOT } }
+			# 	add_permanent_claim = ROOT
+			# }
+			# syrian_desert_area = {
+			# 	limit = { NOT = { owned_by = ROOT } }
+			# 	add_permanent_claim = ROOT
+			# }
+
+			# Add Holy War CB for Jerusalem if we don't own it
 			if = {
 				limit = {
 					NOT = { owns = 379 }
 				}
 
-				# Add Holy War CB for Jerusalem
 				379 = {
 					owner = {
 						ROOT = {
@@ -550,6 +558,20 @@ crusader_missions_4 = {
 	}
 
 	# satisfy minority leaders
+	cs_satisfy_minority_leaders = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_seek_religious_accord }
+		position = 2
+
+		trigger = {
+			has_estate = estate_sarraceni
+			has_estate_privilege =
+			estate_loyalty = {
+				estate = estate_sarraceni
+				loyalty = 60
+			}
+		}
+	}
 
 	# a stable society (req: minority leaders and shattered crescent)
 

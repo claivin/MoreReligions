@@ -49,13 +49,13 @@ country_event = {
 	}
 	option = { #discard the Elective Monarchy
 		name = estate_privileges_and_agendas_events.1.B
-		
-		if = { 
+
+		if = {
 			limit = { has_reform = elective_monarchy }
 			remove_government_reform = elective_monarchy
 		}
-		else_if = { 
-			limit = { has_reform = polish_elective_monarchy } 
+		else_if = {
+			limit = { has_reform = polish_elective_monarchy }
 			remove_government_reform = polish_elective_monarchy
 		}
 		#set_legacy_government = administrative_monarchy
@@ -120,7 +120,7 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
-		
+
 		NOT = { crown_land_share = 11 }
 		OR = {
 			AND = {
@@ -242,6 +242,7 @@ country_event = {
 		clr_country_flag = estate_rajput_present_agenda
 		clr_country_flag = estate_janissaries_present_agenda
 		clr_country_flag = estate_eunuchs_present_agenda
+		clr_country_flag = estate_sarraceni_present_agenda
 		clear_estate_agenda_cache = ROOT
 	}
 
@@ -385,7 +386,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = estate_privileges_and_agendas_events.3.k
 		trigger = { has_country_flag = estate_rajput_present_agenda }
@@ -526,7 +527,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = estate_privileges_and_agendas_events.3.j
 		trigger = { has_country_flag = estate_jains_present_agenda }
@@ -764,8 +765,8 @@ country_event = {
 
 	option = {
 		name = estate_privileges_and_agendas_events.3.l
-		trigger = { 
-			has_country_flag = estate_janissaries_present_agenda 
+		trigger = {
+			has_country_flag = estate_janissaries_present_agenda
 			#NOT = { has_disaster = tur_disaster_janissary_coup }
 		}
 		start_estate_agenda = estate_janissaries
@@ -1242,7 +1243,7 @@ country_event = {
 				}
 			}
 		}
-		else_if = { 
+		else_if = {
 			limit = {
 				NOT = {
 					estate_loyalty = {
@@ -1253,7 +1254,7 @@ country_event = {
 				estate_influence = {
 					estate = all
 					influence = 1
-				}				
+				}
 			}
 			spawn_rebels_seize_land_switch = yes
 		}
