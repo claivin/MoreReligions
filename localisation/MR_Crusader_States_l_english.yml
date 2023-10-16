@@ -6,15 +6,15 @@
   cs_grant_italian_quarter_trigger_TT: "Any Christian, Italian republic has at least §G150§! opinion of us."
   cs_seek_italian_military_support_title: "Italian Military Support"
   cs_seek_italian_military_support_desc: "Now that we granted the Italians a trading concession, by keeping the foreign merchants and our own coexisting in harmony, we can leverage their connections to provide some much needed mercenary aid at a cut-rate price. Rest assured, their quality in battle won't reflect that."
-  cs_seek_italian_military_support_reward_TT: "Will unlock a special mercenary company, the "
+  cs_seek_italian_military_support_reward_TT: "Will unlock a special mercenary company, the Italian Company of Outremer, composed of infantry specialized in ranged combat. This company will be cheaper for us to hire."
   cs_eastern_metropolis_title: "Eastern Metropolis"
   cs_eastern_metropolis_desc: "As the furthest east bastion of Christendom, we have a unique position to become the nexus of new trade networks tying the rest of Europe to the riches of the East. All we need is a friendly Muslim neighbor willing to let us in on the action..."
-  cs_eastern_metropolis_TT: "We will gain $VAL|%+0.1$! Goods Produced in each province in the capital state and an additional $VAL|+0.5$! Goods Produced and bonus tax income in the capital province."
+  cs_eastern_metropolis_TT: "We will gain §G+10%§! Goods Produced in each province in the capital state and an additional §G+0.5§! Goods Produced and bonus tax income in the capital province."
 
   # Slot 3
   cs_build_to_force_limit_title: "A Force to be Reckoned With"
   cs_build_to_force_limit_desc: "In order to be taken seriously in the dangerous world of Outremer, we must establish both our international prestige and our military might."
-  crusader_branching_mission_TT: "Will trigger an event allowing us to choose between a §Ydiplomatic§! or a §Ydomination§! path to unite Outremer and reclaim Jerusalem!"
+  crusader_branching_mission_TT: "Will trigger an event allowing us to choose between a §Ydomination§! or a §Ydiplomatic§! path to unite Outremer and reclaim Jerusalem!"
   # Domination path
   cs_one_prince_to_rule_them_all_title: "One Prince To Rule Them All"
   cs_one_prince_to_rule_them_all_desc: "By establishing an army strong enough to defeat any other Prince of Outremer, we will be prepared for our campaign of conquest!"
@@ -43,9 +43,9 @@
   crusader_states_branching_mission_event.t: "Seizing our Destiny"
   crusader_states_branching_mission_event.d: "The lore."
   crusader_states_branching_mission_event.a: "I will subjugate the other princes by force!"
-  crusader_states_branching_mission_event_A_TT: "This path will give us military buffs to §Yannex§ the other crusader states and §Yimprove our military.§"
+  crusader_states_branching_mission_event_A_TT: "This path will give us military buffs to §Yannex§! the other crusader states and §Yimprove our military.§!"
   crusader_states_branching_mission_event.b: "I will sway the other princes with words and gifts!"
-  crusader_states_branching_mission_event_B_TT: "This path will allow us to §Ydiplomatically vassalize§ the other crusader states.§"
+  crusader_states_branching_mission_event_B_TT: "This path will allow us to §Ydiplomatically vassalize§! the other crusader states."
 
 
 # --OTHER--

@@ -534,9 +534,11 @@ crusader_missions_4 = {
 		}
 
 		effect = {
+			# man idk
 			unlock_estate = {
 				estate = estate_sarraceni
 			}
+			set_country_flag = enables_estate_sarraceni_flag
 		}
 	}
 }
