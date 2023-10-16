@@ -20,14 +20,18 @@ crusader_missions_2 = {
 
 		# Any Italian Republic likes us
 		trigger = {
-			any_known_country = {
-				capital_scope = {
-					region = italy_region
-				}
-				uses_republican_tradition = yes
-				has_opinion = {
-					who = THIS
-					value = 150
+			ROOT = {
+				any_known_country = {
+					NOT = { tag = ROOT }
+					capital_scope = {
+						region = italy_region
+					}
+					government = republic
+					religion = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
 				}
 			}
 		}
@@ -145,11 +149,69 @@ crusader_missions_3 = {
 			}
 		}
 	}
+}
+
+crusader_missions_branch_placeholders = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		NOT = {
+			OR = {
+				has_country_flag = cs_domination_path
+				has_country_flag = cs_diplomatic_path
+			}
+		}
+	}
+	mr_cs_branching_1 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = { cs_build_to_force_limit }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_cs_branching_2 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = { mr_cs_branching_1 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_cs_branching_3 = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = { mr_cs_branching_2 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
 
 	# This comes after the branching missions (i.e. both branches lead to this)
 	cs_call_for_crusade = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { cs_lord_of_the_levant }
+		required_missions = { mr_cs_branching_3 }
 		position = 5
 
 		trigger = {
@@ -229,64 +291,6 @@ crusader_missions_3 = {
 					}
 				}
 			}
-		}
-	}
-}
-
-crusader_missions_branch_placeholders = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		is_levantine_crusader_state = yes
-		NOT = {
-			OR = {
-				has_country_flag = cs_domination_path
-				has_country_flag = cs_diplomatic_path
-			}
-		}
-	}
-	mr_cs_branching_1 = {
-		icon = mission_unknown_mission
-		position = 2
-		required_missions = { cs_build_to_force_limit }
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = {
-			custom_tooltip = need_to_complete_mission
-		}
-	}
-	mr_cs_branching_2 = {
-		icon = mission_unknown_mission
-		position = 3
-		required_missions = { mr_cs_branching_1 }
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = {
-			custom_tooltip = need_to_complete_mission
-		}
-	}
-	mr_cs_branching_3 = {
-		icon = mission_unknown_mission
-		position = 4
-		required_missions = { mr_cs_branching_2 }
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = {
-			custom_tooltip = need_to_complete_mission
 		}
 	}
 }
@@ -405,6 +409,92 @@ crusader_missions_domination_path = {
 			}
 		}
 	}
+
+	# This comes after the branching missions (i.e. both branches lead to this)
+	cs_call_for_crusade = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_lord_of_the_levant }
+		position = 5
+
+		trigger = {
+			OR = {
+				AND = {
+					# Popeman likes us or has to listen to us
+					OR = {
+						has_opinion = {
+							who = PAP
+							value = 150
+						}
+						papal_influence = 100
+					}
+					# A great European King must sponsor the Crusade
+					any_known_country = {
+						OR = {
+							tag = FRA
+							tag = ENG
+							tag = POL
+							tag = BOH
+							tag = NAV
+						}
+						OR = {
+							has_opinion = {
+								who = from
+								value = 150
+							}
+							owes_favors = {
+								who = THIS
+								value = 30
+							}
+						}
+					}
+				}
+				# Already own Jerusalem
+				owns = 379
+			}
+		}
+
+		effect = {
+			palestine_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			trans_jordan_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+
+			if = {
+				limit = {
+					NOT = { owns = 379 }
+				}
+
+				# Add Holy War CB for Jerusalem
+				379 = {
+					owner = {
+						ROOT = {
+							add_casus_belli = {
+								type = cb_crusade_for_jerusalem
+								target = PREV
+								months = 60
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 # crusader_missions_diplomatic_path = {
@@ -415,7 +505,7 @@ crusader_missions_domination_path = {
 
 # Fourth slot: Developing our country from a small European feudal aristocracy teetering atop a population of local Christians and a Muslim majority to a more functional society
 crusader_missions_4 = {
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -429,11 +519,13 @@ crusader_missions_4 = {
 
 		# Have a Muslim province that is "under control" and happy, not recently suppressed
 		trigger = {
-			any_province = {
-				religion_group = muslim
-				NOT = { unrest = 1 }
-				NOT = { local_autonomy = 25 }
-				NOT = { has_province_modifier = recent_uprising }
+			any_owned_province = {
+				AND = {
+					religion_group = muslim
+					NOT = { unrest = 1 }
+					NOT = { local_autonomy = 25 }
+					NOT = { has_province_modifier = recent_uprising }
+				}
 			}
 		}
 

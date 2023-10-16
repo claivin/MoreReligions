@@ -25,6 +25,8 @@ country_event = {
 		custom_tooltip = crusader_states_branching_mission_event_A_TT
 
 		set_country_flag = cs_domination_path
+
+		swap_non_generic_missions = yes
 	}
 
 	option = {
@@ -43,6 +45,8 @@ country_event = {
 
 		custom_tooltip = crusader_states_branching_mission_event_B_TT
 
-		set_country_flag = cs_diplomatic_path
+		set_country_flag = cs_diplomatic_path@ROOT
+
+		swap_non_generic_missions = yes
 	}
 }
