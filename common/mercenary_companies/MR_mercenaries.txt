@@ -1,0 +1,23 @@
+merc_crusader_italian_troops = {
+    regiments_per_development = 0.04 # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+	# Make cheap :D
+    cost_modifier = 0.66 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+	# Le genovese crossbowmen
+    cavalry_cap = 0 # = no cav
+	artillery_weight = 0.1
+
+    sprites = { westerngfx_sprite_pack } # Unit graphics that the mercenary company uses.
+
+    trigger = {
+        AND = {
+            is_levantine_crusader_state = yes
+            has_country_flag = crusader_state_italian_mercenaries
+        }
+    }
+
+    modifier = { # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+        military_tactics = 0.10
+		fire_damage = 0.20 # It's a small merc comp who cares
+    }
+}

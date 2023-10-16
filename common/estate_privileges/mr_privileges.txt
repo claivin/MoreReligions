@@ -790,7 +790,7 @@ estate_nobles_mr_warlord_aristocracy_gsc = {
 
 estate_burghers_crusaders_grant_italian_quarter = {
 	icon = privilege_puppet_ruler
-	max_absolutism = -15
+	max_absolutism = -20
 	loyalty = 0.05
 	influence = 0.15
 
@@ -806,19 +806,19 @@ estate_burghers_crusaders_grant_italian_quarter = {
 	}
 
 	ai_will_do = {
-		factor = 5
+		factor = 0 # Don't want AI spawning CoT?
 	}
 
 	on_granted = {
 		add_years_of_income = 1
 		capital_scope = {
-			if = {
-				limit = { province_has_center_of_trade_of_level = 1 }
-				add_center_of_trade_level = 1
-			}
-			else = {
-				add_center_of_trade_level = 1
-			}
+			add_center_of_trade_level = 1
+		}
+	}
+
+	on_revoked = {
+		capital_scope = {
+			add_center_of_trade_level = -1
 		}
 	}
 }
