@@ -135,3 +135,34 @@ can_have_mountaineers = {
 		culture_group = iranian
 	}
 }
+
+is_levantine_crusader_state = {
+	# Crusaders = Antioch, Edessa, Lebanon, Tripoli
+	# Also keep it valid for Jerusalem
+	OR = {
+		tag = ATI
+		tag = EDD
+		tag = LEB
+		tag = TPO
+		tag = KOJ
+	}
+}
+
+is_in_outremer = {
+	OR = {
+		area = palestine_area
+		area = trans_jordan_area
+		area = aleppo_area
+		area = syria_area
+		area = syrian_desert_area
+		area = cukurova_area # Cilicia/Little Armenia + Cyprus
+		province_id = 2308 # Edessa
+		province_id = 407 # Ar-Raqqah
+		province_id = 4268 # Aqbah
+		# Sinai peninsula
+		province_id = 365
+		province_id = 5284
+		province_id = 2315
+		province_id = 5375
+	}
+}

@@ -1,0 +1,542 @@
+# Shared mission tree for crusader states--Antioch, Edessa, Tripoli, and Acre
+
+# First slot is left open for tag-specific missions
+
+
+# Second slot: Development of relationship with Italian city-states and our trade with Europe
+crusader_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_grant_italian_quarter = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+
+
+		# Any Italian Republic likes us
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_grant_italian_quarter_trigger_TT
+				any_known_country = {
+					capital_scope = {
+						region = italy_region
+					}
+					government = republic
+					has_matching_religion = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+			}
+		}
+	}
+
+	cs_seek_italian_military_support = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_grant_italian_quarter }
+		position = 2
+
+		trigger = {
+			AND = {
+				has_estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = cs_seek_italian_military_support_reward_TT
+			hidden_effect = {
+				set_country_flag = crusader_state_italian_mercenaries
+			}
+		}
+	}
+
+	cs_eastern_metropolis = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_seek_italian_military_support }
+		position = 3
+
+		trigger = {
+			capital_scope = {
+				development = 25
+				is_prosperous = yes
+			}
+			has_estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+			# Need a Muslim neighbor to like us so that we can have trade flow through them, then us, then on to the rest of Europe
+			any_neighbor_country = {
+				religion = sunni
+				has_opinion = {
+					who = THIS
+					value = 100
+				}
+				NOT = {
+					trade_embargoing = THIS
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						province_has_center_of_trade_of_level = 3
+					}
+				}
+				add_treasury = 1500 # More than level 3 COT cost to be nice :)
+			}
+			else = {
+				capital_scope = {
+					add_center_of_trade_level = 1
+				}
+			}
+
+			hidden_effect = {
+				custom_tooltip = cs_eastern_metropolis_TT
+				capital_scope = {
+					add_province_modifier = {
+						name = cs_eastern_metropolis_capital_prov
+						duration = -1
+					}
+
+					every_province_in_state = {
+						add_province_modifier = {
+							name = cs_eastern_metropolis_capital_area
+							duration = -1
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+# Third slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
+crusader_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_build_to_force_limit = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+
+		trigger = {
+			army_size_percentage = 1
+			prestige = 25
+		}
+
+		effect = {
+			country_event_with_insight = {
+				id = crusader_states_branching_mission_event
+				insight_tooltip = crusader_branching_mission_TT
+			}
+		}
+	}
+}
+
+crusader_missions_branch_placeholders = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		NOT = {
+			OR = {
+				has_country_flag = cs_domination_path
+				has_country_flag = cs_diplomatic_path
+			}
+		}
+	}
+	mr_cs_branching_1 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = { cs_build_to_force_limit }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_cs_branching_2 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = { mr_cs_branching_1 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_cs_branching_3 = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = { mr_cs_branching_2 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+
+	# This comes after the branching missions (i.e. both branches lead to this)
+	cs_call_for_crusade = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { mr_cs_branching_3 }
+		position = 5
+
+		trigger = {
+			OR = {
+				AND = {
+					# Popeman likes us or has to listen to us
+					OR = {
+						has_opinion = {
+							who = PAP
+							value = 150
+						}
+						papal_influence = 100
+					}
+					# A great European King must sponsor the Crusade
+					any_known_country = {
+						OR = {
+							tag = FRA
+							tag = ENG
+							tag = POL
+							tag = BOH
+							tag = NAV
+						}
+						OR = {
+							has_opinion = {
+								who = from
+								value = 150
+							}
+							owes_favors = {
+								who = THIS
+								value = 30
+							}
+						}
+					}
+				}
+				# Already own Jerusalem
+				owns = 379
+			}
+		}
+
+		effect = {
+			palestine_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			trans_jordan_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+
+			if = {
+				limit = {
+					NOT = { owns = 379 }
+				}
+
+				# Add Holy War CB for Jerusalem
+				379 = {
+					owner = {
+						ROOT = {
+							add_casus_belli = {
+								type = cb_crusade_for_jerusalem
+								target = PREV
+								months = 60
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# First branch option: domination path
+crusader_missions_domination_path = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		has_country_flag = cs_domination_path
+	}
+
+	cs_one_prince_to_rule_them_all = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_build_to_force_limit }
+		position = 2
+
+		trigger = {
+			# Our army must be at least 25% larger than any other crusader state's
+			all_known_country = {
+				is_levantine_crusader_state = yes
+				NOT = { tag = ROOT }
+				NOT = {
+					army_balance = {
+						who = ROOT
+						value = 0.8
+					}
+				}
+			}
+			has_mil_advisor = yes
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cs_dominant_military
+				duration = 12775 # 35 years
+			}
+		}
+	}
+
+	cs_expand_our_demesne = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_one_prince_to_rule_them_all }
+		position = 3
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				is_in_outremer = yes
+			}
+			is_at_war = no
+		}
+
+		effect = {
+			add_years_of_income = 1.5
+
+			every_owned_province = {
+				limit = {
+					nationalism = 1
+				}
+
+				if = {
+					limit = { has_owner_culture = yes }
+					add_nationalism = -20 # Just delet the separatism if they're Franks
+				}
+				else = {
+					add_nationalism = -5 # Reduce the separatism
+				}
+			}
+
+			# Yoinked from Austrian missions; gives us +10% crownland!
+			custom_tooltip = add_10_crown_land_share
+			hidden_effect = {
+				change_estate_land_share = {
+					estate = all
+					share = -10
+				}
+			}
+		}
+	}
+
+	cs_lord_of_the_levant = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_expand_our_demesne }
+		position = 4
+
+		trigger = {
+			# We have eaten all the other crusader states, or are the last one standing lol
+			NOT = {
+				any_known_country = {
+					is_levantine_crusader_state = yes
+				}
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_prestige = 50
+
+			# Reward with more dominant military time if you were fast
+			if = {
+				limit = { has_country_modifier = cs_dominant_military }
+				extend_country_modifier = {
+					name = cs_dominant_military
+					duration = 7300 # 20 years
+				}
+			}
+			# Otherwise, give it again for a short period (i.e. to help with the first big war for Jerusalem)
+			else = {
+				add_country_modifier = {
+					name = cs_dominant_military
+					duration = 3650 # 10 years
+				}
+			}
+		}
+	}
+
+	# This comes after the branching missions (i.e. both branches lead to this)
+	cs_call_for_crusade = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_lord_of_the_levant }
+		position = 5
+
+		trigger = {
+			OR = {
+				AND = {
+					# Popeman likes us or has to listen to us
+					OR = {
+						has_opinion = {
+							who = PAP
+							value = 150
+						}
+						papal_influence = 100
+					}
+					# A great European King must sponsor the Crusade
+					any_known_country = {
+						OR = {
+							tag = FRA
+							tag = ENG
+							tag = POL
+							tag = BOH
+							tag = NAV
+						}
+						OR = {
+							has_opinion = {
+								who = from
+								value = 150
+							}
+							owes_favors = {
+								who = THIS
+								value = 30
+							}
+						}
+					}
+				}
+				# Already own Jerusalem
+				owns = 379
+			}
+		}
+
+		effect = {
+			palestine_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			trans_jordan_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+
+			if = {
+				limit = {
+					NOT = { owns = 379 }
+				}
+
+				# Add Holy War CB for Jerusalem
+				379 = {
+					owner = {
+						ROOT = {
+							add_casus_belli = {
+								type = cb_crusade_for_jerusalem
+								target = PREV
+								months = 60
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# crusader_missions_diplomatic_path = {
+
+# }
+
+
+
+# Fourth slot: Developing our country from a small European feudal aristocracy teetering atop a population of local Christians and a Muslim majority to a more functional society
+crusader_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_seek_religious_accord = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+
+		# Have a Muslim province that is "under control" and happy, not recently suppressed
+		trigger = {
+			any_owned_province = {
+				AND = {
+					religion_group = muslim
+					NOT = { unrest = 1 }
+					NOT = { local_autonomy = 25 }
+					NOT = { has_province_modifier = recent_uprising }
+				}
+			}
+		}
+
+		effect = {
+			unlock_estate = {
+				estate = estate_sarraceni
+			}
+		}
+	}
+}
