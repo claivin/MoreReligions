@@ -803,6 +803,8 @@ estate_burghers_crusaders_grant_italian_quarter = {
 
 	benefits = {
 		global_trade_power = 0.1
+		capital_scope = {
+		}
 	}
 
 	ai_will_do = {
@@ -813,12 +815,17 @@ estate_burghers_crusaders_grant_italian_quarter = {
 		add_years_of_income = 1
 		capital_scope = {
 			add_center_of_trade_level = 1
+			add_province_modifier = {
+				name = cs_italian_quarter_institution_spread
+				duration = -1
+			}
 		}
 	}
 
 	on_revoked = {
 		capital_scope = {
 			add_center_of_trade_level = -1
+			remove_province_modifier = cs_italian_quarter_institution_spread
 		}
 	}
 }

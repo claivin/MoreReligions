@@ -64,7 +64,7 @@ cb_vassalize_mission_karma = {
 				religion = ROOT
 			}
 		}
-	}	
+	}
 
 	war_goal = take_capital_vassalize_karma
 }
@@ -113,14 +113,14 @@ cb_better_vassalize_mission_karma = {
 				religion = ROOT
 			}
 		}
-	}	
+	}
 
 	war_goal = better_take_capital_vassalize_karma
 }
 
 cb_conquer_rus = {
 	valid_for_subject = no
-	
+
 	prerequisites = {
 		mission_completed = knn_raid_third
 		FROM = {
@@ -132,26 +132,26 @@ cb_conquer_rus = {
 			}
 		}
 	}
-	
+
 	war_goal = take_province_rus
 }
 cb_hungary_thunderdome = {
 	valid_for_subject = no
 	ai_peace_desire = -100
-	
+
 	prerequisites = {
 		has_country_flag = HUN_thunder_dome_participant
 		FROM = {
-			has_country_flag = HUN_thunder_dome_participant	
+			has_country_flag = HUN_thunder_dome_participant
 		}
 	}
-	
-	war_goal = take_capital_annex_hun_cw 
+
+	war_goal = take_capital_annex_hun_cw
 }
 
 cb_bulgaria_bluehorde_war = {
 	valid_for_subject = no
-	
+
 	prerequisites = {
 		FROM = {
 			tag = BLH
@@ -159,7 +159,7 @@ cb_bulgaria_bluehorde_war = {
 		tag = BUL
 		has_country_flag = bul_invade_bluehorde
 	}
-	
+
 	war_goal = take_capital_blue_horde
 }
 
@@ -167,9 +167,9 @@ cb_bulgaria_bluehorde_war = {
 cb_han_song_war = {
 	valid_for_subject = no
 	ai_peace_desire = -30
-	
+
 	is_triggered_only = yes
-	
+
 	war_goal = take_capital_han_song
 }
 
@@ -180,4 +180,13 @@ cb_shugo_independence = {
 	is_triggered_only = yes
 
 	war_goal = defend_capital_independence
+}
+
+cb_crusade_for_jerusalem = {
+	valid_for_subject = no
+	ai_peace_desire = -30
+
+	is_triggered_only = yes
+
+	war_goal = take_jerusalem
 }

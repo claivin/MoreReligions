@@ -147,3 +147,13 @@ is_levantine_crusader_state = {
 		tag = KOJ
 	}
 }
+
+is_in_outremer = {
+	OR = {
+		area = palestine_area
+		area = trans_jordan_area
+		area = aleppo_area
+		area = syria_area
+		area = syrian_desert_area
+	}
+}

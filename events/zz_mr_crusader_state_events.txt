@@ -1,0 +1,48 @@
+country_event = {
+	id = crusader_states_branching_mission_event
+
+	title = crusader_states_branching_mission_event.t
+	desc = crusader_states_branching_mission_event.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = crusader_states_branching_mission_event.a
+
+		# Adds +2 shock +1 siege pips on top of the RNG to make the general not garbo, but 40 AT so he won't be like 3*
+		create_general = {
+			tradition = 40
+			add_shock = 2
+			add_siege = 1
+		}
+
+		define_advisor = {
+			type = army_reformer
+			cost_multiplier = 0.5
+			skill = 1
+		}
+
+		custom_tooltip = crusader_states_branching_mission_event_A_TT
+
+		set_country_flag = cs_domination_path
+	}
+
+	option = {
+		name = crusader_states_branching_mission_event.b
+
+		add_country_modifier = {
+			name = crusader_states_princely_diplomacy
+			duration = 9125 # 25 years
+		}
+
+		define_advisor = {
+			type = army_reformer
+			cost_multiplier = 0.5
+			skill = 1
+		}
+
+		custom_tooltip = crusader_states_branching_mission_event_B_TT
+
+		set_country_flag = cs_diplomatic_path
+	}
+}

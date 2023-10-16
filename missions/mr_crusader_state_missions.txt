@@ -139,12 +139,281 @@ crusader_missions_3 = {
 		}
 
 		effect = {
+			country_event_with_insight = {
+				id = crusader_states_branching_mission_event
+				insight_tooltip = crusader_branching_mission_TT
+			}
+		}
+	}
 
+	# This comes after the branching missions (i.e. both branches lead to this)
+	cs_call_for_crusade = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_lord_of_the_levant }
+		position = 5
+
+		trigger = {
+			OR = {
+				AND = {
+					# Popeman likes us or has to listen to us
+					OR = {
+						has_opinion = {
+							who = PAP
+							value = 150
+						}
+						papal_influence = 100
+					}
+					# A great European King must sponsor the Crusade
+					any_known_country = {
+						OR = {
+							tag = FRA
+							tag = ENG
+							tag = POL
+							tag = BOH
+							tag = NAV
+						}
+						OR = {
+							has_opinion = {
+								who = from
+								value = 150
+							}
+							owes_favors = {
+								who = THIS
+								value = 30
+							}
+						}
+					}
+				}
+				# Already own Jerusalem
+				owns = 379
+			}
+		}
+
+		effect = {
+			palestine_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			trans_jordan_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+			syrian_desert_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = ROOT
+			}
+
+			if = {
+				limit = {
+					NOT = { owns = 379 }
+				}
+
+				# Add Holy War CB for Jerusalem
+				379 = {
+					owner = {
+						ROOT = {
+							add_casus_belli = {
+								type = cb_crusade_for_jerusalem
+								target = PREV
+								months = 60
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
 
-# Fourth slot: Developing our country from a small European feudal aristocracy teetering atop a population of local Christians and Muslim majority to a more functional society
+crusader_missions_branch_placeholders = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		NOT = {
+			OR = {
+				has_country_flag = cs_domination_path
+				has_country_flag = cs_diplomatic_path
+			}
+		}
+	}
+	mr_cs_branching_1 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = { cs_build_to_force_limit }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_cs_branching_2 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = { mr_cs_branching_1 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+	mr_cs_branching_3 = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = { mr_cs_branching_2 }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = need_to_complete_mission
+		}
+	}
+}
+
+# First branch option: domination path
+crusader_missions_domination_path = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		has_country_flag = cs_domination_path
+	}
+
+	cs_one_prince_to_rule_them_all = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_build_to_force_limit }
+		position = 2
+
+		trigger = {
+			# Our army must be at least 25% larger than any other crusader state's
+			any_known_country = {
+				is_levantine_crusader_state = yes
+				NOT = {
+					army_balance = {
+						who = ROOT
+						value = 0.8
+					}
+				}
+			}
+			has_mil_advisor = yes
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cs_dominant_military
+				duration = 12775 # 35 years
+			}
+		}
+	}
+
+	cs_expand_our_demesne = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_one_prince_to_rule_them_all }
+		position = 3
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				is_in_outremer = yes
+			}
+			is_at_war = no
+		}
+
+		effect = {
+			add_years_of_income = 1.5
+
+			every_owned_province = {
+				limit = {
+					nationalism = 1
+				}
+
+				if = {
+					limit = { has_owner_culture = yes }
+					add_nationalism = -20 # Just delet the separatism if they're Franks
+				}
+				else = {
+					add_nationalism = -5 # Reduce the separatism
+				}
+			}
+
+			# Yoinked from Austrian missions; gives us +10% crownland!
+			custom_tooltip = add_10_crown_land_share
+			hidden_effect = {
+				change_estate_land_share = {
+					estate = all
+					share = -10
+				}
+			}
+		}
+	}
+
+	cs_lord_of_the_levant = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { cs_expand_our_demesne }
+		position = 4
+
+		trigger = {
+			# We have eaten all the other crusader states, or are the last one standing lol
+			NOT = {
+				any_known_country = {
+					is_levantine_crusader_state = yes
+				}
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_prestige = 50
+
+			# Reward with more dominant military time if you were fast
+			if = {
+				limit = { has_country_modifier = cs_dominant_military }
+				extend_country_modifier = {
+					name = cs_dominant_military
+					duration = 7300 # 20 years
+				}
+			}
+			# Otherwise, give it again for a short period (i.e. to help with the first big war for Jerusalem)
+			else = {
+				add_country_modifier = {
+					name = cs_dominant_military
+					duration = 3650 # 10 years
+				}
+			}
+		}
+	}
+}
+
+# crusader_missions_diplomatic_path = {
+
+# }
+
+
+
+# Fourth slot: Developing our country from a small European feudal aristocracy teetering atop a population of local Christians and a Muslim majority to a more functional society
 crusader_missions_4 = {
 	slot = 3
 	generic = no
