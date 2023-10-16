@@ -803,8 +803,6 @@ estate_burghers_crusaders_grant_italian_quarter = {
 
 	benefits = {
 		global_trade_power = 0.1
-		capital_scope = {
-		}
 	}
 
 	ai_will_do = {
@@ -814,7 +812,16 @@ estate_burghers_crusaders_grant_italian_quarter = {
 	on_granted = {
 		add_years_of_income = 1
 		capital_scope = {
-			add_center_of_trade_level = 1
+			if = {
+				limit = {
+					province_has_center_of_trade_of_level = 1
+				}
+				add_center_of_trade_level = 1
+			}
+			# Have to use separate effect to create a CoT from scratch
+			else = {
+				center_of_trade = 1
+			}
 			add_province_modifier = {
 				name = cs_italian_quarter_institution_spread
 				duration = -1

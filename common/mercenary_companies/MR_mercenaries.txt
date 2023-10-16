@@ -7,13 +7,13 @@ merc_crusader_italian_troops = {
     cavalry_cap = 0 # = no cav
 	artillery_weight = 0.1
 
+    min_size = 4
+
     sprites = { westerngfx_sprite_pack } # Unit graphics that the mercenary company uses.
 
     trigger = {
-        AND = {
-            is_levantine_crusader_state = yes
-            has_country_flag = crusader_state_italian_mercenaries
-        }
+        is_levantine_crusader_state = yes
+        has_country_flag = crusader_state_italian_mercenaries
     }
 
     modifier = { # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.

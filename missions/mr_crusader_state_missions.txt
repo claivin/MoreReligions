@@ -20,14 +20,14 @@ crusader_missions_2 = {
 
 		# Any Italian Republic likes us
 		trigger = {
-			ROOT = {
+			custom_trigger_tooltip = {
+				tooltip = cs_grant_italian_quarter_trigger_TT
 				any_known_country = {
-					NOT = { tag = ROOT }
 					capital_scope = {
 						region = italy_region
 					}
 					government = republic
-					religion = ROOT
+					has_matching_religion = ROOT
 					has_opinion = {
 						who = ROOT
 						value = 150
@@ -59,7 +59,10 @@ crusader_missions_2 = {
 		}
 
 		effect = {
-			set_country_flag = crusader_state_italian_mercenaries
+			custom_tooltip = cs_seek_italian_military_support_reward_TT
+			hidden_effect = {
+				set_country_flag = crusader_state_italian_mercenaries
+			}
 		}
 	}
 
