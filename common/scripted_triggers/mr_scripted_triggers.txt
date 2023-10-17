@@ -316,15 +316,14 @@ cs_call_for_crusade_trigger = {
 				}
 				papal_influence = 100
 			}
-			# A great European King must sponsor the Crusade
+			# A great European Prince must sponsor the Crusade
 			any_known_country = {
+				government = monarchy
 				OR = {
-					tag = FRA
-					tag = ENG
-					tag = POL
-					tag = BOH
-					tag = NAV
+					government_rank = 2
+					total_development = 100
 				}
+				religion = from
 				OR = {
 					has_opinion = {
 						who = from
