@@ -167,7 +167,6 @@ is_in_outremer = {
 		province_id = 5284
 		province_id = 2315
 		province_id = 5375
-		province_id = 321
 	}
 }
 
