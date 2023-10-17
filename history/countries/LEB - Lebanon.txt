@@ -1,7 +1,9 @@
 government = monarchy
+government_rank = 1
 add_government_reform = feudalism_reform
 primary_culture = cosmopolitan_french
 add_accepted_culture = al_suryah_arabic
 religion = catholic
 technology_group = western
 capital = 1855	# Sidon
+fixed_capital = 1855

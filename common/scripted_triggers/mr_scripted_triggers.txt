@@ -137,10 +137,11 @@ can_have_mountaineers = {
 }
 
 is_levantine_crusader_state = {
-	# Crusaders = Antioch, Edessa, Lebanon, Tripoli
+	# Crusaders = Antioch, Cyprus, Edessa, Lebanon, Tripoli
 	# Also keep it valid for Jerusalem
 	OR = {
 		tag = ATI
+		tag = CYP
 		tag = EDD
 		tag = LEB
 		tag = TPO
@@ -148,6 +149,8 @@ is_levantine_crusader_state = {
 	}
 }
 
+# Is a province in what we are defining as Outremer, since it's not an in game
+# region nor does it follow neat state lines
 is_in_outremer = {
 	OR = {
 		area = palestine_area
@@ -164,6 +167,7 @@ is_in_outremer = {
 		province_id = 5284
 		province_id = 2315
 		province_id = 5375
+		province_id = 321
 	}
 }
 
