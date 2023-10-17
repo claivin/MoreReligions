@@ -54,9 +54,9 @@ set_xp_costs_effect = {
 		which = branchUpath_base_cost
 		value = 200
 	}
-	
+
 	##modifiers for cost changes go here vvv
-	
+
 	#for example
 	# if = {
 		# limit = {
@@ -119,6 +119,7 @@ reset_elite_units = {
 		remove_country_modifier = elite_vanguard_1
 	}
 }
+
 update_maitreya_monthly = {
 	set_variable = {
 		which = maitreyan_power_counter_change
@@ -375,6 +376,36 @@ eng_opener_missions_progress_effect = {
 		change_variable  = {
 			which = engOpenerMissionProg
 			value = 1
+		}
+	}
+}
+
+# Effect of a mission in the shared crusader tree that has to be repeated thrice due to branching missions shenanigans
+cs_call_for_crusade_effect = {
+	every_province = {
+		limit = {
+			NOT = { owned_by = ROOT }
+			is_in_outremer = yes
+		}
+		add_permanent_claim = ROOT
+	}
+
+	# Add Holy War CB for Jerusalem if we don't own it
+	if = {
+		limit = {
+			NOT = { owns = 379 }
+		}
+
+		379 = {
+			owner = {
+				ROOT = {
+					add_casus_belli = {
+						type = cb_crusade_for_jerusalem
+						target = PREV
+						months = 60
+					}
+				}
+			}
 		}
 	}
 }

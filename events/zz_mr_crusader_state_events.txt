@@ -45,8 +45,154 @@ country_event = {
 
 		custom_tooltip = crusader_states_branching_mission_event_B_TT
 
-		set_country_flag = cs_diplomatic_path@ROOT
+		set_country_flag = cs_diplomatic_path
 
 		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = crusader_states_grand_wedding
+	title = crusader_states_grand_wedding.t
+	desc = crusader_states_grand_wedding.d
+
+	is_triggered_only = yes
+
+	major = yes
+
+	major_trigger = {
+		capital_scope = {
+			superregion = near_east_superregion
+		}
+	}
+
+	option = {
+		name = crusader_states_grand_wedding.a
+
+		add_years_of_income = -5
+		every_known_country = {
+			limit = {
+				is_levantine_crusader_state = yes
+			}
+			add_trust = {
+				who = root
+				value = 20
+			}
+		}
+	}
+
+	option = {
+		name = crusader_states_grand_wedding.b
+
+		add_years_of_income = -3
+		every_known_country = {
+			limit = {
+				is_levantine_crusader_state = yes
+			}
+			add_trust = {
+				who = root
+				value = 10
+			}
+		}
+	}
+
+	option = {
+		name = crusader_states_grand_wedding.c
+
+		add_years_of_income = 3
+		every_known_country = {
+			limit = {
+				is_levantine_crusader_state = yes
+			}
+			add_trust = {
+				who = root
+				value = -5
+			}
+		}
+	}
+}
+
+
+# Causes visible province event to fire that swaps to a better trade good
+country_event = {
+	id = crusader_states.3
+
+	hidden = yes
+
+	mean_time_to_happen = {
+		years = 10
+
+		modifier = {
+			factor = 0.5
+			stability = 2
+		}
+	}
+
+	trigger = {
+		is_levantine_crusader_state = yes
+		mission_completed = cs_agricultural_centralization
+		any_owned_province = {
+			OR = {
+				is_in_outremer = yes
+				region = mashriq_region
+			}
+			OR = {
+				has_farm_trade_goods = yes
+				has_pasture_trade_goods = yes
+			}
+		}
+
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_outremer = yes
+					region = mashriq_region
+				}
+				OR = {
+					has_farm_trade_goods = yes
+					has_pasture_trade_goods = yes
+				}
+			}
+
+			province_event = {
+				id = crusader_states.4
+			}
+		}
+	}
+
+	option = {
+
+	}
+}
+
+province_event = {
+	id = crusader_states.4
+	title = crusader_states.4.t
+	desc = crusader_states.4.d
+	picture = GFX_farm_estate
+
+	is_triggered_only = yes
+
+	option = {
+		name = crusader_states.4.a
+		change_trade_goods = sugar
+	}
+
+	option = {
+		name = crusader_states.4.b
+		change_trade_goods = tobacco
+	}
+
+	option = {
+		name = crusader_states.4.c
+		change_trade_goods = olives
+	}
+
+	option = {
+		name = crusader_states.4.e
+		change_trade_goods = dates_figs
 	}
 }

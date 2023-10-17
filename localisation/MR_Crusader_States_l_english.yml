@@ -15,18 +15,51 @@
   cs_build_to_force_limit_title: "A Force to be Reckoned With"
   cs_build_to_force_limit_desc: "In order to be taken seriously in the dangerous world of Outremer, we must establish both our international prestige and our military might."
   crusader_branching_mission_TT: "Will trigger an event allowing us to choose between a §Ydomination§! or a §Ydiplomatic§! path to unite Outremer and reclaim Jerusalem!"
+
   # Domination path
   cs_one_prince_to_rule_them_all_title: "One Prince To Rule Them All"
   cs_one_prince_to_rule_them_all_desc: "By establishing an army strong enough to defeat any other Prince of Outremer, we will be prepared for our campaign of conquest!"
+  cs_one_prince_to_rule_them_all_trigger_tt: "We have the largest army of all the Princes of Outremer (Antioch, Cyprus, Edessa, Lebanon, and Tripoli)"
   cs_expand_our_demesne_title: "Expand Our Demesne"
   cs_expand_our_demesne_desc: "Once we have expanded our realm significantly"
   add_10_crown_land_share: "§Y[Root.GetName]§! gains §G10§! crown land ownership."
   cs_lord_of_the_levant_title: "Lord of the Levant"
   cs_lord_of_the_levant_desc: "Now that [Root.Monarch.GetTitle] [Root.Monarch.GetName] has subdued all the Princes of Outremer, [Root.Monarch.GetSheHe] can marshal the combined power of all our resources and support from Europe to reclaim Jerusalem, and Baldwin's crown!"
+  cs_call_for_crusade0_title: "Call for Crusade"
+  cs_call_for_crusade0_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
+  cs_call_for_crusade_1_title: "Call for Crusade"
+  cs_call_for_crusade_1_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
+  cs_call_for_crusade_2_title: "Call for Crusade"
+  cs_call_for_crusade_2_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
+  cs_call_for_crusade_effect_tt: "Adds a §Ypermanent claim§! to every non-owned province in Outremer."
+
+  # Diplomatic path
+  cs_first_among_equals_title: "First Among Equals"
+  cs_first_among_equals_desc: "First Among Equals"
+  cs_royal_dowries_title: "Royal Dowries"
+  cs_royal_dowries_desc: "Royal Dowries"
+  cs_a_house_united_title: "A House United"
+  cs_a_house_united_desc: "A House United"
+  cs_first_among_equals_effect_tt: "Due to our winning charm, any Prince of Outremer who considers us a rival has a positive opinion of us will set aside their childish petulance. Any Prince of Outremer whose opinion of us is at least §G+100§! will become a historical friend."
+  cs_a_house_united_effect_tt: "We will vassalize all the other Princes of Outremer."
 
   # Slot 4
   cs_seek_religious_accord_title: "Seek Religious Accord"
   cs_seek_religious_accord_desc: "In order to build up our realm from a small feudal state teetering on the precipice of collapse or annexation by the larger Muslim powers, we must find a way forward to govern the local people without too much discord."
+  cs_satisfy_minority_leaders_title: "Satisfy Minority Leaders"
+  cs_satisfy_minority_leaders_desc: "Satisfy Minority Leaders"
+  cs_a_stable_society_title: "A Stable Society"
+  cs_a_stable_society_desc: "Outremer has long been plagued by war, poverty, and factional infighting, as both a result of and continuing cause for the long, slow decline of the Christian lands despite the disunity and chaos among the infidels as well. If we can provide a true sense of security to our people, it will not only give us renown within the region, but allow continued peaceful development into a prosperous realm."
+  cs_eastern_exports_title: "Eastern Exports"
+  cs_eastern_exports_desc: "With our prosperity and economic output, we have assumed a dominant trade position in the eastern Mediterranean. Now we can leverage our position to add our own goods to the flow from East to West. No longer acting as a mere middleman, *we* will set the prices and reap the rewards!"
+  cs_thriving_mediterranean_trade_title: "Thriving Mediterranean Trade"
+  cs_thriving_mediterranean_trade_desc: "Thriving Mediterranean Trade"
+
+  # Slot 5
+  cs_looming_mamluks_title: "The Looming Mamluks"
+  cs_looming_mamluks_desc: "The Mamluks are the great and ever-present menace looming above our small principality, threatening always to push us and all Christians into the sea if we let our guard down. Constantly, their cavalry raid outlying settlements, pillaging and taking captives, and their tariffs on trade are beyond extortionate, when they aren't deciding to block caravans entirely. If we are to prosper, we must find a way to stop them from pushing us around."
+  cs_agricultural_centralization_title: "Agricultural Centralization"
+  cs_agricultural_centralization_desc: "As our prosperity grows, many magnates and landowners have been watching with growing interest and envy the success of the plantations built in the agricultural regions of [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s lands. Some have already begun to emulate us, but if we were to officially encourage such a policy and sweep any legal hurdles of \"long-standing rights\" and such from the peasantry aside, we could reap a great benefit from the growing productivity."
 
 
   # --MODIFIERS--
@@ -37,6 +70,11 @@
   desc_cs_dominant_military: "With [Root.Monarch.GetTitle] [Root.Monarch.GetName] proclaiming in all but name [Root.Monarch.GetHerHim] ambition to annex the lands of the other Princes of Outremer, and demonstrating the requisite military buildup, a fresh wave of scoundrels, fortune seekers, and mercenaries are heading specifically to take part in the War for Outremer."
   cs_italian_quarter_institution_spread: "Bustling Trade Hub"
   desc_cs_italian_quarter_institution_spread: "The frequent coming and going of traders from East and West means new developments from all over the globe filter through our streets."
+  cs_stable_society: "Stable Society"
+  cs_eastern_exports_mod: "Eastern Exports"
+  cs_thriving_trade: "Thriving Trade"
+  cs_diplomatic_success: "Diplomatic Success"
+  cs_plantation_economy: "Plantation Economy"
 
 
   # --EVENTS--
@@ -46,6 +84,18 @@
   crusader_states_branching_mission_event_A_TT: "This path will give us military buffs to §Yannex§! the other crusader states and §Yimprove our military.§!"
   crusader_states_branching_mission_event.b: "I will sway the other princes with words and gifts!"
   crusader_states_branching_mission_event_B_TT: "This path will allow us to §Ydiplomatically vassalize§! the other crusader states."
+
+  crusader_states_grand_wedding.t: "Grand Wedding of the Levant"
+  crusader_states_grand_wedding.d: "In doubtless the diplomatic triumph of [Root.Monarch.GetTitle]'s reign thus far, [Root.Monarch.GetSheHe] has managed to secure marriage alliances with all the other Princes of Outremer. Furthermore, though the betrothals were not announced all at once, the nuptials are to be held in a single massive ceremony in [Root.GetCapitalName] in three weeks. Rumor has it that notables will be coming from as far afield as Italy and France to witness the spectacle. The only remaining question is how we should prepare for the celebrations..."
+  crusader_states_grand_wedding.a: "A week of feasting, and fresh silken doublets for all the servants!"
+  crusader_states_grand_wedding.b: "Let my retainers equip their own men, I will provide the victuals."
+  crusader_states_grand_wedding.c: "I've worked hard enough to secure this, where are the dowries due my nephews?"
+  crusader_states.4.t: "Agricultural Development in [This.GetName]"
+  crusader_states.4.d: "The agricultural revolution has spread to [This.GetName], with plantation complexes dotting the hillsides, hedges and fences clearly marking the fields, and hordes of disposessed tenants pouring into the towns. With all this upheaval, there's potential to reorient the economy from the old staple produce to valuable cash crops."
+  crusader_states.4.a: "That's sugar, man!"
+  crusader_states.4.b: "Give me whacky tobacky."
+  crusader_states.4.c: "Olives. Extra virgin."
+  crusader_states.4.e: "Can't go wrong with dates and figs."
 
 
 # --OTHER--

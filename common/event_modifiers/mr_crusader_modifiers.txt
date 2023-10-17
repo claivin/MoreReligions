@@ -29,9 +29,10 @@ cs_stable_society = {
 	global_unrest = -1
 	global_autonomy = -0.05
 	monthly_reform_progress = 0.25
+	global_prosperity_growth = 0.1
 }
 
-cs_eastern_exports = {
+cs_eastern_exports_mod = {
 	global_trade_goods_size_modifier = 0.2
 	trade_efficiency = 0.1
 	trade_steering = 0.50
@@ -51,6 +52,11 @@ cs_plantation_economy = {
 	trade_goods_size = 0.5
 	local_unrest = 5
 	local_manpower_modifier = 0.25
+}
+
+cs_by_hook_or_by_crook = {
+	monthly_favor_modifier = 0.25
+	spy_offence = 0.25
 }
 
 
