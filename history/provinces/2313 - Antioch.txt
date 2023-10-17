@@ -2,14 +2,14 @@
 
 owner = ATI
 controller = ATI
-culture = al_suryah_arabic
+culture = cosmopolitan_french
 religion = catholic
-capital = "Antakya"
-trade_goods = cloth
+capital = "Antioch"
+trade_goods = silk
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 7
+base_production = 5
+base_manpower = 4
 is_city = yes
 add_core = SYR
 add_core = ATI
