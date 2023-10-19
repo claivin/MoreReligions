@@ -382,12 +382,15 @@ eng_opener_missions_progress_effect = {
 
 # Effect of a mission in the shared crusader tree that has to be repeated thrice due to branching missions shenanigans
 cs_call_for_crusade_effect = {
-	every_province = {
-		limit = {
-			NOT = { owned_by = ROOT }
-			is_in_outremer = yes
+	custom_tooltip = cs_call_for_crusade_effect_tt
+	hidden_effect = {
+		every_province = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				is_in_outremer = yes
+			}
+			add_permanent_claim = ROOT
 		}
-		add_permanent_claim = ROOT
 	}
 
 	# Add Holy War CB for Jerusalem if we don't own it

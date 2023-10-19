@@ -580,7 +580,7 @@ mr_citadel_of_antioch = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = { value = 15 }
+				add_prestige_or_monarch_power = { amount = 15 }
 				add_splendor = 50
 			}
 		}
@@ -606,7 +606,7 @@ mr_citadel_of_antioch = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = { value = 25 }
+				add_prestige_or_monarch_power = { amount = 25 }
 				add_splendor = 50
 			}
 		}
@@ -636,7 +636,7 @@ mr_citadel_of_antioch = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = { value = 50 }
+				add_prestige_or_monarch_power = { amount = 50 }
 				add_splendor = 100
 			}
 		}
@@ -717,7 +717,7 @@ mr_port_st_symeon = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = { value = 10 }
+				add_prestige_or_monarch_power = { amount = 10 }
 				add_splendor = 25
 			}
 		}
@@ -742,7 +742,7 @@ mr_port_st_symeon = {
 		}
 		on_upgraded = {
 			owner = {
-				add_prestige_or_monarch_power = { value = 25 }
+				add_prestige_or_monarch_power = { amount = 25 }
 				add_splendor = 50
 			}
 		}

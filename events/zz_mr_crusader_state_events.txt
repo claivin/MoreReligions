@@ -196,3 +196,24 @@ province_event = {
 		change_trade_goods = dates_figs
 	}
 }
+
+country_event = {
+	id = crusader_states.5
+	title = crusader_states.5.t
+	desc = crusader_states.5.d
+	picture = REBELLION_AGAINST_ANGLICANS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = crusader_states.5.a
+
+		inherit = ATI
+		# every_owned_province = {
+		# 	limit = {
+		# 		is_core = ATI
+		# 	}
+		# 	add_nationalism = 10
+		# }
+	}
+}

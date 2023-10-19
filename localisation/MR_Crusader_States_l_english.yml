@@ -1,5 +1,18 @@
 ﻿l_english:
   ## --MISSIONS--
+  # Slot 1
+  cs_powerful_fleet_title: "A Powerful Fleet"
+  cs_powerful_fleet_desc: "With our survival over the ages largely dependent on our lifeline by sea to the Christian powers back in Europe, not to mention the money earnt by trade leaving our ports, it is vital for us to have a strong enough fleet to protect ourselves. Furthermore, if [Root.Monarch.GetTitle] [Root.Monarch.GetName] wishes to, perhaps, invade any neighboring principalities, a squadron of transports and war galleys to protect them would be a great boon."
+
+  ati_dynastic_ties_title: "Dynastic Ties"
+  ati_dynastic_ties_desc: "There is a long history of intermarriage for alliances between all the Christian Princes of the East, but we in Antioch have enjoyed pride of place as the strongest Prince of Outremer since the collapse of the Kingdom of Jerusalem, and thus enjoyed the closest ties to our neighbors in Little Armenia--Cilicia--and their cousins Armenia proper. If we were to seize Little Armenia, we could then press our claims to the rest of Armenia."
+  ati_dynastic_ties_effect_tt: "If Armenia exists, we will get a §Yrestoration of union§! casus belli on them.\nOtherwise, we will get §G50§! prestige (excess will be converted to monarch points) and a permanent claim on the §YArmenia Area§!."
+
+  edd_old_claims: "Old Claims"
+  edd_old_claims: "These are not exactly our glory dies. In times past, Edessa stretched from just beyond the city of Antioch itself in the west to the Euphrates in the east, north into the Anatolian foothills and south into the plains of Iraq. While that land and the base of power it lent us may have slipped from our grasp, who is to say that the strength of Edessa is yet spent?"
+  edd_edessa_ascendant_title: "Edessa Ascendant"
+  edd_edessa_ascendant_desc: "Now that we have grown stronger than our old rivals in Antioch, we finally have a chance to succeed in our old ambitions to reunite our realm with theirs. With a little time and preparation, we can prepare a coup so swift none will be able to oppose us."
+
   # Slot 2
   cs_grant_italian_quarter_title: "Grant Italian Quarter"
   cs_grant_italian_quarter_desc: "Having established strong relations with Italian merchants, they are now interested in establishing more than small trade outposts in our land. If we allow them to establish a trading quarter in our capital, it could have quite beneficial effects in the long term, in addition to reaping a hefty bribe."
@@ -58,8 +71,8 @@
   cs_a_stable_society_desc: "Outremer has long been plagued by war, poverty, and factional infighting, as both a result of and continuing cause for the long, slow decline of the Christian lands despite the disunity and chaos among the infidels as well. If we can provide a true sense of security to our people, it will not only give us renown within the region, but allow continued peaceful development into a prosperous realm."
   cs_eastern_exports_title: "Eastern Exports"
   cs_eastern_exports_desc: "With our prosperity and economic output, we have assumed a dominant trade position in the eastern Mediterranean. Now we can leverage our position to add our own goods to the flow from East to West. No longer acting as a mere middleman, *we* will set the prices and reap the rewards!"
-  cs_thriving_mediterranean_trade_title: "Thriving Mediterranean Trade"
-  cs_thriving_mediterranean_trade_desc: "Thriving Mediterranean Trade"
+  cs_thriving_trade_title: "Thriving Trade"
+  cs_thriving_trade_desc: "Thriving Trade"
 
   # Slot 5
   cs_looming_mamluks_title: "The Looming Mamluks"
@@ -78,7 +91,7 @@
   desc_cs_italian_quarter_institution_spread: "The frequent coming and going of traders from East and West means new developments from all over the globe filter through our streets."
   cs_stable_society: "Stable Society"
   cs_eastern_exports_mod: "Eastern Exports"
-  cs_thriving_trade: "Thriving Trade"
+  cs_thriving_trade_mod: "Thriving Trade"
   cs_diplomatic_success: "Diplomatic Success"
   cs_plantation_economy: "Plantation Economy"
   cs_by_hook_or_by_crook: "By Hook or by Crook"
@@ -87,7 +100,7 @@
   desc_cs_eastern_metropolis_capital_area: "The economic growth of the capital has lifted the fortunes of the entire region."
   desc_cs_stable_society: "We should have a stable society, and now we do."
   desc_cs_eastern_exports_mod: "Growth in the export economy."
-  desc_cs_thriving_trade: "Thriving trade economy gives our merchants more influence."
+  desc_cs_thriving_trade_mod: "Thriving trade economy gives our merchants more influence."
   desc_cs_diplomatic_success: "Our outmaneuvering of the Mamluks has proved a great diplomatic coup that raises our esteem in the region and further abroad, increasing the influence and sway of our ambassadors."
   desc_cs_plantation_economy: "Growth of the plantation economy has diplaced many tenants and smallholders from the rural areas to the towns."
 
@@ -111,6 +124,10 @@
   crusader_states.4.b: "Give me whacky tobacky."
   crusader_states.4.c: "Olives. Extra virgin."
   crusader_states.4.e: "Can't go wrong with dates and figs."
+
+  crusader_states.5.t: "Coup in Antioch!"
+  crusader_states.5.d: "\"Awake! Alarm! Awake!\"\nThe cry was soon echoing from the palace throughout the neighborhoods of Antioch, but frightened citizens remained in their homes as troops of horsemen without banners thundered down the streets. First smoke, then great tongues of flame rose from the Prince's Palace on the foothills of Mount Silpius to lick the sky, casting an orange hue on the maille of the ominous riders gathering in squares and watch towers. While the citizens nearest the palace hurried to bring water from the wells and stop the blaze from spreading, they failed to notice the signals spreading from Southern Gate and adjacent towers in the city walls, until the whole city was encircled.\n\nBy the morning, [Root.Monarch.GetTitle] [Root.Monarch.GetName] was in the city with another thousand men-at-arms in gleaming armor, carrying the yellow banner of Edessa. Calmly, [Root.Monarch.GetSheHe] directed the citizens and some of [Root.Monarch.GetHersHis] own men in putting out the last of the fires and beginning to clear debris as if it were the most natural thing in the world. The few troops not dead or bribed, still loyal to the fallen [ATI.Monarch.GetTitle] of Antioch were holed up in the citadel, but it was only a matter of time before they surrended to the eery calm that had befallen the rest of the city."
+  crusader_states.5.a: "Excellent work. Give my spymaster a raise."
 
 
 # --OTHER--

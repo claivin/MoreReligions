@@ -158,10 +158,16 @@ is_in_outremer = {
 		area = aleppo_area
 		area = syria_area
 		area = syrian_desert_area
-		area = cukurova_area # Cilicia/Little Armenia + Cyprus
+		# Cilicia/Little Armenia
+		province_id = 327
+		province_id = 2302
+		province_id = 5387
+
+		province_id = 321 # Cyprus
 		province_id = 2308 # Edessa
 		province_id = 407 # Ar-Raqqah
 		province_id = 4268 # Aqbah
+
 		# Sinai peninsula
 		province_id = 365
 		province_id = 5284
