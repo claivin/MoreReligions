@@ -1,6 +1,16 @@
 spriteTypes = {
 	spriteType = {
-		name = "GFX_great_project_mr_carcasonne"	
+		name = "GFX_great_project_mr_carcasonne"
+		texturefile = "gfx//interface//great_projects//great_project_mr_carcasonne.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_mr_citadel_of_antioch"
+		texturefile = "gfx//interface//great_projects//great_project_mr_carcasonne.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_mr_port_st_symeon"
 		texturefile = "gfx//interface//great_projects//great_project_mr_carcasonne.dds"
 	}
 	spriteType = {

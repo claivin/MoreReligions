@@ -8,6 +8,90 @@
 # gets some funny schizo shit to like infiltrate Antioch and take it over, maybe
 # some other memes.
 
+# First slot: Coastal missions
+crusader_missions_1_coastal = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		NOT = { tag = EDD } # Edessa has no coast
+	}
+
+	cs_powerful_fleet = {
+		icon = mission_naval_dominance
+		required_missions = { }
+		position = 1
+
+		trigger = {
+			num_of_galley = 12
+		}
+
+		effect = {
+			add_sailors = 2000
+			add_country_modifier = {
+				name = cs_naval_buildup
+				duration = 9125
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 5
+					type = $type$
+					speed = 0.1
+					cost = 0
+				}
+			}
+
+
+		}
+	}
+}
+
+# First slot: Antioch content
+crusader_missions_1_coastal = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		NOT = { tag = EDD } # Edessa has no coast
+	}
+
+	cs_powerful_fleet = {
+		icon = mission_naval_dominance
+		required_missions = { }
+		position = 1
+
+		trigger = {
+			num_of_galley = 12
+		}
+
+		effect = {
+			add_sailors = 2000
+			add_country_modifier = {
+				name = cs_naval_buildup
+				duration = 9125
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 5
+					type = $type$
+					speed = 0.1
+					cost = 0
+				}
+			}
+
+
+		}
+	}
+}
+
 
 # Second slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
 crusader_missions_2 = {
@@ -128,7 +212,7 @@ crusader_missions_domination_path = {
 	}
 
 	cs_one_prince_to_rule_them_all = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_crown_of_denmark
 		required_missions = { cs_build_to_force_limit }
 		position = 2
 
@@ -154,7 +238,7 @@ crusader_missions_domination_path = {
 	}
 
 	cs_expand_our_demesne = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		required_missions = { cs_one_prince_to_rule_them_all }
 		position = 3
 

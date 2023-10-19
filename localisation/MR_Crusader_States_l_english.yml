@@ -15,6 +15,12 @@
   cs_build_to_force_limit_title: "A Force to be Reckoned With"
   cs_build_to_force_limit_desc: "In order to be taken seriously in the dangerous world of Outremer, we must establish both our international prestige and our military might."
   crusader_branching_mission_TT: "Will trigger an event allowing us to choose between a §Ydomination§! or a §Ydiplomatic§! path to unite Outremer and reclaim Jerusalem!"
+  mr_cs_branching_1_title: "Branching Mission 1"
+  mr_cs_branching_1_desc: "Branching Mission 1"
+  mr_cs_branching_2_title: "Branching Mission 2"
+  mr_cs_branching_2_desc: "Branching Mission 2"
+  mr_cs_branching_3_title: "Branching Mission 3"
+  mr_cs_branching_3_desc: "Branching Mission 3"
 
   # Domination path
   cs_one_prince_to_rule_them_all_title: "One Prince To Rule Them All"
@@ -75,6 +81,15 @@
   cs_thriving_trade: "Thriving Trade"
   cs_diplomatic_success: "Diplomatic Success"
   cs_plantation_economy: "Plantation Economy"
+  cs_by_hook_or_by_crook: "By Hook or by Crook"
+  desc_cs_by_hook_or_by_crook: "One way or another, we will sway the other Princes to [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s suzerainty, whether we must shower them in gifts or use blackmail and subterfuge."
+  desc_cs_eastern_metropolis_capital_prov: "The growth of our capital has turned into both a preminent manufacturing center and yielded increased tax income from our trade tariffs."
+  desc_cs_eastern_metropolis_capital_area: "The economic growth of the capital has lifted the fortunes of the entire region."
+  desc_cs_stable_society: "We should have a stable society, and now we do."
+  desc_cs_eastern_exports_mod: "Growth in the export economy."
+  desc_cs_thriving_trade: "Thriving trade economy gives our merchants more influence."
+  desc_cs_diplomatic_success: "Our outmaneuvering of the Mamluks has proved a great diplomatic coup that raises our esteem in the region and further abroad, increasing the influence and sway of our ambassadors."
+  desc_cs_plantation_economy: "Growth of the plantation economy has diplaced many tenants and smallholders from the rural areas to the towns."
 
 
   # --EVENTS--

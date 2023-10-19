@@ -59,6 +59,11 @@ cs_by_hook_or_by_crook = {
 	spy_offence = 0.25
 }
 
+cs_naval_buildup = {
+	naval_forcelimit = 10
+	naval_morale = 0.1
+}
+
 
 # Sarraceni estate
 estate_sarraceni_guaranteed_autonomy_mod = {
