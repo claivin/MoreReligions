@@ -650,6 +650,7 @@ MR_bureau_military_affairs_reform = {
 			NOT = { max_manpower = 12 }
 		}
 	}
-}			
+}
+			
 	
 	

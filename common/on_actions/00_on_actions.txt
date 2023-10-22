@@ -6412,7 +6412,39 @@ on_alliance_created = { #ROOT - Alliance sender, FROM - Alliance accepter
 }
 
 on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
-
+	if = {
+		limit = {
+			has_government_power = { mechanic_type = crusader_mechanic power_type = crusader_adm_power }
+			FROM = {
+				culture_group = germanic
+			}
+			NOT = {
+				OR = {
+					has_country_modifier = first_level_adm_crusade
+					has_country_modifier = second_level_adm_crusade
+					has_country_modifier = third_level_adm_crusade
+				}
+			}
+		}
+		add_country_modifier = {
+			name = first_level_adm_crusade
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			has_government_power = { mechanic_type = crusader_mechanic power_type = crusader_adm_power }
+			FROM = {
+				culture_group = germanic
+			}
+			has_country_modifier = first_level_adm_crusade
+		}
+		remove_country_modifier = first_level_adm_crusade
+		add_country_modifier = {
+			name = second_level_adm_crusade
+			duration = -1
+		}
+	}
 }
 
 on_heir_disinherited = {

@@ -103,3 +103,20 @@
  monthly_maitreyan_zealotry:0 "Monthly Millenarian Fervour"
  ability_maitreyan_zealotry_mechanic:0 "Millenarian Fervour"
  MAITREYAN_MAX_ZEALOTRY:0 "War Score Cost vs Other Religions: §G-20%§!"
+
+
+#Crusader Support
+CRUSADER_GERMAN: "Call for Germanic Support"
+CRUSADER_GERMAN_desc: "Since the days of Frederic II, the German knights have been curcial to the control of the region. Now, as the days of battle in the desert atop mighty steeds draw to a close, we instead call for their architects and siege specialists to help rebuild the great Christian cities of the east."
+crusader_adm_power: "Germanic Support"
+CRUSADER_ITALIAN: "Call for Latin Support"
+CRUSADER_ITALIAN_desc: "The Latins, specifically the reborn Sicilian Hauteville Dynasty, used to send aid with their great ships across the Mediterranean Sea. We shall call upon them once more, to supply our people with goods from beyond the horizon, and to help aid our sailors in defending our navy."
+crusader_dip_power: "Latin Support"
+CRUSADER_FRENCH: "Call for French Support"
+crusader_mil_power: "French Support"
+CRUSADER_FRENCH_desc: "While we gain aid to build our nation from the Latins and Germanic, from the French, we gain their prized military command. Their famed cavalry and strategists shall lead our people into the future against all threats!"
+negate_culture_penalty_TT: "This will negate the unembraced culture penalty for this provence.\n"
+french_strategist: "French Strategists"
+sicilian_sailors: "Latin Sailors"
+saxon_architects: "German Architects"
+ability_crusader_mechanic: "§YCrusader Support§!"

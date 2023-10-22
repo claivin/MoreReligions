@@ -530,6 +530,29 @@ spriteTypes = {
 		size = { x = 232 y = 20 }
 		effectFile = "gfx/FX/progress.lua"
 	}
+
+	### crusader support ###
+	spriteType = {
+		name = "GFX_crusader_ability_ADM"
+		texturefile = "gfx//interface//government_mechanics/crusader_support/crusader_ability_ADM.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_crusader_ability_DIP"
+		texturefile = "gfx//interface//government_mechanics/crusader_support/crusader_ability_DIP.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+		
+	}
+
+	spriteType = {
+		name = "GFX_crusader_ability_MIL"
+		texturefile = "gfx//interface//government_mechanics/crusader_support/crusader_ability_MIL.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
 	
 	##Maitreyan Zealotry
 	

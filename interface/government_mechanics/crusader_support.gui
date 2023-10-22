@@ -1,0 +1,69 @@
+guiTypes = {
+	windowType = { # Frame
+		name = "crusader_interaction_mech"
+		size = { x = 340 y = 122 }
+		moveable = 0
+
+		# Frame
+		iconType = {
+			name = "crusader_support_frame"
+			spriteType = "GFX_crusader_support_frame"
+			position = { x = 4 y = 0 }
+			alwaystransparent = yes
+		}
+
+	}
+}
+guiTypes = {	
+	guiButtonType = {
+		name = "government_interaction_button"
+		quadTextureSprite = "GFX_crusader_ability_ADM"
+		buttonFont = "vic_18"
+		clicksound = back_click
+		text = ""
+	}
+
+	# Frame
+	iconType = {
+		name = "crusader_support_frame"
+		spriteType = "GFX_crusader_support_frame"
+		position = { x = 4 y = 0 }
+		alwaystransparent = yes
+	}
+}
+guiTypes = {
+	### interaction button
+	guiButtonType = {
+		name = "government_interaction_buttonN"
+		quadTextureSprite = "GFX_crusader_ability_DIP"
+		buttonFont = "vic_18"
+		clicksound = back_click
+		text = ""
+	}
+
+	# Frame
+	iconType = {
+		name = "crusader_support_frame"
+		spriteType = "GFX_crusader_support_frame"
+		position = { x = 4 y = 0 }
+		alwaystransparent = yes
+	}
+}	
+guiTypes = {
+	guiButtonType = {
+		name = "government_interaction_button"
+		quadTextureSprite = "GFX_crusader_ability_MIL" 
+		delayedTooltipText = ""
+		buttonFont = "vic_18"
+		clicksound = back_click
+		text = ""
+	}
+
+	# Frame
+	iconType = {
+		name = "crusader_support_frame"
+		spriteType = "GFX_crusader_support_frame"
+		position = { x = 4 y = 0 }
+		alwaystransparent = yes
+	}
+}
