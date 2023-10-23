@@ -2,7 +2,7 @@
 
 owner = ATI
 controller = ATI
-culture = cosmopolitan_french
+culture = outremer
 religion = catholic
 capital = "Antioch"
 trade_goods = silk

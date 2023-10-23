@@ -1,10 +1,31 @@
 government = monarchy
 government_rank = 1
 add_government_reform = feudalism_reform
-primary_culture = cosmopolitan_french
+primary_culture = outremer
 add_accepted_culture = al_suryah_arabic
 religion = catholic
 technology_group = western
 capital = 378 # Tripoli
 fixed_capital = 378
-.
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Fulk III"
+		dynasty = "of Jerusalem"
+		birth_date = 1399.9.8
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+
+	queen = {
+		name = "Melisende"
+		dynasty = "Hainaut"
+		birth_date = 1420.3.23
+		female = yes
+		adm = 5
+		dip = 6
+		mil = 4
+	}
+}

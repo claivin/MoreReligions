@@ -1,9 +1,21 @@
 government = monarchy
 government_rank = 1
 add_government_reform = feudalism_reform
-primary_culture = cosmopolitan_french
+primary_culture = outremer
 add_accepted_culture = al_suryah_arabic
 religion = catholic
 technology_group = western
-capital = 1855	# Sidon
-fixed_capital = 1855
+capital = 5043 # Tyre
+fixed_capital = 5043
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Hugh III"
+		dynasty = "de Ibelin"
+		birth_date = 1391.1.1
+		adm = 5
+		dip = 3
+		mil = 2
+	}
+}

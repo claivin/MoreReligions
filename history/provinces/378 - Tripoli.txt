@@ -1,13 +1,13 @@
 #378 - Tripoli
 
-owner = LEB
-controller = LEB
-culture = al_suryah_arabic
-religion = shiite
-capital = "Trablos" #Tripoli in the East.
+owner = TPO
+controller = TPO
+culture = outremer
+religion = catholic
+capital = "Tripoli"
 trade_goods = grain
 hre = no
-base_tax = 6 
+base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes

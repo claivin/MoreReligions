@@ -1,7 +1,7 @@
 government = monarchy
 government_rank = 1
 add_government_reform = holy_state_reform
-primary_culture = cosmopolitan_french
+primary_culture = outremer
 add_accepted_culture = al_suryah_arabic
 religion = catholic
 technology_group = eastern
@@ -12,8 +12,8 @@ fixed_capital = 2313
 
 1444.1.1 = {
 	monarch = {
-		name = "Placeholder"
-		dynasty = "Placeholder"
+		name = "Bohemond IX"
+		dynasty = "Poitiers"
 		birth_date = 1414.5.16
 		adm = 3
 		dip = 2

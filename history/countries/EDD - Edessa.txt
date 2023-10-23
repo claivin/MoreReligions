@@ -1,9 +1,21 @@
 government = monarchy
 government_rank = 1
 add_government_reform = feudalism_reform
-primary_culture = cosmopolitan_french
+primary_culture = outremer
 add_accepted_culture = kurdish
 religion = catholic
 technology_group = western
 capital = 2308 # Edessa
 fixed_capital = 2308
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Amalric II"
+		dynasty = "Boulogne"
+		birth_date = 1410.2.12
+		adm = 4
+		dip = 2
+		mil = 5
+	}
+}
