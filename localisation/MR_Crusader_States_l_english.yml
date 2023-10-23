@@ -85,6 +85,7 @@
   cs_eastern_metropolis_capital_prov: "Bustling Metropolis"
   cs_eastern_metropolis_capital_area: "Increased Trade Activity"
   crusader_states_princely_diplomacy: "Princely Diplomacy"
+  desc_crusader_states_princely_diplomacy: "Adroit diplomacy among our peers brings increased standing to our realm."
   cs_dominant_military: "Dominant Military"
   desc_cs_dominant_military: "With [Root.Monarch.GetTitle] [Root.Monarch.GetName] proclaiming in all but name [Root.Monarch.GetHerHim] ambition to annex the lands of the other Princes of Outremer, and demonstrating the requisite military buildup, a fresh wave of scoundrels, fortune seekers, and mercenaries are heading specifically to take part in the War for Outremer."
   cs_italian_quarter_institution_spread: "Bustling Trade Hub"
@@ -103,6 +104,8 @@
   desc_cs_thriving_trade_mod: "Thriving trade economy gives our merchants more influence."
   desc_cs_diplomatic_success: "Our outmaneuvering of the Mamluks has proved a great diplomatic coup that raises our esteem in the region and further abroad, increasing the influence and sway of our ambassadors."
   desc_cs_plantation_economy: "Growth of the plantation economy has diplaced many tenants and smallholders from the rural areas to the towns."
+  cs_european_settlers: "European Settler Colony"
+  desc_cs_european_settlers: "A combination of ruffians and mercenaries, pious pilgrims, and simply those looking for a better life have collected here after we set out the call for immigrants from their region, bringing their unique skills to our nation."
 
 
   # --EVENTS--
@@ -131,5 +134,6 @@
 
 
 # --OTHER--
-merc_crusader_italian_troops: "Italian Company of Outremer"
+  merc_crusader_italian_troops: "Italian Company of Outremer"
+
 

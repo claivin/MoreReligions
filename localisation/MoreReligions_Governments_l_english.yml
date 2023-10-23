@@ -13,45 +13,45 @@
  pagan_reform_desc:0 "Ever since our victory in the 40 Years War, our kingdom's prestige and power has resonated throughout the realm. Subjects bend their knees, and our Mandala is harmonious."
  pagan_reform_b:0 "Second Pagan Kingdom"
  pagan_reform_b_desc:0 "With the destruction of our foes at the end of the Hanthawwady War, we remain the most dominant force in the Burma region. Our armies are mighty and powerful, more so than anyone else!"
- 
+
  french_elective_monarchy: "French Elective Monarchy"
  french_elective_monarchy_desc: "During the Crisis of the 13th Century, repeated military failure and unstable succession saw the devolution of the French crown into an elected position. Originally suggested by lawyers and clergymen, a temporary solution of election was put forth, likely inspired by Salic Law. By 1308 Charles II formalized this process into law and the following year Robert III, Count of Flanders, was elected to be his successor, setting a precedent for the non-french rulers. Over the course of the next one and a half centuries the Church makes more and more moves to influence the election of the French King, though its influence is only as strong as people's belief in the Church is... Nevertheless, the throne of the French Kingdom remains an important battleground for influential nobility from all over Europe vying for prestige and upward mobility."
- 
+
  frisian_federation_government: "Frisian Federation"
  frisian_federation_government_desc: "The Upstalsboom was once a meeting place for representatives of Frisian communities, who once self-goverened, not yet under the rule of Lord or Landowner. The Upstalsboom gradually centralized with each subsequent convening of these representatives, moving from regional capital to confederal government to federal government. In stark contrast to its neighboring Dutch Confederation, the Frisians are making great strides in forming an unusually centralized state. Of course, there is still much work to be done before it reaches anything close to modern administration."
- 
+
  tendai_ministries: "Enforced Tendai State"
  tendai_ministries_desc: "The Tendai school has come to dominate the state of Japan. The emperors are enforced into cloistered rule by the Tendai administration should they try to object to the monasteries' power, and as such only those loyal to the monks can rule Japan. The Tendai School guides Japan into the future..."
- 
+
  MR_thai_tributary: "Thai Tributary State"
  MR_thai_tributary_desc: "We have been subujgated by the Angkor Empire. However, we still retain control from within their Mandala. We utilize our Buddhist heritage to gain legitimacy and power over our neighbours."
  mechanic_MR_thai_mechanic_yes: "Everytime we §Ywin a battle§!, we will gain §G+1§! §YKarma§!"
- 
+
  MR_thai_princedom: "Thai Princedom"
  MR_thai_princedom_desc: "As our state expands, we must revitalize the Mandala System that we have traditionally used for centuries. We utilize our Buddhist heritage to gain legitimacy and power over our neighbours."
- 
+
  samanta_vassal_reform: "Samanta State"
  samanta_vassal_reform_desc: ""
  maharajadhiraja_reform: "Samrajya"
  maharajadhiraja_reform_desc: ""
- 
+
  kingdom_of_light_reform: "Kingdom of Light"
  empire_of_light_reform: "Empire of Light"
- 
+
  mr_hainan_pirate_republic_reform: "Hainan Pirate Kingdom"
  mr_hainan_pirate_republic_reform_desc: "The Pirate Kingdom founded by the Ma He. It is ruled by his heirs and kin as they continue in their ancestor's quest to dominate all of China's seas!"
- 
- 
+
+
  mr_empire_of_japan: "Chrysanthemum Throne"
  mr_empire_of_japan_desc: "The state of Japan is controlled by the Emperor, who, in the Kenmu Restoration took control back from the Shogun after 300 years of military control. Now, they must balance the needs of the still powerful samurai clans with the growing civilian government."
  shugo_dominance_mechanic: "Shugo Dominance"
- 
+
  ability_shugo_dominance_mechanic: "§YShugo Dominance§!"
  shugo_dominance_mechanic_power: "§YShugo Dominance§!"
  shugo_dominance_mechanic_power_desc: "The Kenmu Restoration was only partially successful. Even with the Shogun's power restricted, the influence and power of the Shugo grows with each passing day. Soon, their dominance will be all but assured, and perhaps they might be inspired to stage an incident - the Japanese Emperor must ensure his own survival by preventing such a possibly and bringing control back to the aristocracy.\n\n§YShugo Dominance§! can be decreased by:\n - Winning Battles (§G-0.5§!)\n - Loyal Estates (§G-0.1 Per Month Per Loyal Estate§!)\n - Developing Provinces (§G-0.25§!)\n\n§YShugo Dominance§! can be increased by:\n - Losing Battles (§R+0.5§!)\n - Disloyal Estates (§R+0.1 Per Month Per Disloyal Estate§!)\n - Granting §YPrivileges§! to the §YShugo§! Estate (§R-0.1 Per Month§!)\n\n"
  monthly_shugo_dominance_mechanic_power: "Monthly §YShugo Dominance§!"
- 
- 
+
+
  abyssinian_unity_mechanic: "Abyssinian Unity"
  ability_abyssinian_unity_mechanic: "§YAbyssinian Unity§!"
  abyssinian_unity_power: "§YAbyssinian Unity§!"
@@ -66,31 +66,31 @@
  establish_explorers_desc: "With our colonies expanding in the far east, we are constantly in need of new explorers, surveyors, and ships to grow and expand our burgoning empire. Whether they be great admirals leading our sailors over the rough seas, or leaders trekking through desert and jungle, or a new treasure fleet to assist our grand armada in dominating the waves. We will use our influence to promote and shift around admirals and generals and resources to assist this effort.\n"
  establish_shogun: "Appoint a Sei Taishogun"
  establish_shogun_desc: "Despite the threat the Shogun had presented during the era of the Shugo Dominance, now the shogun is a mere position that we monitor and control. The position changes every decade, with the position no longer being hereditary and instead completely appointed by our own state. We must carefully decide who shall rule our state, however, as should we choose wrong, could potentially limit our growth.\n"
- 
+
  mr_al_habash_empire: "The Zeila Empire"
  mr_al_habash_empire_desc: "The Walashama Dynasty has conquered and subjugated the remains of the old Ethiopian Empire. Through the use of light cavalry, our Somali and Harari units managed to overcome the great walls of Lasta and Semien. Now, the dynasty has to maintain the balance between the various ethnic and tribal groups of the Horn of Africa, lest it fall into chaos."
- 
+
  mr_hungary_anarchy: "Hungarian Oligarchs"
  mr_hungary_anarchy_desc: "The Hungarian Oligarchs are dominant within our politics. Our state is unravaling at the seams, and we cannot survive for much longer."
- 
+
  mr_hungary_faction: "Hungarian Warring State"
  mr_hungary_faction_desc: "The Hungarian Civil War rages on, and we must stand against our foes with swords drawn and forces at the ready!"
- 
+
  mr_hungarian_theocracy: "Holy Hungarian Order"
  mr_hungarian_theocracy_desc: "Founded by the Joannite Order of Severin, the Hungarian order siezed power of the state during the Hungarian Civil War of 1449. They now seek to expand and dominate all surrounding lands, bringing them back into the fold of the Papacy."
- 
+
  mr_bohemian_hungary_reform: "Bohemian-Hungarian Union"
  mr_bohemian_hungary_reform_desc: "The House of Czak has dominated the lands of the Magyars, and as such has brought the realm closer to the Kingdom of Bohemia, adopting their customs and legal system."
- 
+
  mr_polish_hungary_reform: "Electorate of Hungary"
  mr_polish_hungary_reform_desc: "The House of Aba, with the aid of the Emperor of the Romans, has come to power in Hungary. They have agreed to bring their lands into the Holy Roman Empire, for both their protection and gain. The Electorate of Hungary is a staunch ally of the Polish Emperors, but their ambition shall take them even higher."
- 
+
  mr_serbian_hungary_reform: "The Serbo-Hungarian Union"
  mr_serbian_hungary_reform_desc: "The House of Koszegis took the throne of the Magyars through brutal conquest during the Hungarian Civil War. With this, they brought with them a Serbian influence into their government, even converting to the Orthodox faith that the Serbs practiced. Through blood and iron they united their realm, and through blood and iron they will maintain it."
- 
+
  mr_hungary_hungary_reform: "The Great Magyar State"
  mr_hungary_hungary_reform_desc: "Despite the chaos and fury of the civil war, the Szécsényi have managed to pull through and keep their control of their kingdom. Now, they stand stronger than ever, a house ready to dominate from the Baltics to the Balkans."
- 
+
  mr_horde_hungary_reform: "The Hungarian Horde"
  mr_horde_hungary_reform_desc: "The House of Kan has managed to sieze control of Hungary during the crisis of the Oligarchs through the aid of the Blue Horde. After this, they saw that their way of living, their sedentary style of statecraft, was simply not adequate. The house of Kan then returned to the ancient tradition of the Magyar people, the way of the nomad, the way of the rider."
 
@@ -107,18 +107,18 @@
 
 #Crusader Support
 CRUSADER_GERMAN: "Call for Germanic Support"
-CRUSADER_GERMAN_desc: "Since the days of Frederic II, the German knights have been curcial to the control of the region. Now, as the days of battle in the desert atop mighty steeds draw to a close, we instead call for their architects and siege specialists to help rebuild the great Christian cities of the east."
+CRUSADER_GERMAN_desc: "Since the days of Frederic II, the German knights have been crucial to the control of the region. Now, as the days of battle in the desert atop mighty steeds draw to a close, we instead call for their architects and siege specialists to help rebuild the great Christian cities of the east."
 crusader_adm_power: "Germanic Support"
-CRUSADER_ITALIAN: "Call for Latin Support"
-CRUSADER_ITALIAN_desc: "The Latins, specifically the reborn Sicilian Hauteville Dynasty, used to send aid with their great ships across the Mediterranean Sea. We shall call upon them once more, to supply our people with goods from beyond the horizon, and to help aid our sailors in defending our navy."
-crusader_dip_power: "Latin Support"
+CRUSADER_ITALIAN: "Call for Italian Support"
+CRUSADER_ITALIAN_desc: "The Italians, specifically the reborn Sicilian Hauteville Dynasty, used to send aid with their great ships across the Mediterranean Sea. We shall call upon them once more, to supply our people with goods from beyond the horizon, and to help aid our sailors in defending our coasts."
+crusader_dip_power: "Italian Support"
 CRUSADER_FRENCH: "Call for French Support"
 crusader_mil_power: "French Support"
-CRUSADER_FRENCH_desc: "While we gain aid to build our nation from the Latins and Germanic, from the French, we gain their prized military command. Their famed cavalry and strategists shall lead our people into the future against all threats!"
+CRUSADER_FRENCH_desc: "While we gain aid to build our nation from the Italians and Germans, from the French, we gain their prized military command. Their famed cavalry and strategists shall lead our people into the future against all threats!"
 negate_culture_penalty_TT: "This will negate the unembraced culture penalty for this provence.\n"
-french_strategist: "French Strategists"
-sicilian_sailors: "Latin Sailors"
-saxon_architects: "German Architects"
+cs_french_strategists: "French Strategists"
+cs_sicilian_sailors: "Italian Sailors"
+cs_saxon_architects: "German Architects"
 ability_crusader_mechanic: "§YCrusader Support§!"
 
 andorran_reform: "Andorran Duality"

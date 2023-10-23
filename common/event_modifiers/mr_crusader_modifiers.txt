@@ -71,6 +71,34 @@ edd_raiding_tactics = {
 }
 
 
+# Government buttons
+cs_european_settlers = {
+	local_tax_modifier = 0.33
+	local_missionary_strength = 0.02
+	local_manpower_modifier = 0.33
+	local_sailors_modifier = 0.33
+	local_unrest = -2
+}
+
+cs_saxon_architects = {
+	build_cost = -0.1
+	development_cost = -0.05
+	global_prosperity_growth = 0.1
+}
+
+cs_sicilian_sailors = {
+	ship_durability = 0.05
+	global_ship_recruit_speed = -0.1
+	ship_trade_power_modifier = 0.10
+}
+
+cs_french_strategists = {
+	general_cost = -0.25
+	cavalry_power = 0.1
+	morale_damage_received = -0.025
+}
+
+
 # Sarraceni estate
 estate_sarraceni_guaranteed_autonomy_mod = {
 	religion = yes

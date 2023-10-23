@@ -147,7 +147,7 @@ pagan_reform = {
 	nation_designer_cost = 0
 	modifiers = {
 		diplomatic_annexation_cost = -0.15
-		governing_capacity_modifier = 0.10 
+		governing_capacity_modifier = 0.10
 	}
 
 }
@@ -204,7 +204,7 @@ maharajadhiraja_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	modifiers = {
-		liberty_desire_from_subject_development = -0.25 
+		liberty_desire_from_subject_development = -0.25
 		diplomatic_reputation = 2
 	}
 
@@ -280,12 +280,12 @@ empire_of_light_reform = {
 #		government_abilities = {
 #			feudal_theocracy_mechanic
 #		}
-#	}	
+#	}
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		has_meritocracy = yes
 	}
-	
+
 	custom_attributes = {
 		locked_government_type = yes
 		has_unify_china_cb = yes
@@ -305,15 +305,15 @@ mr_empire_of_japan = {
 	maintain_dynasty = yes
 	can_change_primary_culture = no
 	legacy_equivalent = feudal_monarchy
-	
+
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
 	lock_level_when_selected = yes
-	
+
 	government_abilities = {
 		shugo_dominance_mechanic
 	}
-	
+
 	modifiers = {
 		governing_capacity = 100
 		diplomatic_annexation_cost = -0.10
@@ -337,11 +337,11 @@ mr_hungary_anarchy = {
 			has_country_flag = HUN_thunder_dome_winner
 		}
 	}
-	
+
 	modifiers = {
 		min_autonomy = 33
 		land_forcelimit_modifier = -0.25
-		capped_by_forcelimit = yes 
+		capped_by_forcelimit = yes
 	}
 }
 mr_hungary_faction = {
@@ -350,18 +350,18 @@ mr_hungary_faction = {
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
-	
+
 	potential = {
 		has_country_flag = HUN_thunder_dome_participant
 		NOT = {
 			has_country_flag = HUN_thunder_dome_winner
 		}
 	}
-	
+
 	modifiers = {
 		war_exhaustion = -0.02
 		global_regiment_recruit_speed = -0.33
-	}	
+	}
 }
 
 mr_bohemian_hungary_reform = {
@@ -369,13 +369,13 @@ mr_bohemian_hungary_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
-	maintain_dynasty = yes 
-	
+	maintain_dynasty = yes
+
 	potential = {
 		tag = CSA
 		has_country_flag = HUN_thunder_dome_winner
 	}
-	
+
 	modifiers = {
 		development_cost = -0.1
 		global_prosperity_growth = 0.15
@@ -387,16 +387,16 @@ mr_polish_hungary_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
-	maintain_dynasty = yes 
-	
+	maintain_dynasty = yes
+
 	potential = {
 		tag = AAB
 		has_country_flag = HUN_thunder_dome_winner
 	}
-	
+
 	modifiers = {
 		imperial_authority_value = 0.15
-		reasons_to_elect = 10 
+		reasons_to_elect = 10
 		advisor_cost = -0.10
 	}
 }
@@ -405,13 +405,13 @@ mr_serbian_hungary_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
-	maintain_dynasty = yes 
-	
+	maintain_dynasty = yes
+
 	potential = {
 		tag = KSZ
 		has_country_flag = HUN_thunder_dome_winner
 	}
-	
+
 	modifiers = {
 		global_heretic_missionary_strength = 0.03
 		yearly_army_professionalism = 0.05
@@ -423,14 +423,14 @@ mr_hungary_hungary_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
-	maintain_dynasty = yes 
-	
+	maintain_dynasty = yes
+
 	potential = {
 		tag = HUN
 		has_country_flag = HUN_thunder_dome_winner
 	}
-	
-	
+
+
 	modifiers = {
 		discipline = 0.05
 		min_autonomy_in_territories = -0.1
@@ -442,16 +442,16 @@ mr_horde_hungary_reform = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
-	maintain_dynasty = yes 
-	
+	maintain_dynasty = yes
+
 	potential = {
 		tag = KNN
 		has_country_flag = HUN_thunder_dome_winner
 	}
-	
-	nomad = yes 
+
+	nomad = yes
 	raze_province = yes
-	
+
 	modifiers = {
 		cavalry_power = 0.10
 		global_manpower_modifier = 0.2
@@ -469,13 +469,13 @@ mr_hungarian_theocracy = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	valid_for_nation_designer = no
-	maintain_dynasty = yes 
-	
+	maintain_dynasty = yes
+
 	potential = {
 		tag = JAA
 		has_country_flag = HUN_thunder_dome_winner
 	}
-	
+
 	modifiers = {
 		manpower_in_true_faith_provinces = 0.20
 		war_exhaustion = -0.02
@@ -502,25 +502,25 @@ mr_hainan_pirate_republic_reform = {
 		}
 	}
 	valid_for_nation_designer = no
-	
+
 	can_form_trade_league = no
 	has_term_election = no
 	maintain_dynasty = yes
 	removed_effect = {
 		clr_country_flag = pirate_mutineer_council
 	}
-	
+
 	potential = {
 		tag = HEI
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	custom_attributes = {
 		locked_government_type = yes
 		is_pirate_republic_reform = yes
@@ -536,17 +536,17 @@ tendai_ministries = {
 		global_tax_modifier = 0.15
 		missionary_maintenance_cost = -0.15
 		church_influence_modifier = 0.30
-		has_samurai = yes 
+		has_samurai = yes
 	}
 	potential = {
 		religion = mr_tendai
 	}
-	
+
 	trigger = {
 		religion = mr_tendai
 		culture_group = japanese_g
 	}
-	
+
 	#custom_tooltip = develop_temples_TT
 }
 MR_thai_tributary = {
@@ -554,20 +554,20 @@ MR_thai_tributary = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = feudal_monarchy
-	
+
 	custom_attributes = {
 		MR_thai_mechanic = yes
 	}
 	modifiers = {
 		vassal_forcelimit_bonus = 0.5
 		amount_of_hussars = 1
-		can_recruit_hussars = yes 
+		can_recruit_hussars = yes
 	}
-	
+
 	trigger = {
 		culture_group = thai_group
 	}
-	
+
 	potential = {
 		is_subject_of_type = tributary_state
 		culture_group = thai_group
@@ -578,7 +578,7 @@ MR_thai_princedom = {
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = feudal_monarchy
-	
+
 	custom_attributes = {
 		MR_thai_mechanic = yes
 	}
@@ -586,18 +586,18 @@ MR_thai_princedom = {
 		vassal_forcelimit_bonus = 0.5
 		vassal_income = 0.25
 		amount_of_hussars = 1
-		can_recruit_hussars = yes 
+		can_recruit_hussars = yes
 	}
-	
+
 	trigger = {
 		culture_group = thai_group
 	}
-	
+
 	potential = {
 		is_subject = no
 		culture_group = thai_group
 	}
-}	
+}
 mr_al_habash_empire = {
 	icon = "musa_rule"
 	allow_normal_conversion = yes
@@ -620,7 +620,7 @@ mr_al_habash_empire = {
 		num_accepted_cultures = 2
 		amount_of_cawa = 1
 	}
-	
+
 	government_abilities = {
 		abyssinian_unity_mechanic
 	}

@@ -9,20 +9,20 @@ shugo_1444 = {
 	land_forcelimit_modifier = 0.25
 	land_maintenance_modifier = -0.15
 	legitimacy = 1
-} 
-	
+}
+
 #Latin Empire Flavor
 LAT_horses = {
-	diplomatic_reputation = 1 
-	monthly_splendor = 1 
+	diplomatic_reputation = 1
+	monthly_splendor = 1
 }
 LAT_door = {
-	defensiveness = 0.10 
+	defensiveness = 0.10
 	global_garrison_growth = 0.05
 }
 LAT_saint = {
 	tolerance_own = 1
-	papal_influence = 0.5 
+	papal_influence = 0.5
 }
 LAT_pillar = {
 	build_cost = -0.10
@@ -45,7 +45,7 @@ HUN_diplo_core = {
 
 HUN_war_modifier = {
 	cavalry_power = 0.15
-	siege_ability = 0.10 
+	siege_ability = 0.10
 }
 
 AAB_war_modifier = {
@@ -61,7 +61,7 @@ JAA_war_modifier = {
 	siege_ability = 0.10
 }
 ksz_war_modifier = {
-	fire_damage = 0.10 
+	fire_damage = 0.10
 	siege_ability = 0.10
 }
 
@@ -72,7 +72,7 @@ buda_secured = {
 
 buda_development = {
 	local_prosperity_growth = 0.15
-	local_great_project_upgrade_cost = -0.25 
+	local_great_project_upgrade_cost = -0.25
 }
 
 buda_development_1 = {
@@ -140,7 +140,7 @@ advisor_keep_effect = {
 
 razed_krakow_knn = {
 	raze_power_gain = 0.20
-	shock_damage = 0.10 
+	shock_damage = 0.10
 }
 
 loss_of_prestige_POL = {
@@ -165,7 +165,7 @@ authority_KNN = {
 	global_missionary_strength = 0.03
 }
 KNN_golden_era = {
-	war_exhaustion = -0.10 
+	war_exhaustion = -0.10
 	tolerance_own = 3
 	global_tax_modifier = 0.10
 }
@@ -177,7 +177,7 @@ accepted_ruthenians = {
 	num_accepted_cultures = 1
 }
 defensive_strong_hold_TARG = {
-	local_defender_dice_roll_bonus = 1 
+	local_defender_dice_roll_bonus = 1
 	local_fort_maintenance_modifier = -0.15
 	local_hostile_attrition = 1
 }
@@ -196,7 +196,7 @@ cavalry_masters_KNN = {
 
 #Ilkhanate
 tolerance_of_dervishes = {
-	min_local_autonomy = 50 
+	min_local_autonomy = 50
 }
 ilk_missionaries_1 = {
 	missionaries = 1
@@ -219,18 +219,18 @@ birthplace_of_mass_mobilization_institution = {
 
 #Mo Modifiers
 new_year_celebration_1 = {
-	tolerance_own = 1 
+	tolerance_own = 1
 	warscore_cost_vs_other_religion = -0.10
 }
 
 new_year_celebration_2 = {
-	relation_with_heathens = 20 
+	relation_with_heathens = 20
 	tolerance_heathen = 1
 }
 
 new_year_celebration_3 = {
 	nobles_loyalty_modifier = 0.15
-	state_governing_cost = -0.1 
+	state_governing_cost = -0.1
 }
 
 ghost_deity_1 = {
@@ -255,47 +255,4 @@ muslim_leader_ma = {
 mahayana_leader_ma = {
 	religious_unity = 0.20
 	naval_morale = 0.15
-}
-	
-#Crusaders
-germanic_settlers = {
-	local_tax_modifier = 0.33
-	local_missionary_strength = 0.02
-	local_manpower_modifier = 0.33
-	local_sailors_modifier = 0.33
-	local_unrest = -2
-}
-
-latin_settlers = {
-	local_tax_modifier = 0.33
-	local_missionary_strength = 0.02
-	local_manpower_modifier = 0.33
-	local_sailors_modifier = 0.33
-	local_unrest = -2
-}
-
-french_settlers = {
-	local_tax_modifier = 0.33
-	local_missionary_strength = 0.02
-	local_manpower_modifier = 0.33
-	local_sailors_modifier = 0.33
-	local_unrest = -2
-}
-
-saxon_architects = {
-	build_cost = -0.1
-	development_cost = -0.05
-	global_prosperity_growth = 0.1
-}
-
-sicilian_sailors = {
-	ship_durability = 0.05
-	global_ship_recruit_speed = -0.1	
-	ship_trade_power_modifier = 0.10
-}
-
-french_strategist = {
-	general_cost = -0.25
-	cavalry_power = 0.1
-	morale_damage_received = -0.025	
 }
