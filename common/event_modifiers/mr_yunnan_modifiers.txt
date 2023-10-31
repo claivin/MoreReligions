@@ -88,9 +88,26 @@ global_trade_goods_size_modifier = 0.15
 estate_burghers_jungle_expansion_jungles = {
 local_development_cost = -0.25
 }
-
-
-
+yunnan_port = {
+province_trade_power_modifier = 1
+local_ship_repair = 0.5
+ship_recruit_speed = -0.33
+local_ship_cost = -0.1
+allowed_num_of_buildings = 2
+}
+tibetan_culture_slot = {
+num_accepted_cultures = 1
+}
+yunnan_subject = {
+liberty_desire = -200
+}
+yunnan_tibetan_administration = {
+governing_capacity_modifier = 0.2
+imperial_mandate = 0.1
+}
+yunnan_religious_ideas = {
+missionaries = 1
+}
 
 #HARMONYSLOTS
 harmony_culture_slot_pagan = {

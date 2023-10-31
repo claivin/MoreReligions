@@ -50,12 +50,21 @@ country_event = {
 		name = MR_yunnan_flavor.2.a
 		trigger = {		
 		}
+	    north_china_region = {
+		limit = { owned_by = XZH } 
+		cede_province = ROOT 
+		add_core = ROOT 
+		}
+		xinan_region = {
+		limit = { owned_by = XZH }
+		cede_province = ROOT 
+		add_core = ROOT 
+		}		
 		ROOT = {
         vassalize = XZH
 	 }
-	}
+  }
 }
-
 country_event = {
 	id = MR_yunnan_flavor.3 #TibetResists
 	title = MR_yunnan_flavor.3.t
@@ -170,6 +179,8 @@ country_event = {
         add_nationalism = -25		
         add_base_tax = 2
 		add_base_manpower = 1
+		change_province_name = "Bianliang"
+		rename_capital = "Bianliang"
 		}
 
 	}	
@@ -210,8 +221,15 @@ country_event = {
 			release = JAP
 			create_march = JAP
 			JAP = {
+			    change_religion = confucianism
+				add_harmonized_religion = nihon
 				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
+				add_country_modifier = { 
+                 name = yunnan_subject
+                 duration = -1                  
+                 hidden = yes
+              }
 			}
 		add_country_modifier = { 
         name = sole_emperor
@@ -479,6 +497,166 @@ country_event = {
 		change_tag = LNG
 		on_change_tag_effect = yes
 		add_prestige_or_monarch_power = { amount = 35 }		
+	}
+		
+}
+
+country_event = {
+	id = MR_yunnan_flavor.13 #JapaneseMerchant
+	title = MR_yunnan_flavor.13.t
+	desc = MR_yunnan_flavor.13.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_yunnan_flavor.13.a #No funding
+   
+        trigger = {
+        1818 = {owned_by = ROOT}		
+		}
+	 define_advisor = {
+        type = trader
+		name = "Yasuda Kahei"
+        skill = 3
+        discount = yes
+		religion = nihon
+        culture = kyushuan		
+    }		 
+
+	}	
+	option = {
+		name = MR_yunnan_flavor.13.b #He can have a spoonful
+		
+		trigger = {
+        1818 = {owned_by = ROOT}		
+		}			 
+        add_years_of_income = -1
+		
+		 define_advisor = {
+        type = trader
+		name = "Yasuda Kahei"
+        skill = 3
+        discount = yes
+		religion = nihon
+        culture = kyushuan
+    }	
+	    custom_tooltip = yunnan_five_samurai
+		hidden_effect = {
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		}
+	}
+	option = {
+		name = MR_yunnan_flavor.13.c #Prop Him Up
+		
+		trigger = {
+        1818 = {owned_by = ROOT}		
+		}
+        add_years_of_income = -2
+        add_mil_power = -100
+
+		 define_advisor = {
+        type = trader
+		name = "Yasuda Kahei"
+        skill = 3
+        cost_multiplier = 0.25
+		religion = nihon
+        culture = kyushuan
+    }
+        custom_tooltip = yunnan_kyushuan_separatism	
+	    custom_tooltip = yunnan_ten_samurai
+		hidden_effect = {
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+		1818 = { samurai_infantry = ROOT }
+
+        kyushu_area = {	
+        add_nationalism = -30
+        }
+        northern_kyushu = { 
+		add_nationalism = -30
+        }
+	  }            
+	}
+	option = {
+		name = MR_yunnan_flavor.13.e #Kill Him
+   
+        trigger = {
+        1818 = {owned_by = ROOT}		
+		}
+	add_years_of_income = 3	 
+    add_stability = -1
+	}	
+		
+}
+country_event = {
+	id = MR_yunnan_flavor.14 #Tibet
+	title = MR_yunnan_flavor.14.t
+	desc = MR_yunnan_flavor.14.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_yunnan_flavor.14.a #Xuanzheng
+   
+        trigger = {	
+		}
+		add_country_modifier = { 
+             name = yunnan_tibetan_administration
+             duration = -1                  
+           }		
+		hidden_effect = {	
+		every_owned_province = {
+		limit = { NOT = { region = tibet_region } }
+		remove_core = XZH 
+		  }		  
+		}
+		if = { 
+		limit = { 
+		NOT = {
+		exists = XZH
+		  }
+		}
+		release = XZH
+        }
+		create_march = XZH
+		tibet_region = {
+		cede_province = XZH 
+		add_core = XZH 
+		remove_core = ROOT
+		}
+		XZH = {
+		add_country_modifier = { 
+             name = yunnan_subject
+             duration = -1                  
+             hidden = yes
+           }
+		}
+	}	
+	option = {
+		name = MR_yunnan_flavor.14.b #Direct Control
+		
+		trigger = {
+		}
+		add_country_modifier = { 
+         name = tibetan_culture_slot
+         duration = -1  
+         hidden = yes
+         }		
+		add_accepted_culture = tibetan 
+		add_harmony = 25	
 	}
 		
 }
