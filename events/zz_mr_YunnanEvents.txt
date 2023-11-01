@@ -496,7 +496,11 @@ country_event = {
 		
 		change_tag = LNG
 		on_change_tag_effect = yes
-		add_prestige_or_monarch_power = { amount = 35 }		
+		add_prestige_or_monarch_power = { amount = 35 }	
+        custom_tooltip = LNG_idea_group		
+		hidden_effect = {
+		swap_free_idea_group = yes
+		}
 	}
 		
 }

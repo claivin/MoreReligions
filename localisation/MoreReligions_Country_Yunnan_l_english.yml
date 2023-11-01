@@ -111,6 +111,7 @@
  yunnan_kyushuan_separatism: "\nSeparatism will be cleared in all our §YKyushuan§! provinces\n"
  subjugate_tibet_event_tooltip: "\nWe will swear fealty to the Prince, becoming a subject and surrendering our Chinese holdings\n"
  resist_subjugate_tibet_event_tooltip: "\nThe Prince may declare war on us for this refusal\n"
+ LNG_idea_group: "\nOur Yunnan National Ideas will be upgraded \n"
  
  #Yunnan Modifiers
  pearl_estuary_plus: "Pearl Estuary"
