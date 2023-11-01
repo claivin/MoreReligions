@@ -1480,7 +1480,7 @@ BUL_ideas = {
 }
 YNN_ideas = {
 	start = {
-		tolerance_heretic = 3
+		tolerance_heathen = 3
 		land_morale = 0.15
 	}
 	bonus = {
@@ -1489,10 +1489,10 @@ YNN_ideas = {
 	free = yes
 	trigger = { tag = YNN }
 	YNN_ideas_1 = { #Yuan Legitimacy
-		core_creation = -0.15
+		core_creation = -0.10
 	}
 	YNN_ideas_2 = { #Naiman Cavalry
-		cavalry_power = 0.20
+		cavalry_power = 0.15
 	}
 	YNN_ideas_3 = { #Mineral Fields of Yunnan
  		global_trade_goods_size_modifier = 0.1
@@ -1508,5 +1508,37 @@ YNN_ideas = {
 	}
 	YNN_ideas_7 = { #The Mountain Province
 		defensiveness = 0.30
+	}
+}
+LNG_ideas = {
+	start = {
+		tolerance_heathen = 4
+		land_morale = 0.20
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	free = yes
+	trigger = { tag = LNG }
+	LNG_ideas_1 = { #Historical Legitimacy
+		core_creation = -0.25
+	}
+	LNG_ideas_2 = { #Naiman Cavalry
+		cavalry_power = 0.20
+	}
+	LNG_ideas_3 = { #Mineral Fields of Yunnan
+ 		global_trade_goods_size_modifier = 0.15
+	}
+	LNG_ideas_4 = { #Scholars of China
+		idea_cost = -0.1
+	}
+	LNG_ideas_5 = { #Artisan Households
+		artillery_cost = -0.20
+	}
+	LNG_ideas_6 = { #Central Asian Tanmachi
+		global_unrest = -2
+	}
+	LNG_ideas_7 = { #Chinese Siege Engines
+		siege_ability = 0.25
 	}
 }
