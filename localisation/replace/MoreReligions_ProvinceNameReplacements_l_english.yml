@@ -253,13 +253,6 @@
  IRQ_ADJ: "Baghdad"
  IRQ_ADJ2: "Baghdad"
  
- GEO: "Gurjistan"
- GEO_ADJ: "Gurjistani"
- GEO_ADJ2: "Gurjistani"
- 
- AKK: "Bayandar"
- AKK_ADJ: "Bayandari"
- AKK_ADJ2: "Bayandari"
  
  KMC: "Itelmen"
  KMC_ADJ: "Itelmen"
@@ -269,11 +262,11 @@
  KHI_ADJ: "Qongirat"
  KHI_ADJ2: "Qongirat"
  
- NOG: "Ulus Janibek"
+ NOG: "Janibek Ulus"
  NOG_ADJ: "Janibeki"
  NOG_ADJ2: "Janibeki"
  
- SHY: "Ulus Kerei"
+ SHY: "Kerei Ulus"
  SHY_ADJ: "Kereian"
  SHY_ADJ2: "Kereian"
  
