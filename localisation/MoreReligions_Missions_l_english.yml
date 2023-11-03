@@ -690,3 +690,47 @@ confucian_scholars_JAP: "Confucian Scholars"
  catalonia_merchant: "Burgher estate privilege §YGrant Control over Coinage§! is removed and replaced with an improved version called §YCatalonian Bureucrats§! giving us the following upgraded bonus: §GAdmnistrative Advisor Cost -20%§!"
  bearn_clergy: "Clergy estate privilege §YFund Theological Studies§! is removed and replaced with an improved version called §YCounter-Heresy Studies§! giving us the following upgraded bonus: §G+2 Missionary Strength§!"
  cordoban_researcher: "We will enact the burgher estate privilege §YCordoban Scholars§! which gives us the following modifiers: \n§G-5% Idea Cost§! \n§G+3 tolerance of heretics§! \n§G+3 tolerance of heathens§! \n§R-10% Clergy Loyalty§!"
+
+
+#Baghdad Missions
+#Titles
+IRQ_branching_1_title: "To Escape the Chains"
+IRQ_tall_1_title: "The Aging City"
+IRQ_tall_2_title: "Redirecting the Euphrates"
+IRQ_tall_3_title: "Maintaining the Sawad"
+IRQ_tall_4_title: "The Tigris Trade"
+IRQ_tall_5_title: "The Governors of Iraq Arabi"
+IRQ_tall_6_title: "Between the Rivers"
+IRQ_tall_7_title: "The Ports of Basra"
+IRQ_tall_8_title: "Rulers of the Mashriq"
+IRQ_tall_9_title: "A Guiding Hand"
+IRQ_tall_10_title: "The Home of Wisdom"
+IRQ_branching_2_title: "Branching Mission"
+IRQ_branching_3_title: "Branching Mission"
+IRQ_branching_4_title: "Branching Mission"
+#Descriptions
+
+#Modifiers 
+prosperity_under_caliph: "Prosperity under the Caliph"
+redirection_euphrates: "Redirection of the Euphrates"
+STRONG_MERCHANTS_IRQ: "Iraqi Merchants"
+hidden_dev_cost_fixer: "Splendor of the Court"
+expand_admin_IRAQ: "Influential Administration"
+hidden_wine_communities: "Christian Wine Communities"
+growth_of_the_cities: "Growth of the Trade Cities"
+master_of_basra_trade: "The Basran Trade Hub"
+redirecting_trade: "Redirected Trade"
+admisitration_of_baghdad: "Caliph's Administration"
+new_golden_age: "The Brilliant Light"
+
+mr_house_of_wisdom: "The House of Wisdom"
+
+#Tooltips
+gain_liberty_desire_TT: "If we complete this mission while being a §YSubject§!, we will gain §G+20§! §YLiberty Desire§!"
+if_vassalized_yes: "£yes£If we are vassalized when we complete this mission, we shall §Yremove§! the §R+50%§! Development Cost Penalty for a Vassal Nation.\n"
+if_vassalized_no: "£no£If we are vassalized when we complete this mission, we shall §Yremove§! the §R+50%§! Development Cost Penalty for a Vassal Nation.\n"
+if_free_yes: "£yes£If we are independant when we complete this mission, we shall gain the following:"
+if_free_no: "£no£If we are independant when we complete this mission, we shall gain the following:"
+christian_provinces_TT: "All §YChristian§! provinces in the §YAl Jazira§! area will recieve the following:"
+muslim_provinces_TT: "All §YMuslim§! provinces in the §YAl Jazira§! area will recieve the following:"
+centralizing_state_buff: "§YCentralize State§! will now grant §G+33§! §YProsperity§! in a province." 

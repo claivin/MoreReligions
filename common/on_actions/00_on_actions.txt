@@ -6160,6 +6160,16 @@ on_centralized_state = {
 			}
 		}
 	}
+	if = {
+		limit = {
+			owner = { mission_completed = IRQ_tall_9 }
+		area = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_prosperity = 33
+		}
+	}
 }
 
 #ROOT = country

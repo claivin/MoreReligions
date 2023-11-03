@@ -1510,7 +1510,103 @@ YNN_ideas = {
 		defensiveness = 0.30
 	}
 }
-LNG_ideas = {
+
+##Hungarian Oligarch Ideas
+
+#Aba
+AAB_ideas = {
+	start = {
+		fire_damage = 0.10	
+		inflation_reduction = 0.1	
+	}
+	bonus = {
+		imperial_authority_value = 0.1	
+	}
+	free = yes
+	trigger = { tag = AAB }
+	AAB_first = { #Stand Against the Mongols
+		war_exhaustion = -0.02
+	}
+	AAB_second = { #The Most Honorable Palatine 
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.15
+	}
+	AAB_third = { #The Pentapolitana
+		trade_steering = 0.15
+	}
+	AAB_fourth = { #Karpatendeutsche Settlers
+		advisor_pool = 1
+		advisor_cost = -0.1
+	}
+	AAB_sixth = { #City Center of Gönc 
+		prestige = 1
+	}
+	AAB_seventh = { #Saxons, Slovaks, and Magyars
+		num_accepted_cultures = 2
+	}
+}
+#Kan Ideas
+KNN_ideas = {
+	start = {
+		shock_damage = 0.10
+		cavalry_cost = -0.15
+	}
+	bonus = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.2
+		meritocracy = 1
+		horde_unity = 1
+	}
+	free = yes
+	trigger = {
+		tag = KNN
+	}
+	KNN_first = { #The Cuman Army
+		cavalry_power = 0.15
+		cav_to_inf_ratio = 0.25
+	}
+	KNN_second = { #Fortress Deva
+		defensiveness = 0.10
+	}
+	KNN_third = { #From Carpathia to Pannonia
+		movement_speed = 0.10
+	}
+	KNN_fourth = { #Subjugating the Saxons
+		global_autonomy = -0.05
+	}
+	KNN_fifth = { #Victory of the Saint King
+		tolerance_own = 1
+	}
+	KNN_sixth = { #Voivode of Transylvania
+		production_efficiency = 0.05
+	}
+	KNN_seventh = { #The Magyar Horde
+		raze_power_gain = 0.10	
+	}
+}
+#Severin / Joannites Ideas
+JAA_ideas = {
+	start = {
+		discipline = 0.05
+		manpower_in_true_faith_provinces = 0.1
+	}
+	bonus = {
+		missionaries = 1
+	}
+	free = yes
+	trigger = { tag = JAA }
+	JAA_first = { #Defenders of Christendom
+		shock_damage_received = -0.10
+	}
+	JAA_second = { #Bishopric in Severin
+		build_cost = -0.10
+		build_time = -0.15
+	}
+	JAA_third = { #Castrul Zeurini
+		
+	}
+}LNG_ideas = {
 	start = {
 		tolerance_heathen = 4
 		land_morale = 0.20

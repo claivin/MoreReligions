@@ -362,3 +362,12 @@
  navarra_events.18.2: "The King bought it, displaying it and saying "We Conquered the Sea"."
  navarra_events.18.3: "A Catalonian Merchant bought it, holding a feast in Barcelona that lasted days."
  
+##Baghdad Events
+mr_baghdad_flavor.1.t: "The Caged Caliph"
+mr_baghdad_flavor.1.d: "placeholder :)"
+mr_baghdad_flavor.1.a: "We shall bide our time for now."
+PEACEFULL_ILK: "This will enable the §YSubversion of the Ilkhanate§! Missions, allowing us to remain under the Ilkhanate but slowly take over them through diplomacy."
+mr_baghdad_flavor.1.b: "We must prepare for our usurpation!"
+KILL_ILK: "This will enable the §YUsurpation of the Ilkhanate§! Missions, preparing us for war and conquest with the Ilkhanate."
+baghdad_branching_TT: "§GEvent Insight§!:\nThis event will detail our relationship with the Ilkhanate and whether we shall either persue a path of independence through war or diplomacy. Depending on how we complete the mission, different options will become available."
+branching_mission_TT: "This Mission is a §YBranching Mission§!, we must complete a prior mission to unlock it."

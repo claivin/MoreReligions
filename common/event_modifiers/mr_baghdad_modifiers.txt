@@ -1,0 +1,47 @@
+diplomatic_solution_ILK = {
+	diplomats = 1
+	diplomatic_reputation = 1
+}
+military_solution_ILK = {
+	province_warscore_cost = -0.10
+	spy_offence = 0.10
+	spy_action_cost_modifier = -0.25
+}
+redirection_euphrates = {
+	local_development_cost = -0.25
+}
+prosperity_under_caliph = {
+	local_prosperity_growth = 0.5
+	local_tax_modifier = 0.15
+	local_production_efficiency = 0.10
+}
+redirecting_trade = {
+	trade_steering = 0.15
+	merchants = 1
+}
+hidden_dev_cost_fixer = {
+	development_cost = -0.5
+}
+expand_admin_IRAQ = {
+	expand_infrastructure_cost_modifier = -0.33
+}
+regrowth_of_the_city = {
+	local_development_cost = -0.10
+}
+hidden_wine_communities = {
+	trade_goods_size_modifier = 0.10
+}
+growth_of_the_cities = {
+	allowed_num_of_buildings = 1
+}
+master_of_basra_trade = {
+	global_foreign_trade_power = 0.15
+	trade_range_modifier = 0.20
+}
+new_golden_age = {
+	development_cost_modifier = -0.10
+}
+admisitration_of_baghdad = {
+	local_governing_cost = -0.25	
+	local_state_maintenance_modifier = -0.25	
+}

@@ -1,0 +1,642 @@
+IRQ_branch_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = IRQ
+			was_tag = IRQ
+		}
+	}
+	IRQ_branching_1 = {
+		icon = mission_bedouins
+		position = 1
+		provinces_to_highlight = {
+			owned_by = ILK
+		}
+		trigger = {
+			OR = {
+				AND = {
+					marriage_with = ILK
+					reverse_has_opinion = {
+						who = ILK
+						value = 120
+					}
+				}
+				AND = {
+					liberty_desire = 50
+					has_spy_network_in = {
+						who = ILK
+						value = 30
+					}
+					army_size_percentage = 1
+				}
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = mr_baghdad_flavor.1
+			}
+			custom_tooltip = baghdad_branching_TT
+		}
+	}
+}
+IRQ_branch_1LOCKED = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = IRQ
+			was_tag = IRQ
+		}
+		NOT = {
+			OR = {
+				has_country_flag = reverse_ilkhanate_BAG
+				has_country_flag = military_ilkhanate_BAG
+			}
+		}
+	}
+	IRQ_branching_2 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = {
+			IRQ_branching_1
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	IRQ_branching_3 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = {
+			IRQ_branching_2
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	IRQ_branching_4 = {
+		icon = mission_unknown_mission
+		position = 4
+		required_missions = {
+			IRQ_branching_3
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+}
+IRQ_branch_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = IRQ
+			was_tag = IRQ
+		}
+	}
+	IRQ_tall_2 = {
+		icon = mission_se_along_the_river
+		position = 2
+		required_missions = {
+			IRQ_tall_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2311
+				province_id = 409
+			}
+			NOT = {
+				AND = {
+					has_tax_building_trigger = yes
+					base_tax = 5
+				}
+			}
+		}
+		trigger = {
+			2311 = {
+				has_tax_building_trigger = yes
+				base_tax = 5
+			}
+			409 = {
+				has_tax_building_trigger = yes
+				base_tax = 5
+			}
+		}
+		effect = {
+			2311 = {
+				add_province_modifier = {
+					name = redirection_euphrates
+					duration = -1
+				}
+			}
+			409 = {
+				add_province_modifier = {
+					name = redirection_euphrates
+					duration = -1
+				}
+			}
+		}
+	}
+	IRQ_tall_6 = {
+		icon = mission_arabian_fort
+		position = 4
+		required_missions = {
+			IRQ_tall_2
+		}
+		provinces_to_highlight = {
+			area = al_jazira_area
+			NOT = {
+				has_production_building_trigger = yes
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					prosperity = 25
+				}
+				else = { num_of_times_improved = 5 }
+			}
+		}
+		trigger = {
+			al_jazira_area = {
+				type = all
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					prosperity = 25
+				}
+				else = { num_of_times_improved = 5 }
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			al_jazira_area = {
+				add_local_autonomy = -100
+				add_base_production = 2
+			}
+			custom_tooltip = christian_provinces_TT
+			tooltip = {
+				add_province_modifier = {
+					name = hidden_wine_communities
+					duration = -1
+				}
+			}
+			custom_tooltip = muslim_provinces_TT
+			tooltip = {
+				add_province_modifier = {
+					name = growth_of_the_cities
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						area = al_jazira_area
+						religion_group = christian
+					}
+					add_province_modifier = {
+						name = hidden_wine_communities
+						duration = -1
+					}
+				}
+				every_owned_province = {
+					limit = {
+						area = al_jazira_area
+						religion_group = muslim
+					}
+					add_province_modifier = {
+						name = growth_of_the_cities
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+IRQ_branch_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = IRQ
+			was_tag = IRQ
+		}
+	}
+	IRQ_tall_1 = {
+		icon = mission_central_asian_city
+		position = 1
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			province_id = 410
+			NOT = {
+				development = 16
+			}
+		}
+		trigger = {
+			410 = {
+				owned_by = ROOT
+				development = 16
+			}
+		}
+		effect = {
+			add_years_of_income = 1.5
+			define_advisor = {
+				type = treasurer
+				skill = 2
+				discount = yes
+				culture = ROOT
+			}
+			add_country_modifier = {
+				name = regrowth_of_the_city
+				duration = -1
+			}
+			custom_tooltip = gain_liberty_desire_TT
+			hidden_effect = {
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					add_liberty_desire = 20
+				}
+			}
+		}
+	}
+	IRQ_tall_3 = {
+		icon = mission_market_place_with_asian_traders
+		position = 2
+		required_missions = {
+			IRQ_tall_1
+		}
+		provinces_to_highlight = {
+			area = iraq_arabi_area
+			NOT = {
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+		}
+		trigger = {
+			iraq_arabi_area = {
+				type = all
+				base_production = 6
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			409 = {
+				add_building_construction = {
+					building = mrb_textileprocessor
+					speed = 1
+					cost = 0
+				}
+			}
+			4291 = {
+				add_building_construction = {
+					building = mrb_textileprocessor
+					speed = 1
+					cost = 0
+				}
+			}
+			iraq_arabi_area = {
+				add_province_modifier = {
+					name = prosperity_under_caliph
+					duration = -1
+				}
+			}
+		}
+	}
+	IRQ_tall_4 = {
+		icon = mission_control_fur_trade
+		position = 3
+		required_missions = {
+			IRQ_tall_3
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_trade_building_trigger = no
+			trade_company_region = trade_company_basra
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_trade_building_trigger = yes
+				trade_company_region = trade_company_basra
+			}
+			1335 = { #Basra
+				trade_share = {
+					country = ROOT
+					share = 15
+				}
+			}
+		}
+		effect = {
+			410 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 10
+					key = STRONG_MERCHANTS_IRQ
+				}
+			}
+			add_country_modifier = {
+				name = redirecting_trade
+				duration = 12775
+			}
+		}
+	}
+	IRQ_tall_8 = {
+		icon = mission_non-western_soldiers
+		position = 5
+		required_missions = {
+			IRQ_tall_6
+			IRQ_tall_4
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = iraq_arabi_area
+				area = basra_area
+				area = al_jazira_area
+			}
+			NOT = {
+				development = 12
+			}
+		}
+		trigger = {
+			iraq_arabi_area = {
+				type = all
+				development = 12
+			}
+			basra_area = {
+				type = all
+				development = 12
+			}
+			al_jazira_area = {
+				type = all
+				development = 12
+			}
+		}
+		effect = {
+			iraq_arabi_area = {
+				add_prosperity = 100
+				add_province_modifier = {
+					name = new_golden_age
+					duration = -1
+				}
+			}
+			basra_area = {
+				add_prosperity = 100
+				add_province_modifier = {
+					name = new_golden_age
+					duration = -1
+				}
+			}
+			al_jazira_area = {
+				add_prosperity = 100
+				add_province_modifier = {
+					name = new_golden_age
+					duration = -1
+				}
+			}
+		}
+	}
+}
+IRQ_branch_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = IRQ
+			was_tag = IRQ
+		}
+	}
+	IRQ_tall_5 = {
+		icon = mission_silk_road
+		position = 2
+		required_missions = {
+			IRQ_tall_1
+		}
+		provinces_to_highlight = {
+			province_id = 410
+			NOT = {
+				development = 20
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		trigger = {
+			410 = {
+				development = 20
+				province_has_center_of_trade_of_level = 2
+			}
+			monthly_adm = 12
+			all_owned_province = {
+				NOT = { devastation = 1 }
+			}
+		}
+		effect = {
+			change_government_reform_progress = 100	
+			add_corruption = -2
+			if ={
+				limit = {
+					is_subject = yes
+				}
+				custom_tooltip = if_vassalized_yes
+			}
+			else = {
+				custom_tooltip = if_vassalized_no
+			}
+			if = {
+				limit = {
+					is_subject = no
+				}
+				custom_tooltip = if_free_yes
+				tooltip = {
+					add_country_modifier = {
+						name = expand_admin_IRAQ
+						duration = 18250
+					}
+				}
+			}
+			else = {
+				custom_tooltip = if_free_no
+				tooltip = {
+					add_country_modifier = {
+						name = expand_admin_IRAQ
+						duration = 18250
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					add_country_modifier = {
+						name = hidden_dev_cost_fixer
+						duration = -1
+						hidden = yes
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = expand_admin_IRAQ
+						duration = 18250
+					}
+				}
+			}
+		}
+	}
+	IRQ_tall_9 = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			IRQ_tall_5
+		}
+		provinces_to_highlight = {
+			province_id = 410
+			NOT = {
+				current_institution = 100 
+				has_courthouse_building_trigger = yes
+			}
+		}
+		trigger = {
+			410 = {
+				current_institution = 100
+				has_courthouse_building_trigger = yes
+			}
+			OR = {
+				statesman = 2
+				treasurer = 2
+			}
+		}
+
+		effect = {
+			410 = {
+				add_province_modifier = {
+					name = admisitration_of_baghdad
+					duration = -1
+				}
+			}
+			custom_tooltip = centralizing_state_buff
+		}
+	}
+	IRQ_tall_7 = {
+		icon = mission_arabian_ports
+		position = 4
+		required_missions = {
+			IRQ_tall_4
+		}
+		provinces_to_highlight = {
+			area = basra_area
+			NOT = {
+				owned_by = ROOT
+			}
+			province_id = 408
+			NOT = {
+				has_trade_building_trigger = yes
+			}
+		}
+		trigger = {
+			408 = {
+				has_trade_building_trigger = yes
+				base_production = 6
+			}
+			basra_area = {
+				has_state_edict = edict_protect_trade
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1335 = {
+				has_most_province_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = master_of_basra_trade
+				duration = -1
+			}
+			408 = {
+				light_ship = ROOT
+				light_ship = ROOT
+				light_ship = ROOT
+				heavy_ship = ROOT
+			}
+		}
+	}
+}
+IRQ_branch_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = { 
+		OR = {
+			tag = IRQ
+			was_tag = IRQ
+		}
+	}
+	IRQ_tall_10 = {
+		icon = mission_mosque
+		position = 3
+		required_missions = {
+			IRQ_tall_5
+		}
+		provinces_to_highlight = {
+			province_id = 410
+			NOT = {
+				has_great_project = {
+					type = mr_house_of_wisdom
+					tier = 3
+				}
+			}
+		}
+		trigger = {
+			410 = {
+				has_great_project = {
+					type = mr_house_of_wisdom
+					tier = 2
+				}
+				base_tax = 12
+				is_prosperous = yes
+			}
+			OR = {
+				theologian = 2
+				natural_scientist = 2
+			}
+			treasury = 1500
+		}
+		effect = {
+			410 = {
+				add_great_project_tier = {
+					type = mr_house_of_wisdom
+					tier = 1
+				}
+			}
+			add_treasury = -1500
+		}
+	}
+}
