@@ -86,7 +86,8 @@ ilkhanate_disaster = {
 	modifier = {
 		global_unrest = 10
 		reduced_liberty_desire = -50
-		stability_cost_modifier = 0.25
+		stability_cost_modifier = 0.50
+		land_forcelimit_modifier = -0.25
 	}
 	
 	can_end = {

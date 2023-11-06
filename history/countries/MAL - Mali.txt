@@ -115,7 +115,7 @@ change_estate_land_share = {
 	}
 }
 
-
+1444.1.1 = { leader = { name = "Magha Keita II"	type = explorer	fire = 1	shock = 1	manuever = 3	siege = 0 } }
 
 
 

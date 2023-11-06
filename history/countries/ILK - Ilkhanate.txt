@@ -6,3 +6,4 @@ technology_group = muslim
 capital = 416
 add_accepted_culture = persian
 set_estate_privilege = estate_church_ilkhanate_dervish
+

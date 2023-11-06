@@ -52,7 +52,9 @@ country_event = {
 						is_subject = yes
 					}
 				}
-				grant_independence = ARL
+				ARL = {
+					grant_independence = yes
+				}
 			}
 			else = {
 				release = ARL
@@ -80,8 +82,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = ARL
@@ -98,8 +100,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = ARL
@@ -160,9 +162,11 @@ country_event = {
 					is_subject = yes
 				}
 			}
-			grant_independence = BSR
+			BSR = {
+				grant_independence = BSR
+			}
 		}
-		else = {
+		else_if = {
 			limit = {
 				BSR = {
 					exists = no
@@ -193,8 +197,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = BSR
@@ -212,8 +216,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = BSR
@@ -263,7 +267,9 @@ country_event = {
 					is_subject = yes
 				}
 			}
-			grant_independence = ISF
+			ISF = {
+				grant_independence = yes
+			}
 		}
 		else = {
 			release = ISF
@@ -291,8 +297,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = ISF
@@ -310,8 +316,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = ISF
@@ -360,7 +366,9 @@ country_event = {
 						is_subject = yes
 					}
 				}
-				grant_independence = YZD
+				YZD = {
+					grant_independence = YZD
+				}
 			}
 			else = {
 				release = YZD
@@ -387,8 +395,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = YZD
@@ -406,8 +414,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = YZD
@@ -466,7 +474,9 @@ country_event = {
 						is_subject = yes
 					}
 				}
-				grant_independence = ALM
+				ALM = {
+					grant_independence = yes
+				}
 			}
 			else_if = {
 				limit = {
@@ -483,7 +493,7 @@ country_event = {
 						cavalry = 0.3
 					}
 				}
-				change_government = thoecracy
+				change_government = theocracy
 				add_government_reform = leading_clergy_reform
 			}
 			change_variable = {
@@ -500,8 +510,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = ALM
@@ -519,8 +529,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = ALM
@@ -583,9 +593,11 @@ country_event = {
 						is_subject = yes
 					}
 				}
-				grant_independence = SBZ
+				SBZ = {
+					grant_independence = yes
+				}
 			}
-			else = {
+			else_if = {
 				limit = {
 					SBZ = {
 						exists = no
@@ -600,7 +612,7 @@ country_event = {
 						cavalry = 0.3
 					}
 				}
-				change_government = thoecray
+				change_government = theocracy
 				add_government_reform = leading_clergy_reform
 			}
 			change_variable = {
@@ -617,8 +629,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = SBZ
@@ -636,8 +648,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = SBZ
@@ -699,14 +711,16 @@ country_event = {
 			}
 
 			if = {
-			limit = {
+				limit = {
+					KMS = {
+						is_subject = yes
+					}
+				}
 				KMS = {
-					is_subject = yes
+					grant_independence = yes
 				}
 			}
-			grant_independence = KMS
-			}
-			else = {
+			else_if = {
 				limit = {
 					KMS = {
 						exists = no
@@ -737,8 +751,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = KMS
@@ -756,8 +770,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						num_of_rebel_armies = 1
-						num_of_rebel_controlled_provinces = 1
+						controlled_by = REB
+						infantry_in_province = REB
 					}
 				}
 				change_controller = KMS
@@ -1020,6 +1034,9 @@ country_event = {
 		random_owned_province = { 
 			limit = {
 				region = khorasan_region
+				NOT = {
+					controlled_by = REB
+				}
 			}
 			spawn_rebels = {
 				type = shiite_rebels
@@ -1028,6 +1045,8 @@ country_event = {
 		}
 	}
 }
+
+
 
 country_event = {
 	id = ilkhanate_flavor.13
@@ -1061,7 +1080,7 @@ country_event = {
 	
 	option = {
 		name = ilkhanate_flavor.14.b
-		add_corruption = -4
+		add_corruption = -2
 	}
 }
 country_event = {
