@@ -1,63 +1,60 @@
-estate_nobles =
-{
+estate_nobles = {
 	icon = 2
 
 	# If true, country will get estate
 	trigger = {
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_reform = veche_republic }
-		NOT = { has_reform = cossacks_reform }
-		NOT = { government = native }
-		NOT = { has_reform = trading_city }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { has_reform = revolutionary_empire_reform }
-		NOT = { has_reform = peasants_republic }
-		NOT = { has_reform = kongsi_federation }
-		NOT = { has_reform = american_republic }
-		NOT = { has_reform = federal_republic }
-		if = {
-			limit = {
-				NOT = { religion_group = muslim }
-				NOT = { religion = sikhism }
-				NOT = { religion = buddhism }
-				NOT = { religion = vajrayana }
-				NOT = { religion = mahayana }
-			}
-			NOT = { has_estate = estate_maratha }
-			NOT = { has_estate = estate_rajput }
-		}
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }
+		#NOT = { has_reform = trading_city }
+		NOT = { has_government_attribute = disables_estate_nobles }
+		NOT = { has_disabled_estate = { estate = estate_nobles } }
 		OR = {
-			NOT = { has_reform = celestial_empire }
-			has_dlc = "Mandate of Heaven"
-		}
-		is_nomad = no
-		is_colonial_nation = no
-		NOT = { has_government_attribute = disables_nobility }
-		NOT = { has_reform = revolutionary_empire_reform }
-		AND = {
-			NOT = { has_country_flag = ikko_ikki_peasants_flag }
-			OR = {
-				NOT = { has_reform = leading_clergy_reform }
-				NOT = { has_reform = monastic_order_reform }
-				NOT = { has_reform = peasants_republic }
+			has_government_attribute = enables_estate_nobles
+			has_enabled_estate = { estate = estate_nobles }
+			has_unlocked_estate = { estate = estate_nobles }
+			AND = {
+				NOT = { has_government_attribute = is_pirate_republic_reform }
+				NOT = { government = native }
+				NOT = { has_reform = siberian_tribe }
+				NOT = { is_revolutionary_republic_trigger = yes }
+				NOT = { has_reform = revolutionary_empire_reform }
+				is_nomad = no
+				is_colonial_nation = no
+				if = {
+					limit = {
+						NOT = { religion_group = muslim }
+						NOT = { religion = sikhism }
+						NOT = { religion = buddhism }
+						NOT = { religion = vajrayana }
+						NOT = { religion = mahayana }
+					}
+					NOT = { has_estate = estate_maratha }
+					NOT = { has_estate = estate_rajput }
+				}
 			}
 		}
+		#OR = {
+		#	NOT = { has_reform = celestial_empire }
+		#	has_dlc = "Mandate of Heaven"
+		#}
 	}
 
 	country_modifier_happy = {
 		manpower_recovery_speed = 0.2 
 		land_maintenance_modifier = -0.1
-		monthly_support_heir_gain = 0.33
+		monthly_support_heir_gain = 0.1
+		rr_royalists_influence = 0.2
 	}
 	country_modifier_neutral = {
 		manpower_recovery_speed = 0.2 
+		rr_royalists_influence = 0.1
 	}	
 	country_modifier_angry = {
 		manpower_recovery_speed = -0.1
 		land_maintenance_modifier = 0.1
+		monthly_support_heir_gain = -0.2
 		global_unrest = 2
+		rr_royalists_influence = -0.1
 	}
 	land_ownership_modifier = {
 		nobles_loyalty_modifier = 0.2
@@ -105,13 +102,8 @@ estate_nobles =
 	influence_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
-			OR = {
-				has_disaster = estate_church_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_vaisyas_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_nobles }
 		}	
 		influence = -40
 	}
@@ -119,13 +111,8 @@ estate_nobles =
 	loyalty_modifier = {
 		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
-			OR = {
-				has_disaster = estate_church_disaster
-				has_disaster = estate_burghers_disaster
-				has_disaster = estate_brahmins_disaster
-				has_disaster = estate_vaisyas_disaster
-				has_disaster = estate_jains_disaster
-			}
+			has_any_estate_disaster_active = yes
+			has_not_own_estate_disaster_active = { estate = estate_nobles }
 		}
 		loyalty = -20
 	}
@@ -215,9 +202,28 @@ estate_nobles =
 	
 	#Alternative naming of estates
 	custom_name = {
+		desc = estate_mamluks
+		trigger = {
+			tag = MAM
+		}
+	}
+	custom_name = {
+		desc = estate_imperial_nobility
+		trigger = {
+			has_reform = revolutionary_empire_reform
+		}
+	}
+	custom_name = {
 		desc = estate_oyo_mesi
 		trigger = {
 			tag = OYO
+		}
+	}
+	custom_name = {
+		desc = estate_eugeneis
+		trigger = {
+			tag = BYZ
+			culture_group = byzantine
 		}
 	}
 	custom_name = {
@@ -246,7 +252,9 @@ estate_nobles =
 				culture_group = east_slavic
 				primary_culture = bulgarian
 				primary_culture = romanian
+				culture_group = slavic
 			}
+			NOT = { primary_culture = polish_new }
 		}
 	}
 	custom_name = {
@@ -254,6 +262,7 @@ estate_nobles =
 		trigger = {
 			OR = {
 				primary_culture = polish
+				primary_culture = polish_new
 				primary_culture = lithuanian
 			}
 		}
@@ -291,7 +300,10 @@ estate_nobles =
 	custom_name = {
 		desc = estate_mansabdars
 		trigger = {
-			tag = MUG
+			OR = {
+				tag = MUG
+				has_government_attribute = enable_mansabdar_privileges
+			}
 		}
 	}
 	custom_name = {
@@ -320,7 +332,7 @@ estate_nobles =
 		}
 	}
 	custom_name = {
-		desc = estate_kuge
+		desc = estate_bushi
 		trigger = {
 			culture_group = japanese_g
 		}
@@ -337,6 +349,7 @@ estate_nobles =
 		trigger = {
 			OR = {
 				has_reform = prussian_republic_reform
+				has_reform = prussian_monarchy_base
 				has_reform = prussian_monarchy
 				tag = GER
 			}
@@ -461,6 +474,16 @@ estate_nobles =
 		estate_nobles_force_conscription
 		estate_nobles_noble_officer_right
 		estate_nobles_expedition_rights
+		estate_nobles_highland_fortifications
+		estate_nobles_emirs_of_baghdad
+		estate_nobles_deteriorating_army
+		estate_nobles_defensive_policy
+		estate_nobles_tofangchi_regiment
+		estate_nobles_tupchi_artillery_corps
+		estate_nobles_qurchi_service
+		estate_nobles_mamlukian_administration
+		estate_nobles_enlist_the_mamluks
+		#Gods and Kings
 		estate_nobles_gallowglass_unit
 		estate_nobles_rice_wine
 		estate_nobles_mr_strong_szlachta
@@ -498,6 +521,12 @@ estate_nobles =
 		estate_nobles_improve_prestige
 		estate_nobles_hire_advisor
 		estate_nobles_fire_advisor
+		estate_nobles_mam_three_privileges 
+		estate_nobles_mam_recruit_mamluks 
+		estate_nobles_mam_develop_military_infrastructure 
+		estate_nobles_mam_increase_army_tradition 
+		estate_nobles_mam_increase_army_professionalism 
+		estate_nobles_mam_focus_on_military_matters
 	}
 	
 	influence_from_dev_modifier = 1.0

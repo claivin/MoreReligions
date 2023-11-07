@@ -1983,7 +1983,7 @@ sistan_monarchy = {
 }
 
 #More Specific Monarchies
-persian_monarchy = {
+turcoman_persian_monarchy = {
 	rank = {
 		1 = SHEIKHDOM
 		2 = SHAHDOM
@@ -2012,6 +2012,53 @@ persian_monarchy = {
 		1 = SHEIKHA
 		2 = KHANUM
 		3 = KHANUM
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = SHAHZADE
+		3 = SHAHZADE
+	}
+
+	heir_female = {
+		1 = SHEIKHA
+		2 = SHAHDOKHT
+		3 = SHAHDOKHT
+	}
+
+	trigger = {
+		has_country_flag = turkoman_adopt_shahanshah_title
+	}
+}
+persian_monarchy = {
+	rank = {
+		1 = SHEIKHDOM
+		2 = SHAHDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = SHEIKH
+		2 = SHAH
+		3 = SHAHANSHAH
+	}
+
+	ruler_female = {
+		1 = SHEIKHA
+		2 = SHAH
+		3 = SHAHANSHAH
+	}
+	
+	consort_male = {
+		1 = MIRZA
+		2 = SHAH_CONSORT
+		3 = SHAH_CONSORT
+	}
+
+	consort_female = {
+		1 = SHEIKHA
+		2 = SHAHBANU
+		3 = SHAHBANU
 	}
 	
 	heir_male = {

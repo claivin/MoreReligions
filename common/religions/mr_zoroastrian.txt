@@ -1,5 +1,6 @@
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
+	defender_of_faith = yes
 	zoroastrian = {
 		icon = 26
 		color = { 127 178 51 }
@@ -14,8 +15,14 @@ zoroastrian_group = {
 			merchants = 1
 			tolerance_own = 1
 		}
-
-		holy_sites = { 421 4430 2223 441 2235 }
+		allowed_center_conversion = {
+			sunni
+			shiite
+			orthodox
+			coptic
+			hinduism
+		}
+		holy_sites = { 2212 4430 2223 441 4336 }
 
 		blessings = {
 			blessing_yasna
