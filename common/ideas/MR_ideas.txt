@@ -1638,3 +1638,42 @@ JAA_ideas = {
 		siege_ability = 0.25
 	}
 }
+
+ADR_ideas = {
+	start = {
+		prestige = 1.0
+		state_maintenance_modifier = -0.25
+	}
+	bonus = {
+		hostile_attrition = 2
+	}
+	free = yes
+	trigger = {
+		tag = ADR
+	}
+	free = yes			#will be added at load.
+	
+	ADR_la_vieja = {
+		development_cost_in_primary_culture = -0.2
+	}
+	ADR_mountain_fortress = {
+		fort_maintenance_modifier = -0.30
+		defensiveness = 0.50
+	}
+	ADR_carolingian_duality = {
+		diplomatic_reputation = 2
+	}
+	ADR_heart_pyrenees = {
+		build_cost = -0.15
+	}
+	ADR_splendid_isolation = {
+		national_focus_years = -5
+	}
+	ADR_garrison_drills = {
+		drill_gain_modifier = 0.30
+		garrison_size = 0.50
+	}
+	ADR_pyrenee_toll = {
+		global_own_trade_power = 0.3
+	}
+}	
