@@ -527,7 +527,7 @@
  
 #Andorran Ideas
  ADR_ideas: "Andorran Ideas"
- ADR_ideas_start : "Andorran Traditions"
+ ADR_ideas_start: "Andorran Traditions"
  ADR_ideas_bonus: "Andorran Ambitions"
  ADR_la_vieja_desc: "Our name sake and perhaps only true proper settlement, the town of Andorra La Vieja is our pride and joy, neatly tucked in the pyrenees, here in our valley every Andorran works their best to bring prosperity to their community."
  ADR_la_vieja: "Andorra La Vieja"
@@ -537,7 +537,7 @@
  ADR_carolingian_duality: "The Carolingian Duality"
  ADR_heart_pyrenees_desc: "Our realm sits right in the heart of the pyrenees, we alone dare to live upon the celestial edge of Iberia. Catalans, Occitanians, Aragonese and Basques may brag about how they are true hardy mountain folk, but we know the truth. We see their settlements on the edges and bases of the great mountains and see them for the liars they are. We alone, are the only true mountain lords of Iberia."
  ADR_heart_pyrenees: "The Heart of the Pyrenees" 
- ADR_splendid_isolation_desc: "Our small status, and our position deep in the Pyrenees is quite a boon. Here in Andorra life is quiet, slow, stable and peaceful. It is rare for trouble to rear its head towards us, and our people know better than go out looking for trouble. Nay this is not a curse, we shall remain forever as stable and immovable like the mountain and basque in this serene and splendid isolation."
+ ADR_splendid_isolation_desc: "Our small status, and our position deep in the Pyrenees is quite a boon. Here in Andorra life is quiet, slow, stable and peaceful. It is rare for trouble to rear its head towards us, and our people know better than go out looking for trouble. Nay this is not a curse, we shall remain forever as stable and immovable like the mountain and bask in this serene and splendid isolation."
  ADR_splendid_isolation: "Splendid Isolation"
  ADR_garrison_drills_desc: "Sadly even in a community as small as ours, petty crime is still very much a reality. As such we need to expand the role of the Andorran Guard, make sure they are ready to keep the peace and enforce the law. As free as we may be in our mountain, we are not lawless bandits."
  ADR_garrison_drills: "The Most Watchful Andorran Guard"

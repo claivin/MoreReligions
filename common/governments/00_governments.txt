@@ -1196,6 +1196,7 @@ theocracy = {
 				egyptian_government_reform
 				#gk
 				mr_hungarian_theocracy
+				andorran_reform
 			}
 		}
 		internal_vs_external_mission = {

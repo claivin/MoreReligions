@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = andorra_reform
+government = theocracy
+add_government_reform = andorran_reform
 religion = catholic
 primary_culture = mr_andorran
 technology_group = western
