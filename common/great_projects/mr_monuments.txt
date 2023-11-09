@@ -416,3 +416,95 @@ mr_three_pagodas = {
 		}
 	}
 }
+
+mr_olito_palace = {
+	start = 210
+	build_cost = 1000
+	can_be_moved = no
+	starting_tier = 0
+	type = monument
+	build_trigger = {
+		has_owner_culture = yes	
+	}
+	on_built = {
+		add_splendor = 100
+	}	
+	on_destroyed = {
+		add_splendor = -100
+	}
+	can_use_modifiers_trigger = {
+		has_owner_culture = yes	
+	}
+	can_upgrade_trigger = {
+		has_owner_culture = yes
+	}
+	keep_trigger = {
+	}
+	tier_1 = {
+		upgrade_time = {
+			months = 120
+		}
+		cost_to_upgrade = {
+			factor = 250
+		}
+		province_modifiers = {
+			local_defensiveness = 0.3
+			fort_maintenance_modifier = -0.10
+		}
+		area_modifier = {
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			owner = {
+				add_splendor = 5
+			}
+		}
+	}
+	tier_2 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {	
+			local_defensiveness = 0.5
+			fort_maintenance_modifier = -0.30
+		}
+		area_modifier = {
+			state_maintenance_modifier = -0.30
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			owner = {
+				add_splendor = 10
+			}
+		}
+	}
+	tier_3 = {
+		upgrade_time = {
+			months = 480
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			local_defensiveness = 1.0
+			fort_maintenance_modifier = -0.50
+		}
+		area_modifier = {
+			state_maintenance_modifier = -0.50
+		}
+		country_modifiers = {
+			monthly_splendor = 1
+			parliament_backing_chance = 0.50
+		}
+		on_upgraded = {
+			owner = {
+				add_splendor = 25
+			}
+		}
+	}
+}	

@@ -371,3 +371,13 @@ mr_baghdad_flavor.1.b: "We must prepare for our usurpation!"
 KILL_ILK: "This will enable the §YUsurpation of the Ilkhanate§! Missions, preparing us for war and conquest with the Ilkhanate."
 baghdad_branching_TT: "§GEvent Insight§!:\nThis event will detail our relationship with the Ilkhanate and whether we shall either persue a path of independence through war or diplomacy. Depending on how we complete the mission, different options will become available."
 branching_mission_TT: "This Mission is a §YBranching Mission§!, we must complete a prior mission to unlock it."
+
+#Leon Events
+leon_events.2.t: "Leon wins the War of the Two Brothers"
+leon_events.2.d: "King Enrique The Young of Leon has bested his older brother in the Castillian-Leonese civil war and has emerged as the indisputed master over the largest christian realm in Iberia."
+leon_events.2.1: "There can be only one!"
+
+#Castille Events
+castille_events.2.t: "Castille wins the War of the Two Brothers"
+castille_events.2.d: "King Juan The Elder of Castille has bested his younger brother in the Castillian-Leonese civil war and has emerged as the indisputed master over the largest christian realm in Iberia."
+castille_events.2.1: "There can be only one!"

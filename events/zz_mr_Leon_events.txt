@@ -1,0 +1,46 @@
+namespace = leon_events
+country_event = {
+	id = leon_events.1
+	title = leon_events.1.t
+	desc = leon_events.1.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		LON = {
+			has_won_war_against = {
+				who = CAS
+				max_years_since = 10
+			}
+		}
+	}
+	immediate = {
+		option = {
+			name = "leon_events.1.1"
+			LON = {
+				country_event = {
+					id = leon_events.2
+				}
+			}
+		}
+	}
+}	
+country_event = {
+	id = leon_events.2
+	title = leon_events.2.t
+	desc = leon_events.2.d
+	picture = CONQUEST_eventPicture
+	fire_only_once = yes
+		
+	major = yes
+	major_trigger = {
+		continent = europe
+	}
+	
+	option = {
+		name = "leon_events.2.1"
+		LON = {
+			create_union = CAS
+		}
+	}
+}
