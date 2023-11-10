@@ -82,5 +82,80 @@ mr_western_schism = {
 			#Events 3 - 8 related to foreign intervention
 		}
 	}
+	
+	on_progress_effect = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = western_schism_started_ticker_15 }
+				check_variable = {
+					which = mr_western_schism_progress
+					value = 15
+				}
+			}
+			set_country_flag = western_schism_started_ticker_15
+			every_country = {
+				limit = { religion = catholic }
+				country_event = { id = mr_catholic.1010 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = western_schism_started_ticker_30 }
+				check_variable = {
+					which = mr_western_schism_progress
+					value = 30
+				}
+			}
+			set_country_flag = western_schism_started_ticker_30
+			country_event = { id = mr_catholic.1011 }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = western_schism_started_ticker_45 }
+				check_variable = {
+					which = mr_western_schism_progress
+					value = 45
+				}
+			}
+			set_country_flag = western_schism_started_ticker_45
+			country_event = { id = mr_catholic.1012 }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = western_schism_started_ticker_60 }
+				check_variable = {
+					which = mr_western_schism_progress
+					value = 60
+				}
+			}
+			set_country_flag = western_schism_started_ticker_60
+			country_event = { id = mr_catholic.1013 }
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = western_schism_started_ticker_75 }
+				check_variable = {
+					which = mr_western_schism_progress
+					value = 75
+				}
+			}
+			set_country_flag = western_schism_started_ticker_75
+			every_country = {
+				limit = { religion = catholic }
+				country_event = { id = mr_catholic.1014 }
+			}
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = western_schism_started_ticker_90 }
+				check_variable = {
+					which = mr_western_schism_progress
+					value = 90
+				}
+			}
+			set_country_flag = western_schism_started_ticker_90
+			country_event = { id = mr_catholic.1015 }
+		}
+	}
 }
 

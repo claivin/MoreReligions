@@ -1,0 +1,60 @@
+namespace = mr_danish_event
+
+country_event = { #Archcount of Denmark
+	id = mr_danish_event.1
+	title = mr_danish_event.1.t
+	desc = mr_danish_event.1.d
+	picture = URBANISATION_INCIDENT_eventPicture
+	
+	is_triggered_only = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			is_emperor = yes
+			capital_scope = {
+				OR = {
+					region = scandinavia_region
+					region = north_german_region
+					region = british_isles_region
+					region = baltic_region
+					region = low_countries_region
+				}
+			}
+		}
+	}
+	
+	option = { #leave HRE
+		name = mr_danish_event.1.a
+		ai_chance = { factor = 100 }
+		set_in_empire = no
+		every_owned_province = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			set_in_empire = no 
+		}
+		every_subject_country = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = denmark_area
+						area = jutland_area
+						area = skaneland_area
+						area = holstein_area
+					}
+					is_part_of_hre = yes
+				}
+				set_in_empire = no
+			}
+		}
+		add_prestige = 50
+		add_splendor = 100
+		change_mil = 2
+	}
+	
+	option = { #stay HRE
+		name = mr_danish_event.1.b
+		ai_chance = { factor = 0 }
+		change_dip = 1
+	}
+}

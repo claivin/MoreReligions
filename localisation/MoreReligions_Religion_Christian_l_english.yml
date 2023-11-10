@@ -335,3 +335,29 @@
  mr_catholic.21.d: "Benefice was a payment given to Church offices for their 'work.' Under the current state of the Catholic Church, with the completely unchecked rule from Church offices, taxation has risen across Europe, most notably within the confines of more zealous bishops. This of course, has begun to cut into crown taxation, which in turn has brought the Church under fire from monarchs across Europe.\n\nSeveral Priest-Cardinals had drafted a proposition for approval by the Pope [PAP.Monarch.GetName] in hopes that placing limitations on these beneficium would keep the crowns of Europe from siding with the Reconstructionist faction."
  mr_catholic.21.a: ""
  mr_catholic.21.b: ""
+ 
+ mr_catholic.1010.t: "Council of [mr_council_location.GetName]"
+ mr_catholic.1010.d: "An ecumenical council has been convened in [mr_council_location.GetName] hoping to stop the recent bout of factionalism from becoming too adversarial. Cardinals, bishops, abboots, and other clergymen from all over Europe have gathered to a discuss a unified trajectory of the Church.\nThe first conclave only saw unresolved debate, with Reconstructionists only reiterating their position: that the wanton corruption of the Church would only undermine its longterm authority. The conclave ended inconclusively."
+ mr_catholic.1010.a: "Perhaps future gatherings will be more fruitful."
+ mr_catholic.1010.tooltip: "§YThe Western Schism has reached 15% disaster progress§!"
+ 
+ mr_catholic.1011.t: "Bishop Electors of France"
+ mr_catholic.1011.d: "The Bishop Electors of France hold great political influence in the region due to their quite literal kingmaker status. They have although they are not a political monolith, it is often in their best interests to fall in line - at least with each other."
+ mr_catholic.1011.a: "Concessions must be made."
+ mr_catholic.1011.tooltip: "§YYou must complete the mission Guide France before The Western Schism reaches 40% progress to guarantee the Bishop Elector's support§!"
+ 
+ mr_catholic.1012.t: ""
+ mr_catholic.1012.d: ""
+ mr_catholic.1012.a: ""
+  
+ mr_catholic.1013.t: ""
+ mr_catholic.1013.d: ""
+ mr_catholic.1013.a: ""
+  
+ mr_catholic.1014.t: ""
+ mr_catholic.1014.d: ""
+ mr_catholic.1014.a: ""
+  
+ mr_catholic.1015.t: ""
+ mr_catholic.1015.d: ""
+ mr_catholic.1015.a: ""

@@ -1389,4 +1389,98 @@ country_event = {
 	}
 }
 
-###
+
+#Fixed Progression Events
+country_event = { #Council of [mr_council_location.GetName]
+	id = mr_catholic.1010
+	title = mr_catholic.1010.t
+	desc = mr_catholic.1010.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+	major_trigger = { religion = catholic }
+	
+	immediate = {
+		random_province = {
+			limit = {
+				has_center_of_trade_of_level = 1
+				development = 10
+				religion = catholic
+			}
+			save_global_event_target_as = mr_council_location
+		}
+	}
+	
+	option = {
+		name = mr_catholic.1010.a
+		custom_tooltip = mr_catholic.1010.tooltip
+	}
+}
+
+country_event = { #Bishop Electors of France
+	id = mr_catholic.1011
+	title = mr_catholic.1011.t
+	desc = mr_catholic.1011.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mr_catholic.1011.a
+		custom_tooltip = mr_catholic.1011.tooltip
+		set_country_flag = mr_pap_bishop_electors
+	}
+}
+country_event = {
+	id = mr_catholic.1012
+	title = mr_catholic.1012.t
+	desc = mr_catholic.1012.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mr_catholic.1012.a
+		custom_tooltip = mr_catholic.1012.tooltip
+	}
+}
+country_event = {
+	id = mr_catholic.1013
+	title = mr_catholic.1013.t
+	desc = mr_catholic.1013.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mr_catholic.1013.a
+		custom_tooltip = mr_catholic.1013.tooltip
+	}
+}
+country_event = {
+	id = mr_catholic.1014
+	title = mr_catholic.1014.t
+	desc = mr_catholic.1014.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mr_catholic.1014.a
+		custom_tooltip = mr_catholic.1014.tooltip
+	}
+}
+country_event = {
+	id = mr_catholic.1015
+	title = mr_catholic.1015.t
+	desc = mr_catholic.1015.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mr_catholic.1015.a
+		custom_tooltip = mr_catholic.1015.tooltip
+	}
+}

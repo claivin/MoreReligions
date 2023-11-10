@@ -1,0 +1,118 @@
+country_decisions = {
+	denmark_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = DAN }
+			NOT = { has_country_flag = formed_denmark_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
+				ai = no
+				NOT = { exists = DAN }
+			}
+			primary_culture = danish
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = denmark_area
+				area = jutland_area
+				area = skaneland_area
+				area = holstein_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = DAN }
+			owns_core_province = 12 #copenhagen
+			calc_true_if = {
+				#danish area
+				owns_or_non_sovereign_subject_of = 14
+				owns_or_non_sovereign_subject_of = 1981
+				owns_or_non_sovereign_subject_of = 1983
+				owns_or_non_sovereign_subject_of = 5110
+				#scania
+				owns_or_non_sovereign_subject_of = 6
+				owns_or_non_sovereign_subject_of = 26
+				owns_or_non_sovereign_subject_of = 1982
+				owns_or_non_sovereign_subject_of = 4165
+				owns_or_non_sovereign_subject_of = 5111
+				#jutland
+				owns_or_non_sovereign_subject_of = 15
+				owns_or_non_sovereign_subject_of = 1984
+				owns_or_non_sovereign_subject_of = 4142
+				owns_or_non_sovereign_subject_of = 4149
+				owns_or_non_sovereign_subject_of = 5109
+				#holstein
+				owns_or_non_sovereign_subject_of = 13
+				owns_or_non_sovereign_subject_of = 1775
+				owns_or_non_sovereign_subject_of = 4141
+				owns_or_non_sovereign_subject_of = 5092
+				owns_or_non_sovereign_subject_of = 5093
+				amount = 13
+			}
+		}
+		effect = {
+			change_tag = DAN
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			denmark_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			jutland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			skaneland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			holstein_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = DAN
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_denmark_flag
+			country_event = {
+				id = mr_danish_event.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

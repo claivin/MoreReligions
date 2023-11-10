@@ -1,0 +1,116 @@
+#placeholder missions
+papal_missions_1 = {
+	slot = 1
+	generic = yes
+	ai = no
+	potential = { tag = PAP }
+	
+	pap_mission_emperor = { #get on emperors side
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			emperor = {
+				alliance_with = ROOT
+				has_opinion = {
+					who =  ROOT
+					value = 200
+				}
+			}
+		}
+		effect = {
+			add_dip_power = 200
+		}
+	}
+}
+
+papal_missions_2 = {
+	slot = 2
+	generic = yes
+	ai = no
+	potential = { tag = PAP }
+	
+	pap_mission_france = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			
+		}
+		effect = {
+			
+		}
+	}
+}
+
+papal_missions_3 = {
+	slot = 3
+	generic = yes
+	ai = no
+	potential = { tag = PAP }
+	
+	pap_mission_heretics_majors = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			OR = {
+				all_country = {
+					NOT = { religion = mr_cathar }
+				}
+				all_country = {
+					NOT = { religion = hussite }
+				}
+			}
+		}
+		effect = {
+			add_corruption = -10
+		}
+	}
+}
+
+papal_missions_4 = {
+	slot = 4
+	generic = yes
+	ai = no
+	potential = { tag = PAP }
+	
+	pap_mission_internal_reform = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			stability = 3
+			adm_power = 300
+		}
+		effect = {
+			add_corruption = -10
+		}
+	}
+}
+
+papal_missions_5 = {
+	slot = 5
+	generic = yes
+	ai = no
+	potential = { tag = PAP }
+	
+	pap_mission_external_reform = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			calc_true_if = {
+				all_country = {
+					government = theocracy
+					religion = catholic
+					alliance_with = ROOT
+				}
+				value = 3
+			}
+		}
+		effect = {
+			
+		}
+	}
+}
