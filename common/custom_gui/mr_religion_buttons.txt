@@ -1,0 +1,244 @@
+
+custom_button = {
+    name = raise_hongjun_botton #Must match a scripted guiButtonType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible
+    trigger = {
+		custom_trigger_tooltip = {
+			tooltip = maitreya_power_100
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
+		} 
+		custom_trigger_tooltip = {
+			tooltip = NOT_RAISED_HONGJUN
+			NOT = {
+				has_country_modifier = raise_hongjun
+			}
+		}
+	} #Determines when the button is clickable
+    effect = {
+		add_ruler_modifier = {
+			name = raise_hongjun
+			duration = -1
+		}
+		add_years_of_owned_provinces_manpower = {
+			years = 0.5
+			trigger = {
+				religion = ROOT
+				NOT = { local_autonomy = 10 }
+			}
+			custom_tooltip = years_of_owned_provinces_maitreya
+		}
+		subtract_variable = {
+			which = maitreyan_power_counter
+			value = 100
+		}
+		play_sound = start_convert_confucianism
+	} #Effect
+	tooltip = raise_hongjun_botton_title
+}
+custom_button = {
+    name = train_xiangjun_botton #Must match a scripted guiButtonType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible
+    trigger = { 
+		custom_trigger_tooltip = {
+			tooltip = maitreya_power_100
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = NOT_RAISED_XIANGJUN
+			NOT = {
+				has_country_modifier = train_xiangjun
+			}
+		}
+	} #Determines when the button is clickable
+    effect = {
+		add_ruler_modifier = {
+			name = train_xiangjun
+			duration = -1
+		}
+		custom_tooltip = samurai_province_TT
+		hidden_effect = {
+			capital_scope = {
+				samurai_infantry = ROOT
+				samurai_infantry = ROOT
+				samurai_infantry = ROOT
+			}
+		}
+		subtract_variable = {
+			which = maitreyan_power_counter
+			value = 100
+		}
+		play_sound = start_convert_confucianism
+	} #Effect
+	tooltip = train_xiangjun_botton_title
+}
+custom_button = {
+    name = expand_sangha_botton #Must match a scripted guiButtonType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible
+    trigger = { 
+		custom_trigger_tooltip = {
+			tooltip = maitreya_power_100
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = NOT_EXPAND_SANGHA
+			NOT = {
+				has_country_modifier = expand_sangha
+			}
+		}
+	} #Determines when the button is clickable
+    effect = {
+		add_ruler_modifier = {
+			name = expand_sangha
+			duration = -1
+		}
+		subtract_variable = {
+			which = maitreyan_power_counter
+			value = 100
+		}
+		play_sound = start_convert_confucianism
+	} #Effect
+	tooltip = expand_sangha_botton_title
+}
+custom_button = {
+    name = embrace_shendao_botton #Must match a scripted guiButtonType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible
+    trigger = { 
+		custom_trigger_tooltip = {
+			tooltip = maitreya_power_100
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = NOT_EMBRACED_SHENDAO
+			NOT = {
+				has_country_modifier = embrace_shendao
+			}
+		}
+	} #Determines when the button is clickable
+    effect = {
+		add_ruler_modifier = {
+			name = embrace_shendao
+			hidden = yes
+			duration = -1
+		}
+		custom_tooltip = embrace_secondary_tradition
+		subtract_variable = {
+			which = maitreyan_power_counter
+			value = 100
+		}
+		play_sound = start_convert_confucianism
+	} #Effect
+	tooltip = embrace_shendao_botton_title
+}
+custom_button = {
+    name = xiao_mingwang_botton #Must match a scripted guiButtonType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible
+    trigger = { 
+		custom_trigger_tooltip = {
+			tooltip = maitreya_power_100
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = NOT_XIAO_MINGWANG
+			NOT = {
+				has_heir_flag = xiao_mingwang_flag
+			}
+		}
+		has_heir = yes
+	} #Determines when the button is clickable
+    effect = {
+		add_ruler_modifier = {
+			name = xiao_mingwang
+			duration = -1
+		}
+		set_heir_flag = xiao_mingwang_flag
+		custom_tooltip = xiao_mingwang_TT
+		subtract_variable = {
+			which = maitreyan_power_counter
+			value = 100
+		}
+		play_sound = start_convert_confucianism
+	} #Effect
+	tooltip = xiao_mingwang_botton_title
+}
+custom_button = {
+    name = sutra_rituals_botton #Must match a scripted guiButtonType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible
+    trigger = { 
+		custom_trigger_tooltip = {
+			tooltip = maitreya_power_100
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = NOT_RITUALS_SUTRA
+			NOT = {
+				has_country_modifier = sutra_rituals
+			}
+		}
+	} #Determines when the button is clickable
+    effect = {
+		add_ruler_modifier = {
+			name = sutra_rituals
+			duration = -1
+		}
+		custom_tooltip = sutra_rituals_effect_TT
+		subtract_variable = {
+			which = maitreyan_power_counter
+			value = 100
+		}
+		play_sound = start_convert_confucianism
+	} #Effect
+	tooltip = sutra_rituals_botton_title
+}
+custom_icon = {
+    name = maitreya_banner #Must match a scripted iconType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible #Determines when the icon is visible
+    #Can use customizable localisation
+}
+
+#Text Boxes
+custom_text_box = {
+    name = maitreyan_power_text #Must match a scripted instantTextBoxType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the text is visible #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
+custom_text_box = {
+    name = maitreyan_power_level_text #Must match a scripted instantTextBoxType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the text is visible #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}

@@ -545,7 +545,109 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			format = centre
 		}
+		#MAITREYA
+		guiButtonType = 
+		{
+			name = "raise_hongjun_botton"
+			scripted = yes
+			position = { x= 20 y = 297 }
+			delayedTooltipText = ""
+			buttonText = "Raise Hongjun"
+			buttonFont = "vic_18"
+			quadTextureSprite ="GFX_maitreya_button_icon"	
+			Orientation = "UPPER_LEFT"
+		}
 		
+		guiButtonType = 
+		{
+			name = "train_xiangjun_botton"
+			scripted = yes
+			position = { x= 20 y = 270 }
+			buttonText = "Train Xiangjun"
+			buttonFont = "vic_18"
+			delayedTooltipText = ""
+			quadTextureSprite ="GFX_maitreya_button_icon"	
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = 
+		{
+			name = "expand_sangha_botton"
+			scripted = yes
+			position = { x= 145 y = 270 }
+			buttonText = "Expand Sangha"
+			buttonFont = "vic_18"
+			delayedTooltipText = ""
+			quadTextureSprite ="GFX_maitreya_button_icon"	
+			Orientation = "UPPER_LEFT"
+		}
+		
+		guiButtonType = 
+		{
+			name = "embrace_shendao_botton"
+			scripted = yes
+			buttonText = "Study Shendao"
+			buttonFont = "vic_18"
+			position = { x= 145 y = 297 }
+			delayedTooltipText = ""
+			quadTextureSprite ="GFX_maitreya_button_icon"	
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = 
+		{
+			name = "xiao_mingwang_botton"
+			scripted = yes
+			buttonText = "Xiao Mingwang"
+			buttonFont = "vic_18"
+			position = { x= 270 y = 270 }
+			delayedTooltipText = ""
+			quadTextureSprite ="GFX_maitreya_button_icon"	
+			Orientation = "UPPER_LEFT"
+		}
+
+		guiButtonType = 
+		{
+			name = "sutra_rituals_botton"
+			scripted = yes
+			buttonText = "Recite Sutras"
+			buttonFont = "vic_18"
+			position = { x= 270 y = 297 }
+			delayedTooltipText = ""
+			quadTextureSprite ="GFX_maitreya_button_icon"	
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType =
+		{
+			name ="maitreya_banner"
+			scripted = yes
+			spriteType = "GFX_maitreya_banner"
+			position = { x = 100 y = 225 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "maitreyan_power_text"
+			scripted = yes
+			position = { x= 153 y = 231 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 120
+			maxHeight = 18
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		instantTextBoxType = {
+			name = "maitreyan_power_level_text"
+			scripted = yes
+			position = { x= 177 y = 248 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 120
+			maxHeight = 18
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
 ############## ORTHODOX PATRIARCH AUTHORITY	###### 
 
 		windowType = {
@@ -2077,6 +2179,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_sort_time"	
 			Orientation = "UPPER_LEFT"
 		}
+	
 
 # Needs location linking and button linking		
 		guiButtonType = {

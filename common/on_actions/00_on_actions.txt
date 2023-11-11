@@ -47,6 +47,15 @@ on_startup = {
 			which = gsc_sieges_won_variable value = 0
 		}
 	}	
+	if ={
+		limit = {
+			religion = mr_maitreya
+		}
+		set_variable = {
+			which = maitreyan_power_counter
+			value = 0
+		}
+	}
 }
 
 # country
@@ -1042,6 +1051,7 @@ on_new_monarch = {
 	hab_remove_mission_mods_if_not_emperor_effect = yes
 	thu_remain_von_wettin_effect = yes
 	ladislaus_postumus_union_effect = yes
+	mr_maitreya_effect = yes
 	events = {
 		tribal_succession.1		# Harsh anti-tribals.
 		9492 					# Remove some event modifiers

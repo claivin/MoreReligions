@@ -562,6 +562,13 @@ estate_special = {
 			always = yes
 		}
 	}
+	modifier_definition = {
+		type = loyalty
+		key = maitreyan_power
+		trigger = {
+			religion = mr_maitreya
+		}
+	}
 }
 estate_shugo = {
 	modifier_definition = {

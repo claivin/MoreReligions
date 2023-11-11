@@ -846,5 +846,12 @@ spriteTypes = {
 		name = "GFX_upgrade_subject_type_button_icon"
 		texturefile = "gfx//interface//modify_subject_relationship.dds"
 	}
-
+	spriteType = {
+		name = "GFX_maitreya_button_icon"
+		texturefile = "gfx//interface//maitreya_button_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_maitreya_banner"
+		texturefile = "gfx//interface//maitreya_banner_icon.dds"
+	}
 }

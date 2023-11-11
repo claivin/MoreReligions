@@ -102,3 +102,6 @@
  mr_institutions.700.d: ""What was once thought to be the natural final evolution of military organization, professional armies have undoubtedly grown beyond their original scope as wars have grown ever more devastating. Advancemts in metallurgy and incremental improvements in small arms have lead to the mass production of firearms, which in turn has enabled larger and larger proportions of the army to be armed with modern arms. Combined with rapidly growing populations, the idea of small, elite military corps to do the heavy lifting are quickly becoming overshadowed by power in overwhelming numbers. This of course comes with its own host of problems: how should we scale our recruitment efforts; our training and arming; resources at rest, and on the march? All challenges that our greatest military minds will put their efforts behind. Provided of course, we manage to do it before we are overrun ourselves..."
  mr_institutions.701.d: "It appears [institution_origin.Owner.GetName] is gearing up for something big. Trade to them has included an insatiable need for non-perishable foodstuffs, gunpowder, and metal. Their neighbors seem to be on edge."
  mr_institutions.701.a: "A worrying development."
+
+BUTTON_SPREAD: "Research Institution"
+start_institution_research_title: "Start Foreign Research"

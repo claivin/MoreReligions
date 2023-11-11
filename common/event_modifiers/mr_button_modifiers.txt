@@ -1,0 +1,21 @@
+raise_hongjun = {
+	manpower_in_true_faith_provinces = 0.10
+}
+train_xiangjun = {
+	allowed_samurai_fraction = 0.10
+	has_samurai = yes	
+	country_military_power = 1
+}
+expand_sangha = {
+	missionaries = 1
+}
+embrace_shendao = {
+	tolerance_heathen = 1
+}
+xiao_mingwang = {
+	monthly_heir_claim_increase_modifier = 0.15
+	country_admin_power = 1
+}
+sutra_rituals = {
+	country_diplomatic_power = 1
+}

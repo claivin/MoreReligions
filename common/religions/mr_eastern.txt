@@ -887,12 +887,12 @@ eastern = {
 			local_missionary_strength = -0.02
 		}
 		country = {
-			fire_damage_received = -0.10 
-			yearly_karma_decay = 0.05
+			discipline = 0.05 
+			global_heretic_missionary_strength = 0.02
 		}
 		country_as_secondary = {
-			fire_damage_received = -0.10 
-			tolerance_own = 1
+			discipline = 0.05 
+			global_heretic_missionary_strength = 0.02
 		}
 		on_convert = {
 			add_prestige = -100
@@ -908,7 +908,7 @@ eastern = {
 		
 		heretic = { ZEN }
 		
-		uses_karma = yes
+		
 	}
 	
 	nihon = {

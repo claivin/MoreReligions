@@ -18,7 +18,10 @@ country_event = {
 	picture = BUDDHISM_BAD_eventPicture
 	
 	trigger = {
-		uses_karma = yes
+		OR = {
+			uses_karma = yes
+			religion = mr_maitreya
+		}
 		has_dlc = "Common Sense"
 		has_regency = no
 		OR = {
@@ -30,7 +33,10 @@ country_event = {
 			advisor = master_of_mint
 			advisor = inquisitor
 		}
-		NOT = { karma = -50 }
+		OR = {
+			stability = -2
+			NOT = { karma = -50 }
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -48,6 +54,15 @@ country_event = {
 	option = {
 		name = buddhism_events.1.a #
 		add_karma = -15
+		if = {
+			limit = {
+				religion = mr_maitreya
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 15
+			}
+		}
 		reduce_meritocracy_effect = yes
 		if = {
 			limit = {
@@ -107,15 +122,20 @@ province_event = {
 			religion = buddhism ##Theravada 
 			religion = vajrayana
 			religion = mahayana
+			religion = mr_maitreya
 		}
 		owner = {
 			OR = {
 				religion = buddhism ##Theravada 
 				religion = vajrayana
 				religion = mahayana
+				religion = mr_maitreya
 			}
 			has_regency = no
-			NOT = { karma = -50 }
+			OR = {
+				NOT = { karma = -50 }
+				stability = -1
+			}
 		}
 	}
 	
@@ -145,6 +165,15 @@ province_event = {
 		owner = {
 			add_years_of_income = -0.05
 			add_karma = 10
+			if = {
+				limit = {
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
 		}
 		if = {
 			limit = {
@@ -189,7 +218,18 @@ province_event = {
 				}
 			}
 		}
-		owner = { add_karma = -10 }
+		owner = { 
+			add_karma = -10
+			if = {
+				limit = {
+					religion = mr_maitreya
+				}
+				subtract_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
+		}
 	}
 }
 
@@ -207,6 +247,7 @@ province_event = {
 			religion = buddhism ##Theravada 
 			religion = vajrayana
 			religion = mahayana
+			religion = mr_maitreya
 		}
 		is_capital = no
 		NOT = { has_province_modifier = lacking_monastic_discipline }
@@ -214,9 +255,15 @@ province_event = {
 		NOT = { has_province_modifier = cleansing_of_monasteries }
 		NOT = { has_province_modifier = monastaries_blooming }
 		owner = {
-			religion = buddhism
+			OR = {
+				religion = buddhism
+				religion = mr_maitreya
+			}
 			has_regency = no
-			NOT = { karma = -50 }
+			OR = {
+				NOT = { karma = -50 }
+				stability = -1
+			}
 		}
 	}
 	
@@ -241,7 +288,18 @@ province_event = {
 		ai_chance = {
 			factor = 9
 		}
-		owner = { add_karma = 10 }
+		owner = {
+			add_karma = 10
+			if = {
+				limit = {
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			} 
+		}
 		add_province_modifier = {
 			name = "lacking_monastic_discipline"
 			duration = 3650
@@ -268,6 +326,23 @@ province_event = {
 		owner = { add_karma = 10 }
 		add_province_modifier = {
 			name = "cleansing_of_monasteries"
+			duration = 3650
+		}
+	}
+	option = {
+		trigger = { religion = mr_maitreya } #Maitreya
+		ai_chance = {
+			factor = 1
+		}
+		name = buddhism_events.3.e #The Mingwang orders his arrest and flogging!
+		owner = { 
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 5
+			}
+		}
+		add_province_modifier = {
+			name = "strict_punishment_of_monks"
 			duration = 3650
 		}
 	}
@@ -471,9 +546,13 @@ province_event = {
 				religion = buddhism ##Theravada 
 				religion = vajrayana
 				religion = mahayana
+				religion = mr_maitreya
 			}
 			has_regency = no
-			karma = 50
+			OR = {
+				karma = 50
+				stability = 1
+			}
 		}
 	}
 	
@@ -499,6 +578,10 @@ province_event = {
 		owner = {
 			add_karma = -15
 			add_prestige = -10
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 2
+			}
 		}
 		add_province_modifier = {
 			name = monastaries_blooming
