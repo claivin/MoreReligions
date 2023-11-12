@@ -15,30 +15,26 @@
 ### Titular for Overlord
 #Ex: "On a mission to visit the [Son of Heaven]"
 defined_text = {
-    name = KARMA_DESC
+    name = MINGWANG_INFLUENCE_AMOUNT
 
     text = {
-        localisation_key = KARMA_DESC_MAITREYA
+        localisation_key = POSITIVE_MINGWANG
         trigger = {
-			religion = maitreya
+            check_variable = {
+				which = maitreyan_power_counter_change
+				value = 0
+			}
         }
     }
     text = {
-        localisation_key = KARMA_DESC_SHIN
+        localisation_key = NEGATIVE_MINGWANG
         trigger = {
-			religion = mr_shin
+            NOT = {
+               check_variable = {
+			    	which = maitreyan_power_counter_change
+			    	value = 0
+		    	}
+            }
         }
     }
-	text = {
-        localisation_key = KARMA_DESC_YOG
-        trigger = {
-			religion = yogavacara
-        }
-	}
-	text = {
-		localisation_key = KARMA_DESC_GLOB
-		trigger = {
-			has_global_flag = text
-		}
-	}
 }

@@ -12,10 +12,8 @@ country_decisions = {
 		
 		}
 		effect = {
-			set_variable = {
-				which = maitreyan_power_counter
-				value = 200
-			}
+			update_maitreya_monthly = yes
+			update_maitreya_total_monthly = yes
 		}
 		ai_will_do = {
 			factor = 1

@@ -60,10 +60,16 @@
  mr_maitreya_rebels_demand: "Convert $COUNTRYNAME$"
  mr_maitreya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
-maitreyan_power: "§YMingwang Authority§!"
+ maitreyan_power: "§YMingwang Authority§!"
  maitreyan_power_level_text: "Current: §T[Root.maitreyan_power_counter.GetValue]§!"
  maitreya_power_100: "Our §YMingwang Influence§! must be §T100§!."
  maitreyan_power_counter: "§YMingwang Influence§!"
+
+ maitreya_debug_desc: "(Mingwang Current: [Root.maitreyan_power_counter.GetValue], Minwang Monthly: [Root.maitreyan_power_counter_change.GetValue] )"
+ maitreyan_increase_text: "[MINGWANG_INFLUENCE_AMOUNT]"
+ POSITIVE_MINGWANG: "§G+[Root.maitreyan_power_counter_change.GetValue]§!"
+ NEGATIVE_MINGWANG: "§R[Root.maitreyan_power_counter_change.GetValue]§!"
+
 
  embrace_shendao_botton_title: "The Shendao Decree"
  xiao_mingwang_botton_title: "The Xiao Mingwang Decree"
@@ -71,7 +77,8 @@ maitreyan_power: "§YMingwang Authority§!"
  train_xiangjun_botton_title: "The Xiangjun Training Decree"
  raise_hongjun_botton_title: "The Raising of Hongjun Decree"
  sutra_rituals_botton_title: "The Sutra Recital Decree"
-
+ white_lotus_order: "Order of the White Lotus"
+ white_lotus_order_desc: "An alternative to the traditional Buddhist or Taoist monasteries, the White Lotus Halls appealed to the layman to incorperate them into both a spiritual and political union. This was how the Mingwang and his influence could spread to the people of Song easily, and how they could avoid or bypass the Sangha for this transmission of knowledge."
 
  train_xiangjun: "Train the Xiangjun"
  NOT_RAISED_XIANGJUN: "Has not already §YTrained the Xiangjun§!"
@@ -88,7 +95,7 @@ maitreyan_power: "§YMingwang Authority§!"
  embrace_secondary_tradition: "This will grant us the ability to choose a secondary §YReligious School§! Bonus."
  sutra_rituals_effect_TT: "Advisors will now grant a scaled §G+2§! Missionary Strength."
  sutra_rituals: "Reciting Sutras"
-xiao_mingwang_TT: "This will ensure our current heir will be able to choose a Single Decree when they come to power."
+ xiao_mingwang_TT: "This will ensure our current heir will be able to choose a Single Decree when they come to power."
 
  raise_hongjun: "Raise the Hongjun"
  maitreyan_power_text: "Mingwang Influence"

@@ -626,6 +626,27 @@ guiTypes = {
 			position = { x = 100 y = 225 }
 			Orientation = "UPPER_LEFT"
 		}
+		iconType =
+		{
+			name ="maitreyan_increase"
+			scripted = yes
+			spriteType = "GFX_maitreya_box"
+			position = { x = 35 y = 227 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "maitreyan_increase_text"
+			scripted = yes
+			position = { x = 45 y = 242 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			maxWidth = 120
+			maxHeight = 18
+			Orientation = "UPPER_LEFT"
+			format = left
+			delayedTooltipText = "DELAYED_TEXT"
+			
+		}
 		instantTextBoxType = {
 			name = "maitreyan_power_text"
 			scripted = yes
@@ -636,6 +657,7 @@ guiTypes = {
 			maxHeight = 18
 			Orientation = "UPPER_LEFT"
 			format = left
+			
 		}
 		instantTextBoxType = {
 			name = "maitreyan_power_level_text"

@@ -854,4 +854,13 @@ spriteTypes = {
 		name = "GFX_maitreya_banner"
 		texturefile = "gfx//interface//maitreya_banner_icon.dds"
 	}
+	spriteType = {
+		name = "GFX_maitreya_box"
+		texturefile = "gfx//interface//maitreya_increase_button.dds"
+	}
+	spriteType = {
+		name = "GFX_holy_order_white_lotus"
+		texturefile = "gfx//interface//holy_orders//white_lotus_order.dds"
+		noOfFrames = 4
+	}
 }

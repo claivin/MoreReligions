@@ -323,7 +323,7 @@ elite_unit_xp_combat_effect = {
 mr_maitreya_effect = {
 	if = {
 		limit = {
-			has_heir_flag = xiao_mingwang_flag
+			has_ruler_flag = xiao_mingwang_flag
 			religion = mr_maitreya
 		}
 		set_variable = {
@@ -338,6 +338,57 @@ mr_maitreya_effect = {
 		set_variable = {
 			which = maitreyan_power_counter
 			value = 0
+		}
+	}
+	#Gain a base amount.
+	if = {
+		limit = {
+			religion = mr_maitreya
+		}
+		export_to_variable = {
+			which = ruler_adm_check
+			value = ADM
+		}
+		export_to_variable = {
+			which = ruler_dip_check
+			value = DIP
+		}
+		export_to_variable = {
+			which = ruler_mil_check
+			value = MIL
+		}
+		set_variable = {
+			which = ruler_check_gain
+			value = 0
+		}
+		change_variable = {
+			which = ruler_check_gain
+			which = ruler_mil_check
+		}
+		change_variable = {
+			which = ruler_check_gain
+			which = ruler_dip_check
+		}
+		change_variable = {
+			which = ruler_check_gain
+			which = ruler_adm_check
+		}
+		while = {
+			limit = {
+				#While their ruler_score is more than 1, add 10 Mingwang Authority
+				check_variable = {
+					which = ruler_check_gain
+					value = 1
+				}
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 10
+			}
+			subtract_variable = {
+				which = ruler_check_gain
+				value = 1
+			}
 		}
 	}
 }

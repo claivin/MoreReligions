@@ -902,6 +902,10 @@ eastern = {
 				duration = 3650
 			}
 			clear_religious_scholar_modifiers_effect = yes
+			set_variable = {
+				which = maitreyan_power_counter
+				value = 0
+			}
 		}
 		
 		harmonized_modifier = harmonized_mahayana

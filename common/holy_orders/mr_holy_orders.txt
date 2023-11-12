@@ -1,0 +1,47 @@
+white_lotus_order = {
+    icon = GFX_holy_order_white_lotus
+    trigger = {
+		OR = {
+			tag = GSC
+			was_tag = GSC
+		}
+		religion = mr_maitreya
+    }
+    cost = 50
+    cost_type = adm_power
+    color = { 0 106 167 }
+    per_province_effect = {
+        add_base_tax = 1
+        owner = {
+            change_variable = {
+				which = maitreyan_power_counter
+				value = 2
+			}
+        }
+    }
+    per_province_abandon_effect = {
+        add_base_tax = -1
+        owner = {
+            change_variable = {
+				which = maitreyan_power_counter
+				value = -2
+			}
+        }
+    }
+    modifier = {
+	local_unrest = -1
+	local_governing_cost = -0.1
+    }
+    ai_priority = {
+        factor = 1
+        modifier = {
+            factor = 1.5
+            unrest = 5
+        }
+        modifier = {
+            factor = 1.5
+            devastation = 50
+        }
+    }
+    localization = holy_order
+}

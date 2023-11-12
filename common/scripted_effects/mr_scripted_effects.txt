@@ -119,15 +119,88 @@ reset_elite_units = {
 		remove_country_modifier = elite_vanguard_1
 	}
 }
-spread_institution = {
-	capital_scope = {
-		add_province_modifier = {
-			name = start_institution_research_effect
-			duration = 3650
-		}
+update_maitreya_monthly = {
+	set_variable = {
+		which = maitreyan_power_counter_change
+		value = 0
 	}
-	set_country_flag = started_research_institution
-	add_adm_power = -100
-	add_dip_power = -100
-	add_mil_power = -100
+	export_to_variable = {
+		which = maitreya_stab_check
+		value = stability
+	}
+	multiply_variable = {
+		which = maitreya_stab_check
+		value = 0.5
+	}
+	export_to_variable = {
+		which = maitreya_legit_check
+		value = trigger_value:legitimacy
+	}
+	multiply_variable = {
+		which = maitreya_legit_check
+		value = 0.005
+	}
+	export_to_variable = {
+		which = maitreya_corruption_check
+		value = corruption
+	}
+	multiply_variable = {
+		which = maitreya_corruption_check
+		value = -0.25
+	}
+	export_to_variable = {
+		which = maitreya_war_exhaustion_check
+		value = war_exhaustion
+	}
+	multiply_variable = {
+		which = maitreya_war_exhaustion_check
+		value = -0.5
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_corruption_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_ttf_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_average_autonomy_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_stab_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_legit_check
+	}
+	set_variable = {
+		which = maitreya_war_exhaustion_check
+		value = 0
+	}
+	set_variable = {
+		which = maitreya_corruption_check
+		value = 0
+	}
+	set_variable = {
+		which = maitreya_ttf_check
+		value = 0
+	}
+	set_variable = {
+		which = maitreya_stab_check
+		value = 0
+	}
+	set_variable = {
+		which = maitreya_legit_check
+		value = 0 
+	}
+}
+
+update_maitreya_total_monthly = {
+	change_variable = {
+		which = maitreyan_power_counter
+		which = maitreyan_power_counter_change
+	}
 }

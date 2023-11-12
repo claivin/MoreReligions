@@ -226,7 +226,20 @@ custom_icon = {
 	 } #Determines when the button is visible #Determines when the icon is visible
     #Can use customizable localisation
 }
-
+custom_icon = {
+    name = maitreya_increase #Must match a scripted iconType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the button is visible #Determines when the icon is visible
+    #Can use customizable localisation
+}
+custom_text_box = {
+    name = maitreyan_increase_text #Must match a scripted instantTextBoxType in a .gui file
+    potential = {
+		religion = mr_maitreya
+	 } #Determines when the text is visible #Can use customizable localisation
+    #To localize it, use the name of the button as a key, can also use customizable localisation
+}
 #Text Boxes
 custom_text_box = {
     name = maitreyan_power_text #Must match a scripted instantTextBoxType in a .gui file
