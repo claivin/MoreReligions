@@ -2515,6 +2515,14 @@ province_is_buddhist_or_accepts_buddhism = {
 						owner = { secondary_religion = mahayana }
 					}
 				}
+				AND = {
+					religion = mr_maitreya
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = mr_maitreya}
+						owner = { secondary_religion = mr_maitreya}
+					}
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -2524,6 +2532,7 @@ province_is_buddhist_or_accepts_buddhism = {
 					has_harmonized_with = buddhism
 					has_harmonized_with = vajrayana
 					has_harmonized_with = mahayana
+					has_harmonized_with = mr_maitreya
 				}
 			}
 			has_owner_religion = yes
@@ -2535,6 +2544,7 @@ province_is_buddhist_or_accepts_buddhism = {
 					secondary_religion = buddhism
 					secondary_religion = vajrayana
 					secondary_religion = mahayana
+					secondary_religion = mr_maitreya
 				}
 			}
 			has_owner_religion = yes
@@ -2562,6 +2572,7 @@ province_is_buddhist_or_accepts_buddhism = {
 					has_harmonized_with = buddhism
 					has_harmonized_with = vajrayana
 					has_harmonized_with = mahayana
+					has_harmonized_with = maitreya
 				}
 				has_harmonized_with = ROOT
 			}
@@ -2599,6 +2610,14 @@ province_is_buddhist_or_accepts_buddhism_or_is_dharmic = {
 						owner = { secondary_religion = mahayana }
 					}
 				}
+				AND = {
+					religion = mr_maitreya
+					OR = {
+						has_owner_religion = yes
+						owner = { has_harmonized_with = mr_maitreya }
+						owner = { secondary_religion = mr_maitreya }
+					}
+				}
 			}
 		}
 		custom_trigger_tooltip = {
@@ -2608,6 +2627,7 @@ province_is_buddhist_or_accepts_buddhism_or_is_dharmic = {
 					has_harmonized_with = buddhism
 					has_harmonized_with = vajrayana
 					has_harmonized_with = mahayana
+					has_harmonized_with = mr_maitreya
 				}
 			}
 			has_owner_religion = yes
@@ -2619,6 +2639,7 @@ province_is_buddhist_or_accepts_buddhism_or_is_dharmic = {
 					secondary_religion = buddhism
 					secondary_religion = vajrayana
 					secondary_religion = mahayana
+					secondary_religion = mr_maitreya
 				}
 			}
 			has_owner_religion = yes
@@ -2646,6 +2667,7 @@ province_is_buddhist_or_accepts_buddhism_or_is_dharmic = {
 					has_harmonized_with = buddhism
 					has_harmonized_with = vajrayana
 					has_harmonized_with = mahayana
+					has_harmonized_with = mr_maitreya
 				}
 				has_harmonized_with = ROOT
 			}

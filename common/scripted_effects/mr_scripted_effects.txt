@@ -193,6 +193,15 @@ update_maitreya_monthly = {
 			value = 0.25
 		}
 	}
+	if = {
+		limit = {
+			has_idea = GSC_fifth 
+		}
+		change_variable = {
+			which = maitreya_other_check
+			value = 0.5
+		}
+	}
 	change_variable = {
 		which = maitreyan_power_counter_change
 		which = maitreya_corruption_check

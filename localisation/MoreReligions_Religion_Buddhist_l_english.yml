@@ -69,6 +69,7 @@
  maitreyan_increase_text: "[MINGWANG_INFLUENCE_AMOUNT]"
  POSITIVE_MINGWANG: "§G+[Root.maitreyan_power_counter_change.GetValue]§!"
  NEGATIVE_MINGWANG: "§R[Root.maitreyan_power_counter_change.GetValue]§!"
+ maitreya_kol_increase: "King of Light Increase"
 
 
  embrace_shendao_botton_title: "The Shendao Decree"
