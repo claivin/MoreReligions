@@ -25,6 +25,14 @@
  mrChinaEvents.8.t:0 "A State in Decline"
  mrChinaEvents.8.d:0 "Our military defeat at the hands of our greatest rivals has dealt a devastating blow to our legitimacy in the eyes of our own people and the wider world. Only time will tell if we are able to survive the fallout of this disaster."
  mrChinaEvents.8.a:0 "Has heaven forsaken us?"
+ mrSongEvents.3.t: "Shendao Decree"
+ mrSongEvents.3.d: "At the behest of the Mingwang, we have gone out into the streets of our great nation and discussed with the people about their chosen faith and tradition. While the Maitreyan tradition is strong within our state, many have personal beliefs or traditions that we must honor and respect. We have found a multitude of differing beliefs, some differ on the true path to reach enlightenment, while others find local gods or goddesses to worship. Our Mingwang has demanded many representatives to come to the imperial palace to discuss their beleifs."
+ mrSongEvents.3.a: "The patriarchs of the Zenji dominate the talks!"
+ mrSongEvents.3.b: "The Jodo-Shinshu monks compel the audience!"
+ mrSongEvents.3.c: "The Esoteric Forest Tradition intrigues the court!"
+ mrSongEvents.3.e: "The Boddhisatvas of the Thai spark a debate!"
+ mrSongEvents.3.f: "The Xianshou sutras impress the Mingwang!"
+ mrSongEvents.3.g: "The Celestial Empress captivates our heart!"
 
 #Xia (SHU) events
  mrXiaEvents.0.t:0 "The Invasion of Xia"

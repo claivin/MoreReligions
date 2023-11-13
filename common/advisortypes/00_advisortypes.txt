@@ -127,6 +127,16 @@ philosopher = {
 	ai_will_do = {
 		factor = 1
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 }
 
 ######################################################
@@ -269,6 +279,16 @@ natural_scientist = {
 	ai_will_do = {
 		factor = 1.2
 	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 }
 
 ######################################################
@@ -377,6 +397,16 @@ artist = {
 		modifier = {
 			factor = 1.2
 			NOT = { stability = 0 }
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
 		}
 	}
 	
@@ -489,6 +519,16 @@ treasurer = {
 			owner = { mission_completed = mr_ifat_nubia_1 }
 		}
 		modifier = { monthly_abyssinian_unity_power = 0.10 }
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
 	}
 	chance = {
 		factor = 1
@@ -627,7 +667,16 @@ theologian = {
 		}
 		modifier = { monthly_abyssinian_unity_power = 0.10 }
 	}
-	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 
@@ -755,6 +804,16 @@ master_of_mint = {
 		}
 		modifier = {
 			monthly_persian_influence = 0.03
+		}
+	}
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
 		}
 	}
 	chance = {
@@ -911,7 +970,16 @@ inquisitor = {
 		}
 		modifier = { monthly_abyssinian_unity_power = 0.10 }
 	}
-	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 		modifier = {
@@ -1015,7 +1083,16 @@ statesman = {
 			monthly_karma = -0.1
 		}
 	}
-	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1099,6 +1176,17 @@ naval_reformer = {
 		}
 		modifier = {
 			global_trade_power = 0.03
+		}
+	}
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
 		}
 	}
 	chance = {
@@ -1194,7 +1282,17 @@ trader = {
 			trade_efficiency = 0.02
 		}
 	}
-	
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1273,7 +1371,17 @@ spymaster = {
 			trade_efficiency = 0.02
 		}
 	}
-	
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1339,7 +1447,17 @@ colonial_governor = {
 			trade_efficiency = 0.02
 		}
 	}
-	
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 		modifier = {
@@ -1422,7 +1540,17 @@ diplomat = {
 			trade_efficiency = 0.02
 		}
 	}
-	
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1497,7 +1625,17 @@ navigator = {
 			trade_efficiency = 0.02
 		}
 	}
-
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 		modifier = {
@@ -1562,7 +1700,17 @@ army_reformer = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
-
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1640,7 +1788,16 @@ army_organiser = {
 			monthly_karma = -0.1
 		}
 	}
-	
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1718,7 +1875,17 @@ commandant = {
 			monthly_karma = -0.1
 		}
 	}
-	
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1775,7 +1942,17 @@ quartermaster = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
-
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1835,7 +2012,17 @@ recruitmaster = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
-
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}
@@ -1896,7 +2083,17 @@ fortification_expert = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
-
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 		
@@ -1953,7 +2150,17 @@ grand_captain = {
 		}
 		modifier = { meritocracy = 0.25 }
 	}
-
+	#Gods and Kings
+	skill_scaled_modifier = {
+		trigger = {
+			owner = { 
+				has_country_modifier = sutra_rituals
+			}
+		}
+		modifier = { 
+			global_missionary_strength = 0.005
+		}
+	}
 	chance = {
 		factor = 1
 	}

@@ -31,6 +31,7 @@ white_lotus_order = {
     modifier = {
 	local_unrest = -1
 	local_governing_cost = -0.1
+    local_has_samurai = yes	
     }
     ai_priority = {
         factor = 1

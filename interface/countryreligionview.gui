@@ -644,7 +644,6 @@ guiTypes = {
 			maxHeight = 18
 			Orientation = "UPPER_LEFT"
 			format = left
-			delayedTooltipText = "DELAYED_TEXT"
 			
 		}
 		instantTextBoxType = {
@@ -657,6 +656,7 @@ guiTypes = {
 			maxHeight = 18
 			Orientation = "UPPER_LEFT"
 			format = left
+			alwaystransparent = yes
 			
 		}
 		instantTextBoxType = {
@@ -669,6 +669,7 @@ guiTypes = {
 			maxHeight = 18
 			Orientation = "UPPER_LEFT"
 			format = left
+			alwaystransparent = yes
 		}
 ############## ORTHODOX PATRIARCH AUTHORITY	###### 
 

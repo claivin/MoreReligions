@@ -154,7 +154,44 @@ update_maitreya_monthly = {
 	}
 	multiply_variable = {
 		which = maitreya_war_exhaustion_check
-		value = -0.5
+		value = -0.01
+	}
+	export_to_variable = {
+		which = maitreya_adm_check
+		value = ADM
+	}
+	subtract_variable = {
+		which = maitreya_adm_check
+		value = 3
+	}
+	export_to_variable = {
+		which = maitreya_dip_check
+		value = DIP
+	}
+	subtract_variable = {
+		which = maitreya_dip_check
+		value = 3
+	}
+	export_to_variable = {
+		which = maitreya_mil_check
+		value = MIL
+	}
+	subtract_variable = {
+		which = maitreya_mil_check
+		value = 3
+	}
+	set_variable = {
+		which = maitreya_other_check
+		value = 0
+	}
+	if = {
+		limit = {
+			has_estate_privilege = estate_church_clerical_ministers
+		}
+		change_variable = {
+			which = maitreya_other_check
+			value = 0.25
+		}
 	}
 	change_variable = {
 		which = maitreyan_power_counter_change
@@ -162,39 +199,31 @@ update_maitreya_monthly = {
 	}
 	change_variable = {
 		which = maitreyan_power_counter_change
-		which = maitreya_ttf_check
-	}
-	change_variable = {
-		which = maitreyan_power_counter_change
-		which = maitreya_average_autonomy_check
-	}
-	change_variable = {
-		which = maitreyan_power_counter_change
-		which = maitreya_stab_check
-	}
-	change_variable = {
-		which = maitreyan_power_counter_change
-		which = maitreya_legit_check
-	}
-	set_variable = {
 		which = maitreya_war_exhaustion_check
-		value = 0
 	}
-	set_variable = {
-		which = maitreya_corruption_check
-		value = 0
-	}
-	set_variable = {
-		which = maitreya_ttf_check
-		value = 0
-	}
-	set_variable = {
+	change_variable = {
+		which = maitreyan_power_counter_change
 		which = maitreya_stab_check
-		value = 0
 	}
-	set_variable = {
+	change_variable = {
+		which = maitreyan_power_counter_change
 		which = maitreya_legit_check
-		value = 0 
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_mil_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_dip_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_adm_check
+	}
+	change_variable = {
+		which = maitreyan_power_counter_change
+		which = maitreya_other_check
 	}
 }
 
@@ -202,5 +231,19 @@ update_maitreya_total_monthly = {
 	change_variable = {
 		which = maitreyan_power_counter
 		which = maitreyan_power_counter_change
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = maitreyan_power_counter
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = maitreyan_power_counter
+			value = 0
+		}
 	}
 }

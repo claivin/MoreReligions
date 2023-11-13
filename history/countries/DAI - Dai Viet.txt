@@ -4,6 +4,7 @@ primary_culture = vietnamese
 religion = mahayana
 technology_group = chinese
 capital = 613	# Hanoi
+religious_school = mr_huayan_school
 
 # Tran Dynasty, Later Le Dynasty, Mac Dynasty and Tay Son Dynasty
 

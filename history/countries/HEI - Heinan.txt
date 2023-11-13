@@ -4,6 +4,8 @@ technology_group = chinese
 primary_culture = chimin
 religion = mr_jingtianfazu
 capital = 666 # Literally hell???
+religious_school = mr_mazu_school
+
 
 1444.1.1 = {
 	monarch = {

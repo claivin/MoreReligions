@@ -56,14 +56,14 @@ mr_akanya_sutta_school_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	monthly_karma = 0.15
+	yearly_karma_decay = 0.05
 }
 mr_yogavacara_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	monthly_karma = -0.15
+	tolerance_heathen = 1
 }
 mr_brahmin_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
@@ -84,35 +84,35 @@ mr_shin_school_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	core_creation = -0.1
+	core_creation = -0.05
 }
 mr_tendai_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	global_missionary_strength = 0.015
+	idea_cost = -0.05
 }
 mr_nichiren_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	global_unrest = -2
+	global_unrest = -1
 }
 mr_zen_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	discipline = 0.05
+	discipline = 0.025
 }
 mr_shingon_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	build_cost = -0.15
+	build_cost = -0.10
 }
 mr_nyingma_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
@@ -164,12 +164,11 @@ mr_jonang_school_modifier = {
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	technology_cost = -0.05
 }
-mr_buddha_school_modifier = {
+mr_huayan_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	diplomatic_reputation = 2 
 	vassal_forcelimit_bonus = 0.15
 }
 mr_taoist_school_modifier = {
@@ -177,8 +176,21 @@ mr_taoist_school_modifier = {
 	religion = yes
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
-	development_cost = -0.10 
-	land_morale = 0.10
+	development_cost = -0.05
+}
+mr_white_lotus_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	monthly_reform_progress_modifier = 0.10
+}
+mr_mazu_school_modifier = {
+	religion_sub_modifier = yes # Will make icon placed next to religion modifier
+	religion = yes
+	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
+	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
+	ship_durability = 0.05
 }
 mr_neo_confucian_school_modifier = {
 	religion_sub_modifier = yes # Will make icon placed next to religion modifier
@@ -186,5 +198,4 @@ mr_neo_confucian_school_modifier = {
 	is_scholar_modifier = yes # Tells the AI and will only show the alert if country has none
 	expire_message_type = "RELIGIOUS_SCHOLAR_EXPIRY"
 	governing_capacity_modifier = 0.10 
-	culture_conversion_cost = -0.20
 }

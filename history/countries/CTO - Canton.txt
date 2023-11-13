@@ -5,4 +5,4 @@ primary_culture = cantonese
 religion = confucianism
 add_harmonized_religion = mr_taoism
 capital = 667 # Canton
-
+religious_school = mr_huayan_school

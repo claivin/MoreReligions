@@ -109,7 +109,7 @@ mr_gsc_missions_first = {
 				tooltip = gsc_won_sieges_trigger_tt
 				check_variable = {
 					which = gsc_sieges_won_variable
-					value = 1
+					value = 15
 				}
 			}
 			fortification_expert = 1

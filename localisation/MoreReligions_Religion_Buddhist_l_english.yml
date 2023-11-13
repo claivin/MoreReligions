@@ -60,7 +60,7 @@
  mr_maitreya_rebels_demand: "Convert $COUNTRYNAME$"
  mr_maitreya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
- maitreyan_power: "§YMingwang Authority§!"
+ maitreyan_power: "§YMonthly Mingwang Authority§!"
  maitreyan_power_level_text: "Current: §T[Root.maitreyan_power_counter.GetValue]§!"
  maitreya_power_100: "Our §YMingwang Influence§! must be §T100§!."
  maitreyan_power_counter: "§YMingwang Influence§!"
@@ -80,6 +80,8 @@
  white_lotus_order: "Order of the White Lotus"
  white_lotus_order_desc: "An alternative to the traditional Buddhist or Taoist monasteries, the White Lotus Halls appealed to the layman to incorperate them into both a spiritual and political union. This was how the Mingwang and his influence could spread to the people of Song easily, and how they could avoid or bypass the Sangha for this transmission of knowledge."
 
+ increase_reasoning_test: "Mingwang Influence is the power that the leader of the Maitreyan faith has over the country, overruling both the Sangha and Nobles with political and spiritual power.\n\nCurrent Change is affected by:\n\nLegitimacy: §G[Root.maitreya_legit_check.GetValue]§!\nStability: §G[Root.maitreya_stab_check.GetValue]§!\nWar Exhaustion: §R[Root.maitreya_war_exhaustion_check.GetValue]§!\nCorruption: §R[Root.maitreya_corruption_check.GetValue]§!\nRuler Administrative Skill: §Y[Root.maitreya_adm_check.GetValue]§!\nRuler Diplomatic Skill: §Y[Root.maitreya_dip_check.GetValue]§!\nRuler Military Skill: §Y[Root.maitreya_mil_check.GetValue]§!\nOther: §Y[Root.maitreya_other_check.GetValue]§!"
+
  train_xiangjun: "Train the Xiangjun"
  NOT_RAISED_XIANGJUN: "Has not already §YTrained the Xiangjun§!"
  samurai_province_TT: "Spawn 3 §YWarrior Monk§! Infantry within [ROOT.Capital.GetCapitalName]"
@@ -93,9 +95,11 @@
  embraced_shendao: "Embrace the Shendao"
  xiao_mingwang: "Xiao Mingwang"
  embrace_secondary_tradition: "This will grant us the ability to choose a secondary §YReligious School§! Bonus."
- sutra_rituals_effect_TT: "Advisors will now grant a scaled §G+2§! Missionary Strength."
+ sutra_rituals_effect_TT: "Advisors will now grant a scaled §G+0.5%§! Missionary Strength."
  sutra_rituals: "Reciting Sutras"
  xiao_mingwang_TT: "This will ensure our current heir will be able to choose a Single Decree when they come to power."
+ estate_church_mingwang_temples_TT: "Gain §G+3§! §YMingwang Influence§! upon construction of Temple buildings.\nGain §R-3§! §YMingwang Influence§! upon destruction of Temple buildings."
+ mr_maitreya_tt: "Gain §G+0.25§! §YMingwang Influence§! per Month."
 
  raise_hongjun: "Raise the Hongjun"
  maitreyan_power_text: "Mingwang Influence"
@@ -247,6 +251,19 @@
  mr_neo_confucian_school_desc:0 "Neo-Confucianism is a relatively modern teaching, that focuses on rationality and statecraft. It is incredibly beneficial to our state."
  mr_neo_confucian_school_modifier:0 "Neo-Confucianism"
  
+ mr_mazu_school: "Mazuism"
+ mr_mazu_school_desc: "placeholder"
+ mr_mazu_school_modifier: "Mazuism"
+
+ mr_white_lotus_school: "White Lotus"
+ mr_white_lotus_school_desc: "placeholder"
+ mr_white_lotus_school_modifier: "White Lotus"
+
+ mr_huayan_school: "Huayan"
+ mr_huayan_school_desc: "Huayan"
+ mr_huayan_school_modifier: "Huayan"
+
+
  eastern_school_events.20.t:0 "Deciding the Buddhist Tradition"
  eastern_school_events.20.d:0 "What tradition should we follow?"
  eastern_school_events.20.a:0 "We shall follow the Bodhisattvayana Tradition."

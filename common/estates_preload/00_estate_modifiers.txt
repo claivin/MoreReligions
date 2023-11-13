@@ -563,7 +563,7 @@ estate_special = {
 		}
 	}
 	modifier_definition = {
-		type = loyalty
+		type = privileges
 		key = maitreyan_power
 		trigger = {
 			religion = mr_maitreya

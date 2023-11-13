@@ -145,6 +145,7 @@ temple = {
 				duration = -1
 			}
 		}
+		
 		if = {
 			limit = {
 				FROM = {
@@ -181,7 +182,20 @@ temple = {
 				FROM = { has_country_flag = temple_harmony }
 			}
 			FROM = {add_harmonization_progress = 1}
-		}			
+		}	
+		if = {
+			limit = {
+				FROM = {
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 3
+				}
+			}
+		}		
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -222,6 +236,19 @@ temple = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				subtract_variable = {
+					which = maitreyan_power_counter
+					value = 3
+				}
+			}
+		}		
 	}
 	on_obsolete = {
 	}
@@ -934,6 +961,19 @@ cathedral = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 3
+				}
+			}
+		}		
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -974,6 +1014,19 @@ cathedral = {
 		}
 		remove_province_modifier = gov_expanded_temple_rights_mod
 		remove_province_modifier = give_missionary_strength_tend
+		if = {
+			limit = {
+				FROM = {
+					has_estate_privilege = estate_church_karma_temples
+				}
+			}
+			FROM = {
+				subtract_variable = {
+					which = maitreyan_power_counter
+					value = 3
+				}
+			}
+		}		
 	}
 	on_obsolete = {
 	}

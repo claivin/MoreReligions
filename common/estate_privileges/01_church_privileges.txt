@@ -518,6 +518,14 @@ estate_church_clerical_ministers = {
 	}
 	conditional_modifier = {
 		trigger = {
+			religion = mr_maitreya
+		}
+		modifier = {
+			maitreyan_power = 0.25
+		}
+	}
+	conditional_modifier = {
+		trigger = {
 			has_dlc = "Common Sense"
 			religion = protestant
 		}
@@ -1574,9 +1582,8 @@ estate_church_karma_temples = {
 	is_valid = {
 		has_dlc = "Common Sense"
 		OR = {
-			religion = buddhism
-			religion = mahayana
-			religion = vajrayana
+			uses_karma = yes
+			religion = mr_maitreya
 		}
 	}
 	can_select = {
@@ -1585,11 +1592,21 @@ estate_church_karma_temples = {
 		if = {
 			limit = {
 				has_government_attribute = buffed_monastic_temples
+				uses_karma = yes
 			}
 			custom_tooltip = estate_church_karma_temples_ct
 		}
-		else = {
+		else_if = {
+			limit = {
+				uses_karma = yes
+			}
 			custom_tooltip = estate_church_karma_temples_tt
+		}
+		else_if = {
+			limit = {
+				religion = mr_maitreya
+			}
+			custom_tooltip = estate_church_mingwang_temples_TT
 		}
 	}
 	conditional_modifier = {

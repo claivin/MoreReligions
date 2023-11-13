@@ -140,11 +140,23 @@ spriteTypes = {
 		texturefile = "gfx/interface/icon_shingon_school.dds"
 	}
 	spriteType = {
-		name = "GFX_icon_none_school"
-		texturefile = "gfx/interface/icon_none_school.dds"
+		name = "GFX_icon_white_lotus_school"
+		texturefile = "gfx/interface/icon_white_lotus_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mazu_school"
+		texturefile = "gfx/interface/icon_mazu_school.dds"
 	}
 	spriteType = {
 		name = "GFX_icon_muslim_school_zahiri"
 		texturefile = "gfx/interface/icon_muslim_school_zahiri.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_huayan_school"
+		texturefile = "gfx/interface/icon_huayan_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_none_school"
+		texturefile = "gfx/interface/icon_none_school.dds"
 	}
 }

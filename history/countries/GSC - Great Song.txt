@@ -6,7 +6,7 @@ primary_culture = wu
 capital = 684	# Hangzhou
 historical_rival = GHC
 historical_rival = SHU
-
+religious_school = mr_white_lotus_school
 1368.1.1 = {
 	set_estate_privilege = estate_nobles_mr_warlord_aristocracy_gsc
 }

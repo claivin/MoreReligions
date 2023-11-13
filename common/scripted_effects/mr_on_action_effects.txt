@@ -383,7 +383,7 @@ mr_maitreya_effect = {
 			}
 			change_variable = {
 				which = maitreyan_power_counter
-				value = 10
+				value = 5
 			}
 			subtract_variable = {
 				which = ruler_check_gain

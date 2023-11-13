@@ -141,6 +141,11 @@ custom_button = {
 			duration = -1
 		}
 		custom_tooltip = embrace_secondary_tradition
+		hidden_effect = {
+			country_event = {
+				id = mrSongEvents.3
+			}
+		}
 		subtract_variable = {
 			which = maitreyan_power_counter
 			value = 100
@@ -225,13 +230,14 @@ custom_icon = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible #Determines when the icon is visible
     #Can use customizable localisation
+	tooltip = increase_reasoning_test
 }
 custom_icon = {
-    name = maitreya_increase #Must match a scripted iconType in a .gui file
+    name = maitreyan_increase #Must match a scripted iconType in a .gui file
     potential = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible #Determines when the icon is visible
-    #Can use customizable localisation
+     #Can use customizable localisation
 }
 custom_text_box = {
     name = maitreyan_increase_text #Must match a scripted instantTextBoxType in a .gui file

@@ -115,3 +115,125 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = mrSongEvents.3
+	title = "mrSongEvents.3.t"
+	desc = "mrSongEvents.3.d"
+	picture = BUDDHA_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = "mrSongEvents.3.a"
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = mr_zen_school_modifier
+					religious_school = {
+						group = eastern
+						school = mr_zen_school
+					}
+				}
+			}
+		}
+		add_ruler_modifier = {
+			name = mr_zen_school_modifier
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.3.b"
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = mr_shin_school_modifier
+					religious_school = {
+						group = eastern
+						school = mr_shin_school
+					}
+				}
+			}
+		}
+		add_ruler_modifier = {
+			name = mr_shin_school_modifier
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.3.c"
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = mr_yogavacara_school_modifier
+					religious_school = {
+						group = eastern
+						school = mr_yogavacara_school
+					}
+				}
+			}
+		}
+		add_ruler_modifier = {
+			name = mr_yogavacara_school_modifier
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.3.e"
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = mr_mazu_school_modifier
+					religious_school = {
+						group = eastern
+						school = mr_mazu_school
+					}
+				}
+			}
+		}
+		add_ruler_modifier = {
+			name = mr_mazu_school_modifier
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.3.f"
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = mr_bodhisattvayana_school_modifier
+					religious_school = {
+						group = eastern
+						school = mr_bodhisattvayana_school
+					}
+				}
+			}
+		}
+		add_ruler_modifier = {
+			name = mr_bodhisattvayana_school_modifier
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.3.g"
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = mr_huayan_school_modifier
+					religious_school = {
+						group = eastern
+						school = mr_huayan_school
+					}
+				}
+			}
+		}
+		add_ruler_modifier = {
+			name = mr_huayan_school_modifier
+			duration = -1
+		}
+	}
+}

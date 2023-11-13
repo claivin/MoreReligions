@@ -698,8 +698,12 @@ province_event = {
 		OR = {
 			religion = buddhism #Theravada
 			religion = mahayana
+			religion = mr_maitreya
 		}
-		trade_goods = grain
+		OR = {
+			trade_goods = grain
+			trade_goods = rice
+		}
 		is_capital = no
 		NOT = { has_province_modifier = wedge_throw }
 		NOT = { has_province_modifier = poor_rice_harvests }
@@ -731,6 +735,15 @@ province_event = {
 		owner = {
 			add_years_of_income = -0.05
 			add_karma = 10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
 		}
 		add_province_modifier = {
 			name = "wedge_throw"
@@ -749,6 +762,15 @@ province_event = {
 		}
 		owner = {
 			add_karma = -10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = -5
+				}
+			}
 		}
 		add_province_modifier = {
 			name = "poor_rice_harvests"
@@ -771,6 +793,7 @@ province_event = {
 			OR = {
 				religion = buddhism #Theravada
 				religion = mahayana
+				religion = mr_maitreya
 			}
 		}
 	}
@@ -804,6 +827,7 @@ province_event = {
 			OR = {
 				religion = buddhism #Theravada
 				religion = mahayana
+				religion = mr_maitreya
 			}
 			has_regency = no
 		}
@@ -838,6 +862,15 @@ province_event = {
 		clr_province_flag = borrowed_money
 		owner = {
 			add_karma = -10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = -5
+				}
+			}
 			add_years_of_income = 0.05
 		}
 	}
@@ -855,6 +888,7 @@ province_event = {
 		OR = {
 			religion = buddhism #Theravada
 			religion = mahayana
+			religion = mr_maitreya
 		}
 		is_capital = no
 		NOT = { has_province_modifier = wedge_throw }
@@ -864,6 +898,7 @@ province_event = {
 			OR = {
 				religion = buddhism #Theravada
 				religion = mahayana
+				religion = mr_maitreya
 			}
 		}
 	}
@@ -885,6 +920,15 @@ province_event = {
 		}
 		owner = {
 			add_karma = 10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
 			add_years_of_income = -0.1
 		}
 		add_province_modifier = {
@@ -935,6 +979,7 @@ country_event = {
 		OR = {
 			religion = buddhism #Theravada
 			religion = mahayana
+			religion = mr_maitreya
 		}
 		has_regency = no
 	}
@@ -953,6 +998,15 @@ country_event = {
 			}
 		}
 		add_karma = -10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = -5
+			}
+		}
 		add_years_of_income = 0.1
 	}
 	option = {
@@ -965,6 +1019,15 @@ country_event = {
 			}
 		}
 		add_karma = 10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 10
+			}
+		}
 	}
 }
 
@@ -977,7 +1040,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		uses_karma = yes
+		OR = {
+			uses_karma = yes
+			religion = mr_maitreya
+		}
 		NOT = { has_country_modifier = grain_for_the_poor }
 		NOT = { has_country_modifier = grain_reserves }
 		has_regency = no
@@ -1000,6 +1066,15 @@ country_event = {
 			}
 		}
 		add_karma = 15
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 7
+			}
+		}
 		add_country_modifier = {
 			name = "grain_for_the_poor"
 			duration = 3650
@@ -1018,6 +1093,15 @@ country_event = {
 			name = "grain_reserves"
 			duration = 3650
 		}
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = -7
+			}
+		}
 		add_karma = -15
 	}
 }
@@ -1035,6 +1119,7 @@ province_event = {
 			religion = buddhism #Theravada
 			religion = mahayana
 			religion = vajrayana
+			religion = mr_maitreya
 		}
 		is_capital = no
 		local_autonomy = 50
@@ -1045,6 +1130,7 @@ province_event = {
 				religion = buddhism #Theravada
 				religion = mahayana
 				religion = vajrayana
+				religion = mr_maitreya
 			}
 			has_regency = no
 		}
@@ -1068,6 +1154,15 @@ province_event = {
 		owner = {
 			add_prestige = 5
 			add_karma = 10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
 		}
 	}
 	option = {
@@ -1081,6 +1176,15 @@ province_event = {
 		}
 		owner = {
 			add_karma = -10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = -5
+				}
+			}
 		}
 		add_local_autonomy = -20
 	}
@@ -1095,7 +1199,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		uses_karma = yes
+		OR = {
+			uses_karma = yes
+			religion = mr_maitreya
+		}
 		has_regency = no
 		is_monarch_leader = yes
 		any_army = {
@@ -1115,6 +1222,15 @@ country_event = {
 	option = {
 		name = buddhism_events.17.a #Ok.
 		add_karma = 10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 10
+			}
+		}
 		set_ruler_flag = pariccaga_flag
 	}
 }
@@ -1128,7 +1244,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		religion = buddhism
+		OR = {
+			religion = buddhism
+			religion = mr_maitreya
+		}
 		has_regency = no
 		NOT = { has_ruler_flag = had_tapa }
 	}
@@ -1148,6 +1267,15 @@ country_event = {
 			}
 		}
 		add_karma = 10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 5
+			}
+		}
 		add_prestige = -10
 		set_ruler_flag = had_tapa
 	}
@@ -1161,6 +1289,15 @@ country_event = {
 			}
 		}
 		add_karma = -10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = -5
+			}
+		}
 		add_legitimacy = -10
 		add_horde_unity = -10
 		set_ruler_flag = had_tapa
@@ -1176,7 +1313,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		uses_karma = yes
+		OR = {
+			uses_karma = yes
+			religion = mr_maitreya
+		}
 		has_regency = no
 		NOT = { has_ruler_flag = akkodha }
 	}
@@ -1194,6 +1334,15 @@ country_event = {
 	option = {
 		name = buddhism_events.19.a #Make full use of the situation.
 		add_karma = -10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = -5
+			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1216,6 +1365,15 @@ country_event = {
 			}
 		}
 		add_karma = 10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 5
+			}
+		}
 		add_prestige = 5
 	}
 	option = {
@@ -1224,6 +1382,15 @@ country_event = {
 			factor = 0
 		}
 		add_karma = 10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 7
+			}
+		}
 		add_prestige = 15
 		add_years_of_income = -0.15
 		set_ruler_flag = helped_rival
@@ -1239,7 +1406,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		uses_karma = yes
+		OR = {
+			uses_karma = yes
+			religion = mr_maitreya
+		}
 		has_ruler_flag = helped_rival
 		had_ruler_flag = { flag = helped_rival days = 730 }
 	}
@@ -1270,7 +1440,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Common Sense"
-		uses_karma = yes
+		OR = {
+			uses_karma = yes
+			religion = mr_maitreya
+		}
 		has_ruler_flag = helped_rival
 		had_ruler_flag = { flag = helped_rival days = 730 }
 	}
@@ -1300,7 +1473,10 @@ province_event = {
 		NOT = { has_province_modifier = improvement_program }
 		NOT = { has_province_modifier = hampered_growth }
 		owner = {
-			uses_karma = yes
+			OR = {
+				uses_karma = yes
+				religion = mr_maitreya
+			}
 			has_regency = no
 		}
 	}
@@ -1322,6 +1498,15 @@ province_event = {
 		}
 		owner = {
 			add_karma = 10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
 			add_years_of_income = -0.1
 		}
 		add_province_modifier = {
@@ -1338,7 +1523,18 @@ province_event = {
 				owner = { karma = 50 }
 			}
 		}
-		owner = { add_karma = -15 }
+		owner = { add_karma = -15
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = -7
+				}
+				add_years_of_income = 0.1 
+			}
+		}
 		add_province_modifier = {
 			name = "hampered_growth"
 			duration = 1825
@@ -1358,6 +1554,7 @@ country_event = {
 		OR = {
 			religion = buddhism #Theravada
 			religion = mahayana
+			religion = mr_maitreya
 		}
 		has_regency = no
 		any_owned_province = {
@@ -1381,6 +1578,15 @@ country_event = {
 			}
 		}
 		add_karma = 10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = 5
+			}
+		}
 		add_prestige = 5
 	}
 	option = {
@@ -1402,6 +1608,15 @@ country_event = {
 			}
 		}
 		add_karma = -10
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = -5
+			}
+		}
 		add_legitimacy = 5
 		add_horde_unity = 5
 		add_republican_tradition = 5
@@ -1435,6 +1650,15 @@ country_event = {
 			}
 		}
 		add_karma = -15
+		if = {
+			limit ={
+				religion = mr_maitreya
+			}
+			change_variable = {
+				which = maitreyan_power_counter
+				value = -7
+			}
+		}
 		add_years_of_income = 0.25
 		random_owned_area = {
 			limit = {
@@ -1462,6 +1686,7 @@ province_event = {
 			religion = buddhism #Theravada
 			religion = mahayana
 			religion = vajrayana
+			religion = mr_maitreya
 		}
 		is_capital = no
 		is_state = yes
@@ -1511,7 +1736,18 @@ province_event = {
 				}
 			}
 		}
-		owner = { add_karma = 10 }
+		owner = { 
+			add_karma = 10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 5
+				}
+			}
+		}
 		if = {
 			limit = {
 				owner = {
@@ -1541,7 +1777,18 @@ province_event = {
 				owner = { karma = 50 }
 			}
 		}
-		owner = { add_karma = -10 }
+		owner = { 
+			add_karma = -10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = -5
+				}
+			}
+		}
 		if = {
 			limit = {
 				owner = {
@@ -1887,7 +2134,10 @@ province_event = {
 		NOT = { has_province_modifier = buddhist_nepotism }
 		owner = {
 			has_regency = no
-			uses_karma = yes
+			OR = {
+				uses_karma = yes
+				religion = mr_maitreya
+			}
 		}
 	}
 
@@ -1908,6 +2158,15 @@ province_event = {
 		}
 		owner = {
 			add_karma = -10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = -5
+				}
+			}
 		}
 		add_province_modifier = {
 			name = "buddhist_nepotism"
@@ -1925,6 +2184,15 @@ province_event = {
 		}
 		owner = {
 			add_karma = 10
+			if = {
+				limit ={
+					religion = mr_maitreya
+				}
+				change_variable = {
+					which = maitreyan_power_counter
+					value = 3
+				}
+			}
 		}
 		add_province_modifier = {
 			name = "governor_replaced"
