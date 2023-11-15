@@ -1,0 +1,34 @@
+﻿l_english:
+ eng_m_annex_the_dukes_title: "Annex The Dukes"
+ eng_m_annex_the_dukes_desc: ""
+ 
+ eng_m_revoke_the_grand_duke_title: "Revoke the Grand Duchy"
+ eng_m_revoke_the_grand_duke_desc: ""
+ 
+ eng_m_welsh_marches_title: "Slay The Dragon"
+ eng_m_welsh_marches_desc: ""
+ 
+ eng_m_northern_england_title: "Once More Unto The Breach"
+ eng_m_northern_england_desc: ""
+ 
+ eng_m_wight_title: "Requistion Wight"
+ eng_m_wight_desc: ""
+ 
+ eng_this_will_make_the_other_missions_harder_TT: "§YCompleting this mission will increase the requirements and change the rewards for the other opener missions§!\n"
+ engOpenerMissionProg: "Opener Mission Progress"
+ eng_opener_modifier: "Post-Anarchy Consolidation"
+ eng_rebuild_england: "Rebuilding England"
+ eng_all_provinces_get_this_TT: "Every owned province recieves this modifier:"
+ 
+ eng_m_united_kingdom_title: "A United Kingdom"
+ eng_m_united_kingdom_desc: ""
+ 
+ mr_england.1.t: "A United Kingdom"
+ mr_england.1.d: "England is once again under the total rule of the Crown, seated in in London, under the House of [Root.Monarch.GetDynasty]. Lessons of the Hundred Years Anarchy tell us that too permissive a rule will only cause the country to spiral again into chaos; no more pretender 'kings' or petty lords - only the King. The structure of law will be codified, moving away from common law, and the Church will be reigned in, no longer enjoying its corrupting independence from the State. \n\nIn the Year of Our Lord [GetYear], in the Month of [GetMonth], the King of England, [Root.Monarch.GetName], signed the Statute of Oxford, suspending the need for 'common counsel,' as outlined in the Magna Carta, dissolving English Parliament."
+ mr_england.1.a: "A Change in Course"
+ mr_absolutist_england_reform: "English Absolutist Monarchy"
+ mr_absolutist_england_reform_desc: "The Hundred Years Anarchy was resounding rejection of the efficacy of limited government, only bringing England into turmoil. It is time to take the reigns, bringing the Lords, the People, and the Church to heel."
+ 
+ mr_england.2.t: "King of Ireland"
+ mr_england.2.d: "During the Hundred Years Anarchy, the lords of England were split amongst various factions. Those who sided with the Crown and whose assistance was especially helpful were awarded titles for their loyalty. One such case was the Earl of Oxford who, along with autonomy in the heart of England, was granted an additional claim over Ireland as the nominal King of Ireland. Of course, the title was only for prestige and the Earl had little in the way of projecting authority over his claim.\nWith Oxford once again integrated under the English Crown, the title passes to [Root.Monarch.GetTitle] [Root.Monarch.GetTitle]."
+ mr_england.2.a: "How curious."

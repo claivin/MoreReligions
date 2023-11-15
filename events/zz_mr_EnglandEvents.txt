@@ -1,0 +1,88 @@
+namespace = mr_england
+
+#A United Kingdom
+country_event = {
+	id = mr_england.1
+	title = mr_england.1.t
+	desc = mr_england.1.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.1.a
+		add_government_reform = mr_absolutist_england_reform
+		hidden_effect = {
+			unlock_government_reform = {
+				government_reform = mr_absolutist_england_reform
+			}
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1.5
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 1.5
+			}
+		}
+	}
+}
+
+#King of Ireland
+country_event = {
+	id = mr_england.2
+	title = mr_england.2.t
+	desc = mr_england.2.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = { }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.2.a
+		munster_area = {
+			limit = {
+				NOT = { is_core = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		connacht_area = {
+			limit = {
+				NOT = { is_core = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		leinster_area = {
+			limit = {
+				NOT = { is_core = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+		ulster_area = {
+			limit = {
+				NOT = { is_core = root }
+				NOT = { is_permanent_claim = root }
+			}
+			add_permanent_claim = root
+		}
+	}
+}

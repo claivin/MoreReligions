@@ -166,3 +166,92 @@ is_in_outremer = {
 		province_id = 5375
 	}
 }
+
+eng_opener_missions_progress_trigger = {
+	if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 1
+				}
+			}
+		}
+		stability = 1
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 2
+				}
+			}
+		}
+		all_owned_province = {
+			is_state_core = ROOT
+		}
+		army_size_percentage = 1
+		navy_size_percentage = 1
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 3
+				}
+			}
+		}
+		grown_by_development = 100
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 4
+				}
+			}
+		}
+		capital_scope = {
+			owned_by = ROOT
+			is_prosperous = yes
+			development = 30
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 4
+			}
+		}
+		calc_true_if = {
+			all_owned_province = {
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+				}
+				base_production = 10
+			}
+			amount = 5
+		}
+	}
+}

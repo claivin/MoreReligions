@@ -199,6 +199,17 @@ country_event = {
 		days = 1
 	}
 	
+	immediate = {
+		hidden_effect = {
+			ENG = {
+				set_variable = {
+					which = engOpenerMissionProg
+					value = 0
+				}
+			}
+		}
+	}
+	
 	option = { #England and their normal vassals, but not the marcher lords
 		name = mr_startup_events.2.a
 		trigger = {

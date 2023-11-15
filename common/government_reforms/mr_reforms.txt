@@ -651,6 +651,57 @@ MR_bureau_military_affairs_reform = {
 		}
 	}
 }
-			
-	
-	
+mr_absolutist_england_reform = {
+	icon = "absolutist_france_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = { 
+				tag = ENG 
+				OR = {
+					has_reform = mr_absolutist_england_reform
+					have_had_reform = mr_absolutist_england_reform
+					has_unlocked_government_reform = { government_reform = mr_absolutist_england_reform }
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = mr_absolutist_england_reform
+			}
+			mission_completed = eng_m_united_kingdom
+		}
+	}
+	trigger = {
+		OR = {
+			AND = { 
+				tag = ENG 
+				OR = {
+					has_reform = mr_absolutist_england_reform
+					have_had_reform = mr_absolutist_england_reform
+				}
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = mr_absolutist_england_reform
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = british
+		technology_group = western
+		capital_scope = { region = british_isles_region }
+	}
+	lock_level_when_selected = yes
+
+	modifiers = {
+		all_estate_influence_modifier = -0.1
+		max_absolutism = 10
+		local_autonomy = -0.05
+		min_local_autonomy = -10
+	}
+
+	# custom_attributes = {
+	# }
+}

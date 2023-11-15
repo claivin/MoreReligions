@@ -1,0 +1,172 @@
+england_missions_1 = {
+	slot = 1
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_annex_the_dukes = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			OXF = { exists = no }
+			KNT = { exists = no }
+			SHP = { exists = no }
+			eng_opener_missions_progress_trigger = yes
+		}
+		effect = {
+			custom_tooltip = eng_this_will_make_the_other_missions_harder_TT
+			country_event = { id = mr_england.2 }
+			eng_opener_missions_progress_effect = yes
+		}
+	}
+}
+
+england_missions_2 = {
+	slot = 2
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_revoke_the_grand_duke = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			CRN = { exists = no }
+			eng_opener_missions_progress_trigger = yes
+		}
+		effect = {
+			custom_tooltip = eng_this_will_make_the_other_missions_harder_TT
+			eng_opener_missions_progress_effect = yes
+		}
+	}
+}
+
+england_missions_3 = {
+	slot = 3
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_welsh_marches = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			eng_opener_missions_progress_trigger = yes
+		}
+		effect = {
+			custom_tooltip = eng_this_will_make_the_other_missions_harder_TT
+			eng_opener_missions_progress_effect = yes
+		}
+	}
+	
+	eng_m_united_kingdom = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = {
+			eng_m_annex_the_dukes
+			eng_m_northern_england
+			eng_m_revoke_the_grand_duke
+			eng_m_welsh_marches
+			eng_m_wight
+		}
+		position = 2
+		trigger = {
+			east_anglia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			home_counties_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			wessex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			east_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			west_midlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			scottish_marches_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			stability = 3
+			is_at_war = no
+			has_mil_advisor = yes
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			manpower_percentage = 0.9
+		}
+		effect = {
+			country_event = { id = mr_england.1 }
+		}
+	}
+}
+
+england_missions_4 = {
+	slot = 4
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_northern_england = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			yorkshire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			scottish_marches_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+			eng_opener_missions_progress_trigger = yes
+		}
+		effect = {
+			custom_tooltip = eng_this_will_make_the_other_missions_harder_TT
+			eng_opener_missions_progress_effect = yes
+		}
+	}
+}
+
+england_missions_5 = {
+	slot = 5
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_wight = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			owns = 4949
+			eng_opener_missions_progress_trigger = yes
+		}
+		effect = {
+			custom_tooltip = eng_this_will_make_the_other_missions_harder_TT
+			eng_opener_missions_progress_effect = yes
+		}
+	}
+}

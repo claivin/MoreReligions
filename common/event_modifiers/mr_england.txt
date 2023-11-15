@@ -1,0 +1,8 @@
+eng_opener_modifier = {
+	global_autonomy = -0.075
+	unrest = 1
+}
+
+eng_rebuild_england = {
+	local_monthly_devastation = -0.5
+}

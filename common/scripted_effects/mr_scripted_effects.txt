@@ -256,3 +256,153 @@ update_maitreya_total_monthly = {
 		}
 	}
 }
+
+eng_opener_missions_progress_effect = {
+	if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 0
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 1
+				}
+			}
+		}
+		wales_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		wessex_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		home_counties_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		west_midlands_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		scottish_marches_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		yorkshire_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 1
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 2
+				}
+			}
+		}
+		if = {
+			limit = {
+				stability = 3
+			}
+			add_adm_power = 50
+		}
+		if = {
+			limit = {
+				NOT = { stability = 3 }
+			}
+			add_stability = 1
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 2
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 3
+				}
+			}
+		}
+		add_country_modifier = {
+			name = eng_opener_modifier
+			duration = 5475 #15 years
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 3
+			}
+			NOT = {
+				check_variable = {
+				which = engOpenerMissionProg
+					value = 4
+				}
+			}
+		}
+		add_dip_power = 100
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				which = engOpenerMissionProg
+				value = 4
+			}
+		}
+		custom_tooltip = eng_all_provinces_get_this_TT
+		tooltip = {
+			capital_scope = {
+				add_province_modifier = {
+					name = eng_rebuild_england
+					duration = 9125
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				add_province_modifier = {
+					name = eng_rebuild_england
+					duration = 9125
+				}
+			}
+		}
+	}
+	
+	hidden_effect = {
+		change_variable  = {
+			which = engOpenerMissionProg
+			value = 1
+		}
+	}
+}
