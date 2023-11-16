@@ -321,6 +321,10 @@ elite_unit_xp_combat_effect = {
 	}
 }
 mr_maitreya_effect = {
+	set_variable = {
+		which = maitreyan_power_counter_cost
+		value = 0
+	}
 	if = {
 		limit = {
 			has_ruler_flag = xiao_mingwang_flag

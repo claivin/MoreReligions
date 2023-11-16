@@ -55,6 +55,10 @@ on_startup = {
 			which = maitreyan_power_counter
 			value = 0
 		}
+		set_variable = {
+			which = maitreyan_power_counter_cost
+			value = 0
+		}
 		update_maitreya_monthly = yes
 	}
 	if = {

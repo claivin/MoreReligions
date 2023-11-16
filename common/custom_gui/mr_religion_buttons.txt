@@ -5,13 +5,72 @@ custom_button = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible
     trigger = {
-		custom_trigger_tooltip = {
-			tooltip = maitreya_power_100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
 			check_variable = {
 				which = maitreyan_power_counter
 				value = 100
 			}
-		} 
+		}
 		custom_trigger_tooltip = {
 			tooltip = NOT_RAISED_HONGJUN
 			NOT = {
@@ -36,6 +95,12 @@ custom_button = {
 			which = maitreyan_power_counter
 			value = 100
 		}
+		hidden_effect = {
+			change_variable = {
+				which = maitreyan_power_counter_cost
+				value = 1
+			}
+		}
 		play_sound = start_convert_confucianism
 	} #Effect
 	tooltip = raise_hongjun_botton_title
@@ -46,8 +111,67 @@ custom_button = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible
     trigger = { 
-		custom_trigger_tooltip = {
-			tooltip = maitreya_power_100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
 			check_variable = {
 				which = maitreyan_power_counter
 				value = 100
@@ -77,6 +201,12 @@ custom_button = {
 			which = maitreyan_power_counter
 			value = 100
 		}
+		hidden_effect = {
+			change_variable = {
+				which = maitreyan_power_counter_cost
+				value = 1
+			}
+		}
 		play_sound = start_convert_confucianism
 	} #Effect
 	tooltip = train_xiangjun_botton_title
@@ -87,8 +217,67 @@ custom_button = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible
     trigger = { 
-		custom_trigger_tooltip = {
-			tooltip = maitreya_power_100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
 			check_variable = {
 				which = maitreyan_power_counter
 				value = 100
@@ -110,6 +299,12 @@ custom_button = {
 			which = maitreyan_power_counter
 			value = 100
 		}
+		hidden_effect = {
+			change_variable = {
+				which = maitreyan_power_counter_cost
+				value = 1
+			}
+		}
 		play_sound = start_convert_confucianism
 	} #Effect
 	tooltip = expand_sangha_botton_title
@@ -120,8 +315,67 @@ custom_button = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible
     trigger = { 
-		custom_trigger_tooltip = {
-			tooltip = maitreya_power_100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
 			check_variable = {
 				which = maitreyan_power_counter
 				value = 100
@@ -150,6 +404,12 @@ custom_button = {
 			which = maitreyan_power_counter
 			value = 100
 		}
+		hidden_effect = {
+			change_variable = {
+				which = maitreyan_power_counter_cost
+				value = 1
+			}
+		}
 		play_sound = start_convert_confucianism
 	} #Effect
 	tooltip = embrace_shendao_botton_title
@@ -160,8 +420,67 @@ custom_button = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible
     trigger = { 
-		custom_trigger_tooltip = {
-			tooltip = maitreya_power_100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
 			check_variable = {
 				which = maitreyan_power_counter
 				value = 100
@@ -186,6 +505,12 @@ custom_button = {
 			which = maitreyan_power_counter
 			value = 100
 		}
+		hidden_effect = {
+			change_variable = {
+				which = maitreyan_power_counter_cost
+				value = 1
+			}
+		}
 		play_sound = start_convert_confucianism
 	} #Effect
 	tooltip = xiao_mingwang_botton_title
@@ -196,8 +521,67 @@ custom_button = {
 		religion = mr_maitreya
 	 } #Determines when the button is visible
     trigger = { 
-		custom_trigger_tooltip = {
-			tooltip = maitreya_power_100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			check_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
 			check_variable = {
 				which = maitreyan_power_counter
 				value = 100
@@ -219,6 +603,12 @@ custom_button = {
 		subtract_variable = {
 			which = maitreyan_power_counter
 			value = 100
+		}
+		hidden_effect = {
+			change_variable = {
+				which = maitreyan_power_counter_cost
+				value = 1
+			}
 		}
 		play_sound = start_convert_confucianism
 	} #Effect
