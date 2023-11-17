@@ -792,7 +792,10 @@ mr_yunnan_missions_third = {
 			}			
 		}
 		effect = {
-		        1816 = {change_province_name = "Khanbaliq"}
+		        1816 = {
+				change_province_name = "Khanbaliq"
+				rename_capital = "Khanbaliq"
+				}
 		        custom_tooltip = yunnan_north_china
 			    hidden_effect = {
 				every_owned_province = {
