@@ -2089,10 +2089,11 @@ all_under_tengri_reform = {
 andorran_reform = {
 	# government mechanics flags go here
 	icon = "people_walking"
-	allow_normal_conversion = no
 	legacy_government = yes
 	valid_for_new_country = no
-
+	trigger = {
+		tag = ADR
+	}
 	duration = 4
 
 	allow_convert = no
