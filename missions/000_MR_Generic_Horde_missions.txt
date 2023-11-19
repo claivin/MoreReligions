@@ -1,0 +1,1079 @@
+steppe_missions_1 = { #internal-management line
+	slot = 1
+	generic = no
+	ai = no
+	potential = { has_reform = steppe_horde }
+	
+	steppe_succession = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+		OR = {
+		AND = {
+		estate_loyalty = {
+        estate = estate_nomadic_tribes
+        loyalty = 60
+          }
+		num_of_estate_privileges = {
+	     estate = estate_nomadic_tribes
+	     value = 2
+          } 
+		}
+        crown_land_share = 50
+          }		
+		}
+		effect = {
+			custom_tooltip = steppe_succession_secured
+            set_country_flag = steppe_dynasty
+		}
+	}
+	steppe_judicial_reform = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_succession }
+		position = 2
+		trigger = {
+		advisor = theologian
+		OR = {
+		monthly_adm = 9
+		monthly_mil = 9
+		  }
+		}
+		effect = {
+			capital_scope = {
+				add_building = courthouse
+			}
+            custom_tooltip = steppe_judicial_events			
+		}
+	}	
+	steppe_census = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_judicial_reform }
+		position = 3
+		trigger = {
+		num_of_owned_provinces_with = {
+	            value = 10
+				OR = {
+	            has_building = temple
+				has_building = cathedral 
+				}
+            } 
+		num_of_owned_provinces_with = {
+	            value = 10
+				OR = {
+	            has_building = barracks
+				has_building = training_fields 
+				}
+            } 			
+		}
+		effect = {
+        add_country_modifier = {
+        name = steppe_census
+		duration = 18250
+		 }
+		}
+	}	
+	steppe_mineral_wealth = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_census }
+		position = 4
+		provinces_to_highlight = {
+        AND = {
+		owned_by = ROOT
+		OR = {
+        trade_goods = copper
+		trade_goods = silver
+		}
+		NOT = { base_production = 10 }
+         }	
+		}			
+		trigger = {
+		num_of_owned_provinces_with = {
+	            value = 2
+				base_production = 10
+				OR = {
+	            trade_goods = gold
+				trade_goods = silver 
+				}
+            } 		
+		}
+		effect = {
+        every_target_province = { 
+		add_province_modifier = {
+		name = gme_mint
+		duration = -1
+		}
+	    }
+        add_country_modifier = {
+        name = steppe_inflation
+		duration = 9125
+		 }
+	  }
+	}	
+	steppe_yam = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_mineral_wealth }
+		position = 5
+		trigger = {
+		num_of_owned_provinces_with = {
+	            value = 50
+				has_building = marketplace
+            }		
+		}
+		effect = {
+        add_country_modifier = {
+        name = steppe_restored_yam
+		duration = -1
+		 }        
+		}
+	}		
+}
+
+steppe_missions_2 = { #regional-steppe conquest line
+	slot = 2
+	generic = no
+	ai = no
+	potential = { has_reform = steppe_horde }
+	
+	steppe_warband = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+		num_of_generals = 1
+		has_estate_privilege = estate_nomadic_tribes_military_service
+		}
+		effect = {
+        add_country_modifier = {
+        name = steppe_warbands
+		duration = 9125
+		 }
+		}
+	}
+	steppe_consolidation = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_warband }
+		position = 1
+		trigger = {
+		num_of_owned_provinces_with = {
+                value = 15
+                custom_trigger_tooltip = {
+                    tooltip = province_is_in_capital_region
+                    region = capital
+                }
+            }
+		}
+		effect = {
+		    capital_scope = {
+                    region = {					
+					add_permanent_claim = ROOT
+				}  
+			}
+            change_mil = 1    			
+		}
+	}
+	steppe_spoils_1 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+		check_variable = {
+	     which = steppe_provinces_razed_variable
+	     value = 30 
+          }
+		}
+		effect = {
+        add_country_modifier = {
+        name = steppe_spoils
+		duration = 9125
+		 } 
+        add_treasury = 150		 
+		}
+	}
+	steppe_spoils_2 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_spoils_1 }
+		position = 1
+		trigger = {
+		check_variable = {
+	     which = steppe_provinces_razed_variable
+	     value = 100
+          }		
+		}
+		effect = {
+		custom_tooltip = steppe_prosperity_by_fire
+        set_country_flag = steppe_prosperity_from_raze 
+		add_treasury = 1500
+		}
+	}
+	steppe_spoils3 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_spoils_2 }
+		position = 1
+		trigger = {
+		check_variable = {
+	     which = steppe_provinces_razed_variable
+	     value = 250 
+          }		
+		}
+		effect = {
+		custom_tooltip = steppe_absolutist_scourge
+        set_country_flag = steppe_absolutism_scourge_raze 
+		add_treasury = 15000
+		}
+	}	
+		
+}
+
+steppe_missions_3a = { #china-conquest
+	slot = 3
+	generic = no
+	ai = no
+	potential = {
+    AND = 	{
+	NOT = {tag = MGH}
+	has_reform = steppe_horde 
+	OR = {
+	capital_scope = {region = manchuria_region}
+	capital_scope = {region = mongolia_region}
+	capital = 1816
+	}
+	}
+	}
+	
+	steppe_insult_beijing = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		province_id = 1816 
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}		
+		trigger = {
+		1816 = { 
+		OR = {
+		owner = {
+		custom_trigger_tooltip = {
+		 tooltip = has_been_insulted_by_root
+			OR = {
+				has_opinion_modifier = {
+				who = ROOT
+				modifier = insulted
+					}
+				has_opinion_modifier = {
+				who = ROOT
+				modifier = scornfully_insulted
+								}
+							}
+					}				
+		        }
+		owned_by = ROOT		
+			 }
+		  }
+		}
+		effect = {
+        if = {
+		limit = { 
+		1816 = {
+		owner = { 
+		 has_opinion_modifier = {
+		 who = ROOT
+		 modifier = scornfully_insulted
+		     }		
+		   }
+          }		
+		 }
+		hebei_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		south_hebei_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }		 
+		}
+		else = {
+		hebei_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }
+		south_hebei_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }
+		
+		}
+		custom_tooltip = steppe_claims_from_scornful_china
+		}
+	}	
+	steppe_restore_khanbaliq = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_insult_beijing }
+		position = 2
+		provinces_to_highlight = {
+		region = north_china_region 
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		1816 = { 
+		owned_by = ROOT 
+		is_core = ROOT 
+		}
+		num_of_owned_provinces_with = {
+	     value = 8
+	     region = north_china_region
+	     owned_by = ROOT
+	     is_core = ROOT
+         }
+		}
+		effect = {
+		country_event = { 
+         id = MR_steppe_generic_flavor.1
+	    }
+        north_china_region = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		}
+	}
+	steppe_consolidate_nc = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_restore_khanbaliq }
+		position = 3
+		provinces_to_highlight = {
+		region = north_china_region 
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		num_of_owned_provinces_with = {
+	     value = 30
+	     region = north_china_region
+	     owned_by = ROOT
+	     is_core = ROOT
+         }		
+		}
+		effect = {
+		    custom_tooltip = yunnan_north_china
+			 hidden_effect = {
+		      every_owned_province = {
+			  limit = { region = north_china_region }
+				add_province_modifier = {
+				    name = "yunnan_conquest_north_china"
+					duration = 7300
+					}
+				}
+			}
+        south_china_region = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+        xinan_region = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }		 
+		}
+	}
+	steppe_dynasty_proclamation = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_consolidate_nc }
+		position = 4
+		provinces_to_highlight = {
+		superregion = china_superregion 
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+			development_in_provinces = {
+	         value = 600
+	         superregion = china_superregion
+            }			
+		}
+		effect = {
+		custom_tooltip = steppe_yuan_reformer
+		set_country_flag = may_reform_yuan
+        add_prestige_or_monarch_power = { amount = 25 }
+		}
+	}
+	steppe_unify_china = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_dynasty_proclamation }
+		position = 5
+		provinces_to_highlight = {
+		superregion = china_superregion 
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				OR = {
+					is_emperor_of_china = yes
+					custom_trigger_tooltip = {
+						tooltip = no_country_is_EoC
+						NOT = {
+							any_country = {
+								is_emperor_of_china = yes
+							}
+						}
+					}
+				}
+			}
+	
+			north_china_region = {
+				type = all
+				owned_by = ROOT
+			}
+			south_china_region = {
+				type = all 
+				OR = {
+				owned_by = ROOT
+				is_city = no 
+				}
+			}
+			xinan_region = {
+				type = all
+				owned_by = ROOT
+			}			
+		}		
+		effect = {
+			add_country_modifier = {
+				name = yunnan_unifier_of_china
+				duration = 18250
+	   		}
+			add_stability_or_adm_power = yes
+		}
+	}	
+} 				
+
+steppe_missions_3b = { #iran-conquest
+	slot = 3
+	generic = no
+	ai = no
+	potential = { 
+    AND = {
+	has_reform = steppe_horde 
+	OR = {
+	capital_scope = {region = central_asia_region}
+	capital_scope = {region = west_siberia_region}
+	capital_scope = {region = khorasan_region}
+	tag = MGH
+	tag = CGH
+	   }
+	 }
+	}
+	
+	steppe_insult_samarkand = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		province_id = 454 
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		454 = {
+        OR = {		
+		owner = {
+		custom_trigger_tooltip = {
+		 tooltip = has_been_insulted_by_root
+			OR = {
+				has_opinion_modifier = {
+				who = ROOT
+				modifier = insulted
+					}
+				has_opinion_modifier = {
+				who = ROOT
+				modifier = scornfully_insulted
+								}
+							}
+					}				
+		        }
+		owned_by = ROOT		
+		  }
+          }		  
+		}
+		effect = {
+        if = {
+		limit = { 
+		454 = {
+		owner = { 
+		 has_opinion_modifier = {
+		 who = ROOT
+		 modifier = scornfully_insulted
+		     }		
+		   }
+          }		
+		 }
+		transoxiana_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		termez_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }		 
+		}
+		else = {
+		transoxiana_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }
+		termez_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }
+		
+		}
+		custom_tooltip = steppe_claims_from_scornful_samarkand
+		}
+	}
+	steppe_conquer_transoxiana = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_insult_samarkand }
+		position = 2
+		provinces_to_highlight = {
+		OR = { 
+		area = transoxiana_area
+		area = termez_area 
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}	
+		trigger = {
+		transoxiana_area = {
+		  type = all
+		  owned_by = ROOT
+	      is_core = ROOT
+		 }
+		termez_area = {
+		  type = all
+		  owned_by = ROOT
+		  is_core = ROOT
+		 }
+		}
+		effect = {
+		country_event = { 
+         id = MR_steppe_generic_flavor.2
+	    }		
+        khorasan_region = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		}
+	}
+	steppe_conquer_khorasan = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_conquer_transoxiana }
+		position = 3
+		provinces_to_highlight = { 
+		region = khorasan_region	
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}		
+		trigger = {
+		num_of_owned_provinces_with = {
+	     value = 25
+	     region = khorasan_region
+	     owned_by = ROOT
+	     is_core = ROOT
+         }		
+		}
+		effect = {
+			khorasan_region = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_local_autonomy = -25
+				add_devastation = -25
+			}		
+        persia_region = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		}
+	}	
+	steppe_hulagu_legacy = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_conquer_khorasan }
+		position = 4
+		provinces_to_highlight = { 
+		region = persia_region	
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		persia_region = {
+		type = all
+		owned_by = ROOT 
+		}
+		}
+		effect = {
+		add_country_modifier = {
+		name = steppe_masters_of_iran
+		duration = 18250 
+		}
+        custom_tooltip = steppe_ilkhanate_reformer
+		set_country_flag = may_reform_ilkhanate
+		}
+	}	
+	steppe_silk_road = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_hulagu_legacy }
+		position = 5
+		provinces_to_highlight = { 
+		trade_goods = silk	
+		}			
+		trigger = {
+		production_leader = {
+	     trade_goods = silk
+         }
+		}
+		effect = {
+        change_price = {
+         trade_goods = silk
+         value = 0.25
+         duration = -1
+         }
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				enable_trading_policy = { policy = maximize_profit_upgraded }
+				enable_trading_policy = { policy = hostile_trading_upgraded }
+				enable_trading_policy = { policy = improve_inland_routes_upgraded }
+				enable_trading_policy = { policy = establish_communities_upgraded }
+				hidden_effect = {
+					disable_trading_policy = { policy = maximize_profit }
+					disable_trading_policy = { policy = hostile_trading }
+					disable_trading_policy = { policy = improve_inland_routes }
+					disable_trading_policy = { policy = establish_communities }
+				}
+			}
+			else = {
+				add_mercantilism_or_monarch_power = { amount = 5 }
+				define_advisor = {
+					type = trader
+					discount = yes
+					skill = 3
+				}
+			}		 
+		}
+	}		
+}
+
+steppe_missions_3c = { #rus-conquest
+	slot = 3
+	generic = no
+	ai = no
+	potential = {
+    AND = 	{
+	has_reform = steppe_horde 
+	OR = {
+	capital_scope = {region = russia_region}
+	capital_scope = {region = ural_region}
+	capital_scope = {region = crimea_region}
+	capital = 280
+	}
+	}
+	}
+	
+	steppe_northern_upstart = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { 
+		region = russia_region	
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		num_of_owned_provinces_with = {
+	     value = 15
+	     region = russia_region
+	     owned_by = ROOT
+         }		
+		}
+		effect = {
+		add_country_modifier = { 
+		name = steppe_tver_defectors
+		duration = 5475 
+		}
+		custom_tooltip = steppe_tver_defectors_tt
+        add_permanent_claim_multi_provinces = { target = russia_region }
+		}
+	}		
+	steppe_sack_tver = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_northern_upstart }
+		position = 2
+		provinces_to_highlight = { 
+		province_id = 294
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}		
+		trigger = {
+		OR = {
+		294 = { 
+		has_province_modifier = province_razed
+		}
+		294 = {
+		owned_by = ROOT
+		is_core = ROOT 
+		  }
+		 }
+		}
+		effect = {
+		custom_tooltip = steppe_raze_tver_rewards
+		hidden_effect = {
+        if = {
+		limit = { 294 = {has_province_modifier = province_razed}}
+		add_country_modifier = { 
+		name = steppe_yoke
+		duration = 18250
+		  }
+		}
+		else = {
+			russia_region = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				add_local_autonomy = -25
+				add_devastation = -25
+			}
+		  }
+		 }
+		}
+	}
+	steppe_punish_larper = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 3
+		provinces_to_highlight = { 
+		province_id = 280
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}		
+		trigger = {
+		280 = { 
+		OR = {
+		owner = {
+		custom_trigger_tooltip = {
+		 tooltip = has_been_insulted_by_root
+			OR = {
+				has_opinion_modifier = {
+				who = ROOT
+				modifier = insulted
+					}
+				has_opinion_modifier = {
+				who = ROOT
+				modifier = scornfully_insulted
+								}
+							}
+					}				
+		        }
+		owned_by = ROOT		
+			 }
+		  }
+		}
+		effect = {
+        if = {
+		limit = { 
+		1816 = {
+		owner = { 
+		 has_opinion_modifier = {
+		 who = ROOT
+		 modifier = scornfully_insulted
+		     }		
+		   }
+          }		
+		 }
+		zaporizhia_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		sloboda_ukraine_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }
+		yedisan_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_permanent_claim = ROOT
+		 }			 
+		}
+		else = {
+		zaporizhia_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }
+		sloboda_ukraine_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }
+		yedisan_area = {
+		  limit = {
+		  NOT = { is_core = ROOT }
+	      NOT = { is_permanent_claim = ROOT }
+			}
+		add_claim = ROOT
+		 }		
+		}
+		custom_tooltip = steppe_claims_from_scornful_kiev
+		}
+	}
+	steppe_enter_ruthenia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_punish_larper }
+		position = 4
+		provinces_to_highlight = {
+		OR = { 
+		area = zaporizhia_area
+		area = sloboda_ukraine_area 
+		area = yedisan_area 
+		}
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}		
+		trigger = {
+		zaporizhia_area = {
+		  type = all
+		  owned_by = ROOT
+	      is_core = ROOT
+		 }
+		sloboda_ukraine_area = {
+		  type = all
+		  owned_by = ROOT
+		  is_core = ROOT
+		 }
+		yedisan_area = {
+		  type = all
+		  owned_by = ROOT
+		  is_core = ROOT
+		 }		 
+		}
+		effect = {
+		country_event = {id = MR_steppe_generic_flavor.5}
+        add_permanent_claim_multi_provinces = { target = ruthenia_region }
+		}
+	}
+	steppe_conquer_kiev = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_enter_ruthenia }
+		position = 5
+		provinces_to_highlight = { 
+		province_id = 280
+		NOT = { country_or_non_sovereign_subject_holds = ROOT }	 
+		}			
+		trigger = {
+		280 = { 
+		owned_by = ROOT
+		is_core = ROOT
+		}
+		}
+		effect = {
+		country_event = { 
+         id = MR_steppe_generic_flavor.3
+	    }
+		}
+	}	
+}
+
+steppe_missions_4 = { #Religious line
+	slot = 4
+	generic = no
+	ai = no
+	potential = { has_reform = steppe_horde }
+	
+	steppe_religious_matters = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+        OR = {
+		temple = 5
+		cathedral = 5
+		}		
+		}
+		effect = {
+        country_event = {id = MR_steppe_generic_flavor.4}
+		}
+	}	
+}
+
+steppe_missions_4_blocked = { #Blockedstuff
+	slot = 4
+	generic = no
+	ai = no
+	potential = { has_reform = steppe_horde 
+	AND = { 
+	NOT = { has_country_flag = steppe_religious_missions }
+	NOT = { has_country_flag = steppe_humanist_missions }
+	}	
+	}
+	
+	Steppe_branching_1 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = {
+			steppe_religious_matters
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}
+	Steppe_branching_2 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = {
+			Steppe_branching_1
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = branching_mission_TT
+				always = no
+			}
+		}
+		effect = {
+			custom_tooltip = branching_mission_TT
+		}
+	}	
+}
+
+steppe_missions_4a = { #Religious approach branch
+	slot = 4
+	generic = no
+	ai = no
+	potential = { AND = { 
+	has_reform = steppe_horde
+	has_country_flag = steppe_religious_missions
+	NOT = { has_country_flag = steppe_humanist_missions }
+	 }
+	}
+	
+	steppe_religious_unity = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_religious_matters }
+		position = 2
+		trigger = {
+        check_variable = { which = num_converted_religion value = 25 }		
+		}
+		effect = {
+        add_country_modifier = { 
+		name = steppe_pious_reputation
+		duration = 10950
+		}
+		}
+	}	
+	steppe_religious_wars = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_religious_unity }
+		position = 3
+		trigger = {
+        full_idea_group = religious_ideas	
+		}
+		effect = {
+		custom_tooltip = steppe_raze_easier_conversion_tt
+        set_country_flag = steppe_raze_easier_conversion
+		}
+	}		
+}
+
+steppe_missions_4b = { #Humanist approach branch
+	slot = 4
+	generic = no
+	ai = no
+	potential = { AND = { 
+	has_reform = steppe_horde
+	has_country_flag = steppe_humanist_missions
+	NOT = { has_country_flag = steppe_religious_missions }
+	 }
+	}
+	
+	steppe_religious_pluralism = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_religious_matters }
+		position = 2
+		trigger = {
+        num_of_owned_provinces_with = {
+	     value = 40
+	     unrest = 0
+	     NOT = { religion = root }
+	     is_core = ROOT
+          }	
+	    }
+		effect = {
+        add_country_modifier = { 
+		name = steppe_defender_of_traditions
+		duration = 10950
+		}
+		}
+	}
+	steppe_enshrined_rights = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { steppe_religious_pluralism }
+		position = 3
+		trigger = {
+        full_idea_group = humanist_ideas		
+		}
+		effect = {
+        add_country_modifier = { 
+		name = steppe_enshrined_rights_modifier
+		duration = -1
+		}
+		}
+	}		
+}
+
+steppe_missions_5 = { #Religious line
+	slot = 5
+	generic = no
+	ai = no
+	potential = { has_reform = steppe_horde }
+		
+}

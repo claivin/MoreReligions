@@ -1,0 +1,189 @@
+namespace = MR_steppe_generic_flavor
+country_event = {
+	id = MR_steppe_generic_flavor.1 #RestoreKhanbaliq
+	title = MR_steppe_generic_flavor.1.t
+	desc = MR_steppe_generic_flavor.1.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_steppe_generic_flavor.1.a#YesMoveCapital
+		trigger = {
+		is_core = 1816
+		}
+    1816 = {
+	change_province_name = "Khanbaliq"
+	rename_capital = "Khanbaliq"
+	move_capital_effect = yes 		
+	add_base_tax = 3
+	add_base_production = 2
+	add_base_manpower = 3
+	}
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.1.b#NoMoveCapital
+		trigger = {
+
+		}
+    1816 = {
+	change_province_name = "Khanbaliq"
+	rename_capital = "Khanbaliq"	
+	add_base_tax = 3
+	add_base_production = 2
+	add_base_manpower = 3
+	}		
+	}
+}
+
+country_event = {
+	id = MR_steppe_generic_flavor.2 #ChagataiKhan
+	title = MR_steppe_generic_flavor.2.t
+	desc = MR_steppe_generic_flavor.2.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_steppe_generic_flavor.2.a#LegitimiseHouseArrest
+		trigger = {
+		
+		}
+        custom_tooltip = steppe_chagatai_reformer
+		set_country_flag = may_reform_chagatai 
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.2.b#InviteHimToRule
+		trigger = {
+         
+		}
+		define_ruler = {
+         dynasty = "Chagataiyid"
+         adm = 3
+         dip = 2
+         mil = 5
+		 fixed = no
+         age = 25
+         claim = 100
+        }
+        custom_tooltip = steppe_chagatai_reformer
+		set_country_flag = may_reform_chagatai 		
+	}
+	option = {
+		name = MR_steppe_generic_flavor.2.c#LetHimRot
+		trigger = {
+		}
+        change_adm = 1
+		change_dip = 1
+		change_mil = 1		
+	}	
+}
+
+country_event = {
+	id = MR_steppe_generic_flavor.3 #Sack-Kiev
+	title = MR_steppe_generic_flavor.3.t
+	desc = MR_steppe_generic_flavor.3.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_steppe_generic_flavor.3.a#SackIt
+		trigger = {
+		
+		}
+		280 = {
+	      change_province_name = "Uzeukui"
+	      rename_capital = "Uzeukui"	
+	      set_base_tax = 0
+	      set_base_production = 0
+	      set_base_manpower = 0
+	}
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.3.b#NewKhansofKiev
+		trigger = {
+         
+		}
+		280 = {	
+	      move_capital_effect = yes 		
+	      add_base_manpower = 2
+	}
+          	
+	}
+}
+
+country_event = {
+	id = MR_steppe_generic_flavor.4 #PickYoPath
+	title = MR_steppe_generic_flavor.4.t
+	desc = MR_steppe_generic_flavor.4.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_steppe_generic_flavor.4.a#Humanist
+		trigger = {
+		
+		}
+		custom_tooltip = steppe_humanist_missions_TT
+		set_country_flag = steppe_humanist_missions
+		swap_non_generic_missions = yes 
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.4.b#Religious
+		trigger = {
+         
+		}
+		custom_tooltip = steppe_religious_missions_TT
+		set_country_flag = steppe_religious_missions    
+      	swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = MR_steppe_generic_flavor.5 #WildFields
+	title = MR_steppe_generic_flavor.5.t
+	desc = MR_steppe_generic_flavor.5.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_steppe_generic_flavor.5.a#Agriculture
+		trigger = {
+		
+		}
+		every_owned_province = { 
+		limit = {
+        AND = 	{	
+		OR = { 
+		area = zaporizhia_area
+		area = sloboda_ukraine_area
+		area = yedisan_area
+		}
+		trade_goods = grain
+		}
+		}
+		add_province_modifier = {
+        name = steppe_wf_agriculture
+        duration = -1
+		}
+		}
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.5.b#LetThemGraze
+		trigger = {
+         
+		}
+		add_country_modifier = {
+        name = steppe_wf_graze
+        duration = 18250 
+		}
+	}
+}

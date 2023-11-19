@@ -46,7 +46,16 @@ on_startup = {
 		set_variable = {
 			which = gsc_sieges_won_variable value = 0
 		}
-	}	
+	}
+#Horde raze counting variable	
+	if = {
+        limit = { 
+            has_reform = steppe_horde
+		}	
+        set_variable = 	{ 
+		    which = steppe_provinces_razed_variable value = 0 
+		}
+    }		
 	if ={
 		limit = {
 			religion = mr_maitreya
@@ -549,6 +558,20 @@ on_battle_won_country = {
 			value = -0.5
 		}
 	}
+	if = {
+		limit = {
+			ROOT = {
+				has_country_modifier = steppe_tver_defectors
+			}
+			FROM = {
+				tag = TVE
+			}
+		}
+		random_list = {
+			20 = { ROOT = { add_manpower = 2 } }
+			80 = { }
+		}
+	}		
 }
 
 # country
@@ -6188,6 +6211,7 @@ on_raze = {
 		name = province_razed
 		duration = 7300
 	}
+	mr_on_raze_effect = yes
 }
 on_concentrate_development = {
 	if = { 
