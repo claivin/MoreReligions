@@ -22,8 +22,9 @@
  estate_shugo_military: "Shugo Military Control"
  estate_shugo_japan: "Go-Daigo Reforms"
  estate_shugo_japan_desc: "The reforms by Emperor Go-Daigo might have removed the Shogun from ultimate power, but he had to make serious concessions to the Shugo and the Samurai to prevent them from siding with the rebels during the Ashikaga Uprising. As such, the reforms benefited the military land owners more than any civilian authority."
- shugo_1444_revoke_TT: "§YWe must either rein in the Shugo or allow them to destroy us to remove this privilege.§!"
+ shugo_1444_revoke_TT: "We must either rein in the Shugo with the mission §YEnd the Shugo Dominance§! or defeat them on the field of battle in the §YHotoku War§!"
  SHINBUTSU_CANNOT_DECLARE_TT: "§RWhile we have a Regency Council, we cannot start any wars.§!"
+estate_privileges_and_agendas_events.3.MR1: "The Proposal of the Shugo"
 
  #Church
  estate_church_ilkhanate_dervish: "Tolerance of the Sufi Dervishes"

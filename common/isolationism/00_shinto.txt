@@ -22,8 +22,8 @@ selective_integration_isolation = {
 	isolation_value = 2
 
 	modifier = {
-		idea_cost = -0.1
-		warscore_cost_vs_other_religion = -0.20
+		idea_cost = -0.05
+		diplomatic_reputation = 2
 	}
 }
 

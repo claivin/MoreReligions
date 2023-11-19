@@ -1,0 +1,1126 @@
+#Generic Agendas - always available
+
+#This one or the next one will always be valid
+estate_shugo_hire_advisor = {
+	can_select = {
+		NOT = {
+			employed_advisor = {
+				category = MIL
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			employed_advisor = {
+				category = MIL
+			}
+			is_in_deficit = no
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+estate_shugo_fire_advisor = {
+	can_select = {
+		employed_advisor = {
+			category = MIL
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			always = yes
+		}
+	}
+	immediate_effect = {
+		hidden_effect = {
+			set_country_flag = need_to_fire_mil_advisor
+		}
+	}
+	on_invalid = {
+		clr_country_flag = need_to_fire_mil_advisor
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = fire_mil_advisor_tooltip
+				has_country_flag = just_fired_mil_advisor
+			}
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		clr_country_flag = just_fired_mil_advisor
+		clr_country_flag = need_to_fire_mil_advisor
+	}
+	invalid_trigger = {
+		NOT = {
+			employed_advisor = {
+				category = MIL
+			}
+		}
+		NOT = { has_country_flag = just_fired_mil_advisor }
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+		clr_country_flag = need_to_fire_mil_advisor
+    }
+}
+
+#Give us three privileges
+estate_shugo_three_privileges = {
+	can_select = {
+		NOT = {
+			num_of_estate_privileges = {
+				estate = estate_shugo
+				value = 2
+			}
+		}
+	}
+	selection_weight = {
+		factor = 10
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_shugo_three_privileges_var
+			value = 0
+		}
+		if = {
+			limit = {
+				num_of_estate_privileges = {
+					estate = estate_shugo
+					value = 1
+				}
+			}
+			set_variable = {
+				which = estate_shugo_three_privileges_var
+				value = 2
+			}
+		}
+		else = {
+			set_variable = {
+				which = estate_shugo_three_privileges_var
+				value = 1
+			}
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					check_variable = {
+						which = estate_shugo_three_privileges_var
+						value = 2
+					}
+				}
+				num_of_estate_privileges = {
+					estate = estate_shugo
+					value = 3
+				}
+			}
+			else = {
+				num_of_estate_privileges = {
+					estate = estate_shugo
+					value = 2
+				}
+			}
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 20
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Increase Monthly Military Power
+estate_shugo_increase_monthly_military_power = {
+	can_select = {
+		if = {
+			limit = {
+				#Promote Advisors - +2
+				has_dlc = "Cradle of Civilization"
+				#National Focus - +2
+				has_dlc = "Res Publica"
+				has_dlc = "Common Sense"
+			}
+			NOT = { monthly_mil = 12 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_dlc = "Cradle of Civilization"
+					has_dlc = "Res Publica"
+					has_dlc = "Common Sense"
+				}
+			}
+			NOT = { monthly_mil = 10 }
+		}
+		else = {
+			NOT = { monthly_mil = 8 }
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					#Promote Advisors - +2
+					has_dlc = "Cradle of Civilization"
+					#National Focus - +2
+					has_dlc = "Res Publica"
+					has_dlc = "Common Sense"
+				}
+				monthly_mil = 12
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_dlc = "Cradle of Civilization"
+						has_dlc = "Res Publica"
+						has_dlc = "Common Sense"
+					}
+				}
+				monthly_mil = 10
+			}
+			else = {
+				monthly_mil = 8
+			}
+		}
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		add_mil_power = 50
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Retake Core
+estate_shugo_retake_core = {
+	can_select = {
+		is_free_or_tributary_trigger = yes
+		OR = {
+			is_part_of_hre = no
+			NOT = { hre_reform_passed = landfriede }
+		}
+		any_province = {
+			is_core = root
+			NOT = { country_or_non_sovereign_subject_holds = root }
+			is_city = yes
+			NOT = { owner = { ROOT = { truce_with = prev } } }
+		}
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 0.5
+			any_province = {
+				is_core = root
+				NOT = { country_or_non_sovereign_subject_holds = root }
+				is_city = yes
+				owner = {
+					NOT = { ROOT = { truce_with = prev } }
+					alliance_with = root
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			any_country = {
+				coalition_target = root
+			}
+		}
+	}
+	pre_effect = {
+		random_province = {
+			limit = {
+				is_core = root
+				NOT = { country_or_non_sovereign_subject_holds = root }
+				is_city = yes
+				NOT = { owner = { ROOT = { truce_with = prev } } }
+			}
+			save_event_target_as = agenda_province
+		}
+		random_province = {
+			limit = {
+				is_core = root
+				NOT = { country_or_non_sovereign_subject_holds = root }
+				is_city = yes
+				NOT = { owner = { ROOT = { truce_with = prev } } }
+				NOT = { owner = { alliance_with = root } }
+			}
+			save_event_target_as = agenda_province
+		}
+		random_province = {
+			limit = {
+				is_core = root
+				NOT = { country_or_non_sovereign_subject_holds = root }
+				is_city = yes
+				NOT = { owner = { ROOT = { truce_with = prev } } }
+				OR = {
+					AND = {
+						has_port = yes
+						root = {
+							any_owned_province = {
+								has_port = yes
+							}
+						}
+					}
+					any_neighbor_province = {
+						owned_by = root
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_province = {
+			limit = {
+				is_core = root
+				NOT = { country_or_non_sovereign_subject_holds = root }
+				is_city = yes
+				NOT = { owner = { ROOT = { truce_with = prev } } }
+				OR = {
+					AND = {
+						has_port = yes
+						root = {
+							any_owned_province = {
+								has_port = yes
+							}
+						}
+					}
+					any_neighbor_province = {
+						owned_by = root
+					}
+				}
+				NOT = { owner = { alliance_with = root } }
+			}
+			save_event_target_as = agenda_province
+		}
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { is_core = root }
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				owned_by = root
+			}
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = military_victory
+			duration = 3650
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#More shugo Units
+estate_shugo_recruit_more_shugo = {
+	can_select = {
+		NOT = { has_country_modifier = thriving_arms_industry }
+		NOT = { army_size_percentage = 0.5 }
+		
+		if = {
+			limit = {
+				is_emperor = yes
+			}
+			NOT = { army_size_percentage = 0.35 }
+		}
+	}
+	selection_weight = {
+		factor = 5
+		modifier = {
+			factor = 2
+			any_rival_country = {
+				NOT = { truce_with = root }
+				army_size = root
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { army_size_percentage = 0.3 }
+			NOT = { army_size = 150 }
+		}
+		modifier = { #this could be really annoying in the late game
+			factor = 0.5
+			army_size = 100
+		}
+		modifier = {
+			factor = 0.25
+			army_size = 200
+		}
+		modifier = {
+			factor = 0
+			army_size = 500
+		}
+		modifier = {
+			factor = 0.5
+			is_emperor = yes
+		}
+		modifier = {
+			has_estate_privilege = estate_janissary_allow_other_professions
+			factor = 0
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				army_size_percentage = 0.65
+			}
+			else = {
+				army_size_percentage = 0.75
+			}
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		define_advisor = {
+			type = commandant
+			cost_multiplier = 0.25
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Humiliate Rival
+estate_shugo_humiliate_rival = {
+	can_select = {
+		any_rival_country = {
+			NOT = { truce_with = ROOT }
+			NOT = { humiliated_by = root }
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 3
+			NOT = { has_country_flag = humiliated_rival }
+		}
+		modifier = {
+			has_estate_privilege = estate_janissary_allow_other_professions
+			factor = 0
+		}
+	}
+	pre_effect = {
+		random_rival_country = {
+			limit = {
+				NOT = { truce_with = ROOT }
+				NOT = { humiliated_by = root }
+			}
+			save_event_target_as = agenda_country
+		}
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			event_target:agenda_country = {
+				OR = {
+					humiliated_by = root
+					has_been_eclipsed_by = root
+				}
+			}
+		}
+	}
+	fail_if = {
+		event_target:agenda_country = {
+			has_eclipsed = root
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Build Samurai household
+estate_shugo_build_soldier_household = {
+	can_select = {
+		any_owned_province = {
+			NOT = { religion_group = ROOT }
+			is_state_core = root
+			has_no_manufactory_trigger = yes
+			num_free_building_slots = 1
+		}
+		monthly_income = 30
+		adm_tech = 15
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_income = 40 }
+		}
+		modifier = {
+			factor = 2
+			monthly_income = 60
+		}
+		modifier = {
+			factor = 0
+			has_estate_privilege = estate_janissary_allow_other_professions
+		}
+	}
+	pre_effect = {
+		random_owned_province = {
+			limit = {
+				NOT = { religion_group = ROOT }
+				is_state_core = root
+				has_no_manufactory_trigger = yes
+				num_free_building_slots = 1
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion_group = ROOT }
+				is_state_core = root
+				has_no_manufactory_trigger = yes
+				num_free_building_slots = 1
+				base_manpower = 5
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { religion_group = ROOT }
+				is_state_core = root
+				has_no_manufactory_trigger = yes
+				num_free_building_slots = 1
+				base_manpower = 10
+			}
+			save_event_target_as = agenda_province
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = root }
+		}
+	}
+    task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				has_building = soldier_households
+			}
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		event_target:agenda_province = {
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = new_recruitment_center
+				duration = 5475
+			}
+		}
+    }
+    failing_effect = {
+		event_target:agenda_province = {
+			if = {
+				limit = { owned_by = root }
+				add_named_unrest = {
+					name = local_shugo_displeased
+					value = 5
+				}
+			}
+		}
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Crush Revolts (not heretics)
+estate_shugo_crush_revolts = {
+	can_select = {
+		num_of_rebel_armies = 1
+		NOT = { has_spawned_rebels = shugo_rebels }
+	}
+	selection_weight = {
+		factor = 2
+		modifier = {
+			factor = 2
+			num_of_rebel_controlled_provinces = 3
+		}
+		modifier = {
+			factor = 2
+			num_of_rebel_controlled_provinces = 5
+		}
+		modifier = {
+			factor = 0
+			has_estate_privilege = estate_janissary_allow_other_professions
+		}
+	}
+	provinces_to_highlight = {
+		owned_by = root
+		controlled_by = REB
+	}
+	fail_if = {
+		has_country_modifier = just_lost_to_rebels
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+			NOT = { num_of_rebel_armies = 1 }
+			hidden_trigger = { NOT = { has_country_modifier = just_lost_to_rebels } }
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		add_prestige = 10
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Bigger Army than Rival
+estate_shugo_bigger_army_than_rival = {
+	can_select = {
+		NOT = { has_country_modifier = thriving_arms_industry }
+		NOT = { army_size_percentage = 1 }
+		any_rival_country = {
+			NOT = { war_with = root }
+			NOT = { root = { army_size = prev } }
+			army_balance = {
+				who = root
+				value = 1.05
+			}
+			NOT = {
+				army_balance = {
+					who = root
+					value = 1.25
+				}
+			}
+		}
+	}
+	selection_weight = {
+		factor = 5
+		modifier = {
+			factor = 0
+			has_estate_privilege = estate_janissary_allow_other_professions
+		}
+	}
+	pre_effect = {
+		random_rival_country = {
+			limit = {
+				NOT = { war_with = root }
+				NOT = { root = { army_size = prev } }
+				army_balance = {
+					who = root
+					value = 1.05
+				}
+				NOT = {
+					army_balance = {
+						who = root
+						value = 1.25
+					}
+				}
+			}
+			save_event_target_as = agenda_country
+		}
+	}
+	provinces_to_highlight = {
+		is_capital_of = event_target:agenda_country
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			if = {
+				limit = { event_target:agenda_country = { num_of_cities = 1 } }
+				army_size = event_target:agenda_country
+			}
+			else = {
+				always = yes
+			}
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = thriving_arms_industry
+			duration = 3650
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+#Loot X province with at least 12 development ("Despoil X")
+estate_shugo_despoil_x = {
+	can_select = {
+		is_at_war = yes
+		NOT = {
+			is_in_war = {
+				duration = 1825
+			}
+		}
+		any_neighbor_country = {
+			war_with = root
+			any_owned_province = {
+				development = 12
+				is_looted = no
+				continent = root
+				controlled_by = owner
+				area_for_scope_province = {
+					type = all
+					owned_by = prev
+				}
+			}
+		}
+		NOT = { has_country_modifier = agenda_looting_zeal }
+	}
+	selection_weight = {
+		factor = 2.5
+	}
+	pre_effect = {
+		random_neighbor_country = {
+			limit = {
+				war_with = root
+				any_owned_province = {
+					development = 12
+					is_looted = no
+					continent = root
+					controlled_by = owner
+					area_for_scope_province = {
+						type = all
+						owned_by = prev
+					}
+				}
+			}
+			random_owned_province = {
+				limit = {
+					development = 12
+					is_looted = no
+					continent = root
+					controlled_by = owner
+					area_for_scope_province = {
+						type = all
+						owned_by = prev
+					}
+				}
+				save_event_target_as = agenda_province
+			}
+			random_owned_province = {
+				limit = {
+					development = 16
+					is_looted = no
+					continent = root
+					controlled_by = owner
+					area_for_scope_province = {
+						type = all
+						owned_by = prev
+					}
+				}
+				save_event_target_as = agenda_province
+			}
+			random_owned_province = {
+				limit = {
+					development = 20
+					is_looted = no
+					continent = root
+					controlled_by = owner
+					area_for_scope_province = {
+						type = all
+						owned_by = prev
+					}
+				}
+				save_event_target_as = agenda_province
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					has_estate_agenda_auto_completion = {
+						estate = estate_shugo
+					}
+				}
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			else = {
+				event_target:agenda_province = {
+					area_for_scope_province = {
+						type = all
+						is_looted = yes
+					}
+				}
+			}
+		}
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			owner = {
+				NOT = {
+					war_with = root
+				}
+			}
+		}
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_shugo
+		}
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = agenda_looting_zeal
+			duration = 3650
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+
+#Defeat Large Army
+estate_shugo_defeat_large_army = {
+	can_select = {
+		is_bankrupt = no
+		army_size = 20
+	}
+	selection_weight = {
+		factor = 1
+	}
+	pre_effect = {
+	}
+	provinces_to_highlight = {
+	}
+	task_requirements = {
+		if = {
+			limit = {
+				has_estate_agenda_auto_completion = {
+					estate = estate_shugo
+				}
+			}
+			has_estate_agenda_auto_completion = {
+				estate = estate_shugo
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					current_age = age_of_revolutions
+				}
+				check_variable = {
+					which = land_units_killed
+					value = 30000
+				}
+			}
+			else_if = {
+				limit = {
+					current_age = age_of_absolutism
+				}
+				check_variable = {
+					which = land_units_killed
+					value = 22500
+				}
+			}
+			else_if = {
+				limit = {
+					current_age = age_of_reformation
+				}
+				check_variable = {
+					which = land_units_killed
+					value = 15000
+				}
+			}
+			else = {
+				check_variable = {
+					which = land_units_killed
+					value = 7500
+				}
+			}
+		}
+	}
+	fail_if = {
+		NOT = { army_size = 1 }
+		is_at_war = no
+	}
+    task_completed_effect = {
+		on_completed_agenda_effect = {
+			estate = estate_shugo
+		}
+		add_estate_loyalty = {
+			estate = estate_shugo
+			loyalty = 10
+		}
+		if = {
+			limit = {
+				current_age = age_of_revolutions
+			}
+			add_army_tradition_or_mil_power = {
+				amount = 20
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_absolutism
+			}
+			add_army_tradition_or_mil_power = {
+				amount = 15
+			}
+		}
+		else_if = {
+			limit = {
+				current_age = age_of_reformation
+			}
+			add_army_tradition_or_mil_power = {
+				amount = 15
+			}
+		}
+		else = {
+			add_army_tradition_or_mil_power = {
+				amount = 10
+			}
+		}
+    }
+    failing_effect = {
+		on_failed_agenda_effect = yes
+		clr_auto_complete_flag = yes
+        add_estate_loyalty_modifier = {
+            estate = estate_shugo
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

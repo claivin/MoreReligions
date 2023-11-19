@@ -858,6 +858,52 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = estate_privileges_and_agendas_events.3.MR1
+		trigger = { has_estate = estate_shugo }
+		start_estate_agenda = estate_shugo
+		goto = estate_shugo
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				NOT = {
+					estate_loyalty = {
+						loyalty = 30
+						estate = estate_shugo
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					estate_loyalty = {
+						loyalty = 20
+						estate = estate_shugo
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				estate_influence = {
+					influence = 70
+					estate = estate_shugo
+				}
+			}
+			modifier = {
+				factor = 2
+				is_absolutism_active = yes
+				num_of_estate_privileges = {
+					estate = estate_shugo
+					value = 1
+				}
+				estate_loyalty = {
+					estate = estate_shugo
+					higher_than_influence = no
+				}
+			}
+		}
+	}
 }
 
 country_event = {
