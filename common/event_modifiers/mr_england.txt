@@ -6,3 +6,45 @@ eng_opener_modifier = {
 eng_rebuild_england = {
 	local_monthly_devastation = -0.5
 }
+
+eng_quell_resistance = {
+	local_autonomy = -0.05
+}
+
+eng_ireland_settlements = {
+	local_development_cost = -0.05
+	local_tax_modifier = 0.2
+}
+
+eng_anglo_hibernian_union = {
+	development_cost_in_primary_culture = -0.1
+	manpower_in_culture_group_provinces = 0.1
+}
+
+eng_active_coversion = {
+	local_culture_conversion_cost = 0.20
+	local_unrest = 3
+}
+
+eng_lenient_oversight = {
+	local_culture_conversion_cost = 1.5
+	local_tax_modifier = -0.1
+}
+
+eng_ire_subsidies = {
+	local_production_efficiency = 0.20
+	local_state_maintenance_modifier = 0.20
+}
+
+eng_irish_subisides_national = {
+	global_tax_income = -0.1
+}
+
+eng_yarmouth = {
+	local_ship_cost = -0.2
+	local_ship_repair = 0.2
+}
+
+eng_yarmouth_sea = {
+	local_naval_engagement_modifier = 0.5
+}

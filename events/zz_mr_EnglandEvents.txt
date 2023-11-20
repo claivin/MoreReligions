@@ -8,6 +8,7 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = { }
 	mean_time_to_happen = { days = 1 }
 	
@@ -51,38 +52,218 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = { }
 	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = mr_england.2.a
-		munster_area = {
+		ireland_region = {
 			limit = {
 				NOT = { is_core = root }
 				NOT = { is_permanent_claim = root }
 			}
 			add_permanent_claim = root
 		}
-		connacht_area = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
-			}
-			add_permanent_claim = root
+	}
+}
+
+#emergence of a new culture
+country_event = {
+	id = mr_england.2001
+	title = mr_england.2001.t
+	desc = mr_england.2001.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+	trigger = { }
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.2001.a
+		custom_tooltip = eng_m_ireland_2_TT
+		hidden_effect = { set_country_flag = eng_lenient_oversight_flag }
+		random_owned_province = {
+			limit = { province_group = ireland_region }
+			change_culture = mr_anglo_hibernian
 		}
-		leinster_area = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
+		every_owned_province = {
+			limit = { province_group = ireland_region }
+			add_province_modifier ={
+				name = eng_lenient_oversight
+				duration = -1
 			}
-			add_permanent_claim = root
 		}
-		ulster_area = {
-			limit = {
-				NOT = { is_core = root }
-				NOT = { is_permanent_claim = root }
+	}
+	option = {
+		name = mr_england.2001.b
+		random_owned_province = {
+			limit = { province_group = ireland_region }
+			change_culture = mr_anglo_hibernian
+		}
+		every_owned_province = {
+			limit = { province_group = ireland_region }
+			add_province_modifier ={
+				name = eng_active_coversion
+				duration = -1
 			}
-			add_permanent_claim = root
 		}
+	}
+}
+
+#Distribution of English Bibles - non-repeatable event
+country_event = {
+	id = mr_england.2002
+	title = mr_england.2002.t
+	desc = mr_england.2002.d
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = ENG
+		has_country_flag = eng_lenient_oversight_flag
+		NOT = { has_country_modifier =  eng_anglo_hibernian_union }
+	}
+	mean_time_to_happen = {
+		years = 7
+	}
+	
+	option = { #distribute English Bibles
+		name = mr_england.2002.a
+		add_years_of_income = -1.5
+		add_adm_power = -100
+		hidden_effect = { set_country_flag = eng_distribute_english_bibles_flag }
+		custom_tooltip = eng_distribute_english_bibles_TT
+	}
+	
+	option = { #keep power within the English Clergy
+		name = mr_england.2002.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+	}
+}
+
+#conversion event - repeatable
+province_event = {
+	id = mr_england.2003
+	title = mr_england.2003.t
+	desc = mr_england.2003.d
+	picture = POPE_PREACHING_eventPicture
+
+	trigger = {
+		owner = {
+			tag = ENG
+			has_country_flag = eng_lenient_oversight_flag
+			NOT = { has_country_modifier =  eng_anglo_hibernian_union }
+		}
+		province_group = ireland_region
+		culture = irish
+	}
+	mean_time_to_happen = {
+		years = 20
+		
+		modifier = {
+			factor = 0.67
+			has_tax_building_trigger = yes
+			owner = { has_country_flag = eng_distribute_english_bibles_flag }
+		}
+		
+		modifier = {
+			factor = 0.75
+			base_production = 8
+			owner = { has_country_flag = eng_ire_subsidies_flag }
+		}
+	}
+	
+	option = { 
+		name = mr_england.2003.a
+		change_culture = mr_anglo_hibernian
+		if = {
+			limit = { has_country_modifier = eng_ire_subsidies }
+			remove_province_modifier = eng_ire_subsidies
+		}
+	}
+}
+
+#Subsidizing Irish goods
+country_event = {
+	id = mr_england.2004
+	title = mr_england.2004.t
+	desc = mr_england.2004.d
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = ENG
+		has_country_flag = eng_lenient_oversight_flag
+		NOT = { has_country_modifier =  eng_anglo_hibernian_union }
+	}
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = { #subsidize irish landholders
+		name = mr_england.2004.a
+		ireland_region = {
+			type = all
+			add_country_modifier = {
+				name = eng_ire_subsidies
+				duration = -1
+			}
+		}
+		add_country_modifier = {
+			name = eng_irish_subisides_national
+			duration = 9125
+		}
+		hidden_effect = { set_country_flag = eng_ire_subsidies_flag }
+		custom_tooltip = eng_ire_subsidies_TT
+	}
+	
+	option = { #focus on domestic goods
+		name = mr_england.2004.b
+		random_owned_province = {
+			limit = {
+				province_group = england_region
+				owned_by = ROOT
+			}
+			add_base_production = 2
+		}
+		random_owned_province = {
+			limit = {
+				province_group = england_region
+				owned_by = ROOT
+			}
+			add_base_production = 1
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+	}
+}
+
+#Two Islands, One State
+country_event = {
+	id = mr_england.3
+	title = mr_england.3.t
+	desc = mr_england.3.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = { }
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.3.a
+		override_country_name = ENGLAND_IRELAND
+	}
+	
+	option = {
+		name = mr_england.3.b
+		custom_tooltip = eng_m_ireland_3_TT
 	}
 }

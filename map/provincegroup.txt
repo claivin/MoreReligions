@@ -22,3 +22,25 @@ black_earth_region = {
 	467 #borisoglebsk
 	302 #tambov
 }
+
+ireland_region = {
+	4118 4377 4378 4954 4955 #munster
+	375 376 4119 4952 4953 #connacht
+	373 374 4120 4379 4951 #leinster
+	372 4121 4380 4950 4957 #ulster
+}
+
+england_region = {
+	238 1860 4370 236 4958 #east_anglia_area
+	235 237 4371 234 4949 #home_counties_area
+	233 4130 4373 4374 4947 #wessex_area
+	243 1861 4376 4961 4962 #east_midlands_area
+	239 240 4372 4959 4960 #west_midlands_area
+	245 4367 4368 4785 4963 #yorkshire_area
+	246 247 244 4375 4964 #scottish_marches_area
+}
+
+scotland_region = {
+	250 252 4110 4363 4965 #highlands_area
+	253 4364 369 1978 #kingdom_of_the_isles_area NOT MANN
+}

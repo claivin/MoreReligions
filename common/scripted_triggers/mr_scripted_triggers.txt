@@ -255,3 +255,47 @@ eng_opener_missions_progress_trigger = {
 		}
 	}
 }
+
+province_has_modern_fort_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = province_has_modern_fort_trigger_TT
+		if = {
+			limit = {
+				ROOT = {
+					NOT = { mil_tech = 14 }
+				}
+			}
+			has_building = fort_15th
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					AND = {
+						mil_tech = 14
+						NOT = { mil_tech = 19 }
+					}
+				}
+			}
+			has_building = fort_16th
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					AND = {
+						mil_tech = 19
+						NOT = { mil_tech = 24 }
+					}
+				}
+			}
+			has_building = fort_17th
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					mil_tech = 24
+				}
+			}
+			has_building = fort_18th
+		}
+	}
+}

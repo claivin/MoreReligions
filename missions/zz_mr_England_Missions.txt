@@ -1,4 +1,4 @@
-england_missions_1 = {
+england_missions_1_openers = {
 	slot = 1
 	generic = yes
 	ai = no
@@ -8,6 +8,14 @@ england_missions_1 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = { 
+			OR = {
+				owned_by = OXF
+				owned_by = KNT
+				owned_by = SHP
+			}
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			OXF = { exists = no }
 			KNT = { exists = no }
@@ -22,7 +30,7 @@ england_missions_1 = {
 	}
 }
 
-england_missions_2 = {
+england_missions_2_openers = {
 	slot = 2
 	generic = yes
 	ai = no
@@ -32,6 +40,11 @@ england_missions_2 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = {
+			owned_by = CRN
+			NOT = { owned_by = ROOT }
+
+		}
 		trigger = {
 			CRN = { exists = no }
 			eng_opener_missions_progress_trigger = yes
@@ -43,7 +56,7 @@ england_missions_2 = {
 	}
 }
 
-england_missions_3 = {
+england_missions_3_openers = {
 	slot = 3
 	generic = yes
 	ai = no
@@ -53,6 +66,11 @@ england_missions_3 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = {
+			area = wales_area
+			NOT = { owned_by = ROOT }
+
+		}
 		trigger = {
 			wales_area = {
 				type = all
@@ -76,38 +94,51 @@ england_missions_3 = {
 			eng_m_wight
 		}
 		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = east_anglia_area
+				area = home_counties_area
+				area = wessex_area
+				area = east_midlands_area
+				area = west_midlands_area
+				area = yorkshire_area
+				area = scottish_marches_area
+				area = wales_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			east_anglia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			home_counties_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			wessex_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			east_midlands_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			west_midlands_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			yorkshire_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			scottish_marches_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			wales_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = root
+				owned_by = ROOT
 			}
 			stability = 3
 			is_at_war = no
@@ -118,11 +149,12 @@ england_missions_3 = {
 		}
 		effect = {
 			country_event = { id = mr_england.1 }
+			custom_tooltip = eng_m_united_kingdom_TT
 		}
 	}
 }
 
-england_missions_4 = {
+england_missions_4_openers = {
 	slot = 4
 	generic = yes
 	ai = no
@@ -132,6 +164,13 @@ england_missions_4 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = yorkshire_area
+				area = scottish_marches_area
+			}
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			yorkshire_area = {
 				type = all
@@ -150,7 +189,7 @@ england_missions_4 = {
 	}
 }
 
-england_missions_5 = {
+england_missions_5_openers = {
 	slot = 5
 	generic = yes
 	ai = no
@@ -160,6 +199,10 @@ england_missions_5 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { }
 		position = 1
+		provinces_to_highlight = {
+			province_id = 4949
+			NOT = { owned_by = ROOT }
+		}
 		trigger = {
 			owns = 4949
 			eng_opener_missions_progress_trigger = yes
@@ -169,4 +212,137 @@ england_missions_5 = {
 			eng_opener_missions_progress_effect = yes
 		}
 	}
+}
+
+
+########## after openers
+england_missions_irish_branch = {
+	slot = 1
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_ireland = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_united_kingdom }
+		position = 3
+		provinces_to_highlight = {
+			province_group = ireland_region
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			ireland_region = {
+				type = all 
+				owned_by = ROOT 
+			}
+		}
+		effect = {
+			custom_tooltip = eng_m_ireland_TT
+			add_mil_power = 100
+		}
+	}
+	eng_m_ireland_2 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_ireland }
+		position = 3
+		provinces_to_highlight = {
+			province_group = ireland_region
+			OR = {
+				NOT = { local_autonomy = 5 }
+				NOT = { unrest = 1 }
+				is_state_core = ROOT
+			}
+		}
+		trigger = {
+			ireland_region = {
+				type = all 
+				NOT = { local_autonomy = 5 }
+				NOT = { unrest = 1 }
+				NOT = { nationalism = 1 }
+				is_state_core = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = mr_england.2001 }
+			ireland_region = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = eng_ireland_settlements
+					duration = -1
+				}
+			}
+		}
+	}
+	eng_m_ireland_3 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_ireland_2 }
+		position = 4
+		provinces_to_highlight = {
+			province_group = ireland_region
+			
+		}
+		trigger = {
+			ireland_region = {
+				type = all 
+				culture = mr_anglo_hibernian
+			}
+		}
+		effect = {
+			hidden_effect = { #fall back incase these still exist for somereason
+				ireland_region = {
+					remove_province_modifier = eng_ire_subsidies
+				}
+			}
+		
+			country_event = { id = mr_england.3 }
+			add_country_modifier = {
+				name = eng_anglo_hibernian_union
+				duration = -1
+			}
+		}
+	}
+}
+
+england_missions_naval_branch = {
+	slot = 5
+	generic = yes
+	ai = no
+	potential = { tag = ENG }
+	
+	eng_m_naval_1 = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_wight }
+		position = 2
+		provinces_to_highlight = {
+			province_id = 4949
+		}
+		trigger = {
+			4949 = {
+				has_coast_defense_building_trigger = yes
+				has_shipyard_building_trigger = yes
+				has_dock_building_trigger = yes
+				province_has_modern_fort_trigger = yes
+			}
+		}
+		effect = {
+			4949 = {
+				add_province_modifier = {
+					name = eng_yarmouth
+					duration = -1
+				}
+			}
+			1271 = { #channel
+				add_province_modifier = {
+					name = eng_yarmouth_sea
+					duration = -1
+				}
+			}
+			1272 = { #straits of dover
+				add_province_modifier = {
+					name = eng_yarmouth_sea
+					duration = -1
+				}
+			}
+		}
+	}	
 }

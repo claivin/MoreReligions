@@ -1,0 +1,140 @@
+#england decisions
+country_decisions = {
+	mr_crush_local_rulers_decision = {
+		potential = {
+			tag = ENG
+			mission_completed = eng_m_ireland
+			NOT = { mission_completed = eng_m_ireland_2 }
+		}
+		allow = {
+			NOT = {
+				had_country_flag = {
+					flag = crush_local_rulers_decision_flag
+					days = 365
+				}
+			}
+			any_owned_province = {
+				province_group = ireland_region
+				nationalism = 1
+			}
+			mil_power = 10
+		}
+		effect = {
+			custom_tooltip = crush_local_rulers_TT
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						province_group = ireland_region
+						nationalism = 1
+					}
+					spawn_rebels = {
+						type = noble_rebels
+						size = 2
+					}
+					add_nationalism = -2
+				}
+			}
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						province_group = ireland_region
+						nationalism = 1
+					}
+					spawn_rebels = {
+						type = noble_rebels
+						size = 2
+					}
+					add_nationalism = -2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mr_quell_resistance_decision = {
+		potential = {
+			tag = ENG
+			mission_completed = eng_m_ireland
+			NOT = { mission_completed = eng_m_ireland_2 }
+		}
+		allow = {
+			NOT = {
+				had_country_flag = {
+					flag = quell_resistance_decision_flag
+					days = 1825
+				}
+			}
+			any_owned_province = {
+				province_group = ireland_region
+				local_autonomy = 10
+			}
+			dip_power = 10
+			adm_power = 10
+		}
+		effect = {
+			random_owned_area = {
+				limit = {
+					province_group = ireland_region
+					local_autonomy = 10
+				}
+				add_province_modifier = {
+					id = eng_quell_resistance
+					duration = 1825
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mr_pay_off_local_rulers_decision = {
+		potential = {
+			tag = ENG
+			mission_completed = eng_m_ireland
+			NOT = { mission_completed = eng_m_ireland_2 }
+		}
+		allow = {
+			NOT = {
+				had_country_flag = {
+					flag = pay_off_local_rulers_decision_flag
+					days = 365
+				}
+			}
+			any_owned_province = {
+				province_group = ireland_region
+				nationalism = 1
+			}
+		}
+		effect = {
+			add_years_of_income = -0.5
+			custom_tooltip = crush_local_rulers_TT
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						province_group = ireland_region
+						nationalism = 1
+					}
+				}
+			}
+			hidden_effect = {
+				random_owned_province = {
+					limit = {
+						province_group = ireland_region
+						nationalism = 1
+					}
+					spawn_rebels = {
+						type = noble_rebels
+						size = 2
+					}
+					add_nationalism = -2
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

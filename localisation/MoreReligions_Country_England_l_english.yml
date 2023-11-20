@@ -1,4 +1,5 @@
 ﻿l_english:
+ #missions
  eng_m_annex_the_dukes_title: "Annex The Dukes"
  eng_m_annex_the_dukes_desc: ""
  
@@ -12,7 +13,11 @@
  eng_m_northern_england_desc: ""
  
  eng_m_wight_title: "Requistion Wight"
- eng_m_wight_desc: ""
+ eng_m_wight_desc: "Yarmouth was purchased as a kontor by the North Sea League, in exchange for critical funds for the Crown during the last years of the Anarchy. This was considered an uneven deal offered under duress - an oppurtunist move on a disadvantadged realm. I wonder what their policy for renegotiations are?"
+ 
+ eng_m_ireland_title: "Retake Ireland"
+ eng_m_ireland_desc: ""
+ eng_m_ireland_TT: "Unlocks decisions to strengthen control over Ireland"
  
  eng_this_will_make_the_other_missions_harder_TT: "§YCompleting this mission will increase the requirements and change the rewards for the other opener missions§!\n"
  engOpenerMissionProg: "Opener Mission Progress"
@@ -22,7 +27,44 @@
  
  eng_m_united_kingdom_title: "A United Kingdom"
  eng_m_united_kingdom_desc: ""
+ eng_m_united_kingdom_TT: "§RThis event will spawn noble rebels§!"
  
+ eng_m_ireland_2_title: "End the Gaelic Resurgence"
+ eng_m_ireland_2_desc: "During the Anarchy, Ireland was temporarily freed from English incursions. During that time, a unique political diarchy developed, relieving the island from the rule of petty lords. Ireland was once on a trajectory for a renaissance of their own..."
+ eng_m_ireland_2_TT: "Events will occur to slowly convert §YIrish§! to §YAnglo-Hibernian§!"
+ 
+ eng_m_ireland_3_title: "Assimilation of Ireland"
+ eng_m_ireland_3_desc: "As English settlers and leaders moved to Ireland under the auspicies of supplanting local gaelic rule, the integration became more and more natural. Unlike the Norman rule that preceeded Black Death wherein the Normans were absorbed into local culture, the opposite has occured, thanks to an lenient but firm approach."
+ 
+ eng_m_naval_1_title: "Port of Yarmouth"
+ eng_m_naval_1_desc: "Yarmouth is a very old city with a long tradition of shipbuilding, sail-making, and all manner of naval production, unsurprisingly. More importantly, its strategic location makes it a valuable location for power projection over the Channel."
+ 
+ ### Decisions
+ mr_crush_local_rulers_decision_title: "Crush Irish Lords"
+ mr_crush_local_rulers_decision_desc: ""
+ crush_local_rulers_TT: "A random province in Ireland will recieve this:"
+ 
+ mr_quell_resistance_decision_title: "Quell Irish Resistance"
+ mr_quell_resistance_decision_desc: ""
+ 
+ mr_pay_off_local_rulers_decision_title: "Bribe Irish Leaders"
+ mr_pay_off_local_rulers_decision_desc: ""
+ 
+ ### modifiers
+ eng_ireland_settlements: "Resettlement of Ireland"
+ eng_anglo_hibernian_union: "Anglo-Hibernian Union"
+ eng_ire_subsidies: "The Irish Goods Act"
+ eng_irish_subisides_national: "Irish Goods Act Expenses"
+ ENGLAND_IRELAND: "England-Ireland"
+ ENGLAND_IRELAND_ADJ: "English"
+ eng_yarmouth_sea: "Strategic Port of Yarmouth"
+ eng_yarmouth: "Early Naval Base"
+ 
+ ### misc
+ mr_anglo_hibernian: "Anglo-Hibernian"
+ province_has_modern_fort_trigger_TT: "has the most advanced fort type available at the current Military Technology level"
+ 
+ ### Events
  mr_england.1.t: "A United Kingdom"
  mr_england.1.d: "England is once again under the total rule of the Crown, seated in in London, under the House of [Root.Monarch.GetDynasty]. Lessons of the Hundred Years Anarchy tell us that too permissive a rule will only cause the country to spiral again into chaos; no more pretender 'kings' or petty lords - only the King. The structure of law will be codified, moving away from common law, and the Church will be reigned in, no longer enjoying its corrupting independence from the State. \n\nIn the Year of Our Lord [GetYear], in the Month of [GetMonth], the King of England, [Root.Monarch.GetName], signed the Statute of Oxford, suspending the need for 'common counsel,' as outlined in the Magna Carta, dissolving English Parliament."
  mr_england.1.a: "A Change in Course"
@@ -32,3 +74,30 @@
  mr_england.2.t: "King of Ireland"
  mr_england.2.d: "During the Hundred Years Anarchy, the lords of England were split amongst various factions. Those who sided with the Crown and whose assistance was especially helpful were awarded titles for their loyalty. One such case was the Earl of Oxford who, along with autonomy in the heart of England, was granted an additional claim over Ireland as the nominal King of Ireland. Of course, the title was only for prestige and the Earl had little in the way of projecting authority over his claim.\nWith Oxford once again integrated under the English Crown, the title passes to [Root.Monarch.GetTitle] [Root.Monarch.GetTitle]."
  mr_england.2.a: "How curious."
+ 
+ mr_england.2001.t: "Emergence of a New Culture"
+ mr_england.2001.d: "The Irish language is a farcry from the native English tounge, but the culture of the people's itself is not far flung from our own back home. Even under Norman Rule, ease of assimilation between our two peoples were easily seen. Perhaps under a long and prosperous rule, the Irish may see themselves becoming more and more similar to English... Or perhaps we must take a more active role in this process."
+ mr_england.2001.a: "Delegate lenient oversight."
+ mr_england.2001.b: "A more active hand must be taken."
+ 
+ mr_england.2002.t: "Distribution of English Bibles"
+ mr_england.2002.d: "The language of the Church is the cornerstone of the educated populace. It is through the Church that the Latin language has continued to persist far after the fall of the Romans. We can follow in the same footsteps, sending Bibles printed in English to Ireland to speed along their assimilation. This may have some larger upfront costs, as the demand for Bibles would practically double overnight as well as the need for educated priests to be sent overseas - but it could be a worthy investment. Additionally, some members of the clergy have expressed worry that this would effectively undermine the existing power of the Clergy, by adding in so many new members."
+ mr_england.2002.a: "Money is no object."
+ mr_england.2002.b: "Assuage the clergy."
+ eng_distribute_english_bibles_TT: "Will make Anglo-Hibernian Conversion events §Y33%§! more likely in provinces with §Gchurches§! or §Gcathederals§!"
+ 
+ mr_england.2003.t: "[Root.GetName] Anglo-Hibernian Majority"
+ mr_england.2003.d: "The people of [Root.GetName] live not so different lives from the English of, say, the Midlands or the North - which is to say, by this point they are practically English."
+ mr_england.2003.a: "Good news!"
+ 
+ mr_england.2004.t: "The Irish Goods Act"
+ mr_england.2004.d: "A great motiviating factor for any conquest are the resources that can be gained from new land. Although it is not rich in mineral wealth, Ireland is a wide and fertile land suitable for all sorts of harvest and grazing. The potential exists for great harvest, but much investment lies ahead."
+ mr_england.2004.a: "A stronger economic base for the future."
+ mr_england.2004.b: "Domestic goods are more important"
+ eng_ire_subsidies_TT: "§YThe Irish Goods Act§! will be removed from this province after it is converted to §YAnglo-Hibernian§!\nWill make Anglo-Hibernian Conversion events §Y25%§! more likely in provinces with over §Y8§! base production"
+ 
+ mr_england.3.t: "Two Islands, One State"
+ mr_england.3.d: "Since the conquest of Ireland, the people of have quickly taken to adopting the English language, followed closely by adopting many of the cultural practices of people in England proper. Reports have even gone so far as to call the people of Dublin 'More English than the English themselves,' despite it being the premier center of Irish culture only decades before. With the impetus of conquering Ireland being uniting both Kingdoms under the same crown, it would not be unreasonable to finally officialize this permanent union of crowns into one."
+ mr_england.3.a: "Two kingdoms as One!"
+ mr_england.3.b: "Something to consider..."
+ eng_m_ireland_3_TT: "Enables decision to change name to §YEngland-Ireland§!" 
