@@ -2,7 +2,7 @@
 
 owner = TRS
 controller = TRS
-culture = uzbehk
+culture = chagatai
 religion = sunni
 capital = "Tashkent"
 trade_goods = tea

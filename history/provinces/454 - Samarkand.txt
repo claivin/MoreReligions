@@ -2,7 +2,7 @@
 
 owner = TRS
 controller = TRS
-culture = uzbehk
+culture = chagatai
 religion = sunni
 capital = "Samarkand"
 trade_goods = paper

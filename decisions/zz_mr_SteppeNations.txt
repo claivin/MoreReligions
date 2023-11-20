@@ -197,6 +197,7 @@ country_decisions = {
 			OR = { 
 			culture = moghul
 			culture = uyghur
+			culture = chagatai
 			}			
 			}
 			has_reform = steppe_horde
@@ -386,6 +387,14 @@ country_decisions = {
 					culture = chahar
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
+				AND = {
+					culture = chahari
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					culture = tumed
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}				
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -433,6 +442,18 @@ country_decisions = {
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					}
 				}
+				NOT = {
+					any_province = {
+						culture = chahari
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}
+				NOT = {
+					any_province = {
+						culture = tumed
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+				}				
 			}
 			if = {
 				limit = {
@@ -567,8 +588,7 @@ country_decisions = {
 			factor = 0
 		}
 	}
-	
-	restore_mongol_empire = {
+restore_mongol_empire = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -584,7 +604,7 @@ country_decisions = {
 				culture_group = altaic
 				primary_culture = altaic_new 
 				culture_group = tartar
-				culture_group = turan
+				culture_group = turkistani
 				has_reform = holy_horde_reform
 			}
 			NOT = { has_country_flag = mongol_empire_flag }
@@ -719,6 +739,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-		}
+		}	
 	}	
 }

@@ -1,7 +1,7 @@
 owner = TMD
 controller = TMD
 add_core = TMD
-culture = mongol
+culture = tumed
 religion = vajrayana
 capital = "Badain Jaran"
 trade_goods = livestock

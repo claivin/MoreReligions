@@ -3,7 +3,7 @@
 owner = DGH
 controller = DGH
 add_core = DGH
-culture = oirats
+culture = uyghur
 religion = vajrayana
 capital = "Tsaidam"
 trade_goods = salt

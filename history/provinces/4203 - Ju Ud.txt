@@ -3,7 +3,7 @@
 owner = KLK
 controller = KLK
 add_core = KLK
-culture = mongol
+culture = chahari
 religion = vajrayana
 capital = "Ulanhad"
 trade_goods = livestock

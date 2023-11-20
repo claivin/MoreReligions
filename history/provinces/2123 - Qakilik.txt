@@ -3,7 +3,7 @@
 owner = MGH
 controller = MGH
 add_core = MGH
-culture = oirats
+culture = uyghur
 religion = vajrayana
 capital = "Qakilik"
 trade_goods = livestock

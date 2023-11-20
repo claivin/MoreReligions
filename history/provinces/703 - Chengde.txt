@@ -3,7 +3,7 @@
 owner = KLK
 controller = KLK
 add_core = KLK
-culture = chahar
+culture = chahari
 religion = vajrayana
 capital = "Chengde"
 trade_goods = livestock

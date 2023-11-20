@@ -6,7 +6,7 @@ latent_trade_goods = {
 
 owner = TRS
 controller = TRS
-culture = uzbehk
+culture = chagatai
 religion = sunni
 capital = "Uzkend"
 trade_goods = wool

@@ -2,7 +2,7 @@
 
 owner = RDH
 controller = RDH
-culture = nogaybak
+culture = astrakhani
 religion = vajrayana
 capital = "Yaik"
 trade_goods = iron

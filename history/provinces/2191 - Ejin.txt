@@ -3,7 +3,7 @@
 owner = TMD
 controller = TMD
 add_core = TMD
-culture = oirats
+culture = tumed
 religion = vajrayana
 capital = "Ejin"
 trade_goods = livestock

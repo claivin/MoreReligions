@@ -3,7 +3,7 @@
 
 owner = KAZ
 controller = KAZ
-culture = nogaybak
+culture = kazani
 religion = sunni
 capital = "Buzuluk"
 trade_goods = iron
