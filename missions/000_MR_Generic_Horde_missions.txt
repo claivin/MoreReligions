@@ -409,8 +409,7 @@ steppe_missions_3a = { #china-conquest
             }			
 		}
 		effect = {
-		custom_tooltip = steppe_yuan_reformer
-		set_country_flag = may_reform_yuan
+		custom_tooltip = steppe_TODO
         add_prestige_or_monarch_power = { amount = 25 }
 		}
 	}

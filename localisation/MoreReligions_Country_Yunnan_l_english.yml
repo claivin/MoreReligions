@@ -192,7 +192,7 @@
  MR_yunnan_flavor.11.a: "Utilise it for our military"
  MR_yunnan_flavor.11.b: "Take advantage of its abundance, export it"
  MR_yunnan_flavor.12.t: "The Imperial Proclamation"
- MR_yunnan_flavor.12.d: "The people of [Root.GetName] have gathered to hear our exalted ruler $MONARCH$'s proclamation from the stairs of the royal palace. Our Empire has risen from a small rump state in the mountainous corners of the realm, and has become the forefront power in the Middle Kingdom. The Prince of Liang has proven himself to be the true successor to the mantle of Kublai, and has restored prestige & respect to the Yuan dynasty.\n\n $MONARCH$ proclaims the restoration of....     "
+ MR_yunnan_flavor.12.d: "The people of [Root.GetName] have gathered to hear our exalted ruler $MONARCH$'s proclamation from the stairs of the royal palace. Our Empire has risen from a small rump state in the mountainous corners of the realm, and has become the forefront power in the Middle Kingdom. The Prince of Liang has proven himself to be the true successor to the mantle of Kublai, and has restored prestige & respect to the Yuan dynasty.\n\n $MONARCH$ proclaims the restoration of...."
  MR_yunnan_flavor.12.a: "Yuan. The rightful dynasty, back in control!"
  MR_yunnan_flavor.12.b: "Liang. Elevate the Princedom, we will not fail where our forefathers did!"
  MR_yunnan_flavor.13.t: "A Merchant's Gambit"
