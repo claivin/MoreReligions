@@ -45,7 +45,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			change_tag = LAT
+			change_tag = LAE
 			swap_non_generic_missions = yes
 			add_prestige = 25
 			if = {

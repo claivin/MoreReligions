@@ -1601,12 +1601,26 @@ JAA_ideas = {
 	}
 	JAA_second = { #Bishopric in Severin
 		build_cost = -0.10
-		build_time = -0.15
 	}
 	JAA_third = { #Castrul Zeurini
-		
+		garrison_size = 0.10	
+	}
+	JAA_fourth = { #Into a Modern Era
+		monthly_splendor = 0.5
+		reform_progress_growth = 0.1	
+	}
+	JAA_fifth = { #Church and State
+		institution_spread_from_true_faith = 0.20	
+	}
+	JAA_sixth = { #Golden Age of Hungary
+		global_tax_modifier = 0.15
+	}
+	JAA_seventh = { #Agent of the Papacy
+		diplomatic_upkeep = 1	
+		diplomatic_reputation = 1
 	}
 }
+
 LNG_ideas = {
 	start = {
 		tolerance_heathen = 4
@@ -1651,7 +1665,6 @@ ADR_ideas = {
 	trigger = {
 		tag = ADR
 	}
-	free = yes
 	
 	ADR_la_vieja = {
 		development_cost_in_primary_culture = -0.15
@@ -1677,3 +1690,81 @@ ADR_ideas = {
 		global_own_trade_power = 0.2
 	}
 }	
+
+#Greek Ideas
+
+#Thracian Ideas
+THR_ideas = {
+	trigger = {
+		tag = THR
+	}
+	free = yes
+	start = {
+		improve_relation_modifier = 0.15
+		tolerance_heretic = 3
+	}
+	bonus = {
+		manpower_in_accepted_culture_provinces = 0.15
+	}
+	THR_first = { #Heirs of Baldwin
+		legitimacy = 1
+	}
+	THR_second = { #Custodians of Istinople
+		diplomatic_annexation_cost = -0.10
+	}
+	THR_third = { #Bulgar Diplomatic Channels
+		monthly_favor_modifier = 0.15
+		diplomatic_reputation = 1
+	}
+	THR_fourth = { #The Heavy Frankish Cavalry
+		cavalry_power = 0.15
+	}
+	THR_fifth = { #Reclamation of the Empire
+		ae_impact = -0.1
+	}
+	THR_sixth = { #The Patriarchate of Adrianople
+		religious_unity = 0.15
+	}
+	THR_seventh = { #Reigning over the Princes
+		governing_capacity_modifier = 0.10
+	}
+}
+
+#Thessalonica
+TSS_ideas = {
+	trigger = {
+		tag = TSS
+	}
+	free = yes
+	start = {
+		trade_efficiency = 0.05
+		manpower_recovery_speed = 0.10
+	}
+	bonus = {
+		global_unrest = -1
+	}
+	TSS_first = { #Trade Ports of Thessaloniki
+		trade_steering = 0.1	
+	}
+	TSS_second = { #The Battle of the Rhodope
+		shock_damage_received = -0.10	
+	}
+	TSS_third = { #Turkish Sailor Communities
+		navy_tradition = 1	
+		galley_power = 0.1
+	}
+	TSS_fourth = { #Defeat of the Zealots
+		papal_influence = 2
+	}
+	TSS_fifth = { #The Guns of the East
+		leader_siege = 1	
+	}
+	TSS_sixth = { #The Aegean Fleet
+		ship_durability = 0.05
+		leader_naval_manuever = 1	
+	}
+	TSS_seventh = { #Foreign Connections
+		advisor_pool = 1
+		advisor_cost = -0.10	
+	}
+}

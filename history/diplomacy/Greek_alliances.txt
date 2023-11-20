@@ -1,27 +1,14 @@
+
 alliance = {
-	first = ACH
-	second = EPI
-	trade_league = 1
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-alliance = {
-	first = ACH
+	first = CNT
 	second = MOE
 	trade_league = 1
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
 alliance = {
-	first = ACH
-	second = ATR
-	trade_league = 1
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-alliance = {
-	first = ACH
-	second = CNT
+	first = CNT
+	second = ACH
 	trade_league = 1
 	start_date = 1444.1.1
 	end_date = 1500.1.1
@@ -34,7 +21,7 @@ alliance = {
 	end_date = 1581.1.1
 }
 alliance = {
-	first = ACH
+	first = CNT
 	second = CPH
 	trade_league = 1
 	start_date = 1444.1.1
@@ -48,7 +35,7 @@ alliance = {
 	# end_date = 1500.1.1
 # }
 alliance = {
-	first = ACH
+	first = CNT
 	second = ATH
 	trade_league = 1
 	start_date = 1444.1.1

@@ -1,7 +1,7 @@
 #144 - Epiros
 
-owner = EPI
-controller = EPI
+owner = ATR
+controller = ATR
 culture = greek
 religion = orthodox
 capital = "Ioannina"
@@ -12,6 +12,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = EPI
+add_core = ATR
 
 discovered_by = KAZ
 discovered_by = CRI

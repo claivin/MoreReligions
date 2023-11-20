@@ -283,7 +283,7 @@ TSS = "countries/Thessalonica.txt"
 THS = "countries/Thessaly.txt"
 CNT = "countries/Corinth.txt"
 CPH = "countries/Cephalonia.txt"
-LAT = "countries/LatinEmpire.txt"
+#LAT = "countries/LatinEmpire.txt"
 LSB = "countries/Lesbos.txt"
 CST = "countries/Istinopol.txt"
 

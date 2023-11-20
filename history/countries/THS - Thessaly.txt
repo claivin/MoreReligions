@@ -7,3 +7,14 @@ religion = catholic
 technology_group = western
 capital = 147 # Naxos
 
+1444.1.1 = {
+	monarch = {
+		name = "Anselmo"
+		dynasty = "Aleramici"
+		dip = 1
+		mil = 5
+		adm = 1
+		birth_date = 1405.1.1
+	}
+	clear_scripted_personalities = yes
+}

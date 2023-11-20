@@ -7,3 +7,14 @@ religion = catholic
 technology_group = western
 capital = 149 
 
+1444.1.1 = {
+	monarch = {
+		name = "Baldwin IV"
+		dynasty = "Flanders"
+		dip = 2
+		mil = 5
+		adm = 4
+		birth_date = 1421.1.1
+	}
+	clear_scripted_personalities = yes
+}
