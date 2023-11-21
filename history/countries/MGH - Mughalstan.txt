@@ -9,13 +9,26 @@ add_accepted_culture = uyghur
 religious_school = mr_drukpa_kagyu_school
 
 
-1363.5.23 = {
+1383.5.23 = {
 	monarch = {
 		name = "Khizr"
-		dynasty = "Borjigin"
-		adm = 3
+		dynasty = "Chagataiyid"
+		adm = 5
 		dip = 3
-		mil = 3
+		mil = 1
+	}
+}
+
+1410.1.1 = {
+	heir = {
+		name = "Jamsrang"
+		dynasty = "Chagataiyid"
+		birth_date = 1410.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 5
 	}
 }
 

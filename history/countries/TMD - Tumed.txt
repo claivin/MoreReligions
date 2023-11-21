@@ -3,17 +3,29 @@ add_government_reform = steppe_horde
 technology_group = nomad_group
 religion = vajrayana
 religious_school = mr_drukpa_kagyu_school
-primary_culture = mongol
+primary_culture = tumed
 capital = 4218
 
 
-1634.1.1 = {
+1421.1.1 = {
 	monarch = {
 		name = "Tushiyetu"
-		dynasty = "Chakhundorji"
+		dynasty = "Borjigin"
 		adm = 2
 		dip = 2
-		mil = 4
+		mil = 2
 	}
 }
 
+1425.1.1 = {
+	heir = {
+		name = "Delbeg"
+		dynasty = "Borjigin"
+		birth_date = 1425.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}

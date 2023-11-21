@@ -6,13 +6,13 @@ primary_culture = khalkha
 capital = 4218
 
 
-1634.1.1 = {
+1420.1.1 = {
 	monarch = {
-		name = "Tushiyetu"
-		dynasty = "Chakhundorji"
-		adm = 2
+		name = "Altan"
+		dynasty = "Borjigin"
+		adm = 4
 		dip = 2
-		mil = 4
+		mil = 5
 	}
 }
 

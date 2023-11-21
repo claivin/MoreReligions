@@ -2,7 +2,16 @@ government = tribal
 add_government_reform = steppe_horde
 technology_group = nomad_group
 religion = tengri_pagan_reformed
-primary_culture = oirats
+primary_culture = kirghiz
 capital = 480
-add_accepted_culture = khalkha
+
+1409.5.23 = {
+	monarch = {
+		name = "Yingwu"
+		dynasty = "Aje"
+		adm = 2
+		dip = 3
+		mil = 6
+	}
+}
 

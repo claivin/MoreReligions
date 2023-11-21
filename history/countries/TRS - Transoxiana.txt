@@ -2,10 +2,11 @@
 # Timurid Empire
 #######################################
 technology_group = muslim
-primary_culture = uzbehk
+primary_culture = chagatai
 religion = sunni
 government = monarchy
 add_government_reform = iqta
+add_accepted_culture = tajik
 capital = 454 # Samarkand
 religious_school = hanafi_school
 

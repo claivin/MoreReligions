@@ -1,10 +1,10 @@
 #4209 - Maralbexi
 
-owner = MGH
-controller = MGH
-add_core = MGH
-culture = uyghur
-religion = sunni
+owner = KAS
+controller = KAS
+add_core = KAS
+culture = karluk
+religion = mr_nestorian
 capital = "Maralbexi"
 trade_goods = wool
 hre = no

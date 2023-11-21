@@ -2,10 +2,11 @@
 # `Balkh
 #######################################
 technology_group = muslim
-primary_culture = afghani
+primary_culture = hazara
 religion = sunni
 government = monarchy
 add_government_reform = iqta
+add_accepted_culture = pashtun
 capital = 450 # Balkh
 religious_school = hanafi_school
 

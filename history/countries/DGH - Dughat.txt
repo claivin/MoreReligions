@@ -3,7 +3,29 @@ add_government_reform = steppe_horde
 technology_group = nomad_group
 religion = vajrayana
 religious_school = mr_jonang_school
-primary_culture = mongol
-capital = 4204
+primary_culture = uyghur
+capital = 2122
 
 
+1409.5.23 = {
+	monarch = {
+		name = "Jahan"
+		dynasty = "Dughlat"
+		adm = 1
+		dip = 1
+		mil = 4
+	}
+}
+
+1430.1.1 = {
+	heir = {
+		name = "Arugtai"
+		dynasty = "Dughlat"
+		birth_date = 1430.1.1
+		death_date = 1514.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

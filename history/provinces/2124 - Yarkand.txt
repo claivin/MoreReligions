@@ -1,9 +1,9 @@
 # 2124 - Yarkand
 
-owner = MGH
-controller = MGH
-add_core = MGH
-culture = uyghur
+owner = KAS
+controller = KAS
+add_core = KAS
+culture = karluk
 religion = sunni
 capital = "Yarkant"
 trade_goods = wool

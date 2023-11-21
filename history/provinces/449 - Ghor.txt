@@ -1,7 +1,7 @@
 #449 - Ghor
 
-owner = HRT
-controller = HRT
+owner = BLK
+controller = BLK
 culture = hazara
 religion = sunni
 capital = "Ahangaran"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 4
 is_city = yes
-add_core = HRT
+add_core = BLK
 add_core = HAZ
 discovered_by = KAS
 discovered_by = muslim
