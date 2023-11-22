@@ -1,0 +1,85 @@
+namespace = MR_white_horde_flavor
+
+country_event = {
+	id = MR_white_horde_flavor.1 #CivilWar Conclusion
+	title = MR_white_horde_flavor.1.t
+	desc = MR_white_horde_flavor.1.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+	   OR = { 
+	   tag = SHY 
+	   tag = NOG 
+	   }
+	   if = { 
+	   limit = { tag = SHY } 
+		OR = {
+		    war_score_against = {
+	          who = NOG
+	          value = 75
+			}
+			NOT = { exists = NOG }			
+			}
+		    controls = 465	   
+	   }
+	   else_if = { 
+	   limit = { tag = NOG } 
+		OR = {
+		    war_score_against = {
+	          who = SHY
+	          value = 75
+			}
+			NOT = { exists = SHY }			
+			}
+		    controls = 1970
+			controls = 476	   
+	    }	   
+    }
+	
+	option = {
+		name = MR_white_horde_flavor.1.a #KereiVictory
+		trigger = {
+		tag = SHY
+		}
+		if = {
+			limit = {exists = NOG}
+			        inherit = NOG
+			} 
+ 			change_tag = KZH
+		    on_change_tag_effect = yes
+        hidden_effect = {
+        NOG = {		
+		every_core_province = { 
+		remove_core = NOG 
+		}
+        override_country_name = NOGH		
+		}		
+      } 	
+	}
+	
+	option = {
+		name = MR_white_horde_flavor.1.b #JanibekVictory
+		trigger = {
+        tag = NOG
+		}
+		if = {
+			limit = {exists = SHY}
+			        inherit = SHY
+			} 
+ 			change_tag = KZH
+		    on_change_tag_effect = yes
+			1970 = { 
+			move_capital_effect = yes
+			}
+        hidden_effect = {
+        SHY = {		
+		every_core_province = { 
+		remove_core = SHY 
+		}
+        override_country_name = UZBH		
+		}		
+      }		
+	}
+}

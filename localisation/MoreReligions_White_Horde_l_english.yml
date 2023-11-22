@@ -1,0 +1,24 @@
+﻿l_english:
+
+ #White Horde Missions
+ 
+ #White Horde Tooltips
+ SHY_end_civil_war_TT: "§TThe Civil War will end when we hold [465.GetName] while we have over 75% Warscore against [NOG.GetName]§!"
+ NOG_end_civil_war_TT: "§TThe Civil War will end when we hold both [476.GetName] and [1970.GetName] while we have over 75% Warscore against [SHY.GetName]§!"
+ 
+ #White Horde Modifiers
+ 
+ #White Horde Events
+ mr_startup_events.6.t: "Tore Civil War"
+ mr_startup_events.6.d: " "
+ mr_startup_events.6.a: "Traitors"
+ mr_startup_events.6.b: "Time for a new Regime"
+ MR_white_horde_flavor.1.t: "The End of The Civil War"
+ MR_white_horde_flavor.1.d: " "
+ MR_white_horde_flavor.1.a: "Unity"
+ MR_white_horde_flavor.1.b: "Unity"
+ 
+ #Misc
+ NOGH: "Nogay"
+ UZBH: "Ozbeg"
+ 

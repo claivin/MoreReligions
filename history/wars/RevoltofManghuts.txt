@@ -5,7 +5,7 @@ war_goal = {
 	tag = NOG
 }
 
-1443.11.11 = {
+1444.10.10 = {
 	add_attacker = NOG
 	add_defender = SHY
 }

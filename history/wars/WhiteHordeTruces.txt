@@ -1,0 +1,27 @@
+#This is just to give White Horde civil war truces
+
+1430.1.1 = {
+	add_attacker = MGH
+	add_attacker = BLK
+	add_attacker = BSH
+	add_attacker = KAZ
+	add_attacker = RDH
+	add_attacker = KHI
+	add_attacker = OIR
+	add_attacker = YNI
+	add_defender = SHY
+	add_defender = NOG
+}
+
+1444.1.1 = {
+	rem_attacker = MGH
+	rem_attacker = BLK
+	rem_attacker = BSH
+	rem_attacker = KAZ
+	rem_attacker = RDH
+	rem_attacker = KHI
+	rem_attacker = OIR
+	rem_attacker = YNI
+	rem_defender = SHY
+	rem_defender = NOG
+}
