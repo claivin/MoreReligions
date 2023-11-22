@@ -2,7 +2,7 @@
 
 owner = VEN
 controller = VEN
-culture = greek
+culture = aegean
 religion = orthodox
 capital = "Heraklion"
 trade_goods = fish

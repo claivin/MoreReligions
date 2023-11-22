@@ -13,7 +13,12 @@ country_decisions = {
 						primary_culture = cosmopolitan_french
 						primary_culture = saxon
 					}
-					accepted_culture = greek
+					OR = {
+						accepted_culture = borean
+						accepted_culture = aegean
+						accepted_culture = peloponnesian
+						accepted_culture = epirote
+					}
 					capital_scope = {
 						OR = {
 							area = macedonia_area
@@ -30,7 +35,12 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			accepted_culture = greek
+			OR = {
+				accepted_culture = borean
+				accepted_culture = aegean
+				accepted_culture = peloponnesian
+				accepted_culture = epirote
+			}
 			151 = {
 				owned_by = ROOT
 			}

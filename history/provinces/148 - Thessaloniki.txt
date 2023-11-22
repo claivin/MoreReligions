@@ -2,7 +2,7 @@
 
 owner = TSS
 controller = TSS
-culture = greek
+culture = borean
 religion = orthodox
 capital = "Thessaloniki"
 trade_goods = cloth

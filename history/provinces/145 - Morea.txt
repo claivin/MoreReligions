@@ -2,7 +2,7 @@
 
 owner = MOE
 controller = MOE
-culture = greek
+culture = peloponnesian
 religion = orthodox
 capital = "Mystras"
 trade_goods = wine

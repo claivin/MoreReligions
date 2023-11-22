@@ -1,6 +1,6 @@
 owner = CPH
 controller = CPH
-culture = greek
+culture = peloponnesian
 religion = orthodox
 capital = "Agios Georgios"
 trade_goods = wine

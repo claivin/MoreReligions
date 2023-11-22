@@ -2,7 +2,7 @@
 
 owner = LSB
 controller = LSB
-culture = greek
+culture = aegean
 religion = orthodox
 capital = "Mytilene"
 trade_goods = fish

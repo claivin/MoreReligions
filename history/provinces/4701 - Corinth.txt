@@ -1,6 +1,6 @@
 owner = CNT
 controller = CNT
-culture = greek
+culture = peloponnesian
 religion = orthodox
 capital = "Corinth"
 trade_goods = wine

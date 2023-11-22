@@ -2,7 +2,7 @@
 
 owner = CEP
 controller = CEP
-culture = greek
+culture = aegean
 religion = orthodox
 capital = "Corfu"
 trade_goods = fish

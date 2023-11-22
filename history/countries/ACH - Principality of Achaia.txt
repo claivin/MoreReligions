@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = merchants_reform
+add_government_reform = mr_greek_poleocracy_reform
 government_rank = 1
 technology_group = eastern
 primary_culture = lombard
@@ -68,7 +68,7 @@ capital = 1773	# Mystras
 	}
 }
 
-1432.1.1 = { primary_culture = greek religion = orthodox }
+1432.1.1 = { primary_culture = peloponnesian religion = orthodox }
 
 # 1432, Despotate of Morea
 

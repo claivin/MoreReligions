@@ -17750,7 +17750,6 @@ UKR_ideas = {
 		yearly_patriarch_authority = 0.005
 	}
 }
-}
 
 #1.36
 #(Great) Armenia

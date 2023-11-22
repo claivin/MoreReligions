@@ -550,7 +550,7 @@ tendai_ministries = {
 	#custom_tooltip = develop_temples_TT
 }
 MR_thai_tributary = {
-	icon = "warrior_monks_reform"
+	icon = "warrior_monks_reform" "soldiers_7"
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	legacy_equivalent = feudal_monarchy
@@ -704,4 +704,82 @@ mr_absolutist_england_reform = {
 
 	# custom_attributes = {
 	# }
+}
+mr_greek_poleocracy_reform ={
+	icon = "organized_military_staff"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = byzantine
+			tag = GRE
+			tag = BYZ
+			have_had_reform = mr_greek_poleocracy
+		}
+
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	nation_designer_trigger = {
+		culture_group = byzantine
+		technology_group = eastern
+	}
+	modifiers = {
+		manpower_in_true_faith_provinces = 0.1
+		land_morale = 0.05
+		merchants = 1
+		max_absolutism = -20
+	}
+	duration = 8
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = yes
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+		can_use_trade_post = yes
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Mare Nostrum"
+		}
+		can_form_trade_league = yes
+		trade_city_reform = trading_city
+	}
+}
+mr_latin_kingdom = {
+	icon = "soldiers_7"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_equivalent = feudal_monarchy
+	
+	modifiers = {
+		vassal_forcelimit_bonus = 0.5
+		cav_to_inf_ratio = 0.25
+		tolerance_of_heretics_capacity = 2
+	}
+	potential = {
+		capital_scope = {
+			region = balkan_region
+		}
+		NOT = {
+			primary_culture = greek
+		}
+		religion = catholic
+		OR = {
+			culture_group = latin
+			culture_group = french	
+		}
+	}
+	trigger = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = LAE
+		}
+	}
+
 }

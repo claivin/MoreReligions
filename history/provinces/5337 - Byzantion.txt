@@ -2,7 +2,7 @@
 
 owner = THR
 controller = THR
-culture = greek
+culture = borean
 religion = orthodox
 capital = "Tekirdag"
 trade_goods = grain

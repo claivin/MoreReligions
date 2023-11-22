@@ -2,7 +2,7 @@
 
 owner = ATR
 controller = ATR
-culture = greek
+culture = epirote
 religion = orthodox
 capital = "Ioannina"
 trade_goods = wool

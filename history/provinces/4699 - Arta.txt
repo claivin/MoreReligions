@@ -1,6 +1,6 @@
 owner = ATR
 controller = ATR
-culture = greek
+culture = epirote
 religion = orthodox
 capital = "Arta"
 trade_goods = livestock

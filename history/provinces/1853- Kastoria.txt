@@ -2,7 +2,7 @@
 
 owner = THS
 controller = THS
-culture = greek
+culture = epirote
 religion = orthodox
 capital = "Kastoria"
 trade_goods = wine

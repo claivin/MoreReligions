@@ -1,8 +1,19 @@
-government = republic
-add_government_reform = noble_elite_reform
+government = monarchy
+add_government_reform = autocracy_reform
 government_rank = 1
-primary_culture = greek
+primary_culture = aegean
 religion = orthodox
 technology_group = eastern
 capital = 4698 # Naxos
 
+
+1444.1.1 = {
+	monarch = {
+		name = "Leonardo II"
+		dynasty = "Tocco"
+		dip = 3
+		mil = 1
+		adm = 2
+		birth_date = 1414.1.1
+	}
+}

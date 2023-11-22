@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = mr_latin_kingdom
 government_rank = 1
 primary_culture = lombard
-add_accepted_culture = greek
+add_accepted_culture = borean
 religion = catholic
 technology_group = western
 capital = 148 # Naxos

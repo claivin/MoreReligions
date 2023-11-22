@@ -1,6 +1,6 @@
 owner = TSS
 controller = TSS
-culture = greek
+culture = borean
 religion = orthodox
 capital = "Gumulcine"
 trade_goods = olives

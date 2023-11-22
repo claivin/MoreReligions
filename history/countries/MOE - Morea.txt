@@ -1,8 +1,8 @@
 government = republic
-add_government_reform = noble_elite_reform
+add_government_reform = mr_greek_poleocracy_reform
 government_rank = 1
 technology_group = eastern
-primary_culture = greek
+primary_culture = peloponnesian
 religion = orthodox
 capital = 145	# Nafplio
 fixed_capital = 145 # Cannot move capital away from this province & no power cost to move to it

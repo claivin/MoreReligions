@@ -1,0 +1,154 @@
+country_decisions = {
+	# Moved Greek to its own file 
+
+	icelandic_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			owns = 370
+			owns = 371
+			NOT = { has_country_flag = formed_iceland } #Only once
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
+				ai = no
+				NOT = { num_of_cities = 4 }
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
+			NOT = { exists = ICE }
+			is_colonial_nation = no		
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 370
+				province_id = 371
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { num_of_cities = 4 }
+			is_at_war = no
+			owns_core_province = 371
+			owns_core_province = 370
+			370 = {
+				is_state = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					capital_scope = { NOT = { province_id = 370 } NOT = { province_id = 371 } }
+				}
+				370 = {
+					move_capital_effect = yes
+				}
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						is_core = ROOT
+						NOT = { owned_by = ROOT }
+					}
+					remove_core = ROOT
+					if = {
+						limit = { ROOT = { tag = NOR } }
+						set_province_flag = norwegian_core
+					}
+					if = {
+						limit = { ROOT = { tag = DAN } }
+						set_province_flag = danish_core
+					}
+					if = {
+						limit = { ROOT = { tag = SWE } }
+						set_province_flag = swedish_core
+					}					
+				}
+			}		
+			change_tag = ICE
+			on_change_tag_effect = yes
+			set_country_flag = formed_iceland
+			if = {
+				limit = { NOT = { primary_culture = norwegian } }
+				change_primary_culture = CAPITAL
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 370
+						province_id = 371
+					}
+				}
+				add_local_autonomy = -100
+			}
+			370 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			371 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}			
+			hidden_effect = {
+				every_province = {
+					if = {
+						limit = {
+							has_province_flag = norwegian_core
+						}
+						add_core = NOR
+						clr_province_flag = norwegian_core					
+					}
+					if = {
+						limit = {
+							has_province_flag = danish_core
+						}
+						add_core = DAN
+						clr_province_flag = danish_core					
+					}
+					if = {
+						limit = {
+							has_province_flag = swedish_core
+						}
+						add_core = SWE
+						clr_province_flag = swedish_core					
+					}					
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_idea_group = ICE_ideas }
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}			
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				capital_scope = { NOT = { province_id = 370 } NOT = { province_id = 371 } }
+			}
+		}
+	}
+	
+}

@@ -2,7 +2,7 @@
 
 owner = ATH
 controller = ATH
-culture = greek
+culture = peloponnesian
 religion = orthodox
 capital = "Athens"
 trade_goods = grain

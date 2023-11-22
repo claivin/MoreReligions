@@ -1,6 +1,6 @@
 owner = THR
 controller = THR
-culture = greek
+culture = borean
 religion = orthodox
 capital = "Gallipoli"
 trade_goods = livestock

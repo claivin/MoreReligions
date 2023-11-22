@@ -129,6 +129,7 @@ monarchy = {
 				empire_of_light_reform
 				mr_empire_of_japan
 				tendai_ministries
+				mr_latin_kingdom
 				#hungary_reforms
 				mr_hungary_anarchy
 				mr_hungary_faction
@@ -632,7 +633,9 @@ republic = {
 				calvinist_republic_government
 				parliamentary_republic_reform
 				absolute_shogunate_reform
-				japanese_divine_empire		 
+				japanese_divine_empire		
+				#G&K
+				mr_greek_poleocracy_reform 
 			}
 		}
 		republican_virtues = {
