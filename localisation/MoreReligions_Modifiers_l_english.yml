@@ -79,7 +79,9 @@
  desc_gsc_destroyed_yuan_legacy: "Our ultimate victory over the Mongols, that perennial blight on China's glory, has demonstrated both our mastery of warfare and our just cause."
  gsc_changsha_rice_market: "Changsha Rice Market"
  desc_gsc_changsha_rice_market: "Due to continued government investment, Changsha has developed into the premier hub for the distribution of rice across central and southern China."
- 
+ gsc_improved_tribs: "Renewed Tributary Relations"
+ desc_gsc_improved_tribs: "The consolidation of our rule and projection of power abroad has tightened our grasp over states which long ago lapsed in their tributes to the emperors of China."
+
  #Navarra Modifiers
  covadonga_court: "The Court of Covadonga"
  covadonga_court_desc: "Built in the site of the first victory of Christianity against Islam in Iberia, lies the Court of Covadonga which deals with the highest judicial cases in Iberia."

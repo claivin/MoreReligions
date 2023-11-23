@@ -106,3 +106,7 @@ gsc_changsha_rice_market = {
 	trade_goods_size = 2
 	province_trade_power_value = 10
 }
+
+gsc_improved_tribs = {
+	monarch_power_tribute = 1
+}

@@ -133,10 +133,26 @@ mr_gsc_missions_first = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = tributary_state
+					}
+					NOT = {
+						liberty_desire = 25
+					}
+				}
+				desc = gsc_10_tribs_with_lib_desire_tt
+				amount = 10
+			}
+			empire_of_china_reform_passed = tributary_embassies_decision
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = gsc_improved_tribs
+				duration = -1
+			}
 		}
 	}
 	##Mission End
@@ -265,9 +281,9 @@ mr_gsc_missions_second = {
 		}
 		trigger = {
 			OR = {
-				is_in_war = {
-					attacker_leader = GHC
-					war_score = 50
+				war_score_against = {
+					who = GHC
+					value = 50
 				}
 				custom_trigger_tooltip = {
 					tooltip = gsc_won_han_song_war_tt
@@ -542,6 +558,11 @@ mr_gsc_missions_third = {
 		position = 3
 		provinces_to_highlight = {
 			owned_by = SHU
+			OR = {
+				owned_by = SHU
+				province_id = 679
+				province_id = 680
+			}
 		}
 		trigger = {
 			owns_core_province = 679

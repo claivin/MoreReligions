@@ -98,4 +98,4 @@
  gsc_mongol_trib_reward_tt:0 "\nIf we complete this mission by §Ybringing the Mongols to heel§!, we will gain the following modifier:\n"
  gsc_mongol_destruction_reward_tt:0 "\nAlternatively, if we complete the mission by §Ywiping out all Yuan remnants§!, we will instead gain:\n"
  gsc_additional_mandate_reward_tt:0 "\nEither way, we will also gain an additional §G15 Mandate§! if we are currently the §YEmperor of China§!."
- 
+ gsc_10_tribs_with_lib_desire_tt:0 "Tributary Subjects that have less than §Y25§! Liberty Desire"
