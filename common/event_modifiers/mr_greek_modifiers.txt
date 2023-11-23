@@ -1,0 +1,12 @@
+war_for_greece = {
+	warscore_from_battles_modifier = 0.33
+	war_exhaustion = -0.01
+}
+restoring_latin_leadership = {
+	local_years_of_nationalism = -10
+	local_state_maintenance_modifier = -0.1
+}
+breaking_latin_control = {
+	local_core_creation = -0.15
+	local_unrest = -1
+}

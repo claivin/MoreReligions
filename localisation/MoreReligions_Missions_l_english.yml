@@ -691,8 +691,25 @@ confucian_scholars_JAP: "Confucian Scholars"
  bearn_clergy: "Clergy estate privilege §YFund Theological Studies§! is removed and replaced with an improved version called §YCounter-Heresy Studies§! giving us the following upgraded bonus: §G+2 Missionary Strength§!"
  cordoban_researcher: "We will enact the burgher estate privilege §YCordoban Scholars§! which gives us the following modifiers: \n§G-5% Idea Cost§! \n§G+3 tolerance of heretics§! \n§G+3 tolerance of heathens§! \n§R-10% Clergy Loyalty§!"
 
+#Latin Missions
+#Titles
+mr_greece_unity_1_title: "Prepare for the Campaigns"
+mr_greece_unity_2_title: "The Northern Kingdoms"
 
-#Baghdad Missions
+
+#Tooltips
+if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, we will recieve the following:"
+if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, we will recieve the following:"
+if_orthodox_yes: "£yes£If we complete this mission while being §YOrthodox§!, we will recieve the following:"
+if_orthodox_no: "£no£If we complete this mission while being §YOrthodox§!, we will recieve the following:"
+
+#Modifiers
+war_for_greece: "War for Greece"
+restoring_latin_leadership: "Restoring Latin Leadership"
+breaking_latin_control: "Breaking Latin Control"
+
+
+#Baghdad Missions - TO BE COMPLETED!!
 #Titles
 IRQ_branching_1_title: "To Escape the Chains"
 IRQ_tall_1_title: "The Aging City"

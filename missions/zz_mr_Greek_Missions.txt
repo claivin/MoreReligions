@@ -39,6 +39,233 @@ mr_greek_missions_second = {
 			tag = CPH
 		}
 	}
+	mr_greece_unity_1 = {
+		icon = mission_crusade_for_varna
+		position = 1
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = thrace_area
+				area = macedonia_area
+				area = northern_greece_area
+				area = morea_area
+			}
+			NOT = {
+				is_claim = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 2
+				OR = {
+					area = thrace_area
+					area = macedonia_area
+					area = northern_greece_area
+					area = morea_area
+				}
+				is_claim = ROOT
+			}
+		}
+		effect = {
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			morea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4702 = {
+				if  = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			148 = {
+				if  = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			1853 = {
+				if  = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = war_for_greece
+				duration = 3650
+			}
+		}
+	}
+	mr_greece_unity_2 = {
+		icon = the_latin_empire
+		position = 2
+		required_missions = {
+			mr_greece_unity_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = thrace_area
+				province_id = 1853
+				province_id = 148
+				province_id = 4702
+			}
+			NOT ={
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1853 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			148 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4702 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = if_catholic_yes
+				tooltip = {
+					add_province_modifier = {
+						name = restoring_latin_leadership
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = catholic
+					}
+				}
+				custom_tooltip = if_catholic_no
+				tooltip = {
+					add_province_modifier = {
+						name = restoring_latin_leadership
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						religion = catholic
+					}	
+				}
+				custom_tooltip = if_orthodox_yes
+				tooltip = {
+					add_province_modifier = {
+						name = breaking_latin_control
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = if_orthodox_no
+				tooltip = {
+					add_province_modifier = {
+						name = breaking_latin_control
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					thrace_area = {
+						add_province_modifier = {
+							name = restoring_latin_leadership
+							duration = -1
+						}
+					}
+					1853 = {
+						add_province_modifier = {
+							name = restoring_latin_leadership
+							duration = -1
+						}
+					}
+					148 = {
+						add_province_modifier = {
+							name = restoring_latin_leadership
+							duration = -1
+						}
+					}
+					4702 = {
+						add_province_modifier = {
+							name = restoring_latin_leadership
+							duration = -1
+						}
+					}
+				}
+				else = {
+					thrace_area = {
+						add_province_modifier = {
+							name = breaking_latin_control
+							duration = -1
+						}
+					}
+					1853 = {
+						add_province_modifier = {
+							name = breaking_latin_control
+							duration = -1
+						}
+					}
+					148 = {
+						add_province_modifier = {
+							name = breaking_latin_control
+							duration = -1
+						}
+					}
+					4702 = {
+						add_province_modifier = {
+							name = breaking_latin_control
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
 }
 mr_greek_missions_third = {
 	slot = 3
