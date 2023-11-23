@@ -357,6 +357,9 @@ on_mandate_of_heaven_gained = {
 			tag = GSC
 		}
 		add_government_reform = empire_of_light_reform
+		country_event = {
+			id = mrSongEvents.4 #Eunuch event
+		}
 	}
 	set_mandate = 60
 	set_meritocracy = 60
