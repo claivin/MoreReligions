@@ -39,6 +39,17 @@
  eng_m_naval_1_title: "Port of Yarmouth"
  eng_m_naval_1_desc: "Yarmouth is a very old city with a long tradition of shipbuilding, sail-making, and all manner of naval production, unsurprisingly. More importantly, its strategic location makes it a valuable location for power projection over the Channel."
  
+ eng_m_naval_2_title: "New Crown Navy Shipyards"
+ eng_m_naval_2_desc: "With the defense of the Isles secured in the Channel, we can now focus on expanding the the Crown Navy to project power overseas."
+ 
+ eng_m_naval_3_title: "State Lumberyards"
+ eng_m_naval_3_desc: "Shipbuilding is now simple task, requiring both skilled craftsmen and good wood. Me must establish larger mills to maintain our supply of usable wood for further expansion of the Crown Navy and subsequent maintenance."
+ eng_m_naval_3_TT: "§Y2§! random eligible provinces will recieve this:"
+ 
+ eng_m_lollards_1_title: "Wycliffe's Legacy"
+ eng_m_lollards_1_desc: ""
+ eng_m_lollards_1_TT: "If completed while Lollard, a §YLollard Center of Reformation will spawn§!\n"
+ 
  ### Decisions
  mr_crush_local_rulers_decision_title: "Crush Irish Lords"
  mr_crush_local_rulers_decision_desc: ""
@@ -59,10 +70,15 @@
  ENGLAND_IRELAND_ADJ: "English"
  eng_yarmouth_sea: "Strategic Port of Yarmouth"
  eng_yarmouth: "Early Naval Base"
+ mr_eng_lumbermills: "State Lumbermills"
+ mr_eng_shipbuilding: "Shipbuilding Rush"
  
  ### misc
  mr_anglo_hibernian: "Anglo-Hibernian"
- province_has_modern_fort_trigger_TT: "has the most advanced fort type available at the current Military Technology level"
+ province_has_modern_fort_trigger_TT: "Has the most advanced fort type available at the current Military Technology level"
+ mr_eng_projection: "Crown Marines"
+ mr_eng_projection_desc: "The Crown Marines were originally an elite group of sailors on which escorted warships in the channel. Their efficacy in dealing with pirates found them a permanent role in the Crown Navy, officially being founded shortly after the Crown Navy. The Crown Navy has come to prove effective in overseas operations, supplanting their original purpose."
+ mr_lollard_center_of_reformation: "Center of Reformation"
  
  ### Events
  mr_england.1.t: "A United Kingdom"
@@ -101,3 +117,24 @@
  mr_england.3.a: "Two kingdoms as One!"
  mr_england.3.b: "Something to consider..."
  eng_m_ireland_3_TT: "Enables decision to change name to §YEngland-Ireland§!" 
+ 
+ mr_england.4.t: "Crown Navy Doctrine"
+ mr_england.4.d: "The Crown Navy "
+ mr_england.4.a: ""
+ mr_england.4.b: ""
+ mr_crown_navy_doctrine_1_TT: "Grants access to the §YWooden Wall§! Naval Doctrine, which grants the following: \nNaval combat bonus off owned coasts: §G+1§!"
+ mr_crown_navy_doctrine_2_TT: "Grants access to the §YCrown Marines§! Naval Doctrine, which grants the following: \nMarines Force Limit: §G+25%§!\nSailor Mainenance Modifier: §G-15%§!\nSailor Recovery Speed: §G+10%§!\n"
+ 
+ mr_england.5.t: "Founding of the Crown Navy"
+ mr_england.5.d: "[Root.Monarch.GetTitle] [Root.Monarch.GetName] has seen it necessary to create a standing navy in order maintain our mercantile interests in the region. The oppurtunistic landgrab of Wight by the North Sea League was not the only oppurtunity by foreign powers to intervene in England; there was also foreign support of the Yorkish pretender, as well as raids from disunited France. With the consolidation of merchant fleets and the remaning warships under the command of the Crown, the Crown Navy has had its first officer and first Lord Admiral commissioned."
+ mr_england.5.a: "First Lord Admiral, Thomas Beaufort, Earl of Somerset"
+ mr_england.5.b: "First Lord Admiral, William Percy, Earl of Kent"
+ mr_england.5.c: "First Lord Admiral, Richard Holland, Duker of Bedford"
+ 
+ mr_england.6.t: "On Lollardy"
+ mr_england.6.d: "John Wycliffe's teachings spread far and wide during the Anarchy, allowing the practice of Lollardy to spread unabated. With the restablishment of the King's authority, it was best to stamp out these heretics, as their existence could have been seen as tolerance by the Church and would be a direct reflection of the lack of authority of the King.\nOur efforts to actively deal with this heresy have awarded us great favor with the Church."
+ mr_england.6.a: "Good deal."
+ 
+ mr_england.7.t: "The First Conclusion"
+ mr_england.7.d: "'When the Church of England began to dote in temporality after her stepmother, the great Church of Rome, and churches were slain by appropriation to diverse places. Faith, Hope, and Charity began for to flee out of our Church. For Pride with his sorry genealogy of deadly sins challengeth it by title of heritage. This conclusion is general and proved by experience, custom, and manner, as you shall after hear.'"
+ mr_england.7.a: "It is so."

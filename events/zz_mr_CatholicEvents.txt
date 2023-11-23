@@ -1111,16 +1111,14 @@ country_event = {
 		NOT = { has_global_flag = mr_western_schism_ended_conclusively_flag }
 		NOT = { has_global_flag = mr_western_schism_ended_inconclusively_flag }
 		religion = catholic
+		has_country_flag = mr_clergy_decided_schism_side
+		has_country_flag = mr_nobility_decided_schism_side
 		OR = {
 			AND = {
-				has_country_flag = mr_clergy_decided_schism_side
-				has_country_flag = mr_nobility_decided_schism_side
 				has_country_flag = mr_nobility_supports_antipope
 				NOT = { has_country_flag = mr_clergy_supports_antipope }
 			}
 			AND = {
-				has_country_flag = mr_clergy_decided_schism_side
-				has_country_flag = mr_nobility_decided_schism_side
 				NOT = { has_country_flag = mr_nobility_supports_antipope }
 				has_country_flag = mr_clergy_supports_antipope
 			}

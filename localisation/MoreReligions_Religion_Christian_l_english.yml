@@ -318,8 +318,8 @@
  mr_catholic.18.t: "On the Matter of the Reformists"
  mr_catholic.18.d: "wip"
  mr_catholic.18.a: "Mediate a compromise in favor of the Reformists."
- mr_catholic.18.a: "Mediate a compromise in favor of the Stats Quo."
- mr_catholic.18.a: "Let them sort it out themselves."
+ mr_catholic.18.b: "Mediate a compromise in favor of the Stats Quo."
+ mr_catholic.18.c: "Let them sort it out themselves."
  
  mr_catholic.19.t: "Reconstructionist Opposition Consolidates"
  mr_catholic.19.d: "From the outside, the Reconstructionist block is seemingly united in their demands: The Catholic Church must both return to form, destroy and rebuild the corrupt clergy, and squash the heretics. While they grow in influence, the opposition has done little but bicker and act in self-interest - business as usual for most of them.\n\nSurprisingly, a respectable group has found each other, lead by a cardinal from [guy_who_formed_status_quo_faction.GetName]. They claim that they wish to reform the Church from within, wresting the levers of corruption away from those who abuse it most. In turn, they hope that newfound stability will reorient the powers of the Church back to its rightful place. With support from the Pope, even a weak one, they might even have a chance."

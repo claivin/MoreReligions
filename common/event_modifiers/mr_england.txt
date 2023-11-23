@@ -48,3 +48,16 @@ eng_yarmouth = {
 eng_yarmouth_sea = {
 	local_naval_engagement_modifier = 0.5
 }
+
+mr_eng_shipbuilding = {
+	global_ship_recruit_speed = -0.33
+	global_ship_cost = -0.20
+}
+
+mr_eng_lumbermills = {
+	trade_goods_size = 1
+}
+
+mr_eng_covert_lollards = {
+	global_heretic_missionary_strength = 0.02
+}
