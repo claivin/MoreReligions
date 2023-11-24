@@ -1,134 +1,203 @@
-# Shared mission tree for crusader states--Antioch, Edessa, Tripoli, and Acre
+# Shared mission tree for crusader states--Antioch, Cyprus, Edessa, Lebanon, and Tripoli
+#                                          ATI,     CYP,    EDD,    LEB,         TPO
+# Also leads into Jerusalem content (KOJ)
 
-# First slot is left open for tag-specific missions
 
-
-# Second slot: Development of relationship with Italian city-states and our trade with Europe
-crusader_missions_2 = {
-	slot = 2
+# First slot: Coastal missions
+crusader_missions_1_coastal = {
+	slot = 1
 	generic = no
 	ai = yes
+	has_country_shield = yes
 	potential = {
 		is_levantine_crusader_state = yes
+		NOT = { is_or_was_tag = { tag = EDD } } # Edessa has no coast, so gets its own content
 	}
 
-	cs_grant_italian_quarter = {
-		icon = mission_build_up_to_force_limit
+	cs_powerful_fleet = {
+		icon = mission_naval_dominance
 		required_missions = { }
 		position = 1
 
-
-		# Any Italian Republic likes us
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_grant_italian_quarter_trigger_TT
-				any_known_country = {
-					capital_scope = {
-						region = italy_region
-					}
-					government = republic
-					has_matching_religion = ROOT
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-			}
+			num_of_galley = 12
 		}
 
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+			add_sailors = 2000
+			add_country_modifier = {
+				name = cs_naval_buildup
+				duration = 9125
 			}
-		}
-	}
-
-	cs_seek_italian_military_support = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { cs_grant_italian_quarter }
-		position = 2
-
-		trigger = {
-			AND = {
-				has_estate_privilege = estate_burghers_crusaders_grant_italian_quarter
-				estate_loyalty = {
-					estate = estate_burghers
-					loyalty = 60
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					amount = 5
+					type = transport
+					speed = 0.1
+					cost = 0
 				}
 			}
-		}
 
-		effect = {
-			custom_tooltip = cs_seek_italian_military_support_reward_TT
-			hidden_effect = {
-				set_country_flag = crusader_state_italian_mercenaries
-			}
+
 		}
 	}
+}
 
-	cs_eastern_metropolis = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { cs_seek_italian_military_support }
+# First slot: Antioch content bc they are most important
+crusader_missions_1_antioch = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_or_was_tag = { tag = ATI }
+	}
+
+	ati_dynastic_ties = {
+		icon = mission_among_the_great_powers
+		required_missions = { }
 		position = 3
 
-		trigger = {
-			capital_scope = {
-				development = 25
-				is_prosperous = yes
-			}
-			has_estate_privilege = estate_burghers_crusaders_grant_italian_quarter
-			# Need a Muslim neighbor to like us so that we can have trade flow through them, then us, then on to the rest of Europe
-			any_neighbor_country = {
-				religion = sunni
-				has_opinion = {
-					who = THIS
-					value = 100
+		provinces_to_highlight = {
+			OR = {
+				# In case Cilicia escaped outside their starting provs
+				AND = {
+					is_capital = yes
+					owned_by = CLC
 				}
-				NOT = {
-					trade_embargoing = THIS
+				AND = {
+					OR = {
+						province_id = 327
+						province_id = 2302
+						province_id = 5387
+					}
+					NOT = { owned_by = root }
 				}
 			}
 		}
 
+		trigger = {
+			NOT = { exists = CLC } # Cilicia dead
+			owns = 327
+			owns = 2302
+			owns = 5387
+		}
+
 		effect = {
-			if = {
-				limit = {
-					capital_scope = {
-						province_has_center_of_trade_of_level = 3
-					}
-				}
-				add_treasury = 1500 # More than level 3 COT cost to be nice :)
-			}
-			else = {
-				capital_scope = {
-					add_center_of_trade_level = 1
-				}
-			}
-
+			custom_tooltip = ati_dynastic_ties_effect_tt
 			hidden_effect = {
-				custom_tooltip = cs_eastern_metropolis_TT
-				capital_scope = {
-					add_province_modifier = {
-						name = cs_eastern_metropolis_capital_prov
-						duration = -1
-					}
-
-					every_province_in_state = {
-						add_province_modifier = {
-							name = cs_eastern_metropolis_capital_area
-							duration = -1
-						}
+				if = {
+					limit = { exists = ARM }
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						target = ARM
 					}
 				}
-
+				else = {
+					armenia_area = {
+						add_permanent_claim = root
+					}
+					add_prestige_or_monarch_power = { amount = 50 }
+				}
 			}
 		}
 	}
 }
 
-# Third slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
-crusader_missions_3 = {
-	slot = 3
+
+# First slot: Edessa content for funsies
+crusader_missions_1_edessa = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_or_was_tag = { tag = EDD }
+	}
+
+	edd_old_claims = {
+		icon = mission_expand_inland
+		required_missions = { }
+		position = 1
+
+		trigger = {
+			any_army = {
+				is_ruler_commanding_unit = yes
+			}
+			num_of_cavalry = 3
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = edd_raiding_tactics
+				duration = 9125
+			}
+			dulkadir_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			al_jazira_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_kurdistan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			# Eastern half of Antioch
+			4298 = {
+				if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			377 = {
+				if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	edd_edessa_ascendant = {
+		icon = mission_spoils_of_war
+		required_missions = { edd_old_claims }
+		position = 2
+
+		trigger = {
+			total_development = ATI
+			has_spy_network_in = {
+				who = ATI
+				value = 80
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = mrCrusaderEvents.5
+			}
+		}
+	}
+}
+
+
+# Second slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
+crusader_missions_2 = {
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -142,12 +211,12 @@ crusader_missions_3 = {
 
 		trigger = {
 			army_size_percentage = 1
-			prestige = 25
+			prestige = 20
 		}
 
 		effect = {
 			country_event_with_insight = {
-				id = crusader_states_branching_mission_event
+				id = mrCrusaderEvents.1
 				insight_tooltip = crusader_branching_mission_TT
 			}
 		}
@@ -155,7 +224,7 @@ crusader_missions_3 = {
 }
 
 crusader_missions_branch_placeholders = {
-	slot = 3
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -212,95 +281,29 @@ crusader_missions_branch_placeholders = {
 	}
 
 	# This comes after the branching missions (i.e. both branches lead to this)
-	cs_call_for_crusade = {
-		icon = mission_build_up_to_force_limit
+	cs_call_for_crusade0 = {
+		icon = mission_crusade_for_varna
 		required_missions = { mr_cs_branching_3 }
 		position = 5
 
+		provinces_to_highlight = {
+			is_in_outremer = yes
+			NOT = { owned_by = root }
+		}
+
 		trigger = {
-			OR = {
-				AND = {
-					# Popeman likes us or has to listen to us
-					OR = {
-						has_opinion = {
-							who = PAP
-							value = 150
-						}
-						papal_influence = 100
-					}
-					# A great European King must sponsor the Crusade
-					any_known_country = {
-						OR = {
-							tag = FRA
-							tag = ENG
-							tag = POL
-							tag = BOH
-							tag = NAV
-						}
-						OR = {
-							has_opinion = {
-								who = from
-								value = 150
-							}
-							owes_favors = {
-								who = THIS
-								value = 30
-							}
-						}
-					}
-				}
-				# Already own Jerusalem
-				owns = 379
-			}
+			cs_call_for_crusade_trigger = yes
 		}
 
 		effect = {
-			palestine_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			trans_jordan_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			syria_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			aleppo_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			syrian_desert_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-
-			if = {
-				limit = {
-					NOT = { owns = 379 }
-				}
-
-				# Add Holy War CB for Jerusalem
-				379 = {
-					owner = {
-						ROOT = {
-							add_casus_belli = {
-								type = cb_crusade_for_jerusalem
-								target = PREV
-								months = 60
-							}
-						}
-					}
-				}
-			}
+			cs_call_for_crusade_effect = yes
 		}
 	}
 }
 
 # First branch option: domination path
 crusader_missions_domination_path = {
-	slot = 3
+	slot = 2
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -310,19 +313,17 @@ crusader_missions_domination_path = {
 	}
 
 	cs_one_prince_to_rule_them_all = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_crown_of_denmark
 		required_missions = { cs_build_to_force_limit }
 		position = 2
 
 		trigger = {
-			# Our army must be at least 25% larger than any other crusader state's
-			all_known_country = {
-				is_levantine_crusader_state = yes
-				NOT = { tag = ROOT }
+			custom_trigger_tooltip = {
+				tooltip = cs_one_prince_to_rule_them_all_trigger_tt
 				NOT = {
-					army_balance = {
-						who = ROOT
-						value = 0.8
+					any_known_country = {
+						is_levantine_crusader_state = yes
+						army_size = ROOT
 					}
 				}
 			}
@@ -334,11 +335,19 @@ crusader_missions_domination_path = {
 				name = cs_dominant_military
 				duration = 12775 # 35 years
 			}
+			every_neighbor_country = {
+				limit = {
+					is_levantine_crusader_state = yes
+				}
+				every_owned_province = {
+					add_permanent_claim = root
+				}
+			}
 		}
 	}
 
 	cs_expand_our_demesne = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		required_missions = { cs_one_prince_to_rule_them_all }
 		position = 3
 
@@ -379,9 +388,14 @@ crusader_missions_domination_path = {
 	}
 
 	cs_lord_of_the_levant = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_empire
 		required_missions = { cs_expand_our_demesne }
 		position = 4
+
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = { is_levantine_crusader_state = yes }
+		}
 
 		trigger = {
 			# We have eaten all the other crusader states, or are the last one standing lol
@@ -415,95 +429,357 @@ crusader_missions_domination_path = {
 	}
 
 	# This comes after the branching missions (i.e. both branches lead to this)
-	cs_call_for_crusade = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { cs_lord_of_the_levant }
+	cs_call_for_crusade_2 = {
+		icon = mission_crusade_for_varna
+		required_missions = { cs_a_house_united }
 		position = 5
 
+		provinces_to_highlight = {
+			is_in_outremer = yes
+			NOT = { owned_by = root }
+		}
+
 		trigger = {
-			OR = {
-				AND = {
-					# Popeman likes us or has to listen to us
-					OR = {
-						has_opinion = {
-							who = PAP
-							value = 150
-						}
-						papal_influence = 100
-					}
-					# A great European King must sponsor the Crusade
-					any_known_country = {
-						OR = {
-							tag = FRA
-							tag = ENG
-							tag = POL
-							tag = BOH
-							tag = NAV
-						}
-						OR = {
-							has_opinion = {
-								who = from
-								value = 150
-							}
-							owes_favors = {
-								who = THIS
-								value = 30
-							}
-						}
+			cs_call_for_crusade_trigger = yes
+		}
+
+		effect = {
+			cs_call_for_crusade_effect = yes
+		}
+	}
+}
+
+# Second branch option: diplomatic path
+crusader_missions_diplomatic_path = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		is_levantine_crusader_state = yes
+		has_country_flag = cs_diplomatic_path
+	}
+
+	cs_first_among_equals = {
+		icon = mission_european_politics
+		required_missions = { cs_build_to_force_limit }
+		position = 2
+
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				is_levantine_crusader_state = yes
+				NOT = { tag = root }
+				prestige = root
+				diplomatic_reputation = root
+				NOT = {
+					has_opinion = {
+						who = root
+						value = 100
 					}
 				}
-				# Already own Jerusalem
-				owns = 379
+			}
+		}
+
+		trigger = {
+			has_dip_advisor = yes
+
+			NOT = {
+				any_known_country = {
+					is_levantine_crusader_state = yes
+					prestige = root
+					diplomatic_reputation = root
+				}
 			}
 		}
 
 		effect = {
-			palestine_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			trans_jordan_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			syria_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			aleppo_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
-			}
-			syrian_desert_area = {
-				limit = { NOT = { owned_by = ROOT } }
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = cs_by_hook_or_by_crook
+				duration = 9125
 			}
 
-			if = {
-				limit = {
-					NOT = { owns = 379 }
-				}
+			custom_tooltip = cs_first_among_equals_effect_tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_levantine_crusader_state = yes
+					}
 
-				# Add Holy War CB for Jerusalem
-				379 = {
-					owner = {
-						ROOT = {
-							add_casus_belli = {
-								type = cb_crusade_for_jerusalem
-								target = PREV
-								months = 60
+					if = {
+						limit = {
+							is_rival = ROOT
+							has_opinion = {
+								who = root
+								value = 0
 							}
 						}
+						force_remove_rival = ROOT
+					}
+
+					if = {
+						limit = {
+							has_opinion = {
+								who = root
+								value = 100
+							}
+						}
+						add_historical_friend = ROOT
 					}
 				}
 			}
 		}
 	}
+
+	cs_royal_dowries = {
+		icon = mission_riches_of_golconda
+		required_missions = { cs_first_among_equals }
+		position = 3
+
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				is_levantine_crusader_state = yes
+				NOT = { tag = root }
+				NOT = {
+					OR = {
+						marriage_with = root
+						has_spy_network_from = {
+							who = root
+							value = 80
+						}
+					}
+				}
+			}
+		}
+
+		trigger = {
+			NOT = {
+				any_known_country = {
+					is_levantine_crusader_state = yes
+					AND = {
+						NOT = { marriage_with = root }
+						NOT = {
+							has_spy_network_from = {
+								who = root
+								value = 80
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+		effect = {
+			every_known_country = {
+				limit = {
+					is_levantine_crusader_state = yes
+					NOT = { marriage_with = root }
+				}
+				create_marriage = root
+				if = {
+					limit = { is_rival = root }
+					force_remove_rival = root
+				}
+			}
+			country_event = { id = mrCrusaderEvents.2 }
+		}
+	}
+
+	cs_a_house_united = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { cs_royal_dowries }
+		position = 4
+
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				is_levantine_crusader_state = yes
+				NOT = {
+					trust = {
+						who = root
+						value = 90
+					}
+				}
+			}
+		}
+
+		trigger = {
+			NOT = {
+				any_known_country = {
+					is_levantine_crusader_state = yes
+					NOT = {
+						trust = {
+							who = root
+							value = 90
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = cs_a_house_united_effect_tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_levantine_crusader_state = yes
+					}
+					root = {
+						vassalize = prev
+					}
+				}
+			}
+		}
+	}
+
+	# This comes after the branching missions (i.e. both branches lead to this)
+	cs_call_for_crusade_2 = {
+		icon = mission_crusade_for_varna
+		required_missions = { cs_a_house_united }
+		position = 5
+
+		provinces_to_highlight = {
+			is_in_outremer = yes
+			NOT = { owned_by = root }
+		}
+
+		trigger = {
+			cs_call_for_crusade_trigger = yes
+		}
+
+		effect = {
+			cs_call_for_crusade_effect = yes
+		}
+	}
 }
 
-# crusader_missions_diplomatic_path = {
 
-# }
+
+
+# Third slot: Development of relationship with Italian city-states and our trade with Europe
+crusader_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_grant_italian_quarter = {
+		icon = mission_diplomatic_relation
+		required_missions = { }
+		position = 1
+
+
+		# Any Italian Republic likes us
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_grant_italian_quarter_trigger_TT
+				any_known_country = {
+					capital_scope = {
+						region = italy_region
+					}
+					government = republic
+					has_matching_religion = ROOT
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+		}
+
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+			}
+		}
+	}
+
+	cs_seek_italian_military_support = {
+		icon = mission_war_chest
+		required_missions = { cs_grant_italian_quarter }
+		position = 2
+
+		trigger = {
+			AND = {
+				has_estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+		}
+
+		effect = {
+			custom_tooltip = cs_seek_italian_military_support_reward_TT
+			hidden_effect = {
+				set_country_flag = crusader_state_italian_mercenaries
+			}
+		}
+	}
+
+	cs_eastern_metropolis = {
+		icon = mission_city_of_the_world's_desire
+		required_missions = { cs_seek_italian_military_support }
+		position = 4
+
+		trigger = {
+			capital_scope = {
+				development = 25
+				is_prosperous = yes
+			}
+			has_estate_privilege = estate_burghers_crusaders_grant_italian_quarter
+			# Need a Muslim neighbor to like us so that we can have trade flow through them, then us, then on to the rest of Europe
+			any_neighbor_country = {
+				religion = sunni
+				has_opinion = {
+					who = THIS
+					value = 100
+				}
+				NOT = {
+					trade_embargoing = THIS
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						province_has_center_of_trade_of_level = 3
+					}
+				}
+				add_treasury = 1500 # More than level 3 COT cost to be nice :)
+			}
+			else = {
+				capital_scope = {
+					add_center_of_trade_level = 1
+				}
+			}
+
+			custom_tooltip = cs_eastern_metropolis_TT
+			hidden_effect = {
+				capital_scope = {
+					add_province_modifier = {
+						name = cs_eastern_metropolis_capital_prov
+						duration = -1
+					}
+
+					every_province_in_state = {
+						add_province_modifier = {
+							name = cs_eastern_metropolis_capital_area
+							duration = -1
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
 
 
 
@@ -517,7 +793,7 @@ crusader_missions_4 = {
 	}
 
 	cs_seek_religious_accord = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_mustansiriya_madrasah
 		required_missions = { }
 		position = 1
 
@@ -534,8 +810,229 @@ crusader_missions_4 = {
 		}
 
 		effect = {
+			# man idk
 			unlock_estate = {
 				estate = estate_sarraceni
+			}
+			set_country_flag = enables_estate_sarraceni_flag
+		}
+	}
+
+	cs_satisfy_minority_leaders = {
+		icon = mission_muslim_administrators
+		required_missions = { cs_seek_religious_accord }
+		position = 2
+
+		trigger = {
+			has_estate = estate_sarraceni
+			has_estate_privilege = estate_sarraceni_guaranteed_autonomy
+			estate_loyalty = {
+				estate = estate_sarraceni
+				loyalty = 60
+			}
+		}
+
+		effect = {
+			add_treasury = 250 #idk man
+
+			define_advisor = {
+				type = theologian
+				cost_multiplier = 0.5
+				skill = 2
+			}
+		}
+	}
+
+	cs_a_stable_society = {
+		icon = mission_peasantry
+		required_missions = { cs_satisfy_minority_leaders cs_looming_mamluks }
+		position = 3
+
+		trigger = {
+			is_at_war = no
+			stability = 2
+			has_estate_privilege = estate_sarraceni_guaranteed_autonomy
+			NOT = { average_unrest = 1 }
+			NOT = {
+				any_owned_province = {
+					devastation = 1
+				}
+			}
+			# Have a state other than the capital with prosperity
+			any_owned_province = {
+				is_prosperous = yes
+				NOT = { is_in_capital_area = yes }
+			}
+		}
+
+		effect = {
+			add_prestige_or_monarch_power = { amount = 50 }
+			add_country_modifier = {
+				name = cs_stable_society
+				duration = 18250 # 50 years
+			}
+		}
+	}
+
+	cs_eastern_exports = {
+		icon = mission_trade_in_gold_coast
+		required_missions = { cs_a_stable_society }
+		position = 4
+
+		provinces_to_highlight = {
+			owned_by = root
+
+			OR = {
+				NOT = { development = 10 }
+				NOT = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+
+						has_building = workshop
+						has_building = counting_house
+					}
+				}
+			}
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 10
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+
+			home_trade_node = {
+				is_strongest_trade_power = ROOT
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+
+						has_building = workshop
+						has_building = counting_house
+					}
+				}
+
+				add_base_production = 2
+			}
+
+			add_country_modifier = {
+				name = cs_eastern_exports_mod
+				duration = 18250 # 50 years
+			}
+		}
+	}
+
+	cs_thriving_trade = {
+		icon = mission_mare_nostrum
+		required_missions = { cs_eastern_metropolis cs_eastern_exports cs_agricultural_centralization }
+		position = 5
+
+		trigger = {
+			# I have no fuckin clue man
+			always = yes
+		}
+
+		effect = {
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = cs_thriving_trade_mod
+				duration = -1
+			}
+		}
+	}
+}
+
+crusader_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_looming_mamluks = {
+		icon = mission_ottoman_early_army
+		required_missions = { }
+		position = 2
+
+		trigger = {
+			OR = {
+				any_ally = {
+					OR = {
+						is_rival = MAM
+						tag = MAM
+					}
+				}
+				MAM = { exists = no }
+				land_forcelimit = MAM
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						MAM = { exists = no }
+						land_forcelimit = MAM
+					}
+				}
+				add_prestige_or_monarch_power = { amount = 50 }
+			}
+			add_country_modifier = {
+				name = cs_diplomatic_success
+				duration = 7300 # 10 years
+			}
+		}
+	}
+
+	cs_agricultural_centralization = {
+		icon = mission_state_manufactories
+		required_missions = { cs_a_stable_society }
+		position = 4
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+
+				has_building = manufactory
+				OR = {
+					has_farm_trade_goods = yes
+					has_pasture_trade_goods = yes
+				}
+				NOT = { local_autonomy = 1 }
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					has_building = manufactory
+					has_farm_trade_goods = yes
+				}
+
+				add_base_production = -1
+				add_base_manpower = 2
+				add_province_modifier = {
+					name = cs_plantation_economy
+					duration = -1
+				}
 			}
 		}
 	}

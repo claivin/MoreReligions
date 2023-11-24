@@ -2,12 +2,12 @@
 
 owner = TPO
 controller = TPO
-culture = al_suryah_arabic
+culture = outremer
 religion = catholic
-capital = "Sayda"
+capital = "Sidon"
 trade_goods = naval_supplies
 hre = no
-base_tax = 5 
+base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes

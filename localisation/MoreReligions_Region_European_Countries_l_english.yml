@@ -280,23 +280,21 @@
  CST_ADJ: "Istinopol"
  CST_ADJ2: "Istinopol"
  
- 
  EDD: "Edessa"
  EDD_ADJ: "Edessan"
  EDD_ADJ2: "Edessan"
  
  TPO: "Tripoli"
- TPO_ADJ: "Tripolian"
- TPO_ADJ2: "Tripolian"
- 
+ TPO_ADJ: "Tripolitanian"
+ TPO_ADJ2: "Tripolitanian"
  
  ATI: "Antioch"
  ATI_ADJ: "Antiochian"
  ATI_ADJ2: "Antiochian"
  
- # LEB: "Labenon"
- # LEB_ADJ: "Labenese"
- # LEB_ADJ2: "Lebenese"
+ LEB: "Lebanon"
+ LEB_ADJ: "Lebanese"
+ LEB_ADJ2: "Lebanese"
 
  COP: "Copenhagen"
  COP_ADJ: "Copenhagener"

@@ -137,10 +137,11 @@ can_have_mountaineers = {
 }
 
 is_levantine_crusader_state = {
-	# Crusaders = Antioch, Edessa, Lebanon, Tripoli
+	# Crusaders = Antioch, Cyprus, Edessa, Lebanon, Tripoli
 	# Also keep it valid for Jerusalem
 	OR = {
 		tag = ATI
+		tag = CYP
 		tag = EDD
 		tag = LEB
 		tag = TPO
@@ -148,6 +149,8 @@ is_levantine_crusader_state = {
 	}
 }
 
+# Is a province in what we are defining as Outremer, since it's not an in game
+# region nor does it follow neat state lines
 is_in_outremer = {
 	OR = {
 		area = palestine_area
@@ -155,15 +158,60 @@ is_in_outremer = {
 		area = aleppo_area
 		area = syria_area
 		area = syrian_desert_area
-		area = cukurova_area # Cilicia/Little Armenia + Cyprus
+		# Cilicia/Little Armenia
+		province_id = 327
+		province_id = 2302
+		province_id = 5387
+
+		province_id = 321 # Cyprus
 		province_id = 2308 # Edessa
 		province_id = 407 # Ar-Raqqah
 		province_id = 4268 # Aqbah
+
 		# Sinai peninsula
 		province_id = 365
 		province_id = 5284
 		province_id = 2315
 		province_id = 5375
+	}
+}
+
+# Used for repeated mission in crusader states missions
+cs_call_for_crusade_trigger = {
+	OR = {
+		AND = {
+			# Popeman likes us or has to listen to us
+			OR = {
+				PAP = {
+					has_opinion = {
+						who = from
+						value = 150
+					}
+				}
+				papal_influence = 100
+			}
+			# A great European Prince must sponsor the Crusade
+			any_known_country = {
+				government = monarchy
+				OR = {
+					government_rank = 2
+					total_development = 100
+				}
+				religion = from
+				OR = {
+					has_opinion = {
+						who = from
+						value = 150
+					}
+					owes_favors = {
+						who = from
+						value = 30
+					}
+				}
+			}
+		}
+		# Already own Jerusalem
+		owns = 379
 	}
 }
 

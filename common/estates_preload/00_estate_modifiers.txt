@@ -76,7 +76,7 @@ estate_church = {
 			has_estate = estate_church
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = church_privilege_slots
@@ -139,7 +139,7 @@ estate_maratha = {
 			NOT = { has_estate = estate_nobles }
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = maratha_privilege_slots
@@ -186,7 +186,7 @@ estate_nobles = {
 			NOT = { has_estate = estate_rajput }
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = nobles_privilege_slots
@@ -212,7 +212,7 @@ estate_burghers = {
 			has_estate = estate_burghers
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = burghers_privilege_slots
@@ -256,7 +256,7 @@ estate_vaisyas = {
 			NOT = { religion_group = muslim }
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = vaisyas_privilege_slots
@@ -282,7 +282,7 @@ estate_cossacks = {
 			has_estate = estate_cossacks
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = cossacks_privilege_slots
@@ -308,7 +308,7 @@ estate_nomadic_tribes = {
 			has_estate = estate_nomadic_tribes
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = nomadic_tribes_privilege_slots
@@ -334,7 +334,7 @@ estate_dhimmi = {
 			has_estate = estate_dhimmi
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = dhimmi_privilege_slots
@@ -360,7 +360,7 @@ estate_jains = {
 			has_estate = estate_jains
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = jains_privilege_slots
@@ -423,7 +423,7 @@ estate_rajput = {
 			NOT = { has_estate = estate_nobles }
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = rajput_privilege_slots
@@ -449,7 +449,7 @@ estate_janissaries = {
 			has_estate = estate_janissaries
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = janissaries_privilege_slots
@@ -475,7 +475,7 @@ estate_eunuchs = {
 			has_estate = estate_eunuchs
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = eunuchs_privilege_slots
@@ -583,6 +583,24 @@ estate_shugo = {
 		key = shugo_influence_modifier
 		trigger = {
 			has_estate = estate_shugo
+		}
+	}
+}
+
+estate_sarraceni = {
+	modifier_definition = {
+		type = loyalty
+		key = sarraceni_loyalty_modifier
+		trigger = {
+			has_estate = estate_sarraceni
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = sarraceni_influence_modifier
+		trigger = {
+			has_estate = estate_sarraceni
 		}
 	}
 }

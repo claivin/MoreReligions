@@ -1,13 +1,18 @@
-country_event = {
-	id = crusader_states_branching_mission_event
+#MR events for Crusader tags
+namespace = mrCrusaderEvents
+normal_or_historical_nations = yes
 
-	title = crusader_states_branching_mission_event.t
-	desc = crusader_states_branching_mission_event.d
+# Choice in mission tree branch--conquest or diplomacy
+country_event = {
+	id = mrCrusaderEvents.1
+
+	title = mrCrusaderEvents.1.t
+	desc = mrCrusaderEvents.1.d
 
 	is_triggered_only = yes
 
 	option = {
-		name = crusader_states_branching_mission_event.a
+		name = mrCrusaderEvents.1.a
 
 		# Adds +2 shock +1 siege pips on top of the RNG to make the general not garbo, but 40 AT so he won't be like 3*
 		create_general = {
@@ -22,7 +27,7 @@ country_event = {
 			skill = 1
 		}
 
-		custom_tooltip = crusader_states_branching_mission_event_A_TT
+		custom_tooltip = mrCrusaderEvents.1_A_TT
 
 		set_country_flag = cs_domination_path
 
@@ -30,7 +35,7 @@ country_event = {
 	}
 
 	option = {
-		name = crusader_states_branching_mission_event.b
+		name = mrCrusaderEvents.1.b
 
 		add_country_modifier = {
 			name = crusader_states_princely_diplomacy
@@ -38,15 +43,385 @@ country_event = {
 		}
 
 		define_advisor = {
-			type = army_reformer
+			type = statesman
 			cost_multiplier = 0.5
 			skill = 1
 		}
 
-		custom_tooltip = crusader_states_branching_mission_event_B_TT
+		custom_tooltip = mrCrusaderEvents.1_B_TT
 
-		set_country_flag = cs_diplomatic_path@ROOT
+		set_country_flag = cs_diplomatic_path
 
 		swap_non_generic_missions = yes
+	}
+}
+
+# Grand wedding (diplo path event)
+country_event = {
+	id = mrCrusaderEvents.2
+	title = mrCrusaderEvents.2.t
+	desc = mrCrusaderEvents.2.d
+
+	is_triggered_only = yes
+
+	major = yes
+
+	major_trigger = {
+		capital_scope = {
+			superregion = near_east_superregion
+		}
+	}
+
+	option = {
+		name = mrCrusaderEvents.2.a
+
+		add_years_of_income = -5
+		every_known_country = {
+			limit = {
+				is_levantine_crusader_state = yes
+			}
+			add_trust = {
+				who = root
+				value = 20
+			}
+		}
+	}
+
+	option = {
+		name = mrCrusaderEvents.2.b
+
+		add_years_of_income = -3
+		every_known_country = {
+			limit = {
+				is_levantine_crusader_state = yes
+			}
+			add_trust = {
+				who = root
+				value = 10
+			}
+		}
+	}
+
+	option = {
+		name = mrCrusaderEvents.2.c
+
+		add_years_of_income = 3
+		every_known_country = {
+			limit = {
+				is_levantine_crusader_state = yes
+			}
+			add_trust = {
+				who = root
+				value = -5
+			}
+		}
+	}
+}
+
+
+# Causes visible province event to fire that swaps to a better trade good
+country_event = {
+	id = mrCrusaderEvents.3
+
+	hidden = yes
+
+	mean_time_to_happen = {
+		years = 10
+
+		modifier = {
+			factor = 0.5
+			stability = 2
+		}
+	}
+
+	trigger = {
+		is_levantine_crusader_state = yes
+		mission_completed = cs_agricultural_centralization
+		any_owned_province = {
+			OR = {
+				is_in_outremer = yes
+				region = mashriq_region
+			}
+			OR = {
+				has_farm_trade_goods = yes
+				has_pasture_trade_goods = yes
+			}
+		}
+
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_outremer = yes
+					region = mashriq_region
+				}
+				OR = {
+					has_farm_trade_goods = yes
+					has_pasture_trade_goods = yes
+				}
+			}
+
+			province_event = {
+				id = mrCrusaderEvents.4
+			}
+		}
+	}
+
+	option = {
+
+	}
+}
+
+province_event = {
+	id = mrCrusaderEvents.4
+	title = mrCrusaderEvents.4.t
+	desc = mrCrusaderEvents.4.d
+	picture = GFX_farm_estate
+
+	is_triggered_only = yes
+
+	option = {
+		name = mrCrusaderEvents.4.a
+		change_trade_goods = sugar
+	}
+
+	option = {
+		name = mrCrusaderEvents.4.b
+		change_trade_goods = tobacco
+	}
+
+	option = {
+		name = mrCrusaderEvents.4.c
+		change_trade_goods = olives
+	}
+
+	option = {
+		name = mrCrusaderEvents.4.e
+		change_trade_goods = dates_figs
+	}
+}
+
+country_event = {
+	id = mrCrusaderEvents.5
+	title = mrCrusaderEvents.5.t
+	desc = mrCrusaderEvents.5.d
+	picture = REBELLION_AGAINST_ANGLICANS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mrCrusaderEvents.5.a
+
+		inherit = ATI
+		# every_owned_province = {
+		# 	limit = {
+		# 		is_core = ATI
+		# 	}
+		# 	add_nationalism = 10
+		# }
+	}
+}
+
+# Pulse event: new papal legate
+# The following 3 events are triggered depending on the condition when the
+# hidden event fires
+country_event = {
+	id = mrCrusaderEvents.6
+
+	mean_time_to_happen = {
+		years = 15
+	}
+
+	trigger = {
+		is_levantine_crusader_state = yes
+		religion = catholic
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = { # Pope loves us
+				limit = {
+					OR = {
+						PAP = { has_opinion = { who = root value = 100 } }
+						ai_attitude = { who = PAP attitude = attitude_friendly }
+						ai_attitude = { who = PAP attitude = attitude_allied }
+					}
+				}
+
+				country_event = {
+					id = mrCrusaderEvents.7
+				}
+			}
+			else_if = { # Pope is neutral
+				limit = {
+					PAP = { has_opinion = { who = root value = 0 } }
+				}
+
+				country_event = {
+					id = mrCrusaderEvents.8
+				}
+			}
+			else = { # Pope does not like us
+				country_event = {
+					id = mrCrusaderEvents.9
+				}
+			}
+		}
+	}
+
+	option = {
+		# Dummy
+	}
+}
+
+# Papal legate: good ending
+country_event = {
+	name = mrCrusaderEvents.7
+	title = mrCrusaderEvents.7.t
+	desc = mrCrusaderEvents.7.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mrCrusaderEvents.7.a
+
+		add_papal_influence = 25
+		add_legitimacy = 5
+	}
+}
+
+# Papal legate: pope neutral
+country_event = {
+	name = mrCrusaderEvents.8
+	title = mrCrusaderEvents.8.t
+	desc = mrCrusaderEvents.8.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = mrCrusaderEvents.8.a
+
+		effect = {
+			add_papal_influence = 5
+		}
+	}
+
+	option = { # Special option for ruler traits
+		name = mrCrusaderEvents.8.b
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = well_connected_personality
+				ruler_has_personality = silver_tongue_personality
+				ruler_has_personality = sinner_personality
+			}
+			NOT = {
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = incorruptible_personality
+					ruler_has_personality = righteous_personality
+				}
+			}
+		}
+
+		add_treasury = -50
+		add_papal_influence = 25
+
+		hidden_effect = {
+			add_opinion = {
+				who = PAP
+				modifier = mr_crusaders_papal_legate_bribed
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = mr_crusaders_papal_legate_bribed
+			}
+		}
+	}
+}
+
+# Papal legate: Pope dislikes us
+country_event = {
+	name = mrCrusaderEvents.9
+	title = mrCrusaderEvents.9.t
+	desc = mrCrusaderEvents.9.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Okay...
+		name = mrCrusaderEvents.9.a
+
+		effect = {
+			add_papal_influence = -25
+			add_legitimacy = -10
+		}
+	}
+
+	option = { # Maybe we can do something about that...
+		name = mrCrusaderEvents.9.b
+
+		trigger = {
+			NOT = {
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = incorruptible_personality
+					ruler_has_personality = righteous_personality
+				}
+			}
+		}
+
+		add_treasury = -100
+		add_papal_influence = 10
+
+		hidden_effect = {
+			add_opinion = {
+				who = PAP
+				modifier = mr_crusaders_papal_legate_bribed
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = mr_crusaders_papal_legate_bribed
+			}
+		}
+	}
+
+	option = { # Special option for ruler traits
+		name = mrCrusaderEvents.9.c
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = well_connected_personality
+				ruler_has_personality = silver_tongue_personality
+				ruler_has_personality = sinner_personality
+			}
+			NOT = {
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = incorruptible_personality
+					ruler_has_personality = righteous_personality
+				}
+			}
+		}
+
+		add_treasury = -50
+		add_papal_influence = 50
+
+		hidden_effect = {
+			add_opinion = {
+				who = PAP
+				modifier = mr_crusaders_papal_legate_bribed
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = mr_crusaders_papal_legate_bribed
+			}
+		}
 	}
 }

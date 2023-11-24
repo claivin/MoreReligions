@@ -31,11 +31,11 @@ mr_carcasonne = {
 	}
 	#what to do when it's built
 	on_built = {
-		
+
 	}
 	#what to do when it's destroyed
 	on_destroyed = {
-		
+
 	}
 	#can our country use it?
 	can_use_modifiers_trigger = {
@@ -160,6 +160,7 @@ mr_carcasonne = {
 		}
 	}
 }
+
 mr_house_of_wisdom = {
 	# province it starts in
 	start = 410
@@ -282,7 +283,7 @@ mr_house_of_wisdom = {
 			idea_cost = -0.10
 			innovativeness_gain = 0.25
 			harmonization_speed = 0.15
-			monthly_piety_accelerator = 0.1	
+			monthly_piety_accelerator = 0.1
 		}
 		on_upgraded = {
 			owner = {
@@ -317,11 +318,11 @@ mr_three_pagodas = {
 	}
 	#what to do when it's built
 	on_built = {
-		
+
 	}
 	#what to do when it's destroyed
 	on_destroyed = {
-		
+
 	}
 	#can our country use it?
 	can_use_modifiers_trigger = {
@@ -393,7 +394,7 @@ mr_three_pagodas = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-		yearly_karma_decay = 0.10	
+		yearly_karma_decay = 0.10
 		global_missionary_strength = 0.02
 		harmonization_speed = 0.2
 		}
@@ -417,7 +418,7 @@ mr_three_pagodas = {
 			local_unrest = -3
 		}
 		country_modifiers = {
-			yearly_karma_decay = 0.20	
+			yearly_karma_decay = 0.20
 		    global_missionary_strength = 0.03
 		    harmonization_speed = 0.33
 		}
@@ -441,7 +442,7 @@ mr_olito_palace = {
 	}
 	on_built = {
 		add_splendor = 100
-	}	
+	}
 	on_destroyed = {
 		add_splendor = -100
 	}
@@ -483,7 +484,7 @@ mr_olito_palace = {
 		cost_to_upgrade = {
 			factor = 500
 		}
-		province_modifiers = {	
+		province_modifiers = {
 			local_defensiveness = 0.5
 			fort_maintenance_modifier = -0.30
 		}
@@ -522,4 +523,228 @@ mr_olito_palace = {
 			}
 		}
 	}
-}	
+}
+
+mr_citadel_of_antioch = {
+	start = 2313 # Antioch
+	date = 333.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 1
+	type = monument
+
+	# It's just a dang fort, anyone can build/upgrade/etc.
+	build_trigger = { }
+
+	on_built = { }
+
+	on_destroyed = { }
+
+	can_use_modifiers_trigger = { }
+
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 400
+		}
+		province_modifiers = {
+			local_defensiveness = 0.25
+			local_garrison_size = 0.25
+		}
+		area_modifier = {
+			supply_limit = 0.5
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 15 }
+				add_splendor = 50
+			}
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 180
+		}
+		cost_to_upgrade = {
+			factor = 800
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.25
+			local_garrison_size = 0.50
+		}
+		area_modifier = {
+			supply_limit = 1
+			local_defensiveness = 0.25
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 25 }
+				add_splendor = 50
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2000
+		}
+		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.75
+			local_garrison_size = 1.0
+			fort_level = 2
+		}
+		area_modifier = {
+			supply_limit = 1.5
+			local_build_cost = -0.2
+			local_defensiveness = 0.25
+			local_fort_maintenance_modifier = -1
+		}
+		country_modifiers = {
+			fort_maintenance_modifier = -0.1
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 50 }
+				add_splendor = 100
+			}
+		}
+	}
+}
+
+mr_port_st_symeon = {
+	start = 2313 # Antioch
+	date = 333.01.01
+	time = {
+		months = 0
+	}
+	build_cost = 0
+	can_be_moved = no
+	starting_tier = 0
+	type = monument
+
+	# It's just a dang port, anyone can build/upgrade/etc.
+	build_trigger = { }
+
+	on_built = { }
+
+	on_destroyed = { }
+
+	can_use_modifiers_trigger = { }
+
+	can_upgrade_trigger = { }
+	keep_trigger = { }
+
+	#tier data
+	tier_0 = {
+		upgrade_time = {
+			months = 0
+		}
+		cost_to_upgrade = {
+			factor = 0
+		}
+		province_modifiers = { }
+		area_modifier = { }
+		country_modifiers = { }
+		on_upgraded = { }
+	}
+
+	tier_1 = {
+		upgrade_time = {
+			months = 60
+		}
+		cost_to_upgrade = {
+			factor = 500
+		}
+		province_modifiers = {
+			province_trade_power_value = 10
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.1
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		upgrade_time = {
+			months = 180
+		}
+		cost_to_upgrade = {
+			factor = 1000
+		}
+		province_modifiers = {
+			province_trade_power_value = 15
+			local_production_efficiency = 0.25
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.25
+		}
+		country_modifiers = {
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 10 }
+				add_splendor = 25
+			}
+		}
+	}
+
+	tier_3 = {
+		upgrade_time = {
+			months = 240
+		}
+		cost_to_upgrade = {
+			factor = 2500
+		}
+		province_modifiers = {
+			province_trade_power_value = 25
+			local_production_efficiency = 0.5
+		}
+		area_modifier = {
+			province_trade_power_modifier = 0.50
+		}
+		country_modifiers = {
+			trade_efficiency = 0.05
+		}
+		on_upgraded = {
+			owner = {
+				add_prestige_or_monarch_power = { amount = 25 }
+				add_splendor = 50
+			}
+		}
+	}
+}
