@@ -1034,12 +1034,15 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = greek
+				culture = peloponnesian
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = athenian
+				culture = greek
 				province_is_or_accepts_culture = yes
+			}
+			OR = {
+				has_reform = mr_latin_kingdom
 			}
 		}	
 	}
@@ -1074,12 +1077,15 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = greek
+				culture = peloponnesian
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = athenian
+				culture = greek
 				province_is_or_accepts_culture = yes
+			}
+			OR = {
+				has_reform = mr_latin_kingdom
 			}
 		}
 	}
@@ -1095,14 +1101,17 @@ parthenon = {
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = greek
+				culture = peloponnesian
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
-				culture = athenian
+				culture = greek
 				province_is_or_accepts_culture = yes
 			}
-		}
+			OR = {
+				has_reform = mr_latin_kingdom
+			}
+		}	
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?

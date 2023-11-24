@@ -1,6 +1,4 @@
 war_for_greece = {
-	warscore_from_battles_modifier = 0.33
-	war_exhaustion = -0.01
 }
 restoring_latin_leadership = {
 	local_years_of_nationalism = -10
@@ -9,4 +7,29 @@ restoring_latin_leadership = {
 breaking_latin_control = {
 	local_core_creation = -0.15
 	local_unrest = -1
+}
+frankokratia_1 = {
+	num_accepted_cultures = 1
+}
+trade_route_secured = {
+	local_friendly_movement_speed = 0.05
+	local_tax_modifier = 0.1
+}
+populate_the_west = {
+	local_development_cost = -0.1
+}
+acrocorinth_building = {
+	allowed_num_of_manufactories = 1
+}
+latins_triumphant = {
+	missionaries = 1
+	cavalry_power = 0.15
+}
+hellenes_triumphant = {
+	land_morale = 0.15
+	governing_capacity_modifier = 0.10
+}
+byzantines_triumphant = {
+	tolerance_own = 3
+	global_unrest = -2
 }

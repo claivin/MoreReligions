@@ -204,6 +204,29 @@ on_battle_lost_country = {
 		}
 	}
 }
+on_battle_won_unit = {
+	if = {
+		limit = {
+			unit_owner = {
+				has_country_modifier = war_for_greece
+			}
+			location = {
+				OR = {
+					area = thrace_area
+					area = morea_area
+					area = macedonia_area
+					area = northern_greece_area
+					area = aegean_archipelago_area
+				}
+			}	
+		}
+		unit_owner = {
+			add_army_professionalism = 0.001
+			add_legitimacy = 0.5
+		}	
+	}
+}
+	
 on_siege_won_country = {
 	if = {
 		limit = {  
@@ -542,15 +565,6 @@ on_bi_yearly_pulse_3 = {
 		christian_school_events.21 #pick reformed denomination
 		MRestate_privileges_and_agendas_events.5
 		promoting_art_events.2	#Art finished!
-	}
-	random_events = {
-		100 = promoting_art_events.3
-		100 = promoting_art_events.4
-		100 = promoting_art_events.5
-		100 = promoting_art_events.6
-		50 = promoting_art_events.7
-		100 = new_court_flavour_events.25 #blood is thicker than water
-		200 = 0
 	}
 }
 

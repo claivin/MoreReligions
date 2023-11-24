@@ -1505,7 +1505,6 @@ persian_government_reform = {
 				}
 				is_playing_custom_nation = yes
 			}
-			NOT = { religion_group = zoroastrian_group }
 		}
 	}
 	trigger = {

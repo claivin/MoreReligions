@@ -39,6 +39,185 @@ mr_greek_missions_second = {
 			tag = CPH
 		}
 	}
+	mr_greece_unity_4 = {
+		icon = reclaim_the_aegean
+		position = 2
+		required_missions = {
+			mr_greece_unity_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = northern_greece_area
+				area = morea_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				province_id = 163
+			}
+		}
+		trigger = { 
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			146 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4701 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			145 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1773 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4698 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = { 
+			custom_tooltip = subject_desire_drastic_go_down
+			
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = build_parthenon_yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = catholic
+					}	
+				}
+				custom_tooltip = build_parthenon_no
+			}
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				custom_tooltip = build_hexamillion_yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = orthodox
+					}	
+				}
+				custom_tooltip = build_hexamillion_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					146 = {
+						add_great_project_tier = {
+							type = parthenon
+							tier = 1
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						religion = orthodox
+					}
+					4701 = {
+						add_great_project_tier = {
+							type = mr_hexamilion 
+							tier = 1
+						}
+					}
+				}
+				every_subject_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								area = northern_greece_area
+								area = morea_area
+							}
+						}
+					}
+					add_liberty_desire = -35
+				}
+			}
+		}
+	}
+	mr_greece_unity_5 = {
+		icon = sources_of_trade
+		position = 3
+		required_missions = {
+			mr_greece_unity_4
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = morea_area
+				area = northern_greece_area
+			}
+			NOT = {
+				has_manpower_building_trigger = yes
+				base_manpower = 5
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = morea_area
+					area = northern_greece_area
+				}
+				has_manpower_building_trigger = yes
+				base_manpower = 5
+				value = 3
+			}
+		}
+		effect = {
+			morea_area = {
+				add_province_modifier = {
+					name = populate_the_west
+					duration = 9125
+				}
+			}
+			northern_greece_area = {
+				add_province_modifier = {
+					name = populate_the_west
+					duration = 9125
+				}
+			}
+			4701 = {
+				add_building_construction = {
+					building = ramparts
+					speed = 0.5
+					cost = 0
+				}
+				add_province_modifier = {
+					name = acrocorinth_building
+					duration = -1
+				}
+			}
+		}
+	}
+}
+mr_greek_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = CEP
+			tag = CPH
+		}
+	}
 	mr_greece_unity_1 = {
 		icon = mission_crusade_for_varna
 		position = 1
@@ -56,15 +235,17 @@ mr_greek_missions_second = {
 			}
 		}
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 2
-				OR = {
-					area = thrace_area
-					area = macedonia_area
-					area = northern_greece_area
-					area = morea_area
+			calc_true_if = {
+				all_province = {
+					OR = {
+						area = thrace_area
+						area = macedonia_area
+						area = northern_greece_area
+						area = morea_area
+					}
+					is_claim = ROOT
 				}
-				is_claim = ROOT
+				amount = 2
 			}
 		}
 		effect = {
@@ -89,37 +270,19 @@ mr_greek_missions_second = {
 				}
 				add_permanent_claim = ROOT
 			}
-			4702 = {
-				if  = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			macedonia_area = {	
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-			}
-			148 = {
-				if  = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			1853 = {
-				if  = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = war_for_greece
+				hidden = yes
 				duration = 3650
 			}
+			custom_tooltip = gain_legitimacy_and_army_professionalism
 		}
 	}
 	mr_greece_unity_2 = {
@@ -266,25 +429,178 @@ mr_greek_missions_second = {
 			}
 		}
 	}
-}
-mr_greek_missions_third = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		OR = {
-			tag = THR
-			tag = TSS
-			tag = THS
-			tag = ATH
-			tag = CNT
-			tag = MOE
-			tag = ACH
-			tag = ATR
-			tag = EPI
-			tag = CEP
-			tag = CPH
+	mr_greece_unity_3 = {
+		icon = byz_reinforce_constantinople
+		required_missions = { mr_greece_unity_2 }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 149
+				province_id = 148
+			}
+			NOT = {
+				AND = {
+					OR = {
+						AND = {
+							development = 15
+							has_tax_building_trigger = yes
+						}
+						development = 18
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		trigger = {
+			149 = {
+				OR = {
+					AND = {
+						development = 15
+						has_tax_building_trigger = yes
+					}
+					development = 18
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			148 = {
+				OR = {
+					AND = {
+						development = 15
+						has_tax_building_trigger = yes
+					}
+					development = 18
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = borean_reward_tt
+			tooltip = {
+				add_province_modifier = {
+					name = trade_route_secured
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = frakokratia_1_reward_yes
+				tooltip = {
+					add_country_modifier = {
+						name = frankokratia_1
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { religion = catholic }
+				}
+				custom_tooltip = frakokratia_1_reward_no
+				tooltip = {
+					add_country_modifier = {
+						name = frankokratia_1
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				custom_tooltip = patriarch_authority_reward_1_yes
+			}
+			else_if = {
+				limit = {
+					NOT = { religion = orthodox}
+				}
+				custom_tooltip = patriarch_authority_reward_1_no
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = borean
+					}
+					add_province_modifier = {
+						name = trade_route_secured
+						duration = -1
+					}
+				}
+				if = {
+					limit = {
+						religion = catholic
+					}
+					add_country_modifier = {
+						name = frankokratia_1
+						duration = -1
+					}
+				}
+				else = {
+					add_patriarch_authority = 0.05
+				}
+			}
+		}
+	}
+	mr_greece_unity_6 = {
+		icon = byz_city_of_worlds_desire
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				tag = LAE
+				tag = BYZ
+				tag = GRE
+			}
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			crown_land_share = 30
+		}
+		effect = {
+			silistria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hudavendigar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aydin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = {
+				id = MrGreekEvents.1
+			}
 		}
 	}
 }

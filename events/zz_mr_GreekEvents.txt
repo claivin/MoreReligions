@@ -1,0 +1,74 @@
+namespace = MrGreekEvents
+
+country_event = {
+	id = MrGreekEvents.1
+	title = MrGreekEvents.1.t
+	desc = MrGreekEvents.1.d
+	picture = BYZ_GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = { #The New Romaniae
+		name = MrGreekEvents.1.a
+		trigger = {
+			tag = LAE
+		}
+		if = {
+			limit = {
+				not = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		else = {
+			add_adm_power = 100
+		}
+		custom_tooltip = enable_unify_greek_cultures_decision
+		add_country_modifier = {
+			name = latins_triumphant
+			duration = 18250
+		}
+	}
+
+	option = { #The Hellenistic Era
+		name = MrGreekEvents.1.b
+		trigger = {
+			tag = GRE
+		}
+		if = {
+			limit = {
+				not = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		else = {
+			add_adm_power = 100
+		}
+		custom_tooltip = enable_unify_greek_cultures_decision
+		add_country_modifier = {
+			name = hellenes_triumphant
+			duration = 18250
+		}
+	}
+
+	option = { #The Pheonix Rises
+		name = MrGreekEvents.1.c
+		trigger = {
+			tag = BYZ
+		}
+		if = {
+			limit = {
+				not = { government_rank = 3 }
+			}
+			set_government_rank = 3
+		}
+		else = {
+			add_adm_power = 100
+		}
+		custom_tooltip = enable_unify_greek_cultures_decision
+		add_country_modifier = {
+			name = byzantines_triumphant
+			duration = 18250
+		}
+	}
+}

@@ -694,20 +694,41 @@ confucian_scholars_JAP: "Confucian Scholars"
 #Latin Missions
 #Titles
 mr_greece_unity_1_title: "Prepare for the Campaigns"
-mr_greece_unity_2_title: "The Northern Kingdoms"
-
+mr_greece_unity_2_title: "The Latin North"
+mr_greece_unity_3_title: "Connecting the Cities"
+mr_greece_unity_4_title: "The Hellenic South"
+mr_greece_unity_5_title: "Populating the Pindus"
+mr_greece_unity_6_title: "The Rebirth of Rhomania"
 
 #Tooltips
-if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, we will recieve the following:"
-if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, we will recieve the following:"
-if_orthodox_yes: "£yes£If we complete this mission while being §YOrthodox§!, we will recieve the following:"
-if_orthodox_no: "£no£If we complete this mission while being §YOrthodox§!, we will recieve the following:"
+if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
+if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
+if_orthodox_yes: "£yes£If we complete this mission while being §YOrthodox§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
+if_orthodox_no: "£no£If we complete this mission while being §YOrthodox§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
+gain_legitimacy_and_army_professionalism: "\nFor §Y10§! Years, whenever we win a battle we will gain §G+0.5§! Legitimacy and §G+0.1%§! Army Professionalism."
+borean_reward_tt: "All owned provinces with the §YBorean§! Culture will recieve the following:"
+frakokratia_1_reward_yes: "£yes£If we complete this mission while being §YCatholic§!, we will recieve the following:"
+frakokratia_1_reward_no: "£no£If we complete this mission while being §YCatholic§!, we will recieve the following:"
+patriarch_authority_reward_1_yes: "£yes£If we complete this mission while being §YOrthodox§!, we will recieve §Y+5%§! Patriarch Authority"
+patriarch_authority_reward_1_no: "£no£If we complete this mission while being §YOrthodox§!, we will recieve §Y+5%§! Patriarch Authority"
+build_parthenon_yes: "£yes£If we complete this mission while being §YCatholic§!, we will upgrade the §YParthenon§! Great Project by 1 Tier"
+build_parthenon_no: "£no£If we complete this mission while being §YCatholic§!, we will upgrade the §YParthenon§! Great Project by 1 Tier"
+build_hexamillion_yes: "\n£yes£If we complete this mission while being §YOrthodox§!, we will upgrade the §YHexamillion Wall§! Great Project by 1 Tier"
+build_hexamillion_no: "\n£no£If we complete this mission while being §YOrthodox§!, we will upgrade the §YHexamillion Wall§! Great Project by 1 Tier"
+subject_desire_drastic_go_down: "Reduce all subject §YLiberty Desire§! in the §YMorea§! Area and §YNorthern Greece§! Area by §G-35%§!\n"
+enable_unify_greek_cultures_decision: "\nThis will enable the decision to unify the §YGreek§! Cultures.\n"
 
 #Modifiers
 war_for_greece: "War for Greece"
 restoring_latin_leadership: "Restoring Latin Leadership"
 breaking_latin_control: "Breaking Latin Control"
-
+frankokratia_1: "Borean Acceptance"
+trade_route_secured: "Road Systems Linked"
+populate_the_west: "Repopulate the West"
+acrocorinth_building: "The Acrocorinth"
+latins_triumphant: "Latins Triumphant"
+hellenes_triumphant: "Hellenes Triumphant"
+byzantines_triumphant: "Byzantines Triumphant"
 
 #Baghdad Missions - TO BE COMPLETED!!
 #Titles

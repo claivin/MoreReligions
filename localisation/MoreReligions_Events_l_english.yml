@@ -381,3 +381,11 @@ leon_events.2.1: "There can be only one!"
 castille_events.2.t: "Castille wins the War of the Two Brothers"
 castille_events.2.d: "King Juan The Elder of Castille has bested his younger brother in the Castillian-Leonese civil war and has emerged as the indisputed master over the largest christian realm in Iberia."
 castille_events.2.1: "There can be only one!"
+
+
+#Greek Events
+MrGreekEvents.1.t: "The Unification of Rhomania"
+MrGreekEvents.1.d: "In the wake of the tumultuous era that witnessed the fall of both the Byzantine Empire and the Latin Empire, a new power now begins to rise. The political chaos that followed the collapse of these once-great powers has created an opportunity for a bold and ambitious ruler to unite the fragmented lands under a new banner: a new day for Rhomania has arrived.\n\nWhile the old Byzantines were weak and cursed by God, and the Latins failed to manage those that served them, this new state shall control and dominate all of the lands of the Roman Empire and beyond. They speak of a new era where the Greeks will be united, where the enemies that have pillaged and destroyed the homes of the innocent shall be punished and defeated. With both the backing of the nobles and the church, there is none left to oppose them. Rhomania has been united once more, and the axis on which the world spins has been turned."
+MrGreekEvents.1.a: "A Triumph for the Latins!"
+MrGreekEvents.1.b: "A Triumph for the Hellenes!"
+MrGreekEvents.1.c: "A Triumph for the Byzantines!"
