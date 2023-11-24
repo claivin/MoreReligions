@@ -722,6 +722,10 @@ mr_gsc_missions_third = {
 				name = gsc_rebuilding_china
 				duration = 9125
 			}
+#			custom_tooltip = mrChina_enable_capital_decision_tt
+#			hidden_effect = {
+#				set_country_flag = mrChina_can_choose_capital
+#			}
 		}
 	}
 	##Mission End

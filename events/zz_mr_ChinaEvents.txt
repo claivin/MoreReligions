@@ -201,7 +201,7 @@ country_event = {
 	id = mrChinaEvents.8
 	title = "mrChinaEvents.8.t"
 	desc = "mrChinaEvents.8.d"
-	picture = "BAD_WITH_MONARCH_eventPicture"
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -228,5 +228,149 @@ country_event = {
 	option = {
 		name = "mrChinaEvents.8.a"
 		add_stability = -2
+	}
+}
+
+#Capital choice event
+country_event = {
+	id = mrChinaEvents.9
+	title = "mrChinaEvents.9.t"
+	desc = "mrChinaEvents.9.d"
+	picture = IMPERIAL_SEAL_eventPicture
+
+	is_triggered_only = yes
+
+	trigger ={
+		is_emperor_of_china = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = mrChina_can_choose_capital
+		}
+	}
+
+	option = { #leave it where it is
+		name = "mrChinaEvents.9.a"
+		capital_scope = {
+			set_province_flag = mrChina_chosen_capital_province
+		}
+		hidden_effect = {
+			set_country_flag = mrChina_chose_capital
+		}	
+	}
+
+	option = { #Yingtian (Nanjing)
+		name = "mrChinaEvents.9.b"
+		trigger = {
+			1821 = {
+				owned_by = ROOT
+			}
+		}
+		1821 = {
+			move_capital_effect = yes
+			set_province_flag = mrChina_chosen_capital_province
+		}
+		hidden_effect = {
+			set_country_flag = mrChina_chose_capital
+		}
+	}
+
+	option = { #Wuchang
+		name = "mrChinaEvents.9.c"
+		trigger = {
+			682 = {
+				owned_by = ROOT
+			}
+		}
+		682 = {
+			move_capital_effect = yes
+			set_province_flag = mrChina_chosen_capital_province
+		}
+		hidden_effect = { set_country_flag = mrChina_chose_capital
+		}
+	}
+
+	option = { #Kaifeng
+		name = "mrChinaEvents.9.j"
+		trigger = {
+			688 = {
+				owned_by = ROOT
+			}
+		}
+		688 = {
+			move_capital_effect = yes
+			set_province_flag = mrChina_chosen_capital_province
+			if = {
+				limit = {
+					owner = {
+						tag = GSC
+					}
+				}
+				change_province_name = "Bianjing"
+				rename_capital = "Bianjing"
+			}
+		}
+		hidden_effect = { 
+			set_country_flag = mrChina_chose_capital
+		}
+	}
+
+	option = { #Luoyang
+		name = "mrChinaEvents.9.e"
+		trigger = {
+			1836 = {
+				owned_by = ROOT
+			}
+		}
+		1836 = {
+			move_capital_effect = yes
+			set_province_flag = mrChina_chosen_capital_province
+		}
+		hidden_effect = { 
+			set_country_flag = mrChina_chose_capital
+		}
+	}
+
+	option = { #Xi'an 
+		name = "mrChinaEvents.9.f"
+		trigger = {
+			700 = {
+				owned_by = ROOT
+			}
+		}
+		700 = {
+			move_capital_effect = yes
+			set_province_flag = mrChina_chosen_capital_province
+		}
+		hidden_effect = { 
+			set_country_flag = mrChina_chose_capital
+		}
+	}
+
+	option = { #Beiping (Beijing)
+		name = "mrChinaEvents.9.g"
+		trigger = {
+			1816 = {
+				owned_by = ROOT
+			}
+		}
+		1816 = {
+			move_capital_effect = yes
+			set_province_flag = mrChina_chosen_capital_province
+			change_province_name = "Beijing"
+			rename_capital = "Beijing"
+		}
+		hidden_effect = {
+			set_country_flag = mrChina_chose_capital
+		}
+	}
+
+	option = { #decide later
+		name = "mrChinaEvents.9.h"
+		custom_tooltip = mrChina_enable_capital_decision_tt
+		hidden_effect = {
+			set_country_flag = mrChina_can_choose_capital
+		}
 	}
 }

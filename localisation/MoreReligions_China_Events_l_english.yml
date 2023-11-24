@@ -33,6 +33,17 @@
  mrSongEvents.3.e: "The Boddhisatvas of the Thai spark a debate!"
  mrSongEvents.3.f: "The Xianshou sutras impress the Mingwang!"
  mrSongEvents.3.g: "The Celestial Empress captivates our heart!"
+ mrChinaEvents.9.t:0 "The Imperial Capital"
+ mrChinaEvents.9.d:0 "With our control over much of China secured, it is clear that our dynasty possesses the mandate of heaven and a dark era of disunity for the middle kingdom is coming to an end.\n\nMany historic capitals of former rulers of China now fall within our borders. Declaring one of them to be our new capital may help to cement our legitimacy by symbolically tying our regime to those of the recent or ancient past."
+ mrChinaEvents.9.a:0 "Our current capital has served us well, and will continue to do so." 
+ mrChinaEvents.9.b:0 "Yingtian commands the Yangtze, and all of central China." 
+ mrChinaEvents.9.c:0 "Wuchang offers centrality and security." 
+ mrChinaEvents.9.j:0 "Kaifeng, former capital of Northern Song." 
+ mrChinaEvents.9.e:0 "Sacred Luoyang, seat of the Eastern Han." 
+ mrChinaEvents.9.f:0 "Ancient Xi'an shall be our capital." 
+ mrChinaEvents.9.g:0 "Beiping shall keep the barbarians at bay." 
+ mrChinaEvents.9.h:0 "We shall decide at a later date." 
+ 
 
 #Xia (SHU) events
  mrXiaEvents.0.t:0 "The Invasion of Xia"

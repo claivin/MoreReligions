@@ -64,3 +64,8 @@
  
  zanj_decision_title: "wip"
  zanj_decision_desc: "wip"
+
+#China move capital decision
+ mrChina_enable_capital_decision_tt: "§YEnables a decision to choose a new imperial capital at a later date.§!"
+ mrChina_capital_decision_title: "The Imperial Capital"
+ mrChina_capital_decision_desc: "The time has come to establish a permanent capital for our eternal dynasty. We may only choose cities which are currently within our control. The following cities are possible options:§Y\n\n-Yingtian\n\n-Wuchang\n\n-Kaifeng\n\n-Luoyang\n\n-Xi'an\n\n-Beiping§!"

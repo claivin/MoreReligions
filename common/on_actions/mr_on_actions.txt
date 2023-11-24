@@ -426,6 +426,10 @@ on_mandate_of_heaven_gained = {
 		id = celestial_empire_events.2
 		days = 1825
 	}
+	country_event = { #choose the imperial capital
+		id = mrChinaEvents.9
+		days = 15
+	}
 }
 # province
 on_adm_development = {
