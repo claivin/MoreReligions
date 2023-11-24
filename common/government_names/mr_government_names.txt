@@ -9,10 +9,22 @@ crusader_principalities = {
 		3 = EMPIRE
 	}
 
-	consort_male = {
+	ruler_male = {
 		1 = PRINCE
 		2 = KING
 		3 = EMPEROR
+	}
+
+	ruler_female = {
+		1 = PRINCESS
+		2 = QUEEN
+		3 = EMPRESS
+	}
+
+	consort_male = {
+		1 = PRINCE_CONSORT
+		2 = KING_CONSORT
+		3 = EMPEROR_CONSORT
 	}
 
 	consort_female = {

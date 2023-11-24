@@ -1,7 +1,7 @@
 #5043 Tyre
 
 owner = LEB
-controller = TPO
+controller = LEB
 culture = outremer
 religion = catholic
 capital = "Tyre"

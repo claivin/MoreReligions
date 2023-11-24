@@ -1012,7 +1012,10 @@ crusader_missions_5 = {
 				value = 5
 
 				has_building = manufactory
-				has_farm_trade_goods = yes
+				OR = {
+					has_farm_trade_goods = yes
+					has_pasture_trade_goods = yes
+				}
 				NOT = { local_autonomy = 1 }
 			}
 		}
