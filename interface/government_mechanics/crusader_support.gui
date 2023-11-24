@@ -14,9 +14,9 @@ guiTypes = {
 
 	}
 }
-guiTypes = {	
+guiTypes = {
 	guiButtonType = {
-		name = "government_interaction_button"
+		name = "government_interaction_button_adm"
 		quadTextureSprite = "GFX_crusader_ability_ADM"
 		buttonFont = "vic_18"
 		clicksound = back_click
@@ -25,7 +25,7 @@ guiTypes = {
 
 	# Frame
 	iconType = {
-		name = "crusader_support_frame"
+		name = "crusader_support_frame_adm"
 		spriteType = "GFX_crusader_support_frame"
 		position = { x = 4 y = 0 }
 		alwaystransparent = yes
@@ -34,7 +34,7 @@ guiTypes = {
 guiTypes = {
 	### interaction button
 	guiButtonType = {
-		name = "government_interaction_buttonN"
+		name = "government_interaction_button_dip"
 		quadTextureSprite = "GFX_crusader_ability_DIP"
 		buttonFont = "vic_18"
 		clicksound = back_click
@@ -43,16 +43,16 @@ guiTypes = {
 
 	# Frame
 	iconType = {
-		name = "crusader_support_frame"
+		name = "crusader_support_frame_dip"
 		spriteType = "GFX_crusader_support_frame"
 		position = { x = 4 y = 0 }
 		alwaystransparent = yes
 	}
-}	
+}
 guiTypes = {
 	guiButtonType = {
-		name = "government_interaction_button"
-		quadTextureSprite = "GFX_crusader_ability_MIL" 
+		name = "government_interaction_button_mil"
+		quadTextureSprite = "GFX_crusader_ability_MIL"
 		delayedTooltipText = ""
 		buttonFont = "vic_18"
 		clicksound = back_click
@@ -61,7 +61,7 @@ guiTypes = {
 
 	# Frame
 	iconType = {
-		name = "crusader_support_frame"
+		name = "crusader_support_frame_mil"
 		spriteType = "GFX_crusader_support_frame"
 		position = { x = 4 y = 0 }
 		alwaystransparent = yes

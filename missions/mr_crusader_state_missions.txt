@@ -188,7 +188,7 @@ crusader_missions_1_edessa = {
 
 		effect = {
 			country_event = {
-				id = crusader_states.5
+				id = mrCrusaderEvents.5
 			}
 		}
 	}
@@ -216,7 +216,7 @@ crusader_missions_2 = {
 
 		effect = {
 			country_event_with_insight = {
-				id = crusader_states_branching_mission_event
+				id = mrCrusaderEvents.1
 				insight_tooltip = crusader_branching_mission_TT
 			}
 		}
@@ -583,7 +583,7 @@ crusader_missions_diplomatic_path = {
 					force_remove_rival = root
 				}
 			}
-			country_event = { id = crusader_states_grand_wedding }
+			country_event = { id = mrCrusaderEvents.2 }
 		}
 	}
 
