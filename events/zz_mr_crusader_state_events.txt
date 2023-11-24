@@ -217,3 +217,204 @@ country_event = {
 		# }
 	}
 }
+
+# Pulse event: new papal legate
+# The following 3 events are triggered depending on the condition when the
+# hidden event fires
+country_event = {
+	id = crusader_states_papal_legate_hidden
+	title = crusader_states.6.t 
+	desc = crusader_states.6.d 
+
+	mean_time_to_happen = {
+		years = 15
+	}
+
+	trigger = {
+		is_levantine_crusader_state = yes
+		religion = catholic
+	}
+
+	immediate = { # Pope loves us
+		hidden_effect = {
+			if = {
+				limit = {
+					PAP = { has_opinion = { who = root value = 100 } }
+				}
+
+				country_event = {
+					id = crusader_states_papal_legate_good
+				}
+			}
+			else_if = {
+				limit = {
+					PAP = { has_opinion = { who = root value = 0 } }
+				}
+
+				country_event = {
+					id = crusader_states_papal_legate_neutral
+				}
+			}
+			else = {
+				country_event = {
+					id = crusader_states_papal_legate_bad
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	name = crusader_states_papal_legate_good
+	title = crusader_states_papal_legate_good.t
+	desc = crusader_states_papal_legate_good.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = crusader_states_papal_legate_good.a
+
+		effect = {
+			add_papal_influence = 25
+			add_legitimacy = 5
+		}
+	}
+}
+
+country_event = {
+	name = crusader_states_papal_legate_neutral
+	title = crusader_states_papal_legate_neutral.t
+	desc = crusader_states_papal_legate_neutral.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = crusader_states_papal_legate_neutral.a
+
+		effect = {
+			add_papal_influence = 5
+		}
+	}
+
+	option = { # Special option for ruler traits
+		name = crusader_states_papal_legate_neutral.b
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = well_connected_personality
+				ruler_has_personality = silver_tongue_personality
+				ruler_has_personality = sinner_personality
+			}
+			NOT = {
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = incorruptible_personality
+					ruler_has_personality = righteous_personality
+				}
+			}
+		}
+		
+		effect = {
+			add_treasury = -50
+			add_papal_influence = 25
+
+			hidden_effect = {
+				add_opinion = {
+					who = PAP
+					modifier = mr_crusaders_papal_legate_bribed
+				}
+				reverse_add_opinion = {
+					who = PAP
+					modifier = mr_crusaders_papal_legate_bribed
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	name = crusader_states_papal_legate_bad
+	title = crusader_states_papal_legate_bad.t
+	desc = crusader_states_papal_legate_bad.d
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Okay...
+		name = crusader_states_papal_legate_bad.a
+
+		effect = {
+			add_papal_influence = -25
+			add_legitimacy = -10
+		}
+	}
+
+	option = { # Maybe we can do something about that...
+		name = crusader_states_papal_legate_bad.b
+
+		trigger = {
+			NOT = {
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = incorruptible_personality
+					ruler_has_personality = righteous_personality
+				}
+			}
+		}
+		
+		effect = {
+			add_treasury = -100
+			add_papal_influence = 10
+
+			hidden_effect = {
+				add_opinion = {
+					who = PAP
+					modifier = mr_crusaders_papal_legate_bribed
+				}
+				reverse_add_opinion = {
+					who = PAP
+					modifier = mr_crusaders_papal_legate_bribed
+				}
+			}
+		}
+	}
+
+	option = { # Special option for ruler traits
+		name = crusader_states_papal_legate_bad.c
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = well_connected_personality
+				ruler_has_personality = silver_tongue_personality
+				ruler_has_personality = sinner_personality
+			}
+			NOT = {
+				OR = {
+					ruler_has_personality = pious_personality
+					ruler_has_personality = incorruptible_personality
+					ruler_has_personality = righteous_personality
+				}
+			}
+		}
+		
+		effect = {
+			add_treasury = -50
+			add_papal_influence = 50
+
+			hidden_effect = {
+				add_opinion = {
+					who = PAP
+					modifier = mr_crusaders_papal_legate_bribed
+				}
+				reverse_add_opinion = {
+					who = PAP
+					modifier = mr_crusaders_papal_legate_bribed
+				}
+			}
+		}
+	}
+}

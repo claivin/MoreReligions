@@ -132,6 +132,21 @@
   crusader_states.5.d: "\"Awake! Alarm! Awake!\"\nThe cry was soon echoing from the palace throughout the neighborhoods of Antioch, but frightened citizens remained in their homes as troops of horsemen without banners thundered down the streets. First smoke, then great tongues of flame rose from the Prince's Palace on the foothills of Mount Silpius to lick the sky, casting an orange hue on the maille of the ominous riders gathering in squares and watch towers. While the citizens nearest the palace hurried to bring water from the wells and stop the blaze from spreading, they failed to notice the signals spreading from Southern Gate and adjacent towers in the city walls, until the whole city was encircled.\n\nBy the morning, [Root.Monarch.GetTitle] [Root.Monarch.GetName] was in the city with another thousand men-at-arms in gleaming armor, carrying the yellow banner of Edessa. Calmly, [Root.Monarch.GetSheHe] directed the citizens and some of [Root.Monarch.GetHersHis] own men in putting out the last of the fires and beginning to clear debris as if it were the most natural thing in the world. The few troops not dead or bribed, still loyal to the fallen [ATI.Monarch.GetTitle] of Antioch were holed up in the citadel, but it was only a matter of time before they surrended to the eery calm that had befallen the rest of the city."
   crusader_states.5.a: "Excellent work. Give my spymaster a raise."
 
+  crusader_states_papal_legate_good.t: "New Papal Legate Arrives"
+  crusader_states_papal_legate_good.d: "His Holiness has appointed a new papal legate to serve the people of Outremer. As the (official) supreme authority over all of God's flock from the Bosporus to Alexandria, including being above our own local bishops, this can have a serious effect on our rule among the faithful, and, more importantly, our influence with the Holy See back in Rome.\n\nThankfully, as we have maintained good relations with the Pope, His Holiness has seen fit to appoint a former Antiochean bishop that we have a good relationship with."
+  crusader_states_papal_legate_good.a: "Splendid!"
+
+  crusader_states_papal_legate_neutral.t: "New Papal Legate Arrives"
+  crusader_states_papal_legate_neutral.d: "His Holiness has appointed a new papal legate to serve the people of Outremer. As the (official) supreme authority over all of God's flock from the Bosporus to Alexandria, including being above our own local bishops, this can have a serious effect on our rule among the faithful, and, more importantly, our influence with the Holy See back in Rome.\n\nBecause our relations with the Holy See are merely a polite formality, we have been given yet another Italian prelate hoping to run out his time and enrich himself on the tithes of our people before returning to Rome to be made a Cardinal somewhere. Perhaps if we were to improve the Pope's opinion of us, we could get a better deal next time..."
+  crusader_states_papal_legate_neutral.a: "Okay."
+  crusader_states_papal_legate_neutral.b: "We can work with this."
+
+  crusader_states_papal_legate_bad.t: "New Papal Legate Arrives"
+  crusader_states_papal_legate_neutral.d: "His Holiness has appointed a new papal legate to serve the people of Outremer. As the (official) supreme authority over all of God's flock from the Bosporus to Alexandria, including being above our own local bishops, this can have a serious effect on our rule among the faithful, and, more importantly, our influence with the Holy See back in Rome.\n\nDue to our bad relations with His Holiness, he has pawned off the half-wit third son of some German duke on us. The man is haughty, ignorant, and likely to agitate our own people almost as much as the [Root.Monarch.GetTitle]."
+  crusader_states_papal_legate_neutral.a: "Wonderful..."
+  crusader_states_papal_legate_neutral.b: "Make him an offer he can't refuse."
+  crusader_states_papal_legate_neutral.b: "Failsons are the easiest to manipulate."
+
 
 # --OTHER--
   merc_crusader_italian_troops: "Italian Company of Outremer"

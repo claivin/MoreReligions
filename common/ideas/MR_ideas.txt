@@ -2036,7 +2036,7 @@ ATI_ideas = { # Sort of balanced good ideas, not too much mil quality
 	ATI_imperial_legacy = {
 		drill_decay_modifier = -0.2
 		drill_gain_modifier = 0.2
-		army_tradition_decay = -0.005
+		army_tradition_decay = -0.01
 	}
 }
 
@@ -2074,6 +2074,6 @@ EDD_ideas = { # Powerful mil/conquest ideas, cav focused
 	}
 	EDD_thundering_horses = {
 		cavalry_fire = 0.5
-		cavalry_shock = 1
+		cavalry_shock = 0.5
 	}
 }
