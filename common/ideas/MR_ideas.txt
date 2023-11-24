@@ -2023,19 +2023,20 @@ ATI_ideas = { # Sort of balanced good ideas, not too much mil quality
 		global_unrest = -1.5
 	}
 	ATI_legacy_of_bohemond = {
-		siege_ability = 0.2
+		siege_ability = 0.1
+		artillery_barrage_cost = -0.2
 	}
 	ATI_silk_road = {
 		trade_efficiency = 0.1
 	}
 	ATI_european_court = {
 		advisor_pool = 1
-		advisor_cost = -0.15
+		advisor_cost = -0.1
 	}
 	ATI_imperial_legacy = {
 		drill_decay_modifier = -0.2
 		drill_gain_modifier = 0.2
-		army_tradition_decay = -0.01
+		army_tradition_decay = -0.005
 	}
 }
 
@@ -2072,7 +2073,7 @@ EDD_ideas = { # Powerful mil/conquest ideas, cav focused
 		idea_cost = -0.05
 	}
 	EDD_thundering_horses = {
-		cavalry_fire = 1
-		cavalry_shock = 0.5
+		cavalry_fire = 0.5
+		cavalry_shock = 1
 	}
 }
