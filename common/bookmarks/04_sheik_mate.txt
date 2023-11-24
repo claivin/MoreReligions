@@ -1,0 +1,22 @@
+#bookmark =
+#{
+	#name = "sheik_mate"
+	#desc = "sheik_mate_desc"
+	#date = 1444.11.11
+	#
+	#center = 219
+	#default = yes
+	#
+	#country = NAV
+	#country = CBD
+	#country = LON
+	#country = GAL
+	#country = VAL
+	#country = POR
+	#country = CMS
+	#country = ADR
+	#country = SEV
+	#country = MJO
+	#country = CAS
+	#
+#}

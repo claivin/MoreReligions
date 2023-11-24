@@ -6,7 +6,7 @@ technology_group = western
 add_historical_friend = ARA
 add_historical_friend = CAT
 capital = 210	# Pamplona
-
+add_prestige = 30
 
 1444.1.1 = {
 	monarch = {

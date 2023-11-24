@@ -1,11 +1,11 @@
 #Iberian Relations
-union = {
+vassal = {
 	first = NAV
 	second = ARA
 	start_date = 1392.1.1
 	end_date = 1500.1.1
 }
-union = {
+vassal = {
 	first = NAV
 	second = CAT
 	start_date = 1402.1.1

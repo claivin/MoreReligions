@@ -9,10 +9,6 @@ train_the_levy = {
 	drill_gain_modifier = 0.3
     drill_decay_modifier = -0.3
 }
-erriberiko_errege_jauregia = {
-	local_defensiveness = 0.3
-	local_fort_maintenance_modifier = -0.1
-}
 dream_of_iberia = {
 	monthly_favor_modifier = 0.2
 }

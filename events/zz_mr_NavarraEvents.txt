@@ -126,6 +126,12 @@ country_event = {
 		}	
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 30
+				NAV = {
+					has_heir = no
+				}
+			}	
 		}
 	}
 }
@@ -140,7 +146,7 @@ country_event = {
 	option = {
 		name = "navarra_events.5.1"
 		NAV = {
-			create_union = POR
+			create_vassal = POR
 		}
 	}
 }	
@@ -226,7 +232,7 @@ country_event = {
 	option = {
 		name = "navarra_events.8.1"
 		NAV = {
-			create_union = GAL
+			create_vassal = GAL
 		}
 	}
 }
@@ -316,8 +322,8 @@ country_event = {
 	option = {
 		name = "navarra_events.11.1"
 		NAV = {
-			create_union = CAS
-			create_union = LON
+			create_vassal = CAS
+			create_vassal = LON
 		}
 	}
 }
@@ -408,7 +414,7 @@ country_event = {
 	option = {
 		name = "navarra_events.14.1"
 		NAV = {
-			create_union = CBD
+			create_vassal = CBD
 		}
 	}
 }

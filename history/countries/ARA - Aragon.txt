@@ -5,6 +5,7 @@ add_accepted_culture = catalan
 add_accepted_culture = sicilian
 religion = catholic
 technology_group = western
+add_historical_friend = NAV
 capital = 214 # Zaragoza
 add_army_professionalism = 0.05
 

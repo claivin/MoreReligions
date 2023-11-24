@@ -7,11 +7,18 @@ merc_andorra_borderguard = {
 	cavalry_cap = 0
 	sprites = {dlc116_DIT_sprite_pack_western}
 	trigger = {
-		NAV = {
-			mission_completed = nav_misto_peasants
-		}
-		has_country_modifier = misto_sharpshooters
-		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			NAV = {
+				mission_completed = nav_misto_peasants
+			}
+			has_country_modifier = misto_sharpshooters
+			is_allowed_to_recruit_mercenaries = yes
+			IBF = {
+				mission_completed = nav_misto_peasants
+			}
+			has_country_modifier = misto_sharpshooters
+			is_allowed_to_recruit_mercenaries = yes
+		}	
 	}
 	counts_towards_force_limit = no
 	min_size = 5

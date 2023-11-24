@@ -56,20 +56,11 @@ nav_missions_1 = {
 		}
 		trigger = {
 			OR = {
-				POR = {
-						dynasty = NAV
-						trust = {
-						who = NAV
-						value = 70
-						}
-					AND = {
-						ROOT = {
-							legitimacy = 100
-							army_strength = {
-									who = POR
-									value = 1.1
-							}
-						}
+				ROOT = {
+					legitimacy = 100
+					army_strength = {
+					who = POR
+					value = 1.1
 					}
 				}
 				POR = {
@@ -636,11 +627,9 @@ nav_missions_2 = {
 				}
 		}
 		effect = {
-			210 = {
-				add_permanent_province_modifier = {
-					name = erriberiko_errege_jauregia
-					duration = -1
-				}
+			add_great_project_tier = {
+				type = mr_olito_palace
+				tier = 1
 			}	
 		}
 	}
@@ -849,7 +838,7 @@ nav_missions_2 = {
 			ROOT = {
 			1293 = { #sevilla
 				trade_share = {
-					country = NAV
+					country = ROOT
 					share = 30
 					}
 				}
@@ -874,10 +863,15 @@ nav_missions_2 = {
 			area = catalonia_area
 		}
 		trigger = {
-			CAT = {
-				has_opinion = {
-				who = ROOT
-				value = 200
+			OR = {
+				CAT = {
+					has_opinion = {
+					who = ROOT
+					value = 200
+					}
+				}	
+				CAT = {
+					exists = no
 				}
 			}
 			trader = 1
@@ -1513,7 +1507,7 @@ nav_missions_4 = {
 		position = 10
 		
 		trigger = {
-			num_accepted_cultures = 5
+			num_accepted_cultures = 3
 		}
 		effect = {
 			add_country_modifier = {

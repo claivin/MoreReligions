@@ -8,6 +8,7 @@ bookmark =
 	default = yes
 	
 	country = TOU
+	country = NAV
 	
 	# easy_country = CAS
 	# easy_country = POR

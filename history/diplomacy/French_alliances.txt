@@ -120,7 +120,7 @@ union = {
 }
 
 #Basque Union
-union = {
+vassal = {
 	first = NAV
 	second = BRN
 	start_date = 1444.11.11

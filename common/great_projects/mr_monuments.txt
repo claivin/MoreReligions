@@ -19,11 +19,15 @@ mr_carcasonne = {
 	type = monument
 	#can we build it?
 	build_trigger = {
-		OR = {
-			owner = { tag = NAV }
-			religion = mr_cathar
-		}
 		has_owner_religion = yes
+		OR = {
+			religion = mr_cathar
+			AND = {
+				culture = occitain
+				province_is_or_accepts_culture = yes
+				religion = catholic
+			}
+		}
 	}
 	#what to do when it's built
 	on_built = {
@@ -35,19 +39,27 @@ mr_carcasonne = {
 	}
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
-			owner = { tag = NAV }
-			religion = mr_cathar
-		}
 		has_owner_religion = yes
-	}
+		OR = {
+			religion = mr_cathar
+			AND = {
+				culture = occitain
+				province_is_or_accepts_culture = yes
+				religion = catholic
+			}
+		}
+	}	
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			owner = { tag = NAV }
-			religion = mr_cathar
-		}
 		has_owner_religion = yes
+		OR = {
+			religion = mr_cathar
+			AND = {
+				culture = occitain
+				province_is_or_accepts_culture = yes
+				religion = catholic
+			}
+		}
 	}
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
@@ -424,7 +436,8 @@ mr_olito_palace = {
 	starting_tier = 0
 	type = monument
 	build_trigger = {
-		has_owner_culture = yes	
+		culture = basque
+		province_is_or_accepts_culture = yes
 	}
 	on_built = {
 		add_splendor = 100
@@ -433,10 +446,12 @@ mr_olito_palace = {
 		add_splendor = -100
 	}
 	can_use_modifiers_trigger = {
-		has_owner_culture = yes	
+		culture = basque
+		province_is_or_accepts_culture = yes
 	}
 	can_upgrade_trigger = {
-		has_owner_culture = yes
+		culture = basque
+		province_is_or_accepts_culture = yes
 	}
 	keep_trigger = {
 	}

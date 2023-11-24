@@ -3486,7 +3486,10 @@ estate_nobles_diet_right_aragon = {
 	mission_completed = nav_aragon_nobility
 	}
 	is_valid = {
-		tag = NAV
+		OR = {
+			tag = NAV
+			tag = IBF
+		}
 	}
 	benefits = {
 		diplomatic_upkeep = 5

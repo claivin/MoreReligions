@@ -2850,7 +2850,10 @@ icon = privilege_promoto_dhimmi_nobles
 	mission_completed = nav_keys_of_cordoba
 	}
 	is_valid = {
-		tag = NAV
+		OR = {
+			tag = NAV
+			tag = IBF
+		}
 	}
 	benefits = {
 		tolerance_heathen = 3
@@ -2874,7 +2877,10 @@ estate_burghers_control_over_the_coinage_catalonia = {
 	mission_completed = nav_catalonia_merchants
 	}
 	is_valid = {
-		tag = NAV
+		OR = {
+			tag = NAV
+			tag = IBF
+		}
 	}
 	benefits = {
 		adm_advisor_cost = -0.2

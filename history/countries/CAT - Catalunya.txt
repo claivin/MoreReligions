@@ -1,8 +1,10 @@
 government = monarchy
 
 add_government_reform = feudalism_reform
-
+
+
 religion = catholic
 primary_culture = catalan
 technology_group = western
+add_historical_friend = NAV
 capital = 213	# Barcelona
