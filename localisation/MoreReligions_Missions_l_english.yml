@@ -703,10 +703,16 @@ mr_greece_unity_7_title: "Rebuild the Arsenal"
 mr_greece_unity_8_title: "Reclaiming the Aegean"
 mr_greece_unity_9_title: "A New Naval Theorem"
 
+
 #Thracia
 mr_thracia_first_title: "Fortify Istinople"
 mr_thracia_second_title: "Defense of Marmara"
 mr_thracia_third_title: "The Latin Revenge"
+
+#Corinth
+mr_corinth_first_title: "Strengthen the League"
+mr_corinth_second_title: "Unify the Koinon"
+mr_corinth_third_title: "To Koinon Sympheron"
 
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -736,6 +742,13 @@ tactica_doctrine_no: "\n£no£If we complete this mission while being §YOrthodo
 defensiveness_50: "Have at least §Y50%§! Defensiveness in the Province"
 event_insight_greek.2: "\n§GEvent Insight:§!\nThis event will detail our wrath upon the city of Tirnovo, from where a brutal and destructive raid took place."
 be_in_war_with_4704_controller: "Be in a §YWar§! with the Owner of §Y[4704.GetName]§! and Control the Province."
+vassalize_trade_league: "We will §YVassalize§! all countries within our §YTrade League§! with §Y125§! Opinion of us.\n"
+friend_trade_league: "All §YTreade League Members§! with §Y75§! opinion of us will become §YHistorical Friends§!.\n"
+trade_leageu_75: "All members of our §YTrade League§! must have an opinion of §Y75§! with us."
+trade_leageu_125: "All members of our §YTrade League§! must have an opinion of §Y125§! with us."
+2_diplo_reputation: "Have §Y2§! Diplo Reputation"
+koinon_reform_tt: "\nWe will gain access to the Tier 2 §YKoinon Sympheron§! Reform"
+morea_inherit_TT: "\nWe will §Yinherit§! all vassals with capitals in the §YMorea Area§!"
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -753,6 +766,9 @@ cretian_base: "A Cretian Base"
 lesbos_base: "A Lesbos Base"
 local_fortifications_greece: "The Greek Fortifications"
 prepared_by_overlord: "Istinople Protected"
+corinthian_league: "The Corinthian League"
+corinth_support: "Corinthian Diplomats"
+
 #Extras
 naval_slave_galley: "Galee Sforzate"
 naval_slave_galley_desc: "The Venetian Galleys were always primarily commanded by those forced into service - debtors, slaves, political enemies, the list goes on. However, at the turn of the 15th Century, the number of these forced ships began to skyrocket. As such, these slave galleys were designed with the forced rowers to be worked constantly, while marines and soldiers atop the boat could conduct battle."

@@ -131,3 +131,8 @@ mr_greek_poleocracy_reform_desc: "Within the government, local Greek members of 
 
 mr_latin_kingdom: "Latin Kingdom"
 mr_latin_kingdom_desc: "The kingdoms of Thessaly, Thracia, and Thessalonica are all remnant states of the Latin Empire. These are kingdoms, run with Western Feudalism as well as Eastern Bureaucracy."
+
+
+mr_koinon_reform: "Koinon Sympheron"
+mr_koinon_reform_desc: "The Common Good, as Aristotle described it, was a dream that all societies must strive for. Our constitution, our state legislature, our rulers, and even our people will all benefit from a shared communal goal."
+mechanic_MR_koinon_mechanic_yes: "Everytime we §YDevelop a Province§!, we will gain §G-0.5§! §YSeparatism§! in that province."

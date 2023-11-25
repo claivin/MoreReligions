@@ -148,6 +148,184 @@ mr_greek_missions_first = {
 		}
 	}
 }
+mr_greek_missions_first_a = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = CNT
+			was_tag = CNT
+		}
+	}
+	mr_corinth_first = {
+		icon = purely_for_commerce
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			owner = {
+				is_in_trade_league_with = ROOT
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = trade_leageu_75
+				NOT = {
+					any_known_country = {
+						is_in_trade_league_with = ROOT
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = 75
+							}
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = 2_diplo_reputation
+				has_global_modifier_value = {
+					which = diplomatic_reputation
+					value = 2
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = friend_trade_league
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_trade_league_with = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+						ai = yes
+					}
+					add_historical_friend = ROOT	
+				}
+			}
+			add_country_modifier = {
+				name = corinth_support
+				duration = 5475
+			}
+		}
+	}
+	mr_corinth_second = {
+		icon = secure_the_republic
+		position = 3
+		required_missions = {
+			mr_corinth_first
+		}
+		provinces_to_highlight = {
+			owner = {
+				is_in_trade_league_with = ROOT
+			}
+			NOT = {
+				NOT = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 75
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = trade_leageu_125
+				NOT = {
+					any_known_country = {
+						is_in_trade_league_with = ROOT
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+						}
+					}
+				}
+			}
+			num_of_owned_provinces_with = {
+				culture_group = byzantine
+				value = 2
+			}
+		}
+		effect = {
+			custom_tooltip = vassalize_trade_league
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_trade_league_with = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+						ai = yes
+					}
+					ROOT = {
+						vassalize = PREV
+					}
+				}
+			}
+			add_country_modifier = {
+				name = corinthian_league
+				duration = 5475
+			}
+		}
+	}
+	mr_corinth_third = {
+		icon = mission_aristotle
+		position = 4
+		required_missions = {
+			mr_corinth_second 
+		}
+		provinces_to_highlight = {
+			area = morea_area
+			NOT = {
+				development = 12
+			}
+		}
+		trigger = {
+			morea_area = {
+				type = all
+				development = 12
+			}
+			reform_level = 2
+		}
+		effect = {
+			change_government_reform_progress = 100	
+			custom_tooltip = koinon_reform_tt
+			custom_tooltip = morea_inherit_TT
+			hidden_effect = {
+				every_subject_country = {
+					limit = {
+						capital_scope = {
+							area = morea_area
+						}
+					}
+					ROOT = {
+						inherit = PREV
+					}
+				}
+			}
+		}
+	}
+}
 mr_greek_missions_second = {
 	slot = 2
 	generic = no

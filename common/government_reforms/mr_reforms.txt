@@ -708,6 +708,7 @@ mr_absolutist_england_reform = {
 mr_greek_poleocracy_reform ={
 	icon = "organized_military_staff"
 	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			culture_group = byzantine
@@ -733,8 +734,8 @@ mr_greek_poleocracy_reform ={
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = yes
+		enables_nepotism = yes
 	}
-
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -747,6 +748,27 @@ mr_greek_poleocracy_reform ={
 		}
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
+	}
+} #
+mr_koinon_reform ={
+	icon = "national_assembly"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = byzantine
+			tag = CNT
+			tag = GRE
+		}
+	}
+	trigger = {
+		mission_completed = mr_corinth_third
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		republican_tradition = 0.1
+	}
+	custom_attributes = {
+		MR_koinon_mechanic = yes
 	}
 }
 mr_latin_kingdom = {

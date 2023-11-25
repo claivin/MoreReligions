@@ -54,3 +54,11 @@ local_fortifications_greece = {
 	local_fort_maintenance_modifier = -0.75
 	local_defender_dice_roll_bonus = 1
 }
+corinth_support = {
+	diplomats = 1
+	improve_relation_modifier = 0.15
+}
+corinthian_league = {
+	diplomatic_upkeep = 2
+	reduced_liberty_desire = 15
+}

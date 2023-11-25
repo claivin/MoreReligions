@@ -660,6 +660,8 @@ republic = {
 				#1.36
 				diwan_al_khass_reform
 				integrated_ottoman_officials
+				#G&K
+				mr_koinon_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {

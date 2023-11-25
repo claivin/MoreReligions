@@ -593,9 +593,13 @@ spriteTypes = {
 		name = "mission_unknown_mission"
 		texturefile = "gfx/interface/missions/mission_unknown_mission.dds"
 	}
-	
+	#G&K
 	spriteType = {
 		name = "navarra_abyss"
 		texturefile = "gfx/interface/missions/navarra_abyss.dds"
+	}
+	spriteType = {
+		name = "mission_aristotle"
+		texturefile = "gfx/interface/missions/mission_aristotle.dds"
 	}
 }
