@@ -360,6 +360,9 @@ letter_of_marque = {
 	can_select = {
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		capital_scope = {
+			region = france_region
+		}
 		culture_group = french
 		NOT = { primary_culture = anglois }
 	}
@@ -517,7 +520,7 @@ naval_tactica = {
 	can_select = {
 		is_primitive = no
 		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
-		culture_group = byzantine
+		has_country_flag = can_accept_tactica
 	}
 
 	cost = 0.1
@@ -640,4 +643,26 @@ mr_eng_projection = {
 	removed_effect = {}
 	
 	button_gfx = 5
+}
+
+naval_slave_galley = {
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			has_country_flag = can_accept_slave_galley
+			tag = VEN
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		sailor_maintenance_modifer = -0.30
+		global_ship_recruit_speed = -0.10
+		galley_power = 0.10
+	}
+	effect = {}
+	removed_effect = {}
+	
+	button_gfx = 31
 }

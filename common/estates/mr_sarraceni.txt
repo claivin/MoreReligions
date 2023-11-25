@@ -17,7 +17,8 @@ estate_sarraceni = { # Christian Dhimmi, from *sarracenus* to denote muslim peas
 	# If true, country will get estate
 	trigger = {
 		# has_dlc = "The Cossacks"
-		has_country_flag = enables_estate_sarraceni_flag
+	#	has_country_flag = enables_estate_sarraceni_flag
+		always = no #For now.
 		AND = {
 			NOT = { is_revolutionary_republic_trigger = yes }
 			NOT = { has_government_attribute = is_pirate_republic_reform }

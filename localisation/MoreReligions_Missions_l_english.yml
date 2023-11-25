@@ -699,6 +699,14 @@ mr_greece_unity_3_title: "Connecting the Cities"
 mr_greece_unity_4_title: "The Hellenic South"
 mr_greece_unity_5_title: "Populating the Pindus"
 mr_greece_unity_6_title: "The Rebirth of Rhomania"
+mr_greece_unity_7_title: "Rebuild the Arsenal"
+mr_greece_unity_8_title: "Reclaiming the Aegean"
+mr_greece_unity_9_title: "A New Naval Theorem"
+
+#Thracia
+mr_thracia_first_title: "Fortify Istinople"
+mr_thracia_second_title: "Defense of Marmara"
+mr_thracia_third_title: "The Latin Revenge"
 
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -715,8 +723,19 @@ build_parthenon_yes: "£yes£If we complete this mission while being §YCatholic
 build_parthenon_no: "£no£If we complete this mission while being §YCatholic§!, we will upgrade the §YParthenon§! Great Project by 1 Tier"
 build_hexamillion_yes: "\n£yes£If we complete this mission while being §YOrthodox§!, we will upgrade the §YHexamillion Wall§! Great Project by 1 Tier"
 build_hexamillion_no: "\n£no£If we complete this mission while being §YOrthodox§!, we will upgrade the §YHexamillion Wall§! Great Project by 1 Tier"
+lesbos_base_yes_tt: "\n£yes£If we complete this mission while being §YOrthodox§!, we will gain the following in §YLesbos§!:"
+lesbos_base_no_tt: "\n£no£If we complete this mission while being §YOrthodox§!, we will gain the following in §YLesbos§!:"
+cretian_base_no_tt: "\n£no£If we complete this mission while being §YCatholic§!, we will gain the following in §YCrete§!:"
+cretian_base_yes_tt: "£yes£If we complete this mission while being §YCatholic§!, we will gain the following in §YCrete§!:"
 subject_desire_drastic_go_down: "Reduce all subject §YLiberty Desire§! in the §YMorea§! Area and §YNorthern Greece§! Area by §G-35%§!\n"
 enable_unify_greek_cultures_decision: "\nThis will enable the decision to unify the §YGreek§! Cultures.\n"
+venetian_slave_galley_doctrine_yes: "£yes£If we complete this mission while being §YCatholic§!, we will gain access to the §YGalee Sforzate§! Naval Doctrine."
+venetian_slave_galley_doctrine_no: "\n£no£If we complete this mission while being §YCatholic§!, we will gain access to the §YGalee Sforzate§! Naval Doctrine."
+tactica_doctrine_yes: "\n£yes£If we complete this mission while being §YOrthodox§!, we will gain access to the §YTactica§! Naval Doctrine."
+tactica_doctrine_no: "\n£no£If we complete this mission while being §YOrthodox§!, we will gain access to the §YTactica§! Naval Doctrine."
+defensiveness_50: "Have at least §Y50%§! Defensiveness in the Province"
+event_insight_greek.2: "\n§GEvent Insight:§!\nThis event will detail our wrath upon the city of Tirnovo, from where a brutal and destructive raid took place."
+be_in_war_with_4704_controller: "Be in a §YWar§! with the Owner of §Y[4704.GetName]§! and Control the Province."
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -729,6 +748,14 @@ acrocorinth_building: "The Acrocorinth"
 latins_triumphant: "Latins Triumphant"
 hellenes_triumphant: "Hellenes Triumphant"
 byzantines_triumphant: "Byzantines Triumphant"
+building_a_navy: "Building a Navy"
+cretian_base: "A Cretian Base"
+lesbos_base: "A Lesbos Base"
+local_fortifications_greece: "The Greek Fortifications"
+prepared_by_overlord: "Istinople Protected"
+#Extras
+naval_slave_galley: "Galee Sforzate"
+naval_slave_galley_desc: "The Venetian Galleys were always primarily commanded by those forced into service - debtors, slaves, political enemies, the list goes on. However, at the turn of the 15th Century, the number of these forced ships began to skyrocket. As such, these slave galleys were designed with the forced rowers to be worked constantly, while marines and soldiers atop the boat could conduct battle."
 
 #Baghdad Missions - TO BE COMPLETED!!
 #Titles

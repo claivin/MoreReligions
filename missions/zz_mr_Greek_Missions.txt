@@ -1,3 +1,4 @@
+#This is where the messy part starts.
 mr_greek_missions_first = {
 	slot = 1
 	generic = no
@@ -6,16 +7,144 @@ mr_greek_missions_first = {
 	potential = {
 		OR = {
 			tag = THR
-			tag = TSS
-			tag = THS
-			tag = ATH
-			tag = CNT
-			tag = MOE
-			tag = ACH
-			tag = ATR
-			tag = EPI
-			tag = CEP
-			tag = CPH
+			was_tag = THR
+		}
+	}
+	mr_thracia_first = { #Preparing the Franoupols
+		icon = mission_the_bospborus
+		position = 1
+		provinces_to_highlight = {
+			province_id = 151
+			NOT = {
+				is_core = ROOT
+			}
+		}
+		trigger = {
+			CST = {
+				has_opinion = {
+					who = ROOT
+					value = 120
+				}
+			}
+			army_size_percentage = 1
+		}
+		effect = {
+			151 = {
+				add_core = ROOT
+			}
+			CST = {
+				add_country_modifier = {
+					name = prepared_by_overlord
+					duration = 5475
+				}
+			}
+		}
+	}
+	mr_thracia_second = { #Across Marmara
+		icon = mission_eastern_european_city
+		required_missions = {
+			mr_thracia_first
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4779
+				province_id = 316
+			}
+		}
+		trigger = {
+			4779 = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = defensiveness_50
+					export_to_variable = {
+						which = our_total_defensivness
+						value = modifier:defensiveness
+						who = owner
+					}
+					export_to_variable = {
+						which = from_local_defensiveness
+						value = modifier:local_defensiveness
+					}
+					change_variable = {
+						which = from_local_defensiveness
+						which = our_total_defensivness 
+					}
+					check_variable = {
+						which = from_local_defensiveness
+						value = 0.5
+					}
+				}
+			}
+			316 = {
+				variable_arithmetic_trigger = {
+					custom_tooltip = defensiveness_50
+					export_to_variable = {
+						which = our_total_defensivness
+						value = modifier:defensiveness
+						who = owner
+					}
+					export_to_variable = {
+						which = from_local_defensiveness
+						value = modifier:local_defensiveness
+					}
+					change_variable = {
+						which = from_local_defensiveness
+						which = our_total_defensivness 
+					}
+					check_variable = {
+						which = from_local_defensiveness
+						value = 0.5
+					}
+				}
+			}
+		}
+		effect = {
+			316 = {
+				add_province_modifier = {
+					name = local_fortifications_greece
+					duration = -1
+				}
+			}
+			4779 = {
+				add_province_modifier = {
+					name = local_fortifications_greece
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_thracia_third = {
+		icon = mission_devastate_christianity
+		position = 4
+		required_missions = {
+			mr_thracia_second
+		}
+		provinces_to_highlight = {
+			province_id = 4704
+		}
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = be_in_war_with_4704_controller
+					4704 = {
+						controlled_by = ROOT
+						owner = {
+							is_in_war = {
+								participants = ROOT
+							}
+						}
+					}
+				}
+				4704 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = MrGreekEvents.2
+			}
+			custom_tooltip = event_insight_greek.2
 		}
 	}
 }
@@ -35,254 +164,10 @@ mr_greek_missions_second = {
 			tag = ACH
 			tag = ATR
 			tag = EPI
-			tag = CEP
+			tag = LAE
+			tag = BYZ
+			tag = GRE
 			tag = CPH
-		}
-	}
-	mr_greece_unity_4 = {
-		icon = reclaim_the_aegean
-		position = 2
-		required_missions = {
-			mr_greece_unity_1
-		}
-		provinces_to_highlight = {
-			OR = {
-				area = northern_greece_area
-				area = morea_area
-			}
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
-				province_id = 163
-			}
-		}
-		trigger = { 
-			northern_greece_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			146 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4701 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			145 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			1773 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			4698 = {
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-		}
-		effect = { 
-			custom_tooltip = subject_desire_drastic_go_down
-			
-			if = {
-				limit = {
-					religion = catholic
-				}
-				custom_tooltip = build_parthenon_yes
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						religion = catholic
-					}	
-				}
-				custom_tooltip = build_parthenon_no
-			}
-			if = {
-				limit = {
-					religion = orthodox
-				}
-				custom_tooltip = build_hexamillion_yes
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						religion = orthodox
-					}	
-				}
-				custom_tooltip = build_hexamillion_no
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						religion = catholic
-					}
-					146 = {
-						add_great_project_tier = {
-							type = parthenon
-							tier = 1
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						religion = orthodox
-					}
-					4701 = {
-						add_great_project_tier = {
-							type = mr_hexamilion 
-							tier = 1
-						}
-					}
-				}
-				every_subject_country = {
-					limit = {
-						capital_scope = {
-							OR = {
-								area = northern_greece_area
-								area = morea_area
-							}
-						}
-					}
-					add_liberty_desire = -35
-				}
-			}
-		}
-	}
-	mr_greece_unity_5 = {
-		icon = sources_of_trade
-		position = 3
-		required_missions = {
-			mr_greece_unity_4
-		}
-		provinces_to_highlight = {
-			OR = {
-				area = morea_area
-				area = northern_greece_area
-			}
-			NOT = {
-				has_manpower_building_trigger = yes
-				base_manpower = 5
-			}
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				OR = {
-					area = morea_area
-					area = northern_greece_area
-				}
-				has_manpower_building_trigger = yes
-				base_manpower = 5
-				value = 3
-			}
-		}
-		effect = {
-			morea_area = {
-				add_province_modifier = {
-					name = populate_the_west
-					duration = 9125
-				}
-			}
-			northern_greece_area = {
-				add_province_modifier = {
-					name = populate_the_west
-					duration = 9125
-				}
-			}
-			4701 = {
-				add_building_construction = {
-					building = ramparts
-					speed = 0.5
-					cost = 0
-				}
-				add_province_modifier = {
-					name = acrocorinth_building
-					duration = -1
-				}
-			}
-		}
-	}
-}
-mr_greek_missions_third = {
-	slot = 3
-	generic = no
-	ai = yes
-	has_country_shield = yes
-	potential = {
-		OR = {
-			tag = THR
-			tag = TSS
-			tag = THS
-			tag = ATH
-			tag = CNT
-			tag = MOE
-			tag = ACH
-			tag = ATR
-			tag = EPI
-			tag = CEP
-			tag = CPH
-		}
-	}
-	mr_greece_unity_1 = {
-		icon = mission_crusade_for_varna
-		position = 1
-		required_missions = {
-		}
-		provinces_to_highlight = {
-			OR = {
-				area = thrace_area
-				area = macedonia_area
-				area = northern_greece_area
-				area = morea_area
-			}
-			NOT = {
-				is_claim = ROOT
-			}
-		}
-		trigger = {
-			calc_true_if = {
-				all_province = {
-					OR = {
-						area = thrace_area
-						area = macedonia_area
-						area = northern_greece_area
-						area = morea_area
-					}
-					is_claim = ROOT
-				}
-				amount = 2
-			}
-		}
-		effect = {
-			thrace_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			morea_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_greece_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			macedonia_area = {	
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = war_for_greece
-				hidden = yes
-				duration = 3650
-			}
-			custom_tooltip = gain_legitimacy_and_army_professionalism
 		}
 	}
 	mr_greece_unity_2 = {
@@ -541,9 +426,262 @@ mr_greek_missions_third = {
 			}
 		}
 	}
+}
+mr_greek_missions_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+		}
+	}
+	mr_greece_unity_1 = {
+		icon = mission_crusade_for_varna
+		position = 1
+		required_missions = {
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = thrace_area
+				area = macedonia_area
+				area = northern_greece_area
+				area = morea_area
+			}
+			NOT = {
+				is_claim = ROOT
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					OR = {
+						area = thrace_area
+						area = macedonia_area
+						area = northern_greece_area
+						area = morea_area
+					}
+					is_claim = ROOT
+				}
+				amount = 2
+			}
+		}
+		effect = {
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			morea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			macedonia_area = {	
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = war_for_greece
+				hidden = yes
+				duration = 3650
+			}
+			custom_tooltip = gain_legitimacy_and_army_professionalism
+		}
+	}
+	mr_greece_unity_4 = {
+		icon = reclaim_the_aegean
+		position = 2
+		required_missions = {
+			mr_greece_unity_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = northern_greece_area
+				area = morea_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+				province_id = 163
+			}
+		}
+		trigger = { 
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			146 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4701 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			145 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			1773 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			4698 = {
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+		effect = { 
+			custom_tooltip = subject_desire_drastic_go_down
+			
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = build_parthenon_yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = catholic
+					}	
+				}
+				custom_tooltip = build_parthenon_no
+			}
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				custom_tooltip = build_hexamillion_yes
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = orthodox
+					}	
+				}
+				custom_tooltip = build_hexamillion_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					146 = {
+						add_great_project_tier = {
+							type = parthenon
+							tier = 1
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						religion = orthodox
+					}
+					4701 = {
+						add_great_project_tier = {
+							type = mr_hexamilion 
+							tier = 1
+						}
+					}
+				}
+				every_subject_country = {
+					limit = {
+						capital_scope = {
+							OR = {
+								area = northern_greece_area
+								area = morea_area
+							}
+						}
+					}
+					add_liberty_desire = -35
+				}
+			}
+		}
+	}
+	mr_greece_unity_5 = {
+		icon = sources_of_trade
+		position = 3
+		required_missions = {
+			mr_greece_unity_4
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = morea_area
+				area = northern_greece_area
+			}
+			NOT = {
+				has_manpower_building_trigger = yes
+				base_manpower = 5
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					area = morea_area
+					area = northern_greece_area
+				}
+				has_manpower_building_trigger = yes
+				base_manpower = 5
+				value = 3
+			}
+		}
+		effect = {
+			morea_area = {
+				add_province_modifier = {
+					name = populate_the_west
+					duration = 9125
+				}
+			}
+			northern_greece_area = {
+				add_province_modifier = {
+					name = populate_the_west
+					duration = 9125
+				}
+			}
+			4701 = {
+				add_building_construction = {
+					building = ramparts
+					speed = 0.5
+					cost = 0
+				}
+				add_province_modifier = {
+					name = acrocorinth_building
+					duration = -1
+				}
+			}
+		}
+	}
 	mr_greece_unity_6 = {
 		icon = byz_city_of_worlds_desire
 		position = 4
+		required_missions = {
+			mr_greece_unity_5
+			mr_greece_unity_3
+			mr_greece_unity_8
+		}
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -620,8 +758,125 @@ mr_greek_missions_fourth = {
 			tag = ACH
 			tag = ATR
 			tag = EPI
-			tag = CEP
+			tag = LAE
+			tag = BYZ
+			tag = GRE
 			tag = CPH
+		}
+	}
+	mr_greece_unity_7 = {
+		icon = renaissance_city
+		position = 1
+		trigger = {
+			navy_size_percentage = 0.90
+			num_of_admirals = 1
+		}
+		effect = {
+			aegean_archipelago_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = building_a_navy
+				duration = 5475
+			}
+		}
+	}
+	mr_greece_unity_8 = {
+		icon = mission_invade_island
+		position = 3
+		required_missions = {
+			mr_greece_unity_7
+			mr_greece_unity_4
+		}
+		provinces_to_highlight = {
+			area = aegean_archipelago_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			aegean_archipelago_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = cretian_base_yes_tt
+				tooltip = {
+					add_province_modifier = {
+						name = cretian_base
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { religion = catholic } 
+				}
+				custom_tooltip = cretian_base_no_tt
+				tooltip = {
+					add_province_modifier = {
+						name = cretian_base
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				custom_tooltip = lesbos_base_yes_tt
+				tooltip = {
+					add_province_modifier = {
+						name = lesbos_base
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = orthodox
+					}	
+				}
+				custom_tooltip = lesbos_base_no_tt
+				tooltip = {
+					add_province_modifier = {
+						name = lesbos_base
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					163 = {
+						add_province_modifier = {
+							name = cretian_base
+							duration = -1
+						}
+					}
+				}
+				else_if = {
+					limit = { religion = orthodox }
+					4700 = {
+						add_province_modifier = {
+							name = lesbos_base
+							duration = -1
+						}
+					}
+				}
+			}
 		}
 	}
 }
@@ -641,8 +896,74 @@ mr_greek_missions_fifth = {
 			tag = ACH
 			tag = ATR
 			tag = EPI
-			tag = CEP
+			tag = LAE
+			tag = BYZ
+			tag = GRE
 			tag = CPH
+		}
+	}
+	mr_greece_unity_9 = {
+		icon = byz_greek_fire
+		position = 2
+		required_missions = {
+			mr_greece_unity_7
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				has_dock_building_trigger = yes
+				has_coast_defense_building_trigger  = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_dock_building_trigger = yes
+					has_coast_defense_building_trigger  = yes
+				}
+				value = 8
+			}
+			navy_size = 30
+		}
+		effect = {
+			if = {
+				limit = {
+					religion = catholic
+				}
+				custom_tooltip = venetian_slave_galley_doctrine_yes
+			}
+			else_if = {
+				limit = {
+					NOT = { religion = catholic }
+				}
+				custom_tooltip = venetian_slave_galley_doctrine_no
+			}
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				custom_tooltip = tactica_doctrine_yes
+			}
+			else_if = {
+				limit = {
+					NOT = { religion = orthodox }
+				}
+				custom_tooltip = tactica_doctrine_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religon = catholic
+					}
+					set_country_flag = can_accept_slave_galley
+				}
+				if = {
+					limit = {
+						religion = orthodox
+					}
+					set_country_flag = can_accept_tactica
+				}
+			}
 		}
 	}
 }

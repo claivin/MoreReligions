@@ -72,3 +72,28 @@ country_event = {
 		}
 	}
 }
+#The oopsie whoopsie crusade
+country_event = {
+	id = MrGreekEvents.2
+	title = MrGreekEvents.2.t
+	desc = MrGreekEvents.2.d
+	picture = VILLAGE_BURNING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = MrGreekEvents.2.b
+		add_years_of_income = 5
+		4704 = {
+			add_devastation = 100
+			add_base_manpower = -3
+			add_base_tax = -3
+			add_base_production = -3
+		}
+		capital_scope = {
+			add_base_manpower = 3
+			add_base_tax = 3
+			add_base_production = 3
+		}
+	}
+}

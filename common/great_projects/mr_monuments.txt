@@ -522,6 +522,7 @@ mr_olito_palace = {
 				add_splendor = 25
 			}
 		}
+	}
 }
 
 mr_citadel_of_antioch = {
@@ -746,8 +747,6 @@ mr_port_st_symeon = {
 			}
 		}
 	}
-}
-
 }
 mr_hexamilion  = {
 	# province it starts in

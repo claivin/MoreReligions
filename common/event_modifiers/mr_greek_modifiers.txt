@@ -33,3 +33,24 @@ byzantines_triumphant = {
 	tolerance_own = 3
 	global_unrest = -2
 }
+building_a_navy = {
+	flagship_cost = -0.25
+	sailors_recovery_speed = 0.25
+}
+cretian_base = {
+	trade_value = 5
+	allowed_num_of_buildings = 1	
+}
+lesbos_base = {
+	trade_value = 5
+	trade_goods_size_modifier = 0.15	
+}
+prepared_by_overlord = {
+	liberty_desire = -10
+	land_forcelimit_modifier = 0.33
+	infantry_power = 0.05
+}
+local_fortifications_greece = {
+	local_fort_maintenance_modifier = -0.75
+	local_defender_dice_roll_bonus = 1
+}

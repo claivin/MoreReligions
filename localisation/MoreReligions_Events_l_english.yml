@@ -389,3 +389,8 @@ MrGreekEvents.1.d: "In the wake of the tumultuous era that witnessed the fall of
 MrGreekEvents.1.a: "A Triumph for the Latins!"
 MrGreekEvents.1.b: "A Triumph for the Hellenes!"
 MrGreekEvents.1.c: "A Triumph for the Byzantines!"
+MrGreekEvents.2.t: "The Raid on Tirnovo"
+MrGreekEvents.2.d: "In the wake of the audacious Bulgarian raid on Adrianople in 1341, the Latins of Thracia prepared for glorious retribution. The city of Adrianople now echoes with the calls for justice and retribution. Thracian knights, adorned with the insignia of the Latin Crusade, gather aside the great gates of the ancient city, their spirits aflame with a burning desire to reclaim their honor.\n\nAs the sun sets over the horizon, the air is charged with anticipation. A solemn prayer floats through the air, drifting over the knights as they march. The echoes of past crusades reverberate through the line, infusing the atmosphere with a sense of divine purpose.\n\nWhen they arrive at Tarnovo, the righteous fury they unleash upon the Bulgars is mighty. With much struggle, the gates to the city were let loose, and the men stormed the city, ripping doors from hinges and slaughtering guards and civilians alike as they looted and plundered. Sacred items were stolen from reliquaries, gold and silver ripped from the pockets of dead men. Blood seeped into the stone roads, as fires rage through the wooden houses.\n\nWhen the sun rose, there was no glory or honor to be found. The men were forced to leave the destroyed city, as another battle was to begin on another plain, far away. A new prayer struck up from the marching lines - this one of forgiveness."
+MrGreekEvents.2.b: "An Eye for an Eye."
+
+estate_sarraceni: "Sarraceni"
