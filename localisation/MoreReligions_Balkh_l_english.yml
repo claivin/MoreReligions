@@ -1,0 +1,41 @@
+﻿l_english:
+
+ #White Horde Missions
+ balkh_revolt_1_title: "Align the Amirs"
+ balkh_revolt_1_desc: " "
+ balkh_revolt_2_title: "Expand The Realm"
+ balkh_revolt_2_desc: " "
+ balkh_revolt_3_title: "Depose the Barlas"
+ balkh_revolt_3_desc: " "
+ balkh_revolt_4_title: "Unified Realm"
+ balkh_revolt_4_desc: " "
+ 
+ #White Horde Tooltips
+ BLK_barlas_revolt_TT: "§TTransoxiana will revolt in 1448 if the relevant missions are not completed in time§!"
+ TRS_barlas_revolt_TT: "Our preparations to revolt will be complete in 1448"
+ BLK_barlas_revolt1_TT: "The Barlas Revolt will be delayed until 1453"
+ BLK_barlas_revolt2_TT: "The Barlas Revolt will be delayed until 1460"
+ BLK_barlas_revolt3_TT: "The Barlas Revolt will be avoided"
+ 
+ #White Horde Modifiers
+ 
+ #White Horde Events
+ mr_startup_events.7.t: "The Chagatai Realm"
+ mr_startup_events.7.d: " "
+ mr_startup_events.7.a: "We Will Weather This Storm"
+ mr_startup_events.7.b: "Our Time Will Come"
+ MR_balkh_flavor.1.t: "The Barlas Revolt of [GetYear]"
+ MR_balkh_flavor.1.d: " "
+ MR_balkh_flavor.1.a: "They will meet the same fate as their forefather!"
+ MR_balkh_flavor.1.b: "Retreat to Afghanistan, Transoxiana is lost."
+ MR_balkh_flavor.2.t: "The Barlas Revolt of [GetYear]"
+ MR_balkh_flavor.2.d: " "
+ MR_balkh_flavor.2.a: "Arrogant fools"
+ MR_balkh_flavor.3.t: "The Qara'unas back down"
+ MR_balkh_flavor.3.d: " "
+ MR_balkh_flavor.3.a: "Cowards, their day will come."
+ 
+ #Misc
+ TRS_new: "Mawarannahr"
+ TRS_new_ADJ: "Mawarannahri"
+ 

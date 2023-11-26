@@ -1,0 +1,88 @@
+mr_balkh_missions_revolt = {
+	slot = 3
+	generic = no
+	ai = no
+	has_country_shield = yes
+	potential = {
+			tag = BLK
+		}
+		
+	balkh_revolt_1 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 4
+		trigger = {
+		estate_loyalty = {
+         estate = estate_nobles
+         loyalty = 60
+         }	
+		}
+		effect = {
+		custom_tooltip = BLK_barlas_revolt1_TT
+		hidden_effect = {
+            set_country_flag = BLK_barlas_revolt1
+			}
+		}
+	}		
+	balkh_revolt_2 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { balkh_revolt_1 }
+		position = 5
+		trigger = {
+		total_development = TRS	
+		}
+		effect = {
+		custom_tooltip = BLK_barlas_revolt2_TT
+		hidden_effect = {
+            set_country_flag = BLK_barlas_revolt2
+			}
+		}
+	}
+	balkh_revolt_3 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { balkh_revolt_2 }
+		position = 6
+		trigger = {
+		TRS = {
+        NOT = { liberty_desire = 35 }
+        NOT = { army_size = BLK	}	
+		 }
+		}
+		effect = {
+		custom_tooltip = BLK_barlas_revolt3_TT
+		hidden_effect = {
+            set_country_flag = BLK_barlas_revolt_cleared
+			TRS = {
+            every_core_province = { add_core = BLK }	
+             }			
+			}
+		}
+	}	
+	balkh_revolt_4 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { balkh_revolt_3 }
+		position = 7
+		trigger = {
+		NOT = { exists = TRS }
+		
+		termez_area = { 
+			type = all
+			owned_by = ROOT		
+		 }
+		transoxiana_area = { 
+			type = all
+			owned_by = ROOT		
+		 }
+		ferghana_area = { 
+			type = all
+			owned_by = ROOT		
+		 }
+		 
+		}
+		effect = {
+		BLK = {
+        override_country_name = TRS_new  
+          }		
+		}
+	}	
+}

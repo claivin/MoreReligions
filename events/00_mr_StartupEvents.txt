@@ -414,3 +414,38 @@ country_event = {
     custom_tooltip = NOG_end_civil_war_TT		
 	}
 }
+
+country_event = {
+	id = mr_startup_events.7 #BarlasRevolt
+	title = mr_startup_events.7.t
+	desc = mr_startup_events.7.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		ai = no
+		OR = {
+		tag = BLK 
+		tag = TRS
+		}
+	}
+	
+	option = {
+		name = mr_startup_events.6.a#BalkhWarning
+		trigger = {
+		tag = BLK
+		}
+	custom_tooltip = BLK_barlas_revolt_TT
+	hidden_effect = { set_country_flag = BLK_barlas_revolt0 } 
+	}
+	
+	option = {
+		name = mr_startup_events.6.b#TransoxianaNotification
+		trigger = {
+        tag = TRS 
+		}
+    custom_tooltip = TRS_barlas_revolt_TT		
+	}
+}
