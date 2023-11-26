@@ -12,7 +12,7 @@ historical_friend = BOS
 
 1444.1.1 = {
 	monarch = {
-		name = "Placeholder"
+		name = "Mateo"
 		dynasty = "Nemanjic"
 		birth_date = 1377.1.1		
 		adm = 5

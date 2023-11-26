@@ -9,7 +9,7 @@ capital = 3001 # Krusevac
 
 1444.1.1 = {
 	monarch = {
-		name = "Placeholder"
+		name = "Alexos"
 		dynasty = "Vukasin"
 		birth_date = 1377.1.1		
 		adm = 2

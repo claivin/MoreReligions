@@ -10,7 +10,7 @@ capital = 5019
 
 1420.1.1 = {
 	monarch = { 
-		name = "Placeholder"
+		name = "Luigi"
 		dip = 2
 		mil = 1
 		adm = 2

@@ -10,7 +10,7 @@ capital = 1862 # Milano
 
 1444.1.1 = {
 	monarch = {
-		name = "Placeholder"
+		name = "Vini"
 		adm = 2
 		dip = 2
 		mil = 2

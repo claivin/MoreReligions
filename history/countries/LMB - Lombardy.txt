@@ -9,8 +9,8 @@ capital = 2979 # Milano
 
 1444.1.1 = {
 	monarch = {
-		name = "Placeholder"
-		dynasty = "Lombardy"
+		name = "Enrico"
+		dynasty = "Leti"
 		birth_date = 1415.10.16
 		adm = 2
 		dip = 2

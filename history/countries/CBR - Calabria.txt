@@ -9,7 +9,7 @@ capital = 123
 
 1420.1.1 = {
 	monarch = { 
-		name = "Placeholder"
+		name = "Giorgio"
 		dynasty = "Ruffo"
 		dip = 2
 		mil = 1

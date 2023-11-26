@@ -485,7 +485,7 @@ mr_olito_palace = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_defensiveness = 0.5
+			local_defensiveness = 0.3
 			fort_maintenance_modifier = -0.30
 		}
 		area_modifier = {
@@ -507,7 +507,7 @@ mr_olito_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_defensiveness = 1.0
+			local_defensiveness = 0.3
 			fort_maintenance_modifier = -0.50
 		}
 		area_modifier = {
@@ -515,7 +515,7 @@ mr_olito_palace = {
 		}
 		country_modifiers = {
 			monthly_splendor = 1
-			parliament_backing_chance = 0.50
+			parliament_backing_chance = 0.30
 		}
 		on_upgraded = {
 			owner = {
