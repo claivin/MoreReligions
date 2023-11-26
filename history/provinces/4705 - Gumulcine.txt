@@ -10,7 +10,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = TSS
-
+add_core = THS
 
 
 discovered_by = western

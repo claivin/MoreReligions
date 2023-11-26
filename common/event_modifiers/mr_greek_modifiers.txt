@@ -62,3 +62,42 @@ corinthian_league = {
 	diplomatic_upkeep = 2
 	reduced_liberty_desire = 15
 }
+thessaly_victory = {
+	infantry_power = 0.10
+	army_tradition = 0.5
+}
+thessalonica_victory = {
+	global_unrest = -1
+	global_autonomy = -0.05	
+}
+domination_of_latins = {
+	vassal_forcelimit_bonus = 0.30
+	vassal_income = 0.2	
+}
+emperor_controlled = {
+	liberty_desire = -15
+	land_forcelimit_modifier = 0.1
+}
+cav_nation = {
+	cavalry_shock = 0.25
+	cavalry_fire = 0.25
+	cavalry_cost = -0.5
+}
+golden_age_epirus = {
+	local_development_cost_modifier = -0.1
+}
+king_of_epirus = {
+	warscore_cost_vs_other_religion = -0.25
+	siege_ability = 0.10
+}
+albanian_tribes = {
+	local_manpower_modifier = 0.15
+	local_tax_modifier = 0.1
+}
+lord_of_albania = {
+	num_accepted_cultures = 1
+}
+usurped_theleague = {
+	diplomats = 1
+	diplomatic_reputation = 2
+}

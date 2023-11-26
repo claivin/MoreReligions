@@ -714,6 +714,16 @@ mr_corinth_first_title: "Strengthen the League"
 mr_corinth_second_title: "Unify the Koinon"
 mr_corinth_third_title: "To Koinon Sympheron"
 
+#Thessaly/Thessalonica
+mr_thessal_one_title: "A House Divided"
+mr_thessal_two_title: "End the Anarchy"
+mr_thessal_three_title: "The Knights of Christendom"
+
+#Arta
+mr_arta_first_title: "The Twin Cities"
+mr_arta_second_title: "The Kingdom of the Pindus"
+mr_arta_third_title: "Align the Albanian Tribes"
+
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
 if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -749,6 +759,17 @@ trade_leageu_125: "All members of our §YTrade League§! must have an opinion of
 2_diplo_reputation: "Have §Y2§! Diplo Reputation"
 koinon_reform_tt: "\nWe will gain access to the Tier 2 §YKoinon Sympheron§! Reform"
 morea_inherit_TT: "\nWe will §Yinherit§! all vassals with capitals in the §YMorea Area§!"
+thessaly_win_no: "\n£no£If we complete this mission as @THS §YThessaly§!, we will gain the following:"
+thessaly_win_yes: "\n£yes£If we complete this mission as @THS §YThessaly§!, we will gain the following:"
+thessalonica_win_no: "£no£If we complete this mission as @TSS §YThessalonica§!, we will gain the following:"
+thessalonica_win_yes: "£yes£If we complete this mission as @TSS §YThessalonica§!, we will gain the following:"
+own_thessaly_thessalonica: "Own all starting provinces of @TSS §YThessalonica§! and @THS §YThessaly§!"
+gain_cores_over_thessalonica: "We will gain §YCores§! over all highlighted provinces.\n"
+if_we_own_thracia_then: "If we own @THR §YThracia§!, they will recieve the following:"
+enable_crusader_knights_mercs: "This will enable the §YCrusader Knights§! mercenaries"
+accept_albanians: "Every owned Albanian Province will recieve the following:"
+usurp_trade_league: "While being in the trade league, have at least a §Y35§! Spy Network in Corinth and have a larger army than them."
+change_friend_trade_league: "This will make us the leader of the Trade League, forcibly moving all of the members and the leader into our league."
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -768,10 +789,21 @@ local_fortifications_greece: "The Greek Fortifications"
 prepared_by_overlord: "Istinople Protected"
 corinthian_league: "The Corinthian League"
 corinth_support: "Corinthian Diplomats"
+thessaly_victory: "Against All Odds"
+thessalonica_victory: "Order Restored"
+domination_of_latins: "Domination of the Latins"
+emperor_controlled: "Emperor Dominated"
+cav_nation: "Saintly Knights"
+king_of_epirus: "King of Thessaly"
+golden_age_epirus: "The Twin Cities"
+lord_of_albania: "Lords of Albanian"
+albanian_tribes: "The Tribes of Albania"
+usurped_theleague: "Usurp the League"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"
 naval_slave_galley_desc: "The Venetian Galleys were always primarily commanded by those forced into service - debtors, slaves, political enemies, the list goes on. However, at the turn of the 15th Century, the number of these forced ships began to skyrocket. As such, these slave galleys were designed with the forced rowers to be worked constantly, while marines and soldiers atop the boat could conduct battle."
+merc_crusader_knights: "Crusader Knights"
 
 #Baghdad Missions - TO BE COMPLETED!!
 #Titles

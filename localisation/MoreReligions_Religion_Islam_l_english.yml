@@ -1,7 +1,7 @@
 ﻿l_english:
  #Mushasha'iyya
  mr_mushashaiyya: "Mushasha'iyya"
- mr_mushashaiyya_religion_desc: "Placeholder"
+ mr_mushashaiyya_religion_desc: "A Twelver-derived movement that holds that the Mahdi's soul is identical to God, and that his soul dwells in Sayyid Muhammad ibn Fallah and his successors, who are thus partly divine. For this, they are considered a ghulat (radical/heterodox) sect by both mainstream Sunnis and Twelvers. The sect is mostly limited to the area of Khuzestan and south Iraq."
  
  mr_mushashaiyya_rebels_name: "Mushasha'iyya Zealots"
  mr_mushashaiyya_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -10,8 +10,8 @@
  mr_mushashaiyya_rebels_demand: "Convert $COUNTRYNAME$"
  mr_mushashaiyya_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
- mr_safaviyya: "Safaviyya"
- mr_safaviyya_religion_desc: "Placeholder"
+ mr_safaviyya: "Qizilbashi"
+ mr_safaviyya_religion_desc: "A sect representing the Safavid Order of Ardabil. Initially a fairly mainstream Sufi tariqa, it developed ideas considered heterodox (such as the divinity of their Imam, similar to the Mushasha'iyya) by both Sunnis and Twelver Shi'ites in the early 15th century as well as gaining ambitions of monarchical, expansionist rule. Centred on the city of Ardabil, propagandists have brought the faith to large swathes of Turkic tribes in northwest Iran and eastern Anatolia, known as the Qizilbash."
  
  mr_safaviyya_rebels_name: "Safaviyya Zealots"
  mr_safaviyya_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -85,7 +85,7 @@
  the_jihad_eternal: "The Jihad Eternal"
  
  mr_ahlehaqq: "Ahl e Haqq"
- mr_ahlehaqq_religion_desc: "Placeholder"
+ mr_ahlehaqq_religion_desc: "Also known as Yarsanism or Kaka'i, a Kurdish ethnoreligion that is possibly a syncretic legacy of pre-Islamic Kurdish beliefs. Following the teachings of the mystic Sultan Sahak, the Ahl-e-Haqq are monotheists that believe that the Divine Essence has one primary manifestation and seven secondary manifestations in each epoch of the world, known as Mazhariyyat and Heft Tan respectively. Largely limited to Kermanshah and Luristan. Yarsanis do not consider themselves Muslims, but are in the Muslim religious group for gameplay purposes."
  
  mr_ahlehaqq_rebels_name: "Ahl e Haqq Zealots"
  mr_ahlehaqq_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -95,7 +95,7 @@
  mr_ahlehaqq_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
  mr_hurufis: "Hurufi"
- mr_hurufis_religion_desc: "Placeholder"
+ mr_hurufis_religion_desc: "A Sufi mystic movement with Shi'i roots, Hurufism is mostly defined by an esoteric fascination around the characters ("Huruf") of the Arabic and Persian abjads and with numbers in general, believing that understanding both the key to haqiqat or enlightenment. Originating in Iran, Hurufi ideas became popular among Turkic and Kurdish Sufis like the Bektash."
  
  mr_hurufis_rebels_name: "Hurufi Zealots"
  mr_hurufis_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -105,7 +105,7 @@
  mr_hurufis_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  mr_tayyibi: "Tayyibi"
- mr_tayyibi_religion_desc: "Placeholder"
+ mr_tayyibi_religion_desc: "Upon the succession crisis upon the death of Fatimid Caliph Al-Amir, the Yemeni Isma'ilis adamantly believed the Imamate fell onto Al-Amir's son Al-Tayyib. Unlike the Hafizis and Nizaris, the Tayybis believe that the Imam of the Age has went into Occultation and leadership has fell onto his representative, the Da'i al-Mutlaq or Absolute Missionary. The Tayyibis survive as groups of competing Da'i al-Mutlaqs known as the Bohras in parts of Yemen and India."
  mr_tayyibi_rebels_name: "Tayyibi Zealots"
  mr_tayyibi_rebels_title: "$RELIGION$ Zealots"
  mr_tayyibi_rebels_army: "$RELIGION$ Army" 
@@ -113,7 +113,7 @@
  mr_tayyibi_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  mr_nizari: "Nizari"
- mr_nizari_religion_desc: "Placeholder"
+ mr_nizari_religion_desc: "After the death of Caliph Al-Mustansir, the Nizari Isma'ilis believe the Imamate was inherited by his eldest son Nizar. His line was saved by the famed Da'i (missionary) Hassan-i-Sabbah and relocated to castles in Syria and Tabaristan, where the Nizaris formed the infamous Assassins as the military branch of their sect that violently eliminated threats to their sect. Unlike in our timeline, where the Nizaris were massacred by the Mongols and relocated to India, in Gods and Kings they are still headquartered in Alamut Castle where they are lead by both the Grandmaster of the Assassins and the Imam of the Age."
  mr_nizari_rebels_name: "Nizari Zealots"
  mr_nizari_rebels_title: "$RELIGION$ Zealots"
  mr_nizari_rebels_army: "$RELIGION$ Army" 
@@ -121,7 +121,7 @@
  mr_nizari_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
 
  mr_hafizi: "Hafizi"
- mr_hafizi_religion_desc: "Placeholder"
+ mr_hafizi_religion_desc: "After the death of Fatimid Caliph Al-Amir, the Hafizi Isma'ilis believe that the Imamate was succeeded by his cousin Al-Hafiz. Unlike in our timeline, where Hafizi Isma'ilism saw limited following among the populace and went extinct upon the overthrow of the Fatimids, in Gods and Kings Hafizism became the dominant creed of Egypt though is found nowhere else. As the form of Isma'ilism with the most state backing, it is the most legalistic of the Isma'ili sects, with the Fatimid Caliph as their Imam of the Age."
  mr_hafizi_rebels_name: "Hafizi Zealots"
  mr_hafizi_rebels_title: "$RELIGION$ Zealots"
  mr_hafizi_rebels_army: "$RELIGION$ Army" 
@@ -145,7 +145,7 @@
  
  
  mr_qarmatian: "Qarmatian"
- mr_qarmatian_religion_desc: "Placeholder"
+ mr_qarmatian_religion_desc: "Isma'ilism is a more mystic-leaning form of Shi'ism that believes that the Seventh Imam was Muhammad ibn Isma'il, who went into Occultation and would reappear when the time was right. To most Isma'ilis, that was the uprising of Al-Mahdi, the first Fatimid Caliph. Qarmatians, however, reject Al-Mahdi and all subsequent Fatimid Caliphs/Imams, continuing to await the true Mahdi's arrival. The Qarmatians are a millennarian group found in Bahrayn considered particularly fundamentalist and hostile to rival sects, infamously sacking Mecca and desecrated the holy Zamzam well."
  mr_qarmatian_rebels_name: "Qarmatian Zealots"
  mr_qarmatian_rebels_title: "$RELIGION$ Zealots"
  mr_qarmatian_rebels_army: "$RELIGION$ Army" 
@@ -157,7 +157,7 @@
  zahiri_school: "Zahiri"
  
  mr_zaydi: "Zaydi"
- mr_zaydi_religion_desc: "Placeholder"
+ mr_zaydi_religion_desc: "Named after Zayd ibn Ali, Zaydis believe that the Imamate fell onto Zayd when he declared jihad against Umayyad tyranny. Unlike the Imamis and Isma'ilis, Zaydis do not believe that the Imam is infallible or that the Imamate is inherited from father to son. Instead, the Imam must be elected by the community from among the descendants of Ali who must uphold justice and responsibility. The Zaydi sect is the smallest of the three main branches of Shi'ism, limited to the highlands of Yemen and Tabaristan."
  
  mr_zaydi_rebels_name: "Zaydi Zealots"
  mr_zaydi_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -167,7 +167,7 @@
  mr_zaydi_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  mr_almuwahiddun: "Al Muwahiddun"
- mr_almuwahiddun_religion_desc: "Placeholder"
+ mr_almuwahiddun_religion_desc: "Also known as the Almohads, the Al-Muwahiddun are the followers of legal scholar and Islamic reformist Ibn Tumart who eventually proclaimed himself the awaited al-Mahdi. Emphasizing the Oneness of God, Almohad legalism and everyday practice follow closely with mainstream Zahiri and Maliki but due to their recognition of Ibn Tumart as the Mahdi and his successor Caliphs, their hostility to other non-Almohad Sunnis and a rejection of Dhimmi protections led to their distinction as a separate sect. In Gods and Kings, the Almohad movement was never successfully extinguished, with member tribes retreating past the Atlas mountains."
  
  mr_almuwahiddun_rebels_name: "Al-Muwahiddun Zealots"
  mr_almuwahiddun_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -187,7 +187,7 @@
  mr_alevi_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  mr_druze: "Druze"
- mr_druze_religion_desc: "Placeholder"
+ mr_druze_religion_desc: "The Druze are a religion that has its roots in Isma'ilism but has grown into an entire separate sect. Druze practices are esoteric and secretive even to its own adherents, with the population divided into a small minority of initates and majority "ignorants". They are strict monotheists but have a Neoplatonic belief in emanations and reincarnations, and important persons of verenation include Caliph Al-Hakim, Shu'ayb, John the Baptist, Salman the Persian, and Hamza ibn Ali. The Druze are found in the mountains of Lebanon and Syria. The Druze do not consider themselves Muslims, but are in the Muslim religious group for gameplay purposes."
  
  mr_druze_rebels_name: "Druze Zealots"
  mr_druze_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -197,7 +197,7 @@
  mr_druze_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  mr_yazidi: "Yazidi"
- mr_yazidi_religion_desc: "Placeholder"
+ mr_yazidi_religion_desc: "A Kurdish ethnoreligion that is possibly a syncretic legacy of ancient Kurdish religion. Yazidis are monotheists who believe that God assigned the world's affairs to Seven Angels, the leader of which is Tawusi Melek, the Peacock Angel. Yazidis believe in reincarnation and that God's Divine Essence has incarnated thrice, as Tawusi Melek, as the famed Sheikh Adi, and the enigmatic Sultan Ezid. The Yazidis are mostly limited to the north of Iraq centred around Mosul. Yazidis do not consider themselves Muslims, but are in the Muslim religious group for gameplay purposes."
  
  mr_yazidi_rebels_name: "Yazidi Zealots"
  mr_yazidi_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
@@ -208,7 +208,7 @@
  
  
  ##Yazidi Archangels
- tawuse_melek: "Tawuse Melek"
+ tawuse_melek: "Tawusi Melek"
  tawuse_melek_desc: "The leader of the Archangels sent by God to protect and guide this world, otherwise known as Azrael."
  
  jabrail: "Jabra'il"

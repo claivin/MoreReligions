@@ -45,7 +45,7 @@ mr_greek_missions_first = {
 		required_missions = {
 			mr_thracia_first
 		}
-		position = 3
+		position = 2
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4779
@@ -225,7 +225,7 @@ mr_greek_missions_first_a = {
 	}
 	mr_corinth_second = {
 		icon = secure_the_republic
-		position = 3
+		position = 2
 		required_missions = {
 			mr_corinth_first
 		}
@@ -239,7 +239,7 @@ mr_greek_missions_first_a = {
 					owner = {
 						has_opinion = {
 							who = ROOT
-							value = 75
+							value = 125
 						}
 					}
 				}
@@ -322,6 +322,489 @@ mr_greek_missions_first_a = {
 						inherit = PREV
 					}
 				}
+			}
+		}
+	}
+}
+mr_greek_missions_first_b = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = TSS
+			was_tag = TSS
+			tag = THS
+			was_tag = THS
+		}
+	}
+
+	mr_thessal_one = {
+		icon = consolidate_the_stadholders
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4705
+				province_id = 4702
+				province_id = 148
+				province_id = 1853
+				province_id = 147
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = own_thessaly_thessalonica
+				4705 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				4702 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				148 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				1853 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				147 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					exists = THR
+				}
+				add_casus_belli = {
+					target = THR
+					type = cb_restore_personal_union 
+					months = 120
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = THS
+						was_tag = THS
+					}
+				}
+				custom_tooltip = thessaly_win_yes
+				tooltip = {
+					add_country_modifier = {
+						name = thessaly_victory
+						duration = 10950
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = THS
+							was_tag = THS
+						}
+					}
+				}
+				custom_tooltip = thessaly_win_no
+				tooltip = {
+					add_country_modifier = {
+						name = thessaly_victory
+						duration = 10950
+					}
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = TSS
+						was_tag = TSS
+					}
+				}
+				custom_tooltip = thessalonica_win_yes
+				tooltip = {
+					add_country_modifier = {
+						name = thessalonica_victory
+						duration = 10950
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = TSS
+							was_tag = TSS
+						}
+					}
+				}
+				custom_tooltip = thessalonica_win_no
+				tooltip = {
+					add_country_modifier = {
+						name = thessalonica_victory
+						duration = 10950
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						OR = {
+							tag = TSS
+							was_tag = TSS
+						}
+					}
+					add_country_modifier = {
+						name = thessalonica_victory
+						duration = 10950
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							tag = THS
+							was_tag = THS
+						}
+					}
+					add_country_modifier = {
+						name = thessaly_victory
+						duration = 10950
+					}
+				}
+			}
+		}
+	}
+	mr_thessal_two = {
+		icon = mission_war_for_the_crown
+		position = 2
+		required_missions = {
+			mr_thessal_one
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = THR
+				area = thrace_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				THR = {
+					is_subject_of_type_with_overlord = {
+						who = ROOT
+						type = personal_union
+					}
+				}
+				149 = {
+					fort_level = 2
+					base_manpower = 7
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				area = thrace_area
+			}
+		}
+		effect = {
+			custom_tooltip = if_we_own_thracia_then
+			tooltip = {
+				THR = {
+					add_country_modifier = {
+						name = emperor_controlled
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						THR = {
+							is_subject_of_type_with_overlord = {
+								who = ROOT
+								type = personal_union
+							}
+						}
+					}
+					THR = {
+						add_country_modifier = {
+							name = emperor_controlled
+							duration = -1
+						}
+					}
+				}
+			}
+			add_ruler_modifier = {
+				name = domination_of_latins
+				duration = -1
+			}
+		}
+	}
+	mr_thessal_three = {
+		icon = mission_the_hakkapeliitta
+		position = 4
+		required_missions = {
+			mr_thessal_two
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			has_global_modifier_value = {
+				which = cavalry_power
+				value = 0.40
+			}
+			num_of_cavalry = 20
+		}
+		effect = {
+			add_country_modifier = {
+				name = cav_nation
+				duration = -1
+			}
+			custom_tooltip = enable_crusader_knights_mercs
+		}
+	}
+}
+mr_greek_missions_first_d = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = ATR
+			was_tag = ATR
+		}
+	}
+	mr_arta_first = {
+		icon = mission_early_game_buildings
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 144
+				province_id = 4699
+			}
+		}
+		trigger = {
+			144 = {
+				is_core = ROOT
+				development = 12
+			}
+			4699 = {
+				is_core = ROOT
+				development = 12
+			}
+		}
+		effect = {
+			144 = {
+				add_province_modifier = {
+					name = golden_age_epirus
+					duration = -1
+				}
+			}
+			4699 = {
+				add_province_modifier = {
+					name = golden_age_epirus
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_arta_second = {
+		position = 2
+		icon = cross_the_pindus
+		required_missions = {
+			mr_arta_first
+		}
+		provinces_to_highlight = {
+			area = northern_greece_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_greece_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			prestige = 20
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							government_rank = 2
+							government_rank = 3	
+						}
+					}
+				}
+				set_government_rank = 2
+			}
+			add_ruler_modifier = {
+				name = king_of_epirus
+				duration = -1
+			}
+		}
+	}
+	mr_arta_third = {
+		position = 4
+		icon = pacify_the_albanian_lands
+		required_missions = {
+			mr_arta_second
+		}
+		provinces_to_highlight = {
+			area = albania_area
+			NOT = {
+				has_tax_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			albania_area = {
+				type = all
+				has_tax_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				government_rank = 3
+				accepted_culture = albanian
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lord_of_albania
+				duration = -1
+			}
+			custom_tooltip = accept_albanians
+			tooltip = {
+				add_province_modifier = {
+					name = albanian_tribes
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						area = albania_area
+					}
+					add_province_modifier = {
+						name = albanian_tribes
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+mr_greek_missions_first_e = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = MOE
+			was_tag = MOE
+			tag = ACH
+			was_tag = ACH
+		}
+	}
+	mr_league_first = {
+		icon = purely_for_commerce
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			province_id = 4701
+			NOT = {
+				4701 = {
+					owner = {
+						AND = {
+							is_in_trade_league_with = ROOT
+							is_trade_league_leader = yes
+							has_spy_network_from = {
+								who = ROOT
+								value = 35
+							}
+							NOT = {
+								army_size = ROOT
+							}
+						}
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				AND = {
+					custom_trigger_tooltip = {
+						tooltip = usurp_trade_league
+						any_known_country = {
+							is_in_trade_league_with = ROOT
+							is_trade_league_leader = yes
+							has_spy_network_from = {
+								who = ROOT
+								value = 35
+							}
+							NOT = {
+								army_size = ROOT
+							}
+						}
+					}
+					spymaster = 1
+				}
+				4701 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			
+		}
+		effect = {
+			custom_tooltip = change_friend_trade_league
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_trade_league_with = ROOT
+						is_trade_league_leader = yes
+						has_spy_network_from = {
+							who = ROOT
+							value = 35
+						}
+						NOT = {
+							army_size = ROOT
+						}	
+					}
+					save_global_event_target_as = to_be_cheated_target
+				}
+				every_country = {
+					limit = {
+						is_in_trade_league_with = event_target:to_be_cheated_target
+						ai = yes
+					}
+					join_trade_league = ROOT	
+				}
+				event_target:to_be_cheated_target = {
+					join_trade_league = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = usurped_theleague
+				duration = 5475
 			}
 		}
 	}
@@ -870,11 +1353,11 @@ mr_greek_missions_third = {
 			}
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 60
+				loyalty = 65
 			}
 			estate_loyalty = {
 				estate = estate_church
-				loyalty = 60
+				loyalty = 65
 			}
 			crown_land_share = 30
 		}

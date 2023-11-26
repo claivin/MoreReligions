@@ -17,4 +17,8 @@ spriteTypes = {
 		name = "GFX_great_project_mr_olito_palace"
 		texturefile = "gfx//interface//great_projects//great_project_mr_olito_palace.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_mr_hexamilion"
+		texturefile = "gfx//interface//great_projects//great_project_mr_hexamilion.dds"
+	}
 }	
