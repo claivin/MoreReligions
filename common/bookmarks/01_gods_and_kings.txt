@@ -1,0 +1,26 @@
+bookmark =
+{
+	name = "gods_and_kings"
+	desc = "gods_and_kings_desc"
+	date = 1444.11.11
+	
+	center = 151
+	default = yes
+	
+	
+	country = FRA
+	country = POL
+	country = HUN
+	country = ILK
+	country = CST
+	country = TUR
+	country = BLH
+	country = RDH
+	country = GSC
+	country = MAL
+	
+	easy_country = MAL
+	
+	
+	
+}
