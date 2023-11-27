@@ -5,7 +5,7 @@ steppe_missions_1 = { #internal-management line
 	potential = { has_reform = steppe_horde }
 	
 	steppe_succession = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_plc_governance_act
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -29,7 +29,7 @@ steppe_missions_1 = { #internal-management line
 		}
 	}
 	steppe_judicial_reform = {
-		icon = mission_build_up_to_force_limit
+		icon = balance_the_estates
 		required_missions = { steppe_succession }
 		position = 2
 		trigger = {
@@ -47,7 +47,7 @@ steppe_missions_1 = { #internal-management line
 		}
 	}	
 	steppe_census = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_rb_monopolize_the_channel
 		required_missions = { steppe_judicial_reform }
 		position = 3
 		trigger = {
@@ -74,7 +74,7 @@ steppe_missions_1 = { #internal-management line
 		}
 	}	
 	steppe_mineral_wealth = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_african_gold
 		required_missions = { steppe_census }
 		position = 4
 		provinces_to_highlight = {
@@ -111,7 +111,7 @@ steppe_missions_1 = { #internal-management line
 	  }
 	}	
 	steppe_yam = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_market_place_with_asian_traders
 		required_missions = { steppe_mineral_wealth }
 		position = 5
 		trigger = {
@@ -136,7 +136,7 @@ steppe_missions_2 = { #regional-steppe conquest line
 	potential = { has_reform = steppe_horde }
 	
 	steppe_warband = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_non-western_cavalry_raid
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -151,7 +151,7 @@ steppe_missions_2 = { #regional-steppe conquest line
 		}
 	}
 	steppe_consolidation = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions = { steppe_warband }
 		position = 1
 		trigger = {
@@ -173,7 +173,7 @@ steppe_missions_2 = { #regional-steppe conquest line
 		}
 	}
 	steppe_spoils_1 = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_war_chest
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -187,11 +187,11 @@ steppe_missions_2 = { #regional-steppe conquest line
         name = steppe_spoils
 		duration = 9125
 		 } 
-        add_treasury = 150		 
+        add_treasury = 300		 
 		}
 	}
 	steppe_spoils_2 = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_riches_of_golconda
 		required_missions = { steppe_spoils_1 }
 		position = 1
 		trigger = {
@@ -203,11 +203,11 @@ steppe_missions_2 = { #regional-steppe conquest line
 		effect = {
 		custom_tooltip = steppe_prosperity_by_fire
         set_country_flag = steppe_prosperity_from_raze 
-		add_treasury = 1500
+		add_treasury = 1000
 		}
 	}
 	steppe_spoils3 = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_steppe_warriors
 		required_missions = { steppe_spoils_2 }
 		position = 1
 		trigger = {
@@ -219,7 +219,7 @@ steppe_missions_2 = { #regional-steppe conquest line
 		effect = {
 		custom_tooltip = steppe_absolutist_scourge
         set_country_flag = steppe_absolutism_scourge_raze 
-		add_treasury = 15000
+		add_treasury = 2500
 		}
 	}	
 		
@@ -242,7 +242,7 @@ steppe_missions_3a = { #china-conquest
 	}
 	
 	steppe_insult_beijing = {
-		icon = mission_build_up_to_force_limit
+		icon = mng_shengshi_zhishi
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -319,7 +319,7 @@ steppe_missions_3a = { #china-conquest
 		}
 	}	
 	steppe_restore_khanbaliq = {
-		icon = mission_build_up_to_force_limit
+		icon = mng_outer_city_beijing
 		required_missions = { steppe_insult_beijing }
 		position = 2
 		provinces_to_highlight = {
@@ -352,7 +352,7 @@ steppe_missions_3a = { #china-conquest
 		}
 	}
 	steppe_consolidate_nc = {
-		icon = mission_build_up_to_force_limit
+		icon = jap_conquer_north_china
 		required_missions = { steppe_restore_khanbaliq }
 		position = 3
 		provinces_to_highlight = {
@@ -395,7 +395,7 @@ steppe_missions_3a = { #china-conquest
 		}
 	}
 	steppe_dynasty_proclamation = {
-		icon = mission_build_up_to_force_limit
+		icon = qng_balance_mandate
 		required_missions = { steppe_consolidate_nc }
 		position = 4
 		provinces_to_highlight = {
@@ -414,7 +414,7 @@ steppe_missions_3a = { #china-conquest
 		}
 	}
 	steppe_unify_china = {
-		icon = mission_build_up_to_force_limit
+		icon = mng_heavens_will
 		required_missions = { steppe_dynasty_proclamation }
 		position = 5
 		provinces_to_highlight = {
@@ -483,7 +483,7 @@ steppe_missions_3b = { #iran-conquest
 	}
 	
 	steppe_insult_samarkand = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_central_asian_city
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -560,7 +560,7 @@ steppe_missions_3b = { #iran-conquest
 		}
 	}
 	steppe_conquer_transoxiana = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gawans_madrasar
 		required_missions = { steppe_insult_samarkand }
 		position = 2
 		provinces_to_highlight = {
@@ -596,7 +596,7 @@ steppe_missions_3b = { #iran-conquest
 		}
 	}
 	steppe_conquer_khorasan = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_afghan_frontier
 		required_missions = { steppe_conquer_transoxiana }
 		position = 3
 		provinces_to_highlight = { 
@@ -627,7 +627,7 @@ steppe_missions_3b = { #iran-conquest
 		}
 	}	
 	steppe_hulagu_legacy = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_gharbianss
 		required_missions = { steppe_conquer_khorasan }
 		position = 4
 		provinces_to_highlight = { 
@@ -650,7 +650,7 @@ steppe_missions_3b = { #iran-conquest
 		}
 	}	
 	steppe_silk_road = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_finest_carpets
 		required_missions = { steppe_hulagu_legacy }
 		position = 5
 		provinces_to_highlight = { 
@@ -709,7 +709,7 @@ steppe_missions_3c = { #rus-conquest
 	}
 	
 	steppe_northern_upstart = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dethrone_the_rurikovichs
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = { 
@@ -733,7 +733,7 @@ steppe_missions_3c = { #rus-conquest
 		}
 	}		
 	steppe_sack_tver = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_abolish_mestnichestvo
 		required_missions = { steppe_northern_upstart }
 		position = 2
 		provinces_to_highlight = { 
@@ -772,7 +772,7 @@ steppe_missions_3c = { #rus-conquest
 		}
 	}
 	steppe_punish_larper = {
-		icon = mission_build_up_to_force_limit
+		icon = mjz_for_the_horde
 		required_missions = { }
 		position = 3
 		provinces_to_highlight = { 
@@ -862,7 +862,7 @@ steppe_missions_3c = { #rus-conquest
 		}
 	}
 	steppe_enter_ruthenia = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_pol_breadbasket_europe
 		required_missions = { steppe_punish_larper }
 		position = 4
 		provinces_to_highlight = {
@@ -896,7 +896,7 @@ steppe_missions_3c = { #rus-conquest
 		}
 	}
 	steppe_conquer_kiev = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_develop_kiev
 		required_missions = { steppe_enter_ruthenia }
 		position = 5
 		provinces_to_highlight = { 
@@ -924,7 +924,7 @@ steppe_missions_4 = { #Religious line
 	potential = { has_reform = steppe_horde }
 	
 	steppe_religious_matters = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_hands_praying
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -996,7 +996,7 @@ steppe_missions_4a = { #Religious approach branch
 	}
 	
 	steppe_religious_unity = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_hands_praying
 		required_missions = { steppe_religious_matters }
 		position = 2
 		trigger = {
@@ -1010,7 +1010,7 @@ steppe_missions_4a = { #Religious approach branch
 		}
 	}	
 	steppe_religious_wars = {
-		icon = mission_build_up_to_force_limit
+		icon = per_sword_of_our_faith
 		required_missions = { steppe_religious_unity }
 		position = 3
 		trigger = {
@@ -1035,7 +1035,7 @@ steppe_missions_4b = { #Humanist approach branch
 	}
 	
 	steppe_religious_pluralism = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_son_fetishist_alliances
 		required_missions = { steppe_religious_matters }
 		position = 2
 		trigger = {
@@ -1054,7 +1054,7 @@ steppe_missions_4b = { #Humanist approach branch
 		}
 	}
 	steppe_enshrined_rights = {
-		icon = mission_build_up_to_force_limit
+		icon = per_muslim_integration
 		required_missions = { steppe_religious_pluralism }
 		position = 3
 		trigger = {
@@ -1069,7 +1069,7 @@ steppe_missions_4b = { #Humanist approach branch
 	}		
 }
 
-steppe_missions_5 = { #Religious line
+steppe_missions_5 = { #Extra line
 	slot = 5
 	generic = no
 	ai = no
