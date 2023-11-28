@@ -352,13 +352,72 @@ england_missions_2_crown_army = {
 		required_missions = { eng_m_united_kingdom }
 		position = 3
 		provinces_to_highlight = {
-
+			owned_by = ROOT
+			is_capital = yes
 		}
 		trigger = {
-			
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.25
+			}
+			army_tradition = 50
+			mil_power = 100
 		}
 		effect = {
-			
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = init_elite_units }
+					}
+					set_variable = {
+						which = elite_unit_xp
+						value = 0
+					}
+					set_country_flag = init_elite_units
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					which = eng_model_army_wins_count
+					value = 0
+				}
+			}
+			add_country_modifier = {
+				name = gme_basic_elite_units_unlocked
+				duration = -1
+			}
+			add_country_modifier = {
+				name = mr_eng_crown_guard
+				duration = -1
+			}
+			custom_tooltip = elite_regiments_mission_tt
+		}
+	}
+	eng_m_army_2 = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_army_1 }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 0.50
+			}
+			army_tradition = 75
+			check_variable = {
+				which = eng_model_army_wins_count
+				value = 50
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mr_eng_model_army
+				duration = -1
+			}
+			custom_tooltip = cheaper_UU_upgrades
 		}
 	}
 }
@@ -428,7 +487,6 @@ england_missions_irish_branch = {
 		position = 4
 		provinces_to_highlight = {
 			province_group = ireland_region
-			
 		}
 		trigger = {
 			ireland_region = {
@@ -448,6 +506,28 @@ england_missions_irish_branch = {
 				name = eng_anglo_hibernian_union
 				duration = -1
 			}
+		
+	eng_m_ireland_4 = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {
+			eng_m_ireland_3
+			eng_m_army_2
+		}
+		position = 5
+		provinces_to_highlight = {
+			province_group = ireland_region 
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 10
+				province_group = ireland_region
+				owned_by = ROOT
+				has_forcelimit_building_trigger = yes
+				base_manpower = 8
+			}
+		}
+		effect = {
+			
 		}
 	}
 }

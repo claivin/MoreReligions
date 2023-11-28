@@ -89,5 +89,16 @@ mr_sco_hide_trade = {
 }
 
 mr_sco_scotch = {
-	trade_value = 3
+	trade_value = 1
+}
+
+mr_eng_model_army = {
+	land_maintenance_modifier = -0.1
+}
+
+mr_eng_crown_guard = {
+	fire_damage = 0.20
+}
+mr_ire_whiskey = {
+	trade_value = 1
 }

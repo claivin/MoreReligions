@@ -16,4 +16,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 add_core = ENG
+add_local_autonomy = 40
+
 1444.11.12 = { trade_goods = unknown }

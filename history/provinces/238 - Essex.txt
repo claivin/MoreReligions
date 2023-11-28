@@ -20,4 +20,6 @@ discovered_by = ottoman
 discovered_by = eastern
 add_building = mrb_textileprocessor
 set_province_flag = was_wool_province
+add_local_autonomy = 5
+
 1444.11.12 = { trade_goods = unknown }

@@ -57,6 +57,16 @@
  eng_m_scotland_2_desc: "The Highlanders, once defeated, remain a formidable fighting force, owing to the rough lands they settle. Their integration into the Kingdom can be a great boon to our future army and securing the British Isles and lands abroad."
  redshanks_2_TT: "Unlocks a cheaper and stronger version of the §YRedshanks§! mercenary company"
  
+ eng_m_army_1_title: "Founding the Crown Guard"
+ eng_m_army_1_desc: ""
+ 
+ eng_m_army_2_title: "Reform as the Model Army"
+ eng_m_army_2_desc: ""
+ cheaper_UU_upgrades: "[Root.GetName] gets '§YModel Army§!' until the end of the game, giving the following effects:\n§PElite Unit§! Upgrade Cost: §G-10.0%§!"
+ 
+ eng_m_ireland_4_title: "Army of Ireland"
+ eng_m_ireland_4_desc: ""
+ 
  ### Decisions
  mr_crush_local_rulers_decision_title: "Crush Irish Lords"
  mr_crush_local_rulers_decision_desc: ""
@@ -96,6 +106,7 @@
  mr_highlander_recruitment: "Highlander Recruiting"
  mr_sco_hide_trade: "Quality Scottish Leather"
  mr_sco_scotch: "Scotch Whiskey Tradition"
+ mr_eng_model_army: "Standing Army Decree"
  
  ### misc
  mr_anglo_hibernian: "Anglo-Hibernian"

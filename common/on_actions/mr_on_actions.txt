@@ -202,7 +202,17 @@ on_battle_won_country = {
 			20 = { ROOT = { add_manpower = 2 } }
 			80 = { }
 		}
-	}		
+	}
+	if = {
+		limit = {
+			tag = ENG
+			mission_completed = eng_m_army_1
+		}
+		change_variable = {
+			which = eng_model_army_wins_count
+			value = 1
+		}
+	}
 }
 on_battle_lost_country = {
 	if = {

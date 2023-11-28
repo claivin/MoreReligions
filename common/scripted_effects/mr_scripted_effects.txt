@@ -67,6 +67,28 @@ set_xp_costs_effect = {
 			# value = -20
 		# }
 	# }
+	if = {
+		limit = {
+			tag = ENG
+			mission_completed = eng_m_army_2
+		}
+		change_variable = {
+			which = branchApath_base_cost
+			value = -20
+		}
+		change_variable = {
+			which = branchBpath_base_cost
+			value = -20
+		}
+		change_variable = {
+			which = branchCpath_base_cost
+			value = -20
+		}
+		change_variable = {
+			which = branchUpath_base_cost
+			value = -20
+		}
+	}
 }
 
 elite_unit_menu_invalid_choice_effect = {
@@ -114,7 +136,7 @@ reset_elite_units = {
 	}
 	else_if = {
 		limit = {
-			has_sappers = yes
+			has_vanguard = yes
 		}
 		remove_country_modifier = elite_vanguard_1
 	}
