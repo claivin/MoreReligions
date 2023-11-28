@@ -563,10 +563,9 @@ estate_nomadic_tribes_horde_unity = {
 	loyalty = 0.10
 	influence = 0.15
 	is_valid = {
-		tag = HUN
+		tag = KNN
 	}
 	can_select = {
-		tag = HUN
 		mission_completed = knn_conquest_third
 	}
 	on_granted = {
@@ -587,10 +586,9 @@ estate_nomadic_tribes_hun_faith = {
 	loyalty = 0.0
 	influence = 0.15
 	is_valid = {
-		tag = HUN
+		tag = KNN
 	}
 	can_select = {
-		tag = HUN
 		mission_completed = knn_religion_second
 	}
 	on_granted = {

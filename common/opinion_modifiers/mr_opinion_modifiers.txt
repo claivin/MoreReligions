@@ -32,3 +32,7 @@ mr_crusaders_papal_legate_bribed = {
 	opinion = 25
 	yearly_decay = 1
 }
+mr_ruined_reputation = {
+	opinion = -100
+	yearly_decay = 2
+}

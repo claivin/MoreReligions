@@ -97,7 +97,11 @@ albanian_tribes = {
 lord_of_albania = {
 	num_accepted_cultures = 1
 }
-usurped_theleague = {
+usurped_the_league = {
 	diplomats = 1
 	diplomatic_reputation = 2
+}
+dominated_trade_league = {
+	global_tax_income = 12	
+	diplomatic_reputation = 1	
 }

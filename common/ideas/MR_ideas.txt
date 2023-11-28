@@ -1575,8 +1575,8 @@ KNN_ideas = {
 	KNN_fourth = { #Subjugating the Saxons
 		global_autonomy = -0.05
 	}
-	KNN_fifth = { #Victory of the Saint King
-		tolerance_own = 1
+	KNN_fifth = { #Victory of the Patirarch King
+		tolerance_own = 2
 	}
 	KNN_sixth = { #Voivode of Transylvania
 		production_efficiency = 0.05

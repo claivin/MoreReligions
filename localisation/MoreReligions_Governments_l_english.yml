@@ -135,4 +135,16 @@ mr_latin_kingdom_desc: "The kingdoms of Thessaly, Thracia, and Thessalonica are 
 
 mr_koinon_reform: "Koinon Sympheron"
 mr_koinon_reform_desc: "The Common Good, as Aristotle described it, was a dream that all societies must strive for. Our constitution, our state legislature, our rulers, and even our people will all benefit from a shared communal goal."
+
+mr_panachaic_reform: "Panachaic Apella"
+mr_panachaic_reform_desc: "This state manages the polis by allowing small, individual assemblies to meet separate from the central one in Glarentza. This allows them to manage  problems and discuss solutions without the need for a bureaucratic process to deal with crises."
+
+mr_lakonion_reform: "Lakonic Apella"
+mr_lakonion_reform_desc: "While we might be blunt and straight forward, we are efficient. We take what is valuable and place it within the center of the state, the metropole, and then administer it as we see fit."
+
 mechanic_MR_koinon_mechanic_yes: "Everytime we §YDevelop a Province§!, we will gain §G-0.5§! §YSeparatism§! in that province."
+mechanic_MR_lakonion_mechanic_yes: "Everytime we §YConcentrate Development§!, a random province in our capital area will gain §Y+1§! Taxation,§Y+1§! Production, and §Y+1§! Manpower."
+mechanic_MR_panachaic_mechanic_yes: "Everytime we §YExpand Infrastructure§!, a random province in the area will gain §Y+1§! Taxation,§Y+1§! Production, and §Y+1§! Manpower."
+mechanic_mr_latin_company_yes: "We will gain §Y+0.25§! Mercenary Militarization whenever we win a battle."
+mr_latin_companies_reform: "Latin Companies"
+mr_latin_companies_reform_desc: "The latin mercenary groups range from being far flung foreign soldiers, leading the crusades in a new land, to those born and raised within Epirus."

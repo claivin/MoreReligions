@@ -59,7 +59,7 @@ knn_missions_branching_A = {
 	}
 	
 	knn_blh_first = {
-		icon = invade_poland
+		icon = mission_conquer_50_development
 		position = 4
 		required_missions = { knn_diplo_third }
 		provinces_to_highlight = {
@@ -106,7 +106,7 @@ knn_missions_branching_A = {
 	}
 	
 	knn_blh_second = {
-		icon = invade_poland
+		icon = mission_the_hakkapeliitta
 		position = 5
 		required_missions = { knn_blh_first }
 		provinces_to_highlight = {
@@ -158,7 +158,7 @@ knn_missions_branching_A = {
 		}
 	}
 	knn_blh_third = {
-		icon = invade_poland
+		icon = mission_pol_breadbasket_europe
 		position = 6
 		required_missions = { knn_blh_second }
 		provinces_to_highlight = {
@@ -204,7 +204,7 @@ knn_missions_branching_A = {
 		}
 	}
 	knn_blh_fourth = {
-		icon = invade_poland
+		icon = mission_non-western_cavalry_raid
 		position = 7
 		required_missions = { knn_blh_third }
 		provinces_to_highlight = {
@@ -267,7 +267,7 @@ knn_missions_branching_A = {
 		}
 	}
 	knn_blh_fifth = {
-		icon = invade_poland
+		icon = mission_monarch_in_throne_room
 		position = 9
 		required_missions = { knn_blh_fourth }
 		provinces_to_highlight = {
@@ -335,18 +335,10 @@ knn_missions_second = {
 		position = 1
 		required_missions = { }
 		trigger = {
-			OR = {
-				BLH = {
-					has_opinion = {
-						who = ROOT
-						value = 75
-					}
-				}
-				SAX = {
-					has_opinion = {
-						who = ROOT
-						value = 75
-					}
+			BLH = {
+				has_opinion = {
+					who = ROOT
+					value = 75
 				}
 			}
 		}
@@ -390,7 +382,7 @@ knn_missions_second = {
 		}
 	}
 	knn_diplo_third = {
-		icon = invade_poland
+		icon = mission_unite_home_region
 		position = 3
 		required_missions = { knn_diplo_first }
 		trigger = {
@@ -423,7 +415,7 @@ knn_missions_second = {
 	}	
 
 	knn_raid_first = {
-		icon = invade_poland
+		icon = mission_steppe_warriors
 		position = 4
 		required_missions = { knn_conquest_second }
 		provinces_to_highlight = {
@@ -487,7 +479,7 @@ knn_missions_second = {
 	}
 	
 	knn_raid_second = {
-		icon = invade_poland
+		icon = mission_humiliate_lubeck
 		position = 5
 		required_missions = { knn_raid_first }
 		provinces_to_highlight = {
@@ -567,7 +559,7 @@ knn_missions_second = {
 	}
 	
 	knn_raid_third = {
-		icon = invade_poland
+		icon = jageillonian_union
 		position = 6
 		required_missions = { knn_raid_second }
 		provinces_to_highlight = {
@@ -654,7 +646,7 @@ knn_missions_second = {
 	}
 	
 	knn_army_second = {
-		icon = gory_to_the_black_army
+		icon = mission_teutonic_knights
 		position = 7
 		required_missions = { knn_army_first }
 		provinces_to_highlight = { }	
@@ -765,6 +757,7 @@ knn_missions_third = {
 			hidden_effect = {
 				clr_country_flag = HUN_thunder_dome_participant
 				set_country_flag = HUN_thunder_dome_winner
+				remove_country_modifier = hungary_war_good
 			}
 			change_government = tribal
 			add_government_reform = mr_horde_hungary_reform
@@ -775,7 +768,7 @@ knn_missions_third = {
 	}
 	
 	knn_conquest_third = {
-		icon = mission_crusade_for_varna
+		icon = mission_pol_imperial_commonwealth
 		position = 3
 		required_missions = { knn_conquest_second }
 		provinces_to_highlight = {
@@ -856,7 +849,7 @@ knn_missions_third = {
 			
 	
 	knn_raid_fourth = {
-		icon = invade_poland
+		icon = mission_consolidate_the_state
 		position = 5
 		required_missions = {
 			knn_raid_first
@@ -917,10 +910,11 @@ knn_missions_third = {
 	}
 	
 	knn_raid_fifth = {
-		icon = invade_poland
+		icon = mission_thirty_years_war
 		position = 5
 		required_missions = {
 			knn_raid_fourth
+			knn_raid_second
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -974,7 +968,7 @@ knn_missions_third = {
 	}
 	
 	knn_raid_seventh = {
-		icon = invade_poland
+		icon = mission_weather_the_troubles
 		position = 7
 		required_missions = { knn_raid_third }
 		
@@ -1033,7 +1027,7 @@ knn_missions_third = {
 	}
 	
 	knn_raid_sixth = {
-		icon = invade_poland
+		icon = mission_break_the_tatar_yoke
 		position = 9
 		required_missions = {
 			knn_raid_seventh
@@ -1142,7 +1136,7 @@ knn_missions_fourth = {
 		}
 	}
 	knn_buda_first = {
-		icon = mission_market_place_with_asian_traders
+		icon = the_great_city_of_buda
 		position = 2
 		required_missions = { }
 		provinces_to_highlight = {
@@ -1182,7 +1176,7 @@ knn_missions_fourth = {
 	}
 	
 	knn_buda_second = {
-		icon = mission_market_place_with_asian_traders
+		icon = mission_eastern_european_city
 		position = 3
 		required_missions = { knn_buda_first }
 		provinces_to_highlight = {
@@ -1210,7 +1204,7 @@ knn_missions_fourth = {
 	}
 
 	knn_buda_third = {
-		icon = mission_market_place_with_asian_traders
+		icon = mission_noble_council
 		position = 5
 		required_missions = { knn_buda_second }
 		provinces_to_highlight = {
@@ -1271,7 +1265,7 @@ knn_missions_fourth = {
 	}
 	
 	knn_religion_first = {
-		icon = invade_poland
+		icon = mission_unite_the_princes
 		position = 5
 		required_missions = {
 		}
@@ -1309,7 +1303,7 @@ knn_missions_fourth = {
 	}
 	
 	knn_religion_third = {
-		icon = invade_poland
+		icon = mission_restore_kiev
 		position = 8
 		required_missions = {
 			knn_religion_first
@@ -1318,7 +1312,7 @@ knn_missions_fourth = {
 		}
 		
 		trigger = {
-			patriarch_authority = 25
+			patriarch_authority = 0.25
 			is_defender_of_faith_of_tier = 3
 			religious_unity = 0.95
 		}
@@ -1433,7 +1427,7 @@ knn_missions_fifth = {
 	}
 	
 	knn_buda_fourth = {
-		icon = mission_market_place_with_asian_traders
+		icon = bibliotheca_corviana
 		position = 4
 		required_missions = { knn_buda_second }
 		provinces_to_highlight = {
@@ -1464,7 +1458,7 @@ knn_missions_fifth = {
 	}
 	
 	knn_buda_fifth = {
-		icon = mission_market_place_with_asian_traders
+		icon = a_strong_government 
 		position = 6
 		required_missions = { knn_buda_third knn_buda_fourth }
 		provinces_to_highlight = {
@@ -1513,7 +1507,7 @@ knn_missions_fifth = {
 	}
 	
 	knn_religion_second = {
-		icon = invade_poland
+		icon = fund_the_monasteries
 		position = 6
 		required_missions = {
 			knn_religion_first
@@ -1527,7 +1521,7 @@ knn_missions_fifth = {
 		
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 20
+				value = 10
 				religion = orthodox
 				has_tax_building_trigger = yes
 			}
@@ -1540,7 +1534,7 @@ knn_missions_fifth = {
 	}
 	
 	knn_religion_fourth = {
-		icon = invade_poland
+		icon = mission_land_of_churches
 		position = 9
 		required_missions = {
 			knn_religion_second

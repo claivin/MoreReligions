@@ -755,9 +755,8 @@ mr_koinon_reform ={
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			culture_group = byzantine
 			tag = CNT
-			tag = GRE
+			was_tag = CNT
 		}
 	}
 	trigger = {
@@ -769,6 +768,46 @@ mr_koinon_reform ={
 	}
 	custom_attributes = {
 		MR_koinon_mechanic = yes
+	}
+}
+mr_lakonion_reform ={
+	icon = "consulate_of_the_sea"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = MOE
+			was_tag = MOE
+		}
+	}
+	trigger = {
+		mission_completed = mr_league_third
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		governing_capacity_modifier = 0.1
+	}
+	custom_attributes = {
+		MR_lakonion_mechanic = yes
+	}
+}
+mr_panachaic_reform ={
+	icon = "consulate_of_the_sea"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ACH
+			was_tag = ACH
+		}
+	}
+	trigger = {
+		mission_completed = mr_league_third
+	}
+	modifiers = {
+		candidate_random_bonus = 1
+		num_accepted_cultures = 1
+	}
+	custom_attributes = {
+		MR_panachaic_mechanic = yes
 	}
 }
 mr_latin_kingdom = {
@@ -801,7 +840,42 @@ mr_latin_kingdom = {
 			tag = TSS
 			tag = THS
 			tag = LAE
+			tag = ATH
 		}
 	}
+}
+mr_latin_companies_reform = {
+	icon = "mission_to_kill_pirates_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "Domination"
+		OR = {
+			tag = CPH
+			was_tag = CPH
+			tag = CEP
+			was_tag = CEP
+		}
+	}
+	trigger = {
+		mission_completed = mr_epirus_third
+	}
+	modifiers = {
+		mercenary_cost = -0.15
+		mercenary_manpower = 0.25
+		merc_leader_army_tradition = 0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Domination" }
+		government_abilities = {
+			hessian_militarization_mechanic
+		}
+	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+		mr_latin_company = yes
+	}
 
+	ai = {
+		factor = 1
+	}
 }

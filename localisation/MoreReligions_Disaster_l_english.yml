@@ -96,10 +96,10 @@
  HUN_flavor.8.d: "In the aftermath of the 14th Century crisis, foreign hands have been prying at the crown for decades. The Poles, Serbs, Czechs, Mongols, all wishing to get a piece of the pie have placed their bets on local candidates, and as such have infilitrated our ranks of government. We do not know how many of our courtiers are foreign spies, for there are simply too many to tell. We must do something about this."
  HUN_flavor.8.a: "Remove all foreign elements - we must ensure a secure court!"
  HUN_flavor.8.b: "We shall choose to trust our allies."
- HUN_flavor.9.t: "Funds for the Military"
- HUN_flavor.9.d: "The Oligarchs have effectively cut all of our military funds. They see it as a necessary way to ensure that the crown does not overpower them - and this does work. The military is far too ill-funded to properly stand a chance should the local levies of the Oligarchs rise up against them. However, our King's personal coffers could be enough to keep them up to date, should we wish to support them." 
+ HUN_flavor.9.t: "The Kunság Ultimatum"
+ HUN_flavor.9.d: "Ever since the Mongol invasions of the 13th Century, the Cumans of Greater Cumania have been an integral aspect of our military. During the great revolution against the Bohemian princes, it was the turning of the Cumans to the side of the Oligarchs that allowed the house Szécsényi to rise to power. However, the issues of trust and discrimination were apparent for centuries, with purges and clashes between the mostly semi-nomadic cumans and now settled magyars. They remained with house Szécsényi simply because they respected Nicholas` father, the man who led the Oligarchs to victory\n\nNow, with his son weak and the winds of fortune changing, the men of Kunság are making casual conversation about other potential monarchs, particularly those within House Kan. After many discussions with their leader, it seems what will ensure their loyalty is a hefty sum of coin, lest their eyes might wander towards other masters." 
  HUN_flavor.9.a: "Whatever the cost, pay the toll."
- HUN_flavor.9.b: "Use that money elsewhere!"
+ HUN_flavor.9.b: "The Cumans would never betray us!"
  HUN_flavor.10.t: "The Papal Controversy"
  HUN_flavor.10.d: "Ever since the Pope's candidate for the Interegnum was denied by the Oligarchs, the Papacy has been an antagonistic force in our politics. They wish to make sure that they have a dominant hold over our state, as their influence has slipped across the world. It is said that papal agents in the form of Bishops and Missionaries sent from Rome itself are swaying local lords to the side of the Joannite Order, a rebellious vassal of ours in Severin. As these rumors swirl around the court, we must decide what to do!"
  HUN_flavor.10.a: "Remove some influence, but try to keep it small."
@@ -113,6 +113,7 @@
  HUN_flavor.12.a: "Traitors and cowards."
  HUN_flavor.13.t: "Return on Investment"
  HUN_flavor.13.a: "They ride for their king!"
+ hungary_war_good: "Hungarian Civil War"
  
  
  hotoku_war: "Hotoku War"

@@ -316,6 +316,8 @@ monarchy = {
 				legacy_of_the_seljuk_reform
 				modernized_furusiyya_reform
 				cawa_auxiliary_forces
+				#Gods and Kings
+				mr_latin_companies_reform
 			}
 		}
 		deliberative_assembly = {
@@ -662,6 +664,8 @@ republic = {
 				integrated_ottoman_officials
 				#G&K
 				mr_koinon_reform
+				mr_lakonion_reform
+				mr_panachaic_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -788,6 +792,8 @@ republic = {
 				legacy_of_the_seljuk_reform
 				modernized_furusiyya_reform
 				cawa_auxiliary_forces
+				#Gods and Kings
+				mr_latin_companies_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1083,6 +1089,8 @@ tribal = {
 				legacy_of_the_seljuk_reform
 				modernized_furusiyya_reform
 				cawa_auxiliary_forces
+				#Gods and Kings
+				mr_latin_companies_reform
 			}
 		}
 		tribal_modernization = {
@@ -1328,6 +1336,8 @@ theocracy = {
 				legacy_of_the_seljuk_reform
 				modernized_furusiyya_reform
 				cawa_auxiliary_forces
+				#Gods and Kings
+				mr_latin_companies_reform
 			}
 		}
 		secularization = {

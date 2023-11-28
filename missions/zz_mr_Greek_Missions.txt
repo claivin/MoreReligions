@@ -734,11 +734,10 @@ mr_greek_missions_first_e = {
 				4701 = {
 					owner = {
 						AND = {
-							is_in_trade_league_with = ROOT
-							is_trade_league_leader = yes
+							is_in_trade_league = yes
 							has_spy_network_from = {
 								who = ROOT
-								value = 35
+								value = 40
 							}
 							NOT = {
 								army_size = ROOT
@@ -751,61 +750,267 @@ mr_greek_missions_first_e = {
 		}
 		trigger = {
 			OR = {
-				AND = {
-					custom_trigger_tooltip = {
-						tooltip = usurp_trade_league
-						any_known_country = {
-							is_in_trade_league_with = ROOT
-							is_trade_league_leader = yes
+				4701 = {
+					owner = {
+						AND = {
+							is_in_trade_league = yes
 							has_spy_network_from = {
 								who = ROOT
-								value = 35
+								value = 40
 							}
 							NOT = {
 								army_size = ROOT
 							}
 						}
 					}
-					spymaster = 1
 				}
 				4701 = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
-			
 		}
 		effect = {
 			custom_tooltip = change_friend_trade_league
 			hidden_effect = {
-				every_country = {
+				if = {
 					limit = {
-						is_in_trade_league_with = ROOT
-						is_trade_league_leader = yes
-						has_spy_network_from = {
-							who = ROOT
-							value = 35
+						4701 = {
+							owner = {
+								AND = {
+									is_in_trade_league = yes
+									has_spy_network_from = {
+										who = ROOT
+										value = 40
+									}
+								}
+							}
 						}
-						NOT = {
-							army_size = ROOT
-						}	
 					}
-					save_global_event_target_as = to_be_cheated_target
+					4701 = {
+						owner = {
+							save_global_event_target_as = ruined_reputation_target
+						}
+					}
 				}
 				every_country = {
 					limit = {
-						is_in_trade_league_with = event_target:to_be_cheated_target
-						ai = yes
+						is_in_trade_league_with = event_target:ruined_reputation_target
 					}
-					join_trade_league = ROOT	
-				}
-				event_target:to_be_cheated_target = {
-					join_trade_league = ROOT
+					add_opinion = {
+						who =  event_target:ruined_reputation_target
+						modifier = mr_ruined_reputation
+					}
 				}
 			}
 			add_country_modifier = {
-				name = usurped_theleague
+				name = usurped_the_league
 				duration = 5475
 			}
+		}
+	}
+	mr_league_second = {
+		icon = mission_have_two_subjects
+		position = 2
+		required_missions = {
+			mr_league_first
+		}
+		provinces_to_highlight = {
+			owner = {
+				is_in_trade_league_with = ROOT
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 125
+					}
+				}
+			}
+		}	
+		trigger = { 
+			calc_true_if = {
+				all_country = {
+					is_in_trade_league_with = ROOT
+				}
+				amount = 2
+			}
+			is_trade_league_leader = yes
+			custom_trigger_tooltip = {
+				tooltip = trade_leageu_125
+				NOT = {
+					any_known_country = {
+						is_in_trade_league_with = ROOT
+						NOT = {
+							has_opinion = {
+								who = ROOT
+								value = 125
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = { 
+			custom_tooltip = vassalize_trade_league
+			hidden_effect = {
+				every_country = {
+					limit = {
+						is_in_trade_league_with = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 125
+						}
+						ai = yes
+					}
+					ROOT = {
+						vassalize = PREV
+					}
+				}
+			}
+			add_country_modifier = {
+				name = dominated_trade_league
+				duration = -1
+			}
+		}
+	}
+	mr_league_third = {
+		icon = mission_among_the_great_powers
+		position = 4
+		required_missions = {
+			mr_league_second
+		}
+		trigger = {
+			reform_level = 2
+			ADM = 4
+			philosopher = 1
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+		}
+		effect = {
+			change_government_reform_progress = 100
+			if = {
+				limit = {
+					OR = {
+						was_tag = ACH
+						tag = ACH
+					}
+				}
+				custom_tooltip = gain_panachaic_assembly_yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						NOT = {
+							was_tag = ACH
+							tag = ACH
+						}
+					}
+				}
+				custom_tooltip = gain_panachaic_assembly_no
+			}
+			if = {
+				limit = {
+					OR = {
+						was_tag = MOE
+						tag = MOE
+					}
+				}
+				custom_tooltip = gain_lakonion_assembly_yes
+			}
+			else_if = {
+				limit = {
+					OR = {
+						NOT = {
+							was_tag = MOE
+							tag = MOE
+						}
+					}
+				}
+				custom_tooltip = gain_lakonion_assembly_no
+			}
+		}
+	}
+}
+mr_greek_missions_first_g = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = CPH
+			was_tag = CPH
+			tag = CEP
+			was_tag = CEP
+		}
+	}
+	mr_epirus_first = {
+		icon = mission_control_venice
+		position = 1
+		provinces_to_highlight = {
+			culture_group = byzantine
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				culture_group = byzantine
+				value = 2
+			}
+			num_of_mercenaries = 1
+		}
+		effect = {
+			custom_tooltip = enable_catalan_mercenaries
+			add_mil_power = 50
+		}
+	}
+	mr_epirus_second = {
+		icon = byz_avenge_1071
+		position = 2
+		required_missions = {
+			mr_epirus_first
+		}
+		provinces_to_highlight = {
+			area = northern_greece_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = MrGreekEvents.3
+			}
+		}
+	}
+	mr_epirus_third = {
+		icon = swiss_mercenaries
+		position = 4
+		required_missions = {
+			mr_epirus_second
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = win_15_battles_current
+				check_variable = {
+					which = mercenary_wins_counter
+					value = 15
+				}
+			}
+			num_of_mercenaries = 5
+		}
+		effect = {
+			change_government_reform_progress = 100
+			custom_tooltip = enable_latin_mercenary_reforms
 		}
 	}
 }
@@ -829,6 +1034,7 @@ mr_greek_missions_second = {
 			tag = BYZ
 			tag = GRE
 			tag = CPH
+			tag = CEP
 		}
 	}
 	mr_greece_unity_2 = {
@@ -1108,6 +1314,7 @@ mr_greek_missions_third = {
 			tag = BYZ
 			tag = GRE
 			tag = CPH
+			tag = CEP
 		}
 	}
 	mr_greece_unity_1 = {
@@ -1423,6 +1630,7 @@ mr_greek_missions_fourth = {
 			tag = BYZ
 			tag = GRE
 			tag = CPH
+			tag = CEP
 		}
 	}
 	mr_greece_unity_7 = {
@@ -1561,6 +1769,7 @@ mr_greek_missions_fifth = {
 			tag = BYZ
 			tag = GRE
 			tag = CPH
+			tag = CEP
 		}
 	}
 	mr_greece_unity_9 = {

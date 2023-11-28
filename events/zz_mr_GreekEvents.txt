@@ -97,3 +97,24 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = MrGreekEvents.3
+	title = MrGreekEvents.3.t
+	desc = MrGreekEvents.3.d
+	picture = SCOTTISH_MERCENARIES_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = MrGreekEvents.3.a
+		change_tag = EPI
+		set_government_rank = 2
+		if = {
+			limit = {
+				NOT = { has_idea_group = greek_ideas } 
+				is_playing_custom_nation = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+	}
+}
