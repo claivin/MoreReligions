@@ -88,20 +88,6 @@ on_startup = {
 on_religion_change = {
 	#change iberian names to islamic name if muslim
 	change_iberian_name_to_arabic_effect = yes
-	if = {
-		limit = {
-			religion_group = christian
-			NOT = { religion = catholic }
-			NOT = { religion = mr_maronite }
-			NOT = { religion = orthodox }
-			NOT = { religion = coptic }
-			NOT = { religion = reformed }
-		}
-		set_religious_school = {
-			group = christian
-			school = mr_christian_no_school
-		}
-	}
 	events = {
 		muslim_school_events.20 #Pick School
 		propagate_religion_events.7 #Propagated Country is now Muslim
@@ -1163,4 +1149,19 @@ on_harmonized_yogavacara = {
 		        }
 	}
 }
-
+on_yearly_pulse_2 = {
+	events = {
+		mr_england.7
+		mr_england.7002
+		mr_england.7003
+		mr_england.7004
+		mr_england.7005
+		mr_england.7006
+		mr_england.7007
+		mr_england.7008
+		mr_england.7009
+		mr_england.7010
+		mr_england.7011
+		mr_england.7012
+	}
+}

@@ -8,7 +8,7 @@ religion = mr_lollard
 hre = no
 base_tax = 4
 base_production = 4
-trade_goods = livestock
+trade_goods = alcohol
 base_manpower = 2
 capital = "Oxford"
 is_city = yes
@@ -18,5 +18,5 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-
+add_building = mrb_brewery
 1444.11.12 = { trade_goods = unknown }

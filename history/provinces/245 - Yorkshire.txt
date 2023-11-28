@@ -5,10 +5,10 @@ controller = YRK
 culture = english
 religion = catholic
 hre = no
-base_tax = 3
-base_production = 3
+base_tax = 4
+base_production = 4
 trade_goods = cloth
-base_manpower = 2
+base_manpower = 4
 capital = "York"
 is_city = yes
 add_core = YRK
@@ -18,5 +18,6 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-
+add_building = mrb_textileprocessor
+set_province_flag = was_wool_province
 1444.11.12 = { trade_goods = unknown }

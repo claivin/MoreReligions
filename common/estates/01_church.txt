@@ -5,6 +5,7 @@ estate_church = {
 	trigger = {
 		NOT = { has_government_attribute = disables_estate_church }
 		NOT = { has_disabled_estate = { estate = estate_church } }
+		NOT = { has_country_flag = mr_eng_disabled_clergy }
 		if = {
 			limit = {
 				religion_group = dharmic

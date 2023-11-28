@@ -1857,6 +1857,13 @@ christian = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			country_event = {
+				id = mr_england.7
+			}
+			set_variable = {
+				which = lollardConclusionProgress
+				value = 0
+			}
 			hidden_effect = {
 				remove_country_modifier = counter_reformation
 				remove_country_modifier = the_statue_in_restraint_of_appeals
@@ -1866,6 +1873,10 @@ christian = {
 				remove_country_modifier = the_declaration_of_indulgence
 				remove_country_modifier = de_heretico_comburendo
 				remove_country_modifier = the_conventicle_act
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_christian_no_school
 			}
 		}
 		heretic = { LOLLARDHERETICS }

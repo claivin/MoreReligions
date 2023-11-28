@@ -256,11 +256,14 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		#mission eng_m_ireland_3
-		}
+	}
 	mean_time_to_happen = { days = 1 }
 	
 	option = {
 		name = mr_england.3.a
+		hidden_effect = {
+			set_country_flag = mr_changed_name_to_eng_ire
+		}
 		override_country_name = ENGLAND_IRELAND
 	}
 	
@@ -377,9 +380,19 @@ country_event = {
 	picture = POPE_PREACHING_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	trigger = {
-		#mission eng_m_lollards_1
+		#triggered by converting to Lollardy
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 0
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 1
+			}
+		}
 	}
 	mean_time_to_happen = { days = 1 }
 	
@@ -420,6 +433,451 @@ country_event = {
 		add_country_modifier = {
 			name = "conversion_zeal"
 			duration = 3650
+		}
+	}
+	
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+
+#The Second Conclusion
+country_event = {
+	id = mr_england.7002
+	title = mr_england.7002.t
+	desc = mr_england.7002.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 2
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7002.a
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_LOLLARD_RESTRUCTURE
+			influence = -25
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = mr_lollard_reexamine_1
+			duration = 3650
+		}
+		custom_tooltip = mr_will_unlock_lollard_reform_A
+		hidden_effect = { set_country_flag = mr_unlock_lollard_reform_A }
+	}
+	
+	option = {
+		name = mr_england.7002.b
+		trigger = {
+			tag = ENG
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_LOLLARD_RESTRUCTURE
+			influence = -25
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = mr_lollard_reexamine_2
+			duration = 3650
+		}
+		custom_tooltip = mr_will_unlock_lollard_reform_B
+		hidden_effect = { set_country_flag = mr_unlock_lollard_reform_B }
+	}
+	
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+
+#The Third Conclusion
+country_event = {
+	id = mr_england.7003
+	title = mr_england.7003.t
+	desc = mr_england.7003.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 2
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 3
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7003.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Fourth Conclusion
+country_event = {
+	id = mr_england.7004
+	title = mr_england.7004.t
+	desc = mr_england.7004.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 3
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 4
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7004.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Fifth Conclusion
+country_event = {
+	id = mr_england.7005
+	title = mr_england.7005.t
+	desc = mr_england.7005.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 4
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 5
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7005.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Sixth Conclusion
+country_event = {
+	id = mr_england.7006
+	title = mr_england.7006.t
+	desc = mr_england.7006.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 5
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 6
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7006.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Seventh Conclusion
+country_event = {
+	id = mr_england.7007
+	title = mr_england.7007.t
+	desc = mr_england.7007.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 6
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 7
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7007.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Eighth Conclusion
+country_event = {
+	id = mr_england.7008
+	title = mr_england.7008.t
+	desc = mr_england.7008.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 7
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 8
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7008.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Ninth Conclusion
+country_event = {
+	id = mr_england.7009
+	title = mr_england.7009.t
+	desc = mr_england.7009.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 8
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 9
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7009.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Tenth Conclusion
+country_event = {
+	id = mr_england.7010
+	title = mr_england.7010.t
+	desc = mr_england.7010.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 9
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 10
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7010.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Eleventh Conclusion
+country_event = {
+	id = mr_england.7011
+	title = mr_england.7011.t
+	desc = mr_england.7011.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 10
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 11
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7011.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+#The Twelfth Conclusion
+country_event = {
+	id = mr_england.7012
+	title = mr_england.7012.t
+	desc = mr_england.7012.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		religion = mr_lollard
+		check_variable = {
+			which = lollardConclusionProgress
+			value = 11
+		}
+		NOT = {
+			check_variable = {
+				which = lollardConclusionProgress
+				value = 12
+			}
+		}
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.7012.a
+	}
+	after = {
+		change_variable = {
+			which = lollardConclusionProgress
+			value = 1
+		}
+	}
+}
+
+#Statutes of Iona
+country_event = {
+	id = mr_england.8
+	title = mr_england.8.t
+	desc = mr_england.8.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mission eng_m_scotland
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_england.8.a
+		every_owned_province = {
+			limit = {
+				culture = highland_scottish
+			}
+			add_province_modifier = {
+				name = mr_scottish_lowland_conversion
+				duration = 36500
+			}
+		}
+	}
+	
+	option = {
+		name = mr_england.8.b
+		every_owned_province = {
+			limit = {
+				culture = highland_scottish
+			}
+			add_province_modifier = {
+				name = mr_scottish_lowland_conversion_fast
+				duration = 36500
+			}
+			add_nationalism = 15
 		}
 	}
 }

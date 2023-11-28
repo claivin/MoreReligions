@@ -44,6 +44,7 @@ merc_crusader_knights = {
 		siege_ability = 0.10	
     }
 }
+
 merc_catalan_company = {
     regiments_per_development = 0.04 # Size of the mercenary company based on the recruiting country's development. (always rounds down)
 
@@ -68,3 +69,27 @@ merc_catalan_company = {
     }
 }
 
+merc_redshanks_upgraded = {
+    regiments_per_development = 0.03
+    home_province = 4364
+    cost_modifier = 0.75
+	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack sco_base_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
+		OR = {
+			capital_scope = { region = british_isles_region }
+			has_country_modifier = scottish_mercenaries
+			has_country_modifier = swedish_mercenary_core
+			has_country_modifier = mercenaries_to_the_standard
+			has_country_modifier = glut_of_mercs
+		}
+		mission_completed = eng_m_scotland_2
+		custom_trigger_tooltip = {
+			tooltip = no_new_mercs_tt
+			NOT = { has_global_flag = new_european_mercs }
+		}
+	}
+	modifier = {
+		shock_damage = 0.15
+	}
+}

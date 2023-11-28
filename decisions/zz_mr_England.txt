@@ -137,4 +137,100 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	#ENG-IRE -> ENG
+	#or GBR-IRE -> GBR
+	mr_name_change_to_england = {
+		potential = {
+			OR = {
+				tag = ENG
+				tag = GBR
+			}
+			mission_completed = eng_m_ireland_3
+			has_country_flag = mr_changed_name_to_eng_ire
+			NOT = { has_country_flag = mr_finalized_name }
+		}
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			restore_country_name = yes
+			custom_tooltip = mr_name_change_only_once_TT
+			hidden_effect = { set_country_flag = mr_finalized_name }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#ENG -> ENG-IRE
+	mr_name_change_to_england_ireland = {
+		potential = {
+			tag = ENG
+			mission_completed = eng_m_ireland_3
+			NOT = { has_country_flag = mr_changed_name_to_eng_ire }
+			NOT = { has_country_flag = mr_finalized_name }
+		}
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			override_country_name = ENGLAND_IRELAND
+			custom_tooltip = mr_name_change_only_once_TT
+			hidden_effect = {
+				set_country_flag = mr_changed_name_to_eng_ire
+				set_country_flag = mr_finalized_name
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	#GBR -> GBR-IRE
+	mr_name_change_to_britain_ireland = {
+		potential = {
+			tag = GBR
+			mission_completed = eng_m_ireland_3
+			NOT = { has_country_flag = mr_changed_name_to_gbr_ire }
+			NOT = { has_country_flag = mr_finalized_name }
+		}
+		allow = {
+			prestige = 10
+		}
+		effect = {
+			override_country_name = BRITAIN_IRELAND
+			custom_tooltip = mr_name_change_only_once_TT
+			hidden_effect = {
+				set_country_flag = mr_changed_name_to_gbr_ire
+				set_country_flag = mr_finalized_name
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	mr_dissolve_clergy_decision = {
+		major = yes
+		potential = {
+			tag = ENG
+			has_government_attribute = can_dissolve_clergy
+			has_estate = estate_church
+		}
+		allow = {
+			OR = {
+				absolutism = 25
+				crown_land_share = 75
+			}
+		}
+		effect = {
+			add_absolutism = 10
+			custom_tooltip = mr_dissolve_clergy_decision_TT
+			hidden_effect = { set_country_flag = { mr_eng_disabled_clergy } }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

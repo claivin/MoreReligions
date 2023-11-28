@@ -705,6 +705,54 @@ mr_absolutist_england_reform = {
 	# custom_attributes = {
 	# }
 }
+
+mr_lollard_priesthood = {
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	potential = {
+		religion = mr_lollard
+		NOT = { has_country_flag = mr_unlock_lollard_reform_B }
+	}
+	trigger = {
+		has_country_flag = mr_unlock_lollard_reform_A
+	}
+	modifiers = {
+		estate_church_influence_modifier = -0.1
+		estate_church_loyalty_modifier = 0.05
+		institution_spread_from_true_faith = 1.0
+		global_missionary_strength = 0.01
+	}
+	ai = {
+		factor = 2.5
+	}
+}
+
+mr_lollard_state_head = {
+	icon = "religious_leader"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ENG
+			have_had_reform = mr_lollard_state_head
+		}
+		religion = mr_lollard
+		NOT = { has_country_flag = mr_unlock_lollard_reform_A }
+	}
+	trigger = {
+		has_country_flag = mr_unlock_lollard_reform_B
+	}
+	modifiers = {
+		estate_church_influence_modifier = -0.1
+		estate_church_loyalty_modifier = 0.05
+		max_absolutism = 10
+	}
+	custom_attributes = {
+		can_dissolve_clergy = yes
+	}
+	ai = {
+		factor = 2.5
+	}
+}
 mr_greek_poleocracy_reform ={
 	icon = "organized_military_staff"
 	allow_normal_conversion = yes

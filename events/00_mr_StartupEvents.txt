@@ -207,6 +207,12 @@ country_event = {
 					value = 0
 				}
 			}
+			england_region = {
+				add_devastation = 75
+			}
+			wales_area = {
+				add_devastation = 60
+			}
 		}
 	}
 	
@@ -219,6 +225,14 @@ country_event = {
 				tag = OXF
 				tag = KNT
 				tag = CHS
+			}
+		}
+		tooltip = {
+			england_region = {
+				add_devastation = 60
+			}
+			wales_area = {
+				add_devastation = 60
 			}
 		}
 	}

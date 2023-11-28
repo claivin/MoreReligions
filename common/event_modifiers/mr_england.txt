@@ -61,3 +61,33 @@ mr_eng_lumbermills = {
 mr_eng_covert_lollards = {
 	global_heretic_missionary_strength = 0.02
 }
+
+mr_lollard_reexamine_1 = {
+	global_missionary_strength = -0.02
+}
+
+mr_lollard_reexamine_2 = {
+	country_admin_power = -1
+}
+
+mr_scottish_lowland_conversion = {
+	culture_conversion_time = 3
+	culture_conversion_cost = -0.75
+}
+
+mr_scottish_lowland_conversion_fast = {
+	culture_conversion_cost = 0.33
+	culture_conversion_time = -0.75
+}
+
+mr_highlander_recruitment = {
+	local_manpower_modifier = 0.5
+}
+
+mr_sco_hide_trade = {
+	trade_value_modifier = 0.10
+}
+
+mr_sco_scotch = {
+	trade_value = 3
+}

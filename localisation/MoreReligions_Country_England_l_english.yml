@@ -50,6 +50,13 @@
  eng_m_lollards_1_desc: ""
  eng_m_lollards_1_TT: "If completed while Lollard, a §YLollard Center of Reformation will spawn§!\n"
  
+ eng_m_scotland_title: "Invade Scotland"
+ eng_m_scotland_desc: "England and Scotland have been locked in warfare for hundreds of years. The newfound strength and stability of England is finally enough to put a rest to these woes."
+ 
+ eng_m_scotland_2_title: "Recruit the Highlanders"
+ eng_m_scotland_2_desc: "The Highlanders, once defeated, remain a formidable fighting force, owing to the rough lands they settle. Their integration into the Kingdom can be a great boon to our future army and securing the British Isles and lands abroad."
+ redshanks_2_TT: "Unlocks a cheaper and stronger version of the §YRedshanks§! mercenary company"
+ 
  ### Decisions
  mr_crush_local_rulers_decision_title: "Crush Irish Lords"
  mr_crush_local_rulers_decision_desc: ""
@@ -61,17 +68,34 @@
  mr_pay_off_local_rulers_decision_title: "Bribe Irish Leaders"
  mr_pay_off_local_rulers_decision_desc: ""
  
+ mr_dissolve_clergy_decision_title: "Dissolve Clergy"
+ mr_dissolve_clergy_decision_desc: "The clergy is no longer an important part of maintaining broad control; it is an outdated institution, made even more redundant by the ubiquity of 'religious leaders'."
+ mr_dissolve_clergy_decision_TT: "The §YClergy Estate§! will be disabled"
+ 
+ mr_name_change_to_england_title: "Reinstate Crown Primacy"
+ mr_name_change_to_england_desc: "Folding other titles into the [Root.GetAdjective] Crown are more of a formality than anything."
+ mr_name_change_only_once_TT: "This can only be done once."
+ 
+ mr_name_change_to_england_ireland_title: "Crown the Kingdom of Ireland"
+ mr_name_change_to_england_ireland_desc: "The Kingdom of Ireland is a core part of our realm, and we should display our title over it as such."
+ 
+ mr_name_change_to_britain_ireland_title: "Crown the Kingdom of Ireland"
+ mr_name_change_to_britain_ireland_desc: "The Kingdom of Ireland is a core part of our realm, and we should display our title over it as such."
+ 
  ### modifiers
  eng_ireland_settlements: "Resettlement of Ireland"
  eng_anglo_hibernian_union: "Anglo-Hibernian Union"
  eng_ire_subsidies: "The Irish Goods Act"
  eng_irish_subisides_national: "Irish Goods Act Expenses"
- ENGLAND_IRELAND: "England-Ireland"
- ENGLAND_IRELAND_ADJ: "English"
  eng_yarmouth_sea: "Strategic Port of Yarmouth"
  eng_yarmouth: "Early Naval Base"
  mr_eng_lumbermills: "State Lumbermills"
  mr_eng_shipbuilding: "Shipbuilding Rush"
+ mr_lollard_reexamine_1: "Clerical Debates"
+ mr_lollard_reexamine_2: "Clerical Debates and State Oversight"
+ mr_highlander_recruitment: "Highlander Recruiting"
+ mr_sco_hide_trade: "Quality Scottish Leather"
+ mr_sco_scotch: "Scotch Whiskey Tradition"
  
  ### misc
  mr_anglo_hibernian: "Anglo-Hibernian"
@@ -79,6 +103,15 @@
  mr_eng_projection: "Crown Marines"
  mr_eng_projection_desc: "The Crown Marines were originally an elite group of sailors on which escorted warships in the channel. Their efficacy in dealing with pirates found them a permanent role in the Crown Navy, officially being founded shortly after the Crown Navy. The Crown Navy has come to prove effective in overseas operations, supplanting their original purpose."
  mr_lollard_center_of_reformation: "Center of Reformation"
+ mr_lollard_priesthood: "Universal Priesthood"
+ mr_lollard_priesthood_desc: "The hierarchy of the Catholic Church is a den of jackals, beset on oppression and modeled on tyranny. It is a betrayal of the teachings of Christ, and only by allowing those to preach, who are holy in demeanor and learned in scripture, regardless of status, can we be an equitable institution."
+ mr_lollard_state_head: "Head of State, Head of Church"
+ mr_lollard_state_head_desc: "Under the Crown of England, the Lollard teachings will flourish, guarded by the stately institutions and granted the autonomy to preach their faith. Of course, the King of England is only a figurehead in the hiearchy, acting as nominal leader, wherein the newly formed horizontal clergy will comprise the totallty of the religious leadership."
+ ENGLAND_IRELAND: "England-Ireland"
+ ENGLAND_IRELAND_ADJ: "English"
+ BRITAIN_IRELAND: "Britain-Ireland"
+ BRITAIN_IRELAND_ADJ: "British"
+ merc_redshanks_upgraded: "Redshanks"
  
  ### Events
  mr_england.1.t: "A United Kingdom"
@@ -136,5 +169,58 @@
  mr_england.6.a: "Good deal."
  
  mr_england.7.t: "The First Conclusion"
- mr_england.7.d: "'When the Church of England began to dote in temporality after her stepmother, the great Church of Rome, and churches were slain by appropriation to diverse places. Faith, Hope, and Charity began for to flee out of our Church. For Pride with his sorry genealogy of deadly sins challengeth it by title of heritage. This conclusion is general and proved by experience, custom, and manner, as you shall after hear.'"
+ mr_england.7.d: "'When the Church of England began to dote in temporality after her stepmother, the great Church of Rome, and churches were slain by appropriation to diverse places. Faith, Hope, and Charity began for to flee out of our Church. For Pride with his sorry genealogy of deadly sins challengeth it by title of heritage. This conclusion is general and proved by experience, custom, and manner, as you shall after hear.'\n\nThe Church and its corrupting influence had spread too far into the English Court, in part responsible for the disaster which plunged England in chaos. It is with their practices of extortion and thievery that its mandate of legitimacy is revoked."
  mr_england.7.a: "It is so."
+ 
+ mr_england.7002.t: "The Second Conclusion"
+ mr_england.7002.d: "'The Second Conclusion is this: Our usual priesthood, the which began in Rome feigned of a power higher than angels, is not the priesthood the which Christ ordained to his Apostles. This conclusion is proved: for the priesthood of Rome is made with signs, rites, and bishops' blessings, and that is of little virtue. nowhere ensampled in the Holy Scripture, for the bishops ordinals in the New Testament be little of record. And we can not see that the Holy Ghost, for any such signs, gives any gifts, for he and his noble gifts may not stand with deadly sin in no matter person. The corollary of this conclusion is that it is full uncouth to many that be wise to see bishops play with the holy ghost in making of their orders, for they give crowns in characters in stead of white harts, and that is the livery of Antichrist, brought into Holy Church to color idleness.'\n\nThe rituals of the former Church had little basis in scripture, invented by agents of the Church to maintain its monopoly on Faith. Only by looking to the Bible and interpreting it can we find proper practice."
+ mr_england.7002.a: "Cast out the Antichrist!" 
+ mr_england.7002.b: "Cleanse the House of God!" 
+ EST_VAL_CHURCH_LOLLARD_RESTRUCTURE: "Reexamination of Clerical Hierarchy"
+ mr_will_unlock_lollard_reform_A: "Will unlock government reform §YUniversal Priesthood§!"
+ mr_will_unlock_lollard_reform_B: "Will unlock government reform §YHead of State, Head of Church§!"
+ 
+ mr_england.7003.t: "The Third Conclusion"
+ mr_england.7003.d: "The Third Conclusion, sorrowful to hear, is: That the law of continence annexed to priesthood, that in prejudice of women was first ordained, induces sodomy in Holy Church; but we excuse us by the Bible, for the suspect decree that says we should not name it. Reason and experience prove this conclusion. For delicious meats and drinks of men of Holy Church will have needful purgation or worse. Experience for the privy assay of such men is that they like not women. The corollary of this conclusion is that the private religions. beginners of this sin, were most worthy to be annulled but God, for his might, of privy sin send open vengeance."
+ mr_england.7003.a: ""
+ 
+ mr_england.7004.t: "The Fourth Conclusion"
+ mr_england.7004.d: "The Fourth Conclusion that most harms the innocent people is this: That the sacrament of bread induces all men but a few to idolatry, for they ween that Christ's body, that never shall out of heaven, by virtue of the priest's word should be essentially enclosed in a little bread, that they show to the people. But would God that they would believe that the Doctor Evangelicus says in his Trialogue, quod panis materialis est habitudinaliter corpus Christi. For we suppose that on this wise may every true man and woman in God's law make the sacrament of the bread without any such miracle. The corollary of this conclusion is that if Christ's body be endued with everlasting joy, the service of Corpus Christi made by Friar Thomas is untrue and painted full of false miracles, and that is no wonder, for Friar Thomas that same time, holding with the Pope, would have made a miracle of a hen's egg, and we know well that every lie openly preached turns itself to villainy that ever was true and without lack."
+ mr_england.7004.a: ""
+ 
+ mr_england.7005.t: "The Fifth Conclusion"
+ mr_england.7005.d: "The fifth conclusion is this: that exorcisms and hallowings, made in the church, of wine, bread, and wax, water, salt, oil and incense, the stone of the altar, upon vestment, miter, cross, and pilgrim staffs be the very practice of necromancy rather than of the holy theology. This conclusion is proved thus: For by such exorcisms creatures be charged to be of higher virtue than their own kind, and we see no thing of change in no such creature that is so charmed but by false belief, the which is the principal of the Devil's craft. The corollary of this, that is the book that charmeth holy water spread in Holy Church were all true, us thinks verily that holy water used in holy church should be the best medicine to all manner of sickness. Cuius contrarium experimur."
+ mr_england.7005.a: ""
+ 
+ mr_england.7006.t: "The Sixth Conclusion"
+ mr_england.7006.d: "The sixth conclusion that maintaineth much pride is: that a king and a bishop all in one person, a prelate and a justice in temporal cause, a curate and an officer in worldly service, make every realm out of good rule. This conclusion is openly showed, for temporality and spirituality be two parts of Holy Church and therefore he that hath taken him to the one should not meddle him with the other, quia nemo potest duobus dominis servire. Us thinketh that hermaphrodite or ambidexter were a good name to such men of double estate. The corollary is that for we, procurators of God, for this cause pursue to this Parliament that all manner of curates, both high and low, be fully excused of temporal office and occupy them with their cure and naught else."
+ mr_england.7006.a: ""
+ 
+ mr_england.7007.t: "The Seventh Conclusion"
+ mr_england.7007.d: "The Seventh conclusion that we mightily affirm is: that special prayers for dead men's souls made in our church, preferring one by name more than another, this is the false ground of alms deeds, on the which all alms houses in England be wickedly grounded. This conclusion is proven by two skills. One is for prayer meritorious and of value should be a work proceeding from high charity, and perfect charity accepts no persons, quia diliges proximum tuum, etc. Wherefore us thinks that the gifts of temporal goods to priests and to alms houses is the principal cause of special prayers, the which is not far from simony. Another skill for special prayer made for men damned to everlasting pain is to God greatly displeasing, and though it be doubt, it is lightly to true Christian people that the founders of the alms houses for their venomous donation be for the most part passed the broad way. The corollary is the prayer of value s[ringing out of perfect charity should embrace in general all those that God would have saved and leave their merchandise now used for special prayers made to mendicants and possessioners and other souls' priests, the which be a people of great charge to all the realm maintained in idleness, for it was proved in a book that the king heard that an hundred of alms houses sufficed to the realm and thereof should fall the greatest increase possible to temporal part."
+ mr_england.7007.a: ""
+ 
+ mr_england.7008.t: "The Eighth Conclusion"
+ mr_england.7008.d: "The eighth conclusion needful to tell the people beguiled is the pilgrimage, prayers, and offerings made to blind roods and deaf images of tree and stone be near kin to idolatry and far from alms deeds. And though this forbidden imagery be a book of errors to the lewd people, yet the image used of Trinity is most abominable. This conclusion God openly showeth, commanding to do almsdeeds to men that be needy. for they be the image of God in a more likeness than the stock of the stone, for God sayeth not Faciamus lignum ad ymaginem et similitudinem nostram aut lapidem, but faciamus hominem etc. For the high worship that clerks call latria longeth to the godhead alone and the lower worship that is called dulia longeth to man and to angel and to lower creatures. The corollary is that the service of the Rood, done twice every year in our church, is fulfilled of idolatry, for if the Rood tree, nails, and the spear, and the crown of God should be so holy worshipped, then were Judas' lips, whoso might them get, a wonder great relic. But we pray thee, pilgrim, us to tell when thou first offerest to saints' bones enshrined in any place, whether relieves thou the saint that is in bliss or the alms house that is so well endowed. For men be canonized, God knows how, and for to speak more in plain, true Christian men suppose that the points of that noble man that men call Saint Thomas, were no cause of martyrdom."
+ mr_england.7008.a: ""
+ 
+ mr_england.7009.t: "The Ninth Conclusion"
+ mr_england.7009.d: "The ninth conclusion that holdeth the people low is, that the articles of confession that is said necessary to the salvation of man, with a feigned power of absolution enhanceth priests' pride, and giveth them opportunity of calling other than we will not say. For lords and ladies be arrested that for fear of their confessors, that they dare not say a truth, and in time of confession is the best time of wooing and of privy continuance of deadly sin. They say that they be commissaries of God to deem of every sin, to foul and cleanse whomso they like. They say that they have the keys of heaven and of hell, they may curse and bless, bind and unbind at their own will, in so much that for a bushel of wheat or twelve pence by year they will sell the bliss of heaven by charter of clause of warranty, ensealed with the common seal. This conclusion is seen in use that it needeth none other proof. Correlarium: The Pope of Rome that feigneth him high treasurer of holy church, having the worthy jewel of Christ's passion in his keeping, with the deserts of all hallows of heaven, by which he giveth the pardon a pena et a culpa. He is a treasurer most banished out of charity, since he may deliver the prisoners that be in pain at his own will, and make himself so that he shall never come there, Here may every true Christian well see that there is much privy falseness hid in our church."
+ mr_england.7009.a: ""
+ 
+ mr_england.7010.t: "The Tenth Conclusion"
+ mr_england.7010.d: "The tenth conclusion is that manslaughter by battle or law of righteousness for temporal cause or spiritual with out special revelation is express contrary to the New Testament, the which is a law of grace and full of mercy. This conclusion is openly proved by example of Christ's preaching here on earth. the which most taught to love and to have mercy on his enemies. and not for to slay them. The reason is of this, that for the more party, there men fight, after the first stroke charity is broken; and who so dyeth out of charity goth the high way to hell. And over this, we know well that no clerk can find by scripture or by reason lawful punishment of death for one sin and not for another. But the law of mercy, that is the New Testament, forbade all manslaughter: in euangelio dictum est antiquis. Non occides. The corollary is: it is an holy robbing of poor people when lords purchase indulgences a pena et a culpa to them that helpeth with his host. and gathereth to slay the Christian men in far lands for good temporal, as we have seen. And knights, that run to heathenness to get them a name in slaying of men, get much maugré of the King of Peace; for the meekness and sufferance our belief was multiplied, and fighters and manslayers Jesu Christ hateth and menaceth. Qui gladio percutit, gladio peribit."
+ mr_england.7010.a: ""
+ 
+ mr_england.7011.t: "The Eleventh Conclusion"
+ mr_england.7011.d: "The eleventh conclusion is shameful for to speak: that a vow of continence made in our church of women, the which be fickle and imperfect in kind, is cause of bringing in of most horrible sin possible to man kind. For though slaying of children ere they be christened, abortion, and destroying of kind by medicine be full sinful, yet knowing with themselves [i.e., having intercourse with] or [either] unreasonable beast or creature that beareth no life passeth in worthiness to be punished in pains of hell. The corollary is that widows and which as have taken the mantle and the ring, deliciously fed, we would they were wedded for we can not excuse them from privy sins."
+ mr_england.7011.a: ""
+ 
+ mr_england.7012.t: "The Twelfth Conclusion"
+ mr_england.7012.d: "The twelfth conclusion is that the multitude of crafts not needful used in our church nourisheth much sin in waste, curiosity, and disguising. This showeth experience, and reason proveth, for nature with a few crafts sufficeth to need of man. The corollary is, since Saint Paul sayeth, we having our bodily food and clothing, we should hold ourselves satisfied, us thinketh that goldsmiths and armourers and all manner crafts not needful to men, after [according to] the Apostle, should be destroyed for the increase of virtue. For though to these crafts named were much more needful in the Old Law, the New testament hath voided these and many others.\n\nThis is our embassy, that Christ has commanded us to pursue, at this time most acceptable for many causes. And though these matters be here shortly knit they be in another book longly declared, and may another more, all in our language, the which we would were communed to all true Christian men. We pray God of his endless goodness reform our church. all out of joint, to the perfections of the first beginning. Amen."
+ mr_england.7012.a: ""
+ 
+ mr_england.8.t: "Statutes of Iona"
+ mr_england.8.d: "On the island of Iona, the representatives of the Clans of the Scottish Highlands convened with a delegation of the Crown. The weak presence of feudal peerages and dominance of the Clann system will prove to be a challenge for the Crown, given nothing is done to ease them into the Kingdom. After several days of discussion, the Crown delegates discuss amongst themselves the two options they've settled on: education of heirs in English, as well as the introduction of English into clerical life - among other methods - in an effort for longterm, but stable integration; or a more heavy handed approach of banning Gaelic and other Scottish traditions - the downsides of which are apparent."
+ mr_england.8.a: "We should institue longterm policies for assimilating the Clans."
+ mr_england.8.b: "We should take active measures to push for assimilation."

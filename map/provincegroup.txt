@@ -42,5 +42,6 @@ england_region = {
 
 scotland_region = {
 	250 252 4110 4363 4965 #highlands_area
-	253 4364 369 1978 #kingdom_of_the_isles_area NOT MANN
+	248 249 251 4362 4361 #lowlands_area
+	253 4364 369 #kingdom_of_the_isles_area NOT MANN OR SHETLAND
 }
