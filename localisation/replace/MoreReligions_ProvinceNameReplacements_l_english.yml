@@ -118,6 +118,21 @@
  PROV211: "Huesca"
  PROV_ADJ211: "Oscense"
  
+ PROV376: "Maigh Eo"
+ PROV_ADJ376: "Mayo"
+ 
+ PROV4377: "Urmumhain"
+ PROV_ADJ4377: "Ormondian"
+ 
+ PROV4377: "Cláir"
+ PROV_ADJ4377: "Clare"
+ 
+ PROV4118: "Eochaill "
+ PROV_ADJ4118: "Youghal"
+ 
+ PROV4380: "Dún na Ngall"
+ PROV_ADJ4380: "Donegal"
+ 
  PROV2768: "Yeja"
  PROV_ADJ2768: "Yeja"
   
