@@ -1,7 +1,7 @@
 #639 - Banjar
 
 culture = bornean
-religion = hinduism
+religion = shaivism
 capital = "Banjar"
 trade_goods = unknown
 hre = no

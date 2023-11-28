@@ -1,0 +1,18 @@
+vassal = {
+	first = TLC
+	second = FEZ
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+vassal = {
+	first = TLC
+	second = SLE
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}
+vassal = {
+	first = TLC
+	second = MRK
+	start_date = 1444.1.1
+	end_date = 1574.1.1
+}

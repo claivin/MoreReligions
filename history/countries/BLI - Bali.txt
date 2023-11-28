@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = balinese
 technology_group = chinese
 add_accepted_culture = nusa_tenggara
-religion = hinduism
+religion = mr_tunggal_dharma
 capital = 631	# Bali
 
 

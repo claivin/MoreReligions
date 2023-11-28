@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = veche_republic
+add_government_reform = oligarchy_reform
 primary_culture = al_suryah_arabic
 religion = sunni
 technology_group = muslim

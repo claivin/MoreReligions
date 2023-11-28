@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = iqta
+government = republic
+add_government_reform = pirate_republic_reform
 primary_culture = moroccan
 religion = sunni
 technology_group = muslim

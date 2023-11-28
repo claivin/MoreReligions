@@ -1,5 +1,5 @@
-government = theocracy
-add_government_reform = leading_clergy_reform
+government = monarchy
+add_government_reform = feudal_theocracy
 primary_culture = berber
 religion = mr_almuwahiddun
 technology_group = muslim

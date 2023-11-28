@@ -1,5 +1,5 @@
 culture = bornean
-religion = hinduism
+religion = shaivism
 capital = "Batulican"
 trade_goods = unknown
 hre = no

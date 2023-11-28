@@ -1,6 +1,6 @@
 government = monarchy
 primary_culture = bengali
-religion = hinduism
+religion = smarta
 technology_group = indian
 capital = 563	# Pandua
 change_estate_land_share = {

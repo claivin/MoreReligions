@@ -16,5 +16,7 @@ religious_school = mr_mazu_school
 		mil = 6
 		birth_date = 1371.1.1
 		#death_date = 1445.7.20
+		religion = sunni
+		culture = panthay
 	}
 }
