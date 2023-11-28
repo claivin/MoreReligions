@@ -1204,7 +1204,7 @@ knn_missions_fourth = {
 	}
 
 	knn_buda_third = {
-		icon = mission_noble_council
+		icon = mission_wine_monopolies
 		position = 5
 		required_missions = { knn_buda_second }
 		provinces_to_highlight = {
