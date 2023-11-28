@@ -1,0 +1,21 @@
+bookmark =
+{
+	name = "waning_west"
+	desc = "waning_west_desc"
+	date = 1444.11.11
+	
+	center = 184
+	default = yes
+	
+	
+	country = FRA
+	country = TOU
+	country = NAV
+	country = CBD
+	country = ENG
+	country = SCO
+	
+	
+	easy_country = NAV
+	
+}

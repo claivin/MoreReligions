@@ -1,0 +1,17 @@
+bookmark =
+{
+	name = "african_adventures"
+	desc = "african_adventures_desc"
+	date = 1444.11.11
+	
+	center = 2932
+	default = yes
+	
+	
+	country = IFT
+	country = MAL
+	
+	
+	easy_country = IFT 
+	
+}

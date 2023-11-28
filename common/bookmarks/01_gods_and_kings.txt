@@ -8,18 +8,20 @@ bookmark =
 	default = yes
 	
 	
-	country = FRA
-	country = POL
+	country = GSC
+	country = SIC
 	country = HUN
-	country = ILK
-	country = CST
-	country = TUR
+	country = IFT
+	country = YNN
+	country = NAV
+	country = ATI
+	country = TMM
 	country = BLH
 	country = RDH
-	country = GSC
-	country = MAL
 	
-	easy_country = MAL
+	easy_country = GSC
+	easy_country = SIC
+	easy_country = HUN
 	
 	
 	

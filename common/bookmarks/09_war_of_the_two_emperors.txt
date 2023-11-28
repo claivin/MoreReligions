@@ -4,7 +4,7 @@ bookmark =
 	desc = "THE_TWO_EMPERORS_DESC"
 	date = 1444.11.11
 	
-	center = 1816
+	center = 4197
 	default = yes
 	
 	country = GHC

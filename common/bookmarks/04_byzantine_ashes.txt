@@ -1,0 +1,23 @@
+bookmark =
+{
+	name = "byzantine_ashes"
+	desc = "byzantine_ashes_desc"
+	date = 1444.11.11
+	
+	center = 151
+	default = yes
+	
+	
+	country = CST
+	country = THR
+	country = MOE
+	country = THS
+	country = TUR
+	country = RUM
+	
+	
+	easy_country = THR
+	easy_country = MOE
+	easy_country = THS
+	
+}

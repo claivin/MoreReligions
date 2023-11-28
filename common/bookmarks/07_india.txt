@@ -1,0 +1,16 @@
+bookmark =
+{
+	name = "india"
+	desc = "india_desc"
+	date = 1444.11.11
+	
+	center = 2050
+	default = yes
+	
+	
+	country = DVI
+	country = SND
+	country = BNG
+	country = YOR
+	
+}

@@ -1,0 +1,22 @@
+bookmark =
+{
+	name = "eastern_emperor"
+	desc = "eastern_emperor_desc"
+	date = 1444.11.11
+	
+	center = 262
+	default = yes
+	
+	
+	country = POL
+	country = HUN
+	country = BOH
+	country = LBG
+	country = LIT
+	country = BLH
+	
+	
+	easy_country = HUN
+	easy_country = BLH
+	
+}

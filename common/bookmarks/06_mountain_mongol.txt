@@ -1,0 +1,14 @@
+bookmark =
+{
+	name = "mountain_mongol"
+	desc = "mountain_mongol_desc"
+	date = 1444.11.11
+	
+	center = 414
+	default = yes
+	
+	
+	country = ILK
+	country = EGY
+	
+}
