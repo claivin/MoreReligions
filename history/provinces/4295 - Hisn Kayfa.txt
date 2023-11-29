@@ -2,8 +2,8 @@
 
 owner = TRB
 controller = TRB
-culture = kurdish
-religion = mr_maronite
+culture = assyrian
+religion = coptic
 capital = "Hisn Kayfa"
 trade_goods = wool
 hre = no

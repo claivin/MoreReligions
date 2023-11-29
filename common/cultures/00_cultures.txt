@@ -3940,6 +3940,36 @@ turko_semitic = { #Levantine
 			Samira Suhaila Tawaret Taweret Titi Thuriya Zara Zahra Zahra
 		}
 	}
+	assyrian = {
+		primary = MSL
+		male_names = {
+			Aba Abahu Abaya Abaye Abayi Abba Abdima Abdisho Abgar Abimalek Abraham Abris Abrisius Acacius Achan Achina Addai
+			Adlai Aggai Ahai Ahadabui Ahha Asa Ashur Avahu Avda Avdima Avdimi Avina Avira Azai
+			Babaeus Babai Babowai Babwahi Bar Bustan
+			Caiaphas Cephas Cephus Chadlai Chama Chanin Chanina Chaninai Chinena Chozai Chuma Chunya Clopas
+			Dadisho Denha Dikla Diklah Dimi Dinkha Dunanu Elisha Eliya Emmanuel Enosh Ezekiel Farbokht Foma Giwargis Grwgari
+			Hanina Hnanisho Hozai Idan Idra Ila Isaac Isho Ishoyahb Israel Kaiapha Karna Katsiu Kelaya
+			Laszio Lazar Lazare Lazaro Lazaros Lazarus Lazarz Lazer Lebbaeus Maadai Macabee Maccabee Magna Makkikha Maluch Marabokht Maremmeh Mari Mikha_il Moqli Muna
+			Nahir Nahor Nahur Narsai Nazuk Nechunya Nehor Nehorai Niv Nun Nur Oran Pappa Paul Pethion Petros Petuel Qaligh Qayyoma Raca Rachim Rahim Raka Raz Raziel Rubil
+			Saad Saba Sabah Sabbae Sabrisho Salu Samal Sami Samiy Sagi Sargis Sava Sawma Shafer Shahdost
+			Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shemon Sheraga Shila Shovai Shraga Sima  Surin
+			Tabbai Taddai Talia Taliah Talmai Talya Tam Ta_mhas Targhal Tauma Tavi Tavish Tevis Thoma Timai Tiv Toba Todos Tolmai Tomarsa Tamuza Tulmay
+			Ukba Yahballaha Yanai Yaqob Yeshua Yohannan Yosip Yousef Yunanis Zerika
+		}
+		female_names = {
+			Adva Alya Anena Anina Bustan Chanina Chasina Chayuta China Chiyuta
+			Dikla Diklah Diklit Duvsha Hanina Hasna Hayuta Hina Ketina Kitra
+			Magdala Mahalia Mahalie Marfa Mariam Marta Marte Martha Marthe Marti
+			Martita Mehalia Meiriona Meirona Morta Nahara Nura Raz Reuma
+			Saba Sabah Samantha Sameah Samee Sameea Samiya Samiyah Samiyya Samya Sava Shapira Sima
+			Tabatha Tabby Tabetha Tabitha Tadea Talia Taliah Talya Talitha
+			Tam Tamasin Tami Tammy Tamsin Tamsyn Tamzin Thaddea Thomasa
+			Zeita Zeta
+		}
+		dynasty_names = { 
+			Bukhtishu Qatwa Nimreh Gazarta Salamas Zakho Arbilaya
+		}
+	}	
 	gulf_arabic = {
 		primary = ALH
 		dynasty_names = {

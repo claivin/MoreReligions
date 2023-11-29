@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = oligarchy_reform
-primary_culture = al_suryah_arabic
-religion = sunni
+primary_culture = assyrian
+religion = mr_nestorian
 technology_group = muslim
 capital = 411 # Damascus
 religious_school = shafii_school
