@@ -12,6 +12,7 @@ bookmark =
 	country = HUN
 	country = BOH
 	country = LBG
+	country = HAL
 	country = LIT
 	country = BLH
 	

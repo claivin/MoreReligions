@@ -8,16 +8,17 @@ bookmark =
 	default = yes
 	
 	
-	country = CST
 	country = THR
-	country = MOE
+	country = CST
+	country = CNT
 	country = THS
 	country = TUR
 	country = RUM
 	
 	
 	easy_country = THR
-	easy_country = MOE
+	easy_country = CNT
 	easy_country = THS
+	easy_country = CST
 	
 }
