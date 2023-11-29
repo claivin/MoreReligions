@@ -2,7 +2,7 @@
 
 owner = MCM
 controller = MCM 
-capital = "Carrick-on-Shannon"
+capital = "Dromahair"
 is_city = yes
 culture = irish
 religion = catholic

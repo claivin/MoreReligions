@@ -2,6 +2,7 @@
 
 owner = MTH
 controller = MTH
+add_core = MTH
 capital = "Duibh Linn"
 is_city = yes
 culture = irish
