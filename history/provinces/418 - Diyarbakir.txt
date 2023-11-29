@@ -2,8 +2,8 @@
 
 owner = AKK
 controller = AKK
-culture = kurdish
-religion = mr_maronite
+culture = assyrian
+religion = mr_nestorian
 capital = "Diyar Bekir"
 trade_goods = livestock
 hre = no

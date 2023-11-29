@@ -2,8 +2,8 @@
 
 owner = TRB
 controller = TRB
-culture = kurdish
-religion = mr_nestorian
+culture = assyrian
+religion = coptic
 capital = "Mardin"
 trade_goods = wool
 hre = no

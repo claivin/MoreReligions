@@ -1,0 +1,238 @@
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = DLI
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = PSA
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = BRS
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = PGR
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = IND
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = MTW
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = NIS
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = GGG
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = PAH
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = CHN
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = MLY
+	second = KED
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SUN
+	second = KDI
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SUN
+	second = DMK
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SUN
+	second = MAJ
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SUN
+	second = BLM
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SUN
+	second = BLI
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = SUN
+	second = BDU
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BEI
+	second = SMB
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BEI
+	second = TGJ
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BEI
+	second = BNJ
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BEI
+	second = KUT
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = BEI
+	second = BEU
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = KNW
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = BTN
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = BGI
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = SIG
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = GOR
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = MND
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = MMJ
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = SOP
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = MKS
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = BNE
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = TID
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
+dependency = {
+	subject_type = "tributary_state"
+	first = LUW
+	second = TER
+	start_date = 1444.1.1
+	end_date = 1502.1.1
+}
