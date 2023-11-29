@@ -148,3 +148,7 @@ mechanic_MR_panachaic_mechanic_yes: "Everytime we §YExpand Infrastructure§!, a
 mechanic_mr_latin_company_yes: "We will gain §Y+0.25§! Mercenary Militarization whenever we win a battle."
 mr_latin_companies_reform: "Latin Companies"
 mr_latin_companies_reform_desc: "The latin mercenary groups range from being far flung foreign soldiers, leading the crusades in a new land, to those born and raised within Epirus."
+
+mr_athenian_kingdom_reform: "Athenian Kingdom"
+mr_athenian_kingdom_reform_desc: "Much like the classical Athenian kingdom, we have established a parliament to let the polis have their voices heard. Of course, the feudal lords from the Frankish lands still rule, but their power is tempered now by the people."
+

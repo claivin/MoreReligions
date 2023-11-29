@@ -2,8 +2,8 @@
 
 owner = THR
 controller = THR
-culture = turkish
-religion = sunni
+culture = aegean
+religion = orthodox
 capital = "Izmit"
 trade_goods = grain
 hre = no

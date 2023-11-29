@@ -347,3 +347,34 @@ province_has_modern_fort_trigger = {
 		}
 	}
 }
+
+own_all_of_greece_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = own_all_of_greece_trigger_tt
+		thrace_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		northern_greece_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		morea_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		4702 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		1853 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		148 = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		aegean_archipelago_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+}

@@ -51,9 +51,9 @@ merc_catalan_company = {
     cost_modifier = 0.66 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
 
     home_province = 4699 
-	cavalry_weight = 0.4 # lots of cavalry relative to other units
+	cavalry_weight = 0.2 # normal amounts of cav
 	artillery_weight = 0 # no artillery
-	cavalry_cap = 6
+	cavalry_cap = 2
 
     min_size = 4
 
@@ -66,6 +66,29 @@ merc_catalan_company = {
     modifier = { # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
        infantry_power = 0.1
        loot_amount = 0.2
+    }
+}
+merc_ghazi = {
+    regiments_per_development = 0.04 # Size of the mercenary company based on the recruiting country's development. (always rounds down)
+
+    cost_modifier = 0.66 # Cost multiplier of the mercenary company. Note that there is a base +50% maintenance cost on mercenaries applied after this multiplier.
+
+    home_province = 151 
+	cavalry_weight = 0.4 # lots of cavalry relative to other units
+	artillery_weight = 0.1 # no artillery
+	cavalry_cap = 6
+
+    min_size = 4
+
+    sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack } # Unit graphics that the mercenary company uses.
+
+    trigger = {
+        mission_completed = mr_CST_second
+    }
+
+    modifier = { # Modifier that is applied to the regiments of the mercenary company. Note that they receive your nation's army modifiers as well.
+       siege_ability = 0.05
+       morale_damage_received = -0.1
     }
 }
 

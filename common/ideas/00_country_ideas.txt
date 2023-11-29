@@ -2613,9 +2613,6 @@ BYZ_ideas = {
 	}
 	free = yes
 	
-	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
-	}
 	repopulation_of_countryside = {
 		global_trade_goods_size_modifier = 0.1
 	}

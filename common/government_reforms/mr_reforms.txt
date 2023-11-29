@@ -912,18 +912,42 @@ mr_latin_companies_reform = {
 		mercenary_manpower = 0.25
 		merc_leader_army_tradition = 0.25
 	}
+	custom_attributes = {
+		mercs_do_not_cost_army_professionalism = yes
+		mr_latin_company = yes
+	}
 	conditional = {
 		allow = { has_dlc = "Domination" }
 		government_abilities = {
 			hessian_militarization_mechanic
 		}
 	}
-	custom_attributes = {
-		mercs_do_not_cost_army_professionalism = yes
-		mr_latin_company = yes
-	}
 
 	ai = {
 		factor = 1
+	}
+}
+
+mr_athenian_kingdom_reform = {
+	icon = "national_assembly"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ATH
+			was_tag = ATH
+		}
+	}
+	trigger = {
+		mission_completed = mr_athens_third
+	}
+	modifiers = {
+		no_religion_penalty = yes
+		yearly_corruption = -0.02
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
 	}
 }

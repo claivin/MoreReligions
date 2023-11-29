@@ -141,6 +141,7 @@ monarchy = {
 				MR_thai_princedom
 				mr_al_habash_empire
 				mr_absolutist_england_reform
+				mr_athenian_kingdom_reform
 			}
 		}
 		hereditary_vs_nobility = {

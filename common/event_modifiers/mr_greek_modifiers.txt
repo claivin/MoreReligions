@@ -105,3 +105,21 @@ dominated_trade_league = {
 	global_tax_income = 12	
 	diplomatic_reputation = 1	
 }
+spy_networks_ATH = {
+	siege_ability = 0.10
+	spy_offence = 0.15
+}
+smarty_pants_hehe = {
+	idea_cost = -0.1
+	reform_progress_growth = 0.15
+}
+tur_10_year_counter = {
+
+}
+basileus_reborn = {
+	infantry_power = 0.1
+	core_creation = -0.15
+}
+byz_province_build = {
+	local_development_cost = -0.05
+}

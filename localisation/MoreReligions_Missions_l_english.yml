@@ -739,6 +739,18 @@ mr_epirus_first_title: "The Catalan Campaign"
 mr_epirus_second_title: "Reclaiming Epirus"
 mr_epirus_third_title: "A Company of Heroes"
 
+#Athens
+mr_athens_first_title: "Overthrow the Triarchs"
+mr_athens_second_title: "The Old Institutions"
+mr_athens_third_title: "Athens Resurgent"
+
+#Istinople
+mr_CST_first_title: "Approach a Natural Ally"
+mr_CST_second_title: "Invite Turkish Soldiers"
+mr_CST_third_title: "Pierce into the Latins"
+mr_CST_fourth_title: "Align the Patriarchs"
+mr_CST_fifth_title: "The Byzantine Resurgance"
+
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
 if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -792,6 +804,11 @@ gain_lakonion_assembly_no: "£no£If we complete this mission as @MOE §YMorea§
 enable_catalan_mercenaries: "This will enable the §YCatalan Company§! Mercenary Group."
 win_15_battles_current: "Win 25 Battles §YConsecutively§!. Current: §T[Root.mercenary_wins_counter.GetValue]§!"
 enable_latin_mercenary_reforms: "This will enable the §YLatin Companies§! Government Reform."
+ghazi_mercs_TT: "This will enable the §YGhazi Warriors§! Mercenary Company."
+if_war_starts_kocaeli: "\nIf we declare our independence war in the next 10 years and the @TUR §YOttomans§! are involved, they will be able to occupy Kocaeli immediately."
+gain_cores_on_THR: "Gain cores on §Y[5337.GetName]§!, §Y[149.GetName]§!, and §Y[4779.GetName]§!"
+have_greek_claims: "Have two claims on any provinces in the §YMacedonia§! Area, §YThrace§! Area, §YNorthern Greece§! Area, and the §YMorea§! Area."
+metropolitans_byz: "\n§YConsecrating a Metropolitan§! will now grant §G-5%§! §YLocal Development Cost§!."
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -821,6 +838,10 @@ golden_age_epirus: "The Twin Cities"
 lord_of_albania: "Lords of Albanian"
 albanian_tribes: "The Tribes of Albania"
 usurped_the_league: "Usurp the League"
+spy_networks_ATH: "Athenian Spy Networks"
+smarty_pants_hehe: "Athenian Genius"
+basileus_reborn: "The Basileus Reborn"
+byz_province_build: "Consecrated Patriarch"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"
@@ -830,6 +851,8 @@ mr_ruined_reputation: "Reputation Ruined"
 merc_catalan_company: "Catalan Company"
 HUN_war_modifier: "Riders of Kan"
 black_mercenaries: "Black Mercenary Army"
+merc_ghazi: "Ghazi Warriors"
+own_all_of_greece_trigger_tt: "Own every mainland and island province of Greece"
 
 #Baghdad Missions - TO BE COMPLETED!!
 #Titles

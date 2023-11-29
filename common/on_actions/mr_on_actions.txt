@@ -795,18 +795,38 @@ on_concentrate_development = {
 			}
 		}
 		capital_scope = {
-			random_province_in_state = {
-				add_base_tax = 1
-				add_base_production = 1
-				add_base_manpower = 1
-			}	
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
 	}
 }
 on_raze = {
 	mr_on_raze_effect = yes
 }
-
+on_monthly_pulse = {
+	events = {
+		MrGreekEvents.5 #Will only fire once, under the most bat shit circumstances.
+	}
+}
+on_consecrate_patriarch = {
+	if = {
+		limit = {
+			owner = {
+				mission_completed = mr_CST_fourth
+			}
+		}
+		every_province_in_state = {
+			limit = { has_state_patriach = yes }
+			add_province_modifier = {
+				name = byz_province_build
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+	
+}
 on_war_ended = { #ROOT - Winer FROM - Loser
 	SHU = {
 		if = {

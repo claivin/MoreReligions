@@ -276,17 +276,17 @@
  mrJapEvents.5.a: "Order for the promotion of a New Fleet Commander"
  mrJapEvents.5.b: "Order for the promotion of a New Army Commander"
  mrJapEvents.5.c: "Order the Construction of a New Treasure Ship"
- mrJapEvents.5_insight: ""\n§GEvent Insight:§!\nThis event will give us the option of hiring a new §YExplorer§!, a new §YConquistador§!, or build a new §YBaochuan§!."
+ mrJapEvents.5_insight: "\n§GEvent Insight:§!\nThis event will give us the option of hiring a new §YExplorer§!, a new §YConquistador§!, or build a new §YBaochuan§!."
  mrJapEvents.6.t: "Appointing the Next Shogun"
  mrJapEvents.6.a: "Appoint a Member of the Aristocracy"
  mrJapEvents.6.b: "Appoint a Top General amongst our Army"
  mrJapEvents.6.c: "Appoint a Leader from our Subjects"
- mrJapEvents.6_insight: ""\n§GEvent Insight:§!\nThis event will give us the option of appointing a Shogun who is a §YMilitary Advisor§!, a §YGeneral§!, or §YLower Liberty Desire of Subjects§!."
+ mrJapEvents.6_insight: "\n§GEvent Insight:§!\nThis event will give us the option of appointing a Shogun who is a §YMilitary Advisor§!, a §YGeneral§!, or §YLower Liberty Desire of Subjects§!."
  mrJapEvents.7.t: "Lanching the Field Survery"
  mrJapEvents.7.a: "...Uncovered a hidden Temple!"
  mrJapEvents.7.b: "...Uncovered a secret Rice Field!"
  mrJapEvents.7.c: "...Uncover a Population Boom!"
- mrJapEvents.7_insight: ""\n§GEvent Insight:§!\nThis event will give us the option of building a §YTax§! Building, a §YProduction§! Building, or §YBase Development§!."
+ mrJapEvents.7_insight: "\n§GEvent Insight:§!\nThis event will give us the option of building a §YTax§! Building, a §YProduction§! Building, or §YBase Development§!."
 
 
  
@@ -395,5 +395,22 @@ MrGreekEvents.2.b: "An Eye for an Eye."
 MrGreekEvents.3.t: "The Kingdom of Epirus"
 MrGreekEvents.3.d: "With our conquest of Arta and Thessaly complete, we now have become a dominant power within the lands of Rhomania. Within the magnificent city of Ioannina, our monarch rests atop a throne backed by both a bishop and a knight. All around him, the grand army of the Catalans flanks the sides of the great hall. When the crown was placed upon his head, he rose now a king of Epirus, reclaiming the title of the despotate that was defeated a hundred years prior. Now our armies march forward, preparing to conquer the rest of the states of Rhomania."
 MrGreekEvents.3.a: "Hail to the King!"
+MrGreekEvents.4.t: "The Euoboeate Succession"
+MrGreekEvents.4.d: "In 1270, a crisis broke out between the local Triarch of Negroponte, Venice, and the Latin Empire. The house de la Roche, under the leadership of Guy de la Roche, had a rightful worry of the growing power of the lombard Triarchs, but the Venetian leadership had decided to back the Triarchs instead of supporting their desires. The conflict at most boiled over in street brawls and assassinations, but the Latin Empire and Venetian armies never met in battle. To this day, their house still lay claim to the provence, and have found some dusty old document to prove it. Should we grant it to them, it might alieviate us of the hassle of managing that state, however, it would be a lose of core Venetian territory."
+MrGreekEvents.4.a: "Fine, discard of it."
+MrGreekEvents.4.b: "If they want it, they must come and take it."
+MrGreekEvents.4.Insight: "\n§GEvent Insight:§!\nThis event will demand that @VEN §YVenice§! grant us the title of Triarch of Negroponte. Should they accept, we shall gain ownership of the isle. Should they refuse, we shall gain a core on the province.\n"
+
+MrGreekEvents.5.t: "The Treachery at Kocaeli"
+MrGreekEvents.5.d: "In the shadows of the ancient walls surrounding Kocaeli, an ominous plot unfolds. The local garrison of native Greeks, in a shocking turn of events, betrayed their fellow Thracian guards in Kocaeli. Whispers of a clandestine agreement reached between the treacherous conspirators and the Ottoman forces have circulated, culminating in the fall of the once-impregnable fort.\n\nAs the sun sets on the tranquil waters of the Sea of Marmara, the silence is shattered by the thunderous march of Ottoman troops, stealthily guided by the duplicitous garrison. The city, lulled into a false sense of security, finds itself thrust into the chaos of betrayal and invasion.\n\nThe Thracian guards, unsuspecting of the impending danger, were caught off guard as the gates swung open to welcome the Ottomans. The echoes of steel clashing against steel reverberate through the narrow streets as the once-allies turn to bitter foes. By the end of the night, the Ottoman army held this once powerful fort, and the Istinople war of independence rages on."
+MrGreekEvents.5.a: "The Greek and Turkish alliance bears fruit."
+
+MrGreekEvents.6.t: "The Fall of the Latins"
+MrGreekEvents.6.d: "With the defeat of the Baldwinids, we now rise a purple phoenix from the ashes. While our origins are those of scavengers, of cretins from the ruined streets of Istinople, we now stand as the conquerors of the Latins, the true heirs of the Roman Empire. We adorn ourselves with their colors, the imperial purple. As the Ottoman delegation applauded our Basileus on his accomplishments, he made sure to thank them and shake each of their hands. This alliance was forged in secrecy, but it is now rooted with trust and friendship. Together, they shall defeat their foes - the Rum Sultanate and the remaining squabbling Greek states. While we receive condemnation from the Thessalonicans and the Corinthian League, our Basileus ignores them. Why should he care for what traitors and barbarians think of the mighty Roman Emperor? They shall fall beneath his boot soon enough, begging for their lives. For now is the era of the Romaniae - and all shall know our might!"
+MrGreekEvents.6.a: "...and we could never have done it without the Ottomans!"
+
+MrGreekEvents.7.t: "The Phoenix Rises"
+MrGreekEvents.7.d: "We have united Greece under the imperial banner. While the other states might have forgotten their heritage, their roots as Rhomanoi, we have not. We remain as we always were - sons and daughters of Rome itself. While once a vassal to the Latin Empire, and had weathered centuries of subjugation and humiliation, now however, an unexpected twist of fate now presents itself. As an unlikely ally, the Ottoman Empire, assists us with our conquest of Roman lands, many begin to whisper in the streets that the Emperor is the next Justinian, a man willing to conquer and reclaim what was rightfully his. The grandeur of the Byzantine Empire, once thought lost, has begun to flicker like a dormant flame; waiting to be rekindled."
+MrGreekEvents.7.a: "Ave Imperator!"
 
 estate_sarraceni: "Sarraceni"

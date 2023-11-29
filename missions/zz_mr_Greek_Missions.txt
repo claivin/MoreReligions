@@ -1014,6 +1014,348 @@ mr_greek_missions_first_g = {
 		}
 	}
 }
+mr_greek_missions_first_f = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = ATH
+			was_tag = ATH
+		}
+	}
+	mr_athens_first = {
+		icon = byz_aegean_islands
+		position = 1
+		provinces_to_highlight = {
+			province_id = 3003
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				3003 = {
+					owner = {
+						has_spy_network_from = {
+							who = ROOT
+							value = 35
+						}
+					}
+					OR = {
+						is_claim = ROOT
+						is_permanent_claim = ROOT
+					}
+				}
+				3003 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						3003 = {
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}	
+				3003 = {
+					owner = {
+						country_event = {
+							id = MrGreekEvents.4
+						}
+					}	
+				}
+				custom_tooltip = MrGreekEvents.4.Insight	
+			}
+			add_country_modifier = {
+				name = spy_networks_ATH
+				duration = -1
+			}
+		}
+	}
+	mr_athens_second = {
+		icon = mission_the_sudebnik
+		required_missions = {
+			mr_athens_first
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_id = 146
+			NOT = {
+				current_institution = 100 
+				has_courthouse_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			146 = {
+				current_institution = 100 
+				has_courthouse_building_trigger = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			146 = {
+				add_building_construction = {
+					building = university
+					cost = 0
+					speed = 0.5
+				}
+			}
+			add_ruler_modifier = {
+				name = smarty_pants_hehe
+				duration = -1
+			}
+		}
+	}
+	mr_athens_third = {
+		icon = mission_pol_imperial_commonwealth
+		required_missions = {
+			mr_athens_second
+		}
+		position = 4
+		provinces_to_highlight = {
+			province_id = 146
+			NOT = {
+				development = 20
+				has_great_project = {
+					type = parthenon
+					tier = 2
+				}
+			}
+		}
+		trigger = {
+			146 = {
+				development = 20
+				has_great_project = {
+					type = parthenon
+					tier = 2
+				}
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_government_reform = mr_athenian_kingdom_reform
+		}
+	}
+}
+mr_greek_missions_first_byz = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = CST
+			was_tag = CST
+		}
+	}
+	mr_CST_first = {
+		icon = mission_muslim_administrators
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			owner = {
+				tag = TUR
+			}
+		}
+		trigger = {
+			reverse_has_opinion = {
+				who = TUR
+				value = 70
+			}
+			diplomat = 1
+		}
+		effect = {
+			add_liberty_desire = 20
+			add_historical_friend = TUR
+			TUR = {
+				add_historical_friend = ROOT
+			}
+			custom_tooltip = gain_cores_on_THR
+			hidden_effect = {
+				5337 = {
+					add_core = ROOT
+				}
+				149 = {
+					add_core = ROOT
+				}
+				4779 = {
+					add_core = ROOT
+				}
+			}
+		}
+	}
+	mr_CST_third = {
+		icon = mission_pf_map_table
+		position = 2
+		required_missions = {
+			mr_CST_second
+			mr_CST_first
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 5337
+				province_id = 149
+				province_id = 4779
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			is_free_or_tributary_trigger = yes
+			5337 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			149 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4779 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = MrGreekEvents.6
+			}
+		}
+	}
+	mr_CST_fourth = {
+		icon = mission_pf_cross
+		position = 3
+		required_missions = {
+			mr_CST_third
+		}
+		provinces_to_highlight = {
+			OR = {
+				#area = aegean_archipelago_area
+				#area = morea_area
+				#area = northern_greece_area
+			#	area = thrace_area
+				province_id = 148
+				province_id = 4702
+				province_id = 1853
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			148 = {
+				has_state_patriach = yes
+			}
+			151 = {
+				has_state_patriach = yes
+				has_tax_building_trigger = yes
+			}
+		}
+		effect = {
+			151 = {
+				add_prosperity = 50
+			}
+			148 = {
+				add_prosperity = 50
+			}
+			custom_tooltip = metropolitans_byz
+		}
+	}
+	mr_CST_fifth = {
+		icon = byz_justinians_ambition
+		position = 4
+		required_missions = {
+			mr_CST_fourth
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = aegean_archipelago_area
+				area = morea_area
+				area = northern_greece_area
+				area = thrace_area
+				province_id = 148
+				province_id = 4702
+				province_id = 1853
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			own_all_of_greece_trigger = yes
+			4701 = {
+				has_state_patriach = yes
+			}
+			151 = {
+				has_great_project = {
+					type = hagia_sophia
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = MrGreekEvents.7
+			}
+		}
+	}
+}
+mr_greek_missions_second_byz = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = CST
+			was_tag = CST
+		}
+	}
+	mr_CST_second = {
+		icon = mission_ottoman_early_army
+		position = 1
+		provinces_to_highlight = {
+			owner = {
+				tag = TUR
+			}
+		}
+		required_missions = {
+		}
+		trigger = {
+			army_size_percentage = 1
+			316 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 40
+					}
+				}
+			}
+			TUR = {
+				is_supporting_independence_of = ROOT
+			}
+		}
+		effect = {
+			add_liberty_desire = 30
+			custom_tooltip = ghazi_mercs_TT
+			custom_tooltip = if_war_starts_kocaeli
+			hidden_effect = {
+				TUR = {
+					add_country_modifier = {
+						name = tur_10_year_counter
+						duration = 3650
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+}
 mr_greek_missions_second = {
 	slot = 2
 	generic = no
@@ -1035,6 +1377,7 @@ mr_greek_missions_second = {
 			tag = GRE
 			tag = CPH
 			tag = CEP
+			tag = CST
 		}
 	}
 	mr_greece_unity_2 = {
@@ -1315,6 +1658,7 @@ mr_greek_missions_third = {
 			tag = GRE
 			tag = CPH
 			tag = CEP
+			tag = CST
 		}
 	}
 	mr_greece_unity_1 = {
@@ -1334,18 +1678,23 @@ mr_greek_missions_third = {
 			}
 		}
 		trigger = {
-			calc_true_if = {
-				all_province = {
-					OR = {
-						area = thrace_area
-						area = macedonia_area
-						area = northern_greece_area
-						area = morea_area
+			is_free_or_tributary_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = have_greek_claims
+				calc_true_if = {
+					all_province = {
+						OR = {
+							area = thrace_area
+							area = macedonia_area
+							area = northern_greece_area
+							area = morea_area
+						}
+						is_claim = ROOT
 					}
-					is_claim = ROOT
+					amount = 2
 				}
-				amount = 2
 			}
+			
 		}
 		effect = {
 			thrace_area = {
@@ -1631,6 +1980,7 @@ mr_greek_missions_fourth = {
 			tag = GRE
 			tag = CPH
 			tag = CEP
+			tag = CST
 		}
 	}
 	mr_greece_unity_7 = {
@@ -1641,6 +1991,7 @@ mr_greek_missions_fourth = {
 			num_of_admirals = 1
 		}
 		effect = {
+			is_free_or_tributary_trigger = yes
 			aegean_archipelago_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1770,6 +2121,7 @@ mr_greek_missions_fifth = {
 			tag = GRE
 			tag = CPH
 			tag = CEP
+			tag = CST
 		}
 	}
 	mr_greece_unity_9 = {

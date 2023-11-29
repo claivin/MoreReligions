@@ -3,6 +3,61 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+georgian = {
+    rank = {
+        1 = SAMTAVRO
+        2 = SAMEPO
+        3 = IMPERIA
+    }
+
+    ruler_male = {
+        1 = MTAVARI
+        2 = MEPE
+        3 = IMPERATORI
+    }
+	
+    ruler_female = {
+        1 = MTAVARI
+        2 = MEPE
+        3 = IMPERATRITSA
+    }
+
+	consort_male = {
+        1 = MTAVARI
+        2 = MEPE
+        3 = IMPERATORI
+	}
+
+	consort_female = {
+        1 = MTAVARI
+        2 = DEDOPALI
+        3 = IMPERATRITSA
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = PRINTSI
+		3 = PRINTSI
+	}
+
+	heir_female = {
+		1 = HEIR_fem
+		2 = PRINTSESA
+		3 = PRINTSESA
+	
+	}
+
+    trigger = {
+		OR = {
+			primary_culture = georgian
+			primary_culture = georgian_new
+		}
+		NOT = {
+			tag = SME
+		}
+		government = monarchy
+    }
+}
 stateless_society = {
 	rank = {
 		1 = STATELESS_SOCIETY
@@ -2837,6 +2892,7 @@ byzantine_monarchy = {
 			tag = TRE
 			tag = EPI
 			tag = MOE
+			tag = CST
 		}
 	}
 }
@@ -2889,6 +2945,10 @@ greek_monarchy = {	#Greeks without Byzantine Ties
 		OR = {
 			primary_culture = greek
 			primary_culture = pontic_greek
+			primary_culture = aegean
+			primary_culture = epirote
+			primary_culture = peloponnesian
+			primary_culture = borean
 		}
 	}
 }
