@@ -2,7 +2,7 @@
 
 owner = RUM
 controller = RUM
-culture = turkish
+culture = karamanlides
 religion = sunni
 capital = "Kayseri"
 trade_goods = iron

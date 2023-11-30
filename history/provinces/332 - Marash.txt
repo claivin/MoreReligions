@@ -2,7 +2,7 @@
 
 owner = ALV
 controller = ALV
-culture = turkish
+culture = karamanlides
 religion = mr_safaviyya
 capital = "Maras"
 trade_goods = wool

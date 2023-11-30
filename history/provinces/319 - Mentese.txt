@@ -2,7 +2,7 @@
 
 owner = MEN
 controller = MEN
-culture = turkish
+culture = micrasiate
 religion = sunni
 capital = "Mughla"
 trade_goods = salt

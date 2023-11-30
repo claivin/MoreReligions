@@ -2,7 +2,7 @@
 
 owner = CND
 controller = CND
-culture = turkish
+culture = micrasiate
 religion = sunni
 capital = "Bolu"
 trade_goods = fish

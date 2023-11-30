@@ -2,7 +2,7 @@
 
 owner = TUR
 controller = TUR
-culture = turkish
+culture = micrasiate
 religion = shiite
 capital = "Bursa"
 trade_goods = silk

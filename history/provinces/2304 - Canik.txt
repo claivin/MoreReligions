@@ -2,7 +2,7 @@
 
 owner = RUM
 controller = RUM
-culture = turkish
+culture = pontic_greek
 religion = sunni
 capital = "Samsun"
 trade_goods = wine

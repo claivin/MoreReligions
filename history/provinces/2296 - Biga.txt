@@ -2,7 +2,7 @@
 
 owner = TUR
 controller = TUR
-culture = turkish
+culture = micrasiate
 religion = shiite
 capital = "Biga"
 trade_goods = naval_supplies
