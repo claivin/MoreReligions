@@ -152,6 +152,11 @@ steppe_yoke = {
 	harsh_treatment_cost = -0.25
 	global_tax_income = 12
 }
+steppe_russian_master = {
+	country_diplomatic_power = 1
+	diplomatic_upkeep = 1
+	global_tax_income = 12
+}
 steppe_pious_reputation = {
 	diplomatic_reputation = 2
 	relation_with_same_religion = 20
@@ -172,9 +177,14 @@ steppe_tver_defectors = {
 	siege_ability = 0.05
 }
 steppe_wf_agriculture = {
-    local_development_cost = -0.25	
+    local_development_cost = -0.20	
 }
 steppe_wf_graze = {
     manpower_recovery_speed = 0.10
     global_supply_limit_modifier = 0.10		
+}
+steppe_destroyer_of_kyiv = {
+    prestige = 1
+    horde_unity = 2
+	relation_with_heathens = -15
 }

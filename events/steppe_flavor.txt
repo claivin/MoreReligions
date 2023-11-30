@@ -928,6 +928,19 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = "randomeventsstapehordes.17.EVTOPTB"
+		highlight = yes
+		trigger = { has_country_flag = steppe_judicial_solutions }
+		add_mil_power = -5
+		if = {
+			limit = { has_estate = estate_nomadic_tribes }
+			add_estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 5
+			}
+		}
+	}	
 }
 
 ########################################################################################################################

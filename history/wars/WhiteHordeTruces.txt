@@ -25,3 +25,13 @@
 	rem_defender = SHY
 	rem_defender = NOG
 }
+
+1430.1.1 = {
+	add_attacker = BLK
+	add_defender = TRS
+}
+
+1442.12.30 = {
+	rem_attacker = BLK
+	rem_defender = TRS
+}

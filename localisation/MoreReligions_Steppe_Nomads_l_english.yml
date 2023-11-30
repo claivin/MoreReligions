@@ -77,11 +77,12 @@
  steppe_ilkhanate_reformer: "\nEnables the decision to reform the §OIlkhanate§!\n"
  steppe_chagatai_reformer: "\nEnables the decision to reform the §VChagatai Khaganate§!\n"
  steppe_yuan_reformer: "\nEnables the ability to reform the §RDai Yuan§! without the standard requirements\n"
- steppe_raze_tver_rewards: "\nIf we complete this mission by razing §Y[294.GetName]§!, then we will gain the following modifier for 50 years:\n\n§YShackled Rus§! giving the following effects:\nYearly Tax Income: §G+12§!\nHarsh Treatment Cost: §G-25%§!\nMonthly Military Power: §G+1§!\n\nIf we complete the mission by coring §Y[294.GetName]§! instead, then all controlled provinces in the §YRussia Region§! will lose §G25§! autonomy and §G25§! devastation."
+ steppe_raze_tver_rewards: "\nIf we complete this mission by razing §Y[294.GetName]§!, then we will gain the following modifier for 50 years:\n\n§YShackled Rus§! giving the following effects:\nYearly Tax Income: §G+12§!\nHarsh Treatment Cost: §G-25%§!\nMonthly Military Power: §G+1§!\n\nIf we complete the mission by coring §Y[294.GetName]§! instead, then we will gain the following modifier for 50 years:\n\n§YMaster of the Rus§! giving the following effects:\nYearly Tax Income: §G+12§!\nDiplomatic Relation Slots: §G+1§!\nMonthly Diplomatic Power: §G+1§!"
  steppe_humanist_missions_TT: "We will pursue a path of Religious Pluralism"
  steppe_religious_missions_TT: "We will pursue a path of Religious Conversion"
  steppe_raze_easier_conversion_tt: "Our Missionaries will receive §G-40%§! maintenance cost in provinces we have recently razed\n\nProvinces that have the §YReligious Center§! Modifier will now have it removed upon being razed"
  steppe_tver_defectors_tt: "The Tverian Boyars know that they fight for a fool and will easily break to our just cause. Winning battles against @TVE Tver while we have the Tverian Defectors modifier will now have a §T20.0%§! chance for their men to desert, giving us §G2000§! Manpower.\n"
+ steppe_agriculture_TT: "All Owned Provinces in the §YYedisan§!, §YZaporizhia§!, & §YSloboda Ukraine§! areas will have their development cost offset"
  
  #Steppe Modifiers
  steppe_census: "State-wide Census"
@@ -99,6 +100,8 @@
  steppe_tver_defectors: "Tverian Defectors"
  steppe_wf_agriculture: "Agricultural Development"
  steppe_wf_graze: "Ruthenian Pastures"
+ steppe_russian_master: "Master of The Rus"
+ steppe_destroyer_of_kyiv: "Butcher of Kyiv"
  
  #Steppe Events
  MR_steppe_generic_flavor.1.t: "Restoration of Khanbaliq"
@@ -122,6 +125,7 @@
  MR_steppe_generic_flavor.5.d: " "
  MR_steppe_generic_flavor.5.a: "Fertile soil worth investing in"
  MR_steppe_generic_flavor.5.b: "Foolish words of sedentism"
+ randomeventsstapehordes.17.EVTOPTB: "Bring the gavel down on the survivors"
  
  
  #Misc
@@ -130,3 +134,4 @@
  steppe_provinces_razed_variable: "Provinces Razed"
  chagatai_nation_title: "Re-Form the Chagatai Khaganate"
  steppe_TODO: "Unfinished mission, this will do something much more interesting in the future"
+ steppe_judicial_solutions: "Passed Judicial Reforms"

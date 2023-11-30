@@ -2,8 +2,12 @@ steppe_missions_1 = { #internal-management line
 	slot = 1
 	generic = no
 	ai = no
-	potential = { has_reform = steppe_horde }
-	
+	potential = {
+       AND = {
+	   has_reform = steppe_horde
+	   NOT = { tag = BLH }
+	     }
+	   }
 	steppe_succession = {
 		icon = mission_plc_governance_act
 		required_missions = { }
@@ -44,6 +48,7 @@ steppe_missions_1 = { #internal-management line
 				add_building = courthouse
 			}
             custom_tooltip = steppe_judicial_events			
+			set_country_flag = steppe_judicial_solutions
 		}
 	}	
 	steppe_census = {
@@ -117,7 +122,7 @@ steppe_missions_1 = { #internal-management line
 		trigger = {
 		num_of_owned_provinces_with = {
 	            value = 50
-				has_building = marketplace
+				province_has_center_of_trade_of_level = 2
             }		
 		}
 		effect = {
@@ -133,7 +138,12 @@ steppe_missions_2 = { #regional-steppe conquest line
 	slot = 2
 	generic = no
 	ai = no
-	potential = { has_reform = steppe_horde }
+	potential = {
+       AND = {
+	   has_reform = steppe_horde
+	   NOT = { tag = BLH }
+	     }
+	   }
 	
 	steppe_warband = {
 		icon = mission_non-western_cavalry_raid
@@ -231,7 +241,8 @@ steppe_missions_3a = { #china-conquest
 	ai = no
 	potential = {
     AND = 	{
-	NOT = {tag = MGH}
+	NOT = { tag = MGH }
+	NOT = { tag = BLH }
 	has_reform = steppe_horde 
 	OR = {
 	capital_scope = {region = manchuria_region}
@@ -472,6 +483,7 @@ steppe_missions_3b = { #iran-conquest
 	potential = { 
     AND = {
 	has_reform = steppe_horde 
+	NOT = { tag = BLH }
 	OR = {
 	capital_scope = {region = central_asia_region}
 	capital_scope = {region = west_siberia_region}
@@ -699,6 +711,7 @@ steppe_missions_3c = { #rus-conquest
 	potential = {
     AND = 	{
 	has_reform = steppe_horde 
+	NOT = { tag = BLH }
 	OR = {
 	capital_scope = {region = russia_region}
 	capital_scope = {region = ural_region}
@@ -762,11 +775,10 @@ steppe_missions_3c = { #rus-conquest
 		  }
 		}
 		else = {
-			russia_region = {
-				limit = { country_or_non_sovereign_subject_holds = ROOT }
-				add_local_autonomy = -25
-				add_devastation = -25
-			}
+		add_country_modifier = { 
+		name = steppe_russian_master
+		duration = 18250
+		   }
 		  }
 		 }
 		}
@@ -921,7 +933,12 @@ steppe_missions_4 = { #Religious line
 	slot = 4
 	generic = no
 	ai = no
-	potential = { has_reform = steppe_horde }
+	potential = {
+       AND = {
+	   has_reform = steppe_horde
+	   NOT = { tag = BLH }
+	     }
+	   }
 	
 	steppe_religious_matters = {
 		icon = mission_hands_praying
@@ -944,7 +961,8 @@ steppe_missions_4_blocked = { #Blockedstuff
 	generic = no
 	ai = no
 	potential = { has_reform = steppe_horde 
-	AND = { 
+	AND = {
+    NOT = { tag = BLH }	
 	NOT = { has_country_flag = steppe_religious_missions }
 	NOT = { has_country_flag = steppe_humanist_missions }
 	}	
@@ -990,6 +1008,7 @@ steppe_missions_4a = { #Religious approach branch
 	ai = no
 	potential = { AND = { 
 	has_reform = steppe_horde
+	NOT = { tag = BLH }
 	has_country_flag = steppe_religious_missions
 	NOT = { has_country_flag = steppe_humanist_missions }
 	 }
@@ -1027,11 +1046,13 @@ steppe_missions_4b = { #Humanist approach branch
 	slot = 4
 	generic = no
 	ai = no
-	potential = { AND = { 
-	has_reform = steppe_horde
-	has_country_flag = steppe_humanist_missions
-	NOT = { has_country_flag = steppe_religious_missions }
-	 }
+	potential = { 
+	 AND = { 
+	 has_reform = steppe_horde
+	 NOT = { tag = BLH }
+	 has_country_flag = steppe_humanist_missions
+	 NOT = { has_country_flag = steppe_religious_missions }
+	   }
 	}
 	
 	steppe_religious_pluralism = {
@@ -1073,6 +1094,11 @@ steppe_missions_5 = { #Extra line
 	slot = 5
 	generic = no
 	ai = no
-	potential = { has_reform = steppe_horde }
+	potential = {
+       AND = {
+	   has_reform = steppe_horde
+	   NOT = { tag = BLH }
+	     }
+	   }
 		
 }

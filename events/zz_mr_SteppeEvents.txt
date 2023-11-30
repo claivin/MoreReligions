@@ -101,6 +101,16 @@ country_event = {
 	      set_base_production = 0
 	      set_base_manpower = 0
 	}
+	    add_ruler_modifier = { 
+         name = steppe_destroyer_of_kyiv
+         duration = -1  
+         hidden = no
+         }
+		add_treasury = 400
+		
+		destroy_great_project = {
+        type = kiev_pechersk_lavra
+           }
 	}
 	
 	option = {
@@ -111,8 +121,8 @@ country_event = {
 		280 = {	
 	      move_capital_effect = yes 		
 	      add_base_manpower = 2
-	}
-          	
+		#custom_tooltip = steppe_patriarch_approach
+	 }
 	}
 }
 
@@ -158,6 +168,8 @@ country_event = {
 		trigger = {
 		
 		}
+		custom_tooltip = steppe_agriculture_TT
+		hidden_effect = {
 		every_owned_province = { 
 		limit = {
         AND = 	{	
@@ -167,11 +179,12 @@ country_event = {
 		area = yedisan_area
 		}
 		trade_goods = grain
-		}
+		  }
 		}
 		add_province_modifier = {
         name = steppe_wf_agriculture
         duration = -1
+		   } 
 		}
 		}
 	}

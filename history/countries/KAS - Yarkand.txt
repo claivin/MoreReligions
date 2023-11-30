@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = autocracy_reform
 primary_culture = karluk
 religion = mr_nestorian
 technology_group = chinese
