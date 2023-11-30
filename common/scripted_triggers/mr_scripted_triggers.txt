@@ -263,6 +263,12 @@ eng_opener_missions_progress_trigger = {
 				}
 			}
 		}
+		NOT ={
+			any_owned_province = {
+				province_group = england_region
+				devastation = 20
+			}
+		}
 		grown_by_development = 100
 	}
 	else_if = {

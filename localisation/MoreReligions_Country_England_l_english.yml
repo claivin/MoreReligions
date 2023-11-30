@@ -8,6 +8,7 @@
  
  eng_m_welsh_marches_title: "Slay The Dragon"
  eng_m_welsh_marches_desc: ""
+ eng_enables_decision_to_merge_welsh_marches_TT: "Enables decision to merge the §YWelsh Marches§!\n"
  
  eng_m_northern_england_title: "Once More Unto The Breach"
  eng_m_northern_england_desc: ""
@@ -48,7 +49,8 @@
  
  eng_m_lollards_1_title: "Wycliffe's Legacy"
  eng_m_lollards_1_desc: ""
- eng_m_lollards_1_TT: "If completed while Lollard, a §YLollard Center of Reformation will spawn§!\n"
+ eng_m_lollards_1_TT: "If completed while §YCatholic§!:\n"
+ eng_m_lollards_1_TT_2: "If completed while §YLollard§!:\n"
  
  eng_m_scotland_title: "Invade Scotland"
  eng_m_scotland_desc: "England and Scotland have been locked in warfare for hundreds of years. The newfound strength and stability of England is finally enough to put a rest to these woes."
@@ -63,9 +65,15 @@
  eng_m_army_2_title: "Reform as the Model Army"
  eng_m_army_2_desc: ""
  cheaper_UU_upgrades: "[Root.GetName] gets '§YModel Army§!' until the end of the game, giving the following effects:\n§PElite Unit§! Upgrade Cost: §G-10.0%§!"
+ eng_model_army_wins_count: "Battles Won"
  
  eng_m_ireland_4_title: "Army of Ireland"
  eng_m_ireland_4_desc: ""
+ eng_m_ireland_4_TT: "Units recruited in §YIreland§! will §Grefund 250 manpower§!"
+ 
+ eng_m_timber_title: "Timber Security"
+ eng_m_timber_desc: ""
+ eng_m_timber_trigger_TT: "§YRoyal Forests§! system is no longer in decline"
  
  ### Decisions
  mr_crush_local_rulers_decision_title: "Crush Irish Lords"
@@ -92,6 +100,15 @@
  mr_name_change_to_britain_ireland_title: "Crown the Kingdom of Ireland"
  mr_name_change_to_britain_ireland_desc: "The Kingdom of Ireland is a core part of our realm, and we should display our title over it as such."
  
+ mr_dissolve_clergy_decision_title: "Dissolve the Clergy"
+ mr_dissolve_clergy_decision_desc: ""
+ 
+ mr_merge_welsh_marches_title: "Merge the Welsh Marches"
+ mr_merge_welsh_marches_desc: "The Marches were given to local lords to administer Wales while England was under turmoil. Earlier lords had more leverage to negotiate seperate autonomous realms, but under the remade Crown, the scales fall in our favor to centralize this vassalage."
+ 
+ mr_forest_restoration_title: "Replanting and Resurveying the Forests"
+ mr_forest_restoration_desc: ""
+ 
  ### modifiers
  eng_ireland_settlements: "Resettlement of Ireland"
  eng_anglo_hibernian_union: "Anglo-Hibernian Union"
@@ -108,6 +125,11 @@
  mr_sco_scotch: "Scotch Whiskey Tradition"
  mr_eng_model_army: "Standing Army Decree"
  mr_ire_whiskey: "Irish Whiskey Tradition"
+ mr_eng_crown_guard: "Crown Guard"
+ eng_m_neglected_royal_woods: "Neglected Royal Forests"
+ eng_m_declining_royal_woods: "Declining Royal Forests"
+ eng_m_severely_exhausted_royal_woods: "Severely Exhausted Royal Forests"
+ eng_restoring_in_progress: "Restoration Efforts"
  
  ### misc
  mr_anglo_hibernian: "Anglo-Hibernian"
@@ -236,3 +258,19 @@
  mr_england.8.d: "On the island of Iona, the representatives of the Clans of the Scottish Highlands convened with a delegation of the Crown. The weak presence of feudal peerages and dominance of the Clann system will prove to be a challenge for the Crown, given nothing is done to ease them into the Kingdom. After several days of discussion, the Crown delegates discuss amongst themselves the two options they've settled on: education of heirs in English, as well as the introduction of English into clerical life - among other methods - in an effort for longterm, but stable integration; or a more heavy handed approach of banning Gaelic and other Scottish traditions - the downsides of which are apparent."
  mr_england.8.a: "We should institue longterm policies for assimilating the Clans."
  mr_england.8.b: "We should take active measures to push for assimilation."
+ 
+ mr_england.9.t: "Decline of the [Root.GetName] Royal Forest"
+ mr_england.9.d: "First enacted by William the Conqueror, Forest Law has existed within England as a means of game preservation. Since then, Forest Law has evolved through various addendums and the Magna Carta itself, but altogether steadily declining in importance.  This is especially apparent now, as recent surveys through [Root.GetName] reveal that the overcutting has made large swathes barren - likely felled to create and repair the Crown Navy."
+ mr_england.9.a: "The trees will regrow..."
+ 
+ mr_england.9002.t: "Severe Exhaustion the [Root.GetName] Royal Forest"
+ mr_england.9002.d: "The [Root.GetName] Royal Forest has been reduced to a shadow of its former self, ex"
+ mr_england.9002.a: ""
+ 
+ mr_england.9003.t: "Restoration of the [Root.GetName] Royal Forest"
+ mr_england.9003.d: ""
+ mr_england.9003.a: ""
+ 
+ mr_england.9004.t: "Complete Deforestation of the [Root.GetName] Royal Forest"
+ mr_england.9004.d: ""
+ mr_england.9004.a: ""

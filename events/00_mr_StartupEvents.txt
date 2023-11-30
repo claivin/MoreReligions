@@ -208,7 +208,7 @@ country_event = {
 				}
 			}
 			england_region = {
-				add_devastation = 75
+				add_devastation = 60
 			}
 			wales_area = {
 				add_devastation = 60

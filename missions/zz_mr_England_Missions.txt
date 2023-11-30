@@ -82,6 +82,7 @@ england_missions_3_openers = {
 		}
 		effect = {
 			custom_tooltip = eng_this_will_make_the_other_missions_harder_TT
+			custom_tooltip = eng_enables_decision_to_merge_welsh_marches_TT
 			eng_opener_missions_progress_effect = yes
 		}
 	}
@@ -248,10 +249,8 @@ england_missions_4_openers = {
 		}
 		effect = {
 			custom_tooltip = redshanks_2_TT
-			every_owned_province = {
-				limit = {
-					province_group = scotland_region
-				}
+			scotland_region = {
+				type = all
 				add_province_modifier = {
 					name = mr_highlander_recruitment
 					duration = -1
@@ -318,20 +317,32 @@ england_missions_lollardy_branch = {
 			}
 		}
 		effect = {
-			#custom_tooltip = eng_m_lollards_1_TT
-			if = {
-				limit = {
-					religion = catholic
-				}
+			custom_tooltip = eng_m_lollards_1_TT
+			tooltip = {
 				country_event = {
 					id = mr_england.6
 				}
 			}
-			else_if = {
-				limit = {
-					religion = mr_lollard
-				}
+			custom_tooltip = eng_m_lollards_1_TT_2
+			tooltip = {
 				change_adm = 2
+			}
+			####
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = catholic
+					}
+					country_event = {
+						id = mr_england.6
+					}
+				}
+				else_if = {
+					limit = {
+						religion = mr_lollard
+					}
+					change_adm = 2
+				}
 			}
 			else = { #fallback - shouldnt happen
 				add_adm_power = 100
@@ -506,7 +517,8 @@ england_missions_irish_branch = {
 				name = eng_anglo_hibernian_union
 				duration = -1
 			}
-		
+		}
+	}
 	eng_m_ireland_4 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = {
@@ -527,7 +539,7 @@ england_missions_irish_branch = {
 			}
 		}
 		effect = {
-			
+			custom_tooltip = eng_m_ireland_4_TT
 		}
 	}
 }
@@ -674,6 +686,45 @@ england_missions_naval_branch_b = {
 					}
 				}
 			}
+		}
+	}
+	eng_m_timber = { #Royal Woods Act
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_naval_3 }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = lumber
+				trade_goods = naval_supplies
+			}
+		}
+		trigger = {
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = eng_m_timber_trigger_TT
+					all_owned_province = {
+						NOT = {
+							calc_true_if = {
+								amount = 1
+								OR = {
+									has_province_modifier = eng_m_neglected_royal_woods
+									has_province_modifier = eng_m_declining_royal_woods
+									has_province_modifier = eng_m_severely_exhausted_royal_woods
+								}
+							}
+						}
+					}
+				}
+				calc_true_if = {
+					amount = 8
+					owned_by = ROOT
+					NOT = { province_group = england_region }
+				}
+			}
+		}
+		effect = {
+		
 		}
 	}
 }

@@ -881,3 +881,119 @@ country_event = {
 		}
 	}
 }
+
+#Decline of the [Root.GetName] Royal Woods
+province_event = {
+	id = mr_england.9
+	title = mr_england.9.t
+	desc = mr_england.9.d
+	picture = POPE_PREACHING_eventPicture
+	
+	trigger = {
+		province_group = england_region
+		OR = {
+			trade_goods = lumber
+			trade_goods = naval_supplies
+		}
+		has_province_modifier = eng_m_neglected_royal_woods
+	}
+	mean_time_to_happen = {
+		years = 25
+	}
+	
+	option = {
+		name = mr_england.9.a
+		add_permanent_province_modifier = {
+			name = eng_m_declining_royal_woods
+			duration = -1
+		}
+	}
+}
+
+#Depletion of the [Root.GetName] Royal Woods Lumber
+province_event = {
+	id = mr_england.9002
+	title = mr_england.9002.t
+	desc = mr_england.9002.d
+	picture = POPE_PREACHING_eventPicture
+
+	trigger = {
+		province_group = england_region
+		OR = {
+			trade_goods = lumber
+			trade_goods = naval_supplies
+		}
+		has_province_modifier = eng_m_declining_royal_woods
+	}
+	mean_time_to_happen = {
+		years = 20
+	}
+	
+	option = {
+		name = mr_england.9002.a
+		add_permanent_province_modifier = {
+			name = eng_m_severely_exhausted_royal_woods
+			duration = -1
+		}
+	}
+}
+
+#Restoration of the [Root.GetName] Royal Forest 
+province_event = {
+	id = mr_england.9003
+	title = mr_england.9003.t
+	desc = mr_england.9003.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mr_forest_restoration decision
+	}
+	mean_time_to_happen = {
+		days = 1 
+	}
+	
+	option = {
+		name = mr_england.9003.a
+		if = {
+			limit = { has_province_modifier = eng_m_neglected_royal_woods }
+			remove_province_modifier = eng_m_neglected_royal_woods
+		}
+		if = {
+			limit = { has_province_modifier = eng_m_declining_royal_woods }
+			remove_province_modifier = eng_m_declining_royal_woods
+		}
+		if = {
+			limit = { has_province_modifier = eng_m_severely_exhausted_royal_woods }
+			remove_province_modifier = eng_m_severely_exhausted_royal_woods
+		}
+		add_base_production = 3
+	}
+}
+
+#Complete Deforestation of the [Root.GetName] Royal Forest
+province_event = {
+	id = mr_england.9004
+	title = mr_england.9004.t
+	desc = mr_england.9004.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		province_group = england_region
+		OR = {
+			trade_goods = lumber
+			trade_goods = naval_supplies
+		}
+		has_province_modifier = eng_m_severely_exhausted_royal_woods
+		NOT = { has_province_modifier =  eng_restoring_in_progress }
+	}
+	mean_time_to_happen = {
+		years = 10
+	}
+	
+	option = {
+		name = mr_england.9004.a
+		change_trade_goods = unknown
+	}
+}

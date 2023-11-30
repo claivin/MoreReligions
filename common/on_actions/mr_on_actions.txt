@@ -1195,3 +1195,17 @@ on_yearly_pulse_2 = {
 		mr_england.7012
 	}
 }
+
+# THIS = Province, FROM = Country
+on_regiment_recruited = {
+	if = {
+		limit = {
+			province_group = ireland_region
+			FROM = {
+				tag = ENG
+				mission_completed = eng_m_ireland_4
+			}
+		}
+		FROM = { add_manpower = 0.25 }
+	}
+}

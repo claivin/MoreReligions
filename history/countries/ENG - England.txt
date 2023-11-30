@@ -5,3 +5,15 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 236 # London
+
+1425.1.1 = { #Coronation
+	monarch = {
+		name = "George"
+		dynasty = "Neville"
+		birth_date = 1407.12.6
+		adm = 3
+		dip = 3
+		mil = 6
+	}
+	clear_scripted_personalities = yes
+}

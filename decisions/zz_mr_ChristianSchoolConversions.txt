@@ -31,7 +31,7 @@ country_decisions = {
 		effect = {
 			set_country_flag = has_changed_rites
 			country_event = {
-				id = christian_school_events.22.
+				id = christian_school_events.22
 			}
 		}
 		ai_will_do = {

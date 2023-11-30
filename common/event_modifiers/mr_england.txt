@@ -102,3 +102,19 @@ mr_eng_crown_guard = {
 mr_ire_whiskey = {
 	trade_value = 1
 }
+
+eng_m_neglected_royal_woods = {
+	trade_goods_size_modifier = -0.05
+}
+
+eng_m_declining_royal_woods = {
+	trade_goods_size_modifier = -0.33
+}
+
+eng_m_severely_exhausted_royal_woods = {
+	trade_goods_size_modifier = -0.67
+}
+
+eng_restoring_in_progress = {
+	state_maintenance_modifier = 0.1
+}

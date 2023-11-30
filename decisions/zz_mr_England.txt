@@ -233,4 +233,103 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	mr_merge_welsh_marches = {
+		potential = {
+			tag = ENG
+			mission_completed = eng_m_welsh_marches
+			NOT = { has_country_flag = has_merged_welsh_marches }
+		}
+		allow = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			WLS = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		effect = {
+			add_dip_power = -50
+			wales_area = {
+				type = all
+				cede_province = WLS
+			}
+			create_subject = {
+				subject_type = march
+				subject = WLS
+			}
+			hidden_effect = { set_country_flag = has_merged_welsh_marches }
+		}
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				wales_area = {
+					any_province = {
+						is_capital = yes
+						owner = { ai = no }
+					}
+				}
+			}
+		}
+	}
+	
+	mr_forest_restoration = {
+		potential = {
+			OR = {
+				any_owned_province = {
+					province_group = england_region
+					OR = {
+						has_province_modifier = eng_m_neglected_royal_woods
+						has_province_modifier = eng_m_declining_royal_woods
+						has_province_modifier = eng_m_severely_exhausted_royal_woods
+					}
+					NOT = { has_province_modifier = eng_restoring_in_progress }
+				}
+			}
+		}
+		allow = {
+			any_owned_province = {
+				OR = {
+					has_province_modifier = eng_m_neglected_royal_woods
+					has_province_modifier = eng_m_declining_royal_woods
+					has_province_modifier = eng_m_severely_exhausted_royal_woods
+				}
+				NOT = { has_province_modifier = eng_restoring_in_progress }
+				infantry_in_province = 2
+			}
+			adm_power = 25
+			treasury = 100
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = eng_m_neglected_royal_woods
+						has_province_modifier = eng_m_declining_royal_woods
+						has_province_modifier = eng_m_severely_exhausted_royal_woods
+					}
+					NOT = { has_province_modifier = eng_restoring_in_progress }
+					infantry_in_province = 2
+				}
+				add_province_modifier = {
+					name = eng_restoring_in_progress
+					duration = 18250 #50 years
+				}
+				province_event = {
+					id =  mr_england.9003
+					days = 18250
+				}
+			}
+			add_adm_power = -100
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }
