@@ -439,7 +439,6 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		ai = no
 		OR = {
 		tag = BLK 
 		tag = TRS
