@@ -4,7 +4,7 @@
 owner = MRK
 controller = MRK
 culture = moroccan
-religion = sunni
+religion = ibadi
 capital = "Anfa"
 trade_goods = grain
 hre = no

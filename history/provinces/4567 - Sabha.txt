@@ -4,7 +4,7 @@
 owner = FZA
 controller = FZA 
 culture = tunisian
-religion = sunni
+religion = ibadi
 capital = "Sabha"
 trade_goods = livestock
 hre = no

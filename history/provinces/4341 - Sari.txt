@@ -1,7 +1,7 @@
 #4341 - Sari
 
-owner = SRI
-controller = SRI
+owner = TAB
+controller = TAB
 culture = mazandarani
 religion = shiite
 capital = "Sari"

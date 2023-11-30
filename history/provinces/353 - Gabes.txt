@@ -3,7 +3,7 @@
 owner = DJB
 controller = DJB
 culture = tunisian
-religion = sunni
+religion = ibadi
 capital = "Tataouine"
 trade_goods = grain
 hre = no

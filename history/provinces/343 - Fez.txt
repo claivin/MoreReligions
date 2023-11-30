@@ -4,7 +4,7 @@
 owner = FEZ
 controller = FEZ
 culture = moroccan
-religion = sunni
+religion = mr_zaydi
 capital = "Fez"
 trade_goods = cloth
 hre = no

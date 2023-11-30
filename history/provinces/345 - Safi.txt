@@ -4,7 +4,7 @@
 owner = MRK
 controller = MRK
 culture = moroccan
-religion = sunni
+religion = ibadi
 capital = "Safi"
 trade_goods = sugar
 hre = no

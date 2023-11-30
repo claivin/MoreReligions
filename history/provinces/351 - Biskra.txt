@@ -3,7 +3,7 @@
 owner = MZB
 controller = MZB
 culture = berber
-religion = sunni
+religion = ibadi
 capital = "Biskra"
 trade_goods = wool
 hre = no

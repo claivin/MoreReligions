@@ -4,7 +4,7 @@
 owner = MRK
 controller = MRK
 culture = berber
-religion = sunni
+religion = ibadi
 capital = "Mogador"
 trade_goods = grain
 hre = no

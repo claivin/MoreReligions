@@ -3,7 +3,7 @@
 owner = MZB
 controller = MZB
 culture = tunisian
-religion = sunni
+religion = ibadi
 capital = "Ghadames"
 trade_goods = spices #Dates
 hre = no

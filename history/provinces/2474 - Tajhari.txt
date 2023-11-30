@@ -4,7 +4,7 @@
 owner = FZA
 controller = FZA 
 culture = tuareg
-religion = sunni
+religion = ibadi
 capital = "Tajhari"
 trade_goods = unknown
 hre = no

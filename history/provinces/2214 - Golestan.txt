@@ -1,7 +1,7 @@
 #2214 - Golestan
 
-owner = SRI # Babur Ibn-Baysunkur
-controller = SRI
+owner = TAB # Babur Ibn-Baysunkur
+controller = TAB
 culture = mazandarani
 religion = shiite
 capital = "Asatarabad"
