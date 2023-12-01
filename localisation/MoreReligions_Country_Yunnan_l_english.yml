@@ -208,6 +208,7 @@
  
  #Misc
  MR_bureau_military_affairs_reform: "Bureau of Military Affairs"
+ MR_bureau_military_affairs_reform_desc: "The Bureau of Military Affairs, also known as the Shumiyuan, is utilised by the Emperor to oversee and organise the military units of the Imperial army. While it is nominally head by the heir apparent, de facto it is overseen by the deputy and his many bureaucrats. Their efficient administration allows us to fill the ranks of our armies, but also leaves them in a very influential position to influence decisionmaking within the palace itself."
  estate_burghers_jungle_expansion_gt: "Reduce the Development Cost Penalty caused by Terrain type of every owned §YJungle§! province by §G25%§!."
  estate_burghers_jungle_expansion_rt: "Remove the Development Cost Reduction of every owned §YJungle§! province."
  estate_burghers_jungle_expansion: "Jungle Expansion"
