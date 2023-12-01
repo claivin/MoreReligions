@@ -1,0 +1,8 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+primary_culture = turkish
+religion = mr_alevi
+technology_group = ottoman
+capital = 326	
+religious_school = hanafi_school

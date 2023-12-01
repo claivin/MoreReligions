@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = beylik_government
+government_rank = 1
+primary_culture = turkish
+religion = shiite
+technology_group = ottoman
+capital = 5381
+religious_school = hanafi_school

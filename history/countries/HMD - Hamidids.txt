@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = beylik_government
+government_rank = 1
+primary_culture = turkish
+religion = mr_alevi
+technology_group = ottoman
+capital = 1848
+religious_school = hanafi_school

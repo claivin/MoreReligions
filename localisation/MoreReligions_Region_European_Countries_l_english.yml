@@ -268,17 +268,17 @@
  LSB_ADJ: "Lesbos"
  LSB_ADJ2: "Lesbos"
  
- ALV: "Dedekurids"
- ALV_ADJ: "Dedekurids"
- ALV_ADJ2: "Dedekurids"
+ ALV: "Molatariq"
+ ALV_ADJ: "Molatariqid"
+ ALV_ADJ2: "Molatariqid"
  
  CLC: "Cilicia"
- CLC_ADJ: "Cilicia"
- CLC_ADJ2: "Cilicia"
+ CLC_ADJ: "Cilician"
+ CLC_ADJ2: "Cilician"
  
- CST: "Istinopol"
- CST_ADJ: "Istinopol"
- CST_ADJ2: "Istinopol"
+ CST: "Istinopole"
+ CST_ADJ: "Istinopole"
+ CST_ADJ2: "Istinopole"
  
  EDD: "Edessa"
  EDD_ADJ: "Edessan"
