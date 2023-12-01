@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = mandala_reform
 primary_culture = acehnese
-religion = sunni
+religion = shiite
 technology_group = chinese
 capital = 2673	# Pasai
-religious_school = shafii_school
+religious_school = jafari_school
 
 1267.1.1 = {
 	monarch = {

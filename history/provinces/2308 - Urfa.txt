@@ -2,8 +2,8 @@
 
 owner = EDD
 controller = EDD
-culture = kurdish
-religion = mr_yazidi
+culture = assyrian
+religion = mr_maronite
 capital = "Edessa"
 trade_goods = wool
 hre = no

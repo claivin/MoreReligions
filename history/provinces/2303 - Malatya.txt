@@ -3,7 +3,7 @@
 owner = ALV
 controller = ALV
 culture = turkish
-religion = mr_yazidi
+religion = mr_safaviyya
 capital = "Malatiya"
 trade_goods = cloth
 hre = no

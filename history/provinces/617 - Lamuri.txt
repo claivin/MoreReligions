@@ -3,7 +3,7 @@
 owner = PSA
 controller = PSA
 culture = acehnese
-religion = sunni
+religion = shiite
 capital = "Lamuri"
 trade_goods = spices
 hre = no

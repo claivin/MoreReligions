@@ -68,6 +68,7 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = mr_almuwahiddun }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -167,6 +168,7 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = mr_almuwahiddun }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -246,7 +248,11 @@ muslim = {
 				adm_power_cost = 50
 				if = {
 					limit = {
-						NOT = { religion = shiite }
+						NOT = { religion = mr_nizari }
+						NOT = { religion = mr_tayyibi }
+						NOT = { religion = mr_druze }
+						NOT = { religion = mr_hafizi }
+						NOT = { religion = mr_qarmatian }
 						NOT = { religion = ibadi }
 					}
 					NOT = { piety = -0.5 }
@@ -290,6 +296,9 @@ muslim = {
 				if = {
 					limit = {
 						NOT = { religion = shiite }
+						NOT = { religion = mr_safaviyya }
+						NOT = { religion = mr_mushashaiyya }
+						NOT = { religion = mr_hurufis }
 						NOT = { religion = ibadi }
 					}
 					NOT = { piety = -0.5 }
@@ -329,7 +338,7 @@ muslim = {
 				adm_power_cost = 50
 				if = {
 					limit = {
-						NOT = { religion = shiite }
+						NOT = { religion = mr_zaydi }
 						NOT = { religion = ibadi }
 					}
 					NOT = { piety = -0.5 }
@@ -367,7 +376,7 @@ muslim = {
 		icon = 5
 		country = {
 			cav_to_inf_ratio = 0.10
-			heir_chance = 1.0
+			global_tax_modifier = 0.1
 		}
 		country_as_secondary = {
 			trade_efficiency = 0.1
@@ -386,7 +395,7 @@ muslim = {
 		color = { 0 204 0 }
 		icon = 6
 		country = {
-			heir_chance = 1.0
+			church_loyalty_modifier = 0.05
 			land_morale = 0.05
 		}
 		country_as_secondary = {
@@ -406,7 +415,7 @@ muslim = {
 		color = { 0 102 0 }
 		icon = 16
 		country = {
-			heir_chance = 1.0
+			tolerance_heretic = 1
 			global_trade_goods_size_modifier = 0.1
 		}
 		country_as_secondary = {
@@ -426,11 +435,11 @@ muslim = {
 		color = { 0 218 148 }
 		icon = 63
 		country = {
-			heir_chance = 1.0
-			global_trade_goods_size_modifier = 0.1
+			fire_damage = 0.05
+			advisor_cost = -0.1
 		}
 		country_as_secondary = {
-			global_ship_cost = -0.1
+			fire_damage = 0.05
 			advisor_cost = -0.1
 		}
 		province = {
@@ -446,12 +455,12 @@ muslim = {
 		color = { 109 198 72 }
 		icon = 72
 		country = {
-			heir_chance = 1.0
-			global_trade_goods_size_modifier = 0.1
+			global_manpower_modifier = 0.10
+			infantry_cost = -0.10
 		}
 		country_as_secondary = {
-			global_ship_cost = -0.1
-			advisor_cost = -0.1
+			global_manpower_modifier = 0.10
+			infantry_cost = -0.10
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1060,12 +1069,12 @@ muslim = {
 		color = { 127 223 106 }
 		icon = 75
 		country = {
-			heir_chance = 1.0
-			fire_damage = 0.10
+			has_qizilbash = yes
+			cavalry_cost = -0.10
 		}
 		country_as_secondary = {
-			global_ship_cost = -0.1
-			advisor_cost = -0.1
+			cavalry_cost = -0.10
+			fire_damage = 0.10
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1667,12 +1676,12 @@ muslim = {
 		color = { 126 42 128 }
 		icon = 70
 		country = {
-			heir_chance = 1.0
-			global_trade_goods_size_modifier = 0.1
+			defensiveness = 0.10
+			manpower_in_own_culture_provinces = 0.20
 		}
 		country_as_secondary = {
-			global_ship_cost = -0.1
-			advisor_cost = -0.1
+			defensiveness = 0.10
+			manpower_in_own_culture_provinces = 0.20
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1687,7 +1696,7 @@ muslim = {
 		color = { 54 185 96 }
 		icon = 68
 		country = {
-			heir_chance = 1.0
+			yearly_corruption = -0.1
 			cavalry_power = 0.10
 		}
 		country_as_secondary = {
@@ -1707,12 +1716,12 @@ muslim = {
 		color = { 91 190 169 }
 		icon = 69
 		country = {
-			heir_chance = 1.0
-			trade_efficiency = 0.1 
+			trade_steering = 0.15
+			light_ship_cost = -0.10
 		}
 		country_as_secondary = {
-			trade_efficiency = 0.1 
-			advisor_cost = -0.1
+			trade_steering = 0.15
+			light_ship_cost = -0.10
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1734,12 +1743,12 @@ muslim = {
 		color = { 20 172 110 }
 		icon = 73
 		country = {
-			heir_chance = 1.0
-			discipline = 0.05
+			fort_maintenance_modifier = -0.10
+			shock_damage_received = -0.05
 		}
 		country_as_secondary = {
-			heir_chance = 1.0
-			discipline = 0.05
+			fort_maintenance_modifier = -0.10
+			shock_damage_received = -0.05
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1761,11 +1770,11 @@ muslim = {
 		color = { 68 136 90 }
 		icon = 71
 		country = {
-			heir_chance = 1.0
+			yearly_absolutism = 0.05
 			merc_maintenance_modifier = -0.15
 		}
 		country_as_secondary = {
-			heir_chance = 1.0
+			yearly_absolutism = 0.05
 			merc_maintenance_modifier = -0.15
 		}
 		province = {
@@ -1788,11 +1797,11 @@ muslim = {
 		color = { 97 185 225	 }
 		icon = 74
 		country = {
-			heir_chance = 1.0
+			global_heretic_missionary_strength = 0.03
 			manpower_in_true_faith_provinces = 0.15 
 		}
 		country_as_secondary = {
-			heir_chance = 1.0
+			global_heretic_missionary_strength = 0.03
 			manpower_in_true_faith_provinces = 0.15 
 		}
 		province = {
@@ -1809,12 +1818,12 @@ muslim = {
 		color = { 229 57 57 }
 		icon = 67
 		country = {
-			heir_chance = 1.0
-			global_trade_goods_size_modifier = 0.1
+			monthly_piety = 0.1
+			shock_damage = 0.05
 		}
 		country_as_secondary = {
-			global_ship_cost = -0.1
-			advisor_cost = -0.1
+			global_missionary_strength = 0.005
+			shock_damage = 0.05
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1848,12 +1857,12 @@ muslim = {
 		color = { 97 20 180 }
 		icon = 61
 		country = {
-			heir_chance = 1.0
-			tolerance_heathen = 2 
+			stability_cost_modifier = 0.1
+			tolerance_heretic = 2 
 		}
 		country_as_secondary = {
-			shock_damage = 0.10 
-			tolerance_heathen = 2 
+			stability_cost_modifier = 0.1
+			tolerance_heretic = 2 
 		}
 		province = {
 			local_missionary_strength = -0.02
@@ -1871,12 +1880,12 @@ muslim = {
 			local_missionary_strength = -0.02
 		}
 		country = {
-			tolerance_own = 2
-			trade_efficiency = 0.1
+			garrison_size = 0.20
+			development_cost_in_primary_culture = -0.1
 		}
 		country_as_secondary = {
-			merchants = 1
-			tolerance_own = 1
+			garrison_size = 0.20
+			development_cost_in_primary_culture = -0.1
 		}
 
 		personal_deity = yes
