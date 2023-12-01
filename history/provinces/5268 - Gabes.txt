@@ -4,7 +4,7 @@
 owner = DJB
 controller = DJB
 culture = tunisian
-religion = sunni
+religion = ibadi
 capital = "Gabes"
 trade_goods = grain
 hre = no

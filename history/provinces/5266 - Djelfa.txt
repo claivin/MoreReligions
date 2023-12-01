@@ -3,7 +3,7 @@
 owner = MZB
 controller = MZB 
 culture = algerian
-religion = sunni
+religion = ibadi
 capital = "Djelfa"
 trade_goods = livestock
 hre = no

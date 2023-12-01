@@ -5,5 +5,31 @@ religion = sunni
 technology_group = muslim
 capital = 416
 add_accepted_culture = persian
-set_estate_privilege = estate_church_ilkhanate_dervish
+government_rank = 3
 
+1444.1.1 = {
+    set_estate_privilege = estate_church_ilkhanate_dervish
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Dara I"
+		dynasty = "Hulaguid"
+		birth_date = 1390.1.1
+		adm = 4
+		dip = 6
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Dara II"
+		dynasty = "Hulaguid"
+		birth_date = 1425.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

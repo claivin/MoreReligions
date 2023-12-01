@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = plutocratic_reform
+add_government_reform = mandala_reform
 government_rank = 1
 primary_culture = sulawesi
 add_accepted_culture = southern_sulawesi

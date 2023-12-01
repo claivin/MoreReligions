@@ -3,7 +3,7 @@
 owner = PUN
 controller = PUN
 culture = panjabi
-religion = mr_tayyibi
+religion = mr_nizari
 capital = "Sialkot"
 trade_goods = paper
 hre = no
