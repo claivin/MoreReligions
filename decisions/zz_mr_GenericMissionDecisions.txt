@@ -103,8 +103,11 @@ country_decisions = {
 	elite_unit_menu_gme = { #elite unit menu
 		color = { 171 130 209 }
 		potential = {
-			mission_completed = g_mission_elite_regiments
 			NOT = { has_country_flag = elite_unit_menu_active }
+			OR = {
+				mission_completed = g_mission_elite_regiments
+				mission_completed = mr_greece_speciality_1
+			}
 		}
 		allow = {
 			custom_trigger_tooltip = {

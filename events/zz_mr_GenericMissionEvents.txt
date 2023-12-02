@@ -1459,7 +1459,7 @@ country_event = { #elite unit menu
 	id = generic_mission_events.50
 	title = generic_mission_events.50.t
 	desc = generic_mission_events.50.d
-	picture = MYSTIC_IN_PRAYER_eventPicture
+	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes #triggered by decision elite_unit_menu_gme
 	
@@ -1559,6 +1559,23 @@ country_event = { #elite unit menu
 			can_have_mountaineers = yes
 		}
 		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_mountaineer BRANCH = Upath }
+	}
+	option = { #Not enough XP for unique trait ( varangians )
+		name = generic_mission_events.50.s2
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchUpath_base_cost } }
+			can_have_varangians = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Upath }
+	}
+	option = { #Enough XP for unique trait ( varangians)
+		name = generic_mission_events.50.s2
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchUpath_base_cost }
+			can_have_varangians = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_varangians BRANCH = Upath }
 	}
 ########################
 ###
