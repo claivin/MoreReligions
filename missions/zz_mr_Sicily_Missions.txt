@@ -1285,7 +1285,7 @@ mr_sicily_missions_fourth = {
 			}
 			estate_influence = {
 				estate = estate_nobles
-				influence = 80
+				loyalty = 65
 			}
 		}
 		effect = {
@@ -1601,7 +1601,11 @@ mr_sicily_missions_fifth = {
 		effect = {
 			125 = {
 				add_center_of_trade_level = 1
-				add_building = mrb_winery
+				add_building_construction = {
+					building = mrb_winery
+					speed = 0.5
+  					cost = 0
+				} 
 				add_province_modifier = {
 					name = palazzo_dei_normanni
 					duration = -1
