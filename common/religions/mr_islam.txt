@@ -1677,7 +1677,7 @@ muslim = {
 		icon = 70
 		country = {
 			defensiveness = 0.10
-			manpower_in_own_culture_provinces = 0.20
+			manpower_in_own_culture_provinces = 0.15
 		}
 		country_as_secondary = {
 			defensiveness = 0.10
@@ -1709,7 +1709,7 @@ muslim = {
 			
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
-		authority = yes		
+		uses_piety = yes				# Uses piety mechanics
 	}
 	
 	mr_tayyibi = {
@@ -1797,11 +1797,11 @@ muslim = {
 		color = { 97 185 225	 }
 		icon = 74
 		country = {
-			global_heretic_missionary_strength = 0.03
+			global_heretic_missionary_strength = 0.02
 			manpower_in_true_faith_provinces = 0.15 
 		}
 		country_as_secondary = {
-			global_heretic_missionary_strength = 0.03
+			global_heretic_missionary_strength = 0.02
 			manpower_in_true_faith_provinces = 0.15 
 		}
 		province = {
@@ -1818,7 +1818,7 @@ muslim = {
 		color = { 229 57 57 }
 		icon = 67
 		country = {
-			monthly_piety = 0.1
+			global_missionary_strength = 0.005
 			shock_damage = 0.05
 		}
 		country_as_secondary = {

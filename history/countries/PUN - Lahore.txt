@@ -1,9 +1,35 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = indian_sultanate_reform
 technology_group = indian
 primary_culture = panjabi
 religion = mr_nizari
+religious_school = ismaili_school
 capital = 507	# Lahore
 
-#Lodis
+#Khwarezmians of Lahore
+1437.1.1 = {
+	monarch = {
+		name = "Uzlag-Shah"
+		dynasty = "Anushtegin"
+		birth_date = 1410.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 1
+		clear_scripted_personalities = yes
+		add_ruler_personality = tolerant_personality
+		add_ruler_personality = malevolent_personality
+		culture = khorasani
+	}
+	heir = {
+		name = "Jalal ad-Din II"
+		dynasty = "Anushtegin"
+		birth_date = 1435.1.1
+		death_date = 1480.1.1
+		ADM = 5
+		DIP = 3
+		MIL = 6
+		claim = 95
+		culture = khorasani
+	}
+}
 

@@ -13,7 +13,7 @@ base_manpower = 4
 is_city = yes
 fort_15th = yes
 add_core = SND
-
+add_core = PUN
 
 
 1444.11.12 = { trade_goods = unknown }

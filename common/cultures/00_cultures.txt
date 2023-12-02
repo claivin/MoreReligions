@@ -4715,6 +4715,39 @@ iranian	= {
 			Bavandid Eshaqvand
 		}
 	}
+	maghul = {
+		primary = ILK
+		male_names = { 
+			Abaqa Ahmad "Ahmad Tegüder" Alafrang Ali Anushirwan Arghun Arpa 
+			Baydu Bahadur Buqa
+			Choban
+			Gaykhatu Ghazan  
+			Irinjin
+			Jahan "Jahan Temür" 
+			Mahmud "Mahmud Ghazan" "Muhammad Khodabande" Musa Muhammad 
+			Nawruz
+			Öljaitü 
+			Qutlughshah
+			Sulayman 
+			Temür "Togha Temür" Togha Tegüder 
+			Yusuf
+		}
+		female_names = {
+			Aiyurug 
+			Buluqhan 
+			Dondi Doquz Dunya Dilshad
+			Eshil Eltuzmish 
+			Günjishkab Guyuk 
+			Jamai 
+			Karamün Khutulun Kököchin 
+			Manggugan Mertei
+			Öljei 
+			Qongtai Qutui Qutlugh
+			"Sati Beg" Soyurghatmish "Safwat al-Din" Sarqadaq
+			Taghai Terjughan Toghanchuq Todai
+			Yesunchin Yedi "Yedi Kurtka"
+		}
+	}
 	dynasty_names = {
 		Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
 		Zaman Ustajlu Tekkelu Jaberi Khuzani Kujuji Ordubadi Khalifeh Karaki

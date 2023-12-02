@@ -2,7 +2,7 @@
 
 owner = ILK
 controller = ILK
-culture = azerbaijani
+culture = maghul
 religion = sunni
 capital = "Tabriz"
 trade_goods = silk
