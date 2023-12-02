@@ -1,0 +1,6 @@
+ROOT = {
+	set_variable = {
+		which = elite_unit_xp
+		value = 200
+	}
+}

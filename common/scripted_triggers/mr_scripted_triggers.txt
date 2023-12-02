@@ -136,6 +136,10 @@ can_have_mountaineers = {
 	}
 }
 
+can_have_varangians = {
+	mission_completed = mr_greece_speciality_1
+}
+
 is_levantine_crusader_state = {
 	# Crusaders = Antioch, Cyprus, Edessa, Lebanon, Tripoli
 	# Also keep it valid for Jerusalem

@@ -707,7 +707,7 @@ mr_greece_unity_6_title: "The Rebirth of Rhomania"
 mr_greece_unity_7_title: "Rebuild the Arsenal"
 mr_greece_unity_8_title: "Reclaiming the Aegean"
 mr_greece_unity_9_title: "A New Naval Theorem"
-
+mr_greece_speciality_1_title: "Retrain the Guard"
 
 #Thracia
 mr_thracia_first_title: "Fortify Istinople"
@@ -809,6 +809,7 @@ if_war_starts_kocaeli: "\nIf we declare our independence war in the next 10 year
 gain_cores_on_THR: "Gain cores on §Y[5337.GetName]§!, §Y[149.GetName]§!, and §Y[4779.GetName]§!"
 have_greek_claims: "Have two claims on any provinces in the §YMacedonia§! Area, §YThrace§! Area, §YNorthern Greece§! Area, and the §YMorea§! Area."
 metropolitans_byz: "\n§YConsecrating a Metropolitan§! will now grant §G-5%§! §YLocal Development Cost§!."
+retrain_the_varangians: "This will unlock the §YVarangian Guard§! Specialization for §PElite Units§!"
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -842,6 +843,7 @@ spy_networks_ATH: "Athenian Spy Networks"
 smarty_pants_hehe: "Athenian Genius"
 basileus_reborn: "The Basileus Reborn"
 byz_province_build: "Consecrated Patriarch"
+elite_varangians: "Elite Varangians"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"
