@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = iqta
+government = tribal
+add_government_reform = tribal_federation
 primary_culture = moroccan
 religion = ibadi
 technology_group = muslim
@@ -7,12 +7,10 @@ capital = 344
 fixed_capital = 343 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 
-# Hintata Emirs
-
 1444.1.1 = {
 	monarch = {
-		name = "Muhammad"
-		dynasty = "Hintata"
+		name = "Ibrahim"
+		dynasty = "Barghawata"
 		adm = 2
 		dip = 3
 		mil = 3
@@ -21,9 +19,8 @@ religious_school = maliki_school
 
 1444.1.1 = {
 	heir = {
-		name = "Ali"
-		monarch_name = "Ali"
-		dynasty = "Hintata"
+		name = "Ismail"
+		dynasty = "Barghawata"
 		birth_date = 1440.1.1
 		death_date = 1472.1.1
 		claim = 95

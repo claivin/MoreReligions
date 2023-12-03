@@ -1,7 +1,19 @@
-government = monarchy
-add_government_reform = iqta
+government = republic
+add_government_reform = oligarchy_reform
 primary_culture = assyrian
 religion = coptic
 technology_group = muslim
 capital = 4295	# Damascus
-religious_school = shafii_school
+government_rank = 1
+
+1444.1.1 = {
+	monarch = {
+		name = "Shahdost"
+		dynasty = "Salamas"
+		birth_date = 1410.1.1
+		death_date = 1450.1.1
+		ADM = 2
+		DIP = 5
+		MIL = 2
+	}
+}

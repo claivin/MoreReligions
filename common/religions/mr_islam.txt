@@ -114,7 +114,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_zahiri"
 
-			governing_capacity_modifier = 0.1 
+			reform_progress_growth = 0.1
 		}
 		hanbali_school = {
 			potential_invite_scholar = {
@@ -1857,7 +1857,7 @@ muslim = {
 		color = { 97 20 180 }
 		icon = 61
 		country = {
-			stability_cost_modifier = 0.1
+			stability_cost_modifier = -0.1
 			tolerance_heretic = 2 
 		}
 		country_as_secondary = {

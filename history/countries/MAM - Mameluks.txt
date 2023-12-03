@@ -8,7 +8,7 @@ historical_rival = TUR
 historical_rival = TIM
 capital = 382 # Cairo
 add_army_professionalism = 0.1
-religious_school = shafii_school
+religious_school = hanafi_school
 
 change_estate_land_share = {
 	estate = estate_church

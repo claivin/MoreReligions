@@ -10,20 +10,8 @@ religious_school = hanbali_school
 
 1399.1.1 = {
 	monarch = {
-		name = "Watban"
-		dynasty = "Sa'ud"
-		adm = 3
-		dip = 1
-		mil = 2
-	}
-	add_piety = 0.1
-}
-
-1399.1.1 = {
-	heir = {
-		name = "Mani"
-		monarch_name = "Mani"
-		dynasty = "Sa'ud"
+		name = "Mani' ibn Rabi'a al-Muraydi"
+		dynasty = "Banu Hanifa"
 		birth_date = 1399.1.1
 		death_date = 1475.1.1
 		claim = 95
@@ -31,23 +19,10 @@ religious_school = hanbali_school
 		dip = 2
 		mil = 2
 	}
-}
-
-1446.1.1 = {
-	monarch = {
-		name = "Mani"
-		dynasty = "Sa'ud"
-		dip = 2
-		adm = 2
-		mil = 2
-	}
-}
-
-1446.1.1 = {
 	heir = {
 		name = "Rabi'a"
 		monarch_name = "Rabi'a I"
-		dynasty = "Sa'ud"
+		dynasty = "Banu Hanifa"
 		birth_date = 1446.1.1
 		death_date = 1500.1.1
 		claim = 95

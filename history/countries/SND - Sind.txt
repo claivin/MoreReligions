@@ -31,6 +31,7 @@ religious_school = shafii_school
 		DIP = 2
 		MIL = 6
 		female = no
+		clear_scripted_personalities = yes
 		add_queen_personality = conqueror_personality 
 		culture = khorasani
 	}

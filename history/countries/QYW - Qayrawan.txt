@@ -5,4 +5,27 @@ religion = sunni
 technology_group = muslim
 capital = 4566
 religious_school = maliki_school
+government_rank = 1
 
+1435.9.18 = {
+	monarch = {
+		name = "Abu 'Amr Uthman"
+		dynasty = "Al-Hafsi"
+		adm = 1
+		dip = 5
+		mil = 5
+	}
+}
+
+1435.9.18 = {
+	heir = {
+		name = "Abu Zakariya Yahya"
+		dynasty = "Al-Hafsi"
+		birth_date = 1435.9.18
+		death_date = 1489.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
