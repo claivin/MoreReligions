@@ -14,7 +14,7 @@ government_rank = 2
 		dynasty = "Banu Abbas"
 		birth_date = 1390.1.1
 		death_date = 1450.1.1
-		ADM = 6
+		ADM = 5
 		DIP = 2
 		MIL = 2
 	}

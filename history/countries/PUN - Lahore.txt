@@ -27,7 +27,7 @@ capital = 507	# Lahore
 		death_date = 1480.1.1
 		ADM = 5
 		DIP = 3
-		MIL = 6
+		MIL = 5
 		claim = 95
 		culture = khorasani
 	}
