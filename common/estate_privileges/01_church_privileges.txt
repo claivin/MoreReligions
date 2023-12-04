@@ -820,6 +820,9 @@ estate_church_enforced_one_faith = {
 		any_owned_province = {
 			NOT = { religion = root }
 		}
+		NOT = {
+			mission_completed = mr_greek_catholic_fourth
+		}
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }

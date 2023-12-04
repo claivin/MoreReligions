@@ -413,4 +413,11 @@ MrGreekEvents.7.t: "The Phoenix Rises"
 MrGreekEvents.7.d: "We have united Greece under the imperial banner. While the other states might have forgotten their heritage, their roots as Rhomanoi, we have not. We remain as we always were - sons and daughters of Rome itself. While once a vassal to the Latin Empire, and had weathered centuries of subjugation and humiliation, now however, an unexpected twist of fate now presents itself. As an unlikely ally, the Ottoman Empire, assists us with our conquest of Roman lands, many begin to whisper in the streets that the Emperor is the next Justinian, a man willing to conquer and reclaim what was rightfully his. The grandeur of the Byzantine Empire, once thought lost, has begun to flicker like a dormant flame; waiting to be rekindled."
 MrGreekEvents.7.a: "Ave Imperator!"
 
+MrGreekEvents.9.t: "The Goods of Istinople"
+MrGreekEvents.9.d: "With the rebirth of the city into a new golden age, our industry has once more begun to flourish. Across the marketplaces and the merchants quarters, goods and services are bought and sold in large quantities for all to partake in. We have been hoping to invest our crown's considerable wealth into one of these industries, but we cannot decide which."
+MrGreekEvents.9.a: "We should rebuild the Glass trade."
+MrGreekEvenets.9.b: "We must invest in our Textile production."
+MrGreekEvenets.9.c: "We shall produce the finest Jewels in all of Europe."
+MrGreekEvenets.9.e: "We shall light the forges and craft new Weapons."
+
 estate_sarraceni: "Sarraceni"

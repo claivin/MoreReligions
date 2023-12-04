@@ -421,9 +421,7 @@ mr_sicily_missions_religion_d = {
 			hidden_effect = {
 				random_owned_province = {
 					limit = {
-						can_have_center_of_reformation_trigger = {
-							RELIGION = mr_fraticelli
-						}
+						religion = mr_fraticelli
 					}
 					add_reform_center = mr_fraticelli
 				}
@@ -451,7 +449,7 @@ mr_sicily_missions_second = {
 		required_missions = { }
 		position = 1
 		trigger = {
-			num_of_generals = 2 
+			num_of_generals = 1
 			manpower_percentage = 0.85
 		}
 		effect = {

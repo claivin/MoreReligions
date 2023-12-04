@@ -388,3 +388,14 @@ own_all_of_greece_trigger = {
 		}
 	}
 }
+is_in_greece_area_trigger = {
+	OR = {
+		area = thrace_area
+		area = northern_greece_area
+		area = morea_area
+		province_id = 4702
+		province_id = 1853
+		province_id = 148
+		area = aegean_archipelago_area
+	}
+}

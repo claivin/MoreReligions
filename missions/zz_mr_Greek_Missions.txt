@@ -1356,6 +1356,109 @@ mr_greek_missions_second_byz = {
 		}
 	}
 }
+mr_greek_missions_first_build = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+	}
+	mr_greek_build_fifth = {
+		icon = mission_establish_the_prikazy
+		position = 5
+		required_missions = {
+			mr_greek_build_first
+		}
+		provinces_to_highlight = {
+		}
+		trigger = {
+			monthly_income = 15
+			NOT = {
+				num_of_loans = 1
+			}
+			employed_advisor = {
+				category = ADM 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = treasurer
+				skill = 2
+				culture = ROOT
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 15
+			}
+			capital_scope = {
+				add_prosperity = 50
+			}
+		}
+	}
+	mr_greek_build_sixth ={
+		icon = mission_pol_breadbasket_europe
+		position = 6
+		required_missions = {
+			mr_greek_build_fifth
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			trade_goods = olives
+			NOT = {
+				has_production_building_trigger = yes
+				base_production = 8
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = olives
+				has_production_building_trigger = yes
+				base_production = 5
+				value = 5
+			}
+		}
+		effect = {
+			custom_tooltip = every_olive_with_prod_building
+			tooltip = {
+				add_province_modifier = {
+					name = olive_oil_production
+					duration = -1
+				}
+			}
+			custom_tooltip = the_oil_shipments_begin
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						trade_goods = olives
+						has_production_building_trigger = yes
+						base_production = 5
+					}
+					add_province_modifier = {
+						name = olive_oil_production
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
 mr_greek_missions_second = {
 	slot = 2
 	generic = no
@@ -1636,7 +1739,169 @@ mr_greek_missions_second = {
 			}
 		}
 	}
+
+	mr_greek_build_first = {
+		icon = mission_early_game_buildings
+		position = 4
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			is_in_greece_area_trigger = yes
+			NOT = {
+				has_trade_building_trigger = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_trade_building_trigger = yes
+				is_in_greece_area_trigger = yes
+			}
+			151 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_production = 3
+			}
+		}
+		effect = {
+			151 = {
+				center_of_trade = 1
+			}
+			custom_tooltip = every_owned_greek_gets_trade_buff
+			tooltip = {
+				add_province_modifier = {
+					name = greek_trade_buff
+					duration = 5475
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_trade_building_trigger = yes
+						is_in_greece_area_trigger = yes
+					}
+					add_province_modifier = {
+						name = greek_trade_buff
+						duration = 5475
+					}
+				}
+			}
+		}
+	}
+	mr_greek_build_second = {
+		icon = mission_expand_great_wall #mission_hagia_sophia
+		position = 5
+		required_missions = {
+			mr_greek_build_first
+		}
+		provinces_to_highlight = {
+			province_id = 151
+			NOT = {
+				development = 10
+				fort_level = 2
+			}
+		}
+		trigger = {
+			151 = {
+				development = 10
+				fort_level = 2
+			}
+		}
+		effect = {
+			151 = {
+				add_province_modifier = {
+					name = cst_level_1
+					duration = -1
+				}
+			}
+			custom_tooltip = unlock_return_to_CST_decision
+		}
+	}
+
+	mr_greek_build_third = {
+		icon = mission_pol_revival_krakow
+		position = 6
+		required_missions = {
+			mr_greek_build_second
+		}
+		provinces_to_highlight = {
+			province_id = 151
+			NOT = {
+				development = 18
+				has_production_building_trigger = yes
+				has_manufactory_trigger = yes
+			}
+		}
+		trigger = {
+			151 = {
+				development = 18
+				has_production_building_trigger = yes
+				has_manufactory_trigger = yes
+			}
+		}
+		effect = {
+			custom_tooltip = replace_cst_level
+			151 = {
+				add_province_modifier = {
+					name = cst_level_2
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				remove_province_modifier = cst_level_1
+			}
+			country_event = {
+				id = MrGreekEvents.9
+			}
+			custom_tooltip = event_insight_greek.9
+		}
+	}
+	mr_greek_build_fourth = {
+		icon = mission_hagia_sophia
+		required_missions = {
+			mr_greek_build_third
+		}
+		position = 8
+		provinces_to_highlight = {
+			province_id = 151
+			NOT = {
+				development = 25
+				has_courthouse_building_trigger = yes
+				has_great_project = {
+					type = hagia_sophia
+					tier = 2
+				}
+			}
+		}
+		trigger = {
+			151 = {
+				development = 25
+				has_courthouse_building_trigger = yes
+				has_great_project = {
+					type = hagia_sophia
+					tier = 2
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = replace_cst_level
+			151 = {
+				add_province_modifier = {
+					name = cst_level_3
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				remove_province_modifier = cst_level_2
+			}
+			add_ruler_modifier = {
+				name = heirs_of_rome_GRE
+				duration = -1
+			}
+		}
+	}
 }
+
 mr_greek_missions_third = {
 	slot = 3
 	generic = no
@@ -1953,8 +2218,191 @@ mr_greek_missions_third = {
 				}
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = " "
 			country_event = {
 				id = MrGreekEvents.1
+			}
+		}
+	}
+	
+}
+mr_latin_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+		religion = catholic
+	}
+	mr_latin_first = {
+		icon = geo_break_the_crescent_2
+		position = 5
+		required_missions = {
+			mr_greece_unity_6
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = hudavendigar_area
+				area = aydin_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			hudavendigar_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+			aydin_area = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
+			}
+		}
+		effect = {
+			318 = {
+				add_province_modifier = {
+					name = latin_aegean_control
+					duration = -1
+				}
+			}
+			define_advisor = {
+				type = inquisitor
+				skill = 3
+				religion = ROOT
+				discount = yes
+			}
+			germiyan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ankara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_latin_second = {
+		icon = mission_janissaries
+		position = 7
+		required_missions = {
+			mr_latin_first
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = ankara_area
+				area = germiyan_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ankara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			germiyan_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					is_rival = RUM
+				}
+				custom_tooltip = mr_latin_boost_against_rum_yes
+				tooltip = {
+					add_country_modifier = {
+						name = mr_latin_boost
+						duration = 3650
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						is_rival = RUM
+					}
+				}
+				custom_tooltip = mr_latin_boost_against_rum_no
+				tooltip = {
+					add_country_modifier = {
+						name = mr_latin_boost
+						duration = 3650
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_rival = RUM
+					}
+				}
+				custom_tooltip = mr_latin_boost_against_all_yes
+				tooltip = {
+					add_country_modifier = {
+						name = mr_latin_expansion
+						duration = 5475
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_rival = RUM
+				}
+				custom_tooltip = mr_latin_boost_against_all_no
+				tooltip = {
+					add_country_modifier = {
+						name = mr_latin_expansion
+						duration = 5475
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_rival = RUM
+					}
+					set_country_flag = mr_latin_boost
+				}
+				else = {
+					add_country_modifier = {
+						name = mr_latin_expansion
+						duration = 5475
+					}
+				}
+			}
+			anatolia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -2100,6 +2548,119 @@ mr_greek_missions_fourth = {
 		}
 	}
 }
+mr_greek_catholic_fifth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+		religion = catholic
+	}
+	mr_greek_catholic_fourth = {
+		icon = mission_hands_praying
+		position = 4
+		required_missions = {
+			mr_greek_catholic_first
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				religion = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_10_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 10 }
+			}
+			has_estate_privilege = estate_church_enforced_one_faith
+		}
+		effect = {
+			custom_tooltip = enhance_unity_of_faith
+		}
+	}
+}
+mr_latin_missions_fourth = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+		religion = catholic
+	}
+	mr_latin_third = {
+		icon = spread_piety
+		required_missions = {
+			mr_latin_first
+			mr_greek_catholic_fourth
+		}
+		position = 6
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = {
+				religion = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				religion = ROOT
+				region = anatolia_region
+				value = 20
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 70
+			}
+			papal_influence = 50
+		}
+		effect = {
+			custom_tooltip = enable_knights_hospitallier_holy_order
+			custom_tooltip = " "
+			custom_tooltip = spawn_center_of_reformation_catholic
+			random_owned_province = {
+				limit = {
+					religion = catholic
+				}
+				add_reform_center = catholic
+			}
+		}
+	}
+}
 mr_greek_missions_fifth = {
 	slot = 5
 	generic = no
@@ -2221,6 +2782,162 @@ mr_greek_missions_fifth = {
 						religion = orthodox
 					}
 					set_country_flag = can_accept_tactica
+				}
+			}
+		}
+	}
+}
+mr_greek_catholic_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+		religion = catholic
+	}
+	mr_greek_catholic_first = {
+		icon = chivalry_is_not_dead
+		position = 3
+		provinces_to_highlight = {
+			capital_scope = {
+				NOT = {
+					religion = catholic
+					has_tax_building_trigger = yes
+				}
+			}
+		}
+		trigger = {
+			capital_scope = {
+				religion = catholic
+			}
+			has_tax_building_trigger = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = secure_papal_legate
+				duration = 5475
+			}
+		}
+	}
+
+	mr_greek_catholic_second = {
+		icon = catholic_volunteers
+		position = 5
+		required_missions = {
+			mr_greek_catholic_first
+		}
+		trigger = {
+			calc_true_if = {
+				all_country = {
+					religion = catholic
+					reverse_has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				amount = 2
+			}
+			PAP = {
+				reverse_has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					capital_scope = {
+						NOT = {
+							has_cardinal = yes
+						}
+					}
+				}
+				capital_scope = {
+					add_cardinal = yes	
+				}
+			}
+			else = {
+				add_adm_power = 50
+			}
+			custom_tooltip = " "
+			custom_tooltip = call_for_the_crusades_diplo_action
+		}
+	}
+	mr_greek_catholic_third = {
+		icon = crush_heretic_strongholds
+		position = 6
+		required_missions = {
+			mr_greek_catholic_second
+		}
+		provinces_to_highlight = {
+			owned_by = PAP
+			is_capital = yes
+		}
+		trigger = {
+			OR = {
+				AND = {
+					is_papal_controller = yes
+					PAP = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 120
+						}
+					}
+				}
+				PAP = {
+					reverse_has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 65
+			}
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = papal_cost_modifier
+				duration = -1
+			}
+			if = {
+				limit ={
+					is_papal_controller = yes
+				}
+				custom_tooltip = YES_gain_triple_manpower_for_30_years
+				tooltip = {
+					add_country_modifier = {
+						name = triple_manpower_THR
+						duration = 10950
+					}
+				}
+			}
+			else = {
+				custom_tooltip = NO_gain_triple_manpower_for_30_years
+				tooltip = {
+					add_country_modifier = {
+						name = triple_manpower_THR
+						duration = 10950
+					}
 				}
 			}
 		}

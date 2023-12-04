@@ -834,3 +834,44 @@ estate_burghers_crusaders_grant_italian_quarter = {
 		}
 	}
 }
+estate_enhanced_church_enforced_one_faith = {
+	icon = privilege_recruit_inouisitor
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	is_valid = {
+		any_owned_province = {
+			NOT = { religion = root }
+		}
+		mission_completed = mr_greek_catholic_fourth
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_burghers_enforced_interfaith_dialogue }
+		NOT = { has_estate_privilege = estate_dhimmi_tolerance }
+		NOT = { has_estate_privilege = estate_dhimmi_guarantee_of_traditions }
+	}
+	penalties = {
+		tolerance_heathen = -2
+		tolerance_heretic = -2
+	}
+	benefits = {
+		global_missionary_strength = 0.02
+		tolerance_own = 1
+		establish_order_cost = -0.25
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		remove_estate_privilege = estate_church_enforced_one_faith
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 0
+	}
+}

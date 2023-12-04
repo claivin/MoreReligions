@@ -807,13 +807,14 @@ on_raze = {
 on_monthly_pulse = {
 	events = {
 		MrGreekEvents.5 #Will only fire once, under the most bat shit circumstances.
+		MrGreekEvents.8 #Hidden event for Missions
 	}
 }
 on_consecrate_patriarch = {
 	if = {
 		limit = {
 			owner = {
-				mission_completed = mr_CST_fourth
+				mission_completed = mr_CST_second
 			}
 		}
 		every_province_in_state = {
@@ -865,6 +866,22 @@ on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
 	}
 	if = {
 		limit = {
+			mission_completed = mr_greek_catholic_second 
+		}
+		add_manpower = 0.5
+	}
+	if = {
+		limit = {
+			FROM = {
+				mission_completed = mr_greek_catholic_second
+			}
+		}
+		FROM = {
+			add_manpower = 0.5
+		}
+	}
+	if = {
+		limit = {
 			has_government_power = { mechanic_type = crusader_mechanic power_type = crusader_adm_power }
 			FROM = {
 				culture_group = germanic
@@ -875,6 +892,27 @@ on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
 		add_country_modifier = {
 			name = second_level_adm_crusade
 			duration = -1
+		}
+	}
+}
+on_dependency_lost = {
+	FROM = {
+		if = {
+			limit = { has_country_modifier = grain_olives_modifier }
+			remove_country_modifier = grain_olives_modifier
+		}
+	}
+}
+on_alliance_broken = { #ROOT - Original alliance creator, FROM - Alliance accepter
+	on_alliance_broken_effect = yes
+	if = {
+		limit = { has_country_modifier = grain_olives_modifier }
+		remove_country_modifier = grain_olives_modifier
+	}
+	FROM = { 
+		if = {
+			limit = { has_country_modifier = grain_olives_modifier }
+			remove_country_modifier = grain_olives_modifier
 		}
 	}
 }
