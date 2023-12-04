@@ -1,6 +1,6 @@
 vassal = {
 	first = NPL
-	second = PRN
+	second = PNI
 	start_date = 1444.1.1
 	end_date = 1502.1.1
 }

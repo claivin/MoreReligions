@@ -708,6 +708,12 @@ mr_greece_unity_7_title: "Rebuild the Arsenal"
 mr_greece_unity_8_title: "Reclaiming the Aegean"
 mr_greece_unity_9_title: "A New Naval Theorem"
 mr_greece_speciality_1_title: "Retrain the Guard"
+mr_greek_build_first_title: "Connect the Cities"
+mr_greek_build_second_title: "Rebuild the Lost Citadel"
+mr_greek_build_third_title: "Invent in the Market"
+mr_greek_build_fourth_title: "The World's Desire"
+mr_greek_build_fifth_title: "Manage State Finances"
+mr_greek_build_sixth_title: "Expand Farm Production"
 
 #Thracia
 mr_thracia_first_title: "Fortify Istinople"
@@ -751,6 +757,18 @@ mr_CST_third_title: "Pierce into the Latins"
 mr_CST_fourth_title: "Align the Patriarchs"
 mr_CST_fifth_title: "The Byzantine Resurgance"
 
+#Latins
+mr_latin_first_title: "Secure the Aegean"
+mr_latin_second_title: "Challenge the Rum Sultans"
+mr_latin_third_title: "Latinize Anatolia"
+
+#Catholics
+mr_greek_catholic_first_title: "A Home for the Legate"
+mr_greek_catholic_second_title: "Call on the Faithful"
+mr_greek_catholic_third_title: "An Emissary of the Papacy"
+mr_greek_catholic_fourth_title: "Spread the True Faith"
+
+
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
 if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -778,6 +796,7 @@ tactica_doctrine_yes: "\n£yes£If we complete this mission while being §YOrtho
 tactica_doctrine_no: "\n£no£If we complete this mission while being §YOrthodox§!, we will gain access to the §YTactica§! Naval Doctrine."
 defensiveness_50: "Have at least §Y50%§! Defensiveness in the Province"
 event_insight_greek.2: "\n§GEvent Insight:§!\nThis event will detail our wrath upon the city of Tirnovo, from where a brutal and destructive raid took place."
+event_insight_greek.9: "§GEvent Insight:§!\nThis event will allow us to choose the Trade Good for the city of [151.GetName]."
 be_in_war_with_4704_controller: "Be in a §YWar§! with the Owner of §Y[4704.GetName]§! and Control the Province."
 vassalize_trade_league: "We will §YVassalize§! all countries within our §YTrade League§! with §Y125§! Opinion of us.\n"
 friend_trade_league: "All §YTreade League Members§! with §Y75§! opinion of us will become §YHistorical Friends§!.\n"
@@ -810,6 +829,23 @@ gain_cores_on_THR: "Gain cores on §Y[5337.GetName]§!, §Y[149.GetName]§!, and
 have_greek_claims: "Have two claims on any provinces in the §YMacedonia§! Area, §YThrace§! Area, §YNorthern Greece§! Area, and the §YMorea§! Area."
 metropolitans_byz: "\n§YConsecrating a Metropolitan§! will now grant §G-5%§! §YLocal Development Cost§!."
 retrain_the_varangians: "This will unlock the §YVarangian Guard§! Specialization for §PElite Units§!"
+mr_latin_boost_against_rum_yes: "£yes£If we complete this mission while @RUM §YRum§! is our Rival, we will gain the following during our §Ynext war§! with §YRum§!:"
+mr_latin_boost_against_rum_no: "£no£If we complete this mission while @RUM §YRum§! is our Rival, we will gain the following during our §Ynext war§! with §YRum§!:"
+mr_latin_boost_against_all_yes: "£yes£If we complete this mission while @RUM §YRum§! is NOT our Rival, we will gian the following:"
+mr_latin_boost_against_all_no: "£no£If we complete this mission while @RUM §YRum§! is NOT our Rival, we will gian the following:"
+enable_knights_hospitallier_holy_order: "This will enable the §YKnights Hospitaller§! Holy Order."
+mr_catholic_center_of_reformation: "Center of Latinization"
+spawn_center_of_reformation_catholic: "This will spawn a §YCatholic§! Center of Reformation in one of our §YCatholic§! provinces in the §YAnatolia§! Region."
+call_for_the_crusades_diplo_action: "Every time we create a §YRoyal Marriage§! between another §YCatholic Country§!, we will gain §Y500§! £icon_manpower£	Manpower." 
+enhance_unity_of_faith: "This will enhance the §YEnforced Unity of Faith§! Clergy Estate Privilege by §G+1%§! Missionary Strength and §G-25%§! Establish Holy Order Cost."
+YES_gain_triple_manpower_for_30_years: "£yes£If we complete this mission while being the §YPapal Controller§!, we will gain the following:"
+NO_gain_triple_manpower_for_30_years: "£no£If we complete this mission while being the §YPapal Controller§!, we will gain the following:"
+every_owned_greek_gets_trade_buff: "Every province in §YGreece§! with a §YTrade Building§! will recieve the following:"
+unlock_return_to_CST_decision: "This will unlock the decision to move our capital to Constantinople."
+replace_cst_level: "We will replace the previous §YCity of the World's Desire§! level with the following:"
+every_olive_with_prod_building: "Every owned province producing §YOlives§! that has a §YProduction§! building and §Y5§! Base Production will recieve the following:"
+the_oil_shipments_begin: "This will enable the diplomatic action to §YExport Olive Oil§!."
+
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -844,6 +880,18 @@ smarty_pants_hehe: "Athenian Genius"
 basileus_reborn: "The Basileus Reborn"
 byz_province_build: "Consecrated Patriarch"
 elite_varangians: "Elite Varangians"
+mr_latin_boost: "War Against the Seljuks"
+mr_latin_expansion: "Dominant Expansion"
+latin_aegean_control: "Aegean Secured"
+secure_papal_legate: "Secure Papal Legate"
+papal_cost_modifier: "Papal Legitimacy"
+triple_manpower_THR: "Long Arm of Catholicism"
+greek_trade_buff: "Interconnected Greek Cities"
+cst_level_1: "City of the World's Desire Level 1"
+cst_level_2: "City of the World's Desire Level 2"
+cst_level_3: "City of the World's Desire Level 3"
+heirs_of_rome_GRE: "Justinian's Heir"
+olive_oil_production: "Olive Oil Production"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"
@@ -855,6 +903,27 @@ HUN_war_modifier: "Riders of Kan"
 black_mercenaries: "Black Mercenary Army"
 merc_ghazi: "Ghazi Warriors"
 own_all_of_greece_trigger_tt: "Own every mainland and island province of Greece"
+knights_hospitaller: "Knights Hospitaller"
+estate_enhanced_church_enforced_one_faith: "Enforced Unity of Faith"
+estate_enhanced_church_enforced_one_faith_desc: "It is self-evident that [Root.GetReligionNoun] is the one true faith. There shall be no compromising our beliefs for those who heed the words of heretics and heathens!"
+is_in_greece_area_trigger: "§YProvince(s)§! is in the §YGreece§! Region"
+
+#Diplomatic Actions for the Olive Exports
+ greek_export_olive_oil_title:0 "Export Olive Oil"
+ greek_export_olive_oil_desc: "Do you wish to export Olive Oil to §Y[From.GetName]§!? This will cost us 50 £dip£ and we will gain §G+1§! Base Production and §G+1§! Base Tax in a random owned Olives province. \n\n[From.GetName] gains '§YOlive Oil Exports§!' until the death of their ruler or cutting our diplomatic ties, giving the following effects:\nDiplomatic Reputation: §G+1§!\nTolerance of the True Faith: §G+1§!\nMonthly Splendor: §G+0.5§!"
+ REQUIRES_ALLIANCE_OR_SUBJECT_TT:1 "§R[From.GetName] must either be an ally or a subject§!"
+ is_already_trading_olives_tt:0 "We are already trading Olive Oil with [From.GetName]"
+ must_be_within_distance_tt:0 "[From.GetName]'s markets are too far from our provinces"
+ GRE_no_more_than_5_trades_tt:0 "We can only maintain 8 Olive export contracts at a time"
+ GRE_no_more_than_8_trades_tt:0 "We can only maintain 5 Olive export contracts at a time"
+ engaged_in_olive_trade_modifier:0 "Olive Oil Imports"
+ greek_export_olive_oil_tooltip:0 "We will export Olive Oil to them, which will solidify diplomatic relations and improve both our states."
+ grain_olives_modifier: "Olive Oil Exports"
+ grain_olives_modifier_desc: "The Olive Oil trade is not only useful for relations and culinary practices, it also is used for spiritual and religious affairs."
+ export_olives_alert_tooltip: "Offer to Export Olive Oil"
+ greek_export_olive_oil_dialog: "Would you like to receive Olive Oil exports from [From.GetName]?"
+
+
 
 #Baghdad Missions - TO BE COMPLETED!!
 #Titles

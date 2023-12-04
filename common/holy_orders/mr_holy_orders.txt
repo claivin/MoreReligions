@@ -46,3 +46,35 @@ white_lotus_order = {
     }
     localization = holy_order
 }
+
+knights_hospitaller = {
+    icon = GFX_holy_order_san_juan
+    trigger = {
+		mission_completed = mr_latin_third
+    }
+    cost = 50
+    cost_type = mil_power
+    color = { 0 106 167 }
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+    }
+    modifier = {
+        local_monthly_devastation = -0.15
+	    local_manpower_modifier = 0.10
+    }
+    ai_priority = {
+        factor = 1
+        modifier = {
+            factor = 1.5
+            unrest = 5
+        }
+        modifier = {
+            factor = 1.5
+            devastation = 50
+        }
+    }
+    localization = holy_order
+}

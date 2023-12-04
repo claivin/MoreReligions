@@ -360,7 +360,7 @@ CDD = "countries/Cuddalore.txt"
 TRQ = "countries/Tranqebar.txt"
 NGT = "countries/Negapatam.txt"
 KNR = "countries/Kanara.txt"
-PRN = "countries/Purnia.txt"
+PNI = "countries/Purnia.txt"
 CAA = "countries/Champaran.txt"
 
 #Arabia

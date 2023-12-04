@@ -795,6 +795,12 @@ christian = {
 			reformed
 			protestant
 		}
+		allowed_center_conversion = {
+			orthodox
+			sunni
+			shiite
+			mr_safaviyya
+		}
 		country = {
 			tolerance_own = 1
 			global_heathen_missionary_strength = 0.01
@@ -1745,6 +1751,7 @@ christian = {
 		allowed_center_conversion = {
 			catholic
 			protestant
+			mr_waldensian
 		}
 		province = {
 			local_missionary_strength = -0.01
@@ -1752,13 +1759,6 @@ christian = {
 		
 		fervor = yes
 		
-		will_get_center = { #Refered to even for initial CoR Spawn
-			any_owned_province = {
-				can_have_center_of_reformation_trigger = {
-					RELIGION = mr_fraticelli
-				}
-			}
-		}
 		on_convert = {
 			add_stability = -2
 			add_prestige = -50

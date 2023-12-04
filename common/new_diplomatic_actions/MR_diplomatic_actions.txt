@@ -93,3 +93,293 @@ mr_vassalize_tributary = {
         always = yes
 	}
 }
+greek_export_olive_oil = {
+	category = economy
+
+	require_acceptance = yes
+
+	alert_index = 63
+	alert_tooltip = export_grain_alert_tooltip
+
+	is_visible = {
+		mission_completed = mr_greek_build_sixth
+		any_owned_province = {
+			trade_goods = olives
+		}
+	}
+	is_allowed = {
+		if = {
+			limit = {
+				NOT = {
+					OR = {
+						alliance_with = FROM 
+						FROM = { is_subject_of = ROOT }
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = REQUIRES_ALLIANCE_OR_SUBJECT_TT
+				OR = {
+					alliance_with = FROM 
+					FROM = { is_subject_of = ROOT }
+				}
+			}
+		}
+		if = {
+			limit = {
+				FROM = { has_ruler_flag = trading_olives_flag }
+			}
+			custom_trigger_tooltip = {
+				tooltip = is_already_trading_olives_tt
+				FROM = { 
+					NOT = { has_ruler_flag = trading_olives_flag }
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_owned_province = {
+						province_distance = {
+							who = FROM
+							distance = 150
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = must_be_within_distance_tt
+				any_owned_province = {
+					province_distance = {
+						who = FROM
+						distance = 150
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				calc_true_if = {
+					all_country = {
+						has_ruler_flag = trading_olives_flag
+					}
+					amount = 5
+				}
+				NOT = { has_country_flag = increase_exports_to_8_flag }
+			}
+			custom_trigger_tooltip = {
+				tooltip = GRE_no_more_than_5_trades_tt
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							has_ruler_flag = trading_olives_flag
+						}
+						amount = 5s
+					}
+				}
+			}
+		}
+		else = {
+			custom_trigger_tooltip = {
+				tooltip = GRE_no_more_than_8_trades_tt
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							has_ruler_flag = trading_olives_flag
+						}
+						amount = 8
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { dip_power = 50 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = NOT_ENOUGH_RESOURCES_DIP_50
+				dip_power = 50
+			}
+		}
+	}
+	on_accept = {
+		FROM = {
+			set_ruler_flag = trading_olives_flag
+			add_ruler_modifier = {
+				name = grain_olives_modifier
+				duration = -1
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = engaged_in_olive_trade_modifier
+			}
+		}
+		add_dip_power = -50
+		random_owned_province = {
+			limit = {
+				trade_goods = olives
+			}
+			add_base_production = 1
+			add_base_tax = 1
+		}
+	}
+	on_decline = {
+		add_prestige_or_monarch_power = { amount = -10 }
+		FROM = {
+			add_country_modifier = {
+				name = just_asked_to_convert_timer
+				duration = 18250
+			}
+		}
+	}
+
+	ai_will_do = { # this is a trigger
+		NOT = {
+			FROM = {
+				has_country_modifier = just_asked_to_convert_timer
+			}
+		}
+		OR = {
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_friendly
+			}
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_loyal
+			}
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_allied
+			}
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_protective
+			}
+		}
+		NOT = {
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_domineering
+			}
+		}
+		NOT = {
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_hostile
+			}
+		}
+		NOT = {
+			ai_attitude = {
+				who = FROM
+				attitude = attitude_outraged
+			}
+		}
+		has_opinion = {
+			who = FROM
+			value = 50
+		}
+	}
+
+	ai_acceptance = {
+        add_entry = {
+            name = DIPLO_OPPINION
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			multiply_variable = {
+				which = ai_value 
+				value = 0.125
+			}
+        }
+		add_entry = {
+			name = AI_TRUST_TOWARDS_ROOT
+			export_to_variable = {
+				variable_name = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}			
+			subtract_variable = { 
+				which = ai_value
+				value = 50
+			}
+			#1 trust = +4 ai points
+			multiply_variable = {
+				which = ai_value
+				value = 0.4
+			}
+		}
+		add_entry = {
+			name = AI_DIPLOMATIC_REPUTATION
+			export_to_variable = {
+				variable_name = ai_value
+				value = trigger_value:diplomatic_reputation
+			}
+			#1 rep = 3
+			multiply_variable = {
+				which = ai_value
+				value = 3
+			}
+		}
+		add_entry = {
+			name = attitude_neutral_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_neutral } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -10 }
+		}
+		add_entry = {
+			name = attitude_rivalry_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_rivalry } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -1000 }
+		}
+		add_entry = {
+			name = attitude_hostile_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_hostile } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -1000 }
+		}
+		add_entry = {
+			name = attitude_friendly_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_friendly } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = 20 }
+		}
+		add_entry = {
+			name = attitude_threatened_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_threatened } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = 20 }
+		}
+		add_entry = {
+			name = attitude_outraged_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_outraged } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -1000 }
+		}
+		add_entry = {
+			name = attitude_domineering_DIPLO_ATTITUDE_TT
+			limit = { FROM = { ai_attitude = { who = ROOT attitude = attitude_domineering } } }
+			export_to_variable = { variable_name = ai_value value = 1 }
+			multiply_variable = { which = ai_value value = -1000 }
+		}
+		add_entry = {
+			name = DIPLO_BORDER_DISTANCE_TT
+			export_to_variable = {
+				variable_name = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			#5 units = -1
+			multiply_variable = {
+				which = ai_value
+				value = -0.2
+			}
+		}
+	}
+}

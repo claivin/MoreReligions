@@ -266,3 +266,77 @@ country_event = {
 			}
 	}
 }
+
+country_event = {
+	id = MrGreekEvents.8
+	title = MrGreekEvents.8.t
+	desc = MrGreekEvents.8.d
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+
+	trigger = {
+		has_country_flag = mr_latin_boost
+		OR = {
+			is_in_war = {
+				attackers = RUM
+			}
+			is_in_war = {
+				defenders = RUM
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		add_country_modifier = {
+			name = mr_latin_boost
+			duration = 3650
+		}
+		clr_country_flag = mr_latin_boost
+	}
+}
+country_event = {
+	id = MrGreekEvents.9
+	title = MrGreekEvents.9.t
+	desc = MrGreekEvents.9.d
+	picture = BYZ_SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = MrGreekEvents.9.a
+		151 = {
+			change_trade_goods = glass
+		}
+	}
+
+	option = {
+		name = MrGreekEvenets.9.b
+		add_adm_power = -50
+		151 = {
+			change_trade_goods = cloth
+		}
+	}
+
+	option = {
+		name = MrGreekEvenets.9.c
+		add_dip_power = -50
+		151 = {
+			add_building = mrb_jewler
+			change_trade_goods = jewelry
+		}
+	}
+
+	option = {
+		name = MrGreekEvenets.9.e
+		add_mil_power = -50
+		151 = {
+			add_building = mrb_gunsmith
+			change_trade_goods = military_supplies
+		}
+	}
+}
