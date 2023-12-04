@@ -1,9 +1,10 @@
-government = theocracy
+government = monarchy
+add_government_reform = feudal_theocracy
 primary_culture = yemeni_culture
 religion = mr_zaydi
 technology_group = muslim
 capital = 390	# Sana'a
-government_rank = 1
+government_rank = 2
 religious_school = zaidi_school
 
 
@@ -11,8 +12,8 @@ religious_school = zaidi_school
 
 1436.1.1 = {
 	monarch = {
-		name = "Al-Mutahhar"
-		dynasty = "al-Mutahhar"
+		name = "Al-Mutawakkil"
+		dynasty = "Banu Rassi"
 		adm = 3
 		dip = 1
 		mil = 4

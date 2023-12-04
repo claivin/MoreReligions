@@ -2124,6 +2124,43 @@ mr_greek_missions_fifth = {
 			tag = CST
 		}
 	}
+	mr_greece_speciality_1 = {
+		icon = mission_pf_soldier
+		position = 1
+		required_missions = {
+			
+		}
+		trigger = {
+			OR = {
+				full_idea_group = quantity_ideas
+				full_idea_group = quality_ideas
+				full_idea_group = aristocracy_ideas
+				full_idea_group = plutocracy_ideas
+			}
+			army_tradition = 40
+			monthly_mil = 10
+		}
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = init_elite_units }
+					}
+					set_variable = {
+						which = elite_unit_xp
+						value = 0
+					}
+					set_country_flag = init_elite_units
+				}
+			}
+			add_country_modifier = {
+				name = gme_basic_elite_units_unlocked
+				duration = -1
+			}
+			custom_tooltip = elite_regiments_mission_tt
+			custom_tooltip = retrain_the_varangians
+		}
+	}
 	mr_greece_unity_9 = {
 		icon = byz_greek_fire
 		position = 2

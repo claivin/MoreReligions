@@ -9,10 +9,10 @@ religious_school = maliki_school
 
 1444.1.1 = {
 	monarch = {
-		name = "Muhammad"
-		dynasty = "Idrisid"
-		adm = 2
-		dip = 4
+		name = "Idris"
+		dynasty = "al-Adarisah"
+		adm = 5
+		dip = 2
 		mil = 3
 	}
 }
@@ -20,8 +20,9 @@ religious_school = maliki_school
 1444.1.1 = {
 	heir = {
 		name = "Zayd"
-		dynasty = "Idrisid"
+		dynasty = "al-Adarisah"
 		birth_date = 1434.1.1
+		death_date = 1480.1.1
 		claim = 95
 		adm = 6
 		dip = 3

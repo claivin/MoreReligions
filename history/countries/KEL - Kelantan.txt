@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 government_rank = 1
 primary_culture = malayan
 religion = sunni
@@ -10,9 +10,21 @@ religious_school = shafii_school
 1444.1.1 = {
 	monarch = {
 		name = "Iskandar Shah"
-		dynasty = "Jambi"
+		dynasty = "Chermin"
+		birth_date = 1390.1.1
+		death_date = 1450.1.1
 		adm = 1
 		dip = 4
 		mil = 2
+	}
+	heir = {
+		name = "Wan Dewi"
+		dynasty = "Chermin"
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		female = yes
+		adm = 4
+		dip = 5
+		mil = 4
 	}
 }

@@ -72,7 +72,7 @@ country_decisions = {
 					culture = neapolitan
 				}
 				region = italy_region
-				value = 10
+				value = 20
 			}
 		}
 		effect = {

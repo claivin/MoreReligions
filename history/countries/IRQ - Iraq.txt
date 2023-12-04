@@ -1,7 +1,31 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = feudal_theocracy
 primary_culture = al_iraqiya_arabic
 religion = sunni
 technology_group = muslim
 capital = 410	# Bagdad
-religious_school = jafari_school
+religious_school = hanafi_school
+government_rank = 2
+
+#Abbasids of Baghdad
+1444.1.1 = {
+	monarch = {
+		name = "Al-Musta'in" #Abu’l-Faḍl Abbas Al-Musta'in Billah of Cairo Abbasids
+		dynasty = "Banu Abbas"
+		birth_date = 1390.1.1
+		death_date = 1450.1.1
+		ADM = 5
+		DIP = 2
+		MIL = 2
+	}
+	heir = {
+		name = "Al-Mutawakkil" #Al-Mutawakkil II of Cairo Abbasids
+		dynasty = "Banu Abbas"
+		birth_date = 1435.1.1
+		death_date = 1480.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 5
+		claim = 95
+	}
+}

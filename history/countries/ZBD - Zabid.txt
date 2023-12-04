@@ -5,4 +5,15 @@ religion = ibadi
 technology_group = muslim
 capital = 4279 # Taiz
 religious_school = shafii_school
+government_rank = 1
 
+1444.1.1 = {
+	monarch = {
+		name = "Ahmad Abd Ar-Rahman"
+		dynasty = "Bani Mahdi"
+		birth_date = 1400.1.1
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}

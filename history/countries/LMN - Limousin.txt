@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = gascon
 religion = catholic
 capital = 195	# Limousin
+
+1360.1.1 = {
+	monarch = {
+		name = "Jean"
+		dynasty = "Michel"
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}

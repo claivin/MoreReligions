@@ -1,5 +1,20 @@
 government = republic
 primary_culture = al_misr_arabic
+add_government_reform = oligarchy_reform
 religion = mr_hafizi
+religious_school = ismaili_school
 technology_group = muslim
 capital = 361 # Cairo
+
+1444.1.1 = {
+	monarch = {
+		name = "Al-Mansur" #Descendant of Mu'tamin al-Khilafa Jawhar
+		dynasty = "Al-Khilafa Jawhar" 
+		culture = nubian
+		birth_date = 1414.1.1
+		death_date = 1450.1.1
+		ADM = 1
+		DIP = 1
+		MIL = 4
+	}
+}

@@ -4,4 +4,17 @@ primary_culture = assyrian
 religion = mr_nestorian
 technology_group = muslim
 capital = 411 # Damascus
-religious_school = shafii_school
+government_rank = 1
+
+1444.1.1 = {
+	monarch = {
+		name = "Alya"
+		dynasty = "Nimreh"
+		birth_date = 1410.1.1
+		death_date = 1450.1.1
+		female = yes
+		ADM = 5
+		DIP = 2
+		MIL = 2
+	}
+}

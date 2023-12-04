@@ -72,6 +72,7 @@
  disband_elite_units_title: "Disband Elite Units"
  disband_elite_units_desc: "wip"
  disband_elite_units_TT: "§RElite Unit Experience will NOT be refunded§!"
+ generic_mission_events.50.d: "We must improve our Elite Infantry to be even more specialized. How should we do so?"
  
 #MODIFIERS
  mr_recruiting_effort: "Recruiting Effort"
@@ -241,6 +242,7 @@
  
  generic_mission_events.50.a11: "Equip the Royal Guard with heavy armor."
  generic_mission_events.50.a12: "Equip the Royal Guard with heavy shields and polearms."
+ generic_mission_events.50.s2: "Reinstate the §YVarangian Guard§!."
  
  has_royal_guard_TT: "Has Royal Guard Specialization"
  has_sappers_TT: "Has Sapper Corps Specialization"

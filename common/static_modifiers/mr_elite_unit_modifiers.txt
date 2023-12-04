@@ -12,6 +12,12 @@ gme_basic_elite_units_modifier = {
 #unique traits
 elite_mountaineer = {}
 
+elite_varangians = {
+	morale_damage_received = -0.10
+	infantry_power = 0.05
+	is_rajput_modifier = yes
+}
+
 #Royal Guard Tiers - T1
 elite_royal_guard_1 = {
 	shock_damage_received = -0.05

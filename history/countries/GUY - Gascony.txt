@@ -7,6 +7,16 @@ add_accepted_culture = cosmopolitan_french
 religion = catholic
 capital = 174 	# Bordeaux
 
+1444.1.1 = {
+	monarch = {
+		name = "Adrien"
+		dynasty = "Dupre"
+		birth_date = 1429.11.11
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
 
 # 1515.1.1 = { government = monarchy
 # add_government_reform = autocracy_reform }
