@@ -6,3 +6,14 @@ technology_group = muslim
 capital = 223	# Granada
 government_rank = 1
 override_country_name = MR_NAME_AL-GHARB
+
+1444.1.1 = {
+	monarch = {
+		name = "Muhammad"
+		dynasty = "Al-Tahj"
+		birth_date = 1380.11.11
+		adm = 5
+		dip = 1
+		mil = 6
+	}
+}

@@ -4,3 +4,14 @@ religion = mr_almuwahiddun
 primary_culture = catalan
 technology_group = western
 capital = 333	# Majorca
+
+1444.1.1 = {
+	monarch = {
+		name = "Yusuf"
+		dynasty = "Al-Rahman"
+		birth_date = 1420.11.11
+		adm = 1
+		dip = 5
+		mil = 4
+	}
+}

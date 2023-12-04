@@ -5,3 +5,14 @@ technology_group = western
 primary_culture = gascon
 religion = catholic
 capital = 194	# perigord
+
+1444.1.1 = {
+	monarch = {
+		name = "Lucas"
+		dynasty = "Moreau"
+		birth_date = 1402.11.11
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}

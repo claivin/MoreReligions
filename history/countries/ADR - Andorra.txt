@@ -4,3 +4,14 @@ religion = catholic
 primary_culture = mr_andorran
 technology_group = western
 capital = 4970	#Andorra
+
+1444.1.1 = {
+	monarch = {
+		name = "Enric"
+		dynasty = "Serra"
+		birth_date = 1380.11.11
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}

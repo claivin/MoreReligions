@@ -4,3 +4,14 @@ technology_group = western
 religion = catholic
 primary_culture = gascon
 capital = 176	# Pau
+
+1444.1.1 = {
+	monarch = {
+		name = "Pierre"
+		dynasty = "Dupont"
+		birth_date = 1380.11.11
+		adm = 1
+		dip = 4
+		mil = 6
+	}
+}

@@ -7,3 +7,14 @@ capital = 224	# Andaluc
 government_rank = 1
 religious_school = zahiri_school
 override_country_name = MR_NAME_SEVILLA
+
+1444.1.1 = {
+	monarch = {
+		name = "Nasir"
+		dynasty = "Al-Mansur"
+		birth_date = 1407.11.11
+		adm = 5
+		dip = 5
+		mil = 0
+	}
+}

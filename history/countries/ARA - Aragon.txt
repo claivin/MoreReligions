@@ -9,6 +9,16 @@ add_historical_friend = NAV
 capital = 214 # Zaragoza
 add_army_professionalism = 0.05
 
+1444.1.1 = {
+	monarch = {
+		name = "Gonzalo"
+		dynasty = "Sánchez"
+		birth_date = 1412.11.11
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
 # 1396.5.19 = {
 	# monarch = {
 		# name = "Martí I"

@@ -6,6 +6,18 @@ add_accepted_culture = occitain
 religion = catholic
 technology_group = western
 capital = 196	# Toulouse
+
+1444.1.1 = {
+	monarch = {
+		name = "Guilhem"
+		dynasty = "Belibaste"
+		birth_date = 1420.11.11
+		adm = 4
+		dip = 1
+		mil = 6
+	}
+}
+
 #fixed_capital = 196 # Cannot move capital away from this province & no power cost to move to it
 
 # 1515.1.1 = { government = monarchy

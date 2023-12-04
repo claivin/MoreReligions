@@ -7,3 +7,12 @@ technology_group = western
 capital = 89 # picardy
 fixed_capital = 89 # Cannot move capital away from this province & no power cost to move to it
 
+1444.1.1 = {
+	monarch = {
+		name = "Jean"
+		dynasty = "Luc"
+		adm = 2
+		dip = 6
+		mil = 4
+	}
+}
