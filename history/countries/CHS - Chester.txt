@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 4375 #Chester
+
+1444.1.1 = {
+	monarch = {
+		name = "Arthur"
+		dynasty = "Chester"
+		adm = 3
+		dip = 4
+		mil = 6
+	}
+}

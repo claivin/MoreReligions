@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 244 #Lancaster
+
+1444.1.1 = {
+	monarch = {
+		name = "Richard"
+		dynasty = "Lancaster"
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}

@@ -4,3 +4,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 246	# Newcastle
+
+1444.1.1 = {
+	monarch = {
+		name = "Robin"
+		dynasty = "Graenhar"
+		adm = 4
+		dip = 1
+		mil = 5
+	}
+}

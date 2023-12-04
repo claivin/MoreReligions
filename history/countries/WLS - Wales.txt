@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = welsh
 religion = catholic
 capital = 242	# Gwynedd
+
+1444.1.1 = {
+	monarch = {
+		name = "Rhodri"
+		dynasty = "ap Maredudd"
+		adm = 2
+		dip = 3
+		mil = 6
+	}
+}

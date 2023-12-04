@@ -4,3 +4,13 @@ primary_culture = highland_scottish
 religion = catholic
 technology_group = western
 capital = 4365 # Mann
+
+1444.1.1 = {
+	monarch = {
+		name = "Magnus"
+		dynasty = "Manaw"
+		adm = 6
+		dip = 1
+		mil = 1
+	}
+}

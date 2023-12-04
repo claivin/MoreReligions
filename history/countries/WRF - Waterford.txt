@@ -6,3 +6,13 @@ technology_group = western
 primary_culture = irish
 religion = catholic
 capital = 4955 # Waterford
+
+1444.1.1 = {
+	monarch = {
+		name = "Lorintz"
+		dynasty = "Mac Mancolocho"
+		adm = 3
+		dip = 6
+		mil = 0
+	}
+}

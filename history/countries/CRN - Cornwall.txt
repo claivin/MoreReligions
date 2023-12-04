@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = cornish
 religion = catholic
 capital = 233	# Exeter
+
+1444.1.1 = {
+	monarch = {
+		name = "Conan"
+		dynasty = "Cerneu"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
