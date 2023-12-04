@@ -6,3 +6,13 @@ primary_culture = english
 add_accepted_culture = welsh
 religion = catholic
 capital = 4959 #Chester
+
+1444.1.1 = {
+	monarch = {
+		name = "Merry"
+		dynasty = "Brandybuck"
+		adm = 6
+		dip = 2
+		mil = 4
+	}
+}

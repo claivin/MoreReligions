@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 4964 # Durham
+
+1444.1.1 = {
+	monarch = {
+		name = "Halfdan"
+		dynasty = "Aethalstan"
+		adm = 2
+		dip = 6
+		mil = 0
+	}
+}

@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 245 # York
+
+1444.1.1 = {
+	monarch = {
+		name = "George"
+		dynasty = "York"
+		adm = 6
+		dip = 2
+		mil = 6
+	}
+}

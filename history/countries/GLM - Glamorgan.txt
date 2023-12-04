@@ -6,3 +6,13 @@ primary_culture = english
 add_accepted_culture = welsh
 religion = catholic
 capital = 241 #glamorgan
+
+1444.1.1 = {
+	monarch = {
+		name = "Rhys"
+		dynasty = "ap Cardiff"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

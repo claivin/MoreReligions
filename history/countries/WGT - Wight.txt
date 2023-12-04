@@ -6,3 +6,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 4949 #Wight
+
+1444.1.1 = {
+	monarch = {
+		name = "John"
+		dynasty = "Silver"
+		adm = 3
+		dip = 6
+		mil = 3
+	}
+}

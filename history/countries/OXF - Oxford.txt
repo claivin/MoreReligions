@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = english
 religion = catholic
 capital = 237 #Oxford
+
+1444.1.1 = {
+	monarch = {
+		name = "Marcus"
+		dynasty = "Brody"
+		adm = 5
+		dip = 4
+		mil = 0
+	}
+}

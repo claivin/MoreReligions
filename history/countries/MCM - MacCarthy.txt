@@ -7,3 +7,13 @@ religion = catholic
 capital = 4378	# Kingdom of Desmond
 historical_friend = ULS
 historical_friend = MTH
+
+1444.1.1 = {
+	monarch = {
+		name = "Áed"
+		dynasty = "MacArthur"
+		adm = 1
+		dip = 1
+		mil = 5
+	}
+}

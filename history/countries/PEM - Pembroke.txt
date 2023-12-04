@@ -6,3 +6,13 @@ primary_culture = english
 add_accepted_culture = welsh
 religion = catholic
 capital = 4369 #Carmarthen/caerfyrddin
+
+1444.1.1 = {
+	monarch = {
+		name = "Owain"
+		dynasty = "ap Bleddyn"
+		adm = 1
+		dip = 3
+		mil = 6
+	}
+}
