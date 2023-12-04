@@ -6,6 +6,16 @@ religion = catholic
 primary_culture = occitain
 capital = 204	# Grenoble
 
+1444.1.1 = {
+	monarch = {
+		name = "Gerard"
+		dynasty = "Dauphine"
+		birth_date = 1402.11.11
+		adm = 3
+		dip = 5
+		mil = 2
+	}
+}
 
 1515.1.1 = { government = monarchy
 add_government_reform = autocracy_reform }

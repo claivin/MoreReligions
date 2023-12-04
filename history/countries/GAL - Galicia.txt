@@ -5,3 +5,14 @@ primary_culture = galician
 religion = catholic
 technology_group = western
 capital = 206	# Galicia
+
+1444.1.1 = {
+	monarch = {
+		name = "Benxamin"
+		dynasty = "de Castro"
+		birth_date = 1380.11.11
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}

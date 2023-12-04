@@ -7,3 +7,13 @@ technology_group = western
 capital = 4766	#Verdun
 historical_friend = TUL
 historical_friend = MTZ
+
+1444.1.1 = {
+	monarch = {
+		name = "Pepin"
+		dynasty = "Charlot"
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

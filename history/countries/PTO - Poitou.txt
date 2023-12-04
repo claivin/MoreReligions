@@ -6,3 +6,13 @@ primary_culture = gascon
 add_accepted_culture = cosmopolitan_french
 religion = catholic
 capital = 4386 	# bas-poitou
+
+1444.1.1 = {
+	monarch = {
+		name = "Javer"
+		dynasty = "d'Bretagne"
+		adm = 3
+		dip = 5
+		mil = 1
+	}
+}

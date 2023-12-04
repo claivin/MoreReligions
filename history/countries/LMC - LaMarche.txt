@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = cosmopolitan_french
 religion = catholic
 capital = 4697	# Bourges
+
+1444.1.1 = {
+	monarch = {
+		name = "Jean"
+		dynasty = "Val Jean"
+		adm = 6
+		dip = 3
+		mil = 0
+	}
+}

@@ -5,3 +5,14 @@ primary_culture = galician
 religion = catholic
 technology_group = western
 capital = 4980	# CoutoMisto
+
+1444.1.1 = {
+	monarch = {
+		name = "Manuel"
+		dynasty = "Figueiredo"
+		birth_date = 1424.11.11
+		adm = 5
+		dip = 6
+		mil = 1
+	}
+}

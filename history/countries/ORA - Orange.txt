@@ -5,3 +5,14 @@ primary_culture = occitain
 religion = catholic
 technology_group = western
 capital = 4975 #Orange
+
+1444.1.1 = {
+	monarch = {
+		name = "Bertrand"
+		dynasty = "d'Orange"
+		birth_date = 1402.11.11
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}

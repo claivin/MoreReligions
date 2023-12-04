@@ -7,3 +7,13 @@ technology_group = western
 capital = 188	#Metz
 historical_friend = VDN
 historical_friend = TUL
+
+1444.1.1 = {
+	monarch = {
+		name = "Gerard"
+		dynasty = "Dufluss"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}

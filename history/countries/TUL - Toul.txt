@@ -7,3 +7,13 @@ technology_group = western
 capital = 4966	#Toul
 historical_friend = VDN
 historical_friend = MTZ
+
+1444.1.1 = {
+	monarch = {
+		name = "Julian"
+		dynasty = "D'Lyon"
+		adm = 6
+		dip = 2
+		mil = 0
+	}
+}

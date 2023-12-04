@@ -7,6 +7,16 @@ technology_group = western
 capital = 184	# Orléans
 fixed_capital = 184 # Cannot move capital away from this province & no power cost to move to it
 
+1444.1.1 = {
+	monarch = {
+		name = "Henri"
+		dynasty = "Loupold"
+		adm = 2
+		dip = 3
+		mil = 5
+	}
+}
+
 # 1392.1.1 = {
 	# monarch = {
 		# name = "Louis I"

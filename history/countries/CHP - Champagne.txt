@@ -7,6 +7,16 @@ primary_culture = cosmopolitan_french
 capital = 186	# Reims
 fixed_capital = 186 # Cannot move capital away from this province & no power cost to move to it
 
+1444.1.1 = {
+	monarch = {
+		name = "Robert"
+		dynasty = "Duchamp"
+		adm = 5
+		dip = 2
+		mil = 1
+	}
+}
+
 1515.1.1 = { government = monarchy
 add_government_reform = autocracy_reform }
 

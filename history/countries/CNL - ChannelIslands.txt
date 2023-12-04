@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = normand
 religion = catholic
 capital = 4946	# Caen
+
+1444.1.1 = {
+	monarch = {
+		name = "William"
+		dynasty = "of Wight"
+		adm = 1
+		dip = 6
+		mil = 6
+	}
+}
