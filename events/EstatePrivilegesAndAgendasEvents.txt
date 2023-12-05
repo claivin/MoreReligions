@@ -242,7 +242,6 @@ country_event = {
 		clr_country_flag = estate_rajput_present_agenda
 		clr_country_flag = estate_janissaries_present_agenda
 		clr_country_flag = estate_eunuchs_present_agenda
-		clr_country_flag = estate_sarraceni_present_agenda
 		clear_estate_agenda_cache = ROOT
 	}
 

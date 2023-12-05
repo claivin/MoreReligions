@@ -292,11 +292,18 @@ crusader_missions_branch_placeholders = {
 		}
 
 		trigger = {
-			cs_call_for_crusade_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = cs_call_for_crusade_trigger_tt
+				cs_call_for_crusade_trigger = yes
+			}
 		}
 
 		effect = {
 			cs_call_for_crusade_effect = yes
+			add_country_modifier = {
+				name = cs_crusading_surge
+				duration = 7300 # 20 years
+			}
 		}
 	}
 }
@@ -448,6 +455,10 @@ crusader_missions_domination_path = {
 
 		effect = {
 			cs_call_for_crusade_effect = yes
+			add_country_modifier = {
+				name = cs_crusading_surge
+				duration = 7300 # 20 years
+			}
 		}
 	}
 }
@@ -649,11 +660,18 @@ crusader_missions_diplomatic_path = {
 		}
 
 		trigger = {
-			cs_call_for_crusade_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = cs_call_for_crusade_trigger_tt
+				cs_call_for_crusade_trigger = yes
+			}
 		}
 
 		effect = {
 			cs_call_for_crusade_effect = yes
+			add_country_modifier = {
+				name = cs_crusading_surge
+				duration = 7300 # 20 years
+			}
 		}
 	}
 }

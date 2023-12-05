@@ -112,7 +112,7 @@
  burma_bma:0 "The Kingdom of Burma shall prosper!"
  pagan_bma:0 "The Empire of Pagan shall dominate once more!"
  mon_bma:0 "The Era of the Raman begins!"
- 
+
  ###Latin Empire
  LAT_flavor.1.t: "Reclaiming Byzantine Artifacts"
  LAT_flavor.1.d: "In the aftermath of the 4th Crusade, the Venetian crusaders took with them the lion's share of artifacts from the city of Constantinople. These artifacts have a large symbolic value to many of our Greek subjects - should we reclaim them from the merchants and lords who now own the items, it could be benefitial to our rule."
@@ -128,12 +128,12 @@
  LAT_flavor.1d: "Reclaim the Pillars of Acre"
  LAT_pillar: "Pillars of Acre Recovered"
  LAT_pillars_TT: "We cannot reclaim the Pillars. We require §Y50 Diplomatic Power§! and §Y100 Ducats§!."
- 
- 
+
+
  LAT_VEN_TT: "We have not recovered the Horses, Doors, the Saints, and the Pillars."
  latin_repayment_decision_title: "Reclaiming Byzantine Artifacts"
  latin_repayment_decision_desc: "We should reclaim Byzantine artifacts from the merchants and lords who now own the items, it could be benefitial to our rule."
- 
+
  ##Hungary
  HUN_flavor.2.t: "The Looming Hungarian Crisis"
  HUN_flavor.2.d: "In the year 1302 the King of Hungary, Andrew III, died from poor health in the great city of Buda, ending the house of Arpad once and for all. His strife with the great oligarchs of Hungary had left the kingdom fractured and disunited. Charles the I, the supposed rightful heir, had caught the Plague and died, but it was for naught either way. Many Hungarian nobles did not want the young boy to come to power. Instead the oligarchs invited Ladislaus V to rule their land - and while this united the lands of Hungary and Bohemia for a time, the king kept trying to force the Hungarian nobles to bend to his will and join the Empire, something the Hungarians had no desire to do.\n\nThe King had strife with the houses of Poland, and when he launched an invasion on the emperor himself, the houses of Aba, Kan, Czak, and Koszegi rose up in revolt and instead gave the rule to a Hungarian Nobleman by the name of Thomas Szécsényi, who was instrumental in overthrowing the Bohemian forces. The Szécsényi did not get to power alone, however - they appealed to the Polish crown and the Serbian lords, calling upon their aid to overthrow the Bohemian ownership. While Thomas died in 1332 while pushing out the Bohemian influence, his son Michael became the King of Hungary at the age of 15.\n\nAfter being placed on the throne, any attempts at centralization were crushed by the Oligarchs. Instead, a decentralized era began, where each oligarch had immense control over their own territory - during this time, the Serbians and Poles shifted their focus away from the Szécsényi and instead towards the Koszegis and Aba as potential allies respectively, as the Szécsényi seemed paradoxically too proud to be useful puppets but too weak to be effective at controlling Hungary. In the year 1444, Michael's grandson, Nicholas, rules a fragmenting and broken Hungary, and wishes to unite the land - should he do so, the Kingdom will fragment and fracture into the Oligarchs, all vying for control and power..."
@@ -185,7 +185,7 @@
  HUNGARY_RENAME: "Hungary"
  HUNGARY_RENAME_ADJ: "Hungarian"
  HUN_flavor.3.d: "With the death of King of Hungary Andrew III in 1302, the Hungarian realm became unstable and wild. With the Bohemians trying and failing to secure the land for themselves, it opened the floodgates for various challengers to attempt and sieze the throne of Hungary. From the regal Emperors in Poland, to the Ambitious Kings of Serbia, to the Wild Khans of Kiev, to even the most pious of all men, the Pope in Rome - all want to dominate and control the lands of the Magyars."
- 
+
  ##Heinan
  shenist_tradition: "Traditional Heir"
  muslim_leader_ma: "Muslim Heir"
@@ -208,23 +208,23 @@
  MR_sicily_flavor.2.d: "In the early 14th Century, just after the Hauteville line returned to the throne of Sicily, a disturbance had taken place across Sicily. An order of Fransiscan monks that preached the the value of Holy Poverty and removing corruption from the Church had arrived - the Fraticelli. These Spiritualists monks arrived in Sicily during their conflicts with other members of their congregation in Tuscany, and despite calls from the Pope to seize and investigate their holdings, the lords of Sicily chose to allow them to remain; the animosity towards the Papacy still ran hot, as they were responsible for several invasion against their homeland.\n\nIn the following century, the Spiritualists managed to expand their holdings and power, eventually winning over both common folk and elite families alike across Sicily. As the Vesper Wars raged in Naples, with the Papacy taking the side of the rebellious nobles, more of the Elite saw the Fraticelli as an alternative they could side with. So, by the 1400s, many of the most powerful provinces in Sicily had sided with and even adopted the new Fraticelli doctrine.\n\nBut the majority of our population are still devout Catholics. They do not wish to be excommunicated from the Church, and they do not agree with the claims laid at the foot of the Papacy. The issue remains prevalent to this day, as Fraticelli monks often harass agents of the Pope that try to infiltrate their regions of control - so, in [GetYear], the Hauteville Court convened to discuss what path they would take to manage this crisis."
  MR_sicily_flavor.2.a: "We shall purge the Fraticelli - they are heretical and must be removed!"
  MR_sicily_flavor.2.b: "We shall embrace the Fraticelli - they preach the truth!"
- 
+
  #Ifat Events
  MR_ifat_flavor.1.t: "A New Capital for the Sultan"
  MR_ifat_flavor.1.a: "We shall settle in the fort of Harar"
  MR_ifat_flavor.1.b: "We shall rule from the port of Zeila"
  MR_ifat_flavor.1.d: "placeholder"
- 
+
  MR_ifat_flavor.2.t: "Afar Raids on Ifat"
  MR_ifat_flavor.2.d: "The Afar and Ifat have held a truce since we were forced to acknowledge their independence in 1435. However, the Afar, like many of the tribes of the northern plains, value raiding and attacking cities for wealth and prosperity. So, in 1444, the Afar launched a raid across the border regions with the Ifat, raiding homes, villages, and even the city of Zeila itself. The Ifat Sultan demanded an apology and restitution, but it did not come. So now, as relations crumble and the truce comes to a close, war seems inevitable between the two sultans."
  MR_ifat_flavor.2.a: "They have gone too far!"
- 
+
  MR_ifat_flavor.3.t: "Purchase of Chaul"
  MR_ifat_flavor.3.d: "placeholder"
  MR_ifat_flavor.3.a: "We shall gladly take their money!"
  MR_ifat_flavor.3.b: "They can shove it!"
- 
- 
+
+
  #Bengal Events
  mrBengalEvents.1.t: "The Crisis of the Sena"
  mrBengalEvents.1.a: "Daksha remains, with Smarta Noble Dominance!"
@@ -234,13 +234,13 @@
  clergy_influence_BEN: "Monastic Backing"
  burgher_influence_BEN: "Merchant Backing"
  defeat_the_pretenders_BNG_1: "Defeat the Pretenders"
- 
- 
+
+
  #Japan Events
  mrJapEvents.1.t: "The Hotoku War Begins"
  mrJapEvents.1.d: "As the Imperial Throne of Japan fails to reign in their rebellious military governors, the Shugo, a plan was set in place. When [JAP.Monarch.GetTitle] [JAP.Monarch.GetName] announced that Tetsuya Nitta, younger brother of the Shugo [NTT.Monarch.GetName], would be the next Shogun, in a blatant attempt to weaken the institution of the military, they launched an offensive.\n\nIn Sanyodo, the provinces of Nagato, Suo, and Aki were taken by rebel forces, while in Tohoku, Mutso and Ugo were swiftly taken by loyalist forces. The Emperor called his loyal samurai and army to ride and defeat the traitors, and thus, the Hotoku Disturbance had begun. Should the Empire fall, the Shogunate could be restored, or perhaps this event shall only strengthen Imperial rule..."
  mrJapEvents.1.a: "For the Emperor!"
- 
+
  mrJapEvents.2.t: "End of the Hotoku War"
  mrJapEvents.2.a: "Owari da..."
  mrJapEvents.2.b: "The Emperor is Triumphant!"
@@ -248,13 +248,13 @@
  mrJapEvents.2.d.2: "With the fall of the last rebel stronghold, the Hotoku Disturbance came to a close. With the remaining Shugo having either been executed or they declared their loyalty to his majesty, an Era of Peace and Tranquility has begun across the Japanese isles, forever united."
 
  lands_of_japan_divided_tt: "§YThe Territory of the Empire shall be divded between various Shugo.§!"
- 
+
  mrJapEvents.3.t: "The Sengoku Jidai"
  mrJapEvents.3.d: "At the end of the Hotoku War, the Emperor of Japan had to step back and accept the dominance of the Shogun. Smaller, local, Shugo have expanded their domains and taken charge within their borders as imperial control recedes to the borders of Kyoto. However, despite the five major Shugo rallying behind a single leader during the war itself, in the aftermath they each seemed to have conflicting goals and desires. This eventually led to a situation where a council of all the Shugo could not decide clearly who the next Shogun should be.\n\nIn the absence of a diplomatic solution, military might will decide the victor of these warring states - the Sengoku Jidai has begun!"
  mrJapEvents.3.a: "To the victor goes the spoils."
  mrJapEvents.3.b: "Who are some of the players in the conflict?"
  sengoku_jidai_TT: "This will enable the Sengoku Jidai Casus Belli"
- 
+
  mrJapEvents.4.t: "The Warring Daimyo"
  mrJapEvents.4.d: "There are many different Daimyo that are fighting in the war for domination. Who shall be the one we take control with?"
  mrJapEvents.4.z: "Our current state is fine."
@@ -289,7 +289,7 @@
  mrJapEvents.7_insight: "\n§GEvent Insight:§!\nThis event will give us the option of building a §YTax§! Building, a §YProduction§! Building, or §YBase Development§!."
 
 
- 
+
  mr_startup_events.5.t: "The Waning Yoshino Period"
  mr_startup_events.5.d: "As Emperor Tsuneatsu sat upon the Chrysanthemum throne at the start of the Eikyo Era, there was much fanfare and anticipation. He was a bright and optimistic child, taught by scholars and monks alike. He could perform Shingon rituals while similarly practicing zazan through art and poetry. He was quick witted and articulate, able to win over a crowd of angry men with just a few kind words. He would be the emperor to finally rein in the growing power of the Shugo, the military constables of the Japanese provinces, a task not attempted since the early reign of his predecessor, Go-Kameyama.\n\nHowever, many Imperial courtier’s hopes were dashed when they saw something else emerge from the young emperor - his utter unwillingness to engage in conflict. He would often shy away when courtiers would argue within the court. He would have one of his many advisors order a traitorous Samurai's head to be removed, and he would find excuses to avoid his spies when they brought news from the countryside. All the while, the Shugo grew restless, and saw their ruler as weak, unprepared. They longed to return to the Kamakura Period, and sought to once and for all suppress imperial authority.\n\nIt is now the Kakitsu Era, and the Shugo’s authority continues to grow. In two decades, Emperor Tsuneatsu has begun to harden his resolve, and prepares for the coming age of turbulence, but still is cautious. He prays for a peaceful decade to any Boddhisatva who will listen, but he knows in the end his faith cannot protect him. He must stand as the emperor, as sovereign of Japan, and through might and force, secure his position as the only ruler of this domain."
  mr_startup_events.5.d.1: "With the defeat of Takauji Ashikaga at the hands of the loyalist forces of the Nitta, Shimazu, Hosokawa, and Hatakeyama, the ideal of a new shogunate seemed to be all but lost. After all, the Kamakura were long defeated and the loyalists betrayed Takauji for Emperor Go-Daigo, who wished to return to a time more akin to the Heian Period. However, all was not as it seemed. In order to win over said loyalists, the Shugo of Japan were granted extraordinary powers and protections, with the major Shugo even managing to create effectively self-governing realms for themselves.\n\nIn the Shugo land, they could tax, conscript, and judge their people however they saw fit, and even when Go-Kameyama managed to steal land back to imperial control, it was not enough to curb their growing power. So, when the timid Tsuneatsu came to power in the Eikyo Era, many Shugo dismissed him as a threat outright, and instead began to discuss amongst one another how best to undermine him. Influencing courtiers to feed them information, supplanting and removing Kokushi from their domains and instead replacing them with those more loyal to their Shugo counterparts.\n\nNow, in the Kakitsu Era, the struggle between the Emperor and his Shugo grows more extreme. The once loyal Nitta clan now lead the charge to defeat and overthrow Tsuneatsu, but still must operate in the shadows. They sneak messages through official channels, use monks as ambassadors to other Shugo, and martial their Samurai in secret - for even if the current emperor is weak, should they underestimate him, they could end this era without their power or their heads."
@@ -297,7 +297,7 @@
  mr_jap_4_TT_1: "We must bring down the Emperor through war and conquest, once again restoring the Shogunate!"
  mr_startup_events.5.a: "Flowers will bloom, even in grass that has been stomped upon..."
  mr_startup_events.5.b: "To lose is to win..."
- 
+
   #Navarra Events
  navarra_events.1.t: "Luso-Basque Wedding"
  navarra_events.1.d: "The Kingdom of Navarra has come to us with an offer of marriage. They offer the first cousin of King Carlo's to be wed to our only daughter. While this would mean the end of the line of Bourgone in Iberia, we cannot deny that the aid of Navarran, Aragonese and Catalonian troops against the Islamic infidels could help us finally turn the tide for Christianity. After all, what is the prestige of a noble house compared to the eternal glory of pious salvation?"
@@ -305,7 +305,7 @@
  navarra_events.1.2: "Never! The Jimenez lack piety and honor. Our line will survive."
  navarra_events.2.t: "Wedding Bells are ringing!"
  navarra_events.2.d: "The Portuguese Crown has accepted our marriage request. With the Luso-Basque wedding complete, the house of Jimenez now has a solid claim to the Lusitanian throne."
- navarra_events.2.1: " One brick at a time, we build the foundations for the Iberian dream..." 
+ navarra_events.2.1: " One brick at a time, we build the foundations for the Iberian dream..."
  navarra_events.3.t: "Claim the Lusitanian Crown"
  navarra_events.3.d: "The aging Portuguese King has refused our marriage proposal. What a fool, once he dies Portugal shall break into conflict over who shall lead it...No. We must save them from such a fate, if they won't freely accept the wedding then we must force it upon them!"
  navarra_events.3.1: "Francisco can still bring his daughter to the altar, but he'll do it in chains."
@@ -361,7 +361,7 @@
  navarra_events.18.1: "The University of Seville bought it and the students wondered what else lay beneath."
  navarra_events.18.2: "The King bought it, displaying it and saying "We Conquered the Sea"."
  navarra_events.18.3: "A Catalonian Merchant bought it, holding a feast in Barcelona that lasted days."
- 
+
 ##Baghdad Events
 mr_baghdad_flavor.1.t: "The Caged Caliph"
 mr_baghdad_flavor.1.d: "placeholder :)"
@@ -419,5 +419,3 @@ MrGreekEvents.9.a: "We should rebuild the Glass trade."
 MrGreekEvenets.9.b: "We must invest in our Textile production."
 MrGreekEvenets.9.c: "We shall produce the finest Jewels in all of Europe."
 MrGreekEvenets.9.e: "We shall light the forges and craft new Weapons."
-
-estate_sarraceni: "Sarraceni"

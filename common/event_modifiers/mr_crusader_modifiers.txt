@@ -70,6 +70,15 @@ edd_raiding_tactics = {
 	cavalry_power = 0.1
 }
 
+# Basically vanilla crusade modifier
+cs_crusading_surge = {
+	global_manpower_modifier = 0.3
+	global_tax_modifier = 0.1
+	land_morale = 0.10
+	prestige = 1
+	papal_influence = 1
+}
+
 
 # Government buttons
 cs_european_settlers = {

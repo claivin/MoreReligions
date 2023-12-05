@@ -500,7 +500,7 @@ estate_ghulams = {
 			has_estate = estate_ghulams
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = ghulams_privilege_slots
@@ -526,7 +526,7 @@ estate_qizilbash = {
 			has_estate = estate_qizilbash
 		}
 	}
-	
+
 	modifier_definition = {
 		type = privileges
 		key = qizilbash_privilege_slots
@@ -583,24 +583,6 @@ estate_shugo = {
 		key = shugo_influence_modifier
 		trigger = {
 			has_estate = estate_shugo
-		}
-	}
-}
-
-estate_sarraceni = {
-	modifier_definition = {
-		type = loyalty
-		key = sarraceni_loyalty_modifier
-		trigger = {
-			has_estate = estate_sarraceni
-		}
-	}
-
-	modifier_definition = {
-		type = influence
-		key = sarraceni_influence_modifier
-		trigger = {
-			has_estate = estate_sarraceni
 		}
 	}
 }

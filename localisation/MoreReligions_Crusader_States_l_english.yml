@@ -107,6 +107,8 @@
   desc_cs_plantation_economy: "Growth of the plantation economy has diplaced many tenants and smallholders from the rural areas to the towns."
   cs_european_settlers: "European Settler Colony"
   desc_cs_european_settlers: "A combination of ruffians and mercenaries, pious pilgrims, and simply those looking for a better life have collected here after we set out the call for immigrants from their region, bringing their unique skills to our nation."
+  cs_crusading_surge: "Crusading Surge"
+  desc_cs_crusading_surge: "With the legitimacy of our crusading mission bolstered by our successes, pious Catholics and opportunistic adventurers are flocking to our banners from all over Europe."
 
 
   # --EVENTS--
