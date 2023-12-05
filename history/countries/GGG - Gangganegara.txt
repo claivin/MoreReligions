@@ -1,6 +1,27 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
+government_rank = 1
 primary_culture = malayan
 religion = sunni
 technology_group = chinese
 capital = 595 # Malacca
+
+1444.1.1 = {
+	monarch = {
+		name = "Tun Aria" #Last ruler of Beruas in the Malay Annals
+		dynasty = "Beruas"
+		birth_date = 1428.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Putri Siat" #Above's sister
+		dynasty = "Beruas"
+		female = yes
+		birth_date = 1443.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

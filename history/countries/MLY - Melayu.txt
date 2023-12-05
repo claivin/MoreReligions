@@ -1,7 +1,16 @@
 government = monarchy
 add_government_reform = mandala_reform
 primary_culture = malayan
-religion = nusantara
-secondary_religion = vajrayana
+religion = vajrayana
 technology_group = chinese
-capital = 620	# Siak
+capital = 2677 #Jambi
+
+1444.1.1 = {
+	monarch = {
+		name = "Trailokyaraj"
+		dynasty = "Mauli"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

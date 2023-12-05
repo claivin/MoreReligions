@@ -1,6 +1,7 @@
-government = monarchy
-add_government_reform = mandala_reform
+government = tribal
+add_government_reform = stateless_society
 primary_culture = sumatran
 religion = nusantara
 technology_group = chinese
 capital = 2683 # Siak
+government_rank = 1

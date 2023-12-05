@@ -1,8 +1,9 @@
-government = monarchy
-add_government_reform = mandala_reform
+government = tribal
+add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = minang
 religion = nusantara
+secondary_religion = shaivism
 technology_group = chinese
 capital = 4818
 

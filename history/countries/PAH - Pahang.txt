@@ -1,9 +1,9 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 government_rank = 1
 primary_culture = utara
-add_accepted_culture = malayan
 religion = nusantara
+secondary_religion = vajrayana
 technology_group = chinese
 capital = 598
 
@@ -12,6 +12,7 @@ capital = 598
 	monarch = {
 		name = "Dewa Sura"
 		dynasty = "Pahang"
+		religion = vajrayana
 		adm = 4
 		dip = 3
 		mil = 2
@@ -24,6 +25,7 @@ capital = 598
 		monarch_name = "Putri II"
 		dynasty = "Pahang"
 		female = yes
+		religion = vajrayana
 		birth_date = 1425.1.1
 		death_date = 1455.1.1
 		claim = 95

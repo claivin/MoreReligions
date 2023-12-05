@@ -2984,6 +2984,7 @@ mandala_reform = {
 			religion_group = dharmic
 			religion_group = muslim
 			religion = animism
+			religion = nusantara
 		}
 		technology_group = chinese
 		OR = {
@@ -3000,6 +3001,7 @@ mandala_reform = {
 			religion_group = eastern
 			religion_group = dharmic
 			religion_group = muslim
+			religion = nusantara
 		}
 		technology_group = chinese
 		OR = {

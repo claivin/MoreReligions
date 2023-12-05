@@ -1,6 +1,29 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 primary_culture = utara
 religion = sunni
 technology_group = chinese
 capital = 2393	# Malacca
+religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Iskandar Shah"
+		dynasty = "Chermin"
+		birth_date = 1390.1.1
+		death_date = 1450.1.1
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+	heir = {
+		name = "Wan Dewi"
+		dynasty = "Chermin"
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		female = yes
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+}

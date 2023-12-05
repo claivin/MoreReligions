@@ -1,6 +1,16 @@
-government = monarchy
-add_government_reform = mandala_reform
+government = tribal
+add_government_reform = tribal_kingdom
 primary_culture = malayan
 religion = nusantara
 technology_group = chinese
 capital = 2679 # Siak
+
+1444.1.1 = {
+	monarch = {
+		name = "Mayang Geresik"
+		dynasty = "Badau"
+		adm = 4
+		dip = 4
+		mil = 3
+	}
+}

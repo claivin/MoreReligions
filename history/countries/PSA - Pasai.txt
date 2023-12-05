@@ -5,6 +5,7 @@ religion = shiite
 technology_group = chinese
 capital = 2673	# Pasai
 religious_school = jafari_school
+government_rank = 2
 
 1267.1.1 = {
 	monarch = {
