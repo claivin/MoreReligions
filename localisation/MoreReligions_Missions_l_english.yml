@@ -758,11 +758,12 @@ mr_CST_fourth_title: "Align the Patriarchs"
 mr_CST_fifth_title: "The Byzantine Resurgance"
 
 #Latins
-mr_latin_first_title: "Secure the Aegean"
-mr_latin_second_title: "Challenge the Rum Sultans"
-mr_latin_third_title: "Latinize Anatolia"
-
-#Catholics
+mr_greek_latin_first_title: "Secure the Aegean"
+mr_greek_latin_second_title: "Challenge the Rum Sultans"
+mr_greek_latin_third_title: "The Faitful of Anatolia"
+mr_greek_latin_fifth_title: "Latinize the Turks"
+mr_greek_latin_sixth_title: "Relaiming Asia Minor"
+mr_greek_latin_seventh_title: "Battle for the Holy Land"
 mr_greek_catholic_first_title: "A Home for the Legate"
 mr_greek_catholic_second_title: "Call on the Faithful"
 mr_greek_catholic_third_title: "An Emissary of the Papacy"
@@ -845,7 +846,17 @@ unlock_return_to_CST_decision: "This will unlock the decision to move our capita
 replace_cst_level: "We will replace the previous §YCity of the World's Desire§! level with the following:"
 every_olive_with_prod_building: "Every owned province producing §YOlives§! that has a §YProduction§! building and §Y5§! Base Production will recieve the following:"
 the_oil_shipments_begin: "This will enable the diplomatic action to §YExport Olive Oil§!."
-
+all_non_ortho_christians: "All Christian Group provinces (Excluding Orthodox) will recieve the following:"
+if_no_rum: "£no£If @RUM §YRum§! does not exist when we complete this mission, we will gain the following:"
+if_yes_rum: "£yes£If @RUM §YRum§! does not exist when we complete this mission, we will gain the following:"
+crusader_owned_levant: "Have a §YCrusader State§! from the §YLevant§! own all provinces in the §YSyria§!, §YPalestine§!, and §YAleppo§! Areas.\nThey must also be our §YAlly§! with §Y35§! Favors."
+latin_owned_levant: "\nOwn all of the §YSyria§!, §YPalestine§!, and §YAleppo§! Area."
+completed_with_an_alliance_yes: "£yes£If we complete this mission while an Ally own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
+completed_with_an_alliance_no: "£no£If we complete this mission while an Ally own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
+build_trade_routes: "All provinces in Syria, Palestine, and Aleppo will receive the following:"
+own_directly_buff_yes: "£yes£If we directly own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
+own_directly_buff_no: "£no£If we directly own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
+dominate_the_levant: "Keepers of the Holy Cities"
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -892,6 +903,12 @@ cst_level_2: "City of the World's Desire Level 2"
 cst_level_3: "City of the World's Desire Level 3"
 heirs_of_rome_GRE: "Justinian's Heir"
 olive_oil_production: "Olive Oil Production"
+tolerated_presence: "Larger Christian Unity"
+defeated_seljuks: "Completing the First Crusade"
+cavalry_masters_GRE: "Masters of the Saddle"
+pilgrimage_routes: "Pilgrim Safety Confirmed"
+tax_returns_on_pilgrims: "Local Constables Established"
+dominate_the_levant: "Liberator of the Holy Land"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"

@@ -399,3 +399,14 @@ is_in_greece_area_trigger = {
 		area = aegean_archipelago_area
 	}
 }
+is_latin_empire_tags = {
+	OR = {
+		tag = ATH
+		tag = TSS
+		tag = THS
+		tag = LAE
+		tag = CEP
+		tag = CPH
+	}
+	
+}

@@ -183,4 +183,29 @@ triple_manpower_THR = {
 	extra_manpower_at_religious_war = yes	
 	global_unrest = -1
 }
+tolerated_presence = {
+	local_religious_unity_contribution = -1
+	local_tolerance_of_heretics = 3
+}
+cavalry_masters_GRE = {
+	leader_land_shock = 1
+	cavalry_cost = -0.25
+}
+defeated_seljuks = {
+	army_tradition = 1
+	prestige = 1
+	cavalry_power = 0.15
+}
+tax_returns_on_pilgrims = {
+	tolerance_own = 1
+	global_tax_modifier = 0.15
+}
+pilgrimage_routes = {
+	local_friendly_movement_speed = 0.05
+	local_unrest = -1
+}
+dominate_the_levant = {
+	missionaries = 1
+	missionary_maintenance_cost = -0.25
+}
 
