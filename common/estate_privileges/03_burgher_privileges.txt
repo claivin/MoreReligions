@@ -2166,6 +2166,9 @@ estate_burghers_orthodox_tolerance = {
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
+		NOT = {
+			is_latin_empire_tags = yes
+		}
 		any_owned_province = {
 			OR = {
 				religion = orthodox

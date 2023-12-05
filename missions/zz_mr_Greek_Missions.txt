@@ -1414,7 +1414,7 @@ mr_greek_missions_first_build = {
 	}
 	mr_greek_build_sixth ={
 		icon = mission_pol_breadbasket_europe
-		position = 6
+		position = 7
 		required_missions = {
 			mr_greek_build_fifth
 		}
@@ -2251,7 +2251,7 @@ mr_latin_missions = {
 		}
 		religion = catholic
 	}
-	mr_latin_first = {
+	mr_greek_latin_first = {
 		icon = geo_break_the_crescent_2
 		position = 5
 		required_missions = {
@@ -2305,11 +2305,11 @@ mr_latin_missions = {
 			}
 		}
 	}
-	mr_latin_second = {
+	mr_greek_latin_second = {
 		icon = mission_janissaries
 		position = 7
 		required_missions = {
-			mr_latin_first
+			mr_greek_latin_first
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2403,6 +2403,323 @@ mr_latin_missions = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_greek_latin_sixth = {
+		icon = per_recruit_the_qizilbash
+		position = 8
+		required_missions = {
+			mr_greek_latin_second
+		}
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			anatolia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			aleppo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			syria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palestine_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = cavalry_masters_GRE
+				duration = 5475
+			}
+			if = {
+				limit = {
+					NOT = {
+						any_country = {
+							OR = {
+								tag = RUM
+								was_tag =RUM
+							}
+						}
+					}
+				}
+				custom_tooltip = if_yes_rum
+				tooltip = {
+					add_country_modifier = {
+						name = defeated_seljuks
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = if_no_rum
+				tooltip = {
+					add_country_modifier = {
+						name = defeated_seljuks
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	mr_greek_latin_seventh = {
+		icon = mission_bedouins
+	position = 9
+	required_missions = {
+		mr_greek_latin_sixth
+	}
+	provinces_to_highlight = {
+		or = {
+			area = syria_area
+			area = aleppo_area
+			area = palestine_area
+		}
+		OR = {
+			country_or_non_sovereign_subject_holds = ROOT
+			owner = {
+				alliance_with = ROOT
+				is_levantine_crusader_state = yes
+			}
+		}
+	}
+	trigger = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = crusader_owned_levant
+				syria_area = {
+					type = all
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+						owes_favors = { 
+							who = ROOT 
+							value = 35 
+					   }
+					}
+				}
+				aleppo_area = {
+					type = all
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+						owes_favors = { 
+							who = ROOT 
+							value = 35 
+					   }
+					}
+				}
+				palestine_area = {
+					type = all
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+						owes_favors = { 
+							who = ROOT 
+							value = 35 
+					   }
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = latin_owned_levant
+				syria_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				aleppo_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				palestine_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+	}
+	effect = {
+		custom_tooltip = build_trade_routes
+			tooltip = {
+				add_province_modifier = {
+					name = pilgrimage_routes
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				syria_area = {
+					add_province_modifier = {
+						name = pilgrimage_routes
+						duration = -1
+					}
+				}
+				aleppo_area = {
+					add_province_modifier = {
+						name = pilgrimage_routes
+						duration = -1
+					}
+				}
+				palestine_area = {
+					add_province_modifier = {
+						name = pilgrimage_routes
+						duration = -1
+					}
+				}
+			}
+		if = {
+			limit = {
+				syria_area = {
+					type = all
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+						owes_favors = { 
+							who = ROOT 
+							value = 35 
+					   }
+					}
+				}
+				aleppo_area = {
+					type = all
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+						owes_favors = { 
+							who = ROOT 
+							value = 35 
+					   }
+					}
+				}
+				palestine_area = {
+					type = all
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+						owes_favors = { 
+							who = ROOT 
+							value = 35 
+					   }
+					}
+				}
+			}
+			custom_tooltip = completed_with_an_alliance_yes
+			tooltip = {
+				add_country_modifier = {
+					name = tax_returns_on_pilgrims
+					duration = 12775
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					syria_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							owes_favors = { 
+								who = ROOT 
+								value = 35 
+						   }
+						}
+					}
+					aleppo_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							owes_favors = { 
+								who = ROOT 
+								value = 35 
+						   }
+						}
+					}
+					palestine_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							owes_favors = { 
+								who = ROOT 
+								value = 35 
+						   }
+						}
+					}
+				}
+			}
+			custom_tooltip = completed_with_an_alliance_no
+			tooltip = {
+				add_country_modifier = {
+					name = tax_returns_on_pilgrims
+					duration = 12775
+				}
+			}
+		}
+		if = {
+			limit = {
+				syria_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				aleppo_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				palestine_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			custom_tooltip = own_directly_buff_yes
+			tooltip = {
+				add_ruler_modifier = {
+					name = dominate_the_levant
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+				limit = {
+					NOT = {
+						syria_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						aleppo_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						palestine_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				custom_tooltip = own_directly_buff_no
+				tooltip = {
+					add_ruler_modifier = {
+						name = dominate_the_levant
+						duration = -1
+					}
+				}
 			}
 		}
 	}
@@ -2622,10 +2939,10 @@ mr_latin_missions_fourth = {
 		}
 		religion = catholic
 	}
-	mr_latin_third = {
+	mr_greek_latin_third = {
 		icon = spread_piety
 		required_missions = {
-			mr_latin_first
+			mr_greek_latin_first
 			mr_greek_catholic_fourth
 		}
 		position = 6
@@ -2660,6 +2977,59 @@ mr_latin_missions_fourth = {
 			}
 		}
 	}
+	mr_greek_latin_fifth = {
+		icon = arm_holy_sites
+		position = 8
+		required_missions = {
+			mr_greek_latin_third
+			mr_greek_latin_second
+		}
+		provinces_to_highlight = {
+			region = anatolia_region
+			NOT = {
+				religion = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			anatolia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion_group = christian
+			}
+			num_of_owned_provinces_with = {
+				region = anatolia_region
+				has_tax_building_trigger = yes
+				value = 10
+			}
+		}
+		effect = {
+			add_papal_influence = 20
+			custom_tooltip = all_non_ortho_christians
+			tooltip = {
+				add_province_modifier = {
+					name = tolerated_presence
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						religion_group = christian
+						NOT = {
+							religion = ROOT
+							religion = orthodox
+						}
+					}
+					add_province_modifier = {
+						name = tolerated_presence
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+			
 }
 mr_greek_missions_fifth = {
 	slot = 5

@@ -174,7 +174,7 @@ greek_export_olive_oil = {
 						all_country = {
 							has_ruler_flag = trading_olives_flag
 						}
-						amount = 5s
+						amount = 5
 					}
 				}
 			}
