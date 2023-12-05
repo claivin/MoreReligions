@@ -431,7 +431,7 @@ crusader_missions_domination_path = {
 	# This comes after the branching missions (i.e. both branches lead to this)
 	cs_call_for_crusade_2 = {
 		icon = mission_crusade_for_varna
-		required_missions = { cs_a_house_united }
+		required_missions = { cs_lord_of_the_levant }
 		position = 5
 
 		provinces_to_highlight = {
@@ -440,7 +440,10 @@ crusader_missions_domination_path = {
 		}
 
 		trigger = {
-			cs_call_for_crusade_trigger = yes
+			custom_trigger_tooltip = {
+				tooltip = cs_call_for_crusade_trigger_tt
+				cs_call_for_crusade_trigger = yes
+			}
 		}
 
 		effect = {
@@ -810,24 +813,23 @@ crusader_missions_4 = {
 		}
 
 		effect = {
-			# man idk
 			unlock_estate = {
 				estate = estate_dhimmi
 			}
-			set_country_flag = enables_estate_sarraceni_flag
+			set_country_flag = enable_dhimmi_for_christians
 		}
 	}
 
-	cs_satisfy_minority_leaders = {
+	cs_peace_with_heathens = {
 		icon = mission_muslim_administrators
 		required_missions = { cs_seek_religious_accord }
 		position = 2
 
 		trigger = {
-			has_estate = estate_sarraceni
-			has_estate_privilege = estate_sarraceni_guaranteed_autonomy
+			has_estate = estate_dhimmi
+			has_estate_privilege = estate_dhimmi_guaranteed_autonomy
 			estate_loyalty = {
-				estate = estate_sarraceni
+				estate = estate_dhimmi
 				loyalty = 60
 			}
 		}
@@ -845,13 +847,13 @@ crusader_missions_4 = {
 
 	cs_a_stable_society = {
 		icon = mission_peasantry
-		required_missions = { cs_satisfy_minority_leaders cs_looming_mamluks }
+		required_missions = { cs_peace_with_heathens cs_looming_mamluks }
 		position = 3
 
 		trigger = {
 			is_at_war = no
 			stability = 2
-			has_estate_privilege = estate_sarraceni_guaranteed_autonomy
+			has_estate_privilege = estate_dhimmi_guaranteed_autonomy
 			NOT = { average_unrest = 1 }
 			NOT = {
 				any_owned_province = {

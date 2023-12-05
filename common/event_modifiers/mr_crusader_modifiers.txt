@@ -97,11 +97,3 @@ cs_french_strategists = {
 	cavalry_power = 0.1
 	morale_damage_received = -0.025
 }
-
-
-# Sarraceni estate
-estate_sarraceni_guaranteed_autonomy_mod = {
-	religion = yes
-	local_religious_unity_contribution = -1
-	local_missionary_strength = -1
-}
