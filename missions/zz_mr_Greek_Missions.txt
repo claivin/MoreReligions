@@ -1458,6 +1458,46 @@ mr_greek_missions_first_build = {
 			}
 		}
 	}
+	mr_greek_build_eighth ={
+		icon = mission_rb_monopolize_the_channel
+		position = 9
+		required_missions = {
+			mr_greek_build_sixth
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			trade_goods = olives
+			NOT = {
+				has_manufactory_trigger = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = olives
+				has_manufactory_trigger = yes
+				value = 5
+			}
+			custom_trigger_tooltip = {
+				tooltip = trade_olives_5
+				calc_true_if = {
+					all_country = {
+						has_ruler_flag = trading_olives_flag
+					}
+					amount = 5
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = enable_8_trades
+			hidden_effect = {
+				set_country_flag = increase_exports_to_8_flag
+			}
+			add_innovativeness_big_effect = yes
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
+		}
+	}
 }
 mr_greek_missions_second = {
 	slot = 2
@@ -1861,7 +1901,7 @@ mr_greek_missions_second = {
 		required_missions = {
 			mr_greek_build_third
 		}
-		position = 8
+		position = 7
 		provinces_to_highlight = {
 			province_id = 151
 			NOT = {
@@ -1897,6 +1937,102 @@ mr_greek_missions_second = {
 			add_ruler_modifier = {
 				name = heirs_of_rome_GRE
 				duration = -1
+			}
+		}
+	}
+	mr_greek_build_seventh = {
+		icon = mission_aragonese_navy
+		required_missions = {
+			mr_greek_build_sixth
+		}
+		trigger = {
+			num_of_light_ship = 20
+			OR = {
+				1315 = { #Alexandria
+					trade_share = {
+						country = ROOT
+						share = 25
+					}
+				}
+				1322 = { #Crimea
+					trade_share = {
+						country = ROOT
+						share = 35
+					}
+				}
+				377 = { #Aleppo
+					trade_share = {
+						country = ROOT
+						share = 30
+					}	
+				}
+			}
+		}
+		effect = {
+			1320 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 5475
+					power = 15
+					key = STRONG_MERCHANTS
+				}
+			}
+			custom_tooltip = gain_trade_power_in_trade_node
+			hidden_effect = {
+				if = {
+					limit = {
+						1315 = {
+							trade_share = {
+								country = ROOT
+								share = 25
+							}
+						}
+					}
+					1315 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 10
+							key = STRONG_MERCHANTS
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						1322 = { #Crimea
+							trade_share = {
+								country = ROOT
+								share = 35
+							}
+						}
+					}
+					1322 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 10
+							key = STRONG_MERCHANTS
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						377 = { #Aleppo
+							trade_share = {
+								country = ROOT
+								share = 30
+							}
+						}
+					}
+					377 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = 5475
+							power = 10
+							key = STRONG_MERCHANTS
+						}
+					}
+				}
 			}
 		}
 	}
@@ -2183,27 +2319,6 @@ mr_greek_missions_third = {
 			crown_land_share = 30
 		}
 		effect = {
-			silistria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			bulgaria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			albania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			hudavendigar_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -3031,6 +3146,150 @@ mr_latin_missions_fourth = {
 	}
 			
 }
+mr_greek_fourth_a = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+	}
+	mr_greece_border_4 = {
+		icon = mission_protect_albania
+		position = 9
+		required_missions = {
+			mr_greece_border_1
+		}
+		provinces_to_highlight = {
+			area = albania_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			albania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			define_general = {
+				shock = 3
+				fire = 4
+				manuever = 1
+				siege = 1
+			}
+			4174 = {
+				add_base_manpower = 2
+				add_base_production = 2
+			}
+			rascia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			serbia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	mr_greece_border_5 = {
+		icon = gory_to_the_black_army
+		required_missions = {
+			mr_greece_border_4
+		}
+		position = 10
+		provinces_to_highlight = {
+			or = {
+				area = rascia_area
+				area = serbia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			balkan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1766 = {
+				add_province_modifier = {
+					name = gold_mine_of_kosovo
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_greece_border_6 = {
+		icon = mission_balkan_conquest
+		required_missions = {
+			mr_greece_border_5
+			mr_greece_border_3
+		}
+		position = 12
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			balkan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			balkan_region = {
+				add_province_modifier = {
+					name = conquerors_of_illyria
+					duration = -1
+				}
+			}
+			custom_tooltip = " "
+			add_permanent_power_projection = {
+				type = GRE_permanent_power_projection
+				amount = 25
+			}
+		}
+	}
+}
 mr_greek_missions_fifth = {
 	slot = 5
 	generic = no
@@ -3308,6 +3567,191 @@ mr_greek_catholic_fifth = {
 						name = triple_manpower_THR
 						duration = 10950
 					}
+				}
+			}
+		}
+	}
+}
+mr_greek_fifth_a = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+	}
+	mr_greece_border_1 = {
+		icon = mission_unite_home_region
+		position = 8
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			area = macedonia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			macedonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			silistria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2746 = {
+				add_permanent_claim = ROOT
+			}
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			3001 = {
+				add_province_modifier = {
+					name = skopje_conquest
+					duration = -1
+				}
+				add_building = fort_15th	
+			}
+		}
+	}
+
+	mr_greece_border_2 = {
+		icon = mission_steppe_warriors
+		position = 9
+		required_missions = {
+			mr_greece_border_1
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = silistria_area
+				area = bulgaria_area
+				province_id = 2746
+			}
+			NOT ={
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			silistria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bulgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2746 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			wallachia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_ruler_modifier = {
+				name = bulgar_slayer
+				duration = -1
+			}
+			if = {
+				limit = {
+					accepted_culture = bulgarian
+				}
+				custom_tooltip = change_culture_vulghari_yes
+			}
+			else = {
+				custom_tooltip = change_culture_vulghari_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						accepted_culture = bulgarian
+					}
+					every_owned_province = {
+						limit = {
+							culture = bulgarian
+						}
+						change_culture = vulghari
+					}
+					add_accepted_culture = vulghari
+					remove_accepted_culture = bulgarian
+				}
+			}
+		}
+	}
+	mr_greece_border_3 = {
+		icon = fund_the_monasteries
+		position = 11
+		required_missions = {
+			mr_greece_border_2
+		}
+		provinces_to_highlight = {
+			area = wallachia_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			province_id = 161
+			NOT = {
+				fort_level = 2
+			}
+		}
+		trigger = {
+			wallachia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			161 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			wallachia_area = {
+				add_province_modifier = {
+					name = defense_against_magyars
+					duration = -1
+				}
+			}
+			161 = {
+				add_province_modifier = {
+					name = targoviste_fort
+					duration = -1
 				}
 			}
 		}

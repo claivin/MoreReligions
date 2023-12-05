@@ -106,7 +106,7 @@ papal_missions_5 = {
 					religion = catholic
 					alliance_with = ROOT
 				}
-				value = 3
+				amount = 3
 			}
 		}
 		effect = {

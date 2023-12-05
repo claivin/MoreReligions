@@ -3638,6 +3638,58 @@ byzantine = {
 			"Apsimaros" "Artemios"
 		}
 	}
+	vulghari = {
+		primary = BUL
+		male_names = {
+			Iwan Asen Koloman Petar Todor Michael Aleksandar Iwan Kalojan Georgi Konstantin Stepan Stracimir
+			Simeon Andon Andrei Angel Atanas Bogdan Bogomil Branimir Damyan Dimitar Emil Gavril Hristo Iordan
+			Krasimir Lazar Marko Mikhail Miroslav Nikola Pavel Radomir Samuil Vasil Vladimir Zhivko
+			Aleksii Balin Bernardin Bernard Bertalan Bogoris Boril Bozidar Theodat Braslav Dan Dionisii
+			Dionysus Dominik Dominic Dragoman Dragshan Drzislav Evtimii Frujin German Grgur Hranimir
+			Ioakim Ivan John Jerolim Kalojan Kocelj Kozma Kresimir Kulin Ljubomir Ljutomisl Marko
+			Mihail Michael Mikica Miroslav Miroslav Momchil Nikola Nicholas Ognen Petar Peter
+			Prijezda Radislav Radu Sava Sermon Slavac Soimir Stracimir Svetislav Tomislav Trpimir
+			Basil Viseslav Vladislav Vladislav Vojnomir Zdeslav Marcus Vasilii Boris Kliment
+		}
+		female_names = {
+			Aleksandra Aleksandrina Bilyana Bisera Bogdana Bogna Borislava Boyana Dana Desislava Donka
+			Elisaveta Elisabeth Emiliya Emily Evdokiya Filipa Philippa Gergana
+			Hristina Iskra Iva Ivana Ivanka Ivet Lala Lidiya Lilyana Lyudmila Maya Nadejda Nevena
+			Penka Rada Radka Raina Raya Rayna Rosa Nikolina
+			Rositsa Silva Silviya Snezhana Stoyanka Tereza Teresa Todorka Tsveta Tsvetanka Vasilka
+			Yolanda Yana Yoanan Yordanka Zhivka Violeta Bogomilia Sofija Krasimira
+		}
+		dynasty_names = {
+			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki"
+		}
+	}
+	phrangic = {
+		primary = LAE
+		dynasty_names = {
+			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou"
+			"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
+			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville"
+			Bevilacqua Boschetti Carandini Castelvetri Tassoni "Pico di Mirandola" 
+			Rangoni Monesi "da Fogliano" "da Correggio" Platoni 
+			"Biondelli" "Arrigoni" "Castiglione" "Cavriani" "d'Arco" 
+			"Ceresara" "Donesmondi"
+		}
+		male_names = {
+			Amalric Athanasius Fidensius Geoffrey Henry Hugh Jacques John Joscius Roger
+			William Guillaume Aymar Dagobert Evremar Fulk Eustace Ghibbelin Guerricus Heraclius Raymond
+			Rorgo Warmund Tancred Baldwin Conrad Guy Philip Balian Ulric Peter Humphrey Gilles Raoul
+			Walter Thibaut Adam Guermond Daniel Jordan Miles Raynald Roman Nicholas Julian Renaud Gerard
+			Geldemar Haymo Odo Elinand Aimery James Janus Gaston Joscelin Robert Bohemond Alfonso Boniface
+			Louis Reginald Bertrand Juan Pons Carlo Francesco Margaritus Matthew Leonardo Richard Antonio
+			Hamelin Stephen Elias
+		}
+		female_names = {
+			Isabella Sibylla Melisende Alice Plaisance Maria Cecilia Lucia Agnes Stephanie Margaret
+			Juliana Vivian Eschiva Cecile Helie Eleanor Hodierna Arda Elisabeth Morphia Theodora Anna Adelaide
+			Constance Ioveta Matilda Charlotte Catherine Philippa Petronilla Yolanda Emma Beatrix Helena
+			Ermengarde
+		}
+	}
 	georgian_new = {
 		primary = GEO
 		dynasty_names = { 

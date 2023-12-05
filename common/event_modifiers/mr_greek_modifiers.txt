@@ -159,6 +159,30 @@ grain_olives_modifier = {
 	tolerance_own = 1
 	monthly_splendor = 0.5
 }
+bulgar_slayer = {
+	land_morale = 0.10
+	infantry_cost = -0.15
+}
+defense_against_magyars = {
+	local_defensiveness = 0.15
+	local_manpower_modifier = 0.05
+}
+targoviste_fort = {
+	fort_level = 1
+	local_garrison_size = 0.33
+}
+skopje_conquest = {
+	local_defensiveness = 0.35
+	local_fort_maintenance_modifier = -0.75
+}
+gold_mine_of_kosovo = {
+	local_development_cost = -0.1
+	local_gold_depletion_chance_modifier = -0.25
+}
+conquerors_of_illyria = {
+	local_years_of_nationalism = -5
+	local_missionary_strength = 0.03
+}
 #Latin Modifiers
 latin_aegean_control = {
 	local_own_coast_naval_combat_bonus = 2
@@ -208,4 +232,5 @@ dominate_the_levant = {
 	missionaries = 1
 	missionary_maintenance_cost = -0.25
 }
+
 

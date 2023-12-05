@@ -179,7 +179,7 @@ greek_export_olive_oil = {
 				}
 			}
 		}
-		else = {
+		else_if = {
 			custom_trigger_tooltip = {
 				tooltip = GRE_no_more_than_8_trades_tt
 				NOT = {

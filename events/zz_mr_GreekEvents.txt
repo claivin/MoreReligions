@@ -23,7 +23,8 @@ country_event = {
 		else = {
 			add_adm_power = 100
 		}
-		custom_tooltip = enable_unify_greek_cultures_decision
+		change_primary_culture = phrangic
+		
 		add_country_modifier = {
 			name = latins_triumphant
 			duration = 18250
