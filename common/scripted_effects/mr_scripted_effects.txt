@@ -218,6 +218,18 @@ update_maitreya_monthly = {
 	}
 	if = {
 		limit = {
+			AND = {
+				has_estate_privilege = estate_church_institutionalized_clergy
+				has_country_flag = gsc_buffed_clergy_privileges
+			}
+		}
+		change_variable = {
+			which = maitreya_other_check
+			value = 0.20
+		}
+	}
+	if = {
+		limit = {
 			has_idea = GSC_fifth 
 		}
 		change_variable = {

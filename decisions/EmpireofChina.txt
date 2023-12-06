@@ -75,32 +75,4 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}	
-
-	mrChina_capital_decision = {
-		potential = {
-			has_country_flag = mrChina_can_choose_capital
-		}
-		provinces_to_highlight = {
-			NOT = { owned_by = ROOT }
-			OR = {
-				province_id = 1816 #Beijing
-				province_id = 1821 #Nanjing
-				province_id = 700 #Xi'an
-				province_id = 1836 #Luoyang
-				province_id = 688 #Kaifeng
-				province_id = 682 #Wuchang
-			}
-		}
-		allow = {
-			is_at_war = no
-		}
-		effect = {
-			hidden_effect = {
-				clr_country_flag = mrChina_can_choose_capital
-			}
-			country_event = {
-				id = mrChinaEvents.9
-			}
-		}
-	}
 }

@@ -69,3 +69,8 @@
  mrChina_enable_capital_decision_tt: "§YEnables a decision to choose a new imperial capital at a later date.§!"
  mrChina_capital_decision_title: "The Imperial Capital"
  mrChina_capital_decision_desc: "The time has come to establish a permanent capital for our eternal dynasty. We may only choose cities which are currently within our control. The following cities are possible options:§Y\n\n-Yingtian\n\n-Wuchang\n\n-Kaifeng\n\n-Luoyang\n\n-Xi'an\n\n-Beiping§!"
+
+#Sinify Korea (used for Song)
+ mrChina_sinify_korea_title: "Sinify Korean Culture"
+ mrChina_sinify_korea_desc: "With the Koreans drawn firmly within our political sphere, it is only right that, as so many before them, they are fully integrated into Chinese culture."
+ sinify_korea_trigger_tt: "All provinces in the §YKorea Region§! must be owned by either our §Ydesignated Korean client kingdom§!, or by §Yourselves§! with §Yno separatism§!."

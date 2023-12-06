@@ -1,0 +1,78 @@
+country_decisions = {	
+	mrChina_capital_decision = {
+		potential = {
+			has_country_flag = mrChina_can_choose_capital
+		}
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			OR = {
+				province_id = 1816 #Beijing
+				province_id = 1821 #Nanjing
+				province_id = 700 #Xi'an
+				province_id = 1836 #Luoyang
+				province_id = 688 #Kaifeng
+				province_id = 682 #Wuchang
+			}
+		}
+		allow = {
+			is_at_war = no
+		}
+		effect = {
+			hidden_effect = {
+				clr_country_flag = mrChina_can_choose_capital
+			}
+			country_event = {
+				id = mrChinaEvents.9
+			}
+		}
+	}
+
+	mrChina_sinify_korea = {
+		potential = {
+			has_country_flag = gsc_can_sinify_korean
+		}
+		provinces_to_highlight = {
+			region = korea_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = sinify_korea_trigger_tt
+				or = {
+					korea_region = {
+						type = all
+						owned_by_korean_china_antagonist = yes
+					}
+					korea_region = {
+						type = all
+						owned_by = ROOT
+						nationalism = 0
+					}
+				}
+			}
+		}
+		effect = {
+			clr_country_flag = gsc_can_sinify_korean
+			custom_tooltip = yunnan_sino_korean
+			update_entire_culture_foreign = {
+				culture = korean
+			}
+			if = {
+				limit = {
+					any_country = {
+						is_korean_china_antagonist = yes
+					}
+				}
+				GSC = {
+					add_country_modifier = {
+						name = gsc_rule_over_korea
+						duration = 5475
+					}
+				}
+#				custom_tooltip = gsc_rule_over_removal_warn_tt	#doesn't need this anymore as it's just a timed modifier
+			}
+		}
+	}
+}

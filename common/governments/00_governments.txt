@@ -413,6 +413,8 @@ monarchy = {
 				#1.35 Addition
 				mng_seal_of_the_emperor_reform
 				strengthen_bakuhan_system_reform
+				#MR stuff
+				gsc_divine_emperor_reform
 			}
 		}
 		separation_of_power = {

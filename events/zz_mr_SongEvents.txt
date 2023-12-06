@@ -238,7 +238,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = { #accept eunuchs or not
 	id = mrSongEvents.4
 	title = "mrSongEvents.4.t"
 	desc = "mrSongEvents.4.d"
@@ -258,5 +258,266 @@ country_event = {
 		set_country_flag = GSC_fuck_eunuchs
 		custom_tooltip = mrSongEvents.4.b.tt
 		add_stability_or_adm_power = yes
+	}
+}
+
+country_event = { #Han refugees flee to Korea
+	id = mrSongEvents.5
+	title = "mrSongEvents.5.t"
+	desc = "mrSongEvents.5.d"
+	picture = WOKOU_INCIDENT_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 1095
+	}
+
+	trigger = {
+		OR = {
+			tag = BHH
+			tag = HWY
+			tag = SLA
+		}
+		GSC = {
+			mission_completed = gsc_press_advantage
+		}
+	}
+
+	immediate = {
+		save_event_target_as = gsc_has_ghc_refugees
+	}
+
+	option = {
+		name = "mrSongEvents.5.a"
+		ai_chance = {
+			factor = 100
+		}
+		reverse_add_opinion = {
+			who = GSC
+			modifier = ghc_refugees_accepted_opinion
+		}
+		add_country_modifier = {
+			name = ghc_refugees_modifier
+			duration = -1
+		}
+		hidden_effect = {
+			set_country_flag = korean_antagonist_flag
+			GSC = {
+				country_event = {
+					id = mrSongEvents.6
+					days = 60
+					random = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.5.b"
+		ai_chance = {
+			factor = 0
+		}
+		reverse_add_opinion = {
+			who = GSC
+			modifier = ghc_refugees_refused_opinion
+		} 
+	}
+}
+
+country_event = {
+	id = mrSongEvents.6
+	title = "mrSongEvents.6.t"
+	desc = "mrSongEvents.6.d"
+	picture = GIFTS_TO_EMPEROR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "mrSongEvents.6.a"
+		add_country_modifier = {
+			name = gsc_dissenters_abroad
+			duration = -1
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = event_target:gsc_has_ghc_refugees
+			months = 300
+		}
+	}
+}
+
+country_event = { #fallback hidden event to remove modifier when Korea is gone, currently unused
+	id = mrSongEvents.7
+	title = "mrSongEvents.7.t"
+	desc = "mrSongEvents.7.d"
+	picture = GIFTS_TO_EMPEROR_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_country_modifier = gsc_rule_over_korea
+	}
+
+	option = {
+		name = "mrSongEvents.7.a"
+	}
+}
+
+country_event = {
+	id = mrSongEvents.8
+	title = "mrSongEvents.8.t"
+	desc = "mrSongEvents.8.d"
+	picture = BUDDHISM_GOOD_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "mrSongEvents.8.a"
+		add_country_modifier = {
+			name = gsc_faster_conversions_modifier
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = "mrSongEvents.8.b"
+		add_country_modifier = {
+			name = gsc_conservative_conversion_modifier
+			duration = 9125
+		}
+	}
+}
+
+country_event = { #Yellow River Dykes 
+	id = mrSongEvents.9 #stolen from vanilla
+	title = flavor_mng.35.t
+	desc = flavor_mng.35.d
+	picture = TRIBUTARY_FLEET_eventPicture
+	is_triggered_only = yes 
+	
+	option = { 
+		name = flavor_mng.35.a 
+		
+		custom_tooltip = mng_all_provinces_in_mission_req_tt
+		tooltip = { 
+			add_province_modifier = {
+				name = mng_yellow_river_dykes_modifier
+				duration = -1 
+			}
+			if = { 
+				limit = { has_dlc = "Mandate of Heaven" } 
+				add_prosperity = 100 
+			}
+			else = { add_base_tax = 1 } 
+		}
+		if = { 
+			limit = { 
+				has_dlc = "Mandate of Heaven" 
+				is_emperor_of_china = yes 
+			}
+			add_mandate = 5 
+		}
+		else = { add_adm_power = 100 } 
+		
+		hidden_effect = { 
+			2142 = { 
+				add_province_modifier = {
+					name = mng_yellow_river_dykes_modifier
+					duration = -1 
+				}
+				if = { 
+					limit = { has_dlc = "Mandate of Heaven" } 
+					add_prosperity = 100 
+				}
+				else = { add_base_tax = 1 } 
+			}
+			4196 = { 
+				add_province_modifier = {
+					name = mng_yellow_river_dykes_modifier
+					duration = -1 
+				}
+				if = { 
+					limit = { has_dlc = "Mandate of Heaven" } 
+					add_prosperity = 100 
+				}
+				else = { add_base_tax = 1 } 
+			}
+			2141 = { 
+				add_province_modifier = {
+					name = mng_yellow_river_dykes_modifier
+					duration = -1 
+				}
+				if = { 
+					limit = { has_dlc = "Mandate of Heaven" } 
+					add_prosperity = 100 
+				}
+				else = { add_base_tax = 1 } 
+			}
+			688 = { 
+				add_province_modifier = {
+					name = mng_yellow_river_dykes_modifier
+					duration = -1 
+				}
+				if = { 
+					limit = { has_dlc = "Mandate of Heaven" } 
+					add_prosperity = 100 
+				}
+				else = { add_base_tax = 1 } 
+			}
+			1836 = { 
+				add_province_modifier = {
+					name = mng_yellow_river_dykes_modifier
+					duration = -1 
+				}
+				if = { 
+					limit = { has_dlc = "Mandate of Heaven" } 
+					add_prosperity = 100 
+				}
+				else = { add_base_tax = 1 } 
+			}
+			2176 = { 
+				add_province_modifier = {
+					name = mng_yellow_river_dykes_modifier
+					duration = -1 
+				}
+				if = { 
+					limit = { has_dlc = "Mandate of Heaven" } 
+					add_prosperity = 100 
+				}
+				else = { add_base_tax = 1 } 
+			}
+		}
+
+		custom_tooltip = mng_flood_events_less_devastating_tt
+		set_country_flag = mng_flood_events_less_devastating_flag 
+	}		
+	
+}
+
+country_event = { #trade decision event
+	id = mrSongEvents.10
+	title = "mrSongEvents.10.t"
+	desc = "mrSongEvents.10.d"
+	picture = TRIBUTARY_FLEET_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = "mrSongEvents.10.a"
+		set_country_flag = can_use_propagate_religion
+	}
+
+	option = {
+		name = "mrSongEvents.10.b"
+		add_country_modifier = {
+			name = gsc_trade_modifier
+			duration = -1
+		}
 	}
 }

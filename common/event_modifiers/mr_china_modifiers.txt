@@ -110,3 +110,119 @@ gsc_changsha_rice_market = {
 gsc_improved_tribs = {
 	monarch_power_tribute = 1
 }
+
+mr_china_fortified_province = {
+	local_governing_cost_increase = -25
+	local_fort_maintenance_modifier = -0.75
+	local_manpower_modifier = 0.50
+}
+
+gsc_buffed_emerald_buddha = {
+	prestige = 0.5
+	tolerance_own = 1
+	global_tax_income = 24
+}
+
+ghc_refugees_modifier = {
+	prestige = 1
+	manpower_recovery_speed = 0.15
+	global_tax_income = 40
+}
+
+gsc_dissenters_abroad = {
+	global_unrest = 1
+	imperial_mandate = -0.03
+}
+
+gsc_korean_conquest = {
+	years_of_nationalism = -5
+	core_creation = -0.15
+}
+
+gsc_rule_over_korea = {
+	imperial_mandate = 0.03
+	prestige = 0.5
+}
+
+mr_china_western_garrison_modifier = {
+	statewide_governing_cost = -0.33
+	local_manpower_modifier = 0.50
+}
+
+mr_china_hotan_jade_modifier = {
+	trade_goods_size = 2
+}
+
+gsc_empowered_eunuchs = {
+	all_estate_influence_modifier = -0.1
+	eunuchs_influence_modifier = 0.1
+}
+
+gsc_empowered_clergy = {
+	all_estate_influence_modifier = -0.1
+	church_influence_modifier = 0.1
+}
+
+mrChina_capital_province_modifier = {
+	local_governing_cost_increase = -30
+	local_development_cost_modifier = -0.1
+	diplomatic_upkeep = 1
+}
+
+mrChina_kept_capital_modifier = {
+	no_stability_loss_on_monarch_death = yes
+}
+
+mrChina_chose_yingtian_modifier = {
+	merchants = 1
+}
+
+mrChina_chose_wuchang_modifier = {
+	min_autonomy_in_territories = -0.1
+}
+
+mrChina_chose_kaifeng_modifier = {
+	global_monthly_devastation = -0.05
+	development_cost = -0.05
+}
+
+mrChina_chose_luoyang_modifier = { 
+	tolerance_own = 1
+	yearly_government_power = 0.5
+}
+
+mrChina_chose_xian_modifier = {
+	province_warscore_cost = -0.1
+	core_creation = -0.05
+}
+
+mrChina_chose_beiping_modifier = {
+	war_exhaustion = -0.02
+	general_cost = -0.10
+}
+
+gsc_faster_conversions_modifier = {
+	missionaries = 1
+	global_missionary_strength = 0.02
+	tolerance_heretic = -2
+}
+
+gsc_conservative_conversion_modifier = {
+	tolerance_heretic = 3
+	meritocracy = 1
+	missionary_maintenance_cost = 0.50
+}
+
+gsc_church_devastation_reduction = {
+	local_monthly_devastation = -0.05
+}
+
+gsc_ketumati_temple_modifier = {
+	missionaries = 1
+	warscore_cost_vs_other_religion = -0.15
+}
+
+gsc_trade_modifier = {
+	trade_steering = 0.15
+	merchants = 1
+}

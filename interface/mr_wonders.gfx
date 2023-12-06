@@ -21,4 +21,8 @@ spriteTypes = {
 		name = "GFX_great_project_mr_hexamilion"
 		texturefile = "gfx//interface//great_projects//great_project_mr_hexamilion.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_ketumati_temple"
+		texturefile = "gfx//interface//great_projects//great_project_ketumati_temple.dds"
+	}
 }	

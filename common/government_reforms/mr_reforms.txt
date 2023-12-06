@@ -951,3 +951,22 @@ mr_athenian_kingdom_reform = {
 		has_parliament = yes
 	}
 }
+
+gsc_divine_emperor_reform = {
+	icon = "chinese_palace"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		have_had_reform = gsc_divine_emperor_reform
+	}
+	trigger = {
+		have_had_reform = gsc_divine_emperor_reform
+	}
+	modifiers = {
+		max_absolutism = 10 
+		max_absolutism_effect = 0.20
+	}
+	ai = {
+		factor = 10
+	}
+}

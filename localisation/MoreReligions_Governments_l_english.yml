@@ -152,3 +152,7 @@ mr_latin_companies_reform_desc: "The latin mercenary groups range from being far
 mr_athenian_kingdom_reform: "Athenian Kingdom"
 mr_athenian_kingdom_reform_desc: "Much like the classical Athenian kingdom, we have established a parliament to let the polis have their voices heard. Of course, the feudal lords from the Frankish lands still rule, but their power is tempered now by the people."
 
+mechanic_MR_koinon_mechanic_yes: "Everytime we §YDevelop a Province§!, we will gain §G-0.5§! §YSeparatism§! in that province."
+
+gsc_divine_emperor_reform: "Radiant Emperor"
+gsc_divine_emperor_reform_desc: "The Emperor is the master of matters both spiritual and physical. They rule with unquestioned temporal authority over a vast bureaucracy responsible for the running of the state and serve as the incarnation of the Maitreya Buddha who will guide their subjects to earthly paradise."

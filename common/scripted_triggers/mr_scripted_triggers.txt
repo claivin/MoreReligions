@@ -388,6 +388,7 @@ own_all_of_greece_trigger = {
 		}
 	}
 }
+
 is_in_greece_area_trigger = {
 	OR = {
 		area = thrace_area
@@ -399,6 +400,7 @@ is_in_greece_area_trigger = {
 		area = aegean_archipelago_area
 	}
 }
+
 is_latin_empire_tags = {
 	OR = {
 		tag = ATH
@@ -409,4 +411,24 @@ is_latin_empire_tags = {
 		tag = CPH
 	}
 	
+}
+
+is_korean_china_antagonist = {
+	custom_trigger_tooltip = {
+		tooltip = gsc_is_korean_antagonist
+	}
+	hidden_trigger = {
+		has_country_flag = korean_antagonist_flag
+	}
+}
+
+owned_by_korean_china_antagonist = {
+	custom_trigger_tooltip = {
+		tooltip = gsc_owned_by_korean_antagonist
+	}
+	hidden_trigger = {
+		owner = {
+			has_country_flag = korean_antagonist_flag
+		}
+	}
 }

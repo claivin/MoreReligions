@@ -257,6 +257,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_to_keep_capital
 		}	
 	}
 
@@ -273,6 +274,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_yingtian
 		}
 	}
 
@@ -287,7 +289,9 @@ country_event = {
 			move_capital_effect = yes
 			set_province_flag = mrChina_chosen_capital_province
 		}
-		hidden_effect = { set_country_flag = mrChina_chose_capital
+		hidden_effect = { 
+			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_wuchang
 		}
 	}
 
@@ -313,6 +317,7 @@ country_event = {
 		}
 		hidden_effect = { 
 			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_kaifeng
 		}
 	}
 
@@ -329,6 +334,7 @@ country_event = {
 		}
 		hidden_effect = { 
 			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_luoyang
 		}
 	}
 
@@ -345,6 +351,7 @@ country_event = {
 		}
 		hidden_effect = { 
 			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_xian
 		}
 	}
 
@@ -363,6 +370,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = mrChina_chose_capital
+			set_country_flag = mrChina_chose_beiping
 		}
 	}
 

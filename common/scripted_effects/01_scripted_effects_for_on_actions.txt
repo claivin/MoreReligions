@@ -1460,6 +1460,16 @@ on_province_owner_change_government_effect = {
 	}
 	if = {
 		limit = {
+			owner = { has_country_flag = gsc_churches_reduce_devastation_flag }
+			has_tax_building_trigger = yes
+		}
+		add_province_modifier = {
+			name = gsc_church_devastation_reduction
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
 			owner = { has_government_attribute = more_25_tax_in_true_faith_provinces }
 			has_owner_religion = yes
 		}
