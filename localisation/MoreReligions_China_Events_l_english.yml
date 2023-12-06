@@ -108,6 +108,7 @@
  mrSongEvents.10.d:0 "With Chinese markets now firmly within the control of the [Root.Monarch.GetTitle], the worst of the banditry on land and piracy at sea that has plagued trade in the region for many decades is beginning to fade. Foreign merchants now flock to Great Song to partake in our fine goods while marvelling at our culture and good governance. Merchants from within China now travel further abroad than ever before, bringing back both riches and word of the world beyond the Middle Kingdom.\n\nThe merchant classes' lack of Confucian virtues may not have endeared them to former dynasties, but the resurgent Song state engages with such activities much more readily, even if they are still viewed with some distrust and kept at arm's length from real political power. This relative level of co-operation between the state and commercial enterprises affords us a unique opportunity to craft a more pro-active trade policy."
  mrSongEvents.10.a:0 "The roads and waves shall carry word of the [Root.Monarch.GetTitle] to the four corners of the world."
  mrSongEvents.10.b:0 "Let the wealth of the world flow into our coffers."
+ mrSongEvents.10.a.tt:0 "§GUnlocks the use of the §YPropagate Religion§! trade policy.§!"
  
  
  

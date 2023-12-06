@@ -511,6 +511,7 @@ country_event = { #trade decision event
 	option = {
 		name = "mrSongEvents.10.a"
 		set_country_flag = can_use_propagate_religion
+		custom_tooltip = mrSongEvents.10.a.tt
 	}
 
 	option = {
