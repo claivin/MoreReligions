@@ -1,16 +1,27 @@
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = minang
 religion = nusantara
-secondary_religion = shaivism
+secondary_religion = theravada
 technology_group = chinese
 capital = 4818
 
 1444.1.1 = {
 	monarch = {
-		name = "Krisna"
-		dynasty = "Indrapura"
+		name = "Iskandar Alam Daulat"
+		dynasty = "Indrajati"
+		religion = sunni
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+	heir = {
+		name = "Alam Mughatsyah"
+		dynasty = "Indrajati"
+		religion = sunni
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
 		adm = 2
 		dip = 1
 		mil = 1

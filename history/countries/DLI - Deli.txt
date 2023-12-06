@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = tribal_despotism
 primary_culture = sumatran
 religion = nusantara
 secondary_religion = sunni

@@ -2,7 +2,8 @@ government = monarchy
 add_government_reform = mandala_reform
 government_rank = 1
 primary_culture = malayan
-religion = sunni
+religion = nusantara
+secondary_religion = shiite
 technology_group = chinese
 capital = 595 # Malacca
 
@@ -20,6 +21,7 @@ capital = 595 # Malacca
 		dynasty = "Beruas"
 		female = yes
 		birth_date = 1443.1.1
+		death_date = 1480.1.1
 		adm = 4
 		dip = 3
 		mil = 2

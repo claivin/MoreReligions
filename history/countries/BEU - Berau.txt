@@ -1,27 +1,18 @@
 government = monarchy
-add_government_reform = plutocratic_reform
+add_government_reform = mandala_system
 government_rank = 1
 primary_culture = bornean
 technology_group = chinese
 religion = nusantara
+secondary_religion = shaivism
 capital = 2710
 
 1444.1.1 = {
 	monarch = {
-		name = "Hayam"
+		name = "Aji Nikutak"
 		dynasty = "Berau"
-		adm = 4
-		dip = 3
-		mil = 4
-	}
-}
-
-1480.1.1 = {
-	monarch = {
-		name = "Regency Council"
-		adm = 3
+		adm = 2
 		dip = 3
 		mil = 3
-		regent = yes
 	}
 }

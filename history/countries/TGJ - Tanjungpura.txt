@@ -1,8 +1,28 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 primary_culture = bornean
 religion = nusantara
+secondary_religion = shaivism
 technology_group = chinese
-capital = 4802	# Banjar
-religious_school = shafii_school
+capital = 2706
 
+1444.1.1 = {
+	monarch = {
+		name = "Brawijaya"
+		dynasty = "Tanjungpura"
+		religion = shaivism
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "Bapurung"
+		dynasty = "Tanjungpura
+		birth_date = 1443.1.1
+		death_date = 1480.1.1
+		religion = shaivism
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}

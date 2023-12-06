@@ -4,5 +4,14 @@ primary_culture = javanese
 technology_group = chinese
 religion = mr_tunggal_dharma
 capital = 2691 
+government_rank = 1
 
-
+1444.1.1 = {
+	monarch = {
+		name = "Sri Samaravijaya"
+		dynasty = "Kediri"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

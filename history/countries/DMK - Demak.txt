@@ -1,10 +1,31 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = feudal_theocracy
 primary_culture = javanese
-religion = mr_tunggal_dharma
+religion = sunni
 technology_group = chinese
 capital = 629	# Demak
 religious_school = shafii_school
+government_rank = 1
+
+1444.1.1 = {
+	monarch = {
+		name = "Sunan Ampel"
+		dynasty = "Walisongo"
+		birth_date = 1401.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+	heir = {
+		name = "Sunan Giri"
+		dynasty = "Walisongo"
+		birth_date = 1443.1.1
+		death_date = 1480.1.1
+		adm = 5
+		dip = 4
+		mil = 2
+	}
+}
 
 1475.1.1 = {
 	monarch = {

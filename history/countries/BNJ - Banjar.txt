@@ -1,11 +1,34 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 primary_culture = bornean
 religion = nusantara
-secondary_religion = hinduism
+secondary_religion = shaivism
 technology_group = chinese
 capital = 639	# Banjar
-religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Puteri Tunjung Buih"
+		dynasty = "Negara Dipa"
+		religion = shaivism
+		female = yes
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+	heir = {
+		name = "Suryanata"
+		dynasty = "Negara Dipa"
+		religion = shaivism
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		adm = 5
+		dip = 3
+		mil = 5
+		clear_scripted_personalities = yes
+		add_ruler_personality = conqueror_personality 
+	}
+}
 
 1524.9.24 = {
 	religion = sunni

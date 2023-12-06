@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 government_rank = 1
 primary_culture = balinese
 technology_group = chinese
@@ -7,64 +7,12 @@ add_accepted_culture = nusa_tenggara
 religion = mr_tunggal_dharma
 capital = 631	# Bali
 
-
-# Majapahit
-1390.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Wikramawardhana"
-		dynasty = "Vijaya"
-		adm = 2
+		name = "Ketut Ngulesir"
+		dynasty = "Gelgel"
+		adm = 1
 		dip = 2
-		mil = 2
-	}
-}
-
-1390.1.1 = {
-	heir = {
-		name = "Suhita"
-		monarch_name = "Suhita"
-		birth_date = 1390.1.1
-		death_Date = 1447.1.1
-		dynasty = "Vijaya"
-		claim = 95
-		adm = 6
-		dip = 1
-		mil = 2
-		female = yes
-	}
-}
-
-1429.1.1 = {
-	monarch = {
-		name = "Suhita"
-		dynasty = "Vijaya"
-		adm = 3
-		dip = 1
-		mil = 2
-		female = yes
-	}
-}
-
-1429.1.1 = {
-	heir = {
-		name = "Dyah Kertawijaya"
-		monarch_name =" Dyah Kertawijaya"
-		dynasty = "Vijaya"
-		birth_date = 1420.1.1
-		death_Date = 1451.1.1
-		claim = 95
-		adm = 0
-		dip = 0
-		mil = 2
-	}
-}
-
-1447.1.1 = {
-	monarch = {
-		name = "Dyah Kertawijaya"
-		dynasty = "Vijaya"
-		adm = 0
-		dip = 1
 		mil = 2
 	}
 }

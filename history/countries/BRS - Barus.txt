@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = sumatran
 religion = nusantara
@@ -10,20 +10,19 @@ capital = 4811
 
 1444.1.1 = {
 	monarch = {
-		name = "Meurah"
-		dynasty = "Barus"
+		name = "Alung Aji"
+		dynasty = "Hatorusan"
+		religion = shaivism
 		adm = 2
 		dip = 0
 		mil = 1
 	}
-}
-
-1480.1.1 = {
-	monarch = {
-		name = "Regency Council"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
+	heir = { 
+		name = "Longgam Parmunsaki"
+		dynasty = "Hatorusan"
+		religion = shaivism
+		adm = 1
+		dip = 0
+		mil = 2
 	}
 }

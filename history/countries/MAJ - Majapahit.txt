@@ -4,7 +4,7 @@ primary_culture = javanese
 technology_group = chinese
 religion = mr_tunggal_dharma
 capital = 628	# Surabaya
-
+government_rank = 1
 
 # Majapahit
 1390.1.1 = {

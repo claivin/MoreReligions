@@ -1,16 +1,20 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = tribal
+add_government_reform = tribal_despotism
 primary_culture = bornean
 technology_group = chinese
 religion = nusantara
+secondary_religion = shaivism
 capital = 640
+government_rank = 1
 
 1444.1.1 = {
 	monarch = {
-		name = "Sepudak"
-		dynasty = "Sambas"
-		adm = 1
-		dip = 1
-		mil = 4
+		name = "Tan Unggal"
+		dynasty = "Tan Unggal"
+		adm = 5
+		dip = 0
+		mil = 5
+		clear_scripted_personalities = yes
+		add_ruler_personality = cruel_personality
 	}
 }

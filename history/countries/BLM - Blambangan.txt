@@ -1,18 +1,27 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 primary_culture = balinese
 religion = mr_tunggal_dharma
 technology_group = chinese
 capital = 627	# Blambangan
+government_rank = 1
 
-
-1527.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Menak Pentor"
+		name = "Menak Anisraya"
 		dynasty = "Blambangan"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Menak Sembar"
+		dynasty = "Blambangan"
+		birth_date = 1443.1.1
+		death_date = 1489.1.1
 		adm = 3
-		dip = 3
-		mil = 4
+		dip = 2
+		mil = 2
 	}
 }
 
