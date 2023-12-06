@@ -5,3 +5,13 @@ primary_culture = dutch
 religion = mr_freespirit
 technology_group = western
 capital = 99	# Coevorde
+
+1444.1.1 = {
+	monarch = {
+		name = "Jasper"
+		dynasty = "de Vries"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}

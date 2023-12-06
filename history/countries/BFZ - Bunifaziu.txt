@@ -7,4 +7,14 @@ primary_culture = sardinian
 capital = 5273	# Bunifaziu
 mercantilism = 25
 
+1444.1.1 = {
+	monarch = {
+		name = "Adriani"
+		dynasty = "du Grani"
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
 fixed_capital = 5273 # Cannot move capital away from this province & no power cost to move to it

@@ -5,3 +5,13 @@ religion = catholic
 primary_culture = franconian
 capital = 130	# Istria
 add_accepted_culture = dalmatian
+
+1444.1.1 = {
+	monarch = {
+		name = "Enrico"
+		dynasty = "di Trieste"
+		adm = 1
+		dip = 4
+		mil = 1
+	}
+}

@@ -5,3 +5,13 @@ technology_group = western
 religion = mr_freespirit
 primary_culture = dutch
 capital = 1744 #Vlissingen
+
+1444.1.1 = {
+	monarch = {
+		name = "Matthias"
+		dynasty = "Declercq"
+		adm = 0
+		dip = 3
+		mil = 1
+	}
+}

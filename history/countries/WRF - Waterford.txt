@@ -9,10 +9,10 @@ capital = 4955 # Waterford
 
 1444.1.1 = {
 	monarch = {
-		name = "Lorintz"
-		dynasty = "Mac Mancolocho"
-		adm = 3
-		dip = 6
-		mil = 0
+		name = "Labhras"
+		dynasty = "Mac Carthaigh"
+		adm = 2
+		dip = 3
+		mil = 4
 	}
 }

@@ -5,3 +5,13 @@ technology_group = western
 religion = catholic
 primary_culture = flemish
 capital = 92
+
+1444.1.1 = {
+	monarch = {
+		name = "Bram"
+		dynasty = "Van Damme"
+		adm = 1
+		dip = 6
+		mil = 1
+	}
+}

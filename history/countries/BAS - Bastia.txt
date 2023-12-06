@@ -7,4 +7,15 @@ primary_culture = sardinian
 capital = 5271	# Bastia
 mercantilism = 25
 
+1444.1.1 = {
+	monarch = {
+		name = "Francesco"
+		dynasty = "Castri"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
+
+
 fixed_capital = 5271 # Cannot move capital away from this province & no power cost to move to it

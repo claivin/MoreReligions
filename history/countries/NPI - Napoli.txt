@@ -10,10 +10,10 @@ capital = 121
 
 1420.1.1 = {
 	monarch = { 
-		name = "Bucharati"
-		dynasty = "di Napoli"
+		name = "Bruno"
+		dynasty = "Bucciarati"
 		dip = 2
-		mil = 1
+		mil = 2
 		adm = 2
 	}
 }

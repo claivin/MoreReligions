@@ -5,3 +5,13 @@ technology_group = western
 religion = catholic
 primary_culture = dutch
 capital = 1742 #Eidhoven
+
+1444.1.1 = {
+	monarch = {
+		name = "Pieter"
+		dynasty = "Van den Berg"
+		adm = 4
+		dip = 1
+		mil = 1
+	}
+}
