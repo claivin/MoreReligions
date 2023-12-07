@@ -13,8 +13,11 @@ country_event = {
 		is_core = 1816
 		}
     1816 = {
+	if = {
+	limit = { owner = { culture_group = altaic } }
 	change_province_name = "Khanbaliq"
 	rename_capital = "Khanbaliq"
+	}
 	move_capital_effect = yes 		
 	add_base_tax = 3
 	add_base_production = 2
@@ -28,8 +31,11 @@ country_event = {
 
 		}
     1816 = {
+	if = {
+	limit = { owner = { culture_group = altaic } }
 	change_province_name = "Khanbaliq"
-	rename_capital = "Khanbaliq"	
+	rename_capital = "Khanbaliq"
+	}
 	add_base_tax = 3
 	add_base_production = 2
 	add_base_manpower = 3
@@ -199,4 +205,43 @@ country_event = {
         duration = 18250 
 		}
 	}
+}
+
+country_event = {
+	id = MR_steppe_generic_flavor.6 #Dynasty
+	title = MR_steppe_generic_flavor.6.t
+	desc = MR_steppe_generic_flavor.6.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = MR_steppe_generic_flavor.6.a#Yuan
+		trigger = {
+		culture_group = altaic
+		}
+		change_tag = YUA
+	    on_change_tag_effect = yes
+	    remove_non_electors_emperors_from_empire_effect = yes
+		add_prestige = 30 
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.6.b#Heilong
+		trigger = {
+        culture_group = evenks
+		}
+		ROOT = {
+		override_country_name = HEIL
+		change_country_color = {   color = { 6 6 6 } }
+		}
+	}
+	
+	option = {
+		name = MR_steppe_generic_flavor.6.c#Nah
+		trigger = {
+
+		}
+		add_prestige = 30
+	}	
 }
