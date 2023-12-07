@@ -28,6 +28,7 @@ SJI = "countries/NanJin.txt"
 DBT = "countries/Dorbet.txt"
 ULG = "countries/UlaGorlos.txt"
 SKH = "countries/Sakhalin.txt"
+AMU = "countries/Amur.txt"
 
 #Central Asia
 BLK = "countries/Balkh.txt"

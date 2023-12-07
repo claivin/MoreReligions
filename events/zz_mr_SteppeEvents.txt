@@ -229,7 +229,10 @@ country_event = {
 	option = {
 		name = MR_steppe_generic_flavor.6.b#Heilong
 		trigger = {
+		OR = {
         culture_group = evenks
+		tag = AMU
+		 }
 		}
 		ROOT = {
 		override_country_name = HEIL
