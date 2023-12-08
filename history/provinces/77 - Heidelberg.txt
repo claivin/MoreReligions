@@ -3,7 +3,7 @@
 capital = "Heidelberg"
 culture = hessian
 religion = catholic
-trade_goods = wine
+trade_goods = grapes
 owner = PAL
 base_tax = 5
 base_production = 4

@@ -37,7 +37,7 @@ country_event = {
 	major = yes
 	trigger = {
 		NOT = { current_age = age_of_discovery }
-		any_owned_province = { trade_goods = alcohol }
+		alcohol = 1
 		stability = 3
 	}
 	mean_time_to_happen = { months = 60 }
@@ -64,7 +64,7 @@ country_event = {
 	major = yes
 	trigger = {
 		is_year = 1460
-		any_owned_province = { trade_goods = honey_wine }
+		honey_wine = 1
 		prestige = 50
 	}
 	mean_time_to_happen = { months = 1 }
@@ -83,6 +83,74 @@ country_event = {
 				name = mr_mead_production
 				duration = -1
 			}
+		}
+	}
+}
+
+#The Rum Ration
+country_event = {
+	id = mr_prices.4
+	title = mr_prices.4.t
+	desc = mr_prices.4.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		has_institution = state_navy_inst
+		navy_tradition = 50
+		rum = 1
+	}
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = mr_prices.4.a
+		change_price = {
+			trade_goods = honey_wine
+			key = RUM_RATION
+			value = 0.10
+			duration = -1
+		}
+		add_country_modifier = {
+			name = mr_naval_rum
+			duration = -1
+		}
+	}
+}
+
+#Invention of Skim Milk Cheeses
+country_event = {
+	id = mr_prices.5
+	title = mr_prices.5.t
+	desc = mr_prices.5.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		innovativeness = 25
+		livestock = 1
+	}
+	mean_time_to_happen = { months = 1 }
+	
+	immediate = {
+		random_owned_province = {
+			limit = { trade_goods = livestock }
+			save_event_target_as = cheese_skim_place
+		}
+	}
+
+	option = {
+		name = mr_prices.4.a
+		event_target:cheese_skim_place = {
+			change_trade_goods = cheese
+			add_building = mrb_creamery
+		}
+		change_price = {
+			trade_goods = cheese
+			key = SKIM_MILK_CHEESE
+			value = 0.10
+			duration = -1
 		}
 	}
 }

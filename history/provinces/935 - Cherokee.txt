@@ -5,7 +5,7 @@
 culture = yuchi
 religion = totemism
 capital = "Cherokee"
-trade_goods = naval_supplies
+trade_goods = lumber
 hre = no
 base_tax = 2 
 base_production = 2

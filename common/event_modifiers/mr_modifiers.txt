@@ -256,3 +256,7 @@ mahayana_leader_ma = {
 	religious_unity = 0.20
 	naval_morale = 0.15
 }
+
+mr_naval_rum = {
+	sailors_recovery_speed = 0.15
+}

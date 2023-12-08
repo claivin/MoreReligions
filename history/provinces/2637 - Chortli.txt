@@ -7,7 +7,7 @@
 culture = highland_mayan
 religion = mesoamerican_religion
 capital = "Chortli"
-trade_goods = naval_supplies
+trade_goods = lumber
 hre = no
 base_tax = 1 
 base_production = 1

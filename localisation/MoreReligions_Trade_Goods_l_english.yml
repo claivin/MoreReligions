@@ -18,124 +18,126 @@
  building_mrb_quarry: "Quarry"
  GOODS_CHANGE_BUILDINGS_REQ: "§GRequires\n§Y8§! Base Prod.§!"
 
- alcohol:0 "Alcohol"
- alcoholDESC:0 "Across both the old world and new, through the process of fermentation and distillation, Alcohol is quite the popular good. While it can lead to problems with addiction and overdose, the relative safety of the beverage has made even more popular than water in some areas."
+ alcohol: "Alcohol"
+ alcoholDESC: "Across both the old world and new, through the process of fermentation and distillation, Alcohol is quite the popular good. While it can lead to problems with addiction and overdose, the relative safety of the beverage has made even more popular than water in some areas."
  
- military_supplies:0 "Military Supplies"
- military_suppliesDESC:0 "The production of muskets, cannons, and various other weapons for war."
+ military_supplies: "Military Supplies"
+ military_suppliesDESC: "The production of muskets, cannons, and various other weapons for war."
  
- lumber:0 "Lumber"
- lumberDESC:0 "Wood is needed for development across many civilization, as such the lumber industry is quite large."
+ lumber: "Lumber"
+ lumberDESC: "Wood is needed for development across many civilization, as such the lumber industry is quite large."
  
- stone:0 "Stone"
- stoneDESC:0 "Good stone is often taken for granted as it is valuable in use for building homes, structures, temples, forts, and roads."
+ stone: "Stone"
+ stoneDESC: "Good stone is often taken for granted as it is valuable in use for building homes, structures, temples, forts, and roads."
  
- marble:0 "Marble"
- marbleDESC:0 "Stone, but for the discerning eye."
+ marble: "Marble"
+ marbleDESC: "Stone, but for the discerning eye."
  
- jewelry:0 "Jewelry"
- jewelryDESC:0 "A valuable evolution of the stones and metals drawn from the earth. Some can be worth more than their weight in gold simply by craftsmanship and artistry alone."
+ jewelry: "Jewelry"
+ jewelryDESC: "A valuable evolution of the stones and metals drawn from the earth. Some can be worth more than their weight in gold simply by craftsmanship and artistry alone."
  
- cheese:0 "Cheese"
- cheeseDESC:0 "Cheese represents both itself and various other dairy products."
+ cheese: "Cheese"
+ cheeseDESC: "Cheese represents both itself and various other dairy products."
  
- whales:0 "Whales"
+ whales: "Whales"
  whalesDESC: "Sailing off into the high seas and following whales is a dangerous and arduous task, though the rewards are great... Very great."
  
- rice:0 "Rice"
+ rice: "Rice"
  riceDESC: "A food staple throughout the Asian continent."
  
- steel:0 "Steel"
+ steel: "Steel"
  steelDESC: "Wrought in foundries and forged for War, steel is strongest and most resilent material anyone can produce."
  
- silver:0 "Silver"
+ silver: "Silver"
  silverDESC: "Though not as valuable as gold, it is certaintly not something you would want to pass up."
  
- sulfur:0 "Sulfur"
+ sulfur: "Sulfur"
  sulfurDESC: "An unholy stone that produces an even unholier smell."
  
- gunpowder:0 "Gunpowder"
+ gunpowder: "Gunpowder"
  gunpowderDESC: "A curious concoction that will ineveitably dominate the battlefields of the world..."
  
- nutmeg:0 "Nutmeg"
+ nutmeg: "Nutmeg"
  nutmegDESC: "A nut-like fruit with slightly sweet fragrances, used as a spice."
  
- saffron:0 "Saffron"
+ saffron: "Saffron"
  saffronDESC: "A flower from the Near East with aromatic and possibly medicinal qualities."
  
- tumeric:0 "Turmeric"
+ tumeric: "Turmeric"
  tumericDESC: "A spice from India, famed for its medicinal qualities and its bright orange coloration."
  
- honey:0 "Honey"
+ honey: "Honey"
  honeyDESC: "Beekeeping is a difficulty and finnicky profession, but what it yields is ambrosia itself."
  
- ginger:0 "Ginger"
+ ginger: "Ginger"
  gingerDESC: "A strange finger-like root vegetable hailing from East Asia, with a powerful taste."
  
- fruit:0 "Fruit"
+ fruit: "Fruit"
  fruitDESC: "Representing the various fruits grown throughtout temperate regions of the world."
  
- tropical_fruit:0 "Tropical Fruit"
+ tropical_fruit: "Tropical Fruit"
  tropical_fruitDESC: "Representing the various fruits grown throughtout tropical regions of the world."
  
- horses:0 "Horses"
+ horses: "Horses"
  horsesDESC: "Horses don't just spring out of the ground! Though they are far from their undomesticated ancestors, wide open spaces are conducive to their breeding."
  
- chocolate:0 "Chocolate"
+ chocolate: "Chocolate"
  chocolateDESC: "The delicious product of the New World cocoa."
  
- ice:0 "Ice"
+ ice: "Ice"
  iceDESC: "Where does ice come from? Where its cold, of course!"
  
- rice_wine:0 "Rice Wine"
+ rice_wine: "Rice Wine"
  rice_wineDESC: "A signature alcohol of predominantly rice-dependent communities."
  
- citrus:0 "Citrus"
+ citrus: "Citrus"
  citrusDESC: "A sour fruit with some medicinal properties, or so it is told."
  
- grapes:0 "Grapes"
+ grapes: "Grapes"
  grapesDESC: "Where wine comes from, or so I'm told."
  
- dates_figs:0 "Dates and Figs"
+ dates_figs: "Dates and Figs"
  dates_figsDESC: "A popular fruit, grown from England to Iran."
  
- rum:0 "Rum"
+ rum: "Rum"
  rumDESC: "A spirit distiled from sugar cane, likey grown in the Americas."
  
- honey_wine:0 "Honey Wine"
+ honey_wine: "Honey Wine"
  honey_wineDESC: "A wine brewed from the golden liquid of bees. Sweet!"
  
- olives:0 "Olives"
+ olives: "Olives"
  olivesDESC: "The signature vegetable of the Mediterranean."
  
- vegetables:0 "Vegetables"
+ vegetables: "Vegetables"
  vegetablesDESC: "Representing the various mundane subsistence crops grown throughout the world."
  
- potato:0 "Potatoes"
+ potato: "Potatoes"
  potatoDESC: "Starchy goodness, only from the New World."
  
- tomato:0 "Tomatoes"
+ tomato: "Tomatoes"
  tomatoDESC: "Juicy, slightly acidic, red, and plump."
  
  maize: "Maize"
- maizeDESC: ""
+ maizeDESC: "The signature grains of the New World."
  
  jade: "Jade"
- jadeDESC: ""
+ jadeDESC: "An illustrious greenish rock, prized for its beauty."
  
  shellfish: "Shellfish"
- shellfishDESC: ""
+ shellfishDESC: "The bounty of the sea. Just requires some elbow grease to eat."
   
  tin: "Tin"
- tinDESC: ""
+ tinDESC: "A soft white metal useful for alloying."
  
  amber: "Amber"
- amberDESC: ""
+ amberDESC: "A jewel-like substance of golden liquid beauty."
  
  #price change keys
  HOPPED_BEER: "Hopped Beer"
  PURITY_LAW: "Purity Laws"
  RIGISH_MEAD: "Rigish Mead"
+ RUM_RATION: "Naval Rum"
+ SKIM_MILK_CHEESE: "Spiced Skim Milk Cheeses"
  
  #provinces
  mr_hamburg_beer_breweries: "Hamburg Beer Industry"
@@ -154,3 +156,11 @@
  mr_prices.3.t: "Rigish Mead and the Baltic League"
  mr_prices.3.d: "The City of Riga is a bustling metropole inhabited by Christians, Pagans; Germans, and Baltic Peoples. Among them, they have many differences, but all are set aside over a cup of mead. Mead, of course, an alcohol fermented of honey, is the principle drink of Riga. It's familiarity and ubiquity has caught the attention of many a trader hawking their goods in Rigan ports. They bring stories back to home ports of the most delicious drink they partook in Riga; others yet bring souveniers. Mead from Riga, or Rigish Mead, has gained a reputaion of quality drink across Europe by way of Baltic League Merchants."
  mr_prices.3.a: "Now we can charge even more for a premium!"
+ 
+ mr_prices.4.t: "The Rum Ration"
+ mr_prices.4.t: "The High Seas are a rough and tough environment where even the hardiest of sailors need something to take the edge off and to find reprieve far from home. A glass of rum lights a fire in the stomach and can provide a warmth reminescent of the family hearth. In addition to bolstering the morale of our men at sea, we can see the benefits of unspoiling and relatively light rations, as well as the promise of a daily imbibment as a motivating factor for recruitment."
+ mr_prices.4.t: "Up Spirits!"
+
+ mr_prices.4.t: "Spiced Skim Milk Cheese"
+ mr_prices.4.d: "During the production of butter, skim milk is a runoff byproduct. It is not typically desired and sometimes even given to pigs to fatten them. In the province of [cheese_skim_place.GetName], farmers have developed and interesting method of improving its taste and quality: infusion of spices. The process of impressing these flavors has become the norm with foreign and local spices. The quality improvement is so drastic that the once undesireable cheese has come to match the popularity of mainstream regional cheeses in some communities."
+ mr_prices.4.t: "Delicious!"

@@ -21,7 +21,6 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-#	https://academic.oup.com/gh/article/40/4/470/6500175#384746057
 add_building = mrb_brewery
 add_province_modifier = {
 	name = mr_rigish_mead

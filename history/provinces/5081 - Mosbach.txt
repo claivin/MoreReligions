@@ -3,7 +3,7 @@
 capital = "Mosbach"
 culture = hessian
 religion = catholic
-trade_goods = wine
+trade_goods = grapes
 owner = ALS
 base_tax = 5
 base_production = 4
