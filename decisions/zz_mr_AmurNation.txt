@@ -1,0 +1,175 @@
+country_decisions = {
+amur_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_amur_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { exists = AMU }
+			OR = {
+				primary_culture = manchu
+				primary_culture = manchu_new
+				tag = DBT
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				OR = {
+					province_id = 730		#Girin
+					province_id = 2108		#Huncun
+					province_id = 726		#Shenyang
+				}
+				OR = {
+					AND = {
+						OR = {
+							culture = manchu
+							culture = manchu_new
+						}
+						ROOT = {
+							NOT = {
+								num_of_owned_provinces_with = {
+									value = 20
+									OR = {
+										culture = manchu
+										culture = manchu_new
+									}
+									owned_by = ROOT
+								}
+							}
+							owns_core_province = 726
+							owns_core_province = 730
+							owns_core_province = 2108
+						}
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no			
+			owns_core_province = 2108		#Huncun	
+			owns_core_province = 730		#Girin
+			owns_core_province = 726		#Shenyang
+			726 = {							#Shenyang
+				is_state = yes
+			}		
+			num_of_owned_provinces_with = {
+				custom_trigger_tooltip = {
+					tooltip = manchu_manchuria_decision.tooltip
+					is_core = ROOT
+					OR = {
+						culture = manchu_new
+						culture = manchu
+					}
+				}
+				value = 20
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = AMU
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			change_primary_culture = manchu_new
+			set_ruler_culture = manchu_new
+			if = {
+				limit = {
+					has_heir = yes
+				}
+				set_heir_culture = manchu_new
+			}
+			if = {
+				limit = {
+					has_consort = yes
+					consort_culture = manchu
+				}
+				set_consort_culture = manchu_new
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				overlord = {
+					country_event = {
+						id = flavor_mch.8
+					}
+				}
+				grant_independence = yes
+			}
+			hidden_effect = {
+				every_province = {
+					limit = {
+						culture = manchu
+					}
+					change_culture = manchu_new
+				}
+				every_country = {
+					limit = {
+						primary_culture = manchu
+					}
+					change_primary_culture = manchu_new
+					set_ruler_culture = manchu_new
+					if = {
+						limit = {
+							has_heir = yes
+						}
+						set_heir_culture = manchu_new
+					}
+					if = {
+						limit = {
+							has_consort = yes
+							consort_culture = manchu
+						}
+						set_consort_culture = manchu_new
+					}
+				}
+			}
+			custom_tooltip = manchu_culture_tt
+			726 = {
+				move_capital_effect = yes
+			}
+			manchuria_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					is_city = yes
+				}
+				add_core = AMU
+			}
+			set_country_flag = formed_amur_flag
+			if = {
+				limit = { 
+					has_custom_ideas = no
+					NOT = { has_idea_group = AMU_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { owns_core_province = 2108 }
+				NOT = { owns_core_province = 730 }
+			}
+		}
+		ai_importance = 1000
+	}
+}

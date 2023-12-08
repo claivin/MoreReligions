@@ -29,7 +29,7 @@ steppe_missions_1 = { #internal-management line
 		}
 		effect = {
 			custom_tooltip = steppe_succession_secured
-            set_country_flag = steppe_dynasty
+            set_country_flag = steppe_dynasty	
 		}
 	}
 	steppe_judicial_reform = {
@@ -420,8 +420,16 @@ steppe_missions_3a = { #china-conquest
             }			
 		}
 		effect = {
-		custom_tooltip = steppe_TODO
-        add_prestige_or_monarch_power = { amount = 25 }
+		if = {
+		limit = { NOT = { tag = YUA } }
+	    country_event = { 
+         id = MR_steppe_generic_flavor.6
+	      }
+		 } 
+        else = { 
+		add_prestige_or_monarch_power = 30
+		add_stability_or_adm_power = 1
+		 } 	 
 		}
 	}
 	steppe_unify_china = {
