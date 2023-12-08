@@ -1,6 +1,6 @@
 namespace = mr_prices
 
-#Beer Trade
+#Hopped Beer
 country_event = {
 	id = mr_prices.1
 	title = mr_prices.1.t
@@ -10,22 +10,79 @@ country_event = {
 	fire_only_once = yes
 	major = yes
 	trigger = {
-		
+		owns = 44
+		44 = { base_production = 10 }
 	}
-	mean_time_to_happen = {
-		months = 1
-	}
+	mean_time_to_happen = { months = 1 }
 	
 	option = {
-		name = prices.1.a
+		name = mr_prices.1.a
 		change_price = {
-			trade_goods = slaves
-			key = TRIANGLE_TRADE
-			value = 0.5
+			trade_goods = alcohol
+			key = HOPPED_BEER
+			value = 0.1
 			duration = -1
 		}
-		
-		set_global_flag = triangle_happened
 	}
 }
 
+#Reinheitsgebot
+country_event = {
+	id = mr_prices.2
+	title = mr_prices.2.t
+	desc = mr_prices.2.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		NOT = { current_age = age_of_discovery }
+		any_owned_province = { trade_goods = alcohol }
+		stability = 3
+	}
+	mean_time_to_happen = { months = 60 }
+	
+	option = {
+		name = mr_prices.2.a
+		change_price = {
+			trade_goods = alcohol
+			key = PURITY_LAW
+			value = 0.2
+			duration = -1
+		}
+	}
+}
+
+#Baltic League Mead Trade
+country_event = {
+	id = mr_prices.3
+	title = mr_prices.3.t
+	desc = mr_prices.3.d
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		is_year = 1460
+		any_owned_province = { trade_goods = honey_wine }
+		prestige = 50
+	}
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = mr_prices.2.a
+		change_price = {
+			trade_goods = honey_wine
+			key = RIGISH_MEAD
+			value = 0.15
+			duration = -1
+		}
+		random_owned_province = {
+			limit = { trade_goods = honey_wine }
+			add_province_modifier = {
+				name = mr_mead_production
+				duration = -1
+			}
+		}
+	}
+}

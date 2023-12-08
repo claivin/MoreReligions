@@ -132,6 +132,25 @@
  amber: "Amber"
  amberDESC: ""
  
- mr_prices.1.t: ""
- mr_prices.1.d: ""
- mr_prices.1.a: ""
+ #price change keys
+ HOPPED_BEER: "Hopped Beer"
+ PURITY_LAW: "Purity Laws"
+ RIGISH_MEAD: "Rigish Mead"
+ 
+ #provinces
+ mr_hamburg_beer_breweries: "Hamburg Beer Industry"
+ mr_rigish_mead: "Rigish Mead"
+ mr_mead_production: "State Sponsored Mead Production"
+ 
+ #price change events
+ mr_prices.1.t: "Hopped Beer"
+ mr_prices.1.d: "Until relatively recently, beer was flavored with local herbs and flora - some common ones being ivy, mugwort, and yarrow. This combination of plant additions was known as gruit and common in beermaking throughout Europe. Local flora would impart its own special flavor upon each region's brews with the addition of berries and other spices. In recent years, the practice of adding hops has caught on and spread throughout brewer's communities in Europe. Hops is a particular plant originating in Germany, known to have several medicinal qualities; more importantly, it imparts a distinct flavor in beer and stability during brewing. Law concerning the usage of either gruit of hops varied by jurisdiction and taxatable product is an especially motivating factor on wheter hops is adopted, but it is clear to see that hops are here to stay."
+ mr_prices.1.a: "I'll drink to that!"
+ 
+ mr_prices.2.t: "[Root.GetAdjective] Purity Law of [GetYear]"
+ mr_prices.2.d: "The Purity Law was concieved in [Root.GetName] as a standards for the improvement of the quality of beer in their own breweries. Similar laws were quickly adopted in nearby realms, and soon the Empire itself had decreed its own version in [GetYear]. The general quality of beer had drastically risen across Europe as - sometimes - severe punishments were dealt for breaking the law. None of this would have been possible without the first Purity Law set forth in [Root.GetName]."
+ mr_prices.2.a: "Cheers!"
+ 
+ mr_prices.3.t: "Rigish Mead and the Baltic League"
+ mr_prices.3.d: "The City of Riga is a bustling metropole inhabited by Christians, Pagans; Germans, and Baltic Peoples. Among them, they have many differences, but all are set aside over a cup of mead. Mead, of course, an alcohol fermented of honey, is the principle drink of Riga. It's familiarity and ubiquity has caught the attention of many a trader hawking their goods in Rigan ports. They bring stories back to home ports of the most delicious drink they partook in Riga; others yet bring souveniers. Mead from Riga, or Rigish Mead, has gained a reputaion of quality drink across Europe by way of Baltic League Merchants."
+ mr_prices.3.a: "Now we can charge even more for a premium!"

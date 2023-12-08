@@ -1,3 +1,11 @@
 mr_hamburg_beer_breweries = {
 	trade_goods_size = 2
 }
+
+mr_rigish_mead = {
+	trade_value_modifier = 1.0
+}
+
+mr_mead_production = {
+	trade_goods_size_modifier = 0.5
+}
