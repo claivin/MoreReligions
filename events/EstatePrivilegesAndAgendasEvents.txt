@@ -1,6 +1,6 @@
 #modified
 	#3 option.l
-
+	#2 trigger
 namespace = estate_privileges_and_agendas_events
 
 #The rights of the nobility
@@ -120,7 +120,7 @@ country_event = {
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	trigger = {
-
+		NOT = { tag = ENG } #unbalances eng early game
 		NOT = { crown_land_share = 11 }
 		OR = {
 			AND = {

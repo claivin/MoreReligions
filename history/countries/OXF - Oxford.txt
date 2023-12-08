@@ -6,10 +6,15 @@ primary_culture = english
 religion = catholic
 capital = 237 #Oxford
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
-		name = "Marcus"
-		dynasty = "Brody"
+		name = "John"
+		dynasty = "de Vere"
 		adm = 5
 		dip = 4
 		mil = 0

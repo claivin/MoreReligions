@@ -103,5 +103,11 @@
  mr_institutions.701.d: "It appears [institution_origin.Owner.GetName] is gearing up for something big. Trade to them has included an insatiable need for non-perishable foodstuffs, gunpowder, and metal. Their neighbors seem to be on edge."
  mr_institutions.701.a: "A worrying development."
 
-BUTTON_SPREAD: "Research Institution"
-start_institution_research_title: "Start Foreign Research"
+ mr_institutions.8.t: "Proliferation of Firearms"
+ mr_institutions.8.d: "Some soldiers and mercenaries of the neighboring [firearms_proliferator.GetName] have taken to using a new form of weapon: it is held in your hand and explodes like thunder, destroying what lies before it. It is called the handgonne and is unwieldly and slow, but battles across [Root.Capital.GetContinentName] show it will only continue to become more important."
+ mr_institutions.8.a: "Fiercesome!"
+
+ BUTTON_SPREAD: "Research Institution"
+ start_institution_research_title: "Start Foreign Research"
+ 
+ 

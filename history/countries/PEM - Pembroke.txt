@@ -7,12 +7,17 @@ add_accepted_culture = welsh
 religion = catholic
 capital = 4369 #Carmarthen/caerfyrddin
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
-		name = "Owain"
-		dynasty = "ap Bleddyn"
+		name = "Ralph"
+		dynasty = "de Monthermer"
 		adm = 1
 		dip = 3
-		mil = 6
+		mil = 3
 	}
 }

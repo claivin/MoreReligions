@@ -388,6 +388,20 @@ on_monarch_death = {
 			value = -10.0
 		}
 	}
+	if = {
+		limit = {
+			tag = ENG
+			NOT = { has_ruler_flag = eng_first_king }
+		}
+		CRN = { remove_country_modifier = mr_eng_pacification }
+		OXF = { remove_country_modifier = mr_eng_pacification }
+		KNT = { remove_country_modifier = mr_eng_pacification }
+		GLM = { remove_country_modifier = mr_eng_pacification }
+		PEM = { remove_country_modifier = mr_eng_pacification }
+		PWY = { remove_country_modifier = mr_eng_pacification }
+		SHP = { remove_country_modifier = mr_eng_pacification }
+		CHS = { remove_country_modifier = mr_eng_pacification }
+	}
 }
 
 on_mandate_of_heaven_gained = {
@@ -542,6 +556,9 @@ on_adm_development = {
 		}
 		add_nationalism = -0.5	
 	}
+	
+	#crown agendas for ENG
+	crown_agenda_dev_thrice_effect = yes
 }
 
 on_dip_development = {
@@ -581,6 +598,9 @@ on_dip_development = {
 		}
 		add_nationalism = -0.5	
 	}
+	
+	#crown agendas for ENG
+	crown_agenda_dev_thrice_effect = yes
 }
 on_mil_development = {
 	#G&K
@@ -618,6 +638,77 @@ on_mil_development = {
 			owner = { has_reform = mr_koinon_reform }
 		}
 		add_nationalism = -0.5	
+	}
+	
+	#crown agendas for ENG
+	crown_agenda_dev_thrice_effect = yes
+}
+
+on_adm_exploited = {
+	crown_agenda_exploit_thrice_effect = yes
+)
+on_dip_exploited = {
+	crown_agenda_exploit_thrice_effect = yes
+}
+on_mil_exploited = {
+	crown_agenda_exploit_thrice_effect = yes
+}
+on_centralized_state = {
+	if = {
+		limit = { owner = { has_country_flag = crown_agenda_3 } }
+		owner = {
+			country_event = {
+				id = mr_england.1004
+			}
+		}
+	}
+}
+on_expanded_infrastructure = {
+	if = {
+		limit = { FROM = { has_country_flag = crown_agenda_4 } }
+		FROM = {
+			country_event = {
+				id = mr_england.1005
+			}
+		}
+		set_province_flag = mr_expanded_for_crown_agenda
+		save_global_event_target_as = crown_agenda_infrastructure
+	}
+}
+on_province_culture_converted = {
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = crown_agenda_8
+				check_variable = {
+					which = crownAgendaCounter
+					value = 1
+				}
+			}
+			OR = {
+				has_province_flag = crown_agenda_culture_target_1
+				has_province_flag = crown_agenda_culture_target_2
+			}
+		}
+		owner = {
+			country_event = {
+				id = mr_england.1009
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_province_flag = crown_agenda_culture_target_1
+				has_province_flag = crown_agenda_culture_target_2
+			}
+		}
+		owner = {
+			change_variable = {
+				which = crownAgendaCounter
+				value = 1
+			}
+		}
 	}
 }
 on_bi_yearly_pulse_3 = {
@@ -1245,5 +1336,34 @@ on_regiment_recruited = {
 			}
 		}
 		FROM = { add_manpower = 0.25 }
+	}
+}
+
+on_institution_embracement = {
+	if = {
+		limit = {
+			has_institution = firearms_institution
+			OR = {
+				AND = {
+					OR = {
+						mil_tech = 3
+						mil_tech = 2
+						mil_tech = 1
+					}
+					any_neighbor_country = { mil_tech = 4 }
+				}
+				AND = {
+					mil_tech = 4
+					any_neighbor_country = { mil_tech = 5 }
+				}
+				AND = {
+					mil_tech = 5
+					any_neighbor_country = { mil_tech = 6 }
+				}
+			}
+		}
+		country_event = {
+			id = mr_institutions.2
+		}
 	}
 }

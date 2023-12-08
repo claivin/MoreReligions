@@ -6,6 +6,24 @@ primary_culture = english
 religion = catholic
 capital = 236 # London
 
+#church estate
+set_estate_privilege = estate_church_land_rights
+set_estate_privilege = estate_church_religious_state
+set_estate_privilege = estate_church_administrative_privileges
+set_estate_privilege = estate_church_clerical_oversight
+
+#nobles estate
+set_estate_privilege = estate_nobles_land_rights
+set_estate_privilege = estate_nobles_levies
+set_estate_privilege = estate_nobles_strong_duchies
+set_estate_privilege = estate_nobles_force_conscription
+
+#merchants
+set_estate_privilege = estate_burghers_land_rights
+set_estate_privilege = estate_burghers_land_of_commerce
+set_estate_privilege = estate_burghers_monopoly_of_textiles
+set_estate_privilege = estate_burghers_economical_boost
+
 1425.1.1 = { #Coronation
 	monarch = {
 		name = "George"
@@ -16,4 +34,6 @@ capital = 236 # London
 		mil = 6
 	}
 	clear_scripted_personalities = yes
+	
+	set_ruler_flag = eng_first_king
 }

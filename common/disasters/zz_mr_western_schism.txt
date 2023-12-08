@@ -93,7 +93,7 @@ mr_western_schism = {
 				}
 			}
 			set_country_flag = western_schism_started_ticker_15
-			every_country = {
+			random_country = {
 				limit = { religion = catholic }
 				country_event = { id = mr_catholic.1010 }
 			}

@@ -903,6 +903,7 @@ province_event = {
 	
 	option = {
 		name = mr_england.9.a
+		remove_province_modifier = eng_m_neglected_royal_woods
 		add_permanent_province_modifier = {
 			name = eng_m_declining_royal_woods
 			duration = -1
@@ -931,6 +932,7 @@ province_event = {
 	
 	option = {
 		name = mr_england.9002.a
+		remove_province_modifier = eng_m_declining_royal_woods
 		add_permanent_province_modifier = {
 			name = eng_m_severely_exhausted_royal_woods
 			duration = -1
@@ -994,6 +996,794 @@ province_event = {
 	
 	option = {
 		name = mr_england.9004.a
+		remove_province_modifier = eng_m_severely_exhausted_royal_woods
 		change_trade_goods = unknown
+	}
+}
+
+
+#Crown Agenda 1
+country_event = {
+	id = mr_england.1001
+	title = mr_england.1001.t
+	desc = mr_england.1001.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+	#recursive event kicked off by eng_m_agendas
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		#rest flags for random selection of agendas
+		clr_country_flag = crown_agenda_1
+		clr_country_flag = crown_agenda_2
+		clr_country_flag = crown_agenda_3
+		clr_country_flag = crown_agenda_4
+		clr_country_flag = crown_agenda_5
+		clr_country_flag = crown_agenda_6
+		clr_country_flag = crown_agenda_7
+		clr_country_flag = crown_agenda_8
+		
+		#designate provinces to culture convert in case it happens
+		random_owned_province = {
+			limit = { NOT = { culture = ROOT } }
+			set_province_flag = crown_agenda_culture_target_1
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { culture = ROOT }
+				NOT = { has_province_flag = crown_agenda_culture_target_1 }
+			}
+			set_province_flag = crown_agenda_culture_target_2
+		}
+		
+		#randomizes crown agenda selection
+		random_list  = {
+			1 = { set_country_flag = crown_agenda_1 }
+			1 = {
+				trigger = { has_dlc = "Cradle of Civilization" }
+				set_country_flag = crown_agenda_2
+			}
+			1 = {
+				trigger = { has_dlc = "Leviathan" }
+				set_country_flag = crown_agenda_3
+			}
+			1 = {
+				trigger = { has_dlc = "Leviathan" }
+				set_country_flag = crown_agenda_4
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_modifier = mr_eng_revoke_church_privilege }
+					OR = {
+						has_estate_privilege = estate_church_land_rights
+						has_estate_privilege = estate_church_religious_state
+						has_estate_privilege = estate_church_administrative_privileges
+						has_estate_privilege = estate_church_for_the_faith
+					}
+				}
+				set_country_flag = crown_agenda_5
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_modifier = mr_eng_revoke_nobility_privilege }
+					OR = {
+						has_estate_privilege = estate_nobles_land_rights
+						has_estate_privilege = estate_nobles_levies
+						has_estate_privilege = estate_nobles_strong_duchies
+						has_estate_privilege = estate_nobles_force_conscription
+					}
+				}
+				set_country_flag = crown_agenda_6
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_modifier = mr_eng_revoke_merchants_privilege }
+					OR = {
+						has_estate_privilege = estate_burghers_land_rights
+						has_estate_privilege = estate_burghers_land_of_commerce
+						has_estate_privilege = estate_burghers_monopoly_of_textiles
+						has_estate_privilege = estate_burghers_economical_boost
+					}
+				}
+				set_country_flag = crown_agenda_7
+			}
+			1 = {
+				trigger = {
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { culture = ROOT }
+						}
+						amount = 2
+					}
+				}
+				set_country_flag = crown_agenda_8 }
+		}
+		
+		#randomizes crown agenda selection, without overlap
+		random_list  = {
+			1 = {
+				trigger = { NOT = { has_country_flag = crown_agenda_1 } }
+				set_country_flag = crown_agenda_1
+			}
+			1 = {
+				trigger = {
+					has_dlc = "Cradle of Civilization"
+					NOT = { has_country_flag = crown_agenda_2 }
+				}
+				set_country_flag = crown_agenda_2
+			}
+			1 = {
+				trigger = {
+					has_dlc = "Leviathan"
+					NOT = { has_country_flag = crown_agenda_3 }
+				}
+				set_country_flag = crown_agenda_3
+			}
+			1 = {
+				trigger = {
+					has_dlc = "Leviathan"
+					NOT = { has_country_flag = crown_agenda_4 }
+				}
+				set_country_flag = crown_agenda_4
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_flag = crown_agenda_5 }
+					NOT = { has_country_modifier = mr_eng_revoke_church_privilege }
+					OR = {
+						has_estate_privilege = estate_church_land_rights
+						has_estate_privilege = estate_church_religious_state
+						has_estate_privilege = estate_church_administrative_privileges
+						has_estate_privilege = estate_church_for_the_faith
+					}
+				}
+				set_country_flag = crown_agenda_5
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_flag = crown_agenda_6 }
+					NOT = { has_country_modifier = mr_eng_revoke_nobility_privilege }
+					OR = {
+						has_estate_privilege = estate_nobles_land_rights
+						has_estate_privilege = estate_nobles_levies
+						has_estate_privilege = estate_nobles_strong_duchies
+						has_estate_privilege = estate_nobles_force_conscription
+					}
+				}
+				set_country_flag = crown_agenda_6
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_flag = crown_agenda_7 }
+					NOT = { has_country_modifier = mr_eng_revoke_merchants_privilege }
+					OR = {
+						has_estate_privilege = estate_burghers_land_rights
+						has_estate_privilege = estate_burghers_land_of_commerce
+						has_estate_privilege = estate_burghers_monopoly_of_textiles
+						has_estate_privilege = estate_burghers_economical_boost
+					}
+				}
+				set_country_flag = crown_agenda_7
+			}
+			1 = {
+				trigger = {
+					NOT = { has_country_flag = crown_agenda_8 }
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { culture = ROOT }
+						}
+						amount = 2
+					}
+				}
+				set_country_flag = crown_agenda_8
+			}
+		}
+	}
+	
+	option = { #develop capital state
+		name = mr_england.1001.a
+		trigger = { has_country_flag = crown_agenda_1 }
+		custom_tooltip = crown_agenda_1_TT
+		capital_scope = {
+			area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = mr_eng_crown_investments
+					duration = 3650
+				}
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = crownAgendaCounter
+				value = 0
+			}
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_7
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #exploit territories
+		name = mr_england.1001.b
+		trigger = { has_country_flag = crown_agenda_2 }
+		custom_tooltip = crown_agenda_2_TT
+		hidden_effect = {
+			set_variable = {
+				which = crownAgendaCounter
+				value = 0
+			}
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_7
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #centralize state
+		name = mr_england.1001.c
+		trigger = { has_country_flag = crown_agenda_3 }
+		custom_tooltip = crown_agenda_3_TT
+		hidden_effect = {
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_7
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #expand infrastructure
+		name = mr_england.1001.e
+		trigger = { has_country_flag = crown_agenda_4 }
+		custom_tooltip = crown_agenda_4_TT
+		hidden_effect = {
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_7
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #revoke privilege - church
+		name = mr_england.1001.f
+		trigger = { has_country_flag = crown_agenda_5 }
+		add_country_modifier = {
+			name = mr_eng_revoke_church_privilege
+			duration = 3650
+		}
+		custom_tooltip = crown_agenda_privilege_church_TT
+		country_event = {
+			id = mr_england.1006
+			days = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_7
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #revoke privilege - nobility
+		name = mr_england.1001.g
+		trigger = { has_country_flag = crown_agenda_6 }
+		add_country_modifier = {
+			name = mr_eng_revoke_nobility_privilege
+			duration = 3650
+		}
+		custom_tooltip = crown_agenda_privilege_nobles_TT
+		country_event = {
+			id = mr_england.1007
+			days = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_7
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #revoke privilege - merchants
+		name = mr_england.1001.h
+		trigger = { has_country_flag = crown_agenda_7 }
+		add_country_modifier = {
+			name = mr_eng_revoke_merchants_privilege
+			duration = 3650
+		}
+		custom_tooltip = crown_agenda_privilege_merchants_TT
+		country_event = {
+			id = mr_england.1008
+			days = 3650
+		}
+		hidden_effect = {
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_8
+		}
+	}
+	option = { #culture convert
+		name = mr_england.1001.i
+		trigger = { has_country_flag = crown_agenda_8 }
+		custom_tooltip = crown_agenda_8_TT
+		random_owned_province = {
+			limit = { has_province_flag = crown_agenda_culture_target_1 }
+			add_province_modifier = {
+				name = me_eng_culture_coversion
+				duration = 3650
+			}
+		}
+		random_owned_province = {
+			limit = { has_province_flag = crown_agenda_culture_target_2 }
+			add_province_modifier = {
+				name = me_eng_culture_coversion
+				duration = 3650
+			}
+		}
+		hidden_effect = {
+			set_variable = {
+				which = crownAgendaCounter
+				value = 0
+			}
+			clr_country_flag = crown_agenda_1
+			clr_country_flag = crown_agenda_2
+			clr_country_flag = crown_agenda_3
+			clr_country_flag = crown_agenda_4
+			clr_country_flag = crown_agenda_5
+			clr_country_flag = crown_agenda_6
+			clr_country_flag = crown_agenda_7
+		}
+	}
+	option = { #do not pursue
+		name = mr_england.1001.z
+		add_adm_power = 1
+		country_event = {
+			id = mr_england.1001
+			days = 1825
+			random = 1825
+		}
+	}
+	
+	after = {
+		country_event = {
+			id = mr_england.1001
+			days = 3285
+			random = 730
+		}
+	}
+}
+
+#Crown Agenda 1 - Dev Thrice - resolved
+country_event = {
+	id = mr_england.1002
+	title = mr_england.1002.t
+	desc = mr_england.1002.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by completing Crown Agenda to Dev thrice in home state,fired by dev onactions
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		every_owned_province = { remove_province_modifier = mr_eng_crown_investments }
+		hidden_effect = {
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1002.a
+		change_estate_land_share = {
+			estate = all
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1002.b
+		change_government_reform_progress = 10
+	}
+}
+#Crown Agenda 2 - Exploit Thrice - resolved
+country_event = {
+	id = mr_england.1003
+	title = mr_england.1003.t
+	desc = mr_england.1003.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by completing Crown Agenda to exploit exploit thrice territories fired by dev onactions
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1003.a
+		change_estate_land_share = {
+			estate = all
+			share = -2
+		}
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+	}	
+	option = {
+		name = mr_england.1003.b
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+		random_owned_province = {
+			limit = { is_state = yes }
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+	}
+}
+#Crown Agenda 3 - Centralize State - resolved
+country_event = {
+	id = mr_england.1004
+	title = mr_england.1004.t
+	desc = mr_england.1004.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by completing Crown Agenda to centralize state, fired by dev on actions
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1004.a
+		change_estate_land_share = {
+			estate = all
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1004.b
+		add_adm_power = 50
+	}
+}
+#Crown Agenda 4 - Expand Infrastructure - resolved
+country_event = {
+	id = mr_england.1005
+	title = mr_england.1005.t
+	desc = mr_england.1005.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by completing Crown Agenda to expand infrastructure, fired by dev on actions
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1005.a
+		change_estate_land_share = {
+			estate = all
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1005.b
+		random_owned_province = {
+			limit = { has_province_flag = mr_expanded_for_crown_agenda }
+			add_province_modifier = {
+				name = mr_eng_infrastructure
+				duration = -1
+			}
+		}
+	}
+}
+#Crown Agenda 5 - Revoke Church Privileges - resolved
+country_event = {
+	id = mr_england.1006
+	title = mr_england.1006.t
+	desc = mr_england.1006.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by selecting Crown Agenda to revoke a privilege
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				1 = {
+					trigger = { has_estate_privilege = estate_church_land_rights }
+					remove_estate_privilege = estate_church_land_rights
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_church_land_rights }
+					remove_estate_privilege = estate_church_religious_state
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_church_land_rights }
+					remove_estate_privilege = estate_church_administrative_privileges
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_church_land_rights }
+					remove_estate_privilege = estate_church_for_the_faith
+				}
+			}
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1006.a
+		change_estate_land_share = {
+			estate = estate_church
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1006.b
+		random_owned_province = {
+			limit = { NOT = { has_province_modifier = mr_eng_redirected_taxation } }
+			add_province_modifier = {
+				name = mr_eng_redirected_taxation
+				duration = -1
+			}
+		}
+	}
+}
+#Crown Agenda 6 - Revoke Nobility Privileges - resolved
+country_event = {
+	id = mr_england.1007
+	title = mr_england.1007.t
+	desc = mr_england.1007.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by selecting Crown Agenda to revoke a privilege
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				1 = {
+					trigger = { has_estate_privilege = estate_nobles_land_rights }
+					remove_estate_privilege = estate_nobles_land_rights
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_nobles_levies }
+					remove_estate_privilege = estate_nobles_levies
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_nobles_strong_duchies }
+					remove_estate_privilege = estate_nobles_strong_duchies
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_nobles_force_conscription }
+					remove_estate_privilege = estate_nobles_force_conscription
+				}
+			}
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1007.a
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1007.b
+		random_owned_province = {
+			limit = { NOT = { has_province_modifier = mr_eng_direct_recruitment } }
+			add_province_modifier = {
+				name = mr_eng_direct_recruitment
+				duration = -1
+			}
+		}
+	}
+}
+#Crown Agenda 7 - Revoke Merchant Privileges - resolved
+country_event = {
+	id = mr_england.1008
+	title = mr_england.1008.t
+	desc = mr_england.1008.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by selecting Crown Agenda to revoke a privilege
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				1 = {
+					trigger = { has_estate_privilege = estate_burghers_land_rights }
+					remove_estate_privilege = estate_burghers_land_rights
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_burghers_land_of_commerce }
+					remove_estate_privilege = estate_burghers_land_of_commerce
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_burghers_monopoly_of_textiles }
+					remove_estate_privilege = estate_burghers_monopoly_of_textiles
+				}
+				1 = {
+					trigger = { has_estate_privilege = estate_burghers_economical_boost }
+					remove_estate_privilege = estate_burghers_economical_boost
+				}
+			}
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1008.a
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1008.b
+		random_owned_province = {
+			limit = { NOT = { has_province_modifier = mr_eng_crown_charters } }
+			add_province_modifier = {
+				name = mr_eng_crown_charters
+				duration = -1
+			}
+		}
+	}
+}
+#Crown Agenda 8 - Culture convert - resolved
+country_event = {
+	id = mr_england.1009
+	title = mr_england.1009.t
+	desc = mr_england.1009.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by completing culture converting both target province via onaction
+	}
+	mean_time_to_happen = { days = 1 }
+	immediate = {
+		hidden_effect = {
+			change_variable = {
+				which = successfulCrownAgendas
+				value = 1
+			}
+		}
+	}
+	option = {
+		name = mr_england.1009.a
+		change_estate_land_share = {
+			estate = all
+			share = -2
+		}
+	}
+	option = {
+		name = mr_england.1009.b
+		random_owned_province = {
+			limit = {
+				OR = {
+					has_province_flag = crown_agenda_culture_target_1
+					has_province_flag = crown_agenda_culture_target_2
+				}
+			}
+			random_list = {
+				1 = { add_base_tax = 2 }
+				1 = { add_base_production = 2 } 
+			}
+		}
+	}
+	
+	after = {
+		every_owned_province = {
+			limit = { has_province_flag = crown_agenda_culture_target_1 }
+			clr_province_flag = crown_agenda_culture_target_1
+		}
+		every_owned_province = {
+			limit = { has_province_flag = crown_agenda_culture_target_2 }
+			clr_province_flag = crown_agenda_culture_target_2
+		}
 	}
 }

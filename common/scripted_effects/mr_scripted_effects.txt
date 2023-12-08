@@ -446,3 +446,65 @@ cs_call_for_crusade_effect = {
 		}
 	}
 }
+
+crown_agenda_dev_thrice_effect = {
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = crown_agenda_1
+				check_variable = {
+					which = crownAgendaCounter
+					value = 2
+				}
+			}
+		}
+		owner = {
+			country_event = {
+				id = mr_england.1002
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { has_country_flag = crown_agenda_1 }
+		}
+		owner = {
+			change_variable = {
+				which = crownAgendaCounter
+				value = 1
+			}
+		}
+	}
+}
+
+crown_agenda_exploit_thrice_effect = {
+	if = {
+		limit = {
+			has_country_flag = crown_agenda_2
+			is_state = no
+			owner = {
+				check_variable = {
+					which = crownAgendaCounter
+					value = 2
+				}
+			}
+		}
+		owner = {
+			country_event = {
+				id = mr_england.1003
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_flag = crown_agenda_2
+			is_state = no
+		}
+		owner = {
+			change_variable = {
+				which = crownAgendaCounter
+				value = 1
+			}
+		}
+	}
+}

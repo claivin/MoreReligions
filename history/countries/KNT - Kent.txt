@@ -5,10 +5,15 @@ primary_culture = english
 religion = catholic
 capital = 235 #Kent
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
-		name = "Barry"
-		dynasty = "Beckett"
+		name = "George"
+		dynasty = "Grey"
 		adm = 1
 		dip = 4
 		mil = 2

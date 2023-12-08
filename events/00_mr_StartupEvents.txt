@@ -234,7 +234,15 @@ country_event = {
 			wales_area = {
 				add_devastation = 60
 			}
+			every_subject_country = {
+				limit = { NOT = { tag = NRM } }
+				add_country_modifier = {
+					name = mr_eng_pacification
+					duration = -1
+				}
+			}
 		}
+		custom_tooltip = mr_eng_pacification_TT
 	}
 	option = { #York and their vassals
 		name = mr_startup_events.2.a

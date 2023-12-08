@@ -1,0 +1,4 @@
+change_variable = {
+	which = elite_unit_xp
+	which = 100
+}

@@ -6,12 +6,17 @@ primary_culture = english
 religion = catholic
 capital = 4375 #Chester
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
 		name = "Arthur"
-		dynasty = "Chester"
+		dynasty = "Plantagenet"
 		adm = 3
 		dip = 4
-		mil = 6
+		mil = 3
 	}
 }

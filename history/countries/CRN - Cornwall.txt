@@ -6,10 +6,15 @@ primary_culture = cornish
 religion = catholic
 capital = 233	# Exeter
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
 		name = "Conan"
-		dynasty = "Cerneu"
+		dynasty = "Plantagenet"
 		adm = 3
 		dip = 4
 		mil = 3

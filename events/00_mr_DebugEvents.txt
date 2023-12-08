@@ -47,6 +47,19 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = debug_events.1.c
+		custom_tooltip = delete_all_but_britain
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = { region = british_isles_region }
+				}
+				decolonize = this
+			}
+		}
+	}
+	
 }
 
 #disables ai from DoW you

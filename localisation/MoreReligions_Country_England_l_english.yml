@@ -75,6 +75,10 @@
  eng_m_timber_desc: ""
  eng_m_timber_trigger_TT: "§YRoyal Forests§! system is no longer in decline"
  
+ eng_m_agendas_title: "Crown Cabinet"
+ eng_m_agendas_desc: "Although the Crown has been elevated to the sole authority in England, it is simply not possible to rule alone. Appointing a cabinet of trusted individuals to carry out the daily drole tasks of a kingdom in the name of the Crown, and in stead of scattered nobles, merchants, and clergymen will help grease the wheels of bureaucracy."
+ eng_m_agendas_TT: "§YCrown Agendas§! will now be available\n\n§YCrown Agendas§! are repeating agendas which will help centralize control over the state. They have no penalties for failing to complete them in time."
+ 
  ### Decisions
  mr_crush_local_rulers_decision_title: "Crush Irish Lords"
  mr_crush_local_rulers_decision_desc: ""
@@ -130,6 +134,8 @@
  eng_m_declining_royal_woods: "Declining Royal Forests"
  eng_m_severely_exhausted_royal_woods: "Severely Exhausted Royal Forests"
  eng_restoring_in_progress: "Restoration Efforts"
+ mr_eng_crown_investments: "Crown Investments"
+ mr_eng_pacification: "England Pacified"
  
  ### misc
  mr_anglo_hibernian: "Anglo-Hibernian"
@@ -146,6 +152,9 @@
  BRITAIN_IRELAND: "Britain-Ireland"
  BRITAIN_IRELAND_ADJ: "British"
  merc_redshanks_upgraded: "Redshanks"
+ mr_eng_pacification_TT: "These modifiers will be removed when the ruler of §YEngland§! dies"
+ estate_privileges_and_agendas_events.3.MR2: "Crown Estate"
+ successfulCrownAgendas: "§YCrown Agendas completed§!"
  
  ### Events
  mr_england.1.t: "A United Kingdom"
@@ -264,13 +273,73 @@
  mr_england.9.a: "The trees will regrow..."
  
  mr_england.9002.t: "Severe Exhaustion the [Root.GetName] Royal Forest"
- mr_england.9002.d: "The [Root.GetName] Royal Forest has been reduced to a shadow of its former self, ex"
- mr_england.9002.a: ""
+ mr_england.9002.d: "The [Root.GetName] Royal Forest has been reduced to a shadow of its former self. Where once were throngs of game are now reduced to a quiet rustle here and there. Birds chirp and hares run - evidence that the forest still lives; but only so."
+ mr_england.9002.a: "It is not too late to do something about it..."
  
  mr_england.9003.t: "Restoration of the [Root.GetName] Royal Forest"
- mr_england.9003.d: ""
- mr_england.9003.a: ""
+ mr_england.9003.d: "With an effort initiated by past generation, and with lessons passed down, the efforts to preserve [Root.GetName] Royal Forest have paid off. Future lumber extraction will be done with care and not without replacing each cut tree with two more saplings in kind."
+ mr_england.9003.a: "A wonderful sight!"
  
  mr_england.9004.t: "Complete Deforestation of the [Root.GetName] Royal Forest"
- mr_england.9004.d: ""
- mr_england.9004.a: ""
+ mr_england.9004.d: "[GetMonth][GetYear],\nI came upon a clearing by the name of [Root.GetName] Royal Forest. One looks upong the bare earth and wonders it somekind of jest. Littered stumps suggest otherwise."
+ mr_england.9004.a: "Funny name."
+ 
+ mr_england.1001.t: "Crown Agenda"
+ mr_england.1001.d: "The royal cabinet has gathered in [Root.Capital.GetName] to present proposals to [Root.Monarch.GetTitle] [Root.Monarch.GetName] on how to better consolidate the state. Various ideas were floated, ranging from deals with the nobility, contracts with merchants, and expanding taxation systems in less counties, but it was these two that they settled on."
+ mr_england.1001.a: "Improve the capital state."
+ mr_england.1001.b: "Move resources from to core lands."
+ mr_england.1001.c: "Centralize a core state."
+ mr_england.1001.e: "Expand a core province."
+ mr_england.1001.f: "Reign in clerical privileges."
+ mr_england.1001.g: "Reign in the nobles' priviliges."
+ mr_england.1001.h: "Reign burgher priviliges."
+ mr_england.1001.i: "Promote [Root.GetAdjective] Culture."
+ mr_england.1001.z: "We can't spare the effort at the moment."
+ crown_agenda_privilege_church_TT: "When this modifier expires, a random clergy privilege will be removed without further penalty:"
+ crown_agenda_privilege_nobles_TT: "When this modifier expires, a random nobility privilege will be removed without further penalty:"
+ crown_agenda_privilege_merchants_TT: "When this modifier expires, a random merchant privilege will be removed without further penalty:"
+ crown_agenda_1_TT: "Crown Agenda: §YDevelop§! provinces §Y3§! times in §Y[Root.Capital.GetAreaName]§!"
+ crown_agenda_2_TT: "§YExploit§! provinces §Y3§! times in §Yterritories§!"
+ crown_agenda_3_TT: "§YCentralize any state§!"
+ crown_agenda_4_TT: "§YExpand Infrastructure§! on §Yany province§!"
+ crown_agenda_8_TT: "§YCulture Convert§! the §Y2§! provinces with the modifier to §Y[Root.Culture.GetName]§!"
+ 
+ mr_england.1002.t: "Growth of the Heartland"
+ mr_england.1002.d: "[Root.Capital.GetAreaName] centered on [Root.Capital.GetName] attract more and more people from across the realm. Roads stretch out from the capital in webs of commerce and travel; tax collectors report a growing population with each passing year. [Root.Capital.GetAreaName] has truly grown to become the beating heart of our land."
+ mr_england.1002.a: "Ever closer."
+ mr_england.1002.b: "Good news for administration."
+ 
+ mr_england.1003.t: "Migration From the Hinterlands"
+ mr_england.1003.d: "No great empire has ever held a tight grasp on all of her lands. Most of the territories are often delegated to subordinate governors and dukes and the like. Nominal contributions become paltry tribute by the time they arrive to the capital. With only a little encouragement, we've managed to attract migrants to the core territories of [Root.GetName]."
+ mr_england.1003.a: "Less power to some petty lord out there..."
+ mr_england.1003.b: "More people to tax and do work!"
+ 
+ mr_england.1004.t: "Concentrated Rule"
+ mr_england.1004.d: "Building castles and courthouses is one strategy to consolidate power, drawing the far in so that they are more easily reached - bringing them to the State. Another is bring the State to them: to have trusted adjudicators and beholden tax collectors to oversee even subordinate rule."
+ mr_england.1004.a: "Convenient!"
+ mr_england.1004.b: "Good bureaucracy requires vigilance."
+ 
+ mr_england.1005.t: "The Wealth of [crown_agenda_infrastructure.GetName]"
+ mr_england.1005.d: ""
+ mr_england.1005.a: ""
+ mr_england.1005.b: ""
+ 
+ mr_england.1006.t: "Cleric Privilieges Revoked"
+ mr_england.1006.d: ""
+ mr_england.1006.a: ""
+ mr_england.1006.b: ""
+ 
+ mr_england.1007.t: "Toe the Line"
+ mr_england.1007.d: ""
+ mr_england.1007.a: ""
+ mr_england.1007.b: ""
+ 
+ mr_england.1008.t: "Mercantile Laws Tightened"
+ mr_england.1008.d: ""
+ mr_england.1008.a: ""
+ mr_england.1008.b: ""
+ 
+ mr_england.1009.t: "New [Root.Culture.GetName] Settlements"
+ mr_england.1009.d: ""
+ mr_england.1009.a: ""
+ mr_england.1009.b: ""

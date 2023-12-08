@@ -44,7 +44,7 @@ add_government_reform = religious_societies_reform
 		siege = 0
 		#trait = born_to_the_saddle_personality
 	}
-	add_country_modifier = {
+	add_ruler_modifier = {
 		name = bul_upstart_khan
 		duration = -1
 	}

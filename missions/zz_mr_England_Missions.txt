@@ -153,9 +153,6 @@ england_missions_3_openers = {
 			}
 			stability = 3
 			is_at_war = no
-			has_mil_advisor = yes
-			has_adm_advisor = yes
-			has_dip_advisor = yes
 			manpower_percentage = 0.9
 		}
 		effect = {
@@ -286,11 +283,8 @@ england_missions_5_openers = {
 	}
 }
 
-
 #################
 #################
-
-
 
 #wycliffes legacy
 england_missions_lollardy_branch = {
@@ -725,6 +719,102 @@ england_missions_naval_branch_b = {
 		}
 		effect = {
 		
+		}
+	}
+}
+#central branch left
+england_missions_central_branch_L = {
+	slot = 2
+	generic = no
+	ai = no
+	has_country_shield = yes
+	potential = { tag = ENG }
+	
+	eng_m_agendas_2 = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_agendas }
+		position = 6
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+		}
+		trigger = {
+			check_variable = {
+				which = successfulCrownAgendas
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier 
+		}
+	}
+#central branch
+england_missions_central_branch = {
+	slot = 3
+	generic = no
+	ai = no
+	has_country_shield = yes
+	potential = { tag = ENG }
+	
+	eng_m_agendas = { 
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_united_kingdom }
+		position = 5
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+		}
+		trigger = {
+			has_institution = renaissance
+			has_mil_advisor = yes
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			is_in_deficit = no
+		}
+		effect = {
+			custom_tooltip = eng_m_agendas_TT
+			country_event = {
+				 id = mr_england.1001
+			}
+			hidden_effect = {
+				set_variable = {
+					which = successfulCrownAgendas
+					value = 0
+				}
+			}
+		}
+	}
+	eng_m_crownland = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { eng_m_agendas }
+		position = 6
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+		}
+		trigger = {
+			crown_land_share = 60
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_church
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_burghers
+					value = 2
+				}
+			}
+			NOT = {
+				num_of_estate_privileges = {
+					estate = estate_nobles
+					value = 2
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = eng_m_agendas_TT
 		}
 	}
 }

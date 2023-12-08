@@ -7,10 +7,15 @@ add_accepted_culture = welsh
 religion = catholic
 capital = 241 #glamorgan
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
-		name = "Rhys"
-		dynasty = "ap Cardiff"
+		name = "Jasper"
+		dynasty = "Tudor"
 		adm = 3
 		dip = 4
 		mil = 3

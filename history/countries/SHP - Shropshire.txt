@@ -7,11 +7,16 @@ add_accepted_culture = welsh
 religion = catholic
 capital = 4959 #Chester
 
+add_country_modifier = {
+	name = mr_eng_pacification
+	duration = -1
+}
+
 1444.1.1 = {
 	monarch = {
-		name = "Merry"
-		dynasty = "Brandybuck"
-		adm = 6
+		name = "Henry"
+		dynasty = "Beauchamp"
+		adm = 3
 		dip = 2
 		mil = 4
 	}

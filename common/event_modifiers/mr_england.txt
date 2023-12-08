@@ -118,3 +118,44 @@ eng_m_severely_exhausted_royal_woods = {
 eng_restoring_in_progress = {
 	state_maintenance_modifier = 0.1
 }
+
+mr_eng_pacification = {
+	liberty_desire = -50
+}
+
+mr_eng_crown_investments = {
+	local_development_cost = -0.25
+}
+
+mr_eng_infrastructure = {
+	local_production_efficiency = 0.20
+}
+
+mr_eng_revoke_church_privilege = {
+	monthly_reform_progress_modifier = -0.5
+}
+
+mr_eng_redirected_taxation = {
+	local_tax_modifier = 0.15
+}
+
+mr_eng_revoke_nobility_privilege = {
+	manpower_recovery_speed = -0.50
+}
+
+mr_eng_direct_recruitment = {
+	local_manpower = 1
+}
+
+mr_eng_crown_charters = {
+	trade_goods_size_modifier = 0.5
+}
+
+me_eng_culture_coversion = {
+	culture_conversion_cost = -0.1
+	culture_conversion_time = -0.25
+}
+
+mr_eng_revoke_merchants_privilege = {
+	trade_efficiency = -0.1
+}
