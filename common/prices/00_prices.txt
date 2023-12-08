@@ -143,34 +143,34 @@ unknown = {
 }
 ####MR TRADE GOODS###
 alcohol = {
-	base_price = 5
-}
-military_supplies = {
 	base_price = 4.5
 }
+military_supplies = {
+	base_price = 8
+}
 lumber = {
-	base_price = 2
+	base_price = 3
 }
 stone = {
-	base_price = 2.5
+	base_price = 3
 }
 marble = {
-	base_price = 3
+	base_price = 6
 }
 jewelry = {
-	base_price = 5
+	base_price = 10
 }
 cheese = {
-	base_price = 3.5
+	base_price = 4
 }
 whales = {
-	base_price = 3
+	base_price = 5
 }
 rice = {
 	base_price = 2
 }
 steel = {
-	base_price = 4
+	base_price = 6
 }
 silver = {
 	base_price = 0
@@ -180,80 +180,80 @@ sulfur = {
 	base_price = 3
 }
 gunpowder = {
-	base_price = 4
+	base_price = 5
 }
 nutmeg = {
-	base_price = 6
+	base_price = 5
 }
 tumeric = {
-	base_price = 6
+	base_price = 5
 }
 honey = {
-	base_price = 2.5
+	base_price = 3
 }
 ginger = {
-	base_price = 4.5
+	base_price = 4
 }
 fruit = {
-	base_price = 2
+	base_price = 3
 }
 tropical_fruit = {
 	base_price = 3
 }
 horses = {
-	base_price = 3
+	base_price = 4
 }
 saffron = {
-	base_price = 6
+	base_price = 10
 }
 chocolate = {
-	base_price = 5
+	base_price = 6
 }
 ice = {
-	base_price = 2.5
+	base_price = 4
 }
 rice_wine = {
-	base_price = 3.5
+	base_price = 4
 }
 citrus = {
-	base_price = 3
+	base_price = 4
 }
 grapes = {
 	base_price = 2.5
 }
 dates_figs = {
-	base_price = 2
+	base_price = 3
 }
 rum = {
-	base_price = 4
+	base_price = 6
 }
 honey_wine = {
-	base_price = 4
+	base_price = 6
 }
 olives = {
-	base_price = 2.5
+	base_price = 3
 }
 vegetables = {
 	base_price = 2
 }
 potato = {
-	base_price = 2.5
+	base_price = 2
 }
 tomato = {
-	base_price = 2.5
+	base_price = 2
 }
 maize = {
-	base_price = 2.5
+	base_price = 2
 }
 jade = {
-	base_price = 4
+	base_price = 6
 }
 shellfish = {
 	base_price = 2.5
 }
 tin = {
-	base_price = 2.5
+	base_price = 7
 }
 amber = {
-	base_price = 2.5
+	base_price = 8
 }

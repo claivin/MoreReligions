@@ -246,65 +246,65 @@ namespace = mr_institutions
 	# }
 # }
 
-country_event = { #Proliferation of Firearms
-	id = mr_institutions.8
-	title = mr_institutions.8.t
-	desc = mr_institutions.8.d
-	picture = BATTLE_eventPicture
-	is_triggered_only = yes
-	goto = institution_origin
-	trigger = { 
-		#triggered by on_institution_embracement on actions
-	}
-	mean_time_to_happen = { days = 1 }
+# country_event = { #Proliferation of Firearms
+	# id = mr_institutions.8
+	# title = mr_institutions.8.t
+	# desc = mr_institutions.8.d
+	# picture = BATTLE_eventPicture
+	# is_triggered_only = yes
+	# goto = institution_origin
+	# trigger = { 
+		# #triggered by on_institution_embracement on actions
+	# }
+	# mean_time_to_happen = { days = 1 }
 
-	immediate = {
-		trigger_switch = {
-			on_trigger = mil_tech
-			1 = {
-				random_neighbor_country = {
-					limit = { mil_tech = 4 }
-					save_event_target_as = firearms_proliferator
-				}
-			}
-			2 = {
-				random_neighbor_country = {
-					limit = { mil_tech = 4 }
-					save_event_target_as = firearms_proliferator
-				}
-			}
-			3 = {
-				random_neighbor_country = {
-					limit = { mil_tech = 4 }
-					save_event_target_as = firearms_proliferator
-				}
-			}
-			4 = {
-				random_neighbor_country = {
-					limit = { mil_tech = 5 }
-					save_event_target_as = firearms_proliferator
-				}
-			}
-			5 = {
-				random_neighbor_country = {
-					limit = { mil_tech = 6 }
-					save_event_target_as = firearms_proliferator
-				}
-			}
-		}
-	}
-	option = {
-		name = mr_institutions.8.a
-		trigger_switch = {
-			on_trigger = mil_tech
-			1 = { add_mil_tech = 3 }
-			2 = { add_mil_tech = 2 }
-			3 = { add_mil_tech = 1 }
-			4 = { add_mil_tech = 1 }
-			5 = { add_mil_tech = 1 }
-		}
-	}
-}
+	# immediate = {
+		# trigger_switch = {
+			# on_trigger = mil_tech
+			# 1 = {
+				# random_neighbor_country = {
+					# limit = { mil_tech = 4 }
+					# save_event_target_as = firearms_proliferator
+				# }
+			# }
+			# 2 = {
+				# random_neighbor_country = {
+					# limit = { mil_tech = 4 }
+					# save_event_target_as = firearms_proliferator
+				# }
+			# }
+			# 3 = {
+				# random_neighbor_country = {
+					# limit = { mil_tech = 4 }
+					# save_event_target_as = firearms_proliferator
+				# }
+			# }
+			# 4 = {
+				# random_neighbor_country = {
+					# limit = { mil_tech = 5 }
+					# save_event_target_as = firearms_proliferator
+				# }
+			# }
+			# 5 = {
+				# random_neighbor_country = {
+					# limit = { mil_tech = 6 }
+					# save_event_target_as = firearms_proliferator
+				# }
+			# }
+		# }
+	# }
+	# option = {
+		# name = mr_institutions.8.a
+		# # trigger_switch = {
+			# # on_trigger = mil_tech
+			# # 1 = { add_mil_tech = 3 }
+			# # 2 = { add_mil_tech = 2 }
+			# # 3 = { add_mil_tech = 1 }
+			# # 4 = { add_mil_tech = 1 }
+			# # 5 = { add_mil_tech = 1 }
+		# # }
+	# }
+# }
 
 ######
 #Professional Army Institution Spawns

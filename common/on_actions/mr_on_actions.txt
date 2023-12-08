@@ -646,7 +646,7 @@ on_mil_development = {
 
 on_adm_exploited = {
 	crown_agenda_exploit_thrice_effect = yes
-)
+}
 on_dip_exploited = {
 	crown_agenda_exploit_thrice_effect = yes
 }
