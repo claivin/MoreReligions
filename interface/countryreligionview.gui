@@ -1413,9 +1413,10 @@ guiTypes = {
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "RV_NO_DEITY"	
-				maxWidth = 200
+				maxWidth = 150
 				maxHeight = 24
 				Orientation = "UPPER_LEFT"
+				fixedsize = yes
 				format = left
 			}
 			

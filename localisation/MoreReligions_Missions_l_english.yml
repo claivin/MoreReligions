@@ -696,7 +696,7 @@ confucian_scholars_JAP: "Confucian Scholars"
  bearn_clergy: "Clergy estate privilege §YFund Theological Studies§! is removed and replaced with an improved version called §YCounter-Heresy Studies§! giving us the following upgraded bonus: §G+2 Missionary Strength§!"
  cordoban_researcher: "We will enact the burgher estate privilege §YCordoban Scholars§! which gives us the following modifiers: \n§G-5% Idea Cost§! \n§G+3 tolerance of heretics§! \n§G+3 tolerance of heathens§! \n§R-10% Clergy Loyalty§!"
 
-#Latin Missions
+#Shared Greek Missions
 #Titles
 mr_greece_unity_1_title: "Prepare for the Campaigns"
 mr_greece_unity_2_title: "The Latin North"
@@ -776,6 +776,8 @@ mr_greek_catholic_first_title: "A Home for the Legate"
 mr_greek_catholic_second_title: "Call on the Faithful"
 mr_greek_catholic_third_title: "An Emissary of the Papacy"
 mr_greek_catholic_fourth_title: "Spread the True Faith"
+mr_greek_latin_ninth_title: "Crusaders of the East"
+mr_greek_latin_eighth_title: "The Ports of Alexandria"
 
 
 #Tooltips
@@ -859,17 +861,19 @@ if_no_rum: "£no£If @RUM §YRum§! does not exist when we complete this mission
 if_yes_rum: "£yes£If @RUM §YRum§! does not exist when we complete this mission, we will gain the following:"
 crusader_owned_levant: "Have a §YCrusader State§! from the §YLevant§! own all provinces in the §YSyria§!, §YPalestine§!, and §YAleppo§! Areas.\nThey must also be our §YAlly§! with §Y35§! Favors."
 latin_owned_levant: "\nOwn all of the §YSyria§!, §YPalestine§!, and §YAleppo§! Area."
-completed_with_an_alliance_yes: "£yes£If we complete this mission while an Ally own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
-completed_with_an_alliance_no: "£no£If we complete this mission while an Ally own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
+completed_with_an_alliance_yes: "£yes£If we complete this mission while an ally owns the target provinces, we shall recieve the following:"
+completed_with_an_alliance_no: "£no£If we complete this mission while an ally owns the target provinces, we shall recieve the following:"
 build_trade_routes: "All provinces in Syria, Palestine, and Aleppo will receive the following:"
-own_directly_buff_yes: "£yes£If we directly own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
-own_directly_buff_no: "£no£If we directly own all provinces in the Syria, Palestine, and Aleppo Areas, we shall recieve the following:"
+own_directly_buff_yes: "£yes£If we directly own all provinces directly, we shall recieve the following:"
+own_directly_buff_no: "£no£If we directly own all provinces directly, we shall recieve the following:"
 change_culture_vulghari_yes: "£yes£If we complete this mission with §YBulgarian§! as an Accepted Culture, we will move the culture into the §YAegean§! Culture group."
 change_culture_vulghari_no: "£no£If we complete this mission with §YBulgarian§! as an Accepted Culture, we will move the culture into the §YAegean§! Culture group."
 dominate_the_levant: "Keepers of the Holy Cities"
 gain_trade_power_in_trade_node: "We will gain §G10§! §YTrade Node Power§! in any of the trade nodes that met the requirements."
 trade_olives_5: "We must have §Y5§! active §YOlive Oil Contracts§!."
 enable_8_trades: "This will enable us to have §Y8§! active §YOlive Oil Contracts§!\n"
+egypt_ally_or_nah: "Have a §YCrusader State§! from the §YLevant§! own all provinces in the §YBahari§!, §YRed Sea Hills§!, and §YDelta§! Areas.\nThey must also be our §YAlly§! with §Y70§! Trust.\n\nOR\n\nOwn all provinces in the §YBahari§!, §YRed Sea Hills§!, and §YDelta§! Areas"
+extended_zealot_and_conqueror: "Triple the chance of getting a §YConqueror§! or §YZealot§! Personality"
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -927,6 +931,8 @@ defense_against_magyars: "Defense of the Carpathians"
 targoviste_fort: "Fort of Tirgoviste"
 skopje_conquest: "Skopje Forts"
 gold_mine_of_kosovo: "Gold Mines of Kosovo"
+the_med_trade_GRE: "From Alexandria to Istinople"
+conquerors_of_illyria: "Balkan Hegemon"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"

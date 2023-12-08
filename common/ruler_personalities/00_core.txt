@@ -904,6 +904,10 @@ zealot_personality = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
 		}
+		modifier = {
+			factor = 3
+			mission_completed = mr_greek_latin_ninth
+		}
 	}
 	
 	different_religion_war_multiplier = 2
@@ -1685,6 +1689,10 @@ conqueror_personality = {
 		modifier = {
 			factor = 2 
 			has_country_flag = egypt_better_traits_flag
+		}
+		modifier = {
+			factor = 3
+			mission_completed = mr_greek_latin_ninth
 		}
 	}
 	

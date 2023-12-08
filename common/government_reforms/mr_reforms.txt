@@ -970,3 +970,68 @@ gsc_divine_emperor_reform = {
 		factor = 10
 	}
 }
+
+byzantine_universal_monarch_ORTHO_reform = {
+	icon = "restoration_of_the_senate_reform"
+	lock_level_when_selected = yes	
+	potential = {
+		OR = {
+			tag = CST
+			was_tag = CST
+		}
+		religion_group = christian
+	}
+	trigger = {
+		mission_completed = mr_CST_fourth
+	}
+	maintain_dynasty = yes
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		war_exhaustion = -0.02
+		tolerance_own = 2
+		church_loyalty_modifier = 0.1
+		manpower_in_true_faith_provinces = 0.15
+	}
+	custom_attributes = {
+		mr_universal_monarch = yes
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = yes
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+}
+byzantine_universal_monarch_MUSLIM_reform = {
+	icon = "integrated_ottoman_officials"
+	lock_level_when_selected = yes	
+	potential = {
+		OR = {
+			tag = CST
+			was_tag = CST
+		}
+		religion_group = muslim
+	}
+	maintain_dynasty = yes
+	trigger = {
+		mission_completed = mr_CST_fourth
+	}
+	allow_normal_conversion = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	modifiers = {
+		monthly_fervor_increase = 0.25
+		war_exhaustion = -0.02
+		church_loyalty_modifier = 0.1
+		manpower_in_true_faith_provinces = 0.15
+	}
+	custom_attributes = {
+		mr_universal_monarch = yes
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = yes
+		has_harem = yes	
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	
+}

@@ -91,9 +91,71 @@ custom_button = {
 			}
 			custom_tooltip = years_of_owned_provinces_maitreya
 		}
-		subtract_variable = {
-			which = maitreyan_power_counter
-			value = 100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
 		}
 		hidden_effect = {
 			change_variable = {
@@ -197,9 +259,71 @@ custom_button = {
 				samurai_infantry = ROOT
 			}
 		}
-		subtract_variable = {
-			which = maitreyan_power_counter
-			value = 100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
 		}
 		hidden_effect = {
 			change_variable = {
@@ -295,9 +419,71 @@ custom_button = {
 			name = expand_sangha
 			duration = -1
 		}
-		subtract_variable = {
-			which = maitreyan_power_counter
-			value = 100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
 		}
 		hidden_effect = {
 			change_variable = {
@@ -400,9 +586,71 @@ custom_button = {
 				id = mrSongEvents.3
 			}
 		}
-		subtract_variable = {
-			which = maitreyan_power_counter
-			value = 100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
 		}
 		hidden_effect = {
 			change_variable = {
@@ -501,9 +749,71 @@ custom_button = {
 		}
 		set_heir_flag = xiao_mingwang_flag
 		custom_tooltip = xiao_mingwang_TT
-		subtract_variable = {
-			which = maitreyan_power_counter
-			value = 100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
 		}
 		hidden_effect = {
 			change_variable = {
@@ -600,9 +910,71 @@ custom_button = {
 			duration = -1
 		}
 		custom_tooltip = sutra_rituals_effect_TT
-		subtract_variable = {
-			which = maitreyan_power_counter
-			value = 100
+		if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 5
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 225
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 4
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 200
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 3
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 175
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 2
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 150
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = maitreyan_power_counter_cost
+					value = 1
+				}
+			}
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 125
+			}
+		}
+		else = {
+			subtract_variable = {
+				which = maitreyan_power_counter
+				value = 100
+			}
 		}
 		hidden_effect = {
 			change_variable = {

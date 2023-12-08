@@ -71,6 +71,9 @@ country_event = {
 			name = byzantines_triumphant
 			duration = 18250
 		}
+		hidden_effect = {
+			set_country_flag = will_soon_be_trolled
+		}
 	}
 }
 #The oopsie whoopsie crusade
@@ -338,6 +341,77 @@ country_event = {
 		151 = {
 			add_building = mrb_gunsmith
 			change_trade_goods = military_supplies
+		}
+	}
+}
+country_event = { #The Anatolian Candidate
+	id = MrGreekEvents.10
+	title = MrGreekEvents.10.t
+	desc = MrGreekEvents.10.d
+	picture = BYZ_CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = will_soon_be_trolled
+	}
+
+	immediate = {
+		hidden_effect = {
+			export_to_variable = {
+				variable_name = tur_religion
+				who = TUR
+				value = religion
+			}
+		}
+	}
+	fire_only_once = yes
+
+	option = {
+		name = MrGreekEvents.10.a #Let the funny happen
+		kill_ruler = yes
+		kill_heir = {}
+		change_religion = variable:tur_religion
+		add_stability = -2
+		define_ruler = {
+			name = "Alexandrios"
+			dynasty = ROOT
+			adm = 3
+			dip = 6
+			mil = 3
+			age = 20
+			claim = 95
+			religion = variable:tur_religion
+		}
+		add_government_reform = byzantine_universal_monarch_MUSLIM_reform
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = religious_rebels
+			}
+		}
+	}
+
+	option = {
+		name = MrGreekEvents.10.b #Try to run (coward)
+		custom_tooltip = kill_all_rebels_or_he_wins
+		hidden_effect = {
+			set_country_flag = need_to_not_die
+		}
+		add_stability = -2
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = noble_rebels
+				win = yes
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 3
+				type = noble_rebels
+				win = yes
+			}
 		}
 	}
 }

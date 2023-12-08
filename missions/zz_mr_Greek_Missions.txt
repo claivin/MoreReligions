@@ -1225,6 +1225,7 @@ mr_greek_missions_first_byz = {
 			country_event = {
 				id = MrGreekEvents.6
 			}
+			custom_tooltip = metropolitans_byz
 		}
 	}
 	mr_CST_fourth = {
@@ -1257,13 +1258,11 @@ mr_greek_missions_first_byz = {
 			}
 		}
 		effect = {
-			151 = {
-				add_prosperity = 50
+			custom_tooltip = change_to_theocracy
+			hidden_effect = {
+				change_government_to_theocracy = yes
 			}
-			148 = {
-				add_prosperity = 50
-			}
-			custom_tooltip = metropolitans_byz
+			add_government_reform = byzantine_universal_monarch_ORTHO_reform
 		}
 	}
 	mr_CST_fifth = {
@@ -2341,6 +2340,74 @@ mr_greek_missions_third = {
 	}
 	
 }
+mr_latin_missions_3 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+		religion = catholic
+	}
+	mr_greek_latin_ninth = {
+		icon = arb_unite_arabia
+		position = 10
+		required_missions = {
+			mr_greek_latin_seventh
+		}
+		provinces_to_highlight = {
+			superregion = near_east_superregion
+			NOT = {
+				religion = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						is_levantine_crusader_state = yes
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					religion = ROOT
+					superregion = near_east_superregion
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						owner = {
+							is_levantine_crusader_state = yes
+							alliance_with = ROOT
+						}
+					}
+				}
+				amount = 100
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			custom_tooltip = extended_zealot_and_conqueror
+		}
+	}
+}
 mr_latin_missions = {
 	slot = 3
 	generic = no
@@ -2597,10 +2664,10 @@ mr_latin_missions = {
 	}
 	mr_greek_latin_seventh = {
 		icon = mission_bedouins
-	position = 9
-	required_missions = {
-		mr_greek_latin_sixth
-	}
+		position = 9
+		required_missions = {
+			mr_greek_latin_sixth
+		}
 	provinces_to_highlight = {
 		or = {
 			area = syria_area
@@ -2671,6 +2738,27 @@ mr_latin_missions = {
 		}
 	}
 	effect = {
+		bahari_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		delta_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		gulf_of_arabia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		custom_tooltip = build_trade_routes
 			tooltip = {
 				add_province_modifier = {
@@ -2832,6 +2920,334 @@ mr_latin_missions = {
 				tooltip = {
 					add_ruler_modifier = {
 						name = dominate_the_levant
+						duration = -1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					syria_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							owes_favors = { 
+								who = ROOT 
+								value = 35 
+						   }
+						}
+					}
+					aleppo_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							owes_favors = { 
+								who = ROOT 
+								value = 35 
+						   }
+						}
+					}
+					palestine_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							owes_favors = { 
+								who = ROOT 
+								value = 35 
+						   }
+						}
+					}
+				}
+				add_country_modifier = {
+					name = tax_returns_on_pilgrims
+					duration = 12775
+				}
+			}
+			else = {
+				add_ruler_modifier = {
+					name = dominate_the_levant
+					duration = -1
+				}
+			}
+		}
+	}
+	mr_greek_latin_eighth = {
+		icon = mam_city_thousand_minarets
+		position = 11
+		required_missions = {
+			mr_greek_latin_seventh
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bahari_area
+				area = gulf_of_arabia_area
+				area = delta_area
+			}
+			NOT = {
+				owner = {
+					alliance_with = ROOT
+					is_levantine_crusader_state = yes
+					trust = { 
+						who = ROOT 
+						value = 70 
+					}
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = egypt_ally_or_nah
+				OR = {
+					AND = {
+						bahari_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+								}
+							}
+						}
+						gulf_of_arabia_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+								}
+							}
+						}
+						delta_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+								}
+							}
+						}
+					}
+					AND = {
+						bahari_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						gulf_of_arabia_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						delta_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_mercantilism = 5
+			if = {
+				limit = {
+					bahari_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							trust = { 
+								who = ROOT 
+								value = 70 
+							}
+						}
+					}
+					gulf_of_arabia_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							trust = { 
+								who = ROOT 
+								value = 70 
+							}
+						}
+					}
+					delta_area = {
+						type = all
+						owner = {
+						alliance_with = ROOT
+							is_levantine_crusader_state = yes
+							trust = { 
+								who = ROOT 
+								value = 70 
+							}
+						}
+					}
+				}
+				custom_tooltip = completed_with_an_alliance_yes
+				tooltip = {
+					358 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = -1
+							power = 25
+						}
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						bahari_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+								}
+							}
+						}
+						gulf_of_arabia_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+							}
+							}
+						}
+						delta_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+									trust = { 
+								who = ROOT 
+									value = 70 
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = completed_with_an_alliance_no
+				tooltip = {
+					358 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = -1
+							power = 25
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					gulf_of_arabia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					bahari_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					delta_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				custom_tooltip = own_directly_buff_yes
+				tooltip = {
+					add_country_modifier = {
+						name = the_med_trade_GRE
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						gulf_of_arabia_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						bahari_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						delta_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+					}
+				}
+				custom_tooltip = own_directly_buff_no
+				tooltip = {
+					add_country_modifier = {
+						name = the_med_trade_GRE
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						bahari_area = {
+							type = all
+							owner = {
+							alliance_with = ROOT
+								is_levantine_crusader_state = yes
+									trust = { 
+										who = ROOT 
+										value = 70 
+									}
+							}
+						}
+						gulf_of_arabia_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+								}
+							}
+						}
+						delta_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								is_levantine_crusader_state = yes
+								trust = { 
+									who = ROOT 
+									value = 70 
+								}
+							}
+						}
+					}
+					358 = {
+						add_trade_modifier = {
+							who = ROOT
+							duration = -1
+							power = 25
+						}
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = the_med_trade_GRE
 						duration = -1
 					}
 				}

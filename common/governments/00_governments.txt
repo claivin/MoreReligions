@@ -1217,6 +1217,8 @@ theocracy = {
 				#gk
 				mr_hungarian_theocracy
 				andorran_reform
+				byzantine_universal_monarch_ORTHO_reform
+				byzantine_universal_monarch_MUSLIM_reform
 			}
 		}
 		internal_vs_external_mission = {

@@ -16,8 +16,8 @@ dharmic = {
 			digambara
 		}
 		country = {
-			tolerance_heretic = 2
-			tolerance_own = 1
+			great_project_upgrade_cost = -0.15	
+			tolerance_own = 2
 			brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
@@ -52,8 +52,8 @@ dharmic = {
 			digambara
 		}
 		country = {
-			tolerance_heretic = 1
-			tolerance_own = 2
+			tolerance_heretic = 2
+			ship_durability = 0.05
 			brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
@@ -88,8 +88,8 @@ dharmic = {
 			digambara
 		}
 		country = {
-			tolerance_heathen = 1
-			tolerance_heretic = 1
+			fire_damage = 0.05
+			improve_relation_modifier = 0.10
 			brahmins_hindu_influence_modifier = 0.2
 		}
 		country_as_secondary = {
@@ -194,7 +194,7 @@ dharmic = {
 			digambara
 		}
 		country = {
-			diplomatic_reputation = 2
+			diplomatic_reputation = 1
 			jains_loyalty_modifier = 0.15
 			jains_influence_modifier = 0.2
 		}

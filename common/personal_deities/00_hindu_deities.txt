@@ -7,7 +7,7 @@
 # If adding new dieties, make sure they are uniquely named.
 
 buddha = {
-	sprite = 6
+	sprite = 13
 	potential = { 
 		religion = hinduism
 		# OR = {
@@ -206,7 +206,7 @@ krishna = {
 	diplomatic_reputation = 2
 	
 	potential = { religion = hinduism }
-	sprite = 6
+	sprite = 14
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -219,7 +219,7 @@ rama = {
 	monthly_reform_progress_modifier = 0.15
 	
 	potential = { religion = hinduism }
-	sprite = 6
+	sprite = 15
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -232,7 +232,7 @@ narasimha = {
 	global_missionary_strength = 0.02
 	
 	potential = { religion = hinduism }
-	sprite = 6
+	sprite = 16
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -245,7 +245,7 @@ jagannath = {
 	cavalry_power = 0.10
 	
 	potential = { religion = hinduism }
-	sprite = 6
+	sprite = 17
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -258,7 +258,7 @@ kalki = {
 	stability_cost_modifier = -0.15
 	
 	potential = { religion = hinduism }
-	sprite = 6
+	sprite = 18
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -272,7 +272,7 @@ kartikeya = {
 	general_cost = -0.25
 	
 	potential = { religion = shaivism }
-	sprite = 6
+	sprite = 25
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -285,7 +285,7 @@ ayyanar = {
 	movement_speed = 0.10 
 	
 	potential = { religion = shaivism }
-	sprite = 6
+	sprite = 26
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -303,7 +303,7 @@ devaraja = {
 			superregion = east_indies_superregion
 		}
 	}
-	sprite = 6
+	sprite = 13
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -317,7 +317,7 @@ kali = {
 	loot_amount = 0.15
 	
 	potential = { religion = shaktism }
-	sprite = 6
+	sprite = 19
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -330,7 +330,7 @@ tripura_sundari = {
 	may_recruit_female_generals = yes 
 	
 	potential = { religion = shaktism }
-	sprite = 6
+	sprite = 20
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -343,7 +343,7 @@ bhunaveswari = {
 	advisor_cost = -0.10
 	
 	potential = { religion = shaktism }
-	sprite = 6
+	sprite = 21
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -356,7 +356,7 @@ durga = {
 	improve_relation_modifier = 0.15
 	
 	potential = { religion = shaktism }
-	sprite = 6
+	sprite = 22
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -369,7 +369,7 @@ matangi = {
 	spy_offence = 0.15
 	
 	potential = { religion = shaktism }
-	sprite = 6
+	sprite = 23
 	trigger = {}
 	effect = {}
 	removed_effect = {}
@@ -382,7 +382,7 @@ mahadevi = {
 	yearly_corruption = -0.05
 	
 	potential = { religion = shaktism }
-	sprite = 6
+	sprite = 24
 	trigger = {}
 	effect = {}
 	removed_effect = {}

@@ -232,5 +232,9 @@ dominate_the_levant = {
 	missionaries = 1
 	missionary_maintenance_cost = -0.25
 }
+the_med_trade_GRE = {
+	trade_steering = 0.1
+	trade_company_investment_cost = -0.25
+}
 
 
