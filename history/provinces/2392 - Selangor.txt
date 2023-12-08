@@ -3,7 +3,7 @@
 owner = GGG
 controller = GGG
 culture = malayan
-religion = sunni
+religion = nusantara
 capital = "Kelang"
 trade_goods = grain
 hre = no

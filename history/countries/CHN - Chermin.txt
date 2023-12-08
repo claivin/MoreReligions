@@ -1,9 +1,9 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = nusantaran_sultanate
 primary_culture = utara
 religion = sunni
 technology_group = chinese
-capital = 2393	# Malacca
+capital = 599
 religious_school = shafii_school
 
 1444.1.1 = {

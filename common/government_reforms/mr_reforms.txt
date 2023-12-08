@@ -1035,3 +1035,96 @@ byzantine_universal_monarch_MUSLIM_reform = {
 	heirs_can_be_generals = yes
 	
 }
+
+nusantaran_sultanate = {
+	icon = "indian_sultanate"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			culture_group = malay
+			culture_group = javanese_group
+			culture_group = moluccan_group
+			culture = cham
+		}
+		religion_group = muslim
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		religion_group = muslim
+		OR = {
+			culture_group = malay
+			culture_group = javanese_group
+			culture_group = moluccan_group
+			culture = cham
+		}
+	}
+	legacy_equivalent = indian_sultanate_legacy
+	conditional = {
+		allow = { 
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+	modifiers = {
+		tolerance_heathen = 3
+		global_heathen_missionary_strength = -0.01
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	free_concentrate_development = yes
+	ai = {
+		factor = 2
+	}
+}
+
+sulawesian_confederacy = {
+	icon = "tribal_civil_society"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = feudal_tribe_legacy
+	potential = {
+		OR = {
+		primary_culture = sulawesi
+		primary_culture = southern_sulawesi
+		}
+	}
+	trigger = {
+		OR = {
+		primary_culture = sulawesi
+		primary_culture = southern_sulawesi
+		}
+	}
+	modifiers = {
+		vassal_income = 0.15
+		vassal_forcelimit_bonus = 1
+		max_absolutism = -30
+		nobles_influence_modifier = 0.1
+	}
+
+	conditional = {
+		allow = { 
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+
+	ai = {
+		factor = 2
+	}
+}

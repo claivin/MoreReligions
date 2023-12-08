@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = nusantaran_sultanate
 primary_culture = acehnese
 religion = shiite
 technology_group = chinese

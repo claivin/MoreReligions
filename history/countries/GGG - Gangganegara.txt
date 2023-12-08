@@ -1,9 +1,8 @@
 government = monarchy
-add_government_reform = mandala_reform
+add_government_reform = nusantaran_sultanate
 government_rank = 1
 primary_culture = malayan
-religion = nusantara
-secondary_religion = shiite
+religion = mr_tayyibi
 technology_group = chinese
 capital = 595 # Malacca
 

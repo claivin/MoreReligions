@@ -2,7 +2,8 @@ government = tribal
 add_government_reform = matrilineal_system
 government_rank = 2
 primary_culture = minang
-religion = buddhism
+religion = nusantara
+secondary_religion = vajrayana
 technology_group = chinese
 capital = 2681	# Pagarruyung
 
