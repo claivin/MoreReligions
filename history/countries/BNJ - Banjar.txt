@@ -22,6 +22,7 @@ capital = 639	# Banjar
 		religion = shaivism
 		birth_date = 1420.1.1
 		death_date = 1480.1.1
+		claim = 95
 		adm = 5
 		dip = 3
 		mil = 5

@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = tribal
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = southern_sulawesi
 religion = nusantara
@@ -8,74 +8,73 @@ capital = 641	# Makassar
 
 # Kings of Gowa
 
-1399.1.1 = {
+1350.1.1 = {
 	monarch = {
-		name = "Tunitangkalopi"
-		dynasty = "Kalopid"
-		adm = 1
-		dip = 1
-		mil = 3
+		name = "Tumanurung Baine"
+		female = yes
+		dynasty = "Gowa"
+		adm = 5
+		dip = 5
+		mil = 5
 	}
 }
 
-1399.1.1 = {
-	heir = {
-		name = "Batara Gowa"
-		monarch_name = "Batara Gowa"
-		dynasty = "Kalopid"
-		birth_date = 1399.1.1
-		death_Date = 1440.1.1
-		claim = 95
-		adm = 0
-		dip = 2
-		mil = 0
-	}
-}
-
-1405.1.1 = {
+1370.1.1 = {
 	monarch = {
-		name = "Batara Gowa"
-		dynasty = "Kalopid"
-		adm = 0
-		dip = 2
-		mil = 0
-	}
-}
-
-1405.1.1 = {
-	heir = {
-		name = "Tuni Djallori"
-		monarch_name = "Tuni Djallori"
-		dynasty = "Kalopid"
-		birth_date = 1390.1.1
-		death_Date = 1470.1.1
-		claim = 95
+		name = "Tumassalangga Baraya"
+		dynasty = "Gowa"
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-1440.1.1 = {
+1390.1.1 = {
 	monarch = {
-		name = "Tuni Djallori"
-		dynasty = "Kalopid"
+		name = "I Puang Loe Lembang"
+		dynasty = "Gowa"
 		adm = 1
 		dip = 1
 		mil = 1
 	}
 }
 
-1440.1.1 = {
-	heir = {
-		name = "Tuni Parisi"
-		monarch_name = "Tuni Parisi"
-		dynasty = "Kalopid"
-		birth_date = 1440.1.1
-		death_Date = 1500.1.1
-		claim = 95
+1410.1.1 = {
+	monarch = {
+		name = "Tuniatabanri"
+		dynasty = "Gowa"
 		adm = 1
-		dip = 3
+		dip = 1
+		mil = 1
+	}
+}
+
+1430.1.1 = {
+	monarch = {
+		name = "Karampang ri Gowa"
+		dynasty = "Gowa"
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Tunatangkalopi"
+		dynasty = "Gowa"
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+	heir = {
+		name = "Batara Gowa"
+		dynasty = "Gowa"
+		birth_date = 1443.1.1
+		death_date = 1480.1.1
+		claim = 95
+		adm = 2
+		dip = 2
 		mil = 2
 	}
 }

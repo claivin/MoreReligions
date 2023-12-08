@@ -303,16 +303,17 @@ matrilineal_system = {
 		OR = {
 			primary_culture = nubian
 			have_had_reform = matrilineal_system
+			primary_culture = minang
 		}
 	}
 	trigger = {
 		OR = {
 			primary_culture = nubian
 			have_had_reform = matrilineal_system
+			primary_culture = minang
 		}
 	}
 	modifiers = {
-		heir_chance = -0.5
 		female_advisor_chance = 0.5
 		legitimacy = 1
 	}

@@ -1,19 +1,18 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = tribal
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = sulawesi
 religion = nusantara
 technology_group = chinese
 capital = 643
 
-
-1429.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Faridah" 
-		dynasty = "Malik"
+		name = "Tribal Council"
 		adm = 3
 		dip = 3
 		mil = 3
+		regent = yes
 	}
 }
 

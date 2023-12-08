@@ -1,5 +1,5 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = tribal
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = southern_sulawesi
 religion = nusantara
@@ -8,20 +8,21 @@ capital = 4795
 
 1444.1.1 = {
 	monarch = {
-		name = "Tumassalangga"
+		name = "La Saliyu Korampelua"
 		dynasty = "Bone"
 		adm = 4
+		dip = 3
+		mil = 2
+	}
+	heir = {
+		name = "We Banrigau"
+		dynasty = "Bone"
+		female = yes
+		birth_date = 1440.1.1
+		death_date = 1510.1.1
+		claim = 95
+		adm = 3
 		dip = 2
 		mil = 4
-	}
-}
-
-1480.1.1 = {
-	monarch = {
-		name = "Regency Council"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
 	}
 }

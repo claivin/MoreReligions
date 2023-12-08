@@ -1,18 +1,27 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = tribal
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = sulawesi
 religion = nusantara
 technology_group = chinese
 capital = 4796
 
-
-1429.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Rahmawati" 
-		dynasty = "Suryono"
-		adm = 3
-		dip = 3
+		name = "Tolindu" 
+		dynasty = "Tolaki"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+	heir = {
+		name = "Lakidende" 
+		dynasty = "Tolaki"
+		claim = 95
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		adm = 2
+		dip = 4
 		mil = 3
 	}
 }

@@ -17,9 +17,10 @@ capital = 2706
 	}
 	heir = {
 		name = "Bapurung"
-		dynasty = "Tanjungpura
+		dynasty = "Tanjungpura"
 		birth_date = 1443.1.1
 		death_date = 1480.1.1
+		claim = 95
 		religion = shaivism
 		adm = 2
 		dip = 3

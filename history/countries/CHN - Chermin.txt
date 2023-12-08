@@ -22,6 +22,7 @@ religious_school = shafii_school
 		birth_date = 1420.1.1
 		death_date = 1480.1.1
 		female = yes
+		claim = 95
 		adm = 5
 		dip = 3
 		mil = 4

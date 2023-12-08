@@ -1,18 +1,28 @@
-government = monarchy
-add_government_reform = plutocratic_reform
+government = tribal
+add_government_reform = tribal_despotism
 government_rank = 1
 primary_culture = southern_sulawesi
 religion = nusantara
 technology_group = chinese
 capital = 4797
 
-
-1429.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Nurhayati" 
-		dynasty = "Mansur"
-		adm = 3
+		name = "We Tekkawanua" 
+		dynasty = "Soppeng"
+		female = yes
+		adm = 2
 		dip = 3
+		mil = 4
+	}
+	heir = {
+		name = "La Makkanengnga" 
+		dynasty = "Soppeng"
+		claim = 95
+		birth_date = 1420.1.1
+		death_date = 1480.1.1
+		adm = 4
+		dip = 2
 		mil = 3
 	}
 }

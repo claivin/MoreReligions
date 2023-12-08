@@ -22,6 +22,7 @@ capital = 595 # Malacca
 		female = yes
 		birth_date = 1443.1.1
 		death_date = 1480.1.1
+		claim = 95
 		adm = 4
 		dip = 3
 		mil = 2

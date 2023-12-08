@@ -21,6 +21,7 @@ government_rank = 1
 		dynasty = "Walisongo"
 		birth_date = 1443.1.1
 		death_date = 1480.1.1
+		claim = 95
 		adm = 5
 		dip = 4
 		mil = 2

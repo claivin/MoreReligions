@@ -19,6 +19,7 @@ government_rank = 1
 		dynasty = "Blambangan"
 		birth_date = 1443.1.1
 		death_date = 1489.1.1
+		claim = 95
 		adm = 3
 		dip = 2
 		mil = 2

@@ -1,9 +1,9 @@
 government = tribal
-add_government_reform = tribal_despotism
+add_government_reform = matrilineal_system
 government_rank = 1
 primary_culture = minang
 religion = nusantara
-secondary_religion = theravada
+secondary_religion = buddhism
 technology_group = chinese
 capital = 4818
 
@@ -22,6 +22,7 @@ capital = 4818
 		religion = sunni
 		birth_date = 1420.1.1
 		death_date = 1480.1.1
+		claim = 95
 		adm = 2
 		dip = 1
 		mil = 1
