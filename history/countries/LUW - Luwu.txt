@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = feudal_tribe
+add_government_reform = sulawesian_confederacy
 government_rank = 2
 primary_culture = sulawesi
 add_accepted_culture = southern_sulawesi

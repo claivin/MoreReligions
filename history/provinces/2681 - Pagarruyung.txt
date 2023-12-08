@@ -3,7 +3,7 @@
 owner = PGR
 controller = PGR
 culture = minang
-religion = buddhism
+religion = nusantara
 capital = "Pagarruyung"
 trade_goods = gold
 hre = no

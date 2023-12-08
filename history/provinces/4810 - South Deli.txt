@@ -1,6 +1,6 @@
 owner = DLI
 controller = DLI
-culture = malayan
+culture = sumatran
 religion = nusantara
 capital = "Deli"
 trade_goods = spices

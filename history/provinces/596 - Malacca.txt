@@ -3,7 +3,7 @@
 owner = PAH
 controller = PAH
 culture = malayan
-religion = sunni
+religion = nusantara
 capital = "Malacca"
 trade_goods = spices
 hre = no

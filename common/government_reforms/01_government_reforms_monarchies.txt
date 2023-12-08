@@ -2207,17 +2207,21 @@ al_andalusia_government = {
 				has_reform = al_andalusia_government
 				is_playing_custom_nation = yes
 			}
+			AND = {
+				religion_group = muslim
+				culture_group = iberian
+			}
 		}
 	}
 	trigger = {
 		religion_group = muslim
-		primary_culture = andalucian
+		culture_group = iberian
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
 	nation_designer_trigger = {
 		religion_group = muslim
-		primary_culture = andalucian
+		culture_group = iberian
 	}
 	modifiers = {
 		idea_cost = -0.1

@@ -142,6 +142,8 @@ monarchy = {
 				mr_al_habash_empire
 				mr_absolutist_england_reform
 				mr_athenian_kingdom_reform
+				nusantaran_sultanate
+				sulawesian_confederacy
 			}
 		}
 		hereditary_vs_nobility = {
@@ -1023,6 +1025,7 @@ tribal = {
 				#1.36
 				#Turkomen
 				turkoman_ottoman_institutions
+				sulawesian_confederacy
 			}
 		}
 		tribal_cultural_values = {
