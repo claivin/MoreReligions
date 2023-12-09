@@ -2357,8 +2357,6 @@ mr_latin_missions_3 = {
 			tag = ATR
 			tag = EPI
 			tag = LAE
-			tag = BYZ
-			tag = GRE
 			tag = CPH
 			tag = CEP
 			tag = CST
@@ -2425,8 +2423,6 @@ mr_latin_missions = {
 			tag = ATR
 			tag = EPI
 			tag = LAE
-			tag = BYZ
-			tag = GRE
 			tag = CPH
 			tag = CEP
 			tag = CST
@@ -3832,6 +3828,180 @@ mr_greek_missions_fifth = {
 		}
 	}
 }
+mr_greek_ortho_fifth = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = LAE
+			tag = BYZ
+			tag = GRE
+			tag = CPH
+			tag = CEP
+			tag = CST
+		}
+		religion = orthodox
+	}
+	mr_greek_orthodox_first = {
+		icon = mission_autocephalous_archbishopric
+		position = 3
+		provinces_to_highlight = {
+			owned_by = ROOT
+			is_capital = yes
+			NOT = {
+				has_tax_building_trigger = yes
+			}	
+		}
+		trigger = {
+			capital_scope = {
+				has_tax_building_trigger = yes
+			}
+			patriarch_authority = 0.1
+		}
+		effect = {
+			add_country_modifier = {
+				name = patriarchal_support
+				duration = 5475
+			}
+			if = {
+				limit = {
+					NOT = {
+						280 = {
+							owner = {
+								religion = orthodox
+							}
+						}
+					}
+					
+				}
+				custom_tooltip = kiev_orthodox_yes
+			}
+			else_if = {
+				limit = {
+						280 = {
+							owner = {
+								religion = orthodox
+							}
+						}
+					
+				}
+				custom_tooltip = kiev_orthodox_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							280 = {
+								owner = {
+									religion = orthodox
+								}
+							}
+						}
+						
+					}
+					280 = {
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+	mr_greek_orthodox_second = {
+		icon = mission_unite_the_princes
+		position = 5
+		required_missions = {
+			mr_greek_orthodox_first
+		}
+		provinces_to_highlight = {
+			province_id = 280
+			NOT = {
+				OR = {
+					owner = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						religion = orthodox
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		trigger = {
+			280 = {
+				OR = {
+					owner = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						religion = orthodox
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = enable_nikolas_tt
+		}
+	}
+	mr_greek_orthodox_third = {
+		icon = mission_cathedral_cities
+		position = 7
+		required_missions = {
+			mr_greek_orthodox_second
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_defender_of_faith_of_tier = 3
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 15
+			}
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = lord_of_all_orthodox
+				duration = -1
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_defender_of_faith_of_tier = 5
+					}
+				}
+				custom_tooltip = advisor_yearly_patriarch_authority_no
+			}
+			else_if = {
+				limit = {
+					is_defender_of_faith_of_tier = 5
+				}
+				custom_tooltip = advisor_yearly_patriarch_authority_yes
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						is_defender_of_faith_of_tier = 5
+					}
+					set_country_flag = advisor_yearly_patriarch_authority
+				}
+			}
+		}
+	}
+}
 mr_greek_catholic_fifth = {
 	slot = 5
 	generic = no
@@ -3928,7 +4098,7 @@ mr_greek_catholic_fifth = {
 	}
 	mr_greek_catholic_third = {
 		icon = crush_heretic_strongholds
-		position = 6
+		position = 7
 		required_missions = {
 			mr_greek_catholic_second
 		}
@@ -4015,9 +4185,6 @@ mr_greek_fifth_a = {
 	mr_greece_border_1 = {
 		icon = mission_unite_home_region
 		position = 8
-		required_missions = {
-			
-		}
 		provinces_to_highlight = {
 			area = macedonia_area
 			NOT = {

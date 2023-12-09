@@ -1536,7 +1536,13 @@ christian = {
 				}
 				
 				allow = {
-					always = yes
+					OR = {
+						culture_group = east_slavic
+						culture_group = south_slavic
+						culture_group = west_slavic
+						mission_completed = mr_greek_orthodox_second
+					}
+					
 				}
 				ai_will_do = {
 					factor = 0.01
@@ -1578,6 +1584,37 @@ christian = {
 							amount = 5
 						}
 					}
+				}
+			}
+
+			#Gods and Kings
+			icon_panagia = {
+				idea_cost = -0.1	
+				advisor_cost = -0.1	
+				visible = {
+					always = yes
+				}
+				
+				allow = {
+					culture_group = byzantine
+				}
+				ai_will_do = {
+					factor = 0.01
+				}
+			}
+			icon_nikolaos = {
+				naval_morale = 0.10
+				trade_steering = 0.15
+				
+				visible = {
+					always = yes
+				}
+				
+				allow = {
+					culture_group = byzantine
+				}
+				ai_will_do = {
+					factor = 0.01
 				}
 			}
 		}
