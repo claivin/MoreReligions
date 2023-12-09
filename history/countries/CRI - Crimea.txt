@@ -5,3 +5,13 @@ religion = sunni
 primary_culture = crimean
 capital = 288	# LowerDon
 religious_school = hanafi_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Aidar"
+		dynasty = "Sabirov"
+		adm = 4
+		dip = 2
+		mil = 2
+	}
+}

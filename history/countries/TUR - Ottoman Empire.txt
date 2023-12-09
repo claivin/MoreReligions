@@ -33,12 +33,12 @@ change_estate_land_share = {
 	
 1444.1.1 = {
 	monarch = {
-		name = "Mehmed II Fatih"
+		name = "Ali Shah"
 		dynasty = Osmanoglu
 		birth_date = 1432.3.30
-		adm = 6
-		dip = 4
-		mil = 6
+		adm = 5
+		dip = 3
+		mil = 5
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = lawgiver_personality

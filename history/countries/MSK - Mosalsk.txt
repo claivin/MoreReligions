@@ -5,3 +5,13 @@ primary_culture = ryazanian
 religion = orthodox
 technology_group = eastern
 capital = 296	# Kaluga
+
+1444.1.1 = {
+	monarch = {
+		name = "Anatoly"
+		dynasty = "Tverdinov"
+		adm = 0
+		dip = 1
+		mil = 6
+	}
+}

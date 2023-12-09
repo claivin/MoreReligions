@@ -5,3 +5,13 @@ technology_group = eastern
 religion = mr_finnishpaganism
 primary_culture = karelian
 capital = 32
+
+1444.1.1 = {
+	monarch = {
+		name = "Akseli"
+		dynasty = "Karelinen"
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

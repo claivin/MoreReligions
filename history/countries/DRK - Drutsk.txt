@@ -5,3 +5,13 @@ primary_culture = byelorussian
 religion = orthodox
 technology_group = eastern
 capital = 292	#Mogilev
+
+1444.1.1 = {
+	monarch = {
+		name = "Dzmitry"
+		dynasty = "Hryb"
+		adm = 0
+		dip = 3
+		mil = 3
+	}
+}

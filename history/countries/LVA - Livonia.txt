@@ -5,3 +5,13 @@ technology_group = eastern
 religion = mr_balticpaganism
 primary_culture = latvian
 capital = 4241
+
+1444.1.1 = {
+	monarch = {
+		name = "Lauris"
+		dynasty = "Ozolins"
+		adm = 2
+		dip = 5
+		mil = 1
+	}
+}

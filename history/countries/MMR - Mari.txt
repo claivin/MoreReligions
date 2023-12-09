@@ -5,3 +5,13 @@ primary_culture = uralic
 religion = orthodox
 technology_group = eastern
 capital = 1083	#Vetluga
+
+1444.1.1 = {
+	monarch = {
+		name = "Sergei"
+		dynasty = "Tverdov"
+		adm = 2
+		dip = 5
+		mil = 3
+	}
+}

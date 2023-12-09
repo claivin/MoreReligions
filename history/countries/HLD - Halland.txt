@@ -4,3 +4,13 @@ primary_culture = danish
 religion = catholic
 technology_group = western
 capital = 26 #Kungsbacka
+
+1444.1.1 = {
+	monarch = {
+		name = "Lukas"
+		dynasty = "Andersen"
+		adm = 1
+		dip = 3
+		mil = 1
+	}
+}

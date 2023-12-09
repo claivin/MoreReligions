@@ -6,4 +6,12 @@ religion = catholic
 primary_culture = austrian
 capital = 128 
 
-
+1444.1.1 = {
+	monarch = {
+		name = "Rudolph"
+		dynasty = "Von Eiger"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

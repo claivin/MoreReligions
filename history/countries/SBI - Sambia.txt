@@ -5,3 +5,13 @@ primary_culture = baltic_prussian
 religion = mr_balticpaganism
 technology_group = eastern
 capital = 41 #konigsberg
+
+1444.1.1 = {
+	monarch = {
+		name = "Egidijus"
+		dynasty = "Marcius"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}

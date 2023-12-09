@@ -5,3 +5,13 @@ technology_group = eastern
 primary_culture = ryazanian
 religion = orthodox
 capital = 2408 #Yelets
+
+1444.1.1 = {
+	monarch = {
+		name = "Rustam"
+		dynasty = "Fazlyev"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}

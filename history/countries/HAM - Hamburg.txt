@@ -7,3 +7,13 @@ religion = catholic
 primary_culture = lower_saxon
 capital = 44	# Hamburg
 fixed_capital = 44 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Albert"
+		dynasty = "Burgerreich"
+		adm = 1
+		dip = 0
+		mil = 3
+	}
+}

@@ -5,3 +5,13 @@ primary_culture = swabian
 religion = catholic
 technology_group = western
 capital = 72	# Breisgau
+
+1444.1.1 = {
+	monarch = {
+		name = "Otto"
+		dynasty = "Rubinsohn"
+		adm = 5
+		dip = 1
+		mil = 0
+	}
+}

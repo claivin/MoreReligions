@@ -5,3 +5,13 @@ primary_culture = ryazanian
 religion = orthodox
 technology_group = eastern
 capital = 1754	#Murom
+
+1444.1.1 = {
+	monarch = {
+		name = "Yaroslav"
+		dynasty = "Tversky"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}

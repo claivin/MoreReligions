@@ -4,3 +4,13 @@ primary_culture = danish
 religion = catholic
 technology_group = western
 capital = 1983 #Fyn
+
+1444.1.1 = {
+	monarch = {
+		name = "Frederik"
+		dynasty = "Pedersen"
+		adm = 4
+		dip = 2
+		mil = 0
+	}
+}

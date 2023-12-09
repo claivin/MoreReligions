@@ -7,6 +7,16 @@ primary_culture = swedish
 technology_group = western
 capital = 25	#Gotland
 
+1444.1.1 = {
+	monarch = {
+		name = "Erik"
+		dynasty = "Johansson"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
 # Fun pirate king stuff for later discussion with Niklas
 #1439.9.24 = {
 #	government = monarchy

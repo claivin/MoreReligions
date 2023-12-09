@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = saxon
 religion = catholic
 capital = 51	# Ruppin
+
+1444.1.1 = {
+	monarch = {
+		name = "Karl"
+		dynasty = "Albretch"
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}

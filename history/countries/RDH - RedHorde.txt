@@ -4,3 +4,13 @@ primary_culture = mishary
 religion = vajrayana
 technology_group = nomad_group
 capital = 464 #Astrakhan
+
+1444.1.1 = {
+	monarch = {
+		name = "Damir"
+		dynasty = "Khuzin"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

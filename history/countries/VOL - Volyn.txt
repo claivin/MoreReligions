@@ -4,3 +4,13 @@ technology_group = eastern
 religion = orthodox
 primary_culture = ruthenian
 capital = 279	# Volhynia
+
+1444.1.1 = {
+	monarch = {
+		name = "Yaroslav"
+		dynasty = "Kovalenko"
+		adm = 5
+		dip = 1
+		mil = 3
+	}
+}
