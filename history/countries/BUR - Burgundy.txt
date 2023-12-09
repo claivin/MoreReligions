@@ -121,12 +121,6 @@ add_army_professionalism = 0.1
 		mil = 4
 		leader = { name = "Charles I le Téméraire"	type = general	fire = 3	shock = 3	manuever = 3	siege = 1}
 	}
-	set_ruler_flag = is_charles_of_burg_flag
-	add_country_modifier = {
-		name = burgundian_succession_crisis
-		duration = -1
-		hidden = yes
-	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = bold_fighter_personality
 	add_heir_personality = benevolent_personality

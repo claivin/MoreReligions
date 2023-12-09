@@ -5,3 +5,13 @@ primary_culture = turkish
 religion = sunni
 technology_group = ottoman
 capital = 323	# Sivas
+
+1444.1.1 = {
+	monarch = {
+		name = "Emre"
+		dynasty = "Rum"
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}

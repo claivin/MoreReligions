@@ -6,3 +6,13 @@ primary_culture = swedish
 religion = catholic
 add_accepted_culture = norwegian
 capital = 1	#Stockholm
+
+1444.1.1 = {
+	monarch = {
+		name = "Magnus VI"
+		dynasty = "Folkungaatten"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}

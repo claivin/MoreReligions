@@ -535,6 +535,29 @@ estate_qizilbash = {
 		}
 	}
 }
+estate_shugo = {
+	modifier_definition = {
+		type = loyalty
+		key = shugo_loyalty_modifier
+		trigger = {
+			has_estate = estate_shugo
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = shugo_influence_modifier
+		trigger = {
+			has_estate = estate_shugo
+		}
+	}
+	modifier_definition = {
+		type = privileges
+		key = shugo_privilege_slots
+		trigger = {
+			has_estate = estate_shugo
+		}
+	}
+}
 #For special scripted modifiers which are not in the code base.
 estate_special = {
 	#For the Republics which only have limited terms
@@ -567,22 +590,6 @@ estate_special = {
 		key = maitreyan_power
 		trigger = {
 			religion = mr_maitreya
-		}
-	}
-}
-estate_shugo = {
-	modifier_definition = {
-		type = loyalty
-		key = shugo_loyalty_modifier
-		trigger = {
-			has_estate = estate_shugo
-		}
-	}
-	modifier_definition = {
-		type = influence
-		key = shugo_influence_modifier
-		trigger = {
-			has_estate = estate_shugo
 		}
 	}
 }

@@ -6,3 +6,13 @@ elector = yes
 capital = 266 # Praha
 technology_group = western
 add_army_professionalism = 0.1
+
+1444.1.1 = {
+	monarch = {
+		name = "Mikulas"
+		dynasty = "Biskupec"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}

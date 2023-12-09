@@ -1,0 +1,7 @@
+#Scandinavian Relations
+union = {
+	first = SWE
+	second = NOR
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}

@@ -5,3 +5,13 @@ technology_group = western
 primary_culture = sorbian
 religion = catholic
 capital = 60	# Oberlausitz
+
+1444.1.1 = {
+	monarch = {
+		name = "Matej"
+		dynasty = "Novak"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}

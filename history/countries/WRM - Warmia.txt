@@ -5,3 +5,13 @@ primary_culture = baltic_prussian
 religion = mr_balticpaganism
 technology_group = eastern
 capital = 42 # warmia
+
+1444.1.1 = {
+	monarch = {
+		name = "Gintaras"
+		dynasty = "Varnas"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}

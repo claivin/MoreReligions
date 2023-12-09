@@ -5,3 +5,13 @@ technology_group = eastern
 religion = mr_samipaganism
 primary_culture = sapmi
 capital = 4151
+
+1444.1.1 = {
+	monarch = {
+		name = "Ailo"
+		dynasty = "Jokkmok"
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}

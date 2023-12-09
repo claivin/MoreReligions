@@ -6,3 +6,13 @@ religion = orthodox
 technology_group = eastern
 capital = 298	# Kursk
 fixed_capital = 298
+
+1444.1.1 = {
+	monarch = {
+		name = "Nikolai"
+		dynasty = "Kuznetsov"
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}

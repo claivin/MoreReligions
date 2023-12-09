@@ -231,7 +231,6 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.1
 	}
 	
 	#Ditch
@@ -257,7 +256,6 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.2
 	}
 	
 	#Reiter
@@ -296,7 +294,6 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.4
 	}
 	
 	#Matchlock Musket
@@ -315,7 +312,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.1
 		prof_armies_inst = 0.1
 	}
 	
@@ -348,7 +345,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.2
 		prof_armies_inst = 0.3
 	}
 	
@@ -366,7 +363,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.4
 		prof_armies_inst = 0.5
 	}
 	
@@ -408,7 +405,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 	}
 	
@@ -437,7 +434,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.1
 	}
@@ -460,7 +457,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.3
 	}
@@ -479,7 +476,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -509,7 +506,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -547,7 +544,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -567,7 +564,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -585,7 +582,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -612,7 +609,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -658,7 +655,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 	}
@@ -676,7 +673,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.1
@@ -695,7 +692,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.3
@@ -745,7 +742,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.5
@@ -763,7 +760,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.5
@@ -799,7 +796,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.5
@@ -817,7 +814,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.5
@@ -853,7 +850,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.5
@@ -872,7 +869,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		firearms_institution = 1.0
-		printing_press = 0.6
+		printing_press = 0.5
 		prof_armies_inst = 0.5
 		global_trade = 0.5
 		mass_mobilization_inst = 0.5

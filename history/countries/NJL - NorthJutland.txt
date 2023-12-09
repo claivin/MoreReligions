@@ -5,3 +5,13 @@ primary_culture = danish
 religion = catholic
 technology_group = western
 capital = 1984 # Viborg
+
+1444.1.1 = {
+	monarch = {
+		name = "Lars"
+		dynasty = "Nielsen"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}

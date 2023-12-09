@@ -6,3 +6,13 @@ religion = orthodox
 technology_group = eastern
 capital = 5300 # Moskva
 fixed_capital = 5300
+
+1444.1.1 = {
+	monarch = {
+		name = "Ilyas"
+		dynasty = "Shakirov"
+		adm = 1
+		dip = 5
+		mil = 3
+	}
+}

@@ -6,3 +6,12 @@ primary_culture = norwegian
 religion = catholic
 technology_group = western
 capital = 23 #bergenshus
+
+1444.1.1 = {
+	monarch = {
+		name = "Harkon"
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}

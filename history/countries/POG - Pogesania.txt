@@ -5,3 +5,13 @@ primary_culture = baltic_prussian
 religion = mr_balticpaganism
 technology_group = eastern
 capital = 1841 # marienberg
+
+1444.1.1 = {
+	monarch = {
+		name = "Vaidotas"
+		dynasty = "Zemenas"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

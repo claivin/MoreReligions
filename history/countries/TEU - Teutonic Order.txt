@@ -6,3 +6,12 @@ religion = catholic
 technology_group = western
 capital = 27	# Abo
 add_army_professionalism = 0.1
+
+1444.1.1 = {
+	monarch = {
+		name = "Hans"
+		adm = 2
+		dip = 2
+		mil = 4
+	}
+}

@@ -4,3 +4,13 @@ primary_culture = armenian
 religion = coptic
 technology_group = eastern
 capital = 327# Yerevan
+
+1444.1.1 = {
+	monarch = {
+		name = "Aram"
+		dynasty = "Sargsyan"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

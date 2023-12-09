@@ -5,3 +5,13 @@ technology_group = eastern
 religion = mr_finnishpaganism
 primary_culture = finnish
 capital = 31
+
+1444.1.1 = {
+	monarch = {
+		name = "Mikko"
+		dynasty = "Lahtinen"
+		adm = 0
+		dip = 0
+		mil = 6
+	}
+}

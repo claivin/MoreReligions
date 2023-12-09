@@ -6,3 +6,13 @@ religion = orthodox
 primary_culture = russian
 capital = 308 #starodub on the klyzma
 fixed_capital = 5305
+
+1444.1.1 = {
+	monarch = {
+		name = "Vladimir"
+		dynasty = "Tverkov"
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}

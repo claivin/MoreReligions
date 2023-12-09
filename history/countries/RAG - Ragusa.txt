@@ -11,8 +11,8 @@ fixed_capital = 137 # Cannot move capital away from this province & no power cos
 
 1444.11.11 = {
       monarch = {
-           name = "Placeholder"
-	   dynasty = "Vojonovic"
+           name = "Mariano"
+		dynasty = "Vojonovic"
            adm = 3
            dip = 3
            mil = 2

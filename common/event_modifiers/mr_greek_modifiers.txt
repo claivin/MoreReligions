@@ -236,5 +236,12 @@ the_med_trade_GRE = {
 	trade_steering = 0.1
 	trade_company_investment_cost = -0.25
 }
-
+patriarchal_support = {
+	tolerance_own = 1
+	improve_relation_modifier = 0.05
+}
+lord_of_all_orthodox = {
+	yearly_patriarch_authority = 0.005
+	missionaries = 1
+}
 

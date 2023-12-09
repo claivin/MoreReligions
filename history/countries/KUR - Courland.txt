@@ -5,3 +5,13 @@ technology_group = eastern
 primary_culture = latvian
 religion = mr_balticpaganism
 capital = 1935	# Mitau
+
+1444.1.1 = {
+	monarch = {
+		name = "Raimonds"
+		dynasty = "Kalnins"
+		adm = 2
+		dip = 0
+		mil = 3
+	}
+}

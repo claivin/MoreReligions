@@ -5,3 +5,13 @@ technology_group = eastern
 religion = mr_finnishpaganism
 primary_culture = estonian
 capital = 36
+
+1444.1.1 = {
+	monarch = {
+		name = "Tonis"
+		dynasty = "Mets"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

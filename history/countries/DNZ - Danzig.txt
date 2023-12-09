@@ -8,6 +8,15 @@ technology_group = western
 capital = 43	# Danzig
 fixed_capital = 43 # Cannot move capital away from this province & no power cost to move to it
 
+1444.1.1 = {
+	monarch = {
+		name = "Piotr"
+		adm = 1
+		dip = 2
+		mil = 4
+	}
+}
+
 1540.1.1 = { set_legacy_government = administrative_republic }
 
 1750.1.1 = { set_legacy_government = constitutional_republic }

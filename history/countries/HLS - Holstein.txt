@@ -5,3 +5,13 @@ primary_culture = lower_saxon
 religion = catholic
 technology_group = western
 capital = 13	# Kiel
+
+1444.1.1 = {
+	monarch = {
+		name = "Sigismund"
+		dynasty = "Kuhmeister"
+		adm = 1
+		dip = 4
+		mil = 3
+	}
+}

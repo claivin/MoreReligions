@@ -4,3 +4,13 @@ primary_culture = danish
 religion = catholic
 technology_group = western
 capital = 5110 #Sjaeland
+
+1444.1.1 = {
+	monarch = {
+		name = "Mikkel"
+		dynasty = "Sorensen"
+		adm = 0
+		dip = 2
+		mil = 5
+	}
+}

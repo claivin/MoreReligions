@@ -7,3 +7,13 @@ religion = catholic
 primary_culture = swabian
 capital = 4711	# Donauwörth
 fixed_capital = 4711 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Wilhelm"
+		dynasty = "Oberfeld"
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

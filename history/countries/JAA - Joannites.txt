@@ -7,3 +7,12 @@ religion = catholic
 technology_group = eastern
 historical_friend = PAP
 capital = 4532
+
+1444.1.1 = {
+	monarch = {
+		name = "Albert II"
+		adm = 1
+		dip = 3
+		mil = 4
+	}
+}

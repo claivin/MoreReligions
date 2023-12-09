@@ -10,14 +10,14 @@ merc_andorra_borderguard = {
 		OR = {
 			NAV = {
 				mission_completed = nav_misto_peasants
-			}
-			has_country_modifier = misto_sharpshooters
-			is_allowed_to_recruit_mercenaries = yes
+				has_country_modifier = misto_sharpshooters
+				is_allowed_to_recruit_mercenaries = yes
+			}	
 			IBF = {
 				mission_completed = nav_misto_peasants
-			}
-			has_country_modifier = misto_sharpshooters
-			is_allowed_to_recruit_mercenaries = yes
+				has_country_modifier = misto_sharpshooters
+				is_allowed_to_recruit_mercenaries = yes
+			}	
 		}	
 	}
 	counts_towards_force_limit = no
