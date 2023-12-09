@@ -6,12 +6,12 @@ color = { 252  233  58 }
 revolutionary_colors = { 5 8 5 }
 
 historical_idea_groups = {
+	exploration_ideas
 	maritime_ideas
 	religious_ideas
 	defensive_ideas
 	economic_ideas
 	innovativeness_ideas
-	spy_ideas
 	offensive_ideas
 	diplomatic_ideas
 }
