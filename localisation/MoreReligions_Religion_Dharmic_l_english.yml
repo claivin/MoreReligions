@@ -12,6 +12,7 @@
  kartikeya: "Kartikeya"
  ayyanar: "Ayyanar"
  devaraja: "Devaraja"
+ parvati: "Parvati"
  
  
  svetembara:0 "Svetambara"
@@ -65,4 +66,8 @@
  narasimha: "Narasimha"
  jagannath: "Jagannath"
  kalki: "Kalki"
+ 
+ #Tunggal Dharma deities
+ dewi_sri: "Dewi Sri"
+ ratu_kidul: "Ratu Kidul"
  

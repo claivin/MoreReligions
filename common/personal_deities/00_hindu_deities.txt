@@ -9,7 +9,10 @@
 buddha = {
 	sprite = 13
 	potential = { 
-		religion = hinduism
+		OR = {
+			religion = hinduism
+			religion = mr_tunggal_dharma
+		}
 		# OR = {
 			# mission_completed = mnd_maj_candi_shrines
 			# mission_completed = sun_candi_temples
@@ -45,6 +48,7 @@ shiva = {
 		OR = {
 			religion = smarta
 			religion = shaivism
+			religion = mr_tunggal_dharma
 		} 
 	}
 	trigger = {}
@@ -150,7 +154,7 @@ shakti = {
 	potential = {
 		OR = {
 			religion = smarta
-			religion = shaivism
+			religion = shaktism
 		}
 	}
 	trigger = {}
@@ -180,6 +184,7 @@ vishnu = {
 		OR = {
 			religion = smarta 
 			religion = hinduism
+			religion = mr_tunggal_dharma
 		}
 	}
 	trigger = {}
@@ -298,7 +303,10 @@ devaraja = {
 	tolerance_heathen = 2
 	
 	potential = { 
-		religion = shaivism
+		OR = {
+			religion = shaivism
+			religion = mr_tunggal_dharma
+			}
 		capital_scope = {
 			superregion = east_indies_superregion
 		}
@@ -316,7 +324,12 @@ kali = {
 	land_morale = 0.10
 	loot_amount = 0.15
 	
-	potential = { religion = shaktism }
+	potential = { 
+		OR = {
+			religion = shaktism
+			religion = shaivism
+		}
+	}
 	sprite = 19
 	trigger = {}
 	effect = {}
@@ -355,7 +368,12 @@ durga = {
 	warscore_cost_vs_other_religion = -0.10
 	improve_relation_modifier = 0.15
 	
-	potential = { religion = shaktism }
+	potential = { 
+		OR = {
+			religion = shaktism
+			religion = shaivism
+		}
+	}
 	sprite = 22
 	trigger = {}
 	effect = {}
@@ -383,6 +401,51 @@ mahadevi = {
 	
 	potential = { religion = shaktism }
 	sprite = 24
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+parvati = {
+	manpower_recovery_speed = 0.10
+	production_efficiency = 0.10
+	potential = { 
+		OR = {
+			religion = shaktism
+			religion = shaivism
+		}
+	}
+	sprite = 33
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+dewi_sri = {
+	development_cost_in_primary_culture = -0.15
+	state_maintenance_modifier = -0.10
+	potential = {
+		religion = mr_tunggal_dharma
+	}
+	sprite = 34
+	trigger = {}
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+ratu_kidul = {
+	prestige = 1
+	naval_maintenance_modifier = -0.15
+	potential = {
+		religion = mr_tunggal_dharma
+	}
+	sprite = 35
 	trigger = {}
 	effect = {}
 	removed_effect = {}

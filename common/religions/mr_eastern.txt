@@ -1031,27 +1031,6 @@ eastern = {
 		
 	}
 	
-	mr_tunggal_dharma = {
-		color = { 220 59 16 }
-		icon = 51
-		country = {
-			trade_efficiency = 0.10
-			great_project_upgrade_cost = -0.25
-		}
-		province = {
-			local_missionary_strength = -0.02
-		}
-		country_as_secondary = {
-			great_project_upgrade_cost = -0.25
-		}
-		heretic = { BON YOGAVACARA }
-		
-		uses_karma = yes
-		
-		harmonized_modifier = harmonized_tunggal_dharma
-		
-	}
-	
 	confucianism = {
 		color = { 214 229 140 }
 		icon = 53
