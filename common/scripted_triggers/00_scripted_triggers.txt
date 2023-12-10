@@ -2834,7 +2834,12 @@ has_pasture_trade_goods = {
 		trade_goods = wool
 	}
 }
-
+has_unlocked_decision = {
+	custom_trigger_tooltip = {
+		tooltip = has_unlocked_decision_$type$_tt
+		has_country_flag = unlocked_decision_$type$
+	}
+}
 #For Mine manufactories
 has_mine_trade_goods = {
 	OR = {
