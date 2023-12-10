@@ -3,6 +3,242 @@
 
 #Heir and consort titles are generally kept simple for clarity unless there is something special in particular that can be used.
 
+medieval_caliphate_sunni = {
+	trigger = {
+		has_reform = medieval_caliphate
+		OR = {
+		religion = sunni
+		religion = mr_almuwahiddun
+		religion = ibadi
+		}
+	}
+
+	rank = {
+		2 = SUNNI_CALIPHATE
+	}
+
+	ruler_male = {
+		2 = CALIPH
+	}
+
+	ruler_female = {
+		2 = CALIPHA
+	}
+
+	consort_male = {
+		2 = SULTAN
+	}
+
+	consort_female = {
+		2 = SULTANA
+	}
+
+	heir_male = {
+		2 = WALI_AHD
+	}
+
+	heir_female = {
+		2 = WALIYA_AHD
+	}
+}
+
+medieval_caliphate_shia = {
+	trigger = {
+		has_reform = medieval_caliphate
+		is_shiite = yes
+	}
+
+	rank = {
+		2 = SHIA_CALIPHATE
+	}
+
+	ruler_male = {
+		2 = IMAM_CALIPH
+	}
+
+	ruler_female = {
+		2 = CALIPHA
+	}
+
+	consort_male = {
+		2 = SULTAN
+	}
+
+	consort_female = {
+		2 = SULTANA
+	}
+
+	heir_male = {
+		2 = WALI_AHD
+	}
+
+	heir_female = {
+		2 = WALIYA_AHD
+	}
+}
+
+nusantara_sultanate = {
+	rank = {
+		1 = PRINCEDOM
+		2 = SULTANATE
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = RAJA
+		2 = SULTAN
+		3 = SULTAN_AGONG
+	}
+
+	ruler_female = {
+		1 = RATU
+		2 = RATU_SULTAN
+		3 = RATU_MAHARAJA
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	consort_female = {
+		1 = PERMAISURI
+		2 = RAJA_PERMAISURI
+		3 = RAJA_PERMAISURI_AGONG
+	}
+	
+	heir_male = {
+		1 = PUTRA
+		2 = PUTRA
+		3 = PUTRA
+	}
+	
+	heir_female = {
+		1 = PUTRI
+		2 = PUTRI
+		3 = PUTRI
+	}
+
+	trigger = {
+		government = monarchy
+		NOT = { has_reform = steppe_horde }
+		religion_group = muslim
+		NOT = { has_reform = feudal_theocracy }
+		OR = {
+			culture_group = malay
+			culture_group = javanese_group
+			culture_group = moluccan_group
+			culture = cham
+		}
+	}
+}
+
+nusantara_kingdom = {
+	rank = {
+		1 = PRINCEDOM
+		2 = KINGDOM
+		3 = EMPIRE
+	}
+
+	ruler_male = {
+		1 = RAJA
+		2 = MAHARAJA
+		3 = MAHARAJA_AGONG
+	}
+
+	ruler_female = {
+		1 = RATU
+		2 = RATU
+		3 = RATU_MAHARAJA
+	}
+	
+	consort_male = {
+		1 = CONSORT
+		2 = CONSORT
+		3 = CONSORT
+	}
+	
+	consort_female = {
+		1 = PERMAISURI
+		2 = RAJA_PERMAISURI
+		3 = RAJA_PERMAISURI_AGONG
+	}
+	
+	heir_male = {
+		1 = PUTRA
+		2 = PUTRA
+		3 = PUTRA
+	}
+	
+	heir_female = {
+		1 = PUTRI
+		2 = PUTRI
+		3 = PUTRI
+	}
+
+	trigger = {
+		government = monarchy
+		NOT = { has_reform = steppe_horde }
+		NOT = { religion_group = muslim }
+		NOT = { has_reform = feudal_theocracy }
+		OR = {
+			culture_group = malay
+			culture_group = javanese_group
+			culture_group = moluccan_group
+			culture = cham
+		}
+	}
+}
+
+ilkhanate_gov = {
+	rank = {
+		1 = ILKHANATE
+		2 = ILKHANATE
+		3 = ILKHANATE
+	}
+	
+	ruler_male = {
+		1 = ILKHAN
+		2 = ILKHAN
+		3 = PADISHAH
+	}
+	
+	ruler_female = {
+		1 = ILKHATUN
+		2 = ILKHATUN
+		3 = GREAT_KHATUN
+	}
+	
+	consort_male = {
+		1 = BEILE
+		2 = KHAN
+		3 = KHAGAN
+	}
+
+	consort_female = {
+		1 = GEGE
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	heir_male = {
+		1 = HEIR
+		2 = KHANZADEH
+		3 = KHANZADEH
+	}
+
+	heir_female = {
+		1 = KHANUM
+		2 = KHANUM
+		3 = KHANUM
+	}
+	
+	trigger = {
+		tag = ILK
+	}
+}
+
 georgian = {
     rank = {
         1 = SAMTAVRO
@@ -203,6 +439,7 @@ kongo_monarchy_kingdom = {
 		government = monarchy
 	}
 }
+
 
 
 islamic_caliphate = {

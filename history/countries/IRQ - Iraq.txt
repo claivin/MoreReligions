@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudal_theocracy
+add_government_reform = medieval_caliphate
 primary_culture = al_iraqiya_arabic
 religion = sunni
 technology_group = muslim

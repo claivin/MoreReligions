@@ -144,6 +144,7 @@ monarchy = {
 				mr_athenian_kingdom_reform
 				nusantaran_sultanate
 				sulawesian_confederacy
+				medieval_caliphate
 			}
 		}
 		hereditary_vs_nobility = {

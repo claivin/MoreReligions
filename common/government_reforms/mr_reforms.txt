@@ -1090,6 +1090,7 @@ sulawesian_confederacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	legacy_equivalent = feudal_tribe_legacy
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 		primary_culture = sulawesi
@@ -1126,5 +1127,50 @@ sulawesian_confederacy = {
 
 	ai = {
 		factor = 2
+	}
+}
+
+medieval_caliphate = {
+	icon = "caliphate"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_reform = medieval_caliphate
+			have_had_reform = medieval_caliphate
+			has_unlocked_government_reform = {
+				government_reform = medieval_caliphate
+			}
+		}
+	}
+	fixed_rank = 2
+	maintain_dynasty = yes
+	has_harem = yes
+	trigger = {
+		religion_group = muslim
+	}
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		religion_group = muslim
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	modifiers = {
+		tolerance_own = 1
+		legitimacy = 1
+		governing_capacity = 50
+		missionaries = 1
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			feudal_theocracy_mechanic
+		}
+	}
+	ai = {
+		factor = 1
 	}
 }

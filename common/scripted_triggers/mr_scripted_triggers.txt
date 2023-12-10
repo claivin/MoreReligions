@@ -432,3 +432,17 @@ owned_by_korean_china_antagonist = {
 		}
 	}
 }
+
+is_shiite = {
+	OR = {
+		religion = shiite
+		religion = mr_hurufis
+		religion = mr_mushashaiyya
+		religion = mr_safaviyya
+		religion = mr_zaydi
+		religion = mr_tayyibi
+		religion = mr_nizari
+		religion = mr_hafizi
+		religion = mr_qarmatian
+	}
+}

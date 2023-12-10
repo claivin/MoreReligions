@@ -1,11 +1,11 @@
 government = monarchy
-add_government_reform = feudal_theocracy
+add_government_reform = medieval_caliphate
 primary_culture = berber
 religion = mr_almuwahiddun
 technology_group = muslim
 capital = 348 # Sus
 fixed_capital = 348 # Cannot move capital away from this province & no power cost to move to it
-religious_school = zahiri_school
+religious_school = maliki_school
 
 #Almohads
 
