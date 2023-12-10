@@ -233,6 +233,12 @@ germanic = {
 			"von Wagrain" "von Tollet" "Fieger" "Ennenkel" "Hayden von Dorff" Volkenstorfer "von Tannberg" Hätzenberg Moser "von Felsach" "von Daun" "von Unverzagt"
 		}
 	}
+	
+}
+
+low_countries_group = {
+	graphical_culture = westerngfx
+	
 	dutch = {
 		primary = NED
 		male_names = {
@@ -448,6 +454,12 @@ germanic = {
 		"von Frankenstein" "von Taube" "von Uffeln" "von Hessen" "von Boyneburg"
 		#Hannoveran
 		"von Schack" "von Fabrice" "von Hardenberg" "von Welf" "Askanier"
+	}
+	wallonian = {
+		primary = HAI
+	}
+	luxembourgish = {
+		primary = LUX
 	}
 }
 
@@ -1788,10 +1800,6 @@ french	= {
 	occitain = {
 
 		primary = PRO
-	}
-	wallonian = {
-
-		primary = HAI
 	}
 	louisianans = {
 

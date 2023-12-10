@@ -58,3 +58,19 @@ guinean_triggered_modifier = {
 	own_territory_dice_roll_bonus = 2
 	hostile_attrition = 2
 }
+
+fra_war_against_the_empire_triggered_modifier = {
+	potential = {
+		tag = FRA
+		has_country_flag = won_war_for_bishop_electors
+	}
+	
+	trigger = {
+		is_at_war = yes
+		any_war_enemy_country = { is_part_of_hre = yes }
+	}
+	
+	morale_damage_received = -0.05
+	army_tradition_from_battle = 1.0
+	warscore_from_battles_modifier = 0.5
+}

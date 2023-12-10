@@ -3183,3 +3183,40 @@ take_jerusalem = {
 
 	war_name = HAN_SONG_WAR_NAME
 }
+
+free_bishop_electors = {
+	type = superiority
+
+	attacker = {
+		badboy_factor = 1.0
+		prestige_factor = 2.0
+		peace_cost_factor = 0.5
+
+		peace_options = {
+			po_humiliate
+			po_gold
+			po_annul_treaties
+		}
+
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	defender = {
+		badboy_factor = 0.5
+		prestige_factor = 2.0
+		peace_cost_factor = 1.5
+
+		peace_options = {
+			po_demand_provinces
+			po_release_vassals
+			po_release_annexed
+			po_revoke_cores
+		}
+
+		country_desc = ALL_COUNTRIES
+		prov_desc = ALL_PROVS
+	}
+
+	war_name = FREE_BISHOP_ELECTORS_WAR_NAME
+}

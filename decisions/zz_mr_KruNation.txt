@@ -19,7 +19,7 @@ country_decisions = {
 		allow = {
 			is_nomad = no
 			is_at_war = no
-			has_unified_culture_group = yes
+			has_unified_culture = yes
 			
 		}
 		effect = {

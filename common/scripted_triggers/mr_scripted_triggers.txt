@@ -446,3 +446,49 @@ is_shiite = {
 		religion = mr_qarmatian
 	}
 }
+
+is_free_spirit_indep_eligible_trigger = {
+	is_emperor = no
+	is_part_of_hre = yes
+	OR = {
+		capital_scope = { region = low_countries_region }
+		AND = {
+			culture_group = low_countries_group
+			any_owned_province = {
+				region = low_countries_region
+			}
+			NOT = { tag = LUX }
+			NOT = { tag = FRI }
+		}
+	}
+}
+
+will_leave_for_free_spirit_indep_trigger = {
+	NOT = {
+		OR = {
+			has_country_flag = reined_in_for_free_spirit_indep
+			emperor = {
+				alliance_with = PREV
+			}
+			has_opinion = {
+				who = emperor
+				value = 150
+			}
+			is_subject_of = emperor
+			has_reform = free_city
+			tag = LUX
+			tag = FRI
+		}
+	}
+}
+
+is_french_bishop_elector = {
+	OR = {
+		tag = REI
+		tag = LAO
+		tag = LGR
+		tag = BVS
+		tag = CLN
+		tag = NYN
+	}
+}

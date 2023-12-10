@@ -1,154 +1,158 @@
 # default options are 0-based
 # In console, can use imperial_incident [key] to immediately begin an incident
+#GK: commented out burgundian inheritance
+# added additional shadow kingdoms for S. Italy, Netherlands, Denmark
 
-incident_burgundian_succ_emp = {
-    event = incidents_bur_inheritance.2
-	default_option = 0
-	
-	can_stop = {
-		NOT = {
-			exists = BUR
-		}
-	}
 
-	0 = {
-		factor = 1
-	}
-	
-	1 = {
-		factor = 1
-	}
-	
-	2 = {
-		factor = 1
-	}
-}
 
-incident_burgundian_succ_strong_ally = {
-	event = incidents_bur_inheritance.3
-	default_option = 0
+# incident_burgundian_succ_emp = {
+    # event = incidents_bur_inheritance.2
+	# default_option = 0
 	
-	can_stop = {
-		NOT = {
-			exists = BUR
-		}
-	}
-	
-	0 = {
-		factor = 1
-	}
-	
-	1 = {
-		factor = 1
-	}
-	
-	2 = {
-		factor = 1
-	}
-}
+	# can_stop = {
+		# NOT = {
+			# exists = BUR
+		# }
+	# }
 
-incident_burgundian_succ_alone = {
-	event = incidents_bur_inheritance.4
-	default_option = 0
+	# 0 = {
+		# factor = 1
+	# }
 	
-	can_stop = {
-		NOT = {
-			exists = BUR
-		}
-	}
+	# 1 = {
+		# factor = 1
+	# }
 	
-	0 = {
-		factor = 1
-	}
-	
-	1 = {
-		factor = 1
-	}
-	
-	2 = {
-		factor = 1
-	}
-}
+	# 2 = {
+		# factor = 1
+	# }
+# }
 
-incident_burgundy_wants_to_join = {
-	event = incidents_bur_join_empire.2
-	default_option = 1
+# incident_burgundian_succ_strong_ally = {
+	# event = incidents_bur_inheritance.3
+	# default_option = 0
 	
-	can_stop = {
-		OR = {
-			NOT = {
-				exists = BUR
-			}
-			BUR = {
-				is_emperor = yes
-			}
-			BUR = {
-				is_subject = yes
-			}
-		}
-	}
+	# can_stop = {
+		# NOT = {
+			# exists = BUR
+		# }
+	# }
 	
-	0 = { # burgundy joins
-		factor = 1
-		modifier = {
-			factor = 100
-			OR = {
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_friendly
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_loyal
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_allied
-				}
-			}
-		}
-	}
+	# 0 = {
+		# factor = 1
+	# }
 	
-	1 = { # burgundy denied
-		factor = 1
-		modifier = {
-			factor = 100
-			is_neighbor_of = BUR
-			NOT = {
-				alliance_with = BUR
-			}
-		}
-		modifier = {
-			factor = 100
-			OR = {
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_rivalry
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_hostile
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_threatened
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_outraged
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_disloyal
-				}
-				ai_attitude = {
-					who = BUR
-					attitude = attitude_rebellious
-				}
-			}
-		}
-	}
-}
+	# 1 = {
+		# factor = 1
+	# }
+	
+	# 2 = {
+		# factor = 1
+	# }
+# }
+
+# incident_burgundian_succ_alone = {
+	# event = incidents_bur_inheritance.4
+	# default_option = 0
+	
+	# can_stop = {
+		# NOT = {
+			# exists = BUR
+		# }
+	# }
+	
+	# 0 = {
+		# factor = 1
+	# }
+	
+	# 1 = {
+		# factor = 1
+	# }
+	
+	# 2 = {
+		# factor = 1
+	# }
+# }
+
+# incident_burgundy_wants_to_join = {
+	# event = incidents_bur_join_empire.2
+	# default_option = 1
+	
+	# can_stop = {
+		# OR = {
+			# NOT = {
+				# exists = BUR
+			# }
+			# BUR = {
+				# is_emperor = yes
+			# }
+			# BUR = {
+				# is_subject = yes
+			# }
+		# }
+	# }
+	
+	# 0 = { # burgundy joins
+		# factor = 1
+		# modifier = {
+			# factor = 100
+			# OR = {
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_friendly
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_loyal
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_allied
+				# }
+			# }
+		# }
+	# }
+	
+	# 1 = { # burgundy denied
+		# factor = 1
+		# modifier = {
+			# factor = 100
+			# is_neighbor_of = BUR
+			# NOT = {
+				# alliance_with = BUR
+			# }
+		# }
+		# modifier = {
+			# factor = 100
+			# OR = {
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_rivalry
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_hostile
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_threatened
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_outraged
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_disloyal
+				# }
+				# ai_attitude = {
+					# who = BUR
+					# attitude = attitude_rebellious
+				# }
+			# }
+		# }
+	# }
+# }
 
 incident_teutonic_order_wants_to_join = {
     event = flavor_teu.43
@@ -458,7 +462,7 @@ incident_great_peasants_war = {
 		factor = 1
 		modifier = {
 			factor = 1000
-			has_reform = peasants_republic
+			has_government_attribute = peasants_republic
 		}
 		modifier = {
 			factor = 10
@@ -765,6 +769,33 @@ incident_shadow_kingdom = {
 		factor = 1
 	}
 }
+
+
+incident_free_spirit_freedom = {
+	event = free_spirit_freedom.2
+	default_option = 0
+	
+	can_stop = {
+		always = no
+	}
+	
+	0 = { # give up
+		factor = 2
+		modifier = {
+			factor = 5
+			capital_scope = {
+				region = low_countries_region 
+				NOT = { tag = LUX }
+				NOT = { tag = FRI }
+			}
+		}
+	}
+	
+	1 = { # rein in
+		factor = 1
+	}
+}
+
 
 incident_switzerland = {
 	event = incident_switzerland.2

@@ -1,0 +1,38 @@
+﻿l_english:
+#events
+ mr_france.1.t: "Bishop Electors Side with France"
+ mr_france.1.d: "The decline of the central French Kingdom long ago saw the return of an elective monarchy to the seat of the French Crown. The infighting brought about a long period of disunity where a number of powerful Bishops, exercising undue power, found their way into the electoral process. For many years these Bishops had a strong hand in determining the French King, but now that the Kingdom has reversed its' fortunes, the Bishops have decided that subservience to the seemingly waning Empire is no longer necessary. Bishops and their respresentatives have approached the crown with a request to back their decision."
+ mr_france.1.a: "The Emperor will have to defend his claim."
+ mr_france.1.b: "We cannot afford to come to odds with the Empire."
+ warning_this_may_lead_to_war_with_emperorTT: "§RThis may lead to an offensive war against the Emperor§!"
+ 
+ mr_france.2.t: "France Backs Bishops' Seperation"
+ mr_france.2.d: "The French have put their weight behind the Bishop Elector's decision to leave the Empire. They are emboldened by the distance from the Imperial heartland and the newfound strength of their true overlord."
+ mr_france.2.a: "This is a violation of our authority!"
+ mr_france.2.b: "They are not worth this conflict."
+
+ mr_france.3.t: "France Backs Our Petition"
+ mr_france.3.d: "The [FRA.Monarch.GetTitle] of France has backed our petition to leave the Empire. It is likely the Emperor will retaliate, so we must prepare!"
+ mr_france.3.a: "God is with us!"
+ 
+ mr_france.4.t: "In Defense of the East"
+ mr_france.4.d: "The Emperor has refused to take our demands seriously, only seeing them as empty threats."
+ mr_france.4.a: "Our words are backed by arms."
+ 
+ mr_france.5.t: "The Emperor Backs Down!"
+ mr_france.5.d: "The cowardly Emperor has backed down, seeminly unable to find the funds, men, support, or stones, or a combination of all four to fight us."
+ mr_france.5.a: "The Empire is waning..."
+ 
+ cb_french_bishop_elector_indep: "Free Bishop Electors"
+ cb_french_bishop_elector_indep_desc: "The Bishop Electors of France have asked us to support their independece from the Empire."
+ free_bishop_electors: "Show Superiority"
+ free_bishop_electors_desc: "War goal is to show them superiority by winning battles."
+ FREE_BISHOP_ELECTORS_WAR_NAME: "War for the East"
+ 
+ france_win_loss_resultsTT: "\nIf §YFrance§! is §Gvictorious§!:\nThe §YBishop Elector§! subjects of France will §Gleave the Empire§!\n§YFrance§! will recieve a §Ypermanent claim§! on any remaining §YHRE provinces in the French Region§!\n§YFrance§! will recieve §Gcombat bonuses§! when fighting againtst §Yany member of the Empire§!"
+
+ mr_france.6.t: "The Treaty of Paris of [GetYear]"
+ mr_france.6.d: "With the conclusion of the war for the independece of the French bishop electors, the position of France as a true adversary against the Empire has been cemented. No longer a fragmented Frankish successor state, it has risen to its own greatness."
+ mr_france.6.a: "Elan!"
+ won_war_for_bishop_electors_triggered_modifier_TT: "Unlocks §YWar Against the Empire Triggered Modifier§!"
+ fra_war_against_the_empire_triggered_modifier: "War Against the Empire"

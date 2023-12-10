@@ -59,7 +59,23 @@ country_event = {
 			}
 		}
 	}
-	
+	option = {
+		name = debug_events.1.d
+		custom_tooltip = delete_all_but_hre
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = {
+						OR = {
+							is_part_of_hre = yes
+							region = italy_region
+						}
+					}
+				}
+				decolonize = this
+			}
+		}
+	}	
 }
 
 #disables ai from DoW you

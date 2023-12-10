@@ -1,0 +1,36 @@
+﻿l_english:
+ free_spirit_freedom.1.t: "Heresy of the Lowlands"
+ free_spirit_freedom.1.d: "The passing of the Religious Freedom in the Kingdom of Poland in 1315 had other knock-on effects throughout the rest of the Empire. Polish Rule effectively meant similar lax attitudes towards squashing heresy were applied to its Germanic subjects. In the time since, several movements have sprung up throughout the Empire; few of them achieved widespread popularity except one: The Brethren of the Free Spirit. The particular trouble with these 'Free Spirits,' or so they call themselves, is that they are disorganized and their beliefs are flexible, which has given way to its rapid ascension within the Low Coutries. Leaders both Catholic and Free Spirit alike have taken this to mean a nominal absence from the life of the denizens of the Low Countries, especially evident in the fact that many of the disunited states have organized themsleves into their own confederation. Calls for the independence of the Low Countries have only grown in the intervening years, and with a stronger political bloc of the Dutch Confederation with support of the North Sea League, it could become reality."
+ free_spirit_freedom.1.a: "We can't afford to simply sit back anymore!"
+ free_spirit_freedom_tt: "§YThe Emperor can rein in Dutch states by converting them, making them a Free City, or by securing an alliance or strong relations with them.\nLuxembourg and Frisia are not at risk of leaving.§!"
+ 
+ free_spirit_freedom.2.t: "The Brethren Call for Freedom"
+ free_spirit_freedom.2.d: "The various states of the Low Countries, dissatisfied with Imperial rule have held a meeting in Utrecht, discussing the matter of Independence from the Emperor. The impious Catholic leaders have alligned themselves with the libertine Free Spirits, both agreeing to leave in conjuction with each other. Ironically, Religious Freedom, originally concieved to appease religious dissedents and buy their favor has culminated in the complete undermining of the Emperor's authority. The states of the Low Countries now seek to build up their forces and funds in the case of retaliation."
+ free_spirit_freedom.2.a: "The Low Countries are a lost cause."
+ free_spirit_freedom.2.b: "We must make an example of these ungrateful ingrates!"
+ free_spirit_freedom_incident_tt: "§YThe Emperor has until the year 1500 to rein in as many Low Countries nations in the Empire as possible. Friesland and Luxembourg are not at risk of leaving§!"
+ 
+ free_spirit_freedom.3.t: "The Brethren Call for Freedom"
+ free_spirit_freedom.3.d: "Imperial campaigns to defeat Low Countries sentiments of independece have not been completely successful. States that continue to harbor Free Spirits have all but rejected the authority of the Emperor, dragging with them upstart Lowlands leaders. Those we have demonstrated our supremacy are in no position to follow in their steps."
+ free_spirit_freedom.3.d2: "With great effort, the Empire has squashed independece sentiments in the Low Counties and proved its ability to project power even from as far was Warsaw. Hopefully this successful campaign demonstrates Imperial Rule is not to be trifled with."
+ free_spirit_freedom.3.a: "God help us."
+ free_spirit_freedom.3.b: "The Low Countries remain. Long live the Empire!"
+ free_spirit_indep_emperor_gives_up_tt: "§YLow Countries nations within the HRE that have been reined in will remain in the Empire.§!\n§YLow Countries nations that have not been reined in will leave the Empire.§!\n\n§YFrisia and Luxembourg are not at risk of leaving.§!\n\n§YThe Emperor will lose §R0.2§! Imperial Authority per province development which leaves the Empire.§!"
+ free_spirit_indep_will_leave_info_tt: "§YWill leave the Empire§!"
+ free_spirit_indep_will_stay_info_tt: "§YWill remain in the Empire§!"
+ free_spirit_indep_result_ia_tooltip: "§Y[Root.GetName]§! will gain §Y5§! Imperial Authority for each Low Countries nation that remains in the Empire due to being reined in.\n§Y[Root.GetName]§! will lose §Y10§! Imperial Authority for each independent Low Countries nation that we did not rein in."
+ 
+ free_spirit_freedom.4.t: "The Brethren Call for Freedom"
+ free_spirit_freedom.4.d: "The Low Countries, whose internal affairs were ignored for too long, have seen it fit to remove themselves from the Empire. For too long have they acted indpendently, forming their own political blocks and self-governing, far from both Imperial and Papal control. There is little wonder why so many of the Lowlands have seen it fit to cast off any illusion of subservience."
+ free_spirit_freedom.4.d2: "The [Root.GetCulture] campaign to restore rule over the Low Countries has demonstrated that their power has not fallen to the wayside and that they are willing to demonstrate authority when need be."
+ free_spirit_freedom.4.a: "The Low Countries are part of the Empire."
+ free_spirit_freedom.4.b: "The Emperor is a tyrant!"
+ 
+ free_spirit_freedom.5.t: "The Brethren Call for Freedom"
+ free_spirit_freedom.5.d: "The various states of the Low Countries, dissatisfied with Imperial rule have held a meeting in Utrecht, discussing the matter of Independence from the Emperor. The impious Catholic leaders have alligned themselves with the libertine Free Spirits, both agreeing to leave in conjuction with each other. Ironically, Religious Freedom, originally concieved to appease religious dissedents and buy their favor has culminated in the complete undermining of the Emperor's authority. The states of the Low Countries now seek to build up their forces and funds in the case of retaliation."
+ free_spirit_freedom.5.a: "The Emperor must act quickly. Summon the diet!"
+ free_spirit_freedom.5.b: "The Low Countries are a lost cause."
+ free_spirit_freedom.5.c: "We must make an example of these ungrateful ingrates!"
+ 
+ incident_free_spirit_freedom_emperor_alert: "The various states of the Low Countries, dissatisfied with Imperial rule have held a meeting in Utrecht, discussing the matter of Independence from the Emperor. The impious Catholic leaders have alligned themselves with the libertine Free Spirits, both agreeing to leave in conjuction with each other. Ironically, Religious Freedom, originally concieved to appease religious dissedents and buy their favor has culminated in the complete undermining of the Emperor's authority. The states of the Low Countries now seek to build up their forces and funds in the case of retaliation"
+ incident_free_spirit_freedom: "The Brethren Call for Freedom"

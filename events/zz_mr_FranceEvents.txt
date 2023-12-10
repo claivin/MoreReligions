@@ -1,0 +1,259 @@
+#events for france and french missions
+namespace = mr_france
+
+#Bishop Electors Side With France
+country_event = {
+	id = mr_france.1
+	title = mr_france.1.t
+	desc = mr_france.1.d
+	picture = POPE_PREACHING_eventPicture
+	
+	# major = yes
+	# major_trigger = {
+		# OR = {
+			# is_part_of_hre = yes
+			# capital_scope = { region = france_region }
+			# capital_scope = { region = italy_region }
+			# capital_scope = { region = low_countries_region }
+		# }
+	# }
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		OR = {
+			government_rank = 3
+			calc_true_if = {
+				all_owned_province = {
+					region = france_region
+				}
+				amount = 43
+			}
+		}
+		any_subject_country = {
+			is_part_of_hre = yes
+			is_french_bishop_elector = yes
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = mr_france.1.a
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 20.5
+				NOT = {
+					military_strength = {
+						who = emperor
+						value = 1.0
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				military_strength = {
+					who = emperor
+					value = 1.0
+				}
+			}
+			modifier = {
+				factor = 2
+				military_strength = {
+					who = emperor
+					value = 2.0
+				}
+			}
+		}
+		set_country_flag = mr_france_support_bishops
+		custom_tooltip = warning_this_may_lead_to_war_with_emperorTT
+		emperor = {
+			country_event = {
+				id = mr_france.2
+				days = 100
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_french_bishop_elector = yes
+			}
+			country_event = {
+				id = mr_france.3
+				days = 10
+			}
+		}
+		add_prestige = 25
+	}
+	option = {
+		name = mr_france.1.b
+		ai_chance = {
+			factor = 100
+		}
+		add_prestige = -10
+	}
+}
+
+country_event = { #France Backs the Bishop Electors
+	id = mr_france.2
+	title = mr_france.2.t
+	desc = mr_france.2.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mr_france.1
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_france.2.a
+		ai_chance = {
+			factor = 80
+		}
+		set_country_flag = mr_ready_to_fight_for_elector_bishops
+	}
+		
+	option = {
+		name = mr_france.2.b
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 1.5
+				is_in_deficit = yes
+			}
+			modifier = {
+				factor = 1.5
+				is_at_war = yes
+			}
+		}
+		add_prestige = -50
+		add_imperial_influence = -20
+		FRA = {
+			country_event = {
+				id = mr_france.5
+			}
+		}
+	}
+}
+
+country_event = { #France Backs the Bishop Electors - Bishop Elector Event
+	id = mr_france.3
+	title = mr_france.3.t
+	desc = mr_france.3.d
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mr_france.1
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_france.3.a
+		add_mil_power = 200
+	}
+}
+
+country_event = { #France Declares War for Bishop Electors
+	id = mr_france.4
+	title = mr_france.4.t
+	desc = mr_france.4.d
+	picture = POPE_PREACHING_eventPicture
+		
+	fire_only_once = yes
+	major = yes
+	major_trigger = {
+		OR = {
+			is_part_of_hre = yes
+			capital_scope = { region = france_region }
+			capital_scope = { region = italy_region }
+			capital_scope = { region = low_countries_region }
+		}
+	}
+	trigger = {
+		tag = FRA
+		has_country_flag = mr_france_support_bishops
+		emperor = { has_country_flag = mr_ready_to_fight_for_elector_bishops }
+	}
+	mean_time_to_happen = { months = 2 }
+	
+	option = {
+		name = mr_france.4.a
+		declare_war_with_cb = {
+			who = emperor
+			casus_belli = cb_french_bishop_elector_indep
+		}
+		custom_tooltip = france_win_loss_resultsTT
+	}
+}
+
+country_event = { #Emperor backs down
+	id = mr_france.5
+	title = mr_france.5.t
+	desc = mr_france.5.d
+	picture = POPE_PREACHING_eventPicture
+		
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#triggered by mr_france.2
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = mr_france.5.a
+		every_subject_country = {
+			limit = { is_french_bishop_elector = yes }
+			every_owned_province = {
+				set_in_empire = no
+			}
+		}
+		add_prestige = 50
+	}
+}
+
+
+country_event = { #post war results for france
+	id = mr_france.6
+	title = mr_france.6.t
+	desc = mr_france.6.d
+	picture = POPE_PREACHING_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		#triggered by on_action on_war_won
+	}
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		hidden_effect = {
+			every_subject_country = {
+				limit = { is_french_bishop_elector = yes }
+				every_owned_province = {
+					set_in_empire = no
+				}
+			}
+			set_country_flag = won_war_for_bishop_electors
+		}
+	}
+	
+	option = {
+		name = mr_france.6.a
+		tooltip = {
+			every_subject_country = {
+				limit = { is_french_bishop_elector = yes }
+				every_owned_province = {
+					set_in_empire = no
+				}
+			}
+		}
+		france_region = {
+			limit = { is_part_of_hre = yes }
+			add_permanent_claim = ROOT
+		}
+		custom_tooltip = won_war_for_bishop_electors_triggered_modifier_TT
+	}
+}
