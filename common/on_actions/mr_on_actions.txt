@@ -899,6 +899,7 @@ on_monthly_pulse = {
 	events = {
 		MrGreekEvents.5 #Will only fire once, under the most bat shit circumstances.
 		MrGreekEvents.8 #Hidden event for Missions
+		MrGreekEvents.81
 	}
 }
 on_consecrate_patriarch = {

@@ -175,4 +175,52 @@ spriteTypes = {
 		name = "GFX_mr_ab_rajput_lib_desire"
 		texturefile = "gfx/interface/mr_ab_rajput_lib_desire.dds"
 	}
+	spriteType = {
+		name = "GFX_mr_ab_ruthenian_khans"
+		texturefile = "gfx/interface/mr_ab_ruthenian_khans.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_reformation_movements"
+		texturefile = "gfx/interface/mr_ab_reformation_movements.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_polish_hussars"
+		texturefile = "gfx/interface/mr_ab_polish_hussars.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_lords_of_india"
+		texturefile = "gfx/interface/mr_ab_lords_of_india.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_japanese_stability"
+		texturefile = "gfx/interface/mr_ab_japanese_stability.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_iran_empire"
+		texturefile = "gfx/interface/mr_ab_iran_empire.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_iberian_naval"
+		texturefile = "gfx/interface/mr_ab_iberian_naval.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_habesha_innovation"
+		texturefile = "gfx/interface/mr_ab_habesha_innovation.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_english_absolutism"
+		texturefile = "gfx/interface/mr_ab_english_absolutism.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_emperor_of_china"
+		texturefile = "gfx/interface/mr_ab_emperor_of_china.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_caliphate_control"
+		texturefile = "gfx/interface/mr_ab_caliphate_control.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_angkor_devaraja"
+		texturefile = "gfx/interface/mr_ab_angkor_devaraja.dds"
+	}
 }

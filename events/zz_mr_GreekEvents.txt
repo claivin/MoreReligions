@@ -303,6 +303,39 @@ country_event = {
 		clr_country_flag = mr_latin_boost
 	}
 }
+
+country_event = {
+	id = MrGreekEvents.81
+	title = MrGreekEvents.81.t
+	desc = MrGreekEvents.81.d
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+
+	trigger = {
+		has_country_flag = mr_ven_boost
+		OR = {
+			is_in_war = {
+				attackers = VEN
+			}
+			is_in_war = {
+				defenders = VEN
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	option = {
+		add_country_modifier = {
+			name = mr_ven_boost
+			duration = 3650
+		}
+		clr_country_flag = mr_ven_boost
+	}
+}
 country_event = {
 	id = MrGreekEvents.9
 	title = MrGreekEvents.9.t

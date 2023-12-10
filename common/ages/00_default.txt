@@ -811,7 +811,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				min_autonomy_in_territories = 0.15
+				min_autonomy_in_territories = -0.15
 			}
 			ai_will_do = {
 				factor = 100
