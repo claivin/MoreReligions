@@ -159,4 +159,20 @@ spriteTypes = {
 		name = "GFX_icon_none_school"
 		texturefile = "gfx/interface/icon_none_school.dds"
 	}
+	spriteType = {
+		name = "GFX_mr_ab_qaraunas_cavalry"
+		texturefile = "gfx/interface/mr_ab_qaraunas_cavalry.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_hungarian_reconstruction"
+		texturefile = "gfx/interface/mr_ab_hungarian_reconstruction.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_malian_colonial_growth"
+		texturefile = "gfx/interface/mr_ab_malian_colonial_growth.dds"
+	}
+	spriteType = {
+		name = "GFX_mr_ab_rajput_lib_desire"
+		texturefile = "gfx/interface/mr_ab_rajput_lib_desire.dds"
+	}
 }

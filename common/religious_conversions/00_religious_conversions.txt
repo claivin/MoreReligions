@@ -1296,7 +1296,7 @@ mr_catholic_center_of_reformation = {
 	
 	map_icon = GFX_religious_conversion_center_protestant
 
-	max_distance = 75.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	max_distance = 15.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
 	base_conversion_speed = 2.5
 
 	target_province_weights = {
@@ -1307,7 +1307,7 @@ mr_catholic_center_of_reformation = {
 			has_missionary = yes
 		}
 		modifier = {
-			factor = 0
+			factor = 0.5
 			NOT = {
 				OR = {
 					region = anatolia_region
@@ -1389,6 +1389,80 @@ mr_catholic_center_of_reformation = {
 			PAP = {
 				is_part_of_hre = yes
 			}
+		}
+	}
+}
+mr_orthodox_center_of_reformation = {
+
+	religion = catholic
+	
+	map_icon = GFX_religious_conversion_center_protestant
+
+	max_distance = 15.0 # From Center of Reformation center province (default is NDefines::NReligion::MAX_RELIGIOUS_CENTER_SPREAD_DISTANCE).
+	base_conversion_speed = 2.5
+
+	target_province_weights = {
+		factor = 2
+		
+		modifier = {
+			factor = 0
+			has_missionary = yes
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				OR = {
+					region = italy_region
+					region = balkan_region	
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			is_empty = yes
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_center
+		}
+		modifier = {
+			factor = 0
+			has_province_modifier = religious_zeal_at_conv
+		}
+		modifier = {
+			factor = 0
+			religion = coptic
+		}
+		modifier = {
+			factor = 3
+			religion_group = christian 
+		}
+		modifier = {
+			factor = 1
+			NOT = { continent = FROM }
+		}
+		modifier = {
+			factor = 1.5
+			owner = {
+				religion = orthodox
+			}
+		}
+		modifier = {
+			factor = 1.5
+			culture_group = FROM
+		}
+		modifier = {
+			factor = 2
+			culture_group = FROM
+			development = 10
+		}		
+		modifier = {
+			factor = 1.5
+			religion = catholic
+		}		
+		modifier = {
+			factor = 0.5
+			has_state_edict = edict_religion_enforced
 		}
 	}
 }

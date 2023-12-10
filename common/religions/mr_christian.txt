@@ -1439,7 +1439,14 @@ christian = {
 			local_missionary_strength = -0.01
 		}
 		
-		
+		allowed_center_conversion = {
+			catholic
+			mr_waldensian
+			mr_fraticelli
+			protestant
+			reformed
+			mr_bogomil
+		}
 		heretic = { OLD_BELIEVER MOLOKAN DUKHOBOR KHLYST SKOPTSY ICONOCLAST }
 		
 		has_patriarchs = yes		# Uses patriarch authority

@@ -244,4 +244,29 @@ lord_of_all_orthodox = {
 	yearly_patriarch_authority = 0.005
 	missionaries = 1
 }
-
+defender_of_orthodoxy = {
+	reverse_relation_with_same_religion = 25	
+	infantry_power = 0.10
+}
+metropolitans_italy = {
+	local_tax_modifier = 0.15
+	local_prosperity_growth = 0.05
+}
+taranto_secured = {
+	local_manpower_modifier = 0.10
+	local_own_coast_naval_combat_bonus = 2
+}
+mr_ven_expansion = {
+	ae_impact = -0.15
+}
+mr_ven_boost = {
+	galley_power = 0.20
+	core_creation = -0.15
+}
+expand_magna_gracia = {
+	governing_capacity_modifier = 0.15
+}
+wine_and_olive_production = {
+	local_build_cost = -0.15
+	local_production_efficiency = 0.05
+}

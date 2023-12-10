@@ -350,7 +350,9 @@ country_event = { #The Anatolian Candidate
 	desc = MrGreekEvents.10.d
 	picture = BYZ_CIVIL_WAR_eventPicture
 
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		months = 12
+	}
 
 	trigger = {
 		has_country_flag = will_soon_be_trolled
@@ -412,6 +414,32 @@ country_event = { #The Anatolian Candidate
 				type = noble_rebels
 				win = yes
 			}
+		}
+	}
+}
+country_event = { #Razing of Venice
+	id = MrGreekEvents.11
+	title = MrGreekEvents.11.t
+	desc = MrGreekEvents.11.d
+	picture = USA_GREAT_FIRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = MrGreekEvents.11.a
+		112 = {
+			add_devastation = 75
+			add_base_tax = -5
+			add_base_production = -5
+			add_base_manpower = -5
+			add_center_of_trade_level = -2
+		}
+		add_years_of_income = 0.5
+		113 = {
+			add_base_tax = 5
+			add_base_production = 5
+			add_base_manpower = 5
+			center_of_trade = 3
 		}
 	}
 }
