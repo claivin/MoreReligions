@@ -3,6 +3,7 @@ add_government_reform = nusantaran_sultanate
 government_rank = 1
 primary_culture = malayan
 religion = mr_tayyibi
+religious_school = ismaili_school
 technology_group = chinese
 capital = 595 # Malacca
 

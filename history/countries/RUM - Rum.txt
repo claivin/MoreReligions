@@ -1,17 +1,28 @@
 government = monarchy
-add_government_reform = ottoman_government
-government_rank = 3
+add_government_reform = beylik_government
+government_rank = 2
 primary_culture = turkish
 religion = sunni
 technology_group = ottoman
 capital = 323	# Sivas
+religious_school = hanafi_school
 
 1444.1.1 = {
 	monarch = {
-		name = "Emre"
-		dynasty = "Rum"
+		name = "Kaybahman"
+		dynasty = "Saljuq"
+		birth_date = 1420.1.1
 		adm = 1
-		dip = 5
-		mil = 3
+		dip = 0
+		mil = 0
+	}
+	monarch = {
+		name = "Iskandar Arslan"
+		dynasty = "Saljuq"
+		birth_date = 1425.1.1
+		death_date = 1480.1.1
+		adm = 4
+		dip = 3
+		mil = 4
 	}
 }

@@ -5,6 +5,7 @@ religion = sunni
 technology_group = muslim
 capital = 416
 government_rank = 3
+religious_school = hanafi_school
 
 1440.1.1 = {
     set_estate_privilege = estate_church_ilkhanate_dervish

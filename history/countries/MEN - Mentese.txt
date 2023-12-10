@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = beylik_government
 government_rank = 1
 primary_culture = turkish
 religion = sunni
@@ -16,4 +16,14 @@ religious_school = hanafi_school
 		mil = 2
 	}
 	add_piety = 0.2
+}
+
+1444.1.1 = {
+	monarch = {
+		name = "Vali Khan"
+		dynasty = "Osmanoglu"
+		adm = 3
+		dip = 5
+		mil = 1
+	}
 }
