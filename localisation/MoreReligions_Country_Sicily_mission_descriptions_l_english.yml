@@ -1,0 +1,121 @@
+﻿l_english:
+ #missions
+ mr_sicily_conquest_1_title: "Sicilian Ambitions"
+ mr_sicily_conquest_1_desc: "What was once a respectable kingdom that comandeered the whole of Sicily, one powerful enough to stand strong against both heretics to the east and heathens to the south, has been stranded to the island of Trinacria. This isolation has lasted for so long that our Kingdom is becoming synonymous only to the half that we still own. To make sure that we don't slip into the annals of time as yet another decadent kingdom, we must muster our forces, and strike swiftly."
+
+ mr_sicily_conquest_2_title: "Across the Strait"
+ mr_sicily_conquest_2_desc: "Beyond the Strait of Messina lies Calabria, the gateway towards the rest of continental Sicily. If we are to §Yquickly§! take care of the rebel princes ruling the area, we may yet reverse the notion that our name only means Trinacria, and so make retaking the rest of our former kingdom a little easier. To arms!"
+
+ mr_sicily_tall_1_title: "The Palermo Renaissance"
+ mr_sicily_tall_1_desc: "Ever since we've wrested control of Palermo from Muslim rule, the already prosperous city has served as our capital. For much of its time our tutelage, the city only prospered further, being a key component to the Kingdom's power, prestige, and reputation in the past. Regrettably, once the parent branch of the house Hauteville died down, it has only experienced a constant decline. Even after the restoration of Sicily under a surving cadet branch of house Hautevile, the city only further continued to tarnish, making it a shadow of its former self. We've neglected it for far too long, it is time we take to rebuild, refurbish, and remodel it. May Palermo be born anew!"
+
+ mr_sicily_tall_2_title: "Mondello Trading Harbor"
+ mr_sicily_tall_2_desc: "Althought nothing more than a small and marshy fishing village close to Palermo, Mondello has the potential for greatness, owing to being situated right between Mount Gallo and Mount Pellegrino, creating a perfect natural harbour. Or at least, these are the ideas of a Palermitan nobleman. According to them, if we are to drain its swamp accumulated over the years and heavily invest in it, it might just grow to become the most prosperous harbour on Sicily, maybe even giving healthy competition to Palermo. This can also only bring good to its surrounding area, for good competition drives forward each participant to better themselves, while only pulling up those who surround them."
+
+ mr_sicily_tall_3_title: "A Revitalized Court"
+ mr_sicily_tall_3_desc: "Where once §YPalazzo dei Normanni§! hosted a vibrant court, full of learned people from all over the reaches of the kingdom, now lie empty halls where the wind blows nothing but sorrowful melodies into the ears of our [Root.Monarch.GetTitle]. This cannot do, no matter how bright our ruler's mind is, they can only do so much to ensure they've covered every angle of a problem. If we are to once more invest into accomodating the readility available bright minds scattered throughout the lands, we might just revitalize the dynamism of our court and usher in a new age of rightful and educated decisions."
+
+ mr_sicily_conquest_3_title: "Reconquest of Naples"
+ mr_sicily_conquest_3_desc: "Naples was the last duchy to resist the old kings of Sicily's drive to have all of Southern Italy under their domination. At the same time, it was where the Neapolitan Vespers started. Helped by the vile so called "Holy" Roman Emperors, the rebellion managed to win. As such, it has become a sign of resistance against our rightful rule from [Root.Capital.GetCapitalName]. If we are to retake it, along the rest of what broke off, we will have fully reversed the catastrophe that once crippled us."
+
+ mr_sicily_tall_4_title: "Unisci il Mezzogiorno"
+ mr_sicily_tall_4_desc: "The territorial losses inflicted upon us by the Neapolitan Vespers might have been reverted, but there is still much work to be done. Truth be told, the reason such thing happened was because of our ... mismanagement of our Italian subjects, owing to our North French origin. During the years of repentance, we've grown to tolerate, accept, and even integrate within our subjects. Southern Italy, lovingly known as Mezzogiorno due to the intensity of the sun at midday, has suffered enough. To show that we've learnt our lesson, we ought to mend the now ruined land and plant the seeds of trust within the minds of those who dwell within it."
+
+ mr_sicily_africa_1_title: "Land in Tunisia"
+ mr_sicily_africa_1_desc: "Just as we were facing traitors from the north, so we did from the south. In thinking that they had what it takes to survive among a sea of heathens, our brothers ruling from the halls of Tunis split off. Now their once stalwart stronghold of Christianity in Africa has become nothing more than a mere statelet. Enough time has passed, it has befallen upon us to once more offer our protection to the people of Tunisia."
+
+ mr_sicily_africa_2_title: "Restoration of Africa"
+ mr_sicily_africa_2_desc: "The Kingdom of Africa has been saved from impending doom, giving us a fine vantage point to the rest of the former province of the long gone Roman Empire. Currently, the vile pirates of [2954.GetName] terrorise our posessions anywhere near them, never allowing the region to prosper. If we are to secure [2954.GetName] and its surrounding mainland will make sure no power present in Africa has a base from where to harass our posessions without repercussions. The pirates squatting there shall have their comeuppance."
+
+ mr_sicily_africa_3_title: "March on the Zayyanid"
+ mr_sicily_africa_3_desc: "Directly to the west of the Kingdom of Africa, lays the realm of the Zayyanid, a proud Berber dynasty that in many ways represents the Maghrebi's force, tenancity, and resourcefulness to thwart any plans at outside powers dominating the area. If we are to sucesffully face them in battle and rob them of their eastern coastal posessions we will have succesfully proven to the Maghreb that they are not safe from the same fate the Iberians face because of them and their Andalusian kin."
+
+ mr_sicily_africa_4_title: "Eliminate Tlemcen"
+ mr_sicily_africa_4_desc: "Ensuring the utmost destruction of Tlemcen will deal the heaviest blow to the Maghreb, crushing any hope that they might have of further resistance. The trial ahead will be difficult though, as their remaining lands are not only of most defensible terrain but they will be expecting us this time. Many of us will fall, but it is a sacrifice each one of us shall be willing to make."
+
+ mr_sicily_africa_5_title: "Conquest of Libya"
+ mr_sicily_africa_5_desc: "With [2954.GetName] firmly under our control, we now have free access to push towards the east. Libya might seem like nothing but a few fishing hamlets scattered throughout the coast between Tunisia and Egypt, but that can be leveraged to our advantage. By taking hold of the region and focusing on road infrastructure we will have effectively turnt it into a highway between our center of power in Africa and Egypt, allowing for expeditions further eastward."
+
+ mr_sicily_africa_6_title: "Rebuilding of Jerba"
+ mr_sicily_africa_6_desc: "The island of [2954.GetName], once one of our most importat posessions in Africa, has become nothing more than a ruin that can barely even keep itself alive. The situation is not hopeless though, for the foundational potential of the island hasn't left it. By heavily investing in its industry and renovating its once flourishing trade nexus we might just be able to turn its fortune around and present it as a beacon of wealth and prosperity in our ever expanding corner of Africa."
+
+ mr_sicily_africa_7_title: "North African Crusade"
+ mr_sicily_africa_7_desc: "With any sort of centralized resistance crushed under the weight of our steel, it now befalls upon us to pacify the locals and bring them towards the guiding light of our Lord. Our holy men shall find it most difficult to convince the people that we just conquered that our outlook on the divine is right, but it will be worth it in the end. No longer will the words of that false prophet poison their minds nor will they have any reason to resist our loving embrace."
+
+ mr_sicily_africa_8_title: "Invasion of Egypt"
+ mr_sicily_africa_8_desc: "The lands of the Nile have a most enviable position, with their history being almost as old as man has been able to record it. As such, they've always been the dominant power in the Levant, dictating its fate, until the Romans finally managed to subdue it. Though, not even their authority could manag to subdue its raw potential, with it quickly becoming the breadbasket of the whole Empire and also becoming a hotbed for Christian thought, rivaling the authority of Rome and Constantinople many a times, even if it was relatively neglected. When the Arabs took it, they made it their be it economic, cultural, political, and military epicenter. It especially prospered under the guise of the Fatimids, garnering the respect of be it countless learnt European kings or even the old and sinfully prideful formerly Roman then Greek Empire. Even our old kings have used their mannerisms to better control our muslim subjects. With Egypt now in decline after a long period of internal instability, it is now our time to strike and become the new masters of the Nile, adding their title to our glorified presence's list of dominions."
+
+ mr_sicily_africa_9_title: "To The Holy Land"
+ mr_sicily_africa_9_desc: "Ah, the Holy Land, where our Lord and Saviour has spent his time on the earth walking among us, teaching us the true way to navigate throughout the tumultous waters of life. With Egypt finally firmly within under our control, the path towards it now stands perfectly open. It is time we succeed where countless others have failed, and secure Jerusalem and the way to it for the rest of Christendom."
+
+ mr_sicily_island_1_title: "Sardinian Ports"
+ mr_sicily_island_1_desc: "Sardinia, while never a part of our Kingdom, has been an ever so increasing interest of the crown, with many a Hauteville kings looking to subjugate the many previously independent judges ruling it. Owing to its ideal position right in the center of the Western Mediteranean, it has become the ideal meeting grounds of elite sailormen. It only stands to reason that we should make that island our own, and carve our path towards dominating the seas that surround us."
+
+ mr_sicily_island_2_title: "Securing the Tyrrhenian"
+ mr_sicily_island_2_desc: "If we are to take control of the Balearic Islands and Corsica, we will have firmly solidified our position as the dominant naval power in the Tyrrhenian and the Western Mediteranean as a whole. With this, numerous advantages would follow, the one most significant to us being in the military department. Having secured the waves we will be better equipped at using it as a safe and secure transport lane to strike wherever we please across the shorelines, and even inspire the construction of grander boats that announce our dominant presence."
+
+ mr_sicily_italy_1_title: "Encircle the Papal State"
+ mr_sicily_italy_1_desc: "While the Pope might be our connection to God, the binder and looser between the mortal and the divine, they've let their earthly side corrupt them. While there may be numerous examples of such cases, the most obivious one would be back when they supported the Neapolitan Vespers, humiliating us beyond any reasonable semblance. It might just be time we retire the Pope from their ... political duties, and let them focus on the divine. [Root.Monarch.GetName], the powerful through God, could use reclaiming their role of defender of the pope of Rome."
+
+ mr_sicily_italy_2_title: "Into the Hills of Florence"
+ mr_sicily_italy_2_desc: "North of Lazio, our edge of posessions in Italy, lies Florence, the home of many a great minds, be it artistically or economically. If we are to fully commit to having all of Italy under our ruling, we have to put an end to the various city-state republics dotting the region, repairing the degradation of authority in the area. As an added bonus to getting rid of another potential league forming, we would greatly benefit from the talent the Tuscan people possess to make goods and money go around."
+
+ mr_sicily_italy_3_title: "Cut Down the Padana League"
+ mr_sicily_italy_3_desc: "Now that a potential league has been dealt with, it is time to deal with one that actually got the chance to materialize. The league of Padana was created to combat any sort of attempts of Holy Roman Emperors, always coming from beyond the alps, to meddle within the affairs of the Kingdom of Italy. While that role might have been noble at first, now it has become a sign of resistance against any sort of authority wishing to centralize rule over Italia, including us. If we are to shatter the League for good we will have shown those Germanic pretenders that we stronger, more worthy than them, to rule the homeland of caesars past. Not only that, but we could also learn a thing or two about the advacements and experiments the Padanians had regarding civic administration."
+
+ mr_sicily_italy_4_title: "Siege of Venice"
+ mr_sicily_italy_4_desc: "The republic of Venice is among one of the oldest states risen from the ashes of the Roman Empire crumbling at its seams. Created from the gathering of people seeking refuge from invaders, they've kept a low profile for the longest time, biding their time, entangling themselves within the business of the Greeks, expanding their trade empire, until they managed to do what might have never seemed possible, bring their false empire down. In order to make sure the same thing does not happen to us, we must break through their wooden wall of ships, fight our way through the city's streets, and make it our own. After that's done, we will have the expertise of its patrician houses at our disposal. Whatever sorry excuses remain still loyal to their then exiled government, we will be able to hunt them down and bring them back under us."
+
+ mr_sicily_italy_5_title: "Into the Alps of Piedmont"
+ mr_sicily_italy_5_desc: "With the Padanian League gone, we have clear sight of one of the final pieces of the puzzle, Piedmont. For now, the area is decentralized, ruled by petty counts and an absent duke. Though, given enough time, that absent duke might just take destiny into his own hands, unite the region, and turn it into an economic powerhouse. We should not let that happen, and instead oversee that we are the undisputed masters of Northern Italy."
+
+ mr_sicily_italy_6_title: "Rex Italiae"
+ mr_sicily_italy_6_desc: "We've done the impossible, we've managed to unite all of Italy; North, South, and even all the islands associated with it. With it, the old homeland of the Roman Empire which has produced many a legendary leaders is finally reunited, with its own people at the helm. It is high time the glorified presence, the ruling, the most royal, the [Root.Monarch.GetName]an, the magnificent, the powerful through God, the assisted by His omnipotence, the desirous of victory through His strength, claim the title of King of Italy, Rex Italiae. May God perpetuate its reign and its days, make eternal its ages and its years, assist its armies and its standards, and support its swords and its pens!"
+
+ mr_sicily_italy_7_title: "Improving Crop Yields"
+ mr_sicily_italy_7_desc: "With the woes of the past being finally solved for good, the people can return to their more peaceful lives, many of them working the land. If we want our subject pool to feel comfortable multiplying, we ought to ensure that they are fruitful. This can only be done by investing in the many agricultural avenues that the people of Southern Italy dabble into."
+
+ mr_sicily_italy_8_title: "Solidifying Southern Rule"
+ mr_sicily_italy_8_desc: "As does the population and wealth of the core lands grow, so does the difficulty in managing them. With this development, our antiquated medieval form of governance can barely keep up without limiting our attention towards the ever widening horizons. It is time the administration is modernized, putting greater emphasis on governors and judges answering directly to the crown instead of the local nobles."
+
+ mr_sicily_italy_9_title: "Industry of the South"
+ mr_sicily_italy_9_desc: "When we first took over Southern Italy we found it a poor and mismanaged strip of land fractured from the neglect of the Greeks. Under our guiding hand we've managed to turn the region's fate around and make it the shining pearl of the Mediteranean that it always deserved to be. And yet, even more can be done, as time moves on so do new methods of going about things arise. A new phylosophy of producing goods is developing, instead of a good being worked on by one person from start to finish, the process could be mainstreamed by having it be split up in multiple steps, with each person speacializing in exactly one part. While this might reduce the artistic value within each individual product, it matters little when the interest is to have as many of them as possible readily available for use. And, even then, maybe each piece being a masterpiece might just elevate the final result, instead of only the finale being cared for."
+
+ mr_sicily_religion_1_title: "The Fraticelli Movement"
+ mr_sicily_religion_1_desc: "At the turn of the 14th century a new religious doctrine captivated the hearts and minds of many a people, be them from the lowliest of lives to the cream of the cream, Fraticellianism. As a result of the supposed excesses of the Catholic church, they preached of holy poverty. Evidently, this posed a big problem to the religious authorities, and have been declared a heresy. As we speak, our kingdom is roughly split between those still loyal to the Pope and those who wish to practice extreme ways of asceticism. If we are to calm the waters a bit, we could, and should summon the royal council and make a final decision on our religious stance."
+
+ mr_sicily_branching_1_title: "Branching Missions"
+ mr_sicily_branching_1_desc: "This mission will deal with solidifying our chosen faith as the dominant one throughout the land we directly control."
+
+ mr_sicily_branching_2_title: "Branching Missions"
+ mr_sicily_branching_2_desc: "This mission will deal with ensuring our religion is as vibrant as it can be."
+
+ mr_sicily_branching_3_title: "Branching Missions"
+ mr_sicily_branching_3_desc: "This mission will deal with making sure only the chosen faith is practiced throughout Southern Italy."
+
+ mr_sicily_branching_4_title: "Branching Missions"
+ mr_sicily_branching_4_desc: "This mission will deal with ensuring we survive with our chosen religion even after the showdown between Catholicism and the Protestants."
+
+ mr_sicily_religion_2a_title: "Purging the Heretics"
+ mr_sicily_religion_2a_desc: "Our lands are tainted by those who wish to overthrow the guiding light of Pope and cover it in mud, claiming to be doing it for the good of everyone's souls. It is our duty to liberate all of our subjects from the stranglehold of sin. Many of them will resist, with the lies of the corrupt preachers wispering lies into their ears, but it is our duty to make sure they don't suffer in the afterlife just for some little pleasure in this current life."
+
+ mr_sicily_religion_3a_title: "Lead the Faithful"
+ mr_sicily_religion_3a_desc: "It is our duty and obligation as the true face of Christianity to lead by example. To make sure that the mistakes and excesses of the past aren't repeated within our borders, the clergy is to be more ingrained within the fabric of society and governance, bringing them closer to those who they are supposed to guide. Not only must we be a shining example, but we also have to be able to impose those fair ways upon the rest of the community."
+
+ mr_sicily_religion_4a_title: "The Soul of the South"
+ mr_sicily_religion_4a_desc: "Mezzogiorno is tainted, tainted by the excesses of those who preach nothing but lies. They put a front that they care about the lives of the common peasant, when all they really do is plot, plot jealously to overtake those who they publicly denounce. Southern Italy can not have peace unless the poisonous ideas of what can only be described as frustrated people dissatisfied with their place in life are eradicated."
+
+ mr_sicily_religion_4b_title: "Weather the Storm"
+ mr_sicily_religion_4b_desc: "The world is changing. A tide of corruption is swallowing all of Christendom. We are needed to stand fast against the ever so increasing danger of those corrupted by false preachers, and not let their frenzied fire engulf any more innocent souls. It is our duty to the Pope."
+
+ mr_sicily_religion_2b_title: "Spreading the Fervor"
+ mr_sicily_religion_2b_desc: "Now that we've finally taken the choice to throw down the shackles of gluttony and greet, it is our duty to liberate all of our subjects from the stranglehold of sin. Many of them will resist, with the lies of the old corrupt priests wispering lies into their ears, but it is our duty to make sure they don't suffer in the afterlife just for some little pleasure in this current life."
+
+ mr_sicily_religion_3b_title: "Fury of the Faithful"
+ mr_sicily_religion_3b_desc: "It is our duty and obligation as the true face of Christianity to lead by example. To make sure that the mistakes and excesses of the past aren't repeated within our borders, the clergy is to be more ingrained within the fabric of society and governance, bringing them closer to those who they are supposed to guide. Not only that, but the clergy have to have the will to aid them as fervently as possible."
+
+ mr_sicily_religion_4d_title: "Cleansing the South"
+ mr_sicily_religion_4d_desc: "Mezzogiorno is tainted, tainted by the excesses of those who preach nothing but lies. They put a front that they care about the lives of the common peasant, when all they really care for is to gluttonously fill up their bellies and purses till they burst. Southern Italy can not have peace unless the decadent ideas of those who have for far too long abused the meek are put to rest for good."
+
+ mr_sicily_religion_4e_title: "Embracing the Reformation"
+ mr_sicily_religion_4e_desc: "The world is changing. A tide of corruption is swallowing all of Christendom. We are needed to stand fast against the ever so increasing danger of those corrupted by false preachers, and not let their frenzied fire engulf any more innocent souls. It is our duty to the Pope."
