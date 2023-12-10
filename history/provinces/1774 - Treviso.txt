@@ -2,6 +2,7 @@
 #1774 - Treviso
 owner = VEN
 controller = VEN
+add_core = VEN
 culture = venetian 
 religion = catholic 
 hre = no

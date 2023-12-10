@@ -57,6 +57,7 @@ ORA = "countries/Orange.txt"
 TUL = "countries/Toul.txt"
 VDN = "countries/Verdun.txt"
 MTZ = "countries/Metz.txt"
+OCT = "countries/Occitania.txt"
 
 #Low Countries
 HLM = "countries/Haarlem.txt"

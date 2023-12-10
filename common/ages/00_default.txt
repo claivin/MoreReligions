@@ -196,8 +196,7 @@ age_of_discovery = {
 				tag = MAL
 			}
 			modifier = {
-				global_colonial_growth = 25
-				colonists = 1
+				global_colonial_growth = 50
 			}
 			ai_will_do = {
 				factor = 100
@@ -217,10 +216,13 @@ age_of_discovery = {
 		}
 		mr_ab_qaraunas_cavalry = {
 			allow = {
-				tag = BLK
+				OR = {
+					tag = BLK
+					tag = TRS
+				}	
 			}
 			modifier = {
-				cavalry_shock = 0.25
+				leader_land_shock = 1
 			}
 			ai_will_do = {
 				factor = 100
@@ -378,61 +380,68 @@ age_of_reformation = {
 			}
 		}
 
-		ab_spain_shock_tactics = {
-			allow = {
-				tag = SPA
-			}
-			modifier = {
-				leader_land_shock = 1
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
-		ab_mughal_artillery = {
-			allow = {
-				tag = MUG
-			}
-			modifier = {
-				artillery_power = 0.15
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}
 		
-		ab_polish_legitimacy = {
+		#MR
+		mr_ab_japanese_stability = {
 			allow = {
 				OR = {
-					tag = PLC
-					tag = POL
-					custom_trigger_tooltip = {
-						tooltip = enable_this_ability_tt
-						has_country_flag = unlock_polish_ability_flag
-					}
+					tag = BFK
+					tag = JAP
 				}
 			}
 			modifier = {
-				global_trade_goods_size_modifier = 0.33
+				global_trade_goods_size_modifier = 0.20
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
+		mr_ab_reformation_movements = {
 		
-		ab_persia_development = {
 			allow = {
-				OR = {
-					custom_trigger_tooltip = {
-						tooltip = unlocked_this_ab_tt
-						has_country_flag = enable_persian_age_ability_flag
+				custom_trigger_tooltip = {
+					tooltip = not_catholic_coptic_or_orthodox
+					NOT = {
+						OR = {
+							religion = catholic
+							religion = coptic
+							religion = orthodox
+							religion = mr_maronite
+							religion = mr_nestorian
+						}
 					}
-					tag = PER
-					tag = ERS
+					religion_group = christian
 				}
 			}
 			modifier = {
-				development_cost = -0.2
+				missionaries = 1
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		mr_ab_habesha_innovation = {
+			allow = {
+				tag = ABH
+			}
+			modifier = {
+				fire_damage = 0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		mr_ab_caliphate_control = {
+			allow = {
+				OR = {
+					tag = IRQ
+					was_tag = IRQ
+					tag = SOS
+					was_tag = SOS
+				}
+			}
+			modifier = {
+				governing_capacity_modifier = 0.20
 			}
 			ai_will_do = {
 				factor = 100
@@ -576,62 +585,58 @@ age_of_absolutism = {
 		}
 	
 	
-		ab_french_absolutism = {
+		#MR
+		mr_ab_emperor_of_china = {
 			allow = {
-				tag = FRA
+				OR = {
+					tag = GHC
+					tag = GSC
+					tag = SHU
+				}
 			}
 			modifier = {
-				max_absolutism_effect = 0.3
+				imperial_mandate = 0.15
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_dutch_trade = {
+		mr_ab_english_absolutism = {
 			allow = {
-				tag = NED
+				tag = GBR
 			}
 			modifier = {
-				trade_steering = 0.33
-			}
-			ai_will_do = {
-				factor = 100
-			}
-		}	
-		ab_sweden_manpower = {
-			allow = {
-				OR = {
-					tag = SWE
-					tag = SCA
-				}
-			}
-			modifier = {
-				manpower_recovery_speed = 0.35
+				max_absolutism = 20
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-
-		ab_manchu_banner = {
+		
+		mr_ab_ruthenian_khans = {
 			allow = {
 				OR = {
-					tag = MCH
-					tag = QNG
-				}
-			}
-			effect = {
-				if = {
-					limit = {
-						NOT = { primary_culture = manchu }
-						NOT = { primary_culture = manchu_new }
-						NOT = { has_government_attribute = allow_banners }
-					}
-					custom_tooltip = ab_manchu_banner_tt
-				}
+					tag = BLH
+					tag = UKR
+				}	
 			}
 			modifier = {
-				amount_of_banners = 0.5
+				warscore_cost_vs_other_religion = -0.15
+			}
+			ai_will_do = {
+				factor = 100
+			}
+		}
+		mr_ab_lords_of_india = {
+			allow = {
+				OR = {
+					tag = BHA
+					tag = HIN
+					tag = MUG
+				}	
+			}
+			modifier = {
+				years_of_nationalism = -5
 			}
 			ai_will_do = {
 				factor = 100
@@ -787,54 +792,49 @@ age_of_revolutions = {
 				}
 			}
 		}
-		ab_pru_military = {
+		mr_ab_polish_hussars = {
 			allow = {
-				OR = {
-					tag = PRU
-					tag = GER
-				}
+				tag = POL
 			}
 			modifier = {
-				fire_damage_received = -0.2
+				morale_damage = 0.2
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_gbr_fleet = {
+		mr_ab_iran_empire = {
 			allow = {
 				OR = {
-					tag = AVE
-					tag = GBR
+					tag = PER
+					tag = ILK
 				}
 			}
 			modifier = {
-				max_admiral_fire = 1
+				min_autonomy_in_territories = 0.15
 			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_russia_boost = {
+		
+		mr_ab_angkor_devaraja = {
 			allow = {
-				tag = RUS
+				tag = ANK	
 			}
 			modifier = {
-				min_autonomy_in_territories = -0.1
-			}	
+				vassal_forcelimit_bonus = 0.5
+			}
 			ai_will_do = {
 				factor = 100
 			}
 		}
-		ab_austrian_morale = {
+		mr_ab_iberian_naval = {
 			allow = {
-				OR = {
-					tag = HAB
-					tag = HLR
-				}
+				tag = IBF
 			}
 			modifier = {
-				morale_damage_received = -0.2
+				own_coast_naval_combat_bonus = 1
 			}
 			ai_will_do = {
 				factor = 100

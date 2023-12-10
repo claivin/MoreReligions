@@ -1,4 +1,6 @@
-change_variable = {
-	which = elite_unit_xp
-	which = 100
+every_province = {
+	limit = {
+		region = france_region
+	}
+	cede_province = OCT
 }
