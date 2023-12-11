@@ -178,17 +178,27 @@ nav_missions_1 = {
 			207 = {
 				has_building = courthouse
 			}
-			CAS = {
+			OR = {
+				CAS = {
 					has_opinion = {
 							who = ROOT
 							value = 120
 					}
+				}
+				CAS = {
+					exists = no
+				}
 			}
-			LON = {
+			OR = {
+				LON = {
 					has_opinion = {
 							who = ROOT
 							value = 120
 					}
+				}
+				LON = {
+					exists = no
+				}
 			}
 		}
 		effect = {
@@ -207,30 +217,50 @@ nav_missions_1 = {
 		position = 7
 		
 		trigger = {
-			POR = {
-				has_opinion = {
+			OR = {
+				POR = {
+					has_opinion = {
 					who = ROOT
 					value = 200
+					}
+				}
+				POR = {
+					exists = no
+				}
+			}
+			OR = {
+				GAL = {
+					has_opinion = {
+					who = ROOT
+					value = 200
+					}
+				}
+				GAL = {
+					exists = no
+				}
+			}
+			OR = {
+				CAS = {
+					has_opinion = {
+					who = ROOT
+					value = 200
+					}
+				}
+				CAS = {
+					exists = no
+				}
+			}
+			OR = {
+				LON = {
+					has_opinion = {
+					who = ROOT
+					value = 200
+					}
+				}
+				LON = {
+					exists = no
 				}
 			}	
-			GAL = {
-				has_opinion = {
-					who = ROOT
-					value = 200
-				}
-			}
-			CAS = {
-				has_opinion = {
-					who = ROOT
-					value = 200
-				}
-			}
-			LON = {
-				has_opinion = {
-					who = ROOT
-					value = 200
-				}
-			}
 			employed_advisor = {
 				category = ADM
 			}	
@@ -627,9 +657,11 @@ nav_missions_2 = {
 				}
 		}
 		effect = {
-			add_great_project_tier = {
-				type = mr_olito_palace
-				tier = 1
+			210 = {
+				add_great_project_tier = {
+					type = mr_olito_palace
+					tier = 1
+				}
 			}	
 		}
 	}
@@ -1180,10 +1212,12 @@ nav_missions_3 = {
 			}
 		}
 		effect = {
-			add_great_project_tier = {
-				type = mr_carcasonne
-				tier = 1
-			}
+			4695 = {
+				add_great_project_tier = {
+					type = mr_carcasonne
+					tier = 1
+				}
+			}	
 		}
 	}
 	
