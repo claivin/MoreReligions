@@ -36,6 +36,10 @@ country_event = {
 	change_province_name = "Khanbaliq"
 	rename_capital = "Khanbaliq"
 	}
+	else = {
+	change_province_name = "Beijing"
+	rename_capital = "Beijing"	
+	}
 	add_base_tax = 3
 	add_base_production = 2
 	add_base_manpower = 3

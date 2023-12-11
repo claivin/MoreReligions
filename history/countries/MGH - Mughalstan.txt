@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
-government_rank = 1
+government_rank = 2
 technology_group = nomad_group
 religion = vajrayana
 primary_culture = moghul
@@ -16,6 +16,7 @@ religious_school = mr_drukpa_kagyu_school
 		adm = 5
 		dip = 3
 		mil = 1
+		birth_date = 1363.5.23
 	}
 }
 
@@ -31,5 +32,3 @@ religious_school = mr_drukpa_kagyu_school
 		mil = 5
 	}
 }
-
-

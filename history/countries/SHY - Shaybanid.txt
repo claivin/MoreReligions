@@ -7,13 +7,13 @@ capital = 1970 #Syghnak
 historical_rival = NOG
 religious_school = hanafi_school
 
-1424.1.1 = { 
+1443.1.1 = { 
 	monarch = { 
 		name = "Kerei" 
 		dynasty = "Tore"
 		dip = 3 
 		adm = 4
 		mil = 4
+		birth_date = 1424.4.23
 	}
 }
-
