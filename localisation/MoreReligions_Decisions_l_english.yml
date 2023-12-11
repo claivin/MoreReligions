@@ -8,6 +8,13 @@
  romaniae_decision_title: "Reform the Romaniae Empire"
  romaniae_decision_desc: "For far too long has the lands of the Frankocratia remained separated and divided. We will unite the crusader states and bring Greece under our heel!"
  
+ greek_union_title: "Union of the Greeks"
+ greek_union_desc: "Our people were divided among artificial lines of Kingdoms and Cities. Now that we are united, we shall do away with those, and become one unified Greek peoples."
+ own_all_greek_cultures: "Own all §YBorean§!, §YEpirote§!, §YPeloponnesian§!, §YAegean§!, and §YMicrasiate§! Culture provinces."
+ greek_transformation: "All of our §YBorean§!, §YEpirote§!, §YPeloponnesian§!, §YAegean§!, and §YMicrasiate§! Culture provinces will become §YGreek§!."
+ return_to_CST_title: "Return to [151.GetName]"
+ return_to_CST_desc: "In the ages past, [151.GetName] was the center of the Greek world. Before our rule, it lay in ruin and disrepair at the hands of the Latins, who could barely even mantain it. We shall restore it to its former glory!"
+ 
  muang_thai_decision_title: "Unite the Thai Muangs"
  muang_thai_decision_desc: "In the aftermath of the 1382 sack of Ayutthaya, the central Thai princedoms remain fractured and broken. It is time for a new empire to emerge, one that can rival and suprass the glory of even Angkor!"
  

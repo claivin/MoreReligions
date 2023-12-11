@@ -51,11 +51,15 @@ country_decisions = {
 			NOT = { tag = BYZ }
 			NOT = { exists = BYZ }
 			NOT = { exists = GRE }
+			NOT = {
+				tag = LAE
+			}
 			culture_group = byzantine
 			NOT ={
 				OR ={
 					culture = turkish
 					culture = albanian
+					culture = phrangic
 				}
 			}
 			is_colonial_nation = no
@@ -140,9 +144,9 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 2 }
 				}
-				set_government_rank = 3
+				set_government_rank = 2
 			}
 			random_owned_province = {
 				limit = { OR = {
@@ -209,4 +213,93 @@ country_decisions = {
 			factor = 1
 		}
 	}
-}
+	greek_union = {
+		potential = {
+			mission_completed = mr_greece_unity_6
+			culture_group = byzantine
+			has_country_flag = unite_greeks_flag_1
+			NOT = {
+				has_country_flag = united_greeks_1
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				culture = borean
+				culture = epirote
+				culture = peloponnesian
+				culture = aegean
+				culture = micrasiate
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = own_all_greek_cultures
+				NOT = {
+					any_province = {
+						OR = {
+							culture = borean
+							culture = epirote
+							culture = peloponnesian
+							culture = aegean
+							culture = micrasiate
+						}
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = greek_transformation
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = borean
+							culture = epirote
+							culture = peloponnesian
+							culture = aegean
+							culture = micrasiate
+						}
+					}
+					change_culture = greek
+				}
+				set_country_flag = united_greeks_1
+			}
+			change_primary_culture = greek
+		}
+	}
+	return_to_CST = {
+		potential = {
+			mission_completed = mr_greek_build_second
+			culture_group = byzantine
+			NOT = {
+				capital = 151
+			}
+			NOT = {
+				has_country_flag = capital_constantinople
+			}
+		}
+		allow = {
+			151 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			treasury = 100
+		}
+		effect = {
+			set_capital = 151
+			add_treasury = -100
+			151 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 1
+			}
+		}
+	}
+}	
+	

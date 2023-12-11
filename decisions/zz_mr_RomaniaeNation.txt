@@ -31,6 +31,42 @@ country_decisions = {
 			}
 			NOT = { has_country_flag = formed_lat }
 		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 146
+				AND = {
+					OR = {
+						culture = borean
+						culture = aegean
+						culture = peloponnesian
+						culture = epirote
+					}
+					OR = {
+						region = balkan_region
+						region = anatolia_region
+					}
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 10
+								OR = {
+									culture = borean
+									culture = aegean
+									culture = peloponnesian
+									culture = epirote
+								}
+								OR = {
+									region = balkan_region
+									region = anatolia_region
+								}
+								is_core = root
+							}
+						}
+						owns_core_province = 146
+					}
+				}
+			}
+		}
 		allow = {
 			is_nomad = no
 			is_at_war = no
@@ -44,19 +80,34 @@ country_decisions = {
 			151 = {
 				owned_by = ROOT
 			}
-			149 = {
-				owned_by = ROOT
-			}
-			146 = {
-				owned_by = ROOT
-			}
-			147 = {
-				owned_by = ROOT
+			ROOT = {
+				num_of_owned_provinces_with = {
+					value = 10
+					OR = {
+						culture = borean
+						culture = aegean
+						culture = peloponnesian
+						culture = epirote
+					}
+					OR = {
+						region = balkan_region
+						region = anatolia_region
+					}
+					is_core = root
+				}
+				owns_core_province = 151
 			}
 		}
 		effect = {
 			change_tag = LAE
-			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_prestige = 25
 			if = {
 				limit = { has_custom_ideas = no }

@@ -430,6 +430,7 @@ estate_church = {
 		estate_church_muslim_integration
 		#G&K
 		estate_church_waldensian_studies
+		estate_church_ilkhanate_dervish
 	}
 
 	agendas = {

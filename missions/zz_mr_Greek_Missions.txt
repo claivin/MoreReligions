@@ -1421,8 +1421,10 @@ mr_greek_missions_first_build = {
 			country_or_non_sovereign_subject_holds = ROOT
 			trade_goods = olives
 			NOT = {
-				has_production_building_trigger = yes
-				base_production = 8
+				AND = {
+					has_production_building_trigger = yes
+					base_production = 8
+				}
 			}
 		}
 		trigger = {
@@ -2325,8 +2327,11 @@ mr_greek_missions_third = {
 				area = northern_greece_area
 			}
 			NOT = {
-				has_manpower_building_trigger = yes
+				AND = {
+					has_manpower_building_trigger = yes
 				base_manpower = 5
+				}
+				
 			}
 		}
 		trigger = {
@@ -2393,21 +2398,6 @@ mr_greek_missions_third = {
 			crown_land_share = 30
 		}
 		effect = {
-			hudavendigar_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			aydin_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			custom_tooltip = " "
 			country_event = {
 				id = MrGreekEvents.1
 			}
@@ -2731,6 +2721,32 @@ mr_latin_missions = {
 					}
 				}
 			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							any_country = {
+								OR = {
+									tag = RUM
+									was_tag =RUM
+								}
+							}
+						}
+					}
+					
+						add_country_modifier = {
+							name = defeated_seljuks
+							duration = -1
+						}
+
+				}
+				else = {
+						add_country_modifier = {
+							name = defeated_seljuks
+							duration = -1
+						}
+				}
+			}
 		}
 	}
 	mr_greek_latin_seventh = {
@@ -2739,20 +2755,23 @@ mr_latin_missions = {
 		required_missions = {
 			mr_greek_latin_sixth
 		}
-	provinces_to_highlight = {
-		or = {
-			area = syria_area
-			area = aleppo_area
-			area = palestine_area
-		}
-		OR = {
-			country_or_non_sovereign_subject_holds = ROOT
-			owner = {
-				alliance_with = ROOT
-				is_levantine_crusader_state = yes
+		provinces_to_highlight = {
+			or = {
+				area = syria_area
+				area = aleppo_area
+				area = palestine_area
 			}
+			NOT = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT
+					owner = {
+						alliance_with = ROOT
+						is_levantine_crusader_state = yes
+					}
+				}
+			}
+			
 		}
-	}
 	trigger = {
 		OR = {
 			custom_trigger_tooltip = {
@@ -3396,7 +3415,7 @@ mr_greek_missions_fourth = {
 				limit = {
 					religion = catholic
 				}
-				custom_tooltip = cretian_base_yes_tt
+				custom_tooltip = naxos_base_yes_tt
 				tooltip = {
 					add_province_modifier = {
 						name = cretian_base
@@ -3408,7 +3427,7 @@ mr_greek_missions_fourth = {
 				limit = {
 					NOT = { religion = catholic } 
 				}
-				custom_tooltip = cretian_base_no_tt
+				custom_tooltip = naxos_base_no_tt
 				tooltip = {
 					add_province_modifier = {
 						name = cretian_base
@@ -3447,7 +3466,7 @@ mr_greek_missions_fourth = {
 					limit = {
 						religion = catholic
 					}
-					163 = {
+					164 = {
 						add_province_modifier = {
 							name = cretian_base
 							duration = -1
@@ -3770,7 +3789,7 @@ mr_greek_hellenist_third = {
 		}
 	}
 }
-mr_greek_catholic_fourth = {
+mr_greek_catholic_fourth_slot = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -4571,18 +4590,19 @@ mr_greek_catholic_fifth = {
 		icon = chivalry_is_not_dead
 		position = 3
 		provinces_to_highlight = {
-			capital_scope = {
+			is_capital = yes
 				NOT = {
 					religion = catholic
 					has_tax_building_trigger = yes
 				}
-			}
+			country_or_non_sovereign_subject_holds = ROOT
 		}
 		trigger = {
 			capital_scope = {
 				religion = catholic
+				has_tax_building_trigger = yes
 			}
-			has_tax_building_trigger = yes
+			
 		}
 		effect = {
 			add_country_modifier = {
@@ -4602,7 +4622,7 @@ mr_greek_catholic_fifth = {
 			calc_true_if = {
 				all_country = {
 					religion = catholic
-					reverse_has_opinion = {
+					has_opinion = {
 						who = ROOT
 						value = 100
 					}
@@ -4610,7 +4630,7 @@ mr_greek_catholic_fifth = {
 				amount = 2
 			}
 			PAP = {
-				reverse_has_opinion = {
+				has_opinion = {
 					who = ROOT
 					value = 100
 				}
