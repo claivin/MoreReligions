@@ -7,9 +7,9 @@ capital = "Calais"
 culture = wallonian
 religion = catholic
 hre = no
-base_tax = 5 
+base_tax = 3
 base_production = 5
-trade_goods = fish
+trade_goods = cloth
 base_manpower = 3
 add_core = ENG
 discovered_by = eastern
@@ -20,5 +20,6 @@ fort_15th = yes
 is_city = yes
 extra_cost = 8
 center_of_trade = 1
+add_building = mrb_textileprocessor
 
 1444.11.12 = { trade_goods = unknown }

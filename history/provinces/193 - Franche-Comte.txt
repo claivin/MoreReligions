@@ -8,15 +8,16 @@ is_city = yes
 culture = burgundian
 religion = catholic
 hre = yes
-base_tax = 3
+base_tax = 2
 base_production = 4
-trade_goods = salt
-base_manpower = 3
+trade_goods = cheese
+base_manpower = 2
 add_core = FBR
 fort_15th = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+add_building = mrb_creamery
 
 1444.11.12 = { trade_goods = unknown }

@@ -7,6 +7,7 @@ latent_trade_goods = {
 
 owner = FRA
 controller = FRA
+add_core = FRA
 capital = "Clermont"
 is_city = yes
 culture = occitain
@@ -17,7 +18,7 @@ base_production = 4
 trade_goods = iron
 base_manpower = 2
 add_core = AUV
-
+add_local_autonomy = 50
 
 
 discovered_by = eastern

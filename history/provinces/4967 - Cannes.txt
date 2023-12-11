@@ -1,17 +1,18 @@
 #REGIONFRANCE
-# 4967 Nice
+# 4967 Cannes
 
 owner = PRO
 controller = PRO 
-capital = "Nice"
+capital = "Cannes"
 is_city = yes
 culture = occitain
 religion = catholic
 hre = yes
 base_tax = 2
-base_production = 2
+base_production = 3
 trade_goods = grain
 base_manpower = 1
+add_local_autonomy = 10
 add_core = PRO
 fort_15th = yes
 discovered_by = eastern

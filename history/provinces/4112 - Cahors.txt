@@ -9,14 +9,16 @@ culture = gascon
 religion = mr_cathar
 hre = no
 base_tax = 3
-base_production = 3
-trade_goods = grapes
+base_production = 5
+trade_goods = wine
 base_manpower = 3
+add_local_autonomy = 5
 add_core = TOU
 # add_core = GUY
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+add_building = mrb_winery
 
 1444.11.12 = { trade_goods = unknown }

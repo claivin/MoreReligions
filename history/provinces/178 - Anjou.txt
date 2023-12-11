@@ -10,7 +10,7 @@ religion = mr_waldensian
 hre = no
 base_tax = 5
 base_production = 5
-trade_goods = cloth
+trade_goods = wine
 base_manpower = 5
 add_core = ANJ
 fort_15th = yes
@@ -18,5 +18,6 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+add_building = mrb_winery
 
 1444.11.12 = { trade_goods = unknown }

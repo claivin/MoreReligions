@@ -3,15 +3,17 @@
 
 owner = FRA
 controller = FRA
-capital = "Orl	ans"
+add_core = FRA
+capital = "Orleans"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
 hre = no
-base_tax = 6
-base_production = 6
-trade_goods = grain
-base_manpower = 5
+base_tax = 5
+base_production = 7
+trade_goods = saffron
+base_manpower = 4
+add_local_autonomy = 20
 add_core = ORL
 discovered_by = eastern
 discovered_by = western
