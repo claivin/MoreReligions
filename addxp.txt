@@ -1,6 +1,6 @@
 every_province = {
 	limit = {
-		region = france_region
+		is_in_greece_area_trigger = yes
 	}
-	cede_province = OCT
+	cede_province = GRE
 }

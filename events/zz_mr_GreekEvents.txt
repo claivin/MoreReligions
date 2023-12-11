@@ -14,6 +14,7 @@ country_event = {
 		trigger = {
 			tag = LAE
 		}
+		change_primary_culture = phrangic
 		if = {
 			limit = {
 				not = { government_rank = 3 }
@@ -23,8 +24,20 @@ country_event = {
 		else = {
 			add_adm_power = 100
 		}
-		change_primary_culture = phrangic
-		
+		hudavendigar_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		aydin_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		add_country_modifier = {
 			name = latins_triumphant
 			duration = 18250
@@ -45,7 +58,38 @@ country_event = {
 		else = {
 			add_adm_power = 100
 		}
+		hudavendigar_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		aydin_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		apulia_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		calabria_area = {
+			limit = {
+				NOT = { is_core = ROOT }
+				NOT = { is_permanent_claim = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		custom_tooltip = enable_unify_greek_cultures_decision
+		hidden_effect = {
+			set_country_flag = unite_greeks_flag_1
+		}
 		add_country_modifier = {
 			name = hellenes_triumphant
 			duration = 18250
@@ -73,6 +117,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = will_soon_be_trolled
+			set_country_flag = unite_greeks_flag_1
 		}
 	}
 }

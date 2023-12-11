@@ -208,11 +208,10 @@ country_event = {
 			limit = {
 				has_tax_building_trigger = yes
 			}
-			spawn_rebels = {
-				type = catholic_rebels
-				size = 2
-			}
+			add_devastation = 10
+			add_base_tax = -1
 		}
+		add_years_of_income = 0.25
 	}
 }
 	

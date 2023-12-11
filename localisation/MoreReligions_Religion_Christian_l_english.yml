@@ -42,6 +42,13 @@
  #Fraticelli Basics
  mr_fraticelli: "Fraticelli"
  mr_fraticelli_religion_desc: "Fraticelli were a sectarian group that split from the Franciscans on grounds concerning apostolic poverty. They were declared heretical near the turn of the 1300's but continued to expaned within the religious communities, especially the more asetic types."
+
+ mr_fraticelli_rebels_name: "Fraticelli Zealots"
+ mr_fraticelli_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ mr_fraticelli_rebels_title: "$RELIGION$ Zealots"
+ mr_fraticelli_rebels_army: "$RELIGION$ Army"
+ mr_fraticelli_rebels_demand: "Convert $COUNTRYNAME$"
+ mr_fraticelli_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  #Bogomil Basics
  mr_bogomil: "Bogomilist"
