@@ -1,12 +1,12 @@
 government = monarchy
-
+add_government_reform = feudal_theocracy
 primary_culture = turkish
 add_accepted_culture = kurdish
 religion = mr_safaviyya
 technology_group = ottoman
 
 capital = 4310 
-religious_school = hanafi_school
+religious_school = jafari_school
 
 1444.1.1 = {
 	monarch = {

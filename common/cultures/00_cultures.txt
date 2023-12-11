@@ -7956,66 +7956,10 @@ malay = {
 		}
 	}
 }
-javanese_group = {
+##javanese_group = {
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx
 
-	javanese = {
-		primary = MAJ
-		dynasty_names = {
-			Banten Demak Surabaya Cirebon Samprangan
-		}
-		male_names = {
-			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa"
-			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat"
-			"Singhawardhana"
-		}
-		female_names = {
-			"Suhita" "Sri Gitarja" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui
-			Poerava Puaiti
-			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
-			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
-			Vaite Vaitiare
-		}
-	}
-
-	balinese = {
-		primary = BLI
-		dynasty_names = {
-			Banten Demak Surabaya Cirebon Samprangan
-		}
-		male_names = {
-			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa"
-			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat"
-			"Singhawardhana"
-		}
-		female_names = {
-			"Suhita" "Sri Gitarja" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui
-			Poerava Puaiti
-			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
-			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
-			Vaite Vaitiare
-		}
-	}
-
-	sundanese = {
-		primary = SUN
-		dynasty_names = {
-			Banten Demak Surabaya Cirebon Samprangan
-		}
-		male_names = {
-			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa"
-			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat"
-			"Singhawardhana"
-		}
-		female_names = {
-			"Rim" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui Poerava Puaiti
-			Poerava Puaiti
-			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
-			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
-			Vaite Vaitiare
-		}
-	}
 }
 moluccan_group = {
 	graphical_culture = southeastasiangfx
@@ -8083,6 +8027,62 @@ moluccan_group = {
 		}
 		female_names = {
 			"Suhita" "Sri Gitarja" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui
+			Poerava Puaiti
+			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
+			Vaite Vaitiare
+		}
+	}
+	javanese = {
+		primary = MAJ
+		dynasty_names = {
+			Banten Demak Surabaya Cirebon Samprangan
+		}
+		male_names = {
+			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa"
+			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat"
+			"Singhawardhana"
+		}
+		female_names = {
+			"Suhita" "Sri Gitarja" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui
+			Poerava Puaiti
+			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
+			Vaite Vaitiare
+		}
+	}
+
+	balinese = {
+		primary = BLI
+		dynasty_names = {
+			Banten Demak Surabaya Cirebon Samprangan
+		}
+		male_names = {
+			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa"
+			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat"
+			"Singhawardhana"
+		}
+		female_names = {
+			"Suhita" "Sri Gitarja" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui
+			Poerava Puaiti
+			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
+			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea
+			Vaite Vaitiare
+		}
+	}
+
+	sundanese = {
+		primary = SUN
+		dynasty_names = {
+			Banten Demak Surabaya Cirebon Samprangan
+		}
+		male_names = {
+			"Girindrawardhana" "Girishawardhana" "Kertabumi" "Kertawijaya" "Rajasawardhana" "Suraprabhawa"
+			"Wikramawardhana" "Hayam Wuruk" "Kalagamet" "Raden Wijaya" "Kertawardhana" "Raden Sotor" "Raden Sumirat"
+			"Singhawardhana"
+		}
+		female_names = {
+			"Rim" Merenui Metetini Miri Moea Moeata Moerani Mohea Nanihi Nu置tea Orama Poe Pear Poehina Poenui Poerava Puaiti
 			Poerava Puaiti
 			Puatea Puaura Ra段hau Ra段mere Ra段nui Ranitea Rarahu Raunui Raurii Tahiata Taiana Taina Tania Taurua Tautiare Tehani
 			Tehea Teora Tera Tevai Titaina Titaua Tuianu Tumata Unutea Urarii Vaea Vaiana Vaianu Vaiata Vaihere Vaimiti Vairea

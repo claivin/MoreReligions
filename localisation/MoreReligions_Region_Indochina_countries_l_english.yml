@@ -99,8 +99,8 @@
  TGJ_ADJ2: "Tanjungpuran"
  
  MLY: "Melayu"
- MLY_ADJ: "Melayan"
- MLY_ADJ2: "Melayan"
+ MLY_ADJ: "Melayu"
+ MLY_ADJ2: "Melayu"
  
  NIS: "Nias"
  NIS_ADJ: "Nias"
@@ -122,9 +122,9 @@
  SOP_ADJ: "Soppengan"
  SOP_ADJ2: "Soppengan"
  
- MMJ: "Mamuju"
- MMJ_ADJ: "Mamujan"
- MMJ_ADJ2: "Mamujan"
+ MMJ: "Mandar"
+ MMJ_ADJ: "Mandar"
+ MMJ_ADJ2: "Mandar"
  
  SIG: "Sigi"
  SIG_ADJ: "Sigi"
@@ -142,9 +142,9 @@
  KNW_ADJ: "Konawe"
  KNW_ADJ2: "Konawe"
  
- BGI: "Benggai"
- BGI_ADJ: "Benggai"
- BGI_ADJ2: "Benggai" 
+ BGI: "Banggai"
+ BGI_ADJ: "Banggai"
+ BGI_ADJ2: "Banggai" 
  
  BFK: "Bakufu"
  BFK_ADJ: "Bakufu"

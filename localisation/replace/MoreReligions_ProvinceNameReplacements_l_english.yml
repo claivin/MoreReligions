@@ -77,10 +77,6 @@
  MAJ_ADJ: "Maduran"
  MAJ_ADJ2: "Maduran"
  
- BNJ: "Negara Dipa"
- BNJ_ADJ: "Negara Dipan"
- BNJ_ADJ2: "Negara Dipan"
- 
  SON: "Ayneha"
  SON_ADJ: "Ayneha"
  SON_ADJ2: "Ayneha"
@@ -467,3 +463,6 @@
  
  PROV2974: "Hasselt"
  PROV_ADJ2974: "Hasselt"
+ 
+ ILK: "Iranzamin"
+ ILK_ADJ: "Ilkhanid"

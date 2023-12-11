@@ -11,7 +11,7 @@ religious_school = hanafi_school
     set_estate_privilege = estate_church_ilkhanate_dervish
 }
 
-1444.1.1 = {
+1400.1.1 = {
 	monarch = {
 		name = "Dara I"
 		dynasty = "Hulaguid"
