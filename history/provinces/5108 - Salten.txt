@@ -9,12 +9,13 @@ religion = catholic
 hre = no
 base_tax = 1 
 base_production = 1
-trade_goods = fish
+trade_goods = whales
 base_manpower = 1
-capital = "Bodø"
+capital = "Bodo"
 is_city = yes
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
+add_local_autonomy = 70
 1444.11.12 = { trade_goods = unknown }

@@ -12,6 +12,7 @@ base_production = 1
 trade_goods = lumber
 base_manpower = 1
 capital = "Sala"
+add_local_autonomy = 5
 is_city = yes
 discovered_by = western
 discovered_by = eastern

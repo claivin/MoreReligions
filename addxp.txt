@@ -1,6 +1,0 @@
-every_province = {
-	limit = {
-		is_in_greece_area_trigger = yes
-	}
-	cede_province = GRE
-}

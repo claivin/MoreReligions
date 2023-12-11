@@ -9,10 +9,11 @@ religion = catholic
 hre = no
 base_tax = 1 
 base_production = 1
-trade_goods = fur
+trade_goods = salt
 base_manpower = 1
 capital = "Umeå"
 is_city = yes
+add_local_autonomy = 30
 discovered_by = eastern
 discovered_by = western
 1444.11.12 = { trade_goods = unknown }

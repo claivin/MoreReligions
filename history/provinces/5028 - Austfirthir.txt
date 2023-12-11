@@ -8,9 +8,10 @@ religion = catholic
 hre = no
 base_tax = 1 
 base_production = 1
-trade_goods = fish
+trade_goods = whales
 base_manpower = 1
 capital = "Egilsstathir"
 is_city = yes
 discovered_by = western
+add_local_autonomy = 25
 1444.11.12 = { trade_goods = unknown }

@@ -13,6 +13,7 @@ trade_goods = iron
 base_manpower = 2
 capital = "Västerås"
 is_city = yes
+add_local_autonomy = 10
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

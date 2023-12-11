@@ -8,11 +8,12 @@ culture = finnish
 religion = catholic
 hre = no
 base_tax = 1 
-base_production = 1
-trade_goods = fur
+base_production = 3
+trade_goods = lumber
 base_manpower = 1
 capital = "Vaasa"
 is_city = yes
 discovered_by = eastern
 discovered_by = western
+add_local_autonomy = 15
 1444.11.12 = { trade_goods = unknown }

@@ -1,9 +1,9 @@
 #REGIONSCANDI
 #Sönderjylland-Slesvig, incl. Slesvig, Haderslev and Flensborg
 
-add_core = HLS
-owner = HLS
-controller = HLS
+add_core = SHL
+owner = SHL
+controller = SHL
 culture = frisian
 religion = catholic
 base_tax = 1
@@ -13,6 +13,7 @@ base_manpower = 1
 capital = "Föhr"
 is_city = yes
 hre = yes
+add_local_autonomy = 25
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

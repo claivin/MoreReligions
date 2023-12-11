@@ -9,11 +9,12 @@ culture = finnish
 religion = catholic
 hre = no
 base_tax = 1 
-base_production = 1
-trade_goods = fur
+base_production = 2
+trade_goods = lumber
 base_manpower = 1
 capital = "Oulu"
 is_city = yes
+add_local_autonomy = 25
 discovered_by = eastern
 discovered_by = western
 1444.11.12 = { trade_goods = unknown }

@@ -15,5 +15,6 @@ capital = "Kuressaare"
 is_city = yes
 discovered_by = western
 discovered_by = eastern
+add_local_autonomy = 30
 
 1444.11.12 = { trade_goods = unknown }

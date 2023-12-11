@@ -7,9 +7,12 @@ hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-trade_goods = fish
+trade_goods = whales
 capital = "Vardø"
 is_city = no
+native_hostileness = 0
+native_size = 3
+native_ferocity = 2
 discovered_by = eastern
 discovered_by = western
 1444.11.12 = { trade_goods = unknown }
