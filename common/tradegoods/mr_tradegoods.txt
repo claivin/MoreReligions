@@ -456,7 +456,9 @@ rice = {
 silver = {
 	color = { 0.55 0.71 0.80 }
 	modifier = {}
-	province = {}
+	province = {
+		trade_goods_size_modifier = -0.5
+	}
 	chance = {
 		factor = 2
 		modifier = {
@@ -998,7 +1000,7 @@ jade = {
 		local_defensiveness = 0.1
 	}
 	chance = {
-		factor = 10
+		factor = 5
 		modifier = {
 			factor = 0
 			OR = {
