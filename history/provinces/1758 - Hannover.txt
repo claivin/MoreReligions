@@ -13,7 +13,7 @@ base_manpower = 4
 is_city = yes
 add_core = BRU
 add_core = CLB
-
+add_local_autonomy = 10
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
