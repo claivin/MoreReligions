@@ -205,16 +205,16 @@ ilk_missionaries_1 = {
 
 #Institution Events
 birthplace_of_professional_armies = {
-
+	free_mil_policy = 1
 }
 birthplace_of_centralization_institution = {
-
+	free_adm_policy = 1
 }
 birthplace_of_state_navy_institution = {
-
+	free_dip_policy = 1
 }
 birthplace_of_mass_mobilization_institution = {
-
+	country_military_power = 2
 }
 
 #Mo Modifiers

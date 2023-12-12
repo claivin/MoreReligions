@@ -484,7 +484,30 @@ firearms_institution = {
 	}
 
 	trade_company_efficiency = 0.4
-
+	
+	effect = {
+		if = {
+			limit = { mil_tech = 1}
+			add_mil_tech = 3
+		}
+		else_if = {
+			limit = { mil_tech = 2 }
+			add_mil_tech = 2
+		}
+		else_if = {
+			limit = { mil_tech = 3 }
+			add_mil_tech = 1
+		}
+		else_if = {
+			limit = { mil_tech = 4 }
+			add_mil_tech = 1
+		}
+		else_if = {
+			limit = { mil_tech = 5 }
+			add_mil_tech = 1
+		}
+	}
+	
 	#only used in bookmarks
 	historical_start_date = 1455.1.1
 	historical_start_province = 116 # Florence
@@ -678,6 +701,30 @@ firearms_institution = {
 						has_institution = firearms_institution
 					}
 				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_mil_supplies_province
+				trade_goods = military_supplies
+			}
+		}
+		modifier = {
+			factor = 1.0
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_gunpowder_province
+				trade_goods = gunpowder
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_sulfur_province
+				trade_goods = sulfur
 			}
 		}
 	}
@@ -1166,11 +1213,11 @@ printing_press = {
 	historical_start_province = 1 #placeholder
 
 	history = {
-		is_year = 1550
+		is_year = 1530
 	}
 	
 	can_start = {
-		is_year = 1550
+		is_year = 1530
 		is_institution_enabled = new_world_i
 		is_in_capital_area = yes
 		is_island = no
@@ -1449,37 +1496,156 @@ prof_armies_inst = {
 		is_year = 1550
 		is_in_capital_area = yes
 		is_state = yes
+		is_island = no
 		OR = {
 			has_manpower_building_trigger = yes
 			has_forcelimit_building_trigger = yes
 		}
 		has_fort_building_trigger = yes
 		owner = {
-			army_professionalism = 0.6
+			OR = {
+				army_professionalism = 0.5
+				has_global_modifier_value = {
+					which = discipline
+					value = 0.15
+				}
+			}
 		}
 	}
 	
-	start_chance = 5
+	start_chance = 100
 		
-	on_start = institution_events.4
+	on_start = mr_institutions.4
 
 	can_embrace = {
-		
+		always = yes
 	}
-
 	
 	embracement_speed = {
+		#Generic passive spread
 		modifier = {
 			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_prof_armies_inst
 				any_friendly_coast_border_province = {
-					printing_press = 100
+					prof_armies_inst = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						prof_armies_inst = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_prof_armies_inst
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					firearms_institution = 100
 				}
 			}
 		}
 		
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_prof_armies_inst
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = prof_armies_inst }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = prof_armies_inst
+				}
+			}
+			
+			custom_trigger_tooltip = {
+				tooltip = tooltip_prof_armies_inst_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = prof_armies_inst
+				}
+			}
+		}
+		###############
+		modifier = {
+			factor = 0.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_barracks_prof_armies
+				has_building = barracks
+			}
+		}
+		modifier = {
+			factor = 0.4
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_training_fields_prof_armies
+				has_building = training_fields
+			}
+		}
+		modifier = {
+			factor = 0.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_regimental_camp_prof_armies
+				has_building = regimental_camp
+			}
+		}
+		modifier = {
+			factor = 1.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_conscription_center_prof_armies
+				has_building = conscription_center
+			}
+		}
+		modifier = {
+			factor = 2.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_soldier_households_prof_armies
+				has_building = soldier_households
+			}
+		}
+		modifier = {
+			factor = 1.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_over_50_prof_prof_armies
+				owner = { army_professionalism = 0.5 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_over_100_army_size_prof_armies
+				owner = { army_size = 100 }
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -1767,31 +1933,205 @@ centralization_inst = {
 	}
 	
 	can_start = {
-
+		is_year = 1610
+		is_institution_enabled = renaissance
+		is_in_capital_area = yes
+		is_island = no
+		is_state = yes
+		OR = {
+			AND = {
+				development = 30
+				is_capital = yes
+			}
+			AND = {
+				trade_goods = paper
+				is_capital = yes
+			}
+			AND = {
+				development = 20
+				has_building = state_house
+			}
+			owner = {
+				adm = 6
+				NOT = { average_autonomy = 10 }
+			}
+		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 25		#in 100 for when a province can_start
 	
-	
-	on_start = institution_events.4
-	
+	on_start = mr_institutions.5
 	
 	can_embrace = {
-		
+		always = yes
 	}
 
 	
 	embracement_speed = {
+		#generic adj spreading
 		modifier = {
 			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_centralization_inst
 				any_friendly_coast_border_province = {
-					printing_press = 100
+					centralization_inst = 100
 				}
 			}
 		}
-		
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						centralization_inst = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_centralization_inst
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					centralization_inst = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_centralization_inst
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = centralization_inst }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = centralization_inst
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_centralization_inst_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = centralization_inst
+				}
+			}
+		}
+		#######################
+		modifier = {
+			factor = 0.45
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_courthouse_centralization
+				has_building = courthouse
+			}
+		}
+		modifier = {
+			factor = 0.9
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_town_hall_centralization
+				has_building = town_hall
+			}
+		}
+		modifier = {
+			factor = 1.8
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_state_house_centralization
+				has_building = state_house
+			}
+		}
+		modifier = { #flat growth in all capitals
+			factor = 0.25
+			custom_trigger_tooltip = {
+				tooltip = tooltip_is_capital_centralization
+				is_capital = yes
+			}
+		}
+		modifier = {
+			factor = 0.6
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = {
+					NOT = { average_autonomy = 0.3 }
+					average_autonomy = 0.2
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_bw_32_centralization
+				owner = {
+					NOT = { average_autonomy = 0.3 }
+					average_autonomy = 0.2
+				}
+			}
+		}
+		modifier = {
+			factor = 1.0
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = {
+					NOT = { average_autonomy = 0.2 }
+					average_autonomy = 0.1
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_bw_21_centralization
+				owner = {
+					NOT = { average_autonomy = 0.2 }
+					average_autonomy = 0.1
+				}
+			}
+		}
+		modifier = {
+			factor = 1.8
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = {
+					NOT = { average_autonomy = 0.1 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_under1_centralization
+				owner = {
+					NOT = { average_autonomy = 0.1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 1.8
+			scale = yes
+			force_potential = yes
+			potential = {
+				owner = {
+					NOT = { governing_capacity_percentage = 0.5 }
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_gov_cap_under_50_centralization
+				owner = {
+					NOT = { governing_capacity_percentage = 0.1 }
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -1857,30 +2197,21 @@ state_navy_inst = {
 				has_flagship = yes
 			}
 		}
-		if = {
-			limit = {
-				OR = {
-					has_dlc = "Rule Britannia"
-					has_dlc = "Golden Century"
-					has_dlc = "Lions of the North"
-				}	
-			}
-			owner = {
-				num_of_marines = 3
-			}
-		}
 		has_port = yes
 		is_island = no
 		is_state = yes
 		OR = {
 			has_dock_building_trigger = yes
 			has_shipyard_building_trigger = yes
-			impressment_offices = yes
+			OR = {
+				impressment_offices = yes
+				development = 20
+			}
 		}
 	}
-	start_chance = 5		#in 100 for when a province can_start
+	start_chance = 25		#in 100 for when a province can_start
 	
-	on_start = institution_events.4
+	on_start = mr_institutions.6
 	
 	can_embrace = {
 		always = yes
@@ -1892,13 +2223,128 @@ state_navy_inst = {
 			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_state_navy_inst
 				any_friendly_coast_border_province = {
-					printing_press = 100
+					state_navy_inst = 100
 				}
 			}
 		}
-		
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						state_navy_inst = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_state_navy_inst
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					state_navy_inst = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_state_navy_inst
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = state_navy_inst }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = state_navy_inst
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_state_navy_inst_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = state_navy_inst
+				}
+			}
+		}
+		###########
+		modifier = {
+			factor = 0.45
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_shipyard_state_navy_inst
+				has_building = shipyard
+			}
+		}
+		modifier = {
+			factor = 0.45
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_dock_state_navy_inst
+				has_building = dock
+			}
+		}
+		modifier = {
+			factor = 0.9
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_grand_shipyard_state_navy_inst
+				has_building = grand_shipyard
+			}
+		}
+		modifier = {
+			factor = 0.9
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_drydock_state_navy_inst
+				has_building = drydock
+			}
+		}
+		modifier = {
+			factor = 2.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_impressment_office_state_navy_inst
+				has_building = impressment_offices
+			}
+		}
+		modifier = {
+			factor = 1.6
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_naval_supplies_state_navy_inst
+				trade_goods = naval_supplies
+			}
+		}
+		modifier = {
+			factor = 1
+			scale = no
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_naval_ideas
+				owner = {
+					OR = {
+						full_idea_group = naval_ideas
+						full_idea_group = maritime_ideas
+					}
+				}
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -2723,31 +3169,125 @@ mass_mobilization_inst = {
 	}
 	
 	can_start = {
-
+		is_year = 1725
+		is_institution_enabled = prof_armies_inst
+		is_in_capital_area = yes
+		is_state = yes
+		is_island = no
+		owner = {
+			has_institution = industrialization
+			OR = {
+				is_hegemon = yes
+				army_size = 250
+			}
+		}
 	}
 	start_chance = 5		#in 100 for when a province can_start
 	
-	
-	on_start = institution_events.4
-	
+	on_start = mr_institutions.7
 	
 	can_embrace = {
-		
+		always = yes
 	}
 
-	
 	embracement_speed = {
 		modifier = {
 			factor = 0.6
 			scale = yes
 			custom_trigger_tooltip = {
-				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
+				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_mass_mobilization_inst
 				any_friendly_coast_border_province = {
-					printing_press = 100
+					mass_mobilization_inst = 100
 				}
 			}
 		}
-		
+		modifier = {
+			factor = 0.3
+			scale = yes
+			potential = {
+				NOT = {
+					any_friendly_coast_border_province = {
+						mass_mobilization_inst = 100
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_any_neighbor_has_embraced_state_mass_mobilization_inst
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+					mass_mobilization_inst = 100
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			scale = yes
+			potential = {
+				owner = {
+					is_colonial_nation = yes
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_colonial_overlord_state_mass_mobilization_inst
+				OR = {
+					has_port = yes
+					is_capital = yes
+				}
+				owner = {
+					is_colonial_nation = yes
+					overlord = { has_institution = state_mass_mobilization_inst }
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			scale = yes
+			potential = {
+				owner = {
+					has_institution = state_mass_mobilization_inst
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = tooltip_state_mass_mobilization_inst_embraced
+				is_owned_by_trade_company = no
+				owner = {
+					has_institution = state_mass_mobilization_inst
+				}
+			}
+		}
+		#################
+		modifier = {
+			factor = 1.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_has_soldier_households_prof_armies
+				has_building = soldier_households
+			}
+		}
+		modifier = {
+			factor = 0.7
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_making_11_mil_mass_mobilization_inst
+				owner = { monthly_mil = 11 }
+			}
+		}
+		modifier = {
+			factor = 1.2
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_making_16_mil_mass_mobilization_inst
+				owner = { monthly_mil = 16 }
+			}
+		}
+		modifier = {
+			factor = 2.4
+			scale = yes
+			custom_trigger_tooltip = {
+				tooltip = tooltip_making_19_mil_mass_mobilization_inst
+				owner = { monthly_mil = 19 }
+			}
+		}
 	}
 	
 	ai_will_do = { #Cost of embracing institution must be lower than this factor * last month's regular income, and higher if loans are needed. (Or it has a more than long term goal...)
@@ -2864,7 +3404,7 @@ industrialization = {
 
 	
 	embracement_speed = {
-		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate
+		#Split between RB and non-RB for these four as RB gives more possibilities for spread (so higher for non-RB to compensate)
 		modifier = {
 			factor = 0.3
 			force_potential = yes
