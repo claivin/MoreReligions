@@ -160,7 +160,7 @@ grain_olives_modifier = {
 	monthly_splendor = 0.5
 }
 bulgar_slayer = {
-	land_morale = 0.10
+	infantry_power = 0.1
 	infantry_cost = -0.15
 }
 defense_against_magyars = {
@@ -269,4 +269,19 @@ expand_magna_gracia = {
 wine_and_olive_production = {
 	local_build_cost = -0.15
 	local_production_efficiency = 0.05
+}
+
+#Muslim Byzantium Modifiers
+converting_the_masses = {
+	missionaries = 1
+	global_missionary_strength = 0.3
+}
+qizilbash_imporvement = {
+	discipline = 0.05
+	reinforce_speed = 0.20
+	is_qizilbash_modifier = yes	
+}
+most_holy_man = {
+	tolerance_own = 3
+	missionary_maintenance_cost = -0.15
 }

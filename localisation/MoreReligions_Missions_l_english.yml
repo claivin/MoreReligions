@@ -397,6 +397,7 @@ confucian_scholars_JAP: "Confucian Scholars"
  spawn_mr_fraticelli_cof: "This will spawn a §YFraticelli§! Center of Reformation within our country."
  overlord_master_SIC: "Master of the Union"
  mr_fraticelli_center_of_reformation: "Center of Reformation"
+converting_the_masses: "Conversion of the Polis"
  
  
  #Ifat Missions
@@ -804,6 +805,11 @@ mr_greek_orthodox_fifth_title: "Establish Latin Metropolitans"
 mr_greek_orthodox_sixth_title: "Mend the Schism"
 mr_greek_hellas_sixth_title: "Return of the Griko"
 
+#Byzantines
+mr_greek_muslim_first_title: "A New Day Dawns"
+mr_greek_muslim_second_title: "Integrate into the Ummah"
+mr_greek_muslim_third_title: "Embark on the Hajj"
+
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
 if_catholic_no: "£no£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -913,6 +919,12 @@ mr_venice_boost_against_all_yes: "£yes£If we complete this mission while @VEN 
 every_owned_province_grapes_and_olives: "All owned provinces in the §YItaly§! Region with §YGrapes§! or §YOlives§! Trade Goods will gain the following:"
 every_country_catholic_reduction: "Every §YCatholic§! country will lose §G25§! §YAggressive Expansion§! with us."
 return_of_griko: "\nEvery Owned §YSicilian§! or §YNeapolitan§! culture province that meets the mission requirements will become §YGriko§! culture."
+have_three_reputation: "Have at least §Y+3§! Diplomatic Reputation."
+if_qizilbashi_yes: "£yes£If we complete this mission while our religion is §YQizilbashi§!, we will recieve the following:"
+if_qizilbashi_no: "£no£If we complete this mission while our religion is §YQizilbashi§!, we will recieve the following:"
+gain_qizilabshi_holy_order_yes: "£yes£If we complete this mission while our religion is NOT §YQizilbashi§!, we will recieve the following:\nWe will gain access to the §YQizilbashi Holy Order§!"
+gain_qizilabshi_holy_order_no: "£no£If we complete this mission while our religion is NOT §YQizilbashi§!, we will recieve the following:\nWe will gain access to the §YQizilbashi Holy Order§!"
+all_known_muslim_countries_gain_50_relations: "Every known §YMuslim§! country will improve relations with us by §G+50§!."
 
 #Modifiers
 war_for_greece: "War for Greece"
@@ -982,7 +994,9 @@ mr_ven_expansion: "Italian Conquests"
 dominated_trade_league: "Dominating Trade Leagues"
 wine_and_olive_production: "Wine and Olive Production"
 expand_magna_gracia: "Expanding Magna Graecia"
-
+qizilbash_imporvement: "Rhomanoi Qizilbashi"
+went_on_hajj: "Embarked on a Hajj"
+most_holy_man: "The Most Pious of All"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"

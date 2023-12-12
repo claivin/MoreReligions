@@ -1020,7 +1020,7 @@ byzantine_universal_monarch_MUSLIM_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
 	modifiers = {
-		monthly_fervor_increase = 0.25
+		yearly_corruption = -0.1
 		war_exhaustion = -0.02
 		church_loyalty_modifier = 0.1
 		manpower_in_true_faith_provinces = 0.15
@@ -1029,7 +1029,6 @@ byzantine_universal_monarch_MUSLIM_reform = {
 		mr_universal_monarch = yes
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = yes
-		has_harem = yes	
 	}
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes

@@ -315,7 +315,7 @@ mr_greek_missions_first_a = {
 				every_subject_country = {
 					limit = {
 						capital_scope = {
-							area = morea_area
+							is_in_greece_area_trigger = yes
 						}
 					}
 					ROOT = {
@@ -1170,7 +1170,9 @@ mr_greek_missions_first_byz = {
 				who = TUR
 				value = 70
 			}
-			diplomat = 1
+			employed_advisor = {
+				category = DIP
+			}
 		}
 		effect = {
 			add_liberty_desire = 20
@@ -4487,7 +4489,7 @@ mr_greek_ortho_fifth = {
 			NOT = {
 				OR = {
 					owner = {
-						reverse_has_opinion = {
+						has_opinion = {
 							who = ROOT
 							value = 100
 						}
@@ -4501,7 +4503,7 @@ mr_greek_ortho_fifth = {
 			280 = {
 				OR = {
 					owner = {
-						reverse_has_opinion = {
+						has_opinion = {
 							who = ROOT
 							value = 100
 						}
@@ -4714,6 +4716,182 @@ mr_greek_catholic_fifth = {
 						duration = 10950
 					}
 				}
+			}
+		}
+	}
+}
+mr_greek_fifth_muslim = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = CST
+			tag = BYZ
+		}
+		religion_group = muslim
+	}
+	mr_greek_muslim_first = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = { }
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+			NOT = {
+				religion = ROOT
+			}
+		}
+		trigger = {
+			capital_scope = {
+				religion = ROOT
+			}
+		}
+		effect = {
+			add_ruler_modifier = {
+				name = converting_the_masses
+				duration = -1
+			}
+			define_advisor = {
+				type = inquisitor
+				skill = 2
+				discount = yes
+				religion = ROOT
+				culture = ROOT
+			}
+		}
+	}
+	mr_greek_muslim_second = {
+		icon = arb_unite_arabia
+		position = 5
+		required_missions = {
+			mr_greek_muslim_first
+		}
+		provinces_to_highlight = {
+			owner = {
+				religion_group = muslim
+			}
+			is_capital = yes
+			NOT = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				all_country = {
+					religion_group = muslim
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				amount = 3
+			}
+			custom_trigger_tooltip = {
+				tooltip = have_three_reputation
+				has_global_modifier_value = {
+					which = diplomatic_reputation
+					value = 3
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					religion = mr_safaviyya
+				}
+				custom_tooltip = if_qizilbashi_yes
+				tooltip = {
+					add_country_modifier = {
+						name = qizilbash_imporvement
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = mr_safaviyya
+					}
+				}
+				custom_tooltip = if_qizilbashi_no
+				tooltip = {
+					add_country_modifier = {
+						name = qizilbash_imporvement
+						duration = -1
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						religion = mr_safaviyya
+					}
+				}
+				custom_tooltip = gain_qizilabshi_holy_order_yes
+			}
+			else_if = {
+				limit = {
+					religion = mr_safaviyya
+				}
+				custom_tooltip = gain_qizilabshi_holy_order_no
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = mr_safaviyya
+					}
+					add_country_modifier = {
+						name = qizilbash_imporvement
+						duration = -1
+					}
+				}
+				else = {
+					set_country_flag = mr_byz_shiite
+				}
+			}
+		}
+	}
+	mr_greek_muslim_third = {
+		icon = kok_mam_holy_cities
+		position = 7
+		required_missions = {
+			mr_greek_muslim_second
+		}
+		provinces_to_highlight = {
+			province_id = 385
+			NOT = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+			}
+		}
+		trigger = {
+			385 = {
+				owner = {
+					has_opinion = {
+						who = ROOT
+						value = 120
+					}
+				}
+			}
+			treasury = 1500
+			religious_unity = 1
+			NOT = {
+				has_regency = yes
+			}
+		}
+		effect = {
+			country_event = {
+				id = MrGreekEvents.12
 			}
 		}
 	}
