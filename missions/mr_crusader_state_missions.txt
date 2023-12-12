@@ -812,8 +812,7 @@ crusader_missions_3 = {
 		position = 5
 
 		provinces_to_highlight = {
-			is_in_outremer = yes
-			NOT = { owned_by = root }
+			province_id = 379 # Jerusalem
 		}
 
 		trigger = {
@@ -992,16 +991,20 @@ crusader_missions_4 = {
 		}
 
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
-				development = 10
-				OR = {
-					has_building = marketplace
-					has_building = trade_depot
-					has_building = stock_exchange
+			custom_trigger_tooltip = {
+				tooltip = cs_eastern_exports_trigger_tt
 
-					has_building = workshop
-					has_building = counting_house
+				num_of_owned_provinces_with = {
+					value = 5
+					development = 10
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+
+						has_building = workshop
+						has_building = counting_house
+					}
 				}
 			}
 
@@ -1101,28 +1104,61 @@ crusader_missions_5 = {
 		required_missions = { cs_a_stable_society }
 		position = 4
 
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
+		provinces_to_highlight = {
+			OR = {
+				# Our provs dev
+				AND = {
+					owned_by = root
 
-				has_building = manufactory
-				OR = {
-					has_farm_trade_goods = yes
-					has_pasture_trade_goods = yes
+					OR = {
+						has_farm_trade_goods = yes
+						has_pasture_trade_goods = yes
+					}
+					OR = {
+						NOT = { has_building = manufactory }
+						local_autonomy = 1
+					}
 				}
-				NOT = { local_autonomy = 1 }
+				# Nearby provinces in case we don't have enough valid ones
+				AND = {
+					OR = {
+						region = mashriq_region
+						region = egypt_region
+						region = anatolia_region
+					}
+					OR = {
+						has_farm_trade_goods = yes
+						has_pasture_trade_goods = yes
+					}
+				}
+			}
+
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_agricultural_centralization_tt
+				num_of_owned_provinces_with = {
+					value = 5
+
+					has_building = manufactory
+					OR = {
+						has_farm_trade_goods = yes
+						has_pasture_trade_goods = yes
+					}
+					NOT = { local_autonomy = 1 }
+				}
 			}
 		}
 
 		effect = {
+			custom_tooltip = cs_agricultural_centralization_effect_tt
 			every_owned_province = {
 				limit = {
 					has_building = manufactory
 					has_farm_trade_goods = yes
 				}
 
-				add_base_production = -1
-				add_base_manpower = 2
 				add_province_modifier = {
 					name = cs_plantation_economy
 					duration = -1
