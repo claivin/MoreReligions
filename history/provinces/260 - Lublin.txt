@@ -17,6 +17,9 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 add_core = POL
+add_local_autonomy = 20
+add_building = mrb_textileprocessor
+set_province_flag = was_wool_province
 
 discovered_by = KAZ
 discovered_by = CRI

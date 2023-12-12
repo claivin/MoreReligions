@@ -6,14 +6,14 @@ controller = POL
 capital = "Checiny"
 culture = polish
 religion = catholic
-trade_goods = cloth
+trade_goods = marble
 hre = yes
 base_tax = 3
-base_production = 2
+base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = POL
-
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI

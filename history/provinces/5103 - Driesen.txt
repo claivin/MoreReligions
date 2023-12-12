@@ -12,6 +12,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Driesen"
 is_city = yes
+add_local_autonomy = 60
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

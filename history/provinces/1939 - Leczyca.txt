@@ -13,7 +13,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = POL
-
+add_local_autonomy = 20
 
 discovered_by = KAZ
 discovered_by = CRI

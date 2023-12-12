@@ -13,6 +13,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 add_core = POL
+add_local_autonomy = 40
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

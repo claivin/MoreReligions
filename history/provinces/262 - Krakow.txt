@@ -12,10 +12,12 @@ capital = "Kraków"
 hre = yes
 base_tax = 7
 base_production = 7
-trade_goods = salt
+trade_goods = cloth
 base_manpower = 6
 is_city = yes
 fort_15th = yes
+add_building = mrb_textileprocessor
+set_province_flag = was_wool_province
  #Jagiellonian University established in 1364 by Casimir III the Great
 add_core = POL
 add_core = KRA

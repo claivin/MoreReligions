@@ -8,11 +8,12 @@ culture = polish
 religion = catholic
 trade_goods = grain
 hre = yes
-base_tax = 3
+base_tax = 4
 base_production = 3
-base_manpower = 2
+base_manpower = 4
 is_city = yes
 add_core = POL
+add_local_autonomy = 15
 
 
 discovered_by = KAZ

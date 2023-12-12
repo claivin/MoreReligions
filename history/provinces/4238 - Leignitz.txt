@@ -1,18 +1,20 @@
 #4238 - Liegnitz (Liegnitz+Schweidnitz+Jauer+Glatz+Neisse+Münsterberg)
-
-#Coal
+latent_trade_goods = {
+	coal
+}
 owner = GLG
 controller = GLG
 culture = schlesian
 religion = catholic
-capital = "Liegnitz"
-trade_goods = glass
+capital = "Legnica"
+trade_goods = gold
 hre = yes
 base_tax = 4
 base_production = 4
 is_city = yes 
 base_manpower = 2
 add_core = GLG
+add_local_autonomy = 10
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
