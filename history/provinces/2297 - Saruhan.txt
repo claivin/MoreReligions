@@ -13,6 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = TUR
 add_core = MEN
+add_core = KRE
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
