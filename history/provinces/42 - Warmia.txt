@@ -3,10 +3,10 @@
 
 owner = WRM
 controller = WRM
-capital = "Allenstein"
+capital = "Olsztyn"
 culture = baltic_prussian
 religion = mr_balticpaganism
-trade_goods = lumber
+trade_goods = dyes
 hre = no
 base_tax = 3
 base_production = 3
