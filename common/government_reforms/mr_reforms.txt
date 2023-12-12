@@ -1041,7 +1041,7 @@ nusantaran_sultanate = {
 	potential = {
 		OR = {
 			culture_group = malay
-			culture_group = javanese_group
+			#culture_group = javanese_group
 			culture_group = moluccan_group
 			culture = cham
 		}
@@ -1053,7 +1053,7 @@ nusantaran_sultanate = {
 		religion_group = muslim
 		OR = {
 			culture_group = malay
-			culture_group = javanese_group
+			#culture_group = javanese_group
 			culture_group = moluccan_group
 			culture = cham
 		}

@@ -127,7 +127,7 @@ nusantara_sultanate = {
 		NOT = { has_reform = feudal_theocracy }
 		OR = {
 			culture_group = malay
-			culture_group = javanese_group
+			#culture_group = javanese_group
 			culture_group = moluccan_group
 			culture = cham
 		}
@@ -184,7 +184,7 @@ nusantara_kingdom = {
 		NOT = { has_reform = feudal_theocracy }
 		OR = {
 			culture_group = malay
-			culture_group = javanese_group
+			#culture_group = javanese_group
 			culture_group = moluccan_group
 			culture = cham
 		}
