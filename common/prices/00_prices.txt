@@ -161,10 +161,10 @@ jewelry = {
 	base_price = 10
 }
 cheese = {
-	base_price = 4
+	base_price = 3.5
 }
 whales = {
-	base_price = 5
+	base_price = 4
 }
 rice = {
 	base_price = 2
@@ -198,10 +198,10 @@ fruit = {
 	base_price = 3
 }
 tropical_fruit = {
-	base_price = 3
+	base_price = 3.5
 }
 horses = {
-	base_price = 4
+	base_price = 2.5
 }
 saffron = {
 	base_price = 10
@@ -210,13 +210,13 @@ chocolate = {
 	base_price = 6
 }
 ice = {
-	base_price = 4
+	base_price = 2.5
 }
 rice_wine = {
 	base_price = 4
 }
 citrus = {
-	base_price = 4
+	base_price = 3
 }
 grapes = {
 	base_price = 2.5
@@ -246,14 +246,14 @@ maize = {
 	base_price = 2
 }
 jade = {
-	base_price = 6
+	base_price = 4.5
 }
 shellfish = {
 	base_price = 2.5
 }
 tin = {
-	base_price = 7
+	base_price = 3.5
 }
 amber = {
-	base_price = 8
+	base_price = 7
 }

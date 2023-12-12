@@ -53,8 +53,8 @@ country_event = {
         NOG = {		
 		every_core_province = { 
 		remove_core = NOG 
-		}
-        override_country_name = NOGH		
+		override_country_name = NOGH	
+		 }	
 		}		
       } 	
 	}
@@ -77,8 +77,8 @@ country_event = {
         SHY = {		
 		every_core_province = { 
 		remove_core = SHY 
-		}
-        override_country_name = UZBH		
+		override_country_name = UZBH
+		 }		
 		}		
       }		
 	}

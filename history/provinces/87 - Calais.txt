@@ -21,5 +21,6 @@ is_city = yes
 extra_cost = 8
 center_of_trade = 1
 add_building = mrb_textileprocessor
+set_province_flag = was_wool_province
 
 1444.11.12 = { trade_goods = unknown }
