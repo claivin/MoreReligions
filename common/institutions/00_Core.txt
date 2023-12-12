@@ -487,23 +487,38 @@ firearms_institution = {
 	
 	effect = {
 		if = {
-			limit = { mil_tech = 1}
+			limit = {
+				mil_tech = 1
+				NOT = {  mil_tech = 2 }
+			}
 			add_mil_tech = 3
 		}
 		else_if = {
-			limit = { mil_tech = 2 }
+			limit = {
+				mil_tech = 2
+				NOT = {  mil_tech = 3 }
+			}
 			add_mil_tech = 2
 		}
 		else_if = {
-			limit = { mil_tech = 3 }
+			limit = {
+				mil_tech = 3
+				NOT = {  mil_tech = 4 }
+			}
 			add_mil_tech = 1
 		}
 		else_if = {
-			limit = { mil_tech = 4 }
+			limit = {
+				mil_tech = 4
+				NOT = {  mil_tech = 5 }
+			}
 			add_mil_tech = 1
 		}
 		else_if = {
-			limit = { mil_tech = 5 }
+			limit = {
+				mil_tech = 5
+				NOT = {  mil_tech = 6 }
+			}
 			add_mil_tech = 1
 		}
 	}

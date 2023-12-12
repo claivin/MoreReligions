@@ -7957,10 +7957,10 @@ malay = {
 	}
 }
 ##javanese_group = {
-	graphical_culture = southeastasiangfx
-	second_graphical_culture = asiangfx
+	# graphical_culture = southeastasiangfx
+	# second_graphical_culture = asiangfx
 
-}
+# }
 moluccan_group = {
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx

@@ -8,11 +8,13 @@ capital = "Dortmund"
 religion = catholic
 trade_goods = cloth
 base_tax = 6
-base_production = 5
-base_manpower = 1
+base_production = 4
+base_manpower = 2
 is_city = yes
 hre = yes
 center_of_trade = 1
+add_building = mrb_textileprocessor
+set_province_flag = was_wool_province
 
 
 discovered_by = eastern
