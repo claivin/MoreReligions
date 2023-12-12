@@ -10,6 +10,7 @@ capital = 4946	# Caen
 	monarch = {
 		name = "William"
 		dynasty = "of Wight"
+		birth_date = 1407.1.1
 		adm = 1
 		dip = 6
 		mil = 6

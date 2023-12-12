@@ -11,8 +11,9 @@ capital = 4386 	# bas-poitou
 	monarch = {
 		name = "Javer"
 		dynasty = "d'Bretagne"
+		birth_date = 1400.1.1
 		adm = 3
-		dip = 5
-		mil = 1
+		dip = 2
+		mil = 5
 	}
 }

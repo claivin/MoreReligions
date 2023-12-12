@@ -10,7 +10,8 @@ capital = 4697	# Bourges
 	monarch = {
 		name = "Jean"
 		dynasty = "Val Jean"
-		adm = 6
+		birth_date = 1400.1.1
+		adm = 4
 		dip = 3
 		mil = 0
 	}

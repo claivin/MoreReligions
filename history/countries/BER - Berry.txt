@@ -10,6 +10,7 @@ capital = 179	# Bourges
 	monarch = {
 		name = "Jean I"
 		dynasty = "de Valois"
+		birth_date = 1398.1.1
 		adm = 4
 		dip = 5
 		mil = 2

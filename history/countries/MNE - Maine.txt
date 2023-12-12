@@ -10,6 +10,7 @@ capital = 177	# Maine
 	monarch = {
 		name = "Harry"
 		dynasty = "Dubois"
+		birth_date = 1400.1.1
 		adm = 3
 		dip = 4
 		mil = 3

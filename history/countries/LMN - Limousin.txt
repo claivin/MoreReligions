@@ -10,8 +10,9 @@ capital = 195	# Limousin
 	monarch = {
 		name = "Jean"
 		dynasty = "Michel"
+		birth_date = 1430.1.1
 		adm = 4
-		dip = 5
+		dip = 3
 		mil = 2
 	}
 }

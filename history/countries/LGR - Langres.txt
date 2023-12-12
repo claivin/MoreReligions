@@ -10,6 +10,7 @@ capital = 4390	# Troyes
 	monarch = {
 		name = "Philippe"
 		dynasty = "de Vienne"
+		birth_date = 1409.1.1
 		adm = 2
 		dip = 2
 		mil = 2

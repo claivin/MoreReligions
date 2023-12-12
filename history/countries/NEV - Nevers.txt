@@ -60,6 +60,7 @@ fixed_capital = 191 # Cannot move capital away from this province & no power cos
 	monarch = {
 		name = "Charles I"
 		dynasty = "de Bourgogne"
+		birth_date = 1414.1.1
 		dip = 2
 		adm = 2
 		mil = 2

@@ -11,6 +11,7 @@ fixed_capital = 184 # Cannot move capital away from this province & no power cos
 	monarch = {
 		name = "Roland"
 		dynasty = "Dumont"
+		birth_date = 1434.1.1
 		adm = 3
 		dip = 0
 		mil = 4

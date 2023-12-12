@@ -10,6 +10,7 @@ capital = 182	# Valois
 	monarch = {
 		name = "Guillaume"
 		dynasty = "de Hellande"
+		birth_date = 1404.1.1
 		adm = 2
 		dip = 2
 		mil = 2
