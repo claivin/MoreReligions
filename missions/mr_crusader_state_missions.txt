@@ -196,7 +196,7 @@ crusader_missions_1_edessa = {
 
 
 # Second slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
-crusader_missions_2 = {
+crusader_missions_2_pre_branch = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -277,33 +277,6 @@ crusader_missions_branch_placeholders = {
 		}
 		effect = {
 			custom_tooltip = need_to_complete_mission
-		}
-	}
-
-	# This comes after the branching missions (i.e. both branches lead to this)
-	cs_call_for_crusade0 = {
-		icon = mission_crusade_for_varna
-		required_missions = { mr_cs_branching_3 }
-		position = 5
-
-		provinces_to_highlight = {
-			is_in_outremer = yes
-			NOT = { owned_by = root }
-		}
-
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_call_for_crusade_trigger_tt
-				cs_call_for_crusade_trigger = yes
-			}
-		}
-
-		effect = {
-			cs_call_for_crusade_effect = yes
-			add_country_modifier = {
-				name = cs_crusading_surge
-				duration = 7300 # 20 years
-			}
 		}
 	}
 }
@@ -431,33 +404,6 @@ crusader_missions_domination_path = {
 					name = cs_dominant_military
 					duration = 3650 # 10 years
 				}
-			}
-		}
-	}
-
-	# This comes after the branching missions (i.e. both branches lead to this)
-	cs_call_for_crusade_2 = {
-		icon = mission_crusade_for_varna
-		required_missions = { cs_lord_of_the_levant }
-		position = 5
-
-		provinces_to_highlight = {
-			is_in_outremer = yes
-			NOT = { owned_by = root }
-		}
-
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_call_for_crusade_trigger_tt
-				cs_call_for_crusade_trigger = yes
-			}
-		}
-
-		effect = {
-			cs_call_for_crusade_effect = yes
-			add_country_modifier = {
-				name = cs_crusading_surge
-				duration = 7300 # 20 years
 			}
 		}
 	}
@@ -647,35 +593,94 @@ crusader_missions_diplomatic_path = {
 			}
 		}
 	}
+}
 
-	# This comes after the branching missions (i.e. both branches lead to this)
-	cs_call_for_crusade_2 = {
-		icon = mission_crusade_for_varna
-		required_missions = { cs_a_house_united }
-		position = 5
+crusader_missions_2_post_branch = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_securing_our_base = {
+		icon = mission_fortifying_the_plain
+		required_missions = { cs_jerusalem_restored }
+		position = 7
 
 		provinces_to_highlight = {
-			is_in_outremer = yes
-			NOT = { owned_by = root }
+			NOT = { country_or_non_sovereign_subject_holds = root }
+			OR = {
+				area = delta_area # Alexandria/Nile Delta
+				area = bahari_area # Cairo
+				area = vostani_area # Middle Nile
+			}
+			# delta_area = { NOT = { country_or_non_sovereign_subject_holds = root } } bahari_area = { NOT = { country_or_non_sovereign_subject_holds = root } }
+			# vostani_area = { NOT = { country_or_non_sovereign_subject_holds = root } }
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_call_for_crusade_trigger_tt
-				cs_call_for_crusade_trigger = yes
+			num_of_owned_provinces_with = {
+				value = 10
+				OR = {
+					area = delta_area # Alexandria/Nile Delta
+					area = bahari_area # Cairo
+					area = vostani_area # Middle Nile
+				}
+				country_or_non_sovereign_subject_holds = root
 			}
 		}
 
 		effect = {
-			cs_call_for_crusade_effect = yes
-			add_country_modifier = {
-				name = cs_crusading_surge
-				duration = 7300 # 20 years
+			# Egypt
+			egypt_region = {
+				add_permanent_claim = root
+			}
+			# West to North Africa
+			tripolitania_area = {
+				add_permanent_claim = root
+			}
+			djerba_area = {
+				add_permanent_claim = root
+			}
+			tunisia_area = {
+				add_permanent_claim = root
+			}
+			# South to Mecca!
+			tabuk_area = {
+				add_permanent_claim = root
+			}
+			medina_area = {
+				add_permanent_claim = root
+			}
+			mecca_area = {
+				add_permanent_claim = root
+			}
+		}
+	}
+
+	cs_fate_of_the_kaaba = {
+		icon = mission_mosque
+		required_missions = { cs_securing_our_base }
+		position = 8
+
+		provinces_to_highlight = {
+			province_id = 385 # Mecca
+		}
+
+		trigger = {
+			385 = {
+				owned_by = root
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = mrCrusaderEvents.10
 			}
 		}
 	}
 }
-
 
 
 
@@ -797,6 +802,75 @@ crusader_missions_3 = {
 					}
 				}
 
+			}
+		}
+	}
+
+	cs_call_for_crusade0 = {
+		icon = mission_crusade_for_varna
+		required_missions = { }
+		position = 5
+
+		provinces_to_highlight = {
+			is_in_outremer = yes
+			NOT = { owned_by = root }
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_call_for_crusade_trigger_tt
+				cs_call_for_crusade_trigger = yes
+			}
+		}
+
+		effect = {
+			cs_call_for_crusade_effect = yes
+			add_country_modifier = {
+				name = cs_crusading_surge
+				duration = 7300 # 20 years
+			}
+		}
+	}
+
+	cs_jerusalem_restored = {
+		icon = mission_crusade_for_varna
+		required_missions = { cs_call_for_crusade0 }
+		position = 6
+
+		trigger = {
+			tag = KOJ
+		}
+
+		effect = {
+			add_prestige_or_monarch_power = { amount = 50 }
+			add_papal_influence = 100
+		}
+	}
+
+	cs_our_claims_achieved = {
+		icon = mission_cannons_firing
+		required_missions = { cs_jerusalem_restored }
+		position = 7
+
+		provinces_to_highlight = {
+			is_in_outremer = yes
+			NOT = { owned_by = root }
+		}
+
+		trigger = {
+			NOT = {
+			any_province = {
+				is_in_outremer = yes
+				NOT = { country_or_non_sovereign_subject_holds = root }
+			}
+			}
+		}
+
+		effect = {
+			add_yearly_manpower = 5
+			add_country_modifier = {
+				name = cs_claims_restored_modifier
+				duration = 9125 # 25 years => -100 devastation, +100 prosperity
 			}
 		}
 	}

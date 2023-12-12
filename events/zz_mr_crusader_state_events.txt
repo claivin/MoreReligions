@@ -278,7 +278,7 @@ country_event = {
 
 # Papal legate: good ending
 country_event = {
-	name = mrCrusaderEvents.7
+	id = mrCrusaderEvents.7
 	title = mrCrusaderEvents.7.t
 	desc = mrCrusaderEvents.7.d
 	picture = POPE_PREACHING_eventPicture
@@ -295,7 +295,7 @@ country_event = {
 
 # Papal legate: pope neutral
 country_event = {
-	name = mrCrusaderEvents.8
+	id = mrCrusaderEvents.8
 	title = mrCrusaderEvents.8.t
 	desc = mrCrusaderEvents.8.d
 	picture = POPE_PREACHING_eventPicture
@@ -305,9 +305,7 @@ country_event = {
 	option = {
 		name = mrCrusaderEvents.8.a
 
-		effect = {
-			add_papal_influence = 5
-		}
+		add_papal_influence = 5
 	}
 
 	option = { # Special option for ruler traits
@@ -347,7 +345,7 @@ country_event = {
 
 # Papal legate: Pope dislikes us
 country_event = {
-	name = mrCrusaderEvents.9
+	id = mrCrusaderEvents.9
 	title = mrCrusaderEvents.9.t
 	desc = mrCrusaderEvents.9.d
 	picture = POPE_PREACHING_eventPicture
@@ -357,10 +355,8 @@ country_event = {
 	option = { # Okay...
 		name = mrCrusaderEvents.9.a
 
-		effect = {
-			add_papal_influence = -25
-			add_legitimacy = -10
-		}
+		add_papal_influence = -25
+		add_legitimacy = -10
 	}
 
 	option = { # Maybe we can do something about that...
@@ -422,6 +418,59 @@ country_event = {
 				who = PAP
 				modifier = mr_crusaders_papal_legate_bribed
 			}
+		}
+	}
+}
+
+country_event = { # Fate of the Kaaba
+	id = mrCrusaderEvents.10
+	title = mrCrusaderEvents.10.t
+	desc = mrCrusaderEvents.10.d
+	picture = MECCA_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # We will restore and protect the Kaaba for our Muslim subjects!
+		name = mrCrusaderEvents.10.a
+
+		set_country_flag = mr_crusader_guardian_of_the_kaaba
+
+		custom_tooltip = mr_crusader_guardian_of_the_kaaba_req_TT
+	}
+
+	option = { # We will not associate ourselves with such heathen beliefs
+		name = mrCrusaderEvents.10.b
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		385 = {
+			if = {
+				limit = {
+					has_great_project = {
+						type = kaaba
+						tier = 3
+					}
+				}
+				add_great_project_tier = {
+					type = kaaba
+					tier = -2
+				}
+			}
+			else_if = {
+				limit = {
+					has_great_project = {
+						type = kaaba
+						tier = 2
+					}
+				}
+				add_great_project_tier = {
+					type = kaaba
+					tier = -1
+				}
+			}
+		}
+		add_country_modifier = {
+			name = cs_kaaba_in_disrepair
+			duration = -1
 		}
 	}
 }

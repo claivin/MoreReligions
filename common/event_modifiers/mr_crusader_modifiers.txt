@@ -79,6 +79,17 @@ cs_crusading_surge = {
 	papal_influence = 1
 }
 
+cs_claims_restored_modifier = {
+	global_monthly_devastation = -0.33
+	global_prosperity_growth = 0.33
+}
+
+cs_kaaba_in_disrepair = {
+	tolerance_own = 1
+	tolerance_heathen = -1
+}
+
+
 
 # Government buttons
 cs_european_settlers = {

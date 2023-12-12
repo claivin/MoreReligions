@@ -23,6 +23,10 @@
   cs_eastern_metropolis_title: "Eastern Metropolis"
   cs_eastern_metropolis_desc: "As the furthest east bastion of Christendom, we have a unique position to become the nexus of new trade networks tying the rest of Europe to the riches of the East. All we need is a friendly Muslim neighbor willing to let us in on the action..."
   cs_eastern_metropolis_TT: "We will gain §G+10%§! Goods Produced in each province in the capital state and an additional §G+0.5§! Goods Produced and bonus tax income in the capital province."
+  cs_jerusalem_restored_title: "Jerusalem Restored!"
+  cs_jerusalem_restored_desc: "Jerusalem Restored!"
+  cs_our_claims_achieved_title: "Our Claims Achieved"
+  cs_our_claims_achieved_desc: "Our Claims Achieved"
 
   # Slot 3
   cs_build_to_force_limit_title: "A Force to be Reckoned With"
@@ -62,6 +66,12 @@
   cs_a_house_united_desc: "A House United"
   cs_first_among_equals_effect_tt: "Due to our winning charm, any Prince of Outremer who considers us a rival has a positive opinion of us will set aside their childish petulance. Any Prince of Outremer whose opinion of us is at least §G+100§! will become a historical friend."
   cs_a_house_united_effect_tt: "We will vassalize all the other Princes of Outremer."
+
+  # Post-Jerusalem
+  cs_securing_our_base_title: "Securing our Base"
+  cs_securing_our_base_desc: "To secure the basis of our state so that we are not just a thin coastal strip of land, we need to secure the wealth, ports, and food supply of Lower Egypt."
+  cs_fate_of_the_kaaba_title: "Fate of the Kaaba"
+  cs_fate_of_the_kaaba_desc: "Our armies have pushed far and wide, and now we have captured the Moslem holy city of Mecca. It is time to choose its destiny."
 
   # Slot 4
   cs_seek_religious_accord_title: "Seek Religious Accord"
@@ -109,6 +119,10 @@
   desc_cs_european_settlers: "A combination of ruffians and mercenaries, pious pilgrims, and simply those looking for a better life have collected here after we set out the call for immigrants from their region, bringing their unique skills to our nation."
   cs_crusading_surge: "Crusading Surge"
   desc_cs_crusading_surge: "With the legitimacy of our crusading mission bolstered by our successes, pious Catholics and opportunistic adventurers are flocking to our banners from all over Europe."
+  cs_claims_restored_modifier: "Claims Restored"
+  desc_cs_claims_restored_modifier: "With all of Outremer in our hands, we have the stature of a proper kingdom, and the people can rest secure that we no longer face imminent potential destruction."
+  cs_kaaba_in_disrepair: "Kaaba in Disrepair"
+  desc_cs_kaaba_in_disrepair: "With our state refusing to support repairs and maintenace of the Kaaba and the mosque complex and other pilgrimmage infrastructure in Mecca, things are running significantly less smoothly than they did under the previous occupants."
 
 
   # --EVENTS--
@@ -150,8 +164,15 @@
   mrCrusaderEvents.9.b: "Make him an offer he can't refuse."
   mrCrusaderEvents.9.c: "Failsons are the easiest to manipulate."
 
+  mrCrusaderEvents.10.t: "Fate of the Kaaba"
+  mrCrusaderEvents.10.d: "Now that the Moslem holy city of Mecca, and its Great Mosque, the Masjid al-Haram, are in our hands, it has become a heated debate in [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s court as to what is to be done with the mosque and the great black cube, or Kaaba, in its heart. The inhabitants of the city have been restive since our soldiers first marched in, many standing an eternal vigil over the mosque, some wailing prayer between tears and sobs while others clutch weapons beneath their robes with stony, silent determination.\n\nOf course, the nobles and clerics of the Sarraceni alternately beg [Root.Monarch.GetTitle] [Root.Monarch.GetName] to treat the site with respect out of the goodness of [Root.Monarch.GetHerHis] good-will and threaten of the terrible reprisals that will be out of their hands if we were to desecrate the site. They ask that [Root.Monarch.GetName] order a symbolic cleaning and restoration to soothe population and that over time the Moslems will accept our suzerainty over their most holy place as long as we are fair stewards. Some moderate advisors of the court agree with the Sarraceni, while others (including the Papal legate) insist we not sully our reputation and dabble in dangerous sacrilege by indulging the Moslems this far. All, however, agree that destroying the site is out of the question."
+  mrCrusaderEvents.10.a: "Guardian of the Kaaba would make a fine addition to my titles!"
+  mr_crusader_guardian_of_the_kaaba_req_TT: "We will be able to upgrade and gain benefits from the §YKaaba§! monument. Once we upgrade it to Tier 2, we will gain additional benefits!"
+  mrCrusaderEvents.10.b: "I will have nothing to do with it!"
+
 
 # --OTHER--
   merc_crusader_italian_troops: "Italian Company of Outremer"
+  mr_crusader_guardian_of_the_kaaba_tt: "Has chosen the '§YWe will become guardians of the Kaaba!§!' Option in the @KOJ Crusader mission event §YFate of the Kaaba§!.""
 
 
