@@ -4,7 +4,7 @@
 owner = BJZ
 controller = BJZ
 culture = portugese
-religion = catholic
+religion = shiite
 capital = "Santar	m"
 trade_goods = grain
 hre = no

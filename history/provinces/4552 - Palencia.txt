@@ -1,9 +1,9 @@
 #REGIONIBERIA
 #4552 - Palencia
 
-owner = LON		#Juan II of Castille
-controller = LON
-add_core = LON
+owner = CAS		#Juan II of Castille
+controller = CAS
+add_core = CAS
 culture = castillian
 religion = catholic
 hre = no
