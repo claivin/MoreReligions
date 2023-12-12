@@ -26,7 +26,6 @@ country_event = {
 			has_reform = tribal_federation
 		}
 		NOT = { has_country_flag = no_new_succession_crisis_if_pretender_rebels }
-		NOT = { has_country_flag = steppe_dynasty }
 		num_of_cities = 4
 		OR = {
 			NOT = { legitimacy_or_horde_unity = 50 }
@@ -113,6 +112,15 @@ country_event = {
 		kill_heir = {}
 		add_horde_unity = -25
 	}
+	option = {
+		name = tribal_succession.1.c
+		highlight = yes
+		trigger = {
+			has_consort_regency = yes
+			has_country_flag = steppe_dynasty
+		}
+		add_adm_power = -10
+	}	
 }
 
 # Succession Secured!

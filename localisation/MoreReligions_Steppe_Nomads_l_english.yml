@@ -66,7 +66,7 @@
  steppe_enshrined_rights_desc: "Just as Genghis won the loyalty of Tarim Muslims by vanquishing the zealot Kuchlug, we have secured the loyalty of the various religious groups spread across our realm through the enforcement of uncompromised religious freedom & tolerance."
  
  #Steppe Tooltips
- steppe_succession_secured: "We will no longer suffer the §YTribal Succession Crisis§! event\n"
+ steppe_succession_secured: "The Khatun will be able to hold onto power when the §YTribal Succession Crisis§! event fires, until the heir  comes of age\n"
  steppe_judicial_events: "We will unlock new ways to handle feuds in certain events\n"
  province_is_in_capital_region: "Province is in same §Yregion§! as [Root.Capital.GetName]"
  steppe_prosperity_by_fire: "Razing a Province will now add §G5§! prosperity in a random owned §Ycore state§!\n"
@@ -131,6 +131,7 @@
  MR_steppe_generic_flavor.6.b: "Heilong, born from the Amur!"
  MR_steppe_generic_flavor.6.c: "Unnecessary..."
  randomeventsstapehordes.17.EVTOPTB: "Bring the gavel down on the survivors."
+ tribal_succession.1.c: "The succession laws are clear, [Root.Consort.GetName] shall rule until $HEIR$ comes of age."
  
  
  #Misc
