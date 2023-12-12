@@ -6,6 +6,7 @@ culture = turkish
 religion = sunni
 capital = "Tokat"
 trade_goods = cloth
+fort_15th = yes
 hre = no
 base_tax = 3
 base_production = 3
