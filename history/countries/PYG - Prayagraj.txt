@@ -4,3 +4,15 @@ primary_culture = kanauji
 religion = hinduism
 technology_group = indian
 capital = 556 
+
+1440.1.1 = {
+	monarch = {
+		name = "Arjun"
+		dynasty = "Chandella"
+		birth_date = 1420.1.1
+		death_date = 1460.1.1
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

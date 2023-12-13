@@ -4,6 +4,15 @@ government_rank = 1
 primary_culture = rajput
 religion = svetembara
 technology_group = indian
-capital = 4462 
+capital = 518 
 
-
+1440.1.1 = {
+	monarch = {
+		name = "Ratnasimha"
+		dynasty = "Guhila"
+		birth_date = 1420.1.1
+		ADM = 3
+		DIP = 2
+		MIL = 3
+	}
+}

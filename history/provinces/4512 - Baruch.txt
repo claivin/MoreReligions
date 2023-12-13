@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = gujarati
-religion = buddhism
+religion = svetembara
 capital = "Bharuch"
 trade_goods = silk #Silk
 hre = no

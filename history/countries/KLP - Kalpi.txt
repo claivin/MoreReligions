@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = indian_sultanate_reform
+add_government_reform = samanta_vassal_reform
 government_rank = 1
 technology_group = indian
 religion = shaktism
@@ -84,6 +84,7 @@ religious_school = shafii_school
 	monarch = {
 		name = "Nasir Khan"
 		dynasty = "Malikzada"
+		birth_date = 1410.1.1
 		adm = 6
 		dip = 4
 		mil = 3

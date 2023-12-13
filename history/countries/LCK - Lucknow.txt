@@ -4,6 +4,16 @@ technology_group = indian
 religion = shaivism
 primary_culture = avadhi
 capital = 523	# Lucknow
-religious_school = jafari_school
 
+1430.1.1 = {
+	monarch = {
+		name = "Bhoja"
+		dynasty = "Pratihara"
+		birth_date = 1425.1.1
+		death_date = 1460.1.1
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}
 

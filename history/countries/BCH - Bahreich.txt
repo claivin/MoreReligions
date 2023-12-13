@@ -3,7 +3,18 @@ add_government_reform = samanta_vassal_reform
 technology_group = indian
 religion = shaivism
 primary_culture = avadhi
-capital = 2055
-religious_school = jafari_school
+capital = 2094
+
+1430.1.1 = {
+	monarch = {
+		name = "Bariar"
+		dynasty = "Pundir"
+		birth_date = 1410.1.1
+		death_date = 1460.1.1
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}
 
 

@@ -1,10 +1,28 @@
 government = monarchy
 add_government_reform = maharajadhiraja_reform
 technology_group = indian
-religion = shaktism
+religion = smarta
 primary_culture = rajput
 add_accepted_culture = avadhi
-capital = 2055
-religious_school = jafari_school
+add_accepted_culture = kanauji
+capital = 4497
 
-
+1444.1.1 = {
+	monarch = {
+		name = "Regency Council"
+		regent = yes
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	heir = {
+		name = "Prithviraja IV"
+		dynasty = "Chahamana"
+		birth_date = 1441.1.1
+		death_date = 1460.1.1
+		claim = 95
+		adm = 3
+		dip = 5
+		mil = 3
+	}
+}

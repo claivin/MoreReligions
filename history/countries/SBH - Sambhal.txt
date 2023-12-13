@@ -1,7 +1,17 @@
 government = monarchy
 add_government_reform = samanta_vassal_reform
 primary_culture = kanauji
-religion = shaivism
+religion = hinduism
 technology_group = indian
-capital = 2061 # Delhi
-fixed_capital = 2061
+capital = 4498
+
+1430.1.1 = {
+	monarch = {
+		name = "Krishna"
+		dynasty = "Rohilla"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 2
+		mil = 5
+	}
+}
