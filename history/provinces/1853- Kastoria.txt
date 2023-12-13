@@ -13,8 +13,7 @@ base_manpower = 3
 is_city = yes
 add_core = THS
 add_core = TSS
-
-
+add_local_autonomy = 10
 
 discovered_by = western
 discovered_by = eastern

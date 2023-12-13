@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = serbian
 religion = orthodox
 technology_group = eastern
-capital = 4757	
+capital = 4239	
 historical_friend = BOS
 
 1389.1.1 = {

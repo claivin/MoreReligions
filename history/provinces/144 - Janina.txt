@@ -13,6 +13,7 @@ base_manpower = 4
 is_city = yes
 add_core = EPI
 add_core = ATR
+add_local_autonomy = 10
 
 discovered_by = KAZ
 discovered_by = CRI

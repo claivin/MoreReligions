@@ -5,12 +5,13 @@ controller = CRO
 culture = croatian
 religion = catholic
 capital = "Ogulin"
-trade_goods = cloth
+trade_goods = vegetables
 hre = no
 base_tax = 1 
 base_production = 2
-base_manpower = 1
+base_manpower = 3
 is_city = yes
+add_local_autonomy = 10
 
 add_core = CRO
 discovered_by = KAZ

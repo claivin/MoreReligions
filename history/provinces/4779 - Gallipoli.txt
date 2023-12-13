@@ -11,6 +11,7 @@ base_manpower = 2
 is_city = yes
 add_core = THR
 fort_15th = yes #Fortress of Gallipoli
+add_local_autonomy = 10
 
 
 discovered_by = western

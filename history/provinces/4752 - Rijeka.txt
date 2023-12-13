@@ -5,13 +5,14 @@ controller = CRO
 culture = croatian
 religion = catholic
 capital = "Rijeka"
-trade_goods = cloth
+trade_goods = wine
 hre = no
 base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
 add_core = CRO
+add_local_autonomy = 15
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -24,5 +25,6 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 add_core = DAL
+add_building = mrb_winery
 
 1444.11.12 = { trade_goods = unknown }

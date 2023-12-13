@@ -12,8 +12,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = VEN
-
-
+add_local_autonomy = 30
 
 discovered_by = muslim
 discovered_by = ottoman

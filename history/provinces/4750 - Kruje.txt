@@ -13,6 +13,7 @@ base_manpower = 1
 is_city = yes
 fort_15th = yes # Krujë Castle
 add_core = ALB
+add_local_autonomy = 10
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
