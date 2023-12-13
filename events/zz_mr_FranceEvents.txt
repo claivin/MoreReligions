@@ -225,6 +225,7 @@ country_event = { #post war results for france
 	is_triggered_only = yes
 	trigger = {
 		#triggered by on_action on_war_won
+		tag = FRA
 	}
 	mean_time_to_happen = { days = 1 }
 	
