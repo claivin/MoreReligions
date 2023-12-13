@@ -470,3 +470,19 @@ country_event = {
     custom_tooltip = TRS_barlas_revolt_TT		
 	}
 }
+#Navarra
+country_event = {
+	id = navarra_events.19
+	title = navarra_events.19.t
+	desc = navarra_events.19.d
+	picture = DIPLOMACY_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NAV
+	}
+	
+	option = {
+		name = navarra_events.19.1
+	}
+}	
