@@ -26,6 +26,7 @@ on_startup = {
 		mr_startup_events.5
 		mr_startup_events.6
 		mr_startup_events.7
+		mr_startup_events.8
 	}
 	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
 #Song siege counting variable
