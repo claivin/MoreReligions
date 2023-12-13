@@ -68,11 +68,12 @@ country_event = {
 				school = mr_ambrosian_rite
 			}
 		}
-		else_if = { #venice follows aqueilian
+		else_if = { #venice follows aquileian
 			limit = {
 				OR = {
 					tag = AQU
 					tag = VEN
+					tag = NAX # so should Naxos, they are Venetian
 				}
 			}
 			set_religious_school = {
@@ -128,6 +129,15 @@ country_event = {
 			set_religious_school = {
 				group = christian
 				school = mr_cologne_rite
+			}
+		}
+		else_if = { # Corfu is a special case, their primary culture is Aegean Greek, so they follow Byzantine Rite Catholic
+			limit = {
+				tag = CEP
+			}
+			set_religious_school = {
+				group = christian
+				school = mr_byzantine_rite
 			}
 		}
 		else_if = { #Roman rite in the rest of catholic europe
@@ -212,13 +222,14 @@ country_event = {
 		}
 		custom_tooltip = mr_only_one_other_chance_to_change
 	}
-	option = { #aquielian
+	option = { #aquileian
 		name = christian_school_events.20.i
 		trigger = {
 			religion = catholic
 			OR = {
 				tag = VEN
 				tag = AQU
+				tag = NAX
 			}
 			ai = no
 		}
@@ -460,6 +471,7 @@ country_event = {
 			OR = {
 				religion = mr_maronite
 				religion = orthodox
+				tag = CEP # Byzantine Rite Orthodox Greeks is immensely funny
 			}
 			ai = no
 		}

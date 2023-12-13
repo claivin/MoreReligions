@@ -184,50 +184,135 @@ confucian_scholars_JAP: "Confucian Scholars"
  aab_buda_fifth_title: "The Founding of Budapest"
  
  #Siam Missions
+#Siam Missions
  mr_siam_conquest_1_title: "Rally the Levies"
+ mr_siam_conquest_1_desc: "In maintaining independence, one must ensure the presence of an army through which the cities of the realm can be defended from all the hungry eyes that wish to seize them for themselves. To keep the Khmer from deeming us weak and malleable, and in turn to expand the reaches of our own influence; should the opportunity for such a thing ever arise"
+
  mr_siam_conquest_2_title: "Unite the Muangs"
+ mr_siam_conquest_2_desc: "It takes no genius to figure that the fragmented status quo in Siam benefits no-one but the Khmer overlords over in Angkor, who no doubt have had a heavy hand in playing the various cities of their mandala against one another, keeping us all weak and splintered for the sake of propping up their wealth and their imperial ambition.\n\nWe must put an end to this charade, and unite the Thai people under one banner- our banner, by force if we have to. Our brethren may not welcome us at first, but in time they'll understand that our interests are the very same as theirs"
+
  mr_siam_conquest_3_title: "Conquer Chiang Mai"
+ mr_siam_conquest_3_desc: "History has so far been nothing but kind to the lords of Lan Na, who have since time immemorial paid little heed to the goings on of the broader world around them, and have managed to carve themselves and the northern Thai a prospering kingdom, worthy of one's respect. The conquest of Lan Na, and of course of the great city Chiang Mai, however, is a crucial move that we must make- for the sake of the great Empire which we're trying to carve"
+
  mr_siam_conquest_4_title: "Reclaim Ayodhya"
+ mr_siam_conquest_4_desc: "Ayutthaya lies at the very core of Siam, and has long served as an area through which the Khmer maintained their dominion over the Thai people- therefore it is only natural that the Khmer want to keep a tighter leash around this crucial city. Of course, that also means that if we are to unite our people- we will have to go and actively, openly defy the Khmer Empire for it. The upcoming fight is neither easy nor will it be pleasant, but it is crucial for the survival of the cause- and the longevity of our fledgling state as a whole"
+
  mr_siam_conquest_5_title: "Challenge the Khmer"
+ mr_siam_conquest_5_desc: "The Khmer Empire, centered in Angkor, has long been a force that has existed to the very detriment of Siam and the Thai people- practically built off all the gold we paid them and all the food we've grown for them. The prosperity of our lands has been funneled away for far too long, and this travesty must come to an end-\nthe Khmer must learn that we'll be their mules no longer!"
+
  mr_siam_conquest_6_title: "Invade Vientiane"
+ mr_siam_conquest_6_desc: "Not far off the site of our latest triumphs against the Khmer lie the lands of the Lao and their city of Vientiane. While not the most notable, and definitely not the richest of places in the region; the acquisition of that city can nonetheless prove to be a worthwhile endeavor- at the very least in providing us with a central, defensible and strategic location in the west of Indochina, connected to China and Vietnam and open to their lucrative markets as it is" 
+
  mr_siam_conquest_7_title: "Ensure Laotian Loyalty"
+ mr_siam_conquest_7_desc: "Our recent conquest of Vientiane has aroused quite the negative perception of us from the Lao people, who no doubt view us as a new oppressor; one that violently barged in and ended an era of independence and self determination. We wish not to cultivate such a gnarly image of ourselves in our subjects' minds, however- we must instead convince them that we- as their suzerains- first and foremost care about them and their rights as people of the realm.\n\nWhile that may not necessarily be true, there is also nothing to be gained in antagonising them. We must bring what little remains of Lao independence to an end, and once the region is consolidated- perhaps then a show of benevolence on our part may be warranted; in tolerating them and their local superstitions"
+
  mr_siam_angkor_1_title: "The Sacking of Angkor"
+ mr_siam_angkor_1_desc: "It's about time we took this whole protracted conflict and pushed it back to where it all started; to the mighty city of Angkor, bringing a much-awaited end to this brutal epoch in our history.\nBy merely taking over the beating heart and soul of the once-mighty Khmer Empire, however, their people; our oppressors, those who once held such thorough sway over us will never bow before us, at least not in honesty.\n\nIf we are to rule in harmony, then, we'll be forced to take dire measures to humble their character, and imprint on them all a valuable lesson on what it means to stand against us. If Siam is to rise, then Angkor is to burn"
+
  mr_siam_angkor_2_title: "Expansion of Thai Influence"
+ mr_siam_angkor_2_desc: "The dust has settled, and the sands of time have shifted and changed; taking what remains of Angkor at last with them, long after its demise at our very hands.\n\nLeaving things off with the Khmer at an act of cruelty is not what we ultimately have in mind for the region however, as we indeed do see intrinsic value in it and in the productivity of its people.\nIn rebuilding the bridges between our people that years of war have torn, we'll have to appease them- offer them jobs and opportunities within our court and working to tolerate their cultural norms..\n\nAlternatively, we could also just force our religion upon them instead; While it'll stir quite a nerve now- give it a generation or two and they too will start calling themselves pure-blooded Thai, just like the rest of us"  
+
  mr_siam_angkor_3_title: "Rulers of Siam"
+ mr_siam_angkor_3_desc: "The Khmer have fallen and the Lao have submitted, and most of Indochina now lies in our hands. Siam has reached heights never-before witnessed by its people, with us acting as the very architects of this auspicious change.\n\nWe have carved ourselves an Empire in all but name- so let us change that too, and in crushing what little, fleeting resistence there is left in these lands- we can proclaim our rightful supremacy and affirm our place among the nations of the world as a proper Empire" 
+
  mr_siam_dev_1_title: "Rebuild the Thai Cities"
+ mr_siam_dev_1_desc: "Siam is just not what it used to be; our cities have shrunk, our population has dwindled, and our coffers have been stretched as thin as they can be. This, if anything, is a pungent wake-up call. if we wish to see our people thrive and live their best lives, and if we wish to see our home united and strong again, we must then do what we can with what money we have to rebuild our cities- to expand upon them, and to make sure that the taxes being paid all reach our coffers to the dime.\nSo that our sons and daughters may inherit a home just a bit richer, and just a bit more prosperous"
+
  mr_siam_dev_2_title: "A City Across the River"
+ mr_siam_dev_2_desc: "Due south of Ayutthaya, down along the banks of the Chao Phraya lies a little-known trading town by the name of Bangkok that has long been at the center of our court's attention.\n\nSituated in the near-middle of our Mandala, positioned at the delta of the Chao Phraya, and with its proximity to the coast all kept in mind- Royal sponsorship of the town's growth and the further development of the local trades, tapping into its boundless potential, can very well turn this meagre little market town into something greater. It has all the makings of a grand capital-to-be"
+
  mr_siam_dev_3_title: "Floating Rice Paddies"
+ mr_siam_dev_3_desc: "Rice is the means through which we sustain our ever-growing population; it cheap, easy to plant, easy to harvest, and easier yet to cook. Easy and cheap, however, can be made easier and cheaper; with much larger yields. Regulating the harvest of deepwater rice around the Chao Phraya, with dedicated state-owned facilities and organised planting will provide sustenance for even millions of people across the land, letting our cities grow larger and the men in our armies more ever-more numerous"
+
  mr_siam_dev_4_title: "The Merchant Quarter"
+ mr_siam_dev_4_desc: "Ever since our sponsorship of the town of Bangkok it has managed to develop into a proper city in its own right, separate; if not wholly distinct from Ayutthaya to its north. With its urban growth, however, also come issues of logistics- as the city has recently outgrown its old commercial districts, and many of the merchants who come to sell their wares there find no venue to do so. In addressing the problem; city planners have come before the court with a proposal- a new quarter for the merchants to operate in alongside a dock to accommodate their ships. New infrastucture will have to be laid out to make these plans work, of course, but if current trends are to be believed; such an investment will be quick to pay itself off"
+
  mr_siam_elephants_1_title: "The Siamese Cavalry"
+ mr_siam_elephants_1_desc: "In Thai society elephants have since time immemorial served in a wildly varying assortment of roles; from beasts of burden to steeds of war- generally, its importance in our functions as a state cannot be overstated. Promoting programs to selectively breed stronger and stronger herds of elephants under our state's surveillance will provide a breed of elephant with which our armies will be able to strike fear at the hearts of our enemies, and lay waste to all resistance they may mount against us"
+
  mr_siam_elephants_2_title: "Royal Elephant Protection"
+ mr_siam_elephants_2_desc: "Elephants are mighty beasts indeed, but there's just not too many of them to go around. In protecting our existing herds and providing them with all they need to multiply, the elephant population of Siam is sure to see a boom- and with it, the elephants that our army gets to use"
  mr_siam_karma_start_title: "Allignment with the Sangha"
+ mr_siam_karma_start_desc: "The Buddhist Assemblies hold much sway over the cultural and spiritual life of the Thai people, by raising temples and expanding their reach in our lands we could then- perhaps- earn their favor, something which will turn become quite the powerful playing card in our future dealings with the Buddhism's faithful; within and without our sphere of influence"
+
  mr_siam_karma_2_title: "The Shifting Mandala"
+ mr_siam_karma_2_desc: "Orbits within orbits; the mandala system focuses on the idea that from the center of a state; a great circle is formed, the orbit of which inhabit weaker, subservient states; bound to pay tribute to it. In a great ladder, those weaker states may in turn have circles of their own- which in turn unravels and extends all the down to the very level of the individual. In building a respectable state, we must attract and secure the fielty of smaller states around the orbit of our very own Mandala"
+
  mr_siam_karma_final_title: "The Eternal Chakravatin"
+ mr_siam_karma_final_desc: "The King of the Universe; He who rules over all four continents, through which all things function and are kept in order- is a man of Buddhist ideals, who commands the respect of all those under him, and makes those who he deems his enemies fear him.\n\nLet our ruler be one such man, then, let him command the respect and adulation of mighty kings- and uphold the principles of Buddhism throughout the land" 
  mr_siam_karma_3_title: "Theravada Architecture"
- mr_siam_capital_1_title: "Foritfy the Palace"
+ mr_siam_karma_3_desc: "In a line of good deeds to make note of the monarchy's exemplary moral character, we would do well to sponsor the development of some key Thai cities beyond our center of power; to bring prosperity to their people, and to set them up as exemplary pieces of Theravada Thai culture- ones that our neighbors will in turn wish to emulate themselves in their own domains in style and character"
+
+ mr_siam_capital_1_title: "Fortify the Palace"
+ mr_siam_capital_1_desc: "The Lord's Palace is the very center of our Muang's power, the home of the treasury, and the heart of the political apparatus. By letting it be vulnerable, and open to outside attacks; it, the city itself, and the state as a whole come under dire scrutiny. We must do what we can with what money we have to fortify it and protect ourselves, then- be it from rebels or from foreign armies"
+
  mr_siam_dev_5_title: "The City of Gods"
+ mr_siam_dev_5_desc: "Bangkok has come a long way in its recent history; from being little over a river town living under Ayutthaya's shadow to being the very epicenter of a vast and dominant Empire- Its a city matched by very few in Asia when it comes to size and sheer affluence, nevertheless, we know it can be made even than that.\n\nOne grand renovation, public works of all kinds and magnitudes; from the small and convenient to the grand and opulent- Palaces rivalling the Sun in brilliance and urban sprawl as far as the eye can see. Let Bangkok become a synonym to majesty in the eyes of the world, an entrepot in which all the world's riches culminate, and one whose citizens may rival even foreign kings in wealth and riches" 
+
  mr_siam_burma_1_title: "Rival Pagan"
+ mr_siam_burma_1_desc: "The resurgent Pagan Kingdom of Burma is a state that is cause for much concern; it's a rising, influential power that undoubtedly sees us and our war-weary lands as ripe for the taking, and one that wouldn't hesitate to put us all in the ground if it served to further its ambitions.\n\nWith Siam now united, we must rise to the occasion on and take a firm stance against the Burmese and their ambitions"
+
  mr_siam_burma_2_title: "Sieze the Mon Kingdom"
+ mr_siam_burma_2_desc: "The Mon Kingdom, albeit small, holds sway over rich and fertile lands at the mouth of the Irrawaddy river, from Bago itself to Dagon and Pathein to west. Divided and weak; It is a land ripe for the taking, and as the key to Burma- it'll be a conquest through which we'll be sowing the seeds to something much, much greater"
+
  mr_siam_burma_3_title: "Up the Irrawaddy"
+ mr_siam_burma_3_desc: "With the conquest of Lower Burma finalised not too long ago, it is now due time we striked true at the heart of the enemy- at the fertile watershed of the Irrawaddy River- and crippled them for good at long last.\n\nThe Bamar people will all be forced to bend the knee, and the Burmese Crown shall become but one of many trophies in our King's collection"
+
  mr_siam_burma_4_title: "Control the Borderlands"
+ mr_siam_burma_4_desc: "One approach our generals have proposed in dealing with the Burmese threat is to advance through the Karenni hills to the direct east of Burma proper. It's a region that has never quite known centralised rule from Pagan, and a region that is weak and fragmented- at best. It's only natural we seized such a strategic position, then- lest the Burmese do it themselves and hold it against us instead"
+
  mr_siam_burma_5_title: "Conquer the Shan Hills"
+ mr_siam_burma_5_desc: "A crucial step to the integration of Burma to the demesne is the far north, where the Muangs of the Shan Hills have long held a tradition of autonomy and self rule- historically in spite of numerous Burmese attempts at bringing them to the fold. With that considered, let us succeed now where our rivals failed and tame the Shan. Controlling these hills, beyond granting us an advantageous position against the Burmese- will also, perhaps, signal to them that in yet another aspect of statecraft and politics; we are their betters"
+
  mr_siam_burma_6_title: "Integration of the Shan"
+ mr_siam_burma_6_desc: "The Shan are a rowdy and unruly people indeed- always have been, and ultimately, they're just not worth oppressing.\n\nTheir land only really holds value to us in relation to Burma, and so, if we are to maintain territorial cohesion in the region- it'll probably do us good to grant the Shan some concessions, if only to keep them from turning on us- perhaps in time this tolerance will even give fruit"
+
  mr_siam_burma_7_title: "The Burmese Conquest"
+ mr_siam_burma_7_desc: "The day dawns where a grand chapter of our history comes to a definitive close, and thus opens a new one; one where the entirety of Burma and all its environs pay their taxes to us without question, one where Thai officials rule directly over their lands, and one where a painting of our Emperor hangs over the hearths of every home from Bago, to Ava, to the Shan Hills and from there to Arakan, and everywhere in between. In time, Burma will be naught but another province in our resplendent Empire"
+
  mr_siam_china_1_title: "The Mong Mao Border"
+ mr_siam_china_1_desc: "The Kingdom of Mong Mao was a long lived polity that in its heyday rivalled even the likes of the old Pagan Kingdom in power and affluence, it had achieved complete dominance over the Burmese north and had even managed to penetrate into lands that have long been considered to be parts of China's core. While the Kingdom is no longer relevant in today's world, it did nonetheless prove that China is not quite the unbreakable monolith that it oft presents itself to be. If they can do it; so can we, and if we can do it; perhaps the rest of China- and all its riches- can also be within our reach" 
+
  mr_siam_china_2_title: "The Maitreyan Empire"
+ mr_siam_china_2_desc: "A cult of paranoid eschatologists has taken hold over what once was a land of faith.\nCrippling fears of impending doom and the Maitreya's coming wreak havok in the minds of the Chinese, all propped and propagated by the most foul heresiarchs of the Song court- who rule through nothing but lies and manipulation, in their fear of being deposed. We cannot stand idly and watch as such vile scams are being played on the minds and souls of so many millions of innocents- the Song must be opposed, and they must be punished"
+
  mr_siam_china_3_title: "Challenge the Dragon"
+ mr_siam_china_3_desc: "For their myriads of transgressions, the powerhungry leeches of the Chinese courts have not nearly been punished enough. If we are to annihilate this blatant heathenry that transpires up there, then we must move in ourselves and take the reins of China for ourselves. Piece by piece, if need be, order will nonetheless be restored to the Middle Kingdom"
+
  mr_siam_china_4_title: "The Siamese Emperor"
+ mr_siam_china_4_desc: "Tomorrow, the Sun in China will from the South- as we move in to finalise what our ancestors started, and seized the entirety of the Middle Kingdom in our name- the excuses for why we did what we did may well have varied over the many years of these continuous wars, but the ultimate truth of the matter is that we now stand stronger than we ever have in passed- we have supplanted milennia of tradition, and we are ready to replace it all with traditions of our own.\n\nWe have brought peace, freedom, justice, and security to our new Empire; and at long last, China will soon be whole again" 
+
  mr_siam_nusantara_1_title: "Upgrading the Thai Fleet"
+ mr_siam_nusantara_1_desc: "Maintaining an arsenal of ships with which one can protect their coast from seaborne threats is only logical when conducting statecraft- building a fleet able to project one's power far, far beyond their coast however, takes effort, devotion, and ambition. If we are to throw our weight beyond Indochina and the mainland, we'll need a fleet powerful enough to protect and reinforce our mighty armies"
+
  mr_siam_nusantara_2_title: "Influence in Pattani"
+ mr_siam_nusantara_2_desc: "Pattani is a small, albeit influential polity to our direct south in the Malay peninsula- as successors and inheritors of the ancient Langkasuka, they hold themselves on a high pedestal indeed. It is a pedestal, however, that we intend on knocking over; and subsequently sending the Pattani crashing down. We'll pick up the pieces, and add yet another piece to the ever-illustrious mosaic that is our growing Empire"
+
  mr_siam_nusantara_3_title: "Subjugation of Malaya"
+ mr_siam_nusantara_3_desc: "At the very tip of the Malay peninsula lie the regions of Melaka and Johor, profitable, populated, and in tight control over the flow of Moluccan spices to India and beyond. While the influence of Islam in the region is to cause upheaval upon our arrival- we still deem the conquest of these regions a worthy enough endeavor to undertake"
+
  mr_siam_nusantara_4_title: "Across the Strait"
+ mr_siam_nusantara_4_desc: "Heart and soul of the old Srivijaya; Lords of Nusantara, Sumatra is an island of historical as well as economic importance to southeastern Asia as a whole. Seizing its core for ourselves will not only allow us to strengthen our stranglehold over the straits of Malacca, but it'll also let us tap into the legacy of the Srivijaya, and provide us with most apt justification for further conquests in the Nusantara"
+
  mr_siam_nusantara_5_title: "The Mountains of Sumatra"
+ mr_siam_nusantara_5_desc: "We may have already taken over most of what matters in the island of Sumatra, but for the sake of rendering our authority over the island absolute- we'll have to cross the mountains at the island's center and move to dispose of the petty Kingdoms and Lordships on the other side. Besides that, there's also a gold mine ripe for the taking that may prove to be of worth to us there"
+
  mr_siam_nusantara_6_title: "Approach the Sunda"
+ mr_siam_nusantara_6_desc: "The Lords of Java in Sunda are quite the powerful adversaries indeed. Presiding over Nusantara's arguably richest and most populous island- it would be fair to argue that in their power and their hubris; they've grown fat and complacent. It is time we relieve them of their duties, then, and asserted ourselves as lords of Java in their stead"
+
  mr_siam_nusantara_7_title: "Lord of Nusantara"
+ mr_siam_nusantara_7_desc: "We may have proven ourselves to be masters of Java and Sumatra, but to be able to extend our reign to the lands beyond we will first need to prove ourselves the masters of this archipelago's very waters- To build an imposing fleet to navigate and patrol its narrow straits, and a merchant navy which will see to it that all the region's goods are sold by Siamese traders, at home and abroad"
+
  mr_siam_navy_1_title: "Fleet for the Merchants"
+ mr_siam_navy_1_desck: "Distinct from a war fleet but just about as crucial to a state's prosperity are the fleets that its merchant classes maintain. Tasked with bringing foreign wealth to the nation's shores, it's important that we placate the merchant classes with sizable donations to those- enough for them to fly our flags, operate under our laws, and bring gold and jewels to our coffers"
+
  mr_siam_navy_2_title: "A New Naval Tradition"
+ mr_siam_navy_2_desc: "In entrusting the maintenance of our navies to local guilds and the merchant classes, we may in the past have saved quite a few tonnes of gold, but ever-increasingly, in this modern day of sail- not having permanent state-owned and state-maintained fleets; at the government's sole beck and call is a detriment to our aspirations of naval hegemony.\n\nBy opening state-run naval academies and standardising impressment procedures, we can come closer to an enviable standard of naval professionalism, once which will see the prestige of our navy soar to new heights"
+
  mr_siam_navy_3_title: "Masters of the Sea"
- 
+ mr_siam_navy_3_desc: "With reputable naval institutions and with many a man eager to enlist; the Royal Navy has in recent years reached heights it had never before seen in its history as an institution. Already among the largest in Asia, it is only logical for us to further lean in on that, and in consolidating our thalassocracy; make it the largest, vastest, and most powerful navy in the entirety of the Continent"
+
+
  warring_state_TT: "We will gain the modifier §YLeader of the Warring States§!, the effects of which vary depending on if we own more of the Thai capitals. At our current level, we will gain:"
  siamese_elephant_TT: "Every province with the §YIvory§! Trade Good and a §YManufactory§! will gain the following:"
  karma_start_TT_1: "If we complete this mission while having §YNeutral Karma§!, we will gain the following:"
