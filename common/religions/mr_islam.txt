@@ -394,6 +394,12 @@ muslim = {
 	shiite = {
 		color = { 0 204 0 }
 		icon = 6
+		allowed_center_conversion = {
+			orthodox
+			catholic
+			mr_bogomil
+			sunni
+		}
 		country = {
 			church_loyalty_modifier = 0.05
 			land_morale = 0.05
@@ -1071,6 +1077,12 @@ muslim = {
 		country = {
 			has_qizilbash = yes
 			cavalry_cost = -0.10
+		}
+		allowed_center_conversion = {
+			orthodox
+			catholic
+			mr_bogomil
+			sunni
 		}
 		country_as_secondary = {
 			cavalry_cost = -0.10

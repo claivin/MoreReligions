@@ -371,7 +371,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_nyingma_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_nyingma_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			global_heretic_missionary_strength = 0.03 
 		}
@@ -404,7 +404,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_gelug_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_gelug_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			yearly_karma_decay = 0.5 
 		}
@@ -437,7 +437,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_karma_kagyu_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_karma_kagyu_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			tolerance_own = 1
 		}
@@ -470,7 +470,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_drukpa_kagyu_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_drukpa_kagyu_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			advisor_cost = -0.15
 		}
@@ -503,7 +503,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_drikung_kagyu_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_drikung_kagyu_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			development_cost = -0.10
 		}
@@ -536,7 +536,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_sakya_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_sakya_school"
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
 			warscore_cost_vs_other_religion = -0.10
 		}
@@ -569,7 +569,7 @@ eastern = {
 			}
 			# If you don't set this it will expand on_invite_scholar effect which might be super big
 			invite_scholar_modifier_display = mr_jonang_school_modifier
-			picture = "GFX_icon_shingon_school"
+			picture = "GFX_icon_mr_jonang_school"
 			
 			technology_cost = -0.05
 		}

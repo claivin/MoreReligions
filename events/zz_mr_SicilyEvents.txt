@@ -214,4 +214,23 @@ country_event = {
 		add_years_of_income = 0.25
 	}
 }
+
+country_event = {
+	id = MR_sicily_flavor.5
+	title = MR_sicily_flavor.5.t
+	desc = MR_sicily_flavor.5.d
+	picture = CHURCH_ESTATE_UPSET_eventPicture
+
+	trigger = {
+		tag = SIC
+		religion = mr_fraticelli
+		NOT = {
+			is_year = 1470
+		}
+	}
+
+	option = {
+		
+	}
+}
 	

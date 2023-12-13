@@ -207,6 +207,17 @@ temple = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = mr_greek_muslim_fourth
+				}
+			}
+			add_province_modifier = {
+				name = temples_byz_modifier
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -259,6 +270,14 @@ temple = {
 					value = 3
 				}
 			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = mr_greek_muslim_fourth
+				}
+			}
+			remove_province_modifier = temples_byz_modifier
 		}		
 	}
 	on_obsolete = {
@@ -995,7 +1014,18 @@ cathedral = {
 				name = gsc_church_devastation_reduction
 				duration = -1
 			}
-		}		
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = mr_greek_muslim_fourth
+				}
+			}
+			add_province_modifier = {
+				name = temples_byz_modifier
+				duration = -1
+			}
+		}
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -1048,7 +1078,15 @@ cathedral = {
 					value = 3
 				}
 			}
-		}		
+		}
+		if = {
+			limit = {
+				FROM = {
+					mission_completed = mr_greek_muslim_fourth
+				}
+			}
+			remove_province_modifier = temples_byz_modifier
+		}				
 	}
 	on_obsolete = {
 	}

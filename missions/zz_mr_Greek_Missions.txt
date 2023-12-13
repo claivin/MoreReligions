@@ -1227,7 +1227,6 @@ mr_greek_missions_first_byz = {
 			country_event = {
 				id = MrGreekEvents.6
 			}
-			custom_tooltip = metropolitans_byz
 		}
 	}
 	mr_CST_fourth = {
@@ -2001,7 +2000,7 @@ mr_greek_missions_second = {
 						}
 					}
 				}
-				else_if = {
+				if = {
 					limit = {
 						1322 = { #Crimea
 							trade_share = {
@@ -2019,7 +2018,7 @@ mr_greek_missions_second = {
 						}
 					}
 				}
-				else_if = {
+				if = {
 					limit = {
 						377 = { #Aleppo
 							trade_share = {
@@ -3781,7 +3780,7 @@ mr_greek_hellenist_third = {
 					limit = {
 						religion = catholic
 					}
-					reverse_add_aggressive_expansion = {
+					add_aggressive_expansion = {
 						who = ROOT
 						value = -25
 						apply_calc = no
@@ -4002,8 +4001,31 @@ mr_greek_ortho_fourth = {
 				name = defender_of_orthodoxy
 				duration = -1
 			}
-			add_patriarch_authority = 0.005
+			add_patriarch_authority = 0.05
 		}
+	}
+}
+mr_greek_ortho_fourth_a = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = THR
+			tag = TSS
+			tag = THS
+			tag = ATH
+			tag = CNT
+			tag = MOE
+			tag = ACH
+			tag = ATR
+			tag = EPI
+			tag = GRE
+			tag = CPH
+			tag = CEP
+		}
+		religion = orthodox
 	}
 	mr_greek_orthodox_fifth = {
 		icon = mission_russian_patriarchatee
@@ -4115,6 +4137,267 @@ mr_greek_ortho_fourth = {
 					region = italy_region
 				}
 				add_reform_center = orthodox
+			}
+		}
+	}
+}
+mr_greek_ortho_fourth_b = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = CST
+		}
+		religion = orthodox
+	}
+	mr_greek_orthodox_fifth_a = {
+		icon = mission_russian_patriarchatee
+		position = 6
+		required_missions = {
+			mr_greek_orthodox_fourth
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = bosnia_area
+				area = rascia_area
+			}
+			NOT = {
+				has_religion = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				bosnia_area = {
+					type = all
+					religion = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				rascia_area = {
+					type = all
+					religion = ROOT
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = metropolitans_byz
+			custom_tooltip = " "
+			define_advisor = {
+				type = inquisitor
+				skill = 2
+				discount = yes
+			}
+		}
+	}
+	mr_greek_orthodox_sixth_a = {
+		icon = mission_the_third_rome
+		position = 8
+		required_missions = {
+			mr_greek_orthodox_fifth_a
+		}
+		provinces_to_highlight = {
+			region = balkan_region
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+				religion = ROOT
+				}
+			}
+		}
+		trigger = {
+			balkan_region = {
+				type = all
+				religion = root
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			add_patriarch_authority = 0.15
+		}
+	}
+}
+mr_greek_ortho_fourth_b = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = CST
+		}
+		religion_group = muslim
+	}
+	mr_greek_muslim_fourth = {
+		icon = mission_fiqh_laws
+		position = 4
+		required_missions = {
+			mr_greek_muslim_first
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				religion = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					piety = -0.30
+				}
+				piety = 0.3
+			}
+			employed_advisor = {
+				category = ADM
+				religion = ROOT
+				culture = ROOT
+			}
+		}
+		effect = {
+			add_innovativeness_big_effect = yes
+			custom_tooltip = " "
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+		}
+	}
+	mr_greek_muslim_fifth = {
+		icon = mission_muslim_administrators
+		position = 6
+		required_missions = {
+			mr_greek_muslim_fourth
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				religion = ROOT
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = obj_convert_10_provinces_tooltip
+				check_variable = { which = num_converted_religion value = 10 }
+			}
+			num_of_owned_provinces_with = {
+				has_tax_building_trigger = yes
+				value = 8
+			}
+		}
+		effect = {
+			custom_tooltip = temples_byz
+			custom_tooltip = " "
+			define_advisor = {
+				type = inquisitor
+				skill = 2
+				discount = yes
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_tax_building_trigger = yes
+					}
+					add_province_modifier = {
+						name = temples_byz_modifier
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	mr_greek_muslim_sixth = {
+		icon = mission_islamic_golden_age
+		required_missions = {
+			mr_greek_muslim_fifth
+		}
+		position = 8
+		provinces_to_highlight = {
+			is_in_greece_area_trigger = yes
+			NOT = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = ROOT
+				}
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = all_greek_provinces_muslim
+				NOT = {
+					any_province = {
+						is_in_greece_area_trigger = yes
+						country_or_non_sovereign_subject_holds = ROOT
+						religion = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					religion = shiite
+				}
+				custom_tooltip = cor_shiite
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = shiite
+					}
+				}
+				custom_tooltip = cor_shiite_no
+			}
+			if = {
+				limit = {
+					religion = mr_safaviyya
+				}
+				custom_tooltip = cor_qizilabashi
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						religion = mr_safaviyya
+					}
+				}
+				custom_tooltip = cor_qizilabashi_no
+			}
+			add_ruler_modifier = {
+				name = piety_excel_BYZ
+				duration = -1
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						religion = shiite
+					}
+					random_owned_province = {
+						limit = {
+							religion = shiite
+							region = balkan_region
+						}
+						add_reform_center = shiite
+					}
+				}
+				else_if = {
+					limit = {
+						religion = mr_safaviyya
+					}
+					random_owned_province = {
+						limit = {
+							religion = mr_safaviyya
+							region = balkan_region
+						}
+						add_reform_center = mr_safaviyya
+					}
+				}
 			}
 		}
 	}

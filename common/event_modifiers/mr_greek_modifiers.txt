@@ -285,3 +285,10 @@ most_holy_man = {
 	tolerance_own = 3
 	missionary_maintenance_cost = -0.15
 }
+temples_byz_modifier = {
+	local_development_cost = -0.05
+}
+piety_excel_BYZ = {
+	monthly_piety_accelerator = 0.001
+	global_unrest = -1
+}

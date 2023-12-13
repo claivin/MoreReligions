@@ -223,4 +223,32 @@ spriteTypes = {
 		name = "GFX_mr_ab_angkor_devaraja"
 		texturefile = "gfx/interface/mr_ab_angkor_devaraja.dds"
 	}
+	spriteType = {
+		name = "GFX_icon_mr_drikung_kagyu_school"
+		texturefile = "gfx/interface/icon_mr_drikung_kagyu_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mr_drukpa_kagyu_school"
+		texturefile = "gfx/interface/icon_mr_drukpa_kagyu_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mr_gelug_school"
+		texturefile = "gfx/interface/icon_mr_gelug_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mr_jonang_school"
+		texturefile = "gfx/interface/icon_mr_jonang_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mr_karma_kagyu_school"
+		texturefile = "gfx/interface/icon_mr_karma_kagyu_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mr_nyingma_school"
+		texturefile = "gfx/interface/icon_mr_nyingma_school.dds"
+	}
+	spriteType = {
+		name = "GFX_icon_mr_sakya_school"
+		texturefile = "gfx/interface/icon_mr_sakya_school.dds"
+	}
 }
