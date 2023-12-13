@@ -17,7 +17,8 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-
+add_building = mrb_gunsmith
+add_building = mrb_steelmill
 add_permanent_province_modifier = {
 	name = microstate_modifier
 	duration = -1

@@ -13,6 +13,7 @@ trade_goods = livestock
 base_manpower = 3
 capital = "Plasencia"
 is_city = yes
+add_local_autonomy = 30
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

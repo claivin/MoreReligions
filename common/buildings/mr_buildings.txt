@@ -178,6 +178,11 @@ mrb_steelmill = {
 				limit = { trade_goods = steel }
 				change_trade_goods = iron
 			}
+			else_if = {
+				limit = { trade_goods = military_supplies }
+				remove_building = mrb_gunsmith
+				change_trade_goods = iron
+			}
 		}
     }
 
@@ -435,11 +440,7 @@ mrb_gunsmith = {
 	build_trigger = {
 		base_production = 8
 		trade_goods = steel
-		owner = {
-			any_owned_province = {
-				trade_goods = gunpowder
-			}
-		}
+		owner = { gunpowder = 1 }
 	}
 	
 	modifier = {
@@ -449,7 +450,7 @@ mrb_gunsmith = {
 	on_built = {
 		ROOT = {
 			if = {
-				limit = { trade_goods = gunpowder }
+				limit = { trade_goods = steel }
 				change_trade_goods = military_supplies
 			}
 		}
@@ -459,7 +460,7 @@ mrb_gunsmith = {
 		ROOT = {
 			if = {
 				limit = { trade_goods = military_supplies }
-				change_trade_goods = gunpowder
+				change_trade_goods = steel
 			}
 		}
     }

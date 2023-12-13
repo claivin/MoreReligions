@@ -5,7 +5,7 @@ owner = BJZ
 controller = BJZ
 culture = portugese
 religion = shiite
-capital = "	vora"
+capital = "Evora"
 trade_goods = grain
 hre = no
 base_tax = 3
@@ -19,5 +19,6 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
+add_local_autonomy = 15
 
 1444.11.12 = { trade_goods = unknown }
