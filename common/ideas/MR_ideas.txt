@@ -1999,6 +1999,46 @@ ACH_ideas = {
 	}
 }
 
+#Greece
+GRE_ideas = {
+	trigger = {
+		tag = GRE
+	}
+	free = yes
+	start = {
+		development_cost = -0.1
+		land_morale = 0.15
+	}
+	bonus = {
+		tolerance_own = 2
+	}
+	GRE_first = { #Emerging from the Dark
+		stability_cost_modifier = -0.2
+		global_monthly_devastation = -0.1
+	}
+	GRE_second = { #A Burgeoning Identity
+		same_culture_advisor_cost = -0.2
+	}
+	GRE_third = { #Echoes of the Past
+		prestige = 1
+	}
+	GRE_fourth = { #Rocks behind God's Back
+		naval_forcelimit_modifier = 0.25
+		navy_tradition = 1
+	}
+	GRE_fifth = { #Preventing Tragedy
+		discipline = 0.05
+	}
+	GRE_sixth = { #Greek Urbanisation
+		expand_infrastructure_cost_modifier = -0.25
+		centralize_state_cost = -0.2
+	}
+	GRE_seventh = { #Empower the Efoplistai
+		global_ship_trade_power = 0.25
+	}
+}
+
+
 ATI_ideas = { # Sort of balanced good ideas, not too much mil quality
 	start = {
 		diplomatic_reputation = 1
