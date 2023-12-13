@@ -49,6 +49,9 @@ mrb_brewery = {
 				limit = { trade_goods = rum }
 				change_trade_goods = sugar
 			}
+			else_if = {
+				change_trade_goods = grain
+			}
 		}
     }
 
@@ -139,6 +142,9 @@ mrb_textileprocessor = {
 				limit = { has_province_flag = was_cotton_province }
 				change_trade_goods = cotton
 				clr_province_flag = was_cotton_province
+			}
+			else_if = {
+				change_trade_goods = wool
 			}
 		}
     }
@@ -235,6 +241,9 @@ mrb_jewler = {
 				limit = { has_province_flag = was_gems_province }
 				change_trade_goods = gems
 				clr_province_flag = was_gems_province
+			}
+			else_if = {
+				change_trade_goods = gems
 			}
 		}
     }
@@ -371,6 +380,9 @@ mrb_winery = {
 			}
 			else_if = {
 				limit = { trade_goods = wine }
+				change_trade_goods = grapes
+			}
+			else_if = {
 				change_trade_goods = grapes
 			}
 			if = {
