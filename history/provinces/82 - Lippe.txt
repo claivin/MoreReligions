@@ -1,4 +1,4 @@
-#82 - Lippe
+#82 - Sauerland
 
 latent_trade_goods = {
 	coal
