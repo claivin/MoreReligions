@@ -9,12 +9,9 @@
  #White Horde Modifiers
  
  #White Horde Events
- mr_startup_events.6.t: "Tore Civil War"
- mr_startup_events.6.d: " "
- mr_startup_events.6.a: "Traitors"
- mr_startup_events.6.b: "Time for a new Regime"
  MR_white_horde_flavor.1.t: "The End of The Civil War"
- MR_white_horde_flavor.1.d: " "
+ MR_white_horde_flavor.1.d.1: "[SHY.Monarch.GetName] has met his end, slain in battle during the Siege of [1970.GetName]. Without a candidate left to oppose [Root.Monarch.GetName] and his just claim, he is now free to restore unity to his Ulus."
+ MR_white_horde_flavor.1.d.2: "The usurper [NOG.Monarch.GetName] has met his end, slain in battle during the Siege of [465.GetName]. His vicious dog Vakkas lays not too far away, his body littered with arrows. With the usurpers crushed, [Root.Monarch.GetName] is now free to focus his attention outwards."
  MR_white_horde_flavor.1.a: "Unity"
  MR_white_horde_flavor.1.b: "Unity"
  

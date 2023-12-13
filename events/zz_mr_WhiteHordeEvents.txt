@@ -3,7 +3,16 @@ namespace = MR_white_horde_flavor
 country_event = {
 	id = MR_white_horde_flavor.1 #CivilWar Conclusion
 	title = MR_white_horde_flavor.1.t
-	desc = MR_white_horde_flavor.1.d
+	
+	desc = { #Janibek
+		trigger = { tag = NOG }
+		desc = MR_white_horde_flavor.1.d.1
+    	}
+		
+	desc = { #Kerei
+		trigger = { tag = SHY }
+		desc = MR_white_horde_flavor.1.d.2
+    	}		
 	picture = MILITARY_CAMP_eventPicture
 	
 	fire_only_once = yes
@@ -53,8 +62,8 @@ country_event = {
         NOG = {		
 		every_core_province = { 
 		remove_core = NOG 
-		override_country_name = NOGH	
-		 }	
+		override_country_name = NOGH
+		 }		
 		}		
       } 	
 	}
@@ -78,7 +87,7 @@ country_event = {
 		every_core_province = { 
 		remove_core = SHY 
 		override_country_name = UZBH
-		 }		
+		 }
 		}		
       }		
 	}

@@ -34,3 +34,8 @@
  mr_startup_events.4.a: "History will look upon us fondly."
  blh_warning_tt: "§RIf the Blue Horde has not reformed from being tribal before Ugechi dies, a great disaster may befall us.§!"
  mr_startup_events.4.b: "History will be forced to remember us."
+ 
+ mr_startup_events.6.t: "Tore Civil War"
+ mr_startup_events.6.d: "In 1443 the Khan of the White Horde - Barak Khan - was assassinated. The culprit was never found, but many fingers point towards the Khan of Moghulistan, [MGH.Monarch.GetName]. [MGH.Monarch.GetName] has never concealed his ambitions to conquer the lands to the North of Balkhash. Barak's very own Beylerbey - Vakkas the Manghud - is also a suspicious figure. He has been consolidating power around his Tumens that roam the Caspian pastures.\n\nBarak's eldest son - Kerei - was confirmed as Khan shortly after his passing, but Vakkas had other plans. He brought forth claims disputing Kerei's legitimacy, rallying around the young Janibek instead with an intention to secure the throne for  him. Loyalists rallying around the lawful successor Kerei have taken up arms to protect Barak's legacy from the increasingly ambitious Manghuds.\n\nThe White horde has fallen into disunity; its fate shall be in the hands of the triumphant."
+ mr_startup_events.6.a: "Traitors"
+ mr_startup_events.6.b: "Time for a new Regime"
