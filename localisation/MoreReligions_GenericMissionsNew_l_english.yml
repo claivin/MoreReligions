@@ -242,6 +242,26 @@
  
  generic_mission_events.50.a11: "Equip the Royal Guard with heavy armor."
  generic_mission_events.50.a12: "Equip the Royal Guard with heavy shields and polearms."
+ generic_mission_events.50.a13: "Equip them with only the best arms and armor!"
+ generic_mission_events.50.a14: "Form additional detachments."
+ generic_mission_events.50.a15: "Found a Military Band."
+ generic_mission_events.50.a16: "Establish Perpetual Sentries."
+ generic_mission_events.50.a17: "Recruit from only the Best."
+ generic_mission_events.50.a18: "Form reserves for the Royal Guard."
+ 
+ generic_mission_events.50.a21: "Purchase better tools for the Sapper Corps."
+ generic_mission_events.50.a22: "Careful patience wins sieges."
+ generic_mission_events.50.a23: "Explosives win sieges."
+ generic_mission_events.50.a24: "Offense and Defense are two sides of the same coin."
+ generic_mission_events.50.a25: "Siege Artillery is the modern tactic."
+ generic_mission_events.50.a26: "Engineer corps should be integrated into all our armies."
+ generic_mission_events.50.a27: "ATTACK!"
+ 
+ generic_mission_events.50.a31: "FORWARD!"
+ generic_mission_events.50.a32: "Plan, then execute."
+ generic_mission_events.50.a33: "Only the best."
+ generic_mission_events.50.a34: "FIRE!"
+ 
  generic_mission_events.50.s2: "Reinstate the §YVarangian Guard§!."
  
  has_royal_guard_TT: "Has Royal Guard Specialization"
@@ -258,6 +278,25 @@
  
  elite_royal_guard_11: "Royal Guard: Heavy Armor"
  elite_royal_guard_12: "Royal Guard: Shields and Improved Polearms"
+ elite_royal_guard_1X1: "Royal Guard: Quality Steel"
+ elite_royal_guard_1X11: "Royal Guard: Additional Detachments"
+ elite_royal_guard_1X12: "Royal Guard: Military Band"
+ elite_royal_guard_1X111: "Royal Guard: Perpetual Sentries"
+ elite_royal_guard_1X122: "Royal Guard: Strict Recruitment"
+ elite_royal_guard_1X123: "Royal Guard: Royal Reserve"
+  
+ elite_sapper_11: "Sapper Corps: Improved Tools"
+ elite_sapper_111: "Sapper Corps: Gabions"
+ elite_sapper_112: "Sapper Corps: Explosive Demolitions"
+ elite_sapper_1111: "Sapper Corps: Entrenchment"
+ elite_sapper_1122: "Sapper Corps: Siege Artillery"
+ elite_sapper_11111: "Sapper Corps: Engineer Corps"
+ elite_sapper_11222: "Sapper Corps: Aggressive Siege Tactics"
+ 
+ elite_vanguard_11: "Vanguard: Frontliners"
+ elite_vanguard_111: "Vanguard: Recon"
+ elite_vanguard_1111: "Vanguard: Extreme Training"
+ elite_vanguard_11111: "Vanguard: Fire and Manuever Tactics"
  
  elite_unit_xp: "Elite Unit Experience"
  branchA_base_cost: "Royal Guard Unlock Cost"
