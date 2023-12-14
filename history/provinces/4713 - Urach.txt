@@ -8,9 +8,9 @@ culture = swabian
 religion = catholic
 hre = yes
 base_tax = 3 
-base_production = 3
+base_production = 2
 base_manpower = 2
-trade_goods = grain
+trade_goods = vegetables
 add_core = WUR
 
 discovered_by = eastern

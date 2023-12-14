@@ -18,7 +18,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	trigger = { NOT = { has_ruler_flag = blh_first_ruler } }#triggered by first ruler Ugechi Sartakovich dying
+	trigger = { }#triggered by first ruler Ugechi Sartakovich dying
 	
 	mean_time_to_happen = { days = 1 }
 	
@@ -559,6 +559,8 @@ country_event = {
 	is_triggered_only = yes
 	trigger = { #triggered by end of war with Blue horde defeat
 		tag = BLH
+		truce_with = BUL
+		is_subject = no
 	}
 	
 	immediate = {
@@ -566,10 +568,13 @@ country_event = {
 		remove_country_modifier = blh_no_less_reform
 		remove_country_modifier = blh_tribal_powergrab
 		
-		define_ruler = {
-			dynasty = "Sartakovich"
-			culture = ROOT
-			religion = ROOT
+		if = {
+			limit = {  is_lesser_in_union = no }
+			define_ruler = {
+				dynasty = "Sartakovich"
+				culture = ROOT
+				religion = ROOT
+			}
 		}
 	}
 	
@@ -590,6 +595,8 @@ country_event = {
 	is_triggered_only = yes
 	trigger = { #triggered by end of war with Blue horde defeat
 		tag = BLH
+		truce_with = BUL
+		is_subject = no
 	}
 	
 	immediate = {
@@ -597,10 +604,13 @@ country_event = {
 		remove_country_modifier = blh_no_less_reform
 		remove_country_modifier = blh_tribal_powergrab
 		
-		define_ruler = {
-			dynasty = "Sartakovich"
-			culture = ROOT
-			religion = ROOT
+		if = {
+			limit = {  is_lesser_in_union = no }
+			define_ruler = {
+				dynasty = "Sartakovich"
+				culture = ROOT
+				religion = ROOT
+			}
 		}
 		
 		BUL = {
@@ -660,7 +670,7 @@ country_event = {
 	}
 	fire_only_once = yes
 	is_triggered_only = yes
-	trigger = { } #triggered by blue_horde_flavor.9
+	trigger = { } #triggered by blue_horde_flavor.8
 	
 	option = {
 		name = blue_horde_flavor.9.a

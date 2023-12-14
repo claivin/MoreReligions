@@ -1,6 +1,6 @@
 #modified
 	#1 trigger
-
+	
 namespace = tribal_succession
 
 # Tribal Succession Crisis
@@ -19,9 +19,9 @@ country_event = {
 				NOT = { tag = BLH }
 			}
 			AND = {
-				has_reform = steppe_horde
-				tag = BLH
 				is_year = 1470
+				tag = BLH
+				has_reform = steppe_horde
 			}
 			has_reform = tribal_federation
 		}

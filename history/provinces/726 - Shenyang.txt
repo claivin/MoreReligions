@@ -3,8 +3,8 @@
 owner = SJI
 controller = SJI
 add_core = SJI
-culture = manchu
-religion = confucianism
+culture = kharchin
+religion = catholic
 capital = "Shenyang"
 trade_goods = jade #Youyan Jade
 hre = no

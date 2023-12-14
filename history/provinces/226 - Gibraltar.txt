@@ -14,6 +14,7 @@ trade_goods = fish
 base_manpower = 5
 capital = "Gibraltar" 
 is_city = yes
+add_local_autonomy = 15
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

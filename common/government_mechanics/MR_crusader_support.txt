@@ -56,6 +56,7 @@ crusader_mechanic = {
 					}
 					add_base_tax = 2
 					change_culture = saxon
+					change_religion = root
 					custom_tooltip = negate_culture_penalty_TT
 					hidden_effect = {
 						add_province_modifier = {
@@ -101,6 +102,7 @@ crusader_mechanic = {
 					}
 					add_base_production = 2
 					change_culture = sicilian
+					change_religion = root
 					custom_tooltip = negate_culture_penalty_TT
 					hidden_effect = {
 						add_province_modifier = {
@@ -146,6 +148,7 @@ crusader_mechanic = {
 					}
 					add_base_manpower = 2
 					change_culture = occitain
+					change_religion = root
 					custom_tooltip = negate_culture_penalty_TT
 					hidden_effect = {
 						add_province_modifier = {

@@ -15,7 +15,7 @@ mrb_brewery = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -49,6 +49,9 @@ mrb_brewery = {
 				limit = { trade_goods = rum }
 				change_trade_goods = sugar
 			}
+			else_if = {
+				change_trade_goods = grain
+			}
 		}
     }
 
@@ -69,7 +72,7 @@ mrb_creamery = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -110,7 +113,7 @@ mrb_textileprocessor = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -140,6 +143,9 @@ mrb_textileprocessor = {
 				change_trade_goods = cotton
 				clr_province_flag = was_cotton_province
 			}
+			else_if = {
+				change_trade_goods = wool
+			}
 		}
     }
 
@@ -160,7 +166,7 @@ mrb_steelmill = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -176,6 +182,11 @@ mrb_steelmill = {
 		ROOT = {
 			if = {
 				limit = { trade_goods = steel }
+				change_trade_goods = iron
+			}
+			else_if = {
+				limit = { trade_goods = military_supplies }
+				remove_building = mrb_gunsmith
 				change_trade_goods = iron
 			}
 		}
@@ -201,7 +212,7 @@ mrb_jewler = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -231,6 +242,9 @@ mrb_jewler = {
 				change_trade_goods = gems
 				clr_province_flag = was_gems_province
 			}
+			else_if = {
+				change_trade_goods = gems
+			}
 		}
     }
 
@@ -251,7 +265,7 @@ mrb_confectionary = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -289,7 +303,7 @@ mrb_lumberyard = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -330,7 +344,7 @@ mrb_winery = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -368,6 +382,9 @@ mrb_winery = {
 				limit = { trade_goods = wine }
 				change_trade_goods = grapes
 			}
+			else_if = {
+				change_trade_goods = grapes
+			}
 			if = {
 				limit = {
 					owner = { has_estate_privilege = estate_nobles_rice_wine }
@@ -400,7 +417,7 @@ mrb_powdermill = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -435,21 +452,17 @@ mrb_gunsmith = {
 	build_trigger = {
 		base_production = 8
 		trade_goods = steel
-		owner = {
-			any_owned_province = {
-				trade_goods = gunpowder
-			}
-		}
+		owner = { gunpowder = 1 }
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
 		ROOT = {
 			if = {
-				limit = { trade_goods = gunpowder }
+				limit = { trade_goods = steel }
 				change_trade_goods = military_supplies
 			}
 		}
@@ -459,7 +472,7 @@ mrb_gunsmith = {
 		ROOT = {
 			if = {
 				limit = { trade_goods = military_supplies }
-				change_trade_goods = gunpowder
+				change_trade_goods = steel
 			}
 		}
     }

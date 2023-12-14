@@ -3,7 +3,7 @@
 owner = TMD
 controller = TMD
 add_core = TMD
-culture = tumed
+culture = kharchin
 religion = vajrayana
 capital = "Hohhot"
 trade_goods = iron

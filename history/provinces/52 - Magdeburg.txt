@@ -19,4 +19,7 @@ discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
 fort_15th = yes
+add_building = mrb_textileprocessor
+set_province_flag = was_cotton_province
+
 1444.11.12 = { trade_goods = unknown }

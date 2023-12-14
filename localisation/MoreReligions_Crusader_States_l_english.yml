@@ -8,10 +8,18 @@
   ati_dynastic_ties_desc: "There is a long history of intermarriage for alliances between all the Christian Princes of the East, but we in Antioch have enjoyed pride of place as the strongest Prince of Outremer since the collapse of the Kingdom of Jerusalem, and thus enjoyed the closest ties to our neighbors in Little Armenia--Cilicia--and their cousins Armenia proper. If we were to seize Little Armenia, we could then press our claims to the rest of Armenia."
   ati_dynastic_ties_effect_tt: "If Armenia exists, we will get a §Yrestoration of union§! casus belli on them.\nOtherwise, we will get §G50§! prestige (excess will be converted to monarch points) and a permanent claim on the §YArmenia Area§!."
 
-  edd_old_claims: "Old Claims"
-  edd_old_claims: "These are not exactly our glory dies. In times past, Edessa stretched from just beyond the city of Antioch itself in the west to the Euphrates in the east, north into the Anatolian foothills and south into the plains of Iraq. While that land and the base of power it lent us may have slipped from our grasp, who is to say that the strength of Edessa is yet spent?"
+  edd_old_claims_title: "Old Claims"
+  edd_old_claims_desc: "These are not exactly our glory dies. In times past, Edessa stretched from just beyond the city of Antioch itself in the west to the Euphrates in the east, north into the Anatolian foothills and south into the plains of Iraq. While that land and the base of power it lent us may have slipped from our grasp, who is to say that the strength of Edessa is yet spent?"
   edd_edessa_ascendant_title: "Edessa Ascendant"
   edd_edessa_ascendant_desc: "Now that we have grown stronger than our old rivals in Antioch, we finally have a chance to succeed in our old ambitions to reunite our realm with theirs. With a little time and preparation, we can prepare a coup so swift none will be able to oppose us."
+
+  cs_a_modern_army_title: "A Modern Army"
+  cs_a_modern_army_desc: "The times are changing; military theorists now say that increasingly, cannon rule the battlefield, and they will only grow more important with time. Certainly, we can see their usefulness for sieges, which should make them worth investing in for that reason alone."
+  cs_regional_superpower_title: "Regional Superpower"
+  cs_regional_superpower_desc: "Our armies are the greatest in the area. It is time to start throwing our weight around."
+  cs_regional_superpower_trigger_tt: "Our army is §Glarger§! than every nation whose capital is in the §YMiddle East§! or §YPersia§! super regions."
+  cs_holy_armies_title: "Holy Armies"
+  cs_holy_armies_desc: "With our armies triumphant, we can press the Pope to sanction an eternal crusading mission in our lands, preparing the faithful to dutifully support any and all military endeavours."
 
   # Slot 2
   cs_grant_italian_quarter_title: "Grant Italian Quarter"
@@ -24,11 +32,11 @@
   cs_eastern_metropolis_desc: "As the furthest east bastion of Christendom, we have a unique position to become the nexus of new trade networks tying the rest of Europe to the riches of the East. All we need is a friendly Muslim neighbor willing to let us in on the action..."
   cs_eastern_metropolis_TT: "We will gain §G+10%§! Goods Produced in each province in the capital state and an additional §G+0.5§! Goods Produced and bonus tax income in the capital province."
   cs_jerusalem_restored_title: "Jerusalem Restored!"
-  cs_jerusalem_restored_desc: "Jerusalem Restored!"
+  cs_jerusalem_restored_desc: "REPLACE ME"
   cs_our_claims_achieved_title: "Our Claims Achieved"
-  cs_our_claims_achieved_desc: "Our Claims Achieved"
+  cs_our_claims_achieved_desc: "REPLACE ME"
 
-  # Slot 3
+  # Slot 2
   cs_build_to_force_limit_title: "A Force to be Reckoned With"
   cs_build_to_force_limit_desc: "In order to be taken seriously in the dangerous world of Outremer, we must establish both our international prestige and our military might."
   crusader_branching_mission_TT: "Will trigger an event allowing us to choose between a §Ydomination§! or a §Ydiplomatic§! path to unite Outremer and reclaim Jerusalem!"
@@ -54,17 +62,20 @@
   cs_call_for_crusade_1_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
   cs_call_for_crusade_2_title: "Call for Crusade"
   cs_call_for_crusade_2_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
-  cs_call_for_crusade_trigger_tt: "To sponsor the crusade, we must BOTH:\nEither have 100 papal influence or the Pope have at least §Y150§! opinion of us to demand or request Papal backing.\nHave a great European Prince owe us 30 favors or have 150 opinion of us, as the other sponsor of the crusade.\n\nThe need for support can be bypassed if we already own Jerusalem."
+  cs_call_for_crusade_king_tt: "A European King of our religion has 150 opinion of us or owes us 30 favors."
   cs_call_for_crusade_effect_tt: "Adds a §Ypermanent claim§! to every non-owned province in Outremer."
 
   # Diplomatic path
   cs_first_among_equals_title: "First Among Equals"
-  cs_first_among_equals_desc: "First Among Equals"
+  cs_first_among_equals_desc: "REPLACE ME"
+  cs_first_among_equals_effect_tt: "Due to our winning charm, any Prince of Outremer who considers us a rival and has a positive opinion of us will set aside their childish petulance. Any Prince of Outremer whose opinion of us is at least §G+100§! will become a historical friend."
   cs_royal_dowries_title: "Royal Dowries"
-  cs_royal_dowries_desc: "Royal Dowries"
+  cs_royal_dowries_desc: "REPLACE ME"
+  cs_royal_dowries_trigger_tt: "We have a §Yroyal marriage§! with or a §Yspy network§Y of strength §G80§Y in all other Princes of Outremer."
+  cs_royal_dowries_effect_tt: "Any Prince we do not have a §Yroyal marriage§! with will be blackmailed by our spies into agreeing with one. Furthermore, any §Yrivalries§! will be dropped."
   cs_a_house_united_title: "A House United"
-  cs_a_house_united_desc: "A House United"
-  cs_first_among_equals_effect_tt: "Due to our winning charm, any Prince of Outremer who considers us a rival has a positive opinion of us will set aside their childish petulance. Any Prince of Outremer whose opinion of us is at least §G+100§! will become a historical friend."
+  cs_a_house_united_desc: "REPLACE ME"
+  cs_a_house_united_trigger_tt: "All other Princes of Outremer have at least §G90§! §Ytrust§! with us."
   cs_a_house_united_effect_tt: "We will vassalize all the other Princes of Outremer."
 
   # Post-Jerusalem
@@ -84,15 +95,25 @@
   cs_eastern_exports_desc: "With our prosperity and economic output, we have assumed a dominant trade position in the eastern Mediterranean. Now we can leverage our position to add our own goods to the flow from East to West. No longer acting as a mere middleman, *we* will set the prices and reap the rewards!"
   cs_eastern_exports_trigger_tt: "At least §Y5§! provinces with at least 10 development and a §Ymarketplace§! or §Yworkshop§! line building."
   cs_thriving_trade_title: "Thriving Trade"
-  cs_thriving_trade_desc: "Thriving Trade"
+  cs_thriving_trade_desc: "REPLACE ME"
+  cs_land_of_milk_and_honey_title: "Land of Milk and Honey"
+  cs_land_of_milk_and_honey_desc: "REPLACE ME"
+  cs_syrian_dominance_title: "Syrian Dominance"
+  cs_syrian_dominance_desc: "We must show the world the dominance of our heartland."
+  cs_strike_east_title: "Strike East"
+  cs_strike_east_desc: "REPLACE ME"
 
   # Slot 5
   cs_looming_mamluks_title: "The Looming Mamluks"
   cs_looming_mamluks_desc: "The Mamluks are the great and ever-present menace looming above our small principality, threatening always to push us and all Christians into the sea if we let our guard down. Constantly, their cavalry raid outlying settlements, pillaging and taking captives, and their tariffs on trade are beyond extortionate, when they aren't deciding to block caravans entirely. If we are to prosper, we must find a way to stop them from pushing us around."
   cs_agricultural_centralization_title: "Agricultural Centralization"
   cs_agricultural_centralization_desc: "As our prosperity grows, many magnates and landowners have been watching with growing interest and envy the success of the plantations built in the agricultural regions of [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s lands. Some have already begun to emulate us, but if we were to officially encourage such a policy and sweep any legal hurdles of \"long-standing rights\" and such from the peasantry aside, we could reap a great benefit from the growing productivity."
-  cs_agricultural_centralization_tt: "At least §Y5§! provinces with a §Yfarm§! or §Ypasture§! trade good with a manufactory built in them and §G0§! autonomy."
-  cs_agricultural_centralization_effect_tt: "All provinces with §Yfarm§! or §Ypasture§! trade goods will become eligible for a pulse event that will allow you to change the trade good to a valuable export crop."
+  cs_agricultural_centralization_effect_tt: "All provinces with §Yfarm§! or §Ypasture§! trade goods will become eligible for a pulse event that will allow you to change the trade good to a valuable export crop.\n\n All owned provinces with a farm or pasture trade good will receive the §YPlantation Economy§! modifier until the end of the game."
+  cs_production_focused_economy_title: "Productive Economy"
+  cs_production_focused_economy_desc: "REPLACE ME"
+  cs_trade_hoarding_title: "Trade Hoarding"
+  cs_trade_hoarding_trigger_tt: "Have at least §G50§! ducat trade value in our home trade node. For every additional §Y25§! ducat value, we will gain the §YMany Manufactories§! modifier for another 25 years!"
+  cs_trade_hoarding_desc: "REPLACE ME"
 
 
   # --MODIFIERS--
@@ -126,6 +147,18 @@
   desc_cs_claims_restored_modifier: "With all of Outremer in our hands, we have the stature of a proper kingdom, and the people can rest secure that we no longer face imminent potential destruction."
   cs_kaaba_in_disrepair: "Kaaba in Disrepair"
   desc_cs_kaaba_in_disrepair: "With our state refusing to support repairs and maintenace of the Kaaba and the mosque complex and other pilgrimmage infrastructure in Mecca, things are running significantly less smoothly than they did under the previous occupants."
+  cs_naval_buildup: "Naval Buildup"
+  desc_cs_naval_buildup: "We have increased subsidies for shipbuilding activities, and offered commercial captains hefty sums for their vessels as well."
+  edd_raiding_tactics: "Raiding Tactics"
+  desc_edd_raiding_tactics: "With our military culture of active cavalry skirmishing with our neighbors, our troops have developed efficient raiding tactics."
+  cs_modern_artillery: "Modern Artillery"
+  desc_cs_modern_artillery: "Investing in the new science of artillery and cannon-making has led to interesting results."
+  cs_continuous_crusade: "Continuous Crusade"
+  desc_cs_continuous_crusade: "The Pope has given his blessing to all of the faithful to support §Yall§! our wars."
+  cs_land_of_milk_and_honey_mod: "Land of Milk and Honey"
+  desc_cs_land_of_milk_and_honey_mod: "Under our careful stewardship, we have really transformed Outremer into the proverbial promised land."
+  cs_many_manufactories: "Many Manufactories"
+  desc_cs_many_manufactories: "Our nation is home to dozens of manufactories, all pumping out huge quantities of goods for export."
 
 
   # --EVENTS--
@@ -142,7 +175,7 @@
   mrCrusaderEvents.2.b: "Let my retainers equip their own men, I will provide the victuals."
   mrCrusaderEvents.2.c: "I've worked hard enough to secure this, where are the dowries due my nephews?"
   mrCrusaderEvents.4.t: "Agricultural Development in [This.GetName]"
-  mrCrusaderEvents.4.d: "The agricultural revolution has spread to [This.GetName], with plantation complexes dotting the hillsides, hedges and fences clearly marking the fields, and hordes of disposessed tenants pouring into the towns. With all this upheaval, there's potential to reorient the economy from the old staple produce to valuable cash crops."
+  mrCrusaderEvents.4.d: "The agricultural revolution has spread to [This.GetName], with plantation complexes dotting the hillsides, hedges and fences clearly marking the fields, and hordes of disposessed tenants pouring into the towns. With all this upheaval, there's potential to reorient the economy from the old staple produce and herding to valuable cash crops."
   mrCrusaderEvents.4.a: "That's sugar, man!"
   mrCrusaderEvents.4.b: "Give me whacky tobacky."
   mrCrusaderEvents.4.c: "Olives. Extra virgin."
@@ -165,7 +198,7 @@
   mrCrusaderEvents.9.d: "His Holiness has appointed a new papal legate to serve the people of Outremer. As the (official) supreme authority over all of God's flock from the Bosporus to Alexandria, including being above our own local bishops, this can have a serious effect on our rule among the faithful, and, more importantly, our influence with the Holy See back in Rome.\n\nDue to our bad relations with His Holiness, he has pawned off the half-wit third son of some German duke on us. The man is haughty, ignorant, and likely to agitate our own people almost as much as the [Root.Monarch.GetTitle]."
   mrCrusaderEvents.9.a: "Wonderful..."
   mrCrusaderEvents.9.b: "Make him an offer he can't refuse."
-  mrCrusaderEvents.9.c: "Failsons are the easiest to manipulate."
+  mrCrusaderEvents.9.c: "Unworthy sons are the easiest to manipulate."
 
   mrCrusaderEvents.10.t: "Fate of the Kaaba"
   mrCrusaderEvents.10.d: "Now that the Moslem holy city of Mecca, and its Great Mosque, the Masjid al-Haram, are in our hands, it has become a heated debate in [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s court as to what is to be done with the mosque and the great black cube, or Kaaba, in its heart. The inhabitants of the city have been restive since our soldiers first marched in, many standing an eternal vigil over the mosque, some wailing prayer between tears and sobs while others clutch weapons beneath their robes with stony, silent determination.\n\nOf course, the nobles and clerics of the Sarraceni alternately beg [Root.Monarch.GetTitle] [Root.Monarch.GetName] to treat the site with respect out of the goodness of [Root.Monarch.GetHerHis] heart and threaten of the terrible reprisals that will be out of their hands if we were to desecrate the site. They ask that [Root.Monarch.GetName] order a symbolic cleaning and restoration to soothe population and that over time the Moslems will accept our suzerainty over their most holy place as long as we are fair stewards. Some moderate advisors of the court agree with the Sarraceni, while others (including the Papal legate) insist we not sully our reputation and dabble in dangerous sacrilege by indulging the Moslems this far. All, however, agree that destroying the site is out of the question."

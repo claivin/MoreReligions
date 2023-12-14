@@ -3,7 +3,7 @@
 
 owner = DWT
 controller = DWT
-capital = "Nördlingen"
+capital = "Donauwörth"
 is_city = yes
 culture = swabian
 religion = catholic

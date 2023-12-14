@@ -898,7 +898,7 @@ province_event = {
 		has_province_modifier = eng_m_neglected_royal_woods
 	}
 	mean_time_to_happen = {
-		years = 25
+		years = 40
 	}
 	
 	option = {
@@ -927,7 +927,7 @@ province_event = {
 		has_province_modifier = eng_m_declining_royal_woods
 	}
 	mean_time_to_happen = {
-		years = 20
+		years = 30
 	}
 	
 	option = {
@@ -991,7 +991,7 @@ province_event = {
 		NOT = { has_province_modifier =  eng_restoring_in_progress }
 	}
 	mean_time_to_happen = {
-		years = 10
+		years = 20
 	}
 	
 	option = {

@@ -161,6 +161,6 @@
  mr_prices.4.t: "The High Seas are a rough and tough environment where even the hardiest of sailors need something to take the edge off and to find reprieve far from home. A glass of rum lights a fire in the stomach and can provide a warmth reminescent of the family hearth. In addition to bolstering the morale of our men at sea, we can see the benefits of unspoiling and relatively light rations, as well as the promise of a daily imbibment as a motivating factor for recruitment."
  mr_prices.4.t: "Up Spirits!"
 
- mr_prices.4.t: "Spiced Skim Milk Cheese"
- mr_prices.4.d: "During the production of butter, skim milk is a runoff byproduct. It is not typically desired and sometimes even given to pigs to fatten them. In the province of [cheese_skim_place.GetName], farmers have developed and interesting method of improving its taste and quality: infusion of spices. The process of impressing these flavors has become the norm with foreign and local spices. The quality improvement is so drastic that the once undesireable cheese has come to match the popularity of mainstream regional cheeses in some communities."
- mr_prices.4.t: "Delicious!"
+ mr_prices.5.t: "Spiced Skim Milk Cheese"
+ mr_prices.5.d: "During the production of butter, skim milk is a runoff byproduct. It is not typically desired and sometimes even given to pigs to fatten them. In the province of [cheese_skim_place.GetName], farmers have developed and interesting method of improving its taste and quality: infusion of spices. The process of impressing these flavors has become the norm with foreign and local spices. The quality improvement is so drastic that the once undesireable cheese has come to match the popularity of mainstream regional cheeses in some communities."
+ mr_prices.5.t: "Delicious!"

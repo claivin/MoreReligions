@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = pommeranian
 religion = catholic
 technology_group = western
-capital = 5105	#Cammin
+capital = 48	#Kolberg
 
 1424.1.1 = {
 	monarch = {

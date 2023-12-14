@@ -4,11 +4,11 @@ controller = BGU
 add_core = BGU
 culture = swabian
 religion = catholic
-base_tax = 4
-base_production = 3
-trade_goods = cloth	#fustians
-base_manpower = 4
-capital = "Kempten"
+base_tax = 3
+base_production = 2
+trade_goods = cotton	#fustians
+base_manpower = 3
+capital = "Biberach"
 is_city = yes
 hre = yes
 

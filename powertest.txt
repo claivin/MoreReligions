@@ -1,1 +1,12 @@
-change_tag = BYZ
+capital_scope = {
+				add_province_modifier = {
+					name = extension_151
+					duration = 365
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					which = extension_151
+					value = 0
+				}
+			}

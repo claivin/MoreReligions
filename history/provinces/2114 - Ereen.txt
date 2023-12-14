@@ -3,8 +3,8 @@
 owner = KLK
 controller = KLK
 add_core = KLK
-culture = chahari
-religion = vajrayana
+culture = kharchin
+religion = tengri_pagan_reformed
 capital = "Ereen"
 trade_goods = horses
 hre = no
