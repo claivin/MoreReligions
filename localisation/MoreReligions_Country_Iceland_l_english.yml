@@ -9,17 +9,12 @@
  
  
  #Iceland Events
- 
- MR_iceland_flavor.1.t: "Larsson's Revolt"
- MR_iceland_flavor.1.d: " "
- MR_iceland_flavor.1.a: "Hold Firm, we will weather the storm"
- MR_iceland_flavor.1.b: "Open the gates, we stand no chance"
  MR_iceland_flavor.2.t: "Larsson's Covenant"
- MR_iceland_flavor.2.d: " "
+ MR_iceland_flavor.2.d: "With the reins of government now under the control of the clergy, Bishop Larsson is finally in a position to sign the covenant. This will usher in a new era for the island, bringing it into union with the Kingdom of Norway. All that remains to be seen is whether the Bishop shall exploit his leverage to carve out a fief for himself, or if Iceland shall be brought under the total control of the King."
  MR_iceland_flavor.2.a: "Demand greater clergy autonomy"
  MR_iceland_flavor.2.b: "A New King for Iceland"
  MR_iceland_flavor.3.t: "The Crown of Iceland"
- MR_iceland_flavor.3.d: " "
+ MR_iceland_flavor.3.d: "The Icelandic clergy have come to us offering the throne of Iceland to [NOR.Monarch.GetName]. Our financial and military support to them has finally paid off, as they were able to overthrow the Althing and abolish the commonwealth. We are finally in a position to reverse the bad fortunes we suffered during the 13th century."
  MR_iceland_flavor.3.a: "King in Norway, King in Iceland"
  MR_iceland_flavor.3.b: "More trouble than it's worth, send them away"
 
