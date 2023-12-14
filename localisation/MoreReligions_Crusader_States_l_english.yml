@@ -106,7 +106,7 @@
   cs_agricultural_centralization_title: "Agricultural Centralization"
   cs_agricultural_centralization_desc: "As our prosperity grows, many magnates and landowners have been watching with growing interest and envy the success of the plantations built in the agricultural regions of [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s lands. Some have already begun to emulate us, but if we were to officially encourage such a policy and sweep any legal hurdles of \"long-standing rights\" and such from the peasantry aside, we could reap a great benefit from the growing productivity."
   cs_agricultural_centralization_effect_tt: "All provinces with §Yfarm§! or §Ypasture§! trade goods will become eligible for a pulse event that will allow you to change the trade good to a valuable export crop.\n\n All owned provinces with a farm or pasture trade good will receive the §YPlantation Economy§! modifier until the end of the game."
-  cs_production_focused_economy_title: "Production Focused Economy"
+  cs_production_focused_economy_title: "Productive Economy"
   cs_production_focused_economy_desc: "REPLACE ME"
   cs_trade_hoarding_title: "Trade Hoarding"
   cs_trade_hoarding_trigger_tt: "Have at least §G50§! ducat trade value in our home trade node. For every additional §Y25§! ducat value, we will gain the §YMany Manufactories§! modifier for another 25 years!"
