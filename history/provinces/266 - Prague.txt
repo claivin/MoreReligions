@@ -8,8 +8,8 @@ culture = czech
 religion = hussite
 trade_goods = cloth 
 hre = yes
-base_tax = 8
-base_production = 8
+base_tax = 6
+base_production = 5
 base_manpower = 6
 is_city = yes
 fort_15th = yes
@@ -24,6 +24,8 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16
 center_of_trade = 2
+add_building = mrb_textileprocessor
+set_province_flag = was_wool_province
 
 add_province_triggered_modifier = religious_center
 1444.11.12 = { trade_goods = unknown }
