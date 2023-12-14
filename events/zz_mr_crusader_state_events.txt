@@ -231,7 +231,7 @@ country_event = {
 	id = mrCrusaderEvents.6
 
 	mean_time_to_happen = {
-		years = 15
+		years = 8
 	}
 
 	trigger = {
@@ -473,6 +473,31 @@ country_event = { # Fate of the Kaaba
 		add_country_modifier = {
 			name = cs_kaaba_in_disrepair
 			duration = -1
+		}
+	}
+}
+
+# Discover Middle East/Persia on startup
+country_event = {
+	id = mrCrusaderEvents.11
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_levantine_crusader_state = yes
+	}
+
+	immediate = {
+		near_east_superregion = {
+			discover_country = root
+		}
+		persia_region = {
+			discover_country = root
+		}
+		caucasia_region = {
+			discover_country = root
 		}
 	}
 }
