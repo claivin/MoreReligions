@@ -3,7 +3,7 @@
 owner = NPL
 controller = NPL
 culture = nepali
-religion = hinduism
+religion = shaivism
 capital = "Ghurka"
 trade_goods = lumber
 hre = no

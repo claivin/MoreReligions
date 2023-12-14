@@ -25,4 +25,8 @@ spriteTypes = {
 		name = "GFX_great_project_ketumati_temple"
 		texturefile = "gfx//interface//great_projects//great_project_ketumati_temple.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_mr_house_of_wisdom"
+		texturefile = "gfx//interface//great_projects//great_project_mr_house_of_wisdom.dds"
+	}
 }
