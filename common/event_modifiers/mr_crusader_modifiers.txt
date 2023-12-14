@@ -82,6 +82,7 @@ cs_crusading_surge = {
 cs_claims_restored_modifier = {
 	global_monthly_devastation = -0.33
 	global_prosperity_growth = 0.33
+	ae_impact = -0.1
 }
 
 cs_kaaba_in_disrepair = {
@@ -99,6 +100,16 @@ cs_continuous_crusade = {
 	manpower_in_true_faith_provinces = 0.2
 	war_exhaustion = -0.03
 	papal_influence = 12 # 1 monthly
+}
+
+cs_land_of_milk_and_honey_mod = {
+	local_build_cost = -0.25
+	local_build_time = -0.25
+}
+
+cs_many_manufactories = {
+	global_trade_goods_size_modifier = 0.1
+	trade_efficiency = 0.1
 }
 
 
