@@ -15,7 +15,7 @@ mrb_brewery = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -72,7 +72,7 @@ mrb_creamery = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -113,7 +113,7 @@ mrb_textileprocessor = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -166,7 +166,7 @@ mrb_steelmill = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -212,7 +212,7 @@ mrb_jewler = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -265,7 +265,7 @@ mrb_confectionary = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -303,7 +303,7 @@ mrb_lumberyard = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -344,7 +344,7 @@ mrb_winery = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -417,7 +417,7 @@ mrb_powdermill = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {
@@ -456,7 +456,7 @@ mrb_gunsmith = {
 	}
 	
 	modifier = {
-		local_state_maintenance_modifier = 1.0
+		local_governing_cost = 0.5
 	}
 	
 	on_built = {

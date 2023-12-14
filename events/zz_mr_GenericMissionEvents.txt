@@ -1582,7 +1582,7 @@ country_event = { #elite unit menu
 ###Royal Guard Branch
 ###
 ########################
-	option = { #Not enough XP for starter branch A T2 1
+	option = { #Not enough XP for branch A T2 1
 		name = generic_mission_events.50.a11
 		trigger = {
 			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
@@ -1591,7 +1591,7 @@ country_event = { #elite unit menu
 		}
 		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
 	}
-	option = { #Enough XP for starter branch A T2 1
+	option = { #Enough XP for branch A T2 1
 		name = generic_mission_events.50.a11
 		highlight = yes
 		trigger = {
@@ -1602,7 +1602,7 @@ country_event = { #elite unit menu
 		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_11 BRANCH = Apath }
 	}
 ##################	
-	option = { #Not enough XP for starter branch A T2 2
+	option = { #Not enough XP for branch A T2 2
 		name = generic_mission_events.50.a12
 		trigger = {
 			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
@@ -1611,7 +1611,7 @@ country_event = { #elite unit menu
 		}
 		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
 	}
-	option = { #Enough XP for starter branch A T2 2
+	option = { #Enough XP for branch A T2 2
 		name = generic_mission_events.50.a12
 		highlight = yes
 		trigger = {
@@ -1621,12 +1621,353 @@ country_event = { #elite unit menu
 		}
 		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_12 BRANCH = Apath }
 	}
+##################	
+	option = { #Not enough XP for branch A T3
+		name = generic_mission_events.50.a13
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t2_elite_units = yes
+			has_royal_guard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
+	}
+	option = { #Enough XP for branch A T3
+		name = generic_mission_events.50.a13
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t2_elite_units = yes
+			has_royal_guard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1X1 BRANCH = Apath }
+	}
+##################	
+	option = { #Not enough XP for branch A T4 1
+		name = generic_mission_events.50.a14
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t3_elite_units = yes
+			has_royal_guard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
+	}
+	option = { #Enough XP for branch A T4 1
+		name = generic_mission_events.50.a14
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t3_elite_units = yes
+			has_royal_guard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1X11 BRANCH = Apath }
+	}
+##################	
+	option = { #Not enough XP for branch A T4 2
+		name = generic_mission_events.50.a15
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t3_elite_units = yes
+			has_royal_guard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
+	}
+	option = { #Enough XP for branch A T4 2
+		name = generic_mission_events.50.a15
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t3_elite_units = yes
+			has_royal_guard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1X12 BRANCH = Apath }
+	}
+##################	
+	option = { #Not enough XP for branch A T5 1
+		name = generic_mission_events.50.a16
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t4_elite_units = yes
+			has_royal_guard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
+	}
+	option = { #Enough XP for branch A T5 1
+		name = generic_mission_events.50.a16
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t4_elite_units = yes
+			has_royal_guard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1X111 BRANCH = Apath }
+	}
+##################	
+	option = { #Not enough XP for branch A T5 2
+		name = generic_mission_events.50.a17
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t4_elite_units = yes
+			has_royal_guard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
+	}
+	option = { #Enough XP for branch A T5 2
+		name = generic_mission_events.50.a17
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t4_elite_units = yes
+			has_royal_guard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1X122 BRANCH = Apath }
+	}
+##################	
+	option = { #Not enough XP for branch A T5 3
+		name = generic_mission_events.50.a18
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchApath_base_cost } }
+			has_unlocked_t4_elite_units = yes
+			has_royal_guard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Apath }
+	}
+	option = { #Enough XP for branch A T5 3
+		name = generic_mission_events.50.a18
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchApath_base_cost }
+			has_unlocked_t4_elite_units = yes
+			has_royal_guard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_royal_guard_1X123 BRANCH = Apath }
+	}
+##################
+		option = { #Not enough XP for branch B T2 - Improved Tools
+		name = generic_mission_events.50.a21
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t1_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T2 1
+		name = generic_mission_events.50.a21
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t1_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_11 BRANCH = Bpath }
+	}
+##################
+		option = { #Not enough XP for branch B T3 1 - Gabions
+		name = generic_mission_events.50.a22
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t2_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T3 1
+		name = generic_mission_events.50.a22
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t1_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_111 BRANCH = Bpath }
+	}
+
+##################
+		option = { #Not enough XP for branch B T3 2 - Explosive Demolitions
+		name = generic_mission_events.50.a23
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t2_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T3 2
+		name = generic_mission_events.50.a23
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t2_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_112 BRANCH = Bpath }
+	}
+##################
+		option = { #Not enough XP for branch B T4 1 - Entrenchment
+		name = generic_mission_events.50.a24
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t3_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T4 2
+		name = generic_mission_events.50.a24
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t3_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_1111 BRANCH = Bpath }
+	}
+##################
+		option = { #Not enough XP for branch B T4 1 - Siege Artillery
+		name = generic_mission_events.50.a25
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t3_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T4 2
+		name = generic_mission_events.50.a25
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t3_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_1122 BRANCH = Bpath }
+	}
+##################
+		option = { #Not enough XP for branch B T4 1 - Engineer Corps
+		name = generic_mission_events.50.a26
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t4_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T4 1
+		name = generic_mission_events.50.a26
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t4_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_11111 BRANCH = Bpath }
+	}
+##################
+		option = { #Not enough XP for branch B T4 2 - Aggressive Siege Tactics
+		name = generic_mission_events.50.a27
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchBpath_base_cost } }
+			has_unlocked_t4_elite_units = yes
+			has_sappers = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Bpath }
+	}
+	option = { #Enough XP for branch B T4 2
+		name = generic_mission_events.50.a27
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchBpath_base_cost }
+			has_unlocked_t4_elite_units = yes
+			has_sappers = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_sapper_11222 BRANCH = Bpath }
+	}
+##################
+		option = { #Not enough XP for branch C T2 1 - Frontliners
+		name = generic_mission_events.50.a31
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchCpath_base_cost } }
+			has_unlocked_t1_elite_units = yes
+			has_vanguard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Cpath }
+	}
+	option = { #Enough XP for branch C T2 1
+		name = generic_mission_events.50.a31
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchCpath_base_cost }
+			has_unlocked_t1_elite_units = yes
+			has_vanguard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_vanguard_11 BRANCH = Cpath }
+	}
+##################
+		option = { #Not enough XP for branch C T3 1 - Recon
+		name = generic_mission_events.50.a32
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchCpath_base_cost } }
+			has_unlocked_t2_elite_units = yes
+			has_vanguard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Cpath }
+	}
+	option = { #Enough XP for branch C T3 1
+		name = generic_mission_events.50.a32
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchCpath_base_cost }
+			has_unlocked_t2_elite_units = yes
+			has_vanguard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_vanguard_111 BRANCH = Cpath }
+	}
+##################
+		option = { #Not enough XP for branch C T4 1 - Extreme Training
+		name = generic_mission_events.50.a33
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchCpath_base_cost } }
+			has_unlocked_t3_elite_units = yes
+			has_vanguard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Cpath }
+	}
+	option = { #Enough XP for branch C T4 1
+		name = generic_mission_events.50.a33
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchCpath_base_cost }
+			has_unlocked_t3_elite_units = yes
+			has_vanguard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_vanguard_1111 BRANCH = Cpath }
+	}
+##################
+		option = { #Not enough XP for branch C T5 1 - Fire and Manuever Tactics
+		name = generic_mission_events.50.a34
+		trigger = {
+			NOT = { has_enough_xp = { XPCOST = branchCpath_base_cost } }
+			has_unlocked_t4_elite_units = yes
+			has_vanguard = yes
+		}
+		elite_unit_menu_invalid_choice_effect = { BRANCH = Cpath }
+	}
+	option = { #Enough XP for branch C T5 1
+		name = generic_mission_events.50.a34
+		highlight = yes
+		trigger = {
+			has_enough_xp = { XPCOST = branchCpath_base_cost }
+			has_unlocked_t4_elite_units = yes
+			has_vanguard = yes
+		}
+		buy_elite_unit_tier = { ELITE_UNIT_MODIFIER = elite_vanguard_11111 BRANCH = Cpath }
+	}
+##################
+##################
 ##################
 	option = { #Fallback option just incase for AI
-		name = generic_mission_events.50.a12
-		trigger = {
-			ai = yes
-		}
+		name = generic_mission_events.50.a10
+		trigger = { ai = yes }
 	}
 	after = { clr_country_flag = elite_unit_menu_active }
 }

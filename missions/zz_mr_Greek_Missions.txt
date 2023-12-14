@@ -2040,6 +2040,68 @@ mr_greek_missions_second = {
 		}
 	}
 }
+mr_greek_byzantium_second = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = BYZ
+			tag = CST
+		}
+	}
+	mr_greek_byz_sixth = {
+		icon = mission_castle_construction
+		position = 10
+		required_missions = {
+			mr_greek_byz_fourth
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				has_fort_building_trigger = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_fort_building_trigger = yes
+				value = 15
+			}
+			fortification_expert = 3
+		}
+		effect = {
+			custom_tooltip = every_fort_upgrade
+			add_country_modifier = {
+				name = defend_the_land_rome
+				duration = -1
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_fort_building_trigger = yes
+						region = balkan_region
+					}
+					if = {
+						limit = { has_building = fort_17th }
+						remove_building = fort_17th
+						add_building = fort_18th
+					}
+					else_if = {
+						limit = { has_building = fort_16th }
+						remove_building = fort_16th
+						add_building = fort_17th
+					}
+					else_if = {
+						limit = { has_building = fort_15th }
+						remove_building = fort_15th
+						add_building = fort_16th
+					}
+				}
+			}
+		}
+	}
+}
 mr_greek_hellenist_second = {
 	slot = 2
 	generic = no
@@ -2059,7 +2121,6 @@ mr_greek_hellenist_second = {
 			tag = GRE
 			tag = CPH
 			tag = CEP
-			tag = CST
 		}
 		religion = orthodox
 	}
@@ -3487,6 +3548,294 @@ mr_greek_missions_fourth = {
 		}
 	}
 }
+mr_greek_byzantium_third = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		OR = {
+			tag = CST
+			tag = BYZ
+		}
+	}
+	mr_greek_byz_first = {
+		icon = mission_african_gold
+		position = 5
+		required_missions = {
+			mr_greece_unity_6
+		}
+		provinces_to_highlight = {
+			is_in_greece_area_trigger = yes
+			NOT = {
+				base_production = 8
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = all_greece_8_production
+				NOT = {
+					any_province = {
+						is_in_greece_area_trigger = yes
+						NOT = {
+							base_production = 8
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = all_provinces_in_greece_get
+			tooltip = {
+				add_province_modifier = {
+					name = reconnecting_the_roads
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						is_in_greece_area_trigger = yes
+					}
+					add_province_modifier = {
+						name = reconnecting_the_roads
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	mr_greek_byz_second = {
+		icon = mission_wine_monopolies
+		position = 7
+		required_missions = {
+			mr_greek_byz_first
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 148
+				province_id = 149
+				province_id = 144
+				province_id = 4701
+				province_id = 146
+			}
+			NOT = {
+				AND = {
+					num_of_buildings_in_province = 3
+					development = 20
+					owned_by = ROOT
+				}
+			}
+		}
+		trigger = {
+			148 = {
+				num_of_buildings_in_province = 3
+				development = 20
+				owned_by = ROOT
+			}
+			149 = {
+				num_of_buildings_in_province = 3
+				development = 20
+				owned_by = ROOT
+			}
+			4701 = {
+				num_of_buildings_in_province = 3
+				development = 20
+				owned_by = ROOT
+			}
+			144 = {
+				num_of_buildings_in_province = 3
+				development = 20
+				owned_by = ROOT
+			}
+			146 = {
+				num_of_buildings_in_province = 3
+				development = 20
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = growth_of_cities_explanation
+			tooltip = {
+				add_province_modifier = {
+					name = greek_population_boom
+					duration = 1825
+				}
+			}
+			
+			custom_tooltip = extend_modifier_tt
+			hidden_effect = {
+				148 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				144 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				4701 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				146 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				149 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+			}
+		}
+	}
+	mr_greek_byz_third = {
+		icon = the_shape_of_trades_to_come
+		position = 8
+		required_missions = {
+			mr_greek_byz_second
+		}
+		provinces_to_highlight = {
+			country_or_non_sovereign_subject_holds = ROOT
+			NOT = {
+				has_manufactory_trigger = yes
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				value = 15
+			}
+			current_income_balance = 20
+			total_development = 250
+		}
+		effect = {
+			add_adm_power = 100
+			add_country_modifier = {
+				name = extension_151
+				duration = 12775
+			}
+			custom_tooltip = imperial_introspection
+		}
+	}
+	mr_greek_byz_fourth = {
+		icon = confront_the_lombards
+		position = 9
+		required_missions = {
+			mr_greek_byz_third
+		}
+		provinces_to_highlight = {
+			OR = {
+				culture = albanian
+				culture = serbian
+			}
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = serbian_10_dev
+				NOT = {
+					any_province = {
+						culture = serbian
+						NOT = {
+							owned_by = ROOT
+							development = 10
+						}
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = albanian_10_dev
+				NOT = {
+					any_province = {
+						culture = albanian
+						NOT = {
+							owned_by = ROOT
+							development = 10
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			3001 = {
+				add_province_modifier = {
+					name = balkan_silver
+					duration = -1
+				}
+			}
+			4173 = {
+				add_province_modifier = {
+					name = balkan_silver
+					duration = -1
+				}
+			}
+			1766 = {
+				add_province_modifier = {
+					name = balkan_silver
+					duration = -1
+				}
+			}
+			custom_tooltip = illyrian_spread
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = albanian
+							culture = serbian
+						}
+					}
+					change_culture = illyrian
+				}
+				if = {
+					limit = {
+						accepted_culture = serbian
+					}
+					remove_accepted_culture = serbian
+				}
+			}
+		}
+	}
+	mr_greek_byz_fifth = {
+		icon = mission_plc_purple_phoenix
+		position = 11
+		required_missions = {
+			mr_greek_byz_fourth
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			has_estate_privilege = estate_church_mr_imperial_introspection
+			crown_land_share = 75
+			total_development = 600
+		}
+		effect = {
+			custom_tooltip = population_boom_perm
+			custom_tooltip = " "
+			custom_tooltip = improve_imperial_introspection_with_dev_cost
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_province_modifier = greek_population_boom
+					}
+					extend_province_modifier = {
+						name = 	greek_population_boom
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
 mr_greek_hellenist_third = {
 	slot = 3
 	generic = no
@@ -3506,7 +3855,6 @@ mr_greek_hellenist_third = {
 			tag = GRE
 			tag = CPH
 			tag = CEP
-			tag = CST
 		}
 		religion = orthodox
 	}

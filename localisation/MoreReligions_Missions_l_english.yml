@@ -899,6 +899,12 @@ mr_greek_muslim_third_title: "Embark on the Hajj"
 mr_greek_muslim_fourth_title: "Establish Our Jurisprudence"
 mr_greek_muslim_fifth_title: "Send Forth Missionaries"
 mr_greek_muslim_sixth_title: "Rhomania for the Faithful"
+mr_greek_byz_first_title: "Reconnect the Countryside"
+mr_greek_byz_second_title: "The Core Greek Cities"
+mr_greek_byz_third_title: "Build Imperial Wealth"
+mr_greek_byz_fourth_title: "Incorperate the Borderlands"
+mr_greek_byz_fifth_title: "The Basileus' Reflections"
+mr_greek_byz_sixth_title: "Fortress Rhomania"
 
 #Tooltips
 if_catholic_yes: "£yes£If we complete this mission while being §YCatholic§!, all owned provinces in the §YMacedonia§! Area or §YThracia§! Area will recieve the following:"
@@ -1021,6 +1027,16 @@ cor_shiite: "£yes£If we complete this mission while being §YImmamiyah§!, we 
 cor_shiite_no: "£no£If we complete this mission while being §YImmamiyah§!, we shall gain a §YImmamiyah Center of Conversion§!.\n"
 cor_qizilabashi: "£yes£If we complete this mission while being §YQizilbashi§!, we shall gain a §YQizilbashi Center of Conversion§!.\n"
 cor_qizilabashi_no: "£no£If we complete this mission while being §YQizilbashi§!, we shall gain a §YQizilbashi Center of Conversion§!.\n"
+growth_of_cities_explanation: "The provinces of [146.GetName], [148.GetName], [144.GetName], [149.GetName], and [4701.GetName] will recieve the following modifier:"
+extend_modifier_tt: "If we §YDevelop the Province(s)§! with the Modifier, it will §YExtend its Duration§! by an §YExtra Year§!."
+all_provinces_in_greece_get: "All owned provinces in the Greek Area will receive the following:"
+imperial_introspection: "This will enable the §YImperial Introspection§! Estate Privilege"
+serbian_10_dev: "Own all §YSerbian§! Culture Provinces and have them at least at §Y10§! Development\n"
+albanian_10_dev: "Own all §YAlbanian§! Culture Provinces and have them at least at §Y10§! Development"
+illyrian_spread: "Every §YSerbian§! and §YAlbanian§! Culture province will become §YIllyrian§! Culture, which is within the §YAegean§! Group."
+population_boom_perm: "Any province with the §YPopulation Boom§! Province modifier will gain the modifier as a §YPermanent Modifier§!."
+improve_imperial_introspection_with_dev_cost: "This will improve the Estate Privilege §YImperial Introspection§! by §G-5% Development Cost§!."
+every_fort_upgrade: "Every §YFort§! in the §YBalkan§! Region will be Upgraded by §Y1 Level§!\n"
 
 
 #Modifiers
@@ -1096,6 +1112,12 @@ went_on_hajj: "Embarked on a Hajj"
 most_holy_man: "The Most Pious of All"
 temples_byz_modifier: "Byzantine Mosques"
 piety_excel_BYZ: "The Roman Ummah"
+reconnecting_the_roads: "Reconnecting the Roads"
+all_greece_8_production: "Every province in the §YGreek Mainland§! and §YGreek Islands§! must have §Y8 Base Production§!"
+greek_population_boom: "Population Boom"
+extension_151: "The Byzantine Golden Age"
+balkan_silver: "Silver Coin Mint"
+defend_the_land_rome: "Defense of Rhomanoi"
 
 #Extras
 naval_slave_galley: "Galee Sforzate"
@@ -1117,6 +1139,8 @@ icon_panagia: "Icon of Mary the Panagia"
 icon_panagia_desc: "Mary, within the Greek Orthodox Church, is the all holy mother of the orthodox people. Her kindness and love, that which she gave to her son Jesus, is given to us as well. Her icons are found in Anatolia and Greece, many bearing the scars of the Iconoclast controversy."
 shiite_center_of_reformation: "Immamiyah Center of Conversion"
 mr_safaviyya_center_of_reformation: "Qizilbashi Center of Conversion"
+estate_church_mr_imperial_introspection: "Imperial Introspection"
+estate_church_mr_imperial_introspection_desc: "TH=he empire is in dire need of focus and intention. Instead of wasting our time invading or conquering foreign lands that we can barely pronounce in our native tongue, we shall stay within our borders and improve the quality of our state."
 
 #Diplomatic Actions for the Olive Exports
  greek_export_olive_oil_title:0 "Export Olive Oil"
