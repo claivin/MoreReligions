@@ -71,8 +71,11 @@
   cs_first_among_equals_effect_tt: "Due to our winning charm, any Prince of Outremer who considers us a rival and has a positive opinion of us will set aside their childish petulance. Any Prince of Outremer whose opinion of us is at least §G+100§! will become a historical friend."
   cs_royal_dowries_title: "Royal Dowries"
   cs_royal_dowries_desc: "REPLACE ME"
+  cs_royal_dowries_trigger_tt: "We have a §Yroyal marriage§! with or a §Yspy network§Y of strength §G80§Y in all other Princes of Outremer."
+  cs_royal_dowries_effect_tt: "Any Prince we do not have a §Yroyal marriage§! with will be blackmailed by our spies into agreeing with one. Furthermore, any §Yrivalries§! will be dropped."
   cs_a_house_united_title: "A House United"
   cs_a_house_united_desc: "REPLACE ME"
+  cs_a_house_united_trigger_tt: "All other Princes of Outremer have at least §G90§! §Ytrust§! with us."
   cs_a_house_united_effect_tt: "We will vassalize all the other Princes of Outremer."
 
   # Post-Jerusalem

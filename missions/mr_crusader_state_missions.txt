@@ -551,7 +551,7 @@ crusader_missions_diplomatic_path = {
 						is_levantine_crusader_state = yes
 					}
 
-					if = {
+					if = { # if they rival us and have positive opinion
 						limit = {
 							is_rival = ROOT
 							has_opinion = {
@@ -599,15 +599,18 @@ crusader_missions_diplomatic_path = {
 		}
 
 		trigger = {
-			NOT = {
-				any_known_country = {
-					is_levantine_crusader_state = yes
-					AND = {
-						NOT = { marriage_with = root }
-						NOT = {
-							has_spy_network_from = {
-								who = root
-								value = 80
+			custom_trigger_tooltip = {
+				tooltip = cs_royal_dowries_trigger_tt
+				NOT = { # No other crusader
+					any_known_country = {
+						is_levantine_crusader_state = yes
+						AND = { # Who doesn't have a marriage AND we don't have 80 spy network in
+							NOT = { marriage_with = root }
+							NOT = {
+								has_spy_network_from = {
+									who = root
+									value = 80
+								}
 							}
 						}
 					}
@@ -617,17 +620,21 @@ crusader_missions_diplomatic_path = {
 
 
 		effect = {
-			every_known_country = {
-				limit = {
-					is_levantine_crusader_state = yes
-					NOT = { marriage_with = root }
-				}
-				create_marriage = root
-				if = {
-					limit = { is_rival = root }
-					force_remove_rival = root
+			custom_tooltip = cs_royal_dowries_effect_tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_levantine_crusader_state = yes
+						NOT = { marriage_with = root }
+					}
+					create_marriage = root
+					if = {
+						limit = { is_rival = root }
+						force_remove_rival = root
+					}
 				}
 			}
+
 			country_event = { id = mrCrusaderEvents.2 }
 		}
 	}
@@ -641,6 +648,7 @@ crusader_missions_diplomatic_path = {
 			is_capital = yes
 			owner = {
 				is_levantine_crusader_state = yes
+				NOT = { tag = root }
 				NOT = {
 					trust = {
 						who = root
@@ -651,13 +659,16 @@ crusader_missions_diplomatic_path = {
 		}
 
 		trigger = {
-			NOT = {
-				any_known_country = {
-					is_levantine_crusader_state = yes
-					NOT = {
-						trust = {
-							who = root
-							value = 90
+			custom_trigger_tooltip = {
+				tooltip = cs_a_house_united_trigger_tt
+				NOT = { # No crusader states
+					any_known_country = {
+						is_levantine_crusader_state = yes
+						NOT = { # With less than 90 trust with us
+							trust = {
+								who = root
+								value = 90
+							}
 						}
 					}
 				}
