@@ -3181,7 +3181,7 @@ take_jerusalem = {
 		prov_desc = ALL_PROVS
 	}
 
-	war_name = HAN_SONG_WAR_NAME
+	war_name = TAKE_JERUSALEM_NAME
 }
 
 free_bishop_electors = {

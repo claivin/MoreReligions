@@ -62,7 +62,7 @@
   cs_call_for_crusade_1_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
   cs_call_for_crusade_2_title: "Call for Crusade"
   cs_call_for_crusade_2_desc: "If we are to reclaim Jerusalem for all Christendom, then we shall need their aid in order to defeat the Muslim powers arrayed against us! We shall need the ear of His Holiness, and a great King or Prince of Europe to sponsor the endeavor."
-  cs_call_for_crusade_trigger_tt: "To sponsor the crusade, we must BOTH:\nEither have 100 papal influence or the Pope have at least §Y150§! opinion of us to demand or request Papal backing.\nHave a great European Prince owe us 30 favors or have 150 opinion of us, as the other sponsor of the crusade.\n\nThe need for support can be bypassed if we already own Jerusalem."
+  cs_call_for_crusade_king_tt: "A European King of our religion has 150 opinion of us or owes us 30 favors."
   cs_call_for_crusade_effect_tt: "Adds a §Ypermanent claim§! to every non-owned province in Outremer."
 
   # Diplomatic path

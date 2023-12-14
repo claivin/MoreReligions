@@ -901,9 +901,40 @@ crusader_missions_3 = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_call_for_crusade_trigger_tt
-				cs_call_for_crusade_trigger = yes
+			OR = {
+				AND = {
+					# Popeman likes us or has to listen to us
+					OR = {
+						PAP = {
+							has_opinion = {
+								who = from
+								value = 150
+							}
+						}
+						papal_influence = 100
+					}
+					# A European king must sponsor the Crusade
+					custom_trigger_tooltip = {
+						tooltip = cs_call_for_crusade_king_tt
+						any_known_country = {
+							government = monarchy
+							government_rank = 2
+							religion = from
+							OR = {
+								has_opinion = {
+									who = from
+									value = 150
+								}
+								owes_favors = {
+									who = from
+									value = 30
+								}
+							}
+						}
+					}
+				}
+
+				owns = 379 # Jerusalem
 			}
 		}
 

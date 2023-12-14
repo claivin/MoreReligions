@@ -215,12 +215,12 @@ country_event = {
 		name = mrCrusaderEvents.5.a
 
 		inherit = ATI
-		# every_owned_province = {
-		# 	limit = {
-		# 		is_core = ATI
-		# 	}
-		# 	add_nationalism = 10
-		# }
+		every_owned_province = {
+			limit = {
+				is_core = ATI
+			}
+			add_nationalism = 10
+		}
 	}
 }
 
@@ -238,6 +238,8 @@ country_event = {
 		is_levantine_crusader_state = yes
 		religion = catholic
 	}
+
+	hidden = yes
 
 	immediate = {
 		hidden_effect = {

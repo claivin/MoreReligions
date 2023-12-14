@@ -153,45 +153,6 @@ is_levantine_crusader_state = {
 	}
 }
 
-# Used for repeated mission in crusader states missions
-cs_call_for_crusade_trigger = {
-	OR = {
-		AND = {
-			# Popeman likes us or has to listen to us
-			OR = {
-				PAP = {
-					has_opinion = {
-						who = from
-						value = 150
-					}
-				}
-				papal_influence = 100
-			}
-			# A great European Prince must sponsor the Crusade
-			any_known_country = {
-				government = monarchy
-				OR = {
-					government_rank = 2
-					total_development = 100
-				}
-				religion = from
-				OR = {
-					has_opinion = {
-						who = from
-						value = 150
-					}
-					owes_favors = {
-						who = from
-						value = 30
-					}
-				}
-			}
-		}
-		# Already own Jerusalem
-		owns = 379
-	}
-}
-
 eng_opener_missions_progress_trigger = {
 	if = {
 		limit = {
