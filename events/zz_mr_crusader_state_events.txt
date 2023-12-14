@@ -139,7 +139,7 @@ country_event = {
 		mission_completed = cs_agricultural_centralization
 		any_owned_province = {
 			OR = {
-				is_in_outremer = yes
+				province_group = outremer_region
 				region = mashriq_region
 			}
 			OR = {
@@ -154,7 +154,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				OR = {
-					is_in_outremer = yes
+					province_group = outremer_region
 					region = mashriq_region
 				}
 				OR = {

@@ -8,10 +8,18 @@
   ati_dynastic_ties_desc: "There is a long history of intermarriage for alliances between all the Christian Princes of the East, but we in Antioch have enjoyed pride of place as the strongest Prince of Outremer since the collapse of the Kingdom of Jerusalem, and thus enjoyed the closest ties to our neighbors in Little Armenia--Cilicia--and their cousins Armenia proper. If we were to seize Little Armenia, we could then press our claims to the rest of Armenia."
   ati_dynastic_ties_effect_tt: "If Armenia exists, we will get a §Yrestoration of union§! casus belli on them.\nOtherwise, we will get §G50§! prestige (excess will be converted to monarch points) and a permanent claim on the §YArmenia Area§!."
 
-  edd_old_claims: "Old Claims"
-  edd_old_claims: "These are not exactly our glory dies. In times past, Edessa stretched from just beyond the city of Antioch itself in the west to the Euphrates in the east, north into the Anatolian foothills and south into the plains of Iraq. While that land and the base of power it lent us may have slipped from our grasp, who is to say that the strength of Edessa is yet spent?"
+  edd_old_claims_title: "Old Claims"
+  edd_old_claims_desc: "These are not exactly our glory dies. In times past, Edessa stretched from just beyond the city of Antioch itself in the west to the Euphrates in the east, north into the Anatolian foothills and south into the plains of Iraq. While that land and the base of power it lent us may have slipped from our grasp, who is to say that the strength of Edessa is yet spent?"
   edd_edessa_ascendant_title: "Edessa Ascendant"
   edd_edessa_ascendant_desc: "Now that we have grown stronger than our old rivals in Antioch, we finally have a chance to succeed in our old ambitions to reunite our realm with theirs. With a little time and preparation, we can prepare a coup so swift none will be able to oppose us."
+
+  cs_a_modern_army_title: "A Modern Army"
+  cs_a_modern_army_desc: "The times are changing; military theorists now say that increasingly, cannon rule the battlefield, and they will only grow more important with time. Certainly, we can see their usefulness for sieges, which should make them worth investing in for that reason alone."
+  cs_regional_superpower_title: "Regional Superpower"
+  cs_regional_superpower_desc: "Our armies are the greatest in the area. It is time to start throwing our weight around."
+  cs_regional_superpower_trigger_tt: "Our army is §Glarger§! than every nation whose capital is in the §YMiddle East§! or §YPersia§! super regions."
+  cs_holy_armies_title: "Holy Armies"
+  cs_holy_armies_desc: "With our armies triumphant, we can press the Pope to sanction an eternal crusading mission in our lands, preparing the faithful to dutifully support any and all military endeavours."
 
   # Slot 2
   cs_grant_italian_quarter_title: "Grant Italian Quarter"
@@ -126,6 +134,14 @@
   desc_cs_claims_restored_modifier: "With all of Outremer in our hands, we have the stature of a proper kingdom, and the people can rest secure that we no longer face imminent potential destruction."
   cs_kaaba_in_disrepair: "Kaaba in Disrepair"
   desc_cs_kaaba_in_disrepair: "With our state refusing to support repairs and maintenace of the Kaaba and the mosque complex and other pilgrimmage infrastructure in Mecca, things are running significantly less smoothly than they did under the previous occupants."
+  cs_naval_buildup: "Naval Buildup"
+  desc_cs_naval_buildup: "We have increased subsidies for shipbuilding activities, and offered commercial captains hefty sums for their vessels as well."
+  edd_raiding_tactics: "Raiding Tactics"
+  desc_edd_raiding_tactics: "With our military culture of active cavalry skirmishing with our neighbors, our troops have developed efficient raiding tactics."
+  cs_modern_artillery: "Modern Artillery"
+  desc_cs_modern_artillery: "Investing in the new science of artillery and cannon-making has led to interesting results."
+  cs_continuous_crusade: "Continuous Crusade"
+  desc_cs_continuous_crusade: "The Pope has given his blessing to all of the faithful to support §Yall§! our wars."
 
 
   # --EVENTS--
@@ -165,7 +181,7 @@
   mrCrusaderEvents.9.d: "His Holiness has appointed a new papal legate to serve the people of Outremer. As the (official) supreme authority over all of God's flock from the Bosporus to Alexandria, including being above our own local bishops, this can have a serious effect on our rule among the faithful, and, more importantly, our influence with the Holy See back in Rome.\n\nDue to our bad relations with His Holiness, he has pawned off the half-wit third son of some German duke on us. The man is haughty, ignorant, and likely to agitate our own people almost as much as the [Root.Monarch.GetTitle]."
   mrCrusaderEvents.9.a: "Wonderful..."
   mrCrusaderEvents.9.b: "Make him an offer he can't refuse."
-  mrCrusaderEvents.9.c: "Failsons are the easiest to manipulate."
+  mrCrusaderEvents.9.c: "Unworthy sons are the easiest to manipulate."
 
   mrCrusaderEvents.10.t: "Fate of the Kaaba"
   mrCrusaderEvents.10.d: "Now that the Moslem holy city of Mecca, and its Great Mosque, the Masjid al-Haram, are in our hands, it has become a heated debate in [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s court as to what is to be done with the mosque and the great black cube, or Kaaba, in its heart. The inhabitants of the city have been restive since our soldiers first marched in, many standing an eternal vigil over the mosque, some wailing prayer between tears and sobs while others clutch weapons beneath their robes with stony, silent determination.\n\nOf course, the nobles and clerics of the Sarraceni alternately beg [Root.Monarch.GetTitle] [Root.Monarch.GetName] to treat the site with respect out of the goodness of [Root.Monarch.GetHerHis] heart and threaten of the terrible reprisals that will be out of their hands if we were to desecrate the site. They ask that [Root.Monarch.GetName] order a symbolic cleaning and restoration to soothe population and that over time the Moslems will accept our suzerainty over their most holy place as long as we are fair stewards. Some moderate advisors of the court agree with the Sarraceni, while others (including the Papal legate) insist we not sully our reputation and dabble in dangerous sacrilege by indulging the Moslems this far. All, however, agree that destroying the site is out of the question."

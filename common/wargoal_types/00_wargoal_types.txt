@@ -3155,7 +3155,7 @@ take_jerusalem = {
 		peace_cost_factor = 0.5
 
 		allowed_provinces = {
-			is_in_outremer = yes
+			province_group = outremer_region
 		}
 
 		allowed_provinces_are_eligible = yes

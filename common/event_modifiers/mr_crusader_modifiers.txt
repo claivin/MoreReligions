@@ -50,7 +50,7 @@ cs_diplomatic_success = {
 
 cs_plantation_economy = {
 	trade_goods_size = 0.5
-	local_unrest = 5
+	local_unrest = 2.5
 	local_manpower_modifier = 0.25
 }
 
@@ -87,6 +87,18 @@ cs_claims_restored_modifier = {
 cs_kaaba_in_disrepair = {
 	tolerance_own = 1
 	tolerance_heathen = -1
+}
+
+cs_modern_artillery = {
+	artillery_cost = -0.2
+	artillery_levels_available_vs_fort = 1 # +1 max arty bonus vs fort
+	artillery_level_modifier = 1 # Doubles artillery effect vs fort (e.g. 2 cannons count as 4)
+}
+
+cs_continuous_crusade = {
+	manpower_in_true_faith_provinces = 0.2
+	war_exhaustion = -0.03
+	papal_influence = 12 # 1 monthly
 }
 
 

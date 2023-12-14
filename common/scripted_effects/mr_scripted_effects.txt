@@ -230,7 +230,7 @@ update_maitreya_monthly = {
 	}
 	if = {
 		limit = {
-			has_idea = GSC_fifth 
+			has_idea = GSC_fifth
 		}
 		change_variable = {
 			which = maitreya_other_check
@@ -405,7 +405,7 @@ eng_opener_missions_progress_effect = {
 			}
 		}
 	}
-	
+
 	hidden_effect = {
 		change_variable  = {
 			which = engOpenerMissionProg
@@ -421,7 +421,7 @@ cs_call_for_crusade_effect = {
 		every_province = {
 			limit = {
 				NOT = { owned_by = ROOT }
-				is_in_outremer = yes
+				province_group = outremer_region
 			}
 			add_permanent_claim = ROOT
 		}

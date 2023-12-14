@@ -194,6 +194,91 @@ crusader_missions_1_edessa = {
 	}
 }
 
+crusader_missions_1_late_game = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_a_modern_army = {
+		icon = mission_cannons_firing
+		required_missions = { }
+		position = 5
+
+		trigger = {
+			num_of_artillery = 10
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cs_modern_artillery
+				duration = 18250 # 50 years
+			}
+		}
+	}
+
+	cs_regional_superpower = {
+		icon = mission_empire
+		required_missions = { cs_a_modern_army }
+		position = 6
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_regional_superpower_trigger_tt
+
+				NOT = {
+					any_known_country = {
+						capital_scope = {
+							OR = {
+								superregion = near_east_superregion
+								superregion = persia_superregion
+							}
+						}
+						army_size = root
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 35
+			}
+		}
+	}
+
+	cs_holy_armies = {
+		icon = mission_cathedral_cities
+		required_missions = { cs_regional_superpower }
+		position = 8
+
+		trigger = {
+			379 = {
+				has_great_project = {
+					type = holy_city_jerusalem
+					tier = 3
+				}
+			}
+			capital_scope = {
+				has_building = cathedral
+			}
+			PAP = {
+				alliance_with = root
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cs_continuous_crusade
+				duration = -1
+			}
+		}
+	}
+}
+
 
 # Second slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
 crusader_missions_2_pre_branch = {
@@ -334,7 +419,7 @@ crusader_missions_domination_path = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 5
-				is_in_outremer = yes
+				province_group = outremer_region
 			}
 			is_at_war = no
 		}
@@ -852,16 +937,14 @@ crusader_missions_3 = {
 		position = 7
 
 		provinces_to_highlight = {
-			is_in_outremer = yes
+			province_group = outremer_region
 			NOT = { owned_by = root }
 		}
 
 		trigger = {
-			NOT = {
-			any_province = {
-				is_in_outremer = yes
-				NOT = { country_or_non_sovereign_subject_holds = root }
-			}
+			outremer_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
 			}
 		}
 
@@ -940,6 +1023,13 @@ crusader_missions_4 = {
 		icon = mission_peasantry
 		required_missions = { cs_peace_with_heathens cs_looming_mamluks }
 		position = 3
+
+		provinces_to_highlight = {
+			owned_by = root
+			OR = {
+				devastation = 1
+			}
+		}
 
 		trigger = {
 			is_at_war = no
@@ -1106,7 +1196,7 @@ crusader_missions_5 = {
 
 		provinces_to_highlight = {
 			OR = {
-				# Our provs dev
+				# Our provs that don't yet qualify
 				AND = {
 					owned_by = root
 
