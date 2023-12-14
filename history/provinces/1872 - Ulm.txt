@@ -7,7 +7,7 @@ add_core = ULM
 culture = swabian
 religion = catholic
 base_tax = 5 
-base_production = 6
+base_production = 5
 trade_goods = cloth	#fustians
 base_manpower = 4
 capital = "Ulm"
@@ -19,4 +19,7 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
+add_building = mrb_textileprocessor
+set_province_flag = was_cotton_province
+
 1444.11.12 = { trade_goods = unknown }

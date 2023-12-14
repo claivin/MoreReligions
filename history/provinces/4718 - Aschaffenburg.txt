@@ -11,7 +11,7 @@ hre = yes
 base_tax = 3 
 base_production = 2
 base_manpower = 2
-trade_goods = cloth
+trade_goods = cotton
 add_core = MAI
 
 discovered_by = eastern
