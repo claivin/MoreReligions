@@ -875,3 +875,32 @@ estate_enhanced_church_enforced_one_faith = {
 		factor = 0
 	}
 }
+estate_church_mr_imperial_introspection = {
+	icon = estate_church_BYZ_legitimization_of_dynasty
+	loyalty = 0.10
+	influence = 0.25
+	is_valid = {
+		is_at_war = no
+		mission_completed = mr_greek_byz_third
+	}
+	conditional_modifier = { trigger = { mission_completed = mr_greek_byz_fifth } modifier = { development_cost = -0.1 } }
+	can_select = {
+		is_at_war = no
+		NOT = {
+			overextension_percentage = 0.01
+		}
+		mission_completed = mr_greek_byz_third
+	}
+	benefits = {
+		all_power_cost = -0.025
+		global_unrest = -2
+		free_policy = 1	
+	}
+	ai_will_do = {
+		factor = 0 
+	}
+	penalties = {
+		stability_cost_to_declare_war = 3
+	}
+	cooldown_years = 20
+}

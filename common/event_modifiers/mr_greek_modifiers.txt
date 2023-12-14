@@ -292,3 +292,25 @@ piety_excel_BYZ = {
 	monthly_piety_accelerator = 0.001
 	global_unrest = -1
 }
+reconnecting_the_roads = {
+	local_friendly_movement_speed = 0.10
+	local_development_cost = -0.05
+}
+greek_population_boom = {
+	local_manpower_modifier = 0.10
+	local_tax_modifier = 0.25
+	local_development_cost = -0.10
+}
+extension_151 = {
+	prestige_decay = -0.01
+	expand_infrastructure_cost_modifier = -0.25	
+	yearly_innovativeness = 0.10
+}
+balkan_silver = {
+	local_gold_depletion_chance_modifier = -0.50
+	local_production_efficiency = 0.1	
+}
+defend_the_land_rome = {
+	own_territory_dice_roll_bonus = 1	
+	garrison_size = 0.25
+}

@@ -558,7 +558,15 @@ on_adm_development = {
 		}
 		add_nationalism = -0.5	
 	}
-	
+	if = {
+		limit = {
+			has_province_modifier = greek_population_boom
+		}
+		extend_province_modifier = {
+			name = greek_population_boom
+			duration = 365
+		}
+	}
 	#crown agendas for ENG
 	crown_agenda_dev_thrice_effect = yes
 }
@@ -600,7 +608,15 @@ on_dip_development = {
 		}
 		add_nationalism = -0.5	
 	}
-	
+	if = {
+		limit = {
+			has_province_modifier = greek_population_boom
+		}
+		extend_province_modifier = {
+			name = greek_population_boom
+			duration = 365
+		}
+	}
 	#crown agendas for ENG
 	crown_agenda_dev_thrice_effect = yes
 }
@@ -641,7 +657,15 @@ on_mil_development = {
 		}
 		add_nationalism = -0.5	
 	}
-	
+	if = {
+		limit = {
+			has_province_modifier = greek_population_boom
+		}
+		extend_province_modifier = {
+			name = greek_population_boom
+			duration = 365
+		}
+	}
 	#crown agendas for ENG
 	crown_agenda_dev_thrice_effect = yes
 }

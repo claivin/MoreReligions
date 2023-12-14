@@ -431,6 +431,7 @@ estate_church = {
 		#G&K
 		estate_church_waldensian_studies
 		estate_church_ilkhanate_dervish
+		estate_church_mr_imperial_introspection
 	}
 
 	agendas = {
