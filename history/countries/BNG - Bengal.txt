@@ -1,7 +1,7 @@
 government = monarchy
 primary_culture = bengali
 add_government_reform = feudalism_reform
-religion = smarta
+religion = hinduism
 technology_group = indian
 capital = 563	# Pandua
 change_estate_land_share = {

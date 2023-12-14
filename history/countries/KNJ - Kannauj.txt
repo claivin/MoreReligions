@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = maharajadhiraja_reform
 technology_group = indian
-religion = smarta
+religion = shaktism
 primary_culture = rajput
 add_accepted_culture = avadhi
 add_accepted_culture = kanauji

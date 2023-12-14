@@ -4,6 +4,17 @@ technology_group = indian
 religion = shaivism
 primary_culture = tamil
 capital = 4416
+government_rank = 1
 
+1444.1.1 = {
+	monarch = {
+		name = "Aditya"
+		dynasty = "Tharangambadi"
+		birth_date = 1410.1.1
+		ADM = 3
+		DIP = 2
+		MIL = 3
+	}
+}
 
 

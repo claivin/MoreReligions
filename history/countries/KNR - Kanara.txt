@@ -2,8 +2,17 @@ government = monarchy
 add_government_reform = feudalism_reform
 technology_group = indian
 religion = hinduism
-primary_culture = tamil
+primary_culture = kannada
 capital = 2092
+government_rank = 1
 
-
-
+1444.1.1 = {
+	monarch = {
+		name = "Narasimha"
+		dynasty = "Kanara"
+		birth_date = 1420.1.1
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}

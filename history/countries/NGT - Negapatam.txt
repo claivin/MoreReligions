@@ -4,6 +4,15 @@ technology_group = indian
 religion = shaivism
 primary_culture = tamil
 capital = 4415
+government_rank = 1
 
-
-
+1444.1.1 = {
+	monarch = {
+		name = "Arinjaya"
+		dynasty = "Nagapattinam"
+		birth_date = 1410.1.1
+		ADM = 2
+		DIP = 3
+		MIL = 2
+	}
+}

@@ -1,0 +1,118 @@
+#Madurai and Venad trade leagues
+
+alliance = {
+	first = MAD
+	second = JFN
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = MAD
+	second = TNJ
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = MAD
+	second = JFN
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = MAD
+	second = NGT
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = MAD
+	second = TRQ
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = MAD
+	second = CDD
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = MAD
+	second = KCP
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = VND
+	second = KOC
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = VND
+	second = MAB
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = VND
+	second = KLT
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+alliance = {
+	first = VND
+	second = KNR
+	trade_league = 1
+	start_date = 1444.1.1
+	end_date = 1500.1.1
+}
+
+#Orissa
+vassal = { #Garjat
+	first = ORI
+	second = GRJ 
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+
+vassal = { #Parlakhimidi
+	first = ORI
+	second = PRD
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+
+vassal = { #Keonhjar
+	first = ORI
+	second = KJH
+	start_date = 1444.1.1
+	end_date = 1568.1.1
+}
+
+vassal = { #Jeypore
+	first = ORI
+	second = JPR
+	start_date = 1444.1.1
+	end_date = 1576.1.1
+}

@@ -3,7 +3,7 @@
 owner = NPL
 controller = NPL
 culture = nepali
-religion = hinduism
+religion = shaktism
 capital = "Makwanpur"
 trade_goods = wool
 hre = no

@@ -26,6 +26,7 @@ dharmic = {
 		}
 		
 		personal_deity = yes
+		misguided_heretic = yes
 		
 		on_convert = {
 			change_religion = hinduism
@@ -62,6 +63,7 @@ dharmic = {
 		}
 		
 		personal_deity = yes
+		misguided_heretic = yes
 		
 		on_convert = {
 			change_religion = shaivism
@@ -98,6 +100,7 @@ dharmic = {
 		}
 		
 		personal_deity = yes
+		misguided_heretic = yes
 		
 		on_convert = {
 			change_religion = shaktism
@@ -134,6 +137,7 @@ dharmic = {
 		}
 		
 		uses_karma = yes
+		misguided_heretic = yes
 		
 		on_convert = {
 			change_religion = svetembara
@@ -169,6 +173,7 @@ dharmic = {
 		}
 		
 		personal_deity = yes
+		misguided_heretic = yes
 		
 		on_convert = {
 			change_religion = smarta
@@ -204,6 +209,7 @@ dharmic = {
 		}
 		
 		uses_karma = yes
+		misguided_heretic = yes
 		
 		on_convert = {
 			change_religion = digambara
@@ -250,6 +256,7 @@ dharmic = {
 		heretic = { MASANDIS }
 
 		date = 1499.01.01
+		misguided_heretic = yes
 
 		gurus = {
 			guru_nanak = {
@@ -835,6 +842,7 @@ dharmic = {
 		heretic = { BON YOGAVACARA }
 		
 		personal_deity = yes
+		misguided_heretic = yes
 		
 		harmonized_modifier = harmonized_tunggal_dharma
 		
