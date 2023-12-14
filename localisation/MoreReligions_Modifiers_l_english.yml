@@ -12,10 +12,10 @@
  buda_development_1: "Grain and Wine Capital"
  buda_capital_modifier: "The City of Budapest"
  buda_capital_TT: "\nUpon completing this mission, all §YGreat Powers§! that §Ydo not§! have a province with more development than §YPest§! will recieve §R-30§! §YPrestige§!"
- 
+
  #Unique Unit
  gallowglass_unit: "Gallowglass"
- 
+
  #province modifiers
  microstate_modifier: "Microstate"
  mr_chernozam_soils: "Cernozam Soils"
@@ -23,11 +23,13 @@
  mr_sahara: "Inhospitable Saharan Climate"
  mr_taghaza_salt_mines: "Taghaza Salt Mines"
  mr_toledo_steel: "Toldeo Steel"
- 
+ mr_damascus_steel: "Damascus Steel"
+ desc_mr_damascus_steel: "Using the high quality iron known as 'Wootz steel' imported from southern India, a great arms industry has built up in Damascus ever since the Arab conquests. Renowned both for its beautiful wave-like or 'fountain' patterns and its amazing strength and cutting edge, the demand Damascus Steel only ever goes up."
+
  guinean_triggered_modifier: "Guinean Invasion"
- 
+
  annexed_subject_tribute_MOD: "Annexed Subject"
- 
+
  mr_vassalize_tributary_title: "Vassalize Tributary"
  mr_vassalize_tributary_tooltip: "Vassalize our Tributary using diplomacy and religious authority."
  from_total_development_is_30_percent_times_bigger_than_ours: "Our total development is §Y30%§! more than the target."
@@ -130,7 +132,7 @@
  desc_gsc_ketumati_temple_modifier: "Named for the earthly paradise of the Maitreya Buddha, the Ketumati Temple is the pinnacle of our achievements. Here, opulence and spirituality combine to put on full display the utopia delivered by the Lords of Light to their followers."
  gsc_trade_modifier: "Flow of Wealth"
  desc_gsc_trade_modifier: "Emphasis on permitting (and taxing) international trade has promoted a drastic increase in the wealth flowing into our treasury from both imports and exports."
- 
+
  #Navarra Modifiers
  covadonga_court: "The Court of Covadonga"
  covadonga_court_desc: "Built in the site of the first victory of Christianity against Islam in Iberia, lies the Court of Covadonga which deals with the highest judicial cases in Iberia."
@@ -230,7 +232,7 @@
  indian_toll_desc: "While the indian and asian traders claim the Indian Toll is nothing but racketeering, bullying and piracy...well, no, actually it is exactly that, but then again they aren't in a position to contest us. Also we could do much worse than just demand they pay a toll to pass through their own backyard."
 
 mr_crusaders_papal_legate_bribed: "Papal Legate Bribed"
- 
+
 mr_ab_hungarian_reconstruction: "Hungarian Reconstruction"
 mr_ab_malian_colonial_growth: "Malian Colonialism"
 mr_ab_rajput_lib_desire: "Rajput Empire"

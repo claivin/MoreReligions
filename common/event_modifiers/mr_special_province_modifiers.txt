@@ -57,3 +57,8 @@ mr_sco_scotch = {
 mr_toledo_steel = {
 	trade_goods_size = 1
 }
+
+mr_damascus_steel = {
+	trade_goods_size = 1
+	shock_damage = 0.025
+}
