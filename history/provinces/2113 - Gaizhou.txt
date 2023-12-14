@@ -3,8 +3,8 @@
 owner = SJI
 controller = SJI
 add_core = SJI
-culture = shandong_culture
-religion = confucianism
+culture = kharchin
+religion = tengri_pagan_reformed
 capital = "Gaizhou"
 trade_goods = fish
 hre = no

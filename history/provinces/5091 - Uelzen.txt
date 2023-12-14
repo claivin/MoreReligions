@@ -6,11 +6,11 @@ add_core = LUN
 culture = lower_saxon
 religion = catholic
 capital = "Nien Ulessen"
-trade_goods = cloth
+trade_goods = cotton
 hre = yes
 base_tax = 2
 base_production = 3
-base_manpower = 2
+base_manpower = 1
 is_city = yes
 
 discovered_by = eastern

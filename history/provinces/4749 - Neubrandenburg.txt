@@ -1,4 +1,4 @@
-# 4749 - Stargard
+# 4749 - Neubrandenburg
 
 owner = MKL
 controller = MKL
@@ -6,10 +6,10 @@ add_core = MKL
 culture = pommeranian
 religion = catholic
 hre = yes
-base_tax = 3
-base_production = 3
+base_tax = 2
+base_production = 2
 trade_goods = livestock
-base_manpower = 2
+base_manpower = 1
 capital = "Neubrandenburg"
 is_city = yes
 

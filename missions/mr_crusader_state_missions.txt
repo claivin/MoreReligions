@@ -194,6 +194,91 @@ crusader_missions_1_edessa = {
 	}
 }
 
+crusader_missions_1_late_game = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		is_levantine_crusader_state = yes
+	}
+
+	cs_a_modern_army = {
+		icon = mission_cannons_firing
+		required_missions = { }
+		position = 5
+
+		trigger = {
+			num_of_artillery = 10
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cs_modern_artillery
+				duration = 18250 # 50 years
+			}
+		}
+	}
+
+	cs_regional_superpower = {
+		icon = mission_empire
+		required_missions = { cs_a_modern_army }
+		position = 6
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_regional_superpower_trigger_tt
+
+				NOT = {
+					any_known_country = {
+						capital_scope = {
+							OR = {
+								superregion = near_east_superregion
+								superregion = persia_superregion
+							}
+						}
+						army_size = root
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 35
+			}
+		}
+	}
+
+	cs_holy_armies = {
+		icon = mission_cathedral_cities
+		required_missions = { cs_regional_superpower }
+		position = 8
+
+		trigger = {
+			379 = {
+				has_great_project = {
+					type = holy_city_jerusalem
+					tier = 3
+				}
+			}
+			capital_scope = {
+				has_building = cathedral
+			}
+			PAP = {
+				alliance_with = root
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = cs_continuous_crusade
+				duration = -1
+			}
+		}
+	}
+}
+
 
 # Second slot: The branching path... will you unite the crusaders via diplomatic pressure and gifts... or force!
 crusader_missions_2_pre_branch = {
@@ -334,7 +419,7 @@ crusader_missions_domination_path = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 5
-				is_in_outremer = yes
+				province_group = outremer_region
 			}
 			is_at_war = no
 		}
@@ -466,7 +551,7 @@ crusader_missions_diplomatic_path = {
 						is_levantine_crusader_state = yes
 					}
 
-					if = {
+					if = { # if they rival us and have positive opinion
 						limit = {
 							is_rival = ROOT
 							has_opinion = {
@@ -514,15 +599,18 @@ crusader_missions_diplomatic_path = {
 		}
 
 		trigger = {
-			NOT = {
-				any_known_country = {
-					is_levantine_crusader_state = yes
-					AND = {
-						NOT = { marriage_with = root }
-						NOT = {
-							has_spy_network_from = {
-								who = root
-								value = 80
+			custom_trigger_tooltip = {
+				tooltip = cs_royal_dowries_trigger_tt
+				NOT = { # No other crusader
+					any_known_country = {
+						is_levantine_crusader_state = yes
+						AND = { # Who doesn't have a marriage AND we don't have 80 spy network in
+							NOT = { marriage_with = root }
+							NOT = {
+								has_spy_network_from = {
+									who = root
+									value = 80
+								}
 							}
 						}
 					}
@@ -532,17 +620,21 @@ crusader_missions_diplomatic_path = {
 
 
 		effect = {
-			every_known_country = {
-				limit = {
-					is_levantine_crusader_state = yes
-					NOT = { marriage_with = root }
-				}
-				create_marriage = root
-				if = {
-					limit = { is_rival = root }
-					force_remove_rival = root
+			custom_tooltip = cs_royal_dowries_effect_tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						is_levantine_crusader_state = yes
+						NOT = { marriage_with = root }
+					}
+					create_marriage = root
+					if = {
+						limit = { is_rival = root }
+						force_remove_rival = root
+					}
 				}
 			}
+
 			country_event = { id = mrCrusaderEvents.2 }
 		}
 	}
@@ -556,6 +648,7 @@ crusader_missions_diplomatic_path = {
 			is_capital = yes
 			owner = {
 				is_levantine_crusader_state = yes
+				NOT = { tag = root }
 				NOT = {
 					trust = {
 						who = root
@@ -566,13 +659,16 @@ crusader_missions_diplomatic_path = {
 		}
 
 		trigger = {
-			NOT = {
-				any_known_country = {
-					is_levantine_crusader_state = yes
-					NOT = {
-						trust = {
-							who = root
-							value = 90
+			custom_trigger_tooltip = {
+				tooltip = cs_a_house_united_trigger_tt
+				NOT = { # No crusader states
+					any_known_country = {
+						is_levantine_crusader_state = yes
+						NOT = { # With less than 90 trust with us
+							trust = {
+								who = root
+								value = 90
+							}
 						}
 					}
 				}
@@ -816,9 +912,40 @@ crusader_missions_3 = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_call_for_crusade_trigger_tt
-				cs_call_for_crusade_trigger = yes
+			OR = {
+				AND = {
+					# Popeman likes us or has to listen to us
+					OR = {
+						PAP = {
+							has_opinion = {
+								who = from
+								value = 150
+							}
+						}
+						papal_influence = 100
+					}
+					# A European king must sponsor the Crusade
+					custom_trigger_tooltip = {
+						tooltip = cs_call_for_crusade_king_tt
+						any_known_country = {
+							government = monarchy
+							government_rank = 2
+							religion = from
+							OR = {
+								has_opinion = {
+									who = from
+									value = 150
+								}
+								owes_favors = {
+									who = from
+									value = 30
+								}
+							}
+						}
+					}
+				}
+
+				owns = 379 # Jerusalem
 			}
 		}
 
@@ -832,7 +959,7 @@ crusader_missions_3 = {
 	}
 
 	cs_jerusalem_restored = {
-		icon = mission_crusade_for_varna
+		icon = mission_holy_horde
 		required_missions = { cs_call_for_crusade0 }
 		position = 6
 
@@ -852,16 +979,14 @@ crusader_missions_3 = {
 		position = 7
 
 		provinces_to_highlight = {
-			is_in_outremer = yes
+			province_group = outremer_region
 			NOT = { owned_by = root }
 		}
 
 		trigger = {
-			NOT = {
-			any_province = {
-				is_in_outremer = yes
-				NOT = { country_or_non_sovereign_subject_holds = root }
-			}
+			outremer_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = root
 			}
 		}
 
@@ -941,6 +1066,13 @@ crusader_missions_4 = {
 		required_missions = { cs_peace_with_heathens cs_looming_mamluks }
 		position = 3
 
+		provinces_to_highlight = {
+			owned_by = root
+			OR = {
+				devastation = 1
+			}
+		}
+
 		trigger = {
 			is_at_war = no
 			stability = 2
@@ -952,9 +1084,9 @@ crusader_missions_4 = {
 				}
 			}
 			# Have a state other than the capital with prosperity
-			any_owned_province = {
+			num_of_owned_provinces_with = {
+				value = 6
 				is_prosperous = yes
-				NOT = { is_in_capital_area = yes }
 			}
 		}
 
@@ -1054,6 +1186,116 @@ crusader_missions_4 = {
 			}
 		}
 	}
+
+	cs_land_of_milk_and_honey = {
+		icon = mission_abu_saids_dream
+		required_missions = { cs_jerusalem_restored cs_thriving_trade }
+		position = 7
+
+		provinces_to_highlight = {
+			OR = {
+				area = aleppo_area
+				area = syria_area
+				area = palestine_area
+			}
+			NOT = { development = 15 }
+		}
+
+		trigger = {
+			aleppo_area = {
+				type = all
+				development = 15
+			}
+			syria_area = {
+				type = all
+				development = 15
+			}
+			palestine_area = {
+				type = all
+				development = 15
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			aleppo_area = {
+				add_prosperity = 100
+				add_province_modifier = {
+					name = cs_land_of_milk_and_honey_mod
+					duration = -1
+				}
+			}
+			syria_area = {
+				add_prosperity = 100
+				add_province_modifier = {
+					name = cs_land_of_milk_and_honey_mod
+					duration = -1
+				}
+			}
+			palestine_area = {
+				add_prosperity = 100
+				add_province_modifier = {
+					name = cs_land_of_milk_and_honey_mod
+					duration = -1
+				}
+			}
+		}
+	}
+
+	cs_syrian_dominance = {
+		icon = mission_thirty_years_war
+		required_missions = { cs_our_claims_achieved cs_land_of_milk_and_honey }
+		position = 8
+
+		provinces_to_highlight = {
+			superregion = near_east_superregion
+			province_has_center_of_trade_of_level = 1
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 9
+				province_has_center_of_trade_of_level = 1
+			}
+			home_trade_node = {
+				trade_node_value = 50
+			}
+		}
+
+		effect = {
+			add_permanent_claim_multi_provinces = { target = near_east_superregion }
+		}
+	}
+
+	cs_strike_east = {
+		icon = mission_persian_lion
+		required_missions = { cs_syrian_dominance }
+		position = 9
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 410
+				province_id = 411
+				province_id = 2307
+				province_id = 408
+			}
+			NOT = { owned_by = root }
+			NOT = { has_supply_depot = root }
+		}
+
+		trigger = {
+			410 = { owned_by = root has_supply_depot = root } # Baghdad
+			411 = { owned_by = root has_supply_depot = root } # Mosul
+			2307 = { owned_by = root has_supply_depot = root } # Van
+			408 = { owned_by = root has_supply_depot = root } # Basra
+		}
+
+		effect = {
+			add_permanent_claim_multi_provinces = { target = persia_superregion }
+		}
+	}
 }
 
 crusader_missions_5 = {
@@ -1106,7 +1348,7 @@ crusader_missions_5 = {
 
 		provinces_to_highlight = {
 			OR = {
-				# Our provs dev
+				# Our provs that don't yet qualify
 				AND = {
 					owned_by = root
 
@@ -1115,55 +1357,124 @@ crusader_missions_5 = {
 						has_pasture_trade_goods = yes
 					}
 					OR = {
-						NOT = { has_building = manufactory }
+						AND = {
+							NOT = { has_building = mrb_pasture }
+							NOT = { has_building = farm_estate }
+						}
 						local_autonomy = 1
 					}
 				}
-				# Nearby provinces in case we don't have enough valid ones
-				AND = {
-					OR = {
-						region = mashriq_region
-						region = egypt_region
-						region = anatolia_region
-					}
-					OR = {
-						has_farm_trade_goods = yes
-						has_pasture_trade_goods = yes
-					}
-				}
 			}
-
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cs_agricultural_centralization_tt
-				num_of_owned_provinces_with = {
-					value = 5
-
-					has_building = manufactory
-					OR = {
-						has_farm_trade_goods = yes
-						has_pasture_trade_goods = yes
-					}
-					NOT = { local_autonomy = 1 }
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = mrb_pasture
+					has_building = farm_estate
 				}
+				NOT = { local_autonomy = 1 }
 			}
 		}
 
 		effect = {
 			custom_tooltip = cs_agricultural_centralization_effect_tt
-			every_owned_province = {
-				limit = {
-					has_building = manufactory
-					has_farm_trade_goods = yes
-				}
-
+			tooltip = {
 				add_province_modifier = {
 					name = cs_plantation_economy
 					duration = -1
 				}
 			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							has_farm_trade_goods = yes
+							has_pasture_trade_goods = yes
+						}
+					}
+
+					add_province_modifier = {
+						name = cs_plantation_economy
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	cs_production_focused_economy = {
+		icon = mission_trade_with_cathay
+		required_missions = { cs_agricultural_centralization }
+		position = 6
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 25
+
+				has_manufactory_trigger = yes
+			}
+		}
+
+		effect = {
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = cs_many_manufactories
+				duration = 9125
+			}
+		}
+	}
+
+	cs_trade_hoarding = {
+		icon = mission_riches_of_golconda
+		required_missions = { cs_production_focused_economy }
+		position = 7
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = cs_trade_hoarding_trigger_tt
+				home_trade_node = {
+					trade_node_value = 50
+				}
+			}
+		}
+
+		effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_modifier = cs_many_manufactories
+					}
+					remove_country_modifier = cs_many_manufactories
+				}
+			}
+
+			if = {
+				limit = {
+					home_trade_node = { trade_node_value = 100 }
+				}
+				add_country_modifier = {
+					name = cs_many_manufactories
+					duration = 36500
+				}
+			}
+			else_if = {
+				limit = {
+					home_trade_node = { trade_node_value = 100 }
+				}
+				add_country_modifier = {
+					name = cs_many_manufactories
+					duration = 27375
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = cs_many_manufactories
+					duration = 18250
+				}
+			}
+			add_mercantilism = 50
 		}
 	}
 }

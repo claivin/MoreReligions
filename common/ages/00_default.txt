@@ -179,7 +179,7 @@ age_of_discovery = {
 					tag = HUN
 					tag = AAB
 					tag = CSA
-					tag = KAA
+					tag = KNN
 					tag = JAA
 				}
 			}

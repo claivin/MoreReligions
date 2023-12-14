@@ -1,14 +1,14 @@
-# 1868 - Biberach
+# 5082 - Nivenstadt
 owner = WBG
 controller = WBG
 add_core = WBG
 culture = franconian
 religion = catholic
 base_tax = 2
-base_production = 3
-trade_goods = grain 
-base_manpower = 4
-capital = "Gmund"
+base_production = 2
+trade_goods = vegetables
+base_manpower = 3
+capital = "Nivenstadt"
 is_city = yes
 hre = yes
 

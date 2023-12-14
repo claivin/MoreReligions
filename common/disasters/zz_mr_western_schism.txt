@@ -1,12 +1,13 @@
 mr_western_schism = {
 	potential = {
-		normal_or_historical_nations = yes
-		tag = PAP
-		has_global_flag = mr_western_schism_pt1_flag
-		OR = {
-			current_age = age_of_discovery
-			current_age = age_of_reformation
-		}
+		always = no
+		# normal_or_historical_nations = yes
+		# tag = PAP
+		# has_global_flag = mr_western_schism_pt1_flag
+		# OR = {
+			# current_age = age_of_discovery
+			# current_age = age_of_reformation
+		# }
 	}
 
 	can_start = {

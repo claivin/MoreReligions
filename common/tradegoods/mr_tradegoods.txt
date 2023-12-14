@@ -59,7 +59,7 @@ military_supplies = {
 		mil_tech_cost_modifier = -0.1
 	}
 	province = {
-		local_production_efficiency = 0.1
+		discipline = 0.01
 	}
 	chance = {
 		factor = 0
@@ -68,10 +68,10 @@ military_supplies = {
 jewelry = {
 	color = { 0.75 0.37 1.0 }
 	modifier = { 
-		war_exhaustion = -0.02
+		prestige_decay = -0.01
 	}
 	province = {
-		local_tax_modifier = 0.1
+		local_tax_modifier = 0.50
 	}
 	chance = {
 		factor = 0
@@ -127,7 +127,7 @@ steel = {
 		global_regiment_cost = -0.15
 	}
 	province = {
-		local_production_efficiency = 0.1
+		fire_damage_received = -0.01
 	}
 	chance = {
 		factor = 0
@@ -136,10 +136,10 @@ steel = {
 gunpowder = {
 	color = { 0.63 0.14 0.13 }
 	modifier = {
-		land_morale = 0.10
+		siege_ability = 0.10
 	}
 	province = {
-		local_governing_cost = -0.25
+		fire_damage = 0.05
 	}
 	chance = {
 		factor = 0
@@ -648,7 +648,7 @@ horses = {
 		cavalry_power = 0.15
 	}
 	province = {
-		local_friendly_movement_speed = 0.1 
+		cavalry_cost = 0.006
 	}
 	chance = {
 		factor = 5
@@ -1090,10 +1090,10 @@ tin = {
 amber = {
 	color = { 0.98 0.63 0.11 }
 	modifier = {
-		governing_capacity_modifier = 0.10
+		trade_efficiency = 0.15
 	}
 	province = {
-		local_defensiveness = 0.1
+		trade_value_modifier = 1
 	}
 	chance = { #copied silver weights
 		factor = 1

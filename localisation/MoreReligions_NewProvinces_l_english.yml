@@ -1,7 +1,7 @@
 ﻿l_english:
  #urban_terrain: "Urban"
  #urban_terrain_desc: "Urban provinces represent highly developed population centers where manmade structures and communities are densely crowded. Only a handful exist or will develop during this time."
- 
+
  #unlocalized vanilla sea region names
  south_atlantic_region_name: "South Atlantic"
  south_atlantic_region_adj: "Southern Atlantic"
@@ -59,10 +59,10 @@
  west_american_sea_superregion_adj: "Western American Sea"
  new_world_superregion_name: "New World"
  new_world_superregion_adj: "New World"
- 
+
  sahara_region_name: "Sahara"
  sahara_region_adj: "Saharan"
- 
+
  #missing vanilla areas?
  georgia_area: "Georgia"
  amnok_area: "Amnok"
@@ -84,597 +84,597 @@
  corsica_area: "Corsica"
  east_armenia_area: "East Armenia"
  ajjer_area: "Ajjer"
- 
+
  PROV4942: "Laon"
  PROV_ADJ4942: "Laon"
- 
+
  PROV4943: "Noyon"
  PROV_ADJ4943: "Noyon"
- 
+
  PROV4944: "Chalon"
  PROV_ADJ4944: "Chalon"
- 
+
  PROV4945: "Île-de-france"
  PROV_ADJ4945: "Parisienne"
- 
+
  PROV4946: "Îles de la Manche"
  PROV_ADJ4946: "Channel Islander"
- 
+
  PROV4947: "Wiltshire"
  PROV_ADJ4947: "Moonraker"
- 
+
  PROV4948: "Yns Môn"
  PROV_ADJ4948: "Anglesey"
- 
+
  PROV4949: "Isle of Wight"
  PROV_ADJ4949: "Vectensian"
- 
+
  PROV4950: "Ard Mhachan"
  PROV_ADJ4950: "Armachian"
- 
+
  PROV4951: "Duibhlinn"
  PROV_ADJ4951: "Dubliner"
- 
+
  PROV4952: "Gaillimh"
  PROV_ADJ4952: "Galwegian"
- 
+
  PROV4953: "Luimneach "
  PROV_ADJ4953: "Limerick"
- 
+
  PROV4954: "Corcaigh"
  PROV_ADJ4954: "Corkonian"
- 
+
  PROV4955: "Port Láirge"
  PROV_ADJ4955: "Waterfordian"
- 
- PROV4956: "Lough Neagh" 
+
+ PROV4956: "Lough Neagh"
  PROV_ADJ4956: "Lough Neagh"
- 
+
  PROV4957: "Liatroim"
  PROV_ADJ4957: "Leitrim"
- 
+
  PROV4958: "Suffolk"
  PROV_ADJ4958: "Suffölkisch"
- 
+
  PROV4959: "Shropshire"
  PROV_ADJ4959: "Salopian"
- 
+
  PROV4960: "Warwickshire"
  PROV_ADJ4960: "Warwickshire"
- 
+
  PROV4961: "Nottinghamshire"
  PROV_ADJ4961: "Nottinghamian"
- 
+
  PROV4962: "Rutland"
  PROV_ADJ4962: "Rutlanders"
- 
+
  PROV4963: "North Riding"
  PROV_ADJ4963: "North Riding"
- 
+
  PROV4964: "Durham"
  PROV_ADJ4964: "Dunelmian"
- 
+
  PROV4965: "Caithness"
  PROV_ADJ4965: "Gallach"
- 
+
  PROV4966: "Toul"
  PROV_ADJ4966: "Béléniens"
- 
+
  PROV4967: "Cannes"
  PROV_ADJ4967: "Cannes"
- 
+
  PROV4968: "Aunis"
  PROV_ADJ4968: "Aunisiaise"
- 
+
  PROV4969: "Albret"
  PROV_ADJ4969: "Albret"
- 
+
  PROV4970: "Andorra"
  PROV_ADJ4970: "Andorran"
- 
+
  PROV4971: "Tonerre"
  PROV_ADJ4971: "Tonerre"
- 
+
  PROV4972: "Ain"
  PROV_ADJ4972: "Ain"
- 
+
  PROV4973: "Haut Saône"
  PROV_ADJ4973: "Haut-Saônois"
- 
+
  PROV4974: "Belfort"
  PROV_ADJ4974: "Terrifortain"
- 
+
  PROV4975: "Orange"
  PROV_ADJ4975: "Orange"
- 
+
  PROV4976: "Sarthe"
  PROV_ADJ4976: "Sarthe"
- 
+
  PROV4977: "Saumurois"
  PROV_ADJ4977: "Saumurois"
- 
+
  PROV4978: "Sancerre"
  PROV_ADJ4978: "Sancerre"
- 
+
  PROV4979: "Vendôme"
  PROV_ADJ4979: "Vendômois"
- 
+
  PROV4980: "Santiago de Rubiás"
  PROV_ADJ4980: "Santiago de Rubiás"
- 
+
  PROV4981: "Gijón"
  PROV_ADJ4981: "Gijonés"
- 
+
  PROV4982: "Ponferrada"
  PROV_ADJ4982: "Campusino"
- 
+
  PROV4983: "Benavente"
  PROV_ADJ4983: "Benaventanos"
- 
+
  PROV4984: "Gasteiz"
  PROV_ADJ4984: "Gasteiztar"
- 
+
  PROV4985: "Donostia"
  PROV_ADJ4985: "Donostiar"
- 
+
  PROV4986: "Jaca"
  PROV_ADJ4986: "Salineros"
- 
+
  PROV4987: "Elche"
  PROV_ADJ4987: "Ilicitano"
- 
+
  PROV4988: "Marbella"
  PROV_ADJ4988: "Marbellíes"
- 
+
  PROV4989: "Merida"
  PROV_ADJ4989: "Emeritenses"
- 
+
  PROV4990: "Navalmoral de la Mata"
  PROV_ADJ4990: "Natanael"
- 
+
  PROV4991: "Adwa"
  PROV_ADJ4991: "Adwan"
- 
+
  PROV4992: "Dankalia"
  PROV_ADJ4992: "Dankalia"
- 
+
  PROV4993: "Raya"
  PROV_ADJ4993: "Raya"
- 
+
  PROV4994: "Wavre"
  PROV_ADJ4994: "Wavre"
- 
+
  PROV4995: "Yfat"
  PROV_ADJ4995: "Yfat"
- 
+
  PROV4996: "Adal"
  PROV_ADJ4996: "Adal"
- 
+
  PROV4997: "Menagesha"
  PROV_ADJ4997: "Menagesha"
- 
+
  PROV4998: "Gimbi"
  PROV_ADJ4998: "Gimbi"
- 
+
  PROV4999: "Kelem"
  PROV_ADJ4999: "Kelem"
 
  PROV5000: "Maji"
  PROV_ADJ5000: "Maji"
- 
+
  PROV5001: "Galeb"
  PROV_ADJ5001: "Galeb"
- 
+
  PROV5002: "Gamu Gofa"
  PROV_ADJ5002: "Gamu Gofa"
- 
+
  PROV5003: "Land van Aalst"
  PROV_ADJ5003: "Aalstenaar"
- 
+
  PROV5004: "Dunkirk"
  PROV_ADJ5004: "Dunkirkian"
- 
+
  PROV5005: "Leuven"
  PROV_ADJ5005: "Leuvenaar"
- 
+
  PROV5006: "Lier"
  PROV_ADJ5006: "Westlander"
- 
+
  PROV5007: "Tilburg"
  PROV_ADJ5007: "Tilburger"
- 
+
  PROV5008: "Limburg"
  PROV_ADJ5008: "Limburger"
- 
+
  PROV5009: "Haarlem"
  PROV_ADJ5009: "Haarlemer"
- 
+
  PROV5010: "Savona"
  PROV_ADJ5010: "Savonesi"
- 
+
  PROV5011: "Massa"
  PROV_ADJ5011: "Massesi"
- 
+
  PROV5012: "Asti"
  PROV_ADJ5012: "Astigiano"
- 
+
  PROV5013: "Crema"
  PROV_ADJ5013: "Cremaschi"
- 
+
  PROV5014: "Vicenza"
  PROV_ADJ5014: "Vicentini"
- 
+
  PROV5015: "Fermo"
  PROV_ADJ5015: "Fermani"
- 
+
  PROV5016: "L'Aquila"
  PROV_ADJ5016: "Aquilani"
- 
+
  PROV5017: "Viterbo"
  PROV_ADJ5017: "Viterbesi"
- 
+
  PROV5018: "Caserta"
  PROV_ADJ5018: "Casertani"
- 
+
  PROV5019: "Benevento"
  PROV_ADJ5019: "Beneventani"
- 
+
  PROV5020: "Tatanto"
  PROV_ADJ5020: "Tarantino"
- 
+
  PROV5021: "Potenza"
  PROV_ADJ5021: "Potentini"
- 
+
  PROV5022: "Catanzaro"
  PROV_ADJ5022: "Catanzaresi"
- 
+
  PROV5023: "Ragusa"
  PROV_ADJ5023: "Ragusano"
- 
+
  PROV5024: "Catania"
  PROV_ADJ5024: "Catania"
- 
+
  PROV5025: "Caltanissetta"
  PROV_ADJ5025: "Nisseni"
- 
+
  PROV5026: "Enna"
  PROV_ADJ5026: "Ennesi"
- 
+
  PROV5027: "Nuoro"
  PROV_ADJ5027: "Nuoresi"
- 
+
  PROV5028: "Austfirthir"
  PROV_ADJ5028: "Austfirthir"
- 
+
  PROV5029: "Isafjorthur"
  PROV_ADJ5029: "Isafjorthur"
- 
+
  PROV5030: "Vatnajokull"
  PROV_ADJ5030: "Vatnajokull"
- 
+
  PROV5031: "Quang Tri"
  PROV_ADJ5031: "Quang Tri"
- 
+
  PROV5032: "Mardelong"
  PROV_ADJ5032: "Mardelong"
- 
+
  PROV5033: "Setul"
  PROV_ADJ5033: "Setul"
- 
+
  PROV5034: "Kanbalu"
  PROV_ADJ5034: "Kanbalu"
- 
+
  PROV5035: "Shwebo"
  PROV_ADJ5035: "Shwebo"
- 
+
  PROV5036: "Myingyan"
  PROV_ADJ5036: "Myingyan"
- 
+
  PROV5037: "Mitkila"
  PROV_ADJ5037: "Mitkila"
- 
+
  PROV5038: "Kyaukpyu"
  PROV_ADJ5038: "Kyaukpyu"
- 
+
  PROV5039: "Bandarban"
  PROV_ADJ5039: "Bandarban"
- 
+
  PROV5040: "Koh Kong"
  PROV_ADJ5040: "Koh Kong"
- 
+
  PROV5041: "Khon Buri"
  PROV_ADJ5041: "Khon Buri"
- 
+
  PROV5042: "Udon Thani"
  PROV_ADJ5042: "Udon Thani"
- 
+
  PROV5043: "Tyre"
  PROV_ADJ5043: "Tyrian"
- 
+
  PROV5044: "Baalbek"
  PROV_ADJ5044: "Baalbek"
- 
+
  PROV5045: "Druze Hills"
  PROV_ADJ5045: "Druze"
- 
+
  PROV5046: "Angmagssalik"
  PROV_ADJ5046: "Angmagssalik"
- 
+
  PROV5047: "Sermersooq"
  PROV_ADJ5047: "Sermersooq"
- 
+
  PROV5048: "Nuuk"
  PROV_ADJ5048: "Nuuk"
- 
+
  PROV5049: "Miyagi"
  PROV_ADJ5049: "Miyagi"
- 
+
  PROV5050: "Awa"
  PROV_ADJ5050: "Awa"
- 
+
  PROV5051: "Kazusa"
  PROV_ADJ5051: "Kazusa"
- 
+
  PROV5052: "Izu"
  PROV_ADJ5052: "Izu"
- 
+
  PROV5053: "Saitama"
  PROV_ADJ5053: "Saitama"
- 
+
  PROV5054: "Matsumoto"
  PROV_ADJ5054: "Matsumoto"
- 
+
  PROV5055: "Noto"
  PROV_ADJ5055: "Noto"
- 
+
  PROV5056: "Kaga"
  PROV_ADJ5056: "Kaga"
- 
+
  PROV5057: "Izumi"
  PROV_ADJ5057: "Izumi"
- 
+
  PROV5058: "Shima"
  PROV_ADJ5058: "Shima"
- 
+
  PROV5059: "Iga"
  PROV_ADJ5059: "Iga"
- 
+
  PROV5060: "Inaba"
  PROV_ADJ5060: "Inaba"
- 
+
  PROV5061: "Nagato"
  PROV_ADJ5061: "Nagato"
- 
+
  PROV5062: "Sanaki"
  PROV_ADJ5062: "Sanaki"
- 
+
  PROV5063: "Awaji"
  PROV_ADJ5063: "Awaji"
- 
+
  PROV5064: "Chikugo"
  PROV_ADJ5064: "Chikugo"
- 
+
  PROV5065: "Osumi"
  PROV_ADJ5065: "Osumi"
- 
+
  PROV5066: "Cismonte"
  PROV_ADJ5066: "Cismonte"
- 
+
  PROV5067: "Olbia-Tempio"
  PROV_ADJ5067: "Olbia-Tempio"
- 
+
  PROV5068: "Oststeiermark"
  PROV_ADJ5068: "Oststeiermark"
- 
+
  PROV5069: "Linz"
  PROV_ADJ5069: "Linz"
- 
+
  PROV5070: "Steyr"
  PROV_ADJ5070: "Steyr"
- 
+
  PROV5071: "Burghausen"
  PROV_ADJ5071: "Burghausen"
- 
+
  PROV5072: "Tölz"
  PROV_ADJ5072: "Tölz"
- 
+
  PROV5073: "Kempten"
  PROV_ADJ5073: "Kempten"
- 
+
  PROV5074: "Gmünd"
  PROV_ADJ5074: "Gmünd"
- 
+
  PROV5075: "Biberach"
  PROV_ADJ5075: "Biberach"
- 
+
  PROV5076: "Pforzheim"
  PROV_ADJ5076: "Pforzheim"
- 
+
  PROV5077: "Schaffhausen"
  PROV_ADJ5077: "SChaffhausen"
- 
+
  PROV5078: "Colmar"
  PROV_ADJ5078: "Colmar"
- 
+
  PROV5079: "Haguenau"
  PROV_ADJ5079: "Haguenau"
- 
+
  PROV5080: "Worms"
  PROV_ADJ5080: "Worms"
- 
+
  PROV5081: "Mosbach"
  PROV_ADJ5081: "Mosbach"
- 
+
  PROV5082: "Nivenstadt"
  PROV_ADJ5082: "Nivenstadt"
- 
+
  PROV5083: "Münchberg"
  PROV_ADJ5083: "Münchberg"
- 
+
  PROV5084: "Bitburg"
  PROV_ADJ5084: "Bitburg"
- 
+
  PROV5085: "Limburg"
  PROV_ADJ5085: "Limburg"
- 
+
  PROV5086: "Siegerland"
  PROV_ADJ5086: "Siegerland"
- 
+
  PROV5087: "Brilon"
  PROV_ADJ5087: "Brilon"
- 
+
  PROV5088: "Soest"
  PROV_ADJ5088: "Soest"
- 
+
  PROV5089: "Cloppenburg"
  PROV_ADJ5089: "Cloppenburg"
- 
+
  PROV5090: "Hildesheim"
  PROV_ADJ5090: "Hildesheim"
- 
+
  PROV5091: "Uelzen"
  PROV_ADJ5091: "Uelzen"
- 
+
  PROV5092: "Flensburg"
  PROV_ADJ5092: "Flensburg"
- 
+
  PROV5093: "Uthlande"
  PROV_ADJ5093: "Uthlande"
- 
+
  PROV5094: "Gotha"
  PROV_ADJ5094: "Gotha"
- 
+
  PROV5095: "Jena"
  PROV_ADJ5095: "Jena"
- 
+
  PROV5096: "Chemnitz"
  PROV_ADJ5096: "Chemnitz"
- 
+
  PROV5097: "Greifswald"
  PROV_ADJ5097: "Greifswald"
- 
+
  PROV5098: "Žatec"
  PROV_ADJ5098: "Žatec"
- 
+
  PROV5099: "Klatovy"
  PROV_ADJ5099: "Klatovy"
- 
+
  PROV5100: "Blata"
  PROV_ADJ5100: "Blata"
- 
+
  PROV5101: "Žary"
  PROV_ADJ5101: "Žary"
- 
+
  PROV5102: "Sternberg"
  PROV_ADJ5102: "Sternberg"
- 
+
  PROV5103: "Driesen"
  PROV_ADJ5103: "Driesen"
- 
+
  PROV5104: "Köslin"
  PROV_ADJ5104: "Kösliner"
- 
+
  PROV5105: "Bütow"
  PROV_ADJ5105: "Bütower"
- 
+
  PROV5106: "Znojomo"
  PROV_ADJ5106: "Znojomo"
- 
+
  PROV5107: "Kromeriz"
  PROV_ADJ5107: "Kromeriz"
- 
+
  PROV5108: "Salten"
  PROV_ADJ5108: "Salten"
- 
+
  PROV5109: "Aalborg"
  PROV_ADJ5109: "Aalborg"
- 
+
  PROV5110: "Zealand"
  PROV_ADJ5110: "Zealand"
- 
+
  PROV5111: "Laholm"
  PROV_ADJ5111: "Laholm"
- 
+
  PROV5112: "Jönköping"
  PROV_ADJ5112: "Jönköping"
- 
+
  PROV5113: "Ofoten"
  PROV_ADJ5113: "Ofoten"
- 
+
  PROV5114: "Öland"
  PROV_ADJ5114: "Öland"
- 
+
  baltic_islands_area_mr: "Baltic Islands"
- 
+
  PROV5115: "Hiiumaa"
  PROV_ADJ5115: "Hiiumaa"
- 
+
  PROV5116: "Södermanland"
  PROV_ADJ5116: "Södermanland"
- 
+
  PROV5117: "Gästrikland"
  PROV_ADJ5117: "Gästrikland"
- 
+
  PROV5118: "Sala"
  PROV_ADJ5118: "Sala"
- 
+
  PROV5119: "Östra Värmland"
  PROV_ADJ5119: "Östra Värmland"
- 
+
  PROV5120: "Härjedalen"
  PROV_ADJ5120: "Härjedalen"
- 
+
  PROV5121: "Hedmark"
  PROV_ADJ5121: "Hedmark"
- 
+
  PROV5122: "Firdafylke"
  PROV_ADJ5122: "Firdafylke"
- 
+
  PROV5123: "Nord-Trøndelag"
  PROV_ADJ5123: "Nord-Trøndelag"
- 
+
  PROV5124: "Finnmarksvidda"
  PROV_ADJ5124: "Finnmarksvidda"
- 
+
  PROV5125: "Murman"
  PROV_ADJ5125: "Murman"
- 
+
  PROV5126: "Pohjanmaa"
  PROV_ADJ5126: "Pohjanmaa"
- 
+
  PROV5127: "Keski-Pohjanmaa"
  PROV_ADJ5127: "Keski-Pohjanmaa"
- 
+
  PROV5128: "Swiebodzin"
  PROV_ADJ5128: "Swiebodzin"
- 
+
  PROV5129: "Brodnica"
  PROV_ADJ5129: "Brodnica"
- 
+
  PROV5130: "Czestochowa"
  PROV_ADJ5130: "Czestochowa"
- 
+
  PROV5131: "Leczyca"
  PROV_ADJ5131: "Leczyca"
- 
+
  PROV5132: "Ostroleka"
  PROV_ADJ5132: "Ostrołeka"
- 
+
  PROV5133: "Wieliczka"
  PROV_ADJ5133: "Wieliczka"
- 
+
  PROV5134: "Krosno"
  PROV_ADJ5134: "Krosno"
- 
+
  PROV5135: "Zamosc"
  PROV_ADJ5135: "Zamosc"
- 
+
  PROV5136: "Puławy"
  PROV_ADJ5136: "Puławy"
- 
+
  PROV5137: "Skövde"
  PROV_ADJ5137: "Skövde"
- 
+
  PROV5138: "Lebork"
  PROV5139: "Gizycko"
  PROV5140: "Šiauliai"
@@ -701,7 +701,7 @@
  PROV5161: "Sumy"
  PROV5162: "Konotop"
  PROV5163: "Stary Oskol"
- 
+
  PROV_ADJ5138: "Lebork"
  PROV_ADJ5139: "Gizycko"
  PROV_ADJ5140: "Šiauliai"
@@ -728,9 +728,9 @@
  PROV_ADJ5161: "Sumy"
  PROV_ADJ5162: "Konotop"
  PROV_ADJ5163: "Stary Oskol"
- 
+
  PROV5164: "Lake Vortsärv"
- 
+
  PROV5165: "Perlis"
  PROV5166: "Chintawangsa"
  PROV5167: "Beruas"
@@ -742,7 +742,7 @@
  PROV5173: "Simeulue"
  PROV5174: "Keningau"
  PROV5175: "Sandakan"
- 
+
  PROV_ADJ5165: "Perlis"
  PROV_ADJ5166: "Chintawangsa"
  PROV_ADJ5167: "Beruas"
@@ -780,7 +780,7 @@
  PROV5198: "Katagum"
  PROV5199: "Tazirbu"
  PROV5200: "Zawar"
- 
+
  PROV_ADJ5176: "Bal"
  PROV_ADJ5177: "Tondibi"
  PROV_ADJ5178: "Kukiya"
@@ -806,46 +806,46 @@
  PROV_ADJ5198: "Katagum"
  PROV_ADJ5199: "Tazirbu"
  PROV_ADJ5200: "Zawar"
- 
+
  PROV5201: "Loma"
- PROV5202: "Nzérékoré" 
- PROV5203: "Yekepa" 
- PROV5204: "Faranah" 
- PROV5205: "Odienné" 
- PROV5206: "Yamoussoukro" 
- PROV5207: "Gagnoa" 
- PROV5208: "Volta Basin" 
- PROV5209: "Sassandra" 
- PROV5210: "Conakry" 
- PROV5211: "Arguin" 
- PROV5212: "Nouakchott" 
- PROV5213: "Dakhla" 
- PROV5214: "Laayoune" 
- PROV5215: "Tindouf" 
- PROV5216: "Tifarti" 
- PROV5217: "Ain Ben Tili" 
- PROV5218: "Fderik" 
- PROV5219: "Néma" 
- PROV5220: "Walatah" 
- PROV5221: "Aoudaghost" 
- PROV5222: "Ouadane" 
- PROV5223: "Akjoujt" 
- PROV5224: "Taghaza" 
- PROV5225: "Béchar" 
- PROV5226: "El Goléa" 
- PROV5227: "Tamentit" 
- PROV5228: "In Salah" 
- PROV5229: "Illizi" 
- PROV5230: "Takedda" 
- PROV5231: "Tassili n'Ajjer" 
- PROV5232: "Tamanrasset" 
- PROV5233: "Tessalit" 
- PROV5234: "Zillah" 
- PROV5235: "Tazirbu" 
- PROV5236: "Jalu" 
- PROV5237: "Ma'tan as-Sarra" 
- PROV5238: "Waw an Namus" 
- PROV5239: "Kufra" 
+ PROV5202: "Nzérékoré"
+ PROV5203: "Yekepa"
+ PROV5204: "Faranah"
+ PROV5205: "Odienné"
+ PROV5206: "Yamoussoukro"
+ PROV5207: "Gagnoa"
+ PROV5208: "Volta Basin"
+ PROV5209: "Sassandra"
+ PROV5210: "Conakry"
+ PROV5211: "Arguin"
+ PROV5212: "Nouakchott"
+ PROV5213: "Dakhla"
+ PROV5214: "Laayoune"
+ PROV5215: "Tindouf"
+ PROV5216: "Tifarti"
+ PROV5217: "Ain Ben Tili"
+ PROV5218: "Fderik"
+ PROV5219: "Néma"
+ PROV5220: "Walatah"
+ PROV5221: "Aoudaghost"
+ PROV5222: "Ouadane"
+ PROV5223: "Akjoujt"
+ PROV5224: "Taghaza"
+ PROV5225: "Béchar"
+ PROV5226: "El Goléa"
+ PROV5227: "Tamentit"
+ PROV5228: "In Salah"
+ PROV5229: "Illizi"
+ PROV5230: "Takedda"
+ PROV5231: "Tassili n'Ajjer"
+ PROV5232: "Tamanrasset"
+ PROV5233: "Tessalit"
+ PROV5234: "Zillah"
+ PROV5235: "Tazirbu"
+ PROV5236: "Jalu"
+ PROV5237: "Ma'tan as-Sarra"
+ PROV5238: "Waw an Namus"
+ PROV5239: "Kufra"
  PROV5240: "Siwa"
  PROV5241: "Dakhla"
  PROV5242: "Fada"
@@ -856,46 +856,46 @@
  PROV5247: "Lam Dong"
  PROV5248: "Bawlakhe"
  PROV5249: "Tachileik"
-  
+
  PROV_ADJ5201: "Loma"
- PROV_ADJ5202: "Nzérékoré" 
- PROV_ADJ5203: "Yekepa" 
- PROV_ADJ5204: "Faranah" 
- PROV_ADJ5205: "Odienné" 
- PROV_ADJ5206: "Yamoussoukro" 
- PROV_ADJ5207: "Gagnoa" 
- PROV_ADJ5208: "Volta Basin" 
- PROV_ADJ5209: "Sassandra" 
- PROV_ADJ5210: "Conakry" 
- PROV_ADJ5211: "Arguin" 
- PROV_ADJ5212: "Nouakchott" 
- PROV_ADJ5213: "Dakhla" 
- PROV_ADJ5214: "Laayoune" 
- PROV_ADJ5215: "Tindouf" 
- PROV_ADJ5216: "Tifarti" 
- PROV_ADJ5217: "Ain Ben Tili" 
- PROV_ADJ5218: "Fderik" 
- PROV_ADJ5219: "Néma" 
- PROV_ADJ5220: "Walatah" 
- PROV_ADJ5221: "Aoudaghost" 
- PROV_ADJ5222: "Ouadane" 
- PROV_ADJ5223: "Akjoujt" 
- PROV_ADJ5224: "Taghaza" 
- PROV_ADJ5225: "Béchar" 
- PROV_ADJ5226: "El Goléa" 
- PROV_ADJ5227: "Tamentit" 
- PROV_ADJ5228: "In Salah" 
- PROV_ADJ5229: "Illizi" 
- PROV_ADJ5230: "Takedda" 
- PROV_ADJ5231: "Tassili n'Ajjer" 
- PROV_ADJ5232: "Tamanrasset" 
- PROV_ADJ5233: "Tessalit" 
- PROV_ADJ5234: "Zillah" 
- PROV_ADJ5235: "Tazirbu" 
- PROV_ADJ5236: "Jalu" 
- PROV_ADJ5237: "Ma'tan as-Sarra" 
- PROV_ADJ5238: "Waw an Namus" 
- PROV_ADJ5239: "Kufra" 
+ PROV_ADJ5202: "Nzérékoré"
+ PROV_ADJ5203: "Yekepa"
+ PROV_ADJ5204: "Faranah"
+ PROV_ADJ5205: "Odienné"
+ PROV_ADJ5206: "Yamoussoukro"
+ PROV_ADJ5207: "Gagnoa"
+ PROV_ADJ5208: "Volta Basin"
+ PROV_ADJ5209: "Sassandra"
+ PROV_ADJ5210: "Conakry"
+ PROV_ADJ5211: "Arguin"
+ PROV_ADJ5212: "Nouakchott"
+ PROV_ADJ5213: "Dakhla"
+ PROV_ADJ5214: "Laayoune"
+ PROV_ADJ5215: "Tindouf"
+ PROV_ADJ5216: "Tifarti"
+ PROV_ADJ5217: "Ain Ben Tili"
+ PROV_ADJ5218: "Fderik"
+ PROV_ADJ5219: "Néma"
+ PROV_ADJ5220: "Walatah"
+ PROV_ADJ5221: "Aoudaghost"
+ PROV_ADJ5222: "Ouadane"
+ PROV_ADJ5223: "Akjoujt"
+ PROV_ADJ5224: "Taghaza"
+ PROV_ADJ5225: "Béchar"
+ PROV_ADJ5226: "El Goléa"
+ PROV_ADJ5227: "Tamentit"
+ PROV_ADJ5228: "In Salah"
+ PROV_ADJ5229: "Illizi"
+ PROV_ADJ5230: "Takedda"
+ PROV_ADJ5231: "Tassili n'Ajjer"
+ PROV_ADJ5232: "Tamanrasset"
+ PROV_ADJ5233: "Tessalit"
+ PROV_ADJ5234: "Zillah"
+ PROV_ADJ5235: "Tazirbu"
+ PROV_ADJ5236: "Jalu"
+ PROV_ADJ5237: "Ma'tan as-Sarra"
+ PROV_ADJ5238: "Waw an Namus"
+ PROV_ADJ5239: "Kufra"
  PROV_ADJ5240: "Siwa"
  PROV_ADJ5241: "Dakhla"
  PROV_ADJ5242: "Fada"
@@ -906,7 +906,7 @@
  PROV_ADJ5247: "Lam Dong"
  PROV_ADJ5248: "Bawlakhe"
  PROV_ADJ5249: "Tachileik"
- 
+
  PROV5250: "Infi"
  PROV5251: "Arsir"
  PROV5252: "Fédala"
@@ -928,7 +928,7 @@
  PROV5268: "Gabes"
  PROV5269: "Al Khums"
  PROV5270: "Maradah"
- 
+
  PROV_ADJ5250: "Infi"
  PROV_ADJ5251: "Arsir"
  PROV_ADJ5252: "Fédala"
@@ -950,19 +950,19 @@
  PROV_ADJ5268: "Gabes"
  PROV_ADJ5269: "Al Khums"
  PROV_ADJ5270: "Maradah"
- 
+
  PROV5271: "Bastia"
  PROV5272: "Elba"
  PROV5273: "Bunifaziu"
  PROV5274: "Formentera"
  PROV5275: "Manacor"
- 
+
  PROV_ADJ5271: "Bastia"
  PROV_ADJ5272: "Elba"
  PROV_ADJ5273: "Bunifaziu"
  PROV_ADJ5274: "Formentera"
  PROV_ADJ5275: "Manacor"
- 
+
  PROV5276: "Ajdabiya"
  PROV5277: "Desouk"
  PROV5278: "Mansoura"
@@ -993,7 +993,7 @@
  PROV5303: "Skopin"
  PROV5304: "Vyazniki"
  PROV5305: "Starodub-on-the-Klyazma"
-  
+
  PROV_ADJ5276: "Ajdabiya"
  PROV_ADJ5277: "Desouk"
  PROV_ADJ5278: "Mansoura"
@@ -1024,7 +1024,7 @@
  PROV_ADJ5303: "Skopin"
  PROV_ADJ5304: "Vyazniki"
  PROV_ADJ5305: "Starodub-on-the-Klyazma"
- 
+
  PROV5306: "Kezlev"
  PROV5307: "Solkhat"
  PROV5308: "Kyzyk-Yar"
@@ -1039,7 +1039,7 @@
  PROV5317: "Ardahan"
  PROV5318: "Rustavi"
  PROV5319: "Dedoplistsqaro"
- 
+
  PROV_ADJ5306: "Kezlev"
  PROV_ADJ5307: "Solkhat"
  PROV_ADJ5308: "Kyzyk-Yar"
@@ -1054,19 +1054,19 @@
  PROV_ADJ5317: "Ardahan"
  PROV_ADJ5318: "Rustavi"
  PROV_ADJ5319: "Dedoplistsqaro"
- 
+
  PROV5320: "Ani"
  PROV5321: "Archesh"
  PROV5322: "Gyumri"
  PROV5323: "Varakn"
  PROV5324: "Sabirabad"
- 
+
  PROV_ADJ5320: "Ani"
  PROV_ADJ5321: "Archesh"
  PROV_ADJ5322: "Gyumri"
  PROV_ADJ5323: "Varakn"
  PROV_ADJ5324: "Sabirabad"
- 
+
  PROV5325: "Qiannan"
  PROV5326: "Jinping"
  PROV5327: "Chuxiong"
@@ -1081,7 +1081,7 @@
  PROV5336: "Ziyang"
  PROV5337: "Bisanthe"
  PROV5338: "Bansko"
- 
+
  PROV_ADJ5325: "Qiannan"
  PROV_ADJ5326: "Jinping"
  PROV_ADJ5327: "Chuxiong"
@@ -1096,21 +1096,21 @@
  PROV_ADJ5336: "Ziyang"
  PROV_ADJ5337: "Bisanthe"
  PROV_ADJ5338: "Bansko"
- 
+
  PROV5339: "Abalessa"
  PROV5340: "Adrar"
  PROV5341: "Assamakka"
  PROV5342: "Djanet"
  PROV5343: "Ghat"
  PROV5344: "Kidal"
- 
+
  PROV_ADJ5339: "Abalessa"
  PROV_ADJ5340: "Adrar"
  PROV_ADJ5341: "Assamakka"
  PROV_ADJ5342: "Djanet"
  PROV_ADJ5343: "Ghat"
  PROV_ADJ5344: "Kidal"
- 
+
  PROV5345: "Nyala"
  PROV5346: "Kaduqli"
  PROV5347: "Malakal"
@@ -1118,7 +1118,7 @@
  PROV5349: "Bara"
  PROV5350: "Korta"
  PROV5351: "Haiya"
- 
+
  PROV_ADJ5345: "Nyala"
  PROV_ADJ5346: "Kaduqli"
  PROV_ADJ5347: "Malakal"
@@ -1126,7 +1126,7 @@
  PROV_ADJ5349: "Bara"
  PROV_ADJ5350: "Korta"
  PROV_ADJ5351: "Haiya"
- 
+
  PROV5352: "Duba"
  PROV5353: "Badia East"
  PROV5354: "Rabigh"
@@ -1150,7 +1150,7 @@
  PROV5372: "Seeb"
  PROV5373: "Quriyat"
  PROV5374: "Al Ain"
- 
+
  PROV_ADJ5352: "Duba"
  PROV_ADJ5353: "Badia East"
  PROV_ADJ5354: "Rabigh"
@@ -1174,7 +1174,7 @@
  PROV_ADJ5372: "Seeb"
  PROV_ADJ5373: "Quriyat"
  PROV_ADJ5374: "Al Ain"
- 
+
  PROV5375: "Arish"
  PROV5376: "Beersheba"
  PROV5377: "Al Mudawwara"
@@ -1199,7 +1199,7 @@
  PROV5396: "Ingushetia"
  PROV5397: "Chechnya"
  PROV5398: "East Caucasus"
- 
+
  PROV_ADJ5375: "Arish"
  PROV_ADJ5376: "Beersheba"
  PROV_ADJ5377: "Al Mudawwara"
@@ -1224,9 +1224,9 @@
  PROV_ADJ5396: "Ingushetia"
  PROV_ADJ5397: "Chechnya"
  PROV_ADJ5398: "East Caucasus"
- 
+
  east_circassia_area: "East Circassia"
- 
+
  PROV5399: "Yaounde"
  PROV5400: "Banyo"
  PROV5401: "Bertoua"
@@ -1265,7 +1265,7 @@
  PROV5434: "Bor"
  PROV5435: "Benitu"
  PROV5436: "Malakal"
- 
+
  PROV_ADJ5399: "Yaounde"
  PROV_ADJ5400: "Banyo"
  PROV_ADJ5401: "Bertoua"
@@ -1304,19 +1304,19 @@
  PROV_ADJ5434: "Bor"
  PROV_ADJ5435: "Benitu"
  PROV_ADJ5436: "Malakal"
- 
+
  new_central_africa_region: "Central Africa"
  new_central_africa_region_name: "Central Africa"
  new_central_africa_region_adj: "Central Africa"
- 
+
  central_africa_superregion: "Central Africa"
  central_africa_superregion_name: "Central Africa"
  central_africa_superregion_adj: "Central African"
- 
+
  east_africa_superregion: "East Africa"
  east_africa_superregion_name: "East Africa"
  east_africa_superregion_adj: "East African"
- 
+
  cameroon_area: "Cameroon"
  adamaw_area: "Adamaw"
  mambere_area: "Mambéré"
@@ -1325,7 +1325,7 @@
  central_sahel_area: "Central Sahel"
  bahr_el_ghazal_area: "Bahr el Ghazal"
  greater_upper_nile_area: "Greater Upper Nile"
- 
+
  PROV5437: "Varna"
  PROV5438: "Beszterce"
  PROV5439: "Brasov"
@@ -1336,7 +1336,7 @@
  PROV5444: "Neum"
  PROV5445: "Makarska"
  PROV5446: "Buda"
- 
+
  PROV_ADJ5437: "Varna"
  PROV_ADJ5438: "Beszterce"
  PROV_ADJ5439: "Brasov"
@@ -1347,7 +1347,7 @@
  PROV_ADJ5444: "Neum"
  PROV_ADJ5445: "Makarska"
  PROV_ADJ5446: "Buda"
- 
+
  PROV5447: "Korchak"
  PROV5448: "Gotsuk"
  PROV5449: "Kardung"
@@ -1402,7 +1402,7 @@
  PROV5498: "Zhangzhou"
 
 
- 
+
  PROV_ADJ5447: "Korchak"
  PROV_ADJ5448: "Gotsuk"
  PROV_ADJ5449: "Kardung"
@@ -1455,7 +1455,7 @@
  PROV_ADJ5496: "Chenzhou"
  PROV_ADJ5497: "Jiujiang"
  PROV_ADJ5498: "Zhangzhou"
- 
+
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"
  north_zhejiang_area: "North Zhejiang"
@@ -1463,17 +1463,18 @@
  west_kham_area: "West Kham"
  north_hubei_area: "North Hubei"
  south_hunan_area: "South Hunan"
- 
+
  #trade node
  central_africa: "Central Africa"
- 
+
  #trade company
  trade_company_central_africa: "Central Africa Charter"
  TRADE_COMPANY_CENTRAL_AFRICA_Root_Culture_GetName: "[Root.GetAdjective] Central Africa Company"
  TRADE_COMPANY_CENTRAL_Africa_Trade_Company: "Central Africa Trade Company"
- 
+
  #custom group
  black_earth_region: "Black Earth Region"
  ireland_region: "Ireland"
  england_region: "England"
  scotland_region: "Scotland"
+ outremer_region: "Outremer"

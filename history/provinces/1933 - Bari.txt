@@ -8,7 +8,7 @@ religion = catholic
 hre = yes
 base_tax = 3 
 base_production = 3
-trade_goods = grapes
+trade_goods = wine
 base_manpower = 2
 capital = "Bari"
 is_city = yes # Estimated 
@@ -17,5 +17,6 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+add_building = mrb_winery
 
 1444.11.12 = { trade_goods = unknown }

@@ -31,4 +31,5 @@
  CANNOT_WAR_SHUGO: "The Shugo are not yet ready to fight for their independence."
 
  cb_crusade_for_jerusalem: "Crusade for Jerusalem"
- cb_crusade_for_jerusalem_desc: "A new crusade has been called by []"
+ cb_crusade_for_jerusalem_desc: "A new crusade has been called by [Root.Monarch.GetTitle] [Root.Monarch.GetName]."
+ TAKE_JERUSALEM_NAME: "Crusade for Jerusalem"

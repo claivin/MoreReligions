@@ -1,6 +1,6 @@
 cathar_disaster = {
 	potential = {
-		religion = mr_cathar
+		#religion = mr_cathar
 		always = no
 	}
 	

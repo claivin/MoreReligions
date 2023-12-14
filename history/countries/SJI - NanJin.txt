@@ -1,10 +1,10 @@
 government = tribal
 add_government_reform = steppe_horde
 technology_group = nomad_group
-religion = vajrayana
-primary_culture = mongol
+religion = catholic
+primary_culture = kharchin
 add_accepted_culture = manchu
-religious_school = mr_karma_kagyu_school
+#religious_school = 
 capital = 726 
 
 

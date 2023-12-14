@@ -7,10 +7,10 @@ add_core = BGU
 culture = swabian
 religion = catholic
 hre = yes
-base_tax = 5
-base_production = 5
-trade_goods = cloth
-base_manpower = 3
+base_tax = 4
+base_production = 4
+trade_goods = cotton
+base_manpower = 2
 capital = "Memmingen" 
 is_city = yes
 

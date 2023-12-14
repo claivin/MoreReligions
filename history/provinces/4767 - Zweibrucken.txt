@@ -3,10 +3,10 @@
 capital = "Zweibrücken"
 culture = hessian
 religion = catholic
-trade_goods = cloth
+trade_goods = cotton
 owner = PAL
 base_tax = 3
-base_production = 3
+base_production = 2
 base_manpower = 2
 is_city = yes
 controller = PAL

@@ -10,10 +10,11 @@ religion = catholic
 hre = no
 base_tax = 3
 base_production = 3
-trade_goods = fish
+trade_goods = shellfish
 base_manpower = 2
 capital = "Lugo" 
 is_city = yes
+add_local_autonomy = 10
  # Santiago de Compostela pilgrimage
 discovered_by = eastern
 discovered_by = western

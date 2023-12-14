@@ -1,0 +1,156 @@
+covadonga_court = {
+	local_development_cost = -0.3
+	local_unrest = -2
+}
+iberian_courier_service = {
+	envoy_travel_time = -0.2
+}
+train_the_levy = {
+	drill_gain_modifier = 0.3
+    drill_decay_modifier = -0.3
+}
+dream_of_iberia = {
+	monthly_favor_modifier = 0.2
+}
+misto_sharpshooters = {
+	allow_mercenary_drill = yes
+}
+iberian_federation = {
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 4
+	reduced_liberty_desire = 15.0
+	vassal_income = 1.5
+	vassal_forcelimit_bonus = 1.5
+}
+iberian_parliament = {
+	num_of_parliament_issues = 1
+}
+naval_funds = {
+	naval_maintenance_modifier = -0.1
+}
+adopt_naval_gunpowder = {
+	global_naval_barrage_cost = -0.3
+}
+veteran_whalers = {	#Permanent
+	shock_damage_received = -0.1
+	is_marine_modifier = yes
+}
+integrated_catalonian_fleet = {
+	ship_power_propagation = 0.1
+}
+economic_capital_of_iberia = {
+	local_development_cost = -0.15
+	expand_infrastructure_cost_modifier = -0.5
+}
+moor_sailed_whalers = {
+	allowed_caravel_fraction = 0.3
+	has_caravel = yes
+}
+andalusian_docks = {
+	local_has_caravel = yes
+}
+deep_sea_fishing = {
+	range = 0.3
+}
+sailor_stories = {
+	global_colonial_growth = 15
+}
+whalers_into_marines = {
+	global_sailors_modifier = 0.15
+}
+chasing_the_whale = {
+	range = 0.1
+}
+faraoese_cliffs = {
+	hostile_fleet_attrition = 5
+}
+atlantic_service_station = {
+	local_ship_repair = 0.5
+}
+baskonia_berria = {
+	province_trade_power_modifier = 0.1
+}
+iberian_eel_merchants = {
+	merchants = 1
+}
+icey_penal_colony = {
+	local_development_cost = -0.5
+}
+insular_communities = {
+	allowed_num_of_buildings = 3
+}
+basque_slave_trade = {
+	global_colonial_growth = 20
+}
+cape_shipyard = {
+	ship_recruit_speed = -0.25
+}
+naval_pioneers = {
+	navy_tradition = 1
+}
+vineboom = {
+	local_production_efficiency = 0.1
+}
+ocean_kingdom = {
+	local_development_cost = -0.1
+}
+frontier_freedom = {
+	trade_goods_size = 3.0
+}
+polynesian_prowess = {
+	local_sailors_modifier = 0.5
+}
+marine_blue_whale_hunting = {	#Permanent
+	land_morale = 0.10
+	is_marine_modifier = yes
+}
+marine_orca_hunting = {	#Permanent
+	drill_gain_modifier = 0.50
+	is_marine_modifier = yes
+}
+marine_sperm_whale_hunting = {	#Permanent
+	discipline = 0.05
+	is_marine_modifier = yes
+}
+iberias_finest = {	#Permanent
+	special_unit_manpower_cost_modifier = -0.3
+	is_marine_modifier = yes
+}
+seeds_of_industry = {
+	build_cost = -0.1
+}
+onboard_processing = {
+	production_efficiency = 0.1
+}
+a_whale_oiled_machine = {
+	all_power_cost = -0.03
+}
+native_fur_trade = {
+	trade_efficiency = 0.2
+	global_colonial_growth = 10
+}
+state_travelers = {
+	colonists = 1
+}
+cash_crops = {
+	global_trade_goods_size = 0.4
+}
+colonial_breadbasket = {
+	manpower_recovery_speed = 0.30
+}
+global_network = {
+	development_cost = -0.1
+}
+euskal_bakea = {
+	global_tariffs = 0.20
+}
+frontier_supplies = {
+	colony_development_boost = 1
+}
+foreign_fleetmen = {	#Permanent
+	land_attrition = -0.20
+	is_marine_modifier = yes
+}
+indian_toll = {
+	trade_value_modifier = 0.3
+}

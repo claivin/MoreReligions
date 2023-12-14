@@ -14,10 +14,10 @@ bookmark =
 	country = IFT
 	country = YNN
 	country = NAV
+	country = THR
 	country = ATI
-	country = TMM
 	country = BLH
-	country = RDH
+	country = SUK
 	
 	easy_country = GSC
 	easy_country = SIC

@@ -1,3 +1,39 @@
+#permanent province modifiers
+microstate_modifier = {
+	local_tax_modifier = -0.35
+	local_production_efficiency = -0.35
+	local_manpower_modifier = -0.35
+	local_development_cost = -0.50
+	local_development_cost_modifier  = -0.25
+	local_core_creation = -0.33
+}
+
+mr_chernozam_soils = {
+	trade_goods_size_modifier = 1.0
+	local_production_efficiency = 0.5
+}
+
+mr_greenland = {
+	local_friendly_movement_speed = -0.33
+	local_hostile_movement_speed = -0.33
+	max_attrition = 3
+	local_hostile_attrition = 3
+	local_colony_cost_modifier = 0.5
+	local_colonist_placement_chance = -0.2
+}
+
+mr_sahara = {
+	max_attrition = 2
+	local_hostile_attrition = 2
+	supply_limit_modifier = -0.5
+	local_colony_cost_modifier = 2
+	local_colonist_placement_chance = -0.2
+}
+
+mr_taghaza_salt_mines = {
+	trade_goods_size = 2
+}
+
 mr_hamburg_beer_breweries = {
 	trade_goods_size = 2
 }
@@ -8,4 +44,21 @@ mr_rigish_mead = {
 
 mr_mead_production = {
 	trade_goods_size_modifier = 0.5
+}
+
+mr_ire_whiskey = {
+	trade_value = 1
+}
+
+mr_sco_scotch = {
+	trade_value = 1
+}
+
+mr_toledo_steel = {
+	trade_goods_size = 1
+}
+
+mr_damascus_steel = {
+	trade_goods_size = 1
+	shock_damage = 0.025
 }

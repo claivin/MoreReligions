@@ -45,3 +45,14 @@ scotland_region = {
 	248 249 251 4362 4361 #lowlands_area
 	253 4364 369 #kingdom_of_the_isles_area NOT MANN OR SHETLAND
 }
+
+outremer_region = {
+	364 379 1854 5375 5376 # Palestine area
+	380 381 2327 5377 5378 # trans_jordan_area
+	377 1849 2313 4298 5379 # aleppo_area
+	378 382 1855 4297 5043 # syria_area
+	405 4270 4271 5044 5045 # syrian_desert_area
+	327 2302 5387 # Cilicia/Little Armenia
+	321 2308 407 4268 # Cyprus, Edessa, Ar-Raqqah, Aqbah
+	365 5284 2315 5375 # Sinai peninsula
+}

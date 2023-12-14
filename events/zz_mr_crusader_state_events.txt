@@ -139,7 +139,7 @@ country_event = {
 		mission_completed = cs_agricultural_centralization
 		any_owned_province = {
 			OR = {
-				is_in_outremer = yes
+				province_group = outremer_region
 				region = mashriq_region
 			}
 			OR = {
@@ -154,7 +154,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				OR = {
-					is_in_outremer = yes
+					province_group = outremer_region
 					region = mashriq_region
 				}
 				OR = {
@@ -215,12 +215,12 @@ country_event = {
 		name = mrCrusaderEvents.5.a
 
 		inherit = ATI
-		# every_owned_province = {
-		# 	limit = {
-		# 		is_core = ATI
-		# 	}
-		# 	add_nationalism = 10
-		# }
+		every_owned_province = {
+			limit = {
+				is_core = ATI
+			}
+			add_nationalism = 10
+		}
 	}
 }
 
@@ -231,13 +231,15 @@ country_event = {
 	id = mrCrusaderEvents.6
 
 	mean_time_to_happen = {
-		years = 15
+		years = 8
 	}
 
 	trigger = {
 		is_levantine_crusader_state = yes
 		religion = catholic
 	}
+
+	hidden = yes
 
 	immediate = {
 		hidden_effect = {
@@ -471,6 +473,31 @@ country_event = { # Fate of the Kaaba
 		add_country_modifier = {
 			name = cs_kaaba_in_disrepair
 			duration = -1
+		}
+	}
+}
+
+# Discover Middle East/Persia on startup
+country_event = {
+	id = mrCrusaderEvents.11
+
+	hidden = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_levantine_crusader_state = yes
+	}
+
+	immediate = {
+		near_east_superregion = {
+			discover_country = root
+		}
+		persia_region = {
+			discover_country = root
+		}
+		caucasia_region = {
+			discover_country = root
 		}
 	}
 }

@@ -300,9 +300,13 @@
  COP_ADJ: "Copenhagener"
  COP_ADJ2: "Copenhagener"
  
- HLS: "Schleswig"
- HLS_ADJ: "Schleswig"
- HLS_ADJ2: "Schleswig"
+ HLS: "Holstein"
+ HLS_ADJ: "Holsteiner"
+ HLS_ADJ2: "Holsteiner"
+
+ SHL: "Schleswig"
+ SHL_ADJ: "Schleswig"
+ SHL_ADJ2: "Schleswig"
  
  NJL: "Nørrejylland"
  NJL_ADJ: "North Jutlander"

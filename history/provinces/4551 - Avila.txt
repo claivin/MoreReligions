@@ -13,6 +13,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = Avila
 is_city = yes
+add_local_autonomy = 10
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
