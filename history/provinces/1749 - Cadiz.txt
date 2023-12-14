@@ -9,7 +9,7 @@ religion = sunni
 hre = no
 base_tax = 5 
 base_production = 4
-trade_goods = lumber
+trade_goods = fish
 base_manpower = 3
 capital = "Cadiz" 
 is_city = yes
@@ -19,6 +19,6 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
-
+add_local_autonomy = 10
 
 1444.11.12 = { trade_goods = unknown }

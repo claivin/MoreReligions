@@ -19,5 +19,7 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
+add_local_autonomy = 20
+add_building = mrb_lumberyard
 
 1444.11.12 = { trade_goods = unknown }

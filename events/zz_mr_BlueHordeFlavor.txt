@@ -560,6 +560,7 @@ country_event = {
 	trigger = { #triggered by end of war with Blue horde defeat
 		tag = BLH
 		truce_with = BUL
+		is_subject = no
 	}
 	
 	immediate = {
@@ -595,6 +596,7 @@ country_event = {
 	trigger = { #triggered by end of war with Blue horde defeat
 		tag = BLH
 		truce_with = BUL
+		is_subject = no
 	}
 	
 	immediate = {
