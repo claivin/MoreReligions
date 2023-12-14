@@ -20,19 +20,15 @@
  #White Horde Modifiers
  
  #White Horde Events
- mr_startup_events.7.t: "The Chagatai Realm"
- mr_startup_events.7.d: " "
- mr_startup_events.7.a: "We Will Weather This Storm"
- mr_startup_events.7.b: "Our Time Will Come"
  MR_balkh_flavor.1.t: "The Barlas Revolt of [GetYear]"
- MR_balkh_flavor.1.d: " "
+ MR_balkh_flavor.1.d: "The traitorous governor of Transoxiana - [TRS.Monarch.GetName] has taken up arms against us. While we were pre-occupied with the affairs of Balkh [TRS.Monarch.GetName] has secured the support of the Jalairs, Suldus, & the Arlat. Any remaining authority we might have had over the Northern territories has effectively crumbled, and they are now in open revolt against us. We must act swiftly to put an end to this revolution, lest our rule come to a premature end."
  MR_balkh_flavor.1.a: "They will meet the same fate as their forefather!"
  MR_balkh_flavor.1.b: "Retreat to Afghanistan, Transoxiana is lost."
  MR_balkh_flavor.2.t: "The Barlas Revolt of [GetYear]"
- MR_balkh_flavor.2.d: " "
+ MR_balkh_flavor.2.d: "The time has come to rid the realm of the Qara'unas for good. Their rule has led to regression, the people suffer while they fund their egotistical architectural projects in Balkh. The Jalairs, Suldus, and Arlat all stand behind [TRS.Monarch.GetName].\n\nThe Qara'unas have rallied their forces and fortified their positions in the South, but it's only a matter of time until their fall comes. Timur shall be avenged!"
  MR_balkh_flavor.2.a: "Arrogant fools"
  MR_balkh_flavor.3.t: "The Qara'unas back down"
- MR_balkh_flavor.3.d: " "
+ MR_balkh_flavor.3.d: "The time has come to rid the realm of the Qara'unas for good. Their rule has led to regression, the people suffer while they fund their egotistical architectural projects in Balkh. The Jalairs, Suldus, and Arlat all stand behind [TRS.Monarch.GetName].\n\nThe Qara'unas have retreated to their mountain bases and do not seem to have any intentions of preventing us from asserting our sovereignity. It seems we will have to take the fight to their doorstep..."
  MR_balkh_flavor.3.a: "Cowards, their day will come."
  
  #Misc
