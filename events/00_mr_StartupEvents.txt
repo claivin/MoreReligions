@@ -409,7 +409,6 @@ country_event = {
 	desc = mr_startup_events.6.d
 	picture = MONGOL_BANNERS_eventPicture
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	trigger = {
@@ -418,6 +417,7 @@ country_event = {
 		tag = NOG
 		tag = SHY
 		}
+		NOT = { is_year = 1445 }
 	}
 
 	option = {
@@ -450,6 +450,7 @@ country_event = {
 		tag = BLK
 		tag = TRS
 		}
+		NOT = { is_year = 1445 }
 	}
 
 	option = {
