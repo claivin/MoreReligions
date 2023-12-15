@@ -1688,6 +1688,48 @@ BLK_ideas = { #Balkh
 	}
 }
 
+KZH_ideas = { #White Horde 
+	start = {
+		cavalry_power = 0.20
+		tolerance_heathen = 3
+	}
+	bonus = {
+		siege_ability = 0.10
+	}
+	free = yes
+	trigger = {
+              OR = 	{
+	           tag = KZH 
+			   tag = SHY
+			   tag = NOG
+			    }
+			   }
+	KZH_ideas_1 = { #Yasawiyya Patronage
+		monthly_piety_accelerator = 0.1
+		horde_unity = 1
+	}
+	KZH_ideas_2 = { #Sons of Orda
+		core_creation = -0.25
+	}
+	KZH_ideas_3 = { #The Bitter Steppes
+ 		land_attrition = -0.20
+	}
+	KZH_ideas_4 = { #Steppe Warfare
+		movement_speed = 0.10
+		cavalry_cost = -0.05
+	}
+	KZH_ideas_5 = { #The Mint of Orda-Bazar
+		inflation_reduction = 0.03
+		monthly_gold_inflation_modifier = -0.2
+	}
+	KZH_ideas_6 = { #Populating the Steppes
+		development_cost = -0.1
+	}
+	KZH_ideas_7 = { #Hordes of Livestock
+		land_forcelimit_modifier = 0.20
+	}
+}
+
 ADR_ideas = {
 	start = {
 		prestige = 1.0

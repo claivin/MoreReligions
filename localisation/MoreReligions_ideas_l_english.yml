@@ -546,7 +546,7 @@
  LNG_ideas_7: "Chinese Siege Engines"
  LNG_ideas_7_desc: "The Chinese have always been at the forefront of siege innovation. By utilising gunpowder, they are able to construct incendiaries that will successfully lay siege to even the strongest of fortifications, allowing us to easily capture provinces during wartime." 
  
- #Liang Ideas 
+ #Balkh Ideas 
  BLK_ideas: "Balkh Ideas"
  BLK_ideas_start: "Balkh Traditions"
  BLK_ideas_bonus: "Balkh ambitions"
@@ -564,6 +564,25 @@
  BLK_ideas_6_desc: "Balkh is situated in a key central point. Those who wish to cross from China, India, Iran or Turkestan must cross through Balkh to reach the other regions. Due to this Balkh has become known as the Nexus city, with people from all those regions mixing together and settling in our central cosmopolitan city."
  BLK_ideas_7: "Cloak of Muhammad"
  BLK_ideas_7_desc: "We are in possession of the cloak of the Prophet Muhammad, worn during the famous Isra' and Mi'raj. The cloak was originally located in the city of Bukhara, but we have moved it to the city of Balkh to be kept safely in the aptly named Kirka Sharif." 
+ 
+ #White Horde Ideas 
+ KZH_ideas: "White Horde Ideas"
+ KZH_ideas_start: "White Horde Traditions"
+ KZH_ideas_bonus: "White Horde ambitions"
+ KZH_ideas_1: "Yasawiyya Patronage"
+ KZH_ideas_1_desc: "Our patronage of the Yasawiyya order - founded by the legendary mystic Ahmad Yasawi - brings us great legitimacy. The spread of Islam throughout our realm is owed to this order, and by intertwining the order with our ruling class we are able to command the loyalty of the pious."
+ KZH_ideas_2: "Sons of Orda"
+ KZH_ideas_2_desc: "Our Khanate was founded by Orda Khan, the eldest son of Jochi. Orda was a master at conquest, leading the forces that devastated Poland. He was also a master at administrating, ushering in a period of tranquility in the eastern half of the golden horde. We lead by his example."
+ KZH_ideas_3: "The Bitter Steppes"
+ KZH_ideas_3_desc: "The bitter eastern steppes are a harsh environment to thrive in, but our people endure the hardship to prosper where the weak would falter. This has hardened our people immensely, they are able to bring these experiences to the battlefield and endure conditions that would break most men."
+ KZH_ideas_4: "Steppe Warfare"
+ KZH_ideas_4_desc: "With the absence of agriculture, our people rely on the nourishment of the hunt. The skills honed through the traditional hunts translate into the horseback warfare conducted on the steppes. Our soldiers and their horses ride as one."
+ KZH_ideas_5: "The Mint of Orda-Bazar"
+ KZH_ideas_5_desc: "The mint of Orda-Bazar once minted the silver and gold coins that circulated as far away as Kyiv and Hanseong. The mint is still in full throttle, producing the coinage for our horde."
+ KZH_ideas_6: "Populating the Steppes"
+ KZH_ideas_6_desc: "Through the peace enforced over the steppes by our might, we will be able to grow vast cities and settlements. Cities such as Syghnak & Turkestan shall become the awe of the world under our governship."
+ KZH_ideas_7: "Hordes of Livestock"
+ KZH_ideas_7_desc: "Our people do not toil the soil, nor do they plant any seeds. We are a nation of proud pastoralists, able to sustain ourselves on any lands. Our hordes of cattle, camels, horses & sheep travel with our people, and we live & thrive off of what they provide us." 
 
 #Andorran Ideas
  ADR_ideas: "Andorran Ideas"
