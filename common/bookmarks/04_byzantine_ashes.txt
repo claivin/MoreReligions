@@ -3,22 +3,31 @@ bookmark =
 	name = "byzantine_ashes"
 	desc = "byzantine_ashes_desc"
 	date = 1444.11.11
-	
+
 	center = 151
 	default = yes
-	
-	
+
+
 	country = THR
 	country = CST
 	country = CNT
 	country = THS
 	country = TUR
 	country = RUM
-	
-	
+
+	# Crusaders (until we have a middle east bookmark)
+	country = ATI
+	country = EDD
+	country = CYP
+	country = LEB
+	country = TPO
+
+
 	easy_country = THR
 	easy_country = CNT
 	easy_country = THS
 	easy_country = CST
-	
+
+	easy_country = ATI
+
 }

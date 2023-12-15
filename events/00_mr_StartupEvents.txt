@@ -16,11 +16,11 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		#not used yet
 	}
-	
+
 	option = {
 		name = mr_startup_events.1000.a
 	}
@@ -35,7 +35,7 @@ country_event = {
 		desc = mr_startup_events.1.d.1
 	}
 	desc = { #france,PU's, and vassals
-		trigger = { 
+		trigger = {
 			OR = {
 				tag = FRA
 				is_subject_of = FRA
@@ -62,7 +62,7 @@ country_event = {
 		desc = mr_startup_events.1.d.4
 	}
 	picture = MYSTIC_IN_PRAYER_eventPicture
-	
+
 	is_triggered_only = yes
 	trigger = {
 		ai = no
@@ -74,22 +74,22 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = { #toulousse
 		name = mr_startup_events.1.a
 		trigger = { tag = TOU }
 	}
-	
+
 	option = { #france,PU's, and vassals
 		name = mr_startup_events.1.b
-		trigger = { 
+		trigger = {
 			OR = {
 				tag = FRA
 				is_subject_of = FRA
 			}
 		}
 	}
-	
+
 	option = { #the rest of france, except Normandy and Brittany
 		name = mr_startup_events.1.c
 		trigger = {
@@ -101,7 +101,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Brittany
 		name = mr_startup_events.1.c
 		trigger = { tag = BRI }
@@ -114,7 +114,7 @@ country_event = {
 	title = mr_startup_events.2.t
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	desc = { #England and their normal vassals, but not the marcher lords
-		trigger = { 
+		trigger = {
 			OR = {
 				tag = ENG
 				tag = CRN
@@ -126,7 +126,7 @@ country_event = {
 		desc = mr_startup_events.2.d.1
 	}
 	desc = { #York and their vassals
-		trigger = { 
+		trigger = {
 			OR = {
 				tag = YRK
 				is_subject_of = YRK
@@ -198,7 +198,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			ENG = {
@@ -215,7 +215,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #England and their normal vassals, but not the marcher lords
 		name = mr_startup_events.2.a
 		trigger = {
@@ -316,7 +316,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = mr_startup_events.3.a
 		#empty
@@ -338,13 +338,13 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = mr_startup_events.4.a
 		trigger = { tag = BLH }
 		custom_tooltip = blh_warning_tt
 	}
-	
+
 	option = {
 		name = mr_startup_events.4.b
 		trigger = { tag = BUL }
@@ -377,9 +377,9 @@ country_event = {
 		tag = JAP
 	}
 	picture = SUFFERING_CHINESE_VILLAGE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = mr_startup_events.5.a
 		trigger = {
@@ -387,7 +387,7 @@ country_event = {
 		}
 		custom_tooltip = mr_jap_4_TT
 	}
-	
+
 	option = {
 		name = mr_startup_events.5.b
 		trigger = {
@@ -408,18 +408,18 @@ country_event = {
 	title = mr_startup_events.6.t
 	desc = mr_startup_events.6.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		ai = no
 		OR = {
-		tag = NOG 
+		tag = NOG
 		tag = SHY
 		}
 	}
-	
+
 	option = {
 		name = mr_startup_events.6.a#KereiResponse
 		trigger = {
@@ -427,13 +427,13 @@ country_event = {
 		}
 	custom_tooltip = SHY_end_civil_war_TT
 	}
-	
+
 	option = {
 		name = mr_startup_events.6.b#JanibekResponse
 		trigger = {
-        tag = NOG 
+        tag = NOG
 		}
-    custom_tooltip = NOG_end_civil_war_TT		
+    custom_tooltip = NOG_end_civil_war_TT
 	}
 }
 
@@ -442,31 +442,31 @@ country_event = {
 	title = mr_startup_events.7.t
 	desc = mr_startup_events.7.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		OR = {
-		tag = BLK 
+		tag = BLK
 		tag = TRS
 		}
 	}
-	
+
 	option = {
 		name = mr_startup_events.7.a#BalkhWarning
 		trigger = {
 		tag = BLK
 		}
 	custom_tooltip = BLK_barlas_revolt_TT
-	hidden_effect = { set_country_flag = BLK_barlas_revolt0 } 
+	hidden_effect = { set_country_flag = BLK_barlas_revolt0 }
 	}
-	
+
 	option = {
 		name = mr_startup_events.7.b#TransoxianaNotification
 		trigger = {
-        tag = TRS 
+        tag = TRS
 		}
-    custom_tooltip = TRS_barlas_revolt_TT		
+    custom_tooltip = TRS_barlas_revolt_TT
 	}
 }
 
@@ -475,18 +475,18 @@ country_event = {
 	title = mr_startup_events.8.t
 	desc = mr_startup_events.8.d
 	picture = DIPLOMACY_eventPicture
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		tag = NAV
 	}
-	
+
 	option = {
 		name = mr_startup_events.8.1
 	}
-}	
+}
 
 
 country_event = { #Iceland
@@ -507,7 +507,7 @@ country_event = { #Iceland
 		hidden_effect = { set_country_flag = ice_had_missions_event }
 	}
 	is_triggered_only = yes
-	
+
 	option = {	#Stand against the Church!
 		name = mr_startup_events.9.a
 		set_country_flag = ice_commonwealth_missions
@@ -533,7 +533,7 @@ country_event = { #Iceland
 			factor = 0
 		}
 	}
-	
+
 	option = {	#They are too powerful, we must surrender!
 		name = mr_startup_events.9.b
 		clr_country_flag = ice_commonwealth_missions
@@ -561,5 +561,65 @@ country_event = { #Iceland
 		ai_chance = {
 			factor = 1
 		}
+	}
+}
+
+country_event = {
+	id = mr_startup_events.10
+	title = mr_startup_events.10.t
+	picture = BYZ_JERUSALEM_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_levantine_crusader_state = yes
+	}
+
+	desc = {
+		trigger = {
+			is_levantine_crusader_state = yes
+			NOT = { tag = ATI }
+			NOT = { tag = EDD }
+		}
+		desc = mr_startup_events.10.d
+	}
+
+	desc = {
+		trigger = {
+			tag = ATI
+		}
+		desc = mr_startup_events.10.d.1
+	}
+
+	desc = {
+		trigger = {
+			tag = EDD
+		}
+		desc = mr_startup_events.10.d.2
+	}
+
+	option = {
+		trigger = {
+			tag = ATI
+		}
+		name = mr_startup_events.10.a
+	}
+
+	option = {
+		trigger = {
+			tag = EDD
+		}
+		name = mr_startup_events.10.b
+	}
+
+	option = {
+		trigger = {
+			OR = {
+				tag = CYP
+				tag = LEB
+				tag = TPO
+			}
+		}
+		name = mr_startup_events.10.c
 	}
 }

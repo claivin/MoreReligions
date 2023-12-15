@@ -5,7 +5,7 @@ primary_culture = outremer
 add_accepted_culture = al_suryah_arabic
 religion = catholic
 technology_group = western
-capital = 2313 # Anthioch
+capital = 2313 # Antioch
 fixed_capital = 2313
 
 
@@ -13,7 +13,7 @@ fixed_capital = 2313
 1444.1.1 = {
 	monarch = {
 		name = "Bohemond IX"
-		dynasty = "Poitiers"
+		dynasty = "Hauteville"
 		birth_date = 1414.5.16
 		adm = 3
 		dip = 2
