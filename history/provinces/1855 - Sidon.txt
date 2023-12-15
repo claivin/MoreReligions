@@ -13,6 +13,7 @@ base_manpower = 3
 is_city = yes
 add_core = SYR
 add_core = TPO
+add_core = LEB
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

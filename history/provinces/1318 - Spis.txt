@@ -22,3 +22,5 @@ discovered_by = CRI
 discovered_by = GOL
 discovered_by = AST
 discovered_by = QAS
+discovered_by = BLH
+discovered_by = BUL
