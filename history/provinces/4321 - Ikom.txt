@@ -1,4 +1,4 @@
-#4321 = Ikom
+#4321 - Ikom
 
 culture = jukun
 religion = shamanism #Fetishism
