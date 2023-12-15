@@ -13,6 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = RUM
 add_core = HJE
+add_core = TRE
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -12,6 +12,7 @@ trade_goods = livestock
 base_manpower = 1
 capital = "Solkhat"
 add_core = BLH
+add_core = TRE
 add_local_autonomy = 20
 discovered_by = eastern
 discovered_by = muslim
