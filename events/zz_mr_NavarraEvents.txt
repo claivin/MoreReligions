@@ -498,7 +498,7 @@ country_event = {
 	id = navarra_events.18
 	title = navarra_events.18.t
 	desc = navarra_events.18.d
-	picture = COMET_SIGHTED_eventPicture
+	picture = ABYSS_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	
