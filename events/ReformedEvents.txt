@@ -344,7 +344,10 @@ country_event = {
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-		religion = reformed
+		OR = {
+			religion = mr_fraticelli
+			religion = reformed
+		}
 		uses_fervor = yes
 		NOT = { has_country_flag = banned_musical_instruments_in_church }
 	}
@@ -409,7 +412,10 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			religion = reformed
+			OR = {
+				religion = mr_fraticelli
+				religion = reformed
+			}
 			current_age = age_of_reformation
 			capital_scope = {
 				continent = europe
