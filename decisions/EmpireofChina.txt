@@ -21,6 +21,7 @@ country_decisions = {
 			OR = {
 				religion_group = eastern
 				religion_group = pagan
+				tag = SJI
 			}
 			has_global_flag = empire_of_china_dismantled
 			NOT = { has_global_flag = empire_of_china_reformed }
