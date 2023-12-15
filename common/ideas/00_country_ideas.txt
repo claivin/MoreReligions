@@ -658,7 +658,10 @@ MOS_ideas = {
 	}
 
 	trigger = {
-		tag = MOS
+		OR = {
+			tag = MOS
+			culture = russian
+		}
 	}
 	free = yes		#will be added at load.
 
@@ -1516,6 +1519,10 @@ PRU_ideas = {
 		OR = {
 			tag = PRU
 			culture = prussian
+			culture = baltic_prussian
+		}
+		NOT = {
+			tag = TEU
 		}
 	}
 	free = yes		#will be added at load.
@@ -3609,7 +3616,7 @@ SER_ideas = {
 	}
 
 	trigger = {
-		tag = SER
+		culture = serbian
 	}
 	free = yes
 
@@ -3730,8 +3737,10 @@ RAG_ideas = {
 	}
 
 	trigger = {
-		tag = RAG
-
+		OR = {
+			tag = RAG
+			tag = SLT
+		}
 	}
 	free = yes		#will be added at load.
 
@@ -7130,8 +7139,12 @@ JNP_ideas = {
 	}
 
 	trigger = {
-		tag = JNP
-		religion_group = muslim
+		OR = {
+			tag = JNP
+			capital_scope = {
+				region = hindusthan_region
+			}
+		}
 	}
 	free = yes		#will be added at load.
 
