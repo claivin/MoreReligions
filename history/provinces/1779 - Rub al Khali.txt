@@ -1,5 +1,16 @@
 #1779 - Rub al Khali
 
+culture = bedouin_arabic
+religion = sunni
+capital = "Rub al Khali"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 25
+native_ferocity = 2
+native_hostileness = 5
 
 discovered_by = east_african
 discovered_by = indian

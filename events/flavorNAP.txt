@@ -180,120 +180,120 @@ country_event = {
 }
 
 # Masaniello's Revolt
-country_event = {
-	id = flavor_nap.5
-	title = flavor_nap.5.t
-	desc = flavor_nap.5.d
-	picture = ANGRY_MOB_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-		}
-		NOT = { current_age = age_of_discovery }
-		NOT = { current_age = age_of_revolutions }
-		is_lesser_in_union = no
-		government = monarchy
-		NOT = { has_country_flag = nap_republican_uprising_happened }
-		OR = {
-			NOT = { stability = 1 }
-			overextension_percentage = 0.1
-			war_exhaustion = 5
-			inflation = 5
-			NOT = { legitimacy = 90 }
-			num_of_loans = 10
-		}
-		owns_core_province = 121
-		121 = {
-			controlled_by = root
-		}
-	}
-	mean_time_to_happen = {
-		years = 15
-	}
-	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					NOT = { province_id = 121 }
-				}
-				set_province_flag = particularist_rebels
-			}
-			random_owned_province = {
-				limit = {
-					NOT = { province_id = 121 }
-					NOT = { has_province_flag = particularist_rebels }
-				}
-				set_province_flag = particularist_rebels
-			}
-			set_country_flag = nap_masaniello_happened
-		}
-	}
-
-	option = {
-		name = flavor_nap.5.a
-		add_stability = -1
-		121 = {
-			spawn_rebels = {
-				type = particularist_rebels
-				size = 2
-				leader = "Masaniello"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				has_province_flag = particularist_rebels
-			}
-			particularist_rebels = 1
-		}
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 0.5
-				NOT = { stability = 1 }
-			}
-		}
-	}
-	option = {
-		name = flavor_nap.5.b
-		ai_chance = {
-			factor = 5
-			modifier = {
-				factor = 0.5
-				NOT = { legitimacy_equivalent = 65 }
-			}
-			modifier = {
-				factor = 0.4
-				NOT = { legitimacy_equivalent = 50 }
-			}
-			modifier = {
-				factor = 0.25
-				NOT = { legitimacy_equivalent = 40 }
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { legitimacy_equivalent = 30 }
-			}
-			modifier = {
-				factor = 0.1
-				is_in_large_debt = yes
-			}
-			modifier = {
-				factor = 0
-				is_bankrupt = yes
-			}
-		}
-		add_treasury = -50
-		add_legitimacy = -25
-		add_republican_tradition = -25
-		add_corruption = 2
-		121 = { particularist_rebels = 1 }
-	}
-}
+#country_event = {
+#	id = flavor_nap.5
+#	title = flavor_nap.5.t
+#	desc = flavor_nap.5.d
+#	picture = ANGRY_MOB_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		OR = {
+#			tag = NAP
+#			tag = TTS
+#		}
+#		NOT = { current_age = age_of_discovery }
+#		NOT = { current_age = age_of_revolutions }
+#		is_lesser_in_union = no
+#		government = monarchy
+#		NOT = { has_country_flag = nap_republican_uprising_happened }
+#		OR = {
+#			NOT = { stability = 1 }
+#			overextension_percentage = 0.1
+#			war_exhaustion = 5
+#			inflation = 5
+#			NOT = { legitimacy = 90 }
+#			num_of_loans = 10
+#		}
+#		owns_core_province = 121
+#		121 = {
+#			controlled_by = root
+#		}
+#	}
+#	mean_time_to_happen = {
+#		years = 15
+#	}
+#	
+#	immediate = {
+#		hidden_effect = {
+#			random_owned_province = {
+#				limit = {
+#					NOT = { province_id = 121 }
+#				}
+#				set_province_flag = particularist_rebels
+#			}
+#			random_owned_province = {
+#				limit = {
+#					NOT = { province_id = 121 }
+#					NOT = { has_province_flag = particularist_rebels }
+#				}
+#				set_province_flag = particularist_rebels
+#			}
+#			set_country_flag = nap_masaniello_happened
+#		}
+#	}
+#
+#	option = {
+#		name = flavor_nap.5.a
+#		add_stability = -1
+#		121 = {
+#			spawn_rebels = {
+#				type = particularist_rebels
+#				size = 2
+#				leader = "Masaniello"
+#			}
+#		}
+#		every_owned_province = {
+#			limit = {
+#				has_province_flag = particularist_rebels
+#			}
+#			particularist_rebels = 1
+#		}
+#		ai_chance = {
+#			factor = 1
+#			modifier = {
+#				factor = 0.5
+#				NOT = { stability = 1 }
+#			}
+#		}
+#	}
+#	option = {
+#		name = flavor_nap.5.b
+#		ai_chance = {
+#			factor = 5
+#			modifier = {
+#				factor = 0.5
+#				NOT = { legitimacy_equivalent = 65 }
+#			}
+#			modifier = {
+#				factor = 0.4
+#				NOT = { legitimacy_equivalent = 50 }
+#			}
+#			modifier = {
+#				factor = 0.25
+#				NOT = { legitimacy_equivalent = 40 }
+#			}
+#			modifier = {
+#				factor = 0.1
+#				NOT = { legitimacy_equivalent = 30 }
+#			}
+#			modifier = {
+#				factor = 0.1
+#				is_in_large_debt = yes
+#			}
+#			modifier = {
+#				factor = 0
+#				is_bankrupt = yes
+#			}
+#		}
+#		add_treasury = -50
+#		add_legitimacy = -25
+#		add_republican_tradition = -25
+#		add_corruption = 2
+#		121 = { particularist_rebels = 1 }
+#	}
+#}
 
 # Plague in Naples
 country_event = {
@@ -335,89 +335,6 @@ country_event = {
 ########################################
 
 namespace = new_flavour_nap
-
-# Senatus Populusque Neapolitanus (version where NAP is not in a PU)
-country_event = {
-	id = new_flavour_nap.1
-	title = new_flavour_nap.1.name
-	desc = new_flavour_nap.1.desc
-	picture = ANGRY_MOB_eventPicture
-	
-	fire_only_once = yes
-	
-	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-		}
-		NOT = { current_age = age_of_discovery }
-		NOT = { current_age = age_of_revolutions }
-		government = monarchy
-		is_lesser_in_union = no
-		has_country_flag = nap_masaniello_happened
-		NOT = { has_country_flag = nap_republican_uprising_happened }
-		NOT = { num_of_rebel_armies = 1 }
-		NOT = {
-			any_owned_province = {
-				NOT = { controlled_by = root }
-			}
-		}
-		owns_core_province = 121
-	}
-	mean_time_to_happen = {
-		months = 6
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = nap_republican_uprising_happened
-		}
-	}
-
-	option = {
-		name = new_flavour_nap.1.A
-		121 = {
-			spawn_rebels = {
-				type = nap_republican_rebels
-				size = 3
-				leader = "Gennaro Annese"
-				win = yes
-			}
-		}
-	}
-
-	option = {
-		name = new_flavour_nap.1.B
-		custom_tooltip = new_flavour_nap.1.B.tooltip
-		
-		change_government = republic
-		add_government_reform = signoria_reform
-		add_republican_tradition = 5
-		every_neighbor_country  = {
-			limit = {
-				is_subject = no
-				government = monarchy
-				religion = catholic
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_against_nap_republic
-			}
-			if = {
-				limit = {
-					government = monarchy
-					NOT = { has_reform = elective_monarchy }
-				}
-				
-				add_casus_belli = {	
-					target = ROOT
-					type = cb_change_government
-					months = 120
-				}		
-			}
-		}
-	}
-}
 
 
 # Senatus Populusque Neapolitanus (version where NAP is in a PU)

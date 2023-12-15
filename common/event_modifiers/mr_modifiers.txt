@@ -187,8 +187,11 @@ black_mercenaries = {
 }
 cavalry_masters_KNN = {
 	cavalry_cost = -0.15
-	cav_to_inf_ratio = 0.50
+	cav_to_inf_ratio = 0.30
 	cavalry_shock = 0.5
+}
+accepted_crimean = {
+	num_accepted_cultures = 1
 }
 
 

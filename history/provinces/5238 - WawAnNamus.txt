@@ -1,7 +1,17 @@
-#REGIONWAFRICA
+#5238 - Waw an Namus
 
-capital = "Waw al Kabir"
-discovered_by = muslim
-discovered_by = ottoman
+culture = tuareg
+religion = sunni
+capital = "Waw an Namus"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 30
+native_ferocity = 4
+native_hostileness = 9
 
+discovered_by = MOR
+discovered_by = sub_saharan
 1444.11.12 = { trade_goods = unknown }

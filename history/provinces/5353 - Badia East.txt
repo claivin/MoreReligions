@@ -1,8 +1,8 @@
-#2334 - Badiyat ash Sham
+#5353 - Badia East
 
 culture = bedouin_arabic
 religion = sunni
-capital = "Badiyat ash Sham"
+capital = "Badia East"
 trade_goods = unknown
 hre = no
 base_tax = 1 

@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5243 - Faya-Largeau
 
 culture = tuareg
 religion = sunni
-capital = "Zawar"
+capital = "Faya-Largeau"
 trade_goods = unknown
 hre = no
 base_tax = 1 

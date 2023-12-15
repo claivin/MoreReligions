@@ -362,7 +362,27 @@ interaction = {
 				}
 				add_estate_loyalty = {
 					estate = all
-					loyalty = -10
+					loyalty = 0
+					short = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = karma_final_neutral
+				}
+				add_estate_loyalty = {
+					estate = all
+					loyalty = 0
+					short = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = karma_final_bad
+				}
+				add_estate_loyalty = {
+					estate = all
+					loyalty = 0
 					short = yes
 				}
 			}
@@ -401,9 +421,13 @@ interaction = {
 			else_if = { 
 				limit = {
 					NOT = {
-						estate_loyalty = {
-							estate = all
-							loyalty = 30
+						OR = {
+							estate_loyalty = {
+								estate = all
+								loyalty = 30
+							}
+							has_country_flag = karma_final_good
+							has_country_flag = karma_final_neutral
 						}
 					}
 					estate_influence = {

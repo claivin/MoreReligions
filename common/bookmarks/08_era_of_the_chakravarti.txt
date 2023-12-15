@@ -7,14 +7,15 @@ bookmark =
 	center = 4831
 	default = yes
 	
-	country = ANK
+	#country = ANK
 	# country = PGN
 	# country = PMN
 	# country = DAI
-	# country = SUK
-	# country = TMM
+	 country = SUK
+	 country = TMM
 	# country = MMA
 	# country = CHA
+	 country = LPB
 	
 	# easy_country = CAS
 	# easy_country = POR

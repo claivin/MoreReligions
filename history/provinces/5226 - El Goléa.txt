@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5226 - El Goléa
 
 culture = tuareg
+capital = "Illizi"
 religion = sunni
-capital = "Zawar"
 trade_goods = unknown
 hre = no
 base_tax = 1 

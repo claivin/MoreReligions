@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5236 - Jalu
 
-culture = tuareg
+culture = al_misr_arabic
 religion = sunni
-capital = "Zawar"
+capital = "Jalu"
 trade_goods = unknown
 hre = no
 base_tax = 1 

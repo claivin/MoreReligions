@@ -1548,6 +1548,7 @@ christian = {
 						culture_group = south_slavic
 						culture_group = west_slavic
 						mission_completed = mr_greek_orthodox_second
+						mission_completed = knn_religion_fourth
 					}
 					
 				}

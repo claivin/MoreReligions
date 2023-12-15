@@ -153,7 +153,7 @@
  HUN_flavor.3e: "The Great Khan shall support house Kan...hah!"
  HUN_flavor.3f: "Contact the Joannites; we have use of them yet!"
  hun_thunder_TT: "The Hungarian Oligarchs will revolt in approximately §Y5 Years§!"
- send_aid_hungary_TT: "§YForeign powers will send supplies and aid to the faction they support!§!"
+ send_aid_hungary_TT: "Should we take an opponent's capital in the war, after 182 days we will automatically capitulate them!\n\nIf we lose our capital, we will have 182 days to reclaim it or we will §RLose the Civil War!§!\n\n§YForeign powers will send supplies and aid to the faction they support!§!"
  HUN_flavor.5.t: "Hungary Calls For Aid"
  HUN_flavor.5.d: "As the civil war rages on, we have gained allies from abroad who have expressed their desire for our faction to win the conflict. We could finalize this alliance, bring in our allies and absolutely dominate the conflict, but this could also risk escalating the conflict. We must be completely certain of our plan."
  HUN_flavor.5a: "We shall stand alone and win this war!"
@@ -180,11 +180,18 @@
  HUN_flavor.19.a: "We shall act quickly!"
  can_be_annexed_1_year_TT: "We have 182 Days to §Yreclaim our capital§! before an event will divide up our lands between the rest of the Oligarchs!"
  HUN_flavor.21.t: "The End of the Hungarian Civil War"
- HUN_flavor.21.d: "As the dust settles across the Carpathian basin, the [Root.Dynasty.GetName] stands tall. They have defeated all enemies in the field of battle, overthrowing rival oligarchs and their foreign support as well. They have pushed their enemies out from their castles and pressed them to once more pledge their loyalty to [Root.Monarch.GetName.]. Hungary has become united, and they prepare to once more step on to the world stage."
+ HUN_flavor.21.d: "As the dust settles across the Carpathian basin, the [Root.Dynasty.GetName] stands tall. They have defeated all enemies in the field of battle, overthrowing rival oligarchs and their foreign support as well. They have pushed their enemies out from their castles and pressed them to once more pledge their loyalty to [Root.Monarch.GetName]. Hungary has become united, and they prepare to once more step on to the world stage."
  HUN_flavor.21.a: "House [Root.Dynasty.GetName] has won!"
  HUNGARY_RENAME: "Hungary"
  HUNGARY_RENAME_ADJ: "Hungarian"
  HUN_flavor.3.d: "With the death of King of Hungary Andrew III in 1302, the Hungarian realm became unstable and wild. With the Bohemians trying and failing to secure the land for themselves, it opened the floodgates for various challengers to attempt and sieze the throne of Hungary. From the regal Emperors in Poland, to the Ambitious Kings of Serbia, to the Wild Khans of Kiev, to even the most pious of all men, the Pope in Rome - all want to dominate and control the lands of the Magyars."
+HUN_flavor.20.t: "The Fate of Our Capital"
+HUN_flavor.20.d: "Our capital has fallen, and so our time in the sun has ended."
+HUN_flavor.20.a: "It's never been more over..."
+HUN_flavor.20.da: "We have reclaimed our capital! The fight is on!"
+HUN_flavor.20.b: "We're so back!"
+knn_has_content: "\n§YCURRENTLY ONLY TAG WITH COMPLETE CONTENT!§!"
+accepted_crimean: "Accepted Kipchack"
 
  ##Heinan
  shenist_tradition: "Traditional Heir"
@@ -208,6 +215,14 @@
  MR_sicily_flavor.2.d: "In the early 14th Century, just after the Hauteville line returned to the throne of Sicily, a disturbance had taken place across Sicily. An order of Fransiscan monks that preached the the value of Holy Poverty and removing corruption from the Church had arrived - the Fraticelli. These Spiritualists monks arrived in Sicily during their conflicts with other members of their congregation in Tuscany, and despite calls from the Pope to seize and investigate their holdings, the lords of Sicily chose to allow them to remain; the animosity towards the Papacy still ran hot, as they were responsible for several invasion against their homeland.\n\nIn the following century, the Spiritualists managed to expand their holdings and power, eventually winning over both common folk and elite families alike across Sicily. As the Vesper Wars raged in Naples, with the Papacy taking the side of the rebellious nobles, more of the Elite saw the Fraticelli as an alternative they could side with. So, by the 1400s, many of the most powerful provinces in Sicily had sided with and even adopted the new Fraticelli doctrine.\n\nBut the majority of our population are still devout Catholics. They do not wish to be excommunicated from the Church, and they do not agree with the claims laid at the foot of the Papacy. The issue remains prevalent to this day, as Fraticelli monks often harass agents of the Pope that try to infiltrate their regions of control - so, in [GetYear], the Hauteville Court convened to discuss what path they would take to manage this crisis."
  MR_sicily_flavor.2.a: "We shall purge the Fraticelli - they are heretical and must be removed!"
  MR_sicily_flavor.2.b: "We shall embrace the Fraticelli - they preach the truth!"
+
+ MR_sicily_flavor.3.t: "The Catholic Revolt"
+ MR_sicily_flavor.3.d: "Within the lands Sicily, a palpable tension rises as whispers of religious dissent grow louder. The clergy, staunch defenders of the Catholic faith, have become disheartened witnesses to the Sicilian Hauteville's apparent deviation from the traditional path. In a dramatic turn of events, a cadre of fervent priests, alarmed by the perceived abandonment of Catholicism, leads a revolt against the Sicilian monarchs who are turning towards the radical Fraticelli movement. Emblematic of the times, the battles are fierce and bloody, as priest and peasant fight against the changing times."
+ MR_sicily_flavor.3.a: "Out with the old..."
+
+ MR_sicily_flavor.4.t: "The Decadence of the Cathedrals"
+ MR_sicily_flavor.4.d: "The winds of religious change sweep across the Sicilian landscape as the Hauteville nobles, once devout followers of the Catholic faith, now wholeheartedly embrace the Fraticelli movement. In a dramatic assertion of their newfound beliefs, the Hauteville rulers take a radical step against the established clergy, stripping them of their prized possessions and asserting their dominance over the Catholic Church. Falling in line with the Fraticelli doctrine of religious poverty, they claim it is a justified method for removing church wealth, but it has caused some chaos across the land."
+ MR_sicily_flavor.4.a: "Gold for the peasants, dirt for the priests!"
 
  #Ifat Events
  MR_ifat_flavor.1.t: "A New Capital for the Sultan"

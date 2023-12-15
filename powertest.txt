@@ -1,4 +1,6 @@
-horn_of_africa_region = {
-	add_core = ROOT
-	cede_province = ROOT
-}
+	every_province = {
+					limit = {
+						owned_by = BLH
+					}
+					add_territorial_core = ROOT
+				}

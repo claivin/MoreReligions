@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5245 - Salal
 
 culture = tuareg
 religion = sunni
-capital = "Zawar"
+capital = "Salal"
 trade_goods = unknown
 hre = no
 base_tax = 1 

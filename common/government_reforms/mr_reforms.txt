@@ -444,6 +444,11 @@ mr_horde_hungary_reform = {
 	valid_for_nation_designer = no
 	maintain_dynasty = yes
 
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+		enables_horde_idea_group = yes
+	}
+
 	potential = {
 		tag = KNN
 		has_country_flag = HUN_thunder_dome_winner
