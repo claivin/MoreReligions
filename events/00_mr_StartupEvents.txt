@@ -407,7 +407,7 @@ country_event = {
 	id = mr_startup_events.6 #CivilWar Startup
 	title = mr_startup_events.6.t
 	desc = mr_startup_events.6.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = MONGOL_BANNERS_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -441,7 +441,7 @@ country_event = {
 	id = mr_startup_events.7 #BarlasRevolt
 	title = mr_startup_events.7.t
 	desc = mr_startup_events.7.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = muslimgfx_COURT_eventPicture
 
 	is_triggered_only = yes
 
@@ -493,7 +493,7 @@ country_event = { #Iceland
 	id = mr_startup_events.9
 	title = mr_startup_events.9.t
 	desc = mr_startup_events.9.d
-	picture = LORD_OF_GOTLAND_eventPicture
+	picture = NORTH_SEA_MAPS_eventPicture
 
 	trigger = {
 		tag = ICE
