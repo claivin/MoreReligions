@@ -68,6 +68,7 @@ country_decisions = {
 						area = trans_jordan_area
 						area = palestine_area
 						province_id = 378 #County of Tripoli
+						province_id = 5043 #Tyre
 						province_id = 1855 #Sayda
 						province_id = 4268 #Aqaba
 					}

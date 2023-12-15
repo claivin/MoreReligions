@@ -59,7 +59,7 @@ india_campaigns_IFT = {
 	cavalry_power = 0.05
 	province_warscore_cost = -0.15
 }
-trade-hegemon_emerging_FT = {
+trade_hegemon_emerging_FT = {
 	local_build_time = -0.15
 	province_trade_power_modifier = 0.05
 	local_development_cost = -0.15
@@ -75,6 +75,7 @@ across_the_sahara = {
 }
 central_africa_campaigns = {
 	may_establish_frontier = yes 
+	may_explore = yes	
 }
 sultan_of_makuria_tt = {
 	church_loyalty_modifier = 0.15
@@ -127,4 +128,7 @@ stripped_authority = {
 improve_advisor_cost_abys = {
 	advisor_cost = -0.10
 	advisor_pool = 1 
+}
+hidden_unrest = {
+	local_unrest = -2
 }

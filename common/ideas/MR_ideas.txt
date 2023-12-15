@@ -1151,7 +1151,7 @@ IFT_ideas = {
 		tag = IFT
 	}
 	IFT_first = { #Makhzumite Successors
-		monthly_piety_accelerator = 0.005
+		monthly_piety_accelerator = 0.002
 	}
 	IFT_second = { #Haqq al-Din's Rebellion
 		leader_land_fire = 1
@@ -2115,6 +2115,44 @@ EDD_ideas = { # Powerful mil/conquest ideas, cav focused
 	EDD_thundering_horses = {
 		cavalry_fire = 0.5
 		cavalry_shock = 0.5
+	}
+}
+
+ABH_ideas = { #Big into Military, but also very Religious.
+	start = {
+		fire_damage = 0.10
+		trade_steering = 0.15
+	}
+	bonus = {
+		governing_capacity_modifier = 0.15
+	}
+	free = yes
+	trigger = {
+		tag = ABH
+	}
+	ABH_first = { #Mobilize the Habesha
+		land_forcelimit_modifier = 0.25
+		cawa_cost_modifier = -0.25
+	}
+	ABH_second = { #Adoption of Foreign Institutions
+		technology_cost = -0.1
+	}
+	ABH_third = { #Mawlid Scholars and Writers
+		global_missionary_strength = 0.02
+		monthly_piety_accelerator = 0.001
+	}
+	ABH_fourth = { #Hegemon of Alkebulan 
+		province_warscore_cost = -0.15	
+	}
+	ABH_fifth = { #Protecting the Horn
+		naval_morale_damage = 0.10
+		heavy_ship_power = 0.05
+	}
+	ABH_sixth = { #The Gates of Harar
+		great_project_upgrade_cost = -0.15	
+	}
+	ABH_seventh = { #Beyond the Sand and Seas
+		colonists = 1
 	}
 }
 

@@ -1,12 +1,4 @@
-capital_scope = {
-				add_province_modifier = {
-					name = extension_151
-					duration = 365
-				}
-			}
-			hidden_effect = {
-				set_variable = {
-					which = extension_151
-					value = 0
-				}
-			}
+horn_of_africa_region = {
+	add_core = ROOT
+	cede_province = ROOT
+}
