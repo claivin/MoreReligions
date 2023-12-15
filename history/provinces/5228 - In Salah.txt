@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5228 - In Salah
 
 culture = tuareg
+capital = "In Salah"
 religion = sunni
-capital = "Zawar"
 trade_goods = unknown
 hre = no
 base_tax = 1 

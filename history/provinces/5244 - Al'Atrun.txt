@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5244 - Al' Atrun
 
 culture = tuareg
 religion = sunni
-capital = "Zawar"
+capital = "Al' Atrun"
 trade_goods = unknown
 hre = no
 base_tax = 1 

@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5242 - Fada
 
 culture = tuareg
 religion = sunni
-capital = "Zawar"
+capital = "Fada"
 trade_goods = unknown
 hre = no
 base_tax = 1 

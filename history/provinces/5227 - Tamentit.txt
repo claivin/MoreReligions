@@ -1,8 +1,8 @@
-#5200 - Zawar
+#5227 - Tamentit
 
 culture = tuareg
+capital = "Tamentit"
 religion = sunni
-capital = "Zawar"
 trade_goods = unknown
 hre = no
 base_tax = 1 
