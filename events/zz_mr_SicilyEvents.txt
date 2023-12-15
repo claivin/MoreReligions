@@ -170,7 +170,7 @@ country_event = {
 	}
 
 	option = {
-		name = Mr_sicily_flavor.3.a
+		name = MR_sicily_flavor.3.a
 		random_owned_province = {
 			limit = {
 				religion = catholic
@@ -204,6 +204,7 @@ country_event = {
 	}
 
 	option = {
+		name = MR_sicily_flavor.4.a
 		random_owned_province = {
 			limit = {
 				has_tax_building_trigger = yes
@@ -212,25 +213,6 @@ country_event = {
 			add_base_tax = -1
 		}
 		add_years_of_income = 0.25
-	}
-}
-
-country_event = {
-	id = MR_sicily_flavor.5
-	title = MR_sicily_flavor.5.t
-	desc = MR_sicily_flavor.5.d
-	picture = CHURCH_ESTATE_UPSET_eventPicture
-
-	trigger = {
-		tag = SIC
-		religion = mr_fraticelli
-		NOT = {
-			is_year = 1470
-		}
-	}
-
-	option = {
-		
 	}
 }
 	

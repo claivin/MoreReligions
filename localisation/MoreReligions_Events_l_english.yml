@@ -216,6 +216,14 @@ accepted_crimean: "Accepted Kipchack"
  MR_sicily_flavor.2.a: "We shall purge the Fraticelli - they are heretical and must be removed!"
  MR_sicily_flavor.2.b: "We shall embrace the Fraticelli - they preach the truth!"
 
+ MR_sicily_flavor.3.t: "The Catholic Revolt"
+ MR_sicily_flavor.3.d: "Within the lands Sicily, a palpable tension rises as whispers of religious dissent grow louder. The clergy, staunch defenders of the Catholic faith, have become disheartened witnesses to the Sicilian Hauteville's apparent deviation from the traditional path. In a dramatic turn of events, a cadre of fervent priests, alarmed by the perceived abandonment of Catholicism, leads a revolt against the Sicilian monarchs who are turning towards the radical Fraticelli movement. Emblematic of the times, the battles are fierce and bloody, as priest and peasant fight against the changing times."
+ MR_sicily_flavor.3.a: "Out with the old..."
+
+ MR_sicily_flavor.4.t: "The Decadence of the Cathedrals"
+ MR_sicily_flavor.4.d: "The winds of religious change sweep across the Sicilian landscape as the Hauteville nobles, once devout followers of the Catholic faith, now wholeheartedly embrace the Fraticelli movement. In a dramatic assertion of their newfound beliefs, the Hauteville rulers take a radical step against the established clergy, stripping them of their prized possessions and asserting their dominance over the Catholic Church. Falling in line with the Fraticelli doctrine of religious poverty, they claim it is a justified method for removing church wealth, but it has caused some chaos across the land."
+ MR_sicily_flavor.4.a: "Gold for the peasants, dirt for the priests!"
+
  #Ifat Events
  MR_ifat_flavor.1.t: "A New Capital for the Sultan"
  MR_ifat_flavor.1.a: "We shall settle in the fort of Harar"
