@@ -3,7 +3,7 @@ country_event = {
 	id = MR_steppe_generic_flavor.1 #RestoreKhanbaliq
 	title = MR_steppe_generic_flavor.1.t
 	desc = MR_steppe_generic_flavor.1.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = IMPERIAL_SEAL_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -51,7 +51,7 @@ country_event = {
 	id = MR_steppe_generic_flavor.2 #ChagataiKhan
 	title = MR_steppe_generic_flavor.2.t
 	desc = MR_steppe_generic_flavor.2.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -95,7 +95,7 @@ country_event = {
 	id = MR_steppe_generic_flavor.3 #Sack-Kiev
 	title = MR_steppe_generic_flavor.3.t
 	desc = MR_steppe_generic_flavor.3.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = VILLAGE_BURNING_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -140,7 +140,7 @@ country_event = {
 	id = MR_steppe_generic_flavor.4 #PickYoPath
 	title = MR_steppe_generic_flavor.4.t
 	desc = MR_steppe_generic_flavor.4.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = SENCRATIC_ALTER_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -169,7 +169,7 @@ country_event = {
 	id = MR_steppe_generic_flavor.5 #WildFields
 	title = MR_steppe_generic_flavor.5.t
 	desc = MR_steppe_generic_flavor.5.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = PEASANTS_ON_STEPPES_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -215,7 +215,7 @@ country_event = {
 	id = MR_steppe_generic_flavor.6 #Dynasty
 	title = MR_steppe_generic_flavor.6.t
 	desc = MR_steppe_generic_flavor.6.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = GIFTS_TO_EMPEROR_eventPicture
 	
 	is_triggered_only = yes
 	

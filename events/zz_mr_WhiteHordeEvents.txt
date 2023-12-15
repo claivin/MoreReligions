@@ -13,7 +13,7 @@ country_event = {
 		trigger = { tag = SHY }
 		desc = MR_white_horde_flavor.1.d.2
     	}		
-	picture = MILITARY_CAMP_eventPicture
+	picture = NOMAD_ESTATE_eventPicture
 	
 	fire_only_once = yes
 

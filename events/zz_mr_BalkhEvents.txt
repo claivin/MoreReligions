@@ -4,7 +4,7 @@ country_event = {
 	id = MR_balkh_flavor.1 #RevoltWarning
 	title = MR_balkh_flavor.1.t
 	desc = MR_balkh_flavor.1.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = muslimgfx_REVOLUTION_eventPicture
 	
 	fire_only_once = yes
 
@@ -58,7 +58,7 @@ country_event = {
 	id = MR_balkh_flavor.2 #RevoltTime
 	title = MR_balkh_flavor.2.t
 	desc = MR_balkh_flavor.2.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = muslimgfx_REVOLUTION_eventPicture
 	
 	fire_only_once = yes
     is_triggered_only = yes
@@ -93,7 +93,7 @@ country_event = {
 	id = MR_balkh_flavor.3 #IndependenceSatisfactory
 	title = MR_balkh_flavor.3.t
 	desc = MR_balkh_flavor.3.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = muslimgfx_BORDER_TENSION_eventPicture
 	
 	fire_only_once = yes
     is_triggered_only = yes
