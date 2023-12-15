@@ -7139,18 +7139,8 @@ JNP_ideas = {
 	}
 
 	trigger = {
-		OR = {
-			tag = JNP
-			capital_scope = {
-				region = hindusthan_region
-			}
-		}
-		NOT = { # Don't overwrite nepali ideas
-			OR = {
-				primary_culture = pahari
-				primary_culture = nepali
-			}
-		}
+		tag = JNP
+		
 	}
 	free = yes		#will be added at load.
 
@@ -12470,7 +12460,10 @@ KHO_ideas = {
 		technology_cost = -0.05
 	}
 	trigger = {
-		tag = KHO
+		OR = {
+			tag = KHO
+			tag = HRT
+		}
 	}
 	free = yes
 

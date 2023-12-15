@@ -314,6 +314,7 @@ rajput_ideas = {
 		OR = {
 			primary_culture = rajput
 			primary_culture = malvi
+			has_reform = samanta_vassal_reform
 		}
 		NOT = { religion_group = muslim }
 	}
@@ -915,12 +916,8 @@ malayan_ideas = {
 		OR = {
 			religion_group = muslim
 			tag = PAH
-			tag = MLY
 		}
 		culture_group = malay
-		NOT = {
-			primary_culture = sumatran
-		}
 	}
 	free = yes
 
@@ -1221,6 +1218,7 @@ sumatran_ideas = {
 		OR = {
 			primary_culture = sumatran
 			tag = IND
+			tag = MLY
 		}
 	}
 	free = yes
@@ -2069,7 +2067,10 @@ sulawesi_ideas = {
 	}
 
 	trigger = {
-		primary_culture = sulawesi
+		OR = {
+			primary_culture = sulawesi
+			primary_culture = southern_sulawesi
+		}
 	}
 	free = yes
 
@@ -2183,11 +2184,7 @@ moluccan_ideas = {
 	}
 
 	trigger = {
-		OR = {
 			primary_culture = moluccan
-			capital_scope = {
-				region = moluccas_region
-			}
 		}
 	}
 	free = yes
