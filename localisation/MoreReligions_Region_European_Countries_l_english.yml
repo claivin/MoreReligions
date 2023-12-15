@@ -188,13 +188,13 @@
  HLM_ADJ: "Haarlem"
  HLM_ADJ2: "Haarlem"
  
- DHG: "Den Haag"
- DHG_ADJ: "Hagenaar"
- DHG_ADJ2: "Hagenaar"
+ DHG: "Amsterdam"
+ DHG_ADJ: "Amsterdammer"
+ DHG_ADJ2: "Amsterdammer"
  
- VLG: "Vlissingen"
- VLG_ADJ: "Vlissinger"
- VLG_ADJ2: "Vlissinger"
+ VLG: "Zeeland"
+ VLG_ADJ: "Zeelander"
+ VLG_ADJ2: "Zeelander"
  
  ATP: "Antwerp"
  ATP_ADJ: "Antwerper"

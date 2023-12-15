@@ -8,8 +8,8 @@ capital = 96 #Haarlem
 
 1444.1.1 = {
 	monarch = {
-		name = "Ruben"
-		dynasty = "van der Linden"
+		name = "Jean"
+		dynasty = "de Dampierre"
 		adm = 1
 		dip = 5
 		mil = 1

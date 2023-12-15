@@ -3,13 +3,13 @@
 
 owner = GEL
 controller = GEL 
-capital = "Elberg"
+capital = "Appeldoorn"
 is_city = yes
 culture = dutch
 religion = mr_freespirit
 hre = yes
 base_tax = 2
-base_production = 4
+base_production = 2
 trade_goods = cloth
 base_manpower = 2
 add_core = GEL
