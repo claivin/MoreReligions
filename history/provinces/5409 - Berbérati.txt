@@ -1,0 +1,16 @@
+#5409 - Berbérati
+
+culture = sawabantu
+religion = shamanism #Fetishism
+capital = "Berbérati"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+native_size = 50
+native_ferocity = 1
+native_hostileness = 3
+discovered_by = sub_saharan
+
+1444.11.12 = { trade_goods = unknown }
