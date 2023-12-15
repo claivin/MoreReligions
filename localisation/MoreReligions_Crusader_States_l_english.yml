@@ -32,9 +32,9 @@
   cs_eastern_metropolis_desc: "As the furthest east bastion of Christendom, we have a unique position to become the nexus of new trade networks tying the rest of Europe to the riches of the East. All we need is a friendly Muslim neighbor willing to let us in on the action..."
   cs_eastern_metropolis_TT: "We will gain §G+10%§! Goods Produced in each province in the capital state and an additional §G+0.5§! Goods Produced and bonus tax income in the capital province."
   cs_jerusalem_restored_title: "Jerusalem Restored!"
-  cs_jerusalem_restored_desc: "REPLACE ME"
+  cs_jerusalem_restored_desc: "A product of the glorious First Crusade; the Kingdom of Jerusalem was a testament to what the Christian World could achieve when united in heart and goals. Its loss was a tragedy, and its restoration has been the stated goal of many a subsequent crusade.\n\nIt's about time we succeed where our predecessors have struggled, and fulfill our ancestors' noble dreams; it's time for the Kingdom of Jerusalem to return for good!"
   cs_our_claims_achieved_title: "Our Claims Achieved"
-  cs_our_claims_achieved_desc: "REPLACE ME"
+  cs_our_claims_achieved_desc: "With Jerusalem restored, it's due time we once more went on the offensive and brought the entirety of Outremer to good Christian hands. By securing these lands we will both gain the strength necessary to protect our hold on Jerusalem, but also establish our place as a true force to be reckoned with in the East."
 
   # Slot 2
   cs_build_to_force_limit_title: "A Force to be Reckoned With"
@@ -67,14 +67,14 @@
 
   # Diplomatic path
   cs_first_among_equals_title: "First Among Equals"
-  cs_first_among_equals_desc: "REPLACE ME"
+  cs_first_among_equals_desc: "Among all the surviving Lords of the Outremer, a common title has been adopted--ever since the foolish Counts of Tripoli were forced to abandon their prententions to Baldwin's Crown--that of Prince. Nominally, thus, we are all peers in these harsh lands, despite the wealth and prestige of Antioch and the military vigor of Edessa.\n\nIn order to begin the path to greatness, the diplomats of [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s court must range far and wide, spreading gifts, flattering egos, and making subtle insinuations of our future plans to receptive ears, all to establish our preeminent reputation and prestige among all the Christian courts of the East."
   cs_first_among_equals_effect_tt: "Due to our winning charm, any Prince of Outremer who considers us a rival and has a positive opinion of us will set aside their childish petulance. Any Prince of Outremer whose opinion of us is at least §G+100§! will become a historical friend."
   cs_royal_dowries_title: "Royal Dowries"
-  cs_royal_dowries_desc: "REPLACE ME"
-  cs_royal_dowries_trigger_tt: "We have a §Yroyal marriage§! with or a §Yspy network§Y of strength §G80§Y in all other Princes of Outremer."
+  cs_royal_dowries_desc: "Many of the differences between the Outremer princes have now been resolved, but if we want this climate of peace and co-operation between the Christian realms to last beyond our own lifespans- we must be proactive in nipping future schemes in the bud.\n\nBy marrying into the various Houses of Outremer, and by keeping... 'close tabs'... on the inner workings and dirty secrets of their courts, we will be doing our part in the perpetuation of peace in the Holy Land."
+  cs_royal_dowries_trigger_tt: "We have a §Yroyal marriage§! with or a §Yspy network§! of strength §G80§! in all other Princes of Outremer."
   cs_royal_dowries_effect_tt: "Any Prince we do not have a §Yroyal marriage§! with will be blackmailed by our spies into agreeing with one. Furthermore, any §Yrivalries§! will be dropped."
   cs_a_house_united_title: "A House United"
-  cs_a_house_united_desc: "REPLACE ME"
+  cs_a_house_united_desc: "With Peace triumphant in the Outremer and the Christian realms in utter concord, it's time we took the ultimate step in uniting these disparate lordships: bringing them all under one suzerain, subservient to our banner. In doing this, of course, we will first need to secure the complete trust and co-operation of everyone involved to make the transition from pampered ally to vassal as smooth as possible."
   cs_a_house_united_trigger_tt: "All other Princes of Outremer have at least §G90§! §Ytrust§! with us."
   cs_a_house_united_effect_tt: "We will vassalize all the other Princes of Outremer."
 
@@ -95,13 +95,13 @@
   cs_eastern_exports_desc: "With our prosperity and economic output, we have assumed a dominant trade position in the eastern Mediterranean. Now we can leverage our position to add our own goods to the flow from East to West. No longer acting as a mere middleman, *we* will set the prices and reap the rewards!"
   cs_eastern_exports_trigger_tt: "At least §Y5§! provinces with at least 10 development and a §Ymarketplace§! or §Yworkshop§! line building."
   cs_thriving_trade_title: "Thriving Trade"
-  cs_thriving_trade_desc: "REPLACE ME"
+  cs_thriving_trade_desc: "Where once we subsisted on meager incomes from grain harvested in ravaged lands and the minimal tithes we could afford to charge the Italians--lest they take their trade and naval power elsewhere, we have now stabilized and rebuilt the prosperity of Outremer. With the flow of trade goods from East to West increasingly directed through our bustling towns with their strong walls and tidy ports rather than the overland route through dangerous Anatolia or across the harsh Sinai Desert to Egypt, we stand poised to become truly wealthy."
   cs_land_of_milk_and_honey_title: "Land of Milk and Honey"
-  cs_land_of_milk_and_honey_desc: "REPLACE ME"
+  cs_land_of_milk_and_honey_desc: "The Wars between us and the Saracens have seen the prospering lands of the Levant depopulated and underutilised. In the days of Rome, Syria and Palestine were rich, fertile territories that financed the wars of many a great leader; having restored our trade ties to Europe and Persia, we are on the precipice of bringing our heartland back to its past greatness, and perhaps taking this Promised Land on to even greater heights!"
   cs_syrian_dominance_title: "Syrian Dominance"
-  cs_syrian_dominance_desc: "We must show the world the dominance of our heartland."
+  cs_syrian_dominance_desc: "We have done much to develop and enrich the core of our kingdom, both by conquest and by shrewd leadership, but now it is time for our holy armies to march forth and assert our dominance. If we can develop a stranglehold on the trade flowing throughout the [Root.Capital.GetSuperRegionName], then who is to say we are not the rightful masters of all of it?"
   cs_strike_east_title: "Strike East"
-  cs_strike_east_desc: "REPLACE ME"
+    cs_strike_east_desc: "Across the desert from where we currently stand lie the vast and fertile lands of Mesopotamia; home of the ancient Babylonian kings and the beating heart of many a Biblical Empire. Furthermore, on the far bank of the Tigris river sits Ctesiphon, the ancient Sassanian capital, and Persia beyond.\n\nThe ancient and continual rival of all great powers in the Eastern Mediterranean, in Persia lies our destiny. For history has shown, those who would rule in Syria but not also Mesopotamia and Media are doomed to fail. Thus, we must push to the edge of Persia's formidable defenses and prepare for a campaign not seen since the days of Heraklius and Alexander."
 
   # Slot 5
   cs_looming_mamluks_title: "The Looming Mamluks"
@@ -110,10 +110,10 @@
   cs_agricultural_centralization_desc: "As our prosperity grows, many magnates and landowners have been watching with growing interest and envy the success of the plantations built in the agricultural regions of [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s lands. Some have already begun to emulate us, but if we were to officially encourage such a policy and sweep any legal hurdles of \"long-standing rights\" and such from the peasantry aside, we could reap a great benefit from the growing productivity."
   cs_agricultural_centralization_effect_tt: "All provinces with §Yfarm§! or §Ypasture§! trade goods will become eligible for a pulse event that will allow you to change the trade good to a valuable export crop.\n\n All owned provinces with a farm or pasture trade good will receive the §YPlantation Economy§! modifier until the end of the game."
   cs_production_focused_economy_title: "Productive Economy"
-  cs_production_focused_economy_desc: "REPLACE ME"
+  cs_production_focused_economy_desc: "Trade alone cannot be allowed to dictate the wealth of peoples, for should the whims of the markets change even the slightest bit, the livelihoods of thousands may be jeopardized--and who needs *more* angry peasants? In securing fiscal independence for ourselves; we ought to invest in our land's own local industries, and diversify our sources of income."
   cs_trade_hoarding_title: "Trade Hoarding"
   cs_trade_hoarding_trigger_tt: "Have at least §G50§! ducat trade value in our home trade node. For every additional §Y25§! ducat value, we will gain the §YMany Manufactories§! modifier for another 25 years!"
-  cs_trade_hoarding_desc: "REPLACE ME"
+  cs_trade_hoarding_desc: "We find ourselves strategically positioned in the confluence of the Silk and Spice trades, where the European and Asian markets collide and where the wealth of both accumulate en-masse. This wealth is one we cannot allow to be funneled away however--be it by the Greeks and Turks or the greedy Italians or even the Berbers of North Africa; this money can be used to further our cause and to bring civilisation to these uncouth lands, and it is thus our moral obligation to keep it for ourselves."
 
 
   # --MODIFIERS--
@@ -210,5 +210,6 @@
 # --OTHER--
   merc_crusader_italian_troops: "Italian Company of Outremer"
   mr_crusader_guardian_of_the_kaaba_tt: "Has chosen the '§YWe will become guardians of the Kaaba!§!' Option in the @KOJ Crusader mission event §YFate of the Kaaba§!.""
+
 
 

@@ -1259,9 +1259,6 @@ crusader_missions_4 = {
 				value = 9
 				province_has_center_of_trade_of_level = 1
 			}
-			home_trade_node = {
-				trade_node_value = 50
-			}
 		}
 
 		effect = {
