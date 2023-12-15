@@ -1,10 +1,10 @@
 ﻿l_english:
  #Couto Misto
- CMS_ideas: "Couto Misto Ideas" 
- CMS_ideas_start: "Mistelo Tradition" 
- CMS_ideas_bonus: "Mistelo Ambitions" 
- cms_the_three_keys_desc: "Couto Misto is a union of the three vilages of Santiago, Rubiás and Meaus. Due to complicated manorial legalities we do not formally belong to any noble, king or clergym, instead the people of Couto Misto rule by themselves and elect a Juiz to serve as the leader and coordinate the necessaties of the three vilages and its peasantry. This judge is granted by the leaders of each village the three keys of our nation, granting him the legitimacy, trust and right to rule by the people and for the people." 
- cms_the_three_keys: "The Three Keys" 
+ CMS_ideas: "Couto Misto Ideas"
+ CMS_ideas_start: "Mistelo Tradition"
+ CMS_ideas_bonus: "Mistelo Ambitions"
+ cms_the_three_keys_desc: "Couto Misto is a union of the three vilages of Santiago, Rubiás and Meaus. Due to complicated manorial legalities we do not formally belong to any noble, king or clergym, instead the people of Couto Misto rule by themselves and elect a Juiz to serve as the leader and coordinate the necessaties of the three vilages and its peasantry. This judge is granted by the leaders of each village the three keys of our nation, granting him the legitimacy, trust and right to rule by the people and for the people."
+ cms_the_three_keys: "The Three Keys"
  cms_freedom_from_tribute_desc: "Our defacto independence has given our people a variety of rights and priveleges that peasants in other neighboring realms can only dream of. Perhaps the most important of these is the right to be free from tribute or in other words, taxes. Our people do not pay any taxes, fees or any other sort of monetary restriction that is common in neighboring realms. This gives our peasantry an unheard of level of security and happyness, and altough it has meant the state has less resources to improve itself our people are no strangers to helping a friend and neighbor in need."
  cms_freedom_from_tribute: "Freedom from Tribute"
  cms_right_to_arms_desc: "Let all blue bloods think twice before they cross here, for every peasant, every man, woman and even child in Couto Misto knows how to work a musket. We shall not forego our freedoms, if there need be the bells of Couto Misto shall ring and every peasant will muster and stand ready to defend our homes and families."
@@ -17,11 +17,11 @@
  cms_to_live_in_peace: "To Live in Peace"
  cms_paradise_of_liberty_desc: "With our sweat, our unity and cooperation, we have truly transformed the new world into a paradise of liberty. A land where anyone can be free and live life how they choose to. A land open to all cultures and races of man, a land free for all peasants of the world. The world may change, they may embrace tyranny and despots but all the opressed of the world may rest easy to known they will always be welcome here."
  cms_paradise_of_liberty: "Paradise of Liberty"
- 
+
  #Bafuku
  BFK_ideas: "Bafuku Ideas"
  BFK_ideas_start: "Bafuku Traditions"
- BFK_ideas_bonus: "Bafuku Ambition"     
+ BFK_ideas_bonus: "Bafuku Ambition"
  BFK_idea_1: "The Return of the Shogun"
  BFK_idea_1_desc: "The Shogun was defeated at the end of the Kenmu restoration in the 14th Century. However, the system that replaced him was one of weakness and corruption. We have uprooted this decaying empire and instead installed one of our own, one that can stand up to all challengers!"
  BFK_idea_2: "Firearm Manufactories"
@@ -36,7 +36,7 @@
  BFK_idea_6_desc: "The Iwami Ginzan silver mines produce coinage that is some of the finest in all of the world. It is traded from our ports into China, Angkor, and even to far away Europe."
  BFK_idea_7: "Era of Peace"
  BFK_idea_7_desc: "With the subjugation of the Shugo and the loyalty of the imperial court gained, we have gained an era of peace within our realm. The Shogun will guide us through what may come, as prosperity and opportunity shall present itself to all those who follow him."
- 
+
  #Kannauj
  KNJ_ideas: "Kannauj Ideas"
  KNJ_ideas_start: "Kannauj Traditions"
@@ -55,7 +55,7 @@
  KNJ_idea_6_desc: ""
  KNJ_idea_7: "Heirs of Prithviraj"
  KNJ_idea_7_desc: ""
- 
+
  #Devagiri
  DVI_ideas: "Devagiri Ideas"
  DVI_ideas_start: "Devagiri Traditions"
@@ -74,7 +74,7 @@
  DVI_idea_6_desc: ""
  DVI_idea_7: "Internal Peace"
  DVI_idea_7_desc: ""
- 
+
  #Si Thammarat
  TMM_ideas: "Si Thammarat Ideas"
  TMM_ideas_start: "Si Thammarat Traditions"
@@ -93,7 +93,7 @@
  tmm_sixth_desc: "After the conversion of the Thai kings to the faith of Islam, they had begun to meet traders of a similar faith from across the seas. The Sultans of Arabia gave them warm welcomes and gifts from those far away lands, and in return, the Thai kings gave them friendly ports and housing for their traders, who brought with them the firearms of the west - weapons that the kingdoms could use with surprising effectiveness."
  tmm_seventh: "Bastion of Islam in the East"
  tmm_seventh_desc: "The Thai king Ramathibodi II, in the year 1443, had finally embraced the path of the true faith, after being convinced to convert by his many Malaysian courtiers and advisors. Having declared the state to now be one of Islam, he still did not wish to harm or imprison those who he ruled over, as many Thai people still followed the faith of Buddhism, and paid homage to many of the thinkers in Sukhothai, Burma, and even Sri Lanka. In order to maintain his authority, the king molded Islam into a syncretic faith with the Buddhist one, integrating laws and concepts from both faiths into a brand new one. Thus, over time, the Thai people adopted this new faith, and, as the state slowly morphed into one centered around Islam at its core, now looked at its neighbours with a desire to convert and bring the path of the righteous and just to their people. With a blade in one hand, the Quran in another, with the ships from the west and the knowledge they carry in their cities, with artisan skill and military prowess that would make even the great warriors of Egypt take note, the Thai Sultans let out a cry from their terraces overlooking the great empire that they have created; “Mashallah!”"
- 
+
  #Angkor
  ANK_ideas: "Angkor Ideas"
  ANK_ideas_start: "Angkor Traditions"
@@ -112,7 +112,7 @@
  ank_expand_trade_malaya_desc: "At the height of the Angkor Empire, the extent to which their mandala reached was as far south as Ligor...yet, it never quite reached the Malay Peninsula. However, there was always a desire to spread their influence down there, and multiple kings had often decried chances lost to take the lands. Now, with Srivijaya out of Malaya, and the Thai kingdoms fractured and weak, the Angkor Empire looks at the squabbling Muslim states with greedy eyes, and drafted a series of merchant fleets to go and survey the land; were they gathering intel, were they preparing the ports for invasion, or were they simply there on a trade mission, only God knew. And the Devaraja knew all too well."
  ank_devaraja: "Rule of Devaraja"
  ank_devaraja_desc: "The Devaraja - a divine being on Earth. A ruler not only with the authority of the great god of Shiva or Vishnu, but who embodies, nay, inhabits the role of the god upon this world. Their legitimacy was holy, their path they tred transcendental. It was not one to be taken lightly: to prove the worth of a god one must build great works, and one must continually showcase their divinity. Before, in the ancient era of Angkor, the Devarajas were often bound by rules and rituals, and had to often answer to the Brahmins and their wishes. However, as time went on and the modern era began to creep in, the rulers of Angkor were able to sway the people to their side, and created a sort of Absolutist state, in which they had the supreme, divine authority from the day they were born until the day they died and were absorbed into the gods they claimed they represented. Should a king fail in his duties, and should they become weak and complacent and lose their way, they will fall and lose their way, and a more righteous man could overtake them. However, should they be able to secure their rule, even the mighty Bodhisattvas and Chakravatin will fear them - the Crown of Jasmine weighs heavily upon the head of mortal men, but not the Devaraja, for him it is light as a feather."
- 
+
  #Srivijaya
  SRJ_ideas: "Srivijayan Ideas"
  SRJ_ideas_start: "Srivijayan Traditions"
@@ -131,7 +131,7 @@
  srj_borobudur_desc: "In the Kedu Valley, underneath an active volcano, lies the massive complex of Borobudur, the second largest Buddhist temple in the world. Built-in the 9th Century, this temple was created throughout the reign of three great monarchs, Dharanindra, Samaragrawira, and Samaratungga, all of who poured an incredible amount of manpower and wealth into the project, attempting to make it the ultimate temple in the Nusantara. The temple’s architecture was meant to symbolize many of the core elements and themes of Buddhism; the lotus flower layout and the ten mounting terraces reflect the Boddhivista’s journey to reach enlightenment, the large bell-shaped dome at the top of the terraces merging with the mountainside showcasing exemplary classical Buddhist architecture, a style that would be replicated from Siam to Burma in the centuries to come. Pilgrims of all Buddhist sects would flock to the kingdom, hoping to see the glory in its design and take part in meditation or prayer. It was more than just a temple as well, as time went on, it became a symbol of pride and power for the Sailendra Dynasty.  As the kingdom furthered its control and shifted away from the strict thalassocracy that it was for a more traditional empire, many of its newfound riches were put into place in expanding and developing the site, making it even more wonderful and fantastical than ever before. In 1208, the first Maharaja was crowned in Borobudur, and even still to this day, the lords of the land are still enthroned in the shade of the temple."
  srj_lela: "The Lela"
  srj_lela_desc: "After the failed Mongol invasion in the 13th Century, the use of gunpowder within Srivijaya became commonplace. The cetbang, a Javanese style Lela, was first put to use by the Majapahit kingdom striking out in rebellion against the Srivijayans, and while the rebellion was crushed, the Maharaja at the time adopted the technology and began to implement them on their cannons on their large junk and the walls of their great cities. These Lela were in such widespread use that, by the time the Europeans arrived in Nusantara, the inhabitants were using weapons of a similar quality to those of the foreigners."
- 
+
  #Pagan
  PGN_ideas: "Pagan Ideas"
  PGN_ideas_start: "Pagan Traditions"
@@ -150,7 +150,7 @@
  #pgn_cavalry_desc
  pgn_land: "Mass Land Reform"
  #pg_land_desc
- 
+
  #Toulouse
  TOU_ideas: "Toulouse Ideas"
  TOU_ideas_start: "Toulouse Traditions"
@@ -169,7 +169,7 @@
  TOU_sixth_desc: "The Bazacle Mills were a series of watermills used to process wheat into flour. In order to fund the construction of these mills, the millers formed a company with limited stocks, creating the first joint-stock company in Europe. This innovative system encouraged both fast expansion and quick investment by the bourgeoisie, making the owners massively wealthy."
  TOU_seventh: "Consistori del Gay Saber"
  TOU_seventh_desc: "The Consistory of Gay Science, also known as Académie des Jeux Floraux, was founded as literary contest to encourage the production of poetry and literature. The prizes included flowers made of gold and silver, not to mention prestige and accolades of fellow poets. The institution played a great part in legitimizing the Occitain language in the face French or Latin."
- 
+
  #Poland
  POL_ideas_mr: "Polish Ideas"
  KHM_ideas_mr_start: "Polish Traditions"
@@ -188,7 +188,7 @@
  POL_ideas_mr_7: "Rebuild the Villages"
  POL_ideas_mr_7_desc: "After treaties are drawn up and executed, the fighting concludes, but the work does not. Soldiers returning home are continued to be paid for the work of going from town to town rebuilding and replanting lost produce. This was in fact a declaration for humanitarian purpose, but serves a double purpose of fostering good favor with subjects of the crown."
  KHM_ideas_mr_bonus: "Polish Ambitions"
- 
+
  #Africa
  AFR_ideas: "African Ideas"
  AFR_ideas_start: "African Traditions"
@@ -207,7 +207,7 @@
  AFR_sixth_desc: "When Roger II first landed on the shores of Tripoli, he acknowledged no Sultan of the region. He instead conquered and established his own land, creating a mighty kingdom. The Prince of Africa, is what they called him, with gold and silk flowing plentifully into the capital. We were the shining light in the region, making it glorious while the kingdoms around us crumbled into dust. Yet now we too fade into night. We stand at the edge of being destroyed, total annihilation approaching. We are as the Romans; but unlike them, we shall not fall nor shall we fall. The Kingdom of Africa will prosper once more!"
  AFR_seventh: "Modern African Army"
  AFR_seventh_desc: "To fight in the current era, gunpowder is a necessity. Cannons, muskets, all of the firepower that modern weaponry can bring about are crucial in winning a victory. We cannot let time pass us by, we must embrace the changing landscape of battle and truly create a new and improved army for Africa."
- 
+
  #Lavo
  LPB_ideas: "Lavo Ideas"
  LPB_ideas_start: "Lavo Traditions"
@@ -226,7 +226,7 @@
  LPB_sixth_desc: "Built in the era of Khmer dominance, the temple is emblematic of that period. It features Shaivite and Theravada elements, as Jayavarman VII was ruled a Hindu kingdom while being a Buddhist himself. It remains an icon of our state, and the structure and organization of this temple has been a model for all monasteries across the realm."
  LPB_seventh: "Strengthen the Tai Kingdom"
  LPB_seventh_desc: "In the past, the Thai Muengs were united into one state - first under Lavo, then Sukhothai, then Ayutthaya, before its fall. Now, we are fractured and broken, and rule increasingly becomes decentralized. We must unite the various kingdoms and bring them under one banner; the banner of the Lavo!"
- 
+
  #Phetchaburi
  PTC_ideas: "Phetchaburi Ideas"
  PTC_ideas_start: "Phetchaburi Traditions"
@@ -245,7 +245,7 @@
  PTC_sixth_desc: "The clear beaches and blue skies, this is the perfect location for palaces to be built. Summer homes for emperors, temples for monks, and beaches to relax and spread the glory of our realm."
  PTC_seventh: "Local Muang Militias"
  PTC_seventh_desc: "The Phetchaburi mueangs stretch across the jungles and plains of Mergui and Phetchaburi. In here, thousands of smaller towns and villages dot the countryside, which all contribute to the armed forces of our nation. These militias, while not necessarily the most elite troops, are willing and able to fight in the field of battle."
- 
+
  #Ratchaburi
  RTC_ideas: "Ratchaburi Ideas"
  RTC_ideas_start: "Ratchaburi Traditions"
@@ -264,7 +264,7 @@
  RTC_sixth_desc: "In the aftermath of the foundation of the Ratchaburi state, Songtham built an academy for the training of future soldiers. His army was filled with competent leaders and commanders, who had experienced war for years and years. Since the state was founded on warfare, Songtham placed heavy emphasis on making sure his army surpased all his rivals."
  RTC_seventh: "Professional Armies"
  RTC_seventh_desc: "The mercenary army that was brought into the Ratchaburi territory has now become the standing army of the state. It has transformed from an unorganized, roudy group of warriors that fight for coin and treasure, into a crack military force. They fight for their king, they fight for their state, they fight for their home. None can stand agains tthem, as they stand strong above all else!"
- 
+
  #Syamistan Ideas
  SYM_ideas: "Syamistani Ideas"
  SYM_ideas_start: "Syamistani Traditions"
@@ -276,7 +276,7 @@
  SYM_fifth: "Krom Asa Mahon"
  SYM_sixth: "Laws of Naresuan"
  SYM_seventh: "Alfil Riders"
- 
+
  #Muang Thai Ideas
  MGT_ideas: "Thai Ideas"
  MGT_ideas_start: "Thai Traditions"
@@ -288,7 +288,7 @@
  MGT_fifth: "Kingdom of Rice and Fish"
  MGT_sixth: "Integrated Krom Asas"
  MGT_seventh: "Empire of Chao Phraya"
- 
+
  POR_ideas_mr: "Portuguese Ideas"
  POR_ideas_mr_start: "Portuguese Traditions"
  POR_ideas_mr_bonus: "Portuguese Ambition"
@@ -371,8 +371,8 @@
  SHU_sixth: "Recruit the Tribes"
  SHU_sixth_desc: "The founder of Xia, Ming Yuzhen, almost sacrificed everything by failing in his expedition south into Yunnan. Another attempt to militarily subjugate the south will surely end in another disaster, yet we cannot ignore the only avenue of expansion which does not bring us into direct conflict with the pretenders of Han or Song. We must adapt our tactics and approach the barbarians with offers of pay and supplies if they will serve in our armies rather than opposing us."
  SHU_seventh: "Reclaim the Empire"
- SHU_seventh_desc: "Sooner or later, we must take the fight to the false emperors of Han and Song. As soon as an opportunity presents itself, we should strike out and begin our reclamation campaign in earnest and prove to the world that China is our rightful inheritance." 
- 
+ SHU_seventh_desc: "Sooner or later, we must take the fight to the false emperors of Han and Song. As soon as an opportunity presents itself, we should strike out and begin our reclamation campaign in earnest and prove to the world that China is our rightful inheritance."
+
  #Cordoba Ideas
  CBD_ideas: "Cordoban Ideas"
  CBD_ideas_start: "Cordoban Traditions"
@@ -505,8 +505,8 @@
  YNN_ideas_6_desc: "Many Central Asian soldiers were settled in the Yunnan frontier under the zenith of the Mongol Empire. They were known as the Tanmachi, troops that were recruited from the various tribes and peoples within the Mongol federation. They were masters of firearms, and served as powerful vanguards in our armies. Their descendants today live amongst us, melding their Central Asian culture with the local customs."
  YNN_ideas_7: "The Mountain Province"
  YNN_ideas_7_desc: "Yunnan is a mountainous province, making it incredibly difficult to assault. The chokepoints give us a natural defense against our would-be enemies and are just as much of an asset to us as our brave forces are."
- 
-#Liang Ideas 
+
+#Liang Ideas
  LNG_ideas: "Liang Ideas"
  LNG_ideas_start: "Liang Traditions"
  LNG_ideas_bonus: "Liang ambitions"
@@ -523,8 +523,8 @@
  LNG_ideas_6: "Central Asian Tanmachi"
  LNG_ideas_6_desc: ""
  LNG_ideas_7: "Chinese Siege Engines"
- LNG_ideas_7_desc: "" 
- 
+ LNG_ideas_7_desc: ""
+
 #Andorran Ideas
  ADR_ideas: "Andorran Ideas"
  ADR_ideas_start: "Andorran Traditions"
@@ -536,7 +536,7 @@
  ADR_carolingian_duality_desc: "Our status and state was a gift from the great Charlemagne himself. For ages the decree of the great Frankian emperor has legitimized our right to exist in the eyes of every other European realm. We have kept true to our oath and even to this day still send representatives and honor both the King in France and the Bishop of Urgell. Surely no monarch would dare to trample on the last vestige of Carolingian grace in europe, right?"
  ADR_carolingian_duality: "The Carolingian Duality"
  ADR_heart_pyrenees_desc: "Our realm sits right in the heart of the pyrenees, we alone dare to live upon the celestial edge of Iberia. Catalans, Occitanians, Aragonese and Basques may brag about how they are true hardy mountain folk, but we know the truth. We see their settlements on the edges and bases of the great mountains and see them for the liars they are. We alone, are the only true mountain lords of Iberia."
- ADR_heart_pyrenees: "The Heart of the Pyrenees" 
+ ADR_heart_pyrenees: "The Heart of the Pyrenees"
  ADR_splendid_isolation_desc: "Our small status, and our position deep in the Pyrenees is quite a boon. Here in Andorra life is quiet, slow, stable and peaceful. It is rare for trouble to rear its head towards us, and our people know better than go out looking for trouble. Nay this is not a curse, we shall remain forever as stable and immovable like the mountain and bask in this serene and splendid isolation."
  ADR_splendid_isolation: "Splendid Isolation"
  ADR_garrison_drills_desc: "Sadly even in a community as small as ours, petty crime is still very much a reality. As such we need to expand the role of the Andorran Guard, make sure they are ready to keep the peace and enforce the law. As free as we may be in our mountain, we are not lawless bandits."
@@ -649,7 +649,7 @@
  MOE_sixth_desc:0 "Nikon the Metanoeite, was a 10th century man from the Anatolian Pontus who- with the support of the Roman Emperor Nikephoros II- managed to eradicate the final remnants Dodecatheist paganism from the lands of Greece over the course of thirty years of preaching, bringing the people of Lakonia into the light and thus practically finalising a process that began seven centuries earlier with the christianisation of Macedonia. Having died in our lands, he is considered the Patron saint of the Mani peninsula and of the ancient city of Sparta. His name yet inspires the monastic folk, and his legacy as a preacher and a people's shepherd remains strong to this day."
  MOE_seventh:0 "A Peloponnesian Rennaisance"
  MOE_seventh_desc:0 "In building a strong court and a capital of international repute, aside from having a powerful army and a strong administration, we must also be ones to fervently sponsor the arts and the sciences- and make our little corner of the world a safe haven for intellectuals and creatives of all upbringings. Perhaps then we can make Lakonia mean something beyond dull brutality and simplicity, perhaps- in time- we can make it even rival the likes of old Athens in repute."
- 
+
  ACH_ideas: "Achaean Ideas"
  ACH_ideas_start: "Achaean Traditions"
  ACH_ideas_bonus: "Achaean Ambition"
@@ -666,7 +666,7 @@
  ACH_sixth:0 "Valleys of Elis"
  ACH_sixth_desc:0 "Home of Ancient Olympia and a prospering City state in antiquity, Elis is among the few regions of Greece where agriculture can sufficiently sustain the economy- we ought to subsidise and expand the local industry to meet the needs of our cities to the north, and to export our grain to the rest of the peloponnese for profit."
  ACH_seventh:0 "Panachaic Assembly"
- ACH_seventh_desc:0 "In consolidating the functions of our state into a rigidly defined legislative house in Glarentza, and formally separating it from the jurisdictions of the judges- we can craft a well-oiled machine of government, one through which legislation can be passed easier than ever before, and one through which we can respond to any and all challenges the future may throw our way." 
+ ACH_seventh_desc:0 "In consolidating the functions of our state into a rigidly defined legislative house in Glarentza, and formally separating it from the jurisdictions of the judges- we can craft a well-oiled machine of government, one through which legislation can be passed easier than ever before, and one through which we can respond to any and all challenges the future may throw our way."
 
  ATR_ideas: "Arta Ideas"
  ATR_ideas_start: "Artan Traditions"
@@ -705,7 +705,7 @@
  ATI_european_court_desc: "To be respected by our peers back in Europe, we must constantly import the latest trends, styles, and rituals from the premier courts. It just so happens that every now and then something useful comes along that actually allows our ruler to organize things more efficiently instead of just buying new uniforms for the footmen or giving his wife a county's annual income to buy new dresses."
  ATI_imperial_legacy: "Imperial Legacy"
  ATI_imperial_legacy_desc: "Despite our long rule, these lands are much older than that. Antioch was an important city to the Romans for over a millenia, staging ground of Emperors who fought the Persians and then the Saracens. We can revive those old traditions of discipline and drill, always preparing to face our future foes, for we have nothing to our back but the sea!"
-  
+
 # Edessan Ideas
  EDD_ideas: "Edessan Ideas"
  EDD_ideas_start: "Edessan Traditions"
@@ -743,3 +743,22 @@
  KNN_sixth_desc: "Prior to the Civil War, we were administers of the mountainous lands of Transylvania, and we managed to make the state not only functional, but profitable. We extracted resources and sold them with such efficiency we had the funds to lead a massive military campaign and remain in power."
  KNN_seventh: "The Magyar Horde"
  KNN_seventh_desc: "While the Cumans are nomadic now, the Magyar was once a dweller of the steppe. Far, far to the east, we came and pillaged our way through Europe. To reclaim that position of fear and respect throughout all of Europe - that is our destiny."
+
+# Crusader Minor ideas (heavily modified Cyprus ideas)
+ crusader_minor_ideas: "Crusader Principality Ideas"
+ crusader_minor_ideas_start: "Crusader Principality Traditions"
+ crusader_minor_ideas_bonus: "Crusader Principality Ambition"
+ crusader_minor_first: "Christian Corsairs"
+ crusader_minor_first_desc: "Perched as we are on the shores of the Eastern Mediterranean, some of our less scrupulous vassal lords have already taken to illicit activities and naked piracy to fill their coffers. What's more, they have been remarkably successful at it. If the [Root.Monarch.GetTitle] were to issue letters of marque and encourage this behavior, we could supplement our meager incomes."
+ crusader_minor_second: "Legacy of Jerusalem"
+ crusader_minor_second_desc: "With so few local options to choose from, intermarriage has been common even by European standards among the nobility of Outremer. As a result, we all share claims through one ancestor or another to the line of Kings of Jerusalem, and though these watered down blood ties are not considered worthy of the crown on their own, they elevate us and our consanguinious cousins above the average lord."
+ crusader_minor_third: "Amphibious Warfare"
+ crusader_minor_third_desc: "With our focus on naval activities to defend our shores and press our interests and fill our coffers abroad, we have begun to develop a new style of warfare that combines land and sea, focused less on the heavy cavalry of our past or growing masses of infantry of the present, but instead on the future."
+ crusader_minor_fourth: "Sun-kissed Vineyards"
+ crusader_minor_fourth_desc: "The climate of our fair shores is ideal for vineyards that produce delicious wine and fertile orchards of fruit and olives, which both keep our own people well-fed and happy and make for good trading with the Italians and especially their dour neighbors to the north."
+ crusader_minor_fifth: "Agile Diplomats"
+ crusader_minor_fifth_desc: "With the precarious situation we have long been balanced in between our own greedy Christian neighbors--and the tendrils of influence trailing back to Italy and Greece--and the far stronger Muslim powers, we have had to learn to be exceedingly flexible in our approach and discerning in our choice of ambassadors, leading to a high quality and effective diplomatic corps."
+ crusader_minor_sixth: "Aggressive Negotiations"
+ crusader_minor_sixth_desc: "Whether sitting at the peace table with a foreign ruler, haggling with a trade captain, or bickering over salaries with a condottiero, it always pays to be aggressive."
+ crusader_minor_seventh: "New Standard Fleet"
+ crusader_minor_seventh_desc: "As the years have gone by, our sleek and sturdy ships manned by the finest marines in the Mediterranean have become the terror of the seas. When Genovese traders and Turkish Beys alike think of who they'd want on their side at sea, they think of us. Now let us show them all true naval power. \n\nThey shall know fear."

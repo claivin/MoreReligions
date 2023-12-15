@@ -319,7 +319,7 @@ GSC_ideas = {
 	}
 
 	GSC_fifth = { #King of Light
-		tolerance_own = 2 
+		tolerance_own = 2
 		maitreyan_power = 0.5
 	}
 
@@ -1603,20 +1603,20 @@ JAA_ideas = {
 		build_cost = -0.10
 	}
 	JAA_third = { #Castrul Zeurini
-		garrison_size = 0.10	
+		garrison_size = 0.10
 	}
 	JAA_fourth = { #Into a Modern Era
 		monthly_splendor = 0.5
-		reform_progress_growth = 0.1	
+		reform_progress_growth = 0.1
 	}
 	JAA_fifth = { #Church and State
-		institution_spread_from_true_faith = 0.20	
+		institution_spread_from_true_faith = 0.20
 	}
 	JAA_sixth = { #Golden Age of Hungary
 		global_tax_modifier = 0.15
 	}
 	JAA_seventh = { #Agent of the Papacy
-		diplomatic_upkeep = 1	
+		diplomatic_upkeep = 1
 		diplomatic_reputation = 1
 	}
 }
@@ -1665,7 +1665,7 @@ ADR_ideas = {
 	trigger = {
 		tag = ADR
 	}
-	
+
 	ADR_la_vieja = {
 		development_cost_in_primary_culture = -0.15
 	}
@@ -1689,7 +1689,7 @@ ADR_ideas = {
 	ADR_pyrenee_toll = {
 		global_own_trade_power = 0.2
 	}
-}	
+}
 
 #Greek Ideas
 
@@ -1744,28 +1744,28 @@ TSS_ideas = {
 		global_unrest = -1
 	}
 	TSS_first = { #Trade Ports of Thessaloniki
-		trade_steering = 0.1	
+		trade_steering = 0.1
 	}
 	TSS_second = { #The Battle of the Rhodope
-		shock_damage_received = -0.10	
+		shock_damage_received = -0.10
 	}
 	TSS_third = { #Turkish Sailor Communities
-		navy_tradition = 1	
+		navy_tradition = 1
 		galley_power = 0.1
 	}
 	TSS_fourth = { #Defeat of the Zealots
 		papal_influence = 2
 	}
 	TSS_fifth = { #The Guns of the East
-		leader_siege = 1	
+		leader_siege = 1
 	}
 	TSS_sixth = { #The Aegean Fleet
 		ship_durability = 0.05
-		leader_naval_manuever = 1	
+		leader_naval_manuever = 1
 	}
 	TSS_seventh = { #Foreign Connections
 		advisor_pool = 1
-		advisor_cost = -0.10	
+		advisor_cost = -0.10
 	}
 }
 
@@ -1788,7 +1788,7 @@ CNT_ideas = {
 	CNT_second = { #Isthmus of Corinth
 		global_ship_trade_power = 0.20
 	}
-	CNT_third = { #Sgouroi Legacy 
+	CNT_third = { #Sgouroi Legacy
 		army_tradition_from_battle = 0.50
 	}
 	CNT_fourth = { #Neoplatonism
@@ -1810,16 +1810,16 @@ CPH_ideas = {
 		merchants = 1
 		tolerance_own = 3
 	}
-	
+
 	bonus = {
 		diplomatic_reputation = 1
 	}
-	
+
 	trigger = {
 		tag = CPH
 	}
 	free = yes		#will be added at load.
-	
+
 	CPH_first = {
 		leader_land_shock = 1
 	}
@@ -1851,7 +1851,7 @@ THS_ideas = {
 		infantry_power = 0.1
 	}
 	bonus = {
-		unjustified_demands = -0.2	
+		unjustified_demands = -0.2
 	}
 	trigger = {
 		tag = THS
@@ -1860,7 +1860,7 @@ THS_ideas = {
 	THS_first = { #The Sicilian Company
 		mercenary_discipline = 0.05
 	}
-	THS_second = { #Port of Pteleos 
+	THS_second = { #Port of Pteleos
 		production_efficiency = 0.10
 	}
 	THS_third = { #Vlachia in Hellas
@@ -1874,7 +1874,7 @@ THS_ideas = {
 		church_loyalty_modifier = 0.10
 	}
 	THS_sixth = { #Ports of Volos
-		global_ship_cost = -0.1	
+		global_ship_cost = -0.1
 	}
 	THS_seventh = { #The Ionian Campaign
 		leader_land_fire = 1
@@ -1898,17 +1898,17 @@ ATR_ideas = {
 		global_manpower_modifier = 0.15
 	}
 	ATR_second = { #Episkepsis of Arta
-		global_trade_goods_size_modifier = 0.1	
+		global_trade_goods_size_modifier = 0.1
 	}
 	ATR_third = { #The Walls of the Pindus
 		max_hostile_attrition = 1
 	}
 	ATR_fourth = { #Kantakouzenos Stratocracy
-		free_leader_pool = 1	
+		free_leader_pool = 1
 		general_cost = -0.20
 	}
 	ATR_fifth = { #The Despotate Grows
-		global_autonomy = -0.05	
+		global_autonomy = -0.05
 	}
 	ATR_sixth = { #Bishopric Support
 		global_heretic_missionary_strength = 0.02
@@ -1925,9 +1925,9 @@ MOE_ideas = {
 	start = {
 		land_morale = 0.15
 		free_concentrate_development = yes
-		
+
 	}
-	
+
 	bonus = {
 		infantry_power = 0.1
 	}
@@ -1935,9 +1935,9 @@ MOE_ideas = {
 		tag = MOE
 	}
 	free = yes
-	
+
 	MOE_first = { #Repelled the Corinthians
-		army_tradition = 1 
+		army_tradition = 1
 	}
 	MOE_second = { #Unite the Morea
 		ae_impact = -0.1
@@ -1950,13 +1950,13 @@ MOE_ideas = {
 		global_unrest = -1
 	}
 	MOE_fifth = { #Little Constantinople
-		development_cost_in_primary_culture = -0.1 
+		development_cost_in_primary_culture = -0.1
 	}
 	MOE_sixth = { #Legacy of the Metanoeite
 		missionaries = 1
 	}
 	MOE_seventh = { #Peloponnesian Rennaisance
-		advisor_cost = -0.15 
+		advisor_cost = -0.15
 	}
 }
 
@@ -1974,7 +1974,7 @@ ACH_ideas = {
 		tag = ACH
 	}
 	free = yes
-	
+
 	ACH_first = { #Arcadian Frontiers
 		defensiveness = 0.25
 	}
@@ -2089,7 +2089,7 @@ EDD_ideas = { # Powerful mil/conquest ideas, cav focused
 		core_creation = -0.1
 	}
 	free = yes
-	trigger = { tag = EDD } 
+	trigger = { tag = EDD }
 	EDD_household_retinue = {
 		cavalry_cost = -0.2
 		cavalry_flanking = 0.5
@@ -2115,5 +2115,54 @@ EDD_ideas = { # Powerful mil/conquest ideas, cav focused
 	EDD_thundering_horses = {
 		cavalry_fire = 0.5
 		cavalry_shock = 0.5
+	}
+}
+
+crusader_minor_ideas = {
+	start = {
+		galley_cost = -0.2
+		global_unrest = -2
+	}
+	bonus = {
+		naval_forcelimit_modifier = 0.33
+	}
+	trigger = {
+		OR = {
+			tag = CYP
+			tag = LEB
+			tag = TPO
+		}
+	}
+	free = yes
+
+	crusader_minor_first = {
+		embargo_efficiency = 0.2
+		privateer_efficiency = 0.25
+	}
+	crusader_minor_second = {
+		legitimacy = 0.5
+		devotion = 0.5
+		republican_tradition = 0.15
+		meritocracy = 0.5
+		horde_unity = 0.5
+		fabricate_claims_cost = -0.25
+	}
+	crusader_minor_third = {
+		army_tradition = 1
+		allowed_marine_fraction = 0.25
+	}
+	crusader_minor_fourth = {
+		production_efficiency = 0.15
+	}
+	crusader_minor_fifth = {
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.1
+	}
+	crusader_minor_sixth = {
+		mercenary_cost = -0.33
+	}
+	crusader_minor_seventh = {
+		galley_power = 0.25
+		max_flagships = 1
 	}
 }

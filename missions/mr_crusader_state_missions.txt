@@ -1140,7 +1140,7 @@ crusader_missions_4 = {
 				}
 			}
 
-			home_trade_node = {
+			377 = { #Aleppo
 				is_strongest_trade_power = ROOT
 			}
 		}
@@ -1174,8 +1174,13 @@ crusader_missions_4 = {
 		position = 5
 
 		trigger = {
-			# I have no fuckin clue man
-			always = yes
+			num_of_light_ship = 25
+			377 = { #Aleppo
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
 		}
 
 		effect = {

@@ -52,7 +52,7 @@
   cs_one_prince_to_rule_them_all_desc: "By establishing an army strong enough to defeat any other Prince of Outremer, we will be prepared for our campaign of conquest!"
   cs_one_prince_to_rule_them_all_trigger_tt: "We have the largest army of all the Princes of Outremer (Antioch, Cyprus, Edessa, Lebanon, and Tripoli)"
   cs_expand_our_demesne_title: "Expand Our Demesne"
-  cs_expand_our_demesne_desc: "Once we have expanded our realm significantly"
+  cs_expand_our_demesne_desc: "Once we have expanded our realm significantly, it will take our claims of preemince from mere words to evidenced thought and deed; in short, a fact. Outremer is a small land, and the Christian part smaller still, so this task is not as great as it may first seem, for the other Princes have few places to look for friends when our armies come marching."
   add_10_crown_land_share: "§Y[Root.GetName]§! gains §G10§! crown land ownership."
   cs_lord_of_the_levant_title: "Lord of the Levant"
   cs_lord_of_the_levant_desc: "Now that [Root.Monarch.GetTitle] [Root.Monarch.GetName] has subdued all the Princes of Outremer, [Root.Monarch.GetSheHe] can marshal the combined power of all our resources and support from Europe to reclaim Jerusalem, and Baldwin's crown!"

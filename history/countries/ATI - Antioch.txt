@@ -1,6 +1,6 @@
 government = monarchy
 government_rank = 1
-add_government_reform = holy_state_reform
+add_government_reform = feudalism_reform
 primary_culture = outremer
 add_accepted_culture = al_suryah_arabic
 religion = catholic
