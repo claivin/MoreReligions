@@ -531,6 +531,25 @@
  LNG_ideas_6_desc: "Many Central Asian soldiers were settled in the Yunnan frontier under the zenith of the Mongol Empire. They were known as the Tanmachi, troops that were recruited from the various tribes and peoples within the Mongol federation. They were masters of firearms, and served as powerful vanguards in our armies. Their descendants today live amongst us, melding their Central Asian culture with the local customs."
  LNG_ideas_7: "Chinese Siege Engines"
  LNG_ideas_7_desc: "The Chinese have always been at the forefront of siege innovation. By utilising gunpowder, they are able to construct incendiaries that will successfully lay siege to even the strongest of fortifications, allowing us to easily capture provinces during wartime." 
+ 
+ #Liang Ideas 
+ BLK_ideas: "Balkh Ideas"
+ BLK_ideas_start: "Balkh Traditions"
+ BLK_ideas_bonus: "Balkh ambitions"
+ BLK_ideas_1: "Splendour of Balkh"
+ BLK_ideas_1_desc: "Balkh - The Jewel of Khorasan, was rebuilt under the esteemed Amir Qazaghan to rival the splendour of Samarkand. Under his patronage it has come to eclipse all other cities in the region, with people coming from far & wide to be awed by its architectural wonders & bustling urban centres. The city of Balkh knows no rival."
+ BLK_ideas_2: "Persian campaigns"
+ BLK_ideas_2_desc: "We served at the forefront of the Persian campaigns, conquering the lands that the Ilkhanate now holds claim over. Without the assistance of our order this would have never come to fruition. We did it once, we can do it again!"
+ BLK_ideas_3: "Sons of Negudar"
+ BLK_ideas_3_desc: "Our order owes its modern powerbase to Negudar, the Muslim Mongol general who led our flight back to Afghanistan when Hulagu turned on us, blaming us for his failures in Egypt. We have taken on Negudar's resilience, and his legacy inspires us to fight against any who wish to hold us under their thumb. We even refer to ourselves as the Neguderi on occasion, in honour of his rulership."
+ BLK_ideas_4: "Indian Raids"
+ BLK_ideas_4_desc: "The Qara'unas order was founded to lead the battles against the various Indian states. We served the Great Khagan loyally as Tamachis in Afghanistan, while we conducted raids and incursions into India. Whilst we have never managed to hold land, it is only a matter of time until we find a gap and cross the Hindu Kush to bring the Ganges under our control."
+ BLK_ideas_5: "Shadows of the Hindu Kush"
+ BLK_ideas_5_desc: "Our order was born in the shadows of the great mountain range known as the Hindu Kush, and the mountains shall be our fortress against any intruder."
+ BLK_ideas_6: "The Nexus City"
+ BLK_ideas_6_desc: "Balkh is situated in a key central point. Those who wish to cross from China, India, Iran or Turkestan must cross through Balkh to reach the other regions. Due to this Balkh has become known as the Nexus city, with people from all those regions mixing together and settling in our central cosmopolitan city."
+ BLK_ideas_7: "Cloak of Muhammad"
+ BLK_ideas_7_desc: "We are in possession of the cloak of the Prophet Muhammad, worn during the famous Isra' and Mi'raj. The cloak was originally located in the city of Bukhara, but we have moved it to the city of Balkh to be kept safely in the aptly named Kirka Sharif." 
 
 #Andorran Ideas
  ADR_ideas: "Andorran Ideas"

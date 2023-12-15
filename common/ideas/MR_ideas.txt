@@ -1653,6 +1653,41 @@ LNG_ideas = {
 		siege_ability = 0.25
 	}
 }
+
+BLK_ideas = { #Balkh
+	start = {
+		discipline = 0.05
+		army_tradition = 1
+	}
+	bonus = {
+		cavalry_power = 0.20
+	}
+	free = yes
+	trigger = { tag = BLK }
+	BLK_ideas_1 = { #Splendour of Balkh
+		monthly_splendor = 2
+	}
+	BLK_ideas_2 = { #Persian campaigns
+		province_warscore_cost = -0.1
+	}
+	BLK_ideas_3 = { #Sons of Negudar
+ 		shock_damage_received = -0.15
+	}
+	BLK_ideas_4 = { #Indian Raids
+		leader_land_shock = 1
+		loot_amount = 0.10
+	}
+	BLK_ideas_5 = { #Shadows of the Hindu Kush
+		defensiveness = 0.25
+	}
+	BLK_ideas_6 = { #The Nexus City
+		num_accepted_cultures = 1
+	}
+	BLK_ideas_7 = { #Cloak of Muhammad
+		tolerance_own = 2
+	}
+}
+
 ADR_ideas = {
 	start = {
 		prestige = 1.0
