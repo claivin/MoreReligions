@@ -233,9 +233,10 @@ knn_missions_branching_A = {
 					limit = {
 						owned_by = BLH
 					}
-					add_territorial_core = BLH
+					add_territorial_core = ROOT
 				}
 			}
+			custom_tooltip = ""
 			east_dniepr_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -308,12 +309,17 @@ knn_missions_branching_A = {
 							accepted_culture = crimean  
 						}
 					}
+					add_country_modifier = {
+						name = accepted_crimean
+						duration = -1
+					}
 					add_accepted_culture = crimean 
 				}
 				else = {
 					add_dip_power = 100
 				}
 			}
+			custom_tooltip = " "
 			override_country_name = MAGYAR_HORDE
 		}
 	}
@@ -662,7 +668,7 @@ knn_missions_second = {
 			add_mil_power = 100
 			add_country_modifier = {
 				name = cavalry_masters_KNN
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
@@ -1573,5 +1579,4 @@ knn_missions_fifth = {
 			}
 		}
 	}
-	
 }

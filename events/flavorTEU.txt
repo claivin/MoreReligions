@@ -883,28 +883,28 @@ country_event = {
 }
 
 # Teutonic Victories
-country_event = {
-	id = flavor_teu.12
-	title = flavor_teu.12.t
-	desc = flavor_teu.12.desc
-	picture = BATTLE_VISTULA_LAGOON_eventPicture
-	is_triggered_only = yes
-	
-	option = {	# 
-		name = flavor_teu.12.a
-		if = {
-			limit = { has_dlc = "Cradle of Civilization" }
-			add_army_professionalism = 0.03
-		}
-		else = {
-			add_army_tradition = 15
-		}
-		add_mil_power = 50
-		ai_chance = {
-			factor = 100
-		}
-	}
-}
+#country_event = {
+#	id = flavor_teu.12
+#	title = flavor_teu.12.t
+#	desc = flavor_teu.12.desc
+#	picture = BATTLE_VISTULA_LAGOON_eventPicture
+#	is_triggered_only = yes
+#	
+#	option = {	# 
+#		name = flavor_teu.12.a
+#		if = {
+#			limit = { has_dlc = "Cradle of Civilization" }
+#			add_army_professionalism = 0.03
+#		}
+#		else = {
+#			add_army_tradition = 15
+#		}
+#		add_mil_power = 50
+#		ai_chance = {
+#			factor = 100
+#		}
+#	}
+#}
 
 # The Teutonic and Livonian Orders
 country_event = {

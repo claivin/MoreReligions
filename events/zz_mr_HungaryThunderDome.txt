@@ -67,6 +67,10 @@ country_event = {
 					}
 					add_core = CSA
 				}
+				set_religious_school = {
+					group = christian
+					school = mr_esztergom_rite
+				}
 				define_ruler = {
 					name = "Aliz"
 					dynasty = "Czak"
@@ -138,6 +142,10 @@ country_event = {
 						dip = 1
 						mil = 3
 				}
+				set_religious_school = {
+					group = christian
+					school = mr_esztergom_rite
+				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
 				add_country_modifier = {
@@ -200,6 +208,10 @@ country_event = {
 						adm = 1
 						dip = 0
 						mil = 5
+				}
+				set_religious_school = {
+					group = christian
+					school = mr_esztergom_rite
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				add_government_reform = mr_hungary_faction
@@ -264,6 +276,10 @@ country_event = {
 						adm = 5
 						dip = 4
 						mil = 6
+				}
+				set_religious_school = {
+					group = christian
+					school = mr_esztergom_rite
 				}
 				set_country_flag = HUN_thunder_dome_participant
 				set_country_flag = teu_crusader_battle_counter
@@ -330,6 +346,10 @@ country_event = {
 						infantry = 0.8
 						cavalry = 0.2
 					}
+				}
+				set_religious_school = {
+					group = christian
+					school = mr_esztergom_rite
 				}
 				if = {
 					limit = {
@@ -671,6 +691,7 @@ country_event = {
 		name = HUN_flavor.1e
 		switch_tag = KNN
 		custom_tooltip = send_aid_hungary_TT
+		custom_tooltip = knn_has_content
 		hidden_effect = {
 			POL = {
 				country_event = {
@@ -1728,7 +1749,24 @@ country_event = {
 country_event = {
 	id = HUN_flavor.20
 	title = HUN_flavor.20.t
-	desc = HUN_flavor.20.d
+	desc = {
+		trigger = {
+			capital_scope = {
+				NOT = {
+					controlled_by = ROOT
+				}
+			}
+		}
+		desc = HUN_flavor.20.d
+	}
+	desc = {
+		trigger = {
+			capital_scope = {
+				controlled_by = ROOT
+			}
+		}
+		desc =	HUN_flavor.20.da
+	}
 	picture = LAND_MILITARY_eventPicture
 	
 	trigger = {
@@ -1765,6 +1803,7 @@ country_event = {
 	}
 	
 	option = {
+		name = HUN_flavor.20.a
 		trigger = {
 			capital_scope = {
 				NOT = {
@@ -1803,6 +1842,7 @@ country_event = {
 	}
 	
 	option = {
+		name = HUN_flavor.20.b
 		trigger = {
 			capital_scope = {
 				controlled_by = ROOT
