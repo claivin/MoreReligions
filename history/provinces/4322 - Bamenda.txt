@@ -1,4 +1,4 @@
-#4322 = Bamenda
+#4322 - Bamenda
 
 culture = jukun
 religion = shamanism #Fetishism
