@@ -3958,8 +3958,14 @@ hindu_rajput_monarchy = {
 
 	trigger = {
 		government = monarchy
-		primary_culture = rajput
-		religion = hinduism
+		religion_group = dharmic
+		OR = {
+			primary_culture = rajput
+			OR = {
+				has_reform = samanta_vassal_reform
+				has_reform = maharajadhiraja_reform
+			}
+		}
 	}
 }
 
@@ -4014,7 +4020,7 @@ maratha_peshwas = {
 			has_reform = meritocratic_focus_reform
 		}
 		primary_culture = marathi
-		religion = hinduism
+		religion_group = dharmic
 	}
 }
 
@@ -4064,7 +4070,7 @@ hindu_maratha_monarchy = {
 	trigger = {
 		government = monarchy
 		primary_culture = marathi
-		religion = hinduism
+		religion_group = dharmic
 	}
 }
 
@@ -5384,7 +5390,7 @@ hindu_monarchy = {
 
 	trigger = {
 		government = monarchy
-		religion = hinduism
+		religion_group = dharmic
 	}
 }
 
@@ -5853,7 +5859,7 @@ hindu_republic = { #Based on titles in Maratha administration
 
 	trigger = {
 		government = republic
-		religion = hinduism
+		religion_group = dharmic
 	}
 }
 

@@ -1174,7 +1174,7 @@ hindu_theocracy = {
 	}
 
 	trigger = {
-		religion = hinduism
+		religion_group = dharmic
 		government = theocracy
 	}
 }
@@ -1390,7 +1390,7 @@ yemenite_theocracy = {
 	}
 
 	trigger = {
-		religion = shiite
+		religion = mr_zaydi
 		OR = {
 			government = theocracy
 			has_reform = feudal_theocracy
@@ -1431,7 +1431,7 @@ shiite_theocracy = {
 	}
 
 	trigger = {
-		religion = shiite
+		is_shiite = yes
 		OR = {
 			government = theocracy
 			has_reform = feudal_theocracy
@@ -1525,7 +1525,10 @@ sunni_theocracy = {
 	}
 
 	trigger = {
-		religion = sunni
+		OR = {
+			religion = sunni
+			religion = mr_almuwahiddun
+		}
 		OR = {
 			has_reform = feudal_theocracy
 			government = theocracy
