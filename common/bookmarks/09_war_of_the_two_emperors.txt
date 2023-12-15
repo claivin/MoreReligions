@@ -13,7 +13,7 @@ bookmark =
 	country = KLK
 	country = SHU
 	country = HEI
-	country = TIB
+	#country = TIB
 	
 	# easy_country = CAS
 	# easy_country = POR

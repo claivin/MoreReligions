@@ -10,10 +10,12 @@ bookmark =
 	
 	country = FRA
 	country = TOU
-	country = NAV
-	country = CBD
+	#country = NAV
+	#country = CBD
 	country = ENG
-	country = SCO
+	#country = SCO
+	country = BLH
+	country = POL
 	
 	
 	easy_country = NAV

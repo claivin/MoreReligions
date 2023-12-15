@@ -16,7 +16,7 @@ bookmark =
 	country = NAV
 	country = THR
 	country = ATI
-	country = BLH
+	#country = BLH
 	country = SUK
 	
 	easy_country = GSC
