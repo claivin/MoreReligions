@@ -2,7 +2,12 @@ mr_ifat_missions_1 = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = { tag = IFT }
+	potential = { 
+		OR = {
+			tag = IFT 
+			was_tag =IFT
+		}
+	}
 	has_country_shield = yes
 	
 	mr_ifat_eth_1 = {
@@ -114,7 +119,6 @@ mr_ifat_missions_1 = {
 				add_permanent_claim = ROOT
 			}
 			darfur_central_sahara_area = {
-				type = all
 				add_province_modifier = {
 					name = across_the_sahara
 					duration = -1
@@ -143,6 +147,29 @@ mr_ifat_missions_1 = {
 				duration = -1
 			}
 			custom_tooltip = west_africa_campaigns_TT
+			hidden_effect = {
+				niger_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				guinea_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				sahel_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	mr_ifat_som_3 = {
@@ -255,7 +282,12 @@ mr_ifat_missions_2 = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential = { tag = IFT }
+	potential = { 
+		OR = {
+			tag = IFT 
+			was_tag =IFT
+		}
+	}
 	has_country_shield = yes
 	
 	mr_ifat_eth_3 = {
@@ -464,7 +496,11 @@ mr_ifat_missions_2 = {
 					limit = {
 						culture = amhara
 					}
-					add_unrest = -2
+					add_province_modifier = {
+						name = hidden_unrest
+						hidden = yes
+						duration = -1
+					}
 				}
 			}
 		}
@@ -667,7 +703,12 @@ mr_ifat_missions_3 = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential = { tag = IFT }
+	potential = { 
+		OR = {
+			tag = IFT 
+			was_tag =IFT
+		}
+	}
 	has_country_shield = yes
 	
 	mr_ifat_eth_2 = {
@@ -975,7 +1016,7 @@ mr_ifat_missions_3 = {
 			tooltip = {
 				capital_scope = {
 					add_province_modifier = {
-						name = trade-hegemon_emerging_FT
+						name = trade_hegemon_emerging_FT
 						duration = 18250
 					}
 				}
@@ -986,7 +1027,7 @@ mr_ifat_missions_3 = {
 						region = deccan_region
 					}
 					add_province_modifier = {
-						name = trade-hegemon_emerging_FT
+						name = trade_hegemon_emerging_FT
 						duration = 18250
 					}
 				}
@@ -999,7 +1040,12 @@ mr_ifat_missions_4 = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential = { tag = IFT }
+	potential = { 
+		OR = {
+			tag = IFT 
+			was_tag =IFT
+		}
+	}
 	has_country_shield = yes
 	
 	mr_ifat_tall_1 = {
@@ -1346,16 +1392,29 @@ mr_ifat_missions_4 = {
 					name = kill_bahrayn_2
 					duration = 5475
 				}
-
+				bahrain_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			hidden_effect = {
 				if = {
 					limit = {
-						mission_completed = mr_ifat_arab_8
+						mission_completed = mr_ifat_arab_6
 					}
 					add_country_modifier = {
 						name = kill_bahrayn_2
 						duration = 5475
+					}
+					bahrain_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
 					}
 				}
 				else = {
@@ -1416,7 +1475,9 @@ mr_ifat_missions_4 = {
 					}
 				}
 				else = {
-					add_adm_power = 200
+					owner = {
+						add_adm_power = 200
+					}
 				}
 			}
 			1201 = {
@@ -1566,7 +1627,12 @@ mr_ifat_missions_5 = {
 	slot = 5
 	generic = no
 	ai = yes
-	potential = { tag = IFT }
+	potential = { 
+		OR = {
+			tag = IFT 
+			was_tag =IFT
+		}
+	}
 	has_country_shield = yes
 	
 	mr_ifat_tall_2 = {
@@ -1787,18 +1853,32 @@ mr_ifat_missions_5 = {
 			custom_tooltip = kill_bahrayn_1_TT
 			tooltip = {
 				add_country_modifier = {
-						name = kill_bahrayn_1
-						duration = 5475
-					}
+					name = kill_bahrayn_1
+					duration = 5475
 				}
+				bahrain_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
 			hidden_effect = {
 				if = {
 					limit = {
-						mission_completed = mr_ifat_arab_7
+						mission_completed = mr_ifat_arab_8
 					}
 					add_country_modifier = {
 						name = kill_bahrayn_1
 						duration = 5475
+					}
+					bahrain_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
 					}
 				}
 				else = {
