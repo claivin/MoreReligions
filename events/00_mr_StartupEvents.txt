@@ -443,7 +443,6 @@ country_event = {
 	desc = mr_startup_events.7.d
 	picture = MILITARY_CAMP_eventPicture
 	
-	fire_only_once = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -454,7 +453,7 @@ country_event = {
 	}
 	
 	option = {
-		name = mr_startup_events.6.a#BalkhWarning
+		name = mr_startup_events.7.a#BalkhWarning
 		trigger = {
 		tag = BLK
 		}
@@ -463,7 +462,7 @@ country_event = {
 	}
 	
 	option = {
-		name = mr_startup_events.6.b#TransoxianaNotification
+		name = mr_startup_events.7.b#TransoxianaNotification
 		trigger = {
         tag = TRS 
 		}
@@ -488,3 +487,79 @@ country_event = {
 		name = mr_startup_events.8.1
 	}
 }	
+
+
+country_event = { #Iceland
+	id = mr_startup_events.9
+	title = mr_startup_events.9.t
+	desc = mr_startup_events.9.d
+	picture = LORD_OF_GOTLAND_eventPicture
+
+	trigger = {
+		tag = ICE
+		NOT = { has_country_flag = ice_commonwealth_missions }
+		NOT = { has_country_flag = ice_church_missions }
+		NOT = { has_country_flag = ice_subject_missions }
+		NOT = { has_country_flag = ice_had_missions_event }
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = ice_had_missions_event }
+	}
+	is_triggered_only = yes
+	
+	option = {	#Stand against the Church!
+		name = mr_startup_events.9.a
+		set_country_flag = ice_commonwealth_missions
+		clr_country_flag = ice_church_missions
+		if = {
+			limit = {
+				tag = ICE
+			}
+			custom_tooltip = MR_iceland_flavor.1.a.tt
+			swap_non_generic_missions = yes
+		}
+		if = {
+			limit = {
+				NOT = { government = republic }
+			}
+			change_government = republic
+			add_republican_tradition = 100
+		}
+		else = {
+			add_stability_or_adm_power = yes
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	
+	option = {	#They are too powerful, we must surrender!
+		name = mr_startup_events.9.b
+		clr_country_flag = ice_commonwealth_missions
+		if = {
+			limit = {
+				tag = ICE
+			}
+			custom_tooltip = MR_iceland_flavor.b.tt
+			country_event = {
+				id = MR_iceland_flavor.2
+				days = 5
+			}
+		}
+		if = {
+			limit = {
+				NOT = { government = theocracy }
+			}
+			change_government = theocracy
+			add_government_reform = leading_clergy_reform
+			add_devotion = 100
+		}
+		else = {
+			add_stability_or_adm_power = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

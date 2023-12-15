@@ -8,13 +8,13 @@ bookmark =
 	default = yes
 	
 	country = ANK
-	country = PGN
-	country = PMN
-	country = DAI
-	country = SUK
-	country = TMM
-	country = MMA
-	country = CHA
+	# country = PGN
+	# country = PMN
+	# country = DAI
+	# country = SUK
+	# country = TMM
+	# country = MMA
+	# country = CHA
 	
 	# easy_country = CAS
 	# easy_country = POR

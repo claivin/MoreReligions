@@ -293,17 +293,13 @@
  GAZ_ADJ: "Kumyk"
  GAZ_ADJ2: "Kumyk"
  
- DLH: "Tomara"
- DLH_ADJ: "Tomaran"
- DLH_ADJ2: "Tomaran"
+ DLH: "Haryana"
+ DLH_ADJ: "Haryanan"
+ DLH_ADJ2: "Haryanan"
  
  PUN: "Lahore"
  PUN_ADJ: "Lahore"
  PUN_ADJ2: "Lahore"
- 
- MLW: "Paramara"
- MLW_ADJ: "Paramaran"
- MLW_ADJ2: "Paramaran"
  
  NGP: "Negapatam"
  NGP_ADJ: "Negapatam"

@@ -1,0 +1,14 @@
+bookmark =
+{
+	name = "rising_sun"
+	desc = "rising_sun_desc"
+	date = 1444.11.11
+	
+	center = 1835
+	default = yes
+	
+	
+	country = JAP
+	
+	easy_country = JAP	
+}

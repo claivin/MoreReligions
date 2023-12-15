@@ -1,23 +1,23 @@
-bookmark =
-{
-	name = "eastern_emperor"
-	desc = "eastern_emperor_desc"
-	date = 1444.11.11
+# bookmark =
+# {
+	# name = "eastern_emperor"
+	# desc = "eastern_emperor_desc"
+	# date = 1444.11.11
 	
-	center = 262
-	default = yes
-	
-	
-	country = POL
-	country = HUN
-	country = BOH
-	country = LBG
-	country = HAL
-	country = LIT
-	country = BLH
+	# center = 262
+	# default = yes
 	
 	
-	easy_country = HUN
-	easy_country = BLH
+	# country = POL
+	# country = HUN
+	# country = BOH
+	# country = LBG
+	# country = HAL
+	# country = LIT
+	# country = BLH
 	
-}
+	
+	# easy_country = HUN
+	# easy_country = BLH
+	
+# }

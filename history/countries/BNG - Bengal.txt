@@ -1,6 +1,7 @@
 government = monarchy
 primary_culture = bengali
-religion = smarta
+add_government_reform = feudalism_reform
+religion = hinduism
 technology_group = indian
 capital = 563	# Pandua
 change_estate_land_share = {
@@ -11,13 +12,23 @@ change_brahmins_or_church_land_share_effect = {
 	share = -5
 }
 
-1444.1.1 = {
+1400.1.1 = {
 	monarch = {
-		name = "Daksha"
+		name = "Lakshmana"
 		dynasty = "Sena"
-		ADM = 2
+		ADM = 6
+		DIP = 6
+		MIL = 4
+		birth_date = 1385.1.1
+	}
+	heir = {
+		name = "Vijaya"
+		dynasty = "Sena"
+		ADM = 1
 		DIP = 1
-		MIL = 5
-		birth_date = 1420.1.1
+		MIL = 1
+		birth_date = 1424.1.1
+		death_date = 1480.1.1
+		claim = 95
 	}
 }

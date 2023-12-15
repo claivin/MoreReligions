@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = rajput_kingdom
+add_government_reform = samanta_vassal_reform
 government_rank = 1
 technology_group = indian
 religion = shaktism
@@ -11,6 +11,7 @@ capital = 4466
 	monarch = {
 		name = "Arjun Dev"
 		dynasty = "Bundela"
+		birth_date = 1410.1.1
 		ADM = 2
 		DIP = 2
 		MIL = 2

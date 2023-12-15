@@ -9,14 +9,14 @@ religious_school = hanafi_school
 
 1444.1.1 = {
 	monarch = {
-		name = "Kaybahman"
+		name = "Kay Bahman"
 		dynasty = "Saljuq"
 		birth_date = 1420.1.1
 		adm = 1
 		dip = 0
 		mil = 0
 	}
-	monarch = {
+	heir = {
 		name = "Iskandar Arslan"
 		dynasty = "Saljuq"
 		birth_date = 1425.1.1

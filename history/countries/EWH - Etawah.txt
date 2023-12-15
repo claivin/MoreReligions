@@ -4,3 +4,15 @@ primary_culture = kanauji
 religion = hinduism
 technology_group = indian
 capital = 2063 # Delhi
+
+1430.1.1 = {
+	monarch = {
+		name = "Jaichandra"
+		dynasty = "Gaur"
+		birth_date = 1400.1.1
+		death_date = 1460.1.1
+		adm = 4
+		dip = 3
+		mil = 3
+	}
+}

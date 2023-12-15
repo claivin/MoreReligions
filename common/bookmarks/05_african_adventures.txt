@@ -9,7 +9,7 @@ bookmark =
 	
 	
 	country = IFT
-	country = MAL
+	#country = MAL
 	
 	
 	easy_country = IFT 

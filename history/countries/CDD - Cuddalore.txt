@@ -4,6 +4,15 @@ technology_group = indian
 religion = shaivism
 primary_culture = tamil
 capital = 540
+government_rank = 1
 
-
-
+1444.1.1 = {
+	monarch = {
+		name = "Parantaka"
+		dynasty = "Kadalur"
+		birth_date = 1420.1.1
+		ADM = 3
+		DIP = 3
+		MIL = 2
+	}
+}

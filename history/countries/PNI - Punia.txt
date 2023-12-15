@@ -5,7 +5,15 @@ primary_culture = kochi
 religion = mahayana
 technology_group = indian
 capital = 4486
-add_accepted_culture = bengali
 
-
+1444.1.1 = {
+	monarch = {
+		name = "Narendra"
+		dynasty = "Narayan"
+		birth_date = 1420.1.1
+		ADM = 2
+		DIP = 2
+		MIL = 3
+	}
+}
 

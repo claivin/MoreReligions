@@ -3,7 +3,7 @@
 owner = GUJ
 controller = GUJ
 culture = gujarati
-religion = buddhism
+religion = svetembara
 capital = "Khambhat"
 trade_goods = cloth #Chintz
 hre = no

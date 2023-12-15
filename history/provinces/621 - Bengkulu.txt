@@ -18,9 +18,9 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
-owner = SUN
-	controller = SUN
-	add_core = SUN
+owner = MLY
+	controller = MLY
+	add_core = MLY
 	is_city = yes
 	trade_goods = spices
 

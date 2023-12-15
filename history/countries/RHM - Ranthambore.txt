@@ -6,4 +6,14 @@ religion = hinduism
 technology_group = indian
 capital = 4465 # Jaipur
 
-
+1430.1.1 = {
+	monarch = {
+		name = "Shakti-deva"
+		dynasty = "Chahamana"
+		birth_date = 1410.1.1
+		death_date = 1460.1.1
+		adm = 5
+		dip = 4
+		mil = 5
+	}
+}
