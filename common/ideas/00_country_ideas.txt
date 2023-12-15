@@ -364,7 +364,10 @@ DAN_ideas = {
 	}
 
 	trigger = {
-		tag = DAN
+		OR = {
+			tag = DAN
+			culture = danish
+		}
 	}
 	free = yes		#will be added at load.
 
@@ -488,7 +491,10 @@ KRL_ideas = {
 	}
 
 	trigger = {
-		tag = KRL
+		OR = {
+			tag = KRL
+			tag = SVO
+		}
 	}
 	free = yes
 
@@ -1507,7 +1513,10 @@ PRU_ideas = {
 	}
 
 	trigger = {
-		tag = PRU
+		OR = {
+			tag = PRU
+			culture = prussian
+		}
 	}
 	free = yes		#will be added at load.
 
@@ -5295,7 +5304,10 @@ RYA_ideas = {
 	}
 
 	trigger = {
-		tag = RYA
+		OR = {
+			tag = RYA
+			culture = ryazanian
+		}
 	}
 	free = yes
 
@@ -6062,7 +6074,13 @@ PRM_ideas = {
 	}
 
 	trigger = {
-		tag = PRM
+		OR = {
+			tag = PRM
+			AND = {
+				culture_group = finno_ugric
+				religion = orthodox
+			}
+		}
 	}
 	free = yes
 
@@ -7919,7 +7937,10 @@ NOL_ideas = {
 		missionaries = 1 #Bastion of Catholicism
 	}
 	trigger = {
-		tag = NOL
+		OR = {
+			tag = NOL
+			culture_group = british
+		}
 	}
 
 	free = yes
@@ -17714,7 +17735,10 @@ UKR_ideas = {
 	}
 
 	trigger = {
-		tag = UKR
+		OR = {
+			tag = UKR
+			tag = KUS
+		}
 	}
 	free = yes
 
