@@ -1,16 +1,16 @@
 #REGIONLOWCOUNTRIES
 # 4383 South Holland - Principal cities: Den Haag, Delft, Leiden
 
-owner = DHG
-controller = DHG
-add_core = DHG
+owner = HOL
+controller = HOL
+add_core = HOL
 capital = "'s-Gravenhage"
 is_city = yes
 culture = dutch
 religion = mr_freespirit
 hre = yes
 base_tax = 4
-base_production = 6
+base_production = 3
 trade_goods = alcohol
 base_manpower = 4
 fort_15th = yes

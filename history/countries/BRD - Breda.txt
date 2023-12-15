@@ -8,8 +8,8 @@ capital = 90 #Breda
 
 1444.1.1 = {
 	monarch = {
-		name = "Timothy"
-		dynasty = "de Haan"
+		name = "Willem"
+		dynasty = "von Nassau"
 		adm = 3
 		dip = 3
 		mil = 1
