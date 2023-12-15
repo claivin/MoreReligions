@@ -1,24 +1,24 @@
-country_decisions = {
-
-	maitreya_debug = {
-		allow = {
-			always = yes
-		}	
-		potential = {
-			ai = no
-			religion = mr_maitreya
-		}
-		provinces_to_highlight = {
-		
-		}
-		effect = {
-			update_maitreya_monthly = yes
-			update_maitreya_total_monthly = yes
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 400
-	}
-
-}
+#country_decisions = {
+#
+#	maitreya_debug = {
+#		allow = {
+#			always = yes
+#		}	
+#		potential = {
+#			ai = no
+#			religion = mr_maitreya
+#		}
+#		provinces_to_highlight = {
+#		
+#		}
+#		effect = {
+#			update_maitreya_monthly = yes
+#			update_maitreya_total_monthly = yes
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		ai_importance = 400
+#	}
+#
+#}
