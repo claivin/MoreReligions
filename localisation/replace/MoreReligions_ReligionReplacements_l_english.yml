@@ -1,6 +1,6 @@
 ﻿l_english:
  hinduism: "Vaishnavism"
- hinduism_desc: "Vaishnavism is a major religion in South Asia"
+ hinduism_religion_desc: "Vaishnavism is one of the primary sects of Hinduism, one centred around the worship of Vishnu as the Supreme Being as well as his Dashavatara. A variant where Krishna is venerated as the source of all avatars also exist. Perhaps the most widespread Hindu religion, found in most of northwest and central India."
  hinduism_rebels_demand:0 "Convert $COUNTRYNAME$"
  hinduism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  hinduism_rebels_title:0 "Religious"
@@ -18,7 +18,7 @@
  has_neutral_karma_tooltip: "Have Between §Y33§! and §Y-33§! Karma."
  
  shiite: "Imamiyyah"
- shiite_religion_desc: "Imamiyyah Muslims hold that the legitimate successor of the prophet Muhammad as Caliph and Imam was his cousin and son-in-law Ali. The Shiites believe that a number of Imams have followed Ali and still await the coming of his final successor."
+ shiite_religion_desc: "Imami, also known as Ja'fari, Twelver or Ithna'asari, are Muslims who hold that the legitimate successor of the prophet Muhammad was a series of twelve Imams starting from Ali and ending with Imam al-Mahdi. Twelvers await for the arrival of Imam al-Mahdi who is in Occultation and will return in the endtimes, and in the meantime religious authority is derived from both scholars of religious law and enlightened mystics, much like mainstream Sunnism. Perhaps the most varied and widespread of the Shi'ite faiths, found anywhere from south Iraq to Aceh."
  shiite_rebels_name: "Imamiyyah Zealots"
  shiite_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  shiite_title: "$RELIGION$ Zealots"
