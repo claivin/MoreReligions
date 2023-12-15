@@ -230,12 +230,12 @@ accepted_crimean: "Accepted Kipchack"
  MR_ifat_flavor.1.b: "We shall rule from the port of Zeila"
  MR_ifat_flavor.1.d: "placeholder"
 
- MR_ifat_flavor.2.t: "Afar Raids on Ifat"
- MR_ifat_flavor.2.d: "The Afar and Ifat have held a truce since we were forced to acknowledge their independence in 1435. However, the Afar, like many of the tribes of the northern plains, value raiding and attacking cities for wealth and prosperity. So, in 1444, the Afar launched a raid across the border regions with the Ifat, raiding homes, villages, and even the city of Zeila itself. The Ifat Sultan demanded an apology and restitution, but it did not come. So now, as relations crumble and the truce comes to a close, war seems inevitable between the two sultans."
- MR_ifat_flavor.2.a: "They have gone too far!"
+ MR_ifat_flavor.12.t: "Afar Raids on Ifat"
+ MR_ifat_flavor.12.d: "The Afar and Ifat have held a truce since we were forced to acknowledge their independence in 1435. However, the Afar, like many of the tribes of the northern plains, value raiding and attacking cities for wealth and prosperity. So, in 1444, the Afar launched a raid across the border regions with the Ifat, raiding homes, villages, and even the city of Zeila itself. The Ifat Sultan demanded an apology and restitution, but it did not come. So now, as relations crumble and the truce comes to a close, war seems inevitable between the two sultans."
+ MR_ifat_flavor.12.a: "They have gone too far!"
 
  MR_ifat_flavor.3.t: "Purchase of Chaul"
- MR_ifat_flavor.3.d: "placeholder"
+ MR_ifat_flavor.3.d: "We have recieved a message from a kingdom far across the waves..."
  MR_ifat_flavor.3.a: "We shall gladly take their money!"
  MR_ifat_flavor.3.b: "They can shove it!"
 

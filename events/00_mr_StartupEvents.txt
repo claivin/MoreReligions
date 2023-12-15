@@ -631,10 +631,11 @@ country_event = { # Thai
 	picture = 3_Rajput_Estate__eventPicture # elefantos :gladge:
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 		OR = {
-			tag = LPD
+			tag = LPB
 			tag = PTC
 			tag = RTC
 			tag = TMM
@@ -655,6 +656,7 @@ country_event = { # Ifat
 	picture = ASKIA_eventPicture
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 		tag = IFT
@@ -671,6 +673,7 @@ country_event = { # Greeks
 	picture = BYZ_BYZANTINE_EAGLE_eventPicture
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	trigger = {
 		capital_scope = {
