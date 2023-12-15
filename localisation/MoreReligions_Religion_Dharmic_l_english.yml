@@ -1,6 +1,6 @@
 ﻿l_english:
  shaivism:0 "Shaivism"
- shaivism_religion_desc:0 "Shaivism is a major religion in South Asia centered around the deity Shiva."
+ shaivism_religion_desc:0 "Shaivism is the Hindu sect centred around the worship of Shiva, also known as Rudra, as the Supreme Being. Deities closely associated with Shiva, such as his sons Ganesha and Kartikeya (more popularly known in the south as Murugan), and his wives are also prominent. Found in the southern coast, Nepal, and is the primary form of Hinduism in Southeast Asia."
  shaivism_rebels_name: "Shiva Zealots"
  shaivism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  shaivism_rebels_title: "$RELIGION$ Zealots"
@@ -16,7 +16,7 @@
  
  
  svetembara:0 "Svetambara"
- svetembara_religion_desc:0 "Svetambara is a major religion in South Asia."
+ svetembara_religion_desc:0 "One of the two main branches of Jainism, a sramanic religion that extols asceticism and non-violence and worship the Arihant or Jina, souls who have conquered their inner passions. Svetambara is differentiated by its asctetics wearing white clothing and being more open to female nuns, among many differences. Found mostly in Rajastan."
  svetembara_rebels_name: "Svetambara Zealots"
  svetembara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  svetembara_rebels_title: "$RELIGION$ Zealots"
@@ -25,7 +25,7 @@
  svetembara_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  smarta:0 "Smarta"
- smarta_religion_desc:0 "Smarta is a major religion in South Asia."
+ smarta_religion_desc:0 "The Smarta tradition is a Hindu movement that rejects sectarianism and whose worship is focused on five deities known as the Panchayatana Puja: Surya, Shiva, Vishnu, Ganesha and Adi Shakti. Smartism has significant overlap with all of the major Hindu sects though is mostly found among the Brahmins and nobility, with common followers rare."
  smarta_rebels_name: "Smarta Zealots"
  smarta_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  smarta_rebels_title: "$RELIGION$ Zealots"
@@ -34,7 +34,7 @@
  smarta_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  
  shaktism:0 "Shaktism"
- shaktism_religion_desc:0 "Shaktism is a major religion in South Asia centered around the worship of Shakti."
+ shaktism_religion_desc:0 "Shaktism is a Hindu religion centred around a set of goddesses known as the Mahavidya. These goddesses are all manifestations of a feminine Supreme Being, known as Shakti or Mahadevi. Worship is extremely varied, with significant overlap and/or syncretism with both other Hindu sects or local folk religions. Mostly found in eastern India."
  shaktism_rebels_name: "Shaktism Zealots"
  shaktism_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  shaktism_rebels_title: "$RELIGION$ Zealots"
@@ -51,7 +51,7 @@
  mahadevi: "Mahadevi"
  
  digambara: "Digambara"
- digambara_religion_desc: "Digambara is a minor religion in South Asia."
+ digambara_religion_desc: "One of the two main branches of Jainism, a sramanic religion that extols asceticism and non-violence and worship the Arihant or Jina, souls who have conquered their inner passions. Primarily differentiated from Svetambara by encouraging nudity among acstetics, and having stricter monasticism and views on female nuns. Mostly found in south India."
  digambara_rebels_name: "Digambara Zealots"
  digambara_rebels_desc: "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  digambara_rebels_title: "$RELIGION$ Zealots"
