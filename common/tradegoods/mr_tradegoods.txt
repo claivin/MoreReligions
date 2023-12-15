@@ -648,7 +648,7 @@ horses = {
 		cavalry_power = 0.15
 	}
 	province = {
-		cavalry_cost = 0.006
+		cavalry_cost = -0.006
 	}
 	chance = {
 		factor = 5
