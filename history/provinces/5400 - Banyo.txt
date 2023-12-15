@@ -1,4 +1,4 @@
-#5400 = Banyo
+#5400 - Banyo
 
 culture = jukun
 religion = shamanism #Fetishism
