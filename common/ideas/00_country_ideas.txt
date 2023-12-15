@@ -7145,6 +7145,12 @@ JNP_ideas = {
 				region = hindusthan_region
 			}
 		}
+		NOT = { # Don't overwrite nepali ideas
+			OR = {
+				primary_culture = pahari
+				primary_culture = nepali
+			}
+		}
 	}
 	free = yes		#will be added at load.
 
