@@ -564,7 +564,7 @@ country_event = { #Iceland
 	}
 }
 
-country_event = {
+country_event = { # Crusader states
 	id = mr_startup_events.10
 	title = mr_startup_events.10.t
 	picture = BYZ_JERUSALEM_eventPicture
@@ -621,5 +621,87 @@ country_event = {
 			}
 		}
 		name = mr_startup_events.10.c
+	}
+}
+
+country_event = { # Thai
+	id = mr_startup_events.11
+	title = mr_startup_events.11.t
+	desc = mr_start_events.11.d
+	picture = 3_Rajput_Estate__eventPicture # elefantos :gladge:
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			tag = LPD
+			tag = PTC
+			tag = RTC
+			tag = TMM
+			tag = SUK
+			tag = AYU
+		}
+	}
+
+	option = {
+		name = mr_start_events.11.a
+	}
+}
+
+country_event = { # Ifat
+	id = mr_startup_events.12
+	title = mr_startup_events.12.t
+	desc = mr_start_events.12.d
+	picture = ASKIA_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		tag = IFT
+	}
+
+	option = {
+		name = mr_start_events.12.a
+	}
+}
+
+country_event = { # Greeks
+	id = mr_startup_events.13
+	title = mr_startup_events.13.t
+	picture = BYZ_BYZANTINE_EAGLE_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		capital_scope = {
+			is_in_greece_area_trigger = yes
+		}
+	}
+
+	desc = {
+		trigger = { # Latins
+			NOT = { tag = CST }
+			religion = catholic
+		}
+		desc = mr_startup_events.13.d.1
+	}
+
+	desc = {
+		trigger = { # Greeks
+			NOT = { tag = CST }
+			religion = orthodox
+		}
+		desc = mr_startup_events.13.d.2
+	}
+
+	desc = {
+		trigger = { # *Just* Istinople
+			tag = CST
+		}
+		desc = mr_startup_events.13.d.3
+	}
+
+	option = {
+		name = mr_startup_events.13.a
 	}
 }
