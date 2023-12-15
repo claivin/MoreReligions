@@ -1705,7 +1705,7 @@ KZH_ideas = { #White Horde
 			    }
 			   }
 	KZH_ideas_1 = { #Yasawiyya Patronage
-		monthly_piety_accelerator = 0.1
+		monthly_piety_accelerator = 0.001
 		horde_unity = 1
 	}
 	KZH_ideas_2 = { #Sons of Orda
