@@ -512,25 +512,25 @@
  YNN_ideas_6_desc: "Many Central Asian soldiers were settled in the Yunnan frontier under the zenith of the Mongol Empire. They were known as the Tanmachi, troops that were recruited from the various tribes and peoples within the Mongol federation. They were masters of firearms, and served as powerful vanguards in our armies. Their descendants today live amongst us, melding their Central Asian culture with the local customs."
  YNN_ideas_7: "The Mountain Province"
  YNN_ideas_7_desc: "Yunnan is a mountainous province, making it incredibly difficult to assault. The chokepoints give us a natural defense against our would-be enemies and are just as much of an asset to us as our brave forces are."
-
-#Liang Ideas
+ 
+#Liang Ideas 
  LNG_ideas: "Liang Ideas"
  LNG_ideas_start: "Liang Traditions"
  LNG_ideas_bonus: "Liang ambitions"
  LNG_ideas_1: "Historical Legtitimacy"
- LNG_ideas_1_desc: ""
+ LNG_ideas_1_desc: "Our legitimacy derives not from the foreign subjugators of Yuan, but the historical fief of Liang. Much like Zhu Wen, we have elevated the Fief of Liang to become the Empire of Liang. This endears us more to the people than the Yuan ever did, as they do not see us as foreign invaders."
  LNG_ideas_2: "Naiman Cavalry"
- LNG_ideas_2_desc: ""
+ LNG_ideas_2_desc: "The Naiman cavalry are some of the best trained and best equipped cavalry in the lands of the Mongol Empire, and they are loyal to our Prince. The Naiman forces of Koke Temur first arrived in Kunming in 1363 during our time of need, saving the city from the forces of Ming Yuzhen. Ever since then they have served us loyally and will continue to do so."
  LNG_ideas_3: "Mineral Fields of Yunnan"
- LNG_ideas_3_desc: ""
+ LNG_ideas_3_desc: "The Yunnan frontier is beyond rich with valuable minerals. People from Shenyang to Angkor rely on the copper mined in our lands. The marble of Yunnan is also renowned, with the city of Dali even being its namesake in Chinese - Dalishi."
  LNG_ideas_4: "Scholars of China"
- LNG_ideas_4_desc: ""
+ LNG_ideas_4_desc: "Chinese scholars have always been at the forefront of intellectual pursuits. With the curiosity fostered through our academies and the funding provided, we will be able to remain at the forefront for centuries to come."
  LNG_ideas_5: "Artisan Households"
- LNG_ideas_5_desc: ""
+ LNG_ideas_5_desc: "The system of artistan households - established by our forefather Kublai - continues to be in use in Yunnnan. Through the organisation of the production of military equipment into specialised hereditary households we are able to ensure a streamlined supply of equipment that doesn't compromise even a chi when it comes to quality."
  LNG_ideas_6: "Central Asian Tanmachi"
- LNG_ideas_6_desc: ""
+ LNG_ideas_6_desc: "Many Central Asian soldiers were settled in the Yunnan frontier under the zenith of the Mongol Empire. They were known as the Tanmachi, troops that were recruited from the various tribes and peoples within the Mongol federation. They were masters of firearms, and served as powerful vanguards in our armies. Their descendants today live amongst us, melding their Central Asian culture with the local customs."
  LNG_ideas_7: "Chinese Siege Engines"
- LNG_ideas_7_desc: ""
+ LNG_ideas_7_desc: "The Chinese have always been at the forefront of siege innovation. By utilising gunpowder, they are able to construct incendiaries that will successfully lay siege to even the strongest of fortifications, allowing us to easily capture provinces during wartime." 
 
 #Andorran Ideas
  ADR_ideas: "Andorran Ideas"
