@@ -11,6 +11,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	trigger = {
+		NOT = { is_year = 1445 } 
 		tag = REB
 	}
 	mean_time_to_happen = {
@@ -32,11 +33,14 @@ country_event = {
 	title = mr_startup_events.1.t
 	desc = { #toulousse
 		trigger = { tag = TOU }
+		NOT = { is_year = 1445 } 
 		desc = mr_startup_events.1.d.1
 	}
 	desc = { #france,PU's, and vassals
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
+			
 				tag = FRA
 				is_subject_of = FRA
 			}
@@ -45,6 +49,7 @@ country_event = {
 	}
 	desc = { #the rest of france, except Normandy and Brittany
 		trigger = {
+			NOT = { is_year = 1445 } 
 			NOT = {
 				OR = {
 					tag = TOU
@@ -69,6 +74,7 @@ country_event = {
 		capital_scope = {
 			region = france_region
 		}
+		NOT = { is_year = 1445 } 
 		NOT = { tag = NRM }
 	}
 	mean_time_to_happen = {
@@ -77,12 +83,15 @@ country_event = {
 
 	option = { #toulousse
 		name = mr_startup_events.1.a
-		trigger = { tag = TOU }
+		trigger = {
+			NOT = { is_year = 1445 } 
+			tag = TOU }
 	}
 
 	option = { #france,PU's, and vassals
 		name = mr_startup_events.1.b
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = FRA
 				is_subject_of = FRA
@@ -93,6 +102,7 @@ country_event = {
 	option = { #the rest of france, except Normandy and Brittany
 		name = mr_startup_events.1.c
 		trigger = {
+			NOT = { is_year = 1445 } 
 			NOT = {
 				OR = {
 					tag = TOU
@@ -115,6 +125,7 @@ country_event = {
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	desc = { #England and their normal vassals, but not the marcher lords
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = ENG
 				tag = CRN
@@ -127,6 +138,7 @@ country_event = {
 	}
 	desc = { #York and their vassals
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = YRK
 				is_subject_of = YRK
@@ -136,6 +148,7 @@ country_event = {
 	}
 	desc = { #Wales and the Marcher lords
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = WLS
 				tag = GLM
@@ -148,18 +161,21 @@ country_event = {
 	}
 	desc = { #scotland
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = SCO
 		}
 		desc = mr_startup_events.2.d.4
 	}
 	desc = { #Normandy
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = NRM
 		}
 		desc = mr_startup_events.2.d.5
 	}
 	desc = { #The Isles, Mann, and generic
 		trigger = {
+			NOT = { is_year = 1445 } 
 			NOT = {
 				OR = {
 					tag = ENG
@@ -183,6 +199,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	trigger = {
+		NOT = { is_year = 1445 } 
 		ai = no
 		OR = {
 			tag = NRM
@@ -219,6 +236,7 @@ country_event = {
 	option = { #England and their normal vassals, but not the marcher lords
 		name = mr_startup_events.2.a
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = ENG
 				tag = CRN
@@ -247,6 +265,7 @@ country_event = {
 	option = { #York and their vassals
 		name = mr_startup_events.2.a
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = YRK
 				is_subject_of = YRK
@@ -256,6 +275,7 @@ country_event = {
 	option = { #Wales and the Marcher lords
 		name = mr_startup_events.2.b
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = WLS
 				tag = GLM
@@ -268,18 +288,21 @@ country_event = {
 	option = { #Scotland
 		name = mr_startup_events.2.c
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = SCO
 		}
 	}
 	option = { #Normandy
 		name = mr_startup_events.2.e
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = NRM
 		}
 	}
 	option = { #Mann, the Iles, generic
 		name = mr_startup_events.2.f
 		trigger = {
+			NOT = { is_year = 1445 } 
 			NOT = {
 				OR = {
 					tag = ENG
@@ -310,6 +333,7 @@ country_event = {
 	desc = mr_startup_events.3.d
 	is_triggered_only = yes
 	trigger = {
+		NOT = { is_year = 1445 } 
 		ai = no
 		tag = POL
 	}
@@ -331,6 +355,7 @@ country_event = {
 	desc = mr_startup_events.4.d
 	is_triggered_only = yes
 	trigger = {
+		NOT = { is_year = 1445 } 
 		ai = no
 		OR = {
 			tag = BLH
@@ -341,13 +366,17 @@ country_event = {
 
 	option = {
 		name = mr_startup_events.4.a
-		trigger = { tag = BLH }
+		trigger = { 
+			NOT = { is_year = 1445 } 
+			tag = BLH }
 		custom_tooltip = blh_warning_tt
 	}
 
 	option = {
 		name = mr_startup_events.4.b
-		trigger = { tag = BUL }
+		trigger = { 
+		NOT = { is_year = 1445 } 
+		tag = BUL }
 		#empty
 	}
 }
@@ -356,12 +385,14 @@ country_event = {
 	title = mr_startup_events.5.t
 	desc = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = JAP
 		}
 		desc = mr_startup_events.5.d
 	}
 	desc = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = AKT
 				tag = NTT
@@ -372,7 +403,8 @@ country_event = {
 		}
 		desc = mr_startup_events.5.d.1
 	}
-	trigger = {
+	trigger = {	
+		NOT = { is_year = 1445 } 
 		ai = no
 		tag = JAP
 	}
@@ -383,6 +415,7 @@ country_event = {
 	option = {
 		name = mr_startup_events.5.a
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = JAP
 		}
 		custom_tooltip = mr_jap_4_TT
@@ -391,6 +424,7 @@ country_event = {
 	option = {
 		name = mr_startup_events.5.b
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = AKT
 				tag = NTT
@@ -409,20 +443,22 @@ country_event = {
 	desc = mr_startup_events.6.d
 	picture = MONGOL_BANNERS_eventPicture
 
-	fire_only_once = yes
 	is_triggered_only = yes
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		ai = no
 		OR = {
 		tag = NOG
 		tag = SHY
 		}
+		NOT = { is_year = 1445 }
 	}
 
 	option = {
 		name = mr_startup_events.6.a#KereiResponse
 		trigger = {
+		NOT = { is_year = 1445 } 	
 		tag = SHY
 		}
 	custom_tooltip = SHY_end_civil_war_TT
@@ -431,6 +467,7 @@ country_event = {
 	option = {
 		name = mr_startup_events.6.b#JanibekResponse
 		trigger = {
+		NOT = { is_year = 1445 } 
         tag = NOG
 		}
     custom_tooltip = NOG_end_civil_war_TT
@@ -446,15 +483,18 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		OR = {
 		tag = BLK
 		tag = TRS
 		}
+		NOT = { is_year = 1445 }
 	}
 
 	option = {
 		name = mr_startup_events.7.a#BalkhWarning
 		trigger = {
+			NOT = { is_year = 1445 } 
 		tag = BLK
 		}
 	custom_tooltip = BLK_barlas_revolt_TT
@@ -464,6 +504,7 @@ country_event = {
 	option = {
 		name = mr_startup_events.7.b#TransoxianaNotification
 		trigger = {
+		NOT = { is_year = 1445 } 
         tag = TRS
 		}
     custom_tooltip = TRS_barlas_revolt_TT
@@ -480,6 +521,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		tag = NAV
 	}
 
@@ -496,6 +538,7 @@ country_event = { #Iceland
 	picture = NORTH_SEA_MAPS_eventPicture
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		tag = ICE
 		NOT = { has_country_flag = ice_commonwealth_missions }
 		NOT = { has_country_flag = ice_church_missions }
@@ -572,11 +615,15 @@ country_event = { # Crusader states
 	is_triggered_only = yes
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		is_levantine_crusader_state = yes
 	}
 
+	fire_only_once = yes
+
 	desc = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			is_levantine_crusader_state = yes
 			NOT = { tag = ATI }
 			NOT = { tag = EDD }
@@ -586,6 +633,7 @@ country_event = { # Crusader states
 
 	desc = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = ATI
 		}
 		desc = mr_startup_events.10.d.1
@@ -593,6 +641,7 @@ country_event = { # Crusader states
 
 	desc = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = EDD
 		}
 		desc = mr_startup_events.10.d.2
@@ -600,6 +649,7 @@ country_event = { # Crusader states
 
 	option = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = ATI
 		}
 		name = mr_startup_events.10.a
@@ -607,6 +657,7 @@ country_event = { # Crusader states
 
 	option = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			tag = EDD
 		}
 		name = mr_startup_events.10.b
@@ -614,6 +665,7 @@ country_event = { # Crusader states
 
 	option = {
 		trigger = {
+			NOT = { is_year = 1445 } 
 			OR = {
 				tag = CYP
 				tag = LEB
@@ -634,6 +686,7 @@ country_event = { # Thai
 	fire_only_once = yes
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		OR = {
 			tag = LPB
 			tag = PTC
@@ -643,6 +696,8 @@ country_event = { # Thai
 			tag = AYU
 		}
 	}
+
+	fire_only_once = yes
 
 	option = {
 		name = mr_start_events.11.a
@@ -659,8 +714,11 @@ country_event = { # Ifat
 	fire_only_once = yes
 
 	trigger = {
+		NOT = { is_year = 1445 } 
 		tag = IFT
 	}
+
+	fire_only_once = yes
 
 	option = {
 		name = mr_start_events.12.a
@@ -681,8 +739,11 @@ country_event = { # Greeks
 		}
 	}
 
+	fire_only_once = yes
+
 	desc = {
 		trigger = { # Latins
+			NOT = { is_year = 1445 } 
 			NOT = { tag = CST }
 			religion = catholic
 		}
@@ -691,6 +752,7 @@ country_event = { # Greeks
 
 	desc = {
 		trigger = { # Greeks
+			NOT = { is_year = 1445 } 
 			NOT = { tag = CST }
 			religion = orthodox
 		}
@@ -699,6 +761,7 @@ country_event = { # Greeks
 
 	desc = {
 		trigger = { # *Just* Istinople
+			NOT = { is_year = 1445 } 
 			tag = CST
 		}
 		desc = mr_startup_events.13.d.3

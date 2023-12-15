@@ -3,7 +3,6 @@
 owner = MAK
 controller = MAK
 add_core = MAK
-add_core = BEJ
 culture = nubian
 religion = coptic
 capital = "Sahra an Nübyah"
