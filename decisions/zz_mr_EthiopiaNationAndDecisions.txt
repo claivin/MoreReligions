@@ -170,6 +170,9 @@ country_decisions = {
 				province_id = 1213
 				province_id = 1211
 			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		allow = {
 			is_nomad = no
@@ -181,14 +184,13 @@ country_decisions = {
 			owns_core_province = 1213
 			owns_core_province = 1211
 			num_of_owned_provinces_with = {	
-				value = 10
+				value = 20
 				is_core = ROOT
 				region = horn_of_africa_region
 			}
 		}
 		effect = {
 			change_tag = ABH
-			swap_non_generic_missions = yes
 			if = {
 				limit = {
 					government_rank = 3
