@@ -8,9 +8,15 @@ province_event = {
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
-		religion = reformed
-		owner = {
+		OR = {
+			religion = mr_fraticelli
 			religion = reformed
+		}
+		owner = {
+			OR = {
+				religion = mr_fraticelli
+				religion = reformed
+			}
 			dominant_religion = reformed
 			capital_scope = {
 				continent = europe
@@ -18,11 +24,24 @@ province_event = {
 		}
 		any_neighbor_province = {
 			NOT = { owned_by = ROOT }
-			religion = reformed
+			OR = {
+				religion = mr_fraticelli
+				religion = reformed
+			}
 			NOT = { has_province_flag = reformed_refugees }
 			owner = {
-				NOT = { religion = reformed }
-				NOT = { dominant_religion = reformed }
+				NOT = { 
+					OR = {
+						religion = mr_fraticelli
+						religion = reformed
+					} 
+				}
+				NOT = { 
+					OR = {
+						dominant_religion = reformed 
+						dominant_religion = mr_fraticelli
+					}
+				}
 				NOT = { is_subject_of = ROOT }
 				NOT = { alliance_with = ROOT }
 			}
@@ -38,11 +57,24 @@ province_event = {
 			random_neighbor_province = {
 				limit = {
 					NOT = { owned_by = ROOT }
-					religion = reformed
+					OR = {
+						religion = mr_fraticelli
+						religion = reformed
+					}
 					NOT = { has_province_flag = reformed_refugees }
 					owner = {
-						NOT = { religion = reformed }
-						NOT = { dominant_religion = reformed }
+						NOT = { 
+							OR = {
+								religion = mr_fraticelli
+								religion = reformed
+							} 
+						}
+						NOT = { 
+							OR = {
+								dominant_religion = reformed 
+								dominant_religion = mr_fraticelli
+							}
+						}
 						NOT = { is_subject_of = ROOT }
 						NOT = { alliance_with = ROOT }
 					}
@@ -129,13 +161,24 @@ country_event = {
 	picture = STREET_SPEECH_eventPicture
 	
 	trigger = {
-		religion = reformed
-		dominant_religion = reformed
+		OR = {
+			religion = mr_fraticelli
+			religion = reformed
+		} 
+		OR = {
+			dominant_religion = mr_fraticelli
+			dominant_religion = reformed
+		}
 		capital_scope = {
 			continent = europe
 		}
 		any_neighbor_country = {
-			NOT = { religion = reformed }
+			NOT = { 
+				OR = {
+					religion = mr_fraticelli
+					religion = reformed
+				} 
+			}
 			NOT = { is_subject_of = ROOT }
 			NOT = { alliance_with = ROOT }
 			any_owned_province = {
@@ -154,11 +197,17 @@ country_event = {
 			# Try find a country with neighboring province
 			random_neighbor_country = {
 				limit = {
-					NOT = { religion = reformed }
+					NOT = { OR = {
+						religion = mr_fraticelli
+						religion = reformed
+					}  }
 					NOT = { is_subject_of = ROOT }
 					NOT = { alliance_with = ROOT }
 					any_owned_province = {
-						religion = reformed
+						OR = {
+							religion = mr_fraticelli
+							religion = reformed
+						} 
 						NOT = { has_province_modifier = foreign_reformed_ministers }
 						any_neighbor_province = {
 							owned_by = ROOT
@@ -167,7 +216,10 @@ country_event = {
 				}
 				random_owned_province = {
 					limit = {
-						religion = reformed
+						OR = {
+							religion = mr_fraticelli
+							religion = reformed
+						} 
 						NOT = { has_province_modifier = foreign_reformed_ministers }
 						any_neighbor_province = {
 							owned_by = ROOT
@@ -186,17 +238,26 @@ country_event = {
 				}
 				random_neighbor_country = {
 					limit = {
-						NOT = { religion = reformed }
+						NOT = { OR = {
+							religion = mr_fraticelli
+							religion = reformed
+						}  }
 						NOT = { is_subject_of = ROOT }
 						NOT = { alliance_with = ROOT }
 						any_owned_province = {
-							religion = reformed
+							OR = {
+								religion = mr_fraticelli
+								religion = reformed
+							} 
 							NOT = { has_province_modifier = foreign_reformed_ministers }
 						}
 					}
 					random_owned_province = {
 						limit = {
-							religion = reformed
+							OR = {
+								religion = mr_fraticelli
+								religion = reformed
+							} 
 							NOT = { has_province_modifier = foreign_reformed_ministers }
 						}
 						set_province_flag = prospective_foreign_reformed_ministers
@@ -309,7 +370,10 @@ country_event = {
 	picture = HARBOUR_eventPicture
 	
 	trigger = {
-		religion = reformed
+		OR = {
+			religion = mr_fraticelli
+			religion = reformed
+		} 
 		uses_fervor = yes
 		NOT = { has_country_flag = reformed_work_ethic }
 	}
@@ -344,7 +408,10 @@ country_event = {
 	picture = RELIGION_eventPicture
 	
 	trigger = {
-		religion = reformed
+		OR = {
+			religion = mr_fraticelli
+			religion = reformed
+		}
 		uses_fervor = yes
 		NOT = { has_country_flag = banned_musical_instruments_in_church }
 	}
@@ -409,7 +476,10 @@ province_event = {
 	
 	trigger = {
 		owner = {
-			religion = reformed
+			OR = {
+				religion = mr_fraticelli
+				religion = reformed
+			}
 			current_age = age_of_reformation
 			capital_scope = {
 				continent = europe
