@@ -619,6 +619,8 @@ country_event = { # Crusader states
 		is_levantine_crusader_state = yes
 	}
 
+	fire_only_once = yes
+
 	desc = {
 		trigger = {
 			NOT = { is_year = 1445 } 
@@ -694,6 +696,8 @@ country_event = { # Thai
 		}
 	}
 
+	fire_only_once = yes
+
 	option = {
 		name = mr_start_events.11.a
 	}
@@ -712,6 +716,8 @@ country_event = { # Ifat
 		tag = IFT
 	}
 
+	fire_only_once = yes
+
 	option = {
 		name = mr_start_events.12.a
 	}
@@ -729,6 +735,8 @@ country_event = { # Greeks
 			is_in_greece_area_trigger = yes
 		}
 	}
+
+	fire_only_once = yes
 
 	desc = {
 		trigger = { # Latins
