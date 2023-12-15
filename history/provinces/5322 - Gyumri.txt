@@ -2,6 +2,7 @@
 
 owner = ANI
 controller = ANI
+add_core = ANI
 culture = armenian
 religion = coptic
 capital = "Gyumri"

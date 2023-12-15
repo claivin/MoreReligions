@@ -1,6 +1,7 @@
 #REGIONFRANCE
 owner = FRA
 controller = FRA
+add_core = FRA
 capital = "Foix"
 is_city = yes
 culture = gascon

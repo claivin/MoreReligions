@@ -2,6 +2,7 @@
 
 owner = TAB
 controller = TAB
+add_core = TAB
 culture = mazandarani
 religion = shiite
 capital = "Sari"

@@ -3,7 +3,6 @@
 
 owner = VAL	#Alfons V of Aragon
 controller = VAL
-add_core = ARA
 add_core = VAL
 culture = catalan
 religion = catholic
