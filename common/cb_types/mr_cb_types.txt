@@ -181,6 +181,14 @@ cb_shugo_independence = {
 
 	war_goal = defend_capital_independence
 }
+cb_disloyal_marali = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 120
+
+	war_goal = take_capital_disloyal
+}
 
 cb_crusade_for_jerusalem = {
 	valid_for_subject = no

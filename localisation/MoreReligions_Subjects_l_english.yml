@@ -90,3 +90,32 @@
  CANNOT_ANNEX_SHUGO: "§RThe Shugo would refuse this, they are far too powerful.§!"
  CANNOT_SUPPORT_SHUGO: "§RWe cannot support a Shugo State.§!"
  
+
+#Marali Vassals
+marali_subject: "Marali"
+marali_subject_long_desc: "The provincial lords at the edge of the Malian Empire"
+marali_subject_is_our: "$NAME|Y$ is a fellow Marali"
+marali_subject_title: "Marali"
+marali_subject_title_plural: "Marali"
+is_marali_subject: "Is a Marali"
+is_marali: "Marali Subject"
+
+ reign_in_marali:0 "Rein in Marali"
+ reign_in_marali_title:0 "Rein in Marali"
+ reign_in_marali_desc:1 "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Marali§!. This will allow us to integrate §Y[From.GetName]§!, however all other Marali will gain increased liberty desire.\n\n§YCore Maralis can be annexed for 6 £dip£ per development.§!"
+ reign_in_marali_tooltip:1 "Rein in the target from Marali to Core Marali status, allowing us to integrate the target, but all other Marali have a lowered opinion."
+ reign_in_marali_alert_tooltip:0 "An offer to turn us into a §YCore Marali§!"
+ reign_in_marali_dialog:0 "[This.GetName] wants to turn us into their Core Marali, granting us further protection and safety."
+ every_marali_subject: "Every Marali Subject will gain §R-50§! Opinion and §R+25§! Liberty Desire."
+
+annexed_marali: "Annexed Marali"
+
+core_marali_subject: "Core Marali"
+core_marali_subject_long_desc: "The integrated provincial lords at the edge of the Malian Empire"
+core_marali_subject_is_our: "$NAME|Y$ is a fellow Core Marali"
+core_marali_subject_title: "Core Marali"
+core_marali_subject_title_plural: "Core Marali"
+is_core_marali_subject: "Is a Core Marali"
+is_core_marali: "Core Marali Subject"
+
+FROM_IS_OPINION_LOW_TT: "§R- §Y[From.GetName]§! has less than §Y125%§! Opinion of Us.§!"

@@ -4683,7 +4683,7 @@ mr_greek_ortho_fourth_b = {
 					any_province = {
 						is_in_greece_area_trigger = yes
 						country_or_non_sovereign_subject_holds = ROOT
-						religion = ROOT
+						NOT = { religion = ROOT }
 					}
 				}
 			}

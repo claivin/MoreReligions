@@ -56,4 +56,10 @@ went_on_hajj = {
 	opinion = 50
 	yearly_decay = 0.5
 }
-
+annexed_marali = {
+	opinion = -50
+	yearly_decay = 2
+}
+is_marali = {
+	opinion = 25
+}

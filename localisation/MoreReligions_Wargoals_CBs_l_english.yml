@@ -30,6 +30,9 @@
  hotoku_war_name: "Hotoku War"
  CANNOT_WAR_SHUGO: "The Shugo are not yet ready to fight for their independence."
 
+ cb_disloyal_marali: "Subjugate Disloyal Marali"
+ cb_disloyal_marali_desc: "A war to rein in a disloyal and rebellious Marali."
+
  cb_crusade_for_jerusalem: "Crusade for Jerusalem"
  cb_crusade_for_jerusalem_desc: "A new crusade has been called by [Root.Monarch.GetTitle] [Root.Monarch.GetName]."
  TAKE_JERUSALEM_NAME: "Crusade for Jerusalem"
