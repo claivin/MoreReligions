@@ -13,7 +13,6 @@ base_manpower = 3
 capital = "Ukek"
 is_city = yes
 add_core = RDH
-add_core = AST
 
 
 

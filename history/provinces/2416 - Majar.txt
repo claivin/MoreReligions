@@ -13,7 +13,6 @@ base_manpower = 2
 capital = "Majar"
 is_city = yes
 add_core = RDH
-add_core = AST
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
