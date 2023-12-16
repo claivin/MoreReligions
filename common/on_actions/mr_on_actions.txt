@@ -96,6 +96,15 @@ on_startup = {
 on_religion_change = {
 	#change iberian names to islamic name if muslim
 	change_iberian_name_to_arabic_effect = yes
+	if = {
+		limit = {
+			religion = protestant
+		}
+		set_religious_school = {
+			group = christian
+			school = mr_christian_no_school
+		}
+	}
 	events = {
 		muslim_school_events.20 #Pick School
 		propagate_religion_events.7 #Propagated Country is now Muslim

@@ -1,5 +1,6 @@
 ﻿l_english:
  obj_renaissance: "Embrace Bureaucracy"
+ obj_renaissance_desc: "Embrace the Bureaucracy institution, and keep it in every province you own."
  renaissance: "Bureaucracy"
  desc_renaissance: "The administration of a vast realm has been a challenge since ancient times, with rulers often delegating portions to other subordinate administrators. The modernization of this, with the adoption of signed or marked documents, law standardization, proper changes to recordkeeping, and all the paperwork machniations that go with it are key to effeciently manage our domain."
  renaissance_date: "1350"
