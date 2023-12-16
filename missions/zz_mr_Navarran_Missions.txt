@@ -1254,12 +1254,12 @@ nav_missions_3 = {
 		
 		provinces_to_highlight = {
 			region = iberia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			ROOT = {
-				owns_all_provinces = {
-					region = iberia_region
-				}
+			iberia_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+				type = all
 			}
 		}
 		effect = {
