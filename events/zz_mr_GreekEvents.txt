@@ -453,16 +453,40 @@ country_event = { #The Anatolian Candidate
 		highlight = yes
 		kill_ruler = yes
 		kill_heir = {}
-		change_religion = variable:tur_religion
-		define_ruler = {
-			name = "Alexandrios"
-			dynasty = ROOT
-			adm = 3
-			dip = 6
-			mil = 3
-			age = 20
-			claim = 95
-			religion = variable:tur_religion
+		if = {
+			limit = {
+				exists = TUR
+				TUR = {
+					OR = {
+						religion = shiite
+						religion = mr_safaviyya
+					}
+				}
+			}
+			change_religion = variable:tur_religion
+			define_ruler = {
+				name = "Alexandrios"
+				dynasty = ROOT
+				adm = 3
+				dip = 6
+				mil = 3
+				age = 20
+				claim = 95
+				religion = variable:tur_religion
+			}
+		}
+		else = {
+			change_religion = shiite
+			define_ruler = {
+				name = "Alexandrios"
+				dynasty = ROOT
+				adm = 3
+				dip = 6
+				mil = 3
+				age = 20
+				claim = 95
+				religion = shiite
+			}
 		}
 		add_government_reform = byzantine_universal_monarch_MUSLIM_reform
 		add_stability = -2
