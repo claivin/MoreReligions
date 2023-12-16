@@ -788,13 +788,13 @@ estate_nobles_mr_warlord_aristocracy_gsc = {
 
 estate_burghers_crusaders_grant_italian_quarter = {
 	icon = privilege_puppet_ruler
-	max_absolutism = -20
+	max_absolutism = -10
 	loyalty = 0.05
 	influence = 0.15
 
 	is_valid = {
 		is_levantine_crusader_state = yes
-		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_crusaders_grant_italian_quarter }
+		mission_completed = cs_grant_italian_quarter
 	}
 
 	can_revoke = { always = yes }
@@ -894,10 +894,10 @@ estate_church_mr_imperial_introspection = {
 	benefits = {
 		all_power_cost = -0.025
 		global_unrest = -2
-		free_policy = 1	
+		free_policy = 1
 	}
 	ai_will_do = {
-		factor = 0 
+		factor = 0
 	}
 	penalties = {
 		stability_cost_to_declare_war = 3
