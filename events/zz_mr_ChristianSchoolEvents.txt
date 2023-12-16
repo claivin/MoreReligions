@@ -627,8 +627,8 @@ country_event = {
 #change catholic rite decision
 country_event = {
 	id = christian_school_events.22
-	title = christian_school_events.22.t
-	desc = christian_school_events.22.d
+	title = christian_school_events.20.t
+	desc = christian_school_events.20.d
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	
 	is_triggered_only = yes
@@ -637,12 +637,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #go back
-		name = christian_school_events.22.a
+		name = christian_school_events.20.x
 	}
 	
 #####################
 	option = { #Roman Rite unavailable
-		name = christian_school_events.22.b
+		name = christian_school_events.20.b
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -663,10 +663,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_1
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Roman Rite available
-		name = christian_school_events.22.c
+		name = christian_school_events.20.b
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -685,6 +686,7 @@ country_event = {
 				}
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -707,7 +709,7 @@ country_event = {
 	}
 ########################	
 	option = { #Ambrosian Rite unavailable
-		name = christian_school_events.22.d2
+		name = christian_school_events.20.a1
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -722,10 +724,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_2
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Ambrosian Rite available
-		name = christian_school_events.22.e
+		name = christian_school_events.20.a1
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -738,6 +741,7 @@ country_event = {
 				area = lombardy_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -759,7 +763,7 @@ country_event = {
 	}
 ########################	
 	option = { #Aquelian Rite unavailable
-		name = christian_school_events.22.f
+		name = christian_school_events.20.i
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -774,10 +778,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_3
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Aquelian Rite available
-		name = christian_school_events.22.g
+		name = christian_school_events.20.i
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -790,6 +795,7 @@ country_event = {
 				area = venetia_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -811,7 +817,7 @@ country_event = {
 	}
 ########################	
 	option = { # Rite unavailable
-		name = christian_school_events.22.h
+		name = christian_school_events.20.j
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -826,10 +832,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_4
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { # Rite available
-		name = christian_school_events.22.i
+		name = christian_school_events.20.j
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -842,6 +849,7 @@ country_event = {
 				area = beieras_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -863,7 +871,7 @@ country_event = {
 	}
 ########################	
 	option = { #Durham Rite unavailable
-		name = christian_school_events.22.j
+		name = christian_school_events.20.k
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -878,10 +886,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_5
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Durham Rite available
-		name = christian_school_events.22.k
+		name = christian_school_events.20.k
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -894,6 +903,7 @@ country_event = {
 				area = yorkshire_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -915,7 +925,7 @@ country_event = {
 	}
 ########################	
 	option = { #Mozarbic Rite unavailable
-		name = christian_school_events.22.l
+		name = christian_school_events.20.l
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -940,10 +950,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_6
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Mozarbic Rite available
-		name = christian_school_events.22.m
+		name = christian_school_events.20.l
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -966,6 +977,7 @@ country_event = {
 				accepted_culture = basque
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -987,7 +999,7 @@ country_event = {
 	}
 ########################	
 	option = { #Sarum Rite unavailable
-		name = christian_school_events.22.n
+		name = christian_school_events.20.m
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1001,10 +1013,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_7
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Sarum Rite available
-		name = christian_school_events.22.o
+		name = christian_school_events.20.m
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1016,6 +1029,7 @@ country_event = {
 			prestige = 50
 			stability = 2
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1037,7 +1051,7 @@ country_event = {
 	}
 ########################	
 	option = { #Carmelite Rite unavailable
-		name = christian_school_events.22.p
+		name = christian_school_events.20.n
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1055,10 +1069,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_8
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Carmelite Rite available
-		name = christian_school_events.22.q
+		name = christian_school_events.20.n
 		highlight = yes
 		trigger = {
 			has_idea = deus_vult
@@ -1079,6 +1094,7 @@ country_event = {
 				tag = KOJ
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1100,7 +1116,7 @@ country_event = {
 	}
 ########################	
 	option = { #Nidaros Rite unavailable
-		name = christian_school_events.22.r
+		name = christian_school_events.20.o
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1118,10 +1134,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_9
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Nidaros Rite available
-		name = christian_school_events.22.s
+		name = christian_school_events.20.o
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1137,6 +1154,7 @@ country_event = {
 				}
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1158,7 +1176,7 @@ country_event = {
 	}
 ########################	
 	option = { #Carthusian Rite unavailable
-		name = christian_school_events.22.t2
+		name = christian_school_events.20.p
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1173,10 +1191,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_10
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Carthusian Rite available
-		name = christian_school_events.22.u
+		name = christian_school_events.20.p
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1189,6 +1208,7 @@ country_event = {
 				area = savoy_dauphine_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1210,7 +1230,7 @@ country_event = {
 	}
 ########################	
 	option = { #Cologne Rite unavailable
-		name = christian_school_events.22.v
+		name = christian_school_events.20.q
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1234,10 +1254,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_11
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { # Rite available
-		name = christian_school_events.22.w
+		name = christian_school_events.20.q
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1259,6 +1280,7 @@ country_event = {
 				}
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1280,7 +1302,7 @@ country_event = {
 	}
 ########################	
 	option = { #Metz Rite unavailable
-		name = christian_school_events.22.x
+		name = christian_school_events.20.r
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1295,10 +1317,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_12
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Metz Rite available
-		name = christian_school_events.22.y
+		name = christian_school_events.20.r
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1311,6 +1334,7 @@ country_event = {
 				area = lorraine_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1332,7 +1356,7 @@ country_event = {
 	}
 ########################	
 	option = { #Lyonese Rite unavailable
-		name = christian_school_events.22.z
+		name = christian_school_events.20.s
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1347,10 +1371,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_13
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Lyonese Rite available
-		name = christian_school_events.22.za
+		name = christian_school_events.20.s
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1363,6 +1388,7 @@ country_event = {
 				area = savoy_dauphine_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1384,7 +1410,7 @@ country_event = {
 	}
 ########################	
 	option = { #Uppsala Rite unavailable
-		name = christian_school_events.22.zb
+		name = christian_school_events.20.v
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1399,10 +1425,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_14
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Uppsala Rite available
-		name = christian_school_events.22.zc
+		name = christian_school_events.20.v
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1415,6 +1442,7 @@ country_event = {
 				area = svealand_area
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1436,7 +1464,7 @@ country_event = {
 	}
 ########################	
 	option = { #Esztergom Rite unavailable
-		name = christian_school_events.22.zd
+		name = christian_school_events.20.u
 		trigger = {
 			NOT = {
 				religious_school = {
@@ -1454,10 +1482,11 @@ country_event = {
 			}
 		}
 		custom_tooltip = change_catholic_rite_only_once
+		custom_tooltip = requirements_for_rite_15
 		hidden_effect = { country_event = { id = christian_school_events.23 } }
 	}
 	option = { #Esztergom Rite available
-		name = christian_school_events.22.ze
+		name = christian_school_events.20.u
 		highlight = yes
 		trigger = {
 			NOT = {
@@ -1473,6 +1502,7 @@ country_event = {
 				}
 			}
 		}
+		custom_tooltip = change_catholic_rite_only_once
 		set_country_flag = has_changed_rites
 		add_adm_power = -100
 		every_country = {
@@ -1496,17 +1526,16 @@ country_event = {
 
 country_event = { #choose rite refresh
 	id = christian_school_events.23
-	title = christian_school_events.23
-	desc = christian_school_events.23
+	title = christian_school_events.23.t
+	desc = christian_school_events.23.d
 	picture = MYSTIC_IN_PRAYER_eventPicture
 	
 	hidden = yes
 	is_triggered_only = yes
-	trigger = { always = yes }
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
-        name = christian_school_events.23
+        name = christian_school_events.23.a
 		country_event = { id = generic_mission_events.22 }
 	}
 }
