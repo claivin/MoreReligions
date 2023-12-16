@@ -1,2 +1,3 @@
 ﻿l_english:
  CHINESE_WARLORD_NO_TRIB: "Pretenders to the dragon throne will never accept such subordination!"
+ UNLAWFUL_TERRITORY_IMPERIAL_EXEMPTION: "We cannot demand unlawful territory from [From.GetName] because they have received an §RImperial Exemption§! through the circuit courts."

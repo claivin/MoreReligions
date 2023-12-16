@@ -183,7 +183,7 @@ declarewar = {
 	effect = {
 		on_war_declaration_effect = yes
 		if = {
-			limit = { 
+			limit = {
 				has_country_flag = nor_norwegian_independence_modifier
 				FROM = { tag = DAN }
 			}
@@ -235,7 +235,7 @@ allianceaction = {
 				NOT = { FROM = { has_government_attribute = cannot_ally_non_pirates } }
 			}
 		}
-	}	
+	}
 	condition = {
 		tooltip = HUN_DENIED_ALLIANCE
 		potential = {
@@ -256,7 +256,7 @@ allianceaction = {
 		allow = {
 			NOT = {
 				FROM = {
-					has_country_flag = dip_sipport_HUN_2_flag 
+					has_country_flag = dip_sipport_HUN_2_flag
 				}
 			}
 		}
@@ -296,9 +296,9 @@ allianceaction = {
 		allow = {
 			OR = {
 				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
-				FROM = { 
+				FROM = {
 					OR = {
-						government = republic 
+						government = republic
 						is_revolutionary = yes
 					}
 				}
@@ -316,7 +316,7 @@ allianceaction = {
 		}
 		allow = {
 			OR = {
-				government = republic 
+				government = republic
 				is_revolutionary = yes
 				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
 			}
@@ -388,7 +388,7 @@ royal_marriage = {
 		allow = {
 			NOT = { war_with = FROM }
 		}
-		
+
 	}
 	effect = {
 		change_asha_vahishta = { value = 0.5 }
@@ -625,13 +625,13 @@ abandon_union = {
 form_coalition = {
 	condition = {
 		tooltip = MINAGGRESSIVEEXPANSION
-		potential = {	
+		potential = {
 		}
 		allow = {
 			has_opinion_modifier = {
 				modifier = aggressive_expansion
 				who = FROM
-			}		
+			}
 			NOT = {
 				has_opinion_modifier = {
 					modifier = aggressive_expansion
@@ -690,8 +690,8 @@ tributary_state_action = {
 		tooltip = CHINESE_WARLORD_NO_TRIB
 		allow = {
 			FROM = {
-				NOT = { 
-					OR = { 
+				NOT = {
+					OR = {
 						has_reform = chinese_warlord
 						has_reform = kingdom_of_light_reform
 					}
@@ -748,5 +748,21 @@ ask_for_tributary_state_action = {
 break_alliance = {
 	effect = {
 		on_alliance_broken_effect = yes
+	}
+}
+
+# Block Emperor demanding unlawful territory with special spirit
+demand_unlawful_territory_action = {
+	condition = {
+		tooltip = UNLAWFUL_TERRITORY_IMPERIAL_EXEMPTION
+		potential = { }
+		allow = {
+			NOT = {
+				OR = {
+					FROM = { has_country_modifier = lbg_imperial_exemption }
+					FROM = { has_country_modifier = lbg_imperial_exemption_2 }
+				}
+			}
+		}
 	}
 }

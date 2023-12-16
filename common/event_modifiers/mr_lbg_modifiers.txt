@@ -1,0 +1,15 @@
+lbg_tax_meta_1 = {
+	global_tax_modifier = 0.2
+}
+lbg_tax_meta_2 = {
+	global_tax_modifier = 0.3
+}
+lbg_tax_meta_3 = {
+	global_tax_modifier = 0.5
+}
+lbg_imperial_exemption = {
+	# Empty, just used as timed flag
+}
+lbg_imperial_exemption_2 = {
+	ae_impact = -0.2
+}

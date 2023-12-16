@@ -1,0 +1,135 @@
+lbg_missions_first = {
+	slot = 1
+	generic = no
+	has_country_shield = yes
+	ai = yes
+	potential = {
+		tag = LBG
+	}
+
+	lbg_new_prosperity = {
+		icon = mission_temple_patronage
+		required_missions = { }
+		position = 1
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				has_building = temple
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lbg_tax_meta_1
+				duration = 10950 # 30 years
+			}
+		}
+	}
+
+	lbg_fill_the_valleys = {
+		icon = mission_valencian_silk
+		required_missions = { lbg_new_prosperity }
+		position = 2
+
+		provinces_to_highlight = {
+			OR = {
+				has_terrain = highlands
+				has_terrain = mountain
+			}
+			NOT = { development = 11 }
+		}
+
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					OR = {
+						has_terrain = highlands
+						has_terrain = mountain
+					}
+					NOT = { development = 11 }
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_years_of_income = 2
+		}
+	}
+
+	lbg_alpine_society = {
+		icon = mission_se_along_the_river
+		required_missions = { lbg_fill_the_valleys }
+		position = 4
+
+		provinces_to_highlight = {
+			OR = {
+				has_terrain = highlands
+				has_terrain = mountain
+			}
+			NOT = { prosperity = 75 }
+		}
+
+		trigger = {
+			NOT = {
+				any_owned_province = {
+					OR = {
+						has_terrain = highlands
+						has_terrain = mountain
+					}
+					NOT = { prosperity = 75 }
+				}
+			}
+		}
+
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_mountain_expansion
+			}
+		}
+	}
+}
+
+lbg_missions_second = {
+	slot = 2
+	generic = no
+	has_country_shield = yes
+	ai = yes
+	potential = {
+		tag = LBG
+	}
+
+
+}
+
+lbg_missions_third = {
+	slot = 3
+	generic = no
+	has_country_shield = yes
+	ai = yes
+	potential = {
+		tag = LBG
+	}
+
+	lbg_establishing_ambition = {
+		icon = mission_pf_soldier
+		required_missions = { }
+		position = 1
+
+		trigger = {
+			any_neighbor_country = {
+				claim = root
+				war_with = root
+			}
+		}
+
+		effect = {
+			custom_tooltip = lbg_establishing_ambition_effect_tt
+			add_country_modifier = {
+				name = lbg_imperial_exemption
+				duration = 3650
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+﻿l_english:
+  ## -------------------------- MISSIONS ---------------------------------------
+  # Slot 1
+  lbg_establishing_ambition_effect_tt: "If we complete a §YShow Strength§! war while we have the §YImperial Exemption§! spirit, we will gain an additional spirit to reduce AE, along with an extension of the exemption."
+  # Modifiers
+  lbg_tax_meta_1: "Taxation Focus"
+  lbg_tax_meta_2: "Taxation Focus"
+  lbg_tax_meta_3: "Taxation Focus"
+  desc_lbg_tax_meta_1: "We are doing the tax meta."
+  desc_lbg_tax_meta_2: "We are doing the tax meta, but better."
+  desc_lbg_tax_meta_3: "We are doing the tax meta, but really good."
+  lbg_imperial_exemption: "Imperial Exemption"
+  desc_lbg_imperial_exemption: "Through some creative legal work (and a lot of well-placed bribes), we have managed to dig up a legal precedent that will prevent the Emperor from demanding unlawful territory from us for a while."
+  lbg_imperial_exemption_2: "Imperial Exemption"
+  desc_lbg_imperial_exemption_2: "Through some creative legal work (and a lot of well-placed bribes), we have managed to dig up a legal precedent that will prevent the Emperor from demanding unlawful territory from us for a while."
