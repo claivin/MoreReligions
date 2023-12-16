@@ -50,7 +50,7 @@
  eng_m_lollards_1_title: "Wycliffe's Legacy"
  eng_m_lollards_1_desc: ""
  eng_m_lollards_1_TT: "If completed while §YCatholic§!:\n"
- eng_m_lollards_1_TT_2: "If completed while §YLollard§!:\n"
+ eng_m_lollards_1_TT_2: "If completed while §YWycliffite§!:\n"
  
  eng_m_scotland_title: "Invade Scotland"
  eng_m_scotland_desc: "England and Scotland have been locked in warfare for hundreds of years. The newfound strength and stability of England is finally enough to put a rest to these woes."
@@ -146,7 +146,7 @@
  mr_lollard_priesthood: "Universal Priesthood"
  mr_lollard_priesthood_desc: "The hierarchy of the Catholic Church is a den of jackals, beset on oppression and modeled on tyranny. It is a betrayal of the teachings of Christ, and only by allowing those to preach, who are holy in demeanor and learned in scripture, regardless of status, can we be an equitable institution."
  mr_lollard_state_head: "Head of State, Head of Church"
- mr_lollard_state_head_desc: "Under the Crown of England, the Lollard teachings will flourish, guarded by the stately institutions and granted the autonomy to preach their faith. Of course, the King of England is only a figurehead in the hiearchy, acting as nominal leader, wherein the newly formed horizontal clergy will comprise the totallty of the religious leadership."
+ mr_lollard_state_head_desc: "Under the Crown of England, the Wycliffite teachings will flourish, guarded by the stately institutions and granted the autonomy to preach their faith. Of course, the King of England is only a figurehead in the hiearchy, acting as nominal leader, wherein the newly formed horizontal clergy will comprise the totallty of the religious leadership."
  ENGLAND_IRELAND: "England-Ireland"
  ENGLAND_IRELAND_ADJ: "English"
  BRITAIN_IRELAND: "Britain-Ireland"
@@ -207,8 +207,8 @@
  mr_england.5.b: "First Lord Admiral, William Percy, Earl of Kent"
  mr_england.5.c: "First Lord Admiral, Richard Holland, Duker of Bedford"
  
- mr_england.6.t: "On Lollardy"
- mr_england.6.d: "John Wycliffe's teachings spread far and wide during the Anarchy, allowing the practice of Lollardy to spread unabated. With the restablishment of the King's authority, it was best to stamp out these heretics, as their existence could have been seen as tolerance by the Church and would be a direct reflection of the lack of authority of the King.\nOur efforts to actively deal with this heresy have awarded us great favor with the Church."
+ mr_england.6.t: "On the Wycliffites"
+ mr_england.6.d: "John Wycliffe's teachings spread far and wide during the Anarchy, allowing the practice of Wycliffite to spread unabated. With the restablishment of the King's authority, it was best to stamp out these heretics, as their existence could have been seen as tolerance by the Church and would be a direct reflection of the lack of authority of the King.\nOur efforts to actively deal with this heresy have awarded us great favor with the Church."
  mr_england.6.a: "Good deal."
  
  mr_england.7.t: "The First Conclusion"

@@ -52,19 +52,19 @@
  
  #Bogomil Basics
  mr_bogomil: "Bogomilist"
- mr_bogomil_religion_desc: "FLAVOR TEXT HERE"
+ mr_bogomil_religion_desc: "Bogomils were dualists and gnostics, once found across the former Byzantine Empire from the Balkans to Anatolia. Widespread condemnation from powerful authorities and the Church have pared down its range to Bosnia. Bogomils held few beliefs in common with the Church: they were nontrinitarian, rejected the Old Testament, and did not venerate Mary, Mother of Jesus or Jesus Christ - among other things."
  
  #Free Spirit Basics
  mr_freespirit: "Brethren of the Free Spirit"
- mr_freespirit_religion_desc: "FLAVOR TEXT HERE"
+ mr_freespirit_religion_desc: "The Brethren of the Free Spirit were loose and disorganized group of believers whose tenets were strongly rejected by the Church and deemed heretical. Generally, they did no believe in a clerical class and many of their doctrines call back to heresies from the early Christianity. Adherents are known as Free Spirits."
  
  #Lollard Basics
- mr_lollard: "Lollard"
- mr_lollard_religion_desc: "FLAVOR TEXT HERE"
+ mr_lollard: "Wycliffite"
+ mr_lollard_religion_desc: "John Wycliffe was a theologian and Catholic priest who questioned the unreasonable influence the clergy held over political matters. His teachings spread throughout England and though they ran counter to many mainstream beliefs within the Church, his criticims of the clergy garnered widespread support. His followers were often called Lollards, a derogatory term, often conflated with heretics in general."
  
  #Nestorian Basics
  mr_nestorian: "Nestorian"
- mr_nestorian_religion_desc: "FLAVOR TEXT HERE"
+ mr_nestorian_religion_desc: "Following the teachings of Nestorius, wo was condemned in two seperate Councils, Nestorians believed in a complex two-state union-like nature of Christ. Nestorians spread far and wide across the world, finding adherents from Egypt to China."
  
  #Baptist Basics
  mr_baptist: "Baptist"
@@ -72,11 +72,11 @@
  
  #Reformist Basics
  mr_protoprotestant: "Reformist"
- mr_protoprotestant_religion_desc: "FLAVOR TEXT HERE"
+ mr_protoprotestant_religion_desc: "Before the advent of the Protestant Reformation, dozens of lesser known Christian movements and smaller sects developed, either in opposition to the Church or simply unsanctioned. These smaller movements have been grouped together and are as varied as larger more famous movements."
  
  #Adamite Basics
  mr_adamite: "Adamite"
- mr_adamite_religion_desc: "FLAVOR TEXT HERE"
+ mr_adamite_religion_desc: "Adamites are a sect nearly as old as Christianity itself, with at least some adherents since the 2nd Century. Contemporary resurgents are known as Neo-Adamites, gaining traction as the Taborites of Bohemia during the Hussite Crusades. Adamaites were known for their nudist and ...libertine proclivities; they are less famous for their gnostic beliefs."
  
  #Antipapist Basics
  mr_antipapist: "Antipapist"
