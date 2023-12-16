@@ -274,7 +274,7 @@ wine_and_olive_production = {
 #Muslim Byzantium Modifiers
 converting_the_masses = {
 	missionaries = 1
-	global_missionary_strength = 0.3
+	global_missionary_strength = 0.03
 }
 qizilbash_imporvement = {
 	discipline = 0.05
