@@ -2,6 +2,7 @@
 
 owner = WGT
 controller = WGT 
+add_core = WGT
 capital = "Ryde"
 is_city = yes
 culture = english

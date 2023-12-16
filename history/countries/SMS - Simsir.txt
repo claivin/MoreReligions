@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = tribal_kingdom
+add_government_reform = elective_monarchy_reform
 primary_culture = dagestani
 religion = mr_caucaspagan
-technology_group = muslim
+technology_group = eastern
 capital = 5397 #Chechnya
 
 

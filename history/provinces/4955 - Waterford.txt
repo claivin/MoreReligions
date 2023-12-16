@@ -2,7 +2,7 @@
 
 owner = WRF
 controller = WRF 
-add_fcore = WRF
+add_core = WRF
 capital = "Waterford"
 is_city = yes
 culture = irish

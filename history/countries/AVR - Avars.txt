@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = autocracy_reform
 primary_culture = dagestani
 religion = orthodox
 technology_group = eastern
@@ -7,10 +7,10 @@ capital = 2198 #Khunzah
 
 1440.1.1 = {
 	monarch = {
-		name = "Gebek" #Fictional
-		dynasty = "Avari"
-		adm = 2
+		name = "Bukht Yisho" 
+		dynasty = "Vahrami"
+		adm = 3
 		dip = 2
-		mil = 3
+		mil = 4
 	}
 }
