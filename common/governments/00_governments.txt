@@ -602,6 +602,7 @@ republic = {
 		united_cantons_legacy
 		#Mamluks
 		egyptian_government_reform
+		#GnK
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -648,6 +649,7 @@ republic = {
 				japanese_divine_empire		
 				#G&K
 				mr_greek_poleocracy_reform 
+				wazir_republic
 			}
 		}
 		republican_virtues = {
