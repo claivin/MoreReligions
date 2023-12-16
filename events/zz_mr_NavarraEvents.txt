@@ -322,8 +322,14 @@ country_event = {
 	option = {
 		name = "navarra_events.11.1"
 		NAV = {
-			create_union = CAS
-			create_union = LON
+			create_union = FROM 
+            if = { limit { = LON = { junior_union_with = CAS } }
+			  create_union = LON
+			} 
+			if = { 
+			 limit { = CAS = { junior_union_with = LON } }
+			  create_union = CAS
+			} 
 		}
 	}
 }
@@ -339,12 +345,7 @@ country_event = {
 		name = "navarra_events.12.1"
 		NAV = {
 			add_casus_belli = {
-				target = CAS
-				type = cb_restore_personal_union
-				months = 240
-			}
-			add_casus_belli = {
-				target = LON
+				target = FROM
 				type = cb_restore_personal_union
 				months = 240
 			}

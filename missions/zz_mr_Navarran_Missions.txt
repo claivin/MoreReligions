@@ -152,16 +152,32 @@ nav_missions_1 = {
 			}
 		}
 		effect = {
-			CAS = {
-				country_event = {
-				id = navarra_events.10
+              if = { 
+               limit = { CAS = { is_subject = yes } }
+                 add_permanent_claim_multi_provinces = { target = castille_area } 
+				 add_permanent_claim_multi_provinces = { target = asturias_area } 
+                }
+              else =  { 
+                CAS = { 				
+				 country_event = {
+				 id = navarra_events.10
+				   } 
+                  }
+				} 
+				
+              if = { 
+               limit = { LON = { is_subject = yes } }
+                 add_permanent_claim_multi_provinces = { target = leon_area } 
+				 add_permanent_claim_multi_provinces = { target = asturias_area } 
+                }
+              else =  { 
+                LON = { 				
+				 country_event = {
+				 id = navarra_events.10
+				   } 
+                  }
 				}
-			}
-			LON = {
-				country_event = {
-				id = navarra_events.10
-				}
-			}
+				
 			custom_tooltip = iberian_thunderdome
 		}
 	}
@@ -1254,12 +1270,12 @@ nav_missions_3 = {
 		
 		provinces_to_highlight = {
 			region = iberia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			iberia_region = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
+			ROOT = {
+				owns_all_provinces = {
+					region = iberia_region
+				}
 			}
 		}
 		effect = {
