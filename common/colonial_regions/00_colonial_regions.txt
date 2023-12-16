@@ -958,6 +958,13 @@ colonial_colombia = {
 	# Specific
 	names = {
 		trigger = {
+			tag = MAL
+			religion_group = muslim
+		}
+		name = "COLONIAL_BRAZIL_Bakirio"
+	}
+	names = {
+		trigger = {
 			OR = {
 				tag = SPA
 				tag = CAS
@@ -1015,6 +1022,13 @@ colonial_peru = {
 	}
 
 #	# Specific
+	names = {
+		trigger = {
+			tag = MAL
+			religion_group = muslim
+		}
+		name = "COLONIAL_BRAZIL_Kulubio"
+	}
 #	names = {
 #		trigger = {
 #		}
@@ -1088,6 +1102,13 @@ colonial_la_plata = {
 	}
 
 	# Specific
+	names = {
+		trigger = {
+			tag = MAL
+			religion_group = muslim
+		}
+		name = "COLONIAL_BRAZIL_wajirio"
+	}
 	names = {
 		trigger = {
 			OR = {
@@ -1191,6 +1212,13 @@ colonial_brazil = {
 	# Specific
 	names = {
 		trigger = {
+			tag = MAL
+			religion_group = muslim
+		}
+		name = "COLONIAL_BRAZIL_bilenmani"
+	}
+	names = {
+		trigger = {
 			tag = FRA
 		}
 		name = "COLONIAL_BRAZIL_France_Antarctique"
@@ -1238,6 +1266,7 @@ colonial_brazil = {
 		}
 		name = "PROV756"
 	}
+	
 }
 
 

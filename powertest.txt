@@ -1,10 +1,1 @@
-every_province = {
-	limit = {
-		is_in_greece_area_trigger = yes
-		NOT = {
-			owned_by = ROOT
-		}
-	}
-	add_core = ROOT
-	cede_province = ROOT
-}
+add_papal_influence = 50
