@@ -1456,6 +1456,14 @@
  PROV_ADJ5497: "Jiujiang"
  PROV_ADJ5498: "Zhangzhou"
 
+
+ PROV5500: "Bacau"
+ PROV_ADJ5500: "Bacovean"
+ PROV5501: "Neamt"
+ PROV_ADJ5501: "Neamtean"
+ PROV5502: "Soroca"
+ PROV_ADJ5502: "Sorocean"
+
  east_shandong_area: "East Shandong"
  west_shandong_area: "West Shandong"
  north_zhejiang_area: "North Zhejiang"

@@ -1,8 +1,9 @@
 #REGIONBALKANS
 #4530 - Birlad
 
-owner = MOL
-controller = MOL
+owner = BLH
+controller = BLH
+add_core = BLH
 culture = romanian
 religion = orthodox
 capital = "Birlad"
@@ -13,6 +14,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = MOL
+add_autonomy = 65
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -1,8 +1,8 @@
-#REGIONBLUEHORDE
+#REGIONBALKANS
 #4529 - Iasi
 
-owner = BLH
-controller = BLH
+owner = MOL
+controller = MOL
 culture = romanian
 religion = orthodox
 capital = "Iasi"
@@ -12,10 +12,9 @@ base_tax = 1
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = BLH
 add_core = MOL
 
-add_local_autonomy = 65
+add_local_autonomy = 15
 
 discovered_by = western
 discovered_by = eastern

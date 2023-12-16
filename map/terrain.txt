@@ -279,6 +279,7 @@ categories =  {
 			5334 5335
 			5440 #mr_hungary
 			5471 5472 5482 5487 5492 5493 5494 5495 5496 5498 #MR China
+			5502 #mr_carpathia
 		}
 	}
 

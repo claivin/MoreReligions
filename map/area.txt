@@ -1096,7 +1096,11 @@ wallachia_area = { #5 full
 }
 
 moldavia_area = { #5 full
-	268 1756 2405 4529 4530
+	268 4529 4530 5500 5501
+}
+
+transprutia_area = { #3
+	1756 2405 5502
 }
 
 transylvania_area = { #4 #Northern Transylvania + Beszterce full
