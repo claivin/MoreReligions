@@ -7,7 +7,7 @@ religion = sunni
 capital = "Bitlis"
 trade_goods = wool
 hre = no
-base_tax = 2 
+base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
@@ -20,6 +20,7 @@ discovered_by = indian
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
+discovered_by = western
 
 
 1444.11.12 = { trade_goods = unknown }
