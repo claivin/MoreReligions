@@ -5,7 +5,7 @@ graphical_culture = westerngfx
 colonial_parent = MAL
 random_nation_chance = 0
 
-color = { 79, 117, 171 }
+color = { 114 144 186 }
 revolutionary_colors = { 5 9 0 }
 
 historical_idea_groups = {

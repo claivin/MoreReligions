@@ -571,7 +571,7 @@ call_marali_into_wars = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = FROM_MUST_OWE_10_FAVORS_DEFENSIVE_WAR_TT
+				tooltip = FROM_MUST_OWE_15_FAVORS_DEFENSIVE_WAR_TT
 				FROM = {
 					owes_favors = {
 						who = ROOT
@@ -597,7 +597,7 @@ call_marali_into_wars = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = FROM_MUST_OWE_20_FAVORS_TT
+				tooltip = FROM_MUST_OWE_30_FAVORS_TT
 				FROM = {
 					owes_favors = {
 						who = ROOT

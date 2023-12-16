@@ -118,4 +118,11 @@ core_marali_subject_title_plural: "Core Marali"
 is_core_marali_subject: "Is a Core Marali"
 is_core_marali: "Core Marali Subject"
 
+ call_marali_into_wars:0 "Call Marali to War"
+ call_marali_into_wars_title:0 "Call Marali to War"
+ call_marali_into_wars_desc:0 "Spend up to §R39§! Favors with §Y[From.GetName]§! and call them into ALL of §Y[Root.GetAdjective]§! wars. The cost is reduced by §Y15§! Favors if we can call §Y[From.GetName]§! only into defensive wars."
+ call_marali_into_wars_tooltip:0 "Use our favors with the target country in order to call them into our wars."
+
 FROM_IS_OPINION_LOW_TT: "§R- §Y[From.GetName]§! has less than §Y125%§! Opinion of Us.§!"
+FROM_MUST_OWE_15_FAVORS_DEFENSIVE_WAR_TT:0 "§R- §Y[From.GetName]§! does not owe §Y15§! favors to §Y[Root.GetName]§! (reduced from §Y30§! due to defensive war).§!"
+ FROM_MUST_OWE_30_FAVORS_TT:0 "§R- §Y[From.GetName]§! does not owe §Y30§! favors to §Y[Root.GetName]§!.§!"

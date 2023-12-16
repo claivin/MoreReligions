@@ -244,3 +244,10 @@ LAP: "Wajirio"
 LAP_ADJ: "Wajirio"
 PEU: "Kulubio"
 PEU: "Kulubio"
+
+#Decisions
+ brazil_nation_title:0 "Form Bilenmani Nation"
+ brazil_nation_desc:0 "The colonial masters who wished to enslave us are gone. It is time to form a truly independent country of our own. From this day forth the watchword of Bilenmani will be 'Independence or Death!'"
+ peru_nation_title:0 "Form Kulubio Nation"
+ colombia_nation_title:0 "Form Bakirio Nation"
+ la_plata_nation_title:0 "Form Wajirio Nation"

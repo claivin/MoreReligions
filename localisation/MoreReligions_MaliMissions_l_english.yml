@@ -1,0 +1,3 @@
+﻿l_english:
+ 
+ num_of_coastal_tiles_explored: "Explore §YSix§! Tiles in the §YGuinea§! Region (Current: [Root.coastal_tiles_variable_1.GetValue])\n\nExplore §YThree§! Tiles in the §YSouth Reisland§! Continent (Current: [Root.coastal_tiles_variable_2.GetValue])"

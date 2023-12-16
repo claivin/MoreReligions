@@ -45,6 +45,32 @@ on_startup = {
 			which = gsc_sieges_won_variable value = 0
 		}
 	}
+	if = {
+		limit = {
+			tag = MAL
+			NOT = {
+				OR = {
+					check_variable = {
+						which = coastal_tiles_variable_1
+						value = 0
+					}
+					check_variable = {
+						which = coastal_tiles_variable_2
+						value = 0
+					}
+				}
+				
+			}
+		}
+		set_variable = {
+			which = coastal_tiles_variable_1
+			value = 0
+		}
+		set_variable = {
+			which = coastal_tiles_variable_2
+			value = 0
+		}
+	}
 #Horde raze counting variable
 	if = {
         limit = {
@@ -1448,6 +1474,61 @@ on_institution_embracement = {
 		}
 		country_event = {
 			id = mr_institutions.2
+		}
+	}
+}
+on_explore_coast = {
+	random_events = {
+		10 = exploration_events.1
+		10 = exploration_events.2
+		10 = exploration_events.3
+		10 = exploration_events.4
+		10 = exploration_events.5
+		10 = exploration_events.6
+		10 = exploration_events.7
+		10 = exploration_events.8
+		10 = exploration_events.9
+		10 = exploration_events.10
+		10 = exploration_events.11
+		10 = exploration_events.12
+		10 = exploration_events.13
+		10 = exploration_events.14
+		10 = exploration_events.15
+	}
+	if = {
+		limit = {
+			NOT = {
+				FROM = {
+					check_variable = {
+						which = coastal_tiles_variable_1
+						value = 6
+					}
+				}
+				
+			}
+			region = guinea_region
+		}
+		change_variable = {
+			which = coastal_tiles_variable_1
+			value = 1
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				FROM = {
+					check_variable = {
+						which = coastal_tiles_variable_2
+						value = 3
+					}
+				}
+				
+			}
+			continent = south_america
+		}
+		change_variable = {
+			which = coastal_tiles_variable_1
+			value = 3
 		}
 	}
 }

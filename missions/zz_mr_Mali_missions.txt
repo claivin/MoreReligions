@@ -20,6 +20,29 @@ branch_3 = {
 	ai = yes
 	has_country_shield = yes
 	potential = { tag = MAL } 
+	mr_mali_exploration_first = {
+		icon = mission_ne_great_lakes_conquest
+		position = 1
+		required_missions = {
+			
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = num_of_coastal_tiles_explored
+				check_variable = {
+					which = coastal_tiles_variable_1
+					value = 6
+				}
+				check_variable = {
+					which = coastal_tiles_variable_2
+					value = 3
+				}
+			}
+		}
+		effect = {
+
+		}
+	}
 
 }
 branch_4 = {
