@@ -452,3 +452,18 @@ MrGreekEvent11Insight: "\n§GEvent Insight:§!\nThis event will detail our destr
 MrGreekEvents.12.t: "The Basileus Goes to Mecca"
 MrGreekEvents.12.d: "With our situation within the community settled, our Basileus [Root.Monarch.GetName] decided it was time to fulfill one a duty that all members of the Ummah must complete - the Hajj. While initially preparing a substantial host to come with, [Root.Monarch.GetName] eventually decided against such an act, instead deciding to go with some guardsmen and their personal retinue - the rest of the funds would be given to the people of Constantinople. The Hajj was meant to be a time of pious and humble reflection, not grandstanding and posturing.\n\nOur Basileus’ time in Mecca was enlightening, and [Root.Monarch.GetName] claimed to have a deeper understanding of the true nature of the faith. Indeed, the Muslim world far and wide recognized this once Empire, once a foe of their people, now united in faith and spirit. All across Byzantium, the faithful cheer and pray for our Basileus’ faithful return. Now his guidance, his wisdom, his teachings will bring them even closer to the words of Allah and the Prophet - they can act as one, throughout all of the land."
 MrGreekEvents.12.a: "A Most Humble and Pious Journey"
+
+mr_egypt.1.t: "Challenge to the Vizier"
+mr_egypt.1.d: "Officially, the [Root.Monarch.GetTitle] may be appointed by the Imam of the Age, in actuality the [Root.Monarch.GetTitle] is simply the minister or general with the most support in the [Root.GetAdjective] court. [Root.Monarch.GetName] has managed to govern comfortably for a number of years, but the many [Root.GetAdjective] cliques have decided the time is right to test that support. Alliances are made, rivals are eliminated, bonds of loyalty are tested, and as the dust settles..."
+mr_egypt.1.oa: "...[Root.Monarch.GetName] remains the most influential in the court."
+mr_egypt.1.ob: "...A Sudanese eunuch has been appointed [Root.Monarch.GetTitle]."
+mr_egypt.1.oc: "...A Berber chief has been appointed [Root.Monarch.GetTitle]."
+mr_egypt.1.od: "...A Mamluk commander has been appointed [Root.Monarch.GetTitle]."
+mr_egypt.1.oe: "...[Root.Monarch.GetName] has placed a relative onto the office."
+
+mr_egypt.2.t: "Race for the Viziership"
+mr_egypt.2.d: "As news spreads of the passing of [Root.Monarch.GetName], the upper echelons of [Root.GetName] are thrown into disarray as the viziers and commanders scramble over the seat of [Root.Monarch.GetTitle]. Allegiances shift, and threats are eliminated. The cliques race to the Imam-Caliph's palace to make their case, but soon enough it becomes clear which person has become the most influential in the court..."
+mr_egypt.2.oa: "...A Sudanese eunuch has been appointed [Root.Monarch.GetTitle]."
+mr_egypt.2.ob: "...A Berber chief has been appointed [Root.Monarch.GetTitle]."
+mr_egypt.2.oc: "...A Mamluk commander has been appointed [Root.Monarch.GetTitle]."
+mr_egypt.2.od: "...The family of [Root.Monarch.GetName] remains influential."

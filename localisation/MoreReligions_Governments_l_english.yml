@@ -173,3 +173,12 @@ sulawesian_confederacy_desc: "This polity is best described as a confederacy of 
 
 medieval_caliphate: "Medieval Caliphate"
 medieval_caliphate_desc: "This polity has emerged from the medieval ages as one where the ruler claims to be the leader of the Islamic world. This is only a claim, and far from the universalist ideas of the early Sunni Caliphate or Shi'i Imamate, this Imam or Caliph's spritiual authority barely extends further than the boundaries of the state. Still, it is undeniable that the faithful that do live within their borders see the Imam or Caliph with a reverence unlike that of other Sultans or Amirs."
+
+wazir_republic: "Wazir Republic"
+wazir_republic_desc: "While powerful Viziers are common throughout the Islamic world, in this polity not only have the responsibilities and powers of the Vizier far eclipsed any monarch, but such a state of affairs has become normalized and expected. Although officially appointed by the monarch, in reality the Wazir al-Azam or Grand Vizier is simply the minister or general with the most support in the court. There are no formal elections, but in practice the Wazir al-Azam's support is regularly tested by the various cliques of the court, acting as de-facto elections."
+wr_mamluks: "Turkic Mamluks"
+wr_mamluks_FACTION_DESC: "Bought as young boys from the steppes and raised thoroughly in the Furusiyya tradition, the Mamluks may be officially slaves but are practically the military aristocracy of Egypt and serve as the elite core of its army."
+wr_berbers: "Berber Auxilliaries"
+wr_berbers_FACTION_DESC: "The Kutama Berbers have been Fatimid Egypt's oldest allies since the 10th century. Though their role in the army has somewhat diminished since the introduction of Mamluks and Nubians, they have a new niche in the age of the Barbary Corsairs."
+wr_nubians: "Sudanese Eunuchs"
+wr_nubians_FACTION_DESC: "Relatively easily procured from up the Nile, Nubians and Ethiopians serve important roles as both bureaucrats and as elite heavy infantry. It was the Sudanese eunuchs and slave-soldiers that saved the Caliphate from Yusuf ibn Ayyub's usurpation attempt."

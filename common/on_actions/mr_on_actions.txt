@@ -1451,3 +1451,15 @@ on_institution_embracement = {
 		}
 	}
 }
+
+on_new_term_election = {
+	events = {
+		mr_egypt.1 #wazir republic election
+	}
+}
+
+on_death_election = {
+	events = {
+		mr_egypt.2 #wazir election on death
+	}
+}

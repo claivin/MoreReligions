@@ -1,0 +1,36 @@
+#factions for wazir republic
+
+wr_mamluks = { #Mamluk Cavalry
+	monarch_power = MIL
+	always = yes
+
+	modifier = {
+		cavalry_power = 0.05
+		army_tradition_decay = -0.01
+		drill_gain_modifier = 0.50
+	}
+}
+
+
+wr_berbers = { #Berber Auxilliaries
+	monarch_power = DIP
+	always = yes
+
+	modifier = {
+		galley_power = 0.15
+		cavalry_cost = -0.10
+		land_attrition = -0.10
+		
+	}
+}
+
+wr_nubians = { #Nubian Infantry
+	monarch_power = ADM
+	always = yes
+
+	modifier = {
+		reform_progress_growth = 0.10
+		infantry_power = 0.05
+		garrison_size = 0.10
+	}
+}

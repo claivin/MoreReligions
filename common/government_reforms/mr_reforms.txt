@@ -1178,3 +1178,56 @@ medieval_caliphate = {
 		factor = 1
 	}
 }
+
+wazir_republic = {
+	icon = "mamluk_government"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	legacy_equivalent = oligarchic_republic
+	valid_for_nation_designer = yes
+	nation_designer_cost = 60
+	potential = {
+		religion_group = muslim
+		OR = {
+			AND = {
+				tag = EGY
+				NOT = { map_setup = map_setup_random }
+			}
+			have_had_reform = wazir_republic
+		}
+	}
+	modifiers = {
+		num_accepted_cultures = 3
+		global_autonomy = -0.025
+		same_culture_advisor_cost = -0.25
+		promote_culture_cost = -0.5
+		governing_capacity = 50
+		nobles_influence_modifier = 0.1
+	}
+	
+	duration = 5
+	
+	royal_marriage = yes
+	has_mamluks = yes
+	
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+		elections_increase_factions_influence = yes
+	}
+	ai = {
+		factor = 0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			mamluk_mechanic
+		}
+	}
+	
+	factions = {
+		wr_mamluks
+		wr_berbers
+		wr_nubians
+	}
+}
