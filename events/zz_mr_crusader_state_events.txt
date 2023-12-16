@@ -487,6 +487,7 @@ country_event = {
 
 	trigger = {
 		is_levantine_crusader_state = yes
+		NOT = { year = 1445 }
 	}
 
 	immediate = {
@@ -499,5 +500,21 @@ country_event = {
 		caucasia_region = {
 			discover_country = root
 		}
+		1326 = { discovery_country = root }
+		1329 = { discovery_country = root }
+		1334 = { discovery_country = root }
+		1335 = { discovery_country = root }
+		1892 = { discovery_country = root }
+		1894 = { discovery_country = root }
+		4170 = { discovery_country = root }
+		4172 = { discovery_country = root }
+		4178 = { discovery_country = root }
+		4179 = { discovery_country = root }
+		4333 = { discovery_country = root }
+		4347 = { discovery_country = root }
+	}
+
+	option = {
+		name = "dummy"
 	}
 }
