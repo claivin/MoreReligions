@@ -2,7 +2,7 @@
 #ile-de-france paris hinterlands
 owner = FRA
 controller = FRA
-capital = "Paris"
+capital = "Versailles"
 is_city = yes
 culture = cosmopolitan_french
 religion = catholic
