@@ -2184,8 +2184,7 @@ moluccan_ideas = {
 	}
 
 	trigger = {
-			primary_culture = moluccan
-		}
+		primary_culture = moluccan
 	}
 	free = yes
 
