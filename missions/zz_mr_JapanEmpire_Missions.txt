@@ -232,6 +232,7 @@ mr_jap_missions_third = {
 			add_prestige = 10
 			remove_estate_privilege = estate_shugo_japan
 			custom_tooltip = low_shugo_annex_TT
+			add_government_reform = mr_empire_of_japan_reformed 
 			tooltip = {
 				inherit = NTT
 				inherit = SMZ

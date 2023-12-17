@@ -146,6 +146,7 @@ monarchy = {
 				nusantaran_sultanate
 				sulawesian_confederacy
 				medieval_caliphate
+				mr_empire_of_japan_reformed 
 			}
 		}
 		hereditary_vs_nobility = {

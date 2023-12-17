@@ -2,9 +2,9 @@ marali_subject = {
 	copy_from = default
 	
 	# Graphics:
-    sprite = GFX_icon_eyalet
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_eyalet
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_eyalet 
+    sprite = GFX_subject_marali_subject
+	diplomacy_overlord_sprite = GFX_diplomacy_lead_marali_subject
+	diplomacy_subject_sprite = GFX_diplomacy_am_marali_subject
 
 	# Properties:
 	transfer_trade_power = yes
@@ -76,9 +76,9 @@ core_marali_subject = {
 	copy_from = marali_subject
 	
 	# Graphics:
-    sprite = GFX_icon_core_eyalet
-	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_core_eyalet
-	diplomacy_subject_sprite = GFX_icon_diplomacy_am_core_eyalet 
+	sprite = GFX_subject_core_marali_subject
+	diplomacy_overlord_sprite = GFX_diplomacy_lead_core_marali_subject
+	diplomacy_subject_sprite = GFX_diplomacy_am_core_marali_subject
 
 	# Properties:
 	can_be_annexed = yes

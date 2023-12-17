@@ -861,6 +861,34 @@ spriteTypes = {
 		name = "GFX_upgrade_subject_type_button_icon"
 		texturefile = "gfx//interface//modify_subject_relationship.dds"
 	}
+
+	spriteType = {
+		name = "GFX_diplomacy_lead_marali_subject"
+		texturefile = "gfx//interface//icon_diplomacy_lead_marali_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_am_marali_subject"
+		texturefile = "gfx//interface//icon_diplomacy_am_marali_subject.dds"
+	}
+
+	spriteType = {
+		name = "GFX_diplomacy_lead_core_marali_subject"
+		texturefile = "gfx//interface//icon_diplomacy_lead_core_marali_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_am_core_marali_subject"
+		texturefile = "gfx//interface//icon_diplomacy_am_core_marali_subject.dds"
+	}
+
+	spriteType = {
+		name = "GFX_subject_core_marali_subject"
+	   texturefile = "gfx/interface/icon_core_marali_subject.dds"
+ 	}
+	 spriteType = {
+		name = "GFX_subject_marali_subject"
+	   texturefile = "gfx/interface/icon_marali_subject.dds"
+  }
+
 	spriteType = {
 		name = "GFX_maitreya_button_icon"
 		texturefile = "gfx//interface//maitreya_button_icon.dds"
