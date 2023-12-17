@@ -119,13 +119,19 @@ lbg_missions_third = {
 
 		trigger = {
 			any_neighbor_country = {
-				claim = root
 				war_with = root
 			}
 		}
 
 		effect = {
 			custom_tooltip = lbg_establishing_ambition_effect_tt
+
+			set_country_flag = allow_po_humiliate_lbg
+			set_variable = {
+				which = lbg_show_strength_counter
+				value = 0
+			}
+
 			add_country_modifier = {
 				name = lbg_imperial_exemption
 				duration = 3650

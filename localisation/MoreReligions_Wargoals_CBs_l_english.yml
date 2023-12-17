@@ -33,3 +33,12 @@
  cb_crusade_for_jerusalem: "Crusade for Jerusalem"
  cb_crusade_for_jerusalem_desc: "A new crusade has been called by [Root.Monarch.GetTitle] [Root.Monarch.GetName]."
  TAKE_JERUSALEM_NAME: "Crusade for Jerusalem"
+
+ cb_humiliate_lbg: "§MShow Superiority§!"
+ cb_humiliate_lbg_desc: "We must establish our military prowess by humiliating a peer."
+ humiliate_lbg: "Show Superiority"
+ humiliate_lbg_desc: "Show Superiority by winning battles."
+ po_humiliate_lbg: "§MShow Superiority§!"
+ po_humiliate_lbg_desc: "Show superiority and reap the benefits in our reputation and administration. \n\nGain §G+125§! admin power.\nGain §G+125§! diplo power.\nGain §G+125§! mil power.\nIncrease superiority shown count by §G+1§! (current value: §Y[Root.lbg_show_strength_counter.GetValue]§!)."
+ CB_ALLOWED_po_humiliate_lbg: "§MShow Superiority§!"
+ PEACE_po_humiliate_lbg: "§MShow Superiority§!"

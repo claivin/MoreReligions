@@ -1,8 +1,18 @@
 ﻿l_english:
   ## -------------------------- MISSIONS ---------------------------------------
   # Slot 1
-  lbg_establishing_ambition_effect_tt: "If we complete a §YShow Strength§! war while we have the §YImperial Exemption§! spirit, we will gain an additional spirit to reduce AE, along with an extension of the exemption."
-  # Modifiers
+  lbg_new_prosperity_title: "New Prosperity"
+  lbg_new_prosperity_desc: "REPLACE_ME"
+  lbg_fill_the_valleys_title: "Fill the Valleys"
+  lbg_fill_the_valleys_desc: "REPLACE_ME"
+  lbg_alpine_society_title: "Alpine Society"
+  lbg_alpine_society_desc: "REPLACE_ME"
+  lbg_establishing_ambition_title: "Establishing Our Ambitions"
+  lbg_establishing_ambition_desc: "REPLACE_ME"
+  lbg_establishing_ambition_effect_tt: "If we complete a §MShow Superiority§! war while we have the §YImperial Exemption§! spirit, we will gain an additional spirit to reduce AE, along with an extension of the exemption."
+
+
+  ## -------------------------- Modifiers --------------------------------------
   lbg_tax_meta_1: "Taxation Focus"
   lbg_tax_meta_2: "Taxation Focus"
   lbg_tax_meta_3: "Taxation Focus"

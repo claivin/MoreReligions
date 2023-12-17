@@ -3223,12 +3223,12 @@ free_bishop_electors = {
 
 # Special humiliate for Lesser Burgundy/Hab
 humiliate_lbg = {
-	type = take_capital
+	type = superiority
 
 	attacker = {
 		badboy_factor = 1
 		prestige_factor = 1.5
-		peace_cost_factor = 0.8
+		peace_cost_factor = 1.0
 
 		allowed_provinces = {
 			always = no
@@ -3237,6 +3237,7 @@ humiliate_lbg = {
 		allowed_provinces_are_eligible = yes
 
 		peace_options = {
+			po_humiliate_lbg # Special show strength
 			po_revoke_cores
 			po_release_vassals
 			po_release_annexed
@@ -3245,8 +3246,6 @@ humiliate_lbg = {
 			po_annul_treaties
 			po_trade_power
 			po_steer_trade
-			po_humiliate
-			po_humiliate_rival
 		}
 
 		deny_annex = yes
