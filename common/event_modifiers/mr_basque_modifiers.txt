@@ -23,7 +23,7 @@ iberian_federation = {
 	vassal_forcelimit_bonus = 1.5
 }
 iberian_parliament = {
-	num_of_parliament_issues = 1
+	monthly_reform_progress_modifier = 0.3
 }
 naval_funds = {
 	naval_maintenance_modifier = -0.1

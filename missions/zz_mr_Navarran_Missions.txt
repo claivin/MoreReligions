@@ -1018,7 +1018,7 @@ nav_missions_2 = {
 			}
 		}
 		effect = {
-			add_government_reform = thalassocracy_reform
+			add_government_reform = thalassocracy_reform_basque
 		}
 	}
 	

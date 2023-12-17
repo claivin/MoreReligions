@@ -392,6 +392,7 @@ monarchy = {
 				vodka_of_the_crown_reform
 				jap_gokaido_reform
 				thalassocracy_reform
+				thalassocracy_reform_basque
 				royal_charters_reform
 				commercial_trade_empire_reform
 			}

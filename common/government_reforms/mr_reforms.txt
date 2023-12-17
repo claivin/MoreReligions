@@ -1231,3 +1231,29 @@ wazir_republic = {
 		wr_nubians
 	}
 }
+
+thalassocracy_reform_basque = {
+	icon = "admiralty_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			TAG = NAV
+			TAG = IBF
+		}
+	}	
+	trigger = {
+		missions_completed = nav_basque_ocean
+	}
+	modifiers = {
+		center_of_trade_upgrade_cost = -0.1
+		trade_company_investment_cost = -0.1
+		naval_forcelimit_modifier = 0.25
+		global_trade_power = 0.15
+	}
+	custom_attributes = {
+		can_establish_trade_protectorates = yes
+	}
+	ai = {
+		factor = 1
+	}
+}
