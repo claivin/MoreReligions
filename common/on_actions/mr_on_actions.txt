@@ -155,7 +155,10 @@ on_battle_won_country = {
 	}
 	if = {
 		limit = {
-			mission_completed = g_mission_elite_regiments
+			OR = {
+				mission_completed = g_mission_elite_regiments
+				mission_completed = mr_greece_speciality_1
+			}
 		}
 		elite_unit_xp_combat_effect = yes
 	}
