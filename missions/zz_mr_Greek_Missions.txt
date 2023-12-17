@@ -3746,8 +3746,10 @@ mr_greek_byzantium_third = {
 					any_province = {
 						culture = serbian
 						NOT = {
-							owned_by = ROOT
-							development = 10
+							AND = {
+								owned_by = ROOT
+								development = 10
+							}
 						}
 					}
 				}
@@ -3758,8 +3760,10 @@ mr_greek_byzantium_third = {
 					any_province = {
 						culture = albanian
 						NOT = {
-							owned_by = ROOT
-							development = 10
+							AND = {
+								owned_by = ROOT
+								development = 10
+							}
 						}
 					}
 				}
@@ -3827,8 +3831,9 @@ mr_greek_byzantium_third = {
 					limit = {
 						has_province_modifier = greek_population_boom
 					}
-					extend_province_modifier = {
-						name = 	greek_population_boom
+					remove_province_modifier = greek_population_boom
+					add_province_modifier = {
+						name = greek_population_boom
 						duration = -1
 					}
 				}
@@ -4683,7 +4688,7 @@ mr_greek_ortho_fourth_b = {
 					any_province = {
 						is_in_greece_area_trigger = yes
 						country_or_non_sovereign_subject_holds = ROOT
-						religion = ROOT
+						NOT = { religion = ROOT }
 					}
 				}
 			}

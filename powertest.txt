@@ -1,6 +1,30 @@
-	every_province = {
-					limit = {
-						owned_by = BLH
+148 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
 					}
-					add_territorial_core = ROOT
+				}
+				144 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				4701 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				146 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
+				}
+				149 = {
+					add_province_modifier = {
+						name = greek_population_boom
+						duration = 1095
+					}
 				}

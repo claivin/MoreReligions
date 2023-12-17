@@ -1666,11 +1666,11 @@ mr_sicily_missions_fifth = {
 							has_terrain = hills
 						}
 					}
-				}
-				add_province_modifier = {
-					name = sicilian_development
-					duration = -1
-				}
+					add_province_modifier = {
+						name = sicilian_development
+						duration = -1
+					}
+				}	
 			}
 		}
 	}

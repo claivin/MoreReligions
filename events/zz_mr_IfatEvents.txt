@@ -64,7 +64,6 @@ country_event = {
 	option = {
 		name = MR_ifat_flavor.2.a
 		ifat_area = {
-			type = all
 			add_devastation = 30
 		}
 		add_opinion = {
@@ -72,7 +71,25 @@ country_event = {
 			modifier = cossack_raids_opinion
 		}
 		AFA = {
-			add_treasury = 200
+			add_treasury = 100
+		}
+		if = {
+			limit = {
+				AND = {
+					IFT = {
+						ai = yes
+					}
+					AFA = {
+						ai = yes
+					}
+				}
+			}
+			AFA = {
+				declare_war_with_cb = {
+					who = IFT
+					casus_belli = cb_annex
+				}
+			}
 		}
 	}
 }
