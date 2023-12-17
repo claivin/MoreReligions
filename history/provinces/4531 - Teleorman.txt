@@ -1,18 +1,20 @@
 #REGIONBALKANS
-#160 - Oltenia
+# 4531 - Teleorman
 
-owner = JAA
-controller = JAA 
+owner = BUL
+controller = BUL  
 culture = romanian
 religion = orthodox
-capital = "Craiova"
-trade_goods = honey
+capital = "Giurgiu"
+trade_goods = livestock
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = JAA
+add_core = BUL
+fort_15th = yes
+add_local_autonomy = 60
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

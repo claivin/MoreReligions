@@ -125,7 +125,7 @@ categories =  {
 			
 			581 4396 585 586 # Burma
 			2076 4415 4416 4428 4476 4479 4487 4489 4490 4496 4497 4510 4513 #India
-			4529 4531 # Romania
+			4529 # Romania
 			146 # 1.30 Greece and Bulgaria
 
 			67 4765 4769 4712 #Germany
@@ -279,7 +279,8 @@ categories =  {
 			5334 5335
 			5440 #mr_hungary
 			5471 5472 5482 5487 5492 5493 5494 5495 5496 5498 #MR China
-			5502 #mr_carpathia
+			5500 5501 5505 5507 #mr_carpathia
+			4532 #carpathia
 		}
 	}
 
@@ -357,6 +358,8 @@ categories =  {
 			5286 5301 5300 5304 5305 2595 5296 5292#mr_russia
 			5338
 			5383 5382 #mr_anatolia
+			4531 #carpathia
+			5503 #mr_carpathia
 		}
 	}
 	
@@ -600,6 +603,7 @@ categories =  {
 			4706 # 1.30 Greece and Bulgaria
 			2262 5183 5191 5193 5197 5347 #mr_wafrica
 			5433 5434 5436 #mr_cafrica
+			5506 5508 #mr_oltenia
 		}
 	}
 	
@@ -914,6 +918,7 @@ categories =  {
 			5176 5177 #mr_wafrica
 			5309 5310 5308 5311 5312 5313 #mr_pontic
 			5393 5394 5395 5396 5397 #mr_caucasus
+			4530 2405 5509 #mr_carpathia
 		}	
 	}
 }

@@ -1,19 +1,18 @@
 #REGIONBALKANS
-# Giurgiu
+# 5509 - Baragan
 
 owner = BUL
 controller = BUL  
 culture = romanian
 religion = orthodox
-capital = "Giurgiu"
-trade_goods = livestock
+capital = "Floci"
+trade_goods = wool
 hre = no
 base_tax = 1
-base_production = 3
-base_manpower = 2
+base_production = 1
+base_manpower = 1
 is_city = yes
 add_core = BUL
-fort_15th = yes
 add_local_autonomy = 60
 discovered_by = KAZ
 discovered_by = CRI

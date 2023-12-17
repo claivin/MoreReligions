@@ -293,7 +293,7 @@ mild_winter = {
 	5393 #mr_caucasus
 	5441 5437 5442#mr_balkans
 	5462 5463 5465 5466 5473 5474 5475 5476 #MR China
-	5502 #mr_carpathia
+	5502 5503 #mr_carpathia
 }
 
 #Example: Inland Europe & Scandinavia

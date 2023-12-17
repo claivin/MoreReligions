@@ -1,18 +1,19 @@
 #REGIONBALKANS
-#160 - Oltenia
+# 5505 - Severin2
 
 owner = JAA
-controller = JAA 
+controller = JAA
 culture = romanian
 religion = orthodox
-capital = "Craiova"
-trade_goods = honey
+capital = "Orsova"
+trade_goods = iron #resita steel mine
 hre = no
 base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = JAA
+add_core = HUN
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
