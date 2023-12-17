@@ -74,6 +74,8 @@ po_humiliate_lbg = {
 		add_dip_power = 125
 		add_mil_power = 125
 
+		add_army_tradition = 10
+
 		# Counter
 		change_variable = {
 			which = lbg_show_strength_counter

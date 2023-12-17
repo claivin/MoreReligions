@@ -1,0 +1,113 @@
+namespace = mrLesserBurgEvents
+
+# Burgundy: Lesser Burgundy insults us
+# There can only be one!
+country_event = {
+	id = mrLesserBurgEvents.1
+	title = mrLesserBurgEvents.1.t
+	desc = mrLesserBurgEvents.1.d
+	picture = DIPLOMAT_INTERROGATION_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = { # This cannot stand! (declares war on LBG)
+		name = mrLesserBurgEvents.1.a
+
+		trigger = {
+			is_subject = no
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_humiliate
+			who = LBG
+		}
+
+		LBG = {
+			country_event = {
+				id = mrLesserBurgEvents.2
+			}
+		}
+
+		ai_chance = {
+			factor = 80
+
+			modifier = {
+				factor = 0.5
+				LBG = {
+					army_size = root
+				}
+			}
+			modifier = {
+				factor = 0.5
+				is_at_war = yes
+			}
+		}
+	}
+
+	option = { # Back down
+		name = mrLesserBurgEvents.1.b
+
+		add_prestige = -25
+
+		LBG = {
+			country_event = {
+				id = mrLesserBurgEvents.3
+			}
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+# Burgundy is provoked by our claims!
+country_event = {
+	id = mrLesserBurgEvents.2
+	title = mrLesserBurgEvents.2.t
+	desc = mrLesserBurgEvents.2.d
+	picture = ITALIAN_wars_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Get permas on Burgundy and their subjects
+		name = mrLesserBurgEvents.2.a
+
+		BUR = {
+			every_owned_province = {
+				add_permanent_claim = LBG
+			}
+			every_subject_country = {
+				every_owned_province = {
+					add_permanent_claim = LBG
+				}
+			}
+		}
+	}
+}
+
+# Burgundy backed down!
+country_event = {
+	id = mrLesserBurgEvents.3
+	title = mrLesserBurgEvents.3.t
+	desc = mrLesserBurgEvents.3.d
+	picture = ITALIAN_wars_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Get cores on Burgundy and their subjects
+		name = mrLesserBurgEvents.3.a
+
+		BUR = {
+			every_owned_province = {
+				add_core = LBG
+			}
+			every_subject_country = {
+				every_owned_province = {
+					add_core = LBG
+				}
+			}
+		}
+	}
+}

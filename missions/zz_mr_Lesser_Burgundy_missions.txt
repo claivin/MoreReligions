@@ -60,7 +60,7 @@ lbg_missions_first = {
 
 	lbg_alpine_society = {
 		icon = mission_se_along_the_river
-		required_missions = { lbg_fill_the_valleys }
+		required_missions = { lbg_fill_the_valleys lbg_initial_expansion }
 		position = 4
 
 		provinces_to_highlight = {
@@ -100,7 +100,52 @@ lbg_missions_second = {
 		tag = LBG
 	}
 
+	lbg_initial_expansion = {
+		icon = mission_pf_soldier
+		required_missions = { }
+		position = 2
 
+		trigger = { # Has conquered 3 provinces
+			num_of_owned_provinces_with = {
+				value = 9
+			}
+		}
+
+		# loot them
+		effect = {
+			set_variable = { which = i value = 0 } # i = 0
+			while = { # while (i < 3)
+				limit = {
+					NOT = { check_variable = { which = i value = 3 } }
+				}
+				change_variable = { which = i value = 1} # i++
+
+				random_owned_province = { # Loot up to 2/2/2 dev
+					limit = { nationalism = 1 } # From a newly-conquered province
+
+					remove_base_development = { type = tax 			value = 2 }
+					remove_base_development = { type = production 	value = 2 }
+					remove_base_development = { type = manpower 	value = 2 }
+				}
+			}
+
+			165 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			1867 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			1871 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
 }
 
 lbg_missions_third = {
@@ -134,7 +179,97 @@ lbg_missions_third = {
 
 			add_country_modifier = {
 				name = lbg_imperial_exemption
-				duration = 3650
+				duration = 1825 # 5 years, be fast!
+			}
+		}
+	}
+
+	lbg_dominant_presence_1 = {
+		icon = mission_pf_soldier
+		required_missions = { lbg_establishing_ambition }
+		position = 2
+
+		trigger = {
+			check_variable = {
+				which = lbg_show_strength_counter
+				value = 1
+			}
+		}
+
+		effect = {
+			upper_swabia_area = {
+				add_claim = root
+			}
+		}
+	}
+
+	lbg_dominant_presence_2 = {
+		icon = mission_pf_soldier
+		required_missions = { lbg_establishing_ambition }
+		position = 3
+
+		trigger = {
+			check_variable = {
+				which = lbg_show_strength_counter
+				value = 3
+			}
+		}
+
+		effect = {
+			tirol_area = {
+				add_permanent_claim = root
+			}
+		}
+	}
+
+	lbg_dominant_presence_3 = {
+		icon = mission_pf_soldier
+		required_missions = { lbg_establishing_ambition }
+		position = 5
+
+		trigger = {
+			check_variable = {
+				which = lbg_show_strength_counter
+				value = 10
+			}
+		}
+
+		effect = {
+			every_neighbor_province = {
+				area = {
+					add_claim = root
+				}
+			}
+		}
+	}
+}
+
+
+lbg_missions_fourth = {
+	slot = 4
+	generic = no
+	has_country_shield = yes
+	ai = yes
+	potential = {
+		tag = LBG
+	}
+
+	lbg_deal_with_burgundians = {
+		icon = mission_pf_soldier
+		required_missions = { lbg_dominant_presence_1 }
+		position = 3
+
+		trigger = {
+			prestige = BUR
+			is_rival = BUR
+		}
+
+		effect = {
+			custom_tooltip = lbg_deal_with_burgundians_effect_tt
+			BUR = {
+				country_event = {
+					id = mrLesserBurgEvents.1
+				}
 			}
 		}
 	}

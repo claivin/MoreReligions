@@ -10,6 +10,17 @@
   lbg_establishing_ambition_title: "Establishing Our Ambitions"
   lbg_establishing_ambition_desc: "REPLACE_ME"
   lbg_establishing_ambition_effect_tt: "If we complete a §MShow Superiority§! war while we have the §YImperial Exemption§! spirit, we will gain an additional spirit to reduce AE, along with an extension of the exemption."
+  lbg_initial_expansion_title: "Initial Expansion"
+  lbg_initial_expansion_desc: "REPLACE_ME"
+  lbg_dominant_presence_1_title: "REPLACE_ME"
+  lbg_dominant_presence_1_desc: "REPLACE_ME"
+  lbg_dominant_presence_2_title: "REPLACE_ME"
+  lbg_dominant_presence_2_desc: "REPLACE_ME"
+  lbg_dominant_presence_3_title: "REPLACE_ME"
+  lbg_dominant_presence_3_desc: "REPLACE_ME"
+  lbg_deal_with_burgundians_title: "Deal With Burgundians"
+  lbg_deal_with_burgundians_desc: "REPLACE_ME"
+  lbg_deal_with_burgundians_effect_tt: "We will announce our findings to the world, stating we have the superior claim to the lands of Burgundy. This is something the Burgundians cannot take lying down, and §Ywill likely lead to war.§!"
 
 
   ## -------------------------- Modifiers --------------------------------------
@@ -23,3 +34,20 @@
   desc_lbg_imperial_exemption: "Through some creative legal work (and a lot of well-placed bribes), we have managed to dig up a legal precedent that will prevent the Emperor from demanding unlawful territory from us for a while."
   lbg_imperial_exemption_2: "Imperial Exemption"
   desc_lbg_imperial_exemption_2: "Through some creative legal work (and a lot of well-placed bribes), we have managed to dig up a legal precedent that will prevent the Emperor from demanding unlawful territory from us for a while."
+
+
+  ## -------------------------- Events -----------------------------------------
+  mrLesserBurgEvents.1.t: "The Kingdom of Burgundy"
+  mrLesserBurgEvents.1.d: "REPLACE_ME" # LBG claims
+  mrLesserBurgEvents.1.a: "This outrageous insult cannot stand!"
+  mrLesserBurgEvents.1.b: "We cannot rise to the provocation now."
+  mrLesserBurgEvents.2.t: "Burgundy Reacts"
+  mrLesserBurgEvents.2.d: "REPLACE_ME"
+  mrLesserBurgEvents.2.a: "All according to plan."
+  mrLesserBurgEvents.3.t: "Burgundy Submits"
+  mrLesserBurgEvents.3.d: "REPLACE_ME"
+  mrLesserBurgEvents.3.a: "Pathetic."
+
+
+
+  lbg_show_strength_counter: "§MShow Superiority§! Count"
